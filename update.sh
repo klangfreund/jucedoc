@@ -19,4 +19,4 @@ rsync --progress -avz --delete $juceDirectory/doxygen/doc .
 # Commit and upload
 git add --all .
 git commit -m "Automatic update."
-git push origin gh-pages
+git push
