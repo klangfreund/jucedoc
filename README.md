@@ -1,4 +1,4 @@
-# JuceDoc
+# jucedoc
 ## The JUCE API documentation
 
 This is a copy of the JUCE API documentation that can be generated locally.
