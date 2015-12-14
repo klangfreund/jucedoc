@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['darker',['darker',['../classColour.html#ac8c156ba085857b93dc5067409918b30',1,'Colour']]],
+  ['darker',['darker',['../classColour.html#a9910d9b8385825a87ea0d62d96115872',1,'Colour']]],
   ['datagramsocket',['DatagramSocket',['../classDatagramSocket.html#af2fea92879c30d16256752076c5473e4',1,'DatagramSocket']]],
   ['days',['days',['../classRelativeTime.html#a97b1773403606835c173f26a0a03f5e6',1,'RelativeTime']]],
   ['deactivatecurrentcontext',['deactivateCurrentContext',['../classOpenGLContext.html#a5a3ece9be728d97e0343ae17a71f6562',1,'OpenGLContext']]],
@@ -8,7 +8,7 @@ var searchData=
   ['decodeimage',['decodeImage',['../classImageFileFormat.html#a7ece13108d27014ff96e67ce80dd4092',1,'ImageFileFormat::decodeImage()'],['../classPNGImageFormat.html#a673c4af27ec2b84cd2a3c68289956e89',1,'PNGImageFormat::decodeImage()'],['../classJPEGImageFormat.html#a5e8ca3478c69a084e03ec544ce6dfd46',1,'JPEGImageFormat::decodeImage()'],['../classGIFImageFormat.html#a3d590bd7724eb6bbbc66874c64ebc60e',1,'GIFImageFormat::decodeImage()']]],
   ['decreferencecount',['decReferenceCount',['../classReferenceCountedObject.html#a523f06d996130f24b36996b28b83d802',1,'ReferenceCountedObject::decReferenceCount()'],['../classSingleThreadedReferenceCountedObject.html#aa690489ec6e529bf4588c46092d09156',1,'SingleThreadedReferenceCountedObject::decReferenceCount()']]],
   ['decreferencecountwithoutdeleting',['decReferenceCountWithoutDeleting',['../classReferenceCountedObject.html#a2355316960a6bf2e9691fded43249254',1,'ReferenceCountedObject::decReferenceCountWithoutDeleting()'],['../classSingleThreadedReferenceCountedObject.html#a601ef52aa595fabee645c3c9c8ba2048',1,'SingleThreadedReferenceCountedObject::decReferenceCountWithoutDeleting()']]],
-  ['decrypt',['decrypt',['../classBlowFish.html#af64f53b1ede4a72028346db6b8e3f72d',1,'BlowFish']]],
+  ['decrypt',['decrypt',['../classBlowFish.html#aa43faa09ee4018a615ed81b30607ed2d',1,'BlowFish']]],
   ['degreestoradians',['degreesToRadians',['../juce__MathsFunctions_8h.html#a591c8eb9c577e715ff4ec8f0bdf9366d',1,'juce_MathsFunctions.h']]],
   ['deinterleavesamples',['deinterleaveSamples',['../classAudioDataConverters.html#aac3f177b8617346f5cb1dd93cf09d152',1,'AudioDataConverters']]],
   ['deleteafterdelay',['deleteAfterDelay',['../classSplashScreen.html#ac16029be83bfde8317f47138fc830013',1,'SplashScreen']]],
@@ -62,7 +62,7 @@ var searchData=
   ['displaytip',['displayTip',['../classTooltipWindow.html#aad35b93943a622861dd83d3cade7da4b',1,'TooltipWindow']]],
   ['divideby',['divideBy',['../classBigInteger.html#a9c0bd824652adc58adec98eafa452963',1,'BigInteger']]],
   ['documentwindow',['DocumentWindow',['../classDocumentWindow.html#a0b97fb8d09a99701368b33445bc0cf94',1,'DocumentWindow']]],
-  ['doeslossoffocusdiscardchanges',['doesLossOfFocusDiscardChanges',['../classLabel.html#a4b1fe40ff48d5024a4b39f7939dc92a0',1,'Label']]],
+  ['doeslossoffocusdiscardchanges',['doesLossOfFocusDiscardChanges',['../classLabel.html#aac0b01b91b21112f397fcde2d5942bc9',1,'Label']]],
   ['doespluginstillexist',['doesPluginStillExist',['../classAudioPluginFormat.html#aa75ed0f5726f88ca1276208f0c42da41',1,'AudioPluginFormat::doesPluginStillExist()'],['../classAudioPluginFormatManager.html#aa72ffaa8d7fa00a3b510a75064bcb913',1,'AudioPluginFormatManager::doesPluginStillExist()'],['../classAudioUnitPluginFormat.html#a084772b97639d1d6343f81006731e78d',1,'AudioUnitPluginFormat::doesPluginStillExist()'],['../classLADSPAPluginFormat.html#a3627d4ab900d9d19ce3ce20b7573f51a',1,'LADSPAPluginFormat::doesPluginStillExist()'],['../classVSTPluginFormat.html#af9b0e6229cd8ab9ec72d8f59a8c4933a',1,'VSTPluginFormat::doesPluginStillExist()']]],
   ['doesproductidmatch',['doesProductIDMatch',['../classOnlineUnlockStatus.html#a5f69983d5cdc509ec74f12b2441ab47c',1,'OnlineUnlockStatus::doesProductIDMatch()'],['../classTracktionMarketplaceStatus.html#a12de868a27b5657d2c3d65cba5f3ccfc',1,'TracktionMarketplaceStatus::doesProductIDMatch()']]],
   ['drag',['drag',['../classAnimatedPosition.html#aecd11c12c444387d46ef54931c5cbd86',1,'AnimatedPosition']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['jassert',['jassert',['../juce__PlatformDefs_8h.html#a23de3ed6d23958bc36aa0069ad36335d',1,'juce_PlatformDefs.h']]],
+  ['jassert',['jassert',['../juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a',1,'juce_PlatformDefs.h']]],
   ['jassertfalse',['jassertfalse',['../juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3',1,'juce_PlatformDefs.h']]],
   ['juce_5f32bit',['JUCE_32BIT',['../juce__TargetPlatform_8h.html#a298f3b24ad0e105ede05218dc834dd24',1,'JUCE_32BIT():&#160;juce_TargetPlatform.h'],['../juce__TargetPlatform_8h.html#a298f3b24ad0e105ede05218dc834dd24',1,'JUCE_32BIT():&#160;juce_TargetPlatform.h']]],
-  ['juce_5falign',['JUCE_ALIGN',['../juce__PlatformDefs_8h.html#a17cb21d5179e82925203ab12fb877894',1,'juce_PlatformDefs.h']]],
+  ['juce_5falign',['JUCE_ALIGN',['../juce__PlatformDefs_8h.html#acd5d010d01e78e318786ab060742acd1',1,'juce_PlatformDefs.h']]],
   ['juce_5fanalyzer_5fnoreturn',['JUCE_ANALYZER_NORETURN',['../juce__PlatformDefs_8h.html#a0a4e8406ebaae14eb87c14f02131602d',1,'juce_PlatformDefs.h']]],
   ['juce_5fandroid',['JUCE_ANDROID',['../juce__TargetPlatform_8h.html#a6fda198266d9276b5c331071dd0ba014',1,'juce_TargetPlatform.h']]],
   ['juce_5fapi',['JUCE_API',['../juce__StandardHeader_8h.html#a65961b3bfbda0ffb83750d914cee38fb',1,'juce_StandardHeader.h']]],
@@ -55,7 +55,7 @@ var searchData=
   ['juce_5fpublic_5fin_5fdll_5fbuild',['JUCE_PUBLIC_IN_DLL_BUILD',['../juce__StandardHeader_8h.html#a8d339dd1e85e6fbefaf7638692d085c2',1,'juce_StandardHeader.h']]],
   ['juce_5fstringify',['JUCE_STRINGIFY',['../juce__PlatformDefs_8h.html#a7fab1bb48f05df367f0a57bc6cf3d12f',1,'juce_PlatformDefs.h']]],
   ['juce_5ftry',['JUCE_TRY',['../juce__PlatformDefs_8h.html#a267fd4f83073fb084b389df70243c52e',1,'juce_PlatformDefs.h']]],
-  ['juce_5fundenormalise',['JUCE_UNDENORMALISE',['../juce__MathsFunctions_8h.html#ac11ec3879c5ac8eb5fce1dc8ec4134a2',1,'juce_MathsFunctions.h']]],
+  ['juce_5fundenormalise',['JUCE_UNDENORMALISE',['../juce__MathsFunctions_8h.html#a339666bd60cc6cb0831cb79c8f1b07b6',1,'juce_MathsFunctions.h']]],
   ['juce_5fusedebuggingnewoperator',['juce_UseDebuggingNewOperator',['../juce__Memory_8h.html#a881926ad904a631336e5d4b15f05c548',1,'juce_Memory.h']]],
   ['juce_5fversion',['JUCE_VERSION',['../juce__StandardHeader_8h.html#a8e9e97736d05e318de09b9bedab1aaa0',1,'juce_StandardHeader.h']]],
   ['juceplugin_5fbuild_5fvst3',['JucePlugin_Build_VST3',['../juce__CheckSettingMacros_8h.html#aefca42b08df10a55158f182e4a468db9',1,'juce_CheckSettingMacros.h']]]

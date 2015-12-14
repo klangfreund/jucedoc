@@ -4,7 +4,7 @@
 # author: Samuel Gaehwiler (klangfreund.com)
 
 currentDirectory=`pwd`
-juceDirectory=/Users/sam/data/res/projects_dev/juce
+juceDirectory=~/data/res/development/juce
 
 # Get the latest JUCE
 git --git-dir $juceDirectory/.git pull
@@ -18,6 +18,6 @@ cd $currentDirectory
 rsync --progress -avz --delete $juceDirectory/doxygen/doc .
 
 # Commit and upload
-git add .
+git add --all .
 git commit -m "Automatic update."
 git push origin gh-pages
