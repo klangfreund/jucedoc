@@ -1,6 +1,12 @@
 #!/bin/bash
 #
 # author: Samuel Gaehwiler (klangfreund.com)
+#
+# This gets called daily via a cron job:
+# # ------------------- juce api documentation -------------------
+# 
+# #min    hour    mday    month   wday    command
+# 00      20      *       *       *       cd /home/juce/data/docs/development/JuceDoc/; /home/juce/data/docs/development/JuceDoc/update.sh >/dev/null
 
 currentDirectory=`pwd`
 juceDirectory=~/data/res/development/juce
@@ -20,7 +26,5 @@ rsync --progress -avz --delete $juceDirectory/doxygen/doc .
 git add --all .
 git commit -m "Automatic update."
 
-# Needed to make 'git push' work from within a cron job
-# HOME=/home/juce
-
+# Important: Don't set a password for your ssh key, or 'git push' wont work when run from cron.
 git push
