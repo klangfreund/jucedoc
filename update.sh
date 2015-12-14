@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #
 # author: Samuel Gaehwiler (klangfreund.com)
