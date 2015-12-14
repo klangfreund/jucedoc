@@ -21,6 +21,6 @@ git add --all .
 git commit -m "Automatic update."
 
 # Needed to make 'git push' work from within a cron job
-HOME=/home/juce
+# HOME=/home/juce
 
 git push
