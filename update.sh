@@ -22,9 +22,9 @@ doxygen
 cd $currentDirectory
 rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
 
-# # Commit and upload
-# git add --all .
-# git commit -m "Automatic update."
-# 
-# # Important: Don't set a password for your ssh key, or 'git push' wont work when run from cron.
-# git push
+# Commit and upload
+git add --all .
+git commit -m "Automatic update."
+
+# Important: Don't set a password for your ssh key, or 'git push' wont work when run from cron.
+git push
