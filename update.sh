@@ -6,7 +6,7 @@
 # # ------------------- juce api documentation -------------------
 # 
 # #min    hour    mday    month   wday    command
-# 00      20      *       *       *       cd /home/juce/data/docs/development/JuceDoc/; /home/juce/data/docs/development/JuceDoc/update.sh >/dev/null
+# 00      20      *       *       *       cd /home/juce/data/docs/development/jucedoc/; /home/juce/data/docs/development/jucedoc/update.sh >/dev/null
 
 currentDirectory=`pwd`
 juceDirectory=~/data/res/development/juce
@@ -20,11 +20,11 @@ doxygen
 
 # Copy it over
 cd $currentDirectory
-rsync --progress -avz --delete $juceDirectory/doxygen/doc .
+rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
 
-# Commit and upload
-git add --all .
-git commit -m "Automatic update."
-
-# Important: Don't set a password for your ssh key, or 'git push' wont work when run from cron.
-git push
+# # Commit and upload
+# git add --all .
+# git commit -m "Automatic update."
+# 
+# # Important: Don't set a password for your ssh key, or 'git push' wont work when run from cron.
+# git push
