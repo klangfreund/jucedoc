@@ -20,7 +20,9 @@ doxygen
 
 # Copy it over
 cd $currentDirectory
-rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
+rm -r doc
+cp -r $juceDirectory/doxygen/doc .
+# rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
 
 # Commit and upload
 git add --all .
