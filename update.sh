@@ -12,7 +12,8 @@ currentDirectory=`pwd`
 juceDirectory=~/data/res/development/juce
 
 # Get the latest JUCE
-git --git-dir $juceDirectory/.git pull
+cd $juceDirectory
+git pull
 
 # Update the documentation
 cd $juceDirectory/doxygen/
@@ -20,8 +21,8 @@ doxygen
 
 # Copy it over
 cd $currentDirectory
-rm -r doc
-cp -r $juceDirectory/doxygen/doc .
+rm -r doc/*
+cp -r $juceDirectory/doxygen/doc/* ./doc/
 # rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
 
 # Commit and upload
