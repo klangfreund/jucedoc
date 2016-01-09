@@ -6,13 +6,14 @@
 # # ------------------- juce api documentation -------------------
 # 
 # #min    hour    mday    month   wday    command
-# 00      20      *       *       *       cd /home/juce/data/docs/development/JuceDoc/; /home/juce/data/docs/development/JuceDoc/update.sh >/dev/null
+# 00      20      *       *       *       cd /home/juce/data/docs/development/jucedoc/; /home/juce/data/docs/development/jucedoc/update.sh >/dev/null
 
 currentDirectory=`pwd`
 juceDirectory=~/data/res/development/juce
 
 # Get the latest JUCE
-git --git-dir $juceDirectory/.git pull
+cd $juceDirectory
+git pull
 
 # Update the documentation
 cd $juceDirectory/doxygen/
@@ -20,7 +21,9 @@ doxygen
 
 # Copy it over
 cd $currentDirectory
-rsync --progress -avz --delete $juceDirectory/doxygen/doc .
+rm -r doc/*
+cp -r $juceDirectory/doxygen/doc/* ./doc/
+# rsync --progress -avz --delete $juceDirectory/doxygen/doc/* doc/
 
 # Commit and upload
 git add --all .
