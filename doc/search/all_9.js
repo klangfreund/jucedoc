@@ -293,8 +293,7 @@ var searchData=
   ['juce_5flinearsmoothedvalue_2eh',['juce_LinearSmoothedValue.h',['../juce__LinearSmoothedValue_8h.html',1,'']]],
   ['juce_5flinkedlistpointer_2eh',['juce_LinkedListPointer.h',['../juce__LinkedListPointer_8h.html',1,'']]],
   ['juce_5flistbox_2eh',['juce_ListBox.h',['../juce__ListBox_8h.html',1,'']]],
-  ['juce_5flistenerlist_2eh',['juce_ListenerList.h',['../juce__core_2containers_2juce__ListenerList_8h.html',1,'']]],
-  ['juce_5flistenerlist_2eh',['juce_ListenerList.h',['../juce__events_2broadcasters_2juce__ListenerList_8h.html',1,'']]],
+  ['juce_5flistenerlist_2eh',['juce_ListenerList.h',['../juce__ListenerList_8h.html',1,'']]],
   ['juce_5flittlefootcompiler_2eh',['juce_LittleFootCompiler.h',['../juce__LittleFootCompiler_8h.html',1,'']]],
   ['juce_5flittlefootremoteheap_2eh',['juce_LittleFootRemoteHeap.h',['../juce__LittleFootRemoteHeap_8h.html',1,'']]],
   ['juce_5flittlefootrunner_2eh',['juce_LittleFootRunner.h',['../juce__LittleFootRunner_8h.html',1,'']]],
@@ -567,6 +566,7 @@ var searchData=
   ['juce_5fwchar',['juce_wchar',['../juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da',1,'juce_CharacterFunctions.h']]],
   ['juce_5fweakreference_2eh',['juce_WeakReference.h',['../juce__WeakReference_8h.html',1,'']]],
   ['juce_5fwebbrowsercomponent_2eh',['juce_WebBrowserComponent.h',['../juce__WebBrowserComponent_8h.html',1,'']]],
+  ['juce_5fwebinputstream_2eh',['juce_WebInputStream.h',['../juce__WebInputStream_8h.html',1,'']]],
   ['juce_5fwhirlpool_2eh',['juce_Whirlpool.h',['../juce__Whirlpool_8h.html',1,'']]],
   ['juce_5fwildcardfilefilter_2eh',['juce_WildcardFileFilter.h',['../juce__WildcardFileFilter_8h.html',1,'']]],
   ['juce_5fwindowshooks_2eh',['juce_WindowsHooks.h',['../juce__WindowsHooks_8h.html',1,'']]],
@@ -584,7 +584,7 @@ var searchData=
   ['jucevstinterfaceidentifier',['juceVstInterfaceIdentifier',['../juce__VSTInterface_8h.html#aa0141325b2a7d73302b4415761d632fc',1,'juce_VSTInterface.h']]],
   ['jucevstinterfaceversion',['juceVstInterfaceVersion',['../juce__VSTInterface_8h.html#a60c58657ea50f8347da505110bed0475',1,'juce_VSTInterface.h']]],
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()']]],
-  ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()']]],
+  ['justifycontent',['JustifyContent',['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]]
 ];

@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33260ebc8cb8b358ca6d24a85c3ef1cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWavAudioFormat.html#a33260ebc8cb8b358ca6d24a85c3ef1cc">createMemoryMappedReader</a> (const <a class="el" href="classFile.html">File</a> &amp;) override</td></tr>
 <tr class="memdesc:a33260ebc8cb8b358ca6d24a85c3ef1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to create a <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a>, if possible for this format.  <a href="#a33260ebc8cb8b358ca6d24a85c3ef1cc">More...</a><br/></td></tr>
 <tr class="separator:a33260ebc8cb8b358ca6d24a85c3ef1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd00c047b6917927a94799bd8c97328b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWavAudioFormat.html#afd00c047b6917927a94799bd8c97328b">createMemoryMappedReader</a> (<a class="el" href="classFileInputStream.html">FileInputStream</a> *) override</td></tr>
+<tr class="separator:afd00c047b6917927a94799bd8c97328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989d29b8ca1c28389700f0e5ee17b3ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioFormatWriter.html">AudioFormatWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWavAudioFormat.html#a989d29b8ca1c28389700f0e5ee17b3ee">createWriterFor</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *streamToWriteTo, double sampleRateToUse, unsigned int numberOfChannels, int bitsPerSample, const <a class="el" href="classStringPairArray.html">StringPairArray</a> &amp;metadataValues, int qualityOptionIndex) override</td></tr>
 <tr class="memdesc:a989d29b8ca1c28389700f0e5ee17b3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create an object that can write to a stream with this audio format.  <a href="#a989d29b8ca1c28389700f0e5ee17b3ee">More...</a><br/></td></tr>
 <tr class="separator:a989d29b8ca1c28389700f0e5ee17b3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -748,6 +750,32 @@ Additional Inherited Members</h2></td></tr>
 <p>If the format does not support this, the method will return nullptr; </p>
 
 <p>Reimplemented from <a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed">AudioFormat</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd00c047b6917927a94799bd8c97328b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a>* WavAudioFormat::createMemoryMappedReader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFileInputStream.html">FileInputStream</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classAudioFormat.html#ac74812908f1121d92dc4bd22bdf0f383">AudioFormat</a>.</p>
 
 </div>
 </div>
@@ -3002,7 +3030,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

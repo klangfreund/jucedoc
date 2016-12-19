@@ -191,9 +191,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77bc36673f43fd4e4e966fe3294a9db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a77bc36673f43fd4e4e966fe3294a9db5">getPointAlongLine</a> (ValueType distanceFromStart, ValueType perpendicularDistance) const noexcept</td></tr>
 <tr class="memdesc:a77bc36673f43fd4e4e966fe3294a9db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a point which is a certain distance along and to the side of this line.  <a href="#a77bc36673f43fd4e4e966fe3294a9db5">More...</a><br/></td></tr>
 <tr class="separator:a77bc36673f43fd4e4e966fe3294a9db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4">getPointAlongLineProportionally</a> (ValueType proportionOfLength) const noexcept</td></tr>
-<tr class="memdesc:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the point which is a given distance along this line proportional to the line's length.  <a href="#a987efd8a7c899cbb70fe3ad20e0cc9d4">More...</a><br/></td></tr>
-<tr class="separator:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab557ce9e66f5cfbf826c0d3955e23d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03">getPointAlongLineProportionally</a> (typename <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;::FloatType proportionOfLength) const noexcept</td></tr>
+<tr class="memdesc:ab557ce9e66f5cfbf826c0d3955e23d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the point which is a given distance along this line proportional to the line's length.  <a href="#ab557ce9e66f5cfbf826c0d3955e23d03">More...</a><br/></td></tr>
+<tr class="separator:ab557ce9e66f5cfbf826c0d3955e23d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec">getDistanceFromPoint</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; targetPoint, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; &amp;pointOnLine) const noexcept</td></tr>
 <tr class="memdesc:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smallest distance between this line segment and a given point.  <a href="#a9909c1e4eb4b19deb15c3a095749d8ec">More...</a><br/></td></tr>
 <tr class="separator:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1215,7 +1215,7 @@ template&lt;typename ValueType&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
 
 <p>References <a class="el" href="classLine.html#ac47e36fae13dc1baa6b11b2b545946c0">Line&lt; ValueType &gt;::getLength()</a>.</p>
 
@@ -1271,7 +1271,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a987efd8a7c899cbb70fe3ad20e0cc9d4"></a>
+<a class="anchor" id="ab557ce9e66f5cfbf826c0d3955e23d03"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1283,7 +1283,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classPoint.html">Point</a>&lt;ValueType&gt; <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::getPointAlongLineProportionally </td>
           <td>(</td>
-          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;::FloatType&#160;</td>
           <td class="paramname"><em>proportionOfLength</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1377,8 +1377,8 @@ template&lt;typename ValueType&gt; </div>
 </div><div class="memdoc">
 
 <p>Finds the point on this line which is nearest to a given point, and returns its position as a proportional position along the line. </p>
-<dl class="section return"><dt>Returns</dt><dd>a value 0 to 1.0 which is the distance along this line from the line's start to the point which is nearest to the point passed-in. To turn this number into a position, use <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally()</a>. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a value 0 to 1.0 which is the distance along this line from the line's start to the point which is nearest to the point passed-in. To turn this number into a position, use <a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally()</a>. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
 
 <p>References <a class="el" href="juce__MathsFunctions_8h.html#a6efeed0752de995d3bc123123f199735">jlimit()</a>, <a class="el" href="classPoint.html#aba3ea63445b55dec2d740776b1059065">Point&lt; ValueType &gt;::x</a>, and <a class="el" href="classPoint.html#aa8d5487ccd439dd2d4b0fe87021a32c0">Point&lt; ValueType &gt;::y</a>.</p>
 
@@ -1413,7 +1413,7 @@ template&lt;typename ValueType&gt; </div>
 <p>Finds the point on this line which is nearest to a given point. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6" title="Finds the point on this line which is nearest to a given point, and returns its position as a proport...">findNearestProportionalPositionTo</a> </dd></dl>
 
-<p>References <a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6">Line&lt; ValueType &gt;::findNearestProportionalPositionTo()</a>, and <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4">Line&lt; ValueType &gt;::getPointAlongLineProportionally()</a>.</p>
+<p>References <a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6">Line&lt; ValueType &gt;::findNearestProportionalPositionTo()</a>, and <a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03">Line&lt; ValueType &gt;::getPointAlongLineProportionally()</a>.</p>
 
 </div>
 </div>
@@ -1515,7 +1515,7 @@ template&lt;typename ValueType&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:07 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:45 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

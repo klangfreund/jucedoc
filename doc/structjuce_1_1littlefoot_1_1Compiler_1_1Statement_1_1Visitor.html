@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JUCE: juce_ListenerList.h File Reference</title>
+<title>JUCE: juce::littlefoot::Compiler::Statement::Visitor Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,8 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -59,8 +59,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,34 +81,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="dir_fd421517ec8f709274e931dda731313f.html">juce_core</a></li><li class="navelem"><a class="el" href="dir_ef66b834227c0db5928958f7e41dc94f.html">containers</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejuce.html">juce</a></li><li class="navelem"><a class="el" href="namespacejuce_1_1littlefoot.html">littlefoot</a></li><li class="navelem"><a class="el" href="structjuce_1_1littlefoot_1_1Compiler.html">Compiler</a></li><li class="navelem"><b>Statement</b></li><li class="navelem"><a class="el" href="structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html">Visitor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">juce_core/containers/juce_ListenerList.h File Reference</div>  </div>
+<div class="title">juce::littlefoot::Compiler::Statement::Visitor Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html">ListenerList&lt; ListenerClass, ArrayType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds a set of objects and can invoke a member function callback on each object in the set with a single call.  <a href="classListenerList.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structListenerList_1_1DummyBailOutChecker.html">ListenerList&lt; ListenerClass, ArrayType &gt;::DummyBailOutChecker</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy bail-out checker that always returns false.  <a href="structListenerList_1_1DummyBailOutChecker.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html">ListenerList&lt; ListenerClass, ArrayType &gt;::Iterator&lt; BailOutCheckerType, ListType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates the listeners in a <a class="el" href="classListenerList.html" title="Holds a set of objects and can invoke a member function callback on each object in the set with a sin...">ListenerList</a>.  <a href="classListenerList_1_1Iterator.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a12c6f50a38a5ea9c74cbebd81b9aff29"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html#a12c6f50a38a5ea9c74cbebd81b9aff29">~Visitor</a> ()</td></tr>
+<tr class="separator:a12c6f50a38a5ea9c74cbebd81b9aff29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e6326b660704a35958f82db8e72f66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html#a89e6326b660704a35958f82db8e72f66">operator()</a> (StatementPtr)=0</td></tr>
+<tr class="separator:a89e6326b660704a35958f82db8e72f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a12c6f50a38a5ea9c74cbebd81b9aff29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual juce::littlefoot::Compiler::Statement::Visitor::~Visitor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a89e6326b660704a35958f82db8e72f66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::littlefoot::Compiler::Statement::Visitor::operator() </td>
+          <td>(</td>
+          <td class="paramtype">StatementPtr&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="juce__blocks__basics_8h.html">juce_blocks_basics.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:10:59 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

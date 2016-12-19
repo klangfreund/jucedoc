@@ -103,8 +103,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aab885a8e691e15eda42ab513ca4d968d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvar.html">var</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a> )(const <a class="el" href="structvar_1_1NativeFunctionArgs.html">NativeFunctionArgs</a> &amp;)</td></tr>
-<tr class="separator:aab885a8e691e15eda42ab513ca4d968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae639f9a33534812a529a97740682d992"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a> = std::function&lt; <a class="el" href="classvar.html">var</a>(const <a class="el" href="structvar_1_1NativeFunctionArgs.html">NativeFunctionArgs</a> &amp;)&gt;</td></tr>
+<tr class="separator:ae639f9a33534812a529a97740682d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,9 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adac6da6937fb8b1c4d7e4834eba80a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee0a5c918953159d4f461db8e6f82ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#aaee0a5c918953159d4f461db8e6f82ff">var</a> (const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classvar.html">var</a> &gt; &amp;<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="separator:aaee0a5c918953159d4f461db8e6f82ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7f5dbf9267b0c55d37615b34d3cfa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a0b7f5dbf9267b0c55d37615b34d3cfa0">var</a> (const <a class="el" href="classStringArray.html">StringArray</a> &amp;<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
+<tr class="separator:a0b7f5dbf9267b0c55d37615b34d3cfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42b36078ccda5f6e8a1ef8106fada84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#ab42b36078ccda5f6e8a1ef8106fada84">var</a> (<a class="el" href="classReferenceCountedObject.html">ReferenceCountedObject</a> *object)</td></tr>
 <tr class="separator:ab42b36078ccda5f6e8a1ef8106fada84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c1abcf59359033d8b07254c3469afb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a3c1abcf59359033d8b07254c3469afb7">var</a> (<a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a> method) noexcept</td></tr>
+<tr class="memitem:a3c1abcf59359033d8b07254c3469afb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a3c1abcf59359033d8b07254c3469afb7">var</a> (<a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a> method) noexcept</td></tr>
 <tr class="separator:a3c1abcf59359033d8b07254c3469afb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e2c00adba3e5483bbd4f4112de82a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a4e2c00adba3e5483bbd4f4112de82a89">var</a> (const void *binaryData, size_t dataSize)</td></tr>
 <tr class="separator:a4e2c00adba3e5483bbd4f4112de82a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af25c16f53ee21ad9824c9d0933652304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0a04b27e8347fba0fdd6004e5ca1b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a1a0a04b27e8347fba0fdd6004e5ca1b8">operator=</a> (<a class="el" href="classReferenceCountedObject.html">ReferenceCountedObject</a> *object)</td></tr>
 <tr class="separator:a1a0a04b27e8347fba0fdd6004e5ca1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49566684c38cc9b9354235c44e5e10c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a49566684c38cc9b9354235c44e5e10c0">operator=</a> (<a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a> method)</td></tr>
+<tr class="memitem:a49566684c38cc9b9354235c44e5e10c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a49566684c38cc9b9354235c44e5e10c0">operator=</a> (<a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a> method)</td></tr>
 <tr class="separator:a49566684c38cc9b9354235c44e5e10c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab963211b79261cadb9149b9682ebcb93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#ab963211b79261cadb9149b9682ebcb93">var</a> (<a class="el" href="classvar.html">var</a> &amp;&amp;) noexcept</td></tr>
 <tr class="separator:ab963211b79261cadb9149b9682ebcb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +292,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a60d4a70e064a8b58e9868fb2566cc2c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a60d4a70e064a8b58e9868fb2566cc2c4">invoke</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;method, const <a class="el" href="classvar.html">var</a> *arguments, int numArguments) const </td></tr>
 <tr class="memdesc:a60d4a70e064a8b58e9868fb2566cc2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a named method call with a list of arguments.  <a href="#a60d4a70e064a8b58e9868fb2566cc2c4">More...</a><br/></td></tr>
 <tr class="separator:a60d4a70e064a8b58e9868fb2566cc2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc064f9f435c70b08395a39377fd7b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#acc064f9f435c70b08395a39377fd7b51">getNativeFunction</a> () const </td></tr>
+<tr class="memitem:acc064f9f435c70b08395a39377fd7b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#acc064f9f435c70b08395a39377fd7b51">getNativeFunction</a> () const </td></tr>
 <tr class="memdesc:acc064f9f435c70b08395a39377fd7b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this object is a method, this returns the function pointer.  <a href="#acc064f9f435c70b08395a39377fd7b51">More...</a><br/></td></tr>
 <tr class="separator:acc064f9f435c70b08395a39377fd7b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0872b4cd7956230f5d8d3467be21dd5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar.html#a0872b4cd7956230f5d8d3467be21dd5c">writeToStream</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;output) const </td></tr>
@@ -312,12 +314,12 @@ Static Public Member Functions</h2></td></tr>
 <p>You can save/load var objects either in a small, proprietary binary format using <a class="el" href="classvar.html#a0872b4cd7956230f5d8d3467be21dd5c" title="Writes a binary representation of this value to a stream. ">writeToStream()</a>/readFromStream(), or as <a class="el" href="classJSON.html" title="Contains static methods for converting JSON-formatted text to and from var objects. ">JSON</a> by using the <a class="el" href="classJSON.html" title="Contains static methods for converting JSON-formatted text to and from var objects. ">JSON</a> class.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classJSON.html" title="Contains static methods for converting JSON-formatted text to and from var objects. ">JSON</a>, <a class="el" href="classDynamicObject.html" title="Represents a dynamically implemented object. ">DynamicObject</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aab885a8e691e15eda42ab513ca4d968d"></a>
+<a class="anchor" id="ae639f9a33534812a529a97740682d992"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classvar.html">var</a>(* var::NativeFunction)(const <a class="el" href="structvar_1_1NativeFunctionArgs.html">NativeFunctionArgs</a> &amp;)</td>
+          <td class="memname">using <a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">var::NativeFunction</a> =  std::function&lt;<a class="el" href="classvar.html">var</a> (const <a class="el" href="structvar_1_1NativeFunctionArgs.html">NativeFunctionArgs</a>&amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -551,6 +553,22 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0b7f5dbf9267b0c55d37615b34d3cfa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">var::var </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classStringArray.html">StringArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab42b36078ccda5f6e8a1ef8106fada84"></a>
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +595,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">var::var </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a>&#160;</td>
           <td class="paramname"><em>method</em></td><td>)</td>
           <td></td>
         </tr>
@@ -889,7 +907,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classvar.html">var</a>&amp; var::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a>&#160;</td>
           <td class="paramname"><em>method</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2075,7 +2093,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvar.html#aab885a8e691e15eda42ab513ca4d968d">NativeFunction</a> var::getNativeFunction </td>
+          <td class="memname"><a class="el" href="classvar.html#ae639f9a33534812a529a97740682d992">NativeFunction</a> var::getNativeFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2142,7 +2160,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -56,6 +56,7 @@ var searchData=
   ['double_5fpi',['double_Pi',['../juce__MathsFunctions_8h.html#aa929b9e10eedb3b7a6bd8f6ba2d9ddaa',1,'juce_MathsFunctions.h']]],
   ['doubleversion',['doubleVersion',['../structVST3FloatAndDoubleBusMapComposite.html#a83882eec1260749ea6ecbb1d830f97f1',1,'VST3FloatAndDoubleBusMapComposite']]],
   ['downkey',['downKey',['../classKeyPress.html#aeb9a20dd50b39f66d7d778d31b6b5f88',1,'KeyPress']]],
+  ['downloaded',['downloaded',['../classURL_1_1DownloadTask.html#a4754c8c08c94390dac2ffdcf76badd86',1,'URL::DownloadTask']]],
   ['dpi',['dpi',['../structDesktop_1_1Displays_1_1Display.html#acfea525d7724fa5b442648346bff2af0',1,'Desktop::Displays::Display']]],
   ['drylevel',['dryLevel',['../structReverb_1_1Parameters.html#add75191e7a163d95cd807cbc72fa192c',1,'Reverb::Parameters']]]
 ];

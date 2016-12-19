@@ -181,30 +181,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7dfe4c12e9e27f3de877e9d2044f0fab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classAudioProcessor_1_1Bus.html">Bus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a7dfe4c12e9e27f3de877e9d2044f0fab">getBus</a> (bool isInput, int busIdx) const noexcept</td></tr>
 <tr class="memdesc:a7dfe4c12e9e27f3de877e9d2044f0fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the audio bus with a given index and direction.  <a href="#a7dfe4c12e9e27f3de877e9d2044f0fab">More...</a><br/></td></tr>
 <tr class="separator:a7dfe4c12e9e27f3de877e9d2044f0fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ee880e548222608a4b3193382fcbd8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#af7ee880e548222608a4b3193382fcbd8">canAddBus</a> (bool) const </td></tr>
-<tr class="memdesc:af7ee880e548222608a4b3193382fcbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to query if a bus can currently be added.  <a href="#af7ee880e548222608a4b3193382fcbd8">More...</a><br/></td></tr>
-<tr class="separator:af7ee880e548222608a4b3193382fcbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55316adfdb876138da109d61464bd79c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a55316adfdb876138da109d61464bd79c">canRemoveBus</a> (bool) const </td></tr>
-<tr class="memdesc:a55316adfdb876138da109d61464bd79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to query if the last bus can currently be removed.  <a href="#a55316adfdb876138da109d61464bd79c">More...</a><br/></td></tr>
-<tr class="separator:a55316adfdb876138da109d61464bd79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2df1b7ab111642230ed749d8017b4a9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#af2df1b7ab111642230ed749d8017b4a9">canAddBus</a> (bool isInput) const </td></tr>
+<tr class="memdesc:af2df1b7ab111642230ed749d8017b4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to query if a bus can currently be added.  <a href="#af2df1b7ab111642230ed749d8017b4a9">More...</a><br/></td></tr>
+<tr class="separator:af2df1b7ab111642230ed749d8017b4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48440b8736885e0e377569c0796628b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a48440b8736885e0e377569c0796628b1">canRemoveBus</a> (bool isInput) const </td></tr>
+<tr class="memdesc:a48440b8736885e0e377569c0796628b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to query if the last bus can currently be removed.  <a href="#a48440b8736885e0e377569c0796628b1">More...</a><br/></td></tr>
+<tr class="separator:a48440b8736885e0e377569c0796628b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aea2fb2745c0baf3a5fa90a00b14df6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a9aea2fb2745c0baf3a5fa90a00b14df6">addBus</a> (bool isInput)</td></tr>
 <tr class="memdesc:a9aea2fb2745c0baf3a5fa90a00b14df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically request an additional bus.  <a href="#a9aea2fb2745c0baf3a5fa90a00b14df6">More...</a><br/></td></tr>
 <tr class="separator:a9aea2fb2745c0baf3a5fa90a00b14df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50d39de8a1ed655829ccf21e63c13b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#ad50d39de8a1ed655829ccf21e63c13b4">removeBus</a> (bool isInput)</td></tr>
 <tr class="memdesc:ad50d39de8a1ed655829ccf21e63c13b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically remove the latest added bus.  <a href="#ad50d39de8a1ed655829ccf21e63c13b4">More...</a><br/></td></tr>
 <tr class="separator:ad50d39de8a1ed655829ccf21e63c13b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f66b6421456aa29b65a3ad229ea0fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a44f66b6421456aa29b65a3ad229ea0fa">setBusesLayout</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;arr)</td></tr>
-<tr class="memdesc:a44f66b6421456aa29b65a3ad229ea0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel layouts of this audio processor.  <a href="#a44f66b6421456aa29b65a3ad229ea0fa">More...</a><br/></td></tr>
-<tr class="separator:a44f66b6421456aa29b65a3ad229ea0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fadfbcdf40b7542a1837744a93b0cbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a4fadfbcdf40b7542a1837744a93b0cbe">setBusesLayoutWithoutEnabling</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;arr)</td></tr>
-<tr class="memdesc:a4fadfbcdf40b7542a1837744a93b0cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel layouts of this audio processor without changing the enablement state of the buses.  <a href="#a4fadfbcdf40b7542a1837744a93b0cbe">More...</a><br/></td></tr>
-<tr class="separator:a4fadfbcdf40b7542a1837744a93b0cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd92c2d343de66816b290015cd15517f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#acd92c2d343de66816b290015cd15517f">setBusesLayout</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;)</td></tr>
+<tr class="memdesc:acd92c2d343de66816b290015cd15517f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel layouts of this audio processor.  <a href="#acd92c2d343de66816b290015cd15517f">More...</a><br/></td></tr>
+<tr class="separator:acd92c2d343de66816b290015cd15517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac4a4f4640b3fb1be6b0235a3c48f9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a5ac4a4f4640b3fb1be6b0235a3c48f9c">setBusesLayoutWithoutEnabling</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;)</td></tr>
+<tr class="memdesc:a5ac4a4f4640b3fb1be6b0235a3c48f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel layouts of this audio processor without changing the enablement state of the buses.  <a href="#a5ac4a4f4640b3fb1be6b0235a3c48f9c">More...</a><br/></td></tr>
+<tr class="separator:a5ac4a4f4640b3fb1be6b0235a3c48f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b618b6e5cdca4da58e87417ade7dbc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a6b618b6e5cdca4da58e87417ade7dbc0">getBusesLayout</a> () const </td></tr>
 <tr class="memdesc:a6b618b6e5cdca4da58e87417ade7dbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the current channel layouts of this audio processor.  <a href="#a6b618b6e5cdca4da58e87417ade7dbc0">More...</a><br/></td></tr>
 <tr class="separator:a6b618b6e5cdca4da58e87417ade7dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c75ea500efaddff48a720d47e6c0cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a1c75ea500efaddff48a720d47e6c0cdc">getChannelLayoutOfBus</a> (bool isInput, int busIdx) const noexcept</td></tr>
-<tr class="memdesc:a1c75ea500efaddff48a720d47e6c0cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the channel layout of the bus with a given index and direction.  <a href="#a1c75ea500efaddff48a720d47e6c0cdc">More...</a><br/></td></tr>
-<tr class="separator:a1c75ea500efaddff48a720d47e6c0cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccdab0242879d734cd34ab45a8ef6a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a5ccdab0242879d734cd34ab45a8ef6a5">getChannelLayoutOfBus</a> (bool isInput, int busIndex) const noexcept</td></tr>
+<tr class="memdesc:a5ccdab0242879d734cd34ab45a8ef6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the channel layout of the bus with a given index and direction.  <a href="#a5ccdab0242879d734cd34ab45a8ef6a5">More...</a><br/></td></tr>
+<tr class="separator:a5ccdab0242879d734cd34ab45a8ef6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72802fbbf3bb51abae31dc5eb3a814f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#ac72802fbbf3bb51abae31dc5eb3a814f">setChannelLayoutOfBus</a> (bool isInput, int busIdx, const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;layout)</td></tr>
 <tr class="memdesc:ac72802fbbf3bb51abae31dc5eb3a814f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel layout of the bus with a given index and direction.  <a href="#ac72802fbbf3bb51abae31dc5eb3a814f">More...</a><br/></td></tr>
 <tr class="separator:ac72802fbbf3bb51abae31dc5eb3a814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,9 +227,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a356fa03d08448f40384f0194e943403b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a356fa03d08448f40384f0194e943403b">getBusBuffer</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;processBlockBuffer, bool isInput, int busIndex) const </td></tr>
 <tr class="memdesc:a356fa03d08448f40384f0194e943403b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer of floating point audio samples. ">AudioBuffer</a> containing a set of channel pointers for a specific bus.  <a href="#a356fa03d08448f40384f0194e943403b">More...</a><br/></td></tr>
 <tr class="separator:a356fa03d08448f40384f0194e943403b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7553a9cafc63d68181ea5a722f3e328"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#aa7553a9cafc63d68181ea5a722f3e328">checkBusesLayoutSupported</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;layouts) const </td></tr>
-<tr class="memdesc:aa7553a9cafc63d68181ea5a722f3e328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the Audio processor is likely to support a given layout.  <a href="#aa7553a9cafc63d68181ea5a722f3e328">More...</a><br/></td></tr>
-<tr class="separator:aa7553a9cafc63d68181ea5a722f3e328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e40238c21042c81b6dcdea07f9b7e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a59e40238c21042c81b6dcdea07f9b7e6">checkBusesLayoutSupported</a> (const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;) const </td></tr>
+<tr class="memdesc:a59e40238c21042c81b6dcdea07f9b7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the Audio processor is likely to support a given layout.  <a href="#a59e40238c21042c81b6dcdea07f9b7e6">More...</a><br/></td></tr>
+<tr class="separator:a59e40238c21042c81b6dcdea07f9b7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8481c6767076b20c25de25bbf0469114"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a8481c6767076b20c25de25bbf0469114">supportsDoublePrecisionProcessing</a> () const </td></tr>
 <tr class="memdesc:a8481c6767076b20c25de25bbf0469114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the Audio processor supports double precision floating point processing.  <a href="#a8481c6767076b20c25de25bbf0469114">More...</a><br/></td></tr>
 <tr class="separator:a8481c6767076b20c25de25bbf0469114"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,9 +239,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58f5414e3b89197136ab4fb8f1263d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a58f5414e3b89197136ab4fb8f1263d66">isUsingDoublePrecision</a> () const noexcept</td></tr>
 <tr class="memdesc:a58f5414e3b89197136ab4fb8f1263d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current precision is set to doublePrecision.  <a href="#a58f5414e3b89197136ab4fb8f1263d66">More...</a><br/></td></tr>
 <tr class="separator:a58f5414e3b89197136ab4fb8f1263d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc479cabc500719f742fe29a1beb9b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#acc479cabc500719f742fe29a1beb9b11">setProcessingPrecision</a> (<a class="el" href="classAudioProcessor.html#a212c3670b59976559237cbf629af275f">ProcessingPrecision</a> precision) noexcept</td></tr>
-<tr class="memdesc:acc479cabc500719f742fe29a1beb9b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the processing precision of the receiver.  <a href="#acc479cabc500719f742fe29a1beb9b11">More...</a><br/></td></tr>
-<tr class="separator:acc479cabc500719f742fe29a1beb9b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae51e20ee91b1383bc4d6a3789ae119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a3ae51e20ee91b1383bc4d6a3789ae119">setProcessingPrecision</a> (<a class="el" href="classAudioProcessor.html#a212c3670b59976559237cbf629af275f">ProcessingPrecision</a> newPrecision) noexcept</td></tr>
+<tr class="memdesc:a3ae51e20ee91b1383bc4d6a3789ae119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the processing precision of the receiver.  <a href="#a3ae51e20ee91b1383bc4d6a3789ae119">More...</a><br/></td></tr>
+<tr class="separator:a3ae51e20ee91b1383bc4d6a3789ae119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3000c867da8b04866a4f91c8103956ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPlayHead.html">AudioPlayHead</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a3000c867da8b04866a4f91c8103956ac">getPlayHead</a> () const noexcept</td></tr>
 <tr class="memdesc:a3000c867da8b04866a4f91c8103956ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="classAudioPlayHead.html" title="A subclass of AudioPlayHead can supply information about the position and status of a moving play hea...">AudioPlayHead</a> object that should be used to find out the state and position of the playhead.  <a href="#a3000c867da8b04866a4f91c8103956ac">More...</a><br/></td></tr>
 <tr class="separator:a3000c867da8b04866a4f91c8103956ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -946,7 +946,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the number of buses on the input or output side. </p>
 
-<p>Referenced by <a class="el" href="classAudioUnitHelpers_1_1ChannelRemapper.html#aee51531605d0b0cc8f7f7e549aea3470">AudioUnitHelpers::ChannelRemapper::alloc()</a>, and <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a6ec130e790d87fca3c0a34f60eba216c">AudioUnitHelpers::getBusCount()</a>, <a class="el" href="structAudioUnitHelpers.html#a2e13cc1304fce78d837abe4a8cccef61">AudioUnitHelpers::getBusesLayout()</a>, and <a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">AudioUnitHelpers::setBusesLayout()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1028,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af7ee880e548222608a4b3193382fcbd8"></a>
+<a class="anchor" id="af2df1b7ab111642230ed749d8017b4a9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1039,7 +1039,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">virtual bool AudioProcessor::canAddBus </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>isInput</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1055,9 +1055,11 @@ Protected Attributes</h2></td></tr>
 <p>The default implementation will always return false.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a9aea2fb2745c0baf3a5fa90a00b14df6" title="Dynamically request an additional bus. ">addBus</a> </dd></dl>
 
+<p>References <a class="el" href="juce__MathsFunctions_8h.html#a07a40f89c351c7e7a7f98a62beaa1e4a">ignoreUnused()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a55316adfdb876138da109d61464bd79c"></a>
+<a class="anchor" id="a48440b8736885e0e377569c0796628b1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1068,7 +1070,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">virtual bool AudioProcessor::canRemoveBus </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>isInput</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1083,6 +1085,8 @@ Protected Attributes</h2></td></tr>
 <p>This callback probes if the last bus can currently be removed. You should override this callback if you want to support dynamically adding/removing buses by the host. This is useful for mixer audio processors.</p>
 <p>If you return true in this callback then the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> will go ahead and delete the bus.</p>
 <p>The default implementation will always return false. </p>
+
+<p>References <a class="el" href="juce__MathsFunctions_8h.html#a07a40f89c351c7e7a7f98a62beaa1e4a">ignoreUnused()</a>.</p>
 
 </div>
 </div>
@@ -1127,11 +1131,11 @@ Protected Attributes</h2></td></tr>
 <p>Most audio processors will not allow you to dynamically add/remove audio buses and will return false.</p>
 <p>The default implementation will return false.</p>
 <p>This method will invoke the canApplyBusCountChange callback to probe if a bus can currently be removed and, if yes, will go ahead and remove it.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a9aea2fb2745c0baf3a5fa90a00b14df6" title="Dynamically request an additional bus. ">addBus</a>, <a class="el" href="classAudioProcessor.html#a55316adfdb876138da109d61464bd79c" title="Callback to query if the last bus can currently be removed. ">canRemoveBus</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a9aea2fb2745c0baf3a5fa90a00b14df6" title="Dynamically request an additional bus. ">addBus</a>, <a class="el" href="classAudioProcessor.html#a48440b8736885e0e377569c0796628b1" title="Callback to query if the last bus can currently be removed. ">canRemoveBus</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a44f66b6421456aa29b65a3ad229ea0fa"></a>
+<a class="anchor" id="acd92c2d343de66816b290015cd15517f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1139,7 +1143,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">bool AudioProcessor::setBusesLayout </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;&#160;</td>
-          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1148,9 +1152,11 @@ Protected Attributes</h2></td></tr>
 <p>Set the channel layouts of this audio processor. </p>
 <p>If the layout is not supported by this audio processor then this method will return false. You can use the checkBusesLayoutSupported and getNextBestLayout methods to probe which layouts this audio processor supports. </p>
 
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">AudioUnitHelpers::setBusesLayout()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a4fadfbcdf40b7542a1837744a93b0cbe"></a>
+<a class="anchor" id="a5ac4a4f4640b3fb1be6b0235a3c48f9c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1158,7 +1164,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">bool AudioProcessor::setBusesLayoutWithoutEnabling </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;&#160;</td>
-          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1184,9 +1190,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Provides the current channel layouts of this audio processor. </p>
 
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a2e13cc1304fce78d837abe4a8cccef61">AudioUnitHelpers::getBusesLayout()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a1c75ea500efaddff48a720d47e6c0cdc"></a>
+<a class="anchor" id="a5ccdab0242879d734cd34ab45a8ef6a5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1203,7 +1211,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>busIdx</em>&#160;</td>
+          <td class="paramname"><em>busIndex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1462,7 +1470,7 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa7553a9cafc63d68181ea5a722f3e328"></a>
+<a class="anchor" id="a59e40238c21042c81b6dcdea07f9b7e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1470,7 +1478,7 @@ template&lt;typename FloatType &gt; </div>
           <td class="memname">bool AudioProcessor::checkBusesLayoutSupported </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">BusesLayout</a> &amp;&#160;</td>
-          <td class="paramname"><em>layouts</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1504,7 +1512,7 @@ template&lt;typename FloatType &gt; </div>
 
 <p>Returns true if the Audio processor supports double precision floating point processing. </p>
 <p>The default implementation will always return false. If you return true here then you must override the double precision versions of processBlock. Additionally, you must call <a class="el" href="classAudioProcessor.html#a431488bcce04de3caf9f873fe0efbb92" title="Returns the precision-mode of the processor. ">getProcessingPrecision()</a> in your prepareToPlay method to determine the precision with which you need to allocate your internal buffers. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a431488bcce04de3caf9f873fe0efbb92" title="Returns the precision-mode of the processor. ">getProcessingPrecision</a>, <a class="el" href="classAudioProcessor.html#acc479cabc500719f742fe29a1beb9b11" title="Changes the processing precision of the receiver. ">setProcessingPrecision</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a431488bcce04de3caf9f873fe0efbb92" title="Returns the precision-mode of the processor. ">getProcessingPrecision</a>, <a class="el" href="classAudioProcessor.html#a3ae51e20ee91b1383bc4d6a3789ae119" title="Changes the processing precision of the receiver. ">setProcessingPrecision</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classAudioProcessorGraph.html#a8feab3ff67b9aac5bb00296189c946a8">AudioProcessorGraph</a>, and <a class="el" href="classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a2b542a902ffb09ac772a175725997e79">AudioProcessorGraph::AudioGraphIOProcessor</a>.</p>
 
@@ -1533,7 +1541,7 @@ template&lt;typename FloatType &gt; </div>
 
 <p>Returns the precision-mode of the processor. </p>
 <p>Depending on the result of this method you MUST call the corresponding version of processBlock. The default processing precision is single precision. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#acc479cabc500719f742fe29a1beb9b11" title="Changes the processing precision of the receiver. ">setProcessingPrecision</a>, <a class="el" href="classAudioProcessor.html#a8481c6767076b20c25de25bbf0469114" title="Returns true if the Audio processor supports double precision floating point processing. ">supportsDoublePrecisionProcessing</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a3ae51e20ee91b1383bc4d6a3789ae119" title="Changes the processing precision of the receiver. ">setProcessingPrecision</a>, <a class="el" href="classAudioProcessor.html#a8481c6767076b20c25de25bbf0469114" title="Returns true if the Audio processor supports double precision floating point processing. ">supportsDoublePrecisionProcessing</a> </dd></dl>
 
 </div>
 </div>
@@ -1564,7 +1572,7 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="acc479cabc500719f742fe29a1beb9b11"></a>
+<a class="anchor" id="a3ae51e20ee91b1383bc4d6a3789ae119"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1575,7 +1583,7 @@ template&lt;typename FloatType &gt; </div>
           <td class="memname">void AudioProcessor::setProcessingPrecision </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classAudioProcessor.html#a212c3670b59976559237cbf629af275f">ProcessingPrecision</a>&#160;</td>
-          <td class="paramname"><em>precision</em></td><td>)</td>
+          <td class="paramname"><em>newPrecision</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1769,7 +1777,7 @@ template&lt;typename FloatType &gt; </div>
 
 <p>Returns true if the channel layout map contains a certain layout. </p>
 <p>You can use this method to help you implement the checkBusesLayoutSupported method. For example</p>
-<div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code" href="classAudioProcessor.html#aa7553a9cafc63d68181ea5a722f3e328">checkBusesLayoutSupported</a> (<span class="keyword">const</span> BusesLayout&amp; layouts)<span class="keyword"> override</span></div>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code" href="classAudioProcessor.html#a59e40238c21042c81b6dcdea07f9b7e6">checkBusesLayoutSupported</a> (<span class="keyword">const</span> BusesLayout&amp; layouts)<span class="keyword"> override</span></div>
 <div class="line"><span class="keyword"></span>{</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classAudioProcessor.html#a825862aa6d73086c8c088ec18ee6999e">containsLayout</a> (layouts, {{1,1},{2,2}});</div>
 <div class="line">}</div>
@@ -3465,7 +3473,7 @@ template&lt;int numLayouts&gt; </div>
 
 <p>This is called by the processor to specify its details before being played. </p>
 <p>You should call this function after having informed the processor about the channel and bus layouts via setBusesLayout.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a44f66b6421456aa29b65a3ad229ea0fa" title="Set the channel layouts of this audio processor. ">setBusesLayout</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#acd92c2d343de66816b290015cd15517f" title="Set the channel layouts of this audio processor. ">setBusesLayout</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>.</p>
 
@@ -3624,7 +3632,7 @@ template&lt;int numLayouts&gt; </div>
 
 <p>Callback to query if the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> supports a specific layout. </p>
 <p>This callback is called when the host probes the supported bus layouts via the checkBusesLayoutSupported method. You should override this callback if you would like to limit the layouts that your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> supports. The default implementation will accept any layout. JUCE does basic sanity checks so that the provided layouts parameter will have the same number of buses as your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a>.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#aa7553a9cafc63d68181ea5a722f3e328" title="Returns true if the Audio processor is likely to support a given layout. ">checkBusesLayoutSupported</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a59e40238c21042c81b6dcdea07f9b7e6" title="Returns true if the Audio processor is likely to support a given layout. ">checkBusesLayoutSupported</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classAudioProcessor.html#a2976f881dd3ae2f96f70cf821b0d589b">canApplyBusesLayout()</a>.</p>
 
@@ -3658,7 +3666,7 @@ template&lt;int numLayouts&gt; </div>
 <p>The default implementation will simply call isBusesLayoutSupported.</p>
 <p>You only need to override this method if there is a chance that your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> may not accept a layout although you have previously claimed to support it via the isBusesLayoutSupported callback. This can occur if your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a>'s supported layouts depend on other plug-in parameters which may have changed since the last call to isBusesLayoutSupported, such as the format of an audio file which can be selected by the user in the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a>'s editor. This callback gives the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> a last chance to reject a layout if conditions have changed as it is always called just before the actual layout change.</p>
 <p>As it is never called while the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a> is processing audio, it can also be used for AudioProcessors which wrap other plug-in formats to apply the current layout to the underlying plug-in. This callback gives such AudioProcessors a chance to reject the layout change should an error occur with the underlying plug-in during the layout change.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a2eee96c0d18913e18fb353bf868bcad2" title="Callback to query if the AudioProcessor supports a specific layout. ">isBusesLayoutSupported</a>, <a class="el" href="classAudioProcessor.html#a44f66b6421456aa29b65a3ad229ea0fa" title="Set the channel layouts of this audio processor. ">setBusesLayout</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#a2eee96c0d18913e18fb353bf868bcad2" title="Callback to query if the AudioProcessor supports a specific layout. ">isBusesLayoutSupported</a>, <a class="el" href="classAudioProcessor.html#acd92c2d343de66816b290015cd15517f" title="Set the channel layouts of this audio processor. ">setBusesLayout</a> </dd></dl>
 
 <p>References <a class="el" href="classAudioProcessor.html#a2eee96c0d18913e18fb353bf868bcad2">isBusesLayoutSupported()</a>.</p>
 
@@ -3788,7 +3796,7 @@ template&lt;int numLayouts&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:01 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

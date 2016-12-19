@@ -57,10 +57,10 @@ var searchData=
   ['rsakey',['RSAKey',['../classRSAKey.html',1,'']]],
   ['rule',['Rule',['../structRuleBasedTopologySource_1_1Rule.html',1,'RuleBasedTopologySource']]],
   ['rule',['Rule',['../structjuce_1_1RuleBasedTopologySource_1_1Rule.html',1,'juce::RuleBasedTopologySource']]],
-  ['rulebasedtopologysource',['RuleBasedTopologySource',['../classjuce_1_1RuleBasedTopologySource.html',1,'juce']]],
   ['rulebasedtopologysource',['RuleBasedTopologySource',['../classRuleBasedTopologySource.html',1,'']]],
+  ['rulebasedtopologysource',['RuleBasedTopologySource',['../classjuce_1_1RuleBasedTopologySource.html',1,'juce']]],
   ['run',['Run',['../classTextLayout_1_1Run.html',1,'TextLayout']]],
-  ['runner',['Runner',['../structjuce_1_1littlefoot_1_1Runner.html',1,'juce::littlefoot']]],
   ['runner',['Runner',['../structlittlefoot_1_1Runner.html',1,'littlefoot']]],
+  ['runner',['Runner',['../structjuce_1_1littlefoot_1_1Runner.html',1,'juce::littlefoot']]],
   ['runtimepermissions',['RuntimePermissions',['../classRuntimePermissions.html',1,'']]]
 ];

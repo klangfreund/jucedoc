@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -95,6 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Represents a local file or directory.  
  <a href="classFile.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFile_1_1NaturalFileComparator.html">NaturalFileComparator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a2e3d1ed8a9022434f3ddb7d34b24198c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#a2e3d1ed8a9022434f3ddb7d34b24198c">TypesOfFileToFind</a> { <a class="el" href="classFile.html#a2e3d1ed8a9022434f3ddb7d34b24198ca35b223e26e0f30ee49e320b60af41965">findDirectories</a> = 1, 
@@ -759,6 +765,8 @@ Static Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true only if the file is a directory which actually exists, so false if it's a file or doesn't exist at all </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classFile.html#a44ecfb6abf4c56065e773785787f2fb0" title="Checks whether the file actually exists. ">exists</a>, <a class="el" href="classFile.html#a2810f7ad22c4cb4e8927dae25bd53345" title="Checks whether the file exists and is a file rather than a directory. ">existsAsFile</a> </dd></dl>
 
+<p>Referenced by <a class="el" href="structFile_1_1NaturalFileComparator.html#a9450d36ba8fbad91b35144761058e9a6">File::NaturalFileComparator::compareElements()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4e368252255a9310aceac2aca02ed238"></a>
@@ -832,7 +840,7 @@ Static Public Attributes</h2></td></tr>
 <p>If you just want the file's name, you should use <a class="el" href="classFile.html#aef4bc6319861669081767d0efcd427db" title="Returns the last section of the pathname. ">getFileName()</a> or <a class="el" href="classFile.html#a93ab669b92bba0ca0517c2b54e98242a" title="Returns the last part of the filename, without its file extension. ">getFileNameWithoutExtension()</a>.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classFile.html#aef4bc6319861669081767d0efcd427db" title="Returns the last section of the pathname. ">getFileName</a>, <a class="el" href="classFile.html#a634ce2ebe99d6d64b18b9d557b389350" title="Creates a relative path that refers to a file relatively to a given directory. ">getRelativePathFrom</a> </dd></dl>
 
-<p>Referenced by <a class="el" href="classPluginHostType.html#a6060f772f5cb2c53589c1acc43815426">PluginHostType::getHostPath()</a>, and <a class="el" href="classStandalonePluginHolder.html#a51b7121cdd9169e12d633fd09930ad86">StandalonePluginHolder::setLastFile()</a>.</p>
+<p>Referenced by <a class="el" href="structFile_1_1NaturalFileComparator.html#a9450d36ba8fbad91b35144761058e9a6">File::NaturalFileComparator::compareElements()</a>, <a class="el" href="classPluginHostType.html#a6060f772f5cb2c53589c1acc43815426">PluginHostType::getHostPath()</a>, and <a class="el" href="classStandalonePluginHolder.html#a51b7121cdd9169e12d633fd09930ad86">StandalonePluginHolder::setLastFile()</a>.</p>
 
 </div>
 </div>
@@ -1518,6 +1526,7 @@ Static Public Attributes</h2></td></tr>
 <p>Creates an empty file if it doesn't already exist. </p>
 <p>If the file that this object refers to doesn't exist, this will create a file of zero size.</p>
 <p>If it already exists or is a directory, this method will do nothing.</p>
+<p>If the parent directories of the <a class="el" href="classFile.html" title="Represents a local file or directory. ">File</a> do not exist then this method will recursively create the parent directories.</p>
 <dl class="section return"><dt>Returns</dt><dd>a result to indicate whether the file was created successfully, or an error message if it failed. </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classFile.html#abf66b1a134ee14b98006e85fede901f9" title="Creates a new directory for this filename. ">createDirectory</a> </dd></dl>
 
@@ -2690,7 +2699,7 @@ Static Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:05 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:44 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

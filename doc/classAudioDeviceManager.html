@@ -127,9 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb846b502125744f4ea04f06cde5d92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#abb846b502125744f4ea04f06cde5d92c">createStateXml</a> () const </td></tr>
 <tr class="memdesc:abb846b502125744f4ea04f06cde5d92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some XML representing the current state of the manager.  <a href="#abb846b502125744f4ea04f06cde5d92c">More...</a><br/></td></tr>
 <tr class="separator:abb846b502125744f4ea04f06cde5d92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9363240e6dcfe1462c6b97366e03ae7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a9363240e6dcfe1462c6b97366e03ae7d">getAudioDeviceSetup</a> (<a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> &amp;result)</td></tr>
-<tr class="memdesc:a9363240e6dcfe1462c6b97366e03ae7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device properties that are in use.  <a href="#a9363240e6dcfe1462c6b97366e03ae7d">More...</a><br/></td></tr>
-<tr class="separator:a9363240e6dcfe1462c6b97366e03ae7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f207e942152fdb1080ea5abcb1ed2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a20f207e942152fdb1080ea5abcb1ed2f">getAudioDeviceSetup</a> (<a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> &amp;result) const </td></tr>
+<tr class="memdesc:a20f207e942152fdb1080ea5abcb1ed2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device properties that are in use.  <a href="#a20f207e942152fdb1080ea5abcb1ed2f">More...</a><br/></td></tr>
+<tr class="separator:a20f207e942152fdb1080ea5abcb1ed2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0249d178aa5448ad2e949ae059c461"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#aef0249d178aa5448ad2e949ae059c461">setAudioDeviceSetup</a> (const <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> &amp;newSetup, bool treatAsChosenDevice)</td></tr>
 <tr class="memdesc:aef0249d178aa5448ad2e949ae059c461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current device or its settings.  <a href="#aef0249d178aa5448ad2e949ae059c461">More...</a><br/></td></tr>
 <tr class="separator:aef0249d178aa5448ad2e949ae059c461"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,7 +402,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9363240e6dcfe1462c6b97366e03ae7d"></a>
+<a class="anchor" id="a20f207e942152fdb1080ea5abcb1ed2f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -411,7 +411,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> &amp;&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -446,7 +446,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Changes the current device or its settings. </p>
-<p>If you want to change a device property, like the current sample rate or block size, you can call <a class="el" href="classAudioDeviceManager.html#a9363240e6dcfe1462c6b97366e03ae7d" title="Returns the current device properties that are in use. ">getAudioDeviceSetup()</a> to retrieve the current settings, then tweak the appropriate fields in the <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html" title="This structure holds a set of properties describing the current audio setup. ">AudioDeviceSetup</a> structure, and pass it back into this method to apply the new settings.</p>
+<p>If you want to change a device property, like the current sample rate or block size, you can call <a class="el" href="classAudioDeviceManager.html#a20f207e942152fdb1080ea5abcb1ed2f" title="Returns the current device properties that are in use. ">getAudioDeviceSetup()</a> to retrieve the current settings, then tweak the appropriate fields in the <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html" title="This structure holds a set of properties describing the current audio setup. ">AudioDeviceSetup</a> structure, and pass it back into this method to apply the new settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newSetup</td><td>the settings that you'd like to use </td></tr>
@@ -455,7 +455,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an error message if anything went wrong, or an empty string if it worked ok.</dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioDeviceManager.html#a9363240e6dcfe1462c6b97366e03ae7d" title="Returns the current device properties that are in use. ">getAudioDeviceSetup</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioDeviceManager.html#a20f207e942152fdb1080ea5abcb1ed2f" title="Returns the current device properties that are in use. ">getAudioDeviceSetup</a> </dd></dl>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:00 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

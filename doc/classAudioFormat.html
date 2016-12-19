@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed">createMemoryMappedReader</a> (const <a class="el" href="classFile.html">File</a> &amp;file)</td></tr>
 <tr class="memdesc:a3f307a62245c7457877d934e2ff1ceed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to create a <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a>, if possible for this format.  <a href="#a3f307a62245c7457877d934e2ff1ceed">More...</a><br/></td></tr>
 <tr class="separator:a3f307a62245c7457877d934e2ff1ceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74812908f1121d92dc4bd22bdf0f383"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
+<a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#ac74812908f1121d92dc4bd22bdf0f383">createMemoryMappedReader</a> (<a class="el" href="classFileInputStream.html">FileInputStream</a> *fin)</td></tr>
+<tr class="separator:ac74812908f1121d92dc4bd22bdf0f383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93a8144520e5bd2902a5daa97cc443b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAudioFormatWriter.html">AudioFormatWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#ae93a8144520e5bd2902a5daa97cc443b">createWriterFor</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *streamToWriteTo, double sampleRateToUse, unsigned int numberOfChannels, int bitsPerSample, const <a class="el" href="classStringPairArray.html">StringPairArray</a> &amp;metadataValues, int qualityOptionIndex)=0</td></tr>
 <tr class="memdesc:ae93a8144520e5bd2902a5daa97cc443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create an object that can write to a stream with this audio format.  <a href="#ae93a8144520e5bd2902a5daa97cc443b">More...</a><br/></td></tr>
 <tr class="separator:ae93a8144520e5bd2902a5daa97cc443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -585,6 +588,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac74812908f1121d92dc4bd22bdf0f383"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classMemoryMappedAudioFormatReader.html">MemoryMappedAudioFormatReader</a>* AudioFormat::createMemoryMappedReader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFileInputStream.html">FileInputStream</a> *&#160;</td>
+          <td class="paramname"><em>fin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classWavAudioFormat.html#afd00c047b6917927a94799bd8c97328b">WavAudioFormat</a>, and <a class="el" href="classAiffAudioFormat.html#a94d7ffff90060f2964d96235b25ed1af">AiffAudioFormat</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae93a8144520e5bd2902a5daa97cc443b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -668,7 +697,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:00 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

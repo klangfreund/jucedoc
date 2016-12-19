@@ -634,6 +634,7 @@
     <class kind="struct">juce::littlefoot::Compiler</class>
     <class kind="struct">juce::littlefoot::Compiler::CodeGenerator::Marker</class>
     <class kind="struct">juce::littlefoot::Compiler::CodeGenerator::MarkerAndAddress</class>
+    <class kind="struct">juce::littlefoot::Compiler::Statement::Visitor</class>
     <class kind="struct">juce::littlefoot::Compiler::FunctionCall::BuiltInFunction</class>
     <class kind="struct">juce::littlefoot::LittleFootRemoteHeap</class>
     <class kind="struct">juce::DrumPadGridProgram</class>
@@ -962,6 +963,13 @@
       <name>debugMode</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a43b1837fd2667d8513becbb6a7060a9da7c69daf30c09e98f789122bf75ca0a36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>saveProgramAsDefault</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a43b1837fd2667d8513becbb6a7060a9dacf43dc3b77f199062ee683b90f54ba0c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -1772,6 +1780,7 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/files/</path>
     <filename>juce__File_8h</filename>
     <class kind="class">File</class>
+    <class kind="struct">File::NaturalFileComparator</class>
   </compound>
   <compound kind="file">
     <name>juce_FileBasedDocument.h</name>
@@ -2344,19 +2353,11 @@
     <class kind="class">ListBox</class>
   </compound>
   <compound kind="file">
-    <name>juce_core/containers/juce_ListenerList.h</name>
+    <name>juce_ListenerList.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_core/containers/</path>
-    <filename>juce__core_2containers_2juce__ListenerList_8h</filename>
+    <filename>juce__ListenerList_8h</filename>
     <class kind="class">ListenerList</class>
-    <class kind="class">ListenerList::DummyBailOutChecker</class>
-    <class kind="class">ListenerList::Iterator</class>
-  </compound>
-  <compound kind="file">
-    <name>juce_events/broadcasters/juce_ListenerList.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_events/broadcasters/</path>
-    <filename>juce__events_2broadcasters_2juce__ListenerList_8h</filename>
-    <class kind="class">ListenerList</class>
-    <class kind="class">ListenerList::DummyBailOutChecker</class>
+    <class kind="struct">ListenerList::DummyBailOutChecker</class>
     <class kind="class">ListenerList::Iterator</class>
   </compound>
   <compound kind="file">
@@ -2366,6 +2367,7 @@
     <class kind="struct">littlefoot::Compiler</class>
     <class kind="struct">littlefoot::Compiler::CodeGenerator::Marker</class>
     <class kind="struct">littlefoot::Compiler::CodeGenerator::MarkerAndAddress</class>
+    <class kind="struct">littlefoot::Compiler::Statement::Visitor</class>
     <class kind="struct">littlefoot::Compiler::FunctionCall::BuiltInFunction</class>
     <namespace>littlefoot</namespace>
     <member kind="define">
@@ -5770,6 +5772,8 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/network/</path>
     <filename>juce__URL_8h</filename>
     <class kind="class">URL</class>
+    <class kind="class">URL::DownloadTask</class>
+    <class kind="struct">URL::DownloadTask::Listener</class>
   </compound>
   <compound kind="file">
     <name>juce_Uuid.h</name>
@@ -5822,45 +5826,45 @@
     <class kind="struct">VariantConverter</class>
     <class kind="struct">VariantConverter&lt; String &gt;</class>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator==</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>a6cfbc139216a6498771c6b8212d9d175</anchor>
+      <anchor>ab4b83937cedb23e96fd4590a08e2b7a7</anchor>
       <arglist>(const var &amp;, const var &amp;) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator!=</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>a558cef5eaa37c85f916d0b6e7cdea20b</anchor>
+      <anchor>ae1260564dd5dd8e181cfac86bec046f5</anchor>
       <arglist>(const var &amp;, const var &amp;) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator==</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>a9512da370487e7937afa14620a0dac01</anchor>
+      <anchor>a8512deaef9b5f1f12a8a45403a72e508</anchor>
       <arglist>(const var &amp;, const String &amp;)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator!=</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>ac4d123c956999ef6e214b6cc4e04cbe2</anchor>
+      <anchor>a4672f12ca2fdc31e9ca7188101d35a95</anchor>
       <arglist>(const var &amp;, const String &amp;)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator==</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>a22fc40439437c5a8370ffba66b9b0897</anchor>
+      <anchor>a48fb19d379d327812bd68823c7ccf694</anchor>
       <arglist>(const var &amp;, const char *)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool</type>
       <name>operator!=</name>
       <anchorfile>juce__Variant_8h.html</anchorfile>
-      <anchor>a6dfc265a125445b071677b9b2c80d337</anchor>
+      <anchor>a5be7dbc7fd3b5935ad0aca0d8d39e425</anchor>
       <arglist>(const var &amp;, const char *)</arglist>
     </member>
   </compound>
@@ -7639,6 +7643,13 @@
     <path>/home/juce/data/res/development/juce/modules/juce_gui_extra/misc/</path>
     <filename>juce__WebBrowserComponent_8h</filename>
     <class kind="class">WebBrowserComponent</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_WebInputStream.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_core/network/</path>
+    <filename>juce__WebInputStream_8h</filename>
+    <class kind="class">WebInputStream</class>
+    <class kind="class">WebInputStream::Listener</class>
   </compound>
   <compound kind="file">
     <name>juce_Whirlpool.h</name>
@@ -9681,6 +9692,13 @@
       <arglist>(const File &amp;) override</arglist>
     </member>
     <member kind="function">
+      <type>MemoryMappedAudioFormatReader *</type>
+      <name>createMemoryMappedReader</name>
+      <anchorfile>classAiffAudioFormat.html</anchorfile>
+      <anchor>a94d7ffff90060f2964d96235b25ed1af</anchor>
+      <arglist>(FileInputStream *) override</arglist>
+    </member>
+    <member kind="function">
       <type>AudioFormatWriter *</type>
       <name>createWriterFor</name>
       <anchorfile>classAiffAudioFormat.html</anchorfile>
@@ -10249,6 +10267,13 @@
       <anchorfile>structAlertWindow_1_1LookAndFeelMethods.html</anchorfile>
       <anchor>aa8cfb3925ebd68bcc2ff2db1b80e661f</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Array&lt; int &gt;</type>
+      <name>getWidthsForTextButtons</name>
+      <anchorfile>structAlertWindow_1_1LookAndFeelMethods.html</anchorfile>
+      <anchor>acdb865ab84199f3a019b115afcfbfd63</anchor>
+      <arglist>(AlertWindow &amp;, const Array&lt; TextButton * &gt; &amp;)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>
@@ -14478,8 +14503,8 @@
       <type>void</type>
       <name>getAudioDeviceSetup</name>
       <anchorfile>classAudioDeviceManager.html</anchorfile>
-      <anchor>a9363240e6dcfe1462c6b97366e03ae7d</anchor>
-      <arglist>(AudioDeviceSetup &amp;result)</arglist>
+      <anchor>a20f207e942152fdb1080ea5abcb1ed2f</anchor>
+      <arglist>(AudioDeviceSetup &amp;result) const </arglist>
     </member>
     <member kind="function">
       <type>String</type>
@@ -14861,6 +14886,13 @@
       <anchorfile>classAudioFormat.html</anchorfile>
       <anchor>a3f307a62245c7457877d934e2ff1ceed</anchor>
       <arglist>(const File &amp;file)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MemoryMappedAudioFormatReader *</type>
+      <name>createMemoryMappedReader</name>
+      <anchorfile>classAudioFormat.html</anchorfile>
+      <anchor>ac74812908f1121d92dc4bd22bdf0f383</anchor>
+      <arglist>(FileInputStream *fin)</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual AudioFormatWriter *</type>
@@ -15757,8 +15789,8 @@
       <type></type>
       <name>AudioParameterBool</name>
       <anchorfile>classAudioParameterBool.html</anchorfile>
-      <anchor>a31db94b4b6b67312fb12ffc273925cd7</anchor>
-      <arglist>(String parameterID, String name, bool defaultValue)</arglist>
+      <anchor>a6c07f65cfa7b3a5d3188dfe05e03187e</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, bool defaultValue, const String &amp;label=String())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -15792,8 +15824,8 @@
       <type></type>
       <name>AudioProcessorParameterWithID</name>
       <anchorfile>classAudioProcessorParameterWithID.html</anchorfile>
-      <anchor>a26d780f6300ec2ff6433c95b3493fb17</anchor>
-      <arglist>(String parameterID, String name)</arglist>
+      <anchor>a53c2aae8e2b36a775c04e79822de5302</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, const String &amp;label=String())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -15895,8 +15927,8 @@
       <type></type>
       <name>AudioParameterChoice</name>
       <anchorfile>classAudioParameterChoice.html</anchorfile>
-      <anchor>ae79f86d725ad17b87485c16fdbb6d3f9</anchor>
-      <arglist>(String parameterID, String name, const StringArray &amp;choices, int defaultItemIndex)</arglist>
+      <anchor>ad6f5b50a043daa33f66d6807147c7b73</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, const StringArray &amp;choices, int defaultItemIndex, const String &amp;label=String())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -15956,8 +15988,8 @@
       <type></type>
       <name>AudioParameterFloat</name>
       <anchorfile>classAudioParameterFloat.html</anchorfile>
-      <anchor>ad73605e2ffbdea9534ce9d07acadea2b</anchor>
-      <arglist>(String parameterID, String name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue)</arglist>
+      <anchor>a5c567a8c885ff33b5529d1e2cb8f0ea5</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue, const String &amp;label=String())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -16010,8 +16042,8 @@
       <type></type>
       <name>AudioParameterInt</name>
       <anchorfile>classAudioParameterInt.html</anchorfile>
-      <anchor>a7635aa7a3b13b66201b7a605c7c6ce40</anchor>
-      <arglist>(String parameterID, String name, int minValue, int maxValue, int defaultValue)</arglist>
+      <anchor>aaa34ef972ce508f86d8f637da0d221a7</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, int minValue, int maxValue, int defaultValue, const String &amp;label=String())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -16590,15 +16622,15 @@
       <type>virtual bool</type>
       <name>canAddBus</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>af7ee880e548222608a4b3193382fcbd8</anchor>
-      <arglist>(bool) const </arglist>
+      <anchor>af2df1b7ab111642230ed749d8017b4a9</anchor>
+      <arglist>(bool isInput) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>canRemoveBus</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>a55316adfdb876138da109d61464bd79c</anchor>
-      <arglist>(bool) const </arglist>
+      <anchor>a48440b8736885e0e377569c0796628b1</anchor>
+      <arglist>(bool isInput) const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -16618,15 +16650,15 @@
       <type>bool</type>
       <name>setBusesLayout</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>a44f66b6421456aa29b65a3ad229ea0fa</anchor>
-      <arglist>(const BusesLayout &amp;arr)</arglist>
+      <anchor>acd92c2d343de66816b290015cd15517f</anchor>
+      <arglist>(const BusesLayout &amp;)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>setBusesLayoutWithoutEnabling</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>a4fadfbcdf40b7542a1837744a93b0cbe</anchor>
-      <arglist>(const BusesLayout &amp;arr)</arglist>
+      <anchor>a5ac4a4f4640b3fb1be6b0235a3c48f9c</anchor>
+      <arglist>(const BusesLayout &amp;)</arglist>
     </member>
     <member kind="function">
       <type>BusesLayout</type>
@@ -16639,8 +16671,8 @@
       <type>AudioChannelSet</type>
       <name>getChannelLayoutOfBus</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>a1c75ea500efaddff48a720d47e6c0cdc</anchor>
-      <arglist>(bool isInput, int busIdx) const noexcept</arglist>
+      <anchor>a5ccdab0242879d734cd34ab45a8ef6a5</anchor>
+      <arglist>(bool isInput, int busIndex) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -16695,8 +16727,8 @@
       <type>bool</type>
       <name>checkBusesLayoutSupported</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>aa7553a9cafc63d68181ea5a722f3e328</anchor>
-      <arglist>(const BusesLayout &amp;layouts) const </arglist>
+      <anchor>a59e40238c21042c81b6dcdea07f9b7e6</anchor>
+      <arglist>(const BusesLayout &amp;) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
@@ -16723,8 +16755,8 @@
       <type>void</type>
       <name>setProcessingPrecision</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
-      <anchor>acc479cabc500719f742fe29a1beb9b11</anchor>
-      <arglist>(ProcessingPrecision precision) noexcept</arglist>
+      <anchor>a3ae51e20ee91b1383bc4d6a3789ae119</anchor>
+      <arglist>(ProcessingPrecision newPrecision) noexcept</arglist>
     </member>
     <member kind="function">
       <type>AudioPlayHead *</type>
@@ -17625,22 +17657,22 @@
       <type>void</type>
       <name>addBus</name>
       <anchorfile>structAudioProcessor_1_1BusesProperties.html</anchorfile>
-      <anchor>a5e945d82509bf8e32454b325db59e692</anchor>
-      <arglist>(bool isInput, const String &amp;name, const AudioChannelSet &amp;dfltLayout, bool isActivatedByDefault=true)</arglist>
+      <anchor>a234f2c3949f1d569d166c195babbfd93</anchor>
+      <arglist>(bool isInput, const String &amp;name, const AudioChannelSet &amp;defaultLayout, bool isActivatedByDefault=true)</arglist>
     </member>
     <member kind="function">
       <type>BusesProperties</type>
       <name>withInput</name>
       <anchorfile>structAudioProcessor_1_1BusesProperties.html</anchorfile>
-      <anchor>a9ca04ea589c5a6c2efbb98f43bf3da2c</anchor>
-      <arglist>(const String &amp;name, const AudioChannelSet &amp;dfltLayout, bool isActivatedByDefault=true) const </arglist>
+      <anchor>a70c427e169c3e6bef1eac27408814304</anchor>
+      <arglist>(const String &amp;name, const AudioChannelSet &amp;defaultLayout, bool isActivatedByDefault=true) const </arglist>
     </member>
     <member kind="function">
       <type>BusesProperties</type>
       <name>withOutput</name>
       <anchorfile>structAudioProcessor_1_1BusesProperties.html</anchorfile>
-      <anchor>ad063c97b568070e97abae887192fa517</anchor>
-      <arglist>(const String &amp;name, const AudioChannelSet &amp;dfltLayout, bool isActivatedByDefault=true) const </arglist>
+      <anchor>a9c0d98bbeb798355c242cc9ea4e006c2</anchor>
+      <arglist>(const String &amp;name, const AudioChannelSet &amp;defaultLayout, bool isActivatedByDefault=true) const </arglist>
     </member>
     <member kind="variable">
       <type>Array&lt; BusProperties &gt;</type>
@@ -18685,8 +18717,8 @@
       <type>AudioProcessorParameter *</type>
       <name>createAndAddParameter</name>
       <anchorfile>classAudioProcessorValueTreeState.html</anchorfile>
-      <anchor>aaa53f5612a40298fb495aae15899c92a</anchor>
-      <arglist>(String parameterID, String parameterName, String labelText, NormalisableRange&lt; float &gt; valueRange, float defaultValue, std::function&lt; String(float)&gt; valueToTextFunction, std::function&lt; float(const String &amp;)&gt; textToValueFunction)</arglist>
+      <anchor>a1923a66bf5bbc5084bcab07f9dbb5972</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;parameterName, const String &amp;labelText, NormalisableRange&lt; float &gt; valueRange, float defaultValue, std::function&lt; String(float)&gt; valueToTextFunction, std::function&lt; float(const String &amp;)&gt; textToValueFunction)</arglist>
     </member>
     <member kind="function">
       <type>AudioProcessorParameter *</type>
@@ -19604,6 +19636,27 @@
       <anchorfile>structAudioUnitHelpers.html</anchorfile>
       <anchor>a72c5a76c5a1721f88d9ee0a3e0656926</anchor>
       <arglist>(const AudioProcessor &amp;processor)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>getBusCount</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a6ec130e790d87fca3c0a34f60eba216c</anchor>
+      <arglist>(const AudioProcessor *juceFilter, bool isInput)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>setBusesLayout</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>ad1e17712bdffc5d7a180c09d561329fa</anchor>
+      <arglist>(AudioProcessor *juceFilter, const AudioProcessor::BusesLayout &amp;requestedLayouts)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioProcessor::BusesLayout</type>
+      <name>getBusesLayout</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a2e13cc1304fce78d837abe4a8cccef61</anchor>
+      <arglist>(const AudioProcessor *juceFilter)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -20597,6 +20650,13 @@
       <anchor>a2c6b3c425b9b8cb708b23e553fa81324a98ca592426170135a53fdd46bc6d2a53</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>seaboardBlock</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a2c6b3c425b9b8cb708b23e553fa81324ad44a5d974e8503f978e605adc27ca156</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>juce::ReferenceCountedObjectPtr&lt; Block &gt;</type>
       <name>Ptr</name>
@@ -21263,8 +21323,8 @@
       <type>static bool</type>
       <name>open</name>
       <anchorfile>classBluetoothMidiDevicePairingDialogue.html</anchorfile>
-      <anchor>a475ec8a971d17bd84c21047d143066b5</anchor>
-      <arglist>()</arglist>
+      <anchor>a368ee42f0c472a93a1654643ee308ead</anchor>
+      <arglist>(ModalComponentManager::Callback *exitCallback=nullptr)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
@@ -28641,11 +28701,11 @@
       <anchor>ac21bb836780eb59d049e360fb843244e</anchor>
       <arglist>(const String &amp;componentName=String())</arglist>
     </member>
-    <member kind="function">
-      <type></type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
       <name>~ComboBox</name>
       <anchorfile>classComboBox.html</anchorfile>
-      <anchor>ad8cf2a05b0649c54dd9dd9b6577112a0</anchor>
+      <anchor>ad604f1b99d025de79d0b768c310777f5</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -28837,12 +28897,12 @@
       <anchor>a033d1799a5327fcdae0ecf9a364f0914</anchor>
       <arglist>() const noexcept</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>addItemsToMenu</name>
+    <member kind="function">
+      <type>PopupMenu *</type>
+      <name>getRootMenu</name>
       <anchorfile>classComboBox.html</anchorfile>
-      <anchor>afcf6a2f97151604222ca60f3bcab4679</anchor>
-      <arglist>(PopupMenu &amp;) const </arglist>
+      <anchor>ada8ab191b09811f989a0df42e26dcd8b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -33730,15 +33790,15 @@
       <type>virtual void</type>
       <name>dragOperationStarted</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>a7cb7a19c901f8b48b321f4301bcd0150</anchor>
-      <arglist>()</arglist>
+      <anchor>a5ec83ecb9f3211c0dc7ba6d29edd395a</anchor>
+      <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>dragOperationEnded</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>a5e0c91e9c1518a3d7bc49624f3ead768</anchor>
-      <arglist>()</arglist>
+      <anchor>ab132c0a3a3c349d5de9ed737c0911a33</anchor>
+      <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -37341,6 +37401,7 @@
   <compound kind="class">
     <name>File</name>
     <filename>classFile.html</filename>
+    <class kind="struct">File::NaturalFileComparator</class>
     <member kind="enumeration">
       <type></type>
       <name>TypesOfFileToFind</name>
@@ -38144,6 +38205,31 @@
       <name>separatorString</name>
       <anchorfile>classFile.html</anchorfile>
       <anchor>a66e8bff47d42f5b093b88eacacb573ce</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>File::NaturalFileComparator</name>
+    <filename>structFile_1_1NaturalFileComparator.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NaturalFileComparator</name>
+      <anchorfile>structFile_1_1NaturalFileComparator.html</anchorfile>
+      <anchor>adf4f4af4bc21c7efbc6d20d89b233f0e</anchor>
+      <arglist>(bool shouldPutFoldersFirst) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>compareElements</name>
+      <anchorfile>structFile_1_1NaturalFileComparator.html</anchorfile>
+      <anchor>a9450d36ba8fbad91b35144761058e9a6</anchor>
+      <arglist>(const File &amp;firstFile, const File &amp;secondFile) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>foldersFirst</name>
+      <anchorfile>structFile_1_1NaturalFileComparator.html</anchorfile>
+      <anchor>a531f83d3078a594f5ebc87a7fe7ad28a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -41335,6 +41421,20 @@
     </member>
     <member kind="function">
       <type>FlexItem</type>
+      <name>withMinWidth</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>a615d216f3af0de65b34cc1da628a673f</anchor>
+      <arglist>(float newMinWidth) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
+      <name>withMaxWidth</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>a87660b7a54b701bbf1301757cc3b26d2</anchor>
+      <arglist>(float newMaxWidth) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
       <name>withHeight</name>
       <anchorfile>classFlexItem.html</anchorfile>
       <anchor>a7bc47fcc65e9d321c418b27c308e02ad</anchor>
@@ -41342,10 +41442,38 @@
     </member>
     <member kind="function">
       <type>FlexItem</type>
+      <name>withMinHeight</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>a25fbad6471a495f3f0e02cc7fdfb06e5</anchor>
+      <arglist>(float newMinHeight) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
+      <name>withMaxHeight</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>a05d7572270d059f040478f364cf23137</anchor>
+      <arglist>(float newMaxHeight) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
       <name>withMargin</name>
       <anchorfile>classFlexItem.html</anchorfile>
       <anchor>a13e192e7981da37cceaa5a72232c55b6</anchor>
       <arglist>(Margin) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
+      <name>withOrder</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>af85d008100e1919ce4868f0c7070fc28</anchor>
+      <arglist>(int newOrder) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FlexItem</type>
+      <name>withAlignSelf</name>
+      <anchorfile>classFlexItem.html</anchorfile>
+      <anchor>a2560af46435f2fe6c263a81f39eaa614</anchor>
+      <arglist>(AlignSelf newAlignSelf) const noexcept</arglist>
     </member>
     <member kind="variable">
       <type>Rectangle&lt; float &gt;</type>
@@ -41483,6 +41611,13 @@
       <anchorfile>structFlexItem_1_1Margin.html</anchorfile>
       <anchor>a2adf829c2d6070c7383fe8476902e74d</anchor>
       <arglist>(float size) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Margin</name>
+      <anchorfile>structFlexItem_1_1Margin.html</anchorfile>
+      <anchor>a71f9a0f6a63d444376ab9e7ecd42a304</anchor>
+      <arglist>(float top, float right, float bottom, float left) noexcept</arglist>
     </member>
     <member kind="variable">
       <type>float</type>
@@ -48978,6 +49113,13 @@
       <anchor>a8aafbd8d9ac756df365f43b7e9ffb67d</anchor>
       <arglist>(size_t offset)=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>saveProgramAsDefault</name>
+      <anchorfile>classLEDGrid.html</anchorfile>
+      <anchor>a484cc57fb7df8ca865bf8058989af0fd</anchor>
+      <arglist>()=0</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>setRenderer</name>
@@ -49332,8 +49474,8 @@
       <type>Point&lt; ValueType &gt;</type>
       <name>getPointAlongLineProportionally</name>
       <anchorfile>classLine.html</anchorfile>
-      <anchor>a987efd8a7c899cbb70fe3ad20e0cc9d4</anchor>
-      <arglist>(ValueType proportionOfLength) const noexcept</arglist>
+      <anchor>ab557ce9e66f5cfbf826c0d3955e23d03</anchor>
+      <arglist>(typename Point&lt; ValueType &gt;::FloatType proportionOfLength) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>ValueType</type>
@@ -49737,7 +49879,7 @@
     <filename>classListenerList.html</filename>
     <templarg>ListenerClass</templarg>
     <templarg>ArrayType</templarg>
-    <class kind="class">ListenerList::DummyBailOutChecker</class>
+    <class kind="struct">ListenerList::DummyBailOutChecker</class>
     <class kind="class">ListenerList::Iterator</class>
     <member kind="typedef">
       <type>ListenerList&lt; ListenerClass, ArrayType &gt;</type>
@@ -49753,20 +49895,6 @@
       <anchor>aa03db5b04e4fe0dda6e95bd9055c9705</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>ListenerList&lt; ListenerClass, ArrayType &gt;</type>
-      <name>ThisType</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a3b96ee4d2b3e77dfddce53f2451c4556</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>ListenerClass</type>
-      <name>ListenerType</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>aa03db5b04e4fe0dda6e95bd9055c9705</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>ListenerList</name>
@@ -49832,164 +49960,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>callChecked</name>
+      <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a5757f573480b5f86416f2c85bb985d7a</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a02ed7b864a523d0f3a015c0cb131564e</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>adfa011223fefc9446a4e1a68fd163233</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>af27a26ed368214fa92f7f31497a7bc9a</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a016324817b14abe106980929a8ad20b3</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a3135456a9b63353c4ac4de9fcbd214dd</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a105833e18f32cd00ee0a4aca5b35a0b3</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a5396917f4ce69ff81b3779e9ce64c751</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a18c5f7f2f18d054bbbe516e33c6a7d13</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a1e8137450a357ee0c57627d6ff963b22</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a72225f7871a1ae12c2a4ffd978aa5b5a</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a1fac37f29e7c2470f3b3b72296858ba3</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>callChecked</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a860a681326b1953803a0fc4788435596</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
-    </member>
-    <member kind="function">
-      <type>const ArrayType &amp;</type>
-      <name>getListeners</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>aae7f9efd24496a8284f6f1df4b9065bb</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>ListenerList</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a809baedf6e32eaaf1696e85e1149389f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~ListenerList</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a3b3b8138506855e80b9ebf61a032f540</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>add</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>aad67eee9d64815b62ad8ea11f6812e75</anchor>
-      <arglist>(ListenerClass *const listenerToAdd)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>remove</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>ac7d5795fb151d7470e1fb2226c7d4676</anchor>
-      <arglist>(ListenerClass *const listenerToRemove)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>size</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a4ced7631daac418522719e14a1d35b7d</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isEmpty</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>ac35c41903fa2ee45cb8f5666b6724d06</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>clear</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a8e777917d86ac8f06c6ce97e00d3ef54</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>contains</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>aa57ce8e754fd494260dd68a3ba23fb3a</anchor>
-      <arglist>(ListenerClass *const listener) const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>call</name>
-      <anchorfile>classListenerList.html</anchorfile>
-      <anchor>adb25c4b3880d1004072305edf2e08766</anchor>
-      <arglist>(void(ListenerClass::*callbackFunction)())</arglist>
+      <anchor>a77b70d2c36e1bab9a707bed97a17653c</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)())</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50000,10 +49974,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a57b707f3d08e69fa5fe346da93b89ed2</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a02ed7b864a523d0f3a015c0cb131564e</anchor>
       <arglist>(void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a842d85beb3ee7e2721c96bf1fe173202</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50014,10 +50002,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a45350c9c1450551b21829833eb0c38b3</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>af27a26ed368214fa92f7f31497a7bc9a</anchor>
       <arglist>(void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a175032777084686c2106cb42e50d2618</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50028,10 +50030,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a02b915332aed668579682ab0fabb8dc4</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a3135456a9b63353c4ac4de9fcbd214dd</anchor>
       <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a358369bb074cdca768059c3bfa007c4a</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50042,10 +50058,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a2130d4c317306606d5b509fa7de6d473</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a5396917f4ce69ff81b3779e9ce64c751</anchor>
       <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a0b9ebd1126493146a22e10b0a77d3ddf</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50056,10 +50086,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>ae23b32f91ff09fb3333c8a168fda0f04</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a1e8137450a357ee0c57627d6ff963b22</anchor>
       <arglist>(void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a267162b2e1e0aadf1ebbe63ebd4d7563</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50070,6 +50114,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a09058bf5d7d946428d1c3bb3bb7472c9</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>call</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a1fac37f29e7c2470f3b3b72296858ba3</anchor>
@@ -50077,10 +50128,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>callExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a9d13fa831fd59b6e92bbaf03185f8a5d</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>callChecked</name>
       <anchorfile>classListenerList.html</anchorfile>
       <anchor>a860a681326b1953803a0fc4788435596</anchor>
       <arglist>(const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>callCheckedExcluding</name>
+      <anchorfile>classListenerList.html</anchorfile>
+      <anchor>a925fca48c6049ae81f2cd309c05cb3a7</anchor>
+      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
     </member>
     <member kind="function">
       <type>const ArrayType &amp;</type>
@@ -50090,16 +50155,9 @@
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
-  <compound kind="class">
+  <compound kind="struct">
     <name>ListenerList::DummyBailOutChecker</name>
     <filename>structListenerList_1_1DummyBailOutChecker.html</filename>
-    <member kind="function">
-      <type>bool</type>
-      <name>shouldBailOut</name>
-      <anchorfile>structListenerList_1_1DummyBailOutChecker.html</anchorfile>
-      <anchor>a8d8093b22c3d503e1aae0a5cd59766e3</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
     <member kind="function">
       <type>bool</type>
       <name>shouldBailOut</name>
@@ -50113,41 +50171,6 @@
     <filename>classListenerList_1_1Iterator.html</filename>
     <templarg></templarg>
     <templarg></templarg>
-    <member kind="function">
-      <type></type>
-      <name>Iterator</name>
-      <anchorfile>classListenerList_1_1Iterator.html</anchorfile>
-      <anchor>aec6ff5dcf548392d46dd38b26168c79d</anchor>
-      <arglist>(const ListType &amp;listToIterate) noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Iterator</name>
-      <anchorfile>classListenerList_1_1Iterator.html</anchorfile>
-      <anchor>a6d090aa6025bf1955b936cfa24cf2057</anchor>
-      <arglist>() noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>next</name>
-      <anchorfile>classListenerList_1_1Iterator.html</anchorfile>
-      <anchor>a9791ff087b9d8f7978fd9e3a68d713b6</anchor>
-      <arglist>() noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>next</name>
-      <anchorfile>classListenerList_1_1Iterator.html</anchorfile>
-      <anchor>ae1c1247ae0215416f493b46f4a386eb9</anchor>
-      <arglist>(const BailOutCheckerType &amp;bailOutChecker) noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>ListType::ListenerType *</type>
-      <name>getListener</name>
-      <anchorfile>classListenerList_1_1Iterator.html</anchorfile>
-      <anchor>a4b5bd0f27cb7b70b294b233584c8fd63</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>Iterator</name>
@@ -51270,6 +51293,13 @@
       <anchorfile>classLookAndFeel__V2.html</anchorfile>
       <anchor>a0f9e3b00e60dd2a2a0ea8233ca75bfa0</anchor>
       <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Array&lt; int &gt;</type>
+      <name>getWidthsForTextButtons</name>
+      <anchorfile>classLookAndFeel__V2.html</anchorfile>
+      <anchor>a5599c2df5af15d6a8b7adb22313ef195</anchor>
+      <arglist>(AlertWindow &amp;, const Array&lt; TextButton * &gt; &amp;) override</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -54860,6 +54890,20 @@
       <anchorfile>classMidiFile.html</anchorfile>
       <anchor>a8d14e6df12f54918a8caf500f03fd78e</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MidiFile</name>
+      <anchorfile>classMidiFile.html</anchorfile>
+      <anchor>a018012465eb84a3cd0edfa42aad670fb</anchor>
+      <arglist>(const MidiFile &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>MidiFile &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMidiFile.html</anchorfile>
+      <anchor>a6c89da51439945a1f15bdce6163cf970</anchor>
+      <arglist>(const MidiFile &amp;other)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -59362,6 +59406,27 @@
       <anchor>a9ed7113fa62ec1f9e979b568c6d99893</anchor>
       <arglist>(int pitchbendRange)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPressureTrackingMode</name>
+      <anchorfile>structMPESynthesiserBase.html</anchorfile>
+      <anchor>ad7c289b07c46f9a14bc7e921eda81428</anchor>
+      <arglist>(TrackingMode modeToUse)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPitchbendTrackingMode</name>
+      <anchorfile>structMPESynthesiserBase.html</anchorfile>
+      <anchor>a05a40ad0af91f7802f48c1c95182b62c</anchor>
+      <arglist>(TrackingMode modeToUse)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTimbreTrackingMode</name>
+      <anchorfile>structMPESynthesiserBase.html</anchorfile>
+      <anchor>a1c7fa1570206a5158a872d52959d912c</anchor>
+      <arglist>(TrackingMode modeToUse)</arglist>
+    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>noteAdded</name>
@@ -59458,6 +59523,13 @@
       <name>instrument</name>
       <anchorfile>structMPESynthesiserBase.html</anchorfile>
       <anchor>a714dfff07d6efda0363f4f0e62839482</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPEInstrument::TrackingMode</type>
+      <name>TrackingMode</name>
+      <anchorfile>structMPESynthesiserBase.html</anchorfile>
+      <anchor>a6903ed04f13f9683e5587e3be5c9b5f7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -65772,6 +65844,13 @@
     </member>
     <member kind="enumvalue">
       <type>@</type>
+      <name>BitwigStudio</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8a6cf4bc70a9e21bc5e978a4960084fc58</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
       <name>CakewalkSonar8</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8a9346912590305747f0c38d7c3208de17</anchor>
@@ -66048,6 +66127,13 @@
       <name>isArdour</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>a581b8ff426ce073676b5f2c6fba96b3d</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isBitwigStudio</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a8d39d5c259199e4f3cadd1e3f3da4046</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -67266,8 +67352,8 @@
       <type></type>
       <name>MenuItemIterator</name>
       <anchorfile>classPopupMenu_1_1MenuItemIterator.html</anchorfile>
-      <anchor>a34b8540e94b2b0c91c08d6ae31c08feb</anchor>
-      <arglist>(const PopupMenu &amp;menu)</arglist>
+      <anchor>a1b95aa4a822bc5c52fb3ee26c6d95980</anchor>
+      <arglist>(const PopupMenu &amp;menu, bool searchRecursively=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -67284,10 +67370,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>const Item &amp;</type>
+      <type>Item &amp;</type>
       <name>getItem</name>
       <anchorfile>classPopupMenu_1_1MenuItemIterator.html</anchorfile>
-      <anchor>a02199251bee27ecc47bf53a2de012bc2</anchor>
+      <anchor>a7a7057fed5b85c905ebe675929a6d5ac</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -77062,8 +77148,8 @@
       <type>int</type>
       <name>compareNatural</name>
       <anchorfile>classString.html</anchorfile>
-      <anchor>a967d5b434003ffec97a31ab47a149c3c</anchor>
-      <arglist>(StringRef other) const noexcept</arglist>
+      <anchor>a966277f2dcc30f9f2507f0a7b5721a9b</anchor>
+      <arglist>(StringRef other, bool isCaseSensitive=false) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -84591,6 +84677,13 @@
       <anchor>aa063e3fc91d3f2279e0ad16b3f29f6e3</anchor>
       <arglist>() noexcept=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>getNumberOfKeywaves</name>
+      <anchorfile>classTouchSurface.html</anchorfile>
+      <anchor>a0509d8563042afa740f862720cb7892d</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>callListenersTouchChanged</name>
@@ -85821,6 +85914,7 @@
   <compound kind="class">
     <name>URL</name>
     <filename>classURL.html</filename>
+    <class kind="class">URL::DownloadTask</class>
     <member kind="typedef">
       <type>bool(</type>
       <name>OpenStreamProgressCallback</name>
@@ -86025,11 +86119,18 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>InputStream *</type>
+      <type>WebInputStream *</type>
       <name>createInputStream</name>
       <anchorfile>classURL.html</anchorfile>
-      <anchor>ab487b0c5d684af5f3b0a678479696105</anchor>
+      <anchor>a3482388836fc1d25a380a6c167cdb3c9</anchor>
       <arglist>(bool doPostLikeRequest, OpenStreamProgressCallback *progressCallback=nullptr, void *progressCallbackContext=nullptr, String extraHeaders=String(), int connectionTimeOutMs=0, StringPairArray *responseHeaders=nullptr, int *statusCode=nullptr, int numRedirectsToFollow=5, String httpRequestCmd=String()) const </arglist>
+    </member>
+    <member kind="function">
+      <type>DownloadTask *</type>
+      <name>downloadToFile</name>
+      <anchorfile>classURL.html</anchorfile>
+      <anchor>a3697dcd102e99bcf4558ec761f4487a7</anchor>
+      <arglist>(const File &amp;targetLocation, String extraHeaders=String(), DownloadTask::Listener *listener=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -86086,6 +86187,120 @@
       <anchorfile>classURL.html</anchorfile>
       <anchor>a9a8a3e4344e94b6d074df5f7223f9c77</anchor>
       <arglist>(const String &amp;url)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>URL::DownloadTask</name>
+    <filename>classURL_1_1DownloadTask.html</filename>
+    <class kind="struct">URL::DownloadTask::Listener</class>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DownloadTask</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a4c0a7271f77d33edf7a1105c826e3f08</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int64</type>
+      <name>getTotalLength</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a1f8ab392fe52174be8ff80798e89a0df</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int64</type>
+      <name>getLengthDownloaded</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a3439fbb78c76bdbb683b8d34a749e409</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFinished</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a0487388c9cbb43f5bfecdfa15081fcee</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>statusCode</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>adb086ee4ea5fc82fcd1558d40b248913</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hadError</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a8dc47e68b23530361966dd3daff05b9e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>DownloadTask</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>aaded7dc7bce440de9940e58cc0b2411d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int64</type>
+      <name>contentLength</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>ab59855d4df9ae73ee720285f691b2971</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int64</type>
+      <name>downloaded</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a4754c8c08c94390dac2ffdcf76badd86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>finished</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>a99b0e4e086ff23726eb1bf0dcfab1529</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>error</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>ae3fb403562e17b8084164d8e0304d007</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>httpCode</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>ac006f0a866f0cdcef8592ba1536dab3e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>URL::DownloadTask::Listener</name>
+    <filename>structURL_1_1DownloadTask_1_1Listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Listener</name>
+      <anchorfile>structURL_1_1DownloadTask_1_1Listener.html</anchorfile>
+      <anchor>a66972ba585a83090d77fb94f7f60f4fa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>finished</name>
+      <anchorfile>structURL_1_1DownloadTask_1_1Listener.html</anchorfile>
+      <anchor>af1a21324a4829b8d09e570dff1f0e3ea</anchor>
+      <arglist>(DownloadTask *task, bool success)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>progress</name>
+      <anchorfile>structURL_1_1DownloadTask_1_1Listener.html</anchorfile>
+      <anchor>abb38de449cfe02eb796bde8df4f6618c</anchor>
+      <arglist>(DownloadTask *task, int64 bytesDownloaded, int64 totalLength)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -86723,6 +86938,13 @@
       <arglist>(Listener *listener)</arglist>
     </member>
     <member kind="function">
+      <type>ValueTree &amp;</type>
+      <name>setPropertyExcludingListener</name>
+      <anchorfile>classValueTree.html</anchorfile>
+      <anchor>a85b3ee8728b1c7e5e91b898c35f1b73e</anchor>
+      <arglist>(Listener *listenerToExclude, const Identifier &amp;name, const var &amp;newValue, UndoManager *undoManager)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>sendPropertyChangeMessage</name>
       <anchorfile>classValueTree.html</anchorfile>
@@ -86909,11 +87131,11 @@
     <filename>classvar.html</filename>
     <class kind="struct">var::NativeFunctionArgs</class>
     <member kind="typedef">
-      <type>var(*</type>
+      <type>std::function&lt; var(const NativeFunctionArgs &amp;)&gt;</type>
       <name>NativeFunction</name>
       <anchorfile>classvar.html</anchorfile>
-      <anchor>aab885a8e691e15eda42ab513ca4d968d</anchor>
-      <arglist>)(const NativeFunctionArgs &amp;)</arglist>
+      <anchor>ae639f9a33534812a529a97740682d992</anchor>
+      <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -86991,6 +87213,13 @@
       <anchorfile>classvar.html</anchorfile>
       <anchor>aaee0a5c918953159d4f461db8e6f82ff</anchor>
       <arglist>(const Array&lt; var &gt; &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>var</name>
+      <anchorfile>classvar.html</anchorfile>
+      <anchor>a0b7f5dbf9267b0c55d37615b34d3cfa0</anchor>
+      <arglist>(const StringArray &amp;value)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -89190,6 +89419,13 @@
       <arglist>(const File &amp;) override</arglist>
     </member>
     <member kind="function">
+      <type>MemoryMappedAudioFormatReader *</type>
+      <name>createMemoryMappedReader</name>
+      <anchorfile>classWavAudioFormat.html</anchorfile>
+      <anchor>afd00c047b6917927a94799bd8c97328b</anchor>
+      <arglist>(FileInputStream *) override</arglist>
+    </member>
+    <member kind="function">
       <type>AudioFormatWriter *</type>
       <name>createWriterFor</name>
       <anchorfile>classWavAudioFormat.html</anchorfile>
@@ -90175,6 +90411,149 @@
       <anchorfile>classWebBrowserComponent.html</anchorfile>
       <anchor>af0353e28029daad4a95144e0a7706c84</anchor>
       <arglist>(FocusChangeType) override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>WebInputStream</name>
+    <filename>classWebInputStream.html</filename>
+    <base>InputStream</base>
+    <class kind="class">WebInputStream::Listener</class>
+    <member kind="function">
+      <type></type>
+      <name>WebInputStream</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a2f30da9ebe33b3334db185ec278ddc2f</anchor>
+      <arglist>(const URL &amp;url, const bool usePost)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~WebInputStream</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>ace9b7bc9a70fdea2958fcde05272efe5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>WebInputStream &amp;</type>
+      <name>withExtraHeaders</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a4c075b67eef07cc01fbedf2239e5c554</anchor>
+      <arglist>(const String &amp;extraHeaders)</arglist>
+    </member>
+    <member kind="function">
+      <type>WebInputStream &amp;</type>
+      <name>withCustomRequestCommand</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>ad549934b2f76cca031884ee1d94de3b9</anchor>
+      <arglist>(const String &amp;customRequestCommand)</arglist>
+    </member>
+    <member kind="function">
+      <type>WebInputStream &amp;</type>
+      <name>withConnectionTimeout</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a5d133d24ee00156754f2dab302181e51</anchor>
+      <arglist>(int timeoutInMs)</arglist>
+    </member>
+    <member kind="function">
+      <type>WebInputStream &amp;</type>
+      <name>withNumRedirectsToFollow</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a92243aa6a009c32aad744b986cd71082</anchor>
+      <arglist>(int numRedirects)</arglist>
+    </member>
+    <member kind="function">
+      <type>StringPairArray</type>
+      <name>getRequestHeaders</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a5316dbb6216b75a25020515bb846130b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>StringPairArray</type>
+      <name>getResponseHeaders</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a0ee598b0627aacd5c63050e54c8fbf93</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getStatusCode</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>aa0e03a9176ed0cbbe72f56237371b9f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>connect</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>abe8920cdc15843c44228c267db3e85db</anchor>
+      <arglist>(Listener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isError</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a712eeee765d70cadb643a6ac6881606c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>cancel</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a869177c8fa6d75013e0a0ab46c1da9b1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int64</type>
+      <name>getTotalLength</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a443038879b96a8181b1cb5cb0d0db22f</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>read</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a2735a5061e4ad8de89179b29aa8336c2</anchor>
+      <arglist>(void *destBuffer, int maxBytesToRead) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isExhausted</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>ac28dd3c4784b189bf7e32ad0fd5f75e6</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>int64</type>
+      <name>getPosition</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a16c44044d3bb9e2cb69431e8f634f059</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setPosition</name>
+      <anchorfile>classWebInputStream.html</anchorfile>
+      <anchor>a5c452e8463fe81843daee042a12bb0d8</anchor>
+      <arglist>(int64 wantedPos) override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>WebInputStream::Listener</name>
+    <filename>classWebInputStream_1_1Listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Listener</name>
+      <anchorfile>classWebInputStream_1_1Listener.html</anchorfile>
+      <anchor>ac63915e9eb1b1f490f8c23db6a4748fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>postDataSendProgress</name>
+      <anchorfile>classWebInputStream_1_1Listener.html</anchorfile>
+      <anchor>ac2f826ff4af47e9b9c9ef64aa631eee8</anchor>
+      <arglist>(WebInputStream &amp;, int, int)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -91456,6 +91835,13 @@
       <anchor>a1c008a40f29753a54bce01d6b95fbb50a7a2fb0f1f22978da9cf46906be459a45</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>seaboardBlock</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a1c008a40f29753a54bce01d6b95fbb50a1bad053a7c7817b45c03330ff907fae0</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>juce::ReferenceCountedObjectPtr&lt; Block &gt;</type>
       <name>Ptr</name>
@@ -91746,6 +92132,13 @@
       <anchorfile>classjuce_1_1TouchSurface.html</anchorfile>
       <anchor>a2a7993d97f8ff6afb08c2fb1126c545a</anchor>
       <arglist>() noexcept=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>getNumberOfKeywaves</name>
+      <anchorfile>classjuce_1_1TouchSurface.html</anchorfile>
+      <anchor>aa9624ce22f4c76b24a7c31b7ff942cf2</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -92059,6 +92452,13 @@
       <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
       <anchor>a68f93b0e2c32ff268cb97889a2f96d72</anchor>
       <arglist>(size_t offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>saveProgramAsDefault</name>
+      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
+      <anchor>aca116769e700e0244b62a6ec42f0346a</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -94365,6 +94765,13 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isProgramValid</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
+      <anchor>a4f16ccecd551e87f07ffe8f65f1df497</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>setDataByte</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
@@ -94600,6 +95007,24 @@
       <anchorfile>structjuce_1_1littlefoot_1_1Compiler_1_1FunctionCall_1_1BuiltInFunction.html</anchorfile>
       <anchor>a3fbe6cb3fdaba60e067f34a68ef54d86</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>juce::littlefoot::Compiler::Statement::Visitor</name>
+    <filename>structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Visitor</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</anchorfile>
+      <anchor>a12c6f50a38a5ea9c74cbebd81b9aff29</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>operator()</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</anchorfile>
+      <anchor>a89e6326b660704a35958f82db8e72f66</anchor>
+      <arglist>(StatementPtr)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -94860,6 +95285,24 @@
       <anchorfile>structlittlefoot_1_1Compiler_1_1FunctionCall_1_1BuiltInFunction.html</anchorfile>
       <anchor>ac641cbb038c125bbf38fd99d94484d3e</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>littlefoot::Compiler::Statement::Visitor</name>
+    <filename>structlittlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Visitor</name>
+      <anchorfile>structlittlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</anchorfile>
+      <anchor>adf388bbebbca7c1fe2901106019d93d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>operator()</name>
+      <anchorfile>structlittlefoot_1_1Compiler_1_1Statement_1_1Visitor.html</anchorfile>
+      <anchor>a8e81cebfc7365604b401976cdd3ba86b</anchor>
+      <arglist>(StatementPtr)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -95268,6 +95711,13 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isProgramValid</name>
+      <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
+      <anchor>a0d30c7b8beb75117b89dd2010b74746b</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>setDataByte</name>
       <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
@@ -95581,7 +96031,6 @@
     <file>juce_AsyncUpdater.h</file>
     <file>juce_ChangeBroadcaster.h</file>
     <file>juce_ChangeListener.h</file>
-    <file>juce_events/broadcasters/juce_ListenerList.h</file>
   </compound>
   <compound kind="dir">
     <name>buffers</name>
@@ -95679,7 +96128,7 @@
     <file>juce_ElementComparator.h</file>
     <file>juce_HashMap.h</file>
     <file>juce_LinkedListPointer.h</file>
-    <file>juce_core/containers/juce_ListenerList.h</file>
+    <file>juce_ListenerList.h</file>
     <file>juce_NamedValueSet.h</file>
     <file>juce_OwnedArray.h</file>
     <file>juce_PropertySet.h</file>
@@ -96325,6 +96774,7 @@
     <file>juce_NamedPipe.h</file>
     <file>juce_Socket.h</file>
     <file>juce_URL.h</file>
+    <file>juce_WebInputStream.h</file>
   </compound>
   <compound kind="dir">
     <name>opengl</name>

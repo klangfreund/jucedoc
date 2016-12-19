@@ -144,12 +144,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a69b389d34bc9748eb5f82a8995aae28d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a69b389d34bc9748eb5f82a8995aae28d">shouldDropFilesWhenDraggedExternally</a> (const <a class="el" href="classDragAndDropTarget_1_1SourceDetails.html">DragAndDropTarget::SourceDetails</a> &amp;sourceDetails, <a class="el" href="classStringArray.html">StringArray</a> &amp;files, bool &amp;canMoveFiles)</td></tr>
 <tr class="memdesc:a69b389d34bc9748eb5f82a8995aae28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this if you want to be able to perform an external drag a set of files when the user drags outside of this container component.  <a href="#a69b389d34bc9748eb5f82a8995aae28d">More...</a><br/></td></tr>
 <tr class="separator:a69b389d34bc9748eb5f82a8995aae28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb7a19c901f8b48b321f4301bcd0150"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a7cb7a19c901f8b48b321f4301bcd0150">dragOperationStarted</a> ()</td></tr>
-<tr class="memdesc:a7cb7a19c901f8b48b321f4301bcd0150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses can override this to be told when a drag starts.  <a href="#a7cb7a19c901f8b48b321f4301bcd0150">More...</a><br/></td></tr>
-<tr class="separator:a7cb7a19c901f8b48b321f4301bcd0150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0c91e9c1518a3d7bc49624f3ead768"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a5e0c91e9c1518a3d7bc49624f3ead768">dragOperationEnded</a> ()</td></tr>
-<tr class="memdesc:a5e0c91e9c1518a3d7bc49624f3ead768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses can override this to be told when a drag finishes.  <a href="#a5e0c91e9c1518a3d7bc49624f3ead768">More...</a><br/></td></tr>
-<tr class="separator:a5e0c91e9c1518a3d7bc49624f3ead768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec83ecb9f3211c0dc7ba6d29edd395a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a5ec83ecb9f3211c0dc7ba6d29edd395a">dragOperationStarted</a> (const <a class="el" href="classDragAndDropTarget_1_1SourceDetails.html">DragAndDropTarget::SourceDetails</a> &amp;sourceDetails)</td></tr>
+<tr class="memdesc:a5ec83ecb9f3211c0dc7ba6d29edd395a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses can override this to be told when a drag starts.  <a href="#a5ec83ecb9f3211c0dc7ba6d29edd395a">More...</a><br/></td></tr>
+<tr class="separator:a5ec83ecb9f3211c0dc7ba6d29edd395a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab132c0a3a3c349d5de9ed737c0911a33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#ab132c0a3a3c349d5de9ed737c0911a33">dragOperationEnded</a> (const <a class="el" href="classDragAndDropTarget_1_1SourceDetails.html">DragAndDropTarget::SourceDetails</a> &amp;sourceDetails)</td></tr>
+<tr class="memdesc:ab132c0a3a3c349d5de9ed737c0911a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses can override this to be told when a drag finishes.  <a href="#ab132c0a3a3c349d5de9ed737c0911a33">More...</a><br/></td></tr>
+<tr class="separator:ab132c0a3a3c349d5de9ed737c0911a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enables drag-and-drop behaviour for a component and all its sub-components. </p>
@@ -476,7 +476,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7cb7a19c901f8b48b321f4301bcd0150"></a>
+<a class="anchor" id="a5ec83ecb9f3211c0dc7ba6d29edd395a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -486,7 +486,8 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DragAndDropContainer::dragOperationStarted </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classDragAndDropTarget_1_1SourceDetails.html">DragAndDropTarget::SourceDetails</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceDetails</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -501,7 +502,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5e0c91e9c1518a3d7bc49624f3ead768"></a>
+<a class="anchor" id="ab132c0a3a3c349d5de9ed737c0911a33"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -511,7 +512,8 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DragAndDropContainer::dragOperationEnded </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classDragAndDropTarget_1_1SourceDetails.html">DragAndDropTarget::SourceDetails</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceDetails</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -533,7 +535,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:04 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:42 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

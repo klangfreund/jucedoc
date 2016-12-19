@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68f93b0e2c32ff268cb97889a2f96d72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a68f93b0e2c32ff268cb97889a2f96d72">getDataByte</a> (size_t offset)=0</td></tr>
 <tr class="memdesc:a68f93b0e2c32ff268cb97889a2f96d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a byte from the heap.  <a href="#a68f93b0e2c32ff268cb97889a2f96d72">More...</a><br/></td></tr>
 <tr class="separator:a68f93b0e2c32ff268cb97889a2f96d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca116769e700e0244b62a6ec42f0346a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#aca116769e700e0244b62a6ec42f0346a">saveProgramAsDefault</a> ()=0</td></tr>
+<tr class="memdesc:aca116769e700e0244b62a6ec42f0346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current program as the block's default state.  <a href="#aca116769e700e0244b62a6ec42f0346a">More...</a><br/></td></tr>
+<tr class="separator:aca116769e700e0244b62a6ec42f0346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1c9871bbc6b337ec020559180e4a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a6c1c9871bbc6b337ec020559180e4a2d">setRenderer</a> (<a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a> *newRenderer) noexcept</td></tr>
 <tr class="memdesc:a6c1c9871bbc6b337ec020559180e4a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visualiser that will create visuals for this block (nullptr for none).  <a href="#a6c1c9871bbc6b337ec020559180e4a2d">More...</a><br/></td></tr>
 <tr class="separator:a6c1c9871bbc6b337ec020559180e4a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -480,6 +483,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aca116769e700e0244b62a6ec42f0346a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::LEDGrid::saveProgramAsDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the current program as the block's default state. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6c1c9871bbc6b337ec020559180e4a2d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -554,7 +582,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

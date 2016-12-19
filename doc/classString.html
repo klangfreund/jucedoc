@@ -265,9 +265,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5583f2341626093e2c373497e2d9758a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a5583f2341626093e2c373497e2d9758a">compareIgnoreCase</a> (const <a class="el" href="classString.html">String</a> &amp;other) const noexcept</td></tr>
 <tr class="memdesc:a5583f2341626093e2c373497e2d9758a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case-insensitive comparison with another string.  <a href="#a5583f2341626093e2c373497e2d9758a">More...</a><br/></td></tr>
 <tr class="separator:a5583f2341626093e2c373497e2d9758a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a967d5b434003ffec97a31ab47a149c3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a967d5b434003ffec97a31ab47a149c3c">compareNatural</a> (<a class="el" href="classStringRef.html">StringRef</a> other) const noexcept</td></tr>
-<tr class="memdesc:a967d5b434003ffec97a31ab47a149c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two strings, taking into account textual characteristics like numbers and spaces.  <a href="#a967d5b434003ffec97a31ab47a149c3c">More...</a><br/></td></tr>
-<tr class="separator:a967d5b434003ffec97a31ab47a149c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966277f2dcc30f9f2507f0a7b5721a9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a966277f2dcc30f9f2507f0a7b5721a9b">compareNatural</a> (<a class="el" href="classStringRef.html">StringRef</a> other, bool isCaseSensitive=false) const noexcept</td></tr>
+<tr class="memdesc:a966277f2dcc30f9f2507f0a7b5721a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two strings, taking into account textual characteristics like numbers and spaces.  <a href="#a966277f2dcc30f9f2507f0a7b5721a9b">More...</a><br/></td></tr>
+<tr class="separator:a966277f2dcc30f9f2507f0a7b5721a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93de8ae7eb05cd79ae7d3d263525855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ab93de8ae7eb05cd79ae7d3d263525855">startsWith</a> (<a class="el" href="classStringRef.html">StringRef</a> text) const noexcept</td></tr>
 <tr class="memdesc:ab93de8ae7eb05cd79ae7d3d263525855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether the string begins with another string.  <a href="#ab93de8ae7eb05cd79ae7d3d263525855">More...</a><br/></td></tr>
 <tr class="separator:ab93de8ae7eb05cd79ae7d3d263525855"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2296,7 +2296,7 @@ template&lt;class CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a967d5b434003ffec97a31ab47a149c3c"></a>
+<a class="anchor" id="a966277f2dcc30f9f2507f0a7b5721a9b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2307,8 +2307,18 @@ template&lt;class CharPointer &gt; </div>
           <td class="memname">int String::compareNatural </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCaseSensitive</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -2321,6 +2331,8 @@ template&lt;class CharPointer &gt; </div>
 <p>Compares two strings, taking into account textual characteristics like numbers and spaces. </p>
 <p>This comparison is case-insensitive and can detect words and embedded numbers in the strings, making it good for sorting human-readable lists of things like filenames.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if the two strings are identical; negative if this string comes before the other one alphabetically, or positive if it comes after it. </dd></dl>
+
+<p>Referenced by <a class="el" href="structFile_1_1NaturalFileComparator.html#a9450d36ba8fbad91b35144761058e9a6">File::NaturalFileComparator::compareElements()</a>.</p>
 
 </div>
 </div>
@@ -4951,7 +4963,7 @@ template&lt;class CharPointer &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:50 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

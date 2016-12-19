@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structListenerList_1_1DummyBailOutChecker.html">DummyBailOutChecker</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structListenerList_1_1DummyBailOutChecker.html">DummyBailOutChecker</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy bail-out checker that always returns false.  <a href="structListenerList_1_1DummyBailOutChecker.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html">Iterator</a></td></tr>
@@ -105,11 +105,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3b96ee4d2b3e77dfddce53f2451c4556"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classListenerList.html">ListenerList</a><br class="typebreak"/>
-&lt; ListenerClass, ArrayType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a3b96ee4d2b3e77dfddce53f2451c4556">ThisType</a></td></tr>
-<tr class="separator:a3b96ee4d2b3e77dfddce53f2451c4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03db5b04e4fe0dda6e95bd9055c9705"><td class="memItemLeft" align="right" valign="top">typedef ListenerClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#aa03db5b04e4fe0dda6e95bd9055c9705">ListenerType</a></td></tr>
-<tr class="separator:aa03db5b04e4fe0dda6e95bd9055c9705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b96ee4d2b3e77dfddce53f2451c4556"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classListenerList.html">ListenerList</a><br class="typebreak"/>
 &lt; ListenerClass, ArrayType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a3b96ee4d2b3e77dfddce53f2451c4556">ThisType</a></td></tr>
 <tr class="separator:a3b96ee4d2b3e77dfddce53f2451c4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,139 +140,113 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb25c4b3880d1004072305edf2e08766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#adb25c4b3880d1004072305edf2e08766">call</a> (void(ListenerClass::*callbackFunction)())</td></tr>
 <tr class="memdesc:adb25c4b3880d1004072305edf2e08766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with no parameters.  <a href="#adb25c4b3880d1004072305edf2e08766">More...</a><br/></td></tr>
 <tr class="separator:adb25c4b3880d1004072305edf2e08766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b70d2c36e1bab9a707bed97a17653c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a77b70d2c36e1bab9a707bed97a17653c">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)())</td></tr>
+<tr class="memdesc:a77b70d2c36e1bab9a707bed97a17653c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with no parameters, on all but the specified listener in the list.  <a href="#a77b70d2c36e1bab9a707bed97a17653c">More...</a><br/></td></tr>
+<tr class="separator:a77b70d2c36e1bab9a707bed97a17653c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5757f573480b5f86416f2c85bb985d7a"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType &gt; </td></tr>
 <tr class="memitem:a5757f573480b5f86416f2c85bb985d7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a5757f573480b5f86416f2c85bb985d7a">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</td></tr>
 <tr class="memdesc:a5757f573480b5f86416f2c85bb985d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with no parameters and a bail-out-checker.  <a href="#a5757f573480b5f86416f2c85bb985d7a">More...</a><br/></td></tr>
 <tr class="separator:a5757f573480b5f86416f2c85bb985d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b707f3d08e69fa5fe346da93b89ed2"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType &gt; </td></tr>
+<tr class="memitem:a57b707f3d08e69fa5fe346da93b89ed2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a57b707f3d08e69fa5fe346da93b89ed2">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</td></tr>
+<tr class="memdesc:a57b707f3d08e69fa5fe346da93b89ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on all but the specified listener in the list with a bail-out-checker.  <a href="#a57b707f3d08e69fa5fe346da93b89ed2">More...</a><br/></td></tr>
+<tr class="separator:a57b707f3d08e69fa5fe346da93b89ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ed7b864a523d0f3a015c0cb131564e"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) &gt; </td></tr>
 <tr class="memitem:a02ed7b864a523d0f3a015c0cb131564e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a02ed7b864a523d0f3a015c0cb131564e">call</a> (void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
 <tr class="memdesc:a02ed7b864a523d0f3a015c0cb131564e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 1 parameter.  <a href="#a02ed7b864a523d0f3a015c0cb131564e">More...</a><br/></td></tr>
 <tr class="separator:a02ed7b864a523d0f3a015c0cb131564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842d85beb3ee7e2721c96bf1fe173202"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) &gt; </td></tr>
+<tr class="memitem:a842d85beb3ee7e2721c96bf1fe173202"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a842d85beb3ee7e2721c96bf1fe173202">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
+<tr class="memdesc:a842d85beb3ee7e2721c96bf1fe173202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 1 parameter, on all but the specified listener in the list.  <a href="#a842d85beb3ee7e2721c96bf1fe173202">More...</a><br/></td></tr>
+<tr class="separator:a842d85beb3ee7e2721c96bf1fe173202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa011223fefc9446a4e1a68fd163233"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </td></tr>
 <tr class="memitem:adfa011223fefc9446a4e1a68fd163233"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#adfa011223fefc9446a4e1a68fd163233">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
-<tr class="memdesc:adfa011223fefc9446a4e1a68fd163233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with one parameter and a bail-out-checker.  <a href="#adfa011223fefc9446a4e1a68fd163233">More...</a><br/></td></tr>
+<tr class="memdesc:adfa011223fefc9446a4e1a68fd163233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 1 parameter and a bail-out-checker.  <a href="#adfa011223fefc9446a4e1a68fd163233">More...</a><br/></td></tr>
 <tr class="separator:adfa011223fefc9446a4e1a68fd163233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45350c9c1450551b21829833eb0c38b3"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </td></tr>
+<tr class="memitem:a45350c9c1450551b21829833eb0c38b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a45350c9c1450551b21829833eb0c38b3">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
+<tr class="memdesc:a45350c9c1450551b21829833eb0c38b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 1 parameter, on all but the specified listener in the list with a bail-out-checker.  <a href="#a45350c9c1450551b21829833eb0c38b3">More...</a><br/></td></tr>
+<tr class="separator:a45350c9c1450551b21829833eb0c38b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af27a26ed368214fa92f7f31497a7bc9a"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
 <tr class="memitem:af27a26ed368214fa92f7f31497a7bc9a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#af27a26ed368214fa92f7f31497a7bc9a">call</a> (void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
 <tr class="memdesc:af27a26ed368214fa92f7f31497a7bc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 2 parameters.  <a href="#af27a26ed368214fa92f7f31497a7bc9a">More...</a><br/></td></tr>
 <tr class="separator:af27a26ed368214fa92f7f31497a7bc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175032777084686c2106cb42e50d2618"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
+<tr class="memitem:a175032777084686c2106cb42e50d2618"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a175032777084686c2106cb42e50d2618">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
+<tr class="memdesc:a175032777084686c2106cb42e50d2618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 2 parameters, on all but the specified listener in the list.  <a href="#a175032777084686c2106cb42e50d2618">More...</a><br/></td></tr>
+<tr class="separator:a175032777084686c2106cb42e50d2618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a016324817b14abe106980929a8ad20b3"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
 <tr class="memitem:a016324817b14abe106980929a8ad20b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a016324817b14abe106980929a8ad20b3">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
 <tr class="memdesc:a016324817b14abe106980929a8ad20b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 2 parameters and a bail-out-checker.  <a href="#a016324817b14abe106980929a8ad20b3">More...</a><br/></td></tr>
 <tr class="separator:a016324817b14abe106980929a8ad20b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b915332aed668579682ab0fabb8dc4"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
+<tr class="memitem:a02b915332aed668579682ab0fabb8dc4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a02b915332aed668579682ab0fabb8dc4">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
+<tr class="memdesc:a02b915332aed668579682ab0fabb8dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 2 parameters, on all but the specified listener in the list with a bail-out-checker.  <a href="#a02b915332aed668579682ab0fabb8dc4">More...</a><br/></td></tr>
+<tr class="separator:a02b915332aed668579682ab0fabb8dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
 <tr class="memitem:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a3135456a9b63353c4ac4de9fcbd214dd">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
 <tr class="memdesc:a3135456a9b63353c4ac4de9fcbd214dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 3 parameters.  <a href="#a3135456a9b63353c4ac4de9fcbd214dd">More...</a><br/></td></tr>
 <tr class="separator:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358369bb074cdca768059c3bfa007c4a"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
+<tr class="memitem:a358369bb074cdca768059c3bfa007c4a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a358369bb074cdca768059c3bfa007c4a">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
+<tr class="memdesc:a358369bb074cdca768059c3bfa007c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 3 parameters, on all but the specified listener in the list.  <a href="#a358369bb074cdca768059c3bfa007c4a">More...</a><br/></td></tr>
+<tr class="separator:a358369bb074cdca768059c3bfa007c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
 <tr class="memitem:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a105833e18f32cd00ee0a4aca5b35a0b3">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
 <tr class="memdesc:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 3 parameters and a bail-out-checker.  <a href="#a105833e18f32cd00ee0a4aca5b35a0b3">More...</a><br/></td></tr>
 <tr class="separator:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2130d4c317306606d5b509fa7de6d473"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
+<tr class="memitem:a2130d4c317306606d5b509fa7de6d473"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a2130d4c317306606d5b509fa7de6d473">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
+<tr class="memdesc:a2130d4c317306606d5b509fa7de6d473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 3 parameters, on all but the specified listener in the list with a bail-out-checker.  <a href="#a2130d4c317306606d5b509fa7de6d473">More...</a><br/></td></tr>
+<tr class="separator:a2130d4c317306606d5b509fa7de6d473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5396917f4ce69ff81b3779e9ce64c751"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
 <tr class="memitem:a5396917f4ce69ff81b3779e9ce64c751"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a5396917f4ce69ff81b3779e9ce64c751">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
 <tr class="memdesc:a5396917f4ce69ff81b3779e9ce64c751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 4 parameters.  <a href="#a5396917f4ce69ff81b3779e9ce64c751">More...</a><br/></td></tr>
 <tr class="separator:a5396917f4ce69ff81b3779e9ce64c751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9ebd1126493146a22e10b0a77d3ddf"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
+<tr class="memitem:a0b9ebd1126493146a22e10b0a77d3ddf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a0b9ebd1126493146a22e10b0a77d3ddf">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
+<tr class="memdesc:a0b9ebd1126493146a22e10b0a77d3ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 4 parameters, on all but the specified listener in the list.  <a href="#a0b9ebd1126493146a22e10b0a77d3ddf">More...</a><br/></td></tr>
+<tr class="separator:a0b9ebd1126493146a22e10b0a77d3ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
 <tr class="memitem:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a18c5f7f2f18d054bbbe516e33c6a7d13">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
 <tr class="memdesc:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 4 parameters and a bail-out-checker.  <a href="#a18c5f7f2f18d054bbbe516e33c6a7d13">More...</a><br/></td></tr>
 <tr class="separator:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23b32f91ff09fb3333c8a168fda0f04"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
+<tr class="memitem:ae23b32f91ff09fb3333c8a168fda0f04"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#ae23b32f91ff09fb3333c8a168fda0f04">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
+<tr class="memdesc:ae23b32f91ff09fb3333c8a168fda0f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 4 parameters, on all but the specified listener in the list with a bail-out-checker.  <a href="#ae23b32f91ff09fb3333c8a168fda0f04">More...</a><br/></td></tr>
+<tr class="separator:ae23b32f91ff09fb3333c8a168fda0f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8137450a357ee0c57627d6ff963b22"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
 <tr class="memitem:a1e8137450a357ee0c57627d6ff963b22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a1e8137450a357ee0c57627d6ff963b22">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
 <tr class="memdesc:a1e8137450a357ee0c57627d6ff963b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters.  <a href="#a1e8137450a357ee0c57627d6ff963b22">More...</a><br/></td></tr>
 <tr class="separator:a1e8137450a357ee0c57627d6ff963b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267162b2e1e0aadf1ebbe63ebd4d7563"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
+<tr class="memitem:a267162b2e1e0aadf1ebbe63ebd4d7563"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a267162b2e1e0aadf1ebbe63ebd4d7563">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
+<tr class="memdesc:a267162b2e1e0aadf1ebbe63ebd4d7563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 5 parameters, on all but the specified listener in the list.  <a href="#a267162b2e1e0aadf1ebbe63ebd4d7563">More...</a><br/></td></tr>
+<tr class="separator:a267162b2e1e0aadf1ebbe63ebd4d7563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
 <tr class="memitem:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a72225f7871a1ae12c2a4ffd978aa5b5a">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
 <tr class="memdesc:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker.  <a href="#a72225f7871a1ae12c2a4ffd978aa5b5a">More...</a><br/></td></tr>
 <tr class="separator:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09058bf5d7d946428d1c3bb3bb7472c9"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
+<tr class="memitem:a09058bf5d7d946428d1c3bb3bb7472c9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a09058bf5d7d946428d1c3bb3bb7472c9">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
+<tr class="memdesc:a09058bf5d7d946428d1c3bb3bb7472c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 5 parameters, on all but the specified listener in the list with a bail-out-checker.  <a href="#a09058bf5d7d946428d1c3bb3bb7472c9">More...</a><br/></td></tr>
+<tr class="separator:a09058bf5d7d946428d1c3bb3bb7472c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
 <tr class="memitem:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a1fac37f29e7c2470f3b3b72296858ba3">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
-<tr class="memdesc:a1fac37f29e7c2470f3b3b72296858ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters.  <a href="#a1fac37f29e7c2470f3b3b72296858ba3">More...</a><br/></td></tr>
+<tr class="memdesc:a1fac37f29e7c2470f3b3b72296858ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 6 parameters.  <a href="#a1fac37f29e7c2470f3b3b72296858ba3">More...</a><br/></td></tr>
 <tr class="separator:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d13fa831fd59b6e92bbaf03185f8a5d"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
+<tr class="memitem:a9d13fa831fd59b6e92bbaf03185f8a5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a9d13fa831fd59b6e92bbaf03185f8a5d">callExcluding</a> (ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
+<tr class="memdesc:a9d13fa831fd59b6e92bbaf03185f8a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 6 parameters, on all but the specified listener in the list.  <a href="#a9d13fa831fd59b6e92bbaf03185f8a5d">More...</a><br/></td></tr>
+<tr class="separator:a9d13fa831fd59b6e92bbaf03185f8a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a860a681326b1953803a0fc4788435596"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
 <tr class="memitem:a860a681326b1953803a0fc4788435596"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a860a681326b1953803a0fc4788435596">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
-<tr class="memdesc:a860a681326b1953803a0fc4788435596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker.  <a href="#a860a681326b1953803a0fc4788435596">More...</a><br/></td></tr>
+<tr class="memdesc:a860a681326b1953803a0fc4788435596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 6 parameters and a bail-out-checker.  <a href="#a860a681326b1953803a0fc4788435596">More...</a><br/></td></tr>
 <tr class="separator:a860a681326b1953803a0fc4788435596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae7f9efd24496a8284f6f1df4b9065bb"><td class="memItemLeft" align="right" valign="top">const ArrayType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#aae7f9efd24496a8284f6f1df4b9065bb">getListeners</a> () const noexcept</td></tr>
-<tr class="separator:aae7f9efd24496a8284f6f1df4b9065bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809baedf6e32eaaf1696e85e1149389f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a809baedf6e32eaaf1696e85e1149389f">ListenerList</a> ()</td></tr>
-<tr class="memdesc:a809baedf6e32eaaf1696e85e1149389f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty list.  <a href="#a809baedf6e32eaaf1696e85e1149389f">More...</a><br/></td></tr>
-<tr class="separator:a809baedf6e32eaaf1696e85e1149389f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b3b8138506855e80b9ebf61a032f540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a3b3b8138506855e80b9ebf61a032f540">~ListenerList</a> ()</td></tr>
-<tr class="memdesc:a3b3b8138506855e80b9ebf61a032f540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3b3b8138506855e80b9ebf61a032f540">More...</a><br/></td></tr>
-<tr class="separator:a3b3b8138506855e80b9ebf61a032f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad67eee9d64815b62ad8ea11f6812e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#aad67eee9d64815b62ad8ea11f6812e75">add</a> (ListenerClass *const listenerToAdd)</td></tr>
-<tr class="memdesc:aad67eee9d64815b62ad8ea11f6812e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener to the list.  <a href="#aad67eee9d64815b62ad8ea11f6812e75">More...</a><br/></td></tr>
-<tr class="separator:aad67eee9d64815b62ad8ea11f6812e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d5795fb151d7470e1fb2226c7d4676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#ac7d5795fb151d7470e1fb2226c7d4676">remove</a> (ListenerClass *const listenerToRemove)</td></tr>
-<tr class="memdesc:ac7d5795fb151d7470e1fb2226c7d4676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener from the list.  <a href="#ac7d5795fb151d7470e1fb2226c7d4676">More...</a><br/></td></tr>
-<tr class="separator:ac7d5795fb151d7470e1fb2226c7d4676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ced7631daac418522719e14a1d35b7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a4ced7631daac418522719e14a1d35b7d">size</a> () const noexcept</td></tr>
-<tr class="memdesc:a4ced7631daac418522719e14a1d35b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of registered listeners.  <a href="#a4ced7631daac418522719e14a1d35b7d">More...</a><br/></td></tr>
-<tr class="separator:a4ced7631daac418522719e14a1d35b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35c41903fa2ee45cb8f5666b6724d06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#ac35c41903fa2ee45cb8f5666b6724d06">isEmpty</a> () const noexcept</td></tr>
-<tr class="memdesc:ac35c41903fa2ee45cb8f5666b6724d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any listeners are registered.  <a href="#ac35c41903fa2ee45cb8f5666b6724d06">More...</a><br/></td></tr>
-<tr class="separator:ac35c41903fa2ee45cb8f5666b6724d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e777917d86ac8f06c6ce97e00d3ef54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#a8e777917d86ac8f06c6ce97e00d3ef54">clear</a> ()</td></tr>
-<tr class="memdesc:a8e777917d86ac8f06c6ce97e00d3ef54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the list.  <a href="#a8e777917d86ac8f06c6ce97e00d3ef54">More...</a><br/></td></tr>
-<tr class="separator:a8e777917d86ac8f06c6ce97e00d3ef54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57ce8e754fd494260dd68a3ba23fb3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#aa57ce8e754fd494260dd68a3ba23fb3a">contains</a> (ListenerClass *const listener) const noexcept</td></tr>
-<tr class="memdesc:aa57ce8e754fd494260dd68a3ba23fb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the specified listener has been added to the list.  <a href="#aa57ce8e754fd494260dd68a3ba23fb3a">More...</a><br/></td></tr>
-<tr class="separator:aa57ce8e754fd494260dd68a3ba23fb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb25c4b3880d1004072305edf2e08766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#adb25c4b3880d1004072305edf2e08766">call</a> (void(ListenerClass::*callbackFunction)())</td></tr>
-<tr class="memdesc:adb25c4b3880d1004072305edf2e08766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with no parameters.  <a href="#adb25c4b3880d1004072305edf2e08766">More...</a><br/></td></tr>
-<tr class="separator:adb25c4b3880d1004072305edf2e08766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5757f573480b5f86416f2c85bb985d7a"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType &gt; </td></tr>
-<tr class="memitem:a5757f573480b5f86416f2c85bb985d7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a5757f573480b5f86416f2c85bb985d7a">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</td></tr>
-<tr class="memdesc:a5757f573480b5f86416f2c85bb985d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with no parameters and a bail-out-checker.  <a href="#a5757f573480b5f86416f2c85bb985d7a">More...</a><br/></td></tr>
-<tr class="separator:a5757f573480b5f86416f2c85bb985d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ed7b864a523d0f3a015c0cb131564e"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) &gt; </td></tr>
-<tr class="memitem:a02ed7b864a523d0f3a015c0cb131564e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a02ed7b864a523d0f3a015c0cb131564e">call</a> (void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
-<tr class="memdesc:a02ed7b864a523d0f3a015c0cb131564e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 1 parameter.  <a href="#a02ed7b864a523d0f3a015c0cb131564e">More...</a><br/></td></tr>
-<tr class="separator:a02ed7b864a523d0f3a015c0cb131564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa011223fefc9446a4e1a68fd163233"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </td></tr>
-<tr class="memitem:adfa011223fefc9446a4e1a68fd163233"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#adfa011223fefc9446a4e1a68fd163233">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</td></tr>
-<tr class="memdesc:adfa011223fefc9446a4e1a68fd163233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with one parameter and a bail-out-checker.  <a href="#adfa011223fefc9446a4e1a68fd163233">More...</a><br/></td></tr>
-<tr class="separator:adfa011223fefc9446a4e1a68fd163233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27a26ed368214fa92f7f31497a7bc9a"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
-<tr class="memitem:af27a26ed368214fa92f7f31497a7bc9a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#af27a26ed368214fa92f7f31497a7bc9a">call</a> (void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
-<tr class="memdesc:af27a26ed368214fa92f7f31497a7bc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 2 parameters.  <a href="#af27a26ed368214fa92f7f31497a7bc9a">More...</a><br/></td></tr>
-<tr class="separator:af27a26ed368214fa92f7f31497a7bc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016324817b14abe106980929a8ad20b3"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </td></tr>
-<tr class="memitem:a016324817b14abe106980929a8ad20b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a016324817b14abe106980929a8ad20b3">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</td></tr>
-<tr class="memdesc:a016324817b14abe106980929a8ad20b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 2 parameters and a bail-out-checker.  <a href="#a016324817b14abe106980929a8ad20b3">More...</a><br/></td></tr>
-<tr class="separator:a016324817b14abe106980929a8ad20b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
-<tr class="memitem:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a3135456a9b63353c4ac4de9fcbd214dd">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
-<tr class="memdesc:a3135456a9b63353c4ac4de9fcbd214dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 3 parameters.  <a href="#a3135456a9b63353c4ac4de9fcbd214dd">More...</a><br/></td></tr>
-<tr class="separator:a3135456a9b63353c4ac4de9fcbd214dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </td></tr>
-<tr class="memitem:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a105833e18f32cd00ee0a4aca5b35a0b3">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</td></tr>
-<tr class="memdesc:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 3 parameters and a bail-out-checker.  <a href="#a105833e18f32cd00ee0a4aca5b35a0b3">More...</a><br/></td></tr>
-<tr class="separator:a105833e18f32cd00ee0a4aca5b35a0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5396917f4ce69ff81b3779e9ce64c751"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
-<tr class="memitem:a5396917f4ce69ff81b3779e9ce64c751"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a5396917f4ce69ff81b3779e9ce64c751">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
-<tr class="memdesc:a5396917f4ce69ff81b3779e9ce64c751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 4 parameters.  <a href="#a5396917f4ce69ff81b3779e9ce64c751">More...</a><br/></td></tr>
-<tr class="separator:a5396917f4ce69ff81b3779e9ce64c751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </td></tr>
-<tr class="memitem:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a18c5f7f2f18d054bbbe516e33c6a7d13">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</td></tr>
-<tr class="memdesc:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 4 parameters and a bail-out-checker.  <a href="#a18c5f7f2f18d054bbbe516e33c6a7d13">More...</a><br/></td></tr>
-<tr class="separator:a18c5f7f2f18d054bbbe516e33c6a7d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e8137450a357ee0c57627d6ff963b22"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
-<tr class="memitem:a1e8137450a357ee0c57627d6ff963b22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a1e8137450a357ee0c57627d6ff963b22">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
-<tr class="memdesc:a1e8137450a357ee0c57627d6ff963b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters.  <a href="#a1e8137450a357ee0c57627d6ff963b22">More...</a><br/></td></tr>
-<tr class="separator:a1e8137450a357ee0c57627d6ff963b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </td></tr>
-<tr class="memitem:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a72225f7871a1ae12c2a4ffd978aa5b5a">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</td></tr>
-<tr class="memdesc:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker.  <a href="#a72225f7871a1ae12c2a4ffd978aa5b5a">More...</a><br/></td></tr>
-<tr class="separator:a72225f7871a1ae12c2a4ffd978aa5b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memTemplParams" colspan="2">template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
-<tr class="memitem:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a1fac37f29e7c2470f3b3b72296858ba3">call</a> (void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
-<tr class="memdesc:a1fac37f29e7c2470f3b3b72296858ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters.  <a href="#a1fac37f29e7c2470f3b3b72296858ba3">More...</a><br/></td></tr>
-<tr class="separator:a1fac37f29e7c2470f3b3b72296858ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a860a681326b1953803a0fc4788435596"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
-<tr class="memitem:a860a681326b1953803a0fc4788435596"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a860a681326b1953803a0fc4788435596">callChecked</a> (const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
-<tr class="memdesc:a860a681326b1953803a0fc4788435596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker.  <a href="#a860a681326b1953803a0fc4788435596">More...</a><br/></td></tr>
-<tr class="separator:a860a681326b1953803a0fc4788435596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925fca48c6049ae81f2cd309c05cb3a7"><td class="memTemplParams" colspan="2">template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </td></tr>
+<tr class="memitem:a925fca48c6049ae81f2cd309c05cb3a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classListenerList.html#a925fca48c6049ae81f2cd309c05cb3a7">callCheckedExcluding</a> (ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</td></tr>
+<tr class="memdesc:a925fca48c6049ae81f2cd309c05cb3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a member function, with 5 parameters, on all but the specified listener in the list with a bail-out-checker.  <a href="#a925fca48c6049ae81f2cd309c05cb3a7">More...</a><br/></td></tr>
+<tr class="separator:a925fca48c6049ae81f2cd309c05cb3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7f9efd24496a8284f6f1df4b9065bb"><td class="memItemLeft" align="right" valign="top">const ArrayType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList.html#aae7f9efd24496a8284f6f1df4b9065bb">getListeners</a> () const noexcept</td></tr>
 <tr class="separator:aae7f9efd24496a8284f6f1df4b9065bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -331,73 +300,7 @@ template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&g
 
 </div>
 </div>
-<a class="anchor" id="a3b96ee4d2b3e77dfddce53f2451c4556"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classListenerList.html">ListenerList</a>&lt;ListenerClass, ArrayType&gt; <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList.html#a3b96ee4d2b3e77dfddce53f2451c4556">ThisType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa03db5b04e4fe0dda6e95bd9055c9705"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef ListenerClass <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList.html#aa03db5b04e4fe0dda6e95bd9055c9705">ListenerType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a809baedf6e32eaaf1696e85e1149389f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList.html">ListenerList</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates an empty list. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3b3b8138506855e80b9ebf61a032f540"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::~<a class="el" href="classListenerList.html">ListenerList</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a809baedf6e32eaaf1696e85e1149389f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -601,6 +504,37 @@ template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&g
 
 </div>
 </div>
+<a class="anchor" id="a77b70d2c36e1bab9a707bed97a17653c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)()&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with no parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5757f573480b5f86416f2c85bb985d7a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -636,802 +570,7 @@ template&lt;class BailOutCheckerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a02ed7b864a523d0f3a015c0cb131564e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 1 parameter. </p>
-
-</div>
-</div>
-<a class="anchor" id="adfa011223fefc9446a4e1a68fd163233"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with one parameter and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="af27a26ed368214fa92f7f31497a7bc9a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 2 parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a016324817b14abe106980929a8ad20b3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 2 parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3135456a9b63353c4ac4de9fcbd214dd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 3 parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a105833e18f32cd00ee0a4aca5b35a0b3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 3 parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5396917f4ce69ff81b3779e9ce64c751"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 4 parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a18c5f7f2f18d054bbbe516e33c6a7d13"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 4 parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1e8137450a357ee0c57627d6ff963b22"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(5)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 5 parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a72225f7871a1ae12c2a4ffd978aa5b5a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(5)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1fac37f29e7c2470f3b3b72296858ba3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5, P6)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(5)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(6)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 5 parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a860a681326b1953803a0fc4788435596"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
-          <td>(</td>
-          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
-          <td class="paramname"><em>bailOutChecker</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5, P6)&#160;</td>
-          <td class="paramname"><em>callbackFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(1)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(2)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(3)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(4)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(5)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LL_PARAM(6)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
-
-</div>
-</div>
-<a class="anchor" id="aae7f9efd24496a8284f6f1df4b9065bb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ArrayType&amp; <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::getListeners </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aad67eee9d64815b62ad8ea11f6812e75"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::add </td>
-          <td>(</td>
-          <td class="paramtype">ListenerClass *const&#160;</td>
-          <td class="paramname"><em>listenerToAdd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a listener to the list. </p>
-<p>A listener can only be added once, so if the listener is already in the list, this method has no effect. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classListenerList.html#ac7d5795fb151d7470e1fb2226c7d4676" title="Removes a listener from the list. ">remove</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac7d5795fb151d7470e1fb2226c7d4676"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::remove </td>
-          <td>(</td>
-          <td class="paramtype">ListenerClass *const&#160;</td>
-          <td class="paramname"><em>listenerToRemove</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a listener from the list. </p>
-<p>If the listener wasn't in the list, this has no effect. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4ced7631daac418522719e14a1d35b7d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of registered listeners. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac35c41903fa2ee45cb8f5666b6724d06"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::isEmpty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if any listeners are registered. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8e777917d86ac8f06c6ce97e00d3ef54"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clears the list. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa57ce8e754fd494260dd68a3ba23fb3a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::contains </td>
-          <td>(</td>
-          <td class="paramtype">ListenerClass *const&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the specified listener has been added to the list. </p>
-
-</div>
-</div>
-<a class="anchor" id="adb25c4b3880d1004072305edf2e08766"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::call </td>
-          <td>(</td>
-          <td class="paramtype">void(ListenerClass::*)()&#160;</td>
-          <td class="paramname"><em>callbackFunction</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls a member function on each listener in the list, with no parameters. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5757f573480b5f86416f2c85bb985d7a"></a>
+<a class="anchor" id="a57b707f3d08e69fa5fe346da93b89ed2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1440,8 +579,14 @@ template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&g
 template&lt;class BailOutCheckerType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callChecked </td>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
           <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
           <td class="paramname"><em>bailOutChecker</em>, </td>
         </tr>
@@ -1459,8 +604,10 @@ template&lt;class BailOutCheckerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calls a member function on each listener in the list, with no parameters and a bail-out-checker. </p>
-<p>See the class description for info about writing a bail-out checker. </p>
+<p>Calls a member function on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
+
+<p>Referenced by <a class="el" href="classListenerList.html#a77b70d2c36e1bab9a707bed97a17653c">ListenerList&lt; MenuBarModel::Listener &gt;::callExcluding()</a>.</p>
 
 </div>
 </div>
@@ -1493,6 +640,45 @@ template&lt;LL_TEMPLATE(1) &gt; </div>
 </div><div class="memdoc">
 
 <p>Calls a member function on each listener in the list, with 1 parameter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a842d85beb3ee7e2721c96bf1fe173202"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 1 parameter, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -1530,8 +716,53 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calls a member function on each listener in the list, with one parameter and a bail-out-checker. </p>
+<p>Calls a member function on each listener in the list, with 1 parameter and a bail-out-checker. </p>
 <p>See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
+<a class="anchor" id="a45350c9c1450551b21829833eb0c38b3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 1 parameter, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
 
 </div>
 </div>
@@ -1570,6 +801,51 @@ template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </div>
 </div><div class="memdoc">
 
 <p>Calls a member function on each listener in the list, with 2 parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a175032777084686c2106cb42e50d2618"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 2 parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -1618,6 +894,57 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </di
 
 </div>
 </div>
+<a class="anchor" id="a02b915332aed668579682ab0fabb8dc4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 2 parameters, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
 <a class="anchor" id="a3135456a9b63353c4ac4de9fcbd214dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1659,6 +986,57 @@ template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </div>
 </div><div class="memdoc">
 
 <p>Calls a member function on each listener in the list, with 3 parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a358369bb074cdca768059c3bfa007c4a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 3 parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -1713,6 +1091,63 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMP
 
 </div>
 </div>
+<a class="anchor" id="a2130d4c317306606d5b509fa7de6d473"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 3 parameters, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5396917f4ce69ff81b3779e9ce64c751"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1760,6 +1195,63 @@ template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &g
 </div><div class="memdoc">
 
 <p>Calls a member function on each listener in the list, with 4 parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b9ebd1126493146a22e10b0a77d3ddf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 4 parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -1820,6 +1312,69 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMP
 
 </div>
 </div>
+<a class="anchor" id="ae23b32f91ff09fb3333c8a168fda0f04"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 4 parameters, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1e8137450a357ee0c57627d6ff963b22"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1873,6 +1428,69 @@ template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , 
 </div><div class="memdoc">
 
 <p>Calls a member function on each listener in the list, with 5 parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a267162b2e1e0aadf1ebbe63ebd4d7563"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(5)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 5 parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -1939,6 +1557,75 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMP
 
 </div>
 </div>
+<a class="anchor" id="a09058bf5d7d946428d1c3bb3bb7472c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(5)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 5 parameters, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1fac37f29e7c2470f3b3b72296858ba3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1997,7 +1684,76 @@ template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , 
       </table>
 </div><div class="memdoc">
 
-<p>Calls a member function on each listener in the list, with 5 parameters. </p>
+<p>Calls a member function on each listener in the list, with 6 parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d13fa831fd59b6e92bbaf03185f8a5d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5, P6)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(5)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(6)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 6 parameters, on all but the specified listener in the list. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. </p>
 
 </div>
 </div>
@@ -2065,8 +1821,83 @@ template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMP
       </table>
 </div><div class="memdoc">
 
-<p>Calls a member function on each listener in the list, with 5 parameters and a bail-out-checker. </p>
+<p>Calls a member function on each listener in the list, with 6 parameters and a bail-out-checker. </p>
 <p>See the class description for info about writing a bail-out checker. </p>
+
+</div>
+</div>
+<a class="anchor" id="a925fca48c6049ae81f2cd309c05cb3a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , LL_TEMPLATE(1) , LL_TEMPLATE(2) , LL_TEMPLATE(3) , LL_TEMPLATE(4) , LL_TEMPLATE(5) , LL_TEMPLATE(6) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::callCheckedExcluding </td>
+          <td>(</td>
+          <td class="paramtype">ListenerClass &amp;&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(ListenerClass::*)(P1, P2, P3, P4, P5, P6)&#160;</td>
+          <td class="paramname"><em>callbackFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(1)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(2)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(3)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(4)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(5)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LL_PARAM(6)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a member function, with 5 parameters, on all but the specified listener in the list with a bail-out-checker. </p>
+<p>This can be useful if the caller is also a listener and needs to exclude itself. See the class description for info about writing a bail-out checker. </p>
 
 </div>
 </div>
@@ -2096,13 +1927,13 @@ template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&g
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="juce__core_2containers_2juce__ListenerList_8h.html">juce_core/containers/juce_ListenerList.h</a></li>
+<li><a class="el" href="juce__ListenerList_8h.html">juce_ListenerList.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:07 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:46 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

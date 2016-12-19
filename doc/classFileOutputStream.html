@@ -194,10 +194,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9f80423e8a780f4124d9b7910d712cb1 inherit pub_methods_classOutputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from an input stream and writes it to this stream.  <a href="#a9f80423e8a780f4124d9b7910d712cb1">More...</a><br/></td></tr>
 <tr class="separator:a9f80423e8a780f4124d9b7910d712cb1 inherit pub_methods_classOutputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd9133af8d3e6a04b8c983290649909 inherit pub_methods_classOutputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#a3cd9133af8d3e6a04b8c983290649909">setNewLineString</a> (const <a class="el" href="classString.html">String</a> &amp;newLineString)</td></tr>
-<tr class="memdesc:a3cd9133af8d3e6a04b8c983290649909 inherit pub_methods_classOutputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string that will be written to the stream when the writeNewLine() method is called.  <a href="#a3cd9133af8d3e6a04b8c983290649909">More...</a><br/></td></tr>
+<tr class="memdesc:a3cd9133af8d3e6a04b8c983290649909 inherit pub_methods_classOutputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to write to the stream when a new line is written.  <a href="#a3cd9133af8d3e6a04b8c983290649909">More...</a><br/></td></tr>
 <tr class="separator:a3cd9133af8d3e6a04b8c983290649909 inherit pub_methods_classOutputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca663ec96b69491053385b6c26e6572 inherit pub_methods_classOutputStream"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#a9ca663ec96b69491053385b6c26e6572">getNewLineString</a> () const noexcept</td></tr>
-<tr class="memdesc:a9ca663ec96b69491053385b6c26e6572 inherit pub_methods_classOutputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current new-line string that was set by <a class="el" href="classOutputStream.html#a3cd9133af8d3e6a04b8c983290649909" title="Sets the string that will be written to the stream when the writeNewLine() method is called...">setNewLineString()</a>.  <a href="#a9ca663ec96b69491053385b6c26e6572">More...</a><br/></td></tr>
+<tr class="memdesc:a9ca663ec96b69491053385b6c26e6572 inherit pub_methods_classOutputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current new-line string that was set by <a class="el" href="classOutputStream.html#a3cd9133af8d3e6a04b8c983290649909" title="Sets the string to write to the stream when a new line is written. ">setNewLineString()</a>.  <a href="#a9ca663ec96b69491053385b6c26e6572">More...</a><br/></td></tr>
 <tr class="separator:a9ca663ec96b69491053385b6c26e6572 inherit pub_methods_classOutputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -235,7 +235,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a>. </p>
-<p>If the file doesn't exist, it will first be created. If the file can't be created or opened, the <a class="el" href="classFileOutputStream.html#a616887c2791a85e35f00b6e38436d4be" title="Returns true if the stream couldn&#39;t be opened for some reason. ">failedToOpen()</a> method will return true.</p>
+<p>If the file doesn't exist, it will first be created. If the file can't be created or opened (for example, because the parent directory of the file does not exist), the <a class="el" href="classFileOutputStream.html#a616887c2791a85e35f00b6e38436d4be" title="Returns true if the stream couldn&#39;t be opened for some reason. ">failedToOpen()</a> method will return true.</p>
 <p>If the file already exists when opened, the stream's write-postion will be set to the end of the file. To overwrite an existing file, use <a class="el" href="classFile.html#acca30337faecf8c3d97a1e70c725db23" title="Deletes a file. ">File::deleteFile()</a> before opening the stream, or use setPosition(0) after it's opened (although this won't truncate the file).</p>
 <p>Destroying a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> object does not force the operating system to write the buffered data to disk immediately. If this is required you should call <a class="el" href="classFileOutputStream.html#afc63785b8744278d51814c4892207414" title="If the stream is using a buffer, this will ensure it gets written out to the destination. ">flush()</a> before triggering the destructor.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTemporaryFile.html" title="Manages a temporary file, which will be deleted when this object is deleted. ">TemporaryFile</a> </dd></dl>
@@ -551,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:06 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:44 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

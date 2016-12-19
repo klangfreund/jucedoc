@@ -8,6 +8,7 @@ var searchData=
   ['nativefunctionargs',['NativeFunctionArgs',['../structvar_1_1NativeFunctionArgs.html',1,'var']]],
   ['nativeimagetype',['NativeImageType',['../classNativeImageType.html',1,'']]],
   ['nativemessagebox',['NativeMessageBox',['../classNativeMessageBox.html',1,'']]],
+  ['naturalfilecomparator',['NaturalFileComparator',['../structFile_1_1NaturalFileComparator.html',1,'File']]],
   ['newline',['NewLine',['../classNewLine.html',1,'']]],
   ['node',['Node',['../classAudioProcessorGraph_1_1Node.html',1,'AudioProcessorGraph']]],
   ['normalisablerange',['NormalisableRange',['../classNormalisableRange.html',1,'']]],

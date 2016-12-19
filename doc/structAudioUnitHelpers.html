@@ -132,6 +132,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a890b0da6eb3ecad3ee73c47c63dc7d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c5a76c5a1721f88d9ee0a3e0656926"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; AUChannelInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">getAUChannelInfo</a> (const <a class="el" href="classAudioProcessor.html">AudioProcessor</a> &amp;processor)</td></tr>
 <tr class="separator:a72c5a76c5a1721f88d9ee0a3e0656926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec130e790d87fca3c0a34f60eba216c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioUnitHelpers.html#a6ec130e790d87fca3c0a34f60eba216c">getBusCount</a> (const <a class="el" href="classAudioProcessor.html">AudioProcessor</a> *juceFilter, bool isInput)</td></tr>
+<tr class="separator:a6ec130e790d87fca3c0a34f60eba216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e17712bdffc5d7a180c09d561329fa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">setBusesLayout</a> (<a class="el" href="classAudioProcessor.html">AudioProcessor</a> *juceFilter, const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">AudioProcessor::BusesLayout</a> &amp;requestedLayouts)</td></tr>
+<tr class="separator:ad1e17712bdffc5d7a180c09d561329fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e13cc1304fce78d837abe4a8cccef61"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structAudioProcessor_1_1BusesLayout.html">AudioProcessor::BusesLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioUnitHelpers.html#a2e13cc1304fce78d837abe4a8cccef61">getBusesLayout</a> (const <a class="el" href="classAudioProcessor.html">AudioProcessor</a> *juceFilter)</td></tr>
+<tr class="separator:a2e13cc1304fce78d837abe4a8cccef61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac68ad178d4178ad91a11fb91ced08290"></a>
@@ -606,7 +612,107 @@ template&lt;int numLayouts&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classSortedSet.html#a861274cee3723b88dc742aef24ba65d5">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::add()</a>, <a class="el" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::add()</a>, <a class="el" href="classSortedSet.html#ae1e68e73d12e73d1cd4d63b4ee7fa791">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::contains()</a>, <a class="el" href="classAudioProcessor.html#abd56b3a8717d5898942babd3a88690ae">AudioProcessor::getBus()</a>, <a class="el" href="classAudioProcessor.html#a349a6c1a08d916db53224675c897cd5b">AudioProcessor::getBusCount()</a>, <a class="el" href="classAudioProcessor_1_1Bus.html#a0b84a02ba9e358a7bff8282973c7da71">AudioProcessor::Bus::getBusesLayoutForLayoutChangeOfBus()</a>, <a class="el" href="classAudioProcessor.html#a17f5020380dbfcd84dff17578143fddc">AudioProcessor::getChannelCountOfBus()</a>, <a class="el" href="classArray.html#ac1cb5babc0950eb9897812b221695b3c">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getReference()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a73c26adffea9b970150aa2c204155db6">AudioProcessor::BusesLayout::inputBuses</a>, <a class="el" href="classAudioProcessor_1_1Bus.html#acb3c103daadf6fa83eb25961f3347d11">AudioProcessor::Bus::isNumberOfChannelsSupported()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#aeb39a2b0609cdecfa2b2e7075724acf5">AudioProcessor::BusesLayout::outputBuses</a>, <a class="el" href="classSortedSet.html#aae5daa157bd06da7e89ac7abde60ff68">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::size()</a>, <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>, <a class="el" href="classAudioChannelSet.html#ad7be564dafc89bddf37dea65d7f014ba">AudioChannelSet::size()</a>, and <a class="el" href="classAudioProcessor_1_1Bus.html#a1272fcafe09a0dc0139b7d4705f211dd">AudioProcessor::Bus::supportedLayoutWithChannels()</a>.</p>
+<p>References <a class="el" href="classSortedSet.html#a861274cee3723b88dc742aef24ba65d5">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::add()</a>, <a class="el" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::add()</a>, <a class="el" href="classSortedSet.html#ae1e68e73d12e73d1cd4d63b4ee7fa791">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::contains()</a>, <a class="el" href="classAudioProcessor.html#abd56b3a8717d5898942babd3a88690ae">AudioProcessor::getBus()</a>, <a class="el" href="structAudioUnitHelpers.html#a6ec130e790d87fca3c0a34f60eba216c">getBusCount()</a>, <a class="el" href="classAudioProcessor_1_1Bus.html#a0b84a02ba9e358a7bff8282973c7da71">AudioProcessor::Bus::getBusesLayoutForLayoutChangeOfBus()</a>, <a class="el" href="classAudioProcessor.html#a17f5020380dbfcd84dff17578143fddc">AudioProcessor::getChannelCountOfBus()</a>, <a class="el" href="classArray.html#ac1cb5babc0950eb9897812b221695b3c">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getReference()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a73c26adffea9b970150aa2c204155db6">AudioProcessor::BusesLayout::inputBuses</a>, <a class="el" href="classAudioProcessor_1_1Bus.html#acb3c103daadf6fa83eb25961f3347d11">AudioProcessor::Bus::isNumberOfChannelsSupported()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#aeb39a2b0609cdecfa2b2e7075724acf5">AudioProcessor::BusesLayout::outputBuses</a>, <a class="el" href="classSortedSet.html#aae5daa157bd06da7e89ac7abde60ff68">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;::size()</a>, <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>, <a class="el" href="classAudioChannelSet.html#ad7be564dafc89bddf37dea65d7f014ba">AudioChannelSet::size()</a>, and <a class="el" href="classAudioProcessor_1_1Bus.html#a1272fcafe09a0dc0139b7d4705f211dd">AudioProcessor::Bus::supportedLayoutWithChannels()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ec130e790d87fca3c0a34f60eba216c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int AudioUnitHelpers::getBusCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classAudioProcessor.html">AudioProcessor</a> *&#160;</td>
+          <td class="paramname"><em>juceFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isInput</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classAudioProcessor.html#a349a6c1a08d916db53224675c897cd5b">AudioProcessor::getBusCount()</a>, and <a class="el" href="juce__MathsFunctions_8h.html#abc3ad3738e50ba0dadc7ac2e5535a09a">jmin()</a>.</p>
+
+<p>Referenced by <a class="el" href="classAudioUnitHelpers_1_1ChannelRemapper.html#aee51531605d0b0cc8f7f7e549aea3470">AudioUnitHelpers::ChannelRemapper::alloc()</a>, <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">getAUChannelInfo()</a>, <a class="el" href="structAudioUnitHelpers.html#a2e13cc1304fce78d837abe4a8cccef61">getBusesLayout()</a>, and <a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">setBusesLayout()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1e17712bdffc5d7a180c09d561329fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool AudioUnitHelpers::setBusesLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioProcessor.html">AudioProcessor</a> *&#160;</td>
+          <td class="paramname"><em>juceFilter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structAudioProcessor_1_1BusesLayout.html">AudioProcessor::BusesLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>requestedLayouts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::add()</a>, <a class="el" href="namespaceStandardApplicationCommandIDs.html#ad348cc9beaaea88093769e2da468320aa3584c202667823072c928fd699725466">StandardApplicationCommandIDs::copy</a>, <a class="el" href="classAudioChannelSet.html#a707681c4a7fc696d05c887e37e29bbc2">AudioChannelSet::disabled()</a>, <a class="el" href="classAudioProcessor.html#a349a6c1a08d916db53224675c897cd5b">AudioProcessor::getBusCount()</a>, <a class="el" href="structAudioUnitHelpers.html#a6ec130e790d87fca3c0a34f60eba216c">getBusCount()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a73c26adffea9b970150aa2c204155db6">AudioProcessor::BusesLayout::inputBuses</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#aeb39a2b0609cdecfa2b2e7075724acf5">AudioProcessor::BusesLayout::outputBuses</a>, and <a class="el" href="classAudioProcessor.html#acd92c2d343de66816b290015cd15517f">AudioProcessor::setBusesLayout()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e13cc1304fce78d837abe4a8cccef61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structAudioProcessor_1_1BusesLayout.html">AudioProcessor::BusesLayout</a> AudioUnitHelpers::getBusesLayout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classAudioProcessor.html">AudioProcessor</a> *&#160;</td>
+          <td class="paramname"><em>juceFilter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classAudioProcessor.html#a349a6c1a08d916db53224675c897cd5b">AudioProcessor::getBusCount()</a>, <a class="el" href="structAudioUnitHelpers.html#a6ec130e790d87fca3c0a34f60eba216c">getBusCount()</a>, <a class="el" href="classAudioProcessor.html#a6b618b6e5cdca4da58e87417ade7dbc0">AudioProcessor::getBusesLayout()</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a73c26adffea9b970150aa2c204155db6">AudioProcessor::BusesLayout::inputBuses</a>, <a class="el" href="structAudioProcessor_1_1BusesLayout.html#aeb39a2b0609cdecfa2b2e7075724acf5">AudioProcessor::BusesLayout::outputBuses</a>, and <a class="el" href="classArray.html#af6fe3614e877f04a42330f440a5548da">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::removeLast()</a>.</p>
 
 </div>
 </div>
@@ -617,7 +723,7 @@ template&lt;int numLayouts&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:01 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

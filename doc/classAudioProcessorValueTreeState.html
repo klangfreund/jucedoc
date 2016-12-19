@@ -129,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84ac43c650107a8b440ad98b3706e733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a84ac43c650107a8b440ad98b3706e733">~AudioProcessorValueTreeState</a> ()</td></tr>
 <tr class="memdesc:a84ac43c650107a8b440ad98b3706e733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a84ac43c650107a8b440ad98b3706e733">More...</a><br/></td></tr>
 <tr class="separator:a84ac43c650107a8b440ad98b3706e733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa53f5612a40298fb495aae15899c92a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#aaa53f5612a40298fb495aae15899c92a">createAndAddParameter</a> (<a class="el" href="classString.html">String</a> parameterID, <a class="el" href="classString.html">String</a> parameterName, <a class="el" href="classString.html">String</a> labelText, <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; float &gt; valueRange, float defaultValue, std::function&lt; <a class="el" href="classString.html">String</a>(float)&gt; valueToTextFunction, std::function&lt; float(const <a class="el" href="classString.html">String</a> &amp;)&gt; textToValueFunction)</td></tr>
-<tr class="memdesc:aaa53f5612a40298fb495aae15899c92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a new parameter object for controlling a parameter with the given ID.  <a href="#aaa53f5612a40298fb495aae15899c92a">More...</a><br/></td></tr>
-<tr class="separator:aaa53f5612a40298fb495aae15899c92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1923a66bf5bbc5084bcab07f9dbb5972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a1923a66bf5bbc5084bcab07f9dbb5972">createAndAddParameter</a> (const <a class="el" href="classString.html">String</a> &amp;parameterID, const <a class="el" href="classString.html">String</a> &amp;parameterName, const <a class="el" href="classString.html">String</a> &amp;labelText, <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; float &gt; valueRange, float defaultValue, std::function&lt; <a class="el" href="classString.html">String</a>(float)&gt; valueToTextFunction, std::function&lt; float(const <a class="el" href="classString.html">String</a> &amp;)&gt; textToValueFunction)</td></tr>
+<tr class="memdesc:a1923a66bf5bbc5084bcab07f9dbb5972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a new parameter object for controlling a parameter with the given ID.  <a href="#a1923a66bf5bbc5084bcab07f9dbb5972">More...</a><br/></td></tr>
+<tr class="separator:a1923a66bf5bbc5084bcab07f9dbb5972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0980eb46aa75934fa8bb6ab72a7aa31f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a0980eb46aa75934fa8bb6ab72a7aa31f">getParameter</a> (<a class="el" href="classStringRef.html">StringRef</a> parameterID) const noexcept</td></tr>
 <tr class="memdesc:a0980eb46aa75934fa8bb6ab72a7aa31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a parameter by its ID string.  <a href="#a0980eb46aa75934fa8bb6ab72a7aa31f">More...</a><br/></td></tr>
 <tr class="separator:a0980eb46aa75934fa8bb6ab72a7aa31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +195,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a state object for a given processor. </p>
-<p>The <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a> is optional and can be a nullptr. After creating your state object, you should add parameters with the <a class="el" href="classAudioProcessorValueTreeState.html#aaa53f5612a40298fb495aae15899c92a" title="Creates and returns a new parameter object for controlling a parameter with the given ID...">createAndAddParameter()</a> method. Note that each <a class="el" href="classAudioProcessorValueTreeState.html" title="This class contains a ValueTree which is used to manage an AudioProcessor&#39;s entire state...">AudioProcessorValueTreeState</a> should be attached to only one processor, and must have the same lifetime as the processor, as they will have dependencies on each other. </p>
+<p>The <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a> is optional and can be a nullptr. After creating your state object, you should add parameters with the <a class="el" href="classAudioProcessorValueTreeState.html#a1923a66bf5bbc5084bcab07f9dbb5972" title="Creates and returns a new parameter object for controlling a parameter with the given ID...">createAndAddParameter()</a> method. Note that each <a class="el" href="classAudioProcessorValueTreeState.html" title="This class contains a ValueTree which is used to manage an AudioProcessor&#39;s entire state...">AudioProcessorValueTreeState</a> should be attached to only one processor, and must have the same lifetime as the processor, as they will have dependencies on each other. </p>
 
 </div>
 </div>
@@ -217,26 +217,26 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aaa53f5612a40298fb495aae15899c92a"></a>
+<a class="anchor" id="a1923a66bf5bbc5084bcab07f9dbb5972"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a>* AudioProcessorValueTreeState::createAndAddParameter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>parameterID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>parameterName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>labelText</em>, </td>
         </tr>
         <tr>
@@ -492,7 +492,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:01 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

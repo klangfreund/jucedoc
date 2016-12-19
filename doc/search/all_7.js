@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['haderror',['hadError',['../classURL_1_1DownloadTask.html#a8dc47e68b23530361966dd3daff05b9e',1,'URL::DownloadTask']]],
   ['handleackfromdevice',['handleACKFromDevice',['../structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#ae33ef7eb7dc3af932c6c14dbf9fe89fb',1,'juce::littlefoot::LittleFootRemoteHeap::handleACKFromDevice()'],['../structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01',1,'littlefoot::LittleFootRemoteHeap::handleACKFromDevice()']]],
   ['handleaftertouch',['handleAftertouch',['../classSynthesiser.html#ae92ed64d170257574b9009b3384bde01',1,'Synthesiser']]],
   ['handleasyncupdate',['handleAsyncUpdate',['../classAsyncUpdater.html#a446f3af793131f8772329f1f8b526578',1,'AsyncUpdater::handleAsyncUpdate()'],['../classModalComponentManager.html#a47d303fb64f3ae02deb986d58bfeb893',1,'ModalComponentManager::handleAsyncUpdate()'],['../classMenuBarModel.html#a0dddd32a4b5bd42c1313751bb13f882e',1,'MenuBarModel::handleAsyncUpdate()'],['../classComboBox.html#a773b7375c6a370db67ed6fd16b4535a7',1,'ComboBox::handleAsyncUpdate()']]],
@@ -147,6 +148,7 @@ var searchData=
   ['heapblock_3c_20componentpeer_20_2a_20_3e',['HeapBlock&lt; ComponentPeer * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20const_20float_20_2a_20_3e',['HeapBlock&lt; const float * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20const_20plugindescription_20_2a_20_3e',['HeapBlock&lt; const PluginDescription * &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20const_20popupmenu_20_2a_20_3e',['HeapBlock&lt; const PopupMenu * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20desktop_3a_3adisplays_3a_3adisplay_20_3e',['HeapBlock&lt; Desktop::Displays::Display &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20directorycontentslist_3a_3afileinfo_20_2a_20_3e',['HeapBlock&lt; DirectoryContentsList::FileInfo * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20drawablebutton_20_2a_20_3e',['HeapBlock&lt; DrawableButton * &gt;',['../classHeapBlock.html',1,'']]],
@@ -169,7 +171,6 @@ var searchData=
   ['heapblock_3c_20int_20_3e',['HeapBlock&lt; int &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20item_20_2a_20_3e',['HeapBlock&lt; Item * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20item_20_3e',['HeapBlock&lt; Item &gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20iteminfo_20_2a_20_3e',['HeapBlock&lt; ItemInfo * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20itemlayoutproperties_20_2a_20_3e',['HeapBlock&lt; ItemLayoutProperties * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20juce_3a_3alittlefoot_3a_3acompiler_3a_3acodegenerator_3a_3amarkerandaddress_20_3e',['HeapBlock&lt; juce::littlefoot::Compiler::CodeGenerator::MarkerAndAddress &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20juce_3a_3alittlefoot_3a_3anativefunction_20_3e',['HeapBlock&lt; juce::littlefoot::NativeFunction &gt;',['../classHeapBlock.html',1,'']]],
@@ -334,5 +335,6 @@ var searchData=
   ['hosttype',['HostType',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8',1,'PluginHostType']]],
   ['hotpink',['hotpink',['../classColours.html#a7f61d3865bb38cd0eecdc7c46ae0e603',1,'Colours']]],
   ['hours',['hours',['../classRelativeTime.html#a1ae421b15cbeb81220bbf544a116cb77',1,'RelativeTime']]],
+  ['httpcode',['httpCode',['../classURL_1_1DownloadTask.html#ac006f0a866f0cdcef8592ba1536dab3e',1,'URL::DownloadTask']]],
   ['hyperlinkbutton',['HyperlinkButton',['../classHyperlinkButton.html',1,'HyperlinkButton'],['../classHyperlinkButton.html#aab8c9244ad8e28df8d012bbb3fb5b89f',1,'HyperlinkButton::HyperlinkButton(const String &amp;linkText, const URL &amp;linkURL)'],['../classHyperlinkButton.html#a6248ace276d2aade28ae1c61f33e76fa',1,'HyperlinkButton::HyperlinkButton()']]]
 ];

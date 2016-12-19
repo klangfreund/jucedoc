@@ -9,6 +9,7 @@ var searchData=
   ['below',['below',['../classBubbleComponent.html#aba96d481d723fd2549f497ccd7ed41a3a971b484b6fd9e0e0f97ec4ef2c64de50',1,'BubbleComponent']]],
   ['beveled',['beveled',['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8a957c356587532b49af11000b024bd38b',1,'PathStrokeType']]],
   ['bits',['bits',['../structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c',1,'IntegerWithBitSize::bits()'],['../structTouchPosition.html#ad3dd85f18e4109beb120fecee06d58ccac26f97e9093728fffecb625097d10bcc',1,'TouchPosition::bits()'],['../structTouchVelocity.html#a69c0f0d74a3c6dff1742bdd77d4319f5a3ac57d25aaa2ecc07ab6cd5067f57586',1,'TouchVelocity::bits()']]],
+  ['bitwigstudio',['BitwigStudio',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a6cf4bc70a9e21bc5e978a4960084fc58',1,'PluginHostType']]],
   ['blacknotecolourid',['blackNoteColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05eadaf19e83bcd2d13a33a2e84d982b3506',1,'MidiKeyboardComponent']]],
   ['bluetoothmidi',['bluetoothMidi',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959',1,'RuntimePermissions']]],
   ['bold',['bold',['../classFont.html#a52a35b5dc1e6f782e25283c9283bae4fa1af8035a650d8a663a3f67b3b6208eed',1,'Font']]],

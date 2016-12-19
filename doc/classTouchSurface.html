@@ -113,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa063e3fc91d3f2279e0ad16b3f29f6e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchSurface.html#aa063e3fc91d3f2279e0ad16b3f29f6e3">cancelAllActiveTouches</a> () noexcept=0</td></tr>
 <tr class="memdesc:aa063e3fc91d3f2279e0ad16b3f29f6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces a touch-off message for all active touches.  <a href="#aa063e3fc91d3f2279e0ad16b3f29f6e3">More...</a><br/></td></tr>
 <tr class="separator:aa063e3fc91d3f2279e0ad16b3f29f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0509d8563042afa740f862720cb7892d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchSurface.html#a0509d8563042afa740f862720cb7892d">getNumberOfKeywaves</a> () const =0</td></tr>
+<tr class="memdesc:a0509d8563042afa740f862720cb7892d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the on-screen seaboard view, this will return the number of keys.  <a href="#a0509d8563042afa740f862720cb7892d">More...</a><br/></td></tr>
+<tr class="separator:a0509d8563042afa740f862720cb7892d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41fa3039afd68cff0c9bf7a87b09f415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchSurface.html#a41fa3039afd68cff0c9bf7a87b09f415">callListenersTouchChanged</a> (const <a class="el" href="structTouchSurface_1_1Touch.html">TouchSurface::Touch</a> &amp;t)</td></tr>
 <tr class="memdesc:a41fa3039afd68cff0c9bf7a87b09f415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testing feature: this allows you to inject touches onto a touch surface.  <a href="#a41fa3039afd68cff0c9bf7a87b09f415">More...</a><br/></td></tr>
 <tr class="separator:a41fa3039afd68cff0c9bf7a87b09f415"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +204,32 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Forces a touch-off message for all active touches. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0509d8563042afa740f862720cb7892d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int TouchSurface::getNumberOfKeywaves </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For the on-screen seaboard view, this will return the number of keys. </p>
+<p>For other types of touch-surface, it will return 0. </p>
 
 </div>
 </div>
@@ -304,7 +333,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:51 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

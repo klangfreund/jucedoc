@@ -241,6 +241,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8930aa94cb6e3714ef9e7449d08e5f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#ac8930aa94cb6e3714ef9e7449d08e5f6">removeListener</a> (<a class="el" href="classValueTree_1_1Listener.html">Listener</a> *listener)</td></tr>
 <tr class="memdesc:ac8930aa94cb6e3714ef9e7449d08e5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener that was previously added with <a class="el" href="classValueTree.html#a0a0d82471cb1119fc1a7b7018e3af394" title="Adds a listener to receive callbacks when this node is changed. ">addListener()</a>.  <a href="#ac8930aa94cb6e3714ef9e7449d08e5f6">More...</a><br/></td></tr>
 <tr class="separator:ac8930aa94cb6e3714ef9e7449d08e5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b3ee8728b1c7e5e91b898c35f1b73e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValueTree.html">ValueTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#a85b3ee8728b1c7e5e91b898c35f1b73e">setPropertyExcludingListener</a> (<a class="el" href="classValueTree_1_1Listener.html">Listener</a> *listenerToExclude, const <a class="el" href="classIdentifier.html">Identifier</a> &amp;name, const <a class="el" href="classvar.html">var</a> &amp;newValue, <a class="el" href="classUndoManager.html">UndoManager</a> *undoManager)</td></tr>
+<tr class="memdesc:a85b3ee8728b1c7e5e91b898c35f1b73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a named property of the node, but will not notify a specified listener of the change.  <a href="#a85b3ee8728b1c7e5e91b898c35f1b73e">More...</a><br/></td></tr>
+<tr class="separator:a85b3ee8728b1c7e5e91b898c35f1b73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164ff183e358b982b1a1f5dd1176ab88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#a164ff183e358b982b1a1f5dd1176ab88">sendPropertyChangeMessage</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;property)</td></tr>
 <tr class="memdesc:a164ff183e358b982b1a1f5dd1176ab88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes a property-change callback to be triggered for the specified property, calling any listeners that are registered.  <a href="#a164ff183e358b982b1a1f5dd1176ab88">More...</a><br/></td></tr>
 <tr class="separator:a164ff183e358b982b1a1f5dd1176ab88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1589,6 +1592,47 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a85b3ee8728b1c7e5e91b898c35f1b73e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValueTree.html">ValueTree</a>&amp; ValueTree::setPropertyExcludingListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classValueTree_1_1Listener.html">Listener</a> *&#160;</td>
+          <td class="paramname"><em>listenerToExclude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIdentifier.html">Identifier</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
+          <td class="paramname"><em>newValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUndoManager.html">UndoManager</a> *&#160;</td>
+          <td class="paramname"><em>undoManager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes a named property of the node, but will not notify a specified listener of the change. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classValueTree.html#ad236114dc2a8c41c799f1fc51d1614bd" title="Changes a named property of the node. ">setProperty</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a164ff183e358b982b1a1f5dd1176ab88"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1694,7 +1738,7 @@ template&lt;typename ElementComparator &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -9,5 +9,6 @@ var searchData=
   ['honeydew',['honeydew',['../classColours.html#a5f2fec9693dfbde24317fa3fe3d29528',1,'Colours']]],
   ['hostspace1',['hostSpace1',['../structVstEffectInterface.html#a0bc8a098709dda309823550721946dc9',1,'VstEffectInterface']]],
   ['hostspace2',['hostSpace2',['../structVstEffectInterface.html#a975067dae9bb0c30dd52fcfbff8b48b5',1,'VstEffectInterface']]],
-  ['hotpink',['hotpink',['../classColours.html#a7f61d3865bb38cd0eecdc7c46ae0e603',1,'Colours']]]
+  ['hotpink',['hotpink',['../classColours.html#a7f61d3865bb38cd0eecdc7c46ae0e603',1,'Colours']]],
+  ['httpcode',['httpCode',['../classURL_1_1DownloadTask.html#ac006f0a866f0cdcef8592ba1536dab3e',1,'URL::DownloadTask']]]
 ];

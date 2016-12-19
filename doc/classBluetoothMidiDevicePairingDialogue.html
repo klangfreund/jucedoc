@@ -94,9 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a475ec8a971d17bd84c21047d143066b5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBluetoothMidiDevicePairingDialogue.html#a475ec8a971d17bd84c21047d143066b5">open</a> ()</td></tr>
-<tr class="memdesc:a475ec8a971d17bd84c21047d143066b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the Bluetooth MIDI pairing dialogue, if it is available.  <a href="#a475ec8a971d17bd84c21047d143066b5">More...</a><br/></td></tr>
-<tr class="separator:a475ec8a971d17bd84c21047d143066b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368ee42f0c472a93a1654643ee308ead"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBluetoothMidiDevicePairingDialogue.html#a368ee42f0c472a93a1654643ee308ead">open</a> (<a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *exitCallback=nullptr)</td></tr>
+<tr class="memdesc:a368ee42f0c472a93a1654643ee308ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the Bluetooth MIDI pairing dialogue, if it is available.  <a href="#a368ee42f0c472a93a1654643ee308ead">More...</a><br/></td></tr>
+<tr class="separator:a368ee42f0c472a93a1654643ee308ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae098fb3df2ff875817d3540b0bdb6c26"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBluetoothMidiDevicePairingDialogue.html#ae098fb3df2ff875817d3540b0bdb6c26">isAvailable</a> ()</td></tr>
 <tr class="memdesc:ae098fb3df2ff875817d3540b0bdb6c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a Bluetooth MIDI pairing dialogue is available on this platform.  <a href="#ae098fb3df2ff875817d3540b0bdb6c26">More...</a><br/></td></tr>
 <tr class="separator:ae098fb3df2ff875817d3540b0bdb6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +107,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Only after a Bluetooth MIDI device has been paired will its MIDI ports be available through JUCE's <a class="el" href="classMidiInput.html" title="Represents a midi input device. ">MidiInput</a> and <a class="el" href="classMidiOutput.html" title="Controls a physical MIDI output device. ">MidiOutput</a> classes.</p>
 <p>This dialogue is currently only available on iOS and Android. On OSX, you should instead pair Bluetooth MIDI devices using the "Audio MIDI Setup" app (located in /Applications/Utilities). On Windows, you should use the system settings. On Linux, Bluetooth MIDI devices are currently not supported. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a475ec8a971d17bd84c21047d143066b5"></a>
+<a class="anchor" id="a368ee42f0c472a93a1654643ee308ead"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -117,7 +117,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static bool BluetoothMidiDevicePairingDialogue::open </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *&#160;</td>
+          <td class="paramname"><em>exitCallback</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -129,7 +130,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opens the Bluetooth MIDI pairing dialogue, if it is available. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the dialogue was opened, false on error. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exitCallback</td><td>A callback which will be called when the modal bluetooth dialog is closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the dialogue was opened, false on error.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> </dd></dl>
 
 </div>
 </div>
@@ -169,7 +177,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2016 20:11:02 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 19 2016 20:30:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
