@@ -129,13 +129,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae5daa157bd06da7e89ac7abde60ff68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#aae5daa157bd06da7e89ac7abde60ff68">size</a> () const noexcept</td></tr>
 <tr class="memdesc:aae5daa157bd06da7e89ac7abde60ff68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of elements in the set.  <a href="#aae5daa157bd06da7e89ac7abde60ff68">More...</a><br/></td></tr>
 <tr class="separator:aae5daa157bd06da7e89ac7abde60ff68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f73ea7834733c5697e87644b60341b"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a06f73ea7834733c5697e87644b60341b">operator[]</a> (const int index) const noexcept</td></tr>
+<tr class="memitem:aa58ce31a34324031104aaef0046de66d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#aa58ce31a34324031104aaef0046de66d">isEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:aa58ce31a34324031104aaef0046de66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the set is empty, false otherwise.  <a href="#aa58ce31a34324031104aaef0046de66d">More...</a><br/></td></tr>
+<tr class="separator:aa58ce31a34324031104aaef0046de66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f73ea7834733c5697e87644b60341b"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a06f73ea7834733c5697e87644b60341b">operator[]</a> (const int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a06f73ea7834733c5697e87644b60341b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the elements in the set.  <a href="#a06f73ea7834733c5697e87644b60341b">More...</a><br/></td></tr>
 <tr class="separator:a06f73ea7834733c5697e87644b60341b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931d3c86921cd13c2ca30316eb5dc8c2"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a931d3c86921cd13c2ca30316eb5dc8c2">getUnchecked</a> (const int index) const noexcept</td></tr>
+<tr class="memitem:a931d3c86921cd13c2ca30316eb5dc8c2"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a931d3c86921cd13c2ca30316eb5dc8c2">getUnchecked</a> (const int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a931d3c86921cd13c2ca30316eb5dc8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the elements in the set, without checking the index passed in.  <a href="#a931d3c86921cd13c2ca30316eb5dc8c2">More...</a><br/></td></tr>
 <tr class="separator:a931d3c86921cd13c2ca30316eb5dc8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee801e5bbc1d6fc894156e102237ca14"><td class="memItemLeft" align="right" valign="top">ElementType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#aee801e5bbc1d6fc894156e102237ca14">getReference</a> (const int index) const noexcept</td></tr>
+<tr class="memitem:aee801e5bbc1d6fc894156e102237ca14"><td class="memItemLeft" align="right" valign="top">ElementType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#aee801e5bbc1d6fc894156e102237ca14">getReference</a> (const int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:aee801e5bbc1d6fc894156e102237ca14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a direct reference to one of the elements in the set, without checking the index passed in.  <a href="#aee801e5bbc1d6fc894156e102237ca14">More...</a><br/></td></tr>
 <tr class="separator:aee801e5bbc1d6fc894156e102237ca14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bdd0240e337b2f8197629aa1334230"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a44bdd0240e337b2f8197629aa1334230">getFirst</a> () const noexcept</td></tr>
@@ -493,6 +496,35 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 
 <p>Returns the current number of elements in the set. </p>
 
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>, and <a class="el" href="classSortedSet.html#aa58ce31a34324031104aaef0046de66d">SortedSet&lt; ColourSetting &gt;::isEmpty()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa58ce31a34324031104aaef0046de66d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classSortedSet.html">SortedSet</a>&lt; ElementType, TypeOfCriticalSectionToUse &gt;::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the set is empty, false otherwise. </p>
+
 </div>
 </div>
 <a class="anchor" id="a06f73ea7834733c5697e87644b60341b"></a>
@@ -786,6 +818,8 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the item is found </dd></dl>
 
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a861274cee3723b88dc742aef24ba65d5"></a>
@@ -823,7 +857,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 <dl class="section return"><dt>Returns</dt><dd>true if the value was added, or false if it already existed </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>set, insert, addIfNotAlreadyThere, addSorted, <a class="el" href="classSortedSet.html#ad0879c462c30f89f5c09458f46b8d35f" title="Adds elements from another set to this one. ">addSet</a>, <a class="el" href="classSortedSet.html#a8b84c2248ee6e7bc18a3cb6bd235e4ea" title="Adds elements from an array to this set. ">addArray</a> </dd></dl>
 
-<p>Referenced by <a class="el" href="classSortedSet.html#a8b84c2248ee6e7bc18a3cb6bd235e4ea">SortedSet&lt; ColourSetting &gt;::addArray()</a>.</p>
+<p>Referenced by <a class="el" href="classSortedSet.html#a8b84c2248ee6e7bc18a3cb6bd235e4ea">SortedSet&lt; ColourSetting &gt;::addArray()</a>, and <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
 
 </div>
 </div>
@@ -1192,12 +1226,17 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 <li><a class="el" href="juce__SortedSet_8h.html">juce_SortedSet.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

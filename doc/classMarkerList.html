@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e1a4fc0d6b65838f3f7a737aaec7ddc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#a3e1a4fc0d6b65838f3f7a737aaec7ddc">getNumMarkers</a> () const noexcept</td></tr>
 <tr class="memdesc:a3e1a4fc0d6b65838f3f7a737aaec7ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of markers in the list.  <a href="#a3e1a4fc0d6b65838f3f7a737aaec7ddc">More...</a><br/></td></tr>
 <tr class="separator:a3e1a4fc0d6b65838f3f7a737aaec7ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1388805e9a795035f016b5e48fad22c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMarkerList_1_1Marker.html">Marker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#a1388805e9a795035f016b5e48fad22c5">getMarker</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a1388805e9a795035f016b5e48fad22c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMarkerList_1_1Marker.html">Marker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#a1388805e9a795035f016b5e48fad22c5">getMarker</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a1388805e9a795035f016b5e48fad22c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the markers in the list, by its index.  <a href="#a1388805e9a795035f016b5e48fad22c5">More...</a><br/></td></tr>
 <tr class="separator:a1388805e9a795035f016b5e48fad22c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d509facf46e1333f9c0ade028e5356"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMarkerList_1_1Marker.html">Marker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#ad5d509facf46e1333f9c0ade028e5356">getMarker</a> (const <a class="el" href="classString.html">String</a> &amp;name) const noexcept</td></tr>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94cab6b8076345f32a65bdac9f5f0544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#a94cab6b8076345f32a65bdac9f5f0544">setMarker</a> (const <a class="el" href="classString.html">String</a> &amp;name, const <a class="el" href="classRelativeCoordinate.html">RelativeCoordinate</a> &amp;position)</td></tr>
 <tr class="memdesc:a94cab6b8076345f32a65bdac9f5f0544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of a marker.  <a href="#a94cab6b8076345f32a65bdac9f5f0544">More...</a><br/></td></tr>
 <tr class="separator:a94cab6b8076345f32a65bdac9f5f0544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03909a6ec94bb19d68567cc3d5dcea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#ae03909a6ec94bb19d68567cc3d5dcea4">removeMarker</a> (int index)</td></tr>
+<tr class="memitem:ae03909a6ec94bb19d68567cc3d5dcea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#ae03909a6ec94bb19d68567cc3d5dcea4">removeMarker</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>)</td></tr>
 <tr class="memdesc:ae03909a6ec94bb19d68567cc3d5dcea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the marker at the given list index.  <a href="#ae03909a6ec94bb19d68567cc3d5dcea4">More...</a><br/></td></tr>
 <tr class="separator:ae03909a6ec94bb19d68567cc3d5dcea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5590053217d116a36637c85e0029bdcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarkerList.html#a5590053217d116a36637c85e0029bdcc">removeMarker</a> (const <a class="el" href="classString.html">String</a> &amp;name)</td></tr>
@@ -513,12 +513,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__MarkerList_8h.html">juce_MarkerList.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

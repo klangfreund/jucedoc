@@ -140,23 +140,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa64b5b9bb4ea4e7bcdc49924659936cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#aa64b5b9bb4ea4e7bcdc49924659936cc">menuItemSelected</a> (int menuItemID, int topLevelMenuIndex)=0</td></tr>
 <tr class="memdesc:aa64b5b9bb4ea4e7bcdc49924659936cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called when a menu item has been clicked on.  <a href="#aa64b5b9bb4ea4e7bcdc49924659936cc">More...</a><br/></td></tr>
 <tr class="separator:aa64b5b9bb4ea4e7bcdc49924659936cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b76c306e7f4eaf8d7fc51b9be5cd5b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a5b76c306e7f4eaf8d7fc51b9be5cd5b1">menuBarActivated</a> (bool isActive)</td></tr>
+<tr class="memdesc:a5b76c306e7f4eaf8d7fc51b9be5cd5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called when the user starts/stops navigating the maenu bar.  <a href="#a5b76c306e7f4eaf8d7fc51b9be5cd5b1">More...</a><br/></td></tr>
+<tr class="separator:a5b76c306e7f4eaf8d7fc51b9be5cd5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5b6e2acfda45bd7748e8c0d5160608"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a4f5b6e2acfda45bd7748e8c0d5160608">applicationCommandInvoked</a> (const <a class="el" href="structApplicationCommandTarget_1_1InvocationInfo.html">ApplicationCommandTarget::InvocationInfo</a> &amp;) override</td></tr>
 <tr class="separator:a4f5b6e2acfda45bd7748e8c0d5160608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa996c527567f42f3c9063241520d1270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#aa996c527567f42f3c9063241520d1270">applicationCommandListChanged</a> () override</td></tr>
 <tr class="separator:aa996c527567f42f3c9063241520d1270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dddd32a4b5bd42c1313751bb13f882e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a0dddd32a4b5bd42c1313751bb13f882e">handleAsyncUpdate</a> () override</td></tr>
 <tr class="separator:a0dddd32a4b5bd42c1313751bb13f882e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982d30b7dc660bfd7f092a33bb54c063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a982d30b7dc660bfd7f092a33bb54c063">handleMenuBarActivate</a> (bool isActive)</td></tr>
+<tr class="separator:a982d30b7dc660bfd7f092a33bb54c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e10f5dd37f6f4226ef7bdf1ff817540"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a2e10f5dd37f6f4226ef7bdf1ff817540">setMacMainMenu</a> (<a class="el" href="classMenuBarModel.html">MenuBarModel</a> *newMenuBarModel, const <a class="el" href="classPopupMenu.html">PopupMenu</a> *extraAppleMenuItems=nullptr, const <a class="el" href="classString.html">String</a> &amp;recentItemsMenuName=<a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>)</td></tr>
-<tr class="memdesc:a2e10f5dd37f6f4226ef7bdf1ff817540"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen on the Mac.  <a href="#a2e10f5dd37f6f4226ef7bdf1ff817540">More...</a><br/></td></tr>
-<tr class="separator:a2e10f5dd37f6f4226ef7bdf1ff817540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052c0e132c619775f3f14af3aae44811"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a052c0e132c619775f3f14af3aae44811">setMacMainMenu</a> (<a class="el" href="classMenuBarModel.html">MenuBarModel</a> *newMenuBarModel, const <a class="el" href="classPopupMenu.html">PopupMenu</a> *extraAppleMenuItems=nullptr, const <a class="el" href="classString.html">String</a> &amp;recentItemsMenuName=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a052c0e132c619775f3f14af3aae44811"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen on the Mac.  <a href="#a052c0e132c619775f3f14af3aae44811">More...</a><br/></td></tr>
+<tr class="separator:a052c0e132c619775f3f14af3aae44811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b8ff2471d5dc4651c31326bdc3ee56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMenuBarModel.html">MenuBarModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a69b8ff2471d5dc4651c31326bdc3ee56">getMacMainMenu</a> ()</td></tr>
 <tr class="memdesc:a69b8ff2471d5dc4651c31326bdc3ee56"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Returns the menu model that is currently being shown as the main menu bar.  <a href="#a69b8ff2471d5dc4651c31326bdc3ee56">More...</a><br/></td></tr>
 <tr class="separator:a69b8ff2471d5dc4651c31326bdc3ee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1819d59a781c4aeb6e978940e224ba"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classPopupMenu.html">PopupMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel.html#a9b1819d59a781c4aeb6e978940e224ba">getMacExtraAppleItemsMenu</a> ()</td></tr>
-<tr class="memdesc:a9b1819d59a781c4aeb6e978940e224ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Returns the menu that was last passed as the extraAppleMenuItems argument to <a class="el" href="classMenuBarModel.html#a2e10f5dd37f6f4226ef7bdf1ff817540" title="OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen...">setMacMainMenu()</a>, or nullptr if none was specified.  <a href="#a9b1819d59a781c4aeb6e978940e224ba">More...</a><br/></td></tr>
+<tr class="memdesc:a9b1819d59a781c4aeb6e978940e224ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Returns the menu that was last passed as the extraAppleMenuItems argument to <a class="el" href="classMenuBarModel.html#a052c0e132c619775f3f14af3aae44811" title="OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen...">setMacMainMenu()</a>, or nullptr if none was specified.  <a href="#a9b1819d59a781c4aeb6e978940e224ba">More...</a><br/></td></tr>
 <tr class="separator:a9b1819d59a781c4aeb6e978940e224ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -426,7 +431,39 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2e10f5dd37f6f4226ef7bdf1ff817540"></a>
+<a class="anchor" id="a5b76c306e7f4eaf8d7fc51b9be5cd5b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MenuBarModel::menuBarActivated </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is called when the user starts/stops navigating the maenu bar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isActive</td><td>true when the user starts navigating the menu bar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a052c0e132c619775f3f14af3aae44811"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -449,7 +486,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>recentItemsMenuName</em> = <code><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a></code>&#160;</td>
+          <td class="paramname"><em>recentItemsMenuName</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -517,7 +554,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>OSX ONLY - Returns the menu that was last passed as the extraAppleMenuItems argument to <a class="el" href="classMenuBarModel.html#a2e10f5dd37f6f4226ef7bdf1ff817540" title="OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen...">setMacMainMenu()</a>, or nullptr if none was specified. </p>
+<p>OSX ONLY - Returns the menu that was last passed as the extraAppleMenuItems argument to <a class="el" href="classMenuBarModel.html#a052c0e132c619775f3f14af3aae44811" title="OSX ONLY - Sets the model that is currently being shown as the main menu bar at the top of the screen...">setMacMainMenu()</a>, or nullptr if none was specified. </p>
 
 </div>
 </div>
@@ -597,16 +634,37 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a982d30b7dc660bfd7f092a33bb54c063"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuBarModel::handleMenuBarActivate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__MenuBarModel_8h.html">juce_MenuBarModel.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

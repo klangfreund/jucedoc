@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93c4afaa305453d5c6727d09ebc212ac"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap_1_1Iterator.html#a93c4afaa305453d5c6727d09ebc212ac">getValue</a> () const </td></tr>
 <tr class="memdesc:a93c4afaa305453d5c6727d09ebc212ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current item's value.  <a href="#a93c4afaa305453d5c6727d09ebc212ac">More...</a><br/></td></tr>
 <tr class="separator:a93c4afaa305453d5c6727d09ebc212ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341bf8a8ebd064bccb0739fc73b48fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap_1_1Iterator.html#a341bf8a8ebd064bccb0739fc73b48fa7">reset</a> () noexcept</td></tr>
+<tr class="memdesc:a341bf8a8ebd064bccb0739fc73b48fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the iterator to its starting position.  <a href="#a341bf8a8ebd064bccb0739fc73b48fa7">More...</a><br/></td></tr>
+<tr class="separator:a341bf8a8ebd064bccb0739fc73b48fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt;<br/>
@@ -122,7 +125,7 @@ class HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToU
 <div class="line"></div>
 <div class="line"><span class="keywordflow">while</span> (i.next())</div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="juce__PlatformDefs_8h.html#a5335262a7d74113caa4edd740bded17d">DBG</a> (i.getKey() &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i.getValue());</div>
+<div class="line">    <a class="code" href="juce__PlatformDefs_8h.html#a679635952a5d2eb25f3b31398f0fcc25">DBG</a> (i.getKey() &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i.getValue());</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The order in which items are iterated bears no resemblence to the order in which they were originally added!</p>
 <p>Obviously as soon as you call any non-const methods on the original hash-map, any iterators that were created beforehand will cease to be valid, and should not be used.</p>
@@ -209,16 +212,48 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 </div>
 </div>
+<a class="anchor" id="a341bf8a8ebd064bccb0739fc73b48fa7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classHashMap.html">HashMap</a>&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the iterator to its starting position. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__HashMap_8h.html">juce_HashMap.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

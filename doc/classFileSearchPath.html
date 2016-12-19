@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac23a53aa33f559222421ac4d17321804"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ac23a53aa33f559222421ac4d17321804">getNumPaths</a> () const </td></tr>
 <tr class="memdesc:ac23a53aa33f559222421ac4d17321804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of folders in this search path.  <a href="#ac23a53aa33f559222421ac4d17321804">More...</a><br/></td></tr>
 <tr class="separator:ac23a53aa33f559222421ac4d17321804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83cfa4d96cc23f1a2000bd054f5f786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ab83cfa4d96cc23f1a2000bd054f5f786">operator[]</a> (int index) const </td></tr>
+<tr class="memitem:ab83cfa4d96cc23f1a2000bd054f5f786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ab83cfa4d96cc23f1a2000bd054f5f786">operator[]</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const </td></tr>
 <tr class="memdesc:ab83cfa4d96cc23f1a2000bd054f5f786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the folders in this search path.  <a href="#ab83cfa4d96cc23f1a2000bd054f5f786">More...</a><br/></td></tr>
 <tr class="separator:ab83cfa4d96cc23f1a2000bd054f5f786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9bc3fdeef9af732d51ec8dd7d4ab08e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ae9bc3fdeef9af732d51ec8dd7d4ab08e">toString</a> () const </td></tr>
@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a045b18e60858ac874c9fbf4b28c4f52f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#a045b18e60858ac874c9fbf4b28c4f52f">add</a> (const <a class="el" href="classFile.html">File</a> &amp;directoryToAdd, int insertIndex=-1)</td></tr>
 <tr class="memdesc:a045b18e60858ac874c9fbf4b28c4f52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new directory to the search path.  <a href="#a045b18e60858ac874c9fbf4b28c4f52f">More...</a><br/></td></tr>
 <tr class="separator:a045b18e60858ac874c9fbf4b28c4f52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c282c10f1b2d4217959dc1514fc4611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#a1c282c10f1b2d4217959dc1514fc4611">addIfNotAlreadyThere</a> (const <a class="el" href="classFile.html">File</a> &amp;directoryToAdd)</td></tr>
-<tr class="memdesc:a1c282c10f1b2d4217959dc1514fc4611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new directory to the search path if it's not already in there.  <a href="#a1c282c10f1b2d4217959dc1514fc4611">More...</a><br/></td></tr>
-<tr class="separator:a1c282c10f1b2d4217959dc1514fc4611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9866aba263d485fb846a8867f0aa7f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ac9866aba263d485fb846a8867f0aa7f8">addIfNotAlreadyThere</a> (const <a class="el" href="classFile.html">File</a> &amp;directoryToAdd)</td></tr>
+<tr class="memdesc:ac9866aba263d485fb846a8867f0aa7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new directory to the search path if it's not already in there.  <a href="#ac9866aba263d485fb846a8867f0aa7f8">More...</a><br/></td></tr>
+<tr class="separator:ac9866aba263d485fb846a8867f0aa7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad560bd8c08782e3eb0ead50ee2793161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSearchPath.html#ad560bd8c08782e3eb0ead50ee2793161">remove</a> (int indexToRemove)</td></tr>
 <tr class="memdesc:ad560bd8c08782e3eb0ead50ee2793161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a directory from the search path.  <a href="#ad560bd8c08782e3eb0ead50ee2793161">More...</a><br/></td></tr>
 <tr class="separator:ad560bd8c08782e3eb0ead50ee2793161"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,12 +344,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1c282c10f1b2d4217959dc1514fc4611"></a>
+<a class="anchor" id="ac9866aba263d485fb846a8867f0aa7f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FileSearchPath::addIfNotAlreadyThere </td>
+          <td class="memname">bool FileSearchPath::addIfNotAlreadyThere </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
           <td class="paramname"><em>directoryToAdd</em></td><td>)</td>
@@ -359,6 +359,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a new directory to the search path if it's not already in there. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the directory has been added, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -528,12 +529,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__FileSearchPath_8h.html">juce_FileSearchPath.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

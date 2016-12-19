@@ -110,9 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59bc329c81577375af70e5afdad75c28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a59bc329c81577375af70e5afdad75c28">size</a> () const noexcept</td></tr>
 <tr class="memdesc:a59bc329c81577375af70e5afdad75c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> objects that belong to this <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a>.  <a href="#a59bc329c81577375af70e5afdad75c28">More...</a><br/></td></tr>
 <tr class="separator:a59bc329c81577375af70e5afdad75c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287506aa9d9fe11591a1d35ebf2865a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a287506aa9d9fe11591a1d35ebf2865a8">empty</a> () const noexcept</td></tr>
-<tr class="memdesc:a287506aa9d9fe11591a1d35ebf2865a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> contains no <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> objects; false otherwise.  <a href="#a287506aa9d9fe11591a1d35ebf2865a8">More...</a><br/></td></tr>
-<tr class="separator:a287506aa9d9fe11591a1d35ebf2865a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3261179a87ee57b79d9cd64c2a8a63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a4c3261179a87ee57b79d9cd64c2a8a63">isEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:a4c3261179a87ee57b79d9cd64c2a8a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> contains no <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> objects; false otherwise.  <a href="#a4c3261179a87ee57b79d9cd64c2a8a63">More...</a><br/></td></tr>
+<tr class="separator:a4c3261179a87ee57b79d9cd64c2a8a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc773f65d099f846daffd8cf4b0a829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOSCArgument.html">OSCArgument</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#addc773f65d099f846daffd8cf4b0a829">operator[]</a> (const int i) const noexcept</td></tr>
 <tr class="memdesc:addc773f65d099f846daffd8cf4b0a829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> at index i in the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> object.  <a href="#addc773f65d099f846daffd8cf4b0a829">More...</a><br/></td></tr>
 <tr class="separator:addc773f65d099f846daffd8cf4b0a829"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,13 +125,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7130a169e40d167190217c755394b055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a7130a169e40d167190217c755394b055">clear</a> ()</td></tr>
 <tr class="memdesc:a7130a169e40d167190217c755394b055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all arguments from the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a>.  <a href="#a7130a169e40d167190217c755394b055">More...</a><br/></td></tr>
 <tr class="separator:a7130a169e40d167190217c755394b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf8a6770d0c9848e376ac5d46d3ed2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a0bf8a6770d0c9848e376ac5d46d3ed2a">addInt32</a> (<a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> value)</td></tr>
+<tr class="memitem:a0bf8a6770d0c9848e376ac5d46d3ed2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a0bf8a6770d0c9848e376ac5d46d3ed2a">addInt32</a> (<a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="memdesc:a0bf8a6770d0c9848e376ac5d46d3ed2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> of type int32 with a given value and adds it to the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> object.  <a href="#a0bf8a6770d0c9848e376ac5d46d3ed2a">More...</a><br/></td></tr>
 <tr class="separator:a0bf8a6770d0c9848e376ac5d46d3ed2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455bc74a17b2a9316eae966f53031ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a455bc74a17b2a9316eae966f53031ef3">addFloat32</a> (float value)</td></tr>
+<tr class="memitem:a455bc74a17b2a9316eae966f53031ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a455bc74a17b2a9316eae966f53031ef3">addFloat32</a> (float <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="memdesc:a455bc74a17b2a9316eae966f53031ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> of type float32 with a given value and adds it to the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> object.  <a href="#a455bc74a17b2a9316eae966f53031ef3">More...</a><br/></td></tr>
 <tr class="separator:a455bc74a17b2a9316eae966f53031ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9f218031b192ec68772f218b0be9e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a3a9f218031b192ec68772f218b0be9e4">addString</a> (const <a class="el" href="classString.html">String</a> &amp;value)</td></tr>
+<tr class="memitem:a3a9f218031b192ec68772f218b0be9e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#a3a9f218031b192ec68772f218b0be9e4">addString</a> (const <a class="el" href="classString.html">String</a> &amp;<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="memdesc:a3a9f218031b192ec68772f218b0be9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> of type string with a given value and adds it to the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> object.  <a href="#a3a9f218031b192ec68772f218b0be9e4">More...</a><br/></td></tr>
 <tr class="separator:a3a9f218031b192ec68772f218b0be9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb70fd2652aa39dea80e08c93ed2ebaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCMessage.html#adb70fd2652aa39dea80e08c93ed2ebaa">addBlob</a> (const <a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;blob)</td></tr>
@@ -305,7 +305,7 @@ template&lt;typename Arg1 , typename... Args&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a287506aa9d9fe11591a1d35ebf2865a8"></a>
+<a class="anchor" id="a4c3261179a87ee57b79d9cd64c2a8a63"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -313,7 +313,7 @@ template&lt;typename Arg1 , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool OSCMessage::empty </td>
+          <td class="memname">bool OSCMessage::isEmpty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -353,7 +353,7 @@ template&lt;typename Arg1 , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a reference to the <a class="el" href="classOSCArgument.html" title="An OSC argument. ">OSCArgument</a> at index i in the <a class="el" href="classOSCMessage.html" title="An OSC Message. ">OSCMessage</a> object. </p>
-<p>This method does not check the range and results in undefined behavour in case i &lt; 0 or i &gt;= <a class="el" href="classOSCMessage.html#a59bc329c81577375af70e5afdad75c28" title="Returns the number of OSCArgument objects that belong to this OSCMessage. ">size()</a>. </p>
+<p>This method does not check the range and results in undefined behaviour in case i &lt; 0 or i &gt;= <a class="el" href="classOSCMessage.html#a59bc329c81577375af70e5afdad75c28" title="Returns the number of OSCArgument objects that belong to this OSCMessage. ">size()</a>. </p>
 
 </div>
 </div>
@@ -522,12 +522,17 @@ template&lt;typename Arg1 , typename... Args&gt; </div>
 <li><a class="el" href="juce__OSCMessage_8h.html">juce_OSCMessage.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

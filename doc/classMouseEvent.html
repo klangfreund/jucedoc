@@ -123,8 +123,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7914aff9654e82aa14c2881f0f651fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMouseEvent.html#ae7914aff9654e82aa14c2881f0f651fa">getOffsetFromDragStart</a> () const noexcept</td></tr>
 <tr class="memdesc:ae7914aff9654e82aa14c2881f0f651fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the difference between the mouse's current postion and where it was when the button was last pressed.  <a href="#ae7914aff9654e82aa14c2881f0f651fa">More...</a><br/></td></tr>
 <tr class="separator:ae7914aff9654e82aa14c2881f0f651fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969a94328cd97f0ffdaf04e6f0d8301d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMouseEvent.html#a969a94328cd97f0ffdaf04e6f0d8301d">mouseWasDraggedSinceMouseDown</a> () const noexcept</td></tr>
+<tr class="memdesc:a969a94328cd97f0ffdaf04e6f0d8301d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user seems to be performing a drag gesture.  <a href="#a969a94328cd97f0ffdaf04e6f0d8301d">More...</a><br/></td></tr>
+<tr class="separator:a969a94328cd97f0ffdaf04e6f0d8301d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134d8c300344a66d9a831f29270ec2e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMouseEvent.html#a134d8c300344a66d9a831f29270ec2e9">mouseWasClicked</a> () const noexcept</td></tr>
-<tr class="memdesc:a134d8c300344a66d9a831f29270ec2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mouse has just been clicked.  <a href="#a134d8c300344a66d9a831f29270ec2e9">More...</a><br/></td></tr>
+<tr class="memdesc:a134d8c300344a66d9a831f29270ec2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mouse event is part of a click gesture rather than a drag.  <a href="#a134d8c300344a66d9a831f29270ec2e9">More...</a><br/></td></tr>
 <tr class="separator:a134d8c300344a66d9a831f29270ec2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f8d29018a8dcd1238f9e321944b118"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMouseEvent.html#a94f8d29018a8dcd1238f9e321944b118">getNumberOfClicks</a> () const noexcept</td></tr>
 <tr class="memdesc:a94f8d29018a8dcd1238f9e321944b118"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a click event, the number of times the mouse was clicked in succession.  <a href="#a94f8d29018a8dcd1238f9e321944b118">More...</a><br/></td></tr>
@@ -368,7 +371,7 @@ Public Attributes</h2></td></tr>
 
 <p>Returns the x coordinate of the last place that a mouse was pressed. </p>
 <p>The coordinate is relative to the component specified in MouseEvent::component. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a134d8c300344a66d9a831f29270ec2e9" title="Returns true if the mouse has just been clicked. ">mouseWasClicked</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a969a94328cd97f0ffdaf04e6f0d8301d" title="Returns true if the user seems to be performing a drag gesture. ">mouseWasDraggedSinceMouseDown</a> </dd></dl>
 
 </div>
 </div>
@@ -395,7 +398,7 @@ Public Attributes</h2></td></tr>
 
 <p>Returns the y coordinate of the last place that a mouse was pressed. </p>
 <p>The coordinate is relative to the component specified in MouseEvent::component. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a134d8c300344a66d9a831f29270ec2e9" title="Returns true if the mouse has just been clicked. ">mouseWasClicked</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a969a94328cd97f0ffdaf04e6f0d8301d" title="Returns true if the user seems to be performing a drag gesture. ">mouseWasDraggedSinceMouseDown</a> </dd></dl>
 
 </div>
 </div>
@@ -422,7 +425,7 @@ Public Attributes</h2></td></tr>
 
 <p>Returns the coordinates of the last place that a mouse was pressed. </p>
 <p>The coordinates are relative to the component specified in MouseEvent::component. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a134d8c300344a66d9a831f29270ec2e9" title="Returns true if the mouse has just been clicked. ">mouseWasClicked</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMouseEvent.html#afff96c10c810ab1cf5bc21b4e1b232c4" title="Returns the straight-line distance between where the mouse is now and where it was the last time the ...">getDistanceFromDragStart</a>, <a class="el" href="classMouseEvent.html#ae6d2098fdcf0c124ebd68fdcdb926c33" title="Returns the difference between the mouse&#39;s current x postion and where it was when the button was las...">getDistanceFromDragStartX</a>, <a class="el" href="classMouseEvent.html#a969a94328cd97f0ffdaf04e6f0d8301d" title="Returns true if the user seems to be performing a drag gesture. ">mouseWasDraggedSinceMouseDown</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classLassoComponent.html#af9d043865ee8f7db2989e7200d13dfd2">LassoComponent&lt; SelectableItemType &gt;::beginLasso()</a>.</p>
 
@@ -533,6 +536,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a969a94328cd97f0ffdaf04e6f0d8301d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MouseEvent::mouseWasDraggedSinceMouseDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the user seems to be performing a drag gesture. </p>
+<p>This is only meaningful if called in either a mouseUp() or mouseDrag() method.</p>
+<p>It will return true if the user has dragged the mouse more than a few pixels from the place where the mouse-down occurred.</p>
+<p>Once they have dragged it far enough for this method to return true, it will continue to return true until the mouse-up, even if they move the mouse back to the same location at which the mouse-down happened. This means that it's very handy for objects that can either be clicked on or dragged, as you can use it in the mouseDrag() callback to ignore small movements they might make while trying to click. </p>
+
+</div>
+</div>
 <a class="anchor" id="a134d8c300344a66d9a831f29270ec2e9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -554,10 +585,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the mouse has just been clicked. </p>
-<p>Used in either your mouseUp() or mouseDrag() methods, this will tell you whether the user has dragged the mouse more than a few pixels from the place where the mouse-down occurred.</p>
-<p>Once they have dragged it far enough for this method to return false, it will continue to return false until the mouse-up, even if they move the mouse back to the same position where they originally pressed it. This means that it's very handy for objects that can either be clicked on or dragged, as you can use it in the mouseDrag() callback to ignore any small movements they might make while clicking.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the mouse wasn't dragged by more than a few pixels between the last time the button was pressed and released. </dd></dl>
+<p>Returns true if the mouse event is part of a click gesture rather than a drag. </p>
+<p>This is effectively the opposite of <a class="el" href="classMouseEvent.html#a969a94328cd97f0ffdaf04e6f0d8301d" title="Returns true if the user seems to be performing a drag gesture. ">mouseWasDraggedSinceMouseDown()</a> </p>
 
 </div>
 </div>
@@ -1079,12 +1108,17 @@ Public Attributes</h2></td></tr>
 <li><a class="el" href="juce__MouseEvent_8h.html">juce_MouseEvent.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

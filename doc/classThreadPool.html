@@ -101,9 +101,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af59341f9ab24fda771109bc3ee8cdef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#af59341f9ab24fda771109bc3ee8cdef2">ThreadPool</a> (int numberOfThreads)</td></tr>
-<tr class="memdesc:af59341f9ab24fda771109bc3ee8cdef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread pool.  <a href="#af59341f9ab24fda771109bc3ee8cdef2">More...</a><br/></td></tr>
-<tr class="separator:af59341f9ab24fda771109bc3ee8cdef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55fe4a480fa7144d8e87bbd0a917b14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#ae55fe4a480fa7144d8e87bbd0a917b14">ThreadPool</a> (int numberOfThreads, size_t threadStackSize=0)</td></tr>
+<tr class="memdesc:ae55fe4a480fa7144d8e87bbd0a917b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread pool.  <a href="#ae55fe4a480fa7144d8e87bbd0a917b14">More...</a><br/></td></tr>
+<tr class="separator:ae55fe4a480fa7144d8e87bbd0a917b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3225e86aa7835545b3f6c2c8d363d5e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a3225e86aa7835545b3f6c2c8d363d5e5">ThreadPool</a> ()</td></tr>
 <tr class="memdesc:a3225e86aa7835545b3f6c2c8d363d5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread pool with one thread per CPU core.  <a href="#a3225e86aa7835545b3f6c2c8d363d5e5">More...</a><br/></td></tr>
 <tr class="separator:a3225e86aa7835545b3f6c2c8d363d5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e9ba7e536f1978a255a36bc54f641ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a9e9ba7e536f1978a255a36bc54f641ed">getNumJobs</a> () const </td></tr>
 <tr class="memdesc:a9e9ba7e536f1978a255a36bc54f641ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of jobs currently running or queued.  <a href="#a9e9ba7e536f1978a255a36bc54f641ed">More...</a><br/></td></tr>
 <tr class="separator:a9e9ba7e536f1978a255a36bc54f641ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa52987dfd5d41443a914c4c20045c12c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa52987dfd5d41443a914c4c20045c12c">getJob</a> (int index) const </td></tr>
+<tr class="memitem:a0c683ee9fb983a07ef5937ea2a3a6599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a0c683ee9fb983a07ef5937ea2a3a6599">getNumThreads</a> () const </td></tr>
+<tr class="memdesc:a0c683ee9fb983a07ef5937ea2a3a6599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of threads assigned to this thread pool.  <a href="#a0c683ee9fb983a07ef5937ea2a3a6599">More...</a><br/></td></tr>
+<tr class="separator:a0c683ee9fb983a07ef5937ea2a3a6599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52987dfd5d41443a914c4c20045c12c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#aa52987dfd5d41443a914c4c20045c12c">getJob</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const </td></tr>
 <tr class="memdesc:aa52987dfd5d41443a914c4c20045c12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the jobs in the queue.  <a href="#aa52987dfd5d41443a914c4c20045c12c">More...</a><br/></td></tr>
 <tr class="separator:aa52987dfd5d41443a914c4c20045c12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86ec36868d7215a33a5658f8ca8797c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a86ec36868d7215a33a5658f8ca8797c8">contains</a> (const <a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *job) const </td></tr>
@@ -146,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <p>When a <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> object is added to the <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a>'s list, its runJob() method will be called by the next pooled thread that becomes free.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a>, <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af59341f9ab24fda771109bc3ee8cdef2"></a>
+<a class="anchor" id="ae55fe4a480fa7144d8e87bbd0a917b14"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -154,17 +157,28 @@ Public Member Functions</h2></td></tr>
           <td class="memname">ThreadPool::ThreadPool </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numberOfThreads</em></td><td>)</td>
+          <td class="paramname"><em>numberOfThreads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>threadStackSize</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Creates a thread pool. </p>
-<p>Once you've created a pool, you can give it some jobs by calling <a class="el" href="classThreadPool.html#ad46e866e912868092fff107dc555443b" title="Adds a job to the queue. ">addJob()</a>. </p>
+<p>Once you've created a pool, you can give it some jobs by calling <a class="el" href="classThreadPool.html#ad46e866e912868092fff107dc555443b" title="Adds a job to the queue. ">addJob()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numberOfThreads</td><td>the number of threads to run. These will be started immediately, and will run until the pool is deleted. </td></tr>
+    <tr><td class="paramname">threadStackSize</td><td>the size of the stack of each thread. If this value is zero then the default stack size of the OS will be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,7 +333,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">interruptRunningJobs</td><td>if true, then all running jobs will have their <a class="el" href="classThreadPoolJob.html#acf58a7de172ae74d6ebb4a9fb59ed4d3" title="Calling this will cause the shouldExit() method to return true, and the job should (if it&#39;s been impl...">ThreadPoolJob::signalJobShouldExit()</a> methods called to try to interrupt them </td></tr>
     <tr><td class="paramname">timeOutMilliseconds</td><td>the length of time this method should wait for all the jobs to finish before giving up and returning false </td></tr>
-    <tr><td class="paramname">selectedJobsToRemove</td><td>if this is non-zero, the <a class="el" href="classThreadPool_1_1JobSelector.html" title="A callback class used when you need to select which ThreadPoolJob objects are suitable for some kind ...">JobSelector</a> object is asked to decide which jobs should be removed. If it is zero, all jobs are removed </td></tr>
+    <tr><td class="paramname">selectedJobsToRemove</td><td>if this is not a nullptr, the <a class="el" href="classThreadPool_1_1JobSelector.html" title="A callback class used when you need to select which ThreadPoolJob objects are suitable for some kind ...">JobSelector</a> object is asked to decide which jobs should be removed. If it is a nullptr, all jobs are removed </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,6 +355,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of jobs currently running or queued. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c683ee9fb983a07ef5937ea2a3a6599"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ThreadPool::getNumThreads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of threads assigned to this thread pool. </p>
 
 </div>
 </div>
@@ -472,12 +503,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ThreadPool_8h.html">juce_ThreadPool.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -114,21 +114,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classPath.html#afad2558a4296d94b9f5640281ec3c0c3">applyTransform</a>(const AffineTransform &amp;transform) noexcept</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#a69d4fda65a46a1f1f32cbec49ebc0910">clear</a>() noexcept</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162">closeSubPath</a>()</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPath.html#a0b11770f1d5e8aee3d0251f712ac8901">contains</a>(float x, float y, float tolerance=1.0f) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPath.html#a31922231057403433f5f62bd56f88150">contains</a>(const Point&lt; float &gt; point, float tolerance=1.0f) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPath.html#ae92401a380bb6e394eaca20fb154cd1b">contains</a>(float x, float y, float tolerance=defaultToleranceForTesting) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPath.html#a101db8b83a7783536cdb4dcb2f362a5e">contains</a>(const Point&lt; float &gt; point, float tolerance=defaultToleranceForTesting) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#a6fb9449e40a0ed3f86c31d538e8777ef">createPathWithRoundedCorners</a>(float cornerRadius) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#a654df5afb3c113c0f6c5391a88d21811">cubicTo</a>(float controlPoint1X, float controlPoint1Y, float controlPoint2X, float controlPoint2Y, float endPointX, float endPointY)</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#a781c3db731dd5e18e192ff7de71c3a50">cubicTo</a>(const Point&lt; float &gt; controlPoint1, const Point&lt; float &gt; controlPoint2, const Point&lt; float &gt; endPoint)</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a></td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a></td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#ab5059c0564fb8303d6d87dd09ef54ca5">getBounds</a>() const noexcept</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#a6e2d36b20feaf2cd1b95c7ff84b13e55">getBoundsTransformed</a>(const AffineTransform &amp;transform) const noexcept</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPath.html#a15526d31bbe73610ef2453ce509ffa3b">getClippedLine</a>(const Line&lt; float &gt; &amp;line, bool keepSectionOutsidePath) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPath.html#adeead50145f7c8bd9b44cb31f912e115">getClippedLine</a>(Line&lt; float &gt; line, bool keepSectionOutsidePath) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#ab7cb57ade4414ae7d9503bede1b6977b">getCurrentPosition</a>() const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPath.html#a295e7859e772235be0bdc88ad6bc9bc4">getLength</a>(const AffineTransform &amp;transform=AffineTransform::identity) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPath.html#abbb4c5dac2fa6a16aa1f2214ecda8d85">getNearestPoint</a>(const Point&lt; float &gt; targetPoint, Point&lt; float &gt; &amp;pointOnPath, const AffineTransform &amp;transform=AffineTransform::identity) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPath.html#ac7dc49c18db731fb6b82e45d09b8e272">getPointAlongPath</a>(float distanceFromStart, const AffineTransform &amp;transform=AffineTransform::identity) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPath.html#a90474dab38738086bcdf759910919e92">getLength</a>(const AffineTransform &amp;transform=AffineTransform(), float tolerance=defaultToleranceForMeasurement) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPath.html#a32fa1defcb4faf5e564c080e0d71a760">getNearestPoint</a>(Point&lt; float &gt; targetPoint, Point&lt; float &gt; &amp;pointOnPath, const AffineTransform &amp;transform=AffineTransform(), float tolerance=defaultToleranceForMeasurement) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPath.html#ad08914b2208189c26f43ed74eb74712b">getPointAlongPath</a>(float distanceFromStart, const AffineTransform &amp;transform=AffineTransform(), float tolerance=defaultToleranceForMeasurement) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#a338cb795bde71ad0624c53deb9ab6457">getTransformToScaleToFit</a>(float x, float y, float width, float height, bool preserveProportions, Justification justificationType=Justification::centred) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#add5360c1a1c2969dc4da5ab867313679">getTransformToScaleToFit</a>(const Rectangle&lt; float &gt; &amp;area, bool preserveProportions, Justification justificationType=Justification::centred) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPath.html#a58919b7e0a5d57558c75d8814c31ef0e">intersectsLine</a>(const Line&lt; float &gt; &amp;line, float tolerance=1.0f)</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPath.html#a6ff16eb0e318cfc8a40a462a7abd8637">intersectsLine</a>(Line&lt; float &gt; line, float tolerance=defaultToleranceForTesting)</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#a89f5009bba5ce65b71cc8072f18c4775">isEmpty</a>() const noexcept</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#ab820b1a4efce998fe33b3959e985f0be">isUsingNonZeroWinding</a>() const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#a6cfdf1dea900089ffee8eea61385062e">lineTo</a>(float endX, float endY)</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
@@ -155,12 +157,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classPath.html#aba2eb076252eb29a04205182d6384726">writePathToStream</a>(OutputStream &amp;destination) const </td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPath.html#a141da9ff89c85e0ba410b5a73864c267">~Path</a>()</td><td class="entry"><a class="el" href="classPath.html">Path</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

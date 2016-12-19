@@ -579,7 +579,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the file that this document was last successfully saved or loaded from. </p>
-<p>When the document object is created, this will be set to <a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364" title="This static constant is used for referring to an &#39;invalid&#39; file. ">File::nonexistent</a>.</p>
+<p>When the document object is created, this will be set to <a class="el" href="classFile.html" title="Represents a local file or directory. ">File()</a>.</p>
 <p>It is changed when one of the load or save methods is used, or when <a class="el" href="classFileBasedDocument.html#ae9831c5ca4576665d1876c129976a3f8" title="Sets the file that this document thinks it was loaded from. ">setFile()</a> is used to explicitly set it. </p>
 
 </div>
@@ -708,7 +708,7 @@ Protected Member Functions</h2></td></tr>
 <p>This is used for dialog boxes to make them open at the last folder you were using. </p>
 <p><a class="el" href="classFileBasedDocument.html#a5d71efccf45d29de2c2dcbb801e8021a" title="This is used for dialog boxes to make them open at the last folder you were using. ">getLastDocumentOpened()</a> and <a class="el" href="classFileBasedDocument.html#ad8fa1517b5af884e0213ee365dcf65f4" title="This is used for dialog boxes to make them open at the last folder you were using. ">setLastDocumentOpened()</a> are used to store the last document that was used - you might want to store this value in a static variable, or even in your application's properties. It should be a global setting rather than a property of this object.</p>
 <p>This method works very well in conjunction with a <a class="el" href="classRecentlyOpenedFilesList.html" title="Manages a set of files for use as a list of recently-opened documents. ">RecentlyOpenedFilesList</a> object to manage your recent-files list.</p>
-<p>As a default value, it's ok to return <a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364" title="This static constant is used for referring to an &#39;invalid&#39; file. ">File::nonexistent</a>, and the document object will use a sensible one instead.</p>
+<p>As a default value, it's ok to return <a class="el" href="classFile.html" title="Represents a local file or directory. ">File()</a>, and the document object will use a sensible one instead.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classRecentlyOpenedFilesList.html" title="Manages a set of files for use as a list of recently-opened documents. ">RecentlyOpenedFilesList</a> </dd></dl>
 
 </div>
@@ -773,12 +773,17 @@ Protected Member Functions</h2></td></tr>
 <li><a class="el" href="juce__FileBasedDocument_8h.html">juce_FileBasedDocument.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

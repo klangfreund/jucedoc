@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade6447a100fab338176980f99fa04e8b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#ade6447a100fab338176980f99fa04e8b">~DragAndDropContainer</a> ()</td></tr>
 <tr class="memdesc:ade6447a100fab338176980f99fa04e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ade6447a100fab338176980f99fa04e8b">More...</a><br/></td></tr>
 <tr class="separator:ade6447a100fab338176980f99fa04e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3333f43b55acbf1713ef1036dcb17d44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44">startDragging</a> (const <a class="el" href="classvar.html">var</a> &amp;sourceDescription, <a class="el" href="classComponent.html">Component</a> *sourceComponent, <a class="el" href="classImage.html">Image</a> dragImage=<a class="el" href="classImage.html#af20f6e6962f885e2142520f18ca4ee17">Image::null</a>, bool allowDraggingToOtherJuceWindows=false, const <a class="el" href="classPoint.html">Point</a>&lt; int &gt; *imageOffsetFromMouse=nullptr)</td></tr>
-<tr class="memdesc:a3333f43b55acbf1713ef1036dcb17d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a drag-and-drop operation.  <a href="#a3333f43b55acbf1713ef1036dcb17d44">More...</a><br/></td></tr>
-<tr class="separator:a3333f43b55acbf1713ef1036dcb17d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f05c2d712f9cf0dd2a789817549bf60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60">startDragging</a> (const <a class="el" href="classvar.html">var</a> &amp;sourceDescription, <a class="el" href="classComponent.html">Component</a> *sourceComponent, <a class="el" href="classImage.html">Image</a> dragImage=<a class="el" href="classImage.html">Image</a>(), bool allowDraggingToOtherJuceWindows=false, const <a class="el" href="classPoint.html">Point</a>&lt; int &gt; *imageOffsetFromMouse=nullptr)</td></tr>
+<tr class="memdesc:a1f05c2d712f9cf0dd2a789817549bf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a drag-and-drop operation.  <a href="#a1f05c2d712f9cf0dd2a789817549bf60">More...</a><br/></td></tr>
+<tr class="separator:a1f05c2d712f9cf0dd2a789817549bf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1929c259d62aac44d866abd3e52ef1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#aa1929c259d62aac44d866abd3e52ef1d">isDragAndDropActive</a> () const </td></tr>
 <tr class="memdesc:aa1929c259d62aac44d866abd3e52ef1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if something is currently being dragged.  <a href="#aa1929c259d62aac44d866abd3e52ef1d">More...</a><br/></td></tr>
 <tr class="separator:aa1929c259d62aac44d866abd3e52ef1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +154,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enables drag-and-drop behaviour for a component and all its sub-components. </p>
 <p>For a component to be able to make or receive drag-and-drop events, one of its parent components must derive from this class. It's probably best for the top-level component to implement it.</p>
-<p>Then to start a drag operation, any sub-component can just call the <a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44" title="Begins a drag-and-drop operation. ">startDragging()</a> method, and this object will take over, tracking the mouse and sending appropriate callbacks to any child components derived from <a class="el" href="classDragAndDropTarget.html" title="Components derived from this class can have things dropped onto them by a DragAndDropContainer. ">DragAndDropTarget</a> which the mouse moves over.</p>
+<p>Then to start a drag operation, any sub-component can just call the <a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60" title="Begins a drag-and-drop operation. ">startDragging()</a> method, and this object will take over, tracking the mouse and sending appropriate callbacks to any child components derived from <a class="el" href="classDragAndDropTarget.html" title="Components derived from this class can have things dropped onto them by a DragAndDropContainer. ">DragAndDropTarget</a> which the mouse moves over.</p>
 <p>Note: If all that you need to do is to respond to files being drag-and-dropped from the operating system onto your component, you don't need any of these classes: you can do this simply by overriding <a class="el" href="classFileDragAndDropTarget.html#adc7848885ab2d9380f242c6445b019d4" title="Callback to indicate that the user has dropped the files onto this component. ">FileDragAndDropTarget::filesDropped()</a>.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropTarget.html" title="Components derived from this class can have things dropped onto them by a DragAndDropContainer. ">DragAndDropTarget</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -202,7 +202,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3333f43b55acbf1713ef1036dcb17d44"></a>
+<a class="anchor" id="a1f05c2d712f9cf0dd2a789817549bf60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -222,7 +222,7 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classImage.html">Image</a>&#160;</td>
-          <td class="paramname"><em>dragImage</em> = <code><a class="el" href="classImage.html#af20f6e6962f885e2142520f18ca4ee17">Image::null</a></code>, </td>
+          <td class="paramname"><em>dragImage</em> = <code><a class="el" href="classImage.html">Image</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -291,8 +291,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the description of the thing that's currently being dragged. </p>
-<p>If nothing's being dragged, this will return a null var, otherwise it'll return the var that was passed into <a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44" title="Begins a drag-and-drop operation. ">startDragging()</a>.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44" title="Begins a drag-and-drop operation. ">startDragging</a> </dd></dl>
+<p>If nothing's being dragged, this will return a null var, otherwise it'll return the var that was passed into <a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60" title="Begins a drag-and-drop operation. ">startDragging()</a>.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60" title="Begins a drag-and-drop operation. ">startDragging</a> </dd></dl>
 
 </div>
 </div>
@@ -530,12 +530,17 @@ Protected Member Functions</h2></td></tr>
 <li><a class="el" href="juce__DragAndDropContainer_8h.html">juce_DragAndDropContainer.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

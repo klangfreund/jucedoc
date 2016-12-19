@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c93f8d5747cf2c9f1aa6967e19b5dbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a3c93f8d5747cf2c9f1aa6967e19b5dbd">getNumFormats</a> ()</td></tr>
 <tr class="memdesc:a3c93f8d5747cf2c9f1aa6967e19b5dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of types of format that are available.  <a href="#a3c93f8d5747cf2c9f1aa6967e19b5dbd">More...</a><br/></td></tr>
 <tr class="separator:a3c93f8d5747cf2c9f1aa6967e19b5dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b402a4797089f016b68a1e6afdf51ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a2b402a4797089f016b68a1e6afdf51ae">getFormat</a> (int index)</td></tr>
+<tr class="memitem:a2b402a4797089f016b68a1e6afdf51ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a2b402a4797089f016b68a1e6afdf51ae">getFormat</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>)</td></tr>
 <tr class="memdesc:a2b402a4797089f016b68a1e6afdf51ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the available formats.  <a href="#a2b402a4797089f016b68a1e6afdf51ae">More...</a><br/></td></tr>
 <tr class="separator:a2b402a4797089f016b68a1e6afdf51ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac243852bbebb30d33264457579005875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ac243852bbebb30d33264457579005875">addFormat</a> (<a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *format)</td></tr>
@@ -114,6 +114,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cea8462bb39841dbb78371692cd2952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a9cea8462bb39841dbb78371692cd2952">createPluginInstance</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, <a class="el" href="classString.html">String</a> &amp;errorMessage) const </td></tr>
 <tr class="memdesc:a9cea8462bb39841dbb78371692cd2952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load the type for this description, by trying all the formats that this manager knows about.  <a href="#a9cea8462bb39841dbb78371692cd2952">More...</a><br/></td></tr>
 <tr class="separator:a9cea8462bb39841dbb78371692cd2952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae347b83fed14e1db1744242fdba6e7dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ae347b83fed14e1db1744242fdba6e7dd">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, <a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">AudioPluginFormat::InstantiationCompletionCallback</a> *callback)</td></tr>
+<tr class="memdesc:ae347b83fed14e1db1744242fdba6e7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about.  <a href="#ae347b83fed14e1db1744242fdba6e7dd">More...</a><br/></td></tr>
+<tr class="separator:ae347b83fed14e1db1744242fdba6e7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c00eeb1a876da59d86478ef114b68b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a6c00eeb1a876da59d86478ef114b68b1">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, std::function&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt; completionCallback)</td></tr>
+<tr class="separator:a6c00eeb1a876da59d86478ef114b68b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72ffaa8d7fa00a3b510a75064bcb913"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#aa72ffaa8d7fa00a3b510a75064bcb913">doesPluginStillExist</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description) const </td></tr>
 <tr class="memdesc:aa72ffaa8d7fa00a3b510a75064bcb913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the file or component for this plugin actually still exists.  <a href="#aa72ffaa8d7fa00a3b510a75064bcb913">More...</a><br/></td></tr>
 <tr class="separator:aa72ffaa8d7fa00a3b510a75064bcb913"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +272,92 @@ Public Member Functions</h2></td></tr>
 
 <p>Tries to load the type for this description, by trying all the formats that this manager knows about. </p>
 <p>The caller is responsible for deleting the object that is returned.</p>
-<p>If it can't load the plugin, it returns nullptr and leaves a message in the errorMessage string. </p>
+<p>If it can't load the plugin, it returns nullptr and leaves a message in the errorMessage string.</p>
+<p>If you intend to instantiate a AudioUnit v3 plug-in then you must either use the non-blocking asynchrous version below - or call this method from a thread other than the message thread and without blocking the message thread. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae347b83fed14e1db1744242fdba6e7dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioPluginFormatManager::createPluginInstanceAsync </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>initialSampleRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initialBufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">AudioPluginFormat::InstantiationCompletionCallback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about. </p>
+<p>The caller must supply a callback object which will be called when the instantantiation has completed.</p>
+<p>If it can't load the plugin then the callback function will be called passing a nullptr as the instance argument along with an error message.</p>
+<p>The callback function will be called on the message thread so the caller must not block the message thread.</p>
+<p>The callback object will be deleted automatically after it has been invoked.</p>
+<p>The caller is responsible for deleting the instance that is passed to the callback function.</p>
+<p>If you intend to instantiate a AudioUnit v3 plug-in then you must use this non-blocking asynchrous version - or call the synchrous method from an auxiliary thread. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c00eeb1a876da59d86478ef114b68b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioPluginFormatManager::createPluginInstanceAsync </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>initialSampleRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initialBufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>completionCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -294,12 +384,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__AudioPluginFormatManager_8h.html">juce_AudioPluginFormatManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

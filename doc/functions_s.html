@@ -134,10 +134,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>salmon
 : <a class="el" href="classColours.html#af378ac76e1537fce6687df4ba4cdf02a">Colours</a>
 </li>
+<li>sampleOffset
+: <a class="el" href="structVstEvent.html#ada351de4bd1cf8cc35a5870e78059183">VstEvent</a>
+, <a class="el" href="structVstMidiEvent.html#a5d9876128801a59a6c95c8ebb8694091">VstMidiEvent</a>
+</li>
+<li>samplePosition
+: <a class="el" href="structVstTimingInformation.html#abf6de1ef403d9bef2113abcb5fa0f225">VstTimingInformation</a>
+</li>
 <li>sampleRate
 : <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html#afa56530d7a661131d8891f7b9874fcd1">AudioDeviceManager::AudioDeviceSetup</a>
 , <a class="el" href="classAudioFormatReader.html#aafcd07b3ac08e83c019621cd8cd0c7c5">AudioFormatReader</a>
 , <a class="el" href="classAudioFormatWriter.html#aafefbda90e2a58cb057e89e995decfd2">AudioFormatWriter</a>
+, <a class="el" href="structVstTimingInformation.html#a1d1b2ff0de5a6592ff3cae35f2ecb074">VstTimingInformation</a>
 </li>
 <li>SamplerSound()
 : <a class="el" href="classSamplerSound.html#ad26e044243f4802000b8dcbb6dd15cee">SamplerSound</a>
@@ -146,7 +154,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSamplerVoice.html#aa1614529f047ba46473645216f58d9ac">SamplerVoice</a>
 </li>
 <li>samplesPerFrame
-: <a class="el" href="classAudioCDReader.html#a7be91730c3919f91a8ffce774120bf8ba1db74900d5d80b397c1bbf11691cee93">AudioCDReader</a>
+: <a class="el" href="classAudioCDReader.html#a1862227d7416b7b600f41b3f9ab31d6ea1db74900d5d80b397c1bbf11691cee93">AudioCDReader</a>
+</li>
+<li>samplesToNearestClock
+: <a class="el" href="structVstTimingInformation.html#a4b9cf8cab894c646498eb50c6a489939">VstTimingInformation</a>
 </li>
 <li>sampleToFilePos()
 : <a class="el" href="classMemoryMappedAudioFormatReader.html#a7a2fef8b3633ab717fede24ed46b414f">MemoryMappedAudioFormatReader</a>
@@ -220,7 +231,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>scale()
 : <a class="el" href="classAffineTransform.html#a43665170b0ec3ef0d1afef4053e77a24">AffineTransform</a>
+, <a class="el" href="classControlButton.html#a891776295057786f99f14631b1aa2794ac9b833f510533f89cc26705999ed2bca">ControlButton</a>
 , <a class="el" href="structDesktop_1_1Displays_1_1Display.html#a1fa73b56829f21284aaf3ba95d64c227">Desktop::Displays::Display</a>
+, <a class="el" href="classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a2c0573761ad235d6a1917ad97df2bf4e">juce::ControlButton</a>
 </li>
 <li>scaleAll()
 : <a class="el" href="classRectangleList.html#a57af41f3e264b8c1d183149a9c50f03f">RectangleList&lt; ValueType &gt;</a>
@@ -249,6 +262,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>scanForDevices()
 : <a class="el" href="classAudioIODeviceType.html#a9215b39e523934ac648d4f85f1e1bdf5">AudioIODeviceType</a>
+, <a class="el" href="structjuce_1_1PhysicalTopologySource_1_1DeviceDetector.html#a8175e5b67c9fbbb9bb2a39743b5782fc">juce::PhysicalTopologySource::DeviceDetector</a>
+, <a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html#a034003b8776efdcbc4bec3d98cd754bc">PhysicalTopologySource::DeviceDetector</a>
 </li>
 <li>scanMinAndMaxInterleaved()
 : <a class="el" href="classMemoryMappedAudioFormatReader.html#add131d9db2dfcdba098c4cc489797bb8">MemoryMappedAudioFormatReader</a>
@@ -349,7 +364,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>scrollToTop()
 : <a class="el" href="classDirectoryContentsDisplayComponent.html#aa87b6c665ef3c4cd54f6bcfafe601aa4">DirectoryContentsDisplayComponent</a>
 , <a class="el" href="classFileListComponent.html#a4eed466d935ddc22f82589d32ed0ea37">FileListComponent</a>
-, <a class="el" href="classFileTreeComponent.html#a073e0467733f97816641d88f4fad899a">FileTreeComponent</a>
+, <a class="el" href="classFileTreeComponent.html#a8a151fbcc2c7b0ed02779a0d9a9997fe">FileTreeComponent</a>
 , <a class="el" href="classScrollBar.html#ae3e4bf0e394d03c9fdbdb2025490b1a1">ScrollBar</a>
 </li>
 <li>scrollUp()
@@ -363,10 +378,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classAudioFormatReader.html#a088e8f4f625a23a4fd0234eec16ec53a">AudioFormatReader</a>
 </li>
 <li>searchPathsForPlugins()
-: <a class="el" href="classAudioPluginFormat.html#a73d972820a0b8c1c487a939089153199">AudioPluginFormat</a>
-, <a class="el" href="classAudioUnitPluginFormat.html#a1c04333a7c3ea1ea1ee704d1f488aa73">AudioUnitPluginFormat</a>
-, <a class="el" href="classLADSPAPluginFormat.html#aead72c2ccbb9c3c356ede8b75086f0f9">LADSPAPluginFormat</a>
-, <a class="el" href="classVSTPluginFormat.html#a59ac0f440458965f9bd75c0cbff9baf5">VSTPluginFormat</a>
+: <a class="el" href="classAudioPluginFormat.html#a74b24832af4eb78213ffaa35937d8ac6">AudioPluginFormat</a>
+, <a class="el" href="classAudioUnitPluginFormat.html#a312376321898119dbfebbe5bfcb2e84f">AudioUnitPluginFormat</a>
+, <a class="el" href="classLADSPAPluginFormat.html#ae50bc8230d388164bffa34c1687eecf0">LADSPAPluginFormat</a>
+, <a class="el" href="classVST3PluginFormat.html#a6b9809d54eea2dabcd3d1d6ed068a305">VST3PluginFormat</a>
+, <a class="el" href="classVSTPluginFormat.html#a00441ea3735da64f29f8d0a831ff4d75">VSTPluginFormat</a>
 </li>
 <li>seashell
 : <a class="el" href="classColours.html#a59caf9dbbe04dd428b7253273ec14ca3">Colours</a>
@@ -405,7 +421,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSelectedItemSet.html#a5c989a8cd1483b655b948aee86fb768c">SelectedItemSet&lt; SelectableItemType &gt;</a>
 </li>
 <li>selectRangeOfRows()
-: <a class="el" href="classListBox.html#ae846fdb92bcf2be4040f93eba9f13efd">ListBox</a>
+: <a class="el" href="classListBox.html#a786b9ec6034f59000e20f90653cd0719">ListBox</a>
 </li>
 <li>selectRegion()
 : <a class="el" href="classCodeEditorComponent.html#aae1302c724b2ac3e0c5fa4df6a3144f8">CodeEditorComponent</a>
@@ -426,9 +442,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sendBlockOfMessages()
 : <a class="el" href="classMidiOutput.html#a1356a3303e8f56389ea52f98b56577b6">MidiOutput</a>
 </li>
+<li>sendBlockOfMessagesNow()
+: <a class="el" href="classMidiOutput.html#ae54072205364d56260eaa11c7771289f">MidiOutput</a>
+</li>
 <li>sendChangeMessage()
 : <a class="el" href="classChangeBroadcaster.html#a10f01d1c0a7fde85355321985a682cbd">ChangeBroadcaster</a>
 , <a class="el" href="classValue_1_1ValueSource.html#a75dfc7b9a9e27384e8d22ce1b426704b">Value::ValueSource</a>
+</li>
+<li>sendChanges()
+: <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#a69d0fd84135540b2204f103149a131fc">juce::littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a32f4f40e3e2c3852f7b35bb907409067">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
 </li>
 <li>sendDataChangeMessage()
 : <a class="el" href="classImagePixelData.html#ab5812081b0e7580eb22c2e6fcddf6b50">ImagePixelData</a>
@@ -443,10 +466,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classComponent.html#ac314d2449213d7942eca083addfcd097">Component</a>
 </li>
 <li>sendMessage()
-: <a class="el" href="classInterprocessConnection.html#a6fc9e7b55c25eac48baebd131ded9d4f">InterprocessConnection</a>
+: <a class="el" href="classBlock.html#ab20244f18141a5aea2f9c0c6696d2f1d">Block</a>
+, <a class="el" href="classInterprocessConnection.html#a6fc9e7b55c25eac48baebd131ded9d4f">InterprocessConnection</a>
+, <a class="el" href="classjuce_1_1Block.html#a33c230d445890adf54044a913cfebe52">juce::Block</a>
 </li>
 <li>sendMessageNow()
 : <a class="el" href="classMidiOutput.html#a19c8d64553e0787c920f5b140f7267e9">MidiOutput</a>
+</li>
+<li>sendMessageToDevice()
+: <a class="el" href="structjuce_1_1PhysicalTopologySource_1_1DeviceConnection.html#a4eb97f584158af1e3ecce0a265b66de7">juce::PhysicalTopologySource::DeviceConnection</a>
+, <a class="el" href="structPhysicalTopologySource_1_1DeviceConnection.html#ac8ced6a11a32b92ddcdd5ee76dff712c">PhysicalTopologySource::DeviceConnection</a>
 </li>
 <li>sendMessageToMaster()
 : <a class="el" href="classChildProcessSlave.html#ab619cb3d7beddef480385b7f8ffaf699">ChildProcessSlave</a>
@@ -460,6 +489,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sendParamChangeMessageToListeners()
 : <a class="el" href="classAudioProcessor.html#a2e0e6efdce297e7ae7a9a23152c55165">AudioProcessor</a>
 </li>
+<li>sendProgramEvent()
+: <a class="el" href="classjuce_1_1LEDGrid.html#a7f779fc66732257bf3a0968c9a0321a0">juce::LEDGrid</a>
+, <a class="el" href="classLEDGrid.html#a912196d177130b8442306f4e16f9d249">LEDGrid</a>
+</li>
 <li>sendPropertyChangeMessage()
 : <a class="el" href="classValueTree.html#a164ff183e358b982b1a1f5dd1176ab88">ValueTree</a>
 </li>
@@ -468,6 +501,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>sendSynchronousChangeMessage()
 : <a class="el" href="classChangeBroadcaster.html#a5d16cd01b9af4bacb1716530af17f77b">ChangeBroadcaster</a>
+</li>
+<li>sendToIPAddress()
+: <a class="el" href="classjuce_1_1OSCSender.html#ad3ea490f8f4b260c32689cbc618ba473">juce::OSCSender</a>
+, <a class="el" href="classOSCSender.html#ab4eb31fd9319908a89444b72ea6c86fe">OSCSender</a>
+</li>
+<li>sendTouch()
+: <a class="el" href="structDrumPadGridProgram.html#a2c0f1dd7b3a912720598088c2ba5b882">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#aa0118644c18924b54b40fcf6d7c71692">juce::DrumPadGridProgram</a>
 </li>
 <li>separator
 : <a class="el" href="classFile.html#a03d104ec7dd9600dbfb8cfdd25585135">File</a>
@@ -480,6 +521,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>separatorString
 : <a class="el" href="classFile.html#a66e8bff47d42f5b093b88eacacb573ce">File</a>
+</li>
+<li>serial
+: <a class="el" href="structBlockSerialNumber.html#aee6cb67cd8c8f0ecc9c6a6189558c7c3">BlockSerialNumber</a>
+</li>
+<li>serialNumber
+: <a class="el" href="classBlock.html#a7d8d1dbd650aa0dad8c37b5b1efbed3e">Block</a>
+, <a class="el" href="structBlockDataSheet.html#a6699f59898f85f61c20031299088a885">BlockDataSheet</a>
+, <a class="el" href="structDeviceStatus.html#a4321d8758904e8ebb07b4b5aa599f2c5">DeviceStatus</a>
+, <a class="el" href="classjuce_1_1Block.html#a6bdaab0c5e9ad459fa35f8eb94e89380">juce::Block</a>
 </li>
 <li>set()
 : <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
@@ -544,6 +594,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classPixelARGB.html#a1ba9a0e56449373b863e8b683f5ef590">PixelARGB</a>
 , <a class="el" href="classPixelRGB.html#a552e68cc721bc088f6c972763420d051">PixelRGB</a>
 </li>
+<li>setArguments()
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner_1_1FunctionExecutionContext.html#afd8f5264e76297f997d448db57b4168c">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::FunctionExecutionContext</a>
+, <a class="el" href="structlittlefoot_1_1Runner_1_1FunctionExecutionContext.html#aa328c50c9b4cac9de695013b0e24a0e2">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::FunctionExecutionContext</a>
+</li>
 <li>setArrowSize()
 : <a class="el" href="classCallOutBox.html#a83090d1fbfb1dad89d90e6c269ca0911">CallOutBox</a>
 </li>
@@ -566,7 +620,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">XmlElement</a>
 </li>
 <li>setAudioChannels()
-: <a class="el" href="classAudioAppComponent.html#a094da9961c489784150d0315b2abda04">AudioAppComponent</a>
+: <a class="el" href="classAudioAppComponent.html#a1cb6b457848fa80df7efc39cf095d465">AudioAppComponent</a>
 </li>
 <li>setAudioDeviceSetup()
 : <a class="el" href="classAudioDeviceManager.html#aef0249d178aa5448ad2e949ae059c461">AudioDeviceManager</a>
@@ -588,13 +642,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classResizableWindow.html#a720ac4d5feda66c0171db0031ae33151">ResizableWindow</a>
 </li>
 <li>setBit()
-: <a class="el" href="classBigInteger.html#ad75e08bf5ec6959b99b1971fd858459d">BigInteger</a>
+: <a class="el" href="classBigInteger.html#ab062a5ac87d3b389e420e7a26b35629b">BigInteger</a>
 </li>
 <li>setBitRange()
 : <a class="el" href="classMemoryBlock.html#af3c473a086ecae12702ef5094c4c06fa">MemoryBlock</a>
 </li>
 <li>setBitRangeAsInt()
 : <a class="el" href="classBigInteger.html#ade91afb8c2681dd4cba363fa51c3eb04">BigInteger</a>
+</li>
+<li>setBits()
+: <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#a3487cb7468b3b316df609563a8bf6203">juce::littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#ac5afe3e48de059081a84d304775e1654">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+</li>
+<li>setBlackNoteLengthProportion()
+: <a class="el" href="classMidiKeyboardComponent.html#a9f05a88e8026f3d423ef026d1170ebe9">MidiKeyboardComponent</a>
 </li>
 <li>setBold()
 : <a class="el" href="classFont.html#a46c360f86677fda0471d61c22eb82a3a">Font</a>
@@ -627,7 +688,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classRectangle.html#a9006d88b3ca06d4da57f9960dbc13ed6">Rectangle&lt; ValueType &gt;</a>
 </li>
 <li>setBoundsConstrained()
-: <a class="el" href="classResizableWindow.html#a0578c4bfbfea01f222025e73bbdbf0ac">ResizableWindow</a>
+: <a class="el" href="classAudioProcessorEditor.html#a328459f2e3e6c4468250d22e86d89ff2">AudioProcessorEditor</a>
+, <a class="el" href="classResizableWindow.html#a0578c4bfbfea01f222025e73bbdbf0ac">ResizableWindow</a>
 </li>
 <li>setBoundsForComponent()
 : <a class="el" href="classComponentBoundsConstrainer.html#afaf4fe2f6d2002463fce84ebdefc8db1">ComponentBoundsConstrainer</a>
@@ -654,6 +716,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setBrowseButtonText()
 : <a class="el" href="classFilenameComponent.html#af3f994d7a7e5591322f01288b4a2000c">FilenameComponent</a>
 </li>
+<li>setBuffer()
+: <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#adc7e8afd6102e99e0b5d18a97cb3c8cb">AudioUnitHelpers::CoreAudioBufferList</a>
+</li>
 <li>setBufferedToImage()
 : <a class="el" href="classComponent.html#af19bbc2186e3297ddd55c328e46c014b">Component</a>
 </li>
@@ -662,6 +727,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setBufferUnderrunProtection()
 : <a class="el" href="classAudioCDBurner.html#a74299a88ffe40c06d903f36c0bb84347">AudioCDBurner</a>
+</li>
+<li>setBusesLayout()
+: <a class="el" href="classAudioProcessor.html#a44f66b6421456aa29b65a3ad229ea0fa">AudioProcessor</a>
+</li>
+<li>setBusesLayoutWithoutEnabling()
+: <a class="el" href="classAudioProcessor.html#a4fadfbcdf40b7542a1837744a93b0cbe">AudioProcessor</a>
 </li>
 <li>setButtonRepeatSpeed()
 : <a class="el" href="classScrollBar.html#a65b128f173c754300cdc9db8589d2a36">ScrollBar</a>
@@ -677,6 +748,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setBypassed()
 : <a class="el" href="classReverbAudioSource.html#a8b6f060d4f6ab72e7c9a4ddcdbf6ccd1">ReverbAudioSource</a>
+</li>
+<li>setByte()
+: <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#ab37f7d37eea5e05ef81e751435f9e7f3">juce::littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#aa5ee115e4d8b164ebb7c54f15736648f">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+</li>
+<li>setBytes()
+: <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#a71ae54d360fab76b465b428a000fab14">juce::littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
+, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a92601c321cc89df4c966045377ff00f9">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;</a>
 </li>
 <li>setCachedComponentImage()
 : <a class="el" href="classComponent.html#a9a19c5cf59573243d77a94bb3abea722">Component</a>
@@ -709,6 +788,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setChannel()
 : <a class="el" href="classMidiMessage.html#ac35c11dba441d652e70720525cb2dc7f">MidiMessage</a>
 </li>
+<li>setChannelLayoutOfBus()
+: <a class="el" href="classAudioProcessor.html#ac72802fbbf3bb51abae31dc5eb3a814f">AudioProcessor</a>
+</li>
 <li>setCharacteristics()
 : <a class="el" href="classCustomTypeface.html#a7da2c0383a43ca73649aae749c3acc4f">CustomTypeface</a>
 </li>
@@ -733,7 +815,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classDrawableText_1_1ValueTreeWrapper.html#aa96270a68198046a2b0b83d9856bb55a">DrawableText::ValueTreeWrapper</a>
 , <a class="el" href="classFillType.html#a55bae86d03db42bbdbca0187183db448">FillType</a>
 , <a class="el" href="classGraphics.html#a9a944a0006b7277fda473f0b1b4f028f">Graphics</a>
+, <a class="el" href="classjuce_1_1StatusLight.html#a53de237ef02cc5d1b4f9d26229982b70">juce::StatusLight</a>
 , <a class="el" href="classLookAndFeel.html#a167a1e914771f32e433a0d45aaba45e3">LookAndFeel</a>
+, <a class="el" href="classStatusLight.html#a154151316d9a5523aab5623be729f62c">StatusLight</a>
 </li>
 <li>setColours()
 : <a class="el" href="classAudioVisualiserComponent.html#aa381c0b541be493dcf1121b937dd5704">AudioVisualiserComponent</a>
@@ -771,7 +855,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classButton.html#a17ae41254e2d68b1570ef5027d796ac3">Button</a>
 </li>
 <li>setConstrainer()
-: <a class="el" href="classComponentPeer.html#a650879e0f1cca550ddb2006ef30d73c7">ComponentPeer</a>
+: <a class="el" href="classAudioProcessorEditor.html#a3a620a4659312f2456692c44c4ec999b">AudioProcessorEditor</a>
+, <a class="el" href="classComponentPeer.html#a650879e0f1cca550ddb2006ef30d73c7">ComponentPeer</a>
 , <a class="el" href="classResizableWindow.html#ae386b9e5c905a04cc36cabba1798a444">ResizableWindow</a>
 </li>
 <li>setContentArea()
@@ -807,13 +892,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classAudioDeviceManager.html#a49e34c1ed60dafcebefc55d12f9175ad">AudioDeviceManager</a>
 </li>
 <li>setCurrentColour()
-: <a class="el" href="classColourSelector.html#a5e16de5cc63e5b4f0bf80807e0d96b3b">ColourSelector</a>
+: <a class="el" href="classColourSelector.html#a38aaf19f67b6c6f32628c4e71b3e6b25">ColourSelector</a>
 </li>
 <li>setCurrentDragImage()
 : <a class="el" href="classDragAndDropContainer.html#a0041c708ec4c348b719692d4c5963858">DragAndDropContainer</a>
 </li>
 <li>setCurrentFile()
 : <a class="el" href="classFilenameComponent.html#ae251549ddd0e542132a9debe57300ec6">FilenameComponent</a>
+</li>
+<li>setCurrentLayout()
+: <a class="el" href="classAudioProcessor_1_1Bus.html#a11591551fb051724a4eafc47068be6d7">AudioProcessor::Bus</a>
+</li>
+<li>setCurrentLayoutWithoutEnabling()
+: <a class="el" href="classAudioProcessor_1_1Bus.html#a9858f44335c55c6a58b9bfe541c0d9ca">AudioProcessor::Bus</a>
 </li>
 <li>setCurrentLogger()
 : <a class="el" href="classLogger.html#a5855a0341fc4f6ceb5418879fd685277">Logger</a>
@@ -828,7 +919,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classPreferencesPanel.html#ab29e97b5c691d7104831393fd81e9de1">PreferencesPanel</a>
 </li>
 <li>setCurrentPlaybackSampleRate()
-: <a class="el" href="classSynthesiser.html#ae0d6808e5a22bc3a56a68dab1f106ab8">Synthesiser</a>
+: <a class="el" href="classMPESynthesiser.html#aaa4de3655921d4971ad4334001f096b1">MPESynthesiser</a>
+, <a class="el" href="structMPESynthesiserBase.html#aa4b7f08d7300b5fd4b7dee5afe0a5b6e">MPESynthesiserBase</a>
+, <a class="el" href="classSynthesiser.html#ae0d6808e5a22bc3a56a68dab1f106ab8">Synthesiser</a>
 , <a class="el" href="classSynthesiserVoice.html#a31a423708524f139af52bd5771006b14">SynthesiserVoice</a>
 </li>
 <li>setCurrentProgram()
@@ -847,6 +940,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setCurrentRenderingEngine()
 : <a class="el" href="classComponentPeer.html#a44614a1572c6c8860821f3ab5db12ea5">ComponentPeer</a>
+</li>
+<li>setCurrentSampleRate()
+: <a class="el" href="classMPESynthesiserVoice.html#a0cc2f469d88ea14b0e48476017da70a7">MPESynthesiserVoice</a>
 </li>
 <li>setCurrentTabIndex()
 : <a class="el" href="classTabbedButtonBar.html#aac30b6472d94b57198623499feeba069">TabbedButtonBar</a>
@@ -870,11 +966,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setCustomScanner()
 : <a class="el" href="classKnownPluginList.html#a1099d02b42eabe2d99dbce1ab3393026">KnownPluginList</a>
 </li>
+<li>setDashLengths()
+: <a class="el" href="classDrawableShape.html#a6ab7162eaee07524732aafd49a61bc74">DrawableShape</a>
+</li>
+<li>setDataBits()
+: <a class="el" href="classjuce_1_1LEDGrid.html#a2dd8fa67fb27a1d54c98237d6002e2a3">juce::LEDGrid</a>
+, <a class="el" href="classLEDGrid.html#aee67342ec95e61b027c9c30e0938c19a">LEDGrid</a>
+</li>
+<li>setDataByte()
+: <a class="el" href="classjuce_1_1LEDGrid.html#a84a33db40ff04d3237e02151dc1e013d">juce::LEDGrid</a>
+, <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abdd49f315febbf4d9b032f29d823d818">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="classLEDGrid.html#a5720ee29e46908d71b9f9f1492adf968">LEDGrid</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#aa308687f2d975442f371f0536e8a5956">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+</li>
+<li>setDataBytes()
+: <a class="el" href="classjuce_1_1LEDGrid.html#a8b2436ce33b2eba4208cfd05b516974b">juce::LEDGrid</a>
+, <a class="el" href="classLEDGrid.html#af034afafa3334cb684a360cff0f95a8f">LEDGrid</a>
+</li>
 <li>setDataReceiver()
 : <a class="el" href="classAudioFormatWriter_1_1ThreadedWriter.html#af9af3b0ff01f3e62427c0526087f5ab3">AudioFormatWriter::ThreadedWriter</a>
 </li>
 <li>setDataToReferTo()
 : <a class="el" href="classAudioBuffer.html#ab2daca36339708bc76e01fea7b7b3059">AudioBuffer&lt; Type &gt;</a>
+</li>
+<li>setDefault()
+: <a class="el" href="classCachedValue.html#ab0365e5556090469b609bc8e18f7247d">CachedValue&lt; Type &gt;</a>
 </li>
 <li>setDefaultBrowseTarget()
 : <a class="el" href="classFilenameComponent.html#a79934b297889977649251cae1afd323e">FilenameComponent</a>
@@ -1089,6 +1205,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setGradientFill()
 : <a class="el" href="classGraphics.html#a57478bc2496ebb84696e5ba64b455965">Graphics</a>
 </li>
+<li>setGridFills()
+: <a class="el" href="structDrumPadGridProgram.html#a00dff0bc8385c3ab4c0d14734bc17ed3">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#a210cf3da59ceb2c95d9cdd7d27c3ece1">juce::DrumPadGridProgram</a>
+</li>
 <li>setHeader()
 : <a class="el" href="classTableListBox.html#a886796417fdc7db6fb31248cfcb92c3f">TableListBox</a>
 </li>
@@ -1097,6 +1217,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setHeaderHeight()
 : <a class="el" href="classTableListBox.html#a51ccf41c12897d58e13d4b7be7cbdff3">TableListBox</a>
+</li>
+<li>setHeapByte()
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a7884aa88f7deb1db0b4ec0b4d1a4990f">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#ab0ad230a48294d52781d7ec99bdd8a93">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+</li>
+<li>setHeapInt()
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ac1773b88a6ded03b4bd2f9212a4ba54c">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#ae6cd997cb5e21d1c8d13fda55083c062">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
 </li>
 <li>setHeight()
 : <a class="el" href="classFont.html#a3dc7a6f8ab92c63a7a3551434806aebf">Font</a>
@@ -1270,12 +1398,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setLayoutMode()
 : <a class="el" href="classMultiDocumentPanel.html#aacc7913164527f666fbc8e9f06d279fb">MultiDocumentPanel</a>
 </li>
+<li>setLED()
+: <a class="el" href="structBitmapLEDProgram.html#ac0897947a0f61327b7676369213824c4">BitmapLEDProgram</a>
+, <a class="el" href="structjuce_1_1BitmapLEDProgram.html#ab8d8cc2b0d90f564e035b29e6c611eb3">juce::BitmapLEDProgram</a>
+</li>
+<li>setLEDColour()
+: <a class="el" href="classjuce_1_1LEDRow.html#a84f0b7496f086eac1ad7358fe89aca98">juce::LEDRow</a>
+, <a class="el" href="classLEDRow.html#a69589380cf5242c93743f6510609cb1a">LEDRow</a>
+</li>
 <li>setLeft()
 : <a class="el" href="classBorderSize.html#ac17aba0420116785bf1e8fb687ab01e7">BorderSize&lt; ValueType &gt;</a>
 , <a class="el" href="classRectangle.html#aae36b6ef82255e6f5f75e817de1c57f2">Rectangle&lt; ValueType &gt;</a>
 </li>
+<li>setLegacyModeChannelRange()
+: <a class="el" href="classMPEInstrument.html#abef02c4b4ea3d4fc9ce6aede066696ef">MPEInstrument</a>
+, <a class="el" href="structMPESynthesiserBase.html#ac4695668d9cc9ad26f3bb1a5a370d582">MPESynthesiserBase</a>
+</li>
+<li>setLegacyModePitchbendRange()
+: <a class="el" href="classMPEInstrument.html#a6c4f9fd1840122bf9520a504dbfda956">MPEInstrument</a>
+, <a class="el" href="structMPESynthesiserBase.html#a9ed7113fa62ec1f9e979b568c6d99893">MPESynthesiserBase</a>
+</li>
 <li>setLength()
 : <a class="el" href="classRange.html#a30634e64e7b97081134a96465bb9d1b9">Range&lt; ValueType &gt;</a>
+</li>
+<li>setLightColour()
+: <a class="el" href="classControlButton.html#a689a6ffb7468ce794a4af4f7dc2bda9c">ControlButton</a>
+, <a class="el" href="classjuce_1_1ControlButton.html#a3a13183cdd06b052f61eeb9aa4bf1e0a">juce::ControlButton</a>
 </li>
 <li>setLimits()
 : <a class="el" href="classAnimatedPosition.html#a8513e6e68f4c37bbf1eaa6210467e672">AnimatedPosition&lt; Behaviour &gt;</a>
@@ -1306,11 +1454,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMidiKeyboardComponent.html#ac9cb4b2afee773e1d29d3a39fb79de8e">MidiKeyboardComponent</a>
 </li>
 <li>setMacMainMenu()
-: <a class="el" href="classMenuBarModel.html#a2e10f5dd37f6f4226ef7bdf1ff817540">MenuBarModel</a>
+: <a class="el" href="classMenuBarModel.html#a052c0e132c619775f3f14af3aae44811">MenuBarModel</a>
 </li>
 <li>setMarker()
 : <a class="el" href="classMarkerList.html#a94cab6b8076345f32a65bdac9f5f0544">MarkerList</a>
 , <a class="el" href="classMarkerList_1_1ValueTreeWrapper.html#a03a72327258884ba74656f088d71044f">MarkerList::ValueTreeWrapper</a>
+</li>
+<li>setMasterPitchbendRange()
+: <a class="el" href="structMPEZone.html#ad610f0ec014a21eb869cdb2ff169210f">MPEZone</a>
 </li>
 <li>setMatrix2()
 : <a class="el" href="structOpenGLShaderProgram_1_1Uniform.html#a6ee26d6692dc8a72244afdc6ca44512d">OpenGLShaderProgram::Uniform</a>
@@ -1335,6 +1486,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setMaximumWidth()
 : <a class="el" href="classComponentBoundsConstrainer.html#a925ec5da22e0a6e6266b2428705d5d6d">ComponentBoundsConstrainer</a>
+</li>
+<li>setMaxNumberOfFileHandles()
+: <a class="el" href="classProcess.html#a38b648877751448ff0ad0dd4b74b289f">Process</a>
 </li>
 <li>setMaxNumberOfItems()
 : <a class="el" href="classRecentlyOpenedFilesList.html#aa022b3b01d6d0af7c9ef63ce543924d3">RecentlyOpenedFilesList</a>
@@ -1395,7 +1549,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classComponentBoundsConstrainer.html#aff1abf331d36ac67df318f999beccc0a">ComponentBoundsConstrainer</a>
 </li>
 <li>setMinimumRenderingSubdivisionSize()
-: <a class="el" href="classSynthesiser.html#a36ec952997dd56cceb00904a7be69140">Synthesiser</a>
+: <a class="el" href="structMPESynthesiserBase.html#a86d907030c48a8abf67810ba08a8ff98">MPESynthesiserBase</a>
+, <a class="el" href="classSynthesiser.html#a4a8e6d1bffae06cbe61b69488c97fa49">Synthesiser</a>
 </li>
 <li>setMinimumSize()
 : <a class="el" href="classComponentBoundsConstrainer.html#aea5a0319cabade466756b4f031b9329d">ComponentBoundsConstrainer</a>
@@ -1416,6 +1571,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setModeOfEndPoint()
 : <a class="el" href="classDrawablePath_1_1ValueTreeWrapper_1_1Element.html#a7adf5df3a10f8624b4a9b57abb1224e0">DrawablePath::ValueTreeWrapper::Element</a>
+</li>
+<li>setModifierKeyProvider()
+: <a class="el" href="structModifierKeyReceiver.html#a989688b421757a7bd7dcb2843c69a471">ModifierKeyReceiver</a>
 </li>
 <li>setMouseClickGrabsKeyboardFocus()
 : <a class="el" href="classComponent.html#a5e27530ab343f52b524c1c3f1a1d98eb">Component</a>
@@ -1445,6 +1603,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setMultiLine()
 : <a class="el" href="classTextEditor.html#a939bf23c983f695379a92f9612928160">TextEditor</a>
 </li>
+<li>setMultipleBytes()
+: <a class="el" href="structHostPacketBuilder.html#a17551c66fb73514a5e476d665a6b3f34">HostPacketBuilder&lt; maxPacketBytes &gt;</a>
+</li>
 <li>setMultipleSelectionEnabled()
 : <a class="el" href="classListBox.html#a9582ec297c14961573f0f4eb62e0036d">ListBox</a>
 </li>
@@ -1461,6 +1622,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classComponent.html#a64d1ad9a0f8f0d1757e62ac738b36b35">Component</a>
 , <a class="el" href="classDocumentWindow.html#aac6b784f048c3a84e444009dfbf87441">DocumentWindow</a>
 , <a class="el" href="classMidiInput.html#ad85cc3c81a13f0fae9924d6ca3881b21">MidiInput</a>
+</li>
+<li>setNativeFunctions()
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ac50d143f46dc4abee59d63d4c0275189">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#a4cad1258b15837d2ba702640a140488a">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
 </li>
 <li>setNativeSharedContext()
 : <a class="el" href="classOpenGLContext.html#a0129ecf603a0cc3034e4809a23812e4a">OpenGLContext</a>
@@ -1501,6 +1666,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setNoteStealingEnabled()
 : <a class="el" href="classSynthesiser.html#ae0bbfe2c3819167dc5d98b27b21843eb">Synthesiser</a>
+</li>
+<li>setNumberOfChannels()
+: <a class="el" href="classAudioProcessor_1_1Bus.html#a994380c6bfe870f7212899298d2bf22a">AudioProcessor::Bus</a>
 </li>
 <li>setNumberOfChannelsToProduce()
 : <a class="el" href="classChannelRemappingAudioSource.html#a8af553519941d35644aa5373fde05acb">ChannelRemappingAudioSource</a>
@@ -1573,12 +1741,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setOverlayColour()
 : <a class="el" href="classDrawableImage.html#ae3fc9ea168142fe5bb7d51bc99bd19cf">DrawableImage</a>
 , <a class="el" href="classDrawableImage_1_1ValueTreeWrapper.html#a09a93e71983da0106a1add5772d36c14">DrawableImage::ValueTreeWrapper</a>
+, <a class="el" href="classjuce_1_1LEDRow.html#a0c2a4b750f683bda20f22f55b09bdf51">juce::LEDRow</a>
+, <a class="el" href="classLEDRow.html#ac2ec368db4c1e58aae2d08ff5fdfb842">LEDRow</a>
 </li>
 <li>setOwned()
 : <a class="el" href="classOptionalScopedPointer.html#a44d17e536c3584231f3ded73499cf09b">OptionalScopedPointer&lt; ObjectType &gt;</a>
 </li>
 <li>setOwner()
 : <a class="el" href="classDropShadower.html#aa66afaff8ac325df14206e274589769f">DropShadower</a>
+</li>
+<li>setPadAnimationState()
+: <a class="el" href="structDrumPadGridProgram.html#aca33909f2f8032971748769f945abe68">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#ade172e88bdeaa286b807d5f67d51ab6d">juce::DrumPadGridProgram</a>
 </li>
 <li>setPaintingIsUnclipped()
 : <a class="el" href="classComponent.html#afd2216ecd5029923097d6baabab400ec">Component</a>
@@ -1615,6 +1789,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setPercentageDisplay()
 : <a class="el" href="classProgressBar.html#a19dceb0dc2c110512d0fd7dcec3fc50c">ProgressBar</a>
 </li>
+<li>setPerNotePitchbendRange()
+: <a class="el" href="structMPEZone.html#ab047573d95e602d38fa27535274c4dbc">MPEZone</a>
+</li>
+<li>setPitchbendTrackingMode()
+: <a class="el" href="classMPEInstrument.html#a6502dcaaf2c1ebb799328f0f98df8b35">MPEInstrument</a>
+</li>
 <li>setPixel()
 : <a class="el" href="classGraphics.html#a69e70db1afc03d58f9055f8f45d8e5d1">Graphics</a>
 </li>
@@ -1628,7 +1808,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classOpenGLContext.html#aeb49920c5ee4e4694fa4cbd1700b2acb">OpenGLContext</a>
 </li>
 <li>setPlayConfigDetails()
-: <a class="el" href="classAudioProcessor.html#a8648014377dc6ee0476ceb45da113346">AudioProcessor</a>
+: <a class="el" href="classAudioProcessor.html#a6364f81b66aaa3d772889c78cdf60b46">AudioProcessor</a>
 </li>
 <li>setPlayHead()
 : <a class="el" href="classAudioProcessor.html#a9015f8476c07b173e3c9919b3036339d">AudioProcessor</a>
@@ -1647,7 +1827,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setPosition()
 : <a class="el" href="classAnimatedPosition.html#a18201fedfc570cb04582ff65b9ddbf3d">AnimatedPosition&lt; Behaviour &gt;</a>
 , <a class="el" href="classAudioTransportSource.html#aab002d853ed9e9389fcaa25014c1fc72">AudioTransportSource</a>
-, <a class="el" href="classBubbleComponent.html#a9dce0f241c8f14de8ca2a60cdc83e537">BubbleComponent</a>
+, <a class="el" href="classBubbleComponent.html#a279ce3e2971a1f48711260f513c5508f">BubbleComponent</a>
 , <a class="el" href="classBufferedInputStream.html#ac71d4e069913c419f46b98322d5099c1">BufferedInputStream</a>
 , <a class="el" href="classCodeDocument_1_1Position.html#aabaa322c141c2aa1c4f51689372dac70">CodeDocument::Position</a>
 , <a class="el" href="classDirectShowComponent.html#abb6c7953230480059531079f1b4d85e3">DirectShowComponent</a>
@@ -1672,6 +1852,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setPreferredHeight()
 : <a class="el" href="classPropertyComponent.html#a7a1419d38e6281bc7fef79c89656024a">PropertyComponent</a>
 </li>
+<li>setPressureTrackingMode()
+: <a class="el" href="classMPEInstrument.html#aa8ffdce53374855ed114ca92004bcce6">MPEInstrument</a>
+</li>
 <li>setPriority()
 : <a class="el" href="classProcess.html#af87785f3f355601bb542e905963c31a7">Process</a>
 , <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f">Thread</a>
@@ -1681,6 +1864,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setProcessor()
 : <a class="el" href="classAudioProcessorPlayer.html#a1a0491edbdbcb7e64375c42b8b48ed64">AudioProcessorPlayer</a>
+</li>
+<li>setProgram()
+: <a class="el" href="classjuce_1_1LEDGrid.html#acfd74402d751f952d422d0550e7565e0">juce::LEDGrid</a>
+, <a class="el" href="classLEDGrid.html#a54c1d6f1afd20958c0cb0bebace26ac9">LEDGrid</a>
 </li>
 <li>setProgress()
 : <a class="el" href="classThreadWithProgressWindow.html#a607960c4dca64ea8e6193cc5e94d8c76">ThreadWithProgressWindow</a>
@@ -1705,6 +1892,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setRangeLimits()
 : <a class="el" href="classScrollBar.html#ab49f30d1039dfc93fe049ce08a4fb3d4">ScrollBar</a>
 </li>
+<li>setRateAndBufferSizeDetails()
+: <a class="el" href="classAudioProcessor.html#a562ba6fd88562fd42eddee5b95da489d">AudioProcessor</a>
+</li>
 <li>setReader()
 : <a class="el" href="classAudioThumbnail.html#a67fb7eb4571c0442789b34139dfb47f9">AudioThumbnail</a>
 , <a class="el" href="classAudioThumbnailBase.html#ad6960274ea876808fd2e6df6f0761e9c">AudioThumbnailBase</a>
@@ -1728,7 +1918,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classDrawableRectangle_1_1ValueTreeWrapper.html#a511d83577f6700b93259175031430ea3">DrawableRectangle::ValueTreeWrapper</a>
 </li>
 <li>setRenderer()
-: <a class="el" href="classOpenGLContext.html#adbb9e06c8783a85db58f8b666675e577">OpenGLContext</a>
+: <a class="el" href="classjuce_1_1LEDGrid.html#a6c1c9871bbc6b337ec020559180e4a2d">juce::LEDGrid</a>
+, <a class="el" href="classLEDGrid.html#a09e84751f5d4dbd1215f81b945fc67e4">LEDGrid</a>
+, <a class="el" href="classOpenGLContext.html#adbb9e06c8783a85db58f8b666675e577">OpenGLContext</a>
 </li>
 <li>setRepaintRate()
 : <a class="el" href="classAudioVisualiserComponent.html#aa852121a86bde7b1c442f2228219db37">AudioVisualiserComponent</a>
@@ -1746,10 +1938,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classResamplingAudioSource.html#aa7d888e41873f6e395baa1eb179c15ad">ResamplingAudioSource</a>
 </li>
 <li>setResizable()
-: <a class="el" href="classResizableWindow.html#a538709f0111ad32b05d858a511bcd5be">ResizableWindow</a>
+: <a class="el" href="classAudioProcessorEditor.html#a3d36f7385146270fc752ce17418f115a">AudioProcessorEditor</a>
+, <a class="el" href="classResizableWindow.html#a538709f0111ad32b05d858a511bcd5be">ResizableWindow</a>
 </li>
 <li>setResizeLimits()
-: <a class="el" href="classResizableWindow.html#a6afa3b9ddf1cd9f7fa546692074dd781">ResizableWindow</a>
+: <a class="el" href="classAudioProcessorEditor.html#a4f52a3b54d9a54e9b0b72dffc5030426">AudioProcessorEditor</a>
+, <a class="el" href="classResizableWindow.html#a6afa3b9ddf1cd9f7fa546692074dd781">ResizableWindow</a>
 </li>
 <li>setReturnKeyStartsNewLine()
 : <a class="el" href="classTextEditor.html#a60e99221178fe5510edcfcd246a8bf2c">TextEditor</a>
@@ -1768,7 +1962,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classTreeView.html#a3c28114193951c8079fdfeb95738f410">TreeView</a>
 </li>
 <li>setRotaryParameters()
-: <a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb">Slider</a>
+: <a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188">Slider</a>
 </li>
 <li>setRowHeight()
 : <a class="el" href="classListBox.html#ab9c8c47afd94fbfd4cf84edcab71acb2">ListBox</a>
@@ -1813,6 +2007,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setScrollButtonsVisible()
 : <a class="el" href="classMidiKeyboardComponent.html#a209f55725a073395da946d8cb4652f0d">MidiKeyboardComponent</a>
 </li>
+<li>setScrollOnDragEnabled()
+: <a class="el" href="classViewport.html#aada0061f2174a6a8ab76a305b8362417">Viewport</a>
+</li>
 <li>setScrollToShowCursor()
 : <a class="el" href="classTextEditor.html#ac263b589275580c0a2a89de9e02f0061">TextEditor</a>
 </li>
@@ -1841,7 +2038,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setSelectedFile()
 : <a class="el" href="classDirectoryContentsDisplayComponent.html#a5e9eff1e74d231bcff622f09d80265d2">DirectoryContentsDisplayComponent</a>
 , <a class="el" href="classFileListComponent.html#a5998bfc18776a08513520e06e292c5c7">FileListComponent</a>
-, <a class="el" href="classFileTreeComponent.html#acaed76d7b3ab186018b5eaec0179c600">FileTreeComponent</a>
+, <a class="el" href="classFileTreeComponent.html#a65d12b1e3e8120c05444f7109b8c93c3">FileTreeComponent</a>
 </li>
 <li>setSelectedId()
 : <a class="el" href="classComboBox.html#a61f8097b495703a253c33897e978fc06">ComboBox</a>
@@ -1871,13 +2068,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classRectangle.html#abda6f95da8f85ce896652bd9eacd2183">Rectangle&lt; ValueType &gt;</a>
 </li>
 <li>setSizeAndStyle()
-: <a class="el" href="classFont.html#a405732674d98d90cb2948ea20ccbe67c">Font</a>
+: <a class="el" href="classFont.html#adda175db2fae3b56a41d59db82b26ab8">Font</a>
 </li>
 <li>setSizeLimits()
 : <a class="el" href="classComponentBoundsConstrainer.html#a1a4b9c98a27720bf23bb5621af00d6a3">ComponentBoundsConstrainer</a>
 </li>
 <li>setSkewFactor()
-: <a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964">Slider</a>
+: <a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2">Slider</a>
 </li>
 <li>setSkewFactorFromMidPoint()
 : <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47">Slider</a>
@@ -1899,9 +2096,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classAudioThumbnail.html#a1c10b38a794d96b2d26acbbc15946319">AudioThumbnail</a>
 , <a class="el" href="classAudioThumbnailBase.html#a8fd77ac3757e9eca141ab1cbc4e7d269">AudioThumbnailBase</a>
 , <a class="el" href="classAudioTransportSource.html#a20a6a91c4505e77207cadef7ddc4dc5c">AudioTransportSource</a>
-</li>
-<li>setSpeakerArrangement()
-: <a class="el" href="classAudioProcessor.html#a32373cce07683bdd38cf3b01eb1c4bdc">AudioProcessor</a>
 </li>
 <li>setSpeed()
 : <a class="el" href="classDirectShowComponent.html#a288657f65e80827b7bdfe66fe3e36f2e">DirectShowComponent</a>
@@ -2034,6 +2228,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setTiledImageFill()
 : <a class="el" href="classGraphics.html#a675cd4c4715165f0a0aec0bd8c3fe390">Graphics</a>
 </li>
+<li>setTimbreTrackingMode()
+: <a class="el" href="classMPEInstrument.html#aade5f2cf6d0944bfb7f3fd353ce0dbd4">MPEInstrument</a>
+</li>
 <li>setTimeStamp()
 : <a class="el" href="classMidiMessage.html#ad5f9ceed74dd22e846ed0650d81f11a7">MidiMessage</a>
 </li>
@@ -2106,7 +2303,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classFont.html#af107c023ff440651ae9291cdf058b7c1">Font</a>
 </li>
 <li>setUniform()
-: <a class="el" href="classOpenGLShaderProgram.html#ad5a1c360c5e628172a788be1bf1ae0d7">OpenGLShaderProgram</a>
+: <a class="el" href="classOpenGLShaderProgram.html#a30aa861d813d2a3867452f35e1f8785e">OpenGLShaderProgram</a>
 </li>
 <li>setUniformMat2()
 : <a class="el" href="classOpenGLShaderProgram.html#ad481c6c6d05495b011e16e12e02e6a53">OpenGLShaderProgram</a>
@@ -2137,12 +2334,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>setValue()
 : <a class="el" href="classAudioProcessorParameter.html#ab7c0b4f8caace42d38c71ff620cf8182">AudioProcessorParameter</a>
+, <a class="el" href="classCachedValue.html#aa30d36d0218f11c28398eb8c11de3768">CachedValue&lt; Type &gt;</a>
+, <a class="el" href="classLinearSmoothedValue.html#aa7def206e183499e27803d5ff4e6b303">LinearSmoothedValue&lt; FloatType &gt;</a>
 , <a class="el" href="classPropertySet.html#a696515de52c7310117e7914a02b58e57">PropertySet</a>
 , <a class="el" href="classSlider.html#a430a5c4e56b39dd622f5800f787e0822">Slider</a>
 , <a class="el" href="classSliderPropertyComponent.html#a9b4e58d9a44de072a3674dbdbd1366f0">SliderPropertyComponent</a>
 , <a class="el" href="classValue.html#aad44af687acd1f62ad9231e8ae47059d">Value</a>
 , <a class="el" href="classValue_1_1ValueSource.html#aa21be5c22b2846326b8d52cf7a79f7f9">Value::ValueSource</a>
-, <a class="el" href="classWindowsRegistry.html#a915f5ead2b555b2ceab8df8963feee11">WindowsRegistry</a>
+, <a class="el" href="classWindowsRegistry.html#aba2e0051d2d8e1b300c055e5a5ce9135">WindowsRegistry</a>
 </li>
 <li>setValueNotifyingHost()
 : <a class="el" href="classAudioProcessorParameter.html#ac9b67f35339db50d2bd9a026d89390e1">AudioProcessorParameter</a>
@@ -2177,7 +2376,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classDraggable3DOrientation.html#aaf819f208f7b6f098a9d14084281f84c">Draggable3DOrientation</a>
 </li>
 <li>setViewPosition()
-: <a class="el" href="classViewport.html#a138c2e06be0437fbeab40542c00bbbe1">Viewport</a>
+: <a class="el" href="classViewport.html#ac9a49c9774e0bfdb2efd00645807c64d">Viewport</a>
 </li>
 <li>setViewPositionProportionately()
 : <a class="el" href="classViewport.html#a69fd47f38b5a918d38dbd545e60a904c">Viewport</a>
@@ -2185,6 +2384,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setVisible()
 : <a class="el" href="classComponent.html#ac8483af6fe4dc3254e7176df0d8e9f7a">Component</a>
 , <a class="el" href="classComponentPeer.html#a45cdae32b498158f5a353f0382b3afa5">ComponentPeer</a>
+</li>
+<li>setVoiceStealingEnabled()
+: <a class="el" href="classMPESynthesiser.html#a711a9bb400e273117c88095a1f1cced7">MPESynthesiser</a>
 </li>
 <li>setWantsKeyboardFocus()
 : <a class="el" href="classComponent.html#a6a1f21a76b971d54870cb5c32c041055">Component</a>
@@ -2205,6 +2407,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setY()
 : <a class="el" href="classPoint.html#ae88309fa99367ff704b3e14bccdee3f9">Point&lt; ValueType &gt;</a>
 , <a class="el" href="classRectangle.html#aee56aca55454ee438f7ceaa7fbce014d">Rectangle&lt; ValueType &gt;</a>
+</li>
+<li>setZoneLayout()
+: <a class="el" href="classMPEInstrument.html#a60a37c57cd5206090b4d2d866b959746">MPEInstrument</a>
+, <a class="el" href="classMPEMessages.html#a89e08749090d02fd04fc7d80a013f951">MPEMessages</a>
+, <a class="el" href="structMPESynthesiserBase.html#afeac8dac88466e65c1b86c94be91fe02">MPESynthesiserBase</a>
 </li>
 <li>SHA256()
 : <a class="el" href="classSHA256.html#a2de1671e1b0243f5177dae7e8349cdbd">SHA256</a>
@@ -2237,15 +2444,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>shiftModifier
 : <a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678baafc1c1b745213b6915f1932ecf0ea042">ModifierKeys</a>
 </li>
+<li>shortcutKeyDescription
+: <a class="el" href="structPopupMenu_1_1Item.html#a8f9e3dfd2f9121152a72f21183a51415">PopupMenu::Item</a>
+</li>
 <li>shortName
 : <a class="el" href="structApplicationCommandInfo.html#a2da18de634cf7794fcd0b26e4121e3ec">ApplicationCommandInfo</a>
+</li>
+<li>shortText
+: <a class="el" href="structVstPinInfo.html#a6594139efae58014637f77d95f929151">VstPinInfo</a>
 </li>
 <li>shouldAbortTests()
 : <a class="el" href="classUnitTestRunner.html#ae6f35d3fb59cf0ec741e31c5cbcbba6a">UnitTestRunner</a>
 </li>
 <li>shouldBailOut()
 : <a class="el" href="classComponent_1_1BailOutChecker.html#a2c09b014548960f6792f62f7b8ec50bd">Component::BailOutChecker</a>
-, <a class="el" href="classListenerList_1_1DummyBailOutChecker.html#a8d8093b22c3d503e1aae0a5cd59766e3">ListenerList&lt; ListenerClass, ArrayType &gt;::DummyBailOutChecker</a>
+, <a class="el" href="structListenerList_1_1DummyBailOutChecker.html#a8d8093b22c3d503e1aae0a5cd59766e3">ListenerList&lt; ListenerClass, ArrayType &gt;::DummyBailOutChecker</a>
 </li>
 <li>shouldCommandBeIncluded()
 : <a class="el" href="classKeyMappingEditorComponent.html#abb52cedae53b4d9b12d7f084b688cbed">KeyMappingEditorComponent</a>
@@ -2268,9 +2481,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classColourSelector.html#a42bcef80614375bb812096797d7439f4a532b65a28bec85b05e7a1af509d537b3">ColourSelector</a>
 </li>
 <li>showAt()
-: <a class="el" href="classBubbleMessageComponent.html#a578aec6fc92df2b9a70f29250b4ea243">BubbleMessageComponent</a>
+: <a class="el" href="classBubbleMessageComponent.html#accf152caac1319d8a05d145a94fc7022">BubbleMessageComponent</a>
 , <a class="el" href="classFileChooserDialogBox.html#a038683131a8efafe2b22484211043fb1">FileChooserDialogBox</a>
-, <a class="el" href="classPopupMenu.html#a09cbf58f5f3e8132ad1eb6afa7819d32">PopupMenu</a>
+, <a class="el" href="classPopupMenu.html#acc1d107b2b4dce0ed54333a063f9dfdf">PopupMenu</a>
 </li>
 <li>showAudioSettingsDialog()
 : <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder</a>
@@ -2315,11 +2528,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classPopupMenu.html#aafe397e60357ab6a12ffcc3f896ed4a7">PopupMenu</a>
 </li>
 <li>showMessageBox()
-: <a class="el" href="classAlertWindow.html#a5a784918fce0be084276c24ec30d8277">AlertWindow</a>
+: <a class="el" href="classAlertWindow.html#afce17dd21af1f740f736b757b52eba0a">AlertWindow</a>
 , <a class="el" href="classNativeMessageBox.html#a4f5c4b3d945b5f9f7a034fcd4a05b1b3">NativeMessageBox</a>
 </li>
 <li>showMessageBoxAsync()
-: <a class="el" href="classAlertWindow.html#a813ed45e6d581e2dbcf0983598460e8f">AlertWindow</a>
+: <a class="el" href="classAlertWindow.html#a575b1266a8dc9ce47803b581772c3f0c">AlertWindow</a>
 , <a class="el" href="classNativeMessageBox.html#aafc1ea7cf5c78b7512b4f8747a635513">NativeMessageBox</a>
 </li>
 <li>showModalDialog()
@@ -2332,7 +2545,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classAlertWindow.html#a796e868eb78c49ec3e7de0f220a5bd00">AlertWindow</a>
 </li>
 <li>showOkCancelBox()
-: <a class="el" href="classAlertWindow.html#a45104bf99f4f5069d5b06ae3ee20d2c3">AlertWindow</a>
+: <a class="el" href="classAlertWindow.html#a4aa219f3d3cee59701b5a0ef187599de">AlertWindow</a>
 , <a class="el" href="classNativeMessageBox.html#a89552c16933a6f9620cbfc20c9b14376">NativeMessageBox</a>
 </li>
 <li>showPopup()
@@ -2351,7 +2564,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMouseCursor.html#a29d3a192ded584323597869f975faab6">MouseCursor</a>
 </li>
 <li>showYesNoCancelBox()
-: <a class="el" href="classAlertWindow.html#a5961af8ac64e6b5c3ee7f2167f5b8f4a">AlertWindow</a>
+: <a class="el" href="classAlertWindow.html#aa91c2902742b46fbb390420808cb1294">AlertWindow</a>
 , <a class="el" href="classNativeMessageBox.html#a1e7c585bcb1a775e40ab014267ebc200">NativeMessageBox</a>
 </li>
 <li>shrinkToNoMoreThan()
@@ -2381,11 +2594,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>signalThreadShouldExit()
 : <a class="el" href="classThread.html#affe168e27c6ee50b0d10522810772268">Thread</a>
 </li>
-<li>silenceInProducesSilenceOut()
-: <a class="el" href="classAudioProcessor.html#abbf0119e1ab826b7acbe01eb3f060968">AudioProcessor</a>
-, <a class="el" href="classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a230e65ff13b76645eb5e8ece406fe654">AudioProcessorGraph::AudioGraphIOProcessor</a>
-, <a class="el" href="classAudioProcessorGraph.html#add582b0369f7d7b42f6518afbe55ae7e">AudioProcessorGraph</a>
-</li>
 <li>silver
 : <a class="el" href="classColours.html#ac171c2c4d749ed079e56de4fe35ba2a3">Colours</a>
 </li>
@@ -2400,21 +2608,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>size()
 : <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
+, <a class="el" href="classAudioChannelSet.html#ad7be564dafc89bddf37dea65d7f014ba">AudioChannelSet</a>
 , <a class="el" href="classHashMap.html#a79c34c9f6a0799d6cae1b84ff61b7a34">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;</a>
+, <a class="el" href="structHostPacketBuilder.html#a07e6f1ab371debd068bf7581d8fa565a">HostPacketBuilder&lt; maxPacketBytes &gt;</a>
 , <a class="el" href="classjuce_1_1OSCBundle.html#a9b375a7ce46e2d3398ae28cb4e778682">juce::OSCBundle</a>
 , <a class="el" href="classjuce_1_1OSCMessage.html#aca8062cbf4e7e19e4c601c90984a589a">juce::OSCMessage</a>
+, <a class="el" href="classjuce_1_1TouchList.html#a9e63e042058c312ee1ac1e52fb9fc1f2">juce::TouchList&lt; Type &gt;</a>
 , <a class="el" href="classLinkedListPointer.html#a167753863d2e10d5ae5e98fbd7b1cfa4">LinkedListPointer&lt; ObjectType &gt;</a>
 , <a class="el" href="classListenerList.html#a4ced7631daac418522719e14a1d35b7d">ListenerList&lt; ListenerClass, ArrayType &gt;</a>
 , <a class="el" href="classNamedValueSet.html#ad9f9066eed12be3d9e569c5181d05edd">NamedValueSet</a>
 , <a class="el" href="classOSCBundle.html#af7bbeb1293f16c030391ce6233aa6182">OSCBundle</a>
 , <a class="el" href="classOSCMessage.html#a59bc329c81577375af70e5afdad75c28">OSCMessage</a>
 , <a class="el" href="classOwnedArray.html#a5db444e91e2abcdcf222f5ec2a90e1ac">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
+, <a class="el" href="structPacked7BitArrayBuilder.html#adc9d4964f3f271067e381df0c4f3db23">Packed7BitArrayBuilder&lt; allocatedBytes &gt;</a>
 , <a class="el" href="classReferenceCountedArray.html#ad4865c477b65f161105ded613856de64">ReferenceCountedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classSortedSet.html#aae5daa157bd06da7e89ac7abde60ff68">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classSparseSet.html#abb774559c4dd7fa498095539c22e9df1">SparseSet&lt; Type &gt;</a>
 , <a class="el" href="classStringArray.html#af1eb48dd90938eb34d9f43cf7d81510b">StringArray</a>
 , <a class="el" href="classStringPairArray.html#ae488d0a644afedc40004d37c938f3e8e">StringPairArray</a>
+, <a class="el" href="classTouchList.html#a467675635e9a1986caddf87fba4ec29a">TouchList&lt; Type &gt;</a>
 , <a class="el" href="classvar.html#a88d1ff75c60f6824ce56d97f9a26583c">var</a>
+, <a class="el" href="structVstEvent.html#a88a96238e749fc150be9027f295abb4f">VstEvent</a>
+, <a class="el" href="structVstMidiEvent.html#a0c3bf3faa2785665830ad96d84d08437">VstMidiEvent</a>
+, <a class="el" href="structVstSysExEvent.html#a02cd1c87118b202814353a9f1def9893">VstSysExEvent</a>
 </li>
 <li>sizeInBytes()
 : <a class="el" href="classCharPointer__ASCII.html#a5d9b8f6799c81f41b17ada06f341663b">CharPointer_ASCII</a>
@@ -2429,11 +2645,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classCodeDocument_1_1Iterator.html#a794f99491b06e4648b800f826769da06">CodeDocument::Iterator</a>
 , <a class="el" href="structCppTokeniserFunctions_1_1StringIterator.html#a6f0be3a6790cd989e58773263851b68c">CppTokeniserFunctions::StringIterator</a>
 </li>
+<li>skipBytes()
+: <a class="el" href="structHostPacketBuilder.html#a83205fbadf4fb1110838c6c88a328d70">HostPacketBuilder&lt; maxPacketBytes &gt;</a>
+</li>
 <li>skipComment()
 : <a class="el" href="structCppTokeniserFunctions.html#acc20b010695f2ea7cba36da65c606219">CppTokeniserFunctions</a>
 </li>
 <li>skipIfNextCharMatches()
-: <a class="el" href="structCppTokeniserFunctions.html#a6a7fb9d8843cda49644b5c9c0e7ea352">CppTokeniserFunctions</a>
+: <a class="el" href="structCppTokeniserFunctions.html#a537b688c16a211d4826bcccf338aad79">CppTokeniserFunctions</a>
 </li>
 <li>skipNextBytes()
 : <a class="el" href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">InputStream</a>
@@ -2470,8 +2689,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sleep()
 : <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926">Thread</a>
 </li>
+<li>SlideDirection
+: <a class="el" href="structDrumPadGridProgram.html#ae0883fdca11734f26ab431b89c52255f">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#acd1f16a328fcc468ac6b46446b3b4226">juce::DrumPadGridProgram</a>
+</li>
 <li>Slider()
-: <a class="el" href="classSlider.html#ae2c907adc5de6f127138f3f869f683ae">Slider</a>
+: <a class="el" href="classSlider.html#a535033fada8e25ef7291d2a52e6e437b">Slider</a>
 </li>
 <li>slider
 : <a class="el" href="classSliderPropertyComponent.html#ae379d1c2bbcdab0d687697c9dfc36f9b">SliderPropertyComponent</a>
@@ -2489,7 +2712,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSlider_1_1Listener.html#a47d244924786c6a047c81c1a05f21dc0">Slider::Listener</a>
 </li>
 <li>SliderPropertyComponent()
-: <a class="el" href="classSliderPropertyComponent.html#ad8d1e32b02182fc9def5bcb02a9a0aa1">SliderPropertyComponent</a>
+: <a class="el" href="classSliderPropertyComponent.html#a320068e8e0b48b911db50f26b91028d3">SliderPropertyComponent</a>
 </li>
 <li>SliderStyle
 : <a class="el" href="classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888">Slider</a>
@@ -2498,8 +2721,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSlider_1_1Listener.html#a127bfe68835dc3e584cf3c2a427a27e5">Slider::Listener</a>
 , <a class="el" href="classSliderPropertyComponent.html#a7cd9f4d3a7c681e642b4d461302a55ac">SliderPropertyComponent</a>
 </li>
+<li>smpteOffset
+: <a class="el" href="structVstTimingInformation.html#a4a554821b95c4f7c36f02879e6b0dc0c">VstTimingInformation</a>
+</li>
+<li>smpteRate
+: <a class="el" href="structVstTimingInformation.html#a71be4caaa5f1317a8848776f6e82fa7b">VstTimingInformation</a>
+</li>
 <li>SmpteTimecodeType
 : <a class="el" href="classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96ab">MidiMessage</a>
+</li>
+<li>snap
+: <a class="el" href="classControlButton.html#a891776295057786f99f14631b1aa2794ac1514f029b82b12f7617e3b81472bea0">ControlButton</a>
+, <a class="el" href="classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a83962f2a399c5fa5918bb041512c0d98">juce::ControlButton</a>
 </li>
 <li>snapToLegalValue()
 : <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; ValueType &gt;</a>
@@ -2576,6 +2809,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sortSubItems()
 : <a class="el" href="classTreeViewItem.html#a002342e5b39ddf192d445b2bdd16d086">TreeViewItem</a>
 </li>
+<li>sostenutoPedal()
+: <a class="el" href="classMPEInstrument.html#af24c7fb469728ab874c13b9300bfaf9e">MPEInstrument</a>
+</li>
+<li>SoundPlayer()
+: <a class="el" href="classSoundPlayer.html#ac7107aecd54bdcfac29486487768ebc6">SoundPlayer</a>
+</li>
 <li>sounds
 : <a class="el" href="classSynthesiser.html#ac64f99f204a1d5a567422cd9d5217081">Synthesiser</a>
 </li>
@@ -2598,6 +2837,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structAudioFormatReader_1_1ReadHelper.html#a8a24767200ed43a8317fb20d84c2ad17">AudioFormatReader::ReadHelper&lt; DestSampleType, SourceSampleType, SourceEndianness &gt;</a>
 , <a class="el" href="structAudioFormatWriter_1_1WriteHelper.html#a783e948eebc1915c108e97bef8a2698b">AudioFormatWriter::WriteHelper&lt; DestSampleType, SourceSampleType, DestEndianness &gt;</a>
 </li>
+<li>south
+: <a class="el" href="structBlock_1_1ConnectionPort.html#adb5cd70e80bd854e5a40436a99d003eaa50fd76e33fe5b9617c5ca99008af8904">Block::ConnectionPort</a>
+, <a class="el" href="structjuce_1_1Block_1_1ConnectionPort.html#afef244d1ebdcc63242021a1c86f2f61ca50fd76e33fe5b9617c5ca99008af8904">juce::Block::ConnectionPort</a>
+</li>
+<li>spaceAround
+: <a class="el" href="classFlexBox.html#a11793a1ebd50cc74be89f720f4a05084ab5c5f6071beee84263c99a6015c4accf">FlexBox</a>
+</li>
+<li>spaceBetween
+: <a class="el" href="classFlexBox.html#a11793a1ebd50cc74be89f720f4a05084ab0b1ef0af30aa79cf07b1cf39953f029">FlexBox</a>
+</li>
 <li>spaceKey
 : <a class="el" href="classKeyPress.html#a60f802af5aff465d7ff910009608e343">KeyPress</a>
 </li>
@@ -2606,6 +2855,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SparseSet()
 : <a class="el" href="classSparseSet.html#a9db453b88c6f983047f2920412b7c559">SparseSet&lt; Type &gt;</a>
+</li>
+<li>speakerOrder
+: <a class="el" href="structAudioUnitHelpers_1_1AUChannelStreamOrder.html#a74710deb4640ef3ae8495d432a1ec66f">AudioUnitHelpers::AUChannelStreamOrder</a>
+</li>
+<li>speakers
+: <a class="el" href="structVstSpeakerConfiguration.html#a28435008442dd5cf9fbef564c439909c">VstSpeakerConfiguration</a>
 </li>
 <li>SpecialItemIds
 : <a class="el" href="classToolbarItemFactory.html#a415ffaa38b6306574ad6777ccf6d2ac4">ToolbarItemFactory</a>
@@ -2625,11 +2880,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>square
 : <a class="el" href="classPathStrokeType.html#a9050e37133047ab699b44b704e4f96cfabed6afb274b3942d54f510ba65281cc8">PathStrokeType</a>
 </li>
+<li>stackOverflow
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294baefab200f4775c7a6f73743d4dcd6681a">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#a8bee4ec6b7ef24029af89651ecd452c9aefab200f4775c7a6f73743d4dcd6681a">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+</li>
+<li>stackUnderflow
+: <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294ba43646f98320e403e1b7e0e94f96722cf">juce::littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+, <a class="el" href="structlittlefoot_1_1Runner.html#a8bee4ec6b7ef24029af89651ecd452c9a43646f98320e403e1b7e0e94f96722cf">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
+</li>
 <li>StandaloneFilterWindow()
-: <a class="el" href="classStandaloneFilterWindow.html#a8cda61582ce8dfd440514d835651a77e">StandaloneFilterWindow</a>
+: <a class="el" href="classStandaloneFilterWindow.html#ac008829a9ecf58b98814eca1a006fe13">StandaloneFilterWindow</a>
 </li>
 <li>StandalonePluginHolder()
-: <a class="el" href="classStandalonePluginHolder.html#aadb93fcf73e25b123edba8f60741b61e">StandalonePluginHolder</a>
+: <a class="el" href="classStandalonePluginHolder.html#a01907d1aa9e4ce519e1e691f96eb2c06">StandalonePluginHolder</a>
 </li>
 <li>StandardCursorType
 : <a class="el" href="classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97">MouseCursor</a>
@@ -2638,11 +2901,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classAppleRemoteDevice.html#a826fd7464bf27550c7f62cf17bc06189">AppleRemoteDevice</a>
 , <a class="el" href="classAudioIODevice.html#aa3a17cf757a6297aab23a1327579347f">AudioIODevice</a>
 , <a class="el" href="classAudioTransportSource.html#a1cfd309ab61fb226bc03e5774c6ce65f">AudioTransportSource</a>
-, <a class="el" href="classChildProcess.html#ae1b54ec34a8fa09e679aed90c167cb64">ChildProcess</a>
+, <a class="el" href="classChildProcess.html#aa5e6f939a0f0c3e87bd7c58dcec9f13c">ChildProcess</a>
 , <a class="el" href="classMidiInput.html#ae6095bfc60700f95534db37828c72f2b">MidiInput</a>
 , <a class="el" href="classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3">NormalisableRange&lt; ValueType &gt;</a>
 , <a class="el" href="classPerformanceCounter.html#a8ab0ff98c5fa26c0c8823382f2275721">PerformanceCounter</a>
 , <a class="el" href="structTextDiff_1_1Change.html#ac72e9e25d35530fac7837a2d22c31958">TextDiff::Change</a>
+</li>
+<li>startAngleRadians
+: <a class="el" href="structSlider_1_1RotaryParameters.html#a1b4090a3f77b0183b1c847525f4edb8a">Slider::RotaryParameters</a>
 </li>
 <li>startAsProcess()
 : <a class="el" href="classFile.html#af66813ec798e644fdbe606414b0d2953">File</a>
@@ -2654,7 +2920,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classListBox.html#ac417b0b10f2f9da1c5c430461f571a00">ListBox</a>
 </li>
 <li>startDragging()
-: <a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44">DragAndDropContainer</a>
+: <a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60">DragAndDropContainer</a>
 </li>
 <li>startDraggingComponent()
 : <a class="el" href="classComponentDragger.html#a3a6ae550729873ec7fa31a48bc79a352">ComponentDragger</a>
@@ -2664,7 +2930,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>startNewSubPath
 : <a class="el" href="classPath_1_1Iterator.html#a62b1a329e3fdbcbdad78bb6c90c7bcfdaebfff5dcac5415d6c7274ad2ef633215">Path::Iterator</a>
-, <a class="el" href="classPath.html#a9c24222b2226b0e082069dbf789dca07">Path</a>
+, <a class="el" href="classPath.html#aed6716d1cf75ca2023798cfb1f0b563f">Path</a>
 </li>
 <li>startNote()
 : <a class="el" href="classSamplerVoice.html#ace2f7f448b19e026989e627729d7c35c">SamplerVoice</a>
@@ -2699,7 +2965,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classString.html#aebab6b7467cc776e5ccf2cc095dbb45b">String</a>
 </li>
 <li>startThread()
-: <a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983">Thread</a>
+: <a class="el" href="classThread.html#acc4aff2ceb97b0f16a0a08132315a900">Thread</a>
 </li>
 <li>startTimer()
 : <a class="el" href="classHighResolutionTimer.html#a9d3709eee45c33f0d2095ab80121a965">HighResolutionTimer</a>
@@ -2709,8 +2975,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>startTimerHz()
 : <a class="el" href="classTimer.html#a457efb22cb11b8518b18a0e8f02d818b">Timer</a>
 </li>
+<li>startTouch()
+: <a class="el" href="structDrumPadGridProgram.html#aaba3011385a30eb961683e83e7909d23">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#ab5cd5be283948af517eec65fa48ad84c">juce::DrumPadGridProgram</a>
+</li>
 <li>startVoice()
-: <a class="el" href="classSynthesiser.html#a7004a46197236e29ae67916f8932d0a4">Synthesiser</a>
+: <a class="el" href="classMPESynthesiser.html#aee6881d2b047430ac2886fb606de6630">MPESynthesiser</a>
+, <a class="el" href="classSynthesiser.html#a7004a46197236e29ae67916f8932d0a4">Synthesiser</a>
+</li>
+<li>startX
+: <a class="el" href="structjuce_1_1TouchSurface_1_1Touch.html#ab7fe64a0b3abcebc1c4b30e31dbf0cfb">juce::TouchSurface::Touch</a>
+, <a class="el" href="structTouchSurface_1_1Touch.html#a33e06e6958f8b4caa8837a1a07821326">TouchSurface::Touch</a>
+</li>
+<li>startY
+: <a class="el" href="structjuce_1_1TouchSurface_1_1Touch.html#adb2cf3334783ac43f56224c951da22c2">juce::TouchSurface::Touch</a>
+, <a class="el" href="structTouchSurface_1_1Touch.html#abf0c284e3fb990df6ad5d7c855fb7c62">TouchSurface::Touch</a>
 </li>
 <li>state
 : <a class="el" href="classAudioProcessorValueTreeState.html#ad7de02052d045956f56018e009dc50c6">AudioProcessorValueTreeState</a>
@@ -2731,6 +3010,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Statistics()
 : <a class="el" href="structPerformanceCounter_1_1Statistics.html#ae0921d49676f4da623b0f7f96db90348">PerformanceCounter::Statistics</a>
+</li>
+<li>StatisticsAccumulator()
+: <a class="el" href="classStatisticsAccumulator.html#af07a0122be132c59ff810b31146d2449">StatisticsAccumulator&lt; FloatType &gt;</a>
+</li>
+<li>statusLEDs
+: <a class="el" href="structBlockDataSheet.html#ad0e1acff4a334de6e896dc55b8389419">BlockDataSheet</a>
+</li>
+<li>StatusLight()
+: <a class="el" href="classjuce_1_1StatusLight.html#a9a86b83b11071347f39b3e42206bc57b">juce::StatusLight</a>
+, <a class="el" href="classStatusLight.html#a9f66c0b74ff959bd8d477c122d53e684">StatusLight</a>
 </li>
 <li>steelblue
 : <a class="el" href="classColours.html#a5b38585d24f85fd84b1aea940d0970db">Colours</a>
@@ -2789,6 +3078,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>stencilBufferBits
 : <a class="el" href="classOpenGLPixelFormat.html#aa94f3f667e41465ea29b6f259d9abf8b">OpenGLPixelFormat</a>
 </li>
+<li>stereo()
+: <a class="el" href="classAudioChannelSet.html#a48ad477fe7a908ee23030d198d9b50eb">AudioChannelSet</a>
+</li>
 <li>stop()
 : <a class="el" href="classAppleRemoteDevice.html#af828962a01ccbbedf9cc8b086b3edb34">AppleRemoteDevice</a>
 , <a class="el" href="classAudioIODevice.html#aca2e8897d904bc36b5faa647cfa8d20a">AudioIODevice</a>
@@ -2799,6 +3091,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classPerformanceCounter.html#ae134b64bcca16ce2183c16c789397972">PerformanceCounter</a>
 , <a class="el" href="classQuickTimeMovieComponent.html#a72c16a9fa545bfbb6f6a1b91aa42397b">QuickTimeMovieComponent</a>
 , <a class="el" href="classWebBrowserComponent.html#a5b95c6fcefc4448c9083b90983ce5729">WebBrowserComponent</a>
+</li>
+<li>stopAtEnd
+: <a class="el" href="structSlider_1_1RotaryParameters.html#a2e705ed5eb148f3f3eb1e89a72ff634f">Slider::RotaryParameters</a>
 </li>
 <li>stopBackgroundThread()
 : <a class="el" href="classMidiOutput.html#a250a8b0691928959e09b84f7bc7593a1">MidiOutput</a>
@@ -2831,7 +3126,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classTimer.html#ab918b8c1f80bf1de92dd1a5878f498bd">Timer</a>
 </li>
 <li>stopVoice()
-: <a class="el" href="classSynthesiser.html#a715f8ad1d64d728fb2ab764acf939bdb">Synthesiser</a>
+: <a class="el" href="classMPESynthesiser.html#ad3bc7bb58287b2ee1828fbca0ad40a19">MPESynthesiser</a>
+, <a class="el" href="classSynthesiser.html#a715f8ad1d64d728fb2ab764acf939bdb">Synthesiser</a>
 </li>
 <li>storageFormat
 : <a class="el" href="structPropertiesFile_1_1Options.html#aed68b3ff89a6943aeac93af26effec2d">PropertiesFile::Options</a>
@@ -2857,6 +3153,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>StreamingSocket()
 : <a class="el" href="classStreamingSocket.html#a280e9f29da54da9a828c920d734cc580">StreamingSocket</a>
 </li>
+<li>stretch
+: <a class="el" href="classFlexBox.html#a11793a1ebd50cc74be89f720f4a05084a7e84944493e379c33782eb1c9ecb82c3">FlexBox</a>
+, <a class="el" href="classFlexItem.html#a8bba729fda8779a2d3dfc576b2fc77faa7e84944493e379c33782eb1c9ecb82c3">FlexItem</a>
+</li>
 <li>StretchableLayoutManager()
 : <a class="el" href="classStretchableLayoutManager.html#a1fc7dc605c628265d33d6d189df8dbdf">StretchableLayoutManager</a>
 </li>
@@ -2877,7 +3177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classOSCTypes.html#ad427b15ae32b26b2e0c28f0932eed263">OSCTypes</a>
 </li>
 <li>String()
-: <a class="el" href="classString.html#ac25e8e770b1b0c42113b6df4a1431e81">String</a>
+: <a class="el" href="classString.html#ad6ae56068e13148c8b055020c7234966">String</a>
 </li>
 <li>StringArray()
 : <a class="el" href="classStringArray.html#a09861edeec2b2a18cf33df653ca79415">StringArray</a>
@@ -2909,7 +3209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>strokePath
 : <a class="el" href="classDrawableShape.html#a9400e1628d38b4719c211da4158bc2ff">DrawableShape</a>
-, <a class="el" href="classGraphics.html#a5bd626168d02b83d10123e398da5c5a7">Graphics</a>
+, <a class="el" href="classGraphics.html#aa566a2b901a6e582c39166c19a7c8497">Graphics</a>
 </li>
 <li>strokeType
 : <a class="el" href="classDrawableShape.html#af636e2ff4b818d2b51994291facb30f6">DrawableShape</a>
@@ -2923,11 +3223,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>style
 : <a class="el" href="classTypeface.html#a4169174330e29936cda2170a51a36df8">Typeface</a>
 </li>
-<li>styleFlags
-: <a class="el" href="classComponentPeer.html#a8322b7cdb134bc52f443cd587ffc3f75">ComponentPeer</a>
-</li>
 <li>StyleFlags
 : <a class="el" href="classComponentPeer.html#a94a21f91c61f8211774d6f43243a6ddc">ComponentPeer</a>
+</li>
+<li>styleFlags
+: <a class="el" href="classComponentPeer.html#a8322b7cdb134bc52f443cd587ffc3f75">ComponentPeer</a>
 </li>
 <li>subcategoryName
 : <a class="el" href="structUnitTestRunner_1_1TestResult.html#af0a632786980a63693a86bb9942959c0">UnitTestRunner::TestResult</a>
@@ -2936,7 +3236,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structKnownPluginList_1_1PluginTree.html#a46a202981e3ec6943e51ddbe2866a8d0">KnownPluginList::PluginTree</a>
 </li>
 <li>subMenu
-: <a class="el" href="classPopupMenu_1_1MenuItemIterator.html#afb6d899fe8d2ac3244c81df9c5f41868">PopupMenu::MenuItemIterator</a>
+: <a class="el" href="structPopupMenu_1_1Item.html#ab21802b5d5b4b31f9f491ea85f9f1623">PopupMenu::Item</a>
 </li>
 <li>subPathIndex
 : <a class="el" href="classPathFlatteningIterator.html#a96ac386608cfe18dde7de5a433aac417">PathFlatteningIterator</a>
@@ -2948,7 +3248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classString.html#a43434e38d6300080500510a5afba4747">String</a>
 </li>
 <li>subtract()
-: <a class="el" href="classFloatVectorOperations.html#a1e6e85bc85ecaac7ce15f15ace73b9d7">FloatVectorOperations</a>
+: <a class="el" href="classFloatVectorOperations.html#a84fc0e2af67681183064f05699b538de">FloatVectorOperations</a>
 , <a class="el" href="classRectangleList.html#a8e5460224789d6b242ebbe0a801b4b62">RectangleList&lt; ValueType &gt;</a>
 </li>
 <li>subtractedFrom()
@@ -2963,10 +3263,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>suggestedColour
 : <a class="el" href="structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html#ae06159d036b60b93709ac4a5553af0ba">AudioProcessorEditor::ParameterControlHighlightInfo</a>
 </li>
+<li>supportedLayoutWithChannels()
+: <a class="el" href="classAudioProcessor_1_1Bus.html#a1272fcafe09a0dc0139b7d4705f211dd">AudioProcessor::Bus</a>
+</li>
 <li>supportsDoublePrecisionProcessing()
 : <a class="el" href="classAudioProcessor.html#a8481c6767076b20c25de25bbf0469114">AudioProcessor</a>
 , <a class="el" href="classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a2b542a902ffb09ac772a175725997e79">AudioProcessorGraph::AudioGraphIOProcessor</a>
 , <a class="el" href="classAudioProcessorGraph.html#a8feab3ff67b9aac5bb00296189c946a8">AudioProcessorGraph</a>
+</li>
+<li>supportsGraphics()
+: <a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">Block</a>
+, <a class="el" href="classjuce_1_1Block.html#ac350f302d99cf0868bf2743c6a52e0df">juce::Block</a>
+</li>
+<li>supportsMPE()
+: <a class="el" href="classAudioProcessor.html#ae8aeb6d876050fce6508701f675248e4">AudioProcessor</a>
+</li>
+<li>surround
+: <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead7addeac6edf5a12148fabfd13a09100">AudioChannelSet</a>
+</li>
+<li>suspendAnimations()
+: <a class="el" href="structDrumPadGridProgram.html#a9e64f0b336e1cdaf95ff7825cef4c7ee">DrumPadGridProgram</a>
+, <a class="el" href="structjuce_1_1DrumPadGridProgram.html#a8137208728a53df3205e4a0a0f65bdc8">juce::DrumPadGridProgram</a>
 </li>
 <li>suspended()
 : <a class="el" href="classJUCEApplication.html#a6cadf3017be03ed3141f1b166599cb35">JUCEApplication</a>
@@ -2975,9 +3292,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>suspendProcessing()
 : <a class="el" href="classAudioProcessor.html#a584d01c1c009c1ce49a45cd6e49d2dc5">AudioProcessor</a>
 </li>
+<li>sustain
+: <a class="el" href="classControlButton.html#a891776295057786f99f14631b1aa2794a2339a8eba5c6912f6c1958cf3c29f38b">ControlButton</a>
+, <a class="el" href="classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a43ccd9e61a280bb2cc551a3c4f0fac61">juce::ControlButton</a>
+</li>
+<li>sustained
+: <a class="el" href="structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a3394b891d4bdd77fd39d141102c4a4bd">MPENote</a>
+</li>
+<li>sustainPedal()
+: <a class="el" href="classMPEInstrument.html#a5df080785049fc54bb48538e46d6214e">MPEInstrument</a>
+</li>
 <li>swap()
 : <a class="el" href="classArray.html#ae686a3e14b9134ddae4b6bd6088350e5">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
-, <a class="el" href="classByteOrder.html#ac2b033fd8e98d9c4dfbb57a88466d62f">ByteOrder</a>
+, <a class="el" href="classByteOrder.html#aa754df407abe7487660dd3f223c87324">ByteOrder</a>
 , <a class="el" href="classOwnedArray.html#aeae36e1f45837b3e3950fa51b0d67764">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classReferenceCountedArray.html#a53122fe07050eef2918538d0b4d90804">ReferenceCountedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 </li>
@@ -2988,7 +3315,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classByteOrder.html#a3568cb8775a1fa8f67bec0a889582ade">ByteOrder</a>
 </li>
 <li>swapIfLittleEndian()
-: <a class="el" href="classByteOrder.html#ae00631878bb112db9e31cb7987cd0114">ByteOrder</a>
+: <a class="el" href="classByteOrder.html#a531090b4ee8e06c95c8c6d0536aadd64">ByteOrder</a>
 </li>
 <li>swapWith()
 : <a class="el" href="classArray.html#a921a70882553967e2998beeb30d99f83">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
@@ -3032,6 +3359,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>symmetricMode
 : <a class="el" href="classDrawablePath_1_1ValueTreeWrapper_1_1Element.html#ad46a5846bf7817ae1524974836fc7d9b">DrawablePath::ValueTreeWrapper::Element</a>
 </li>
+<li>symmetricSkew
+: <a class="el" href="classNormalisableRange.html#a3a588ad45b07463d74aca98d0589845d">NormalisableRange&lt; ValueType &gt;</a>
+</li>
 <li>Synthesiser()
 : <a class="el" href="classSynthesiser.html#a8c313d6f1fa875790e5c79dc621ee437">Synthesiser</a>
 </li>
@@ -3041,21 +3371,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SynthesiserVoice()
 : <a class="el" href="classSynthesiserVoice.html#a365e31ac75ed304f623cb20d3dcc31fb">SynthesiserVoice</a>
 </li>
+<li>sysExDump
+: <a class="el" href="structVstSysExEvent.html#a4d8386bf6d6e3a7fc73b1b53e9b2afdd">VstSysExEvent</a>
+</li>
+<li>sysExDumpSize
+: <a class="el" href="structVstSysExEvent.html#af9b5cada03e70a78282bf685aeaf772d">VstSysExEvent</a>
+</li>
 <li>systemRequestedQuit()
 : <a class="el" href="classJUCEApplication.html#a8e9b08200268216a791326635ec9321c">JUCEApplication</a>
 , <a class="el" href="classJUCEApplicationBase.html#aa4ae0dcc3467f4927d8365b4814b1396">JUCEApplicationBase</a>
+</li>
+<li>systemTimeNanoseconds
+: <a class="el" href="structVstTimingInformation.html#aaefb55c281778d2f17b83ea731533c2b">VstTimingInformation</a>
 </li>
 <li>SystemTrayIconComponent()
 : <a class="el" href="classSystemTrayIconComponent.html#a7e46f4b374a917b7d899128d1d35bcaa">SystemTrayIconComponent</a>
 </li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

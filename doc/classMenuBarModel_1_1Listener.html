@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24a09292d83e8c60e34c3396060ef66a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel_1_1Listener.html#a24a09292d83e8c60e34c3396060ef66a">menuCommandInvoked</a> (<a class="el" href="classMenuBarModel.html">MenuBarModel</a> *menuBarModel, const <a class="el" href="structApplicationCommandTarget_1_1InvocationInfo.html">ApplicationCommandTarget::InvocationInfo</a> &amp;info)=0</td></tr>
 <tr class="memdesc:a24a09292d83e8c60e34c3396060ef66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback is made when an application command is invoked that is represented by one of the items in the menu bar model.  <a href="#a24a09292d83e8c60e34c3396060ef66a">More...</a><br/></td></tr>
 <tr class="separator:a24a09292d83e8c60e34c3396060ef66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601d4bfdb6bb82fa8cb9f84c37700c21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBarModel_1_1Listener.html#a601d4bfdb6bb82fa8cb9f84c37700c21">menuBarActivated</a> (<a class="el" href="classMenuBarModel.html">MenuBarModel</a> *menuBarModel, bool isActive)</td></tr>
+<tr class="memdesc:a601d4bfdb6bb82fa8cb9f84c37700c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the menu bar is first activated or when the user finished interacting with the menu bar.  <a href="#a601d4bfdb6bb82fa8cb9f84c37700c21">More...</a><br/></td></tr>
+<tr class="separator:a601d4bfdb6bb82fa8cb9f84c37700c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to receive callbacks when a <a class="el" href="classMenuBarModel.html" title="A class for controlling MenuBar components. ">MenuBarModel</a> changes. </p>
@@ -215,16 +218,57 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a601d4bfdb6bb82fa8cb9f84c37700c21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MenuBarModel::Listener::menuBarActivated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuBarModel.html">MenuBarModel</a> *&#160;</td>
+          <td class="paramname"><em>menuBarModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the menu bar is first activated or when the user finished interacting with the menu bar. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__MenuBarModel_8h.html">juce_MenuBarModel.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

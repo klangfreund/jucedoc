@@ -99,14 +99,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a06cc76fa5f6df7e172409267fe37cbf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile_1_1Builder.html#a06cc76fa5f6df7e172409267fe37cbf5">Builder</a> ()</td></tr>
+<tr class="memdesc:a06cc76fa5f6df7e172409267fe37cbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty builder object.  <a href="#a06cc76fa5f6df7e172409267fe37cbf5">More...</a><br/></td></tr>
 <tr class="separator:a06cc76fa5f6df7e172409267fe37cbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57eaa53c5b996d60bc2854b6c73abd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile_1_1Builder.html#af57eaa53c5b996d60bc2854b6c73abd6">~Builder</a> ()</td></tr>
+<tr class="memdesc:af57eaa53c5b996d60bc2854b6c73abd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af57eaa53c5b996d60bc2854b6c73abd6">More...</a><br/></td></tr>
 <tr class="separator:af57eaa53c5b996d60bc2854b6c73abd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a278af3ba8d510e7895109af905a9c67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile_1_1Builder.html#a278af3ba8d510e7895109af905a9c67f">addFile</a> (const <a class="el" href="classFile.html">File</a> &amp;fileToAdd, int compressionLevel, const <a class="el" href="classString.html">String</a> &amp;storedPathName=<a class="el" href="classString.html">String</a>())</td></tr>
-<tr class="memdesc:a278af3ba8d510e7895109af905a9c67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a file while should be added to the archive.  <a href="#a278af3ba8d510e7895109af905a9c67f">More...</a><br/></td></tr>
+<tr class="memdesc:a278af3ba8d510e7895109af905a9c67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a file to the list of items which will be added to the archive.  <a href="#a278af3ba8d510e7895109af905a9c67f">More...</a><br/></td></tr>
 <tr class="separator:a278af3ba8d510e7895109af905a9c67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d857ec4293d11dba0dc717eb0187e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile_1_1Builder.html#a9d857ec4293d11dba0dc717eb0187e6e">addEntry</a> (<a class="el" href="classInputStream.html">InputStream</a> *streamToRead, int compressionLevel, const <a class="el" href="classString.html">String</a> &amp;storedPathName, <a class="el" href="classTime.html">Time</a> fileModificationTime)</td></tr>
-<tr class="memdesc:a9d857ec4293d11dba0dc717eb0187e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a file while should be added to the archive.  <a href="#a9d857ec4293d11dba0dc717eb0187e6e">More...</a><br/></td></tr>
+<tr class="memdesc:a9d857ec4293d11dba0dc717eb0187e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a stream to the list of items which will be added to the archive.  <a href="#a9d857ec4293d11dba0dc717eb0187e6e">More...</a><br/></td></tr>
 <tr class="separator:a9d857ec4293d11dba0dc717eb0187e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a006051857dded0b5df8844c7f09f94d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile_1_1Builder.html#a006051857dded0b5df8844c7f09f94d4">writeToStream</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;target, double *progress) const </td></tr>
 <tr class="memdesc:a006051857dded0b5df8844c7f09f94d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the zip file, writing it to the specified stream.  <a href="#a006051857dded0b5df8844c7f09f94d4">More...</a><br/></td></tr>
@@ -114,8 +116,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used to create a new zip file. </p>
-<p>Create a <a class="el" href="classZipFile_1_1Builder.html" title="Used to create a new zip file. ">ZipFile::Builder</a> object, and call its <a class="el" href="classZipFile_1_1Builder.html#a278af3ba8d510e7895109af905a9c67f" title="Adds a file while should be added to the archive. ">addFile()</a> method to add some files, then you can write it to a stream with write().</p>
-<p>Currently this just stores the files with no compression.. That will be added soon! </p>
+<p>Create a <a class="el" href="classZipFile_1_1Builder.html" title="Used to create a new zip file. ">ZipFile::Builder</a> object, and call its <a class="el" href="classZipFile_1_1Builder.html#a278af3ba8d510e7895109af905a9c67f" title="Adds a file to the list of items which will be added to the archive. ">addFile()</a> method to add some files, then you can write it to a stream with write(). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a06cc76fa5f6df7e172409267fe37cbf5"></a>
 <div class="memitem">
@@ -129,6 +130,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates an empty builder object. </p>
 
 </div>
 </div>
@@ -144,6 +147,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -178,8 +183,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a file while should be added to the archive. </p>
-<p>The file isn't read immediately, all the files will be read later when the <a class="el" href="classZipFile_1_1Builder.html#a006051857dded0b5df8844c7f09f94d4" title="Generates the zip file, writing it to the specified stream. ">writeToStream()</a> method is called.</p>
+<p>Adds a file to the list of items which will be added to the archive. </p>
+<p>The file isn't read immediately: the files will be read later when the <a class="el" href="classZipFile_1_1Builder.html#a006051857dded0b5df8844c7f09f94d4" title="Generates the zip file, writing it to the specified stream. ">writeToStream()</a> method is called.</p>
 <p>The compressionLevel can be between 0 (no compression), and 9 (maximum compression). If the storedPathName parameter is specified, you can customise the partial pathname that will be stored for this file. </p>
 
 </div>
@@ -220,7 +225,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a file while should be added to the archive. </p>
+<p>Adds a stream to the list of items which will be added to the archive. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">streamToRead</td><td>this stream isn't read immediately - a pointer to the stream is stored, then used later when the <a class="el" href="classZipFile_1_1Builder.html#a006051857dded0b5df8844c7f09f94d4" title="Generates the zip file, writing it to the specified stream. ">writeToStream()</a> method is called, and deleted by the <a class="el" href="classZipFile_1_1Builder.html" title="Used to create a new zip file. ">Builder</a> object when no longer needed, so be very careful about its lifetime and the lifetime of any objects on which it depends! This must not be null. </td></tr>
@@ -266,12 +271,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ZipFile_8h.html">juce_ZipFile.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

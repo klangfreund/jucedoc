@@ -144,9 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0701cc3ca5c035b10c1f5f894e5276a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#ab0701cc3ca5c035b10c1f5f894e5276a">MidiMessage</a> (const <a class="el" href="classMidiMessage.html">MidiMessage</a> &amp;, double newTimeStamp)</td></tr>
 <tr class="memdesc:ab0701cc3ca5c035b10c1f5f894e5276a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of another midi message, with a different timestamp.  <a href="#ab0701cc3ca5c035b10c1f5f894e5276a">More...</a><br/></td></tr>
 <tr class="separator:ab0701cc3ca5c035b10c1f5f894e5276a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483a17987c54fd61b1e4d74fd8564357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a483a17987c54fd61b1e4d74fd8564357">~MidiMessage</a> ()</td></tr>
-<tr class="memdesc:a483a17987c54fd61b1e4d74fd8564357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a483a17987c54fd61b1e4d74fd8564357">More...</a><br/></td></tr>
-<tr class="separator:a483a17987c54fd61b1e4d74fd8564357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914e3d004a3b62dfcdcf1c3f7e71b81c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a914e3d004a3b62dfcdcf1c3f7e71b81c">~MidiMessage</a> () noexcept</td></tr>
+<tr class="memdesc:a914e3d004a3b62dfcdcf1c3f7e71b81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a914e3d004a3b62dfcdcf1c3f7e71b81c">More...</a><br/></td></tr>
+<tr class="separator:a914e3d004a3b62dfcdcf1c3f7e71b81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae9ac3c147ca7a1f66f15905e37412a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMidiMessage.html">MidiMessage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a3ae9ac3c147ca7a1f66f15905e37412a">operator=</a> (const <a class="el" href="classMidiMessage.html">MidiMessage</a> &amp;other)</td></tr>
 <tr class="memdesc:a3ae9ac3c147ca7a1f66f15905e37412a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this message from another one.  <a href="#a3ae9ac3c147ca7a1f66f15905e37412a">More...</a><br/></td></tr>
 <tr class="separator:a3ae9ac3c147ca7a1f66f15905e37412a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5768889fe63a63c58755d9d2f05afbd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a5768889fe63a63c58755d9d2f05afbd0">getRawDataSize</a> () const noexcept</td></tr>
 <tr class="memdesc:a5768889fe63a63c58755d9d2f05afbd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes of data in the message.  <a href="#a5768889fe63a63c58755d9d2f05afbd0">More...</a><br/></td></tr>
 <tr class="separator:a5768889fe63a63c58755d9d2f05afbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cdb5124ab19e690824888fbed9fa93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#aa6cdb5124ab19e690824888fbed9fa93">getDescription</a> () const </td></tr>
+<tr class="memdesc:aa6cdb5124ab19e690824888fbed9fa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a human-readable description of the midi message as a string, for example "Note On C#3 Velocity 120 Channel 1".  <a href="#aa6cdb5124ab19e690824888fbed9fa93">More...</a><br/></td></tr>
+<tr class="separator:aa6cdb5124ab19e690824888fbed9fa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a942c96a776e80e3c512058b29011a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a9a942c96a776e80e3c512058b29011a8">getTimeStamp</a> () const noexcept</td></tr>
 <tr class="memdesc:a9a942c96a776e80e3c512058b29011a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timestamp associated with this message.  <a href="#a9a942c96a776e80e3c512058b29011a8">More...</a><br/></td></tr>
 <tr class="separator:a9a942c96a776e80e3c512058b29011a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,7 +409,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af3100fb66d5fc20c8c0d458c51ddb309"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#af3100fb66d5fc20c8c0d458c51ddb309">channelPressureChange</a> (int channel, int pressure) noexcept</td></tr>
 <tr class="memdesc:af3100fb66d5fc20c8c0d458c51ddb309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a channel-pressure change event.  <a href="#af3100fb66d5fc20c8c0d458c51ddb309">More...</a><br/></td></tr>
 <tr class="separator:af3100fb66d5fc20c8c0d458c51ddb309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c776a7b6bfa0e4216e95ff236ff250c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a7c776a7b6bfa0e4216e95ff236ff250c">controllerEvent</a> (int channel, int controllerType, int value) noexcept</td></tr>
+<tr class="memitem:a7c776a7b6bfa0e4216e95ff236ff250c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a7c776a7b6bfa0e4216e95ff236ff250c">controllerEvent</a> (int channel, int controllerType, int <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="memdesc:a7c776a7b6bfa0e4216e95ff236ff250c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a controller message.  <a href="#a7c776a7b6bfa0e4216e95ff236ff250c">More...</a><br/></td></tr>
 <tr class="separator:a7c776a7b6bfa0e4216e95ff236ff250c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4c49679c88dc562ca523060fffc11e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a8e4c49679c88dc562ca523060fffc11e">allNotesOff</a> (int channel) noexcept</td></tr>
@@ -451,7 +454,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bbced4f538c6c9d1aedc03acd2fc4ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a0bbced4f538c6c9d1aedc03acd2fc4ab">songPositionPointer</a> (int positionInMidiBeats) noexcept</td></tr>
 <tr class="memdesc:a0bbced4f538c6c9d1aedc03acd2fc4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a song-position-pointer message.  <a href="#a0bbced4f538c6c9d1aedc03acd2fc4ab">More...</a><br/></td></tr>
 <tr class="separator:a0bbced4f538c6c9d1aedc03acd2fc4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21def5ca28557f4d7df31c8425c3386"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#ab21def5ca28557f4d7df31c8425c3386">quarterFrame</a> (int sequenceNumber, int value) noexcept</td></tr>
+<tr class="memitem:ab21def5ca28557f4d7df31c8425c3386"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#ab21def5ca28557f4d7df31c8425c3386">quarterFrame</a> (int sequenceNumber, int <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="memdesc:ab21def5ca28557f4d7df31c8425c3386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quarter-frame MTC message.  <a href="#ab21def5ca28557f4d7df31c8425c3386">More...</a><br/></td></tr>
 <tr class="separator:ab21def5ca28557f4d7df31c8425c3386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a16ba76b5f789b238155359ba9379c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classMidiMessage.html">MidiMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a58a16ba76b5f789b238155359ba9379c">fullFrame</a> (int hours, int minutes, int seconds, int frames, <a class="el" href="classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96ab">SmpteTimecodeType</a> timecodeType)</td></tr>
@@ -472,15 +475,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a9fc08ca4beba20e50afaf91c0c316b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a7a9fc08ca4beba20e50afaf91c0c316b">readVariableLengthVal</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *data, int &amp;numBytesUsed) noexcept</td></tr>
 <tr class="memdesc:a7a9fc08ca4beba20e50afaf91c0c316b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a midi variable-length integer.  <a href="#a7a9fc08ca4beba20e50afaf91c0c316b">More...</a><br/></td></tr>
 <tr class="separator:a7a9fc08ca4beba20e50afaf91c0c316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb9ae9ee3d2bd531be688dfe3567855"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#acdb9ae9ee3d2bd531be688dfe3567855">getMessageLengthFromFirstByte</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> firstByte) noexcept</td></tr>
-<tr class="memdesc:acdb9ae9ee3d2bd531be688dfe3567855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on the first byte of a short midi message, this uses a lookup table to return the message length (either 1, 2, or 3 bytes).  <a href="#acdb9ae9ee3d2bd531be688dfe3567855">More...</a><br/></td></tr>
-<tr class="separator:acdb9ae9ee3d2bd531be688dfe3567855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf97153b27393327bbf74847e67ebf7a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#abf97153b27393327bbf74847e67ebf7a">getMessageLengthFromFirstByte</a> (<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> firstByte) noexcept</td></tr>
+<tr class="memdesc:abf97153b27393327bbf74847e67ebf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on the first byte of a short midi message, this uses a lookup table to return the message length (either 1, 2, or 3 bytes).  <a href="#abf97153b27393327bbf74847e67ebf7a">More...</a><br/></td></tr>
+<tr class="separator:abf97153b27393327bbf74847e67ebf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9cacd221a092d203249a2c7435d9dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#aff9cacd221a092d203249a2c7435d9dc">getMidiNoteName</a> (int noteNumber, bool useSharps, bool includeOctaveNumber, int octaveNumForMiddleC)</td></tr>
 <tr class="memdesc:aff9cacd221a092d203249a2c7435d9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of a midi note number.  <a href="#aff9cacd221a092d203249a2c7435d9dc">More...</a><br/></td></tr>
 <tr class="separator:aff9cacd221a092d203249a2c7435d9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3382fce97082ea6f2a9cb7c35ab336"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#ada3382fce97082ea6f2a9cb7c35ab336">getMidiNoteInHertz</a> (int noteNumber, const double frequencyOfA=440.0) noexcept</td></tr>
-<tr class="memdesc:ada3382fce97082ea6f2a9cb7c35ab336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frequency of a midi note number.  <a href="#ada3382fce97082ea6f2a9cb7c35ab336">More...</a><br/></td></tr>
-<tr class="separator:ada3382fce97082ea6f2a9cb7c35ab336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad1aabd89993498baf26fc17ef1ff72"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#adad1aabd89993498baf26fc17ef1ff72">getMidiNoteInHertz</a> (int noteNumber, double frequencyOfA=440.0) noexcept</td></tr>
+<tr class="memdesc:adad1aabd89993498baf26fc17ef1ff72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the frequency of a midi note number.  <a href="#adad1aabd89993498baf26fc17ef1ff72">More...</a><br/></td></tr>
+<tr class="separator:adad1aabd89993498baf26fc17ef1ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8db55d5a134e808c5155fdecef025d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a7a8db55d5a134e808c5155fdecef025d">isMidiNoteBlack</a> (int noteNumber) noexcept</td></tr>
 <tr class="memdesc:a7a8db55d5a134e808c5155fdecef025d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given midi note number is a black key.  <a href="#a7a8db55d5a134e808c5155fdecef025d">More...</a><br/></td></tr>
 <tr class="separator:a7a8db55d5a134e808c5155fdecef025d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,6 +499,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a95699b23a2b077bb72f39d23e26680"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a0a95699b23a2b077bb72f39d23e26680">getControllerName</a> (int controllerNumber)</td></tr>
 <tr class="memdesc:a0a95699b23a2b077bb72f39d23e26680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of a controller type number, or nullptr if unknown for this controller number.  <a href="#a0a95699b23a2b077bb72f39d23e26680">More...</a><br/></td></tr>
 <tr class="separator:a0a95699b23a2b077bb72f39d23e26680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87c7c685ef37e1dc4163fdcf3bcd0ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#af87c7c685ef37e1dc4163fdcf3bcd0ef">floatValueToMidiByte</a> (float valueBetween0and1) noexcept</td></tr>
+<tr class="memdesc:af87c7c685ef37e1dc4163fdcf3bcd0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a floating-point value between 0 and 1 to a MIDI 7-bit value between 0 and 127.  <a href="#af87c7c685ef37e1dc4163fdcf3bcd0ef">More...</a><br/></td></tr>
+<tr class="separator:af87c7c685ef37e1dc4163fdcf3bcd0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9b7273ede328166d038587d871ba4c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#aaa9b7273ede328166d038587d871ba4c">pitchbendToPitchwheelPos</a> (float pitchbendInSemitones, float pitchbendRangeInSemitones) noexcept</td></tr>
+<tr class="memdesc:aaa9b7273ede328166d038587d871ba4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a pitchbend value in semitones to a MIDI 14-bit pitchwheel position value.  <a href="#aaa9b7273ede328166d038587d871ba4c">More...</a><br/></td></tr>
+<tr class="separator:aaa9b7273ede328166d038587d871ba4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates a MIDI message. </p>
@@ -880,9 +889,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a483a17987c54fd61b1e4d74fd8564357"></a>
+<a class="anchor" id="a914e3d004a3b62dfcdcf1c3f7e71b81c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">MidiMessage::~MidiMessage </td>
@@ -891,6 +903,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -1013,6 +1030,23 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the number of bytes of data in the message. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html#aee23b787f8439fe038079c38f6365521" title="Returns a pointer to the raw midi data. ">getRawData</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6cdb5124ab19e690824888fbed9fa93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classString.html">String</a> MidiMessage::getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a human-readable description of the midi message as a string, for example "Note On C#3 Velocity 120 Channel 1". </p>
 
 </div>
 </div>
@@ -1647,7 +1681,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the midi note number for note-on and note-off messages. </p>
 <p>If the message isn't a note-on or off, the value returned is undefined. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html#af66814dee34738882ba39d8796b77be0" title="Returns true if this message is a &#39;key-up&#39; event. ">isNoteOff</a>, <a class="el" href="classMidiMessage.html#aff9cacd221a092d203249a2c7435d9dc" title="Returns the name of a midi note number. ">getMidiNoteName</a>, <a class="el" href="classMidiMessage.html#ada3382fce97082ea6f2a9cb7c35ab336" title="Returns the frequency of a midi note number. ">getMidiNoteInHertz</a>, <a class="el" href="classMidiMessage.html#a47583c88bed0ca4b30b0f86bc2afb48c" title="Changes the midi note number of a note-on or note-off message. ">setNoteNumber</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html#af66814dee34738882ba39d8796b77be0" title="Returns true if this message is a &#39;key-up&#39; event. ">isNoteOff</a>, <a class="el" href="classMidiMessage.html#aff9cacd221a092d203249a2c7435d9dc" title="Returns the name of a midi note number. ">getMidiNoteName</a>, <a class="el" href="classMidiMessage.html#adad1aabd89993498baf26fc17ef1ff72" title="Returns the frequency of a midi note number. ">getMidiNoteInHertz</a>, <a class="el" href="classMidiMessage.html#a47583c88bed0ca4b30b0f86bc2afb48c" title="Changes the midi note number of a note-on or note-off message. ">setNoteNumber</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classMidiEventList.html#a9108b044536cf05b165390116718d398">MidiEventList::toEventList()</a>.</p>
 
@@ -4232,7 +4266,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acdb9ae9ee3d2bd531be688dfe3567855"></a>
+<a class="anchor" id="abf97153b27393327bbf74847e67ebf7a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -4242,7 +4276,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static int MidiMessage::getMessageLengthFromFirstByte </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
           <td class="paramname"><em>firstByte</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4314,11 +4348,11 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html#ada3382fce97082ea6f2a9cb7c35ab336" title="Returns the frequency of a midi note number. ">getMidiNoteInHertz</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html#adad1aabd89993498baf26fc17ef1ff72" title="Returns the frequency of a midi note number. ">getMidiNoteInHertz</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ada3382fce97082ea6f2a9cb7c35ab336"></a>
+<a class="anchor" id="adad1aabd89993498baf26fc17ef1ff72"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -4334,7 +4368,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>frequencyOfA</em> = <code>440.0</code>&#160;</td>
         </tr>
         <tr>
@@ -4506,16 +4540,83 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af87c7c685ef37e1dc4163fdcf3bcd0ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> MidiMessage::floatValueToMidiByte </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>valueBetween0and1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a floating-point value between 0 and 1 to a MIDI 7-bit value between 0 and 127. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa9b7273ede328166d038587d871ba4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> MidiMessage::pitchbendToPitchwheelPos </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitchbendInSemitones</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitchbendRangeInSemitones</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a pitchbend value in semitones to a MIDI 14-bit pitchwheel position value. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__MidiMessage_8h.html">juce_MidiMessage.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

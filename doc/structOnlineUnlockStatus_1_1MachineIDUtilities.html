@@ -110,6 +110,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a14fd786defe0a6ee879a9cbde3a6cdd1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOnlineUnlockStatus_1_1MachineIDUtilities.html#a14fd786defe0a6ee879a9cbde3a6cdd1">addMACAddressesToList</a> (<a class="el" href="classStringArray.html">StringArray</a> &amp;result)</td></tr>
 <tr class="memdesc:a14fd786defe0a6ee879a9cbde3a6cdd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function that you may want to use in your machine-ID generation code.  <a href="#a14fd786defe0a6ee879a9cbde3a6cdd1">More...</a><br/></td></tr>
 <tr class="separator:a14fd786defe0a6ee879a9cbde3a6cdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd5483bba5e18fbf58a5acb61710eb6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOnlineUnlockStatus_1_1MachineIDUtilities.html#afdd5483bba5e18fbf58a5acb61710eb6">getLocalMachineIDs</a> ()</td></tr>
+<tr class="memdesc:afdd5483bba5e18fbf58a5acb61710eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates some machine IDs based on things like network MAC addresses, hard-disk IDs, etc, but if you want, you can overload it to generate your own list of IDs.  <a href="#afdd5483bba5e18fbf58a5acb61710eb6">More...</a><br/></td></tr>
+<tr class="separator:afdd5483bba5e18fbf58a5acb61710eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class contains some utility functions that might help with machine ID generation. </p>
@@ -230,16 +233,48 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afdd5483bba5e18fbf58a5acb61710eb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classStringArray.html">StringArray</a> OnlineUnlockStatus::MachineIDUtilities::getLocalMachineIDs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method calculates some machine IDs based on things like network MAC addresses, hard-disk IDs, etc, but if you want, you can overload it to generate your own list of IDs. </p>
+<p>The IDs that are returned should be short alphanumeric strings without any punctuation characters. Since users may need to type them, case is ignored when comparing them.</p>
+<p>Note that the first item in the list is considered to be the "main" ID, and this will be the one that is displayed to the user and registered with the marketplace webserver. Subsequent IDs are just used as fallback to avoid false negatives when checking for registration on machines which have had hardware added/removed since the product was first registered. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__OnlineUnlockStatus_8h.html">juce_OnlineUnlockStatus.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

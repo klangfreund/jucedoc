@@ -28,6 +28,7 @@ var searchData=
   ['updatemousecursor',['updateMouseCursor',['../classComponent.html#a03057aba4ac79272f105e8839582309c',1,'Component']]],
   ['updateposition',['updatePosition',['../classCallOutBox.html#a19e7a01bb331faba5196e3aa3df07e40',1,'CallOutBox']]],
   ['updatetext',['updateText',['../classSlider.html#acec04f6f7cca814b66c23ae5cf4a7b6a',1,'Slider']]],
+  ['updatetouch',['updateTouch',['../classTouchList.html#a9f927c25bb5abfea37670b6369077dbc',1,'TouchList::updateTouch()'],['../classjuce_1_1TouchList.html#ae770605c007d6b3dc34ed65c01ebcc98',1,'juce::TouchList::updateTouch()']]],
   ['uptofirstoccurrenceof',['upToFirstOccurrenceOf',['../classString.html#ad1294b09bf9e6c1f8723f0559744b0b0',1,'String']]],
   ['uptolastoccurrenceof',['upToLastOccurrenceOf',['../classString.html#a50bedd44d60007d619665664413fe1d8',1,'String']]],
   ['url',['URL',['../classURL.html#ad6ecb93e145465c5b20f2e90f2f1163a',1,'URL::URL()'],['../classURL.html#aa00fab54fc95a6a9a468228150c034d6',1,'URL::URL(const String &amp;url)'],['../classURL.html#af069bf0e7621be7f0eec3f1c80f5560a',1,'URL::URL(const URL &amp;other)']]],

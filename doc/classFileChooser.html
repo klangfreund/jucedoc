@@ -94,9 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f950ec1898a9cd3f74d7df5df9b85ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileChooser.html#a7f950ec1898a9cd3f74d7df5df9b85ea">FileChooser</a> (const <a class="el" href="classString.html">String</a> &amp;dialogBoxTitle, const <a class="el" href="classFile.html">File</a> &amp;initialFileOrDirectory=<a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364">File::nonexistent</a>, const <a class="el" href="classString.html">String</a> &amp;filePatternsAllowed=<a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>, bool useOSNativeDialogBox=true)</td></tr>
-<tr class="memdesc:a7f950ec1898a9cd3f74d7df5df9b85ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classFileChooser.html" title="Creates a dialog box to choose a file or directory to load or save. ">FileChooser</a>.  <a href="#a7f950ec1898a9cd3f74d7df5df9b85ea">More...</a><br/></td></tr>
-<tr class="separator:a7f950ec1898a9cd3f74d7df5df9b85ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8529e1ff1b0356734fcfcce139b92d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileChooser.html#af8529e1ff1b0356734fcfcce139b92d1">FileChooser</a> (const <a class="el" href="classString.html">String</a> &amp;dialogBoxTitle, const <a class="el" href="classFile.html">File</a> &amp;initialFileOrDirectory=<a class="el" href="classFile.html">File</a>(), const <a class="el" href="classString.html">String</a> &amp;filePatternsAllowed=<a class="el" href="classString.html">String</a>(), bool useOSNativeDialogBox=true, bool treatFilePackagesAsDirectories=false)</td></tr>
+<tr class="memdesc:af8529e1ff1b0356734fcfcce139b92d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classFileChooser.html" title="Creates a dialog box to choose a file or directory to load or save. ">FileChooser</a>.  <a href="#af8529e1ff1b0356734fcfcce139b92d1">More...</a><br/></td></tr>
+<tr class="separator:af8529e1ff1b0356734fcfcce139b92d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c94ae24fad94cf464d1283f33175d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileChooser.html#a67c94ae24fad94cf464d1283f33175d4">~FileChooser</a> ()</td></tr>
 <tr class="memdesc:a67c94ae24fad94cf464d1283f33175d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a67c94ae24fad94cf464d1283f33175d4">More...</a><br/></td></tr>
 <tr class="separator:a67c94ae24fad94cf464d1283f33175d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7f950ec1898a9cd3f74d7df5df9b85ea"></a>
+<a class="anchor" id="af8529e1ff1b0356734fcfcce139b92d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -162,19 +162,25 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
-          <td class="paramname"><em>initialFileOrDirectory</em> = <code><a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364">File::nonexistent</a></code>, </td>
+          <td class="paramname"><em>initialFileOrDirectory</em> = <code><a class="el" href="classFile.html">File</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>filePatternsAllowed</em> = <code><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a></code>, </td>
+          <td class="paramname"><em>filePatternsAllowed</em> = <code><a class="el" href="classString.html">String</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useOSNativeDialogBox</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>useOSNativeDialogBox</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>treatFilePackagesAsDirectories</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -189,9 +195,10 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dialogBoxTitle</td><td>a text string to display in the dialog box to tell the user what's going on </td></tr>
-    <tr><td class="paramname">initialFileOrDirectory</td><td>the file or directory that should be selected when the dialog box opens. If this parameter is set to <a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364" title="This static constant is used for referring to an &#39;invalid&#39; file. ">File::nonexistent</a>, a sensible default directory will be used instead. </td></tr>
+    <tr><td class="paramname">initialFileOrDirectory</td><td>the file or directory that should be selected when the dialog box opens. If this parameter is set to <a class="el" href="classFile.html" title="Represents a local file or directory. ">File()</a>, a sensible default directory will be used instead. </td></tr>
     <tr><td class="paramname">filePatternsAllowed</td><td>a set of file patterns to specify which files can be selected - each pattern should be separated by a comma or semi-colon, e.g. "*" or "*.jpg;*.gif". An empty string means that all files are allowed </td></tr>
     <tr><td class="paramname">useOSNativeDialogBox</td><td>if true, then a native dialog box will be used if possible; if false, then a Juce-based browser dialog box will always be used </td></tr>
+    <tr><td class="paramname">treatFilePackagesAsDirectories</td><td>if true, then the file chooser will allow the selection of files inside packages when invoked on OS X and when using native dialog boxes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -418,12 +425,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__FileChooser_8h.html">juce_FileChooser.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

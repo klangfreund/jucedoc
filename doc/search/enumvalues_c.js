@@ -3,6 +3,7 @@ var searchData=
   ['macosx',['MacOSX',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa7b97455dbb0979156c038ccf4bebe545',1,'SystemStats']]],
   ['macosx_5f10_5f10',['MacOSX_10_10',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaacd0e709dec55d23e96ac9fc93438c61b',1,'SystemStats']]],
   ['macosx_5f10_5f11',['MacOSX_10_11',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaaf9b5d85d9b872a45f52ca472995ff7d1',1,'SystemStats']]],
+  ['macosx_5f10_5f12',['MacOSX_10_12',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa2fd486dffb902bd1cb10746faa444be6',1,'SystemStats']]],
   ['macosx_5f10_5f4',['MacOSX_10_4',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa1ce7cc1fe386e7fa87013cbddf52543f',1,'SystemStats']]],
   ['macosx_5f10_5f5',['MacOSX_10_5',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa12c47314def418879ea14c9d7b3c7245',1,'SystemStats']]],
   ['macosx_5f10_5f6',['MacOSX_10_6',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa23c2a4b9a33a4b5dccb9d89491aff8ca',1,'SystemStats']]],
@@ -10,8 +11,10 @@ var searchData=
   ['macosx_5f10_5f8',['MacOSX_10_8',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa61eb1fabeb6408094768af66ae88b877',1,'SystemStats']]],
   ['macosx_5f10_5f9',['MacOSX_10_9',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaac277e46154ed3bb3ad5c8564dc81aa7a',1,'SystemStats']]],
   ['magixsamplitude',['MagixSamplitude',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a93ac4b1eea045db98d9ab7fbcd7207c0',1,'PluginHostType']]],
+  ['maxchannelsofnamedlayout',['maxChannelsOfNamedLayout',['../classAudioChannelSet.html#aa232fc50bb02ddf633ebc4e7522d010fa19df1572e8f673a0433d98d2a3d6bd09',1,'AudioChannelSet']]],
   ['maximisebutton',['maximiseButton',['../classDocumentWindow.html#a104d68bc145157c6ce79169a36fc3c31a84fe4bbe25739fe241f2e6128e7a51c9',1,'DocumentWindow']]],
   ['maximisedwindowswithtabs',['MaximisedWindowsWithTabs',['../classMultiDocumentPanel.html#a493599178acb0ddea50f7059faa4f8f3abefd8f86bfe674ec6c95337947d3754c',1,'MultiDocumentPanel']]],
+  ['maxvalue',['maxValue',['../structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436a84dc35fa7acdf4c6d989d29fa2a0d3a5',1,'IntegerWithBitSize']]],
   ['mediumresamplingquality',['mediumResamplingQuality',['../classGraphics.html#a5da218e649d1b5ac3d67443ae77caf87a5d8dfbf84457e91eb309b1402562f2af',1,'Graphics']]],
   ['menubutton',['menuButton',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a4763e099e23574fe8e7b649e3c964cc9',1,'AppleRemoteDevice']]],
   ['menubutton_5flong',['menuButton_Long',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a0fc32b5afdcfca212c4003ea68bdbfaa',1,'AppleRemoteDevice']]],
@@ -30,6 +33,7 @@ var searchData=
   ['mmc_5frecordstop',['mmc_recordStop',['../classMidiMessage.html#aa95b060274257522d1af40794ad1631da2dde82123f4aba81c023d5a07e6732cf',1,'MidiMessage']]],
   ['mmc_5frewind',['mmc_rewind',['../classMidiMessage.html#aa95b060274257522d1af40794ad1631da8ab7de3ea5e060435d0d420630cdd40b',1,'MidiMessage']]],
   ['mmc_5fstop',['mmc_stop',['../classMidiMessage.html#aa95b060274257522d1af40794ad1631da155f2d18fc89378f6cc9c4982db67bac',1,'MidiMessage']]],
+  ['mode',['mode',['../classControlButton.html#a891776295057786f99f14631b1aa2794a4e084a5a84e6736bfd222863f305ec51',1,'ControlButton::mode()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a49df6c25924134cc1ddd63dc06c8cc94',1,'juce::ControlButton::mode()']]],
   ['mouseoverkeyoverlaycolourid',['mouseOverKeyOverlayColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05ead204f469f2f66e619d2c8778ed83a5b2',1,'MidiKeyboardComponent']]],
   ['musereceptorgeneric',['MuseReceptorGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac44eee1f6720c9ef9296f0c655526230',1,'PluginHostType']]]
 ];

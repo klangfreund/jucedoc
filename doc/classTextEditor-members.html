@@ -222,14 +222,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classTextEditor.html#ae489b45147c4fbfb8fdc9bf2c2946415">isCaretVisible</a>() const noexcept</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a499f4e75a4c8b7fcc2aded220ca68769">isColourSpecified</a>(int colourId) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9">isCurrentlyBlockedByAnotherModalComponent</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7">isCurrentlyModal</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267">isCurrentlyModal</a>(bool onlyConsiderForemostModalComponent=true) const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classTextEditor.html#a483367aa9441aa1aab74309f362f1673">isEmpty</a>() const </td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a0e12726e34fdd284f036922597914bb3">isEnabled</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a31a41d721888e3ac78659e4815294ed1">isFocusContainer</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a0944e1751f32260afd5bd2a9fcd1a5b7">isMouseButtonDown</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ac3184a52027ad9106185d594c522d9d0">isMouseButtonDownAnywhere</a>() noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a23db151357ed4a783c224f210d036e63">isMouseOver</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classComponent.html#a5cedb030a2bfae99dece95d8a10d0dcb">isMouseOverOrDragging</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classComponent.html#a39e6cb0b07bf16648daa51b2c75be983">isMouseOverOrDragging</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classTextEditor.html#af19a278e34583bc8aabf63ace216132d">isMultiLine</a>() const </td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a854420c3141bb90e440af6c7bc1bd360">isOnDesktop</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a6ef077ace37bcd13d033305e8875d4e7">isOpaque</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
@@ -281,7 +281,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classTextEditor.html#a8b7485621bf88d75d8e51c01f9d2b82c">paint</a>(Graphics &amp;) override</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a2c960bd5ec5ac76d18e82b6883096714">paintEntireComponent</a>(Graphics &amp;context, bool ignoreAlphaLevel)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classTextEditor.html#a2a8635846ebc9fd09bc42a256b3480f4">paintOverChildren</a>(Graphics &amp;) override</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classComponent.html#a83f298a05d7f26a6e50e45dd37eb6313">parentHierarchyChanged</a>()</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classTextEditor.html#ae16a68946f5921b4c36605d0d6b6eb67">parentHierarchyChanged</a>() override</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#aefdce73a764c48363e82b22c32b0812e">parentSizeChanged</a>()</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classTextEditor.html#a2a8829c00507b8747ae6ffe71b8e18cc">paste</a>()</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classTextEditor.html#a15edfe8b94924ad79c517b5810955f35">pasteFromClipboard</a>()</td><td class="entry"><a class="el" href="classTextEditor.html">TextEditor</a></td><td class="entry"></td></tr>
@@ -397,12 +397,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classTextInputTarget.html#a77845e997bbe85a68ad77407a8f5bdfc">~TextInputTarget</a>()</td><td class="entry"><a class="el" href="classTextInputTarget.html">TextInputTarget</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classTooltipClient.html#a1bc2223e107e4122d251f5b90049140c">~TooltipClient</a>()</td><td class="entry"><a class="el" href="classTooltipClient.html">TooltipClient</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

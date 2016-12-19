@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad4e1363d40774f5bb55f6324c4ab1414"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy function to read un-aligned memory without a performance penalty or bus-error.  <a href="#ad4e1363d40774f5bb55f6324c4ab1414">More...</a><br/></td></tr>
 <tr class="separator:ad4e1363d40774f5bb55f6324c4ab1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39db7640be10d1fab314769f20d1ee5"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
-<tr class="memitem:ab39db7640be10d1fab314769f20d1ee5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="juce__Memory_8h.html#ab39db7640be10d1fab314769f20d1ee5">writeUnaligned</a> (void *dstPtr, Type value) noexcept</td></tr>
+<tr class="memitem:ab39db7640be10d1fab314769f20d1ee5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="juce__Memory_8h.html#ab39db7640be10d1fab314769f20d1ee5">writeUnaligned</a> (void *dstPtr, Type <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="memdesc:ab39db7640be10d1fab314769f20d1ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy function to write un-aligned memory without a performance penalty or bus-error.  <a href="#ab39db7640be10d1fab314769f20d1ee5">More...</a><br/></td></tr>
 <tr class="separator:ab39db7640be10d1fab314769f20d1ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 
 <p>Fills a block of memory with zeros. </p>
 
-<p>Referenced by <a class="el" href="classHeapBlock.html#a658838e2b07f498b169c87c73040b509">HeapBlock&lt; ObjectClass * &gt;::clear()</a>, and <a class="el" href="classAudioFormatReader.html#a263fd3b6a51850da53fe57688f9ccb46">AudioFormatReader::clearSamplesBeyondAvailableLength()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a85e146736b986b0b4e35b5f061d857fa">SpeakerMappings::channelSetToVstArrangement()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::clear()</a>, <a class="el" href="classHeapBlock.html#a658838e2b07f498b169c87c73040b509">HeapBlock&lt; ObjectClass * &gt;::clear()</a>, <a class="el" href="structAudioUnitHelpers.html#a502793d0d94d69f92ee0251a274eb48e">AudioUnitHelpers::clearAudioBuffer()</a>, <a class="el" href="classAudioFormatReader.html#a263fd3b6a51850da53fe57688f9ccb46">AudioFormatReader::clearSamplesBeyondAvailableLength()</a>, and <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>.</p>
 
 </div>
 </div>
@@ -430,12 +430,17 @@ template&lt;typename Type &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

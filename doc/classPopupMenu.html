@@ -97,8 +97,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomCallback.html">CustomCallback</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-defined callback that can be used for specific items in a popup menu.  <a href="classPopupMenu_1_1CustomCallback.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomComponent.html">CustomComponent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-defined component that can be used as an item in a popup menu.  <a href="classPopupMenu_1_1CustomComponent.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1Item.html">Item</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a popup menu item.  <a href="structPopupMenu_1_1Item.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html">LookAndFeelMethods</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This abstract base class is implemented by <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> classes to provide menu drawing functionality.  <a href="structPopupMenu_1_1LookAndFeelMethods.html#details">More...</a><br/></td></tr>
@@ -145,6 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4af03082fd727b395481a64ad940654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#ab4af03082fd727b395481a64ad940654">clear</a> ()</td></tr>
 <tr class="memdesc:ab4af03082fd727b395481a64ad940654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the menu, removing all its items.  <a href="#ab4af03082fd727b395481a64ad940654">More...</a><br/></td></tr>
 <tr class="separator:ab4af03082fd727b395481a64ad940654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7447231fa198d379fe749a07b0c4511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (const <a class="el" href="structPopupMenu_1_1Item.html">Item</a> &amp;newItem)</td></tr>
+<tr class="memdesc:af7447231fa198d379fe749a07b0c4511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an item to the menu.  <a href="#af7447231fa198d379fe749a07b0c4511">More...</a><br/></td></tr>
+<tr class="separator:af7447231fa198d379fe749a07b0c4511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41753d85a912104ec476fec1a818ec4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (int itemResultID, const <a class="el" href="classString.html">String</a> &amp;itemText, bool isEnabled=true, bool isTicked=false)</td></tr>
 <tr class="memdesc:a41753d85a912104ec476fec1a818ec4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new text item for this menu to show.  <a href="#a41753d85a912104ec476fec1a818ec4b">More...</a><br/></td></tr>
 <tr class="separator:a41753d85a912104ec476fec1a818ec4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +163,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bd542bdf1f7a52639266788f0ddf946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a0bd542bdf1f7a52639266788f0ddf946">addItem</a> (int itemResultID, const <a class="el" href="classString.html">String</a> &amp;itemText, bool isEnabled, bool isTicked, <a class="el" href="classDrawable.html">Drawable</a> *iconToUse)</td></tr>
 <tr class="memdesc:a0bd542bdf1f7a52639266788f0ddf946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new item with an icon.  <a href="#a0bd542bdf1f7a52639266788f0ddf946">More...</a><br/></td></tr>
 <tr class="separator:a0bd542bdf1f7a52639266788f0ddf946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd74c445a43df67bb447c5451d85d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a0cd74c445a43df67bb447c5451d85d9c">addCommandItem</a> (<a class="el" href="classApplicationCommandManager.html">ApplicationCommandManager</a> *commandManager, <a class="el" href="juce__ApplicationCommandID_8h.html#afd69b5d28aad07b587b693925e09308b">CommandID</a> commandID, const <a class="el" href="classString.html">String</a> &amp;displayName=<a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>, <a class="el" href="classDrawable.html">Drawable</a> *iconToUse=nullptr)</td></tr>
-<tr class="memdesc:a0cd74c445a43df67bb447c5451d85d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an item that represents one of the commands in a command manager object.  <a href="#a0cd74c445a43df67bb447c5451d85d9c">More...</a><br/></td></tr>
-<tr class="separator:a0cd74c445a43df67bb447c5451d85d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac03d5afec064439b3fbd27c6c89baa27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#ac03d5afec064439b3fbd27c6c89baa27">addColouredItem</a> (int itemResultID, const <a class="el" href="classString.html">String</a> &amp;itemText, <a class="el" href="classColour.html">Colour</a> itemTextColour, bool isEnabled=true, bool isTicked=false, const <a class="el" href="classImage.html">Image</a> &amp;iconToUse=<a class="el" href="classImage.html#af20f6e6962f885e2142520f18ca4ee17">Image::null</a>)</td></tr>
-<tr class="memdesc:ac03d5afec064439b3fbd27c6c89baa27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a text item with a special colour.  <a href="#ac03d5afec064439b3fbd27c6c89baa27">More...</a><br/></td></tr>
-<tr class="separator:ac03d5afec064439b3fbd27c6c89baa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c9d3dfcb73bf6c281436147901ed0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a11c9d3dfcb73bf6c281436147901ed0a">addCommandItem</a> (<a class="el" href="classApplicationCommandManager.html">ApplicationCommandManager</a> *commandManager, <a class="el" href="juce__ApplicationCommandID_8h.html#afd69b5d28aad07b587b693925e09308b">CommandID</a> commandID, const <a class="el" href="classString.html">String</a> &amp;displayName=<a class="el" href="classString.html">String</a>(), <a class="el" href="classDrawable.html">Drawable</a> *iconToUse=nullptr)</td></tr>
+<tr class="memdesc:a11c9d3dfcb73bf6c281436147901ed0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an item that represents one of the commands in a command manager object.  <a href="#a11c9d3dfcb73bf6c281436147901ed0a">More...</a><br/></td></tr>
+<tr class="separator:a11c9d3dfcb73bf6c281436147901ed0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46aa85ebfb2f0a7df713dbccc803a90c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a46aa85ebfb2f0a7df713dbccc803a90c">addColouredItem</a> (int itemResultID, const <a class="el" href="classString.html">String</a> &amp;itemText, <a class="el" href="classColour.html">Colour</a> itemTextColour, bool isEnabled=true, bool isTicked=false, const <a class="el" href="classImage.html">Image</a> &amp;iconToUse=<a class="el" href="classImage.html">Image</a>())</td></tr>
+<tr class="memdesc:a46aa85ebfb2f0a7df713dbccc803a90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a text item with a special colour.  <a href="#a46aa85ebfb2f0a7df713dbccc803a90c">More...</a><br/></td></tr>
+<tr class="separator:a46aa85ebfb2f0a7df713dbccc803a90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca9890f63f22575c190c0115a1f3acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#abca9890f63f22575c190c0115a1f3acf">addColouredItem</a> (int itemResultID, const <a class="el" href="classString.html">String</a> &amp;itemText, <a class="el" href="classColour.html">Colour</a> itemTextColour, bool isEnabled, bool isTicked, <a class="el" href="classDrawable.html">Drawable</a> *iconToUse)</td></tr>
+<tr class="memdesc:abca9890f63f22575c190c0115a1f3acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a text item with a special colour.  <a href="#abca9890f63f22575c190c0115a1f3acf">More...</a><br/></td></tr>
+<tr class="separator:abca9890f63f22575c190c0115a1f3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3420fb5dc0dc01786ffc056892509efd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd">addCustomItem</a> (int itemResultID, <a class="el" href="classPopupMenu_1_1CustomComponent.html">CustomComponent</a> *customComponent, const <a class="el" href="classPopupMenu.html">PopupMenu</a> *optionalSubMenu=nullptr)</td></tr>
 <tr class="memdesc:a3420fb5dc0dc01786ffc056892509efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a custom menu item.  <a href="#a3420fb5dc0dc01786ffc056892509efd">More...</a><br/></td></tr>
 <tr class="separator:a3420fb5dc0dc01786ffc056892509efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,8 +234,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyWidget::mouseDown (<span class="keyword">const</span> <a class="code" href="classMouseEvent.html">MouseEvent</a>&amp; e)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="classPopupMenu.html">PopupMenu</a> m;</div>
-<div class="line">    m.<a class="code" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (1, <span class="stringliteral">&quot;item 1&quot;</span>);</div>
-<div class="line">    m.<a class="code" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (2, <span class="stringliteral">&quot;item 2&quot;</span>);</div>
+<div class="line">    m.<a class="code" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (1, <span class="stringliteral">&quot;item 1&quot;</span>);</div>
+<div class="line">    m.<a class="code" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (2, <span class="stringliteral">&quot;item 2&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> result = m.<a class="code" href="classPopupMenu.html#acd7bdfe5db59180d929a5dac90bcacce">show</a>();</div>
 <div class="line"></div>
@@ -244,11 +256,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyWidget::mouseDown (<span class="keyword">const</span> <a class="code" href="classMouseEvent.html">MouseEvent</a>&amp; e)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="classPopupMenu.html">PopupMenu</a> subMenu;</div>
-<div class="line">    subMenu.<a class="code" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (1, <span class="stringliteral">&quot;item 1&quot;</span>);</div>
-<div class="line">    subMenu.<a class="code" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (2, <span class="stringliteral">&quot;item 2&quot;</span>);</div>
+<div class="line">    subMenu.<a class="code" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (1, <span class="stringliteral">&quot;item 1&quot;</span>);</div>
+<div class="line">    subMenu.<a class="code" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (2, <span class="stringliteral">&quot;item 2&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <a class="code" href="classPopupMenu.html">PopupMenu</a> mainMenu;</div>
-<div class="line">    mainMenu.<a class="code" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b">addItem</a> (3, <span class="stringliteral">&quot;item 3&quot;</span>);</div>
+<div class="line">    mainMenu.<a class="code" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511">addItem</a> (3, <span class="stringliteral">&quot;item 3&quot;</span>);</div>
 <div class="line">    mainMenu.<a class="code" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d">addSubMenu</a> (<span class="stringliteral">&quot;other choices&quot;</span>, subMenu);</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> result = m.<a class="code" href="classPopupMenu.html#acd7bdfe5db59180d929a5dac90bcacce">show</a>();</div>
@@ -426,6 +438,27 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af7447231fa198d379fe749a07b0c4511"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PopupMenu::addItem </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPopupMenu_1_1Item.html">Item</a> &amp;&#160;</td>
+          <td class="paramname"><em>newItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an item to the menu. </p>
+<p>You can call this method for full control over the item that is added, or use the other addItem helper methods if you want to pass arguments rather than creating an <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a> object. </p>
+
+<p>Referenced by <a class="el" href="classStandaloneFilterWindow.html#a43c03f9f453434a560a44011c9cd357e">StandaloneFilterWindow::buttonClicked()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a41753d85a912104ec476fec1a818ec4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -472,9 +505,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#ac03d5afec064439b3fbd27c6c89baa27" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
-
-<p>Referenced by <a class="el" href="classStandaloneFilterWindow.html#a43c03f9f453434a560a44011c9cd357e">StandaloneFilterWindow::buttonClicked()</a>.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#a46aa85ebfb2f0a7df713dbccc803a90c" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
 
 </div>
 </div>
@@ -531,7 +562,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#ac03d5afec064439b3fbd27c6c89baa27" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#a46aa85ebfb2f0a7df713dbccc803a90c" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
 
 </div>
 </div>
@@ -588,11 +619,11 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#ac03d5afec064439b3fbd27c6c89baa27" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu.html#a9c411d5c29fe887e4e961a402dd43944" title="Appends a separator to the menu, to help break it up into sections. ">addSeparator</a>, <a class="el" href="classPopupMenu.html#a46aa85ebfb2f0a7df713dbccc803a90c" title="Appends a text item with a special colour. ">addColouredItem</a>, <a class="el" href="classPopupMenu.html#a3420fb5dc0dc01786ffc056892509efd" title="Appends a custom menu item. ">addCustomItem</a>, <a class="el" href="classPopupMenu.html#a671c58c6c3b8efb37ccdb5532855500d" title="Appends a sub-menu. ">addSubMenu</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0cd74c445a43df67bb447c5451d85d9c"></a>
+<a class="anchor" id="a11c9d3dfcb73bf6c281436147901ed0a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -612,7 +643,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>displayName</em> = <code><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a></code>, </td>
+          <td class="paramname"><em>displayName</em> = <code><a class="el" href="classString.html">String</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -641,7 +672,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac03d5afec064439b3fbd27c6c89baa27"></a>
+<a class="anchor" id="a46aa85ebfb2f0a7df713dbccc803a90c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -679,7 +710,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classImage.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>iconToUse</em> = <code><a class="el" href="classImage.html#af20f6e6962f885e2142520f18ca4ee17">Image::null</a></code>&#160;</td>
+          <td class="paramname"><em>iconToUse</em> = <code><a class="el" href="classImage.html">Image</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -690,7 +721,60 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Appends a text item with a special colour. </p>
-<p>This is the same as <a class="el" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b" title="Appends a new text item for this menu to show. ">addItem()</a>, but specifies a colour to use for the text, which will override the default colours that are used by the current look-and-feel. See <a class="el" href="classPopupMenu.html#a41753d85a912104ec476fec1a818ec4b" title="Appends a new text item for this menu to show. ">addItem()</a> for a description of the parameters. </p>
+<p>This is the same as <a class="el" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511" title="Adds an item to the menu. ">addItem()</a>, but specifies a colour to use for the text, which will override the default colours that are used by the current look-and-feel. See <a class="el" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511" title="Adds an item to the menu. ">addItem()</a> for a description of the parameters. </p>
+
+</div>
+</div>
+<a class="anchor" id="abca9890f63f22575c190c0115a1f3acf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PopupMenu::addColouredItem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>itemResultID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>itemText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>itemTextColour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isTicked</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDrawable.html">Drawable</a> *&#160;</td>
+          <td class="paramname"><em>iconToUse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends a text item with a special colour. </p>
+<p>This is the same as <a class="el" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511" title="Adds an item to the menu. ">addItem()</a>, but specifies a colour to use for the text, which will override the default colours that are used by the current look-and-feel. See <a class="el" href="classPopupMenu.html#af7447231fa198d379fe749a07b0c4511" title="Adds an item to the menu. ">addItem()</a> for a description of the parameters. </p>
 
 </div>
 </div>
@@ -1085,7 +1169,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">minimumWidth</td><td>a minimum width for the menu, in pixels. It may be wider than this if some items are too long to fit. </td></tr>
     <tr><td class="paramname">maximumNumColumns</td><td>if there are too many items to fit on-screen in a single vertical column, the menu may be laid out as a series of columns - this is the maximum number allowed. To use the default value for this (probably about 7), you can pass in zero. </td></tr>
     <tr><td class="paramname">standardItemHeight</td><td>if this is non-zero, it will be used as the standard height for menu items (apart from custom items) </td></tr>
-    <tr><td class="paramname">callback</td><td>if this is non-zero, the menu will be launched asynchronously, returning immediately, and the callback will receive a call when the menu is either dismissed or has an item selected. This object will be owned and deleted by the system, so make sure that it works safely and that any pointers that it uses are safely within scope. </td></tr>
+    <tr><td class="paramname">callback</td><td>if this is not a nullptr, the menu will be launched asynchronously, returning immediately, and the callback will receive a call when the menu is either dismissed or has an item selected. This object will be owned and deleted by the system, so make sure that it works safely and that any pointers that it uses are safely within scope. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1298,12 +1382,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__PopupMenu_8h.html">juce_PopupMenu.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

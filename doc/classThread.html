@@ -116,9 +116,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae696c3b7ca36394cd214288cee31eaba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#ae696c3b7ca36394cd214288cee31eaba">Thread</a> (const <a class="el" href="classString.html">String</a> &amp;threadName)</td></tr>
-<tr class="memdesc:ae696c3b7ca36394cd214288cee31eaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread.  <a href="#ae696c3b7ca36394cd214288cee31eaba">More...</a><br/></td></tr>
-<tr class="separator:ae696c3b7ca36394cd214288cee31eaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9105c0abed75dd620b80c8c5e8b01603"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a9105c0abed75dd620b80c8c5e8b01603">Thread</a> (const <a class="el" href="classString.html">String</a> &amp;threadName, size_t threadStackSize=0)</td></tr>
+<tr class="memdesc:a9105c0abed75dd620b80c8c5e8b01603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a thread.  <a href="#a9105c0abed75dd620b80c8c5e8b01603">More...</a><br/></td></tr>
+<tr class="separator:a9105c0abed75dd620b80c8c5e8b01603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026b23628e1727050e864e00489c0baf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a026b23628e1727050e864e00489c0baf">~Thread</a> ()</td></tr>
 <tr class="memdesc:a026b23628e1727050e864e00489c0baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a026b23628e1727050e864e00489c0baf">More...</a><br/></td></tr>
 <tr class="separator:a026b23628e1727050e864e00489c0baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac92778089556fd0b5ab9c31557669ce8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#ac92778089556fd0b5ab9c31557669ce8">currentThreadShouldExit</a> ()</td></tr>
+<tr class="memdesc:ac92778089556fd0b5ab9c31557669ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current thread has been told to stop running.  <a href="#ac92778089556fd0b5ab9c31557669ce8">More...</a><br/></td></tr>
+<tr class="separator:ac92778089556fd0b5ab9c31557669ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a777202bb5aa9ce7f57605674b100f4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a9a777202bb5aa9ce7f57605674b100f4">setCurrentThreadPriority</a> (int priority)</td></tr>
 <tr class="memdesc:a9a777202bb5aa9ce7f57605674b100f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the priority of the caller thread.  <a href="#a9a777202bb5aa9ce7f57605674b100f4">More...</a><br/></td></tr>
 <tr class="separator:a9a777202bb5aa9ce7f57605674b100f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae696c3b7ca36394cd214288cee31eaba"></a>
+<a class="anchor" id="a9105c0abed75dd620b80c8c5e8b01603"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -221,8 +224,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">Thread::Thread </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>threadName</em></td><td>)</td>
+          <td class="paramname"><em>threadName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>threadStackSize</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -233,7 +246,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a thread. </p>
-<p>When first created, the thread is not running. Use the <a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread()</a> method to start it. </p>
+<p>When first created, the thread is not running. Use the <a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread()</a> method to start it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">threadName</td><td>The name of the thread which typically appears in debug logs and profiles. </td></tr>
+    <tr><td class="paramname">threadStackSize</td><td>The size of the stack of the thread. If this value is zero then the default stack size of the OS will be used. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -413,7 +433,34 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether the thread has been told to stop running. </p>
 <p>Threads need to check this regularly, and if it returns true, they should return from their <a class="el" href="classThread.html#aae90dfabab3e1776cf01a26e7ee3a620" title="Must be implemented to perform the thread&#39;s actual code. ">run()</a> method at the first possible opportunity.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#affe168e27c6ee50b0d10522810772268" title="Sets a flag to tell the thread it should stop. ">signalThreadShouldExit</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#affe168e27c6ee50b0d10522810772268" title="Sets a flag to tell the thread it should stop. ">signalThreadShouldExit</a>, <a class="el" href="classThread.html#ac92778089556fd0b5ab9c31557669ce8" title="Checks whether the current thread has been told to stop running. ">currentThreadShouldExit</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac92778089556fd0b5ab9c31557669ce8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Thread::currentThreadShouldExit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the current thread has been told to stop running. </p>
+<p>On the message thread, this will always return false, otherwise it will return <a class="el" href="classThread.html#a0a8fdce313d3c0db6c5adbb78c4352b4" title="Checks whether the thread has been told to stop running. ">threadShouldExit()</a> called on the current thread.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#a0a8fdce313d3c0db6c5adbb78c4352b4" title="Checks whether the thread has been told to stop running. ">threadShouldExit</a> </dd></dl>
 
 </div>
 </div>
@@ -766,12 +813,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__Thread_8h.html">juce_Thread.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

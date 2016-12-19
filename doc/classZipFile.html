@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33219c1047e6061a6835e5381dc0f06a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a33219c1047e6061a6835e5381dc0f06a">getNumEntries</a> () const noexcept</td></tr>
 <tr class="memdesc:a33219c1047e6061a6835e5381dc0f06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of items in the zip file.  <a href="#a33219c1047e6061a6835e5381dc0f06a">More...</a><br/></td></tr>
 <tr class="separator:a33219c1047e6061a6835e5381dc0f06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7168a5f54bed9f81e006f4f1ba880bf5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structZipFile_1_1ZipEntry.html">ZipEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a7168a5f54bed9f81e006f4f1ba880bf5">getEntry</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a7168a5f54bed9f81e006f4f1ba880bf5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structZipFile_1_1ZipEntry.html">ZipEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a7168a5f54bed9f81e006f4f1ba880bf5">getEntry</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a7168a5f54bed9f81e006f4f1ba880bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a structure that describes one of the entries in the zip file.  <a href="#a7168a5f54bed9f81e006f4f1ba880bf5">More...</a><br/></td></tr>
 <tr class="separator:a7168a5f54bed9f81e006f4f1ba880bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae828c6862f8a8305b5c3aca0a42417cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#ae828c6862f8a8305b5c3aca0a42417cf">getIndexOfFileName</a> (const <a class="el" href="classString.html">String</a> &amp;fileName) const noexcept</td></tr>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af33762dfb0bbe8ac0973d239eba4a376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#af33762dfb0bbe8ac0973d239eba4a376">sortEntriesByFilename</a> ()</td></tr>
 <tr class="memdesc:af33762dfb0bbe8ac0973d239eba4a376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the list of entries, based on the filename.  <a href="#af33762dfb0bbe8ac0973d239eba4a376">More...</a><br/></td></tr>
 <tr class="separator:af33762dfb0bbe8ac0973d239eba4a376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cf25194d5a64e2bd0f4cb7b06262fc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInputStream.html">InputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a5cf25194d5a64e2bd0f4cb7b06262fc3">createStreamForEntry</a> (int index)</td></tr>
+<tr class="memitem:a5cf25194d5a64e2bd0f4cb7b06262fc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInputStream.html">InputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a5cf25194d5a64e2bd0f4cb7b06262fc3">createStreamForEntry</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>)</td></tr>
 <tr class="memdesc:a5cf25194d5a64e2bd0f4cb7b06262fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream that can read from one of the zip file's entries.  <a href="#a5cf25194d5a64e2bd0f4cb7b06262fc3">More...</a><br/></td></tr>
 <tr class="separator:a5cf25194d5a64e2bd0f4cb7b06262fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510549a79f1c552162839c7aa69286a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInputStream.html">InputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a510549a79f1c552162839c7aa69286a4">createStreamForEntry</a> (const <a class="el" href="structZipFile_1_1ZipEntry.html">ZipEntry</a> &amp;entry)</td></tr>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d8bc0a4215a9464886909e527946155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#a4d8bc0a4215a9464886909e527946155">uncompressTo</a> (const <a class="el" href="classFile.html">File</a> &amp;targetDirectory, bool shouldOverwriteFiles=true)</td></tr>
 <tr class="memdesc:a4d8bc0a4215a9464886909e527946155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncompresses all of the files in the zip file.  <a href="#a4d8bc0a4215a9464886909e527946155">More...</a><br/></td></tr>
 <tr class="separator:a4d8bc0a4215a9464886909e527946155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a3e0db6aa5d2cb75028251501e4dfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#aa7a3e0db6aa5d2cb75028251501e4dfc">uncompressEntry</a> (int index, const <a class="el" href="classFile.html">File</a> &amp;targetDirectory, bool shouldOverwriteFiles=true)</td></tr>
+<tr class="memitem:aa7a3e0db6aa5d2cb75028251501e4dfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZipFile.html#aa7a3e0db6aa5d2cb75028251501e4dfc">uncompressEntry</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, const <a class="el" href="classFile.html">File</a> &amp;targetDirectory, bool shouldOverwriteFiles=true)</td></tr>
 <tr class="memdesc:aa7a3e0db6aa5d2cb75028251501e4dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncompresses one of the entries from the zip file.  <a href="#aa7a3e0db6aa5d2cb75028251501e4dfc">More...</a><br/></td></tr>
 <tr class="separator:aa7a3e0db6aa5d2cb75028251501e4dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -332,7 +332,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a structure that describes one of the entries in the zip file. </p>
-<p>This may return zero if the index is out of range. </p>
+<p>This may return a nullptr if the index is out of range. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structZipFile_1_1ZipEntry.html" title="Contains information about one of the entries in a ZipFile. ">ZipFile::ZipEntry</a> </dd></dl>
 
 </div>
@@ -425,7 +425,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a stream that can read from one of the zip file's entries. </p>
-<p>The stream that is returned must be deleted by the caller (and zero might be returned if a stream can't be opened for some reason).</p>
+<p>The stream that is returned must be deleted by the caller (and a nullptr might be returned if a stream can't be opened for some reason).</p>
 <p>The stream must not be used after the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> object that created has been deleted.</p>
 <p>Note that if the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> was created with a user-supplied <a class="el" href="classInputStream.html" title="The base class for streams that read data. ">InputStream</a> object, then all the streams which are created by this method will by trying to share the same source stream, so cannot be safely used on multiple threads! (But if you create the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> from a <a class="el" href="classFile.html" title="Represents a local file or directory. ">File</a> or <a class="el" href="classInputSource.html" title="A lightweight object that can create a stream to read some kind of resource. ">InputSource</a>, then it is safe to do this). </p>
 
@@ -446,7 +446,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a stream that can read from one of the zip file's entries. </p>
-<p>The stream that is returned must be deleted by the caller (and zero might be returned if a stream can't be opened for some reason).</p>
+<p>The stream that is returned must be deleted by the caller (and a nullptr might be returned if a stream can't be opened for some reason).</p>
 <p>The stream must not be used after the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> object that created has been deleted.</p>
 <p>Note that if the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> was created with a user-supplied <a class="el" href="classInputStream.html" title="The base class for streams that read data. ">InputStream</a> object, then all the streams which are created by this method will by trying to share the same source stream, so cannot be safely used on multiple threads! (But if you create the <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a> from a <a class="el" href="classFile.html" title="Represents a local file or directory. ">File</a> or <a class="el" href="classInputSource.html" title="A lightweight object that can create a stream to read some kind of resource. ">InputSource</a>, then it is safe to do this). </p>
 
@@ -537,12 +537,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ZipFile_8h.html">juce_ZipFile.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

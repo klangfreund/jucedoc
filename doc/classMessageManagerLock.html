@@ -123,6 +123,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <span class="comment">// ..the event loop will now be unlocked as the MessageManagerLock goes out of scope</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Obviously be careful not to create one of these and leave it lying around, or your app will grind to a halt!</p>
+<p>MessageManagerLocks are re-entrant, so can be safely nested if the current thread already has the lock.</p>
 <p>Another caveat is that using this in conjunction with other CriticalSections can create lots of interesting ways of producing a deadlock! In particular, if your message thread calls stopThread() for a thread that uses these locks, you'll get an (occasional) deadlock..</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, <a class="el" href="classMessageManager.html#aebd4b8896d7b6bdfa34d3cd8eb2e1777" title="Returns true if the caller thread has currently got the message manager locked. ">MessageManager::currentThreadHasLockedMessageManager</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -241,12 +242,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__MessageManager_8h.html">juce_MessageManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

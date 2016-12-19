@@ -181,10 +181,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afd81e1ac31bef25bbb2f4dc5a6865a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a number of bits from the memory block, treating it as one long binary sequence.  <a href="#afd81e1ac31bef25bbb2f4dc5a6865a15">More...</a><br/></td></tr>
 <tr class="separator:afd81e1ac31bef25bbb2f4dc5a6865a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69724db38afce62092e39171edc77fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a69724db38afce62092e39171edc77fea">toBase64Encoding</a> () const </td></tr>
-<tr class="memdesc:a69724db38afce62092e39171edc77fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string of characters that represent the binary contents of this block.  <a href="#a69724db38afce62092e39171edc77fea">More...</a><br/></td></tr>
+<tr class="memdesc:a69724db38afce62092e39171edc77fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string of characters in a JUCE-specific text encoding that represents the binary contents of this block.  <a href="#a69724db38afce62092e39171edc77fea">More...</a><br/></td></tr>
 <tr class="separator:a69724db38afce62092e39171edc77fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9b274b678bd4bdbfb64fec6c1c35e58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ae9b274b678bd4bdbfb64fec6c1c35e58">fromBase64Encoding</a> (<a class="el" href="classStringRef.html">StringRef</a> encodedString)</td></tr>
-<tr class="memdesc:ae9b274b678bd4bdbfb64fec6c1c35e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a string of encoded characters and turns it into binary data.  <a href="#ae9b274b678bd4bdbfb64fec6c1c35e58">More...</a><br/></td></tr>
+<tr class="memdesc:ae9b274b678bd4bdbfb64fec6c1c35e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a string created by <a class="el" href="classMemoryBlock.html#a69724db38afce62092e39171edc77fea" title="Returns a string of characters in a JUCE-specific text encoding that represents the binary contents o...">MemoryBlock::toBase64Encoding()</a> and extracts the original data.  <a href="#ae9b274b678bd4bdbfb64fec6c1c35e58">More...</a><br/></td></tr>
 <tr class="separator:ae9b274b678bd4bdbfb64fec6c1c35e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1065,9 +1065,9 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a string of characters that represent the binary contents of this block. </p>
-<p>Uses a 64-bit encoding system to allow binary data to be turned into a string of simple non-extended characters, e.g. for storage in XML.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMemoryBlock.html#ae9b274b678bd4bdbfb64fec6c1c35e58" title="Takes a string of encoded characters and turns it into binary data. ">fromBase64Encoding</a> </dd></dl>
+<p>Returns a string of characters in a JUCE-specific text encoding that represents the binary contents of this block. </p>
+<p>This uses a JUCE-specific (i.e. not standard!) 64-bit encoding system to convert binary data into a string of ASCII characters for purposes like storage in XML. Note that this proprietary format is mainly kept here for backwards-compatibility, and you may prefer to use the <a class="el" href="structBase64.html#a810999461ee28244f7b7c1cd709132c4" title="Converts a block of binary data to a base-64 string. ">Base64::toBase64()</a> method if you want to use the standard base-64 encoding.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMemoryBlock.html#ae9b274b678bd4bdbfb64fec6c1c35e58" title="Takes a string created by MemoryBlock::toBase64Encoding() and extracts the original data...">fromBase64Encoding</a>, <a class="el" href="structBase64.html#a810999461ee28244f7b7c1cd709132c4" title="Converts a block of binary data to a base-64 string. ">Base64::toBase64</a>, <a class="el" href="structBase64.html#a69ae397d3f61cd0299811b984b871ae2" title="Converts a binary block of data into a base-64 string. ">Base64::convertToBase64</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a9319c6c7e9368f0d2fb1d31b0f2b2816">StandalonePluginHolder::savePluginState()</a>.</p>
 
@@ -1087,9 +1087,10 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a string of encoded characters and turns it into binary data. </p>
+<p>Takes a string created by <a class="el" href="classMemoryBlock.html#a69724db38afce62092e39171edc77fea" title="Returns a string of characters in a JUCE-specific text encoding that represents the binary contents o...">MemoryBlock::toBase64Encoding()</a> and extracts the original data. </p>
 <p>The string passed in must have been created by to64BitEncoding(), and this block will be resized to recreate the original data block.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMemoryBlock.html#a69724db38afce62092e39171edc77fea" title="Returns a string of characters that represent the binary contents of this block. ">toBase64Encoding</a> </dd></dl>
+<p>Note that these methods use a JUCE-specific (i.e. not standard!) 64-bit encoding system. You may prefer to use the <a class="el" href="structBase64.html#a1d31c080284840a2c23ee41175e882ea" title="Converts a base-64 string back to its binary representation. ">Base64::convertFromBase64()</a> method if you want to use the standard base-64 encoding.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMemoryBlock.html#a69724db38afce62092e39171edc77fea" title="Returns a string of characters in a JUCE-specific text encoding that represents the binary contents o...">toBase64Encoding</a>, <a class="el" href="structBase64.html#a1d31c080284840a2c23ee41175e882ea" title="Converts a base-64 string back to its binary representation. ">Base64::convertFromBase64</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="classStandalonePluginHolder.html#adfdf093b9b5ab101d2f76d5fa957c6eb">StandalonePluginHolder::reloadPluginState()</a>.</p>
 
@@ -1099,12 +1100,17 @@ template&lt;typename Type &gt; </div>
 <li><a class="el" href="juce__MemoryBlock_8h.html">juce_MemoryBlock.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

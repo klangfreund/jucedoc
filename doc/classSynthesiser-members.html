@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classSynthesiser.html#a838f270e38f2c79c38a1085284f1fc41">renderVoices</a>(AudioBuffer&lt; float &gt; &amp;outputAudio, int startSample, int numSamples)</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classSynthesiser.html#a0682b53979e6f2ed5f08b385d155c60c">renderVoices</a>(AudioBuffer&lt; double &gt; &amp;outputAudio, int startSample, int numSamples)</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSynthesiser.html#ae0d6808e5a22bc3a56a68dab1f106ab8">setCurrentPlaybackSampleRate</a>(double sampleRate)</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classSynthesiser.html#a36ec952997dd56cceb00904a7be69140">setMinimumRenderingSubdivisionSize</a>(int numSamples) noexcept</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classSynthesiser.html#a4a8e6d1bffae06cbe61b69488c97fa49">setMinimumRenderingSubdivisionSize</a>(int numSamples, bool shouldBeStrict=false) noexcept</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSynthesiser.html#ae0bbfe2c3819167dc5d98b27b21843eb">setNoteStealingEnabled</a>(bool shouldStealNotes)</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classSynthesiser.html#ac64f99f204a1d5a567422cd9d5217081">sounds</a></td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSynthesiser.html#a7004a46197236e29ae67916f8932d0a4">startVoice</a>(SynthesiserVoice *voice, SynthesiserSound *sound, int midiChannel, int midiNoteNumber, float velocity)</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -130,12 +130,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classSynthesiser.html#a260d964d6764a51b2315233e0bf76980">voices</a></td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSynthesiser.html#af92647b0dced33f5c3a99be3ddcfcd8e">~Synthesiser</a>()</td><td class="entry"><a class="el" href="classSynthesiser.html">Synthesiser</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -93,21 +93,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#aa52987dfd5d41443a914c4c20045c12c">getJob</a>(int index) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classThreadPool.html#a520f25cf327b0f000f2edff89b07aff2">getNamesOfAllJobs</a>(bool onlyReturnActiveJobs) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a9e9ba7e536f1978a255a36bc54f641ed">getNumJobs</a>() const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classThreadPool.html#a6aa5595e971322109a2eeef2f1bdda2b">isJobRunning</a>(const ThreadPoolJob *job) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a621253ea8de07a09a6c18238f8d33ced">removeAllJobs</a>(bool interruptRunningJobs, int timeOutMilliseconds, JobSelector *selectedJobsToRemove=nullptr)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classThreadPool.html#a10da7494ab922d7157a5929d0689bf54">removeJob</a>(ThreadPoolJob *job, bool interruptIfRunning, int timeOutMilliseconds)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a3f69128c07cb778cf6ab981b1b9be650">setThreadPriorities</a>(int newPriority)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classThreadPool.html#af59341f9ab24fda771109bc3ee8cdef2">ThreadPool</a>(int numberOfThreads)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a3225e86aa7835545b3f6c2c8d363d5e5">ThreadPool</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classThreadPool.html#ada78c3d08d41bb195006b5c96a6514f5">waitForJobToFinish</a>(const ThreadPoolJob *job, int timeOutMilliseconds) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a44d3d2ab618970605e684efc216655eb">~ThreadPool</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a0c683ee9fb983a07ef5937ea2a3a6599">getNumThreads</a>() const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a6aa5595e971322109a2eeef2f1bdda2b">isJobRunning</a>(const ThreadPoolJob *job) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a621253ea8de07a09a6c18238f8d33ced">removeAllJobs</a>(bool interruptRunningJobs, int timeOutMilliseconds, JobSelector *selectedJobsToRemove=nullptr)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#a10da7494ab922d7157a5929d0689bf54">removeJob</a>(ThreadPoolJob *job, bool interruptIfRunning, int timeOutMilliseconds)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a3f69128c07cb778cf6ab981b1b9be650">setThreadPriorities</a>(int newPriority)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ae55fe4a480fa7144d8e87bbd0a917b14">ThreadPool</a>(int numberOfThreads, size_t threadStackSize=0)</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a3225e86aa7835545b3f6c2c8d363d5e5">ThreadPool</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadPool.html#ada78c3d08d41bb195006b5c96a6514f5">waitForJobToFinish</a>(const ThreadPoolJob *job, int timeOutMilliseconds) const </td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadPool.html#a44d3d2ab618970605e684efc216655eb">~ThreadPool</a>()</td><td class="entry"><a class="el" href="classThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

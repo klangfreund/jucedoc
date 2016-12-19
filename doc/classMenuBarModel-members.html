@@ -98,25 +98,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a2a42b27dc2d8e42b21b130d72b8d10c4">getMenuBarNames</a>()=0</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMenuBarModel.html#a500e3714cf915d27cd37bf13a79511f4">getMenuForIndex</a>(int topLevelMenuIndex, const String &amp;menuName)=0</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a0dddd32a4b5bd42c1313751bb13f882e">handleAsyncUpdate</a>() override</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classAsyncUpdater.html#a5f65e2ad091e96ce4e3979d2b701bc85">handleUpdateNowIfNeeded</a>()</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classAsyncUpdater.html#a93c63f13659fc5acd41c3ec9b252bf01">isUpdatePending</a>() const noexcept</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMenuBarModel.html#a982d30b7dc660bfd7f092a33bb54c063">handleMenuBarActivate</a>(bool isActive)</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classAsyncUpdater.html#a5f65e2ad091e96ce4e3979d2b701bc85">handleUpdateNowIfNeeded</a>()</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAsyncUpdater.html#a93c63f13659fc5acd41c3ec9b252bf01">isUpdatePending</a>() const noexcept</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a5b76c306e7f4eaf8d7fc51b9be5cd5b1">menuBarActivated</a>(bool isActive)</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMenuBarModel.html#a33991bb21a029647ec0db64ab5349eff">MenuBarModel</a>() noexcept</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classMenuBarModel.html#aac9cef411b80f8b5ab1dc4572ec90019">menuItemsChanged</a>()</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMenuBarModel.html#aa64b5b9bb4ea4e7bcdc49924659936cc">menuItemSelected</a>(int menuItemID, int topLevelMenuIndex)=0</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a2a7813e9ab8db041f974f42bf8e9695d">removeListener</a>(Listener *listenerToRemove) noexcept</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMenuBarModel.html#afb34b774a0e4a5575c0d4f744cf969bd">setApplicationCommandManagerToWatch</a>(ApplicationCommandManager *manager) noexcept</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a2e10f5dd37f6f4226ef7bdf1ff817540">setMacMainMenu</a>(MenuBarModel *newMenuBarModel, const PopupMenu *extraAppleMenuItems=nullptr, const String &amp;recentItemsMenuName=String::empty)</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a052c0e132c619775f3f14af3aae44811">setMacMainMenu</a>(MenuBarModel *newMenuBarModel, const PopupMenu *extraAppleMenuItems=nullptr, const String &amp;recentItemsMenuName=String())</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAsyncUpdater.html#a4eece806c6ba9f591382fed54c5983b2">triggerAsyncUpdate</a>()</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classApplicationCommandManagerListener.html#a9b2c9f6c718ad68306791c2aeb29f754">~ApplicationCommandManagerListener</a>()</td><td class="entry"><a class="el" href="classApplicationCommandManagerListener.html">ApplicationCommandManagerListener</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAsyncUpdater.html#af28a6da5c2adf73e2c18286574939d4b">~AsyncUpdater</a>()</td><td class="entry"><a class="el" href="classAsyncUpdater.html">AsyncUpdater</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMenuBarModel.html#a7f7348e4e1de229386474baf63a6c4d7">~MenuBarModel</a>()</td><td class="entry"><a class="el" href="classMenuBarModel.html">MenuBarModel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

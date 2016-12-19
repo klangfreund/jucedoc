@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1c3c27187978044ce66611d572cbd60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#af1c3c27187978044ce66611d572cbd60">withLength</a> (const ValueType newLength) const noexcept</td></tr>
 <tr class="memdesc:af1c3c27187978044ce66611d572cbd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a range with the same start as this one, but a different length.  <a href="#af1c3c27187978044ce66611d572cbd60">More...</a><br/></td></tr>
 <tr class="separator:af1c3c27187978044ce66611d572cbd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50a21a44f0f91ce99c20e4eb63c0d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#ac50a21a44f0f91ce99c20e4eb63c0d77">expanded</a> (ValueType amount) const noexcept</td></tr>
+<tr class="memdesc:ac50a21a44f0f91ce99c20e4eb63c0d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a range which has its start moved down and its end moved up by the given amount.  <a href="#ac50a21a44f0f91ce99c20e4eb63c0d77">More...</a><br/></td></tr>
+<tr class="separator:ac50a21a44f0f91ce99c20e4eb63c0d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc6baf759e772487ec0f6adc4cb8419e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#adc6baf759e772487ec0f6adc4cb8419e">operator+=</a> (const ValueType amountToAdd) noexcept</td></tr>
 <tr class="memdesc:adc6baf759e772487ec0f6adc4cb8419e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an amount to the start and end of the range.  <a href="#adc6baf759e772487ec0f6adc4cb8419e">More...</a><br/></td></tr>
 <tr class="separator:adc6baf759e772487ec0f6adc4cb8419e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23fa32169a76c2d3c44b2576c2b9e2d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#a23fa32169a76c2d3c44b2576c2b9e2d9">contains</a> (const ValueType position) const noexcept</td></tr>
 <tr class="memdesc:a23fa32169a76c2d3c44b2576c2b9e2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given position lies inside this range.  <a href="#a23fa32169a76c2d3c44b2576c2b9e2d9">More...</a><br/></td></tr>
 <tr class="separator:a23fa32169a76c2d3c44b2576c2b9e2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ae86bf19391b172c5a942e17a8270b"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#a67ae86bf19391b172c5a942e17a8270b">clipValue</a> (const ValueType value) const noexcept</td></tr>
+<tr class="memitem:a67ae86bf19391b172c5a942e17a8270b"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#a67ae86bf19391b172c5a942e17a8270b">clipValue</a> (const ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) const noexcept</td></tr>
 <tr class="memdesc:a67ae86bf19391b172c5a942e17a8270b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nearest value to the one supplied, which lies within the range.  <a href="#a67ae86bf19391b172c5a942e17a8270b">More...</a><br/></td></tr>
 <tr class="separator:a67ae86bf19391b172c5a942e17a8270b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4d444a5ebea71298117fe26025528f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRange.html#a4a4d444a5ebea71298117fe26025528f">contains</a> (<a class="el" href="classRange.html">Range</a> other) const noexcept</td></tr>
@@ -232,7 +235,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>Constructs an empty range. </p>
 
-<p>Referenced by <a class="el" href="classRange.html#aa0165f9820b176b5df903e19c8a2a88b">Range&lt; int64 &gt;::between()</a>, <a class="el" href="classRange.html#ad7d026bfc44eaa1dc8725fd13bfe8d77">Range&lt; int64 &gt;::emptyRange()</a>, <a class="el" href="classRange.html#a1b18340b1278144ba21569ead4ffe292">Range&lt; int64 &gt;::findMinAndMax()</a>, <a class="el" href="classRange.html#a682ee4799e0be0dc3eb9a0da774e871c">Range&lt; int64 &gt;::getIntersectionWith()</a>, <a class="el" href="classRange.html#ad7e2ae9bfcb620d68c7ce51e06c925b0">Range&lt; int64 &gt;::getUnionWith()</a>, <a class="el" href="classRange.html#a5ea22f43dcf5400fa812ef86f0b2b237">Range&lt; int64 &gt;::movedToEndAt()</a>, <a class="el" href="classRange.html#ac43518af962bee4118ff13df4f176cf6">Range&lt; int64 &gt;::movedToStartAt()</a>, <a class="el" href="classRange.html#a5df07a0205fb16865411244b5c6fbe83">Range&lt; int64 &gt;::operator+()</a>, <a class="el" href="classRange.html#a41de372355de47a0f991f8079add45bf">Range&lt; int64 &gt;::operator-()</a>, <a class="el" href="classRange.html#a9287e31c3329ff73598414814a015574">Range&lt; int64 &gt;::withEnd()</a>, <a class="el" href="classRange.html#af1c3c27187978044ce66611d572cbd60">Range&lt; int64 &gt;::withLength()</a>, <a class="el" href="classRange.html#a967f3f5dca8f6c21b809b800c5617969">Range&lt; int64 &gt;::withStart()</a>, and <a class="el" href="classRange.html#adf34bee3fb884edeea097dc4ca1f5362">Range&lt; int64 &gt;::withStartAndLength()</a>.</p>
+<p>Referenced by <a class="el" href="classRange.html#aa0165f9820b176b5df903e19c8a2a88b">Range&lt; int64 &gt;::between()</a>, <a class="el" href="classRange.html#ad7d026bfc44eaa1dc8725fd13bfe8d77">Range&lt; int64 &gt;::emptyRange()</a>, <a class="el" href="classRange.html#ac50a21a44f0f91ce99c20e4eb63c0d77">Range&lt; int64 &gt;::expanded()</a>, <a class="el" href="classRange.html#a1b18340b1278144ba21569ead4ffe292">Range&lt; int64 &gt;::findMinAndMax()</a>, <a class="el" href="classRange.html#a682ee4799e0be0dc3eb9a0da774e871c">Range&lt; int64 &gt;::getIntersectionWith()</a>, <a class="el" href="classRange.html#ad7e2ae9bfcb620d68c7ce51e06c925b0">Range&lt; int64 &gt;::getUnionWith()</a>, <a class="el" href="classRange.html#a5ea22f43dcf5400fa812ef86f0b2b237">Range&lt; int64 &gt;::movedToEndAt()</a>, <a class="el" href="classRange.html#ac43518af962bee4118ff13df4f176cf6">Range&lt; int64 &gt;::movedToStartAt()</a>, <a class="el" href="classRange.html#a5df07a0205fb16865411244b5c6fbe83">Range&lt; int64 &gt;::operator+()</a>, <a class="el" href="classRange.html#a41de372355de47a0f991f8079add45bf">Range&lt; int64 &gt;::operator-()</a>, <a class="el" href="classRange.html#a9287e31c3329ff73598414814a015574">Range&lt; int64 &gt;::withEnd()</a>, <a class="el" href="classRange.html#af1c3c27187978044ce66611d572cbd60">Range&lt; int64 &gt;::withLength()</a>, <a class="el" href="classRange.html#a967f3f5dca8f6c21b809b800c5617969">Range&lt; int64 &gt;::withStart()</a>, and <a class="el" href="classRange.html#adf34bee3fb884edeea097dc4ca1f5362">Range&lt; int64 &gt;::withStartAndLength()</a>.</p>
 
 </div>
 </div>
@@ -781,6 +784,35 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ac50a21a44f0f91ce99c20e4eb63c0d77"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRange.html">Range</a> <a class="el" href="classRange.html">Range</a>&lt; ValueType &gt;::expanded </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>amount</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a range which has its start moved down and its end moved up by the given amount. </p>
+<dl class="section return"><dt>Returns</dt><dd>The returned range will be (start - amount, end + amount) </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="adc6baf759e772487ec0f6adc4cb8419e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1214,12 +1246,17 @@ template&lt;typename ValueType&gt; </div>
 <li><a class="el" href="juce__Range_8h.html">juce_Range.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

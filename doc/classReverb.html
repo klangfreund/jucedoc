@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
 <p>Applies a new set of parameters to the reverb. </p>
 <p>Note that this doesn't attempt to lock the reverb, so if you call this in parallel with the process method, you may get artifacts. </p>
 
-<p>References <a class="el" href="structReverb_1_1Parameters.html#add75191e7a163d95cd807cbc72fa192c">Reverb::Parameters::dryLevel</a>, <a class="el" href="structReverb_1_1Parameters.html#a394c3bfbd67ad681222410952dbed0c6">Reverb::Parameters::freezeMode</a>, <a class="el" href="structReverb_1_1Parameters.html#ae029e68c8dc8fa0acb34373237377fec">Reverb::Parameters::wetLevel</a>, and <a class="el" href="structReverb_1_1Parameters.html#a2104c314f4804e3ff6e5cc7d524c3b1d">Reverb::Parameters::width</a>.</p>
+<p>References <a class="el" href="structReverb_1_1Parameters.html#add75191e7a163d95cd807cbc72fa192c">Reverb::Parameters::dryLevel</a>, <a class="el" href="structReverb_1_1Parameters.html#a394c3bfbd67ad681222410952dbed0c6">Reverb::Parameters::freezeMode</a>, <a class="el" href="classLinearSmoothedValue.html#aa7def206e183499e27803d5ff4e6b303">LinearSmoothedValue&lt; FloatType &gt;::setValue()</a>, <a class="el" href="structReverb_1_1Parameters.html#ae029e68c8dc8fa0acb34373237377fec">Reverb::Parameters::wetLevel</a>, and <a class="el" href="structReverb_1_1Parameters.html#a2104c314f4804e3ff6e5cc7d524c3b1d">Reverb::Parameters::width</a>.</p>
 
 <p>Referenced by <a class="el" href="classReverb.html#a765b925557df7e43bf5ed275fc6950d1">Reverb()</a>.</p>
 
@@ -210,7 +210,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the sample rate that will be used for the reverb. </p>
 <p>You must call this before the process methods, in order to tell it the correct sample rate. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
+<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>, and <a class="el" href="classLinearSmoothedValue.html#a437e2033bee8c4c610b4fd0086b47042">LinearSmoothedValue&lt; FloatType &gt;::reset()</a>.</p>
 
 <p>Referenced by <a class="el" href="classReverb.html#a765b925557df7e43bf5ed275fc6950d1">Reverb()</a>.</p>
 
@@ -273,7 +273,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Applies the reverb to two stereo channels of audio data. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
+<p>References <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; FloatType &gt;::getNextValue()</a>, and <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Applies the reverb to a single mono channel of audio data. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
+<p>References <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; FloatType &gt;::getNextValue()</a>, and <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
 
 </div>
 </div>
@@ -319,12 +319,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__Reverb_8h.html">juce_Reverb.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quaterniontype',['QuaternionType',['../classDraggable3DOrientation.html#a87c6a9757094e54cf1f42d92ac0e20f9',1,'Draggable3DOrientation']]]
+  ['quaterniontype',['QuaternionType',['../classDraggable3DOrientation.html#a078d6c17248de2acffed6c3f60da419f',1,'Draggable3DOrientation']]]
 ];

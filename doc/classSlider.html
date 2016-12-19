@@ -116,6 +116,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1LookAndFeelMethods.html">LookAndFeelMethods</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This abstract base class is implemented by <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> classes to provide slider drawing functionality.  <a href="structSlider_1_1LookAndFeelMethods.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1RotaryParameters.html">RotaryParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1SliderLayout.html">SliderLayout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct defining the placement of the slider area and the text box area relative to the bounds of the whole <a class="el" href="classSlider.html" title="A slider control for changing a value. ">Slider</a> component.  <a href="structSlider_1_1SliderLayout.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,9 +213,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fe7b4917ead20eb9c180de81c46b41f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888">SliderStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a5fe7b4917ead20eb9c180de81c46b41f">getSliderStyle</a> () const noexcept</td></tr>
 <tr class="memdesc:a5fe7b4917ead20eb9c180de81c46b41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the slider's current style.  <a href="#a5fe7b4917ead20eb9c180de81c46b41f">More...</a><br/></td></tr>
 <tr class="separator:a5fe7b4917ead20eb9c180de81c46b41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fad4379a38262e28820213c7ffd26fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb">setRotaryParameters</a> (float startAngleRadians, float endAngleRadians, bool stopAtEnd)</td></tr>
-<tr class="memdesc:a6fad4379a38262e28820213c7ffd26fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the properties of a rotary slider.  <a href="#a6fad4379a38262e28820213c7ffd26fb">More...</a><br/></td></tr>
-<tr class="separator:a6fad4379a38262e28820213c7ffd26fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d0dd9e0149ecb63c10d8bbb64d7188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188">setRotaryParameters</a> (<a class="el" href="structSlider_1_1RotaryParameters.html">RotaryParameters</a> newParameters) noexcept</td></tr>
+<tr class="memdesc:a37d0dd9e0149ecb63c10d8bbb64d7188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the properties of a rotary slider.  <a href="#a37d0dd9e0149ecb63c10d8bbb64d7188">More...</a><br/></td></tr>
+<tr class="separator:a37d0dd9e0149ecb63c10d8bbb64d7188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ec1c1f7564884be94ecde8dc56f0ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a19ec1c1f7564884be94ecde8dc56f0ab">setRotaryParameters</a> (float startAngleRadians, float endAngleRadians, bool stopAtEnd) noexcept</td></tr>
+<tr class="memdesc:a19ec1c1f7564884be94ecde8dc56f0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the properties of a rotary slider.  <a href="#a19ec1c1f7564884be94ecde8dc56f0ab">More...</a><br/></td></tr>
+<tr class="separator:a19ec1c1f7564884be94ecde8dc56f0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72f9e6603bb35fd94fdba5f8536827c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlider_1_1RotaryParameters.html">RotaryParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#ac72f9e6603bb35fd94fdba5f8536827c">getRotaryParameters</a> () const noexcept</td></tr>
+<tr class="memdesc:ac72f9e6603bb35fd94fdba5f8536827c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the properties of a rotary slider.  <a href="#ac72f9e6603bb35fd94fdba5f8536827c">More...</a><br/></td></tr>
+<tr class="separator:ac72f9e6603bb35fd94fdba5f8536827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdd8cdb79dcdb06b1e97a21ff2a6c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a4bdd8cdb79dcdb06b1e97a21ff2a6c4b">setMouseDragSensitivity</a> (int distanceForFullScaleDrag)</td></tr>
 <tr class="memdesc:a4bdd8cdb79dcdb06b1e97a21ff2a6c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distance the mouse has to move to drag the slider across the full extent of its range.  <a href="#a4bdd8cdb79dcdb06b1e97a21ff2a6c4b">More...</a><br/></td></tr>
 <tr class="separator:a4bdd8cdb79dcdb06b1e97a21ff2a6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,15 +249,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af15caa58f5f70c0f9b52aa5d07604580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#af15caa58f5f70c0f9b52aa5d07604580">getVelocityModeIsSwappable</a> () const noexcept</td></tr>
 <tr class="memdesc:af15caa58f5f70c0f9b52aa5d07604580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the velocity user key setting.  <a href="#af15caa58f5f70c0f9b52aa5d07604580">More...</a><br/></td></tr>
 <tr class="separator:af15caa58f5f70c0f9b52aa5d07604580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3253bce613f1770688380e4fcc91b964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964">setSkewFactor</a> (double factor)</td></tr>
-<tr class="memdesc:a3253bce613f1770688380e4fcc91b964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up a skew factor to alter the way values are distributed.  <a href="#a3253bce613f1770688380e4fcc91b964">More...</a><br/></td></tr>
-<tr class="separator:a3253bce613f1770688380e4fcc91b964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8fe3610e7198bd4c1f2804736bfbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2">setSkewFactor</a> (double factor, bool symmetricSkew=false)</td></tr>
+<tr class="memdesc:aba8fe3610e7198bd4c1f2804736bfbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up a skew factor to alter the way values are distributed.  <a href="#aba8fe3610e7198bd4c1f2804736bfbf2">More...</a><br/></td></tr>
+<tr class="separator:aba8fe3610e7198bd4c1f2804736bfbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d948c662c1f636810d3125d8b3f0d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47">setSkewFactorFromMidPoint</a> (double sliderValueToShowAtMidPoint)</td></tr>
 <tr class="memdesc:a2d948c662c1f636810d3125d8b3f0d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up a skew factor to alter the way values are distributed.  <a href="#a2d948c662c1f636810d3125d8b3f0d47">More...</a><br/></td></tr>
 <tr class="separator:a2d948c662c1f636810d3125d8b3f0d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803021cfc12e4ff54e9b598dabdd8761"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761">getSkewFactor</a> () const noexcept</td></tr>
 <tr class="memdesc:a803021cfc12e4ff54e9b598dabdd8761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current skew factor.  <a href="#a803021cfc12e4ff54e9b598dabdd8761">More...</a><br/></td></tr>
 <tr class="separator:a803021cfc12e4ff54e9b598dabdd8761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015f98d91fd3f30d74d7f3cce2e9996c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a015f98d91fd3f30d74d7f3cce2e9996c">isSymmetricSkew</a> () const noexcept</td></tr>
+<tr class="memdesc:a015f98d91fd3f30d74d7f3cce2e9996c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the whether the skew is symmetric from the midpoint to both sides.  <a href="#a015f98d91fd3f30d74d7f3cce2e9996c">More...</a><br/></td></tr>
+<tr class="separator:a015f98d91fd3f30d74d7f3cce2e9996c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188fa57db0d90f931529dc367e76b9f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a188fa57db0d90f931529dc367e76b9f5">setIncDecButtonsMode</a> (<a class="el" href="classSlider.html#a0ceaddd29269b6ec5a41f35bbb2ff74a">IncDecButtonMode</a> mode)</td></tr>
 <tr class="memdesc:a188fa57db0d90f931529dc367e76b9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the style is IncDecButtons, this lets you turn on a mode where the mouse can be dragged on the buttons to drag the values.  <a href="#a188fa57db0d90f931529dc367e76b9f5">More...</a><br/></td></tr>
 <tr class="separator:a188fa57db0d90f931529dc367e76b9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,7 +381,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a532774d3294a058784f7d4291b33b720"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a532774d3294a058784f7d4291b33b720">getValueFromText</a> (const <a class="el" href="classString.html">String</a> &amp;text)</td></tr>
 <tr class="memdesc:a532774d3294a058784f7d4291b33b720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses can override this to convert a text string to a value.  <a href="#a532774d3294a058784f7d4291b33b720">More...</a><br/></td></tr>
 <tr class="separator:a532774d3294a058784f7d4291b33b720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1693166d0815f812202b1a3a6eb202"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a5a1693166d0815f812202b1a3a6eb202">getTextFromValue</a> (double value)</td></tr>
+<tr class="memitem:a5a1693166d0815f812202b1a3a6eb202"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a5a1693166d0815f812202b1a3a6eb202">getTextFromValue</a> (double <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="memdesc:a5a1693166d0815f812202b1a3a6eb202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the slider's current value into a text string.  <a href="#a5a1693166d0815f812202b1a3a6eb202">More...</a><br/></td></tr>
 <tr class="separator:a5a1693166d0815f812202b1a3a6eb202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac416a101b5d9a504f61e2f50dc593f61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#ac416a101b5d9a504f61e2f50dc593f61">setTextValueSuffix</a> (const <a class="el" href="classString.html">String</a> &amp;suffix)</td></tr>
@@ -385,10 +396,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6762e2206ad7e41cb8d6189b244d91f5"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a6762e2206ad7e41cb8d6189b244d91f5">proportionOfLengthToValue</a> (double proportion)</td></tr>
 <tr class="memdesc:a6762e2206ad7e41cb8d6189b244d91f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a user-defined mapping of distance along the slider to its value.  <a href="#a6762e2206ad7e41cb8d6189b244d91f5">More...</a><br/></td></tr>
 <tr class="separator:a6762e2206ad7e41cb8d6189b244d91f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0549ec352b8dca4ca4ba1afa43263370"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a0549ec352b8dca4ca4ba1afa43263370">valueToProportionOfLength</a> (double value)</td></tr>
+<tr class="memitem:a0549ec352b8dca4ca4ba1afa43263370"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a0549ec352b8dca4ca4ba1afa43263370">valueToProportionOfLength</a> (double <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)</td></tr>
 <tr class="memdesc:a0549ec352b8dca4ca4ba1afa43263370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a user-defined mapping of value to the position of the slider along its length.  <a href="#a0549ec352b8dca4ca4ba1afa43263370">More...</a><br/></td></tr>
 <tr class="separator:a0549ec352b8dca4ca4ba1afa43263370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910bc26e8d0153422a92147b25c33c70"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a910bc26e8d0153422a92147b25c33c70">getPositionOfValue</a> (double value) const </td></tr>
+<tr class="memitem:a910bc26e8d0153422a92147b25c33c70"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a910bc26e8d0153422a92147b25c33c70">getPositionOfValue</a> (double <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) const </td></tr>
 <tr class="memdesc:a910bc26e8d0153422a92147b25c33c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the X or Y coordinate of a value along the slider's length.  <a href="#a910bc26e8d0153422a92147b25c33c70">More...</a><br/></td></tr>
 <tr class="separator:a910bc26e8d0153422a92147b25c33c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ce89d390ea3de9ab58aae59db1d03b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#aa8ce89d390ea3de9ab58aae59db1d03b">snapValue</a> (double attemptedValue, <a class="el" href="classSlider.html#a42fd96ac0f5dca7e6942022c9a75cbde">DragMode</a> dragMode)</td></tr>
@@ -632,7 +643,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d">getNumChildComponents</a> () const noexcept</td></tr>
 <tr class="memdesc:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of child components that this component contains.  <a href="#afa33580cab86ac3b80c9c1f9d85ad81d">More...</a><br/></td></tr>
 <tr class="separator:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f">getChildComponent</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f">getChildComponent</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of this component's child components, by it index.  <a href="#a9a86caea9a03be32d7a6b6dfbd09d09f">More...</a><br/></td></tr>
 <tr class="separator:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00c1dcf8a0a926da17daef178ca63426 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426">getIndexOfChildComponent</a> (const <a class="el" href="classComponent.html">Component</a> *child) const noexcept</td></tr>
@@ -864,9 +875,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a0944e1751f32260afd5bd2a9fcd1a5b7">isMouseButtonDown</a> () const </td></tr>
 <tr class="memdesc:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mouse button is currently held down in this component.  <a href="#a0944e1751f32260afd5bd2a9fcd1a5b7">More...</a><br/></td></tr>
 <tr class="separator:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5cedb030a2bfae99dece95d8a10d0dcb">isMouseOverOrDragging</a> () const </td></tr>
-<tr class="memdesc:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the mouse is over this component, or if it's being dragged in this component.  <a href="#a5cedb030a2bfae99dece95d8a10d0dcb">More...</a><br/></td></tr>
-<tr class="separator:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a39e6cb0b07bf16648daa51b2c75be983">isMouseOverOrDragging</a> (bool includeChildren=false) const </td></tr>
+<tr class="memdesc:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the mouse is over this component, or if it's being dragged in this component.  <a href="#a39e6cb0b07bf16648daa51b2c75be983">More...</a><br/></td></tr>
+<tr class="separator:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#afe14919a4a06747a9b7c98e2cff0ef3a">getMouseXYRelative</a> () const </td></tr>
 <tr class="memdesc:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mouse's current position, relative to this component.  <a href="#afe14919a4a06747a9b7c98e2cff0ef3a">More...</a><br/></td></tr>
 <tr class="separator:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -903,9 +914,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a686e2440370ff4a97c7a7851907be650">exitModalState</a> (int returnValue)</td></tr>
 <tr class="memdesc:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a component's modal state.  <a href="#a686e2440370ff4a97c7a7851907be650">More...</a><br/></td></tr>
 <tr class="separator:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7">isCurrentlyModal</a> () const noexcept</td></tr>
-<tr class="memdesc:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this component is the modal one.  <a href="#a92d58bf2eca02d409e9b095af066edf7">More...</a><br/></td></tr>
-<tr class="separator:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267">isCurrentlyModal</a> (bool onlyConsiderForemostModalComponent=true) const noexcept</td></tr>
+<tr class="memdesc:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this component is the modal one.  <a href="#a489ebde1970d6a2571bae5152b396267">More...</a><br/></td></tr>
+<tr class="separator:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9">isCurrentlyBlockedByAnotherModalComponent</a> () const </td></tr>
 <tr class="memdesc:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether there's a modal component somewhere that's stopping this one from receiving messages.  <a href="#ad18ec802aa575cf016a7c62f12e0edf9">More...</a><br/></td></tr>
 <tr class="separator:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -997,7 +1008,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static int <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#ae58129a62eda13ca8987072cd9c62359">getNumCurrentlyModalComponents</a> () noexcept</td></tr>
 <tr class="memdesc:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of components that are currently in a modal state.  <a href="#ae58129a62eda13ca8987072cd9c62359">More...</a><br/></td></tr>
 <tr class="separator:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComponent.html">Component</a> *<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3">getCurrentlyModalComponent</a> (int index=0) noexcept</td></tr>
+<tr class="memitem:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComponent.html">Component</a> *<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3">getCurrentlyModalComponent</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>=0) noexcept</td></tr>
 <tr class="memdesc:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the components that are currently modal.  <a href="#af281d9bc711b70c43ae5891a35165cb3">More...</a><br/></td></tr>
 <tr class="separator:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classSettableTooltipClient"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSettableTooltipClient')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classSettableTooltipClient.html">SettableTooltipClient</a></td></tr>
@@ -1024,7 +1035,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The types of slider available. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6b6917dd3753c7552778977733f0b9ef" title="Changes the type of slider interface being used. ">setSliderStyle</a>, <a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6b6917dd3753c7552778977733f0b9ef" title="Changes the type of slider interface being used. ">setSliderStyle</a>, <a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888a0fa5cefcd508c8f26ac9a458272844f9"></a>LinearHorizontal</em>&#160;</td><td class="fielddoc">
 <p>A traditional horizontal slider. </p>
@@ -1039,19 +1050,19 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888a2043125f6f74c8ceae38baf3fb514f18"></a>Rotary</em>&#160;</td><td class="fielddoc">
 <p>A rotary control that you move by dragging the mouse in a circular motion, like a knob. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888a8c359e2cb456e39665bec067273df5fe"></a>RotaryHorizontalDrag</em>&#160;</td><td class="fielddoc">
 <p>A rotary control that you move by dragging the mouse left-to-right. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888a46ac50fdae2ac4df9a2f3ad630589224"></a>RotaryVerticalDrag</em>&#160;</td><td class="fielddoc">
 <p>A rotary control that you move by dragging the mouse up-and-down. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888a6d72c2ed67c43d22785fe271d3684075"></a>RotaryHorizontalVerticalDrag</em>&#160;</td><td class="fielddoc">
 <p>A rotary control that you move by dragging the mouse up-and-down or left-to-right. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af1caee82552143dd9ff0fc9f0cdc0888adcb7bc12a443e3c6cdf598ab3c5e2171"></a>IncDecButtons</em>&#160;</td><td class="fielddoc">
 <p>A pair of buttons that increment or decrement the slider's value by the increment set in <a class="el" href="classSlider.html#a9fbc23e67deb4a18d172c357a7cff14c" title="Sets the limits that the slider&#39;s value can take. ">setRange()</a>. </p>
@@ -1317,7 +1328,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a6fad4379a38262e28820213c7ffd26fb" title="Changes the properties of a rotary slider. ">setRotaryParameters</a>, <a class="el" href="classSlider.html#a59b616e79738d3adb83093dc532822d0" title="Changes the way the mouse is used when dragging the slider. ">setVelocityBasedMode</a>, </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a37d0dd9e0149ecb63c10d8bbb64d7188" title="Changes the properties of a rotary slider. ">setRotaryParameters</a>, <a class="el" href="classSlider.html#a59b616e79738d3adb83093dc532822d0" title="Changes the way the mouse is used when dragging the slider. ">setVelocityBasedMode</a>, </dd></dl>
 
 </div>
 </div>
@@ -1347,9 +1358,38 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6fad4379a38262e28820213c7ffd26fb"></a>
+<a class="anchor" id="a37d0dd9e0149ecb63c10d8bbb64d7188"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slider::setRotaryParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSlider_1_1RotaryParameters.html">RotaryParameters</a>&#160;</td>
+          <td class="paramname"><em>newParameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the properties of a rotary slider. </p>
+
+</div>
+</div>
+<a class="anchor" id="a19ec1c1f7564884be94ecde8dc56f0ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Slider::setRotaryParameters </td>
@@ -1375,17 +1415,39 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Changes the properties of a rotary slider. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">startAngleRadians</td><td>the angle (in radians, clockwise from the top) at which the slider's minimum value is represented </td></tr>
-    <tr><td class="paramname">endAngleRadians</td><td>the angle (in radians, clockwise from the top) at which the slider's maximum value is represented. This must be greater than startAngleRadians </td></tr>
-    <tr><td class="paramname">stopAtEnd</td><td>determines what happens when a circular drag action rotates beyond the minimum or maximum angle. If true, the value will stop changing until the mouse moves back the way it came; if false, the value will snap back to the value nearest to the mouse. Note that this has no effect if the drag mode is vertical or horizontal. </td></tr>
-  </table>
-  </dd>
-</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac72f9e6603bb35fd94fdba5f8536827c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSlider_1_1RotaryParameters.html">RotaryParameters</a> Slider::getRotaryParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the properties of a rotary slider. </p>
 
 </div>
 </div>
@@ -1633,7 +1695,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3253bce613f1770688380e4fcc91b964"></a>
+<a class="anchor" id="aba8fe3610e7198bd4c1f2804736bfbf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1641,8 +1703,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void Slider::setSkewFactor </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>symmetricSkew</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1650,8 +1722,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Sets up a skew factor to alter the way values are distributed. </p>
 <p>You may want to use a range of values on the slider where more accuracy is required towards one end of the range, so this will logarithmically spread the values across the length of the slider.</p>
 <p>If the factor is &lt; 1.0, the lower end of the range will fill more of the slider's length; if the factor is &gt; 1.0, the upper end of the range will be expanded instead. A factor of 1.0 doesn't skew it at all.</p>
+<p>If symmetricSkew is true, the skew factor applies from the middle of the slider to each of its ends.</p>
 <p>To set the skew position by using a mid-point, use the <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint()</a> method instead.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761" title="Returns the current skew factor. ">getSkewFactor</a>, <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761" title="Returns the current skew factor. ">getSkewFactor</a>, <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint</a>, <a class="el" href="classSlider.html#a015f98d91fd3f30d74d7f3cce2e9996c" title="Returns the whether the skew is symmetric from the midpoint to both sides. ">isSymmetricSkew</a> </dd></dl>
 
 </div>
 </div>
@@ -1671,7 +1744,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets up a skew factor to alter the way values are distributed. </p>
 <p>This allows you to specify the slider value that should appear in the centre of the slider's visible range.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor</a>, <a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761" title="Returns the current skew factor. ">getSkewFactor</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor</a>, <a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761" title="Returns the current skew factor. ">getSkewFactor</a>, <a class="el" href="classSlider.html#a015f98d91fd3f30d74d7f3cce2e9996c" title="Returns the whether the skew is symmetric from the midpoint to both sides. ">isSymmetricSkew</a> </dd></dl>
 
 </div>
 </div>
@@ -1698,7 +1771,34 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the current skew factor. </p>
 <p>See setSkewFactor for more info. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor</a>, <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor</a>, <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint</a>, <a class="el" href="classSlider.html#a015f98d91fd3f30d74d7f3cce2e9996c" title="Returns the whether the skew is symmetric from the midpoint to both sides. ">isSymmetricSkew</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a015f98d91fd3f30d74d7f3cce2e9996c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Slider::isSymmetricSkew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the whether the skew is symmetric from the midpoint to both sides. </p>
+<p>See setSkewFactor for more info. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSlider.html#a803021cfc12e4ff54e9b598dabdd8761" title="Returns the current skew factor. ">getSkewFactor</a>, <a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor</a>, <a class="el" href="classSlider.html#a2d948c662c1f636810d3125d8b3f0d47" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactorFromMidPoint</a> </dd></dl>
 
 </div>
 </div>
@@ -2883,7 +2983,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allows a user-defined mapping of distance along the slider to its value. </p>
-<p>The default implementation for this performs the skewing operation that can be set up in the <a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor()</a> method. Override it if you need some kind of custom mapping instead, but make sure you also implement the inverse function in <a class="el" href="classSlider.html#a0549ec352b8dca4ca4ba1afa43263370" title="Allows a user-defined mapping of value to the position of the slider along its length. ">valueToProportionOfLength()</a>.</p>
+<p>The default implementation for this performs the skewing operation that can be set up in the <a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor()</a> method. Override it if you need some kind of custom mapping instead, but make sure you also implement the inverse function in <a class="el" href="classSlider.html#a0549ec352b8dca4ca4ba1afa43263370" title="Allows a user-defined mapping of value to the position of the slider along its length. ">valueToProportionOfLength()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">proportion</td><td>a value 0 to 1.0, indicating a distance along the slider </td></tr>
@@ -2918,7 +3018,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allows a user-defined mapping of value to the position of the slider along its length. </p>
-<p>The default implementation for this performs the skewing operation that can be set up in the <a class="el" href="classSlider.html#a3253bce613f1770688380e4fcc91b964" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor()</a> method. Override it if you need some kind of custom mapping instead, but make sure you also implement the inverse function in <a class="el" href="classSlider.html#a6762e2206ad7e41cb8d6189b244d91f5" title="Allows a user-defined mapping of distance along the slider to its value. ">proportionOfLengthToValue()</a>.</p>
+<p>The default implementation for this performs the skewing operation that can be set up in the <a class="el" href="classSlider.html#aba8fe3610e7198bd4c1f2804736bfbf2" title="Sets up a skew factor to alter the way values are distributed. ">setSkewFactor()</a> method. Override it if you need some kind of custom mapping instead, but make sure you also implement the inverse function in <a class="el" href="classSlider.html#a6762e2206ad7e41cb8d6189b244d91f5" title="Allows a user-defined mapping of distance along the slider to its value. ">proportionOfLengthToValue()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>a valid slider value, between the range of values specified in <a class="el" href="classSlider.html#a9fbc23e67deb4a18d172c357a7cff14c" title="Sets the limits that the slider&#39;s value can take. ">setRange()</a> </td></tr>
@@ -3435,12 +3535,17 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="juce__Slider_8h.html">juce_Slider.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

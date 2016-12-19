@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b375a7ce46e2d3398ae28cb4e778682"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1OSCBundle.html#a9b375a7ce46e2d3398ae28cb4e778682">size</a> () const noexcept</td></tr>
 <tr class="memdesc:a9b375a7ce46e2d3398ae28cb4e778682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements contained in the bundle.  <a href="#a9b375a7ce46e2d3398ae28cb4e778682">More...</a><br/></td></tr>
 <tr class="separator:a9b375a7ce46e2d3398ae28cb4e778682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c731c9e1d4960e01f1487eb5d3fa0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1OSCBundle.html#a82c731c9e1d4960e01f1487eb5d3fa0f">empty</a> () const noexcept</td></tr>
-<tr class="memdesc:a82c731c9e1d4960e01f1487eb5d3fa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bundle contains no elements; false otherwise.  <a href="#a82c731c9e1d4960e01f1487eb5d3fa0f">More...</a><br/></td></tr>
-<tr class="separator:a82c731c9e1d4960e01f1487eb5d3fa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469b7467b1f12c1a35c398595999046a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1OSCBundle.html#a469b7467b1f12c1a35c398595999046a">isEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:a469b7467b1f12c1a35c398595999046a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bundle contains no elements; false otherwise.  <a href="#a469b7467b1f12c1a35c398595999046a">More...</a><br/></td></tr>
+<tr class="separator:a469b7467b1f12c1a35c398595999046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa54e23aa90147a0c0ca40a2ecfb85819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjuce_1_1OSCBundle_1_1Element.html">OSCBundle::Element</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1OSCBundle.html#aa54e23aa90147a0c0ca40a2ecfb85819">operator[]</a> (const int i) const noexcept</td></tr>
 <tr class="memdesc:aa54e23aa90147a0c0ca40a2ecfb85819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the <a class="el" href="classjuce_1_1OSCBundle.html" title="An OSC bundle. ">OSCBundle</a> element at index i in this bundle.  <a href="#aa54e23aa90147a0c0ca40a2ecfb85819">More...</a><br/></td></tr>
 <tr class="separator:aa54e23aa90147a0c0ca40a2ecfb85819"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a82c731c9e1d4960e01f1487eb5d3fa0f"></a>
+<a class="anchor" id="a469b7467b1f12c1a35c398595999046a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool juce::OSCBundle::empty </td>
+          <td class="memname">bool juce::OSCBundle::isEmpty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -301,7 +301,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a reference to the <a class="el" href="classjuce_1_1OSCBundle.html" title="An OSC bundle. ">OSCBundle</a> element at index i in this bundle. </p>
-<p>This method does not check the range and results in undefined behavour in case i &lt; 0 or i &gt;= <a class="el" href="classjuce_1_1OSCBundle.html#a9b375a7ce46e2d3398ae28cb4e778682" title="Returns the number of elements contained in the bundle. ">size()</a>. </p>
+<p>This method does not check the range and results in undefined behaviour in case i &lt; 0 or i &gt;= <a class="el" href="classjuce_1_1OSCBundle.html#a9b375a7ce46e2d3398ae28cb4e778682" title="Returns the number of elements contained in the bundle. ">size()</a>. </p>
 
 </div>
 </div>
@@ -378,12 +378,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__osc_8h.html">juce_osc.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

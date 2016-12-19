@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['textentryboxposition',['TextEntryBoxPosition',['../classSlider.html#ab6d7dff67151c029b9cb53fc40b4412f',1,'Slider']]],
-  ['titlebarbuttons',['TitleBarButtons',['../classDocumentWindow.html#a104d68bc145157c6ce79169a36fc3c31',1,'DocumentWindow']]],
-  ['tokentype',['TokenType',['../classCPlusPlusCodeTokeniser.html#a757e9a2599a0e15b536754f99aeb0257',1,'CPlusPlusCodeTokeniser::TokenType()'],['../classLuaTokeniser.html#a6acf67b2015d8048909908ad2aa1f920',1,'LuaTokeniser::TokenType()'],['../classXmlTokeniser.html#a1d3dd4eb8d41b8e03bececf10cc11f10',1,'XmlTokeniser::TokenType()']]],
-  ['toolbareditingmode',['ToolbarEditingMode',['../classToolbarItemComponent.html#ad499f9f48a5149685ab8da86244fd4e4',1,'ToolbarItemComponent']]],
-  ['toolbaritemstyle',['ToolbarItemStyle',['../classToolbar.html#a20676e8832b03e18af29fd3e009d7f56',1,'Toolbar']]],
-  ['type',['Type',['../classExpression.html#aa416ac50fdbe8bdea9c59f5c78f0c85b',1,'Expression::Type()'],['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65b',1,'RelativeCoordinate::StandardStrings::Type()']]],
-  ['typesoffiletofind',['TypesOfFileToFind',['../classFile.html#a2e3d1ed8a9022434f3ddb7d34b24198c',1,'File']]]
+  ['saveresult',['SaveResult',['../classFileBasedDocument.html#a89d417326aed46fb561c599265e426d2',1,'FileBasedDocument']]],
+  ['slidedirection',['SlideDirection',['../structjuce_1_1DrumPadGridProgram.html#acd1f16a328fcc468ac6b46446b3b4226',1,'juce::DrumPadGridProgram::SlideDirection()'],['../structDrumPadGridProgram.html#ae0883fdca11734f26ab431b89c52255f',1,'DrumPadGridProgram::SlideDirection()']]],
+  ['sliderstyle',['SliderStyle',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888',1,'Slider']]],
+  ['smptetimecodetype',['SmpteTimecodeType',['../classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96ab',1,'MidiMessage']]],
+  ['sortmethod',['SortMethod',['../classKnownPluginList.html#a6beabfccc86796527f663f30f3514098',1,'KnownPluginList']]],
+  ['specialitemids',['SpecialItemIds',['../classToolbarItemFactory.html#a415ffaa38b6306574ad6777ccf6d2ac4',1,'ToolbarItemFactory']]],
+  ['speciallocationtype',['SpecialLocationType',['../classFile.html#a3e19cafabb03c5838160263a6e76313d',1,'File']]],
+  ['standardcursortype',['StandardCursorType',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97',1,'MouseCursor']]],
+  ['storageformat',['StorageFormat',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05e',1,'PropertiesFile']]],
+  ['streamflags',['StreamFlags',['../classChildProcess.html#a9e7be158550b4d2a470e4cceef501892',1,'ChildProcess']]],
+  ['styleflags',['StyleFlags',['../classComponentPeer.html#a94a21f91c61f8211774d6f43243a6ddc',1,'ComponentPeer']]]
 ];

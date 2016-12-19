@@ -106,12 +106,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a258f09e3c61c120d7c35e2c66bddd48a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#a258f09e3c61c120d7c35e2c66bddd48a">associateBufferTo</a> (Steinberg::Vst::AudioBusBuffers &amp;vstBuffers, <a class="el" href="structVST3BufferExchange.html#a5aa67a699a8f31a5098536f335c43eb4">Bus</a> &amp;bus, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;buffer, int numChannels, int channelStartOffset, int sampleOffset=0)</td></tr>
 <tr class="memdesc:a258f09e3c61c120d7c35e2c66bddd48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a series of AudioSampleBuffer's channels to an AudioBusBuffers'.  <a href="#a258f09e3c61c120d7c35e2c66bddd48a">More...</a><br/></td></tr>
 <tr class="separator:a258f09e3c61c120d7c35e2c66bddd48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f25aca59b8af5aaf17846dcafb5ced2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#a7f25aca59b8af5aaf17846dcafb5ced2">mapArrangementToBusses</a> (int &amp;channelIndexOffset, int index, <a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, Steinberg::Vst::SpeakerArrangement arrangement, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
-<tr class="separator:a7f25aca59b8af5aaf17846dcafb5ced2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9bde460da866df2f686ea1923602b81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#ab9bde460da866df2f686ea1923602b81">mapBufferToBusses</a> (<a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, const <a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::SpeakerArrangement &gt; &amp;arrangements, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
-<tr class="separator:ab9bde460da866df2f686ea1923602b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21bdfcdf7540fc6e35700d313f0185f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#ab21bdfcdf7540fc6e35700d313f0185f">mapBufferToBusses</a> (<a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, Steinberg::Vst::IAudioProcessor &amp;processor, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, bool isInput, int numBusses, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
-<tr class="separator:ab21bdfcdf7540fc6e35700d313f0185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef619a230b18ed73332f85a6e7e53b3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#aef619a230b18ed73332f85a6e7e53b3f">mapArrangementToBuses</a> (int &amp;channelIndexOffset, int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, <a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;arrangement, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
+<tr class="separator:aef619a230b18ed73332f85a6e7e53b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fab60c5ce04946d6ae969134879d1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#ae3fab60c5ce04946d6ae969134879d1c">mapBufferToBuses</a> (<a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &gt; &amp;arrangements, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
+<tr class="separator:ae3fab60c5ce04946d6ae969134879d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e84948a416d4960906dce0f854debfa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVST3BufferExchange.html#a5e84948a416d4960906dce0f854debfa">mapBufferToBuses</a> (<a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, Steinberg::Vst::IAudioProcessor &amp;processor, <a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> &amp;busMapToUse, bool isInput, int numBuses, <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;source)</td></tr>
+<tr class="separator:a5e84948a416d4960906dce0f854debfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a5aa67a699a8f31a5098536f335c43eb4"></a>
@@ -278,11 +278,11 @@ template&lt;typename FloatType&gt; </div>
 <p>Assigns a series of AudioSampleBuffer's channels to an AudioBusBuffers'. </p>
 <dl class="section warning"><dt>Warning</dt><dd>For speed, does not check the channel count and offsets according to the AudioSampleBuffer </dd></dl>
 
-<p>Referenced by <a class="el" href="structVST3BufferExchange.html#a7f25aca59b8af5aaf17846dcafb5ced2">VST3BufferExchange&lt; float &gt;::mapArrangementToBusses()</a>.</p>
+<p>Referenced by <a class="el" href="structVST3BufferExchange.html#aef619a230b18ed73332f85a6e7e53b3f">VST3BufferExchange&lt; float &gt;::mapArrangementToBuses()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7f25aca59b8af5aaf17846dcafb5ced2"></a>
+<a class="anchor" id="aef619a230b18ed73332f85a6e7e53b3f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -292,7 +292,7 @@ template&lt;typename FloatType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapArrangementToBusses </td>
+          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapArrangementToBuses </td>
           <td>(</td>
           <td class="paramtype">int &amp;&#160;</td>
           <td class="paramname"><em>channelIndexOffset</em>, </td>
@@ -318,7 +318,7 @@ template&lt;typename FloatType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Steinberg::Vst::SpeakerArrangement&#160;</td>
+          <td class="paramtype">const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;&#160;</td>
           <td class="paramname"><em>arrangement</em>, </td>
         </tr>
         <tr>
@@ -340,11 +340,11 @@ template&lt;typename FloatType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="structVST3BufferExchange.html#ab9bde460da866df2f686ea1923602b81">VST3BufferExchange&lt; float &gt;::mapBufferToBusses()</a>.</p>
+<p>Referenced by <a class="el" href="structVST3BufferExchange.html#ae3fab60c5ce04946d6ae969134879d1c">VST3BufferExchange&lt; float &gt;::mapBufferToBuses()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab9bde460da866df2f686ea1923602b81"></a>
+<a class="anchor" id="ae3fab60c5ce04946d6ae969134879d1c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -354,7 +354,7 @@ template&lt;typename FloatType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapBufferToBusses </td>
+          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapBufferToBuses </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;&#160;</td>
           <td class="paramname"><em>result</em>, </td>
@@ -368,7 +368,7 @@ template&lt;typename FloatType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::SpeakerArrangement &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>arrangements</em>, </td>
         </tr>
         <tr>
@@ -392,7 +392,7 @@ template&lt;typename FloatType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab21bdfcdf7540fc6e35700d313f0185f"></a>
+<a class="anchor" id="a5e84948a416d4960906dce0f854debfa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -402,7 +402,7 @@ template&lt;typename FloatType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapBufferToBusses </td>
+          <td class="memname">static void <a class="el" href="structVST3BufferExchange.html">VST3BufferExchange</a>&lt; FloatType &gt;::mapBufferToBuses </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classArray.html">Array</a>&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;&#160;</td>
           <td class="paramname"><em>result</em>, </td>
@@ -429,7 +429,7 @@ template&lt;typename FloatType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numBusses</em>, </td>
+          <td class="paramname"><em>numBuses</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -456,12 +456,17 @@ template&lt;typename FloatType&gt; </div>
 <li><a class="el" href="juce__VST3Common_8h.html">juce_VST3Common.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

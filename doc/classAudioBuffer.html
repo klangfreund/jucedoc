@@ -145,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2daca36339708bc76e01fea7b7b3059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#ab2daca36339708bc76e01fea7b7b3059">setDataToReferTo</a> (Type **dataToReferTo, const int newNumChannels, const int newNumSamples) noexcept</td></tr>
 <tr class="memdesc:ab2daca36339708bc76e01fea7b7b3059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this buffer point to a pre-allocated set of channel data arrays.  <a href="#ab2daca36339708bc76e01fea7b7b3059">More...</a><br/></td></tr>
 <tr class="separator:ab2daca36339708bc76e01fea7b7b3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a61c34a9502892a50112c767f562c8"><td class="memTemplParams" colspan="2">template&lt;typename OtherType &gt; </td></tr>
-<tr class="memitem:a04a61c34a9502892a50112c767f562c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">makeCopyOf</a> (const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherType &gt; &amp;other)</td></tr>
-<tr class="memdesc:a04a61c34a9502892a50112c767f562c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes this buffer to match the given one, and copies all of its content across.  <a href="#a04a61c34a9502892a50112c767f562c8">More...</a><br/></td></tr>
-<tr class="separator:a04a61c34a9502892a50112c767f562c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f19397f068366e13aa53a0b6f92913"><td class="memTemplParams" colspan="2">template&lt;typename OtherType &gt; </td></tr>
+<tr class="memitem:a88f19397f068366e13aa53a0b6f92913"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">makeCopyOf</a> (const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherType &gt; &amp;other, bool avoidReallocating=false)</td></tr>
+<tr class="memdesc:a88f19397f068366e13aa53a0b6f92913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes this buffer to match the given one, and copies all of its content across.  <a href="#a88f19397f068366e13aa53a0b6f92913">More...</a><br/></td></tr>
+<tr class="separator:a88f19397f068366e13aa53a0b6f92913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dcadc4a02b048ae99166b5b306e552a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a7dcadc4a02b048ae99166b5b306e552a">clear</a> () noexcept</td></tr>
 <tr class="memdesc:a7dcadc4a02b048ae99166b5b306e552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the samples in all channels.  <a href="#a7dcadc4a02b048ae99166b5b306e552a">More...</a><br/></td></tr>
 <tr class="separator:a7dcadc4a02b048ae99166b5b306e552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,7 +525,7 @@ template&lt;typename Type&gt; </div>
 <p>Returns the number of channels of audio data that this buffer contains. </p>
 <dl class="section see"><dt>See Also</dt><dd>getSampleData </dd></dl>
 
-<p>Referenced by <a class="el" href="structVST3BufferExchange.html#a258f09e3c61c120d7c35e2c66bddd48a">VST3BufferExchange&lt; float &gt;::associateBufferTo()</a>, and <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
+<p>Referenced by <a class="el" href="structVST3BufferExchange.html#a258f09e3c61c120d7c35e2c66bddd48a">VST3BufferExchange&lt; float &gt;::associateBufferTo()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aeac6d2651e2880146cfe7a78dda9cc8d">AudioUnitHelpers::CoreAudioBufferList::getBuffer()</a>, <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#a115ccebe2a6ccbe501732ab209f4f96c">AudioUnitHelpers::CoreAudioBufferList::pop()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa24515fd83834e0734ee67cd7d20dcea">AudioUnitHelpers::CoreAudioBufferList::push()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>, and <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#adc7e8afd6102e99e0b5d18a97cb3c8cb">AudioUnitHelpers::CoreAudioBufferList::setBuffer()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +555,7 @@ template&lt;typename Type&gt; </div>
 <p>Returns the number of samples allocated in each of the buffer's channels. </p>
 <dl class="section see"><dt>See Also</dt><dd>getSampleData </dd></dl>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioProcessor.html#a356fa03d08448f40384f0194e943403b">AudioProcessor::getBusBuffer()</a>, and <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
 
 </div>
 </div>
@@ -586,7 +586,7 @@ template&lt;typename Type&gt; </div>
 <p>Returns a pointer to an array of read-only samples in one of the buffer's channels. </p>
 <p>For speed, this doesn't check whether the channel number is out of range, so be careful when using it! If you need to write to the data, do NOT call this method and const_cast the result! Instead, you must call getWritePointer so that the buffer knows you're planning on modifying the data. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
 
 </div>
 </div>
@@ -753,6 +753,8 @@ template&lt;typename Type&gt; </div>
 <p>Returns an array of pointers to the channels in the buffer. </p>
 <p>Don't modify any of the pointers that are returned, and bear in mind that these will become invalid if the buffer is resized. </p>
 
+<p>Referenced by <a class="el" href="classAudioProcessor.html#a356fa03d08448f40384f0194e943403b">AudioProcessor::getBusBuffer()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a05e3b4cec4a2c446df87de34c2788f7b"></a>
@@ -814,7 +816,7 @@ template&lt;typename Type&gt; </div>
 <p>If avoidReallocating is true, then changing the buffer's size won't reduce the amount of memory that is currently allocated (but it will still increase it if the new size is bigger than the amount it currently has). If this is false, then a new allocation will be done so that the buffer uses takes up the minimum amount of memory that it needs.</p>
 <p>If the required memory can't be allocated, this will throw a std::bad_alloc exception. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, and <a class="el" href="classAudioBuffer.html#a60a3e64901c3e9ddeca5512ad8d82bd7">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, <a class="el" href="classAudioBuffer.html#a60a3e64901c3e9ddeca5512ad8d82bd7">AudioBuffer&lt; float &gt;::operator=()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#a7e4cd6becddb903c974fb6e643afe8b4">AudioUnitHelpers::CoreAudioBufferList::prepare()</a>, and <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#ac802ae2d716fab534a42a53313648e7d">AudioUnitHelpers::CoreAudioBufferList::release()</a>.</p>
 
 </div>
 </div>
@@ -870,9 +872,11 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 
+<p>Referenced by <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aeac6d2651e2880146cfe7a78dda9cc8d">AudioUnitHelpers::CoreAudioBufferList::getBuffer()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a04a61c34a9502892a50112c767f562c8"></a>
+<a class="anchor" id="a88f19397f068366e13aa53a0b6f92913"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -884,8 +888,18 @@ template&lt;typename OtherType &gt; </div>
           <td class="memname">void <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; Type &gt;::makeCopyOf </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>avoidReallocating</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -920,7 +934,7 @@ template&lt;typename Type&gt; </div>
 
 <p>Clears all the samples in all channels. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a3d9d5b59ccfee79f6aadbaf6ed4ffc28">AudioBuffer&lt; float &gt;::AudioBuffer()</a>, <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, and <a class="el" href="classAudioBuffer.html#a60a3e64901c3e9ddeca5512ad8d82bd7">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a3d9d5b59ccfee79f6aadbaf6ed4ffc28">AudioBuffer&lt; float &gt;::AudioBuffer()</a>, <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, and <a class="el" href="classAudioBuffer.html#a60a3e64901c3e9ddeca5512ad8d82bd7">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1048,7 @@ template&lt;typename Type&gt; </div>
 <p>Returns true if the buffer has been entirely cleared. </p>
 <p>Note that this does not actually measure the contents of the buffer - it simply returns a flag that is set when the buffer is cleared, and which is reset whenever functions like <a class="el" href="classAudioBuffer.html#a909904fa6e89008f43c83d5375c160dc" title="Returns a writeable pointer to one of the buffer&#39;s channels. ">getWritePointer()</a> are invoked. That means the method does not take any time, but it may return false negatives when in fact the buffer is still empty. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a04a61c34a9502892a50112c767f562c8">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>.</p>
 
 </div>
 </div>
@@ -2175,12 +2189,17 @@ template&lt;typename Type&gt; </div>
 <li><a class="el" href="juce__AudioSampleBuffer_8h.html">juce_AudioSampleBuffer.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

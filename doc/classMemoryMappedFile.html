@@ -103,12 +103,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a886747596cde69fdddd5726993aacefd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedFile.html#a886747596cde69fdddd5726993aacefd">MemoryMappedFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file, <a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a> mode)</td></tr>
-<tr class="memdesc:a886747596cde69fdddd5726993aacefd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file and maps it to an area of virtual memory.  <a href="#a886747596cde69fdddd5726993aacefd">More...</a><br/></td></tr>
-<tr class="separator:a886747596cde69fdddd5726993aacefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434fa83669c243649838ab8bb08f19ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedFile.html#a434fa83669c243649838ab8bb08f19ea">MemoryMappedFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file, const <a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt; &amp;fileRange, <a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a> mode)</td></tr>
-<tr class="memdesc:a434fa83669c243649838ab8bb08f19ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a section of a file and maps it to an area of virtual memory.  <a href="#a434fa83669c243649838ab8bb08f19ea">More...</a><br/></td></tr>
-<tr class="separator:a434fa83669c243649838ab8bb08f19ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210e16a18b078c6df3b506a3f9963fe5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedFile.html#a210e16a18b078c6df3b506a3f9963fe5">MemoryMappedFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file, <a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a> mode, bool exclusive=false)</td></tr>
+<tr class="memdesc:a210e16a18b078c6df3b506a3f9963fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file and maps it to an area of virtual memory.  <a href="#a210e16a18b078c6df3b506a3f9963fe5">More...</a><br/></td></tr>
+<tr class="separator:a210e16a18b078c6df3b506a3f9963fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4bb69bc651e2039fb5fe74b653a1d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedFile.html#adb4bb69bc651e2039fb5fe74b653a1d8">MemoryMappedFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file, const <a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt; &amp;fileRange, <a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a> mode, bool exclusive=false)</td></tr>
+<tr class="memdesc:adb4bb69bc651e2039fb5fe74b653a1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a section of a file and maps it to an area of virtual memory.  <a href="#adb4bb69bc651e2039fb5fe74b653a1d8">More...</a><br/></td></tr>
+<tr class="separator:adb4bb69bc651e2039fb5fe74b653a1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f37ae28ddf9c0e57823c0b75743878"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedFile.html#a50f37ae28ddf9c0e57823c0b75743878">~MemoryMappedFile</a> ()</td></tr>
 <tr class="memdesc:a50f37ae28ddf9c0e57823c0b75743878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a50f37ae28ddf9c0e57823c0b75743878">More...</a><br/></td></tr>
 <tr class="separator:a50f37ae28ddf9c0e57823c0b75743878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a886747596cde69fdddd5726993aacefd"></a>
+<a class="anchor" id="a210e16a18b078c6df3b506a3f9963fe5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -162,7 +162,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exclusive</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,11 +181,12 @@ Public Member Functions</h2></td></tr>
 <p>Opens a file and maps it to an area of virtual memory. </p>
 <p>The file should already exist, and should already be the size that you want to work with when you call this. If the file is resized after being opened, the behaviour is undefined.</p>
 <p>If the file exists and the operation succeeds, the <a class="el" href="classMemoryMappedFile.html#a201023945c6c0f7d729fc68157430f41" title="Returns the address at which this file has been mapped, or a null pointer if the file couldn&#39;t be suc...">getData()</a> and <a class="el" href="classMemoryMappedFile.html#a98d9f4380b1343520779570fbe5bf2b0" title="Returns the number of bytes of data that are available for reading or writing. ">getSize()</a> methods will return the location and size of the data that can be read or written. Note that the entire file is not read into memory immediately - the OS simply creates a virtual mapping, which will lazily pull the data into memory when blocks are accessed.</p>
-<p>If the file can't be opened for some reason, the <a class="el" href="classMemoryMappedFile.html#a201023945c6c0f7d729fc68157430f41" title="Returns the address at which this file has been mapped, or a null pointer if the file couldn&#39;t be suc...">getData()</a> method will return a null pointer. </p>
+<p>If the file can't be opened for some reason, the <a class="el" href="classMemoryMappedFile.html#a201023945c6c0f7d729fc68157430f41" title="Returns the address at which this file has been mapped, or a null pointer if the file couldn&#39;t be suc...">getData()</a> method will return a null pointer.</p>
+<p>If exclusive is false then other apps can also open the same memory mapped file and use this mapping as an effective way of communicating. If exclusive is true then the mapped file will be opened exclusively - preventing other apps to access the file which may improve the performance of accessing the file. </p>
 
 </div>
 </div>
-<a class="anchor" id="a434fa83669c243649838ab8bb08f19ea"></a>
+<a class="anchor" id="adb4bb69bc651e2039fb5fe74b653a1d8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -199,7 +206,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0">AccessMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exclusive</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,12 +328,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__MemoryMappedFile_8h.html">juce_MemoryMappedFile.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

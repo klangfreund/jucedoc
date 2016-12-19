@@ -97,6 +97,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8554134a97627178203b3f288c90eee0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a> <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyGeneration.html#a8554134a97627178203b3f288c90eee0">generateKeyFile</a> (const <a class="el" href="classString.html">String</a> &amp;appName, const <a class="el" href="classString.html">String</a> &amp;userEmail, const <a class="el" href="classString.html">String</a> &amp;userName, const <a class="el" href="classString.html">String</a> &amp;machineNumbers, const <a class="el" href="classRSAKey.html">RSAKey</a> &amp;privateKey)</td></tr>
 <tr class="memdesc:a8554134a97627178203b3f288c90eee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the content of a key-file which can be sent to a user's machine to unlock a product.  <a href="#a8554134a97627178203b3f288c90eee0">More...</a><br/></td></tr>
 <tr class="separator:a8554134a97627178203b3f288c90eee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5652ee792c95a217a4394ce13fbf93e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a> <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyGeneration.html#a5652ee792c95a217a4394ce13fbf93e2">generateExpiringKeyFile</a> (const <a class="el" href="classString.html">String</a> &amp;appName, const <a class="el" href="classString.html">String</a> &amp;userEmail, const <a class="el" href="classString.html">String</a> &amp;userName, const <a class="el" href="classString.html">String</a> &amp;machineNumbers, const <a class="el" href="classTime.html">Time</a> expiryTime, const <a class="el" href="classRSAKey.html">RSAKey</a> &amp;privateKey)</td></tr>
+<tr class="memdesc:a5652ee792c95a217a4394ce13fbf93e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to the above key file generation method but with an expiry time.  <a href="#a5652ee792c95a217a4394ce13fbf93e2">More...</a><br/></td></tr>
+<tr class="separator:a5652ee792c95a217a4394ce13fbf93e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608c4ffe01796eba24a5ab563b5d488e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyGeneration.html#a608c4ffe01796eba24a5ab563b5d488e">keyGenerationAppMain</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:a608c4ffe01796eba24a5ab563b5d488e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a simple implementation of a key-generator that you could easily wrap in a command-line main() function for use on your server.  <a href="#a608c4ffe01796eba24a5ab563b5d488e">More...</a><br/></td></tr>
 <tr class="separator:a608c4ffe01796eba24a5ab563b5d488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +164,69 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5652ee792c95a217a4394ce13fbf93e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classString.html">String</a> <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> KeyGeneration::generateExpiringKeyFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>appName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>userEmail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>userName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>machineNumbers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTime.html">Time</a>&#160;</td>
+          <td class="paramname"><em>expiryTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classRSAKey.html">RSAKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>privateKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Similar to the above key file generation method but with an expiry time. </p>
+<p>You must supply a <a class="el" href="classTime.html" title="Holds an absolute date and time. ">Time</a> after which this key file should no longer be considered as active.</p>
+<p>N.B. when an app is unlocked with an expiring key file, <a class="el" href="classOnlineUnlockStatus.html#a3b8d9a3096714d32adf952c985f8aff3" title="Returns true if the product has been successfully authorised for this machine. ">OnlineUnlockStatus::isUnlocked</a> will still return false. You must then check <a class="el" href="classOnlineUnlockStatus.html#a82d2580fa444ac5d82f17eee41f02c57" title="Returns the Time when the keyfile expires. ">OnlineUnlockStatus::getExpiryTime</a> to see if this expiring key file is still in date and act accordingly.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classOnlineUnlockStatus.html" title="A base class for online unlocking systems. ">OnlineUnlockStatus</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a608c4ffe01796eba24a5ab563b5d488e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -205,12 +271,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__KeyFileGeneration_8h.html">juce_KeyFileGeneration.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

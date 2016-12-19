@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classLine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Line&lt; ValueType &gt; Class Template Reference</div>  </div>
@@ -103,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c5c5fb238000700acbba2857ca3e26a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a0c5c5fb238000700acbba2857ca3e26a">Line</a> (ValueType startX, ValueType startY, ValueType endX, ValueType endY) noexcept</td></tr>
 <tr class="memdesc:a0c5c5fb238000700acbba2857ca3e26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a line based on the coordinates of its start and end points.  <a href="#a0c5c5fb238000700acbba2857ca3e26a">More...</a><br/></td></tr>
 <tr class="separator:a0c5c5fb238000700acbba2857ca3e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd4c06429e9b61d2b0f4cc007635fd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a5cd4c06429e9b61d2b0f4cc007635fd7">Line</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; startPoint, const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; endPoint) noexcept</td></tr>
-<tr class="memdesc:a5cd4c06429e9b61d2b0f4cc007635fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a line from its start and end points.  <a href="#a5cd4c06429e9b61d2b0f4cc007635fd7">More...</a><br/></td></tr>
-<tr class="separator:a5cd4c06429e9b61d2b0f4cc007635fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d12c83ae24e1a1c5ce11d85f4502c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ad8d12c83ae24e1a1c5ce11d85f4502c4">Line</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; startPoint, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; endPoint) noexcept</td></tr>
+<tr class="memdesc:ad8d12c83ae24e1a1c5ce11d85f4502c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a line from its start and end points.  <a href="#ad8d12c83ae24e1a1c5ce11d85f4502c4">More...</a><br/></td></tr>
+<tr class="separator:ad8d12c83ae24e1a1c5ce11d85f4502c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6248c53667ef464babfc2a6b4456465e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a6248c53667ef464babfc2a6b4456465e">operator=</a> (const <a class="el" href="classLine.html">Line</a> &amp;other) noexcept</td></tr>
 <tr class="memdesc:a6248c53667ef464babfc2a6b4456465e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a line from another one.  <a href="#a6248c53667ef464babfc2a6b4456465e">More...</a><br/></td></tr>
 <tr class="separator:a6248c53667ef464babfc2a6b4456465e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,15 +143,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8733c8206ff4252566cb0548b6e5f005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a8733c8206ff4252566cb0548b6e5f005">setEnd</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; newEnd) noexcept</td></tr>
 <tr class="memdesc:a8733c8206ff4252566cb0548b6e5f005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes this line's end point.  <a href="#a8733c8206ff4252566cb0548b6e5f005">More...</a><br/></td></tr>
 <tr class="separator:a8733c8206ff4252566cb0548b6e5f005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1e5bd37ae3cf2dd014f854b7ea0337"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classLine.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a5f1e5bd37ae3cf2dd014f854b7ea0337">reversed</a> () const noexcept</td></tr>
-<tr class="memdesc:a5f1e5bd37ae3cf2dd014f854b7ea0337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a line that is the same as this one, but with the start and end reversed,.  <a href="#a5f1e5bd37ae3cf2dd014f854b7ea0337">More...</a><br/></td></tr>
-<tr class="separator:a5f1e5bd37ae3cf2dd014f854b7ea0337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ca79adfb725968117ffef397edcd5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a28ca79adfb725968117ffef397edcd5d">reversed</a> () const noexcept</td></tr>
+<tr class="memdesc:a28ca79adfb725968117ffef397edcd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a line that is the same as this one, but with the start and end reversed,.  <a href="#a28ca79adfb725968117ffef397edcd5d">More...</a><br/></td></tr>
+<tr class="separator:a28ca79adfb725968117ffef397edcd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3529809adcfc1833215ee01318e1f40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a3529809adcfc1833215ee01318e1f40e">applyTransform</a> (const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform) noexcept</td></tr>
 <tr class="memdesc:a3529809adcfc1833215ee01318e1f40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an affine transform to the line's start and end points.  <a href="#a3529809adcfc1833215ee01318e1f40e">More...</a><br/></td></tr>
 <tr class="separator:a3529809adcfc1833215ee01318e1f40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47e36fae13dc1baa6b11b2b545946c0"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ac47e36fae13dc1baa6b11b2b545946c0">getLength</a> () const noexcept</td></tr>
 <tr class="memdesc:ac47e36fae13dc1baa6b11b2b545946c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the line.  <a href="#ac47e36fae13dc1baa6b11b2b545946c0">More...</a><br/></td></tr>
 <tr class="separator:ac47e36fae13dc1baa6b11b2b545946c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6b3c5af83152067defc0fc1eab5c20"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a8c6b3c5af83152067defc0fc1eab5c20">getLengthSquared</a> () const noexcept</td></tr>
+<tr class="memdesc:a8c6b3c5af83152067defc0fc1eab5c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the line.  <a href="#a8c6b3c5af83152067defc0fc1eab5c20">More...</a><br/></td></tr>
+<tr class="separator:a8c6b3c5af83152067defc0fc1eab5c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf1d4f45d3f48b6d3540e19ecd9897c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#acf1d4f45d3f48b6d3540e19ecd9897c5">isVertical</a> () const noexcept</td></tr>
 <tr class="memdesc:acf1d4f45d3f48b6d3540e19ecd9897c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the line's start and end x coordinates are the same.  <a href="#acf1d4f45d3f48b6d3540e19ecd9897c5">More...</a><br/></td></tr>
 <tr class="separator:acf1d4f45d3f48b6d3540e19ecd9897c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,21 +170,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbfed230f1a83b399812a4889122ef68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#adbfed230f1a83b399812a4889122ef68">toDouble</a> () const noexcept</td></tr>
 <tr class="memdesc:adbfed230f1a83b399812a4889122ef68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts this line to double coordinates.  <a href="#adbfed230f1a83b399812a4889122ef68">More...</a><br/></td></tr>
 <tr class="separator:adbfed230f1a83b399812a4889122ef68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3974f999e9c76f5ca90ac332ad37c86b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a3974f999e9c76f5ca90ac332ad37c86b">operator==</a> (const <a class="el" href="classLine.html">Line</a> &amp;other) const noexcept</td></tr>
-<tr class="memdesc:a3974f999e9c76f5ca90ac332ad37c86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two lines.  <a href="#a3974f999e9c76f5ca90ac332ad37c86b">More...</a><br/></td></tr>
-<tr class="separator:a3974f999e9c76f5ca90ac332ad37c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09579d2e9104536c115d1992ae6769d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#af09579d2e9104536c115d1992ae6769d">operator!=</a> (const <a class="el" href="classLine.html">Line</a> &amp;other) const noexcept</td></tr>
-<tr class="memdesc:af09579d2e9104536c115d1992ae6769d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two lines.  <a href="#af09579d2e9104536c115d1992ae6769d">More...</a><br/></td></tr>
-<tr class="separator:af09579d2e9104536c115d1992ae6769d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5299710db931ecb75f09968e088e2ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a5299710db931ecb75f09968e088e2ca7">getIntersection</a> (const <a class="el" href="classLine.html">Line</a> &amp;line) const noexcept</td></tr>
-<tr class="memdesc:a5299710db931ecb75f09968e088e2ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection between two lines.  <a href="#a5299710db931ecb75f09968e088e2ca7">More...</a><br/></td></tr>
-<tr class="separator:a5299710db931ecb75f09968e088e2ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab298dc289dc2d8e1c10bc11e463b5c81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ab298dc289dc2d8e1c10bc11e463b5c81">intersects</a> (const <a class="el" href="classLine.html">Line</a> &amp;line, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; &amp;intersection) const noexcept</td></tr>
-<tr class="memdesc:ab298dc289dc2d8e1c10bc11e463b5c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection between two lines.  <a href="#ab298dc289dc2d8e1c10bc11e463b5c81">More...</a><br/></td></tr>
-<tr class="separator:ab298dc289dc2d8e1c10bc11e463b5c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d4ca2a9b537e916792c632e14517cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a56d4ca2a9b537e916792c632e14517cc">intersects</a> (const <a class="el" href="classLine.html">Line</a> &amp;other) const noexcept</td></tr>
-<tr class="memdesc:a56d4ca2a9b537e916792c632e14517cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this line intersects another.  <a href="#a56d4ca2a9b537e916792c632e14517cc">More...</a><br/></td></tr>
-<tr class="separator:a56d4ca2a9b537e916792c632e14517cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ada5afce00914e2897d91d39e1e47eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a6ada5afce00914e2897d91d39e1e47eb">operator==</a> (<a class="el" href="classLine.html">Line</a> other) const noexcept</td></tr>
+<tr class="memdesc:a6ada5afce00914e2897d91d39e1e47eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two lines.  <a href="#a6ada5afce00914e2897d91d39e1e47eb">More...</a><br/></td></tr>
+<tr class="separator:a6ada5afce00914e2897d91d39e1e47eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b3c1fd0059d2a08a38fcd7c917064e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a63b3c1fd0059d2a08a38fcd7c917064e">operator!=</a> (<a class="el" href="classLine.html">Line</a> other) const noexcept</td></tr>
+<tr class="memdesc:a63b3c1fd0059d2a08a38fcd7c917064e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two lines.  <a href="#a63b3c1fd0059d2a08a38fcd7c917064e">More...</a><br/></td></tr>
+<tr class="separator:a63b3c1fd0059d2a08a38fcd7c917064e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d14062da1753acfba9b8335935e218a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a2d14062da1753acfba9b8335935e218a">getIntersection</a> (<a class="el" href="classLine.html">Line</a> line) const noexcept</td></tr>
+<tr class="memdesc:a2d14062da1753acfba9b8335935e218a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection between two lines.  <a href="#a2d14062da1753acfba9b8335935e218a">More...</a><br/></td></tr>
+<tr class="separator:a2d14062da1753acfba9b8335935e218a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65eb5685ecd0cfa39bee23c3d4f36d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ab65eb5685ecd0cfa39bee23c3d4f36d7">intersects</a> (<a class="el" href="classLine.html">Line</a> line, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; &amp;intersection) const noexcept</td></tr>
+<tr class="memdesc:ab65eb5685ecd0cfa39bee23c3d4f36d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection between two lines.  <a href="#ab65eb5685ecd0cfa39bee23c3d4f36d7">More...</a><br/></td></tr>
+<tr class="separator:ab65eb5685ecd0cfa39bee23c3d4f36d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b34a1d8d21e50aea59b1b814267f705"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a3b34a1d8d21e50aea59b1b814267f705">intersects</a> (<a class="el" href="classLine.html">Line</a> other) const noexcept</td></tr>
+<tr class="memdesc:a3b34a1d8d21e50aea59b1b814267f705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this line intersects another.  <a href="#a3b34a1d8d21e50aea59b1b814267f705">More...</a><br/></td></tr>
+<tr class="separator:a3b34a1d8d21e50aea59b1b814267f705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09b929efc5c12defda7715092ff0c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ae09b929efc5c12defda7715092ff0c05">getPointAlongLine</a> (ValueType distanceFromStart) const noexcept</td></tr>
 <tr class="memdesc:ae09b929efc5c12defda7715092ff0c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the point which is a given distance along this line.  <a href="#ae09b929efc5c12defda7715092ff0c05">More...</a><br/></td></tr>
 <tr class="separator:ae09b929efc5c12defda7715092ff0c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,24 +194,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4">getPointAlongLineProportionally</a> (ValueType proportionOfLength) const noexcept</td></tr>
 <tr class="memdesc:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the point which is a given distance along this line proportional to the line's length.  <a href="#a987efd8a7c899cbb70fe3ad20e0cc9d4">More...</a><br/></td></tr>
 <tr class="separator:a987efd8a7c899cbb70fe3ad20e0cc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652456b4dc91e8404dcd10bc6a2a4a61"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a652456b4dc91e8404dcd10bc6a2a4a61">getDistanceFromPoint</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; targetPoint, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; &amp;pointOnLine) const noexcept</td></tr>
-<tr class="memdesc:a652456b4dc91e8404dcd10bc6a2a4a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smallest distance between this line segment and a given point.  <a href="#a652456b4dc91e8404dcd10bc6a2a4a61">More...</a><br/></td></tr>
-<tr class="separator:a652456b4dc91e8404dcd10bc6a2a4a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373b9f7e2029ce67295bbf606569e391"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a373b9f7e2029ce67295bbf606569e391">findNearestProportionalPositionTo</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
-<tr class="memdesc:a373b9f7e2029ce67295bbf606569e391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point on this line which is nearest to a given point, and returns its position as a proportional position along the line.  <a href="#a373b9f7e2029ce67295bbf606569e391">More...</a><br/></td></tr>
-<tr class="separator:a373b9f7e2029ce67295bbf606569e391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f43d3b261232dedf8437536dd086d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a54f43d3b261232dedf8437536dd086d5">findNearestPointTo</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
-<tr class="memdesc:a54f43d3b261232dedf8437536dd086d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point on this line which is nearest to a given point.  <a href="#a54f43d3b261232dedf8437536dd086d5">More...</a><br/></td></tr>
-<tr class="separator:a54f43d3b261232dedf8437536dd086d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa719a05deee26d6ef1c1573ab3ffb359"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#aa719a05deee26d6ef1c1573ab3ffb359">isPointAbove</a> (const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
-<tr class="memdesc:aa719a05deee26d6ef1c1573ab3ffb359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given point lies above this line.  <a href="#aa719a05deee26d6ef1c1573ab3ffb359">More...</a><br/></td></tr>
-<tr class="separator:aa719a05deee26d6ef1c1573ab3ffb359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec">getDistanceFromPoint</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; targetPoint, <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; &amp;pointOnLine) const noexcept</td></tr>
+<tr class="memdesc:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smallest distance between this line segment and a given point.  <a href="#a9909c1e4eb4b19deb15c3a095749d8ec">More...</a><br/></td></tr>
+<tr class="separator:a9909c1e4eb4b19deb15c3a095749d8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba815aa4892ee565bee43a8ff5b01e6"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6">findNearestProportionalPositionTo</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
+<tr class="memdesc:a9ba815aa4892ee565bee43a8ff5b01e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point on this line which is nearest to a given point, and returns its position as a proportional position along the line.  <a href="#a9ba815aa4892ee565bee43a8ff5b01e6">More...</a><br/></td></tr>
+<tr class="separator:a9ba815aa4892ee565bee43a8ff5b01e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71846fb5d0a9526d14165bc43c6aee43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a71846fb5d0a9526d14165bc43c6aee43">findNearestPointTo</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
+<tr class="memdesc:a71846fb5d0a9526d14165bc43c6aee43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point on this line which is nearest to a given point.  <a href="#a71846fb5d0a9526d14165bc43c6aee43">More...</a><br/></td></tr>
+<tr class="separator:a71846fb5d0a9526d14165bc43c6aee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946bf1dddfffa5d4429b7f0d7323eb63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a946bf1dddfffa5d4429b7f0d7323eb63">isPointAbove</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; point) const noexcept</td></tr>
+<tr class="memdesc:a946bf1dddfffa5d4429b7f0d7323eb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given point lies above this line.  <a href="#a946bf1dddfffa5d4429b7f0d7323eb63">More...</a><br/></td></tr>
+<tr class="separator:a946bf1dddfffa5d4429b7f0d7323eb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cbccb4467b3a80464db2c5d51d6280f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#a7cbccb4467b3a80464db2c5d51d6280f">withShortenedStart</a> (ValueType distanceToShortenBy) const noexcept</td></tr>
 <tr class="memdesc:a7cbccb4467b3a80464db2c5d51d6280f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a shortened copy of this line.  <a href="#a7cbccb4467b3a80464db2c5d51d6280f">More...</a><br/></td></tr>
 <tr class="separator:a7cbccb4467b3a80464db2c5d51d6280f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab153135d534455fb2d3a04bd347a1790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#ab153135d534455fb2d3a04bd347a1790">withShortenedEnd</a> (ValueType distanceToShortenBy) const noexcept</td></tr>
 <tr class="memdesc:ab153135d534455fb2d3a04bd347a1790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a shortened copy of this line.  <a href="#ab153135d534455fb2d3a04bd347a1790">More...</a><br/></td></tr>
 <tr class="separator:ab153135d534455fb2d3a04bd347a1790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3f92ac1df630fc18acb4b3a4ba5b635"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLine.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html#aa3f92ac1df630fc18acb4b3a4ba5b635">fromStartAndAngle</a> (<a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt; startPoint, ValueType length, ValueType angle) noexcept</td></tr>
+<tr class="memdesc:aa3f92ac1df630fc18acb4b3a4ba5b635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a line from a start point, length and angle.  <a href="#aa3f92ac1df630fc18acb4b3a4ba5b635">More...</a><br/></td></tr>
+<tr class="separator:aa3f92ac1df630fc18acb4b3a4ba5b635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ValueType&gt;<br/>
@@ -243,7 +253,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>Creates a line, using (0, 0) as its start and end points. </p>
 
-<p>Referenced by <a class="el" href="classLine.html#a5f1e5bd37ae3cf2dd014f854b7ea0337">Line&lt; ValueType &gt;::reversed()</a>, <a class="el" href="classLine.html#ab153135d534455fb2d3a04bd347a1790">Line&lt; ValueType &gt;::withShortenedEnd()</a>, and <a class="el" href="classLine.html#a7cbccb4467b3a80464db2c5d51d6280f">Line&lt; ValueType &gt;::withShortenedStart()</a>.</p>
+<p>Referenced by <a class="el" href="classLine.html#aa3f92ac1df630fc18acb4b3a4ba5b635">Line&lt; ValueType &gt;::fromStartAndAngle()</a>, <a class="el" href="classLine.html#a28ca79adfb725968117ffef397edcd5d">Line&lt; ValueType &gt;::reversed()</a>, <a class="el" href="classLine.html#ab153135d534455fb2d3a04bd347a1790">Line&lt; ValueType &gt;::withShortenedEnd()</a>, and <a class="el" href="classLine.html#a7cbccb4467b3a80464db2c5d51d6280f">Line&lt; ValueType &gt;::withShortenedStart()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +335,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5cd4c06429e9b61d2b0f4cc007635fd7"></a>
+<a class="anchor" id="ad8d12c83ae24e1a1c5ce11d85f4502c4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -337,13 +347,13 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::<a class="el" href="classLine.html">Line</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>startPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>endPoint</em>&#160;</td>
         </tr>
         <tr>
@@ -713,7 +723,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5f1e5bd37ae3cf2dd014f854b7ea0337"></a>
+<a class="anchor" id="a28ca79adfb725968117ffef397edcd5d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -723,7 +733,7 @@ template&lt;typename ValueType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classLine.html">Line</a> <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::reversed </td>
+          <td class="memname"><a class="el" href="classLine.html">Line</a> <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::reversed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -796,6 +806,33 @@ template&lt;typename ValueType&gt; </div>
 <p>Returns the length of the line. </p>
 
 <p>Referenced by <a class="el" href="classLine.html#ae09b929efc5c12defda7715092ff0c05">Line&lt; ValueType &gt;::getPointAlongLine()</a>, <a class="el" href="classLine.html#ab153135d534455fb2d3a04bd347a1790">Line&lt; ValueType &gt;::withShortenedEnd()</a>, and <a class="el" href="classLine.html#a7cbccb4467b3a80464db2c5d51d6280f">Line&lt; ValueType &gt;::withShortenedStart()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6b3c5af83152067defc0fc1eab5c20"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueType <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::getLengthSquared </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the length of the line. </p>
 
 </div>
 </div>
@@ -881,6 +918,53 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa3f92ac1df630fc18acb4b3a4ba5b635"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classLine.html">Line</a> <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::fromStartAndAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramname"><em>startPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a line from a start point, length and angle. </p>
+<p>This angle is the number of radians clockwise from the 12 o'clock direction, where the line's start point is considered to be at the centre. </p>
+
+<p>References <a class="el" href="classLine.html#a460e27482a530ff771edb7b90ef339bf">Line&lt; ValueType &gt;::Line()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="accd599a7394efc17cde02c3df1ff6eb7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -935,7 +1019,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3974f999e9c76f5ca90ac332ad37c86b"></a>
+<a class="anchor" id="a6ada5afce00914e2897d91d39e1e47eb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -947,7 +1031,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -963,7 +1047,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af09579d2e9104536c115d1992ae6769d"></a>
+<a class="anchor" id="a63b3c1fd0059d2a08a38fcd7c917064e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -975,7 +1059,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -991,7 +1075,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5299710db931ecb75f09968e088e2ca7"></a>
+<a class="anchor" id="a2d14062da1753acfba9b8335935e218a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1003,7 +1087,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classPoint.html">Point</a>&lt;ValueType&gt; <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::getIntersection </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>line</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1026,7 +1110,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab298dc289dc2d8e1c10bc11e463b5c81"></a>
+<a class="anchor" id="ab65eb5685ecd0cfa39bee23c3d4f36d7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1038,7 +1122,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::intersects </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
@@ -1072,7 +1156,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a56d4ca2a9b537e916792c632e14517cc"></a>
+<a class="anchor" id="a3b34a1d8d21e50aea59b1b814267f705"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1084,7 +1168,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::intersects </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1220,11 +1304,11 @@ template&lt;typename ValueType&gt; </div>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#ae09b929efc5c12defda7715092ff0c05" title="Returns the location of the point which is a given distance along this line. ">getPointAlongLine</a> </dd></dl>
 
-<p>Referenced by <a class="el" href="classLine.html#a54f43d3b261232dedf8437536dd086d5">Line&lt; ValueType &gt;::findNearestPointTo()</a>.</p>
+<p>Referenced by <a class="el" href="classLine.html#a71846fb5d0a9526d14165bc43c6aee43">Line&lt; ValueType &gt;::findNearestPointTo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a652456b4dc91e8404dcd10bc6a2a4a61"></a>
+<a class="anchor" id="a9909c1e4eb4b19deb15c3a095749d8ec"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1236,7 +1320,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">ValueType <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::getDistanceFromPoint </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>targetPoint</em>, </td>
         </tr>
         <tr>
@@ -1268,7 +1352,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a373b9f7e2029ce67295bbf606569e391"></a>
+<a class="anchor" id="a9ba815aa4892ee565bee43a8ff5b01e6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1280,7 +1364,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">ValueType <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::findNearestProportionalPositionTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1294,15 +1378,15 @@ template&lt;typename ValueType&gt; </div>
 
 <p>Finds the point on this line which is nearest to a given point, and returns its position as a proportional position along the line. </p>
 <dl class="section return"><dt>Returns</dt><dd>a value 0 to 1.0 which is the distance along this line from the line's start to the point which is nearest to the point passed-in. To turn this number into a position, use <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally()</a>. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a652456b4dc91e8404dcd10bc6a2a4a61" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4" title="Returns the location of the point which is a given distance along this line proportional to the line&#39;...">getPointAlongLineProportionally</a> </dd></dl>
 
 <p>References <a class="el" href="juce__MathsFunctions_8h.html#a6efeed0752de995d3bc123123f199735">jlimit()</a>, <a class="el" href="classPoint.html#aba3ea63445b55dec2d740776b1059065">Point&lt; ValueType &gt;::x</a>, and <a class="el" href="classPoint.html#aa8d5487ccd439dd2d4b0fe87021a32c0">Point&lt; ValueType &gt;::y</a>.</p>
 
-<p>Referenced by <a class="el" href="classLine.html#a54f43d3b261232dedf8437536dd086d5">Line&lt; ValueType &gt;::findNearestPointTo()</a>.</p>
+<p>Referenced by <a class="el" href="classLine.html#a71846fb5d0a9526d14165bc43c6aee43">Line&lt; ValueType &gt;::findNearestPointTo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a54f43d3b261232dedf8437536dd086d5"></a>
+<a class="anchor" id="a71846fb5d0a9526d14165bc43c6aee43"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1314,7 +1398,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classPoint.html">Point</a>&lt;ValueType&gt; <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::findNearestPointTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1327,13 +1411,13 @@ template&lt;typename ValueType&gt; </div>
 </div><div class="memdoc">
 
 <p>Finds the point on this line which is nearest to a given point. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a652456b4dc91e8404dcd10bc6a2a4a61" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a373b9f7e2029ce67295bbf606569e391" title="Finds the point on this line which is nearest to a given point, and returns its position as a proport...">findNearestProportionalPositionTo</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLine.html#a9909c1e4eb4b19deb15c3a095749d8ec" title="Returns the smallest distance between this line segment and a given point. ">getDistanceFromPoint</a>, <a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6" title="Finds the point on this line which is nearest to a given point, and returns its position as a proport...">findNearestProportionalPositionTo</a> </dd></dl>
 
-<p>References <a class="el" href="classLine.html#a373b9f7e2029ce67295bbf606569e391">Line&lt; ValueType &gt;::findNearestProportionalPositionTo()</a>, and <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4">Line&lt; ValueType &gt;::getPointAlongLineProportionally()</a>.</p>
+<p>References <a class="el" href="classLine.html#a9ba815aa4892ee565bee43a8ff5b01e6">Line&lt; ValueType &gt;::findNearestProportionalPositionTo()</a>, and <a class="el" href="classLine.html#a987efd8a7c899cbb70fe3ad20e0cc9d4">Line&lt; ValueType &gt;::getPointAlongLineProportionally()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa719a05deee26d6ef1c1573ab3ffb359"></a>
+<a class="anchor" id="a946bf1dddfffa5d4429b7f0d7323eb63"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1345,7 +1429,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classLine.html">Line</a>&lt; ValueType &gt;::isPointAbove </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; ValueType &gt;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1428,12 +1512,17 @@ template&lt;typename ValueType&gt; </div>
 <li><a class="el" href="juce__Line_8h.html">juce_Line.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

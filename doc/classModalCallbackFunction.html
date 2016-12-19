@@ -99,6 +99,10 @@ Static Public Member Functions</h2></td></tr>
 <a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModalCallbackFunction.html#a47c2e0f447876fabf4644d1cae159a0f">create</a> (void(*functionToCall)(int, ParamType), ParamType parameterValue)</td></tr>
 <tr class="memdesc:a47c2e0f447876fabf4644d1cae159a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility function to create a <a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> that will call a static function with a parameter.  <a href="#a47c2e0f447876fabf4644d1cae159a0f">More...</a><br/></td></tr>
 <tr class="separator:a47c2e0f447876fabf4644d1cae159a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268ff83c12843270a3a07268c5a590f2"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+<a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalCallbackFunction.html#a268ff83c12843270a3a07268c5a590f2">create</a> (std::function&lt; void(int)&gt;)</td></tr>
+<tr class="memdesc:a268ff83c12843270a3a07268c5a590f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a utility function to create a <a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> that will call a lambda function.  <a href="#a268ff83c12843270a3a07268c5a590f2">More...</a><br/></td></tr>
+<tr class="separator:a268ff83c12843270a3a07268c5a590f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2330d0069d39bbb844ec75cb09bc7868"><td class="memTemplParams" colspan="2">template&lt;typename ParamType1 , typename ParamType2 &gt; </td></tr>
 <tr class="memitem:a2330d0069d39bbb844ec75cb09bc7868"><td class="memTemplItemLeft" align="right" valign="top">static <br class="typebreak"/>
 <a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModalCallbackFunction.html#a2330d0069d39bbb844ec75cb09bc7868">withParam</a> (void(*functionToCall)(int, ParamType1, ParamType2), ParamType1 parameterValue1, ParamType2 parameterValue2)</td></tr>
@@ -165,6 +169,34 @@ template&lt;typename ParamType &gt; </div>
 <div class="line">...</div>
 <div class="line">someKindOfComp-&gt;<a class="code" href="classComponent.html#a0e7be8c456a663615eb389ecd10b2c04">enterModalState</a> (<a class="code" href="classModalCallbackFunction.html#a47c2e0f447876fabf4644d1cae159a0f">ModalCallbackFunction::create</a> (myCallbackFunction, 3.0));</div>
 </div><!-- fragment --> <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a268ff83c12843270a3a07268c5a590f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a>* ModalCallbackFunction::create </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(int)&gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is a utility function to create a <a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> that will call a lambda function. </p>
+<p>The lambda that you supply must take an integer parameter, which is the result code that was returned when the modal component was dismissed.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classModalComponentManager_1_1Callback.html" title="Receives callbacks when a modal component is dismissed. ">ModalComponentManager::Callback</a> </dd></dl>
 
 </div>
 </div>
@@ -338,12 +370,17 @@ template&lt;class ComponentType , typename ParamType &gt; </div>
 <li><a class="el" href="juce__ModalComponentManager_8h.html">juce_ModalComponentManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

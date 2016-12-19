@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac848e9eda1b32ae944d58568af75ac36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager.html#ac848e9eda1b32ae944d58568af75ac36">juce_DeclareSingleton_SingleThreaded_Minimal</a> (<a class="el" href="classModalComponentManager.html">ModalComponentManager</a>) int getNumModalComponents() const </td></tr>
 <tr class="memdesc:ac848e9eda1b32ae944d58568af75ac36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of components currently being shown modally.  <a href="#ac848e9eda1b32ae944d58568af75ac36">More...</a><br/></td></tr>
 <tr class="separator:ac848e9eda1b32ae944d58568af75ac36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cc69f288251b77294a0db2ae202259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager.html#ae0cc69f288251b77294a0db2ae202259">getModalComponent</a> (int index) const </td></tr>
+<tr class="memitem:ae0cc69f288251b77294a0db2ae202259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager.html#ae0cc69f288251b77294a0db2ae202259">getModalComponent</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const </td></tr>
 <tr class="memdesc:ae0cc69f288251b77294a0db2ae202259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the components being shown modally.  <a href="#ae0cc69f288251b77294a0db2ae202259">More...</a><br/></td></tr>
 <tr class="separator:ae0cc69f288251b77294a0db2ae202259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a680e783f606445b929f266335fee5bd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager.html#a680e783f606445b929f266335fee5bd4">isModal</a> (<a class="el" href="classComponent.html">Component</a> *component) const </td></tr>
@@ -153,7 +153,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages the system's stack of modal components. </p>
 <p>Normally you'll just use the <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a> methods to invoke modal states in components, and won't have to deal with this class directly, but this is the singleton object that's used internally to manage the stack.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#a0e7be8c456a663615eb389ecd10b2c04" title="Puts the component into a modal state. ">Component::enterModalState</a>, <a class="el" href="classComponent.html#a686e2440370ff4a97c7a7851907be650" title="Ends a component&#39;s modal state. ">Component::exitModalState</a>, <a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7" title="Returns true if this component is the modal one. ">Component::isCurrentlyModal</a>, <a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3" title="Returns one of the components that are currently modal. ">Component::getCurrentlyModalComponent</a>, <a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9" title="Checks whether there&#39;s a modal component somewhere that&#39;s stopping this one from receiving messages...">Component::isCurrentlyBlockedByAnotherModalComponent</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#a0e7be8c456a663615eb389ecd10b2c04" title="Puts the component into a modal state. ">Component::enterModalState</a>, <a class="el" href="classComponent.html#a686e2440370ff4a97c7a7851907be650" title="Ends a component&#39;s modal state. ">Component::exitModalState</a>, <a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267" title="Returns true if this component is the modal one. ">Component::isCurrentlyModal</a>, <a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3" title="Returns one of the components that are currently modal. ">Component::getCurrentlyModalComponent</a>, <a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9" title="Checks whether there&#39;s a modal component somewhere that&#39;s stopping this one from receiving messages...">Component::isCurrentlyBlockedByAnotherModalComponent</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aaf0be23075467f26330a77781e1f3ed9"></a>
 <div class="memitem">
@@ -394,12 +394,17 @@ Protected Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ModalComponentManager_8h.html">juce_ModalComponentManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

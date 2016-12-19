@@ -145,6 +145,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f97549ff81aee8415076f99b4adb310"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a3f97549ff81aee8415076f99b4adb310">getHexDigitValue</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> digit) noexcept</td></tr>
 <tr class="memdesc:a3f97549ff81aee8415076f99b4adb310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0 to 16 for '0' to 'F", or -1 for characters that aren't a legal hex digit.  <a href="#a3f97549ff81aee8415076f99b4adb310">More...</a><br/></td></tr>
 <tr class="separator:a3f97549ff81aee8415076f99b4adb310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ade4adc89c28bd6578ce6b798e55cf5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a0ade4adc89c28bd6578ce6b798e55cf5">getUnicodeCharFromWindows1252Codepage</a> (<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> windows1252Char) noexcept</td></tr>
+<tr class="memdesc:a0ade4adc89c28bd6578ce6b798e55cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a byte of Windows 1252 codepage to unicode.  <a href="#a0ade4adc89c28bd6578ce6b798e55cf5">More...</a><br/></td></tr>
+<tr class="separator:a0ade4adc89c28bd6578ce6b798e55cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8743d3c374a36a0fb0596ac0e259b9ed"><td class="memTemplParams" colspan="2">template&lt;typename CharPointerType &gt; </td></tr>
 <tr class="memitem:a8743d3c374a36a0fb0596ac0e259b9ed"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a8743d3c374a36a0fb0596ac0e259b9ed">readDoubleValue</a> (CharPointerType &amp;text) noexcept</td></tr>
 <tr class="memdesc:a8743d3c374a36a0fb0596ac0e259b9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a character string to read a floating-point number.  <a href="#a8743d3c374a36a0fb0596ac0e259b9ed">More...</a><br/></td></tr>
@@ -177,6 +180,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6926024e6276580b38d81b432a2261a2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a6926024e6276580b38d81b432a2261a2">copyWithCharLimit</a> (DestCharPointerType &amp;dest, SrcCharPointerType src, int maxChars) noexcept</td></tr>
 <tr class="memdesc:a6926024e6276580b38d81b432a2261a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies characters from one string to another, up to a null terminator or a given maximum number of characters.  <a href="#a6926024e6276580b38d81b432a2261a2">More...</a><br/></td></tr>
 <tr class="separator:a6926024e6276580b38d81b432a2261a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4508ec49af4218ff4f5979b1f6845a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a0a4508ec49af4218ff4f5979b1f6845a">compare</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> char1, <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> char2) noexcept</td></tr>
+<tr class="memdesc:a0a4508ec49af4218ff4f5979b1f6845a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two characters.  <a href="#a0a4508ec49af4218ff4f5979b1f6845a">More...</a><br/></td></tr>
+<tr class="separator:a0a4508ec49af4218ff4f5979b1f6845a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1833e4d42a9fc8e3333e57e4786641d2"><td class="memTemplParams" colspan="2">template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </td></tr>
 <tr class="memitem:a1833e4d42a9fc8e3333e57e4786641d2"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a1833e4d42a9fc8e3333e57e4786641d2">compare</a> (CharPointerType1 s1, CharPointerType2 s2) noexcept</td></tr>
 <tr class="memdesc:a1833e4d42a9fc8e3333e57e4786641d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two null-terminated character strings.  <a href="#a1833e4d42a9fc8e3333e57e4786641d2">More...</a><br/></td></tr>
@@ -185,6 +191,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a121f7e5a6d496a95894c5f3e2bcc6cd0"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a121f7e5a6d496a95894c5f3e2bcc6cd0">compareUpTo</a> (CharPointerType1 s1, CharPointerType2 s2, int maxChars) noexcept</td></tr>
 <tr class="memdesc:a121f7e5a6d496a95894c5f3e2bcc6cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two null-terminated character strings, up to a given number of characters.  <a href="#a121f7e5a6d496a95894c5f3e2bcc6cd0">More...</a><br/></td></tr>
 <tr class="separator:a121f7e5a6d496a95894c5f3e2bcc6cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347c2ef2ab32ac9b4eee84ce87876e04"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a347c2ef2ab32ac9b4eee84ce87876e04">compareIgnoreCase</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> char1, <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> char2) noexcept</td></tr>
+<tr class="memdesc:a347c2ef2ab32ac9b4eee84ce87876e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two characters, using a case-independant match.  <a href="#a347c2ef2ab32ac9b4eee84ce87876e04">More...</a><br/></td></tr>
+<tr class="separator:a347c2ef2ab32ac9b4eee84ce87876e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b4b783a7181c4a0ae90bb9c430d735"><td class="memTemplParams" colspan="2">template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </td></tr>
 <tr class="memitem:a58b4b783a7181c4a0ae90bb9c430d735"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a58b4b783a7181c4a0ae90bb9c430d735">compareIgnoreCase</a> (CharPointerType1 s1, CharPointerType2 s2) noexcept</td></tr>
 <tr class="memdesc:a58b4b783a7181c4a0ae90bb9c430d735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two null-terminated character strings, using a case-independant match.  <a href="#a58b4b783a7181c4a0ae90bb9c430d735">More...</a><br/></td></tr>
@@ -255,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Converts a character to upper-case. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#abc8f84ecbede295debe097ba50754061">CharPointer_UTF32::toUpperCase()</a>, <a class="el" href="classCharPointer__ASCII.html#acd439c5e2ffbb749960fab419bf48fc2">CharPointer_ASCII::toUpperCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a9f4679d73f4135ce332eb6db2b53b67c">CharPointer_UTF16::toUpperCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#a89f8a6b510bbda4b95e5b8917d23f35c">CharPointer_UTF8::toUpperCase()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#acd439c5e2ffbb749960fab419bf48fc2">CharPointer_ASCII::toUpperCase()</a>, <a class="el" href="classCharPointer__UTF32.html#abc8f84ecbede295debe097ba50754061">CharPointer_UTF32::toUpperCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a9f4679d73f4135ce332eb6db2b53b67c">CharPointer_UTF16::toUpperCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#a89f8a6b510bbda4b95e5b8917d23f35c">CharPointer_UTF8::toUpperCase()</a>.</p>
 
 </div>
 </div>
@@ -283,7 +292,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Converts a character to lower-case. </p>
 
-<p>Referenced by <a class="el" href="classCharacterFunctions.html#a0390d13daac405225657a7237022778c">indexOfCharIgnoreCase()</a>, <a class="el" href="classCharPointer__UTF32.html#a1f444f71abb18ea75989f4630e77badd">CharPointer_UTF32::toLowerCase()</a>, <a class="el" href="classCharPointer__ASCII.html#a345ba7273fc3288bcd656786ae390bae">CharPointer_ASCII::toLowerCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a2f23f33e815df394df305b10a4d8a372">CharPointer_UTF16::toLowerCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#ad9d5948877132712f57ecc2094479444">CharPointer_UTF8::toLowerCase()</a>.</p>
+<p>Referenced by <a class="el" href="classCharacterFunctions.html#a0390d13daac405225657a7237022778c">indexOfCharIgnoreCase()</a>, <a class="el" href="classCharPointer__ASCII.html#a345ba7273fc3288bcd656786ae390bae">CharPointer_ASCII::toLowerCase()</a>, <a class="el" href="classCharPointer__UTF32.html#a1f444f71abb18ea75989f4630e77badd">CharPointer_UTF32::toLowerCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a2f23f33e815df394df305b10a4d8a372">CharPointer_UTF16::toLowerCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#ad9d5948877132712f57ecc2094479444">CharPointer_UTF8::toLowerCase()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +320,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a unicode character is upper-case. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#acb9c7c6eb40147ba6e6159baea2877b7">CharPointer_UTF32::isUpperCase()</a>, <a class="el" href="classCharPointer__ASCII.html#a8ca8fe31c732a98f4d8d1e71e308ce2f">CharPointer_ASCII::isUpperCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a0010de47cf9f0c4fe7d0f33931c666af">CharPointer_UTF16::isUpperCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#a7c04fb1ce2e2a69d88f458787b53991b">CharPointer_UTF8::isUpperCase()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#a8ca8fe31c732a98f4d8d1e71e308ce2f">CharPointer_ASCII::isUpperCase()</a>, <a class="el" href="classCharPointer__UTF32.html#acb9c7c6eb40147ba6e6159baea2877b7">CharPointer_UTF32::isUpperCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a0010de47cf9f0c4fe7d0f33931c666af">CharPointer_UTF16::isUpperCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#a7c04fb1ce2e2a69d88f458787b53991b">CharPointer_UTF8::isUpperCase()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +348,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a unicode character is lower-case. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#afc452c7113e22fca699f8744dcac8a59">CharPointer_UTF32::isLowerCase()</a>, <a class="el" href="classCharPointer__ASCII.html#abd12c4494348cbaa7c464089623cc5d8">CharPointer_ASCII::isLowerCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a96740237e7b24401880c9ff5114e1b08">CharPointer_UTF16::isLowerCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#ad2d69913724d7d1ae82c328f47823a11">CharPointer_UTF8::isLowerCase()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#abd12c4494348cbaa7c464089623cc5d8">CharPointer_ASCII::isLowerCase()</a>, <a class="el" href="classCharPointer__UTF32.html#afc452c7113e22fca699f8744dcac8a59">CharPointer_UTF32::isLowerCase()</a>, <a class="el" href="classCharPointer__UTF16.html#a96740237e7b24401880c9ff5114e1b08">CharPointer_UTF16::isLowerCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#ad2d69913724d7d1ae82c328f47823a11">CharPointer_UTF8::isLowerCase()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +376,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a character is whitespace. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#ad7178b3b784f737ef422ed8e2ab9230e">CharPointer_UTF32::isWhitespace()</a>, <a class="el" href="classCharPointer__ASCII.html#a41883c550ab553dabb8890176b7133e4">CharPointer_ASCII::isWhitespace()</a>, and <a class="el" href="classCharPointer__UTF16.html#a9985663b80f83e80caf9b9ce1d1e7ee7">CharPointer_UTF16::isWhitespace()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#a41883c550ab553dabb8890176b7133e4">CharPointer_ASCII::isWhitespace()</a>, <a class="el" href="classCharPointer__UTF32.html#ad7178b3b784f737ef422ed8e2ab9230e">CharPointer_UTF32::isWhitespace()</a>, and <a class="el" href="classCharPointer__UTF16.html#a9985663b80f83e80caf9b9ce1d1e7ee7">CharPointer_UTF16::isWhitespace()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +430,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a character is a digit. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a9f07809894a45ae036a245389f638529">CharPointer_UTF32::isDigit()</a>, <a class="el" href="classCharPointer__ASCII.html#a32250190b49ea4fa0c7053be3873ee06">CharPointer_ASCII::isDigit()</a>, and <a class="el" href="classCharPointer__UTF16.html#aa85407ed241a73b49991cf6414c58238">CharPointer_UTF16::isDigit()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#a32250190b49ea4fa0c7053be3873ee06">CharPointer_ASCII::isDigit()</a>, <a class="el" href="classCharPointer__UTF32.html#a9f07809894a45ae036a245389f638529">CharPointer_UTF32::isDigit()</a>, and <a class="el" href="classCharPointer__UTF16.html#aa85407ed241a73b49991cf6414c58238">CharPointer_UTF16::isDigit()</a>.</p>
 
 </div>
 </div>
@@ -475,7 +484,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a character is alphabetic. </p>
 
-<p>Referenced by <a class="el" href="structCppTokeniserFunctions.html#a13364f0e29c090497fa4b9971c55ed09">CppTokeniserFunctions::isIdentifierStart()</a>, <a class="el" href="classCharPointer__UTF32.html#a29941ef95624b8c308640b8e9172b6a1">CharPointer_UTF32::isLetter()</a>, <a class="el" href="classCharPointer__ASCII.html#ad3859d62210809d7e52140e9f3e8e631">CharPointer_ASCII::isLetter()</a>, <a class="el" href="classCharPointer__UTF16.html#a3fb032db114d5574404a2a937f6d5b22">CharPointer_UTF16::isLetter()</a>, and <a class="el" href="classCharPointer__UTF8.html#a29dd4e419bd59fcde8217b48ba85923d">CharPointer_UTF8::isLetter()</a>.</p>
+<p>Referenced by <a class="el" href="structCppTokeniserFunctions.html#a13364f0e29c090497fa4b9971c55ed09">CppTokeniserFunctions::isIdentifierStart()</a>, <a class="el" href="classCharPointer__ASCII.html#ad3859d62210809d7e52140e9f3e8e631">CharPointer_ASCII::isLetter()</a>, <a class="el" href="classCharPointer__UTF32.html#a29941ef95624b8c308640b8e9172b6a1">CharPointer_UTF32::isLetter()</a>, <a class="el" href="classCharPointer__UTF16.html#a3fb032db114d5574404a2a937f6d5b22">CharPointer_UTF16::isLetter()</a>, and <a class="el" href="classCharPointer__UTF8.html#a29dd4e419bd59fcde8217b48ba85923d">CharPointer_UTF8::isLetter()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Checks whether a character is alphabetic or numeric. </p>
 
-<p>Referenced by <a class="el" href="structCppTokeniserFunctions.html#a9a1c08ad4564d75d4226a8df6abd5500">CppTokeniserFunctions::isIdentifierBody()</a>, <a class="el" href="classCharPointer__UTF32.html#a6a9dba9f1050db8daab6560b12b213ee">CharPointer_UTF32::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__ASCII.html#a96e0007e4e36e6b4f23411d1c847568e">CharPointer_ASCII::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__UTF16.html#a6f12dad08e0deaad5ad56f39cadc9891">CharPointer_UTF16::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__UTF8.html#a1bbf1d6235491ff7614913945ed74272">CharPointer_UTF8::isLetterOrDigit()</a>, and <a class="el" href="structCppTokeniserFunctions.html#abd84f7c1b1b5df145e88819cf0ccd0d0">CppTokeniserFunctions::skipNumberSuffix()</a>.</p>
+<p>Referenced by <a class="el" href="structCppTokeniserFunctions.html#a9a1c08ad4564d75d4226a8df6abd5500">CppTokeniserFunctions::isIdentifierBody()</a>, <a class="el" href="classCharPointer__ASCII.html#a96e0007e4e36e6b4f23411d1c847568e">CharPointer_ASCII::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__UTF32.html#a6a9dba9f1050db8daab6560b12b213ee">CharPointer_UTF32::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__UTF16.html#a6f12dad08e0deaad5ad56f39cadc9891">CharPointer_UTF16::isLetterOrDigit()</a>, <a class="el" href="classCharPointer__UTF8.html#a1bbf1d6235491ff7614913945ed74272">CharPointer_UTF8::isLetterOrDigit()</a>, and <a class="el" href="structCppTokeniserFunctions.html#abd84f7c1b1b5df145e88819cf0ccd0d0">CppTokeniserFunctions::skipNumberSuffix()</a>.</p>
 
 </div>
 </div>
@@ -638,6 +647,32 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns 0 to 16 for '0' to 'F", or -1 for characters that aren't a legal hex digit. </p>
 
 <p>Referenced by <a class="el" href="structCharacterFunctions_1_1HexParser.html#a6da02089ed151cf59b990394a1531879">CharacterFunctions::HexParser&lt; ResultType &gt;::parse()</a>, and <a class="el" href="structCppTokeniserFunctions.html#aec2241fa18131c4d828d1a953f942b32">CppTokeniserFunctions::writeEscapeChars()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ade4adc89c28bd6578ce6b798e55cf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> CharacterFunctions::getUnicodeCharFromWindows1252Codepage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>windows1252Char</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a byte of Windows 1252 codepage to unicode. </p>
 
 </div>
 </div>
@@ -940,6 +975,44 @@ template&lt;typename DestCharPointerType , typename SrcCharPointerType &gt; </di
 
 </div>
 </div>
+<a class="anchor" id="a0a4508ec49af4218ff4f5979b1f6845a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CharacterFunctions::compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramname"><em>char1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramname"><em>char2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares two characters. </p>
+
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#ac55f6d8fcd3ba65ad289dea52e07adf7">CharPointer_ASCII::compare()</a>, <a class="el" href="classCharPointer__UTF32.html#a4ecc47df85543129a5382ee30ac36338">CharPointer_UTF32::compare()</a>, <a class="el" href="classCharPointer__UTF16.html#a84aa805a85c3654ab0149c26a5388d03">CharPointer_UTF16::compare()</a>, and <a class="el" href="classCharPointer__UTF8.html#afc7dfda1d81c1e8f11fb9544769efbce">CharPointer_UTF8::compare()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1833e4d42a9fc8e3333e57e4786641d2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -975,8 +1048,6 @@ template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </div>
 </div><div class="memdoc">
 
 <p>Compares two null-terminated character strings. </p>
-
-<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#ac55f6d8fcd3ba65ad289dea52e07adf7">CharPointer_ASCII::compare()</a>, <a class="el" href="classCharPointer__UTF32.html#a4ecc47df85543129a5382ee30ac36338">CharPointer_UTF32::compare()</a>, <a class="el" href="classCharPointer__UTF16.html#a84aa805a85c3654ab0149c26a5388d03">CharPointer_UTF16::compare()</a>, and <a class="el" href="classCharPointer__UTF8.html#afc7dfda1d81c1e8f11fb9544769efbce">CharPointer_UTF8::compare()</a>.</p>
 
 </div>
 </div>
@@ -1026,6 +1097,44 @@ template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a347c2ef2ab32ac9b4eee84ce87876e04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CharacterFunctions::compareIgnoreCase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramname"><em>char1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramname"><em>char2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares two characters, using a case-independant match. </p>
+
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#a2594193ac89ef6645ad91004b579ac59">CharPointer_ASCII::compareIgnoreCase()</a>, <a class="el" href="classCharPointer__UTF32.html#a48be323705c2ad8d8238c212e7ceba81">CharPointer_UTF32::compareIgnoreCase()</a>, <a class="el" href="classCharPointer__UTF16.html#ac45dc36f8c5ba3ec6313ec55d669fb52">CharPointer_UTF16::compareIgnoreCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#af9ddbeda1c9ec897d99cb6433e484af9">CharPointer_UTF8::compareIgnoreCase()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a58b4b783a7181c4a0ae90bb9c430d735"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1061,8 +1170,6 @@ template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </div>
 </div><div class="memdoc">
 
 <p>Compares two null-terminated character strings, using a case-independant match. </p>
-
-<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#a2594193ac89ef6645ad91004b579ac59">CharPointer_ASCII::compareIgnoreCase()</a>, <a class="el" href="classCharPointer__UTF32.html#a48be323705c2ad8d8238c212e7ceba81">CharPointer_UTF32::compareIgnoreCase()</a>, <a class="el" href="classCharPointer__UTF16.html#ac45dc36f8c5ba3ec6313ec55d669fb52">CharPointer_UTF16::compareIgnoreCase()</a>, and <a class="el" href="classCharPointer__UTF8.html#af9ddbeda1c9ec897d99cb6433e484af9">CharPointer_UTF8::compareIgnoreCase()</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1215,7 @@ template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </div>
 
 <p>Compares two null-terminated character strings, using a case-independent match. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a945448d9c3f38546a433a9f71332d695">CharPointer_UTF32::compareIgnoreCaseUpTo()</a>, <a class="el" href="classCharPointer__ASCII.html#abc3c0e882db2d5db17ef7fe3104ec476">CharPointer_ASCII::compareIgnoreCaseUpTo()</a>, <a class="el" href="classCharPointer__UTF16.html#a25d2b63a258f5deda19e5e06ed40bc9a">CharPointer_UTF16::compareIgnoreCaseUpTo()</a>, and <a class="el" href="classCharPointer__UTF8.html#abb1f323cccee9f3cdb1244e70af835b7">CharPointer_UTF8::compareIgnoreCaseUpTo()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#abc3c0e882db2d5db17ef7fe3104ec476">CharPointer_ASCII::compareIgnoreCaseUpTo()</a>, <a class="el" href="classCharPointer__UTF32.html#a945448d9c3f38546a433a9f71332d695">CharPointer_UTF32::compareIgnoreCaseUpTo()</a>, <a class="el" href="classCharPointer__UTF16.html#a25d2b63a258f5deda19e5e06ed40bc9a">CharPointer_UTF16::compareIgnoreCaseUpTo()</a>, and <a class="el" href="classCharPointer__UTF8.html#abb1f323cccee9f3cdb1244e70af835b7">CharPointer_UTF8::compareIgnoreCaseUpTo()</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1256,7 @@ template&lt;typename CharPointerType1 , typename CharPointerType2 &gt; </div>
 <p>Finds the character index of a given substring in another string. </p>
 <p>Returns -1 if the substring is not found. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a7462a3d4ad9f36271a6d44023e7f177f">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__ASCII.html#aa4a0868b53035d938ef70e338d602857">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#aca092edd0c9aa14d467af69a1e2b88e7">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#a49b568aa6e8e992080e31e6ed1a8ffac">CharPointer_UTF8::indexOf()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#aa4a0868b53035d938ef70e338d602857">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF32.html#a7462a3d4ad9f36271a6d44023e7f177f">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#aca092edd0c9aa14d467af69a1e2b88e7">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#a49b568aa6e8e992080e31e6ed1a8ffac">CharPointer_UTF8::indexOf()</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1414,7 @@ template&lt;typename Type &gt; </div>
 <p>Finds the character index of a given character in another string. </p>
 <p>Returns -1 if the character is not found. </p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a9fa2ac897c0e6d978ff12907f61892b0">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__ASCII.html#aa9d771060a8f44b24a76f9388f88107d">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#a9898fcd1d82b488162fdeb469320a5e5">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#a8f96063c08b82528519d34768c03d715">CharPointer_UTF8::indexOf()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#aa9d771060a8f44b24a76f9388f88107d">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF32.html#a9fa2ac897c0e6d978ff12907f61892b0">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#a9898fcd1d82b488162fdeb469320a5e5">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#a8f96063c08b82528519d34768c03d715">CharPointer_UTF8::indexOf()</a>.</p>
 
 </div>
 </div>
@@ -1350,7 +1457,7 @@ template&lt;typename Type &gt; </div>
 
 <p>References <a class="el" href="classCharacterFunctions.html#ad24ab7b19d00b0ea570b31d8cce4a33e">toLowerCase()</a>.</p>
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a9fa2ac897c0e6d978ff12907f61892b0">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__ASCII.html#aa9d771060a8f44b24a76f9388f88107d">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#a6f2bff8fe087a58422205c20b5108105">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#aeb907245068a92ecd70990e5cd75b767">CharPointer_UTF8::indexOf()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__ASCII.html#aa9d771060a8f44b24a76f9388f88107d">CharPointer_ASCII::indexOf()</a>, <a class="el" href="classCharPointer__UTF32.html#a9fa2ac897c0e6d978ff12907f61892b0">CharPointer_UTF32::indexOf()</a>, <a class="el" href="classCharPointer__UTF16.html#a6f2bff8fe087a58422205c20b5108105">CharPointer_UTF16::indexOf()</a>, and <a class="el" href="classCharPointer__UTF8.html#aeb907245068a92ecd70990e5cd75b767">CharPointer_UTF8::indexOf()</a>.</p>
 
 </div>
 </div>
@@ -1433,12 +1540,17 @@ template&lt;typename Type , typename BreakType &gt; </div>
 <li><a class="el" href="juce__CharacterFunctions_8h.html">juce_CharacterFunctions.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

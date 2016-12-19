@@ -115,9 +115,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76711d244ec5279f43d4a9340429824e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#a76711d244ec5279f43d4a9340429824e">findAllTypesForFile</a> (<a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;, const <a class="el" href="classString.html">String</a> &amp;fileOrIdentifier) override</td></tr>
 <tr class="memdesc:a76711d244ec5279f43d4a9340429824e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tries to create descriptions for all the plugin types available in a binary module file.  <a href="#a76711d244ec5279f43d4a9340429824e">More...</a><br/></td></tr>
 <tr class="separator:a76711d244ec5279f43d4a9340429824e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90f3132aa084e616fbced27c56bb423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#ae90f3132aa084e616fbced27c56bb423">createInstanceFromDescription</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;, double, int) override</td></tr>
-<tr class="memdesc:ae90f3132aa084e616fbced27c56bb423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate a type from a previously generated <a class="el" href="classPluginDescription.html" title="A small class to represent some facts about a particular type of plug-in. ">PluginDescription</a>.  <a href="#ae90f3132aa084e616fbced27c56bb423">More...</a><br/></td></tr>
-<tr class="separator:ae90f3132aa084e616fbced27c56bb423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c0ffecd11041df2a986b01ac8562cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#ad7c0ffecd11041df2a986b01ac8562cb">fileMightContainThisPluginType</a> (const <a class="el" href="classString.html">String</a> &amp;fileOrIdentifier) override</td></tr>
 <tr class="memdesc:ad7c0ffecd11041df2a986b01ac8562cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should do a quick check to see if this file or directory might be a plugin of this format.  <a href="#ad7c0ffecd11041df2a986b01ac8562cb">More...</a><br/></td></tr>
 <tr class="separator:ad7c0ffecd11041df2a986b01ac8562cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11961b8d55691cc11d58e03bbf39d34d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#a11961b8d55691cc11d58e03bbf39d34d">pluginNeedsRescanning</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;) override</td></tr>
 <tr class="memdesc:a11961b8d55691cc11d58e03bbf39d34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this plugin's version or date has changed and it should be re-checked.  <a href="#a11961b8d55691cc11d58e03bbf39d34d">More...</a><br/></td></tr>
 <tr class="separator:a11961b8d55691cc11d58e03bbf39d34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead72c2ccbb9c3c356ede8b75086f0f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#aead72c2ccbb9c3c356ede8b75086f0f9">searchPathsForPlugins</a> (const <a class="el" href="classFileSearchPath.html">FileSearchPath</a> &amp;, bool recursive) override</td></tr>
-<tr class="memdesc:aead72c2ccbb9c3c356ede8b75086f0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a suggested set of directories for any plugins in this format.  <a href="#aead72c2ccbb9c3c356ede8b75086f0f9">More...</a><br/></td></tr>
-<tr class="separator:aead72c2ccbb9c3c356ede8b75086f0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50bc8230d388164bffa34c1687eecf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#ae50bc8230d388164bffa34c1687eecf0">searchPathsForPlugins</a> (const <a class="el" href="classFileSearchPath.html">FileSearchPath</a> &amp;, bool recursive, bool) override</td></tr>
+<tr class="memdesc:ae50bc8230d388164bffa34c1687eecf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a suggested set of directories for any plugins in this format.  <a href="#ae50bc8230d388164bffa34c1687eecf0">More...</a><br/></td></tr>
+<tr class="separator:ae50bc8230d388164bffa34c1687eecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3627d4ab900d9d19ce3ce20b7573f51a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLADSPAPluginFormat.html#a3627d4ab900d9d19ce3ce20b7573f51a">doesPluginStillExist</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;) override</td></tr>
 <tr class="memdesc:a3627d4ab900d9d19ce3ce20b7573f51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this plugin could possibly be loaded.  <a href="#a3627d4ab900d9d19ce3ce20b7573f51a">More...</a><br/></td></tr>
 <tr class="separator:a3627d4ab900d9d19ce3ce20b7573f51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +140,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13029b260e822e954d6b33229db75d50 inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#a13029b260e822e954d6b33229db75d50">~AudioPluginFormat</a> ()</td></tr>
 <tr class="memdesc:a13029b260e822e954d6b33229db75d50 inherit pub_methods_classAudioPluginFormat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a13029b260e822e954d6b33229db75d50">More...</a><br/></td></tr>
 <tr class="separator:a13029b260e822e954d6b33229db75d50 inherit pub_methods_classAudioPluginFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078fc44fc2966158d661c56e11e7ca38 inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#a078fc44fc2966158d661c56e11e7ca38">createInstanceFromDescription</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;, double initialSampleRate, int initialBufferSize)</td></tr>
+<tr class="memdesc:a078fc44fc2966158d661c56e11e7ca38 inherit pub_methods_classAudioPluginFormat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate a type from a previously generated <a class="el" href="classPluginDescription.html" title="A small class to represent some facts about a particular type of plug-in. ">PluginDescription</a>.  <a href="#a078fc44fc2966158d661c56e11e7ca38">More...</a><br/></td></tr>
+<tr class="separator:a078fc44fc2966158d661c56e11e7ca38 inherit pub_methods_classAudioPluginFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a7f6a84ae7c5f270a0a12917d687eb inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#a66a7f6a84ae7c5f270a0a12917d687eb">createInstanceFromDescription</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;, double initialSampleRate, int initialBufferSize, <a class="el" href="classString.html">String</a> &amp;errorMessage)</td></tr>
+<tr class="memdesc:a66a7f6a84ae7c5f270a0a12917d687eb inherit pub_methods_classAudioPluginFormat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above but with the possibility of returning an error message.  <a href="#a66a7f6a84ae7c5f270a0a12917d687eb">More...</a><br/></td></tr>
+<tr class="separator:a66a7f6a84ae7c5f270a0a12917d687eb inherit pub_methods_classAudioPluginFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03372359b6033b378bc036ffb19c78e inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#ac03372359b6033b378bc036ffb19c78e">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, <a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">InstantiationCompletionCallback</a> *completionCallback)</td></tr>
+<tr class="memdesc:ac03372359b6033b378bc036ffb19c78e inherit pub_methods_classAudioPluginFormat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate a type from a previously generated <a class="el" href="classPluginDescription.html" title="A small class to represent some facts about a particular type of plug-in. ">PluginDescription</a>.  <a href="#ac03372359b6033b378bc036ffb19c78e">More...</a><br/></td></tr>
+<tr class="separator:ac03372359b6033b378bc036ffb19c78e inherit pub_methods_classAudioPluginFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c1dd944b69054af6b8633bb43fcb5e inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#ac7c1dd944b69054af6b8633bb43fcb5e">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, std::function&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt; completionCallback)</td></tr>
+<tr class="separator:ac7c1dd944b69054af6b8633bb43fcb5e inherit pub_methods_classAudioPluginFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -252,51 +260,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae90f3132aa084e616fbced27c56bb423"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a>* LADSPAPluginFormat::createInstanceFromDescription </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>initialSampleRate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>initialBufferSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tries to recreate a type from a previously generated <a class="el" href="classPluginDescription.html" title="A small class to represent some facts about a particular type of plug-in. ">PluginDescription</a>. </p>
-<dl class="section see"><dt>See Also</dt><dd>PluginDescription::createInstance </dd></dl>
-
-<p>Implements <a class="el" href="classAudioPluginFormat.html#a525319c20460ad04b7bd0898474fdc7e">AudioPluginFormat</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ad7c0ffecd11041df2a986b01ac8562cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aead72c2ccbb9c3c356ede8b75086f0f9"></a>
+<a class="anchor" id="ae50bc8230d388164bffa34c1687eecf0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -399,7 +362,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>recursive</em>&#160;</td>
+          <td class="paramname"><em>recursive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowPluginsWhichRequireAsynchronousInstantiation</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -415,9 +384,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Searches a suggested set of directories for any plugins in this format. </p>
-<p>The path might be ignored, e.g. by AUs, which are found by the OS rather than manually. </p>
+<p>The path might be ignored, e.g. by AUs, which are found by the OS rather than manually.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">directoriesToSearch</td><td>This specifies which directories shall be searched for plug-ins. </td></tr>
+    <tr><td class="paramname">recursive</td><td>Should the search recursively traverse folders. </td></tr>
+    <tr><td class="paramname">allowPluginsWhichRequireAsynchronousInstantiation</td><td>If this is false then plug-ins which require asynchronous creation will be excluded. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="classAudioPluginFormat.html#a73d972820a0b8c1c487a939089153199">AudioPluginFormat</a>.</p>
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a74b24832af4eb78213ffaa35937d8ac6">AudioPluginFormat</a>.</p>
 
 </div>
 </div>
@@ -432,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool LADSPAPluginFormat::doesPluginStillExist </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -446,7 +423,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks whether this plugin could possibly be loaded. </p>
 <p>It doesn't actually need to load it, just to check whether the file or component still exists. </p>
 
-<p>Implements <a class="el" href="classAudioPluginFormat.html#aa75ed0f5726f88ca1276208f0c42da41">AudioPluginFormat</a>.</p>
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a895b91a86d223f3caeba207dba298d2f">AudioPluginFormat</a>.</p>
 
 </div>
 </div>
@@ -509,12 +486,17 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="juce__LADSPAPluginFormat_8h.html">juce_LADSPAPluginFormat.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

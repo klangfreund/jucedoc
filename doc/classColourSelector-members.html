@@ -194,13 +194,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classComponent.html#aa8f9bdf4bef08d89b75b173421fae668">isBroughtToFrontOnMouseClick</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a499f4e75a4c8b7fcc2aded220ca68769">isColourSpecified</a>(int colourId) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9">isCurrentlyBlockedByAnotherModalComponent</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7">isCurrentlyModal</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267">isCurrentlyModal</a>(bool onlyConsiderForemostModalComponent=true) const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a0e12726e34fdd284f036922597914bb3">isEnabled</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a31a41d721888e3ac78659e4815294ed1">isFocusContainer</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a0944e1751f32260afd5bd2a9fcd1a5b7">isMouseButtonDown</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ac3184a52027ad9106185d594c522d9d0">isMouseButtonDownAnywhere</a>() noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a23db151357ed4a783c224f210d036e63">isMouseOver</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a5cedb030a2bfae99dece95d8a10d0dcb">isMouseOverOrDragging</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a39e6cb0b07bf16648daa51b2c75be983">isMouseOverOrDragging</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a854420c3141bb90e440af6c7bc1bd360">isOnDesktop</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a6ef077ace37bcd13d033305e8875d4e7">isOpaque</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a2fc08a04c79abc21d65c70855b792ab9">isParentOf</a>(const Component *possibleChild) const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
@@ -272,7 +272,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classComponent.html#a875e6cc05407cea2d6a04dced62e13cd">setColour</a>(int colourId, Colour newColour)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a06800d0a55016e738c55078d82ef49fd">setComponentEffect</a>(ImageEffectFilter *newEffect)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ac41c215031a087064add6d3a180abd1d">setComponentID</a>(const String &amp;newID)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classColourSelector.html#a5e16de5cc63e5b4f0bf80807e0d96b3b">setCurrentColour</a>(Colour newColour)</td><td class="entry"><a class="el" href="classColourSelector.html">ColourSelector</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classColourSelector.html#a38aaf19f67b6c6f32628c4e71b3e6b25">setCurrentColour</a>(Colour newColour, NotificationType notificationType=sendNotification)</td><td class="entry"><a class="el" href="classColourSelector.html">ColourSelector</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a6f956f690d72256838146c7dfe99bc0e">setEnabled</a>(bool shouldBeEnabled)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#acea5b1758143ff5815fd13ae57f2172e">setExplicitFocusOrder</a>(int newFocusOrderIndex)</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a35b455090a35a07ab832582a635425a3">setFocusContainer</a>(bool shouldBeFocusContainer) noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
@@ -312,12 +312,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classSlider_1_1Listener.html#a16bff39b45d9d9eb712e450a4c9b155a">~Listener</a>()</td><td class="entry"><a class="el" href="classSlider_1_1Listener.html">Slider::Listener</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMouseListener.html#a9d4fc9354c8e4109c9b8f0d4b50dd440">~MouseListener</a>()</td><td class="entry"><a class="el" href="classMouseListener.html">MouseListener</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classURL.html">URL</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classURL.html#ac2726988a2b4c249ece1dea4216aa381">addEscapeChars</a>(const String &amp;stringToAddEscapeCharsTo, bool isParameter)</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classURL.html#ad2a5f3808099305c73c84112a01ecb1d">addEscapeChars</a>(const String &amp;stringToAddEscapeCharsTo, bool isParameter, bool roundBracketsAreLegal=true)</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classURL.html#ab487b0c5d684af5f3b0a678479696105">createInputStream</a>(bool doPostLikeRequest, OpenStreamProgressCallback *progressCallback=nullptr, void *progressCallbackContext=nullptr, String extraHeaders=String(), int connectionTimeOutMs=0, StringPairArray *responseHeaders=nullptr, int *statusCode=nullptr, int numRedirectsToFollow=5, String httpRequestCmd=String()) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classURL.html#a9a8a3e4344e94b6d074df5f7223f9c77">createWithoutParsing</a>(const String &amp;url)</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classURL.html#a9a90a4094536644741ed6da1bba7a202">getChildURL</a>(const String &amp;subPath) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
@@ -119,19 +119,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classURL.html#af069bf0e7621be7f0eec3f1c80f5560a">URL</a>(const URL &amp;other)</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classURL.html#a5f3ceab4f85a42a811b57328e09584c5">withDataToUpload</a>(const String &amp;parameterName, const String &amp;filename, const MemoryBlock &amp;fileContentToUpload, const String &amp;mimeType) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classURL.html#a341a3e78e1b831a33cf5a8a191573725">withFileToUpload</a>(const String &amp;parameterName, const File &amp;fileToUpload, const String &amp;mimeType) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classURL.html#aa3b7c064dc3834575ef77ee7db4cc239">withNewSubPath</a>(const String &amp;newPath) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classURL.html#a3974f5b9d28d360ac657df3b42082f5d">withParameter</a>(const String &amp;parameterName, const String &amp;parameterValue) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classURL.html#aff10c968ce8319434aeef4200fd3847b">withParameters</a>(const StringPairArray &amp;parametersToAdd) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classURL.html#a9fe9f66a50ff9f6d6d1bcb47ad3ead2a">withPOSTData</a>(const String &amp;postData) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classURL.html#aa05c89a5f6e5b4b146d0fc17e3676caa">withPOSTData</a>(const MemoryBlock &amp;postData) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classURL.html#a127152050325ba77075f00ee2630c33c">~URL</a>()</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classURL.html#a3cd4be815914d6a3a2baa3930731c34b">withNewDomainAndPath</a>(const String &amp;newFullPath) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classURL.html#aa3b7c064dc3834575ef77ee7db4cc239">withNewSubPath</a>(const String &amp;newPath) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classURL.html#a3974f5b9d28d360ac657df3b42082f5d">withParameter</a>(const String &amp;parameterName, const String &amp;parameterValue) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classURL.html#aff10c968ce8319434aeef4200fd3847b">withParameters</a>(const StringPairArray &amp;parametersToAdd) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classURL.html#a9fe9f66a50ff9f6d6d1bcb47ad3ead2a">withPOSTData</a>(const String &amp;postData) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classURL.html#aa05c89a5f6e5b4b146d0fc17e3676caa">withPOSTData</a>(const MemoryBlock &amp;postData) const </td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classURL.html#a127152050325ba77075f00ee2630c33c">~URL</a>()</td><td class="entry"><a class="el" href="classURL.html">URL</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

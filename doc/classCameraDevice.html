@@ -132,9 +132,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acf99196e8620c39638cb014044012b72"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraDevice.html#acf99196e8620c39638cb014044012b72">getAvailableDevices</a> ()</td></tr>
 <tr class="memdesc:acf99196e8620c39638cb014044012b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the available cameras on this machine.  <a href="#acf99196e8620c39638cb014044012b72">More...</a><br/></td></tr>
 <tr class="separator:acf99196e8620c39638cb014044012b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8b8a9815fb66b59e1622e5c19d4f6c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCameraDevice.html">CameraDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraDevice.html#a2f8b8a9815fb66b59e1622e5c19d4f6c">openDevice</a> (int deviceIndex, int minWidth=128, int minHeight=64, int maxWidth=1024, int maxHeight=768)</td></tr>
-<tr class="memdesc:a2f8b8a9815fb66b59e1622e5c19d4f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a camera device.  <a href="#a2f8b8a9815fb66b59e1622e5c19d4f6c">More...</a><br/></td></tr>
-<tr class="separator:a2f8b8a9815fb66b59e1622e5c19d4f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eacdfe0e80e66e7af5115f0af7c116c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCameraDevice.html">CameraDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraDevice.html#a4eacdfe0e80e66e7af5115f0af7c116c">openDevice</a> (int deviceIndex, int minWidth=128, int minHeight=64, int maxWidth=1024, int maxHeight=768, bool highQuality=true)</td></tr>
+<tr class="memdesc:a4eacdfe0e80e66e7af5115f0af7c116c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a camera device.  <a href="#a4eacdfe0e80e66e7af5115f0af7c116c">More...</a><br/></td></tr>
+<tr class="separator:a4eacdfe0e80e66e7af5115f0af7c116c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac720c6cdc6a67685a0472c5fc8566f37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraDevice.html#ac720c6cdc6a67685a0472c5fc8566f37">getFileExtension</a> ()</td></tr>
 <tr class="memdesc:ac720c6cdc6a67685a0472c5fc8566f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file extension that should be used for the files that you pass to <a class="el" href="classCameraDevice.html#a14cf9ed22ac491e949d05ac44071fbee" title="Starts recording video to the specified file. ">startRecordingToFile()</a>.  <a href="#ac720c6cdc6a67685a0472c5fc8566f37">More...</a><br/></td></tr>
 <tr class="separator:ac720c6cdc6a67685a0472c5fc8566f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,11 +191,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a list of the available cameras on this machine. </p>
-<p>You can open one of these devices by calling <a class="el" href="classCameraDevice.html#a2f8b8a9815fb66b59e1622e5c19d4f6c" title="Opens a camera device. ">openDevice()</a>. </p>
+<p>You can open one of these devices by calling <a class="el" href="classCameraDevice.html#a4eacdfe0e80e66e7af5115f0af7c116c" title="Opens a camera device. ">openDevice()</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="a2f8b8a9815fb66b59e1622e5c19d4f6c"></a>
+<a class="anchor" id="a4eacdfe0e80e66e7af5115f0af7c116c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +230,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxHeight</em> = <code>768</code>&#160;</td>
+          <td class="paramname"><em>maxHeight</em> = <code>768</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>highQuality</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,7 +253,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Opens a camera device. </p>
 <p>The index parameter indicates which of the items returned by <a class="el" href="classCameraDevice.html#acf99196e8620c39638cb014044012b72" title="Returns a list of the available cameras on this machine. ">getAvailableDevices()</a> to open.</p>
-<p>The size constraints allow the method to choose between different resolutions if the camera supports this. If the resolution cam't be specified (e.g. on the Mac) then these will be ignored. </p>
+<p>The size constraints allow the method to choose between different resolutions if the camera supports this. If the resolution cam't be specified (e.g. on the Mac) then these will be ignored.</p>
+<p>On Mac, if highQuality is false, then the camera will be opened in preview mode which will allow the OS to drop frames if the computer cannot keep up in processing the frames. </p>
 
 </div>
 </div>
@@ -426,12 +433,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__CameraDevice_8h.html">juce_CameraDevice.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -112,6 +112,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe291d92f59711ed51fa0d13d21faa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01304044d9a3081d8515ddfdb6885bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPopupMenu_1_1Options.html">Options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#aa01304044d9a3081d8515ddfdb6885bc">withItemThatMustBeVisible</a> (int idOfItemToBeVisible) const noexcept</td></tr>
 <tr class="separator:aa01304044d9a3081d8515ddfdb6885bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0110efcac01a6b17c80d9e1d51697397"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPopupMenu_1_1Options.html">Options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#a0110efcac01a6b17c80d9e1d51697397">withParentComponent</a> (<a class="el" href="classComponent.html">Component</a> *parentComponent) const noexcept</td></tr>
+<tr class="separator:a0110efcac01a6b17c80d9e1d51697397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b24337c151f99adef0b0a6bd2637383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#a6b24337c151f99adef0b0a6bd2637383">getParentComponent</a> () const noexcept</td></tr>
+<tr class="separator:a6b24337c151f99adef0b0a6bd2637383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a86b338f9791c4f5a53b5a46c9c3e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#af4a86b338f9791c4f5a53b5a46c9c3e0">getTargetComponent</a> () const noexcept</td></tr>
+<tr class="separator:af4a86b338f9791c4f5a53b5a46c9c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa22be1fa930b97fcb8f8b99a40e358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRectangle.html">Rectangle</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#acaa22be1fa930b97fcb8f8b99a40e358">getTargetScreenArea</a> () const noexcept</td></tr>
+<tr class="separator:acaa22be1fa930b97fcb8f8b99a40e358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69be731e2b8e3102c49ea2ca85d61409"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#a69be731e2b8e3102c49ea2ca85d61409">getMinimumWidth</a> () const noexcept</td></tr>
+<tr class="separator:a69be731e2b8e3102c49ea2ca85d61409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42aea7f3b87b0ab51c147490f1c2a34c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#a42aea7f3b87b0ab51c147490f1c2a34c">getMaximumNumColumns</a> () const noexcept</td></tr>
+<tr class="separator:a42aea7f3b87b0ab51c147490f1c2a34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc510a3ea8d4f646d22b6a8d3c9fe934"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#afc510a3ea8d4f646d22b6a8d3c9fe934">getStandardItemHeight</a> () const noexcept</td></tr>
+<tr class="separator:afc510a3ea8d4f646d22b6a8d3c9fe934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88a9199d5c7e33f0fb945d281dbbd19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1Options.html#ad88a9199d5c7e33f0fb945d281dbbd19">getItemThatMustBeVisible</a> () const noexcept</td></tr>
+<tr class="separator:ad88a9199d5c7e33f0fb945d281dbbd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to create a set of options to pass to the <a class="el" href="classPopupMenu.html#acd7bdfe5db59180d929a5dac90bcacce" title="Displays the menu and waits for the user to pick something. ">show()</a> method. </p>
@@ -282,16 +298,206 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0110efcac01a6b17c80d9e1d51697397"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPopupMenu_1_1Options.html">Options</a> PopupMenu::Options::withParentComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>parentComponent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b24337c151f99adef0b0a6bd2637383"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponent.html">Component</a>* PopupMenu::Options::getParentComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4a86b338f9791c4f5a53b5a46c9c3e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponent.html">Component</a>* PopupMenu::Options::getTargetComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaa22be1fa930b97fcb8f8b99a40e358"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRectangle.html">Rectangle</a>&lt;int&gt; PopupMenu::Options::getTargetScreenArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69be731e2b8e3102c49ea2ca85d61409"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PopupMenu::Options::getMinimumWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42aea7f3b87b0ab51c147490f1c2a34c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PopupMenu::Options::getMaximumNumColumns </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc510a3ea8d4f646d22b6a8d3c9fe934"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PopupMenu::Options::getStandardItemHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad88a9199d5c7e33f0fb945d281dbbd19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PopupMenu::Options::getItemThatMustBeVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__PopupMenu_8h.html">juce_PopupMenu.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

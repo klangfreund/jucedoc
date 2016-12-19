@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2357524e0d096bcde729ae99b03a38c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#ae2357524e0d096bcde729ae99b03a38c">getNumSubItems</a> () const noexcept</td></tr>
 <tr class="memdesc:ae2357524e0d096bcde729ae99b03a38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of sub-items that have been added to this item.  <a href="#ae2357524e0d096bcde729ae99b03a38c">More...</a><br/></td></tr>
 <tr class="separator:ae2357524e0d096bcde729ae99b03a38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12c774c2434074f795ba37a5c2d1755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTreeViewItem.html">TreeViewItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#ad12c774c2434074f795ba37a5c2d1755">getSubItem</a> (int index) const noexcept</td></tr>
+<tr class="memitem:ad12c774c2434074f795ba37a5c2d1755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTreeViewItem.html">TreeViewItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#ad12c774c2434074f795ba37a5c2d1755">getSubItem</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:ad12c774c2434074f795ba37a5c2d1755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the item's sub-items.  <a href="#ad12c774c2434074f795ba37a5c2d1755">More...</a><br/></td></tr>
 <tr class="separator:ad12c774c2434074f795ba37a5c2d1755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5f73cd812c6626047d38307560aaeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a3e5f73cd812c6626047d38307560aaeb">clearSubItems</a> ()</td></tr>
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb5e41812e3efba115ded6bf59fd4f72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#adb5e41812e3efba115ded6bf59fd4f72">addSubItemSorted</a> (ElementComparator &amp;comparator, <a class="el" href="classTreeViewItem.html">TreeViewItem</a> *newItem)</td></tr>
 <tr class="memdesc:adb5e41812e3efba115ded6bf59fd4f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sub-item with a sort-comparator, assuming that the existing items are already sorted.  <a href="#adb5e41812e3efba115ded6bf59fd4f72">More...</a><br/></td></tr>
 <tr class="separator:adb5e41812e3efba115ded6bf59fd4f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b8910184619d952841a1b93d4b75c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a80b8910184619d952841a1b93d4b75c4">removeSubItem</a> (int index, bool deleteItem=true)</td></tr>
+<tr class="memitem:a80b8910184619d952841a1b93d4b75c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a80b8910184619d952841a1b93d4b75c4">removeSubItem</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, bool deleteItem=true)</td></tr>
 <tr class="memdesc:a80b8910184619d952841a1b93d4b75c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes one of the sub-items.  <a href="#a80b8910184619d952841a1b93d4b75c4">More...</a><br/></td></tr>
 <tr class="separator:a80b8910184619d952841a1b93d4b75c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002342e5b39ddf192d445b2bdd16d086"><td class="memTemplParams" colspan="2">template&lt;class ElementComparator &gt; </td></tr>
@@ -1429,7 +1429,7 @@ template&lt;class ElementComparator &gt; </div>
 <p>If this returns a non-null variant then when the user drags an item, the treeview will try to find a <a class="el" href="classDragAndDropContainer.html" title="Enables drag-and-drop behaviour for a component and all its sub-components. ">DragAndDropContainer</a> in its parent hierarchy, and will use it to trigger a drag-and-drop operation, using this string as the source description, with the treeview itself as the source component.</p>
 <p>If you need more complex drag-and-drop behaviour, you can use custom components for the items, and use those to trigger the drag.</p>
 <p>To accept drag-and-drop in your tree, see <a class="el" href="classTreeViewItem.html#a7a1d27462d3ddf1fab3dca14e16c2788" title="If you want your item to act as a DragAndDropTarget, implement this method and return true...">isInterestedInDragSource()</a>, <a class="el" href="classTreeViewItem.html#abe8b909ba44b7eac0988b2adc6257c46" title="If you want your item to be able to have files drag-and-dropped onto it, implement this method and re...">isInterestedInFileDrag()</a>, etc.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a3333f43b55acbf1713ef1036dcb17d44" title="Begins a drag-and-drop operation. ">DragAndDropContainer::startDragging</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a1f05c2d712f9cf0dd2a789817549bf60" title="Begins a drag-and-drop operation. ">DragAndDropContainer::startDragging</a> </dd></dl>
 
 </div>
 </div>
@@ -1738,12 +1738,17 @@ template&lt;class ElementComparator &gt; </div>
 <li><a class="el" href="juce__TreeView_8h.html">juce_TreeView.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

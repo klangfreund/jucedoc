@@ -107,20 +107,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <area href="classAudioProcessorValueTreeState.html" title="This class contains a ValueTree which is used to manage an AudioProcessor&#39;s entire state..." alt="AudioProcessorValueTreeState" shape="rect" coords="205,224,400,248"/>
 <area href="classAudioVisualiserComponent.html" title="A simple component that can be used to show a scrolling waveform of audio data. " alt="AudioVisualiserComponent" shape="rect" coords="205,280,400,304"/>
 <area href="classBubbleMessageComponent.html" title="A speech-bubble component that displays a short message. " alt="BubbleMessageComponent" shape="rect" coords="205,336,400,360"/>
-<area href="classCaretComponent.html" alt="CaretComponent" shape="rect" coords="205,392,400,416"/>
-<area href="classComponentAnimator.html" title="Animates a set of components, moving them to a new position and/or fading their alpha levels..." alt="ComponentAnimator" shape="rect" coords="205,448,400,472"/>
-<area href="classDesktop.html" title="Describes and controls aspects of the computer&#39;s desktop. " alt="Desktop" shape="rect" coords="205,504,400,528"/>
-<area href="classFileBrowserComponent.html" title="A component for browsing and selecting a file or directory to open or save. " alt="FileBrowserComponent" shape="rect" coords="205,560,400,584"/>
-<area href="classImagePreviewComponent.html" title="A simple preview component that shows thumbnails of image files. " alt="ImagePreviewComponent" shape="rect" coords="205,616,400,640"/>
-<area href="classMenuBarComponent.html" title="A menu bar component. " alt="MenuBarComponent" shape="rect" coords="205,672,400,696"/>
-<area href="classMidiKeyboardComponent.html" title="A component that displays a piano keyboard, whose notes can be clicked on. " alt="MidiKeyboardComponent" shape="rect" coords="205,728,400,752"/>
-<area href="classMouseInactivityDetector.html" title="This object watches for mouse-events happening within a component, and if the mouse remains still for..." alt="MouseInactivityDetector" shape="rect" coords="205,784,400,808"/>
-<area href="classProgressBar.html" title="A progress bar component. " alt="ProgressBar" shape="rect" coords="205,840,400,864"/>
-<area href="classPropertiesFile.html" title="Wrapper on a file that stores a list of key/value data pairs. " alt="PropertiesFile" shape="rect" coords="205,896,400,920"/>
-<area href="classScrollBar.html" title="A scrollbar component. " alt="ScrollBar" shape="rect" coords="205,952,400,976"/>
-<area href="classSplashScreen.html" title="A component for showing a splash screen while your app starts up. " alt="SplashScreen" shape="rect" coords="205,1008,400,1032"/>
-<area href="classThreadWithProgressWindow.html" title="A thread that automatically pops up a modal dialog box with a progress bar and cancel button while it..." alt="ThreadWithProgressWindow" shape="rect" coords="205,1064,400,1088"/>
-<area href="classTooltipWindow.html" title="A window that displays a pop-up tooltip when the mouse hovers over another component. " alt="TooltipWindow" shape="rect" coords="205,1120,400,1144"/>
+<area href="classCallOutBox.html" title="A box with a small arrow that can be used as a temporary pop-up window to show extra controls when a ..." alt="CallOutBox" shape="rect" coords="205,392,400,416"/>
+<area href="classCaretComponent.html" alt="CaretComponent" shape="rect" coords="205,448,400,472"/>
+<area href="classComponentAnimator.html" title="Animates a set of components, moving them to a new position and/or fading their alpha levels..." alt="ComponentAnimator" shape="rect" coords="205,504,400,528"/>
+<area href="classDesktop.html" title="Describes and controls aspects of the computer&#39;s desktop. " alt="Desktop" shape="rect" coords="205,560,400,584"/>
+<area href="classFakeMouseMoveGenerator.html" alt="FakeMouseMoveGenerator" shape="rect" coords="205,616,400,640"/>
+<area href="classFileBrowserComponent.html" title="A component for browsing and selecting a file or directory to open or save. " alt="FileBrowserComponent" shape="rect" coords="205,672,400,696"/>
+<area href="classImagePreviewComponent.html" title="A simple preview component that shows thumbnails of image files. " alt="ImagePreviewComponent" shape="rect" coords="205,728,400,752"/>
+<area href="classMenuBarComponent.html" title="A menu bar component. " alt="MenuBarComponent" shape="rect" coords="205,784,400,808"/>
+<area href="classMidiKeyboardComponent.html" title="A component that displays a piano keyboard, whose notes can be clicked on. " alt="MidiKeyboardComponent" shape="rect" coords="205,840,400,864"/>
+<area href="classMouseInactivityDetector.html" title="This object watches for mouse-events happening within a component, and if the mouse remains still for..." alt="MouseInactivityDetector" shape="rect" coords="205,896,400,920"/>
+<area href="classProgressBar.html" title="A progress bar component. " alt="ProgressBar" shape="rect" coords="205,952,400,976"/>
+<area href="classPropertiesFile.html" title="Wrapper on a file that stores a list of key/value data pairs. " alt="PropertiesFile" shape="rect" coords="205,1008,400,1032"/>
+<area href="classScrollBar.html" title="A scrollbar component. " alt="ScrollBar" shape="rect" coords="205,1064,400,1088"/>
+<area href="classSplashScreen.html" title="A component for showing a splash screen while your app starts up. " alt="SplashScreen" shape="rect" coords="205,1120,400,1144"/>
+<area href="classStandalonePluginHolder.html" title="An object that creates and plays a standalone instance of an AudioProcessor. " alt="StandalonePluginHolder" shape="rect" coords="205,1176,400,1200"/>
+<area href="classThreadWithProgressWindow.html" title="A thread that automatically pops up a modal dialog box with a progress bar and cancel button while it..." alt="ThreadWithProgressWindow" shape="rect" coords="205,1232,400,1256"/>
+<area href="classTooltipWindow.html" title="A window that displays a pop-up tooltip when the mouse hovers over another component. " alt="TooltipWindow" shape="rect" coords="205,1288,400,1312"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -273,7 +276,7 @@ Protected Member Functions</h2></td></tr>
 <p>The user-defined callback routine that actually gets called periodically. </p>
 <p>It's perfectly ok to call <a class="el" href="classTimer.html#a3b1a51ac348c56a55fcef4570214f057" title="Starts the timer and sets the length of interval required. ">startTimer()</a> or <a class="el" href="classTimer.html#ab918b8c1f80bf1de92dd1a5878f498bd" title="Stops the timer. ">stopTimer()</a> from within this callback to change the subsequent intervals. </p>
 
-<p>Implemented in <a class="el" href="classMidiKeyboardComponent.html#a287ff0306d5f83f88aab4a512698b20f">MidiKeyboardComponent</a>, <a class="el" href="classBubbleMessageComponent.html#a3c18ebec472bdae07e7544261e6dc372">BubbleMessageComponent</a>, <a class="el" href="classAudioDeviceSelectorComponent.html#a225ffb9aebc48af8e51d0891fe2ae719">AudioDeviceSelectorComponent</a>, and <a class="el" href="classImagePreviewComponent.html#ad2a20bfff150cf417ded4f90eab0fe56">ImagePreviewComponent</a>.</p>
+<p>Implemented in <a class="el" href="classMidiKeyboardComponent.html#a287ff0306d5f83f88aab4a512698b20f">MidiKeyboardComponent</a>, <a class="el" href="classBubbleMessageComponent.html#a3c18ebec472bdae07e7544261e6dc372">BubbleMessageComponent</a>, <a class="el" href="classAudioDeviceSelectorComponent.html#a225ffb9aebc48af8e51d0891fe2ae719">AudioDeviceSelectorComponent</a>, <a class="el" href="classImagePreviewComponent.html#ad2a20bfff150cf417ded4f90eab0fe56">ImagePreviewComponent</a>, and <a class="el" href="classFakeMouseMoveGenerator.html#a9b66aec9e060556136c605f018f01786">FakeMouseMoveGenerator</a>.</p>
 
 </div>
 </div>
@@ -307,6 +310,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Referenced by <a class="el" href="classFakeMouseMoveGenerator.html#a0abab3f56b571ae115caf33eb5c9c596">FakeMouseMoveGenerator::FakeMouseMoveGenerator()</a>, and <a class="el" href="classStandalonePluginHolder.html#a01907d1aa9e4ce519e1e691f96eb2c06">StandalonePluginHolder::StandalonePluginHolder()</a>.</p>
 
 </div>
 </div>
@@ -361,10 +366,10 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stops the timer. </p>
-<p>No more callbacks will be made after this method returns.</p>
-<p>If this is called from a different thread, any callbacks that may be currently executing may be allowed to finish before the method returns. </p>
+<p>No more timer callbacks will be triggered after this method returns.</p>
+<p>Note that if you call this from a background thread while the message-thread is already in the middle of your callback, then this method will cancel any future timer callbacks, but it will return without waiting for the current one to finish. The current callback will continue, possibly still running some of your timer code after this method has returned. </p>
 
-<p>Referenced by <a class="el" href="classAnimatedPosition.html#a3378dd6b200539ef684f5d8031a4f69a">AnimatedPosition&lt; Behaviour &gt;::beginDrag()</a>, and <a class="el" href="classAnimatedPosition.html#a18201fedfc570cb04582ff65b9ddbf3d">AnimatedPosition&lt; Behaviour &gt;::setPosition()</a>.</p>
+<p>Referenced by <a class="el" href="classAnimatedPosition.html#a3378dd6b200539ef684f5d8031a4f69a">AnimatedPosition&lt; Behaviour &gt;::beginDrag()</a>, <a class="el" href="classAnimatedPosition.html#a18201fedfc570cb04582ff65b9ddbf3d">AnimatedPosition&lt; Behaviour &gt;::setPosition()</a>, and <a class="el" href="classStandalonePluginHolder.html#a228609a6435e5ae61c21c59353b675a5">StandalonePluginHolder::~StandalonePluginHolder()</a>.</p>
 
 </div>
 </div>
@@ -449,12 +454,17 @@ Protected Member Functions</h2></td></tr>
 <li><a class="el" href="juce__Timer_8h.html">juce_Timer.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

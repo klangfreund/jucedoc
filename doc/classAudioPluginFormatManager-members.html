@@ -92,17 +92,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#ac243852bbebb30d33264457579005875">addFormat</a>(AudioPluginFormat *format)</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#ac2781ab5b9b81784a1041edb16c3bdd9">AudioPluginFormatManager</a>()</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#a9cea8462bb39841dbb78371692cd2952">createPluginInstance</a>(const PluginDescription &amp;description, double initialSampleRate, int initialBufferSize, String &amp;errorMessage) const </td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#ae347b83fed14e1db1744242fdba6e7dd">createPluginInstanceAsync</a>(const PluginDescription &amp;description, double initialSampleRate, int initialBufferSize, AudioPluginFormat::InstantiationCompletionCallback *callback)</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#a6c00eeb1a876da59d86478ef114b68b1">createPluginInstanceAsync</a>(const PluginDescription &amp;description, double initialSampleRate, int initialBufferSize, std::function&lt; void(AudioPluginInstance *, const String &amp;)&gt; completionCallback)</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#aa72ffaa8d7fa00a3b510a75064bcb913">doesPluginStillExist</a>(const PluginDescription &amp;description) const </td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#a2b402a4797089f016b68a1e6afdf51ae">getFormat</a>(int index)</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#a3c93f8d5747cf2c9f1aa6967e19b5dbd">getNumFormats</a>()</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormatManager.html#af665e2e901d438a93a75282df73dd1b2">~AudioPluginFormatManager</a>()</td><td class="entry"><a class="el" href="classAudioPluginFormatManager.html">AudioPluginFormatManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

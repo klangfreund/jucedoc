@@ -282,6 +282,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e52715c2e320e53ee3032ff5a7c6482 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb91b019531cb707f6739f7dc1221f2 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a6fb91b019531cb707f6739f7dc1221f2">getMenuWindowFlags</a> () override</td></tr>
 <tr class="separator:a6fb91b019531cb707f6739f7dc1221f2 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44210a4874aecd1c8f09d99fe2291e7f inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a44210a4874aecd1c8f09d99fe2291e7f">preparePopupMenuWindow</a> (<a class="el" href="classComponent.html">Component</a> &amp;) override</td></tr>
+<tr class="separator:a44210a4874aecd1c8f09d99fe2291e7f inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5755c2b90e5e5acf5550a8212f02b4 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a1b5755c2b90e5e5acf5550a8212f02b4">getMenuBarItemWidth</a> (<a class="el" href="classMenuBarComponent.html">MenuBarComponent</a> &amp;, int itemIndex, const <a class="el" href="classString.html">String</a> &amp;itemText) override</td></tr>
 <tr class="separator:a1b5755c2b90e5e5acf5550a8212f02b4 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6787704cca21760169002051bda3fd6 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFont.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#ad6787704cca21760169002051bda3fd6">getMenuBarFont</a> (<a class="el" href="classMenuBarComponent.html">MenuBarComponent</a> &amp;, int itemIndex, const <a class="el" href="classString.html">String</a> &amp;itemText) override</td></tr>
@@ -290,6 +292,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54b4f0e2455bebdfa6950f46045c3907 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab95999ea94bed43aa989e682cbc94c6 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#aab95999ea94bed43aa989e682cbc94c6">drawMenuBarItem</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, int width, int height, int itemIndex, const <a class="el" href="classString.html">String</a> &amp;itemText, bool isMouseOverItem, bool isMenuOpen, bool isMouseOverBar, <a class="el" href="classMenuBarComponent.html">MenuBarComponent</a> &amp;) override</td></tr>
 <tr class="separator:aab95999ea94bed43aa989e682cbc94c6 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e33a2a72238adb3099c09b6113aea13 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a8e33a2a72238adb3099c09b6113aea13">getParentComponentForMenuOptions</a> (const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;options) override</td></tr>
+<tr class="separator:a8e33a2a72238adb3099c09b6113aea13 inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4076050f06f686b3f74908e888936c1a inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFont.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a4076050f06f686b3f74908e888936c1a">getComboBoxFont</a> (<a class="el" href="classComboBox.html">ComboBox</a> &amp;) override</td></tr>
 <tr class="separator:a4076050f06f686b3f74908e888936c1a inherit pub_methods_classLookAndFeel__V2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30e34dca52d3a5ede15af61d3518586 inherit pub_methods_classLookAndFeel__V2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLabel.html">Label</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#af30e34dca52d3a5ede15af61d3518586">createComboBoxTextBox</a> (<a class="el" href="classComboBox.html">ComboBox</a> &amp;) override</td></tr>
@@ -1742,12 +1746,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__LookAndFeel__V3_8h.html">juce_LookAndFeel_V3.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a898ca7521354c74d24ace4689b983f98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSAKey.html#a898ca7521354c74d24ace4689b983f98">isValid</a> () const noexcept</td></tr>
 <tr class="memdesc:a898ca7521354c74d24ace4689b983f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the object is a valid key, or false if it was created by the default constructor.  <a href="#a898ca7521354c74d24ace4689b983f98">More...</a><br/></td></tr>
 <tr class="separator:a898ca7521354c74d24ace4689b983f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66512b0a53fad1f68481b4aca050f93c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSAKey.html#a66512b0a53fad1f68481b4aca050f93c">applyToValue</a> (<a class="el" href="classBigInteger.html">BigInteger</a> &amp;value) const </td></tr>
+<tr class="memitem:a66512b0a53fad1f68481b4aca050f93c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSAKey.html#a66512b0a53fad1f68481b4aca050f93c">applyToValue</a> (<a class="el" href="classBigInteger.html">BigInteger</a> &amp;<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) const </td></tr>
 <tr class="memdesc:a66512b0a53fad1f68481b4aca050f93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes or decodes a value.  <a href="#a66512b0a53fad1f68481b4aca050f93c">More...</a><br/></td></tr>
 <tr class="separator:a66512b0a53fad1f68481b4aca050f93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -158,7 +158,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- fragment --><p>..or in Java with something like this:</p>
 <div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classRSAKey.html">RSAKey</a></div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">static</span> <a class="code" href="classBigInteger.html">BigInteger</a> <a class="code" href="classRSAKey.html#a66512b0a53fad1f68481b4aca050f93c">applyToValue</a> (<a class="code" href="classBigInteger.html">BigInteger</a> value, <a class="code" href="classString.html">String</a> key_part1, <a class="code" href="classString.html">String</a> key_part2)</div>
+<div class="line">    <span class="keyword">static</span> <a class="code" href="classBigInteger.html">BigInteger</a> <a class="code" href="classRSAKey.html#a66512b0a53fad1f68481b4aca050f93c">applyToValue</a> (<a class="code" href="classBigInteger.html">BigInteger</a> <a class="code" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, <a class="code" href="classString.html">String</a> key_part1, <a class="code" href="classString.html">String</a> key_part2)</div>
 <div class="line">    {</div>
 <div class="line">        <a class="code" href="classBigInteger.html">BigInteger</a> result = <a class="code" href="classBigInteger.html">BigInteger</a>.ZERO;</div>
 <div class="line">        <a class="code" href="classBigInteger.html">BigInteger</a> <a class="code" href="classRSAKey.html#af9992df31573da04eff2f95b6c215be1">part1</a> = <span class="keyword">new</span> <a class="code" href="classBigInteger.html">BigInteger</a> (key_part1, 16);</div>
@@ -458,12 +458,17 @@ Protected Attributes</h2></td></tr>
 <li><a class="el" href="juce__RSAKey_8h.html">juce_RSAKey.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

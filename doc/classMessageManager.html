@@ -147,6 +147,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">deleteInstance</a> ()</td></tr>
 <tr class="memdesc:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the global <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> instance.  <a href="#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">More...</a><br/></td></tr>
 <tr class="separator:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45b6558d8c58b3714a764b4238e3e5b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#ad45b6558d8c58b3714a764b4238e3e5b">callAsync</a> (std::function&lt; void(void)&gt;)</td></tr>
+<tr class="memdesc:ad45b6558d8c58b3714a764b4238e3e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously invokes a function or C++11 lambda on the message thread.  <a href="#ad45b6558d8c58b3714a764b4238e3e5b">More...</a><br/></td></tr>
+<tr class="separator:ad45b6558d8c58b3714a764b4238e3e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a252262c8bfe857ea77fe4e7b4b42ae80">broadcastMessage</a> (const <a class="el" href="classString.html">String</a> &amp;messageText)</td></tr>
 <tr class="memdesc:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to all other JUCE applications that are running.  <a href="#a252262c8bfe857ea77fe4e7b4b42ae80">More...</a><br/></td></tr>
 <tr class="separator:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,6 +313,33 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Synchronously dispatches messages until a given time has elapsed. </p>
 <p>Returns false if a quit message has been posted by a call to <a class="el" href="classMessageManager.html#a283b20c2b3786537b31952670d2df7bf" title="Sends a signal that the dispatch loop should terminate. ">stopDispatchLoop()</a>, otherwise returns true. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad45b6558d8c58b3714a764b4238e3e5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void MessageManager::callAsync </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asynchronously invokes a function or C++11 lambda on the message thread. </p>
+<p>Internally this uses the <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a> class to invoke the callback. </p>
 
 </div>
 </div>
@@ -526,12 +556,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__MessageManager_8h.html">juce_MessageManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

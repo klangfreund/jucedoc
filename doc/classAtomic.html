@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52abf7d407845b5ff44b46b1c96f00d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a52abf7d407845b5ff44b46b1c96f00d1">set</a> (Type newValue) noexcept</td></tr>
 <tr class="memdesc:a52abf7d407845b5ff44b46b1c96f00d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically sets the current value.  <a href="#a52abf7d407845b5ff44b46b1c96f00d1">More...</a><br/></td></tr>
 <tr class="separator:a52abf7d407845b5ff44b46b1c96f00d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98405cfea37d5635bdddf47e92da81ea"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a98405cfea37d5635bdddf47e92da81ea">exchange</a> (Type <a class="el" href="classAtomic.html#a4c042c01777b1efe30266a45b7df36f4">value</a>) noexcept</td></tr>
+<tr class="memitem:a98405cfea37d5635bdddf47e92da81ea"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a98405cfea37d5635bdddf47e92da81ea">exchange</a> (Type <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="memdesc:a98405cfea37d5635bdddf47e92da81ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically sets the current value, returning the value that was replaced.  <a href="#a98405cfea37d5635bdddf47e92da81ea">More...</a><br/></td></tr>
 <tr class="separator:a98405cfea37d5635bdddf47e92da81ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c7b49a22075389a3edac358c83c92e"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#ab5c7b49a22075389a3edac358c83c92e">operator+=</a> (Type amountToAdd) noexcept</td></tr>
@@ -563,7 +563,7 @@ template&lt;typename Type&gt; </div>
 
 <p>Atomically compares this value with a target value, and if it is equal, sets this to be equal to a new value. </p>
 <p>This operation is the atomic equivalent of doing this: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code" href="classAtomic.html#a9c0966a21db3a9d4649f8c869bb38fa0">compareAndSetBool</a> (Type newValue, Type valueToCompare)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code" href="classAtomic.html#a9c0966a21db3a9d4649f8c869bb38fa0">compareAndSetBool</a> (<a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> newValue, <a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> valueToCompare)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (<span class="keyword">get</span>() == valueToCompare)</div>
 <div class="line">    {</div>
@@ -616,9 +616,9 @@ template&lt;typename Type&gt; </div>
 
 <p>Atomically compares this value with a target value, and if it is equal, sets this to be equal to a new value. </p>
 <p>This operation is the atomic equivalent of doing this: </p>
-<div class="fragment"><div class="line">Type <a class="code" href="classAtomic.html#a9d80abdbdf76b8afd9cbf9baf8851910">compareAndSetValue</a> (Type newValue, Type valueToCompare)</div>
+<div class="fragment"><div class="line"><a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> <a class="code" href="classAtomic.html#a9d80abdbdf76b8afd9cbf9baf8851910">compareAndSetValue</a> (<a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> newValue, <a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> valueToCompare)</div>
 <div class="line">{</div>
-<div class="line">    Type oldValue = <span class="keyword">get</span>();</div>
+<div class="line">    <a class="code" href="namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94">Type</a> oldValue = <span class="keyword">get</span>();</div>
 <div class="line">    <span class="keywordflow">if</span> (oldValue == valueToCompare)</div>
 <div class="line">        <a class="code" href="classAtomic.html#a52abf7d407845b5ff44b46b1c96f00d1">set</a> (newValue);</div>
 <div class="line"></div>
@@ -664,13 +664,13 @@ template&lt;typename Type &gt; </div>
 template&lt;typename Type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">volatile Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::value</td>
+          <td class="memname">volatile Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The raw value that this class operates on. </p>
-<p>This is exposed publically in case you need to manipulate it directly for performance reasons. </p>
+<p>This is exposed publicly in case you need to manipulate it directly for performance reasons. </p>
 
 <p>Referenced by <a class="el" href="classThreadLocalValue.html#a5f84ce8c97c0c3d76be387b0d9cd5feb">ThreadLocalValue&lt; Type &gt;::~ThreadLocalValue()</a>.</p>
 
@@ -680,12 +680,17 @@ template&lt;typename Type&gt; </div>
 <li><a class="el" href="juce__Atomic_8h.html">juce_Atomic.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

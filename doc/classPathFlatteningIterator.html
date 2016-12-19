@@ -84,7 +84,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classPathFlatteningIterator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PathFlatteningIterator Class Reference</div>  </div>
@@ -96,9 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f77a3104caf90823cad4c9cfdc9f358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPathFlatteningIterator.html#a4f77a3104caf90823cad4c9cfdc9f358">PathFlatteningIterator</a> (const <a class="el" href="classPath.html">Path</a> &amp;path, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a>, float tolerance=<a class="el" href="classPathFlatteningIterator.html#af803d3dccc84d7e2a71d77fcbadcd650">defaultTolerance</a>)</td></tr>
-<tr class="memdesc:a4f77a3104caf90823cad4c9cfdc9f358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classPathFlatteningIterator.html" title="Flattens a Path object into a series of straight-line sections. ">PathFlatteningIterator</a>.  <a href="#a4f77a3104caf90823cad4c9cfdc9f358">More...</a><br/></td></tr>
-<tr class="separator:a4f77a3104caf90823cad4c9cfdc9f358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f878dce32e05639dae4e3ebdc103e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPathFlatteningIterator.html#a54f878dce32e05639dae4e3ebdc103e1">PathFlatteningIterator</a> (const <a class="el" href="classPath.html">Path</a> &amp;path, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html">AffineTransform</a>(), float tolerance=<a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">Path::defaultToleranceForMeasurement</a>)</td></tr>
+<tr class="memdesc:a54f878dce32e05639dae4e3ebdc103e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classPathFlatteningIterator.html" title="Flattens a Path object into a series of straight-line sections. ">PathFlatteningIterator</a>.  <a href="#a54f878dce32e05639dae4e3ebdc103e1">More...</a><br/></td></tr>
+<tr class="separator:a54f878dce32e05639dae4e3ebdc103e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907158adef4ad38fd4899142b237106f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPathFlatteningIterator.html#a907158adef4ad38fd4899142b237106f">~PathFlatteningIterator</a> ()</td></tr>
 <tr class="memdesc:a907158adef4ad38fd4899142b237106f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a907158adef4ad38fd4899142b237106f">More...</a><br/></td></tr>
 <tr class="separator:a907158adef4ad38fd4899142b237106f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,19 +128,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a96ac386608cfe18dde7de5a433aac417"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPathFlatteningIterator.html#a96ac386608cfe18dde7de5a433aac417">subPathIndex</a></td></tr>
 <tr class="memdesc:a96ac386608cfe18dde7de5a433aac417"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the current line within the current sub-path.  <a href="#a96ac386608cfe18dde7de5a433aac417">More...</a><br/></td></tr>
 <tr class="separator:a96ac386608cfe18dde7de5a433aac417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af803d3dccc84d7e2a71d77fcbadcd650"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPathFlatteningIterator.html#af803d3dccc84d7e2a71d77fcbadcd650">defaultTolerance</a></td></tr>
-<tr class="memdesc:af803d3dccc84d7e2a71d77fcbadcd650"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default value that should be used for the tolerance value (see the constructor parameters).  <a href="#af803d3dccc84d7e2a71d77fcbadcd650">More...</a><br/></td></tr>
-<tr class="separator:af803d3dccc84d7e2a71d77fcbadcd650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Flattens a <a class="el" href="classPath.html" title="A path is a sequence of lines and curves that may either form a closed shape or be open-ended...">Path</a> object into a series of straight-line sections. </p>
 <p>Use one of these to iterate through a <a class="el" href="classPath.html" title="A path is a sequence of lines and curves that may either form a closed shape or be open-ended...">Path</a> object, and it will convert all the curves into line sections so it's easy to render or perform geometric operations on.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html" title="A path is a sequence of lines and curves that may either form a closed shape or be open-ended...">Path</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4f77a3104caf90823cad4c9cfdc9f358"></a>
+<a class="anchor" id="a54f878dce32e05639dae4e3ebdc103e1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -155,13 +148,13 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a></code>, </td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html">AffineTransform</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPathFlatteningIterator.html#af803d3dccc84d7e2a71d77fcbadcd650">defaultTolerance</a></code>&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">Path::defaultToleranceForMeasurement</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -333,38 +326,21 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af803d3dccc84d7e2a71d77fcbadcd650"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const float PathFlatteningIterator::defaultTolerance</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is the default value that should be used for the tolerance value (see the constructor parameters). </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__PathIterator_8h.html">juce_PathIterator.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

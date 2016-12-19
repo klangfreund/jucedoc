@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <map id="AudioIODeviceCallback_map" name="AudioIODeviceCallback_map">
 <area href="classAudioProcessorPlayer.html" title="An AudioIODeviceCallback object which streams audio through an AudioProcessor. " alt="AudioProcessorPlayer" shape="rect" coords="0,56,147,80"/>
 <area href="classAudioSourcePlayer.html" title="Wrapper class to continuously stream audio from an audio source to an AudioIODevice. " alt="AudioSourcePlayer" shape="rect" coords="157,56,304,80"/>
+<area href="classSoundPlayer.html" title="A simple sound player that you can add to the AudioDeviceManager to play simple sounds. " alt="SoundPlayer" shape="rect" coords="314,56,461,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -217,7 +218,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classAudioSourcePlayer.html#affe24f50bfa4d73f8e2d220bec2433ec">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#aa9ec99f33b14a00a4dc33d47f29576f6">AudioProcessorPlayer</a>.</p>
+<p>Implemented in <a class="el" href="classSoundPlayer.html#a90ec033e5d30ddb9168698b08b749576">SoundPlayer</a>, <a class="el" href="classAudioSourcePlayer.html#affe24f50bfa4d73f8e2d220bec2433ec">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#aa9ec99f33b14a00a4dc33d47f29576f6">AudioProcessorPlayer</a>.</p>
 
 </div>
 </div>
@@ -253,7 +254,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classAudioSourcePlayer.html#a873c307b234e375b25aa589aba5ebaca">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#a6e86ec16b53690d894d67fd7cfd7fcc4">AudioProcessorPlayer</a>.</p>
+<p>Implemented in <a class="el" href="classSoundPlayer.html#a655a273e8d700f0b251d5bc732b7dd55">SoundPlayer</a>, <a class="el" href="classAudioSourcePlayer.html#a873c307b234e375b25aa589aba5ebaca">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#a6e86ec16b53690d894d67fd7cfd7fcc4">AudioProcessorPlayer</a>.</p>
 
 </div>
 </div>
@@ -280,7 +281,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Called to indicate that the device has stopped. </p>
 
-<p>Implemented in <a class="el" href="classAudioSourcePlayer.html#a4858c64b3dc045c9fd400ea72bed1898">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#ab7ce7ac03e058c2fe908b98f2889c65b">AudioProcessorPlayer</a>.</p>
+<p>Implemented in <a class="el" href="classSoundPlayer.html#a31316aeaf085210d8c3c9ad516116ce4">SoundPlayer</a>, <a class="el" href="classAudioSourcePlayer.html#a4858c64b3dc045c9fd400ea72bed1898">AudioSourcePlayer</a>, and <a class="el" href="classAudioProcessorPlayer.html#ab7ce7ac03e058c2fe908b98f2889c65b">AudioProcessorPlayer</a>.</p>
 
 </div>
 </div>
@@ -309,18 +310,25 @@ Public Member Functions</h2></td></tr>
 <p>This can be overridden to be told if the device generates an error while operating. </p>
 <p>Be aware that this could be called by any thread! And not all devices perform this callback. </p>
 
+<p>Reimplemented in <a class="el" href="classSoundPlayer.html#a2e4fbd35c60ab3af1f46fb9963a433ad">SoundPlayer</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__AudioIODevice_8h.html">juce_AudioIODevice.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

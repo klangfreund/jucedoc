@@ -90,9 +90,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a93d639299ef9dfedc651544e05f06693">addChild</a>(const ValueTree &amp;child, int index, UndoManager *undoManager)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classValueTree.html#a0a0d82471cb1119fc1a7b7018e3af394">addListener</a>(Listener *listener)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ad2596a93fa05a1a0c95cd6c275e77982">copyPropertiesFrom</a>(const ValueTree &amp;source, UndoManager *undoManager)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classValueTree.html#ad212f52a1dee540a97b256a57c881fed">createCopy</a>() const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ad4b6941292f6ba19b1f4c7a91b82f957">createXml</a>() const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a2cf33db0574a9f2673cde96bcfd808c5">begin</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#ad2596a93fa05a1a0c95cd6c275e77982">copyPropertiesFrom</a>(const ValueTree &amp;source, UndoManager *undoManager)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ad212f52a1dee540a97b256a57c881fed">createCopy</a>() const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#ad4b6941292f6ba19b1f4c7a91b82f957">createXml</a>() const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a40346edfb70253a482cd0642ac5ac577">end</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classValueTree.html#a0d2f1bdd6313e53f256ed015986f837a">fromXml</a>(const XmlElement &amp;xml)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ae3c7ef24e903b145e7885820898240cb">getChild</a>(int index) const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classValueTree.html#a00e9d09ad2439b9eb5cb79cb146c5a73">getChildWithName</a>(const Identifier &amp;type) const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
@@ -105,13 +107,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a37c064d4411df78b7d1d8ded5cac3ce3">getProperty</a>(const Identifier &amp;name, const var &amp;defaultReturnValue) const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classValueTree.html#aa36d40c533583c723be757c77ade1a5c">getPropertyAsValue</a>(const Identifier &amp;name, UndoManager *undoManager)</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a6ea2ce53b4759a37d58e3f99d9702e36">getPropertyName</a>(int index) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classValueTree.html#ade7c3497b915a14168d347b20258122d">getReferenceCount</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a83099cde9f794842a2378c2935976a90">getSibling</a>(int delta) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classValueTree.html#aaba6256213ee02c418e9ef3d320f0ff1">getType</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a0dbec0d665fb9d57b9fd7b3189ec0ee0">hasProperty</a>(const Identifier &amp;name) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classValueTree.html#a5d41bc2066cae65b69aa614aa0f68ff1">hasType</a>(const Identifier &amp;typeName) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#aecc3e5c14e02f7ee3a958006d5146b78">indexOf</a>(const ValueTree &amp;child) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classValueTree.html#af49e8bf1c5072d0722dff9ef81b84f68">invalid</a></td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#ad22d040f68cf2f91784e18573cc6949a">getPropertyPointer</a>(const Identifier &amp;name) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ade7c3497b915a14168d347b20258122d">getReferenceCount</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#a83099cde9f794842a2378c2935976a90">getSibling</a>(int delta) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#aaba6256213ee02c418e9ef3d320f0ff1">getType</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#a0dbec0d665fb9d57b9fd7b3189ec0ee0">hasProperty</a>(const Identifier &amp;name) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a5d41bc2066cae65b69aa614aa0f68ff1">hasType</a>(const Identifier &amp;typeName) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classValueTree.html#aecc3e5c14e02f7ee3a958006d5146b78">indexOf</a>(const ValueTree &amp;child) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#ad1973a657c1c2907c9996038e7e756fe">isAChildOf</a>(const ValueTree &amp;possibleParent) const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classValueTree.html#a4fee40c899026e8ac370b5fd2ff30c99">isEquivalentTo</a>(const ValueTree &amp;) const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a9c1506afbe6b840e4ab43fabf275845a">isValid</a>() const noexcept</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
@@ -140,12 +142,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classValueTree.html#a0a2a0fa2cf051fef99cab56db74a4266">writeToStream</a>(OutputStream &amp;output) const </td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classValueTree.html#a4e0b4721cb1ec7f79c59192df3b97bcc">~ValueTree</a>()</td><td class="entry"><a class="el" href="classValueTree.html">ValueTree</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

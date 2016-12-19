@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b8d9a3096714d32adf952c985f8aff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineUnlockStatus.html#a3b8d9a3096714d32adf952c985f8aff3">isUnlocked</a> () const </td></tr>
 <tr class="memdesc:a3b8d9a3096714d32adf952c985f8aff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the product has been successfully authorised for this machine.  <a href="#a3b8d9a3096714d32adf952c985f8aff3">More...</a><br/></td></tr>
 <tr class="separator:a3b8d9a3096714d32adf952c985f8aff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d2580fa444ac5d82f17eee41f02c57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTime.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineUnlockStatus.html#a82d2580fa444ac5d82f17eee41f02c57">getExpiryTime</a> () const </td></tr>
+<tr class="memdesc:a82d2580fa444ac5d82f17eee41f02c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classTime.html" title="Holds an absolute date and time. ">Time</a> when the keyfile expires.  <a href="#a82d2580fa444ac5d82f17eee41f02c57">More...</a><br/></td></tr>
+<tr class="separator:a82d2580fa444ac5d82f17eee41f02c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0b9c189f1923a017d9f3ffb726dd91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOnlineUnlockStatus.html#a4c0b9c189f1923a017d9f3ffb726dd91">setUserEmail</a> (const <a class="el" href="classString.html">String</a> &amp;usernameOrEmail)</td></tr>
 <tr class="memdesc:a4c0b9c189f1923a017d9f3ffb726dd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally allows the app to provide the user's email address if it is known.  <a href="#a4c0b9c189f1923a017d9f3ffb726dd91">More...</a><br/></td></tr>
 <tr class="separator:a4c0b9c189f1923a017d9f3ffb726dd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,9 +470,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns a list of strings, any of which should be unique to this physical computer. </p>
 <p>When testing whether the user is allowed to use the product on this machine, this list of tokens is compared to the ones that were stored on the webserver.</p>
-<p>The default implementation of this method will calculate some machine IDs based on things like network MAC addresses, hard-disk IDs, etc, but if you want, you can overload it to generate your own list of IDs.</p>
-<p>The IDs that are returned should be short alphanumeric strings without any punctuation characters. Since users may need to type them, case is ignored when comparing them.</p>
-<p>Note that the first item in the list is considered to be the "main" ID, and this will be the one that is displayed to the user and registered with the marketplace webserver. Subsequent IDs are just used as fallback to avoid false negatives when checking for registration on machines which have had hardware added/removed since the product was first registered. </p>
+<p>The default implementation of this method will simply call <a class="el" href="structOnlineUnlockStatus_1_1MachineIDUtilities.html#afdd5483bba5e18fbf58a5acb61710eb6" title="This method calculates some machine IDs based on things like network MAC addresses, hard-disk IDs, etc, but if you want, you can overload it to generate your own list of IDs. ">MachineIDUtilities::getLocalMachineIDs()</a>, which provides a default version of this functionality. </p>
 
 </div>
 </div>
@@ -489,6 +490,24 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if the product has been successfully authorised for this machine. </p>
 <p>The reason it returns a variant rather than a bool is just to make it marginally more tedious for crackers to work around. Hopefully if this method gets inlined they'll need to hack all the places where you call it, rather than just the function itself.</p>
 <p>Bear in mind that each place where you check this return value will need to be changed by a cracker in order to unlock your app, so the more places you call this method, the more hassle it will be for them to find and crack them all. </p>
+
+</div>
+</div>
+<a class="anchor" id="a82d2580fa444ac5d82f17eee41f02c57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTime.html">Time</a> OnlineUnlockStatus::getExpiryTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="classTime.html" title="Holds an absolute date and time. ">Time</a> when the keyfile expires. </p>
+<p>If a the key file obtained has an expiry time, isUnlocked will return false and this will return a non-zero time. The interpretation of this is up to your app but could be used for subscription based models or trial periods. </p>
 
 </div>
 </div>
@@ -616,12 +635,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__OnlineUnlockStatus_8h.html">juce_OnlineUnlockStatus.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

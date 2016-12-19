@@ -85,7 +85,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classString-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">String Class Reference</div>  </div>
@@ -353,7 +352,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d7b8d46182d86bc4b57d2d5fb40430e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a0d7b8d46182d86bc4b57d2d5fb40430e">lastIndexOfAnyOf</a> (<a class="el" href="classStringRef.html">StringRef</a> charactersToLookFor, bool ignoreCase=false) const noexcept</td></tr>
 <tr class="memdesc:a0d7b8d46182d86bc4b57d2d5fb40430e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the last character in this string that matches one of the characters passed-in to this method.  <a href="#a0d7b8d46182d86bc4b57d2d5fb40430e">More...</a><br/></td></tr>
 <tr class="separator:a0d7b8d46182d86bc4b57d2d5fb40430e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c74fe30fd4e170857d492d002a8e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a29c74fe30fd4e170857d492d002a8e79">operator[]</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a29c74fe30fd4e170857d492d002a8e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a29c74fe30fd4e170857d492d002a8e79">operator[]</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a29c74fe30fd4e170857d492d002a8e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character at this index in the string.  <a href="#a29c74fe30fd4e170857d492d002a8e79">More...</a><br/></td></tr>
 <tr class="separator:a29c74fe30fd4e170857d492d002a8e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a601ee2751c6ba60b70875de52ef86a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a601ee2751c6ba60b70875de52ef86a90">getLastCharacter</a> () const noexcept</td></tr>
@@ -577,15 +576,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0116dc51d7bdd363d14c72bba60060a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#aa0116dc51d7bdd363d14c72bba60060a">fromUTF8</a> (const char *utf8buffer, int bufferSizeBytes=-1)</td></tr>
 <tr class="memdesc:aa0116dc51d7bdd363d14c72bba60060a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from a UTF-8 encoded buffer.  <a href="#aa0116dc51d7bdd363d14c72bba60060a">More...</a><br/></td></tr>
 <tr class="separator:aa0116dc51d7bdd363d14c72bba60060a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1270b5f8664e24ba8abaf23402618193"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a1270b5f8664e24ba8abaf23402618193">fromSingleByteData</a> (const void *data, size_t numBytes)</td></tr>
+<tr class="separator:a1270b5f8664e24ba8abaf23402618193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080d955ce1e06ea976077db710bb83a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a080d955ce1e06ea976077db710bb83a6">fromCFString</a> (CFStringRef cfString)</td></tr>
 <tr class="memdesc:a080d955ce1e06ea976077db710bb83a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from an OSX CFString.  <a href="#a080d955ce1e06ea976077db710bb83a6">More...</a><br/></td></tr>
 <tr class="separator:a080d955ce1e06ea976077db710bb83a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:afd02116a5571fcc8bc1e6fdabe132a85"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">empty</a></td></tr>
-<tr class="memdesc:afd02116a5571fcc8bc1e6fdabe132a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an empty string that can be used whenever one is needed.  <a href="#afd02116a5571fcc8bc1e6fdabe132a85">More...</a><br/></td></tr>
-<tr class="separator:afd02116a5571fcc8bc1e6fdabe132a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The JUCE <a class="el" href="classString.html" title="The JUCE String class! ">String</a> class! </p>
@@ -631,7 +626,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an empty string. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85" title="This is an empty string that can be used whenever one is needed. ">empty</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>empty </dd></dl>
 
 </div>
 </div>
@@ -4774,6 +4769,40 @@ template&lt;class CharPointer &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a1270b5f8664e24ba8abaf23402618193"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classString.html">String</a> String::fromSingleByteData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a050a97b5afa6e3dd774f10f1c616ee58"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4915,40 +4944,21 @@ template&lt;class CharPointer &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="afd02116a5571fcc8bc1e6fdabe132a85"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classString.html">String</a> String::empty</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is an empty string that can be used whenever one is needed. </p>
-<p>It's better to use this than <a class="el" href="classString.html#a0225bb76bd3527b0e9ec9663c53f873d" title="Creates an empty string. ">String()</a> because it explains what's going on and is more efficient. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__String_8h.html">juce_String.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

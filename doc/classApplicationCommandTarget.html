@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab5ee995932e10bd18dc6fff111f3835e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this command can currently be performed by this target.  <a href="#ab5ee995932e10bd18dc6fff111f3835e">More...</a><br/></td></tr>
 <tr class="separator:ab5ee995932e10bd18dc6fff111f3835e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8fb128295bd2117cfdc982db022ef6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classApplicationCommandTarget.html">ApplicationCommandTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationCommandTarget.html#aa8fb128295bd2117cfdc982db022ef6a">findFirstTargetParentComponent</a> ()</td></tr>
-<tr class="memdesc:aa8fb128295bd2117cfdc982db022ef6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this object is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, this method will seach upwards in its current UI hierarchy for the next parent component that implements the <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> class.  <a href="#aa8fb128295bd2117cfdc982db022ef6a">More...</a><br/></td></tr>
+<tr class="memdesc:aa8fb128295bd2117cfdc982db022ef6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this object is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, this method will search upwards in its current UI hierarchy for the next parent component that implements the <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> class.  <a href="#aa8fb128295bd2117cfdc982db022ef6a">More...</a><br/></td></tr>
 <tr class="separator:aa8fb128295bd2117cfdc982db022ef6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -221,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <p>This must return the next target to try after this one. </p>
 <p>When a command is being sent, and the first target can't handle that command, this method is used to determine the next target that should be tried.</p>
 <p>It may return nullptr if it doesn't know of another target.</p>
-<p>If your target is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, you would usually use the <a class="el" href="classApplicationCommandTarget.html#aa8fb128295bd2117cfdc982db022ef6a" title="If this object is a Component, this method will seach upwards in its current UI hierarchy for the nex...">findFirstTargetParentComponent()</a> method to return a parent component that might want to handle it.</p>
+<p>If your target is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, you would usually use the <a class="el" href="classApplicationCommandTarget.html#aa8fb128295bd2117cfdc982db022ef6a" title="If this object is a Component, this method will search upwards in its current UI hierarchy for the ne...">findFirstTargetParentComponent()</a> method to return a parent component that might want to handle it.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classApplicationCommandTarget.html#aeffaac3af6c4922240e1e5e03ad0a1b5" title="Makes this target invoke a command. ">invoke</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="classCodeEditorComponent.html#a830b370576d782d2e75f33164322e012">CodeEditorComponent</a>, and <a class="el" href="classJUCEApplication.html#ad1c117f0c85adf4cd41cbd3a629a0d80">JUCEApplication</a>.</p>
@@ -450,7 +450,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If this object is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, this method will seach upwards in its current UI hierarchy for the next parent component that implements the <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> class. </p>
+<p>If this object is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, this method will search upwards in its current UI hierarchy for the next parent component that implements the <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> class. </p>
 <p>If your target is a <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>, this is a very handy method to use in your <a class="el" href="classApplicationCommandTarget.html#a540016056ca6fc19818e951359c710da" title="This must return the next target to try after this one. ">getNextCommandTarget()</a> implementation. </p>
 
 </div>
@@ -459,12 +459,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ApplicationCommandTarget_8h.html">juce_ApplicationCommandTarget.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

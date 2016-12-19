@@ -84,7 +84,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">juce_ApplicationBase.h File Reference</div>  </div>
 </div><!--header-->
@@ -95,14 +96,61 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html">JUCEApplicationBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for application classes.  <a href="classJUCEApplicationBase.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a267fd4f83073fb084b389df70243c52e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__ApplicationBase_8h.html#a267fd4f83073fb084b389df70243c52e">JUCE_TRY</a>&#160;&#160;&#160;try</td></tr>
+<tr class="memdesc:a267fd4f83073fb084b389df70243c52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The JUCE_TRY/JUCE_CATCH_EXCEPTION wrappers can be used to pass any uncaught exceptions to the JUCEApplicationBase::sendUnhandledException() method.  <a href="#a267fd4f83073fb084b389df70243c52e">More...</a><br/></td></tr>
+<tr class="separator:a267fd4f83073fb084b389df70243c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b33d944e52097017e10dbc10de503b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__ApplicationBase_8h.html#a76b33d944e52097017e10dbc10de503b">JUCE_CATCH_EXCEPTION</a></td></tr>
+<tr class="memdesc:a76b33d944e52097017e10dbc10de503b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The JUCE_TRY/JUCE_CATCH_EXCEPTION wrappers can be used to pass any uncaught exceptions to the JUCEApplicationBase::sendUnhandledException() method.  <a href="#a76b33d944e52097017e10dbc10de503b">More...</a><br/></td></tr>
+<tr class="separator:a76b33d944e52097017e10dbc10de503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a267fd4f83073fb084b389df70243c52e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_TRY&#160;&#160;&#160;try</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The JUCE_TRY/JUCE_CATCH_EXCEPTION wrappers can be used to pass any uncaught exceptions to the JUCEApplicationBase::sendUnhandledException() method. </p>
+<p>This functionality can be enabled with the JUCE_CATCH_UNHANDLED_EXCEPTIONS macro. </p>
+
+</div>
+</div>
+<a class="anchor" id="a76b33d944e52097017e10dbc10de503b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_CATCH_EXCEPTION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) { juce::JUCEApplicationBase::sendUnhandledException (&amp;e,      __FILE__, __LINE__); } \</div>
+<div class="line">    catch (...)                     { juce::JUCEApplicationBase::sendUnhandledException (<span class="keyword">nullptr</span>, __FILE__, __LINE__); }</div>
+</div><!-- fragment -->
+<p>The JUCE_TRY/JUCE_CATCH_EXCEPTION wrappers can be used to pass any uncaught exceptions to the JUCEApplicationBase::sendUnhandledException() method. </p>
+<p>This functionality can be enabled with the JUCE_CATCH_UNHANDLED_EXCEPTIONS macro. </p>
+
+</div>
+</div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

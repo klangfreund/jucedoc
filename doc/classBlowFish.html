@@ -112,6 +112,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa43faa09ee4018a615ed81b30607ed2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlowFish.html#aa43faa09ee4018a615ed81b30607ed2d">decrypt</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> &amp;data1, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> &amp;data2) const noexcept</td></tr>
 <tr class="memdesc:aa43faa09ee4018a615ed81b30607ed2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts a pair of 32-bit integers.  <a href="#aa43faa09ee4018a615ed81b30607ed2d">More...</a><br/></td></tr>
 <tr class="separator:aa43faa09ee4018a615ed81b30607ed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c7098b06f98cb1b101cc03fb00d688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlowFish.html#aa5c7098b06f98cb1b101cc03fb00d688">encrypt</a> (<a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;data) const </td></tr>
+<tr class="memdesc:aa5c7098b06f98cb1b101cc03fb00d688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts a memory block.  <a href="#aa5c7098b06f98cb1b101cc03fb00d688">More...</a><br/></td></tr>
+<tr class="separator:aa5c7098b06f98cb1b101cc03fb00d688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c50b974ecf4f0dd75207ec38c345ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlowFish.html#ac9c50b974ecf4f0dd75207ec38c345ec">decrypt</a> (<a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;data) const </td></tr>
+<tr class="memdesc:ac9c50b974ecf4f0dd75207ec38c345ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts a memory block.  <a href="#ac9c50b974ecf4f0dd75207ec38c345ec">More...</a><br/></td></tr>
+<tr class="separator:ac9c50b974ecf4f0dd75207ec38c345ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1781d5be74001b555b1d7321b800805e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlowFish.html#a1781d5be74001b555b1d7321b800805e">encrypt</a> (void *buffer, size_t sizeOfMsg, size_t bufferSize) const noexcept</td></tr>
+<tr class="memdesc:a1781d5be74001b555b1d7321b800805e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts data in-place.  <a href="#a1781d5be74001b555b1d7321b800805e">More...</a><br/></td></tr>
+<tr class="separator:a1781d5be74001b555b1d7321b800805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b0a7eadbaccbdc55a2a6f3c1543ef7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlowFish.html#ae1b0a7eadbaccbdc55a2a6f3c1543ef7">decrypt</a> (void *buffer, size_t bytes) const noexcept</td></tr>
+<tr class="memdesc:ae1b0a7eadbaccbdc55a2a6f3c1543ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts data in-place.  <a href="#ae1b0a7eadbaccbdc55a2a6f3c1543ef7">More...</a><br/></td></tr>
+<tr class="separator:ae1b0a7eadbaccbdc55a2a6f3c1543ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classBlowFish.html" title="BlowFish encryption class. ">BlowFish</a> encryption class. </p>
@@ -287,16 +299,152 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa5c7098b06f98cb1b101cc03fb00d688"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BlowFish::encrypt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encrypts a memory block. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac9c50b974ecf4f0dd75207ec38c345ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BlowFish::decrypt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decrypts a memory block. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1781d5be74001b555b1d7321b800805e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BlowFish::encrypt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sizeOfMsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Encrypts data in-place. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The message that should be encrypted. See bufferSize on size requirements! </td></tr>
+    <tr><td class="paramname">sizeOfMsg</td><td>The size of the message that should be encrypted in bytes </td></tr>
+    <tr><td class="paramname">bufferSize</td><td>The size of the buffer in bytes. To accomadate the encypted data, the buffer must be larger than the message: the size of the buffer needs to be equal or greater than the size of the message in bytes rounded to the next integer which is divisable by eight. If the message size in bytes is already divisable by eight then you need to add eight bytes to the buffer size. If in doubt simply use bufferSize = sizeOfMsg + 8.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the decrypted data in bytes or -1 if the decryption failed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1b0a7eadbaccbdc55a2a6f3c1543ef7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BlowFish::decrypt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrypts data in-place. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The encrypted data that should be decrypted </td></tr>
+    <tr><td class="paramname">bytes</td><td>The size of the encrypted data in bytes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the decrypted data in bytes or -1 if the decryption failed. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__BlowFish_8h.html">juce_BlowFish.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -207,7 +207,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6de1fb43a8b1a33677f095becb212bca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a6de1fb43a8b1a33677f095becb212bca">getNumChildElements</a> () const noexcept</td></tr>
 <tr class="memdesc:a6de1fb43a8b1a33677f095becb212bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of sub-elements in this element.  <a href="#a6de1fb43a8b1a33677f095becb212bca">More...</a><br/></td></tr>
 <tr class="separator:a6de1fb43a8b1a33677f095becb212bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab450f0049f7ff864024ca58550a2c7b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ab450f0049f7ff864024ca58550a2c7b9">getChildElement</a> (int index) const noexcept</td></tr>
+<tr class="memitem:ab450f0049f7ff864024ca58550a2c7b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ab450f0049f7ff864024ca58550a2c7b9">getChildElement</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:ab450f0049f7ff864024ca58550a2c7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sub-element at a certain index.  <a href="#ab450f0049f7ff864024ca58550a2c7b9">More...</a><br/></td></tr>
 <tr class="separator:ab450f0049f7ff864024ca58550a2c7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff1a5bef06210af0dae0819b550ecb3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#aff1a5bef06210af0dae0819b550ecb3d">getChildByName</a> (<a class="el" href="classStringRef.html">StringRef</a> tagNameToLookFor) const noexcept</td></tr>
@@ -320,7 +320,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// now we can turn the whole thing into a text document..</span></div>
-<div class="line"><a class="code" href="classString.html">String</a> myXmlDoc = animalsList.createDocument (<a class="code" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>);</div>
+<div class="line"><a class="code" href="classString.html">String</a> myXmlDoc = animalsList.createDocument (<a class="code" href="classString.html">String</a>());</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3a8f5f328633c9ec5f0348651b0d2c23"></a>
@@ -1463,7 +1463,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p>Note that when iterating the child elements, some of them might be text elements as well as XML tags - use <a class="el" href="classXmlElement.html#a9fe9798ad1997c993ee35d7580a6189e" title="Returns true if this element is a section of text. ">isTextElement()</a> to work this out.</p>
 <p>Also, it's much easier and neater to use this method indirectly via the forEachXmlChildElement macro.</p>
-<dl class="section return"><dt>Returns</dt><dd>the sibling element that follows this one, or zero if this is the last element in its parent</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the sibling element that follows this one, or a nullptr if this is the last element in its parent</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classXmlElement.html#a427991d7a5a39811a6a9b35fefe624bc" title="Returns the next of this element&#39;s siblings. ">getNextElement</a>, <a class="el" href="classXmlElement.html#a9fe9798ad1997c993ee35d7580a6189e" title="Returns true if this element is a section of text. ">isTextElement</a>, <a class="el" href="juce__XmlElement_8h.html#ace692e5be62f7ab58363d91b52eb839e" title="A handy macro to make it easy to iterate all the child elements in an XmlElement. ...">forEachXmlChildElement</a> </dd></dl>
 
 </div>
@@ -2211,12 +2211,17 @@ template&lt;class ElementComparator &gt; </div>
 <li><a class="el" href="juce__XmlElement_8h.html">juce_XmlElement.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

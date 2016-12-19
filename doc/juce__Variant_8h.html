@@ -99,26 +99,32 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvar_1_1NativeFunctionArgs.html">var::NativeFunctionArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure is passed to a NativeFunction callback, and contains invocation details about the function's arguments and context.  <a href="structvar_1_1NativeFunctionArgs.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVariantConverter.html">VariantConverter&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This template-overloaded class can be used to convert between var and custom types.  <a href="structVariantConverter.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVariantConverter_3_01String_01_4.html">VariantConverter&lt; String &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This template-overloaded class can be used to convert between var and custom types.  <a href="structVariantConverter_3_01String_01_4.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a18d76bd2e63e42af5cfbc689cee69e16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a18d76bd2e63e42af5cfbc689cee69e16">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const <a class="el" href="classvar.html">var</a> &amp;v2) noexcept</td></tr>
-<tr class="memdesc:a18d76bd2e63e42af5cfbc689cee69e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison.  <a href="#a18d76bd2e63e42af5cfbc689cee69e16">More...</a><br/></td></tr>
-<tr class="separator:a18d76bd2e63e42af5cfbc689cee69e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5b99e8efa7ddad49987e207443455f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a6e5b99e8efa7ddad49987e207443455f">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const <a class="el" href="classvar.html">var</a> &amp;v2) noexcept</td></tr>
-<tr class="memdesc:a6e5b99e8efa7ddad49987e207443455f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison.  <a href="#a6e5b99e8efa7ddad49987e207443455f">More...</a><br/></td></tr>
-<tr class="separator:a6e5b99e8efa7ddad49987e207443455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2293ef6dd355e7fe5c7abc4f5122f90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#ad2293ef6dd355e7fe5c7abc4f5122f90">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const <a class="el" href="classString.html">String</a> &amp;v2)</td></tr>
-<tr class="separator:ad2293ef6dd355e7fe5c7abc4f5122f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4dcbae8a3d012bdd8ffd0ec9ffab38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#afb4dcbae8a3d012bdd8ffd0ec9ffab38">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const <a class="el" href="classString.html">String</a> &amp;v2)</td></tr>
-<tr class="separator:afb4dcbae8a3d012bdd8ffd0ec9ffab38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78e8723b16de1a11a8296a6bdb80e4be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a78e8723b16de1a11a8296a6bdb80e4be">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const char *v2)</td></tr>
-<tr class="separator:a78e8723b16de1a11a8296a6bdb80e4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a001b389e1b7ff081ad4db1dfbd6163cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a001b389e1b7ff081ad4db1dfbd6163cd">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;v1, const char *v2)</td></tr>
-<tr class="separator:a001b389e1b7ff081ad4db1dfbd6163cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfbc139216a6498771c6b8212d9d175"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a6cfbc139216a6498771c6b8212d9d175">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;, const <a class="el" href="classvar.html">var</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:a6cfbc139216a6498771c6b8212d9d175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison.  <a href="#a6cfbc139216a6498771c6b8212d9d175">More...</a><br/></td></tr>
+<tr class="separator:a6cfbc139216a6498771c6b8212d9d175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558cef5eaa37c85f916d0b6e7cdea20b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a558cef5eaa37c85f916d0b6e7cdea20b">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;, const <a class="el" href="classvar.html">var</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:a558cef5eaa37c85f916d0b6e7cdea20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison.  <a href="#a558cef5eaa37c85f916d0b6e7cdea20b">More...</a><br/></td></tr>
+<tr class="separator:a558cef5eaa37c85f916d0b6e7cdea20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9512da370487e7937afa14620a0dac01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a9512da370487e7937afa14620a0dac01">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;, const <a class="el" href="classString.html">String</a> &amp;)</td></tr>
+<tr class="separator:a9512da370487e7937afa14620a0dac01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d123c956999ef6e214b6cc4e04cbe2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#ac4d123c956999ef6e214b6cc4e04cbe2">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;, const <a class="el" href="classString.html">String</a> &amp;)</td></tr>
+<tr class="separator:ac4d123c956999ef6e214b6cc4e04cbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22fc40439437c5a8370ffba66b9b0897"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a22fc40439437c5a8370ffba66b9b0897">operator==</a> (const <a class="el" href="classvar.html">var</a> &amp;, const char *)</td></tr>
+<tr class="separator:a22fc40439437c5a8370ffba66b9b0897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfc265a125445b071677b9b2c80d337"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__Variant_8h.html#a6dfc265a125445b071677b9b2c80d337">operator!=</a> (const <a class="el" href="classvar.html">var</a> &amp;, const char *)</td></tr>
+<tr class="separator:a6dfc265a125445b071677b9b2c80d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a18d76bd2e63e42af5cfbc689cee69e16"></a>
+<a class="anchor" id="a6cfbc139216a6498771c6b8212d9d175"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -129,13 +135,51 @@ Functions</h2></td></tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison. </p>
+
+<p>Referenced by <a class="el" href="structNamedValueSet_1_1NamedValue.html#af9d64f41429adb949d27d5c23bd19921">NamedValueSet::NamedValue::operator!=()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a558cef5eaa37c85f916d0b6e7cdea20b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,43 +198,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e5b99e8efa7ddad49987e207443455f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares the values of two var objects, using the <a class="el" href="classvar.html#a5ba20895db4514964f089c4159543b20" title="Returns true if this var has the same value as the one supplied. ">var::equals()</a> comparison. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad2293ef6dd355e7fe5c7abc4f5122f90"></a>
+<a class="anchor" id="a9512da370487e7937afa14620a0dac01"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -198,13 +206,13 @@ Functions</h2></td></tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,7 +224,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb4dcbae8a3d012bdd8ffd0ec9ffab38"></a>
+<a class="anchor" id="ac4d123c956999ef6e214b6cc4e04cbe2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -224,13 +232,13 @@ Functions</h2></td></tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -242,7 +250,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a78e8723b16de1a11a8296a6bdb80e4be"></a>
+<a class="anchor" id="a22fc40439437c5a8370ffba66b9b0897"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -250,13 +258,13 @@ Functions</h2></td></tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -268,7 +276,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a001b389e1b7ff081ad4db1dfbd6163cd"></a>
+<a class="anchor" id="a6dfc265a125445b071677b9b2c80d337"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -276,13 +284,13 @@ Functions</h2></td></tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -295,12 +303,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

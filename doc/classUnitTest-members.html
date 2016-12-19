@@ -89,8 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classUnitTest.html">UnitTest</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a>(const String &amp;testName)</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a>(bool testResult, const String &amp;failureMessage=String::empty)</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#ab9ef1eb6260c9d63dd568e8fee0d6ae9">expectEquals</a>(ValueType actual, ValueType expected, String failureMessage=String::empty)</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a>(bool testResult, const String &amp;failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#a580cd21eec8cae621eceb531eec711d3">expectEquals</a>(ValueType actual, ValueType expected, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classUnitTest.html#a0744ec69e299f5ff9ab5e881446eaf94">expectGreaterOrEqual</a>(ValueType value, ValueType valueToCompareTo, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#aef466ffd07c2677e636e2c0292605f62">expectGreaterThan</a>(ValueType value, ValueType valueToCompareTo, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classUnitTest.html#a8a149547bc7180b943d1f8379e1d834d">expectLessOrEqual</a>(ValueType value, ValueType valueToCompareTo, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#ac1fd4a33b1ca2db3a32a05d739087879">expectLessThan</a>(ValueType value, ValueType valueToCompareTo, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classUnitTest.html#a88277b29ca7179e4da719098c43d08c9">expectNotEquals</a>(ValueType value, ValueType valueToCompareTo, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#a53c512c74a94c08ab8d465848bbba2a2">expectWithinAbsoluteError</a>(ValueType actual, ValueType expected, ValueType maxAbsoluteError, String failureMessage=String())</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classUnitTest.html#a2e5b516d7976360c375e5c870e52798f">getAllTests</a>()</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#a2a670b333cacbe8056ebb64881009d86">getName</a>() const noexcept</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classUnitTest.html#a8cb56b984fab3759eeca23ed5523f5fe">getRandom</a>() const </td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"></td></tr>
@@ -102,12 +108,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classUnitTest.html#a3fb00e56f1df45efabba981f84e5a578">UnitTest</a>(const String &amp;name)</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classUnitTest.html#a5a57054084ce200e1e92ff3eecc8420a">~UnitTest</a>()</td><td class="entry"><a class="el" href="classUnitTest.html">UnitTest</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

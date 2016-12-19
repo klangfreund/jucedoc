@@ -97,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac187958296e33aa057dd37478ea70400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#ac187958296e33aa057dd37478ea70400">ScopedPointer</a> () noexcept</td></tr>
 <tr class="memdesc:ac187958296e33aa057dd37478ea70400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> containing a null pointer.  <a href="#ac187958296e33aa057dd37478ea70400">More...</a><br/></td></tr>
 <tr class="separator:ac187958296e33aa057dd37478ea70400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e3396a5a530aba0c6109d709c549b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#a32e3396a5a530aba0c6109d709c549b0">ScopedPointer</a> (decltype(nullptr)) noexcept</td></tr>
+<tr class="memdesc:a32e3396a5a530aba0c6109d709c549b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> containing a null pointer.  <a href="#a32e3396a5a530aba0c6109d709c549b0">More...</a><br/></td></tr>
+<tr class="separator:a32e3396a5a530aba0c6109d709c549b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a7843e49c3ff719f06607b6e908f7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#a44a7843e49c3ff719f06607b6e908f7d">ScopedPointer</a> (ObjectType *const objectToTakePossessionOf) noexcept</td></tr>
 <tr class="memdesc:a44a7843e49c3ff719f06607b6e908f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> that owns the specified object.  <a href="#a44a7843e49c3ff719f06607b6e908f7d">More...</a><br/></td></tr>
 <tr class="separator:a44a7843e49c3ff719f06607b6e908f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +151,7 @@ class ScopedPointer&lt; ObjectType &gt;</h3>
 <p>Important note: The class is designed to hold a pointer to an object, NOT to an array! It calls delete on its payload, not delete[], so do not give it an array to hold! For that kind of purpose, you should be using <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a> or <a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a> instead.</p>
 <p>A const <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> is guaranteed not to lose ownership of its object or change the object to which it points during its lifetime. This means that making a copy of a const <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> is impossible, as that would involve the new copy taking ownership from the old one.</p>
 <p>If you need to get a pointer out of a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> without it being deleted, you can use the <a class="el" href="classScopedPointer.html#a10c8f696fec0cca763b067ec3e469199" title="Removes the current object from this ScopedPointer without deleting it. ">release()</a> method.</p>
-<p>Something to note is the main difference between this class and the std::auto_ptr class, which is that <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> provides a cast-to-object operator, wheras std::auto_ptr requires that you always call <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740" title="Returns the object that this ScopedPointer refers to. ">get()</a> to retrieve the pointer. The advantages of providing the cast is that you don't need to call <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740" title="Returns the object that this ScopedPointer refers to. ">get()</a>, so can use the <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> in pretty much exactly the same way as a raw pointer. The disadvantage is that the compiler is free to use the cast in unexpected and sometimes dangerous ways - in particular, it becomes difficult to return a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> as the result of a function. To avoid this causing errors, <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> contains an overloaded constructor that should cause a syntax error in these circumstances, but it does mean that instead of returning a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> from a function, you'd need to return a raw pointer (or use a std::auto_ptr instead). </p>
+<p>Something to note is the main difference between this class and the std::auto_ptr class, which is that <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> provides a cast-to-object operator, whereas std::auto_ptr requires that you always call <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740" title="Returns the object that this ScopedPointer refers to. ">get()</a> to retrieve the pointer. The advantages of providing the cast is that you don't need to call <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740" title="Returns the object that this ScopedPointer refers to. ">get()</a>, so can use the <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> in pretty much exactly the same way as a raw pointer. The disadvantage is that the compiler is free to use the cast in unexpected and sometimes dangerous ways - in particular, it becomes difficult to return a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> as the result of a function. To avoid this causing errors, <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> contains an overloaded constructor that should cause a syntax error in these circumstances, but it does mean that instead of returning a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> from a function, you'd need to return a raw pointer (or use a std::auto_ptr instead). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac187958296e33aa057dd37478ea70400"></a>
 <div class="memitem">
@@ -162,6 +165,34 @@ template&lt;class ObjectType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt;::<a class="el" href="classScopedPointer.html">ScopedPointer</a> </td>
           <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classScopedPointer.html" title="This class holds a pointer which is automatically deleted when this object goes out of scope...">ScopedPointer</a> containing a null pointer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32e3396a5a530aba0c6109d709c549b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ObjectType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt;::<a class="el" href="classScopedPointer.html">ScopedPointer</a> </td>
+          <td>(</td>
+          <td class="paramtype">decltype(nullptr)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -542,12 +573,17 @@ template&lt;class ObjectType&gt; </div>
 <li><a class="el" href="juce__ScopedPointer_8h.html">juce_ScopedPointer.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

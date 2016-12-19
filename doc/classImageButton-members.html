@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classButton.html#a1d4d66619c1d44412892ab73ce806c8f">handleCommandMessage</a>(int commandId) override</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#af4f079e1c0e0140ac364561cbe458a20">hasKeyboardFocus</a>(bool trueIfChildIsFocused) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classImageButton.html#a646b175c55ac588b8ffed117f213e8e2">hitTest</a>(int x, int y) override</td><td class="entry"><a class="el" href="classImageButton.html">ImageButton</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classImageButton.html#a4c8bb900ecd51c298dbfb2b591f0c02e">ImageButton</a>(const String &amp;name=String::empty)</td><td class="entry"><a class="el" href="classImageButton.html">ImageButton</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classImageButton.html#ac9cec34cf28423496c0f46cd0ad21657">ImageButton</a>(const String &amp;name=String())</td><td class="entry"><a class="el" href="classImageButton.html">ImageButton</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a260e46fb72d4b3210bc46a658a21fbb5">inputAttemptWhenModal</a>()</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classButton.html#aaee88dac6fc8ca689a0bd642d7b1489d">internalClickCallback</a>(const ModifierKeys &amp;)</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#ad3c16a8cd68a73f9765da3e48db86801">isAlwaysOnTop</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
@@ -219,14 +219,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classButton.html#a90f0727a44b87224d521e3c051fc2723">isConnectedOnRight</a>() const noexcept</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classButton.html#a35e58c011b632a56cd37b36c0ae10285">isConnectedOnTop</a>() const noexcept</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9">isCurrentlyBlockedByAnotherModalComponent</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7">isCurrentlyModal</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267">isCurrentlyModal</a>(bool onlyConsiderForemostModalComponent=true) const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classButton.html#a88a0adf236ac93613a8b2b36d7a74f9d">isDown</a>() const noexcept</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a0e12726e34fdd284f036922597914bb3">isEnabled</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a31a41d721888e3ac78659e4815294ed1">isFocusContainer</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a0944e1751f32260afd5bd2a9fcd1a5b7">isMouseButtonDown</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#ac3184a52027ad9106185d594c522d9d0">isMouseButtonDownAnywhere</a>() noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a23db151357ed4a783c224f210d036e63">isMouseOver</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a5cedb030a2bfae99dece95d8a10d0dcb">isMouseOverOrDragging</a>() const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a39e6cb0b07bf16648daa51b2c75be983">isMouseOverOrDragging</a>(bool includeChildren=false) const </td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classComponent.html#a854420c3141bb90e440af6c7bc1bd360">isOnDesktop</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classComponent.html#a6ef077ace37bcd13d033305e8875d4e7">isOpaque</a>() const noexcept</td><td class="entry"><a class="el" href="classComponent.html">Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classButton.html#ad4e53dd7b2f91e23293b6bcf3d9b50fb">isOver</a>() const noexcept</td><td class="entry"><a class="el" href="classButton.html">Button</a></td><td class="entry"></td></tr>
@@ -346,12 +346,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classSettableTooltipClient.html#add2c20bbf97c5eeb373660be47659b35">~SettableTooltipClient</a>()</td><td class="entry"><a class="el" href="classSettableTooltipClient.html">SettableTooltipClient</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classTooltipClient.html#a1bc2223e107e4122d251f5b90049140c">~TooltipClient</a>()</td><td class="entry"><a class="el" href="classTooltipClient.html">TooltipClient</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

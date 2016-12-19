@@ -143,8 +143,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a956752231288358290d781e5f27eb150"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a956752231288358290d781e5f27eb150">getPort</a> () const </td></tr>
 <tr class="memdesc:a956752231288358290d781e5f27eb150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to read a port number from the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a956752231288358290d781e5f27eb150">More...</a><br/></td></tr>
 <tr class="separator:a956752231288358290d781e5f27eb150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd4be815914d6a3a2baa3930731c34b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classURL.html">URL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a3cd4be815914d6a3a2baa3930731c34b">withNewDomainAndPath</a> (const <a class="el" href="classString.html">String</a> &amp;newFullPath) const </td></tr>
+<tr class="memdesc:a3cd4be815914d6a3a2baa3930731c34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> with a different domain and path.  <a href="#a3cd4be815914d6a3a2baa3930731c34b">More...</a><br/></td></tr>
+<tr class="separator:a3cd4be815914d6a3a2baa3930731c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b7c064dc3834575ef77ee7db4cc239"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classURL.html">URL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#aa3b7c064dc3834575ef77ee7db4cc239">withNewSubPath</a> (const <a class="el" href="classString.html">String</a> &amp;newPath) const </td></tr>
-<tr class="memdesc:aa3b7c064dc3834575ef77ee7db4cc239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> that uses a different sub-path.  <a href="#aa3b7c064dc3834575ef77ee7db4cc239">More...</a><br/></td></tr>
+<tr class="memdesc:aa3b7c064dc3834575ef77ee7db4cc239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> with a different sub-path.  <a href="#aa3b7c064dc3834575ef77ee7db4cc239">More...</a><br/></td></tr>
 <tr class="separator:aa3b7c064dc3834575ef77ee7db4cc239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a90a4094536644741ed6da1bba7a202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classURL.html">URL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a9a90a4094536644741ed6da1bba7a202">getChildURL</a> (const <a class="el" href="classString.html">String</a> &amp;subPath) const </td></tr>
 <tr class="memdesc:a9a90a4094536644741ed6da1bba7a202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> that refers to a sub-path relative to this one.  <a href="#a9a90a4094536644741ed6da1bba7a202">More...</a><br/></td></tr>
@@ -203,9 +206,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a104e0a0539ab797a3057b19b8c531503"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a104e0a0539ab797a3057b19b8c531503">isProbablyAnEmailAddress</a> (const <a class="el" href="classString.html">String</a> &amp;possibleEmailAddress)</td></tr>
 <tr class="memdesc:a104e0a0539ab797a3057b19b8c531503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a guess as to whether a string might be a valid email address.  <a href="#a104e0a0539ab797a3057b19b8c531503">More...</a><br/></td></tr>
 <tr class="separator:a104e0a0539ab797a3057b19b8c531503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2726988a2b4c249ece1dea4216aa381"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#ac2726988a2b4c249ece1dea4216aa381">addEscapeChars</a> (const <a class="el" href="classString.html">String</a> &amp;stringToAddEscapeCharsTo, bool isParameter)</td></tr>
-<tr class="memdesc:ac2726988a2b4c249ece1dea4216aa381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds escape sequences to a string to encode any characters that aren't legal in a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#ac2726988a2b4c249ece1dea4216aa381">More...</a><br/></td></tr>
-<tr class="separator:ac2726988a2b4c249ece1dea4216aa381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a5f3808099305c73c84112a01ecb1d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#ad2a5f3808099305c73c84112a01ecb1d">addEscapeChars</a> (const <a class="el" href="classString.html">String</a> &amp;stringToAddEscapeCharsTo, bool isParameter, bool roundBracketsAreLegal=true)</td></tr>
+<tr class="memdesc:ad2a5f3808099305c73c84112a01ecb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds escape sequences to a string to encode any characters that aren't legal in a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#ad2a5f3808099305c73c84112a01ecb1d">More...</a><br/></td></tr>
+<tr class="separator:ad2a5f3808099305c73c84112a01ecb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add07acc3e33e34097c2e93447f6fd0f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#add07acc3e33e34097c2e93447f6fd0f9">removeEscapeChars</a> (const <a class="el" href="classString.html">String</a> &amp;stringToRemoveEscapeCharsFrom)</td></tr>
 <tr class="memdesc:add07acc3e33e34097c2e93447f6fd0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces any escape character sequences in a string with their original character codes.  <a href="#add07acc3e33e34097c2e93447f6fd0f9">More...</a><br/></td></tr>
 <tr class="separator:add07acc3e33e34097c2e93447f6fd0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,6 +494,26 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3cd4be815914d6a3a2baa3930731c34b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classURL.html">URL</a> URL::withNewDomainAndPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>newFullPath</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> with a different domain and path. </p>
+<p>E.g. if the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> is "http://www.xyz.com/foo?x=1" and you call this with "abc.com/zzz", it'll return "http://abc.com/zzz?x=1". </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classURL.html#aa3b7c064dc3834575ef77ee7db4cc239" title="Returns a new version of this URL with a different sub-path. ">withNewSubPath</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa3b7c064dc3834575ef77ee7db4cc239"></a>
 <div class="memitem">
 <div class="memproto">
@@ -505,8 +528,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> that uses a different sub-path. </p>
+<p>Returns a new version of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> with a different sub-path. </p>
 <p>E.g. if the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> is "http://www.xyz.com/foo?x=1" and you call this with "bar", it'll return "http://www.xyz.com/bar?x=1". </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classURL.html#a3cd4be815914d6a3a2baa3930731c34b" title="Returns a new version of this URL with a different domain and path. ">withNewDomainAndPath</a> </dd></dl>
 
 </div>
 </div>
@@ -952,7 +976,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">doPostLikeRequest</td><td>if true, the parameters added to this class will be transferred via the HTTP headers which is typical for POST requests. Otherwise the parameters will be added to the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> address. Additionally, if the parameter httpRequestCmd is not specified (or empty) then this parameter will determine which HTTP request command will be used (POST or GET). </td></tr>
-    <tr><td class="paramname">progressCallback</td><td>if this is non-zero, it lets you supply a callback function to keep track of the operation's progress. This can be useful for lengthy POST operations, so that you can provide user feedback. </td></tr>
+    <tr><td class="paramname">progressCallback</td><td>if this is not a nullptr, it lets you supply a callback function to keep track of the operation's progress. This can be useful for lengthy POST operations, so that you can provide user feedback. </td></tr>
     <tr><td class="paramname">progressCallbackContext</td><td>if a callback is specified, this value will be passed to the function </td></tr>
     <tr><td class="paramname">extraHeaders</td><td>if not empty, this string is appended onto the headers that are used for the request. It must therefore be a valid set of HTML header directives, separated by newlines. </td></tr>
     <tr><td class="paramname">connectionTimeOutMs</td><td>if 0, this will use whatever default setting the OS chooses. If a negative number, it will be infinite. Otherwise it specifies a time in milliseconds. </td></tr>
@@ -1060,7 +1084,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac2726988a2b4c249ece1dea4216aa381"></a>
+<a class="anchor" id="ad2a5f3808099305c73c84112a01ecb1d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1077,7 +1101,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isParameter</em>&#160;</td>
+          <td class="paramname"><em>isParameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>roundBracketsAreLegal</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1095,7 +1125,14 @@ Static Public Member Functions</h2></td></tr>
 <p>Adds escape sequences to a string to encode any characters that aren't legal in a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>. </p>
 <p>E.g. any spaces will be replaced with "%20".</p>
 <p>This is the opposite of <a class="el" href="classURL.html#add07acc3e33e34097c2e93447f6fd0f9" title="Replaces any escape character sequences in a string with their original character codes...">removeEscapeChars()</a>.</p>
-<p>If isParameter is true, it means that the string is going to be used as a parameter, so it also encodes '$' and ',' (which would otherwise be legal in a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stringToAddEscapeCharsTo</td><td>The string to escape. </td></tr>
+    <tr><td class="paramname">isParameter</td><td>If true then the string is going to be used as a parameter, so it also encodes '$' and ',' (which would otherwise be legal in a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>. </td></tr>
+    <tr><td class="paramname">roundBracketsAreLegal</td><td>Technically round brackets are ok in URLs, however, some servers (like AWS) also want round brackets to be escaped.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classURL.html#add07acc3e33e34097c2e93447f6fd0f9" title="Replaces any escape character sequences in a string with their original character codes...">removeEscapeChars</a> </dd></dl>
 
 </div>
@@ -1124,8 +1161,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Replaces any escape character sequences in a string with their original character codes. </p>
 <p>E.g. any instances of "%20" will be replaced by a space.</p>
-<p>This is the opposite of <a class="el" href="classURL.html#ac2726988a2b4c249ece1dea4216aa381" title="Adds escape sequences to a string to encode any characters that aren&#39;t legal in a URL...">addEscapeChars()</a>.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classURL.html#ac2726988a2b4c249ece1dea4216aa381" title="Adds escape sequences to a string to encode any characters that aren&#39;t legal in a URL...">addEscapeChars</a> </dd></dl>
+<p>This is the opposite of <a class="el" href="classURL.html#ad2a5f3808099305c73c84112a01ecb1d" title="Adds escape sequences to a string to encode any characters that aren&#39;t legal in a URL...">addEscapeChars()</a>.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classURL.html#ad2a5f3808099305c73c84112a01ecb1d" title="Adds escape sequences to a string to encode any characters that aren&#39;t legal in a URL...">addEscapeChars</a> </dd></dl>
 
 </div>
 </div>
@@ -1160,12 +1197,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__URL_8h.html">juce_URL.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

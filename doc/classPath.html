@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classPath-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Path Class Reference</div>  </div>
@@ -130,27 +131,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e2d36b20feaf2cd1b95c7ff84b13e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRectangle.html">Rectangle</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a6e2d36b20feaf2cd1b95c7ff84b13e55">getBoundsTransformed</a> (const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform) const noexcept</td></tr>
 <tr class="memdesc:a6e2d36b20feaf2cd1b95c7ff84b13e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smallest rectangle that contains all points within the path after it's been transformed with the given tranasform matrix.  <a href="#a6e2d36b20feaf2cd1b95c7ff84b13e55">More...</a><br/></td></tr>
 <tr class="separator:a6e2d36b20feaf2cd1b95c7ff84b13e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b11770f1d5e8aee3d0251f712ac8901"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a0b11770f1d5e8aee3d0251f712ac8901">contains</a> (float x, float y, float tolerance=1.0f) const </td></tr>
-<tr class="memdesc:a0b11770f1d5e8aee3d0251f712ac8901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a point lies within the path.  <a href="#a0b11770f1d5e8aee3d0251f712ac8901">More...</a><br/></td></tr>
-<tr class="separator:a0b11770f1d5e8aee3d0251f712ac8901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31922231057403433f5f62bd56f88150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a31922231057403433f5f62bd56f88150">contains</a> (const <a class="el" href="classPoint.html">Point</a>&lt; float &gt; point, float tolerance=1.0f) const </td></tr>
-<tr class="memdesc:a31922231057403433f5f62bd56f88150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a point lies within the path.  <a href="#a31922231057403433f5f62bd56f88150">More...</a><br/></td></tr>
-<tr class="separator:a31922231057403433f5f62bd56f88150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58919b7e0a5d57558c75d8814c31ef0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a58919b7e0a5d57558c75d8814c31ef0e">intersectsLine</a> (const <a class="el" href="classLine.html">Line</a>&lt; float &gt; &amp;line, float tolerance=1.0f)</td></tr>
-<tr class="memdesc:a58919b7e0a5d57558c75d8814c31ef0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a line crosses the path.  <a href="#a58919b7e0a5d57558c75d8814c31ef0e">More...</a><br/></td></tr>
-<tr class="separator:a58919b7e0a5d57558c75d8814c31ef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15526d31bbe73610ef2453ce509ffa3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a15526d31bbe73610ef2453ce509ffa3b">getClippedLine</a> (const <a class="el" href="classLine.html">Line</a>&lt; float &gt; &amp;line, bool keepSectionOutsidePath) const </td></tr>
-<tr class="memdesc:a15526d31bbe73610ef2453ce509ffa3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cuts off parts of a line to keep the parts that are either inside or outside this path.  <a href="#a15526d31bbe73610ef2453ce509ffa3b">More...</a><br/></td></tr>
-<tr class="separator:a15526d31bbe73610ef2453ce509ffa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a295e7859e772235be0bdc88ad6bc9bc4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a295e7859e772235be0bdc88ad6bc9bc4">getLength</a> (const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a>) const </td></tr>
-<tr class="memdesc:a295e7859e772235be0bdc88ad6bc9bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the path.  <a href="#a295e7859e772235be0bdc88ad6bc9bc4">More...</a><br/></td></tr>
-<tr class="separator:a295e7859e772235be0bdc88ad6bc9bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7dc49c18db731fb6b82e45d09b8e272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#ac7dc49c18db731fb6b82e45d09b8e272">getPointAlongPath</a> (float distanceFromStart, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a>) const </td></tr>
-<tr class="memdesc:ac7dc49c18db731fb6b82e45d09b8e272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a point that is the specified distance along the path.  <a href="#ac7dc49c18db731fb6b82e45d09b8e272">More...</a><br/></td></tr>
-<tr class="separator:ac7dc49c18db731fb6b82e45d09b8e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb4c5dac2fa6a16aa1f2214ecda8d85"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#abbb4c5dac2fa6a16aa1f2214ecda8d85">getNearestPoint</a> (const <a class="el" href="classPoint.html">Point</a>&lt; float &gt; targetPoint, <a class="el" href="classPoint.html">Point</a>&lt; float &gt; &amp;pointOnPath, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a>) const </td></tr>
-<tr class="memdesc:abbb4c5dac2fa6a16aa1f2214ecda8d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point along the path which is nearest to a given position.  <a href="#abbb4c5dac2fa6a16aa1f2214ecda8d85">More...</a><br/></td></tr>
-<tr class="separator:abbb4c5dac2fa6a16aa1f2214ecda8d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92401a380bb6e394eaca20fb154cd1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#ae92401a380bb6e394eaca20fb154cd1b">contains</a> (float x, float y, float tolerance=<a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a>) const </td></tr>
+<tr class="memdesc:ae92401a380bb6e394eaca20fb154cd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a point lies within the path.  <a href="#ae92401a380bb6e394eaca20fb154cd1b">More...</a><br/></td></tr>
+<tr class="separator:ae92401a380bb6e394eaca20fb154cd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101db8b83a7783536cdb4dcb2f362a5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a101db8b83a7783536cdb4dcb2f362a5e">contains</a> (const <a class="el" href="classPoint.html">Point</a>&lt; float &gt; point, float tolerance=<a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a>) const </td></tr>
+<tr class="memdesc:a101db8b83a7783536cdb4dcb2f362a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a point lies within the path.  <a href="#a101db8b83a7783536cdb4dcb2f362a5e">More...</a><br/></td></tr>
+<tr class="separator:a101db8b83a7783536cdb4dcb2f362a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff16eb0e318cfc8a40a462a7abd8637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a6ff16eb0e318cfc8a40a462a7abd8637">intersectsLine</a> (<a class="el" href="classLine.html">Line</a>&lt; float &gt; line, float tolerance=<a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a>)</td></tr>
+<tr class="memdesc:a6ff16eb0e318cfc8a40a462a7abd8637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a line crosses the path.  <a href="#a6ff16eb0e318cfc8a40a462a7abd8637">More...</a><br/></td></tr>
+<tr class="separator:a6ff16eb0e318cfc8a40a462a7abd8637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeead50145f7c8bd9b44cb31f912e115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLine.html">Line</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#adeead50145f7c8bd9b44cb31f912e115">getClippedLine</a> (<a class="el" href="classLine.html">Line</a>&lt; float &gt; line, bool keepSectionOutsidePath) const </td></tr>
+<tr class="memdesc:adeead50145f7c8bd9b44cb31f912e115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cuts off parts of a line to keep the parts that are either inside or outside this path.  <a href="#adeead50145f7c8bd9b44cb31f912e115">More...</a><br/></td></tr>
+<tr class="separator:adeead50145f7c8bd9b44cb31f912e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90474dab38738086bcdf759910919e92"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a90474dab38738086bcdf759910919e92">getLength</a> (const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html">AffineTransform</a>(), float tolerance=<a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a>) const </td></tr>
+<tr class="memdesc:a90474dab38738086bcdf759910919e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the path.  <a href="#a90474dab38738086bcdf759910919e92">More...</a><br/></td></tr>
+<tr class="separator:a90474dab38738086bcdf759910919e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08914b2208189c26f43ed74eb74712b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#ad08914b2208189c26f43ed74eb74712b">getPointAlongPath</a> (float distanceFromStart, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html">AffineTransform</a>(), float tolerance=<a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a>) const </td></tr>
+<tr class="memdesc:ad08914b2208189c26f43ed74eb74712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a point that is the specified distance along the path.  <a href="#ad08914b2208189c26f43ed74eb74712b">More...</a><br/></td></tr>
+<tr class="separator:ad08914b2208189c26f43ed74eb74712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fa1defcb4faf5e564c080e0d71a760"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a32fa1defcb4faf5e564c080e0d71a760">getNearestPoint</a> (<a class="el" href="classPoint.html">Point</a>&lt; float &gt; targetPoint, <a class="el" href="classPoint.html">Point</a>&lt; float &gt; &amp;pointOnPath, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html">AffineTransform</a>(), float tolerance=<a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a>) const </td></tr>
+<tr class="memdesc:a32fa1defcb4faf5e564c080e0d71a760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the point along the path which is nearest to a given position.  <a href="#a32fa1defcb4faf5e564c080e0d71a760">More...</a><br/></td></tr>
+<tr class="separator:a32fa1defcb4faf5e564c080e0d71a760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d4fda65a46a1f1f32cbec49ebc0910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a69d4fda65a46a1f1f32cbec49ebc0910">clear</a> () noexcept</td></tr>
 <tr class="memdesc:a69d4fda65a46a1f1f32cbec49ebc0910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all lines and curves, resetting the path completely.  <a href="#a69d4fda65a46a1f1f32cbec49ebc0910">More...</a><br/></td></tr>
 <tr class="separator:a69d4fda65a46a1f1f32cbec49ebc0910"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,6 +299,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef179732c86b368fc6461d889fad4d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#aef179732c86b368fc6461d889fad4d6b">restoreFromString</a> (<a class="el" href="classStringRef.html">StringRef</a> stringVersion)</td></tr>
 <tr class="memdesc:aef179732c86b368fc6461d889fad4d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores this path from a string that was created with the <a class="el" href="classPath.html#a77b7868359fbdc220e6326789e96f2d4" title="Creates a string containing a textual representation of this path. ">toString()</a> method.  <a href="#aef179732c86b368fc6461d889fad4d6b">More...</a><br/></td></tr>
 <tr class="separator:aef179732c86b368fc6461d889fad4d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa23f987b8292143c3c9a6d9b0a131c3b"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a></td></tr>
+<tr class="separator:aa23f987b8292143c3c9a6d9b0a131c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e27579a740ab71d223ea7398a995fbb"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a></td></tr>
+<tr class="separator:a8e27579a740ab71d223ea7398a995fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A path is a sequence of lines and curves that may either form a closed shape or be open-ended. </p>
@@ -564,7 +572,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0b11770f1d5e8aee3d0251f712ac8901"></a>
+<a class="anchor" id="ae92401a380bb6e394eaca20fb154cd1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -584,7 +592,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code>1.0f</code>&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -595,14 +603,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks whether a point lies within the path. </p>
-<p>This is only relevent for closed paths (see <a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath()</a>), and may produce false results if used on a path which has open sub-paths.</p>
+<p>This is only relevant for closed paths (see <a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath()</a>), and may produce false results if used on a path which has open sub-paths.</p>
 <p>The path's winding rule is taken into account by this method.</p>
 <p>The tolerance parameter is the maximum error allowed when flattening the path, so this method could return a false positive when your point is up to this distance outside the path's boundary.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath</a>, <a class="el" href="classPath.html#a30f7bc89e2300f810a12f41bf76c5e9a" title="Changes the winding-rule to be used when filling the path. ">setUsingNonZeroWinding</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a31922231057403433f5f62bd56f88150"></a>
+<a class="anchor" id="a101db8b83a7783536cdb4dcb2f362a5e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -616,7 +624,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code>1.0f</code>&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -627,28 +635,28 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks whether a point lies within the path. </p>
-<p>This is only relevent for closed paths (see <a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath()</a>), and may produce false results if used on a path which has open sub-paths.</p>
+<p>This is only relevant for closed paths (see <a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath()</a>), and may produce false results if used on a path which has open sub-paths.</p>
 <p>The path's winding rule is taken into account by this method.</p>
 <p>The tolerance parameter is the maximum error allowed when flattening the path, so this method could return a false positive when your point is up to this distance outside the path's boundary.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#a3fb7879fd6e09ce7657260c7b2934162" title="Closes a the current sub-path with a line back to its start-point. ">closeSubPath</a>, <a class="el" href="classPath.html#a30f7bc89e2300f810a12f41bf76c5e9a" title="Changes the winding-rule to be used when filling the path. ">setUsingNonZeroWinding</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a58919b7e0a5d57558c75d8814c31ef0e"></a>
+<a class="anchor" id="a6ff16eb0e318cfc8a40a462a7abd8637"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool Path::intersectsLine </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; float &gt;&#160;</td>
           <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code>1.0f</code>&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b">defaultToleranceForTesting</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -664,14 +672,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15526d31bbe73610ef2453ce509ffa3b"></a>
+<a class="anchor" id="adeead50145f7c8bd9b44cb31f912e115"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classLine.html">Line</a>&lt;float&gt; Path::getClippedLine </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classLine.html">Line</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classLine.html">Line</a>&lt; float &gt;&#160;</td>
           <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
@@ -700,7 +708,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a295e7859e772235be0bdc88ad6bc9bc4"></a>
+<a class="anchor" id="a90474dab38738086bcdf759910919e92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -708,18 +716,28 @@ Public Member Functions</h2></td></tr>
           <td class="memname">float Path::getLength </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a></code></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html">AffineTransform</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns the length of the path. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#ac7dc49c18db731fb6b82e45d09b8e272" title="Returns a point that is the specified distance along the path. ">getPointAlongPath</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#ad08914b2208189c26f43ed74eb74712b" title="Returns a point that is the specified distance along the path. ">getPointAlongPath</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ac7dc49c18db731fb6b82e45d09b8e272"></a>
+<a class="anchor" id="ad08914b2208189c26f43ed74eb74712b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -733,7 +751,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a></code>&#160;</td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html">AffineTransform</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -745,18 +769,18 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns a point that is the specified distance along the path. </p>
 <p>If the distance is greater than the total length of the path, this will return the end point. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#a295e7859e772235be0bdc88ad6bc9bc4" title="Returns the length of the path. ">getLength</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#a90474dab38738086bcdf759910919e92" title="Returns the length of the path. ">getLength</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abbb4c5dac2fa6a16aa1f2214ecda8d85"></a>
+<a class="anchor" id="a32fa1defcb4faf5e564c080e0d71a760"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">float Path::getNearestPoint </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td>
           <td class="paramname"><em>targetPoint</em>, </td>
         </tr>
         <tr>
@@ -769,7 +793,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a></code>&#160;</td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html">AffineTransform</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="classPath.html#a8e27579a740ab71d223ea7398a995fbb">defaultToleranceForMeasurement</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1179,8 +1209,6 @@ template&lt;typename ValueType &gt; </div>
 <p>Adds a rectangle to the path. </p>
 <p>The rectangle is added as a new sub-path. (Any currently open paths will be left open). </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPath.html#a501f83b0e323fe86d33c047f83451065" title="Adds a rectangle with rounded corners to the path. ">addRoundedRectangle</a>, <a class="el" href="classPath.html#a1508e0d3dd2048dc5304721bee6ee2c1" title="Adds a triangle to the path. ">addTriangle</a> </dd></dl>
-
-<p>References <a class="el" href="classRectangle.html#a92fff07d827126d92607d0d7c395c323">Rectangle&lt; ValueType &gt;::getHeight()</a>, <a class="el" href="classRectangle.html#a76c51bd8fcbdd3ac5d8f6dff3cf4a57e">Rectangle&lt; ValueType &gt;::getWidth()</a>, <a class="el" href="classRectangle.html#a4b8223fb659d6c7f95a72e8d3fbe793d">Rectangle&lt; ValueType &gt;::getX()</a>, and <a class="el" href="classRectangle.html#a3050042669b496be5f029b1ab6fc1f52">Rectangle&lt; ValueType &gt;::getY()</a>.</p>
 
 </div>
 </div>
@@ -1998,7 +2026,7 @@ template&lt;typename ValueType &gt; </div>
 
 <p>Adds a line with an arrowhead on the end. </p>
 <p>The arrow is added as a new closed sub-path. (Any currently open paths will be left open). </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPathStrokeType.html#a0b4cfc279210796faa54ed16a1f25b4e" title="Applies this stroke type to a path and returns the resultant stroke as another Path. ">PathStrokeType::createStrokeWithArrowheads</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPathStrokeType.html#ae16cf998314ba8480165a4beefc5010d" title="Applies this stroke type to a path and returns the resultant stroke as another Path. ">PathStrokeType::createStrokeWithArrowheads</a> </dd></dl>
 
 </div>
 </div>
@@ -2631,16 +2659,62 @@ template&lt;typename ValueType &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa23f987b8292143c3c9a6d9b0a131c3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Path::defaultToleranceForTesting</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e27579a740ab71d223ea7398a995fbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Path::defaultToleranceForMeasurement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Path_8h.html">juce_Path.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

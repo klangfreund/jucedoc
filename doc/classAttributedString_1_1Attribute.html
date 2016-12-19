@@ -99,41 +99,149 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9aa08795352b135cde5b496b2939fee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#aa9aa08795352b135cde5b496b2939fee">Attribute</a> (<a class="el" href="classRange.html">Range</a>&lt; int &gt; <a class="el" href="classAttributedString_1_1Attribute.html#aadd39f43e26b6c0a36dca6bf36537818">range</a>, <a class="el" href="classColour.html">Colour</a> colour)</td></tr>
-<tr class="memdesc:aa9aa08795352b135cde5b496b2939fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute that changes the colour for a range of characters.  <a href="#aa9aa08795352b135cde5b496b2939fee">More...</a><br/></td></tr>
-<tr class="separator:aa9aa08795352b135cde5b496b2939fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97c9b8b51a4eb49f89d24b58d08c2374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a97c9b8b51a4eb49f89d24b58d08c2374">Attribute</a> (<a class="el" href="classRange.html">Range</a>&lt; int &gt; <a class="el" href="classAttributedString_1_1Attribute.html#aadd39f43e26b6c0a36dca6bf36537818">range</a>, const <a class="el" href="classFont.html">Font</a> &amp;font)</td></tr>
-<tr class="memdesc:a97c9b8b51a4eb49f89d24b58d08c2374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute that changes the font for a range of characters.  <a href="#a97c9b8b51a4eb49f89d24b58d08c2374">More...</a><br/></td></tr>
-<tr class="separator:a97c9b8b51a4eb49f89d24b58d08c2374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c8443a98b861d67ce2a9d6cafb111e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a67c8443a98b861d67ce2a9d6cafb111e">Attribute</a> (const <a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;)</td></tr>
-<tr class="separator:a67c8443a98b861d67ce2a9d6cafb111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea9ec1a9334405136d4151e3f63b3653"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#aea9ec1a9334405136d4151e3f63b3653">~Attribute</a> ()</td></tr>
-<tr class="separator:aea9ec1a9334405136d4151e3f63b3653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e844f9489d8d5c0bae624f786f12fe"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFont.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#ac2e844f9489d8d5c0bae624f786f12fe">getFont</a> () const noexcept</td></tr>
-<tr class="memdesc:ac2e844f9489d8d5c0bae624f786f12fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this attribute specifies a font, this returns it; otherwise it returns nullptr.  <a href="#ac2e844f9489d8d5c0bae624f786f12fe">More...</a><br/></td></tr>
-<tr class="separator:ac2e844f9489d8d5c0bae624f786f12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da1b191247cc48f12e3d9321365ec53"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classColour.html">Colour</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a7da1b191247cc48f12e3d9321365ec53">getColour</a> () const noexcept</td></tr>
-<tr class="memdesc:a7da1b191247cc48f12e3d9321365ec53"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this attribute specifies a colour, this returns it; otherwise it returns nullptr.  <a href="#a7da1b191247cc48f12e3d9321365ec53">More...</a><br/></td></tr>
-<tr class="separator:a7da1b191247cc48f12e3d9321365ec53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24df21c7e0e6a0db4d7826d08879d4c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a24df21c7e0e6a0db4d7826d08879d4c8">Attribute</a> () noexcept</td></tr>
+<tr class="separator:a24df21c7e0e6a0db4d7826d08879d4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875e4477eb4916c8bd671c26fd548b4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a875e4477eb4916c8bd671c26fd548b4f">~Attribute</a> () noexcept</td></tr>
+<tr class="separator:a875e4477eb4916c8bd671c26fd548b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223781398d0798f8ec4218c7ffb65f68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a223781398d0798f8ec4218c7ffb65f68">Attribute</a> (const <a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;) noexcept</td></tr>
+<tr class="separator:a223781398d0798f8ec4218c7ffb65f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97eeb62dc95c6c51fd60eba9f1c9a21a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a97eeb62dc95c6c51fd60eba9f1c9a21a">operator=</a> (const <a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;) noexcept</td></tr>
+<tr class="separator:a97eeb62dc95c6c51fd60eba9f1c9a21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dfa351c4524ceda5bbbc83f7e24abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#af9dfa351c4524ceda5bbbc83f7e24abd">Attribute</a> (<a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&amp;) noexcept</td></tr>
+<tr class="separator:af9dfa351c4524ceda5bbbc83f7e24abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae168cd2e9d76600d7f9bfd25a32e9e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#ae168cd2e9d76600d7f9bfd25a32e9e0d">operator=</a> (<a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&amp;) noexcept</td></tr>
+<tr class="separator:ae168cd2e9d76600d7f9bfd25a32e9e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b37766e81b218c5a861ed1c40cf7ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#aa8b37766e81b218c5a861ed1c40cf7ea">Attribute</a> (<a class="el" href="classRange.html">Range</a>&lt; int &gt; <a class="el" href="classAttributedString_1_1Attribute.html#ab35a1ef10e233d3d0125b01baf4e086e">range</a>, const <a class="el" href="classFont.html">Font</a> &amp;<a class="el" href="classAttributedString_1_1Attribute.html#a8b15853437c7e58f98cee0f44f2df31f">font</a>, <a class="el" href="classColour.html">Colour</a> <a class="el" href="classAttributedString_1_1Attribute.html#a959a0822fe8fd8bf016efc5b9a8d71c1">colour</a>) noexcept</td></tr>
+<tr class="memdesc:aa8b37766e81b218c5a861ed1c40cf7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute that specifies the font and colour for a range of characters.  <a href="#aa8b37766e81b218c5a861ed1c40cf7ea">More...</a><br/></td></tr>
+<tr class="separator:aa8b37766e81b218c5a861ed1c40cf7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aadd39f43e26b6c0a36dca6bf36537818"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classRange.html">Range</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#aadd39f43e26b6c0a36dca6bf36537818">range</a></td></tr>
-<tr class="memdesc:aadd39f43e26b6c0a36dca6bf36537818"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of characters to which this attribute will be applied.  <a href="#aadd39f43e26b6c0a36dca6bf36537818">More...</a><br/></td></tr>
-<tr class="separator:aadd39f43e26b6c0a36dca6bf36537818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a1ef10e233d3d0125b01baf4e086e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#ab35a1ef10e233d3d0125b01baf4e086e">range</a></td></tr>
+<tr class="memdesc:ab35a1ef10e233d3d0125b01baf4e086e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of characters to which this attribute will be applied.  <a href="#ab35a1ef10e233d3d0125b01baf4e086e">More...</a><br/></td></tr>
+<tr class="separator:ab35a1ef10e233d3d0125b01baf4e086e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b15853437c7e58f98cee0f44f2df31f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFont.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a8b15853437c7e58f98cee0f44f2df31f">font</a></td></tr>
+<tr class="memdesc:a8b15853437c7e58f98cee0f44f2df31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font for this range of characters.  <a href="#a8b15853437c7e58f98cee0f44f2df31f">More...</a><br/></td></tr>
+<tr class="separator:a8b15853437c7e58f98cee0f44f2df31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959a0822fe8fd8bf016efc5b9a8d71c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAttributedString_1_1Attribute.html#a959a0822fe8fd8bf016efc5b9a8d71c1">colour</a></td></tr>
+<tr class="memdesc:a959a0822fe8fd8bf016efc5b9a8d71c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The colour for this range of characters.  <a href="#a959a0822fe8fd8bf016efc5b9a8d71c1">More...</a><br/></td></tr>
+<tr class="separator:a959a0822fe8fd8bf016efc5b9a8d71c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An attribute that has been applied to a range of characters in an <a class="el" href="classAttributedString.html" title="A text string with a set of colour/font settings that are associated with sub-ranges of the text...">AttributedString</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa9aa08795352b135cde5b496b2939fee"></a>
+<a class="anchor" id="a24df21c7e0e6a0db4d7826d08879d4c8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttributedString::Attribute::Attribute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a875e4477eb4916c8bd671c26fd548b4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttributedString::Attribute::~Attribute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a223781398d0798f8ec4218c7ffb65f68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttributedString::Attribute::Attribute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9dfa351c4524ceda5bbbc83f7e24abd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AttributedString::Attribute::Attribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8b37766e81b218c5a861ed1c40cf7ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AttributedString::Attribute::Attribute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRange.html">Range</a>&lt; int &gt;&#160;</td>
           <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classFont.html">Font</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -147,131 +255,73 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Creates an attribute that changes the colour for a range of characters. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAttributedString.html#a45e37afd0bfe64cf411a755ea35b20f7" title="Adds a colour attribute for the specified range. ">AttributedString::setColour()</a> </dd></dl>
+<p>Creates an attribute that specifies the font and colour for a range of characters. </p>
 
 </div>
 </div>
-<a class="anchor" id="a97c9b8b51a4eb49f89d24b58d08c2374"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a97eeb62dc95c6c51fd60eba9f1c9a21a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AttributedString::Attribute::Attribute </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classRange.html">Range</a>&lt; int &gt;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classFont.html">Font</a> &amp;&#160;</td>
-          <td class="paramname"><em>font</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates an attribute that changes the font for a range of characters. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAttributedString.html#a4fd29f067fe86b25049fdbc8df663686" title="Adds a font attribute for the specified range. ">AttributedString::setFont()</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a67c8443a98b861d67ce2a9d6cafb111e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AttributedString::Attribute::Attribute </td>
+          <td class="memname"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a>&amp; AttributedString::Attribute::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aea9ec1a9334405136d4151e3f63b3653"></a>
+<a class="anchor" id="ae168cd2e9d76600d7f9bfd25a32e9e0d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AttributedString::Attribute::~Attribute </td>
+          <td class="memname"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a>&amp; AttributedString::Attribute::operator= </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classAttributedString_1_1Attribute.html">Attribute</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac2e844f9489d8d5c0bae624f786f12fe"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classFont.html">Font</a>* AttributedString::Attribute::getFont </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>If this attribute specifies a font, this returns it; otherwise it returns nullptr. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7da1b191247cc48f12e3d9321365ec53"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classColour.html">Colour</a>* AttributedString::Attribute::getColour </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If this attribute specifies a colour, this returns it; otherwise it returns nullptr. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aadd39f43e26b6c0a36dca6bf36537818"></a>
+<a class="anchor" id="ab35a1ef10e233d3d0125b01baf4e086e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classRange.html">Range</a>&lt;int&gt; AttributedString::Attribute::range</td>
+          <td class="memname"><a class="el" href="classRange.html">Range</a>&lt;int&gt; AttributedString::Attribute::range</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,16 +330,49 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8b15853437c7e58f98cee0f44f2df31f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFont.html">Font</a> AttributedString::Attribute::font</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The font for this range of characters. </p>
+
+</div>
+</div>
+<a class="anchor" id="a959a0822fe8fd8bf016efc5b9a8d71c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classColour.html">Colour</a> AttributedString::Attribute::colour</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The colour for this range of characters. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__AttributedString_8h.html">juce_AttributedString.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -90,23 +90,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a1cba190b88451cc41cae664a72bce7d5">AudioPluginFormat</a>() noexcept</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a9bded73bfc877952f9f092ae13ae8816">canScanForPlugins</a>() const =0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a525319c20460ad04b7bd0898474fdc7e">createInstanceFromDescription</a>(const PluginDescription &amp;desc, double initialSampleRate, int initialBufferSize)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#aa75ed0f5726f88ca1276208f0c42da41">doesPluginStillExist</a>(const PluginDescription &amp;desc)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a078fc44fc2966158d661c56e11e7ca38">createInstanceFromDescription</a>(const PluginDescription &amp;, double initialSampleRate, int initialBufferSize)</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a66a7f6a84ae7c5f270a0a12917d687eb">createInstanceFromDescription</a>(const PluginDescription &amp;, double initialSampleRate, int initialBufferSize, String &amp;errorMessage)</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#aae20bd6e1eedb6c3b46fd49375c99f25">createPluginInstance</a>(const PluginDescription &amp;, double initialSampleRate, int initialBufferSize, void *userData, void(*callback)(void *, AudioPluginInstance *, const String &amp;))=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#ac03372359b6033b378bc036ffb19c78e">createPluginInstanceAsync</a>(const PluginDescription &amp;description, double initialSampleRate, int initialBufferSize, InstantiationCompletionCallback *completionCallback)</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#ac7c1dd944b69054af6b8633bb43fcb5e">createPluginInstanceAsync</a>(const PluginDescription &amp;description, double initialSampleRate, int initialBufferSize, std::function&lt; void(AudioPluginInstance *, const String &amp;)&gt; completionCallback)</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a895b91a86d223f3caeba207dba298d2f">doesPluginStillExist</a>(const PluginDescription &amp;)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a89c2413dae86f4b9ea8fb29ed205edc5">fileMightContainThisPluginType</a>(const String &amp;fileOrIdentifier)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a9d23e71b2c2429cad9775a14e021abd6">findAllTypesForFile</a>(OwnedArray&lt; PluginDescription &gt; &amp;results, const String &amp;fileOrIdentifier)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#aa7d194ad3abdad8da5e37d2557579430">getDefaultLocationsToSearch</a>()=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#aad966eb47be8b72b34f8f317ea89b4a2">getName</a>() const =0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a8e8251e287c4829606dda2f1730a1c32">getNameOfPluginFromIdentifier</a>(const String &amp;fileOrIdentifier)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#aeaf55cd79107b25ca1c0dbc685890aa3">pluginNeedsRescanning</a>(const PluginDescription &amp;)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a73d972820a0b8c1c487a939089153199">searchPathsForPlugins</a>(const FileSearchPath &amp;directoriesToSearch, bool recursive)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a13029b260e822e954d6b33229db75d50">~AudioPluginFormat</a>()</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#abbfbfda97cb2fd11ad368c5c45d508ed">requiresUnblockedMessageThreadDuringCreation</a>(const PluginDescription &amp;) const noexcept=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classAudioPluginFormat.html#a74b24832af4eb78213ffaa35937d8ac6">searchPathsForPlugins</a>(const FileSearchPath &amp;directoriesToSearch, bool recursive, bool allowPluginsWhichRequireAsynchronousInstantiation=false)=0</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classAudioPluginFormat.html#a13029b260e822e954d6b33229db75d50">~AudioPluginFormat</a>()</td><td class="entry"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

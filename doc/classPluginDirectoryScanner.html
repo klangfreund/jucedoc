@@ -95,9 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af945acd58828079d587de38019064d51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPluginDirectoryScanner.html#af945acd58828079d587de38019064d51">PluginDirectoryScanner</a> (<a class="el" href="classKnownPluginList.html">KnownPluginList</a> &amp;listToAddResultsTo, <a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> &amp;formatToLookFor, <a class="el" href="classFileSearchPath.html">FileSearchPath</a> directoriesToSearch, bool searchRecursively, const <a class="el" href="classFile.html">File</a> &amp;deadMansPedalFile)</td></tr>
-<tr class="memdesc:af945acd58828079d587de38019064d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a scanner.  <a href="#af945acd58828079d587de38019064d51">More...</a><br/></td></tr>
-<tr class="separator:af945acd58828079d587de38019064d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaf052eb4a3a94545d1180b8b0f166e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPluginDirectoryScanner.html#a0eaf052eb4a3a94545d1180b8b0f166e">PluginDirectoryScanner</a> (<a class="el" href="classKnownPluginList.html">KnownPluginList</a> &amp;listToAddResultsTo, <a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> &amp;formatToLookFor, <a class="el" href="classFileSearchPath.html">FileSearchPath</a> directoriesToSearch, bool searchRecursively, const <a class="el" href="classFile.html">File</a> &amp;deadMansPedalFile, bool allowPluginsWhichRequireAsynchronousInstantiation=false)</td></tr>
+<tr class="memdesc:a0eaf052eb4a3a94545d1180b8b0f166e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a scanner.  <a href="#a0eaf052eb4a3a94545d1180b8b0f166e">More...</a><br/></td></tr>
+<tr class="separator:a0eaf052eb4a3a94545d1180b8b0f166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3132c1ed58ed03d255dde0e649f8be7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPluginDirectoryScanner.html#af3132c1ed58ed03d255dde0e649f8be7">~PluginDirectoryScanner</a> ()</td></tr>
 <tr class="memdesc:af3132c1ed58ed03d255dde0e649f8be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af3132c1ed58ed03d255dde0e649f8be7">More...</a><br/></td></tr>
 <tr class="separator:af3132c1ed58ed03d255dde0e649f8be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +127,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Scans a directory for plugins, and adds them to a <a class="el" href="classKnownPluginList.html" title="Manages a list of plugin types. ">KnownPluginList</a>. </p>
 <p>To use one of these, create it and call <a class="el" href="classPluginDirectoryScanner.html#a5303b7b743f22a6ccd470422f56ecf1e" title="Tries the next likely-looking file. ">scanNextFile()</a> repeatedly, until it returns false. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af945acd58828079d587de38019064d51"></a>
+<a class="anchor" id="a0eaf052eb4a3a94545d1180b8b0f166e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -159,7 +159,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
-          <td class="paramname"><em>deadMansPedalFile</em>&#160;</td>
+          <td class="paramname"><em>deadMansPedalFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowPluginsWhichRequireAsynchronousInstantiation</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,7 +182,8 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">formatToLookFor</td><td>this is the type of format that you want to look for </td></tr>
     <tr><td class="paramname">directoriesToSearch</td><td>the path to search </td></tr>
     <tr><td class="paramname">searchRecursively</td><td>true to search recursively </td></tr>
-    <tr><td class="paramname">deadMansPedalFile</td><td>if this isn't <a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364" title="This static constant is used for referring to an &#39;invalid&#39; file. ">File::nonexistent</a>, then it will be used as a file to store the names of any plugins that crash during initialisation. If there are any plugins listed in it, then these will always be scanned after all other possible files have been tried - in this way, even if there's a few dodgy plugins in your path, then a couple of rescans will still manage to find all the proper plugins. It's probably best to choose a file in the user's application data directory (alongside your app's settings file) for this. The file format it uses is just a list of filenames of the modules that failed. </td></tr>
+    <tr><td class="paramname">deadMansPedalFile</td><td>if this isn't <a class="el" href="classFile.html" title="Represents a local file or directory. ">File()</a>, then it will be used as a file to store the names of any plugins that crash during initialisation. If there are any plugins listed in it, then these will always be scanned after all other possible files have been tried - in this way, even if there's a few dodgy plugins in your path, then a couple of rescans will still manage to find all the proper plugins. It's probably best to choose a file in the user's application data directory (alongside your app's settings file) for this. The file format it uses is just a list of filenames of the modules that failed. </td></tr>
+    <tr><td class="paramname">allowPluginsWhichRequireAsynchronousInstantiation</td><td>If this is false then the scanner will exclude plug-ins asynchronous creation - such as AUv3 plug-ins. </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,12 +356,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__PluginDirectoryScanner_8h.html">juce_PluginDirectoryScanner.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

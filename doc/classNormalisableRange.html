@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68053155bda85725fce2c07308c409ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNormalisableRange.html">NormalisableRange</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">operator=</a> (const <a class="el" href="classNormalisableRange.html">NormalisableRange</a> &amp;other) noexcept</td></tr>
 <tr class="memdesc:a68053155bda85725fce2c07308c409ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of another range.  <a href="#a68053155bda85725fce2c07308c409ca">More...</a><br/></td></tr>
 <tr class="separator:a68053155bda85725fce2c07308c409ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3824d33f1b2e6a37f9643c9255a26c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a3824d33f1b2e6a37f9643c9255a26c92">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, ValueType intervalValue, ValueType skewFactor) noexcept</td></tr>
-<tr class="memdesc:a3824d33f1b2e6a37f9643c9255a26c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range, interval and skew factor.  <a href="#a3824d33f1b2e6a37f9643c9255a26c92">More...</a><br/></td></tr>
-<tr class="separator:a3824d33f1b2e6a37f9643c9255a26c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2ccb633c03527ae499e21c00f01e84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a2a2ccb633c03527ae499e21c00f01e84">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, ValueType intervalValue, ValueType skewFactor, bool useSymmetricSkew=false) noexcept</td></tr>
+<tr class="memdesc:a2a2ccb633c03527ae499e21c00f01e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range, interval and skew factor.  <a href="#a2a2ccb633c03527ae499e21c00f01e84">More...</a><br/></td></tr>
+<tr class="separator:a2a2ccb633c03527ae499e21c00f01e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7676fe8e682102d9af2d0a3c0ab8b1f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a7676fe8e682102d9af2d0a3c0ab8b1f9">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, ValueType intervalValue) noexcept</td></tr>
 <tr class="memdesc:a7676fe8e682102d9af2d0a3c0ab8b1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range and interval, but a dummy skew-factor.  <a href="#a7676fe8e682102d9af2d0a3c0ab8b1f9">More...</a><br/></td></tr>
 <tr class="separator:a7676fe8e682102d9af2d0a3c0ab8b1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +139,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a740639acf2157636fce16138a51bbfa3"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a740639acf2157636fce16138a51bbfa3">skew</a></td></tr>
 <tr class="memdesc:a740639acf2157636fce16138a51bbfa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional skew factor that alters the way values are distribute across the range.  <a href="#a740639acf2157636fce16138a51bbfa3">More...</a><br/></td></tr>
 <tr class="separator:a740639acf2157636fce16138a51bbfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a588ad45b07463d74aca98d0589845d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a3a588ad45b07463d74aca98d0589845d">symmetricSkew</a></td></tr>
+<tr class="memdesc:a3a588ad45b07463d74aca98d0589845d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the skew factor applies from the middle of the slider to each of its ends.  <a href="#a3a588ad45b07463d74aca98d0589845d">More...</a><br/></td></tr>
+<tr class="separator:a3a588ad45b07463d74aca98d0589845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ValueType&gt;<br/>
@@ -203,7 +206,7 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3824d33f1b2e6a37f9643c9255a26c92"></a>
+<a class="anchor" id="a2a2ccb633c03527ae499e21c00f01e84"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -234,7 +237,13 @@ template&lt;typename ValueType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ValueType&#160;</td>
-          <td class="paramname"><em>skewFactor</em>&#160;</td>
+          <td class="paramname"><em>skewFactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useSymmetricSkew</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -542,8 +551,26 @@ template&lt;typename ValueType&gt; </div>
 </div><div class="memdoc">
 
 <p>An optional skew factor that alters the way values are distribute across the range. </p>
-<p>The skew factor lets you skew the mapping logarithmically so that larger or smaller values are given a larger proportion of the avilable space.</p>
+<p>The skew factor lets you skew the mapping logarithmically so that larger or smaller values are given a larger proportion of the available space.</p>
 <p>A factor of 1.0 has no skewing effect at all. If the factor is &lt; 1.0, the lower end of the range will fill more of the slider's length; if the factor is &gt; 1.0, the upper end of the range will be expanded. </p>
+
+<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, and <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a588ad45b07463d74aca98d0589845d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; ValueType &gt;::symmetricSkew</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, the skew factor applies from the middle of the slider to each of its ends. </p>
 
 <p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, and <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>.</p>
 
@@ -553,12 +580,17 @@ template&lt;typename ValueType&gt; </div>
 <li><a class="el" href="juce__NormalisableRange_8h.html">juce_NormalisableRange.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

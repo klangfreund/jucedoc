@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['midimachinecontrolcommand',['MidiMachineControlCommand',['../classMidiMessage.html#aa95b060274257522d1af40794ad1631d',1,'MidiMessage']]]
+  ['layoutmode',['LayoutMode',['../classMultiDocumentPanel.html#a493599178acb0ddea50f7059faa4f8f3',1,'MultiDocumentPanel']]]
 ];

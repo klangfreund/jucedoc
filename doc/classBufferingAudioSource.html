@@ -107,9 +107,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a721422b1a291907632b765e4771a983f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a721422b1a291907632b765e4771a983f">BufferingAudioSource</a> (<a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a> *source, <a class="el" href="classTimeSliceThread.html">TimeSliceThread</a> &amp;backgroundThread, bool deleteSourceWhenDeleted, int numberOfSamplesToBuffer, int numberOfChannels=2)</td></tr>
-<tr class="memdesc:a721422b1a291907632b765e4771a983f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classBufferingAudioSource.html" title="An AudioSource which takes another source as input, and buffers it using a thread. ">BufferingAudioSource</a>.  <a href="#a721422b1a291907632b765e4771a983f">More...</a><br/></td></tr>
-<tr class="separator:a721422b1a291907632b765e4771a983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a325821cdc46ccbfcbad4c0c4e224e9f6">BufferingAudioSource</a> (<a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a> *source, <a class="el" href="classTimeSliceThread.html">TimeSliceThread</a> &amp;backgroundThread, bool deleteSourceWhenDeleted, int numberOfSamplesToBuffer, int numberOfChannels=2, bool prefillBufferOnPrepareToPlay=true)</td></tr>
+<tr class="memdesc:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classBufferingAudioSource.html" title="An AudioSource which takes another source as input, and buffers it using a thread. ">BufferingAudioSource</a>.  <a href="#a325821cdc46ccbfcbad4c0c4e224e9f6">More...</a><br/></td></tr>
+<tr class="separator:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2633cef1b35b4d435db60374d7b2859f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a2633cef1b35b4d435db60374d7b2859f">~BufferingAudioSource</a> ()</td></tr>
 <tr class="memdesc:a2633cef1b35b4d435db60374d7b2859f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a2633cef1b35b4d435db60374d7b2859f">More...</a><br/></td></tr>
 <tr class="separator:a2633cef1b35b4d435db60374d7b2859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5db3f567c5b68306f23fb3fed5367c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#ad5db3f567c5b68306f23fb3fed5367c0">isLooping</a> () const override</td></tr>
 <tr class="memdesc:ad5db3f567c5b68306f23fb3fed5367c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the <a class="el" href="classPositionableAudioSource.html" title="A type of AudioSource which can be repositioned. ">PositionableAudioSource</a> method.  <a href="#ad5db3f567c5b68306f23fb3fed5367c0">More...</a><br/></td></tr>
 <tr class="separator:ad5db3f567c5b68306f23fb3fed5367c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6591413bbb172929fe3514eea14238"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a5b6591413bbb172929fe3514eea14238">waitForNextAudioBlockReady</a> (const <a class="el" href="structAudioSourceChannelInfo.html">AudioSourceChannelInfo</a> &amp;info, const <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> timeout)</td></tr>
+<tr class="memdesc:a5b6591413bbb172929fe3514eea14238"><td class="mdescLeft">&#160;</td><td class="mdescRight">A useful function to block until the next the buffer info can be filled.  <a href="#a5b6591413bbb172929fe3514eea14238">More...</a><br/></td></tr>
+<tr class="separator:a5b6591413bbb172929fe3514eea14238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPositionableAudioSource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPositionableAudioSource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a></td></tr>
 <tr class="memitem:aa81c6f032ae672549050b0985a665cf5 inherit pub_methods_classPositionableAudioSource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPositionableAudioSource.html#aa81c6f032ae672549050b0985a665cf5">~PositionableAudioSource</a> ()</td></tr>
 <tr class="memdesc:aa81c6f032ae672549050b0985a665cf5 inherit pub_methods_classPositionableAudioSource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa81c6f032ae672549050b0985a665cf5">More...</a><br/></td></tr>
@@ -162,7 +165,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Create this as a wrapper around another thread, and it will read-ahead with a background thread to smooth out playback. You can either create one of these directly, or use it indirectly using an <a class="el" href="classAudioTransportSource.html" title="An AudioSource that takes a PositionableAudioSource and allows it to be played, stopped, started, etc. ">AudioTransportSource</a>.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPositionableAudioSource.html" title="A type of AudioSource which can be repositioned. ">PositionableAudioSource</a>, <a class="el" href="classAudioTransportSource.html" title="An AudioSource that takes a PositionableAudioSource and allows it to be played, stopped, started, etc. ">AudioTransportSource</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a721422b1a291907632b765e4771a983f"></a>
+<a class="anchor" id="a325821cdc46ccbfcbad4c0c4e224e9f6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -194,7 +197,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numberOfChannels</em> = <code>2</code>&#160;</td>
+          <td class="paramname"><em>numberOfChannels</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prefillBufferOnPrepareToPlay</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,10 +217,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>the input source to read from </td></tr>
-    <tr><td class="paramname">backgroundThread</td><td>a background thread that will be used for the background read-ahead. This object must not be deleted until after any BufferedAudioSources that are using it have been deleted! </td></tr>
+    <tr><td class="paramname">backgroundThread</td><td>a background thread that will be used for the background read-ahead. This object must not be deleted until after any BufferingAudioSources that are using it have been deleted! </td></tr>
     <tr><td class="paramname">deleteSourceWhenDeleted</td><td>if true, then the input source object will be deleted when this object is deleted </td></tr>
     <tr><td class="paramname">numberOfSamplesToBuffer</td><td>the size of buffer to use for reading ahead </td></tr>
     <tr><td class="paramname">numberOfChannels</td><td>the number of channels that will be played </td></tr>
+    <tr><td class="paramname">prefillBufferOnPrepareToPlay</td><td>if true, then calling prepareToPlay on this object will block until the buffer has been filled </td></tr>
   </table>
   </dd>
 </dl>
@@ -443,16 +453,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5b6591413bbb172929fe3514eea14238"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BufferingAudioSource::waitForNextAudioBlockReady </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structAudioSourceChannelInfo.html">AudioSourceChannelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A useful function to block until the next the buffer info can be filled. </p>
+<p>This is useful for offline rendering. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__BufferingAudioSource_8h.html">juce_BufferingAudioSource.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

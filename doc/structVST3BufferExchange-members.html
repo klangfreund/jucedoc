@@ -93,16 +93,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="structVST3BufferExchange.html#a258f09e3c61c120d7c35e2c66bddd48a">associateBufferTo</a>(Steinberg::Vst::AudioBusBuffers &amp;vstBuffers, Bus &amp;bus, AudioBuffer&lt; FloatType &gt; &amp;buffer, int numChannels, int channelStartOffset, int sampleOffset=0)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="structVST3BufferExchange.html#a5aa67a699a8f31a5098536f335c43eb4">Bus</a> typedef</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structVST3BufferExchange.html#a0a22108464b6d7df26e58b473f3b567f">BusMap</a> typedef</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structVST3BufferExchange.html#a7f25aca59b8af5aaf17846dcafb5ced2">mapArrangementToBusses</a>(int &amp;channelIndexOffset, int index, Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, BusMap &amp;busMapToUse, Steinberg::Vst::SpeakerArrangement arrangement, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structVST3BufferExchange.html#ab9bde460da866df2f686ea1923602b81">mapBufferToBusses</a>(Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, BusMap &amp;busMapToUse, const Array&lt; Steinberg::Vst::SpeakerArrangement &gt; &amp;arrangements, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structVST3BufferExchange.html#ab21bdfcdf7540fc6e35700d313f0185f">mapBufferToBusses</a>(Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, Steinberg::Vst::IAudioProcessor &amp;processor, BusMap &amp;busMapToUse, bool isInput, int numBusses, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structVST3BufferExchange.html#aef619a230b18ed73332f85a6e7e53b3f">mapArrangementToBuses</a>(int &amp;channelIndexOffset, int index, Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, BusMap &amp;busMapToUse, const AudioChannelSet &amp;arrangement, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structVST3BufferExchange.html#ae3fab60c5ce04946d6ae969134879d1c">mapBufferToBuses</a>(Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, BusMap &amp;busMapToUse, const Array&lt; AudioChannelSet &gt; &amp;arrangements, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structVST3BufferExchange.html#a5e84948a416d4960906dce0f854debfa">mapBufferToBuses</a>(Array&lt; Steinberg::Vst::AudioBusBuffers &gt; &amp;result, Steinberg::Vst::IAudioProcessor &amp;processor, BusMap &amp;busMapToUse, bool isInput, int numBuses, AudioBuffer&lt; FloatType &gt; &amp;source)</td><td class="entry"><a class="el" href="structVST3BufferExchange.html">VST3BufferExchange&lt; FloatType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

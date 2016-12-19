@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classNamedValueSet-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -92,6 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Holds a set of named var objects.  
  <a href="classNamedValueSet.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamedValueSet_1_1NamedValue.html">NamedValue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c23ef1e536e90700bde50433c839597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a7c23ef1e536e90700bde50433c839597">NamedValueSet</a> () noexcept</td></tr>
@@ -114,9 +120,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a995d7fe51e0409214d5825e96dcb0398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48b7b26e70e64dbbff9a893affc5978e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a48b7b26e70e64dbbff9a893affc5978e">operator!=</a> (const <a class="el" href="classNamedValueSet.html">NamedValueSet</a> &amp;) const </td></tr>
 <tr class="separator:a48b7b26e70e64dbbff9a893affc5978e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3733c54d5ca6cde1f607d1b2af758f22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNamedValueSet_1_1NamedValue.html">NamedValueSet::NamedValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a3733c54d5ca6cde1f607d1b2af758f22">begin</a> ()</td></tr>
+<tr class="separator:a3733c54d5ca6cde1f607d1b2af758f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7584bb686f393f0730486a712591fdfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNamedValueSet_1_1NamedValue.html">NamedValueSet::NamedValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a7584bb686f393f0730486a712591fdfe">end</a> ()</td></tr>
+<tr class="separator:a7584bb686f393f0730486a712591fdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f9066eed12be3d9e569c5181d05edd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#ad9f9066eed12be3d9e569c5181d05edd">size</a> () const noexcept</td></tr>
 <tr class="memdesc:ad9f9066eed12be3d9e569c5181d05edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of values that the set contains.  <a href="#ad9f9066eed12be3d9e569c5181d05edd">More...</a><br/></td></tr>
 <tr class="separator:ad9f9066eed12be3d9e569c5181d05edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2108069244f60c3e697ba6dff23727a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#ac2108069244f60c3e697ba6dff23727a">isEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:ac2108069244f60c3e697ba6dff23727a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the set is empty.  <a href="#ac2108069244f60c3e697ba6dff23727a">More...</a><br/></td></tr>
+<tr class="separator:ac2108069244f60c3e697ba6dff23727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20142d8885e26588e382882796ae78db"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a20142d8885e26588e382882796ae78db">operator[]</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;name) const noexcept</td></tr>
 <tr class="memdesc:a20142d8885e26588e382882796ae78db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a named item.  <a href="#a20142d8885e26588e382882796ae78db">More...</a><br/></td></tr>
 <tr class="separator:a20142d8885e26588e382882796ae78db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,16 +148,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62fbe8b7c2d1b2b86d4c4c0c9f733a3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a62fbe8b7c2d1b2b86d4c4c0c9f733a3d">remove</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;name)</td></tr>
 <tr class="memdesc:a62fbe8b7c2d1b2b86d4c4c0c9f733a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a value from the set.  <a href="#a62fbe8b7c2d1b2b86d4c4c0c9f733a3d">More...</a><br/></td></tr>
 <tr class="separator:a62fbe8b7c2d1b2b86d4c4c0c9f733a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb31443a08b579b12301d00a524e1fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIdentifier.html">Identifier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#abb31443a08b579b12301d00a524e1fed">getName</a> (int index) const noexcept</td></tr>
+<tr class="memitem:abb31443a08b579b12301d00a524e1fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIdentifier.html">Identifier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#abb31443a08b579b12301d00a524e1fed">getName</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:abb31443a08b579b12301d00a524e1fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the value at a given index.  <a href="#abb31443a08b579b12301d00a524e1fed">More...</a><br/></td></tr>
 <tr class="separator:abb31443a08b579b12301d00a524e1fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f306cf06a0b33496e4c02ee823b9a12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a0f306cf06a0b33496e4c02ee823b9a12">getVarPointer</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;name) const noexcept</td></tr>
 <tr class="memdesc:a0f306cf06a0b33496e4c02ee823b9a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the var that holds a named value, or null if there is no value with this name.  <a href="#a0f306cf06a0b33496e4c02ee823b9a12">More...</a><br/></td></tr>
 <tr class="separator:a0f306cf06a0b33496e4c02ee823b9a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10efc3280ef1c960c43ec4c1ec542f8b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a10efc3280ef1c960c43ec4c1ec542f8b">getValueAt</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a10efc3280ef1c960c43ec4c1ec542f8b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a10efc3280ef1c960c43ec4c1ec542f8b">getValueAt</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a10efc3280ef1c960c43ec4c1ec542f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the item at a given index.  <a href="#a10efc3280ef1c960c43ec4c1ec542f8b">More...</a><br/></td></tr>
 <tr class="separator:a10efc3280ef1c960c43ec4c1ec542f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b9adf2afabce84498d99cddb367f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a79b9adf2afabce84498d99cddb367f02">getVarPointerAt</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a79b9adf2afabce84498d99cddb367f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a79b9adf2afabce84498d99cddb367f02">getVarPointerAt</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a79b9adf2afabce84498d99cddb367f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the item at a given index.  <a href="#a79b9adf2afabce84498d99cddb367f02">More...</a><br/></td></tr>
 <tr class="separator:a79b9adf2afabce84498d99cddb367f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f62b3476a4fd77c9bfa4dba795ca71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNamedValueSet.html#a88f62b3476a4fd77c9bfa4dba795ca71">indexOf</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;name) const noexcept</td></tr>
@@ -331,6 +344,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3733c54d5ca6cde1f607d1b2af758f22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNamedValueSet_1_1NamedValue.html">NamedValueSet::NamedValue</a>* NamedValueSet::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7584bb686f393f0730486a712591fdfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNamedValueSet_1_1NamedValue.html">NamedValueSet::NamedValue</a>* NamedValueSet::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad9f9066eed12be3d9e569c5181d05edd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -353,6 +396,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the total number of values that the set contains. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac2108069244f60c3e697ba6dff23727a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NamedValueSet::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the set is empty. </p>
 
 </div>
 </div>
@@ -706,12 +774,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__NamedValueSet_8h.html">juce_NamedValueSet.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -91,8 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#a9393883c4ec4502ceedf1f88abbb95d6">deleteKey</a>(const String &amp;regKeyPath, WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a263ce2b622765b60a1357a279099a783">deleteValue</a>(const String &amp;regValuePath, WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#a1906cab952584448e891560a7458b012">getBinaryValue</a>(const String &amp;regValuePath, MemoryBlock &amp;resultData, WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a1ab13c5ecf5c0230dc4c58c181be3f44">getValue</a>(const String &amp;regValuePath, const String &amp;defaultValue=String::empty, WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#a5d4364350f6cab54fbcb1941e2b4aabb">JUCE_DEPRECATED</a>(static String getValueWow64(const String &amp;, const String &amp;defaultValue=String::empty))</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a6321310aee641a7fe24d94efbafd9661">getValue</a>(const String &amp;regValuePath, const String &amp;defaultValue=String(), WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#a702a124405a217d59d1ba349e1d9240c">JUCE_DEPRECATED</a>(static String getValueWow64(const String &amp;, const String &amp;defaultValue=String()))</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a3a8cc59b6411ebb5fa9aeecc318ac6c2">JUCE_DEPRECATED</a>(static bool valueExistsWow64(const String &amp;))</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#ad627b5f99afcdc066f055c239630493b">JUCE_DEPRECATED</a>(static bool keyExistsWow64(const String &amp;))</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a0d58ee97b4dfd8fab8e1d8949d308fe0">keyExists</a>(const String &amp;regValuePath, WoW64Mode mode=WoW64_Default)</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -107,12 +107,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classWindowsRegistry.html#a7d8812634430aef14423cd2d70cf38d8ac64c622861f18a7c0ac143c846587549">WoW64_Default</a> enum value</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classWindowsRegistry.html#a7d8812634430aef14423cd2d70cf38d8">WoW64Mode</a> enum name</td><td class="entry"><a class="el" href="classWindowsRegistry.html">WindowsRegistry</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

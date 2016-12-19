@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a65842effc25470c117a8a623e888e19b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a65842effc25470c117a8a623e888e19b">getNumGlyphs</a> () const noexcept</td></tr>
 <tr class="memdesc:a65842effc25470c117a8a623e888e19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of glyphs in the arrangement.  <a href="#a65842effc25470c117a8a623e888e19b">More...</a><br/></td></tr>
 <tr class="separator:a65842effc25470c117a8a623e888e19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de5322443e538fdd34c46b3fa570df6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPositionedGlyph.html">PositionedGlyph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a1de5322443e538fdd34c46b3fa570df6">getGlyph</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a1de5322443e538fdd34c46b3fa570df6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPositionedGlyph.html">PositionedGlyph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a1de5322443e538fdd34c46b3fa570df6">getGlyph</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a1de5322443e538fdd34c46b3fa570df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the glyphs from the arrangement.  <a href="#a1de5322443e538fdd34c46b3fa570df6">More...</a><br/></td></tr>
 <tr class="separator:a1de5322443e538fdd34c46b3fa570df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910c2396f3737e63dbf6d0ce4e8fdf94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a910c2396f3737e63dbf6d0ce4e8fdf94">clear</a> ()</td></tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ada407e56eab976b046f880729411771f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds some multi-line text, breaking lines at word-boundaries if they are too wide.  <a href="#ada407e56eab976b046f880729411771f">More...</a><br/></td></tr>
 <tr class="separator:ada407e56eab976b046f880729411771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a96a7fd525bab5cc2330c1c4e9f13d6d5">addFittedText</a> (const <a class="el" href="classFont.html">Font</a> &amp;font, const <a class="el" href="classString.html">String</a> &amp;text, float x, float y, float width, float height, <a class="el" href="classJustification.html">Justification</a> layout, int maximumLinesToUse, float minimumHorizontalScale=0.0f)</td></tr>
-<tr class="memdesc:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to fit some text withing a given space.  <a href="#a96a7fd525bab5cc2330c1c4e9f13d6d5">More...</a><br/></td></tr>
+<tr class="memdesc:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to fit some text within a given space.  <a href="#a96a7fd525bab5cc2330c1c4e9f13d6d5">More...</a><br/></td></tr>
 <tr class="separator:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1202486067e30a21b94afb2e666c82ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a1202486067e30a21b94afb2e666c82ab">addGlyphArrangement</a> (const <a class="el" href="classGlyphArrangement.html">GlyphArrangement</a> &amp;)</td></tr>
 <tr class="memdesc:a1202486067e30a21b94afb2e666c82ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends another glyph arrangement to this one.  <a href="#a1202486067e30a21b94afb2e666c82ab">More...</a><br/></td></tr>
@@ -528,7 +528,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tries to fit some text withing a given space. </p>
+<p>Tries to fit some text within a given space. </p>
 <p>This does its best to make the given text readable within the specified rectangle, so it useful for labelling things.</p>
 <p>If the text is too big, it'll be squashed horizontally or broken over multiple lines if the maximumLinesToUse value allows this. If the text just won't fit into the space, it'll cram as much as possible in there, and put some ellipsis at the end to show that it's been truncated.</p>
 <p>A <a class="el" href="classJustification.html" title="Represents a type of justification to be used when positioning graphical items. ">Justification</a> parameter lets you specify how the text is laid out within the rectangle, both horizontally and vertically.</p>
@@ -906,12 +906,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__GlyphArrangement_8h.html">juce_GlyphArrangement.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

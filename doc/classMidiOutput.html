@@ -113,8 +113,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5662e29a58faebe2398b9be73728cf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this device.  <a href="#a5662e29a58faebe2398b9be73728cf54">More...</a><br/></td></tr>
 <tr class="separator:a5662e29a58faebe2398b9be73728cf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c8d64553e0787c920f5b140f7267e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiOutput.html#a19c8d64553e0787c920f5b140f7267e9">sendMessageNow</a> (const <a class="el" href="classMidiMessage.html">MidiMessage</a> &amp;message)</td></tr>
-<tr class="memdesc:a19c8d64553e0787c920f5b140f7267e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this device output a midi message.  <a href="#a19c8d64553e0787c920f5b140f7267e9">More...</a><br/></td></tr>
+<tr class="memdesc:a19c8d64553e0787c920f5b140f7267e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends out a MIDI message immediately.  <a href="#a19c8d64553e0787c920f5b140f7267e9">More...</a><br/></td></tr>
 <tr class="separator:a19c8d64553e0787c920f5b140f7267e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54072205364d56260eaa11c7771289f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiOutput.html#ae54072205364d56260eaa11c7771289f">sendBlockOfMessagesNow</a> (const <a class="el" href="classMidiBuffer.html">MidiBuffer</a> &amp;buffer)</td></tr>
+<tr class="memdesc:ae54072205364d56260eaa11c7771289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends out a sequence of MIDI messages immediately.  <a href="#ae54072205364d56260eaa11c7771289f">More...</a><br/></td></tr>
+<tr class="separator:ae54072205364d56260eaa11c7771289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1356a3303e8f56389ea52f98b56577b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiOutput.html#a1356a3303e8f56389ea52f98b56577b6">sendBlockOfMessages</a> (const <a class="el" href="classMidiBuffer.html">MidiBuffer</a> &amp;buffer, double millisecondCounterToStartAt, double samplesPerSecondForBuffer)</td></tr>
 <tr class="memdesc:a1356a3303e8f56389ea52f98b56577b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This lets you supply a block of messages that will be sent out at some point in the future.  <a href="#a1356a3303e8f56389ea52f98b56577b6">More...</a><br/></td></tr>
 <tr class="separator:a1356a3303e8f56389ea52f98b56577b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,8 +330,25 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Makes this device output a midi message. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMidiMessage.html" title="Encapsulates a MIDI message. ">MidiMessage</a> </dd></dl>
+<p>Sends out a MIDI message immediately. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae54072205364d56260eaa11c7771289f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MidiOutput::sendBlockOfMessagesNow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMidiBuffer.html">MidiBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends out a sequence of MIDI messages immediately. </p>
 
 </div>
 </div>
@@ -427,12 +447,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__MidiOutput_8h.html">juce_MidiOutput.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

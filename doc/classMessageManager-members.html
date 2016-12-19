@@ -89,27 +89,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classMessageManager.html">MessageManager</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a252262c8bfe857ea77fe4e7b4b42ae80">broadcastMessage</a>(const String &amp;messageText)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#a554f81587d57127c9cb5be72aced11c1">callFunctionOnMessageThread</a>(MessageCallbackFunction *callback, void *userData)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#aebd4b8896d7b6bdfa34d3cd8eb2e1777">currentThreadHasLockedMessageManager</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">deleteInstance</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a5a64dae92820a0ec102294d8ea7aa94f">deregisterBroadcastListener</a>(ActionListener *listener)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#aa64162d4d9711b2c299e66775b57f414">getCurrentMessageThread</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#aea95a541b6660b7cdcc79b675879f35d">getInstance</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#ae890114c8f95bef376d498f633db4de2">getInstanceWithoutCreating</a>() noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a3b51c7c37417fea8c4f47ebb7913ddba">hasStopMessageBeenSent</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#accd7b539b31d809c30685b3d49327322">isThisTheMessageThread</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#ad4ee5d1cae2b55eb45507b491489e5de">registerBroadcastListener</a>(ActionListener *listener)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#a3084a3a75717db0f7f05604f2956ff65">runDispatchLoop</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a0ddde5289b71c37a3a4a4bb9d673a0de">runDispatchLoopUntil</a>(int millisecondsToRunFor)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classMessageManager.html#af94f78debd3b3d70acade65f50c5058e">setCurrentThreadAsMessageThread</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a283b20c2b3786537b31952670d2df7bf">stopDispatchLoop</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#ad45b6558d8c58b3714a764b4238e3e5b">callAsync</a>(std::function&lt; void(void)&gt;)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a554f81587d57127c9cb5be72aced11c1">callFunctionOnMessageThread</a>(MessageCallbackFunction *callback, void *userData)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#aebd4b8896d7b6bdfa34d3cd8eb2e1777">currentThreadHasLockedMessageManager</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">deleteInstance</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#a5a64dae92820a0ec102294d8ea7aa94f">deregisterBroadcastListener</a>(ActionListener *listener)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#aa64162d4d9711b2c299e66775b57f414">getCurrentMessageThread</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#aea95a541b6660b7cdcc79b675879f35d">getInstance</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#ae890114c8f95bef376d498f633db4de2">getInstanceWithoutCreating</a>() noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#a3b51c7c37417fea8c4f47ebb7913ddba">hasStopMessageBeenSent</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#accd7b539b31d809c30685b3d49327322">isThisTheMessageThread</a>() const noexcept</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#ad4ee5d1cae2b55eb45507b491489e5de">registerBroadcastListener</a>(ActionListener *listener)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#a3084a3a75717db0f7f05604f2956ff65">runDispatchLoop</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#a0ddde5289b71c37a3a4a4bb9d673a0de">runDispatchLoopUntil</a>(int millisecondsToRunFor)</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMessageManager.html#af94f78debd3b3d70acade65f50c5058e">setCurrentThreadAsMessageThread</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMessageManager.html#a283b20c2b3786537b31952670d2df7bf">stopDispatchLoop</a>()</td><td class="entry"><a class="el" href="classMessageManager.html">MessageManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

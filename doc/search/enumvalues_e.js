@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['octave',['octave',['../classControlButton.html#a891776295057786f99f14631b1aa2794a340de50f29503c78ff28749dead05530',1,'ControlButton::octave()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a02f42abb97dea8a94c2443cd9fdd4022',1,'juce::ControlButton::octave()']]],
+  ['odditemscolourid',['oddItemsColourId',['../classTreeView.html#abeebe6dbdc6ae466495aabc64eb51d6aae28e90557dcf45d9ab9f18d22cd01269',1,'TreeView']]],
+  ['off',['off',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922adeb8e0c25e24978beb9013836745cb4b',1,'MPENote']]],
+  ['ok',['ok',['../structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294ba444bcb3a3fcf8389296c49467f27e1d6',1,'juce::littlefoot::Runner::ok()'],['../structlittlefoot_1_1Runner.html#a8bee4ec6b7ef24029af89651ecd452c9a444bcb3a3fcf8389296c49467f27e1d6',1,'littlefoot::Runner::ok()']]],
   ['onlyincreaseinsize',['onlyIncreaseInSize',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427eda54aea49f09ca4f2ac6e5c81859067b7d',1,'RectanglePlacement']]],
   ['onlyreduceinsize',['onlyReduceInSize',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427eda32d2c8f0142b82c188af878548f4d238',1,'RectanglePlacement']]],
   ['opengl3_5f2',['openGL3_2',['../classOpenGLContext.html#a3a6b8eeed7dbc7c7c649528252c07d02a360335be2efbcff04897b872de9b8e45',1,'OpenGLContext']]],

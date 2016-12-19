@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5a60a85820e4c6344a2225b81cf630d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterprocessConnectionServer.html#ac5a60a85820e4c6344a2225b81cf630d">~InterprocessConnectionServer</a> ()</td></tr>
 <tr class="memdesc:ac5a60a85820e4c6344a2225b81cf630d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ac5a60a85820e4c6344a2225b81cf630d">More...</a><br/></td></tr>
 <tr class="separator:ac5a60a85820e4c6344a2225b81cf630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12aa4180243cdb01725237da25d2230d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterprocessConnectionServer.html#a12aa4180243cdb01725237da25d2230d">beginWaitingForSocket</a> (int portNumber)</td></tr>
-<tr class="memdesc:a12aa4180243cdb01725237da25d2230d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts an internal thread which listens on the given port number.  <a href="#a12aa4180243cdb01725237da25d2230d">More...</a><br/></td></tr>
-<tr class="separator:a12aa4180243cdb01725237da25d2230d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4fb097909c5baeaf1646d88a54c695"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterprocessConnectionServer.html#a2f4fb097909c5baeaf1646d88a54c695">beginWaitingForSocket</a> (int portNumber, const <a class="el" href="classString.html">String</a> &amp;bindAddress=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a2f4fb097909c5baeaf1646d88a54c695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts an internal thread which listens on the given port number.  <a href="#a2f4fb097909c5baeaf1646d88a54c695">More...</a><br/></td></tr>
+<tr class="separator:a2f4fb097909c5baeaf1646d88a54c695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a4c37b9e77848e48b499f441749324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterprocessConnectionServer.html#ac8a4c37b9e77848e48b499f441749324">stop</a> ()</td></tr>
 <tr class="memdesc:ac8a4c37b9e77848e48b499f441749324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the listener thread, if it's active.  <a href="#ac8a4c37b9e77848e48b499f441749324">More...</a><br/></td></tr>
 <tr class="separator:ac8a4c37b9e77848e48b499f441749324"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +165,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a12aa4180243cdb01725237da25d2230d"></a>
+<a class="anchor" id="a2f4fb097909c5baeaf1646d88a54c695"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -173,8 +173,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">bool InterprocessConnectionServer::beginWaitingForSocket </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>portNumber</em></td><td>)</td>
+          <td class="paramname"><em>portNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bindAddress</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,6 +192,13 @@ Protected Member Functions</h2></td></tr>
 <p>Starts an internal thread which listens on the given port number. </p>
 <p>While this is running, in another process tries to connect with the <a class="el" href="classInterprocessConnection.html#a007450a6ca6dc60bb48d384479d9a49d" title="Tries to connect this object to a socket. ">InterprocessConnection::connectToSocket()</a> method, this object will call <a class="el" href="classInterprocessConnectionServer.html#af0f9bee85542b7adc149270ad779b415" title="Creates a suitable connection object for a client process that wants to connect to this one...">createConnectionObject()</a> to create a connection to that client.</p>
 <p>Use <a class="el" href="classInterprocessConnectionServer.html#ac8a4c37b9e77848e48b499f441749324" title="Terminates the listener thread, if it&#39;s active. ">stop()</a> to stop the thread running.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portNumber</td><td>The port on which the server will receive connections </td></tr>
+    <tr><td class="paramname">bindAddress</td><td>The address on which the server will listen for connections. An empty string indicates that it should listen on all addresses assigned to this machine.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classInterprocessConnectionServer.html#af0f9bee85542b7adc149270ad779b415" title="Creates a suitable connection object for a client process that wants to connect to this one...">createConnectionObject</a>, <a class="el" href="classInterprocessConnectionServer.html#ac8a4c37b9e77848e48b499f441749324" title="Terminates the listener thread, if it&#39;s active. ">stop</a> </dd></dl>
 
 </div>
@@ -200,7 +217,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Terminates the listener thread, if it's active. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classInterprocessConnectionServer.html#a12aa4180243cdb01725237da25d2230d" title="Starts an internal thread which listens on the given port number. ">beginWaitingForSocket</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classInterprocessConnectionServer.html#a2f4fb097909c5baeaf1646d88a54c695" title="Starts an internal thread which listens on the given port number. ">beginWaitingForSocket</a> </dd></dl>
 
 </div>
 </div>
@@ -235,12 +252,17 @@ Protected Member Functions</h2></td></tr>
 <li><a class="el" href="juce__InterprocessConnectionServer_8h.html">juce_InterprocessConnectionServer.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

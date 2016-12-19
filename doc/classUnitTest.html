@@ -119,13 +119,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae21d8c58358819742f379706b6b34753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (const <a class="el" href="classString.html">String</a> &amp;testName)</td></tr>
 <tr class="memdesc:ae21d8c58358819742f379706b6b34753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the system that a new subsection of tests is beginning.  <a href="#ae21d8c58358819742f379706b6b34753">More...</a><br/></td></tr>
 <tr class="separator:ae21d8c58358819742f379706b6b34753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a402683ff949a9f3c6f2689476b90f31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (bool testResult, const <a class="el" href="classString.html">String</a> &amp;failureMessage=<a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>)</td></tr>
-<tr class="memdesc:a402683ff949a9f3c6f2689476b90f31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the result of a test is true, and logs this result.  <a href="#a402683ff949a9f3c6f2689476b90f31f">More...</a><br/></td></tr>
-<tr class="separator:a402683ff949a9f3c6f2689476b90f31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ef1eb6260c9d63dd568e8fee0d6ae9"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
-<tr class="memitem:ab9ef1eb6260c9d63dd568e8fee0d6ae9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#ab9ef1eb6260c9d63dd568e8fee0d6ae9">expectEquals</a> (ValueType actual, ValueType expected, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a>)</td></tr>
-<tr class="memdesc:ab9ef1eb6260c9d63dd568e8fee0d6ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two values, and if they don't match, prints out a message containing the expected and actual result values.  <a href="#ab9ef1eb6260c9d63dd568e8fee0d6ae9">More...</a><br/></td></tr>
-<tr class="separator:ab9ef1eb6260c9d63dd568e8fee0d6ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e2912ee18731e0bfaf1c21a50b1131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (bool testResult, const <a class="el" href="classString.html">String</a> &amp;failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a83e2912ee18731e0bfaf1c21a50b1131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the result of a test is true, and logs this result.  <a href="#a83e2912ee18731e0bfaf1c21a50b1131">More...</a><br/></td></tr>
+<tr class="separator:a83e2912ee18731e0bfaf1c21a50b1131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580cd21eec8cae621eceb531eec711d3"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:a580cd21eec8cae621eceb531eec711d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a580cd21eec8cae621eceb531eec711d3">expectEquals</a> (ValueType actual, ValueType expected, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a580cd21eec8cae621eceb531eec711d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a value to an expected value.  <a href="#a580cd21eec8cae621eceb531eec711d3">More...</a><br/></td></tr>
+<tr class="separator:a580cd21eec8cae621eceb531eec711d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88277b29ca7179e4da719098c43d08c9"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:a88277b29ca7179e4da719098c43d08c9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a88277b29ca7179e4da719098c43d08c9">expectNotEquals</a> (ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, ValueType valueToCompareTo, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a88277b29ca7179e4da719098c43d08c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a value is not equal to a comparison value.  <a href="#a88277b29ca7179e4da719098c43d08c9">More...</a><br/></td></tr>
+<tr class="separator:a88277b29ca7179e4da719098c43d08c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef466ffd07c2677e636e2c0292605f62"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:aef466ffd07c2677e636e2c0292605f62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#aef466ffd07c2677e636e2c0292605f62">expectGreaterThan</a> (ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, ValueType valueToCompareTo, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:aef466ffd07c2677e636e2c0292605f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a value is greater than a comparison value.  <a href="#aef466ffd07c2677e636e2c0292605f62">More...</a><br/></td></tr>
+<tr class="separator:aef466ffd07c2677e636e2c0292605f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fd4a33b1ca2db3a32a05d739087879"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:ac1fd4a33b1ca2db3a32a05d739087879"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#ac1fd4a33b1ca2db3a32a05d739087879">expectLessThan</a> (ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, ValueType valueToCompareTo, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:ac1fd4a33b1ca2db3a32a05d739087879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a value is less than a comparison value.  <a href="#ac1fd4a33b1ca2db3a32a05d739087879">More...</a><br/></td></tr>
+<tr class="separator:ac1fd4a33b1ca2db3a32a05d739087879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0744ec69e299f5ff9ab5e881446eaf94"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:a0744ec69e299f5ff9ab5e881446eaf94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a0744ec69e299f5ff9ab5e881446eaf94">expectGreaterOrEqual</a> (ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, ValueType valueToCompareTo, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a0744ec69e299f5ff9ab5e881446eaf94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a value is greater or equal to a comparison value.  <a href="#a0744ec69e299f5ff9ab5e881446eaf94">More...</a><br/></td></tr>
+<tr class="separator:a0744ec69e299f5ff9ab5e881446eaf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a149547bc7180b943d1f8379e1d834d"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:a8a149547bc7180b943d1f8379e1d834d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a8a149547bc7180b943d1f8379e1d834d">expectLessOrEqual</a> (ValueType <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>, ValueType valueToCompareTo, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a8a149547bc7180b943d1f8379e1d834d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a value is less or equal to a comparison value.  <a href="#a8a149547bc7180b943d1f8379e1d834d">More...</a><br/></td></tr>
+<tr class="separator:a8a149547bc7180b943d1f8379e1d834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c512c74a94c08ab8d465848bbba2a2"><td class="memTemplParams" colspan="2">template&lt;class ValueType &gt; </td></tr>
+<tr class="memitem:a53c512c74a94c08ab8d465848bbba2a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a53c512c74a94c08ab8d465848bbba2a2">expectWithinAbsoluteError</a> (ValueType actual, ValueType expected, ValueType maxAbsoluteError, <a class="el" href="classString.html">String</a> failureMessage=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:a53c512c74a94c08ab8d465848bbba2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the difference between a value and a comparison value, and if it is larger than a specified maximum value, prints out a message containing the actual and comparison values and the maximum allowed error.  <a href="#a53c512c74a94c08ab8d465848bbba2a2">More...</a><br/></td></tr>
+<tr class="separator:a53c512c74a94c08ab8d465848bbba2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c91c1b7758fffd3536042238f00005b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a1c91c1b7758fffd3536042238f00005b">logMessage</a> (const <a class="el" href="classString.html">String</a> &amp;message)</td></tr>
 <tr class="memdesc:a1c91c1b7758fffd3536042238f00005b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a message to the test log.  <a href="#a1c91c1b7758fffd3536042238f00005b">More...</a><br/></td></tr>
 <tr class="separator:a1c91c1b7758fffd3536042238f00005b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,13 +175,13 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="keyword">    </span>{</div>
 <div class="line">        <a class="code" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (<span class="stringliteral">&quot;Part 1&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (myFoobar.doesSomething());</div>
-<div class="line">        <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (myFoobar.doesSomethingElse());</div>
+<div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myFoobar.doesSomething());</div>
+<div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myFoobar.doesSomethingElse());</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (<span class="stringliteral">&quot;Part 2&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (myOtherFoobar.doesSomething());</div>
-<div class="line">        <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (myOtherFoobar.doesSomethingElse());</div>
+<div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myOtherFoobar.doesSomething());</div>
+<div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myOtherFoobar.doesSomethingElse());</div>
 <div class="line"></div>
 <div class="line">        ...etc..</div>
 <div class="line">    }</div>
@@ -365,7 +389,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implement this method in your subclass to actually run your tests. </p>
-<p>The content of your implementation should call <a class="el" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753" title="Tells the system that a new subsection of tests is beginning. ">beginTest()</a> and <a class="el" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f" title="Checks that the result of a test is true, and logs this result. ">expect()</a> to perform the tests. </p>
+<p>The content of your implementation should call <a class="el" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753" title="Tells the system that a new subsection of tests is beginning. ">beginTest()</a> and <a class="el" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131" title="Checks that the result of a test is true, and logs this result. ">expect()</a> to perform the tests. </p>
 
 </div>
 </div>
@@ -388,7 +412,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a402683ff949a9f3c6f2689476b90f31f"></a>
+<a class="anchor" id="a83e2912ee18731e0bfaf1c21a50b1131"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -402,7 +426,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a></code>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -417,15 +441,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="classUnitTest.html#a1a95d7f09eb80442a8099663dfb92628">runTest</a>()</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (<span class="stringliteral">&quot;basic tests&quot;</span>);</div>
-<div class="line">    <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (x + y == 2);</div>
-<div class="line">    <a class="code" href="classUnitTest.html#a402683ff949a9f3c6f2689476b90f31f">expect</a> (getThing() == someThing);</div>
+<div class="line">    <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (x + y == 2);</div>
+<div class="line">    <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (getThing() == someThing);</div>
 <div class="line">    ...etc...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>If testResult is true, a pass is logged; if it's false, a failure is logged. If the failure message is specified, it will be written to the log if the test fails. </p>
 
 </div>
 </div>
-<a class="anchor" id="ab9ef1eb6260c9d63dd568e8fee0d6ae9"></a>
+<a class="anchor" id="a580cd21eec8cae621eceb531eec711d3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -447,7 +471,7 @@ template&lt;class ValueType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
-          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html#afd02116a5571fcc8bc1e6fdabe132a85">String::empty</a></code>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -457,7 +481,235 @@ template&lt;class ValueType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Compares two values, and if they don't match, prints out a message containing the expected and actual result values. </p>
+<p>Compares a value to an expected value. </p>
+<p>If they are not equal, prints out a message containing the expected and actual values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88277b29ca7179e4da719098c43d08c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectNotEquals </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>valueToCompareTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a value is not equal to a comparison value. </p>
+<p>If this check fails, prints out a message containing the actual and comparison values. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef466ffd07c2677e636e2c0292605f62"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectGreaterThan </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>valueToCompareTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a value is greater than a comparison value. </p>
+<p>If this check fails, prints out a message containing the actual and comparison values. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1fd4a33b1ca2db3a32a05d739087879"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectLessThan </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>valueToCompareTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a value is less than a comparison value. </p>
+<p>If this check fails, prints out a message containing the actual and comparison values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0744ec69e299f5ff9ab5e881446eaf94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectGreaterOrEqual </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>valueToCompareTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a value is greater or equal to a comparison value. </p>
+<p>If this check fails, prints out a message containing the actual and comparison values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a149547bc7180b943d1f8379e1d834d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectLessOrEqual </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>valueToCompareTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a value is less or equal to a comparison value. </p>
+<p>If this check fails, prints out a message containing the actual and comparison values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a53c512c74a94c08ab8d465848bbba2a2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::expectWithinAbsoluteError </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>actual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>maxAbsoluteError</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>failureMessage</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the difference between a value and a comparison value, and if it is larger than a specified maximum value, prints out a message containing the actual and comparison values and the maximum allowed error. </p>
 
 </div>
 </div>
@@ -503,12 +755,17 @@ template&lt;class ValueType &gt; </div>
 <li><a class="el" href="juce__UnitTest_8h.html">juce_UnitTest.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

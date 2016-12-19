@@ -191,8 +191,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a65c3893f74b575906c2b4d09e7a03fa3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a65c3893f74b575906c2b4d09e7a03fa3">getLowestVisibleKey</a> () const noexcept</td></tr>
 <tr class="memdesc:a65c3893f74b575906c2b4d09e7a03fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of the first key shown in the component.  <a href="#a65c3893f74b575906c2b4d09e7a03fa3">More...</a><br/></td></tr>
 <tr class="separator:a65c3893f74b575906c2b4d09e7a03fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f05a88e8026f3d423ef026d1170ebe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a9f05a88e8026f3d423ef026d1170ebe9">setBlackNoteLengthProportion</a> (float ratio) noexcept</td></tr>
+<tr class="memdesc:a9f05a88e8026f3d423ef026d1170ebe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the length of the black notes as a proportion of the white note length.  <a href="#a9f05a88e8026f3d423ef026d1170ebe9">More...</a><br/></td></tr>
+<tr class="separator:a9f05a88e8026f3d423ef026d1170ebe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cc6ec03b64f99012979e2692f009ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#ae0cc6ec03b64f99012979e2692f009ea">getBlackNoteLengthProportion</a> () const noexcept</td></tr>
+<tr class="memdesc:ae0cc6ec03b64f99012979e2692f009ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the black notes as a proportion of the white note length.  <a href="#ae0cc6ec03b64f99012979e2692f009ea">More...</a><br/></td></tr>
+<tr class="separator:ae0cc6ec03b64f99012979e2692f009ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe40c4bd99e138ee13dae7dcb77246b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#abe40c4bd99e138ee13dae7dcb77246b6">getBlackNoteLength</a> () const noexcept</td></tr>
-<tr class="memdesc:abe40c4bd99e138ee13dae7dcb77246b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the black notes.  <a href="#abe40c4bd99e138ee13dae7dcb77246b6">More...</a><br/></td></tr>
+<tr class="memdesc:abe40c4bd99e138ee13dae7dcb77246b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute length of the black notes.  <a href="#abe40c4bd99e138ee13dae7dcb77246b6">More...</a><br/></td></tr>
 <tr class="separator:abe40c4bd99e138ee13dae7dcb77246b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209f55725a073395da946d8cb4652f0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a209f55725a073395da946d8cb4652f0d">setScrollButtonsVisible</a> (bool canScroll)</td></tr>
 <tr class="memdesc:a209f55725a073395da946d8cb4652f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true, then scroll buttons will appear at either end of the keyboard if there are too many notes to fit them all in the component at once.  <a href="#a209f55725a073395da946d8cb4652f0d">More...</a><br/></td></tr>
@@ -200,6 +206,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a862c006640be0d0b28a670d8fdee1728"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a862c006640be0d0b28a670d8fdee1728">getKeyStartPosition</a> (int midiNoteNumber) const </td></tr>
 <tr class="memdesc:a862c006640be0d0b28a670d8fdee1728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position within the component of the left-hand edge of a key.  <a href="#a862c006640be0d0b28a670d8fdee1728">More...</a><br/></td></tr>
 <tr class="separator:a862c006640be0d0b28a670d8fdee1728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c9934703f5e506539861735ba439c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a71c9934703f5e506539861735ba439c8">getTotalKeyboardWidth</a> () const noexcept</td></tr>
+<tr class="memdesc:a71c9934703f5e506539861735ba439c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total width needed to fit all the keys in the available range.  <a href="#a71c9934703f5e506539861735ba439c8">More...</a><br/></td></tr>
+<tr class="separator:a71c9934703f5e506539861735ba439c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab027e69a01c5b6c46d71f37e5e1f617c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#ab027e69a01c5b6c46d71f37e5e1f617c">getNoteAtPosition</a> (<a class="el" href="classPoint.html">Point</a>&lt; int &gt; position)</td></tr>
 <tr class="memdesc:ab027e69a01c5b6c46d71f37e5e1f617c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key at a given coordinate.  <a href="#ab027e69a01c5b6c46d71f37e5e1f617c">More...</a><br/></td></tr>
 <tr class="separator:ab027e69a01c5b6c46d71f37e5e1f617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,7 +461,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d">getNumChildComponents</a> () const noexcept</td></tr>
 <tr class="memdesc:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of child components that this component contains.  <a href="#afa33580cab86ac3b80c9c1f9d85ad81d">More...</a><br/></td></tr>
 <tr class="separator:afa33580cab86ac3b80c9c1f9d85ad81d inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f">getChildComponent</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f">getChildComponent</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of this component's child components, by it index.  <a href="#a9a86caea9a03be32d7a6b6dfbd09d09f">More...</a><br/></td></tr>
 <tr class="separator:a9a86caea9a03be32d7a6b6dfbd09d09f inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00c1dcf8a0a926da17daef178ca63426 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426">getIndexOfChildComponent</a> (const <a class="el" href="classComponent.html">Component</a> *child) const noexcept</td></tr>
@@ -681,9 +690,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a0944e1751f32260afd5bd2a9fcd1a5b7">isMouseButtonDown</a> () const </td></tr>
 <tr class="memdesc:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mouse button is currently held down in this component.  <a href="#a0944e1751f32260afd5bd2a9fcd1a5b7">More...</a><br/></td></tr>
 <tr class="separator:a0944e1751f32260afd5bd2a9fcd1a5b7 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5cedb030a2bfae99dece95d8a10d0dcb">isMouseOverOrDragging</a> () const </td></tr>
-<tr class="memdesc:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the mouse is over this component, or if it's being dragged in this component.  <a href="#a5cedb030a2bfae99dece95d8a10d0dcb">More...</a><br/></td></tr>
-<tr class="separator:a5cedb030a2bfae99dece95d8a10d0dcb inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a39e6cb0b07bf16648daa51b2c75be983">isMouseOverOrDragging</a> (bool includeChildren=false) const </td></tr>
+<tr class="memdesc:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the mouse is over this component, or if it's being dragged in this component.  <a href="#a39e6cb0b07bf16648daa51b2c75be983">More...</a><br/></td></tr>
+<tr class="separator:a39e6cb0b07bf16648daa51b2c75be983 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#afe14919a4a06747a9b7c98e2cff0ef3a">getMouseXYRelative</a> () const </td></tr>
 <tr class="memdesc:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mouse's current position, relative to this component.  <a href="#afe14919a4a06747a9b7c98e2cff0ef3a">More...</a><br/></td></tr>
 <tr class="separator:afe14919a4a06747a9b7c98e2cff0ef3a inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -720,9 +729,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a686e2440370ff4a97c7a7851907be650">exitModalState</a> (int returnValue)</td></tr>
 <tr class="memdesc:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a component's modal state.  <a href="#a686e2440370ff4a97c7a7851907be650">More...</a><br/></td></tr>
 <tr class="separator:a686e2440370ff4a97c7a7851907be650 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a92d58bf2eca02d409e9b095af066edf7">isCurrentlyModal</a> () const noexcept</td></tr>
-<tr class="memdesc:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this component is the modal one.  <a href="#a92d58bf2eca02d409e9b095af066edf7">More...</a><br/></td></tr>
-<tr class="separator:a92d58bf2eca02d409e9b095af066edf7 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a489ebde1970d6a2571bae5152b396267">isCurrentlyModal</a> (bool onlyConsiderForemostModalComponent=true) const noexcept</td></tr>
+<tr class="memdesc:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this component is the modal one.  <a href="#a489ebde1970d6a2571bae5152b396267">More...</a><br/></td></tr>
+<tr class="separator:a489ebde1970d6a2571bae5152b396267 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#ad18ec802aa575cf016a7c62f12e0edf9">isCurrentlyBlockedByAnotherModalComponent</a> () const </td></tr>
 <tr class="memdesc:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether there's a modal component somewhere that's stopping this one from receiving messages.  <a href="#ad18ec802aa575cf016a7c62f12e0edf9">More...</a><br/></td></tr>
 <tr class="separator:ad18ec802aa575cf016a7c62f12e0edf9 inherit pub_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -836,7 +845,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a051aef9e1dbf55aa91dee30f7d7549c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when the mouse is released from a key.  <a href="#a051aef9e1dbf55aa91dee30f7d7549c9">More...</a><br/></td></tr>
 <tr class="separator:a051aef9e1dbf55aa91dee30f7d7549c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad08b809c0e82d9f8de186fa96c72c60d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#ad08b809c0e82d9f8de186fa96c72c60d">getKeyPosition</a> (int midiNoteNumber, float keyWidth, int &amp;x, int &amp;w) const </td></tr>
-<tr class="memdesc:ad08b809c0e82d9f8de186fa96c72c60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the positon of a given midi-note.  <a href="#ad08b809c0e82d9f8de186fa96c72c60d">More...</a><br/></td></tr>
+<tr class="memdesc:ad08b809c0e82d9f8de186fa96c72c60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the position of a given midi-note.  <a href="#ad08b809c0e82d9f8de186fa96c72c60d">More...</a><br/></td></tr>
 <tr class="separator:ad08b809c0e82d9f8de186fa96c72c60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11b3f0a8515c334c5da58d5f525e6ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRectangle.html">Rectangle</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#af11b3f0a8515c334c5da58d5f525e6ed">getRectangleForKey</a> (int midiNoteNumber) const </td></tr>
 <tr class="memdesc:af11b3f0a8515c334c5da58d5f525e6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rectangle for a given key if within the displayable range.  <a href="#af11b3f0a8515c334c5da58d5f525e6ed">More...</a><br/></td></tr>
@@ -860,7 +869,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static int <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#ae58129a62eda13ca8987072cd9c62359">getNumCurrentlyModalComponents</a> () noexcept</td></tr>
 <tr class="memdesc:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of components that are currently in a modal state.  <a href="#ae58129a62eda13ca8987072cd9c62359">More...</a><br/></td></tr>
 <tr class="separator:ae58129a62eda13ca8987072cd9c62359 inherit pub_static_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComponent.html">Component</a> *<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3">getCurrentlyModalComponent</a> (int index=0) noexcept</td></tr>
+<tr class="memitem:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComponent.html">Component</a> *<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#af281d9bc711b70c43ae5891a35165cb3">getCurrentlyModalComponent</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>=0) noexcept</td></tr>
 <tr class="memdesc:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the components that are currently modal.  <a href="#af281d9bc711b70c43ae5891a35165cb3">More...</a><br/></td></tr>
 <tr class="separator:af281d9bc711b70c43ae5891a35165cb3 inherit pub_static_methods_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1324,6 +1333,57 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9f05a88e8026f3d423ef026d1170ebe9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MidiKeyboardComponent::setBlackNoteLengthProportion </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the length of the black notes as a proportion of the white note length. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0cc6ec03b64f99012979e2692f009ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MidiKeyboardComponent::getBlackNoteLengthProportion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the length of the black notes as a proportion of the white note length. </p>
+
+</div>
+</div>
 <a class="anchor" id="abe40c4bd99e138ee13dae7dcb77246b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1345,7 +1405,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the length of the black notes. </p>
+<p>Returns the absolute length of the black notes. </p>
 <p>This will be their vertical or horizontal length, depending on the keyboard's orientation. </p>
 
 </div>
@@ -1384,6 +1444,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the position within the component of the left-hand edge of a key. </p>
 <p>Depending on the keyboard's orientation, this may be a horizontal or vertical distance, in either direction. </p>
+
+</div>
+</div>
+<a class="anchor" id="a71c9934703f5e506539861735ba439c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MidiKeyboardComponent::getTotalKeyboardWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the total width needed to fit all the keys in the available range. </p>
 
 </div>
 </div>
@@ -2422,7 +2507,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates the positon of a given midi-note. </p>
+<p>Calculates the position of a given midi-note. </p>
 <p>This can be overridden to create layouts with custom key-widths.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2466,12 +2551,17 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="juce__MidiKeyboardComponent_8h.html">juce_MidiKeyboardComponent.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

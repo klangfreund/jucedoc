@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe00b76a2faa9b625765d8ceac961d96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationCommandManager.html#afe00b76a2faa9b625765d8ceac961d96">getNumCommands</a> () const noexcept</td></tr>
 <tr class="memdesc:afe00b76a2faa9b625765d8ceac961d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of commands that have been registered.  <a href="#afe00b76a2faa9b625765d8ceac961d96">More...</a><br/></td></tr>
 <tr class="separator:afe00b76a2faa9b625765d8ceac961d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343d3554ce94762e692d78b7d33d21da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structApplicationCommandInfo.html">ApplicationCommandInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationCommandManager.html#a343d3554ce94762e692d78b7d33d21da">getCommandForIndex</a> (int index) const noexcept</td></tr>
+<tr class="memitem:a343d3554ce94762e692d78b7d33d21da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structApplicationCommandInfo.html">ApplicationCommandInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationCommandManager.html#a343d3554ce94762e692d78b7d33d21da">getCommandForIndex</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const noexcept</td></tr>
 <tr class="memdesc:a343d3554ce94762e692d78b7d33d21da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the details about one of the registered commands.  <a href="#a343d3554ce94762e692d78b7d33d21da">More...</a><br/></td></tr>
 <tr class="separator:a343d3554ce94762e692d78b7d33d21da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0d71eba397a4c0fec0193c33fcc9c2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structApplicationCommandInfo.html">ApplicationCommandInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationCommandManager.html#a9f0d71eba397a4c0fec0193c33fcc9c2">getCommandForID</a> (<a class="el" href="juce__ApplicationCommandID_8h.html#afd69b5d28aad07b587b693925e09308b">CommandID</a> commandID) const noexcept</td></tr>
@@ -193,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
 <li>Make some of your UI components (or other objects) inherit from <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a>. This allows the object to provide a list of commands that it can perform, and to handle them.</li>
 <li>Register each type of command using <a class="el" href="classApplicationCommandManager.html#ac3f8c831583499556579848779e030cf" title="Adds all the commands that this target publishes to the manager&#39;s list. ">ApplicationCommandManager::registerAllCommandsForTarget()</a>, or <a class="el" href="classApplicationCommandManager.html#a151be8c30a8339675ad5dcba5a5c4e62" title="Adds a command to the list of registered commands. ">ApplicationCommandManager::registerCommand()</a>.</li>
 <li>If you want key-presses to trigger your commands, use the <a class="el" href="classApplicationCommandManager.html#a5fea4f129e149062866c0313b29ba976" title="Returns the manager&#39;s internal set of key mappings. ">ApplicationCommandManager::getKeyMappings()</a> method to access the key-mapper object, which you will need to register as a key-listener in whatever top-level component you're using. See the <a class="el" href="classKeyPressMappingSet.html" title="Manages and edits a list of keypresses, which it uses to invoke the appropriate command in an Applica...">KeyPressMappingSet</a> class for more help about setting this up.</li>
-<li>Use methods such as <a class="el" href="classPopupMenu.html#a0cd74c445a43df67bb447c5451d85d9c" title="Adds an item that represents one of the commands in a command manager object. ">PopupMenu::addCommandItem()</a> or <a class="el" href="classButton.html#a3d29d9c9ab75389a170b67a364e0cb9e" title="Sets a command ID for this button to automatically invoke when it&#39;s clicked. ">Button::setCommandToTrigger()</a> to cause these commands to be invoked automatically.</li>
+<li>Use methods such as <a class="el" href="classPopupMenu.html#a11c9d3dfcb73bf6c281436147901ed0a" title="Adds an item that represents one of the commands in a command manager object. ">PopupMenu::addCommandItem()</a> or <a class="el" href="classButton.html#a3d29d9c9ab75389a170b67a364e0cb9e" title="Sets a command ID for this button to automatically invoke when it&#39;s clicked. ">Button::setCommandToTrigger()</a> to cause these commands to be invoked automatically.</li>
 <li>Commands can be invoked directly by your code using <a class="el" href="classApplicationCommandManager.html#a55f04432929174c2de6d622cb2d23c67" title="Invokes the given command directly, sending it to the default target. ">ApplicationCommandManager::invokeDirectly()</a>.</li>
 </ul>
 <p>When a command is invoked, the <a class="el" href="classApplicationCommandManager.html" title="One of these objects holds a list of all the commands your app can perform, and despatches these comm...">ApplicationCommandManager</a> will try to choose the best <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> to receive the specified command. To do this it will use the current keyboard focus to see which component might be interested, and will search the component hierarchy for those that also implement the <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> interface. If an <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a> isn't interested in the command that is being invoked, then the next one in line will be tried (see the <a class="el" href="classApplicationCommandTarget.html#a540016056ca6fc19818e951359c710da" title="This must return the next target to try after this one. ">ApplicationCommandTarget::getNextCommandTarget()</a> method), and so on until <a class="el" href="classApplicationCommandTarget.html#a540016056ca6fc19818e951359c710da" title="This must return the next target to try after this one. ">ApplicationCommandTarget::getNextCommandTarget()</a> returns nullptr. At this point if the command still hasn't been performed, it will be passed to the current <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a> object (which is itself an <a class="el" href="classApplicationCommandTarget.html" title="A command target publishes a list of command IDs that it can perform. ">ApplicationCommandTarget</a>).</p>
@@ -791,12 +791,17 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__ApplicationCommandManager_8h.html">juce_ApplicationCommandManager.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

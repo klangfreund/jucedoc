@@ -94,10 +94,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16e4fa3589ac989d7082c58c2fe1b2e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLagrangeInterpolator.html#a16e4fa3589ac989d7082c58c2fe1b2e2">LagrangeInterpolator</a> ()</td></tr>
-<tr class="separator:a16e4fa3589ac989d7082c58c2fe1b2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186007aafd5b5b40c2712342e5621c1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLagrangeInterpolator.html#a186007aafd5b5b40c2712342e5621c1f">~LagrangeInterpolator</a> ()</td></tr>
-<tr class="separator:a186007aafd5b5b40c2712342e5621c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab3665c8906de897990d2db77cc88ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLagrangeInterpolator.html#a5ab3665c8906de897990d2db77cc88ca">LagrangeInterpolator</a> () noexcept</td></tr>
+<tr class="separator:a5ab3665c8906de897990d2db77cc88ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8870c0cc6ad4f9da2f258c10a344756"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLagrangeInterpolator.html#ae8870c0cc6ad4f9da2f258c10a344756">~LagrangeInterpolator</a> () noexcept</td></tr>
+<tr class="separator:ae8870c0cc6ad4f9da2f258c10a344756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ec82f24dd5f286ab518ee694c92104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLagrangeInterpolator.html#a49ec82f24dd5f286ab518ee694c92104">reset</a> () noexcept</td></tr>
 <tr class="memdesc:a49ec82f24dd5f286ab518ee694c92104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the state of the interpolator.  <a href="#a49ec82f24dd5f286ab518ee694c92104">More...</a><br/></td></tr>
 <tr class="separator:a49ec82f24dd5f286ab518ee694c92104"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,11 +110,15 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interpolator for resampling a stream of floats using 4-point lagrange interpolation. </p>
-<p>Note that the resampler is stateful, so when there's a break in the continuity of the input stream you're feeding it, you should call <a class="el" href="classLagrangeInterpolator.html#a49ec82f24dd5f286ab518ee694c92104" title="Resets the state of the interpolator. ">reset()</a> before feeding it any new data. And like with any other stateful filter, if you're resampling multiple channels, make sure each one uses its own <a class="el" href="classLagrangeInterpolator.html" title="Interpolator for resampling a stream of floats using 4-point lagrange interpolation. ">LagrangeInterpolator</a> object. </p>
+<p>Note that the resampler is stateful, so when there's a break in the continuity of the input stream you're feeding it, you should call <a class="el" href="classLagrangeInterpolator.html#a49ec82f24dd5f286ab518ee694c92104" title="Resets the state of the interpolator. ">reset()</a> before feeding it any new data. And like with any other stateful filter, if you're resampling multiple channels, make sure each one uses its own <a class="el" href="classLagrangeInterpolator.html" title="Interpolator for resampling a stream of floats using 4-point lagrange interpolation. ">LagrangeInterpolator</a> object.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classCatmullRomInterpolator.html" title="Interpolator for resampling a stream of floats using Catmull-Rom interpolation. ">CatmullRomInterpolator</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a16e4fa3589ac989d7082c58c2fe1b2e2"></a>
+<a class="anchor" id="a5ab3665c8906de897990d2db77cc88ca"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">LagrangeInterpolator::LagrangeInterpolator </td>
@@ -123,13 +127,21 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a186007aafd5b5b40c2712342e5621c1f"></a>
+<a class="anchor" id="ae8870c0cc6ad4f9da2f258c10a344756"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">LagrangeInterpolator::~LagrangeInterpolator </td>
@@ -138,6 +150,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -296,12 +313,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__LagrangeInterpolator_8h.html">juce_LagrangeInterpolator.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

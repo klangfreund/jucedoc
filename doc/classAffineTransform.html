@@ -85,7 +85,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classAffineTransform-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AffineTransform Class Reference</div>  </div>
@@ -231,12 +230,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a808a65da0b88a09f0e2ac752fd2648ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae26718eb62e1240ad8f800f7e7ce3a74"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#ae26718eb62e1240ad8f800f7e7ce3a74">mat12</a></td></tr>
 <tr class="separator:ae26718eb62e1240ad8f800f7e7ce3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a2173017e6300f667a23467505ca36276"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classAffineTransform.html">AffineTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">identity</a></td></tr>
-<tr class="memdesc:a2173017e6300f667a23467505ca36276"><td class="mdescLeft">&#160;</td><td class="mdescRight">A ready-to-use identity transform, which you can use to append other transformations to.  <a href="#a2173017e6300f667a23467505ca36276">More...</a><br/></td></tr>
-<tr class="separator:a2173017e6300f667a23467505ca36276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a 2D affine-transformation matrix. </p>
@@ -1578,31 +1571,6 @@ template&lt;typename PointType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2173017e6300f667a23467505ca36276"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classAffineTransform.html">AffineTransform</a> AffineTransform::identity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A ready-to-use identity transform, which you can use to append other transformations to. </p>
-<p>e.g.</p>
-<div class="fragment"><div class="line"><a class="code" href="classAffineTransform.html">AffineTransform</a> myTransform = <a class="code" href="classAffineTransform.html#a2173017e6300f667a23467505ca36276">AffineTransform::identity</a>.<a class="code" href="classAffineTransform.html#a0dcf19186a3e5964e1bbf39843f644dd">rotated</a> (.5f)</div>
-<div class="line">                                                       .<a class="code" href="classAffineTransform.html#a3a690b15420df18b0b704ab03999f298">scaled</a> (2.0f);</div>
-</div><!-- fragment --> 
-</div>
-</div>
 <a class="anchor" id="a1e675f5137df72253566699cd385c7ad"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1679,12 +1647,17 @@ template&lt;typename PointType &gt; </div>
 <li><a class="el" href="juce__AffineTransform_8h.html">juce_AffineTransform.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

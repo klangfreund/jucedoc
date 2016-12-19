@@ -255,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A typeface that can be populated with custom glyphs. </p>
 <p>You can create a <a class="el" href="classCustomTypeface.html" title="A typeface that can be populated with custom glyphs. ">CustomTypeface</a> if you need one that contains your own glyphs, or if you need to load a typeface from a Juce-formatted binary stream.</p>
 <p>If you want to create a copy of a native face, you can use <a class="el" href="classCustomTypeface.html#a94de59c3b010a1f68ce3681174a6a173" title="Adds a range of glyphs from another typeface. ">addGlyphsFromOtherTypeface()</a> to copy glyphs into this face.</p>
-<p>NOTE! For most people this class is almost certainly NOT the right tool to use! If what you want to do is to embed a font into your exe, then your best plan is probably to embed your TTF/OTF font file into your binary using the Introjucer, and then call <a class="el" href="classTypeface.html#a2ce51562cc51437352c4d47777185f35" title="Creates a new system typeface. ">Typeface::createSystemTypefaceFor()</a> to load it from memory.</p>
+<p>NOTE! For most people this class is almost certainly NOT the right tool to use! If what you want to do is to embed a font into your exe, then your best plan is probably to embed your TTF/OTF font file into your binary using the Projucer, and then call <a class="el" href="classTypeface.html#a2ce51562cc51437352c4d47777185f35" title="Creates a new system typeface. ">Typeface::createSystemTypefaceFor()</a> to load it from memory.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTypeface.html" title="A typeface represents a size-independent font. ">Typeface</a>, <a class="el" href="classFont.html" title="Represents a particular font, including its size, style, etc. ">Font</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab55fd08f0ab46d6121f7a3947c69440e"></a>
@@ -922,12 +922,17 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="juce__CustomTypeface_8h.html">juce_CustomTypeface.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

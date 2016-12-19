@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The source passed in will not be deleted by this object, so must be managed by the caller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newSource</td><td>the new input source to use. This may be zero </td></tr>
+    <tr><td class="paramname">newSource</td><td>the new input source to use. This may be a nullptr </td></tr>
     <tr><td class="paramname">readAheadBufferSize</td><td>a size of buffer to use for reading ahead. If this is zero, no reading ahead will be done; if it's greater than zero, a <a class="el" href="classBufferingAudioSource.html" title="An AudioSource which takes another source as input, and buffers it using a thread. ">BufferingAudioSource</a> will be used to do the reading-ahead. If you set a non-zero value here, you'll also need to set the readAheadThread parameter. </td></tr>
     <tr><td class="paramname">readAheadThread</td><td>if you set readAheadBufferSize to a non-zero value, then you'll also need to supply this <a class="el" href="classTimeSliceThread.html" title="A thread that keeps a list of clients, and calls each one in turn, giving them all a chance to run so...">TimeSliceThread</a> object for the background reader to use. The thread object must not be deleted while the AudioTransport source is still using it. </td></tr>
     <tr><td class="paramname">sourceSampleRateToCorrectFor</td><td>if this is non-zero, it specifies the sample rate of the source, and playback will be sample-rate adjusted to maintain playback at the correct pitch. If this is 0, no sample-rate adjustment will be performed </td></tr>
@@ -716,12 +716,17 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="juce__AudioTransportSource_8h.html">juce_AudioTransportSource.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

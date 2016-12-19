@@ -125,9 +125,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0153aa164ca166e209a74e8c4f811e0"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#ab0153aa164ca166e209a74e8c4f811e0">lowerPrivilege</a> ()</td></tr>
 <tr class="memdesc:ab0153aa164ca166e209a74e8c4f811e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowers the current process's privilege level.  <a href="#ab0153aa164ca166e209a74e8c4f811e0">More...</a><br/></td></tr>
 <tr class="separator:ab0153aa164ca166e209a74e8c4f811e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a58a2b37beda4343bc1da6a8744ae12"><td class="memItemLeft" align="right" valign="top">static bool <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#a7a58a2b37beda4343bc1da6a8744ae12">isRunningUnderDebugger</a> ()</td></tr>
-<tr class="memdesc:a7a58a2b37beda4343bc1da6a8744ae12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this process is being hosted by a debugger.  <a href="#a7a58a2b37beda4343bc1da6a8744ae12">More...</a><br/></td></tr>
-<tr class="separator:a7a58a2b37beda4343bc1da6a8744ae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd9f1c5682e4c95e1a3a407f6c838b3"><td class="memItemLeft" align="right" valign="top">static bool <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#a0bd9f1c5682e4c95e1a3a407f6c838b3">isRunningUnderDebugger</a> () noexcept</td></tr>
+<tr class="memdesc:a0bd9f1c5682e4c95e1a3a407f6c838b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this process is being hosted by a debugger.  <a href="#a0bd9f1c5682e4c95e1a3a407f6c838b3">More...</a><br/></td></tr>
+<tr class="separator:a0bd9f1c5682e4c95e1a3a407f6c838b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b430c0c6c182a044f67a9ce6144f43"><td class="memItemLeft" align="right" valign="top">static bool <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#a05b430c0c6c182a044f67a9ce6144f43">openDocument</a> (const <a class="el" href="classString.html">String</a> &amp;documentURL, const <a class="el" href="classString.html">String</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a05b430c0c6c182a044f67a9ce6144f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to launch the OS's default reader application for a given file or <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a05b430c0c6c182a044f67a9ce6144f43">More...</a><br/></td></tr>
 <tr class="separator:a05b430c0c6c182a044f67a9ce6144f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +143,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abce4be274d956bdb4f7c36398e776bfb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#abce4be274d956bdb4f7c36398e776bfb">setDockIconVisible</a> (bool isVisible)</td></tr>
 <tr class="memdesc:abce4be274d956bdb4f7c36398e776bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSX ONLY - Shows or hides the OSX dock icon for this app.  <a href="#abce4be274d956bdb4f7c36398e776bfb">More...</a><br/></td></tr>
 <tr class="separator:abce4be274d956bdb4f7c36398e776bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b648877751448ff0ad0dd4b74b289f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcess.html#a38b648877751448ff0ad0dd4b74b289f">setMaxNumberOfFileHandles</a> (int maxNumberOfFiles) noexcept</td></tr>
+<tr class="memdesc:a38b648877751448ff0ad0dd4b74b289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">UNIX ONLY - Attempts to use setrlimit to change the maximum number of file handles that the app can open.  <a href="#a38b648877751448ff0ad0dd4b74b289f">More...</a><br/></td></tr>
+<tr class="separator:a38b648877751448ff0ad0dd4b74b289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the current executable's process. </p>
@@ -360,7 +363,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a58a2b37beda4343bc1da6a8744ae12"></a>
+<a class="anchor" id="a0bd9f1c5682e4c95e1a3a407f6c838b3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -376,7 +379,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -551,16 +554,48 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a38b648877751448ff0ad0dd4b74b289f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Process::setMaxNumberOfFileHandles </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxNumberOfFiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UNIX ONLY - Attempts to use setrlimit to change the maximum number of file handles that the app can open. </p>
+<p>Pass 0 or less as the parameter to mean 'infinite'. Returns true if it succeeds. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Process_8h.html">juce_Process.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

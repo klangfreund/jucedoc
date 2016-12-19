@@ -108,6 +108,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae1c1247ae0215416f493b46f4a386eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5bd0f27cb7b70b294b233584c8fd63"><td class="memItemLeft" align="right" valign="top">ListType::ListenerType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#a4b5bd0f27cb7b70b294b233584c8fd63">getListener</a> () const noexcept</td></tr>
 <tr class="separator:a4b5bd0f27cb7b70b294b233584c8fd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6ff5dcf548392d46dd38b26168c79d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#aec6ff5dcf548392d46dd38b26168c79d">Iterator</a> (const ListType &amp;listToIterate) noexcept</td></tr>
+<tr class="separator:aec6ff5dcf548392d46dd38b26168c79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d090aa6025bf1955b936cfa24cf2057"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#a6d090aa6025bf1955b936cfa24cf2057">~Iterator</a> () noexcept</td></tr>
+<tr class="separator:a6d090aa6025bf1955b936cfa24cf2057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9791ff087b9d8f7978fd9e3a68d713b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#a9791ff087b9d8f7978fd9e3a68d713b6">next</a> () noexcept</td></tr>
+<tr class="separator:a9791ff087b9d8f7978fd9e3a68d713b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c1247ae0215416f493b46f4a386eb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#ae1c1247ae0215416f493b46f4a386eb9">next</a> (const BailOutCheckerType &amp;bailOutChecker) noexcept</td></tr>
+<tr class="separator:ae1c1247ae0215416f493b46f4a386eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5bd0f27cb7b70b294b233584c8fd63"><td class="memItemLeft" align="right" valign="top">ListType::ListenerType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classListenerList_1_1Iterator.html#a4b5bd0f27cb7b70b294b233584c8fd63">getListener</a> () const noexcept</td></tr>
+<tr class="separator:a4b5bd0f27cb7b70b294b233584c8fd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt;<br/>
@@ -116,6 +126,61 @@ class ListenerList&lt; ListenerClass, ArrayType &gt;::Iterator&lt; BailOutChecke
 
 <p>Iterates the listeners in a <a class="el" href="classListenerList.html" title="Holds a set of objects and can invoke a member function callback on each object in the set with a sin...">ListenerList</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aec6ff5dcf548392d46dd38b26168c79d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , class ListType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a>&lt; BailOutCheckerType, ListType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const ListType &amp;&#160;</td>
+          <td class="paramname"><em>listToIterate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d090aa6025bf1955b936cfa24cf2057"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , class ListType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a>&lt; BailOutCheckerType, ListType &gt;::~<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aec6ff5dcf548392d46dd38b26168c79d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -258,16 +323,105 @@ template&lt;class BailOutCheckerType , class ListType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a9791ff087b9d8f7978fd9e3a68d713b6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , class ListType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a>&lt; BailOutCheckerType, ListType &gt;::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1c1247ae0215416f493b46f4a386eb9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , class ListType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a>&lt; BailOutCheckerType, ListType &gt;::next </td>
+          <td>(</td>
+          <td class="paramtype">const BailOutCheckerType &amp;&#160;</td>
+          <td class="paramname"><em>bailOutChecker</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classListenerList_1_1Iterator.html#a9791ff087b9d8f7978fd9e3a68d713b6">ListenerList&lt; ListenerClass, ArrayType &gt;::Iterator&lt; BailOutCheckerType, ListType &gt;::next()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b5bd0f27cb7b70b294b233584c8fd63"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ListenerClass, class ArrayType = Array&lt;ListenerClass*&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class BailOutCheckerType , class ListType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListType::ListenerType* <a class="el" href="classListenerList.html">ListenerList</a>&lt; ListenerClass, ArrayType &gt;::<a class="el" href="classListenerList_1_1Iterator.html">Iterator</a>&lt; BailOutCheckerType, ListType &gt;::getListener </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="juce__ListenerList_8h.html">juce_ListenerList.h</a></li>
+<li><a class="el" href="juce__core_2containers_2juce__ListenerList_8h.html">juce_core/containers/juce_ListenerList.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

@@ -142,6 +142,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aff7e64aa7c9125b1106c3cadc8502364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0d10c5808f2fcb37d6d692c8d93ce3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#afc0d10c5808f2fcb37d6d692c8d93ce3">drawMenuBarItem</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, int width, int height, int itemIndex, const <a class="el" href="classString.html">String</a> &amp;itemText, bool isMouseOverItem, bool isMenuOpen, bool isMouseOverBar, <a class="el" href="classMenuBarComponent.html">MenuBarComponent</a> &amp;)=0</td></tr>
 <tr class="separator:afc0d10c5808f2fcb37d6d692c8d93ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4cc8d01e5ca1517ababd36fb3b23771"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#ab4cc8d01e5ca1517ababd36fb3b23771">getParentComponentForMenuOptions</a> (const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;options)=0</td></tr>
+<tr class="separator:ab4cc8d01e5ca1517ababd36fb3b23771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1767e4e85c7dce5560a3621345ebdfc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#a1767e4e85c7dce5560a3621345ebdfc4">preparePopupMenuWindow</a> (<a class="el" href="classComponent.html">Component</a> &amp;newWindow)=0</td></tr>
+<tr class="separator:a1767e4e85c7dce5560a3621345ebdfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract base class is implemented by <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> classes to provide menu drawing functionality. </p>
@@ -745,16 +749,73 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab4cc8d01e5ca1517ababd36fb3b23771"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classComponent.html">Component</a>* PopupMenu::LookAndFeelMethods::getParentComponentForMenuOptions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classLookAndFeel__V2.html#a8e33a2a72238adb3099c09b6113aea13">LookAndFeel_V2</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1767e4e85c7dce5560a3621345ebdfc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PopupMenu::LookAndFeelMethods::preparePopupMenuWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> &amp;&#160;</td>
+          <td class="paramname"><em>newWindow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classLookAndFeel__V2.html#a44210a4874aecd1c8f09d99fe2291e7f">LookAndFeel_V2</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__PopupMenu_8h.html">juce_PopupMenu.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

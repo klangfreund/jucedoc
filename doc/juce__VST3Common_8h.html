@@ -130,6 +130,12 @@ Functions</h2></td></tr>
 <tr class="separator:a89e560cc2b7d563461ce38e9c4ca9274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df5d91d232cd2905ea11d3100d726dc"><td class="memItemLeft" align="right" valign="top">juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VST3Common_8h.html#a5df5d91d232cd2905ea11d3100d726dc">toString</a> (const Steinberg::UString256 &amp;string) noexcept</td></tr>
 <tr class="separator:a5df5d91d232cd2905ea11d3100d726dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d893b946f7a4d21175f18fe3f1b5929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VST3Common_8h.html#a7d893b946f7a4d21175f18fe3f1b5929">toString128</a> (Steinberg::Vst::String128 result, const char *source)</td></tr>
+<tr class="separator:a7d893b946f7a4d21175f18fe3f1b5929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9853687ef920bbaa791abbe7e6528c34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VST3Common_8h.html#a9853687ef920bbaa791abbe7e6528c34">toString128</a> (Steinberg::Vst::String128 result, const juce::String &amp;source)</td></tr>
+<tr class="separator:a9853687ef920bbaa791abbe7e6528c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472a393c44f59ce51b74f5d8ebb3bdf3"><td class="memItemLeft" align="right" valign="top">Steinberg::Vst::TChar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VST3Common_8h.html#a472a393c44f59ce51b74f5d8ebb3bdf3">toString</a> (const juce::String &amp;source) noexcept</td></tr>
+<tr class="separator:a472a393c44f59ce51b74f5d8ebb3bdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a52081291a153c4ae5db62900492eacf8"></a>
@@ -162,7 +168,7 @@ Functions</h2></td></tr>
 <div class="line">        *obj = <span class="keyword">nullptr</span>; \</div>
 <div class="line">        return Steinberg::kNotImplemented; \</div>
 <div class="line">    }</div>
-<div class="ttc" id="juce__PlatformDefs_8h_html_adc044ce5efecbecf2f5a44cd00db67b3"><div class="ttname"><a href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a></div><div class="ttdeci">#define jassertfalse</div><div class="ttdoc">This will always cause an assertion failure. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:124</div></div>
+<div class="ttc" id="juce__PlatformDefs_8h_html_adc044ce5efecbecf2f5a44cd00db67b3"><div class="ttname"><a href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a></div><div class="ttdeci">#define jassertfalse</div><div class="ttdoc">This will always cause an assertion failure. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:130</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,13 +345,94 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7d893b946f7a4d21175f18fe3f1b5929"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toString128 </td>
+          <td>(</td>
+          <td class="paramtype">Steinberg::Vst::String128&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9853687ef920bbaa791abbe7e6528c34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toString128 </td>
+          <td>(</td>
+          <td class="paramtype">Steinberg::Vst::String128&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a472a393c44f59ce51b74f5d8ebb3bdf3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Steinberg::Vst::TChar* toString </td>
+          <td>(</td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>

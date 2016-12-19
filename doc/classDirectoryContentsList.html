@@ -152,10 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afabd5e3cff95833e73d6f90359cf7e63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#afabd5e3cff95833e73d6f90359cf7e63">getNumFiles</a> () const noexcept</td></tr>
 <tr class="memdesc:afabd5e3cff95833e73d6f90359cf7e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of files currently available in the list.  <a href="#afabd5e3cff95833e73d6f90359cf7e63">More...</a><br/></td></tr>
 <tr class="separator:afabd5e3cff95833e73d6f90359cf7e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b2f00f25fa733aba8ff1294a913d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#a74b2f00f25fa733aba8ff1294a913d56">getFileInfo</a> (int index, <a class="el" href="structDirectoryContentsList_1_1FileInfo.html">FileInfo</a> &amp;resultInfo) const </td></tr>
+<tr class="memitem:a74b2f00f25fa733aba8ff1294a913d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#a74b2f00f25fa733aba8ff1294a913d56">getFileInfo</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, <a class="el" href="structDirectoryContentsList_1_1FileInfo.html">FileInfo</a> &amp;resultInfo) const </td></tr>
 <tr class="memdesc:a74b2f00f25fa733aba8ff1294a913d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached information about one of the files in the list.  <a href="#a74b2f00f25fa733aba8ff1294a913d56">More...</a><br/></td></tr>
 <tr class="separator:a74b2f00f25fa733aba8ff1294a913d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab264bb3a17d76ba5fcff9ca351545a0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#ab264bb3a17d76ba5fcff9ca351545a0b">getFile</a> (int index) const </td></tr>
+<tr class="memitem:ab264bb3a17d76ba5fcff9ca351545a0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#ab264bb3a17d76ba5fcff9ca351545a0b">getFile</a> (int <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>) const </td></tr>
 <tr class="memdesc:ab264bb3a17d76ba5fcff9ca351545a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the files in the list.  <a href="#ab264bb3a17d76ba5fcff9ca351545a0b">More...</a><br/></td></tr>
 <tr class="separator:ab264bb3a17d76ba5fcff9ca351545a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315cd1604c49dba2cd86a7906dfa14ba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFileFilter.html">FileFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectoryContentsList.html#a315cd1604c49dba2cd86a7906dfa14ba">getFilter</a> () const noexcept</td></tr>
@@ -551,7 +551,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns one of the files in the list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>should be less than <a class="el" href="classDirectoryContentsList.html#afabd5e3cff95833e73d6f90359cf7e63" title="Returns the number of files currently available in the list. ">getNumFiles()</a>. If this is out-of-range, the return value will be <a class="el" href="classFile.html#abdcef33a1c846d17b4405e0939358364" title="This static constant is used for referring to an &#39;invalid&#39; file. ">File::nonexistent</a> </td></tr>
+    <tr><td class="paramname">index</td><td>should be less than <a class="el" href="classDirectoryContentsList.html#afabd5e3cff95833e73d6f90359cf7e63" title="Returns the number of files currently available in the list. ">getNumFiles()</a>. If this is out-of-range, the return value will be a default <a class="el" href="classFile.html" title="Represents a local file or directory. ">File()</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -630,12 +630,17 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="juce__DirectoryContentsList_8h.html">juce_DirectoryContentsList.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.10-->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2016 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6 . All content &copy ROLI Ltd.
-</small></address>
+<hr class="footer"/>
+<address class="footer"><small>All content &copy ROLI Ltd.</small></address><br/>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19759318-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
 </html>
