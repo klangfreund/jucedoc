@@ -33787,18 +33787,25 @@
       <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails, StringArray &amp;files, bool &amp;canMoveFiles)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>shouldDropTextWhenDraggedExternally</name>
+      <anchorfile>classDragAndDropContainer.html</anchorfile>
+      <anchor>ad6fe3741189a1158f451f77580bf452c</anchor>
+      <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails, String &amp;text)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>dragOperationStarted</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>a5ec83ecb9f3211c0dc7ba6d29edd395a</anchor>
-      <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails)</arglist>
+      <anchor>a0ad3e13b0caaa4edc124fc2845e9ed71</anchor>
+      <arglist>(const DragAndDropTarget::SourceDetails &amp;)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>dragOperationEnded</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>ab132c0a3a3c349d5de9ed737c0911a33</anchor>
-      <arglist>(const DragAndDropTarget::SourceDetails &amp;sourceDetails)</arglist>
+      <anchor>a60b1119c294d76986cc00f9db9ca0616</anchor>
+      <arglist>(const DragAndDropTarget::SourceDetails &amp;)</arglist>
     </member>
   </compound>
   <compound kind="class">
