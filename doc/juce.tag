@@ -77874,13 +77874,6 @@
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
-      <name>fromSingleByteData</name>
-      <anchorfile>classString.html</anchorfile>
-      <anchor>a1270b5f8664e24ba8abaf23402618193</anchor>
-      <arglist>(const void *data, size_t numBytes)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static String</type>
       <name>fromCFString</name>
       <anchorfile>classString.html</anchorfile>
       <anchor>a080d955ce1e06ea976077db710bb83a6</anchor>

@@ -142,7 +142,6 @@ var searchData=
   ['frompositiononborder',['fromPositionOnBorder',['../classResizableBorderComponent_1_1Zone.html#af901205cf8873913469933d0f1bcd577',1,'ResizableBorderComponent::Zone']]],
   ['fromrgb',['fromRGB',['../classColour.html#a8229c3afbbab454c718ee2b08b56df8c',1,'Colour']]],
   ['fromrgba',['fromRGBA',['../classColour.html#a0611ddee8a4c8414645d6975f290a750',1,'Colour']]],
-  ['fromsinglebytedata',['fromSingleByteData',['../classString.html#a1270b5f8664e24ba8abaf23402618193',1,'String']]],
   ['fromstartandangle',['fromStartAndAngle',['../classLine.html#aa3f92ac1df630fc18acb4b3a4ba5b635',1,'Line']]],
   ['fromstring',['fromString',['../classJSON.html#ae810f0f1951773a387acfc63c8f04a39',1,'JSON::fromString()'],['../classColour.html#af3201190cd919556988a7125ad2f92a0',1,'Colour::fromString()'],['../classFont.html#a9ce8c13a7877c1a0e6cb78163fb6aefd',1,'Font::fromString()'],['../classRectangle.html#aeebcebc71a8f2fb7fd216acb0bd45a55',1,'Rectangle::fromString()']]],
   ['fromtargetpoints',['fromTargetPoints',['../classAffineTransform.html#ae2cabd0be7385641d01c871744055876',1,'AffineTransform::fromTargetPoints(float x00, float y00, float x10, float y10, float x01, float y01) noexcept'],['../classAffineTransform.html#ababada136d963b70272d0792d2bbff70',1,'AffineTransform::fromTargetPoints(float sourceX1, float sourceY1, float targetX1, float targetY1, float sourceX2, float sourceY2, float targetX2, float targetY2, float sourceX3, float sourceY3, float targetX3, float targetY3) noexcept']]],
