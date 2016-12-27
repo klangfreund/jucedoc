@@ -1975,7 +1975,7 @@
     <filename>juce__HashMap_8h</filename>
     <class kind="struct">DefaultHashFunctions</class>
     <class kind="class">HashMap</class>
-    <class kind="class">HashMap::Iterator</class>
+    <class kind="struct">HashMap::Iterator</class>
   </compound>
   <compound kind="file">
     <name>juce_HeapBlock.h</name>
@@ -12791,6 +12791,20 @@
       <anchorfile>classAudioBuffer.html</anchorfile>
       <anchor>afa2458169421626445472a0e22f79360</anchor>
       <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>AudioBuffer</name>
+      <anchorfile>classAudioBuffer.html</anchorfile>
+      <anchor>a4124843b0d14b6d5b3ae282366e6824d</anchor>
+      <arglist>(AudioBuffer &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>AudioBuffer &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classAudioBuffer.html</anchorfile>
+      <anchor>adaf3b9d2e644c9cb85a349d1cd32dc37</anchor>
+      <arglist>(AudioBuffer &amp;&amp;other) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -43823,7 +43837,7 @@
     <templarg></templarg>
     <templarg></templarg>
     <templarg></templarg>
-    <class kind="class">HashMap::Iterator</class>
+    <class kind="struct">HashMap::Iterator</class>
     <member kind="typedef">
       <type>TypeOfCriticalSectionToUse::ScopedLockType</type>
       <name>ScopedLockType</name>
@@ -43929,43 +43943,92 @@
       <anchor>a539b127c2f399e4d5f6c235222fb7bf2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
+    <member kind="function">
+      <type>Iterator</type>
+      <name>begin</name>
+      <anchorfile>classHashMap.html</anchorfile>
+      <anchor>a877ab31364ccaf45379d018a0b126fe1</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Iterator</type>
+      <name>end</name>
+      <anchorfile>classHashMap.html</anchorfile>
+      <anchor>a42a1631cad1bf4b1bd74f3429359e415</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
   </compound>
-  <compound kind="class">
+  <compound kind="struct">
     <name>HashMap::Iterator</name>
-    <filename>classHashMap_1_1Iterator.html</filename>
+    <filename>structHashMap_1_1Iterator.html</filename>
     <member kind="function">
       <type></type>
       <name>Iterator</name>
-      <anchorfile>classHashMap_1_1Iterator.html</anchorfile>
-      <anchor>a5688b78daa1734ef6cc29b81a545fcb0</anchor>
-      <arglist>(const HashMap &amp;hashMapToIterate)</arglist>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a1f638b01f90ece3081f6456a57f9991e</anchor>
+      <arglist>(const HashMap &amp;hashMapToIterate) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Iterator</name>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a1e2e802a4f40adec1120079695142869</anchor>
+      <arglist>(const Iterator &amp;other) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>next</name>
-      <anchorfile>classHashMap_1_1Iterator.html</anchorfile>
-      <anchor>abdbcb9001e0777946703ff4c8cbde785</anchor>
-      <arglist>()</arglist>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a4266d184eebca2ad08e4b72025a98804</anchor>
+      <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
       <type>KeyType</type>
       <name>getKey</name>
-      <anchorfile>classHashMap_1_1Iterator.html</anchorfile>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
       <anchor>a3509d1d0273f3583e358f6687f3fdb2b</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>ValueType</type>
       <name>getValue</name>
-      <anchorfile>classHashMap_1_1Iterator.html</anchorfile>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
       <anchor>a93c4afaa305453d5c6727d09ebc212ac</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>reset</name>
-      <anchorfile>classHashMap_1_1Iterator.html</anchorfile>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
       <anchor>a341bf8a8ebd064bccb0739fc73b48fa7</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Iterator &amp;</type>
+      <name>operator++</name>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a7033c902782841d334d6f95ea725658c</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>ValueType</type>
+      <name>operator*</name>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a460f1aba01f517f9a887f101a2fa28e3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>ae9131d21611dc5bdcd15020930c76744</anchor>
+      <arglist>(const Iterator &amp;other) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resetToEnd</name>
+      <anchorfile>structHashMap_1_1Iterator.html</anchorfile>
+      <anchor>a23667db4b0294862723097ed5230fb3e</anchor>
       <arglist>() noexcept</arglist>
     </member>
   </compound>

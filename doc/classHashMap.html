@@ -96,8 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap_1_1Iterator.html">Iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over the items in a <a class="el" href="classHashMap.html" title="Holds a set of mappings between some key/value pairs. ">HashMap</a>.  <a href="classHashMap_1_1Iterator.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHashMap_1_1Iterator.html">Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over the items in a <a class="el" href="classHashMap.html" title="Holds a set of mappings between some key/value pairs. ">HashMap</a>.  <a href="structHashMap_1_1Iterator.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -152,6 +152,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a539b127c2f399e4d5f6c235222fb7bf2"><td class="memItemLeft" align="right" valign="top">const TypeOfCriticalSectionToUse &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">getLock</a> () const noexcept</td></tr>
 <tr class="memdesc:a539b127c2f399e4d5f6c235222fb7bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> that locks this structure.  <a href="#a539b127c2f399e4d5f6c235222fb7bf2">More...</a><br/></td></tr>
 <tr class="separator:a539b127c2f399e4d5f6c235222fb7bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877ab31364ccaf45379d018a0b126fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structHashMap_1_1Iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#a877ab31364ccaf45379d018a0b126fe1">begin</a> () const noexcept</td></tr>
+<tr class="memdesc:a877ab31364ccaf45379d018a0b126fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a start iterator for the values in this tree.  <a href="#a877ab31364ccaf45379d018a0b126fe1">More...</a><br/></td></tr>
+<tr class="separator:a877ab31364ccaf45379d018a0b126fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a1631cad1bf4b1bd74f3429359e415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structHashMap_1_1Iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#a42a1631cad1bf4b1bd74f3429359e415">end</a> () const noexcept</td></tr>
+<tr class="memdesc:a42a1631cad1bf4b1bd74f3429359e415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an end iterator for the values in this tree.  <a href="#a42a1631cad1bf4b1bd74f3429359e415">More...</a><br/></td></tr>
+<tr class="separator:a42a1631cad1bf4b1bd74f3429359e415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt;<br/>
@@ -177,7 +183,7 @@ class HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToU
 <div class="line"><a class="code" href="juce__PlatformDefs_8h.html#a679635952a5d2eb25f3b31398f0fcc25">DBG</a> (hash [2]); <span class="comment">// prints &quot;item2&quot;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// This iterates the map, printing all of its key -&gt; value pairs..</span></div>
-<div class="line"><span class="keywordflow">for</span> (<a class="code" href="classHashMap_1_1Iterator.html">HashMap&lt;int, String&gt;::Iterator</a> i (hash); i.<a class="code" href="classHashMap_1_1Iterator.html#abdbcb9001e0777946703ff4c8cbde785">next</a>();)</div>
+<div class="line"><span class="keywordflow">for</span> (<a class="code" href="structHashMap_1_1Iterator.html">HashMap&lt;int, String&gt;::Iterator</a> i (hash); i.<a class="code" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804">next</a>();)</div>
 <div class="line">    <a class="code" href="juce__PlatformDefs_8h.html#a679635952a5d2eb25f3b31398f0fcc25">DBG</a> (i.getKey() &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i.getValue());</div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -531,7 +537,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 <p>References <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="classHashMap_1_1Iterator.html#abdbcb9001e0777946703ff4c8cbde785">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::next()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, and <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>.</p>
+<p>Referenced by <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::next()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, <a class="el" href="structHashMap_1_1Iterator.html#a23667db4b0294862723097ed5230fb3e">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::resetToEnd()</a>, and <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>.</p>
 
 </div>
 </div>
@@ -599,6 +605,64 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 </div>
 </div>
+<a class="anchor" id="a877ab31364ccaf45379d018a0b126fe1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structHashMap_1_1Iterator.html">Iterator</a> <a class="el" href="classHashMap.html">HashMap</a>&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a start iterator for the values in this tree. </p>
+
+<p>References <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::next()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42a1631cad1bf4b1bd74f3429359e415"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structHashMap_1_1Iterator.html">Iterator</a> <a class="el" href="classHashMap.html">HashMap</a>&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an end iterator for the values in this tree. </p>
+
+<p>References <a class="el" href="structHashMap_1_1Iterator.html#a23667db4b0294862723097ed5230fb3e">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::resetToEnd()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__HashMap_8h.html">juce_HashMap.h</a></li>
 </ul>
@@ -606,7 +670,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 26 2016 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 27 2016 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

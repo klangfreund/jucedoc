@@ -115,6 +115,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa2458169421626445472a0e22f79360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#afa2458169421626445472a0e22f79360">~AudioBuffer</a> () noexcept</td></tr>
 <tr class="memdesc:afa2458169421626445472a0e22f79360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#afa2458169421626445472a0e22f79360">More...</a><br/></td></tr>
 <tr class="separator:afa2458169421626445472a0e22f79360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4124843b0d14b6d5b3ae282366e6824d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a4124843b0d14b6d5b3ae282366e6824d">AudioBuffer</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a4124843b0d14b6d5b3ae282366e6824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a4124843b0d14b6d5b3ae282366e6824d">More...</a><br/></td></tr>
+<tr class="separator:a4124843b0d14b6d5b3ae282366e6824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf3b9d2e644c9cb85a349d1cd32dc37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#adaf3b9d2e644c9cb85a349d1cd32dc37">operator=</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:adaf3b9d2e644c9cb85a349d1cd32dc37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment.  <a href="#adaf3b9d2e644c9cb85a349d1cd32dc37">More...</a><br/></td></tr>
+<tr class="separator:adaf3b9d2e644c9cb85a349d1cd32dc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a9ecde91bf5b96871ce3a474c1d831f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a3a9ecde91bf5b96871ce3a474c1d831f">getNumChannels</a> () const noexcept</td></tr>
 <tr class="memdesc:a3a9ecde91bf5b96871ce3a474c1d831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of channels of audio data that this buffer contains.  <a href="#a3a9ecde91bf5b96871ce3a474c1d831f">More...</a><br/></td></tr>
 <tr class="separator:a3a9ecde91bf5b96871ce3a474c1d831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +475,34 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4124843b0d14b6d5b3ae282366e6824d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; Type &gt;::<a class="el" href="classAudioBuffer.html">AudioBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; Type &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a60a3e64901c3e9ddeca5512ad8d82bd7"></a>
 <div class="memitem">
@@ -496,6 +530,34 @@ template&lt;typename Type&gt; </div>
 
 <p>Copies another buffer onto this one. </p>
 <p>This buffer's size will be changed to that of the other buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="adaf3b9d2e644c9cb85a349d1cd32dc37"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&amp; <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; Type &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; Type &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment. </p>
 
 </div>
 </div>
@@ -2192,7 +2254,7 @@ template&lt;typename Type&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 26 2016 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 27 2016 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
