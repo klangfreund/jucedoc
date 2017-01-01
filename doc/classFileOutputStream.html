@@ -236,7 +236,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Creates a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a>. </p>
 <p>If the file doesn't exist, it will first be created. If the file can't be created or opened (for example, because the parent directory of the file does not exist), the <a class="el" href="classFileOutputStream.html#a616887c2791a85e35f00b6e38436d4be" title="Returns true if the stream couldn&#39;t be opened for some reason. ">failedToOpen()</a> method will return true.</p>
-<p>If the file already exists when opened, the stream's write-postion will be set to the end of the file. To overwrite an existing file, use <a class="el" href="classFile.html#acca30337faecf8c3d97a1e70c725db23" title="Deletes a file. ">File::deleteFile()</a> before opening the stream, or use setPosition(0) after it's opened (although this won't truncate the file).</p>
+<p>If the file already exists when opened, the stream's write-position will be set to the end of the file. To overwrite an existing file, use <a class="el" href="classFile.html#acca30337faecf8c3d97a1e70c725db23" title="Deletes a file. ">File::deleteFile()</a> before opening the stream, or use setPosition(0) after it's opened (although this won't truncate the file).</p>
 <p>Destroying a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> object does not force the operating system to write the buffered data to disk immediately. If this is required you should call <a class="el" href="classFileOutputStream.html#afc63785b8744278d51814c4892207414" title="If the stream is using a buffer, this will ensure it gets written out to the destination. ">flush()</a> before triggering the destructor.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTemporaryFile.html" title="Manages a temporary file, which will be deleted when this object is deleted. ">TemporaryFile</a> </dd></dl>
 
@@ -551,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 31 2016 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 1 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -69705,6 +69705,20 @@
     </member>
     <member kind="function">
       <type>Rectangle</type>
+      <name>withRightX</name>
+      <anchorfile>classRectangle.html</anchorfile>
+      <anchor>a8a5e0f62c0550a19a406c0460f9e5c5b</anchor>
+      <arglist>(ValueType newRightX) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Rectangle</type>
+      <name>withBottomY</name>
+      <anchorfile>classRectangle.html</anchorfile>
+      <anchor>ab64c76898f6b47ece254675c075e6450</anchor>
+      <arglist>(ValueType newBottomY) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Rectangle</type>
       <name>withPosition</name>
       <anchorfile>classRectangle.html</anchorfile>
       <anchor>a01440bb20c425e8be7b58bd60a0c164f</anchor>
@@ -86942,6 +86956,13 @@
       <name>getParent</name>
       <anchorfile>classValueTree.html</anchorfile>
       <anchor>ad22561c896d9bcdb763d27aacbb5815c</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>ValueTree</type>
+      <name>getRoot</name>
+      <anchorfile>classValueTree.html</anchorfile>
+      <anchor>a4a16465630ab6a1c6a7bcb65ee77a3df</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">

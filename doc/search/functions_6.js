@@ -1027,7 +1027,7 @@ var searchData=
   ['getrhythminstrumentname',['getRhythmInstrumentName',['../classMidiMessage.html#a3c9df982a077de4e45362ea57a56da3a',1,'MidiMessage']]],
   ['getright',['getRight',['../classPositionedGlyph.html#a4ce5cbc492437e5aba051cd26460c131',1,'PositionedGlyph::getRight()'],['../classBorderSize.html#a853a83e49056433cb25f6189954eb7eb',1,'BorderSize::getRight()'],['../classRectangle.html#aeea826946e996fc0b3d8f44d21b181c0',1,'Rectangle::getRight()'],['../classComponent.html#a9f0b1e0ff5dfe85d0c4f611a93f2b78c',1,'Component::getRight()']]],
   ['getrmslevel',['getRMSLevel',['../classAudioBuffer.html#a7e2c4235fa4a6da3aca73f17b46704ac',1,'AudioBuffer']]],
-  ['getroot',['getRoot',['../classValueTreeSynchroniser.html#ac1ec42c492653823573c25f6892764e9',1,'ValueTreeSynchroniser::getRoot()'],['../classFileBrowserComponent.html#a729b016025a4fc277285e1419e9702a9',1,'FileBrowserComponent::getRoot()']]],
+  ['getroot',['getRoot',['../classValueTree.html#a4a16465630ab6a1c6a7bcb65ee77a3df',1,'ValueTree::getRoot()'],['../classValueTreeSynchroniser.html#ac1ec42c492653823573c25f6892764e9',1,'ValueTreeSynchroniser::getRoot()'],['../classFileBrowserComponent.html#a729b016025a4fc277285e1419e9702a9',1,'FileBrowserComponent::getRoot()']]],
   ['getrootitem',['getRootItem',['../classTreeView.html#a1cab55fed1d8dc6064307acdbbcba9b4',1,'TreeView']]],
   ['getrootmenu',['getRootMenu',['../classComboBox.html#ada8ab191b09811f989a0df42e26dcd8b',1,'ComboBox']]],
   ['getrootobjectproperties',['getRootObjectProperties',['../classJavascriptEngine.html#abc067f3103d266c44d417cbac8380f56',1,'JavascriptEngine']]],

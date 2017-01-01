@@ -217,6 +217,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad22561c896d9bcdb763d27aacbb5815c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#ad22561c896d9bcdb763d27aacbb5815c">getParent</a> () const noexcept</td></tr>
 <tr class="memdesc:ad22561c896d9bcdb763d27aacbb5815c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent node that contains this one.  <a href="#ad22561c896d9bcdb763d27aacbb5815c">More...</a><br/></td></tr>
 <tr class="separator:ad22561c896d9bcdb763d27aacbb5815c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a16465630ab6a1c6a7bcb65ee77a3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#a4a16465630ab6a1c6a7bcb65ee77a3df">getRoot</a> () const noexcept</td></tr>
+<tr class="memdesc:a4a16465630ab6a1c6a7bcb65ee77a3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recusrively finds the highest-level parent node that contains this one.  <a href="#a4a16465630ab6a1c6a7bcb65ee77a3df">More...</a><br/></td></tr>
+<tr class="separator:a4a16465630ab6a1c6a7bcb65ee77a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83099cde9f794842a2378c2935976a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#a83099cde9f794842a2378c2935976a90">getSibling</a> (int delta) const noexcept</td></tr>
 <tr class="memdesc:a83099cde9f794842a2378c2935976a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of this node's siblings in its parent's child list.  <a href="#a83099cde9f794842a2378c2935976a90">More...</a><br/></td></tr>
 <tr class="separator:a83099cde9f794842a2378c2935976a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1291,6 +1294,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4a16465630ab6a1c6a7bcb65ee77a3df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValueTree.html">ValueTree</a> ValueTree::getRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recusrively finds the highest-level parent node that contains this one. </p>
+<p>If the node has no parent, this will return itself. </p>
+
+</div>
+</div>
 <a class="anchor" id="a83099cde9f794842a2378c2935976a90"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1738,7 +1767,7 @@ template&lt;typename ElementComparator &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 31 2016 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 1 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
