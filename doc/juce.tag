@@ -39761,10 +39761,10 @@
       <arglist>(Logger *newLogger) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static Logger *</type>
+      <type>static Logger *JUCE_CALLTYPE</type>
       <name>getCurrentLogger</name>
       <anchorfile>classLogger.html</anchorfile>
-      <anchor>a4646bc85614d9cfe225f1f89bca50c74</anchor>
+      <anchor>a679b3df20cc6b55d7d1309df641e1e1e</anchor>
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function" static="yes">

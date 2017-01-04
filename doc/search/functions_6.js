@@ -256,7 +256,7 @@ var searchData=
   ['getcurrentimage',['getCurrentImage',['../classDrawableButton.html#ad35d7da94a1e273ed5ac02d3591cfbb6',1,'DrawableButton']]],
   ['getcurrentinputlevel',['getCurrentInputLevel',['../classAudioDeviceManager.html#aedbbb2987a9c420951c2a40246367e22',1,'AudioDeviceManager']]],
   ['getcurrentlayout',['getCurrentLayout',['../classAudioProcessor_1_1Bus.html#ad21ba0e63f9936f0dc93cc6540d3cae3',1,'AudioProcessor::Bus']]],
-  ['getcurrentlogger',['getCurrentLogger',['../classLogger.html#a4646bc85614d9cfe225f1f89bca50c74',1,'Logger']]],
+  ['getcurrentlogger',['getCurrentLogger',['../classLogger.html#a679b3df20cc6b55d7d1309df641e1e1e',1,'Logger']]],
   ['getcurrentlyfocusedcomponent',['getCurrentlyFocusedComponent',['../classComponent.html#a7030de7a58ec40e43ec902d6bb8aaf7a',1,'Component']]],
   ['getcurrentlymodalcomponent',['getCurrentlyModalComponent',['../classComponent.html#af281d9bc711b70c43ae5891a35165cb3',1,'Component']]],
   ['getcurrentlyplayingnote',['getCurrentlyPlayingNote',['../classMPESynthesiserVoice.html#a073572535bfb518f0825b72ad52ddccb',1,'MPESynthesiserVoice::getCurrentlyPlayingNote()'],['../classSynthesiserVoice.html#ac7e8ff1dc70d3ff90b4a96dae9dd7757',1,'SynthesiserVoice::getCurrentlyPlayingNote()']]],
