@@ -160,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9a7f7fc03a69fa286772fb0589d9388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTabbedComponent.html#ac9a7f7fc03a69fa286772fb0589d9388">removeTab</a> (int tabIndex)</td></tr>
 <tr class="memdesc:ac9a7f7fc03a69fa286772fb0589d9388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets rid of one of the tabs.  <a href="#ac9a7f7fc03a69fa286772fb0589d9388">More...</a><br/></td></tr>
 <tr class="separator:ac9a7f7fc03a69fa286772fb0589d9388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de06cabd1612af510a909af8dd2ee0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTabbedComponent.html#a8de06cabd1612af510a909af8dd2ee0e">moveTab</a> (int currentIndex, int newIndex, bool animate=false)</td></tr>
+<tr class="memdesc:a8de06cabd1612af510a909af8dd2ee0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a tab to a new index in the list.  <a href="#a8de06cabd1612af510a909af8dd2ee0e">More...</a><br/></td></tr>
+<tr class="separator:a8de06cabd1612af510a909af8dd2ee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94ea283f6904ef077d55d547fdd21d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTabbedComponent.html#ac94ea283f6904ef077d55d547fdd21d6">getNumTabs</a> () const </td></tr>
 <tr class="memdesc:ac94ea283f6904ef077d55d547fdd21d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of tabs in the bar.  <a href="#ac94ea283f6904ef077d55d547fdd21d6">More...</a><br/></td></tr>
 <tr class="separator:ac94ea283f6904ef077d55d547fdd21d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1112,6 +1115,41 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8de06cabd1612af510a909af8dd2ee0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TabbedComponent::moveTab </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currentIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>animate</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves a tab to a new index in the list. </p>
+<p>Pass -1 as the index to move it to the end of the list. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac94ea283f6904ef077d55d547fdd21d6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1558,7 +1596,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 9 2017 20:00:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

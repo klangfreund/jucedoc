@@ -141,7 +141,7 @@ var searchData=
   ['movescrollbarinpages',['moveScrollbarInPages',['../classScrollBar.html#a43c7d84c43879763344f29427b6bca95',1,'ScrollBar']]],
   ['movescrollbarinsteps',['moveScrollbarInSteps',['../classScrollBar.html#a9dbe4f09c8e652f6e28f6e51b0cd92bb',1,'ScrollBar']]],
   ['moveselectedrow',['moveSelectedRow',['../classTreeView.html#afa5d4e6ec7da7b1de06784094fedfc63',1,'TreeView']]],
-  ['movetab',['moveTab',['../classTabbedButtonBar.html#a0137adff073d5dc5e4d6f558e5984ab2',1,'TabbedButtonBar']]],
+  ['movetab',['moveTab',['../classTabbedButtonBar.html#a0137adff073d5dc5e4d6f558e5984ab2',1,'TabbedButtonBar::moveTab()'],['../classTabbedComponent.html#a8de06cabd1612af510a909af8dd2ee0e',1,'TabbedComponent::moveTab()']]],
   ['movetoabsolute',['moveToAbsolute',['../classRelativeCoordinate.html#aeb0b2ff1ac54cb6cd697c9345d579af2',1,'RelativeCoordinate::moveToAbsolute()'],['../classRelativePoint.html#a0ab188ef456819589846e966ce6fdf90',1,'RelativePoint::moveToAbsolute()'],['../classRelativeRectangle.html#af76a1248976d6b6e04d24ae3d93e3654',1,'RelativeRectangle::moveToAbsolute()']]],
   ['movetofrontofqueue',['moveToFrontOfQueue',['../classTimeSliceThread.html#a58c97295da5d454c299b9252a7a0999d',1,'TimeSliceThread']]],
   ['movetotrash',['moveToTrash',['../classFile.html#ad5657b8a600ed241a204656811c9522f',1,'File']]],

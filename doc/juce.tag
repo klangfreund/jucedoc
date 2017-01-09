@@ -80122,6 +80122,13 @@
       <arglist>(int tabIndex)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>moveTab</name>
+      <anchorfile>classTabbedComponent.html</anchorfile>
+      <anchor>a8de06cabd1612af510a909af8dd2ee0e</anchor>
+      <arglist>(int currentIndex, int newIndex, bool animate=false)</arglist>
+    </member>
+    <member kind="function">
       <type>int</type>
       <name>getNumTabs</name>
       <anchorfile>classTabbedComponent.html</anchorfile>
