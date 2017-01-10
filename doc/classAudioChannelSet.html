@@ -282,6 +282,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af906e8d711de27842262383fdd1a0c42"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#af906e8d711de27842262383fdd1a0c42">getAbbreviatedChannelTypeName</a> (<a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">ChannelType</a>)</td></tr>
 <tr class="memdesc:af906e8d711de27842262383fdd1a0c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the abbreviated name of a channel type.  <a href="#af906e8d711de27842262383fdd1a0c42">More...</a><br/></td></tr>
 <tr class="separator:af906e8d711de27842262383fdd1a0c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8156f489af380f5176fc6db6b2b3257a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">ChannelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#a8156f489af380f5176fc6db6b2b3257a">getChannelTypeFromAbbreviation</a> (const <a class="el" href="classString.html">String</a> &amp;abbreviation)</td></tr>
+<tr class="memdesc:a8156f489af380f5176fc6db6b2b3257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the channel type from an abbreviated name.  <a href="#a8156f489af380f5176fc6db6b2b3257a">More...</a><br/></td></tr>
+<tr class="separator:a8156f489af380f5176fc6db6b2b3257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335e98878c7e1e6ab280fe96e30a6189"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#a335e98878c7e1e6ab280fe96e30a6189">fromAbbreviatedString</a> (const <a class="el" href="classString.html">String</a> &amp;set)</td></tr>
+<tr class="memdesc:a335e98878c7e1e6ab280fe96e30a6189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> from a string returned by getSpeakerArrangementAsString.  <a href="#a335e98878c7e1e6ab280fe96e30a6189">More...</a><br/></td></tr>
+<tr class="separator:a335e98878c7e1e6ab280fe96e30a6189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a set of audio channel types. </p>
@@ -1172,6 +1178,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8156f489af380f5176fc6db6b2b3257a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">ChannelType</a> AudioChannelSet::getChannelTypeFromAbbreviation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>abbreviation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the channel type from an abbreviated name. </p>
+
+</div>
+</div>
 <a class="anchor" id="a769021b5cd3b2ca28dd3fec8a43bb98d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1354,6 +1386,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a335e98878c7e1e6ab280fe96e30a6189"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> AudioChannelSet::fromAbbreviatedString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an <a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> from a string returned by getSpeakerArrangementAsString. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioChannelSet.html#ab73f1bea9e022cbea1e6882983535deb" title="Returns a string containing a whitespace-separated list of speaker types corresponding to each channe...">getSpeakerArrangementAsString</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5b964e99349ab44236e1212541b11784"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1496,7 +1555,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 9 2017 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 10 2017 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

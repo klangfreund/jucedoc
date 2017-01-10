@@ -128,6 +128,7 @@ var searchData=
   ['free',['free',['../classHeapBlock.html#a8ec3fb69997d6f530d60cb5e0969f97f',1,'HeapBlock']]],
   ['from14bitint',['from14BitInt',['../classMPEValue.html#ab8606e727fc51c6175949d8d35af3693',1,'MPEValue']]],
   ['from7bitint',['from7BitInt',['../classMPEValue.html#a49273e94ce55eabd042abf2b3c596749',1,'MPEValue']]],
+  ['fromabbreviatedstring',['fromAbbreviatedString',['../classAudioChannelSet.html#a335e98878c7e1e6ab280fe96e30a6189',1,'AudioChannelSet']]],
   ['fromangle',['fromAngle',['../classQuaternion.html#a041d3da46795ed921e6000f295dedbae',1,'Quaternion']]],
   ['frombase64encoding',['fromBase64Encoding',['../classMemoryBlock.html#ae9b274b678bd4bdbfb64fec6c1c35e58',1,'MemoryBlock']]],
   ['frombipolarfloat',['fromBipolarFloat',['../structIntegerWithBitSize.html#a02905dd90e67d00a10f880951bac6eb4',1,'IntegerWithBitSize']]],

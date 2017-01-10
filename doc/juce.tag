@@ -14036,6 +14036,20 @@
       <anchor>af906e8d711de27842262383fdd1a0c42</anchor>
       <arglist>(ChannelType)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static ChannelType</type>
+      <name>getChannelTypeFromAbbreviation</name>
+      <anchorfile>classAudioChannelSet.html</anchorfile>
+      <anchor>a8156f489af380f5176fc6db6b2b3257a</anchor>
+      <arglist>(const String &amp;abbreviation)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelSet</type>
+      <name>fromAbbreviatedString</name>
+      <anchorfile>classAudioChannelSet.html</anchorfile>
+      <anchor>a335e98878c7e1e6ab280fe96e30a6189</anchor>
+      <arglist>(const String &amp;set)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>AudioData</name>

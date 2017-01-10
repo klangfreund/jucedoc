@@ -153,6 +153,7 @@ var searchData=
   ['getchannelpressurevalue',['getChannelPressureValue',['../classMidiMessage.html#aa9dc36194c26bb72f35d8522f60b3ac1',1,'MidiMessage']]],
   ['getchannelset',['getChannelSet',['../structAudioProcessor_1_1BusesLayout.html#a36e2cd1756e0aaa47bca5f3f16df6d4a',1,'AudioProcessor::BusesLayout::getChannelSet(bool isInput, int busIndex)'],['../structAudioProcessor_1_1BusesLayout.html#a339aa2f75e7df251a7417577c0cb07c3',1,'AudioProcessor::BusesLayout::getChannelSet(bool isInput, int busIndex) const noexcept']]],
   ['getchanneltype',['getChannelType',['../structSpeakerMappings.html#a45b10696f71901b7a83acebdd746854b',1,'SpeakerMappings']]],
+  ['getchanneltypefromabbreviation',['getChannelTypeFromAbbreviation',['../classAudioChannelSet.html#a8156f489af380f5176fc6db6b2b3257a',1,'AudioChannelSet']]],
   ['getchanneltypename',['getChannelTypeName',['../classAudioChannelSet.html#a0cac91d52815c80b9df670112d0bde08',1,'AudioChannelSet']]],
   ['getchanneltypes',['getChannelTypes',['../classAudioChannelSet.html#a7a7e2a25d1cc20a15d5f7ec7faa8f0a7',1,'AudioChannelSet']]],
   ['getcharacter',['getCharacter',['../classPositionedGlyph.html#a489149f9bb1d8f17d4090f860f1ea343',1,'PositionedGlyph::getCharacter()'],['../classCodeDocument_1_1Position.html#af6dab414dcad09f9250700558fc29b66',1,'CodeDocument::Position::getCharacter()']]],
