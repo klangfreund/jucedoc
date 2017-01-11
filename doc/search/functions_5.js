@@ -76,6 +76,7 @@ var searchData=
   ['findfreevoice',['findFreeVoice',['../classMPESynthesiser.html#ab6223425a95b47862081341663686d90',1,'MPESynthesiser::findFreeVoice()'],['../classSynthesiser.html#a77120192430fe61d730d3e41fccdca75',1,'Synthesiser::findFreeVoice()']]],
   ['findglyphindexat',['findGlyphIndexAt',['../classGlyphArrangement.html#aca23d4051cb4934df16f76a128798e01',1,'GlyphArrangement']]],
   ['findgreatestcommondivisor',['findGreatestCommonDivisor',['../classBigInteger.html#a824c6a3e29985ce675474137d6b26b1c',1,'BigInteger']]],
+  ['findhighestsetbit',['findHighestSetBit',['../juce__MathsFunctions_8h.html#a3c92a997b158fd26c45bc4bf46fb36bf',1,'juce_MathsFunctions.h']]],
   ['findimageformatforfileextension',['findImageFormatForFileExtension',['../classImageFileFormat.html#ae8ffab7e17eaf28a09d4248d9dec1a70',1,'ImageFileFormat']]],
   ['findimageformatforstream',['findImageFormatForStream',['../classImageFileFormat.html#a7fcb93b4c52f931ec437674c731c9c04',1,'ImageFileFormat']]],
   ['findindexesintrack',['findIndexesInTrack',['../classAudioCDReader.html#a7136e80e819d1132d755a56167f2b6b4',1,'AudioCDReader']]],

@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classAudioProcessorParameter-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,6 +108,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aef73dff71cb1abfdadd5b6f3649d7db2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">Category</a> { <br/>
+&#160;&#160;<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a9234ba27b392d6c693e647c3c2bed211">generic</a> = (0 &lt;&lt; 16) | 0, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a63cbb830db905388a7a347625739ecfa">inputGain</a> = (1 &lt;&lt; 16) | 0, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2af9f7073b86a4bbff42f8afb5cefcd0e1">outputGain</a> = (1 &lt;&lt; 16) | 1, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2ab0a6f7d8b29c5c25442d47eead44ee32">inputMeter</a> = (2 &lt;&lt; 16) | 0, 
+<br/>
+&#160;&#160;<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a8fa25053a987220c193c4aa19a2659fc">outputMeter</a> = (2 &lt;&lt; 16) | 1, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a23cec5a8cfbc473d139480500345ae42">compressorLimiterGainReductionMeter</a> = (2 &lt;&lt; 16) | 2, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a60a4f91c56eaab4d327f16240702233a">expanderGateGainReductionMeter</a> = (2 &lt;&lt; 16) | 3, 
+<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a4ebe3982218c5ea7dcdcbcfbb70faa1d">analysisMeter</a> = (2 &lt;&lt; 16) | 4, 
+<br/>
+&#160;&#160;<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2aaba169374c989f88c1006291e2576005">otherMeter</a> = (2 &lt;&lt; 16) | 5
+<br/>
+ }</td></tr>
+<tr class="separator:aef73dff71cb1abfdadd5b6f3649d7db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3df493838d2f048ff182fef75f535729"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter.html#a3df493838d2f048ff182fef75f535729">AudioProcessorParameter</a> () noexcept</td></tr>
@@ -156,6 +175,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ed01ae575f42e4bf9cffd76dc43dc4f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter.html#a2ed01ae575f42e4bf9cffd76dc43dc4f">isMetaParameter</a> () const </td></tr>
 <tr class="memdesc:a2ed01ae575f42e4bf9cffd76dc43dc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if this parameter is a "meta" parameter.  <a href="#a2ed01ae575f42e4bf9cffd76dc43dc4f">More...</a><br/></td></tr>
 <tr class="separator:a2ed01ae575f42e4bf9cffd76dc43dc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb651003f0fe12b6c2191e1da2580ff0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">Category</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter.html#adb651003f0fe12b6c2191e1da2580ff0">getCategory</a> () const </td></tr>
+<tr class="memdesc:adb651003f0fe12b6c2191e1da2580ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameter's category.  <a href="#adb651003f0fe12b6c2191e1da2580ff0">More...</a><br/></td></tr>
+<tr class="separator:adb651003f0fe12b6c2191e1da2580ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b9c23ce77721f84bc4686e217d76f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter.html#a35b9c23ce77721f84bc4686e217d76f7">getParameterIndex</a> () const noexcept</td></tr>
 <tr class="memdesc:a35b9c23ce77721f84bc4686e217d76f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of this parameter in its parent processor's parameter list.  <a href="#a35b9c23ce77721f84bc4686e217d76f7">More...</a><br/></td></tr>
 <tr class="separator:a35b9c23ce77721f84bc4686e217d76f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +185,44 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract base class for parameter objects that can be added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing filters or plugins. ">AudioProcessor</a>. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba" title="Adds a parameter to the list. ">AudioProcessor::addParameter</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">AudioProcessorParameter::Category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a9234ba27b392d6c693e647c3c2bed211"></a>generic</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a63cbb830db905388a7a347625739ecfa"></a>inputGain</em>&#160;</td><td class="fielddoc">
+<p>If your parameter is not a meter then you should use this category. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2af9f7073b86a4bbff42f8afb5cefcd0e1"></a>outputGain</em>&#160;</td><td class="fielddoc">
+<p>Currently not used. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2ab0a6f7d8b29c5c25442d47eead44ee32"></a>inputMeter</em>&#160;</td><td class="fielddoc">
+<p>The following categories tell the host that this parameter is a meter level value and therefore read-only. </p>
+<p>Most hosts will display these type of parameters as a meter in the generic view of your plug-in. Pro-Tools will also show the meter in the mixer view. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a8fa25053a987220c193c4aa19a2659fc"></a>outputMeter</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a23cec5a8cfbc473d139480500345ae42"></a>compressorLimiterGainReductionMeter</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a60a4f91c56eaab4d327f16240702233a"></a>expanderGateGainReductionMeter</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2a4ebe3982218c5ea7dcdcbcfbb70faa1d"></a>analysisMeter</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aef73dff71cb1abfdadd5b6f3649d7db2aaba169374c989f88c1006291e2576005"></a>otherMeter</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3df493838d2f048ff182fef75f535729"></a>
 <div class="memitem">
 <div class="memproto">
@@ -569,6 +628,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adb651003f0fe12b6c2191e1da2580ff0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">Category</a> AudioProcessorParameter::getCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the parameter's category. </p>
+
+</div>
+</div>
 <a class="anchor" id="a35b9c23ce77721f84bc4686e217d76f7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +685,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 10 2017 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 11 2017 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

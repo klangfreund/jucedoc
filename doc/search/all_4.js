@@ -100,6 +100,7 @@ var searchData=
   ['exitwrite',['exitWrite',['../classReadWriteLock.html#a3368936be01cf4eb129838230098abe8',1,'ReadWriteLock']]],
   ['expand',['expand',['../classRectangle.html#a2c16260a8af324607ed81ecf4ec09958',1,'Rectangle']]],
   ['expanded',['expanded',['../classRange.html#ac50a21a44f0f91ce99c20e4eb63c0d77',1,'Range::expanded()'],['../classRectangle.html#a36ad43dd58aecee9f6ca3b7060a5d7a8',1,'Rectangle::expanded(ValueType deltaX, ValueType deltaY) const noexcept'],['../classRectangle.html#ab54d0c3048913f34a392bc64719712b6',1,'Rectangle::expanded(ValueType delta) const noexcept']]],
+  ['expandergategainreductionmeter',['expanderGateGainReductionMeter',['../classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a60a4f91c56eaab4d327f16240702233a',1,'AudioProcessorParameter']]],
   ['expandpanelfully',['expandPanelFully',['../classConcertinaPanel.html#a597cebdba709414a2f07ef076ee659b1',1,'ConcertinaPanel']]],
   ['expect',['expect',['../classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131',1,'UnitTest']]],
   ['expectdoesnotthrow',['expectDoesNotThrow',['../juce__UnitTest_8h.html#a108369a73746eca6742100e413ed7e9c',1,'juce_UnitTest.h']]],

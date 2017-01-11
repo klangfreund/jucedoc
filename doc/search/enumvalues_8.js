@@ -20,6 +20,8 @@ var searchData=
   ['indexg',['indexG',['../classPixelARGB.html#a59039374e21c0c2576269f84c13b9c41a9f00e7f7cddc8b6d27053806abb1630a',1,'PixelARGB::indexG()'],['../classPixelRGB.html#af1c1cc31c25d4dee0f61f266271849b8ae889bdfe358ad3b6395e1bf584e198f8',1,'PixelRGB::indexG()']]],
   ['indexr',['indexR',['../classPixelARGB.html#a59039374e21c0c2576269f84c13b9c41a5d38bdd8f5ffaa9917b6fff622ddb23f',1,'PixelARGB::indexR()'],['../classPixelRGB.html#af1c1cc31c25d4dee0f61f266271849b8a2725faa86a75bea4242137ab8b9fb128',1,'PixelRGB::indexR()']]],
   ['infoicon',['InfoIcon',['../classAlertWindow.html#a2582d1f79937cb47a6a3764c7d9bdba3a3a24dd7ddec3b6ec31d320aaa525e43f',1,'AlertWindow']]],
+  ['inputgain',['inputGain',['../classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a63cbb830db905388a7a347625739ecfa',1,'AudioProcessorParameter']]],
+  ['inputmeter',['inputMeter',['../classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2ab0a6f7d8b29c5c25442d47eead44ee32',1,'AudioProcessorParameter']]],
   ['int16be',['int16BE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a5413345207dc9e22a532a3f71cb63ee7',1,'AudioDataConverters']]],
   ['int16le',['int16LE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a243339416b017cdc35a3cb5a6c0ce8b6',1,'AudioDataConverters']]],
   ['int24be',['int24BE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a6d6c4e9b147146368a9e37573f7d3ca9',1,'AudioDataConverters']]],

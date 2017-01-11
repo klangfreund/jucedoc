@@ -3100,22 +3100,22 @@
       <type>int</type>
       <name>roundToIntAccurate</name>
       <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
-      <anchor>a7d50b878ef3d055bfbd7acdeefd14b4f</anchor>
-      <arglist>(const double value) noexcept</arglist>
+      <anchor>af462ba6662a564582b2f904677dad0f4</anchor>
+      <arglist>(double value) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>roundDoubleToInt</name>
       <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
-      <anchor>aa93b4dcb7316e52b5852b6b0109fe216</anchor>
-      <arglist>(const double value) noexcept</arglist>
+      <anchor>ab748fdc96dfb6423e7c1f43743015743</anchor>
+      <arglist>(double value) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>roundFloatToInt</name>
       <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
-      <anchor>abf62a9bf70ca904f80cdc33ee5ab6264</anchor>
-      <arglist>(const float value) noexcept</arglist>
+      <anchor>a1c9a00d378e3a9f86a7ed5b0e3228972</anchor>
+      <arglist>(float value) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -3130,6 +3130,13 @@
       <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
       <anchor>a137419534afee570f5ff25d643c77176</anchor>
       <arglist>(int n) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>findHighestSetBit</name>
+      <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
+      <anchor>a3c92a997b158fd26c45bc4bf46fb36bf</anchor>
+      <arglist>(uint32 n) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -15852,8 +15859,8 @@
       <type></type>
       <name>AudioProcessorParameterWithID</name>
       <anchorfile>classAudioProcessorParameterWithID.html</anchorfile>
-      <anchor>a53c2aae8e2b36a775c04e79822de5302</anchor>
-      <arglist>(const String &amp;parameterID, const String &amp;name, const String &amp;label=String())</arglist>
+      <anchor>a7baa6dd2b9c45900af1da10f3adfaa9d</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, const String &amp;label=String(), Category category=AudioProcessorParameter::generic)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -15925,6 +15932,76 @@
       <anchor>a35b9c23ce77721f84bc4686e217d76f7</anchor>
       <arglist>() const noexcept</arglist>
     </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Category</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>generic</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a9234ba27b392d6c693e647c3c2bed211</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>inputGain</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a63cbb830db905388a7a347625739ecfa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>outputGain</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2af9f7073b86a4bbff42f8afb5cefcd0e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>inputMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2ab0a6f7d8b29c5c25442d47eead44ee32</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>outputMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a8fa25053a987220c193c4aa19a2659fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>compressorLimiterGainReductionMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a23cec5a8cfbc473d139480500345ae42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>expanderGateGainReductionMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a60a4f91c56eaab4d327f16240702233a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>analysisMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a4ebe3982218c5ea7dcdcbcfbb70faa1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>otherMeter</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2aaba169374c989f88c1006291e2576005</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="variable">
       <type>const String</type>
       <name>paramID</name>
@@ -15944,6 +16021,13 @@
       <name>label</name>
       <anchorfile>classAudioProcessorParameterWithID.html</anchorfile>
       <anchor>ac9e5aa7e602b64e78fda51972375579c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const Category</type>
+      <name>category</name>
+      <anchorfile>classAudioProcessorParameterWithID.html</anchorfile>
+      <anchor>afb66a203959ef95de116341ecc2000b9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -16016,8 +16100,8 @@
       <type></type>
       <name>AudioParameterFloat</name>
       <anchorfile>classAudioParameterFloat.html</anchorfile>
-      <anchor>a5c567a8c885ff33b5529d1e2cb8f0ea5</anchor>
-      <arglist>(const String &amp;parameterID, const String &amp;name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue, const String &amp;label=String())</arglist>
+      <anchor>a7bb1898f36bd0cd848950c542bf917a0</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue, const String &amp;label=String(), Category category=AudioProcessorParameter::generic)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -17064,6 +17148,13 @@
       <name>isMetaParameter</name>
       <anchorfile>classAudioProcessor.html</anchorfile>
       <anchor>a525c28ae5c579beaf0008cbf09d490c7</anchor>
+      <arglist>(int parameterIndex) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual AudioProcessorParameter::Category</type>
+      <name>getParameterCategory</name>
+      <anchorfile>classAudioProcessor.html</anchorfile>
+      <anchor>a6abc6da40c846bd5c7a695ab5103ee0b</anchor>
       <arglist>(int parameterIndex) const </arglist>
     </member>
     <member kind="function">
@@ -18614,6 +18705,13 @@
       <anchorfile>classAudioProcessorParameter.html</anchorfile>
       <anchor>a64b02b1c4e81c44520c0ddd60ea67618</anchor>
       <arglist>(const String &amp;text) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Category</type>
+      <name>getCategory</name>
+      <anchorfile>classAudioProcessorParameter.html</anchorfile>
+      <anchor>adb651003f0fe12b6c2191e1da2580ff0</anchor>
+      <arglist>() const </arglist>
     </member>
   </compound>
   <compound kind="class">

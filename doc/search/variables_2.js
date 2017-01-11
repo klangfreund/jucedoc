@@ -3,7 +3,7 @@ var searchData=
   ['cadetblue',['cadetblue',['../classColours.html#af5bca16acd0235fa3c63859465d53f7f',1,'Colours']]],
   ['cancelbutton',['cancelButton',['../classOnlineUnlockForm.html#ae1dc0ebc96b660f2a95b44ad23ed7ebb',1,'OnlineUnlockForm']]],
   ['capstyle',['capStyle',['../classDrawableShape_1_1FillAndStrokeState.html#abab2633ea9f8a934e8507f4881d2aade',1,'DrawableShape::FillAndStrokeState']]],
-  ['category',['category',['../classPluginDescription.html#a744b7d9bd85c5b670905ce6c411fa815',1,'PluginDescription']]],
+  ['category',['category',['../classPluginDescription.html#a744b7d9bd85c5b670905ce6c411fa815',1,'PluginDescription::category()'],['../classAudioProcessorParameterWithID.html#afb66a203959ef95de116341ecc2000b9',1,'AudioProcessorParameterWithID::category()']]],
   ['categoryname',['categoryName',['../structApplicationCommandInfo.html#a38af85def791bf7f344d18ddb6f65f66',1,'ApplicationCommandInfo']]],
   ['changes',['changes',['../classTextDiff.html#af3d45ea829e24a3ab37460646778bf82',1,'TextDiff']]],
   ['channel',['channel',['../structMidiRPNMessage.html#a06144aeca5c4cd011745881564329d16',1,'MidiRPNMessage']]],

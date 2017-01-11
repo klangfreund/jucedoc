@@ -23,6 +23,7 @@ var searchData=
   ['ambisonicx',['ambisonicX',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead4e8c1dc7e9175420e59561e18ee681a',1,'AudioChannelSet']]],
   ['ambisonicy',['ambisonicY',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea34e23dcfaba94768a9854aad5be33626',1,'AudioChannelSet']]],
   ['ambisonicz',['ambisonicZ',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea67ac0e6453be62d3cf5de45ad9a8f245',1,'AudioChannelSet']]],
+  ['analysismeter',['analysisMeter',['../classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2a4ebe3982218c5ea7dcdcbcfbb70faa1d',1,'AudioProcessorParameter']]],
   ['android',['Android',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaaa0089aa962589d46e66ed22556284f5f',1,'SystemStats']]],
   ['appearsoncolumnmenu',['appearsOnColumnMenu',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831ac8737d3f19bf93c607240f6a3035aa4d',1,'TableHeaderComponent']]],
   ['applelogic',['AppleLogic',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a1d085d65da9faf511f3f2ae6335812c8',1,'PluginHostType']]],
