@@ -15859,8 +15859,8 @@
       <type></type>
       <name>AudioProcessorParameterWithID</name>
       <anchorfile>classAudioProcessorParameterWithID.html</anchorfile>
-      <anchor>a7baa6dd2b9c45900af1da10f3adfaa9d</anchor>
-      <arglist>(const String &amp;parameterID, const String &amp;name, const String &amp;label=String(), Category category=AudioProcessorParameter::generic)</arglist>
+      <anchor>adea4c94155fc4a6cef9b64038fa4074d</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, const String &amp;label=String(), Category category=AudioProcessorParameter::genericParameter)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -15941,9 +15941,9 @@
     </member>
     <member kind="enumvalue">
       <type>@</type>
-      <name>generic</name>
+      <name>genericParameter</name>
       <anchorfile>classAudioProcessorParameter.html</anchorfile>
-      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2a9234ba27b392d6c693e647c3c2bed211</anchor>
+      <anchor>aef73dff71cb1abfdadd5b6f3649d7db2ac86017a29081bfb3405d7d5a4ed2c370</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -16100,8 +16100,8 @@
       <type></type>
       <name>AudioParameterFloat</name>
       <anchorfile>classAudioParameterFloat.html</anchorfile>
-      <anchor>a7bb1898f36bd0cd848950c542bf917a0</anchor>
-      <arglist>(const String &amp;parameterID, const String &amp;name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue, const String &amp;label=String(), Category category=AudioProcessorParameter::generic)</arglist>
+      <anchor>a3624f588f8af70eb0d03ce524533850a</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;name, NormalisableRange&lt; float &gt; normalisableRange, float defaultValue, const String &amp;label=String(), Category category=AudioProcessorParameter::genericParameter)</arglist>
     </member>
     <member kind="function">
       <type></type>
