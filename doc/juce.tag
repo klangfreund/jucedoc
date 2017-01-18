@@ -86431,6 +86431,13 @@
       <anchor>a8dc47e68b23530361966dd3daff05b9e</anchor>
       <arglist>() const </arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>juce_iosURLSessionNotify</name>
+      <anchorfile>classURL_1_1DownloadTask.html</anchorfile>
+      <anchor>ab39eab9c0eacb9bdf99bd8c905781a9b</anchor>
+      <arglist>(const String &amp;)</arglist>
+    </member>
     <member kind="function" protection="protected">
       <type></type>
       <name>DownloadTask</name>

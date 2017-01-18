@@ -267,6 +267,7 @@ var searchData=
   ['juce_5finterprocessconnection_2eh',['juce_InterprocessConnection.h',['../juce__InterprocessConnection_8h.html',1,'']]],
   ['juce_5finterprocessconnectionserver_2eh',['juce_InterprocessConnectionServer.h',['../juce__InterprocessConnectionServer_8h.html',1,'']]],
   ['juce_5finterprocesslock_2eh',['juce_InterProcessLock.h',['../juce__InterProcessLock_8h.html',1,'']]],
+  ['juce_5fiosurlsessionnotify',['juce_iosURLSessionNotify',['../classURL_1_1DownloadTask.html#ab39eab9c0eacb9bdf99bd8c905781a9b',1,'URL::DownloadTask']]],
   ['juce_5fipaddress_2eh',['juce_IPAddress.h',['../juce__IPAddress_8h.html',1,'']]],
   ['juce_5fisfinite',['juce_isfinite',['../juce__MathsFunctions_8h.html#a715cf75caf01f50c8bdad7a8a919db3a',1,'juce_isfinite(NumericType) noexcept:&#160;juce_MathsFunctions.h'],['../juce__MathsFunctions_8h.html#a6e2771eca3bab30735064a25b5909d03',1,'juce_isfinite(float value) noexcept:&#160;juce_MathsFunctions.h'],['../juce__MathsFunctions_8h.html#ab2876c74abd3981e46841e94a4b3ae67',1,'juce_isfinite(double value) noexcept:&#160;juce_MathsFunctions.h']]],
   ['juce_5fjavascript_2eh',['juce_Javascript.h',['../juce__Javascript_8h.html',1,'']]],
@@ -583,7 +584,7 @@ var searchData=
   ['juceplugin_5fbuild_5fvst3',['JucePlugin_Build_VST3',['../juce__CheckSettingMacros_8h.html#aefca42b08df10a55158f182e4a468db9',1,'juce_CheckSettingMacros.h']]],
   ['jucevstinterfaceidentifier',['juceVstInterfaceIdentifier',['../juce__VSTInterface_8h.html#aa0141325b2a7d73302b4415761d632fc',1,'juce_VSTInterface.h']]],
   ['jucevstinterfaceversion',['juceVstInterfaceVersion',['../juce__VSTInterface_8h.html#a60c58657ea50f8347da505110bed0475',1,'juce_VSTInterface.h']]],
-  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()']]],
+  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept']]],
   ['justifycontent',['JustifyContent',['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]]
