@@ -17621,8 +17621,8 @@
       <type>bool</type>
       <name>isLayoutSupported</name>
       <anchorfile>classAudioProcessor_1_1Bus.html</anchorfile>
-      <anchor>a725906a908639bea7d342ac3f0a1b800</anchor>
-      <arglist>(const AudioChannelSet &amp;set) const </arglist>
+      <anchor>acb7f2e03141c1d880e131319d7cf6853</anchor>
+      <arglist>(const AudioChannelSet &amp;set, BusesLayout *currentLayout=nullptr) const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
