@@ -10376,8 +10376,8 @@
       <type>void</type>
       <name>setLimits</name>
       <anchorfile>classAnimatedPosition.html</anchorfile>
-      <anchor>a8513e6e68f4c37bbf1eaa6210467e672</anchor>
-      <arglist>(Range&lt; double &gt; newRange)</arglist>
+      <anchor>ab8837ee82f8f478d01c3eb815edb96a2</anchor>
+      <arglist>(Range&lt; double &gt; newRange) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>

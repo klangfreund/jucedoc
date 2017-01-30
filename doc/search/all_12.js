@@ -496,7 +496,7 @@ var searchData=
   ['setlegacymodepitchbendrange',['setLegacyModePitchbendRange',['../classMPEInstrument.html#a6c4f9fd1840122bf9520a504dbfda956',1,'MPEInstrument::setLegacyModePitchbendRange()'],['../structMPESynthesiserBase.html#a9ed7113fa62ec1f9e979b568c6d99893',1,'MPESynthesiserBase::setLegacyModePitchbendRange()']]],
   ['setlength',['setLength',['../classRange.html#a30634e64e7b97081134a96465bb9d1b9',1,'Range']]],
   ['setlightcolour',['setLightColour',['../classControlButton.html#a689a6ffb7468ce794a4af4f7dc2bda9c',1,'ControlButton::setLightColour()'],['../classjuce_1_1ControlButton.html#a3a13183cdd06b052f61eeb9aa4bf1e0a',1,'juce::ControlButton::setLightColour()']]],
-  ['setlimits',['setLimits',['../classAnimatedPosition.html#a8513e6e68f4c37bbf1eaa6210467e672',1,'AnimatedPosition']]],
+  ['setlimits',['setLimits',['../classAnimatedPosition.html#ab8837ee82f8f478d01c3eb815edb96a2',1,'AnimatedPosition']]],
   ['setlineandindex',['setLineAndIndex',['../classCodeDocument_1_1Position.html#a5a8e3e6b17098f0767f8ed46bb597518',1,'CodeDocument::Position']]],
   ['setlinenumbersshown',['setLineNumbersShown',['../classCodeEditorComponent.html#a3408b92d61eac5cab4d14badf4b866d7',1,'CodeEditorComponent']]],
   ['setlinesdrawnforsubitems',['setLinesDrawnForSubItems',['../classTreeViewItem.html#a7d398fd97dcd6566043fd1c1da202233',1,'TreeViewItem']]],
