@@ -121,6 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb8974cb14c05cce7cbf30472dbf5c38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShapeButton.html#adb8974cb14c05cce7cbf30472dbf5c38">setColours</a> (<a class="el" href="classColour.html">Colour</a> normalColour, <a class="el" href="classColour.html">Colour</a> overColour, <a class="el" href="classColour.html">Colour</a> downColour)</td></tr>
 <tr class="memdesc:adb8974cb14c05cce7cbf30472dbf5c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the colours to use for drawing the shape.  <a href="#adb8974cb14c05cce7cbf30472dbf5c38">More...</a><br/></td></tr>
 <tr class="separator:adb8974cb14c05cce7cbf30472dbf5c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23519c6e17dd8ef7818e1a4ce933e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShapeButton.html#aa23519c6e17dd8ef7818e1a4ce933e28">setOnColours</a> (<a class="el" href="classColour.html">Colour</a> normalColourOn, <a class="el" href="classColour.html">Colour</a> overColourOn, <a class="el" href="classColour.html">Colour</a> downColourOn)</td></tr>
+<tr class="memdesc:aa23519c6e17dd8ef7818e1a4ce933e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the colours to use for drawing the shape when the button's toggle state is 'on'.  <a href="#aa23519c6e17dd8ef7818e1a4ce933e28">More...</a><br/></td></tr>
+<tr class="separator:aa23519c6e17dd8ef7818e1a4ce933e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8206acbcd8632ac457d73e2104e3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShapeButton.html#a9a8206acbcd8632ac457d73e2104e3a7">shouldUseOnColours</a> (bool shouldUse)</td></tr>
+<tr class="memdesc:a9a8206acbcd8632ac457d73e2104e3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the button should use the 'on' set of colours when its toggle state is 'on'.  <a href="#a9a8206acbcd8632ac457d73e2104e3a7">More...</a><br/></td></tr>
+<tr class="separator:a9a8206acbcd8632ac457d73e2104e3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc8f721933ecefaec0288af46d9bf6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShapeButton.html#aecc8f721933ecefaec0288af46d9bf6f">setOutline</a> (<a class="el" href="classColour.html">Colour</a> outlineColour, float outlineStrokeWidth)</td></tr>
 <tr class="memdesc:aecc8f721933ecefaec0288af46d9bf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up an outline to draw around the shape.  <a href="#aecc8f721933ecefaec0288af46d9bf6f">More...</a><br/></td></tr>
 <tr class="separator:aecc8f721933ecefaec0288af46d9bf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1017,6 +1023,68 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa23519c6e17dd8ef7818e1a4ce933e28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShapeButton::setOnColours </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>normalColourOn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>overColourOn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>downColourOn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the colours to use for drawing the shape when the button's toggle state is 'on'. </p>
+<p>To enable this behaviour, use the <a class="el" href="classShapeButton.html#a9a8206acbcd8632ac457d73e2104e3a7" title="Set whether the button should use the &#39;on&#39; set of colours when its toggle state is &#39;on&#39;...">shouldUseOnColours()</a> method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalColour</td><td>the colour to fill the shape with when the mouse isn't over and the button's toggle state is 'on' </td></tr>
+    <tr><td class="paramname">overColour</td><td>the colour to use when the mouse is over the shape and the button's toggle state is 'on' </td></tr>
+    <tr><td class="paramname">downColour</td><td>the colour to use when the button is in the pressed-down state and the button's toggle state is 'on' </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a8206acbcd8632ac457d73e2104e3a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShapeButton::shouldUseOnColours </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldUse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether the button should use the 'on' set of colours when its toggle state is 'on'. </p>
+<p>By default these will be the same as the normal colours but the setOnColours method can be used to provide a different set of colours. </p>
+
+</div>
+</div>
 <a class="anchor" id="aecc8f721933ecefaec0288af46d9bf6f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1119,7 +1187,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 30 2017 20:00:43 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 31 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

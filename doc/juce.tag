@@ -74568,6 +74568,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setOnColours</name>
+      <anchorfile>classShapeButton.html</anchorfile>
+      <anchor>aa23519c6e17dd8ef7818e1a4ce933e28</anchor>
+      <arglist>(Colour normalColourOn, Colour overColourOn, Colour downColourOn)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>shouldUseOnColours</name>
+      <anchorfile>classShapeButton.html</anchorfile>
+      <anchor>a9a8206acbcd8632ac457d73e2104e3a7</anchor>
+      <arglist>(bool shouldUse)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setOutline</name>
       <anchorfile>classShapeButton.html</anchorfile>
       <anchor>aecc8f721933ecefaec0288af46d9bf6f</anchor>
