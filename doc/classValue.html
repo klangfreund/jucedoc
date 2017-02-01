@@ -114,9 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad20df25aa8a6b58ae7220abb5abea977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> that is set to the specified value.  <a href="#ad20df25aa8a6b58ae7220abb5abea977">More...</a><br/></td></tr>
 <tr class="separator:ad20df25aa8a6b58ae7220abb5abea977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd791a13f55b8590166c3fa3e4f0885c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#afd791a13f55b8590166c3fa3e4f0885c">Value</a> (<a class="el" href="classValue.html">Value</a> &amp;&amp;) noexcept</td></tr>
+<tr class="memdesc:afd791a13f55b8590166c3fa3e4f0885c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#afd791a13f55b8590166c3fa3e4f0885c">More...</a><br/></td></tr>
 <tr class="separator:afd791a13f55b8590166c3fa3e4f0885c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11ce0363d6dff5ec8911301b4d06f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValue.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#af11ce0363d6dff5ec8911301b4d06f13">operator=</a> (<a class="el" href="classValue.html">Value</a> &amp;&amp;) noexcept</td></tr>
-<tr class="separator:af11ce0363d6dff5ec8911301b4d06f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a578f458da8a4ab67052dba0f7bffdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#a3a578f458da8a4ab67052dba0f7bffdd">~Value</a> ()</td></tr>
 <tr class="memdesc:a3a578f458da8a4ab67052dba0f7bffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3a578f458da8a4ab67052dba0f7bffdd">More...</a><br/></td></tr>
 <tr class="separator:a3a578f458da8a4ab67052dba0f7bffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c968011a1af3dbe03d6f6fa272fa674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValue.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#a9c968011a1af3dbe03d6f6fa272fa674">operator=</a> (const <a class="el" href="classvar.html">var</a> &amp;newValue)</td></tr>
 <tr class="memdesc:a9c968011a1af3dbe03d6f6fa272fa674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current value.  <a href="#a9c968011a1af3dbe03d6f6fa272fa674">More...</a><br/></td></tr>
 <tr class="separator:a9c968011a1af3dbe03d6f6fa272fa674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11ce0363d6dff5ec8911301b4d06f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValue.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#af11ce0363d6dff5ec8911301b4d06f13">operator=</a> (<a class="el" href="classValue.html">Value</a> &amp;&amp;) noexcept</td></tr>
+<tr class="memdesc:af11ce0363d6dff5ec8911301b4d06f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="#af11ce0363d6dff5ec8911301b4d06f13">More...</a><br/></td></tr>
+<tr class="separator:af11ce0363d6dff5ec8911301b4d06f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127b52830b5d62b478224b670d9e78f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue.html#a127b52830b5d62b478224b670d9e78f9">referTo</a> (const <a class="el" href="classValue.html">Value</a> &amp;valueToReferTo)</td></tr>
 <tr class="memdesc:a127b52830b5d62b478224b670d9e78f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this object refer to the same underlying <a class="el" href="classValue_1_1ValueSource.html" title="Used internally by the Value class as the base class for its shared value objects. ">ValueSource</a> as another one.  <a href="#a127b52830b5d62b478224b670d9e78f9">More...</a><br/></td></tr>
 <tr class="separator:a127b52830b5d62b478224b670d9e78f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +253,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Move constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a3a578f458da8a4ab67052dba0f7bffdd"></a>
@@ -297,30 +301,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af11ce0363d6dff5ec8911301b4d06f13"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classValue.html">Value</a>&amp; Value::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classValue.html">Value</a> &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ad7b4a297b144637785322cf398e04ef3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -410,6 +390,32 @@ Public Member Functions</h2></td></tr>
 <p>Sets the current value. </p>
 <p>This is the same as calling <a class="el" href="classValue.html#aad44af687acd1f62ad9231e8ae47059d" title="Sets the current value. ">setValue()</a>.</p>
 <p>If there are any listeners registered, they will be notified of the change asynchronously. </p>
+
+</div>
+</div>
+<a class="anchor" id="af11ce0363d6dff5ec8911301b4d06f13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classValue.html">Value</a>&amp; Value::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classValue.html">Value</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
 
 </div>
 </div>
@@ -559,7 +565,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 31 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 1 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -230,8 +230,6 @@ template&lt;typename SampleFormat , typename Endianness , typename InterleavingT
 <p>Creates a non-interleaved pointer from some raw data in the appropriate format. </p>
 <p>This constructor is only used if you've specified the AudioData::NonInterleaved option - for interleaved formats, use the constructor that also takes a number of channels. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="afb8aabad75cb57853c3df07cfae42b8e"></a>
@@ -383,8 +381,6 @@ template&lt;typename SampleFormat , typename Endianness , typename InterleavingT
 <p>Sets the value of the first sample as a floating point value. </p>
 <p>(This method can only be used if the AudioData::NonConst option was used). The value should be in the range -1.0 to 1.0 - for integer formats, values outside that range will be clipped. For floating point formats, any value passed in here will be written directly, although -1 to 1 is the standard range. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9719e315da69912c0ab7c38d64cb2ca6"></a>
@@ -441,8 +437,6 @@ template&lt;typename SampleFormat , typename Endianness , typename InterleavingT
 
 <p>Sets the value of the first sample as a 32-bit integer. </p>
 <p>This will be mapped to the range of the format that is being written - see <a class="el" href="classAudioData_1_1Pointer.html#a9719e315da69912c0ab7c38d64cb2ca6" title="Returns the value of the first sample as a 32-bit integer. ">getAsInt32()</a>. </p>
-
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>.</p>
 
 </div>
 </div>
@@ -565,8 +559,6 @@ template&lt;typename SampleFormat , typename Endianness , typename InterleavingT
 <p>Writes a stream of samples into this pointer from another pointer. </p>
 <p>This will copy the specified number of samples, converting between formats appropriately. </p>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>.</p>
-
 <p>Referenced by <a class="el" href="structAudioFormatReader_1_1ReadHelper.html#ab1158f4802796adedd47088948930c7d">AudioFormatReader::ReadHelper&lt; DestSampleType, SourceSampleType, SourceEndianness &gt;::read()</a>, and <a class="el" href="structAudioFormatWriter_1_1WriteHelper.html#af9c774c70ec8e459e633be63c049c915">AudioFormatWriter::WriteHelper&lt; DestSampleType, SourceSampleType, DestEndianness &gt;::write()</a>.</p>
 
 </div>
@@ -609,8 +601,6 @@ template&lt;class OtherPointerType &gt; </div>
 
 <p>Writes a stream of samples into this pointer from another pointer. </p>
 <p>This will copy the specified number of samples, converting between formats appropriately. </p>
-
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>.</p>
 
 </div>
 </div>
@@ -917,7 +907,7 @@ template&lt;typename SampleFormat , typename Endianness , typename InterleavingT
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 31 2017 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 1 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

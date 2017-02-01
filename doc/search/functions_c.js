@@ -145,6 +145,7 @@ var searchData=
   ['movetoabsolute',['moveToAbsolute',['../classRelativeCoordinate.html#aeb0b2ff1ac54cb6cd697c9345d579af2',1,'RelativeCoordinate::moveToAbsolute()'],['../classRelativePoint.html#a0ab188ef456819589846e966ce6fdf90',1,'RelativePoint::moveToAbsolute()'],['../classRelativeRectangle.html#af76a1248976d6b6e04d24ae3d93e3654',1,'RelativeRectangle::moveToAbsolute()']]],
   ['movetofrontofqueue',['moveToFrontOfQueue',['../classTimeSliceThread.html#a58c97295da5d454c299b9252a7a0999d',1,'TimeSliceThread']]],
   ['movetotrash',['moveToTrash',['../classFile.html#ad5657b8a600ed241a204656811c9522f',1,'File']]],
+  ['moviecomponent',['MovieComponent',['../classMovieComponent.html#a59470eefa47a4a467a0b79ac4941e26f',1,'MovieComponent']]],
   ['mp3audioformat',['MP3AudioFormat',['../classMP3AudioFormat.html#a886e1c528284a83a2a74974038617441',1,'MP3AudioFormat']]],
   ['mpeinstrument',['MPEInstrument',['../classMPEInstrument.html#aed3c547de933e6e5c2a254bf4dea79f7',1,'MPEInstrument']]],
   ['mpenote',['MPENote',['../structMPENote.html#af1c2cff864c387bedf8ec5c06e5a8660',1,'MPENote::MPENote(int midiChannel, int initialNote, MPEValue velocity, MPEValue pitchbend, MPEValue pressure, MPEValue timbre, KeyState keyState=MPENote::keyDown) noexcept'],['../structMPENote.html#ae7a1417b7ed74b278e1ba3787e24aa59',1,'MPENote::MPENote() noexcept']]],

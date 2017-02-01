@@ -122,9 +122,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a7fab1bb48f05df367f0a57bc6cf3d12f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__PlatformDefs_8h.html#a7fab1bb48f05df367f0a57bc6cf3d12f">JUCE_STRINGIFY</a>(item)&#160;&#160;&#160;JUCE_STRINGIFY_MACRO_HELPER (item)</td></tr>
 <tr class="memdesc:a7fab1bb48f05df367f0a57bc6cf3d12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy C macro for stringifying any symbol, rather than just a macro parameter.  <a href="#a7fab1bb48f05df367f0a57bc6cf3d12f">More...</a><br/></td></tr>
 <tr class="separator:a7fab1bb48f05df367f0a57bc6cf3d12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb872d7ee75ed5bb25589dd175af725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__PlatformDefs_8h.html#a0eb872d7ee75ed5bb25589dd175af725">static_jassert</a>(expression)&#160;&#160;&#160;juce::JuceStaticAssert&lt;expression&gt;::dummy();</td></tr>
-<tr class="memdesc:a0eb872d7ee75ed5bb25589dd175af725"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compile-time assertion macro.  <a href="#a0eb872d7ee75ed5bb25589dd175af725">More...</a><br/></td></tr>
-<tr class="separator:a0eb872d7ee75ed5bb25589dd175af725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab7a603bf4435c7cb286b1744366eb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a>(className)</td></tr>
 <tr class="memdesc:a6ab7a603bf4435c7cb286b1744366eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a shorthand macro for declaring stubs for a class's copy constructor and operator=.  <a href="#a6ab7a603bf4435c7cb286b1744366eb2">More...</a><br/></td></tr>
 <tr class="separator:a6ab7a603bf4435c7cb286b1744366eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,27 +345,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0eb872d7ee75ed5bb25589dd175af725"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define static_jassert</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expression</td><td>)</td>
-          <td>&#160;&#160;&#160;juce::JuceStaticAssert&lt;expression&gt;::dummy();</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A compile-time assertion macro. </p>
-<p>If the expression parameter is false, the macro will cause a compile error. (The actual error message that the compiler generates may be completely bizarre and seem to have no relation to the place where you put the static_assert though!) </p>
-
-<p>Referenced by <a class="el" href="classAudioData_1_1Pointer.html#aed75d8a75052aec8fb0ca7c9cb19dfd2">AudioData::Pointer&lt; SampleFormat, Endianness, InterleavingType, Constness &gt;::convertSamples()</a>, <a class="el" href="classAudioData_1_1Pointer.html#a373fea92c60a62a2e2fe31564928561c">AudioData::Pointer&lt; SampleFormat, Endianness, InterleavingType, Constness &gt;::Pointer()</a>, <a class="el" href="classAudioData_1_1Pointer.html#a8fde1bbe33eee07dc6bb973e765ed9f5">AudioData::Pointer&lt; SampleFormat, Endianness, InterleavingType, Constness &gt;::setAsFloat()</a>, <a class="el" href="classAudioData_1_1Pointer.html#acd19b96f9d16adf4ff8ab6c9dc9b4b04">AudioData::Pointer&lt; SampleFormat, Endianness, InterleavingType, Constness &gt;::setAsInt32()</a>, and <a class="el" href="classAtomic.html#a25b0fe07fad7cfd1cf68bd02d7da2a3f">Atomic&lt; int &gt;::~Atomic()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a6ab7a603bf4435c7cb286b1744366eb2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +360,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">className (<span class="keyword">const</span> className&amp;) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>;\</div>
 <div class="line">    className&amp; operator= (const className&amp;) JUCE_DELETED_FUNCTION;</div>
-<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:159</div></div>
+<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:139</div></div>
 </div><!-- fragment -->
 <p>This is a shorthand macro for declaring stubs for a class's copy constructor and operator=. </p>
 <p>For example, instead of </p>
@@ -422,8 +398,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a>(className) <a class="code" href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">\</a></div>
 <div class="line"><a class="code" href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">    JUCE_LEAK_DETECTOR</a>(className)</div>
-<div class="ttc" id="juce__PlatformDefs_8h_html_a6ab7a603bf4435c7cb286b1744366eb2"><div class="ttname"><a href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define JUCE_DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for declaring stubs for a class&#39;s copy constructor and operator=. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:223</div></div>
-<div class="ttc" id="juce__LeakedObjectDetector_8h_html_ab3639a79598b35f2116f4572af0d93f1"><div class="ttname"><a href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a></div><div class="ttdeci">#define JUCE_LEAK_DETECTOR(OwnerClass)</div><div class="ttdoc">This macro lets you embed a leak-detecting object inside a class. </div><div class="ttdef"><b>Definition:</b> juce_LeakedObjectDetector.h:138</div></div>
+<div class="ttc" id="juce__PlatformDefs_8h_html_a6ab7a603bf4435c7cb286b1744366eb2"><div class="ttname"><a href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define JUCE_DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for declaring stubs for a class&#39;s copy constructor and operator=. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:198</div></div>
+<div class="ttc" id="juce__LeakedObjectDetector_8h_html_ab3639a79598b35f2116f4572af0d93f1"><div class="ttname"><a href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a></div><div class="ttdeci">#define JUCE_LEAK_DETECTOR(OwnerClass)</div><div class="ttdoc">This macro lets you embed a leak-detecting object inside a class. </div><div class="ttdef"><b>Definition:</b> juce_LeakedObjectDetector.h:137</div></div>
 </div><!-- fragment -->
 <p>This is a shorthand way of writing both a JUCE_DECLARE_NON_COPYABLE and JUCE_LEAK_DETECTOR macro for a class. </p>
 
@@ -441,7 +417,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>: \</div>
 <div class="line">    static <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span> (size_t) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>; \</div>
 <div class="line">    static <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span> (<span class="keywordtype">void</span>*) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>;</div>
-<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:159</div></div>
+<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:139</div></div>
 </div><!-- fragment -->
 <p>This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable. </p>
 
@@ -563,7 +539,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 31 2017 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 1 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

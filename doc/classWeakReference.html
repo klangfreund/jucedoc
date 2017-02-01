@@ -121,15 +121,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dd877a29a839b13a046411f5c68f235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a1dd877a29a839b13a046411f5c68f235">WeakReference</a> (const <a class="el" href="classWeakReference.html">WeakReference</a> &amp;other) noexcept</td></tr>
 <tr class="memdesc:a1dd877a29a839b13a046411f5c68f235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of another <a class="el" href="classWeakReference.html" title="This class acts as a pointer which will automatically become null if the object to which it points is...">WeakReference</a>.  <a href="#a1dd877a29a839b13a046411f5c68f235">More...</a><br/></td></tr>
 <tr class="separator:a1dd877a29a839b13a046411f5c68f235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7942f7ee23b8109f9fa591d25db7a810"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a7942f7ee23b8109f9fa591d25db7a810">WeakReference</a> (<a class="el" href="classWeakReference.html">WeakReference</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a7942f7ee23b8109f9fa591d25db7a810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a7942f7ee23b8109f9fa591d25db7a810">More...</a><br/></td></tr>
+<tr class="separator:a7942f7ee23b8109f9fa591d25db7a810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3634e0befe8b0f3d018c40a16ad8886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWeakReference.html">WeakReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#ab3634e0befe8b0f3d018c40a16ad8886">operator=</a> (const <a class="el" href="classWeakReference.html">WeakReference</a> &amp;other)</td></tr>
 <tr class="memdesc:ab3634e0befe8b0f3d018c40a16ad8886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies another pointer to this one.  <a href="#ab3634e0befe8b0f3d018c40a16ad8886">More...</a><br/></td></tr>
 <tr class="separator:ab3634e0befe8b0f3d018c40a16ad8886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2136a1c31a335eac280a8201733e226e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWeakReference.html">WeakReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a2136a1c31a335eac280a8201733e226e">operator=</a> (ObjectType *const newObject)</td></tr>
 <tr class="memdesc:a2136a1c31a335eac280a8201733e226e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies another pointer to this one.  <a href="#a2136a1c31a335eac280a8201733e226e">More...</a><br/></td></tr>
 <tr class="separator:a2136a1c31a335eac280a8201733e226e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7942f7ee23b8109f9fa591d25db7a810"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a7942f7ee23b8109f9fa591d25db7a810">WeakReference</a> (<a class="el" href="classWeakReference.html">WeakReference</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="separator:a7942f7ee23b8109f9fa591d25db7a810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add70a516b5a5d1bb669d4122dd9fab07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWeakReference.html">WeakReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#add70a516b5a5d1bb669d4122dd9fab07">operator=</a> (<a class="el" href="classWeakReference.html">WeakReference</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:add70a516b5a5d1bb669d4122dd9fab07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="#add70a516b5a5d1bb669d4122dd9fab07">More...</a><br/></td></tr>
 <tr class="separator:add70a516b5a5d1bb669d4122dd9fab07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6e75034092864f959ed7a1389b0e98"><td class="memItemLeft" align="right" valign="top">ObjectType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a0c6e75034092864f959ed7a1389b0e98">get</a> () const noexcept</td></tr>
 <tr class="memdesc:a0c6e75034092864f959ed7a1389b0e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object that this pointer refers to, or null if the object no longer exists.  <a href="#a0c6e75034092864f959ed7a1389b0e98">More...</a><br/></td></tr>
@@ -307,6 +309,8 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
 </table>
 </div><div class="memdoc">
 
+<p>Move constructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -373,6 +377,8 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Move assignment operator. </p>
 
 </div>
 </div>
@@ -571,7 +577,7 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 31 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 1 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

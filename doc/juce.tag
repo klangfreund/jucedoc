@@ -3492,6 +3492,12 @@
     <class kind="class">MouseListener</class>
   </compound>
   <compound kind="file">
+    <name>juce_MovieComponent.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
+    <filename>juce__MovieComponent_8h</filename>
+    <class kind="class">MovieComponent</class>
+  </compound>
+  <compound kind="file">
     <name>juce_MP3AudioFormat.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_formats/codecs/</path>
     <filename>juce__MP3AudioFormat_8h</filename>
@@ -3837,26 +3843,12 @@
     <filename>juce__OSCAddress_8h</filename>
     <class kind="class">OSCAddress</class>
     <class kind="class">OSCAddressPattern</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCADDRESS_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>afc09a699096c47024fa4fd8f30479d60</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCArgument.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_osc/osc/</path>
     <filename>juce__OSCArgument_8h</filename>
     <class kind="class">OSCArgument</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCARGUMENT_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>ae0bb09f8d2a05189f78d5322fb180fa4</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCBundle.h</name>
@@ -3864,26 +3856,12 @@
     <filename>juce__OSCBundle_8h</filename>
     <class kind="class">OSCBundle</class>
     <class kind="class">OSCBundle::Element</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCBUNDLE_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>a9971ca7cab0e6049fea4c710c615071f</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCMessage.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_osc/osc/</path>
     <filename>juce__OSCMessage_8h</filename>
     <class kind="class">OSCMessage</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCMESSAGE_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>ad7545b9058aec01ef03408eb248c4ef6</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCReceiver.h</name>
@@ -3894,39 +3872,18 @@
     <class kind="struct">OSCReceiver::RealtimeCallback</class>
     <class kind="class">OSCReceiver::Listener</class>
     <class kind="class">OSCReceiver::ListenerWithOSCAddress</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCRECEIVER_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>ac8023fb9cc110c134146a0f61a258a98</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCSender.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_osc/osc/</path>
     <filename>juce__OSCSender_8h</filename>
     <class kind="class">OSCSender</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCSENDER_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>a8afea664784f908449f25f445819b9ed</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCTimeTag.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_osc/osc/</path>
     <filename>juce__OSCTimeTag_8h</filename>
     <class kind="class">OSCTimeTag</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCTIMETAG_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>a514024b29efcb8a97dc330c9cbe20df1</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_OSCTypes.h</name>
@@ -3936,13 +3893,6 @@
     <class kind="struct">OSCException</class>
     <class kind="struct">OSCFormatError</class>
     <class kind="struct">OSCInternalError</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_OSCTYPE_H_INCLUDED</name>
-      <anchorfile>juce__osc_8h.html</anchorfile>
-      <anchor>a830d13c0a92092d56fe6fe3739bc1562</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>char</type>
       <name>OSCType</name>
@@ -4172,13 +4122,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>static_jassert</name>
-      <anchorfile>juce__PlatformDefs_8h.html</anchorfile>
-      <anchor>a0eb872d7ee75ed5bb25589dd175af725</anchor>
-      <arglist>(expression)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>JUCE_DECLARE_NON_COPYABLE</name>
       <anchorfile>juce__PlatformDefs_8h.html</anchorfile>
       <anchor>a6ab7a603bf4435c7cb286b1744366eb2</anchor>
@@ -4357,12 +4300,6 @@
     <name>juce_QuickTimeAudioFormat.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_formats/codecs/</path>
     <filename>juce__QuickTimeAudioFormat_8h</filename>
-  </compound>
-  <compound kind="file">
-    <name>juce_QuickTimeMovieComponent.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
-    <filename>juce__QuickTimeMovieComponent_8h</filename>
-    <class kind="class">QuickTimeMovieComponent</class>
   </compound>
   <compound kind="file">
     <name>juce_Random.h</name>
@@ -5994,6 +5931,12 @@
     <path>/home/juce/data/res/development/juce/modules/juce_audio_processors/format_types/</path>
     <filename>juce__VST3PluginFormat_8h</filename>
     <class kind="class">VST3PluginFormat</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_VSTCallbackHandler.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/VST/</path>
+    <filename>juce__VSTCallbackHandler_8h</filename>
+    <class kind="struct">VSTCallbackHandler</class>
   </compound>
   <compound kind="file">
     <name>juce_VSTCommon.h</name>
@@ -58800,6 +58743,186 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>MovieComponent</name>
+    <filename>classMovieComponent.html</filename>
+    <base>NSViewComponent</base>
+    <member kind="function">
+      <type></type>
+      <name>MovieComponent</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a59470eefa47a4a467a0b79ac4941e26f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~MovieComponent</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a111d84fb612750554a9def189ed79f8f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>loadMovie</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>adaeca5545e8b9492a535e1d680f1bab4</anchor>
+      <arglist>(const File &amp;file)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>loadMovie</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>aca56105dfbdd8511b9b7962b9ee8f4c1</anchor>
+      <arglist>(const URL &amp;file)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>closeMovie</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>af8e03f9d20fa19e9edd9866818fa97a0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isMovieOpen</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a3f62371eb4dc50ab1127a5909a95b048</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>getCurrentMoviePath</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a65e118ded8fb1115b4a79e58f461a64c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>play</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>acdccbfcaf033545fd489fe4c75eca56a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>af0aa7a095a8e54c65a1f4d6174314faa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getDuration</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>aa89e76f95119d9d1782698f78561e8a6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getPosition</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a5053682a11d1cd1614ee26f884a7f611</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPosition</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>ae0b8d3c7e352c249479e84245e6c8bed</anchor>
+      <arglist>(double seconds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVolume</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>af9f97cc6eefa2616dac30a499e649997</anchor>
+      <arglist>(float newVolume)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getVolume</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>ad3e8f2f4c0ab6dc5c12064f6b3c3dd73</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Rectangle&lt; int &gt;</type>
+      <name>getNativeSize</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>a485c6de29367c7bdb786609b20453f83</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBoundsWithCorrectAspectRatio</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>ac335c88c45687b29f98b3e34eddb5834</anchor>
+      <arglist>(Rectangle&lt; int &gt; spaceToFitWithin, RectanglePlacement placement)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NSViewComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a47f7a2b57ee9175115e1d8c5206e191f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~NSViewComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a8b7861229080258227eba895b5925bac</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a8768c07d38bf12419b1a77cd42625e8e</anchor>
+      <arglist>(void *nsView)</arglist>
+    </member>
+    <member kind="function">
+      <type>void *</type>
+      <name>getView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a45bc5a9f0a80c60342bd0fd93814feb4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resizeToFitView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a3d7466089ae77b3428df1986f89ad949</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paint</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>ac991588b04fb3d201ee6cfd399b412d4</anchor>
+      <arglist>(Graphics &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>alphaChanged</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a6302dbcb95361a82312a1633f5762bbc</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>resized</name>
+      <anchorfile>classMovieComponent.html</anchorfile>
+      <anchor>ab4706cbd3ecac65b4d83f499d34ba487</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ReferenceCountedObject *</type>
+      <name>attachViewToComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a5b009937017986682dea33c7d8f4290c</anchor>
+      <arglist>(Component &amp;, void *)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>MP3AudioFormat</name>
     <filename>classMP3AudioFormat.html</filename>
     <base>AudioFormat</base>
@@ -61051,62 +61174,6 @@
     <name>NSViewComponent</name>
     <filename>classNSViewComponent.html</filename>
     <base>Component</base>
-    <member kind="function">
-      <type></type>
-      <name>NSViewComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a47f7a2b57ee9175115e1d8c5206e191f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~NSViewComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a8b7861229080258227eba895b5925bac</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a8768c07d38bf12419b1a77cd42625e8e</anchor>
-      <arglist>(void *nsView)</arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>getView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a45bc5a9f0a80c60342bd0fd93814feb4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>resizeToFitView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a3d7466089ae77b3428df1986f89ad949</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>paint</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>ac991588b04fb3d201ee6cfd399b412d4</anchor>
-      <arglist>(Graphics &amp;) override</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>alphaChanged</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a6302dbcb95361a82312a1633f5762bbc</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static ReferenceCountedObject *</type>
-      <name>attachViewToComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a5b009937017986682dea33c7d8f4290c</anchor>
-      <arglist>(Component &amp;, void *)</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>OggVorbisAudioFormat</name>
@@ -68801,185 +68868,6 @@
       <anchorfile>classQuaternion.html</anchorfile>
       <anchor>adfe519277223a4cb9321dc7f0d3b5cca</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>QuickTimeMovieComponent</name>
-    <filename>classQuickTimeMovieComponent.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>QuickTimeMovieComponent</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>affdb8f0235f6256d8330c4d336818ea7</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~QuickTimeMovieComponent</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>ad9544fe017c34bf3f8c57b8b17bcd5f6</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>af5ad86dd1c238eba1b350f849dddd297</anchor>
-      <arglist>(const File &amp;movieFile, bool isControllerVisible)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a7d9e0e14943e239e941506b62e85b412</anchor>
-      <arglist>(const URL &amp;movieURL, bool isControllerVisible)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>ae322fa999f66f292cfdc820675cec6a1</anchor>
-      <arglist>(InputStream *movieStream, bool isControllerVisible)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>closeMovie</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a2c5b3eb61e7b700e776f7751142404d3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>File</type>
-      <name>getCurrentMovieFile</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a9243b52372b7737130e42fb7193516ec</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isMovieOpen</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a6c02b21654dfb79d4caa475a0cba2bf5</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getMovieDuration</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>ad0e80d03d8f81bc749c5fb2725b48df0</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>getMovieNormalSize</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a48b1a2bca7e10f365096933eb392f25b</anchor>
-      <arglist>(int &amp;width, int &amp;height) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setBoundsWithCorrectAspectRatio</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a8f628426e1fec2b61db66aa1d649bca8</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;spaceToFitWithin, RectanglePlacement placement)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>play</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a414a24a5fc5ceb0316a5f0a4db4949c2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>stop</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a72c16a9fa545bfbb6f6a1b91aa42397b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isPlaying</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a5a4d08fb8a56f446ef12208f43bad432</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>goToStart</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>adc3f68a11f3443403a1b7ae33d0e9dc6</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>aa00c45eb934fc6606314039475742d2f</anchor>
-      <arglist>(double seconds)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getPosition</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a59488ced8277c90b53c0e66061ba9bb7</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setSpeed</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a270f3d77ddf38d0d913b00e5e01bd08f</anchor>
-      <arglist>(float newSpeed)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setMovieVolume</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a205e05453c0231a6c7cadfe543e8a634</anchor>
-      <arglist>(float newVolume)</arglist>
-    </member>
-    <member kind="function">
-      <type>float</type>
-      <name>getMovieVolume</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a3d6f4e0f46be3c4aad6812a075e7a140</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setLooping</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>ae2f15e35b4bb67a08f6bb15531618dd1</anchor>
-      <arglist>(bool shouldLoop)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isLooping</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>ae0045796fb46b2c8b771638274c37925</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isControllerVisible</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a9c03bfcb38de3e4aae653f0b9f193b9f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>paint</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>adc9238a7a7c5da368b2f8cfb24cc2fad</anchor>
-      <arglist>(Graphics &amp;) override</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isQuickTimeAvailable</name>
-      <anchorfile>classQuickTimeMovieComponent.html</anchorfile>
-      <anchor>a4ca312e8d39b325fc3b5a66b3ffdf46a</anchor>
-      <arglist>() noexcept</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -86663,13 +86551,6 @@
       <arglist>(Value &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>Value &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classValue.html</anchorfile>
-      <anchor>af11ce0363d6dff5ec8911301b4d06f13</anchor>
-      <arglist>(Value &amp;&amp;) noexcept</arglist>
-    </member>
-    <member kind="function">
       <type></type>
       <name>~Value</name>
       <anchorfile>classValue.html</anchorfile>
@@ -86710,6 +86591,13 @@
       <anchorfile>classValue.html</anchorfile>
       <anchor>a9c968011a1af3dbe03d6f6fa272fa674</anchor>
       <arglist>(const var &amp;newValue)</arglist>
+    </member>
+    <member kind="function">
+      <type>Value &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classValue.html</anchorfile>
+      <anchor>af11ce0363d6dff5ec8911301b4d06f13</anchor>
+      <arglist>(Value &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -88654,6 +88542,24 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VSTCallbackHandler</name>
+    <filename>structVSTCallbackHandler.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~VSTCallbackHandler</name>
+      <anchorfile>structVSTCallbackHandler.html</anchorfile>
+      <anchor>ab2f08ebccc2b993da57a1f5e819814d4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual pointer_sized_int</type>
+      <name>handleVstManufacturerSpecific</name>
+      <anchorfile>structVSTCallbackHandler.html</anchorfile>
+      <anchor>a7158d63b0c27896792191d1598a740d5</anchor>
+      <arglist>(int32 index, pointer_sized_int value, void *ptr, float opt)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VstEditorBounds</name>
     <filename>structVstEditorBounds.html</filename>
     <member kind="variable">
@@ -90386,6 +90292,13 @@
       <arglist>(const WeakReference &amp;other) noexcept</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>WeakReference</name>
+      <anchorfile>classWeakReference.html</anchorfile>
+      <anchor>a7942f7ee23b8109f9fa591d25db7a810</anchor>
+      <arglist>(WeakReference &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>WeakReference &amp;</type>
       <name>operator=</name>
       <anchorfile>classWeakReference.html</anchorfile>
@@ -90398,13 +90311,6 @@
       <anchorfile>classWeakReference.html</anchorfile>
       <anchor>a2136a1c31a335eac280a8201733e226e</anchor>
       <arglist>(ObjectType *const newObject)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>WeakReference</name>
-      <anchorfile>classWeakReference.html</anchorfile>
-      <anchor>a7942f7ee23b8109f9fa591d25db7a810</anchor>
-      <arglist>(WeakReference &amp;&amp;other) noexcept</arglist>
     </member>
     <member kind="function">
       <type>WeakReference &amp;</type>
@@ -91226,17 +91132,17 @@
       <arglist>(const XmlElement &amp;)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>XmlElement</name>
-      <anchorfile>classXmlElement.html</anchorfile>
-      <anchor>ac23c46e9d48743726322323d03a768a4</anchor>
-      <arglist>(XmlElement &amp;&amp;) noexcept</arglist>
-    </member>
-    <member kind="function">
       <type>XmlElement &amp;</type>
       <name>operator=</name>
       <anchorfile>classXmlElement.html</anchorfile>
       <anchor>a7ab771486a0d289bdcd93798a6b87f0c</anchor>
+      <arglist>(XmlElement &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>XmlElement</name>
+      <anchorfile>classXmlElement.html</anchorfile>
+      <anchor>ac23c46e9d48743726322323d03a768a4</anchor>
       <arglist>(XmlElement &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
@@ -96606,6 +96512,7 @@
     <dir>RTAS</dir>
     <dir>Standalone</dir>
     <dir>utility</dir>
+    <dir>VST</dir>
   </compound>
   <compound kind="dir">
     <name>juce_audio_processors</name>
@@ -97039,7 +96946,7 @@
     <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
     <filename>dir_24d5b5e63cdfae66768b16561bf4f7b0.html</filename>
     <file>juce_DirectShowComponent.h</file>
-    <file>juce_QuickTimeMovieComponent.h</file>
+    <file>juce_MovieComponent.h</file>
   </compound>
   <compound kind="dir">
     <name>players</name>
@@ -97300,6 +97207,12 @@
     <filename>dir_f2aaf6d5eaf323a11a355f92ec5a9870.html</filename>
     <file>juce_BitmapLEDProgram.h</file>
     <file>juce_DrumPadLEDProgram.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>VST</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/VST/</path>
+    <filename>dir_1892623e42c4dfc824ebd88711468935.html</filename>
+    <file>juce_VSTCallbackHandler.h</file>
   </compound>
   <compound kind="dir">
     <name>widgets</name>
