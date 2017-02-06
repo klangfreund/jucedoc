@@ -77580,6 +77580,13 @@
     </member>
     <member kind="function">
       <type>String</type>
+      <name>replaceFirstOccurrenceOf</name>
+      <anchorfile>classString.html</anchorfile>
+      <anchor>a51bab0703c84aed277bc806a6b818cf8</anchor>
+      <arglist>(StringRef stringToReplace, StringRef stringToInsertInstead, bool ignoreCase=false) const </arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
       <name>replaceCharacter</name>
       <anchorfile>classString.html</anchorfile>
       <anchor>a9ea2aecb5316d2777e7911dae3c74d01</anchor>

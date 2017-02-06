@@ -211,6 +211,7 @@ var searchData=
   ['replacechildelement',['replaceChildElement',['../classXmlElement.html#a37bfa0575b47295b7d689369e4982310',1,'XmlElement']]],
   ['replacecolour',['replaceColour',['../classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2',1,'Drawable::replaceColour()'],['../classDrawableShape.html#a0b99604d0b25dac36aaf17c51a631450',1,'DrawableShape::replaceColour()']]],
   ['replacefilein',['replaceFileIn',['../classFile.html#a67ddffd6b845882e490a4fc63fdb2b60',1,'File']]],
+  ['replacefirstoccurrenceof',['replaceFirstOccurrenceOf',['../classString.html#a51bab0703c84aed277bc806a6b818cf8',1,'String']]],
   ['replacemetadatainfile',['replaceMetadataInFile',['../classWavAudioFormat.html#a1f6a333b084402d486af76d518971160',1,'WavAudioFormat']]],
   ['replacenext',['replaceNext',['../classLinkedListPointer.html#a52ef66e128a22c2f2f89b2090320312d',1,'LinkedListPointer']]],
   ['replacesection',['replaceSection',['../classString.html#ad31328c3ca7f43bae6c32fc59ff7b118',1,'String::replaceSection()'],['../classCodeDocument.html#ae6ec45481f08161ffcb222eafba21c32',1,'CodeDocument::replaceSection()']]],
