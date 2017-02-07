@@ -69,7 +69,7 @@ var searchData=
   ['loadpathfromdata',['loadPathFromData',['../classPath.html#a1f89b06ebcaac3150d8e6a1483ce1e28',1,'Path']]],
   ['loadpathfromstream',['loadPathFromStream',['../classPath.html#a00e0e38020c035feb29e498a0ab93433',1,'Path']]],
   ['loadthumb',['loadThumb',['../classAudioThumbnailCache.html#a0c02c3ed2e7868c20e9d77c16915d818',1,'AudioThumbnailCache']]],
-  ['local',['local',['../classIPAddress.html#aefebd293079518fb114bc38168e704eb',1,'IPAddress']]],
+  ['local',['local',['../classIPAddress.html#ad66c4a32144c7dd4ccb8d21e10e19472',1,'IPAddress']]],
   ['localareatoglobal',['localAreaToGlobal',['../classComponent.html#a9ad906ec22da2091eed7b65b21dc4ee9',1,'Component']]],
   ['localisedstrings',['LocalisedStrings',['../classLocalisedStrings.html#afaa3a94f9ca94eb11b519f734e2adc08',1,'LocalisedStrings::LocalisedStrings(const String &amp;fileContents, bool ignoreCaseOfKeys)'],['../classLocalisedStrings.html#a7227cbea1f200fe77615c6a39bd3a2f8',1,'LocalisedStrings::LocalisedStrings(const File &amp;fileToLoad, bool ignoreCaseOfKeys)'],['../classLocalisedStrings.html#a781d562968f3cc492816751d7b91bdfe',1,'LocalisedStrings::LocalisedStrings(const LocalisedStrings &amp;)']]],
   ['localpointtoglobal',['localPointToGlobal',['../classComponent.html#a275a896a2d25a6eb1624ba33345ab2cb',1,'Component::localPointToGlobal(Point&lt; int &gt; localPoint) const '],['../classComponent.html#aaec6ae5420b38f9ea7448a1b015d78c5',1,'Component::localPointToGlobal(Point&lt; float &gt; localPoint) const ']]],

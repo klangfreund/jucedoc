@@ -42,6 +42,7 @@ var searchData=
   ['ishighlighted',['isHighlighted',['../structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html#a7f442332239058eabeaeaa73be17889a',1,'AudioProcessorEditor::ParameterControlHighlightInfo']]],
   ['isinertial',['isInertial',['../structMouseWheelDetails.html#ada4d5e78fddeb6054a17c0b6851043e1',1,'MouseWheelDetails']]],
   ['isinstrument',['isInstrument',['../classPluginDescription.html#ada0d12fe7d191f7cd315721f7b965720',1,'PluginDescription']]],
+  ['isipv6',['isIPv6',['../classIPAddress.html#a06b9fe2fa973d89d0e91137fa7cc8f94',1,'IPAddress']]],
   ['iskeydown',['isKeyDown',['../structApplicationCommandTarget_1_1InvocationInfo.html#a40f339e15279d78b003e3598f11c1424',1,'ApplicationCommandTarget::InvocationInfo']]],
   ['islooping',['isLooping',['../structAudioPlayHead_1_1CurrentPositionInfo.html#a69d7734277c893a624b2ea7392cb96e5',1,'AudioPlayHead::CurrentPositionInfo']]],
   ['ismain',['isMain',['../structDesktop_1_1Displays_1_1Display.html#a392d751b64069c4b4a212e2f07f1766a',1,'Desktop::Displays::Display']]],

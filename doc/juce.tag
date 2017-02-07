@@ -46417,15 +46417,22 @@
       <type></type>
       <name>IPAddress</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>a2f15d848ea64039776a92a4bb47f8b58</anchor>
-      <arglist>() noexcept</arglist>
+      <anchor>acf18c22125de7729d909ada993e17635</anchor>
+      <arglist>(bool IPv6=false) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>IPAddress</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>a046ed294442cb46b474809ed293265cd</anchor>
-      <arglist>(const uint8 bytes[4]) noexcept</arglist>
+      <anchor>a2c9421007e1e61475e7f29e839230b4e</anchor>
+      <arglist>(const uint8 bytes[], bool IPv6=false) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IPAddress</name>
+      <anchorfile>classIPAddress.html</anchorfile>
+      <anchor>aa4cb0b9e75cf4d8b795e71c366e25aef</anchor>
+      <arglist>(const uint16 bytes[8]) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -46433,6 +46440,13 @@
       <anchorfile>classIPAddress.html</anchorfile>
       <anchor>ac61fbc4181689f99b34fdf24db4e8662</anchor>
       <arglist>(uint8 address1, uint8 address2, uint8 address3, uint8 address4) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IPAddress</name>
+      <anchorfile>classIPAddress.html</anchorfile>
+      <anchor>a16f75c483d702e4309219974a56028b5</anchor>
+      <arglist>(uint16 address1, uint16 address2, uint16 address3, uint16 address4, uint16 address5, uint16 address6, uint16 address7, uint16 address8) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -46473,15 +46487,15 @@
       <type>static void</type>
       <name>findAllAddresses</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>a2424aa8366d381e689ddb22e716f8960</anchor>
-      <arglist>(Array&lt; IPAddress &gt; &amp;results)</arglist>
+      <anchor>a1c887efc3893fdf2baaab7199578f217</anchor>
+      <arglist>(Array&lt; IPAddress &gt; &amp;results, bool includeIPv6=false)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static IPAddress</type>
       <name>any</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>adfe301fcef4a8885751985ff8611b261</anchor>
-      <arglist>() noexcept</arglist>
+      <anchor>a5b84e8520c49431dc06368c36ad100d3</anchor>
+      <arglist>(bool IPv6=false) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static IPAddress</type>
@@ -46494,15 +46508,29 @@
       <type>static IPAddress</type>
       <name>local</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>aefebd293079518fb114bc38168e704eb</anchor>
-      <arglist>() noexcept</arglist>
+      <anchor>ad66c4a32144c7dd4ccb8d21e10e19472</anchor>
+      <arglist>(bool IPv6=false) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String</type>
+      <name>getFormattedAddress</name>
+      <anchorfile>classIPAddress.html</anchorfile>
+      <anchor>aa2fd467911c3e65627ee2d6b488cc8d7</anchor>
+      <arglist>(const String &amp;unformattedAddress)</arglist>
     </member>
     <member kind="variable">
       <type>uint8</type>
       <name>address</name>
       <anchorfile>classIPAddress.html</anchorfile>
-      <anchor>a14ff93e796120bfa945a37ba125fe91e</anchor>
-      <arglist>[4]</arglist>
+      <anchor>a2be5eab7b1b7d2e39d8d5367642f3004</anchor>
+      <arglist>[16]</arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isIPv6</name>
+      <anchorfile>classIPAddress.html</anchorfile>
+      <anchor>a06b9fe2fa973d89d0e91137fa7cc8f94</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">

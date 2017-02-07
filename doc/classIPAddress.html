@@ -91,28 +91,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>An IPV4 address.  
+<p>Represents an IP address.  
  <a href="classIPAddress.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f15d848ea64039776a92a4bb47f8b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a2f15d848ea64039776a92a4bb47f8b58">IPAddress</a> () noexcept</td></tr>
-<tr class="memdesc:a2f15d848ea64039776a92a4bb47f8b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a null address (0.0.0.0).  <a href="#a2f15d848ea64039776a92a4bb47f8b58">More...</a><br/></td></tr>
-<tr class="separator:a2f15d848ea64039776a92a4bb47f8b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a046ed294442cb46b474809ed293265cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a046ed294442cb46b474809ed293265cd">IPAddress</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> bytes[4]) noexcept</td></tr>
-<tr class="memdesc:a046ed294442cb46b474809ed293265cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an address from 4 bytes.  <a href="#a046ed294442cb46b474809ed293265cd">More...</a><br/></td></tr>
-<tr class="separator:a046ed294442cb46b474809ed293265cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf18c22125de7729d909ada993e17635"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#acf18c22125de7729d909ada993e17635">IPAddress</a> (bool IPv6=false) noexcept</td></tr>
+<tr class="memdesc:acf18c22125de7729d909ada993e17635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a null address - 0.0.0.0 (IPv4) or ::, (IPv6)  <a href="#acf18c22125de7729d909ada993e17635">More...</a><br/></td></tr>
+<tr class="separator:acf18c22125de7729d909ada993e17635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9421007e1e61475e7f29e839230b4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a2c9421007e1e61475e7f29e839230b4e">IPAddress</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> bytes[], bool IPv6=false) noexcept</td></tr>
+<tr class="memdesc:a2c9421007e1e61475e7f29e839230b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPv4 or IPv6 address by reading 4 or 16 bytes from an array.  <a href="#a2c9421007e1e61475e7f29e839230b4e">More...</a><br/></td></tr>
+<tr class="separator:a2c9421007e1e61475e7f29e839230b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cb0b9e75cf4d8b795e71c366e25aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa4cb0b9e75cf4d8b795e71c366e25aef">IPAddress</a> (const <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> bytes[8]) noexcept</td></tr>
+<tr class="memdesc:aa4cb0b9e75cf4d8b795e71c366e25aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPv6 address from an array of 8 16-bit integers.  <a href="#aa4cb0b9e75cf4d8b795e71c366e25aef">More...</a><br/></td></tr>
+<tr class="separator:aa4cb0b9e75cf4d8b795e71c366e25aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61fbc4181689f99b34fdf24db4e8662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#ac61fbc4181689f99b34fdf24db4e8662">IPAddress</a> (<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> address1, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> address2, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> address3, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> address4) noexcept</td></tr>
-<tr class="memdesc:ac61fbc4181689f99b34fdf24db4e8662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an address from 4 bytes.  <a href="#ac61fbc4181689f99b34fdf24db4e8662">More...</a><br/></td></tr>
+<tr class="memdesc:ac61fbc4181689f99b34fdf24db4e8662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPv4 address from 4 bytes.  <a href="#ac61fbc4181689f99b34fdf24db4e8662">More...</a><br/></td></tr>
 <tr class="separator:ac61fbc4181689f99b34fdf24db4e8662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f75c483d702e4309219974a56028b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a16f75c483d702e4309219974a56028b5">IPAddress</a> (<a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address1, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address2, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address3, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address4, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address5, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address6, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address7, <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> address8) noexcept</td></tr>
+<tr class="memdesc:a16f75c483d702e4309219974a56028b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPv6 address from 8 16-bit integers.  <a href="#a16f75c483d702e4309219974a56028b5">More...</a><br/></td></tr>
+<tr class="separator:a16f75c483d702e4309219974a56028b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07673bc6d15ec31efd76f53fef2b0cbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a07673bc6d15ec31efd76f53fef2b0cbe">IPAddress</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> asNativeEndian32Bit) noexcept</td></tr>
-<tr class="memdesc:a07673bc6d15ec31efd76f53fef2b0cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an address from a packed 32-bit integer, where the MSB is the first number in the address, and the LSB is the last.  <a href="#a07673bc6d15ec31efd76f53fef2b0cbe">More...</a><br/></td></tr>
+<tr class="memdesc:a07673bc6d15ec31efd76f53fef2b0cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPv4 address from a packed 32-bit integer, where the MSB is the first number in the address, and the LSB is the last.  <a href="#a07673bc6d15ec31efd76f53fef2b0cbe">More...</a><br/></td></tr>
 <tr class="separator:a07673bc6d15ec31efd76f53fef2b0cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa9e8ce01e8530d0f5fb53b6b8a433925">IPAddress</a> (const <a class="el" href="classString.html">String</a> &amp;<a class="el" href="classIPAddress.html#a14ff93e796120bfa945a37ba125fe91e">address</a>)</td></tr>
-<tr class="memdesc:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string IP address of the form "a.b.c.d".  <a href="#aa9e8ce01e8530d0f5fb53b6b8a433925">More...</a><br/></td></tr>
+<tr class="memitem:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa9e8ce01e8530d0f5fb53b6b8a433925">IPAddress</a> (const <a class="el" href="classString.html">String</a> &amp;<a class="el" href="classIPAddress.html#a2be5eab7b1b7d2e39d8d5367642f3004">address</a>)</td></tr>
+<tr class="memdesc:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string IP address of the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6).  <a href="#aa9e8ce01e8530d0f5fb53b6b8a433925">More...</a><br/></td></tr>
 <tr class="separator:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3287fa0e563f2a8ee199e11913bc008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa3287fa0e563f2a8ee199e11913bc008">toString</a> () const </td></tr>
-<tr class="memdesc:aa3287fa0e563f2a8ee199e11913bc008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a dot-separated string in the form "1.2.3.4".  <a href="#aa3287fa0e563f2a8ee199e11913bc008">More...</a><br/></td></tr>
+<tr class="memdesc:aa3287fa0e563f2a8ee199e11913bc008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a dot- or colon-separated string in the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6).  <a href="#aa3287fa0e563f2a8ee199e11913bc008">More...</a><br/></td></tr>
 <tr class="separator:aa3287fa0e563f2a8ee199e11913bc008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4289b6bb4f0ae08f2223128a726a4c5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a4289b6bb4f0ae08f2223128a726a4c5c">operator==</a> (const <a class="el" href="classIPAddress.html">IPAddress</a> &amp;other) const noexcept</td></tr>
 <tr class="separator:a4289b6bb4f0ae08f2223128a726a4c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,29 +127,34 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2424aa8366d381e689ddb22e716f8960"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a2424aa8366d381e689ddb22e716f8960">findAllAddresses</a> (<a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classIPAddress.html">IPAddress</a> &gt; &amp;results)</td></tr>
-<tr class="memdesc:a2424aa8366d381e689ddb22e716f8960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates a list of all the IP addresses that this machine is using.  <a href="#a2424aa8366d381e689ddb22e716f8960">More...</a><br/></td></tr>
-<tr class="separator:a2424aa8366d381e689ddb22e716f8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfe301fcef4a8885751985ff8611b261"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#adfe301fcef4a8885751985ff8611b261">any</a> () noexcept</td></tr>
-<tr class="memdesc:adfe301fcef4a8885751985ff8611b261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an address meaning "any" (0.0.0.0)  <a href="#adfe301fcef4a8885751985ff8611b261">More...</a><br/></td></tr>
-<tr class="separator:adfe301fcef4a8885751985ff8611b261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c887efc3893fdf2baaab7199578f217"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a1c887efc3893fdf2baaab7199578f217">findAllAddresses</a> (<a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classIPAddress.html">IPAddress</a> &gt; &amp;results, bool includeIPv6=false)</td></tr>
+<tr class="memdesc:a1c887efc3893fdf2baaab7199578f217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates a list of all the IP addresses that this machine is using.  <a href="#a1c887efc3893fdf2baaab7199578f217">More...</a><br/></td></tr>
+<tr class="separator:a1c887efc3893fdf2baaab7199578f217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b84e8520c49431dc06368c36ad100d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a5b84e8520c49431dc06368c36ad100d3">any</a> (bool IPv6=false) noexcept</td></tr>
+<tr class="memdesc:a5b84e8520c49431dc06368c36ad100d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an IPv4 or IPv6 address meaning "any", equivalent to 0.0.0.0 (IPv4) or ::, (IPv6)  <a href="#a5b84e8520c49431dc06368c36ad100d3">More...</a><br/></td></tr>
+<tr class="separator:a5b84e8520c49431dc06368c36ad100d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac219a18652ad5a4b39d76c401bcd0bc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aac219a18652ad5a4b39d76c401bcd0bc">broadcast</a> () noexcept</td></tr>
-<tr class="memdesc:aac219a18652ad5a4b39d76c401bcd0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an address meaning "broadcast" (255.255.255.255)  <a href="#aac219a18652ad5a4b39d76c401bcd0bc">More...</a><br/></td></tr>
+<tr class="memdesc:aac219a18652ad5a4b39d76c401bcd0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an IPv4 address meaning "broadcast" (255.255.255.255)  <a href="#aac219a18652ad5a4b39d76c401bcd0bc">More...</a><br/></td></tr>
 <tr class="separator:aac219a18652ad5a4b39d76c401bcd0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefebd293079518fb114bc38168e704eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aefebd293079518fb114bc38168e704eb">local</a> () noexcept</td></tr>
-<tr class="memdesc:aefebd293079518fb114bc38168e704eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an address meaning "localhost" (127.0.0.1)  <a href="#aefebd293079518fb114bc38168e704eb">More...</a><br/></td></tr>
-<tr class="separator:aefebd293079518fb114bc38168e704eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66c4a32144c7dd4ccb8d21e10e19472"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#ad66c4a32144c7dd4ccb8d21e10e19472">local</a> (bool IPv6=false) noexcept</td></tr>
+<tr class="memdesc:ad66c4a32144c7dd4ccb8d21e10e19472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an IPv4 or IPv6 address meaning "localhost", equivalent to 127.0.0.1 (IPv4) or ::1 (IPv6)  <a href="#ad66c4a32144c7dd4ccb8d21e10e19472">More...</a><br/></td></tr>
+<tr class="separator:ad66c4a32144c7dd4ccb8d21e10e19472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fd467911c3e65627ee2d6b488cc8d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa2fd467911c3e65627ee2d6b488cc8d7">getFormattedAddress</a> (const <a class="el" href="classString.html">String</a> &amp;unformattedAddress)</td></tr>
+<tr class="memdesc:aa2fd467911c3e65627ee2d6b488cc8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted version of the provided IPv6 address conforming to RFC 5952 with leading zeros suppressed, lower case characters, and double-colon notation used to represent contiguous 16-bit fields of zeros.  <a href="#aa2fd467911c3e65627ee2d6b488cc8d7">More...</a><br/></td></tr>
+<tr class="separator:aa2fd467911c3e65627ee2d6b488cc8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a14ff93e796120bfa945a37ba125fe91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a14ff93e796120bfa945a37ba125fe91e">address</a> [4]</td></tr>
-<tr class="memdesc:a14ff93e796120bfa945a37ba125fe91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The elements of the IP address.  <a href="#a14ff93e796120bfa945a37ba125fe91e">More...</a><br/></td></tr>
-<tr class="separator:a14ff93e796120bfa945a37ba125fe91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be5eab7b1b7d2e39d8d5367642f3004"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a2be5eab7b1b7d2e39d8d5367642f3004">address</a> [16]</td></tr>
+<tr class="memdesc:a2be5eab7b1b7d2e39d8d5367642f3004"><td class="mdescLeft">&#160;</td><td class="mdescRight">The elements of the IP address.  <a href="#a2be5eab7b1b7d2e39d8d5367642f3004">More...</a><br/></td></tr>
+<tr class="separator:a2be5eab7b1b7d2e39d8d5367642f3004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b9fe2fa973d89d0e91137fa7cc8f94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a06b9fe2fa973d89d0e91137fa7cc8f94">isIPv6</a></td></tr>
+<tr class="separator:a06b9fe2fa973d89d0e91137fa7cc8f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An IPV4 address. </p>
+<div class="textblock"><p>Represents an IP address. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2f15d848ea64039776a92a4bb47f8b58"></a>
+<a class="anchor" id="acf18c22125de7729d909ada993e17635"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -153,7 +164,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">IPAddress::IPAddress </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IPv6</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -164,11 +176,17 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a null address (0.0.0.0). </p>
+<p>Creates a null address - 0.0.0.0 (IPv4) or ::, (IPv6) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">IPv6</td><td>if true indicates that this is an IPv6 address </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a046ed294442cb46b474809ed293265cd"></a>
+<a class="anchor" id="a2c9421007e1e61475e7f29e839230b4e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -179,7 +197,49 @@ Public Attributes</h2></td></tr>
           <td class="memname">IPAddress::IPAddress </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
-          <td class="paramname"><em>bytes</em>[4]</td><td>)</td>
+          <td class="paramname"><em>bytes</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IPv6</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an IPv4 or IPv6 address by reading 4 or 16 bytes from an array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">IPv6</td><td>if true indicates that 16 bytes should be read instead of 4. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa4cb0b9e75cf4d8b795e71c366e25aef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>bytes</em>[8]</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -190,7 +250,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an address from 4 bytes. </p>
+<p>Creates an IPv6 address from an array of 8 16-bit integers. </p>
 
 </div>
 </div>
@@ -238,7 +298,79 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an address from 4 bytes. </p>
+<p>Creates an IPv4 address from 4 bytes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a16f75c483d702e4309219974a56028b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address7</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td>
+          <td class="paramname"><em>address8</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an IPv6 address from 8 16-bit integers. </p>
 
 </div>
 </div>
@@ -264,7 +396,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an address from a packed 32-bit integer, where the MSB is the first number in the address, and the LSB is the last. </p>
+<p>Creates an IPv4 address from a packed 32-bit integer, where the MSB is the first number in the address, and the LSB is the last. </p>
 
 </div>
 </div>
@@ -290,12 +422,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Parses a string IP address of the form "a.b.c.d". </p>
+<p>Parses a string IP address of the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6). </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2424aa8366d381e689ddb22e716f8960"></a>
+<a class="anchor" id="a1c887efc3893fdf2baaab7199578f217"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -306,8 +438,18 @@ Public Attributes</h2></td></tr>
           <td class="memname">static void IPAddress::findAllAddresses </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classIPAddress.html">IPAddress</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>results</em></td><td>)</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeIPv6</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -334,11 +476,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a dot-separated string in the form "1.2.3.4". </p>
+<p>Returns a dot- or colon-separated string in the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6). </p>
 
 </div>
 </div>
-<a class="anchor" id="adfe301fcef4a8885751985ff8611b261"></a>
+<a class="anchor" id="a5b84e8520c49431dc06368c36ad100d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -348,7 +490,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="classIPAddress.html">IPAddress</a> IPAddress::any </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IPv6</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -359,7 +502,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an address meaning "any" (0.0.0.0) </p>
+<p>Returns an IPv4 or IPv6 address meaning "any", equivalent to 0.0.0.0 (IPv4) or ::, (IPv6) </p>
 
 </div>
 </div>
@@ -384,11 +527,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an address meaning "broadcast" (255.255.255.255) </p>
+<p>Returns an IPv4 address meaning "broadcast" (255.255.255.255) </p>
 
 </div>
 </div>
-<a class="anchor" id="aefebd293079518fb114bc38168e704eb"></a>
+<a class="anchor" id="ad66c4a32144c7dd4ccb8d21e10e19472"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -398,7 +541,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="classIPAddress.html">IPAddress</a> IPAddress::local </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IPv6</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -409,7 +553,39 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an address meaning "localhost" (127.0.0.1) </p>
+<p>Returns an IPv4 or IPv6 address meaning "localhost", equivalent to 127.0.0.1 (IPv4) or ::1 (IPv6) </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2fd467911c3e65627ee2d6b488cc8d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classString.html">String</a> IPAddress::getFormattedAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>unformattedAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a formatted version of the provided IPv6 address conforming to RFC 5952 with leading zeros suppressed, lower case characters, and double-colon notation used to represent contiguous 16-bit fields of zeros. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unformattedAddress</td><td>the IPv6 address to be formatted </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -462,17 +638,29 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a14ff93e796120bfa945a37ba125fe91e"></a>
+<a class="anchor" id="a2be5eab7b1b7d2e39d8d5367642f3004"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> IPAddress::address[4]</td>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> IPAddress::address[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The elements of the IP address. </p>
+
+</div>
+</div>
+<a class="anchor" id="a06b9fe2fa973d89d0e91137fa7cc8f94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPAddress::isIPv6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -483,7 +671,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 6 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 7 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
