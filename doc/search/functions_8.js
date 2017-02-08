@@ -369,6 +369,7 @@ var searchData=
   ['isrunning',['isRunning',['../classChildProcess.html#a1a187cc5d299c331798a7b46c3971ccd',1,'ChildProcess::isRunning()'],['../classThreadPoolJob.html#a807c21e00f00548037cd10d4bab64347',1,'ThreadPoolJob::isRunning()']]],
   ['isrunninginappextensionsandbox',['isRunningInAppExtensionSandbox',['../classSystemStats.html#afcfba7112235376d8d071ee8a8dc3156',1,'SystemStats']]],
   ['isrunningunderdebugger',['isRunningUnderDebugger',['../classProcess.html#a0bd9f1c5682e4c95e1a3a407f6c838b3',1,'Process']]],
+  ['issadie',['isSADiE',['../classPluginHostType.html#a1800588bf986475cbb219e363a88fef1',1,'PluginHostType']]],
   ['issamplitude',['isSamplitude',['../classPluginHostType.html#acd76a6928845056299cad69a0f4cc030',1,'PluginHostType']]],
   ['issavemode',['isSaveMode',['../classFileBrowserComponent.html#ab1e3e064f521e76b62bf169aea69f23f',1,'FileBrowserComponent']]],
   ['isscanning',['isScanning',['../classPluginListComponent.html#a6f4c9532a8789249254667149978addb',1,'PluginListComponent']]],

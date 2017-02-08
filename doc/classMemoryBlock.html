@@ -134,6 +134,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="memTemplItemLeft" align="right" valign="top">char &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ae75cf1dc7703f2e00589d2bee9ba9de4">operator[]</a> (const Type offset) const noexcept</td></tr>
 <tr class="memdesc:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a byte from the memory block.  <a href="#ae75cf1dc7703f2e00589d2bee9ba9de4">More...</a><br/></td></tr>
 <tr class="separator:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123890120ed86978830b6374739fd166"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a123890120ed86978830b6374739fd166">begin</a> () const noexcept</td></tr>
+<tr class="memdesc:a123890120ed86978830b6374739fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator for the data.  <a href="#a123890120ed86978830b6374739fd166">More...</a><br/></td></tr>
+<tr class="separator:a123890120ed86978830b6374739fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564a48ee18de96ff8571e1ddfff9e898"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a564a48ee18de96ff8571e1ddfff9e898">end</a> () const noexcept</td></tr>
+<tr class="memdesc:a564a48ee18de96ff8571e1ddfff9e898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an end-iterator for the data.  <a href="#a564a48ee18de96ff8571e1ddfff9e898">More...</a><br/></td></tr>
+<tr class="separator:a564a48ee18de96ff8571e1ddfff9e898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a7192f6e8a3f06c4476ddca1fe2ed7bfb">getSize</a> () const noexcept</td></tr>
 <tr class="memdesc:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the block's current allocated size, in bytes.  <a href="#a7192f6e8a3f06c4476ddca1fe2ed7bfb">More...</a><br/></td></tr>
 <tr class="separator:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,6 +552,56 @@ template&lt;typename Type &gt; </div>
 
 <p>Returns a byte from the memory block. </p>
 <p>This returns a reference, so you can also use it to set a byte. </p>
+
+</div>
+</div>
+<a class="anchor" id="a123890120ed86978830b6374739fd166"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* MemoryBlock::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator for the data. </p>
+
+</div>
+</div>
+<a class="anchor" id="a564a48ee18de96ff8571e1ddfff9e898"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* MemoryBlock::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an end-iterator for the data. </p>
 
 </div>
 </div>
@@ -1109,7 +1165,7 @@ template&lt;typename Type &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 7 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 8 2017 20:00:49 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

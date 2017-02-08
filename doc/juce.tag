@@ -53771,6 +53771,20 @@
       <arglist>(const Type offset) const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>char *</type>
+      <name>begin</name>
+      <anchorfile>classMemoryBlock.html</anchorfile>
+      <anchor>a123890120ed86978830b6374739fd166</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>char *</type>
+      <name>end</name>
+      <anchorfile>classMemoryBlock.html</anchorfile>
+      <anchor>a564a48ee18de96ff8571e1ddfff9e898</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>size_t</type>
       <name>getSize</name>
       <anchorfile>classMemoryBlock.html</anchorfile>
@@ -66212,6 +66226,13 @@
     </member>
     <member kind="enumvalue">
       <type>@</type>
+      <name>SADiE</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8a3d56bff5bf00130c334d4c1f77432ed5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
       <name>SteinbergCubase4</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8ac364901a67009772e9870bfcae9d7090</anchor>
@@ -66516,6 +66537,13 @@
       <name>isRenoise</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>a8d77e1395c67c649ee98ef0d1fb86ac2</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSADiE</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a1800588bf986475cbb219e363a88fef1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">

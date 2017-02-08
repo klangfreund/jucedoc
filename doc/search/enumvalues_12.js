@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sadie',['SADiE',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a3d56bff5bf00130c334d4c1f77432ed5',1,'PluginHostType']]],
   ['samplesperframe',['samplesPerFrame',['../classAudioCDReader.html#a1862227d7416b7b600f41b3f9ab31d6ea1db74900d5d80b397c1bbf11691cee93',1,'AudioCDReader']]],
   ['savedok',['savedOk',['../classFileBasedDocument.html#a89d417326aed46fb561c599265e426d2aa0f8eec65cc59595a5e7d665c2a2efeb',1,'FileBasedDocument']]],
   ['savemode',['saveMode',['../classFileBrowserComponent.html#a32888a950cc0e51c8e1350f53bea43d6aca3d0a66bd4fc606ab874b3da93a4d89',1,'FileBrowserComponent']]],
