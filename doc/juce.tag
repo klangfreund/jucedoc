@@ -18783,17 +18783,17 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>AudioProcessorParameter *</type>
+      <type>AudioProcessorParameterWithID *</type>
       <name>createAndAddParameter</name>
       <anchorfile>classAudioProcessorValueTreeState.html</anchorfile>
-      <anchor>a1923a66bf5bbc5084bcab07f9dbb5972</anchor>
+      <anchor>a6b108d8bfaa0cdb2cd0b9f0118b4d542</anchor>
       <arglist>(const String &amp;parameterID, const String &amp;parameterName, const String &amp;labelText, NormalisableRange&lt; float &gt; valueRange, float defaultValue, std::function&lt; String(float)&gt; valueToTextFunction, std::function&lt; float(const String &amp;)&gt; textToValueFunction)</arglist>
     </member>
     <member kind="function">
-      <type>AudioProcessorParameter *</type>
+      <type>AudioProcessorParameterWithID *</type>
       <name>getParameter</name>
       <anchorfile>classAudioProcessorValueTreeState.html</anchorfile>
-      <anchor>a0980eb46aa75934fa8bb6ab72a7aa31f</anchor>
+      <anchor>a2eb0ed702aead6ce83afde8d8d0b13f7</anchor>
       <arglist>(StringRef parameterID) const noexcept</arglist>
     </member>
     <member kind="function">

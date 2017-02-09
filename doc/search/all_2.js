@@ -403,7 +403,7 @@ var searchData=
   ['create7point1',['create7point1',['../classAudioChannelSet.html#acf400d2cdb7d2d12ec6b9c23e7b3b76c',1,'AudioChannelSet']]],
   ['create7point1sdds',['create7point1SDDS',['../classAudioChannelSet.html#a1ba1b825429abb83dde01c8de7845cae',1,'AudioChannelSet']]],
   ['createalertwindow',['createAlertWindow',['../classLookAndFeel__V2.html#aefb0c11d37ae40590330d24a58c9d50d',1,'LookAndFeel_V2::createAlertWindow()'],['../structAlertWindow_1_1LookAndFeelMethods.html#a680352c5aa799f587fb5d48f7f2da691',1,'AlertWindow::LookAndFeelMethods::createAlertWindow()']]],
-  ['createandaddparameter',['createAndAddParameter',['../classAudioProcessorValueTreeState.html#a1923a66bf5bbc5084bcab07f9dbb5972',1,'AudioProcessorValueTreeState']]],
+  ['createandaddparameter',['createAndAddParameter',['../classAudioProcessorValueTreeState.html#a6b108d8bfaa0cdb2cd0b9f0118b4d542',1,'AudioProcessorValueTreeState']]],
   ['createaudiodevicetypes',['createAudioDeviceTypes',['../classAudioDeviceManager.html#ad7d7e0e64926665b12b62a53082caecc',1,'AudioDeviceManager']]],
   ['createaudioiodevicetype_5falsa',['createAudioIODeviceType_ALSA',['../classAudioIODeviceType.html#ab6f7e9cd0b51436fabf706e8ca8a602f',1,'AudioIODeviceType']]],
   ['createaudioiodevicetype_5fandroid',['createAudioIODeviceType_Android',['../classAudioIODeviceType.html#a6be31ae8ce32ecae93f6fce86477e859',1,'AudioIODeviceType']]],

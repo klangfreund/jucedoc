@@ -895,7 +895,7 @@ var searchData=
   ['getownerview',['getOwnerView',['../classTreeViewItem.html#af5f9ce78c2bc579d308a7048c59a0a3c',1,'TreeViewItem']]],
   ['getpagesize',['getPageSize',['../classSystemStats.html#ad2c08e39f167e01100d17cd910e7028b',1,'SystemStats']]],
   ['getpanel',['getPanel',['../classConcertinaPanel.html#afc0460a5c2c4db59c7bbdb27ceca6ca5',1,'ConcertinaPanel']]],
-  ['getparameter',['getParameter',['../classAudioProcessor.html#aa4b04d76a2d80c08f0d762f0fa6b715c',1,'AudioProcessor::getParameter()'],['../classAudioProcessorValueTreeState.html#a0980eb46aa75934fa8bb6ab72a7aa31f',1,'AudioProcessorValueTreeState::getParameter()']]],
+  ['getparameter',['getParameter',['../classAudioProcessor.html#aa4b04d76a2d80c08f0d762f0fa6b715c',1,'AudioProcessor::getParameter()'],['../classAudioProcessorValueTreeState.html#a2eb0ed702aead6ce83afde8d8d0b13f7',1,'AudioProcessorValueTreeState::getParameter()']]],
   ['getparameterasvalue',['getParameterAsValue',['../classAudioProcessorValueTreeState.html#a8e3130f3a19d9e74c9633c34e40cca33',1,'AudioProcessorValueTreeState']]],
   ['getparametercategory',['getParameterCategory',['../classAudioProcessor.html#a6abc6da40c846bd5c7a695ab5103ee0b',1,'AudioProcessor']]],
   ['getparameterdefaultvalue',['getParameterDefaultValue',['../classAudioProcessor.html#a727cc79e6efb14222e91e65f3ebc5e91',1,'AudioProcessor']]],
