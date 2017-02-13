@@ -17254,6 +17254,13 @@
       <anchor>a562ba6fd88562fd42eddee5b95da489d</anchor>
       <arglist>(double sampleRate, int blockSize) noexcept</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int32</type>
+      <name>getAAXPluginIDForMainBusConfig</name>
+      <anchorfile>classAudioProcessor.html</anchorfile>
+      <anchor>a3e4579d11fffe39b46f618a69b46f300</anchor>
+      <arglist>(const AudioChannelSet &amp;mainInputLayout, const AudioChannelSet &amp;mainOutputLayout, bool idForAudioSuite) const </arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>editorBeingDeleted</name>
@@ -46025,8 +46032,8 @@
       <type>virtual ImagePixelData::Ptr</type>
       <name>create</name>
       <anchorfile>classImageType.html</anchorfile>
-      <anchor>a157f39c75b1f5ad1cf660a2d3ed7d91e</anchor>
-      <arglist>(Image::PixelFormat format, int width, int height, bool shouldClearImage) const =0</arglist>
+      <anchor>a9ac22bf0c3a9e2e7ba54c2b4c15727bf</anchor>
+      <arglist>(Image::PixelFormat, int width, int height, bool shouldClearImage) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>

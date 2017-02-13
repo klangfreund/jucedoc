@@ -493,11 +493,12 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a3e19cafabb03c5838160263a6e76313da0c9f89d8dc9f9f32c9eb42428385351d"></a>userApplicationDataDirectory</em>&#160;</td><td class="fielddoc">
 <p>The folder in which applications store their persistent user-specific settings. </p>
-<p>On Windows, this might be "\Documents and Settings\username\Application Data". On the Mac, it might be "~/Library". If you're going to store your settings in here, always create your own sub-folder to put them in, to avoid making a mess. </p>
+<p>On Windows, this might be "\Documents and Settings\username\Application Data". On the Mac, it might be "~/Library". If you're going to store your settings in here, always create your own sub-folder to put them in, to avoid making a mess. On GNU/Linux it is "~/.config". </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a3e19cafabb03c5838160263a6e76313da18566f0ca926c8f6db1e178ba5f403c0"></a>commonApplicationDataDirectory</em>&#160;</td><td class="fielddoc">
 <p>An equivalent of the userApplicationDataDirectory folder that is shared by all users of the computer, rather than just the current user. </p>
 <p>On the Mac it'll be "/Library", on Windows, it could be something like "\Documents and Settings\All Users\Application Data".</p>
+<p>On GNU/Linux it is "/opt".</p>
 <p>Depending on the setup, this folder may be read-only. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a3e19cafabb03c5838160263a6e76313dada45b7958b5fc77f30e313f8dab12b23"></a>commonDocumentsDirectory</em>&#160;</td><td class="fielddoc">
@@ -2705,7 +2706,7 @@ Static Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 12 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 13 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

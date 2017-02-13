@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
 <p>The image's internal type will be of the <a class="el" href="classNativeImageType.html" title="An image storage type which holds the pixels using whatever is the default storage format on the curr...">NativeImageType</a> class - to specify a different type, use the other constructor, which takes an <a class="el" href="classImageType.html" title="This base class is for handlers that control a type of image manipulation format, e...">ImageType</a> to use.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>the number of colour channels in the image </td></tr>
+    <tr><td class="paramname">format</td><td>the preferred pixel format. Note that this is only a <em>hint</em> which is passed to the <a class="el" href="classImageType.html" title="This base class is for handlers that control a type of image manipulation format, e...">ImageType</a> class - different ImageTypes may not support all formats, so may substitute e.g. ARGB for RGB. </td></tr>
     <tr><td class="paramname">imageWidth</td><td>the desired width of the image, in pixels - this value must be greater than zero (otherwise a width of 1 will be used) </td></tr>
     <tr><td class="paramname">imageHeight</td><td>the desired width of the image, in pixels - this value must be greater than zero (otherwise a height of 1 will be used) </td></tr>
     <tr><td class="paramname">clearImage</td><td>if true, the image will initially be cleared to black (if it's RGB) or transparent black (if it's ARGB). If false, the image may contain junk initially, so you need to make sure you overwrite it thoroughly. </td></tr>
@@ -385,7 +385,7 @@ Public Member Functions</h2></td></tr>
 <p>Creates an image with a specified size and format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>the number of colour channels in the image </td></tr>
+    <tr><td class="paramname">format</td><td>the preferred pixel format. Note that this is only a <em>hint</em> which is passed to the <a class="el" href="classImageType.html" title="This base class is for handlers that control a type of image manipulation format, e...">ImageType</a> class - different ImageTypes may not support all formats, so may substitute e.g. ARGB for RGB. </td></tr>
     <tr><td class="paramname">imageWidth</td><td>the desired width of the image, in pixels - this value must be greater than zero (otherwise a width of 1 will be used) </td></tr>
     <tr><td class="paramname">imageHeight</td><td>the desired width of the image, in pixels - this value must be greater than zero (otherwise a height of 1 will be used) </td></tr>
     <tr><td class="paramname">clearImage</td><td>if true, the image will initially be cleared to black (if it's RGB) or transparent black (if it's ARGB). If false, the image may contain junk initially, so you need to make sure you overwrite it thoroughly. </td></tr>
@@ -1311,7 +1311,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 12 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 13 2017 20:00:42 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
