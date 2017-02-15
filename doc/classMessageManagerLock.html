@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMessageManagerLock-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -92,6 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Used to make sure that the calling thread has exclusive access to the message loop.  
  <a href="classMessageManagerLock.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMessageManagerLock_1_1BailOutChecker.html">BailOutChecker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a294fab36d4e9fe48cc2b52b36974111c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManagerLock.html#a294fab36d4e9fe48cc2b52b36974111c">MessageManagerLock</a> (<a class="el" href="classThread.html">Thread</a> *threadToCheckForExitSignal=nullptr)</td></tr>
@@ -100,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6da971e61e376e8216da1f39ccb5582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManagerLock.html#ac6da971e61e376e8216da1f39ccb5582">MessageManagerLock</a> (<a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *jobToCheckForExitSignal)</td></tr>
 <tr class="memdesc:ac6da971e61e376e8216da1f39ccb5582"><td class="mdescLeft">&#160;</td><td class="mdescRight">This has the same behaviour as the other constructor, but takes a <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> instead of a thread.  <a href="#ac6da971e61e376e8216da1f39ccb5582">More...</a><br/></td></tr>
 <tr class="separator:ac6da971e61e376e8216da1f39ccb5582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdc01d5c060e9b77aa3b8c16f490f5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManagerLock.html#a3fdc01d5c060e9b77aa3b8c16f490f5f">MessageManagerLock</a> (<a class="el" href="structMessageManagerLock_1_1BailOutChecker.html">BailOutChecker</a> &amp;)</td></tr>
+<tr class="memdesc:a3fdc01d5c060e9b77aa3b8c16f490f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an abstraction of the other constructors.  <a href="#a3fdc01d5c060e9b77aa3b8c16f490f5f">More...</a><br/></td></tr>
+<tr class="separator:a3fdc01d5c060e9b77aa3b8c16f490f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3e1ab142b50ad49e5fe60f8ae7d22f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManagerLock.html#a4d3e1ab142b50ad49e5fe60f8ae7d22f">~MessageManagerLock</a> () noexcept</td></tr>
 <tr class="memdesc:a4d3e1ab142b50ad49e5fe60f8ae7d22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the current thread's lock on the message manager.  <a href="#a4d3e1ab142b50ad49e5fe60f8ae7d22f">More...</a><br/></td></tr>
 <tr class="separator:a4d3e1ab142b50ad49e5fe60f8ae7d22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +194,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3fdc01d5c060e9b77aa3b8c16f490f5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MessageManagerLock::MessageManagerLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMessageManagerLock_1_1BailOutChecker.html">BailOutChecker</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an abstraction of the other constructors. </p>
+<p>You can pass this constructor a functor which is periodically checked if attempting the lock should be aborted.</p>
+<p>See the <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a> (Thread*) constructor for details on how this works. </p>
+
+</div>
+</div>
 <a class="anchor" id="a4d3e1ab142b50ad49e5fe60f8ae7d22f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +274,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 14 2017 20:00:59 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 15 2017 20:00:46 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

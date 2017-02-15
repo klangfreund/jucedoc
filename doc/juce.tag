@@ -3359,6 +3359,7 @@
     <class kind="class">MessageManager</class>
     <class kind="class">MessageManager::MessageBase</class>
     <class kind="class">MessageManagerLock</class>
+    <class kind="struct">MessageManagerLock::BailOutChecker</class>
     <member kind="typedef">
       <type>void *(</type>
       <name>MessageCallbackFunction</name>
@@ -12818,6 +12819,13 @@
       <anchorfile>classAudioBuffer.html</anchorfile>
       <anchor>a05e3b4cec4a2c446df87de34c2788f7b</anchor>
       <arglist>(int newNumChannels, int newNumSamples, bool keepExistingContent=false, bool clearExtraSpace=false, bool avoidReallocating=false) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDataToReferTo</name>
+      <anchorfile>classAudioBuffer.html</anchorfile>
+      <anchor>a3d020d53eedb4dd8e465ea7fe896c37c</anchor>
+      <arglist>(Type **dataToReferTo, const int newNumChannels, const int newStartSample, const int newNumSamples) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -54796,6 +54804,7 @@
   <compound kind="class">
     <name>MessageManagerLock</name>
     <filename>classMessageManagerLock.html</filename>
+    <class kind="struct">MessageManagerLock::BailOutChecker</class>
     <member kind="function">
       <type></type>
       <name>MessageManagerLock</name>
@@ -54812,6 +54821,13 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>MessageManagerLock</name>
+      <anchorfile>classMessageManagerLock.html</anchorfile>
+      <anchor>a3fdc01d5c060e9b77aa3b8c16f490f5f</anchor>
+      <arglist>(BailOutChecker &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>~MessageManagerLock</name>
       <anchorfile>classMessageManagerLock.html</anchorfile>
       <anchor>a4d3e1ab142b50ad49e5fe60f8ae7d22f</anchor>
@@ -54823,6 +54839,24 @@
       <anchorfile>classMessageManagerLock.html</anchorfile>
       <anchor>a5f3d8b6abc27aa324a882abc6e2d96ba</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>MessageManagerLock::BailOutChecker</name>
+    <filename>structMessageManagerLock_1_1BailOutChecker.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~BailOutChecker</name>
+      <anchorfile>structMessageManagerLock_1_1BailOutChecker.html</anchorfile>
+      <anchor>aad15aa9d97484ad152b369a1790fec91</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>shouldAbortAcquiringLock</name>
+      <anchorfile>structMessageManagerLock_1_1BailOutChecker.html</anchorfile>
+      <anchor>a85e6e9cc50c28aff9d78278eace49d8b</anchor>
+      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -61893,6 +61927,13 @@
       <anchorfile>classOpenGLContext.html</anchorfile>
       <anchor>a232ce6c0583e57a2de19293a1d8f2b53</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>executeOnGLThread</name>
+      <anchorfile>classOpenGLContext.html</anchorfile>
+      <anchor>a48062bbab36b278a5ff95831dc8c333d</anchor>
+      <arglist>(T &amp;&amp;functor, bool blockUntilFinished)</arglist>
     </member>
     <member kind="function">
       <type>double</type>

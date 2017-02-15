@@ -170,6 +170,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a232ce6c0583e57a2de19293a1d8f2b53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenGLContext.html#a232ce6c0583e57a2de19293a1d8f2b53">getSwapInterval</a> () const </td></tr>
 <tr class="memdesc:a232ce6c0583e57a2de19293a1d8f2b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current swap-sync interval.  <a href="#a232ce6c0583e57a2de19293a1d8f2b53">More...</a><br/></td></tr>
 <tr class="separator:a232ce6c0583e57a2de19293a1d8f2b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48062bbab36b278a5ff95831dc8c333d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a48062bbab36b278a5ff95831dc8c333d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOpenGLContext.html#a48062bbab36b278a5ff95831dc8c333d">executeOnGLThread</a> (T &amp;&amp;functor, bool blockUntilFinished)</td></tr>
+<tr class="memdesc:a48062bbab36b278a5ff95831dc8c333d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a lambda, function or functor on the OpenGL thread with an active context.  <a href="#a48062bbab36b278a5ff95831dc8c333d">More...</a><br/></td></tr>
+<tr class="separator:a48062bbab36b278a5ff95831dc8c333d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae7fe1aa47448f75ef67f89cd9db798"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenGLContext.html#a5ae7fe1aa47448f75ef67f89cd9db798">getRenderingScale</a> () const noexcept</td></tr>
 <tr class="memdesc:a5ae7fe1aa47448f75ef67f89cd9db798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scale factor used by the display that is being rendered.  <a href="#a5ae7fe1aa47448f75ef67f89cd9db798">More...</a><br/></td></tr>
 <tr class="separator:a5ae7fe1aa47448f75ef67f89cd9db798"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -819,6 +823,39 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a48062bbab36b278a5ff95831dc8c333d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenGLContext::executeOnGLThread </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>functor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>blockUntilFinished</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute a lambda, function or functor on the OpenGL thread with an active context. </p>
+<p>This method will attempt to execute functor on the OpenGL thread. If blockUntilFinished is true then the method will block until the functor has finished executing.</p>
+<p>This function can only be called if the context is attached to a component. Otherwise, this function will assert.</p>
+<p>This function is useful when you need to excute house-keeping tasks such as allocating, deallocating textures or framebuffers. As such, the functor will execute without locking the message thread. Therefore, it is not intended for any drawing commands or GUI code. Any GUI code should be executed in the <a class="el" href="classOpenGLRenderer.html#a34077b4eaeb3207814b9e4302f724912" title="Called when you should render the next openGL frame. ">OpenGLRenderer::renderOpenGL</a> callback instead. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5ae7fe1aa47448f75ef67f89cd9db798"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1026,7 +1063,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 14 2017 20:01:01 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 15 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
