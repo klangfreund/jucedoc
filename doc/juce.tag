@@ -1134,6 +1134,13 @@
     <name>juce_box2d.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_box2d/</path>
     <filename>juce__box2d_8h</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_BOX2D_H_INCLUDED</name>
+      <anchorfile>juce__box2d_8h.html</anchorfile>
+      <anchor>a8cd885868ee18da8fdf5ffbf85b78c8b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>juce_Box2DRenderer.h</name>
@@ -3823,6 +3830,13 @@
     <class kind="class">juce::OSCReceiver::ListenerWithOSCAddress</class>
     <class kind="class">juce::OSCSender</class>
     <namespace>juce</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_OSC_H_INCLUDED</name>
+      <anchorfile>juce__osc_8h.html</anchorfile>
+      <anchor>a49c8a7d36792ed53dc7a8c6e2105adcd</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>char</type>
       <name>OSCType</name>
@@ -5960,6 +5974,13 @@
     <class kind="struct">VstTimingInformation</class>
     <class kind="struct">VstIndividualSpeakerInfo</class>
     <class kind="struct">VstSpeakerConfiguration</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_VSTINTERFACE_H_INCLUDED</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a0d02c518782f9b09f4b0f5dbc2212d06</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="define">
       <type>#define</type>
       <name>VSTINTERFACECALL</name>
