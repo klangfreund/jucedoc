@@ -46615,6 +46615,13 @@
       <arglist>(const Identifier &amp;objectName, DynamicObject *object)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classJavascriptEngine.html</anchorfile>
+      <anchor>a6768b3a2e0d881a87eea26456eb10ff1</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>const NamedValueSet &amp;</type>
       <name>getRootObjectProperties</name>
       <anchorfile>classJavascriptEngine.html</anchorfile>
@@ -61237,6 +61244,13 @@
       <anchorfile>classNormalisableRange.html</anchorfile>
       <anchor>aa043558ff4992e5b455effbf5d614eef</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSkewForCentre</name>
+      <anchorfile>classNormalisableRange.html</anchorfile>
+      <anchor>a3a583db475e34e251edef004a4e3e3d6</anchor>
+      <arglist>(ValueType centrePointValue) noexcept</arglist>
     </member>
     <member kind="variable">
       <type>ValueType</type>

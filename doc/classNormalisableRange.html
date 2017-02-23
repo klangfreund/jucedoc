@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4f9fa890e5439f951e97a53abb71add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa043558ff4992e5b455effbf5d614eef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">getRange</a> () const noexcept</td></tr>
 <tr class="separator:aa043558ff4992e5b455effbf5d614eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a583db475e34e251edef004a4e3e3d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">setSkewForCentre</a> (ValueType centrePointValue) noexcept</td></tr>
+<tr class="memdesc:a3a583db475e34e251edef004a4e3e3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a value which is between the start and end points, this sets the skew such that convertFrom0to1 (0.5) will return this value.  <a href="#a3a583db475e34e251edef004a4e3e3d6">More...</a><br/></td></tr>
+<tr class="separator:a3a583db475e34e251edef004a4e3e3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -482,6 +485,40 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3a583db475e34e251edef004a4e3e3d6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; ValueType &gt;::setSkewForCentre </td>
+          <td>(</td>
+          <td class="paramtype">ValueType&#160;</td>
+          <td class="paramname"><em>centrePointValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a value which is between the start and end points, this sets the skew such that convertFrom0to1 (0.5) will return this value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centrePointValue</td><td>this must be greater than the start of the range and less than the end. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="adc186176e94c6f80eb2c626384054fe3"></a>
 <div class="memitem">
@@ -497,7 +534,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>The start of the non-normalised range. </p>
 
-<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
+<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
 
 </div>
 </div>
@@ -515,7 +552,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>The end of the non-normalised range. </p>
 
-<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
+<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +591,7 @@ template&lt;typename ValueType&gt; </div>
 <p>The skew factor lets you skew the mapping logarithmically so that larger or smaller values are given a larger proportion of the available space.</p>
 <p>A factor of 1.0 has no skewing effect at all. If the factor is &lt; 1.0, the lower end of the range will fill more of the slider's length; if the factor is &gt; 1.0, the upper end of the range will be expanded. </p>
 
-<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, and <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, and <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>.</p>
 
 </div>
 </div>
@@ -572,7 +609,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>If true, the skew factor applies from the middle of the slider to each of its ends. </p>
 
-<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, and <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classNormalisableRange.html#a68053155bda85725fce2c07308c409ca">NormalisableRange&lt; float &gt;::operator=()</a>, and <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>.</p>
 
 </div>
 </div>
@@ -583,7 +620,7 @@ template&lt;typename ValueType&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 22 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 23 2017 20:00:50 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
