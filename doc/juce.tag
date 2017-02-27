@@ -79542,6 +79542,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static String</type>
+      <name>getCpuModel</name>
+      <anchorfile>classSystemStats.html</anchorfile>
+      <anchor>a531fcd2b88a946ad7b8fd482ae635678</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static bool</type>
       <name>hasMMX</name>
       <anchorfile>classSystemStats.html</anchorfile>

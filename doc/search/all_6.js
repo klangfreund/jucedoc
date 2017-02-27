@@ -239,6 +239,7 @@ var searchData=
   ['getcornersizevalue',['getCornerSizeValue',['../classDrawableRectangle_1_1ValueTreeWrapper.html#a895dd398ced7e8d71c74b459f21472f2',1,'DrawableRectangle::ValueTreeWrapper']]],
   ['getcount',['getCount',['../classStatisticsAccumulator.html#acfa67dd843c0a2c587cc99ffc3fca40f',1,'StatisticsAccumulator']]],
   ['getcountrycodes',['getCountryCodes',['../classLocalisedStrings.html#aea4a5e0684f629680ef934ac593a2697',1,'LocalisedStrings']]],
+  ['getcpumodel',['getCpuModel',['../classSystemStats.html#a531fcd2b88a946ad7b8fd482ae635678',1,'SystemStats']]],
   ['getcpuspeedinmegaherz',['getCpuSpeedInMegaherz',['../classSystemStats.html#a50852f1e0c28d06eeebbd18af4559770',1,'SystemStats']]],
   ['getcpuusage',['getCpuUsage',['../classAudioDeviceManager.html#ab7d067e2864f399a471b35cc83bf9a57',1,'AudioDeviceManager']]],
   ['getcpuvendor',['getCpuVendor',['../classSystemStats.html#a4fa74fdae2721d03bb25d48fd7cfaa6d',1,'SystemStats']]],
