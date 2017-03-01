@@ -388,7 +388,7 @@
   </compound>
   <compound kind="file">
     <name>juce_AudioPlayHead.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_audio_processors/processors/</path>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_basics/audio_play_head/</path>
     <filename>juce__AudioPlayHead_8h</filename>
     <class kind="class">AudioPlayHead</class>
     <class kind="struct">AudioPlayHead::CurrentPositionInfo</class>
@@ -16238,6 +16238,34 @@
       <anchorfile>classAudioPlayHead.html</anchorfile>
       <anchor>ae8ff79b6ec79fbecb1e8276ad9867cd2</anchor>
       <arglist>(CurrentPositionInfo &amp;result)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>canControlTransport</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>a6f0e066286b0541b5cd17435ff9e969e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>transportPlay</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>a3bb95eedd2977ec2db6fe30ad8ac1b2e</anchor>
+      <arglist>(bool shouldStartPlaying)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>transportRecord</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>ade46ea8b0712ffad2109e2a5e504bcd0</anchor>
+      <arglist>(bool shouldStartRecording)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>transportRewind</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>ab3cba9b6692761edbe403b7e45bc35a5</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -66706,6 +66734,20 @@
       <anchor>a39ea86160032c6e177728be4968f6421</anchor>
       <arglist>() const noexcept</arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isInterAppAudioConnected</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a698e1352edc0cba86c7d3e25b77158ba</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>switchToHostApplication</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a4f9f4678fdc4e60dd0df04b10503321b</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static String</type>
       <name>getHostPath</name>
@@ -76424,6 +76466,13 @@
       <anchor>a029336e5ea7014d9a92d4cb712c50c38</anchor>
       <arglist>() override</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual StandalonePluginHolder *</type>
+      <name>getPluginHolder</name>
+      <anchorfile>classStandaloneFilterWindow.html</anchorfile>
+      <anchor>ad97ba50873148f00360fc8c5164622b1</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>menuCallback</name>
@@ -76548,12 +76597,33 @@
       <anchor>adfdf093b9b5ab101d2f76d5fa957c6eb</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>switchToHostApplication</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>a0b1ef92384de110757657b18ced2b5bd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isInterAppAudioConnected</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>aa5a16e61a7162f523e3a5ac0dc49b409</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static String</type>
       <name>getFilePatterns</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
       <anchor>a5a8cd39a398b0b62838a4ec62778429e</anchor>
       <arglist>(const String &amp;fileSuffix)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static StandalonePluginHolder *</type>
+      <name>getInstance</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>a1f66dc41704daecba196592ebd5b578d</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="variable">
       <type>OptionalScopedPointer&lt; PropertySet &gt;</type>
@@ -96294,6 +96364,12 @@
     <file>juce_SystemAudioVolume.h</file>
   </compound>
   <compound kind="dir">
+    <name>audio_play_head</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_basics/audio_play_head/</path>
+    <filename>dir_014117dacf169d9b077337971687508d.html</filename>
+    <file>juce_AudioPlayHead.h</file>
+  </compound>
+  <compound kind="dir">
     <name>blocks</name>
     <path>/home/juce/data/res/development/juce/modules/juce_blocks_basics/blocks/</path>
     <filename>dir_54fb0b797b7f951f79340f90428dbac7.html</filename>
@@ -96634,6 +96710,7 @@
     <name>juce_audio_basics</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_basics/</path>
     <filename>dir_72d8649d346d517cbae6aed82f026a7b.html</filename>
+    <dir>audio_play_head</dir>
     <dir>buffers</dir>
     <dir>effects</dir>
     <dir>midi</dir>
@@ -97124,7 +97201,6 @@
     <name>processors</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_processors/processors/</path>
     <filename>dir_b4f32ab1845ca7cdc3b5e5b24298936f.html</filename>
-    <file>juce_AudioPlayHead.h</file>
     <file>juce_AudioPluginInstance.h</file>
     <file>juce_AudioProcessor.h</file>
     <file>juce_AudioProcessorEditor.h</file>
