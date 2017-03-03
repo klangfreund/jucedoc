@@ -13,7 +13,7 @@ var searchData=
   ['jobstatus',['JobStatus',['../classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3',1,'ThreadPoolJob']]],
   ['joinintostring',['joinIntoString',['../classStringArray.html#a53bea36f7d9663c8b3cf69619ae5462b',1,'StringArray']]],
   ['joinmulticast',['joinMulticast',['../classDatagramSocket.html#a2b2bed0e6b34949f0e0cdaa9c0a96f62',1,'DatagramSocket']]],
-  ['jointstyle',['jointStyle',['../classDrawableShape_1_1FillAndStrokeState.html#adf99bd7ed361ea8c43d293ef7f868d3e',1,'DrawableShape::FillAndStrokeState::jointStyle()'],['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8',1,'PathStrokeType::JointStyle()']]],
+  ['jointstyle',['JointStyle',['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8',1,'PathStrokeType::JointStyle()'],['../classDrawableShape_1_1FillAndStrokeState.html#adf99bd7ed361ea8c43d293ef7f868d3e',1,'DrawableShape::FillAndStrokeState::jointStyle()']]],
   ['jpegimageformat',['JPEGImageFormat',['../classJPEGImageFormat.html',1,'JPEGImageFormat'],['../classJPEGImageFormat.html#a3e000b303a2a2d90dca7be44ace102c3',1,'JPEGImageFormat::JPEGImageFormat()']]],
   ['json',['JSON',['../classJSON.html',1,'']]],
   ['juce',['juce',['../namespacejuce.html',1,'']]],

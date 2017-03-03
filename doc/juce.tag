@@ -51247,6 +51247,13 @@
       <anchor>a122aff7bf66df1a32b8d1f3973415e0f</anchor>
       <arglist>(Graphics &amp;, ProgressBar &amp;, int width, int height, double progress, const String &amp;textToShow)=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>isProgressBarOpaque</name>
+      <anchorfile>structProgressBar_1_1LookAndFeelMethods.html</anchorfile>
+      <anchor>a271a4148ee2d428e5fe92e7510d84536</anchor>
+      <arglist>(ProgressBar &amp;)=0</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~LookAndFeelMethods</name>
@@ -51566,6 +51573,13 @@
       <anchorfile>classLookAndFeel__V2.html</anchorfile>
       <anchor>a5fc937274d84f3ab5cb885903a55f037</anchor>
       <arglist>(Graphics &amp;, const Colour &amp;colour, int x, int y, int w, int h) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isProgressBarOpaque</name>
+      <anchorfile>classLookAndFeel__V2.html</anchorfile>
+      <anchor>aa39f0be942ee61c4e7ab6da3618d3fec</anchor>
+      <arglist>(ProgressBar &amp;) override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
