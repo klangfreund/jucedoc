@@ -2,7 +2,7 @@ var searchData=
 [
   ['charpointertype',['CharPointerType',['../classIdentifier.html#ae5ef972983c99050e88f3e29cd5e4a4f',1,'Identifier::CharPointerType()'],['../classStringRef.html#ad55d30afe25364e21e2f3a69c65de747',1,'StringRef::CharPointerType()']]],
   ['chartype_20_2a',['CharType *',['../classStringRef.html#a9fdf0812da686c16598871b20ae7bab8',1,'StringRef']]],
-  ['octagonal',['octagonal',['../classAudioChannelSet.html#a741ed7da3ad990c305cb4de2f0baaa79',1,'AudioChannelSet']]],
+  ['octagonal',['octagonal',['../classAudioChannelSet.html#a14d45a67ee15c7a79e6ce9dafb86d340',1,'AudioChannelSet']]],
   ['offsetall',['offsetAll',['../classRectangleList.html#a6929cdfe85b1ec2cbb87dbb4baa9e5f9',1,'RectangleList::offsetAll(Point&lt; ValueType &gt; offset) noexcept'],['../classRectangleList.html#aaf0a168997e532d714d0f1169aff4897',1,'RectangleList::offsetAll(ValueType dx, ValueType dy) noexcept']]],
   ['oggvorbisaudioformat',['OggVorbisAudioFormat',['../classOggVorbisAudioFormat.html#a069365393c5a09e13e0042f4660d8cd1',1,'OggVorbisAudioFormat']]],
   ['ok',['ok',['../classResult.html#af20c96ffa94adac90e10a8395d8c8852',1,'Result']]],

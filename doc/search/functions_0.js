@@ -178,7 +178,7 @@ var searchData=
   ['allocate',['allocate',['../classHeapBlock.html#a4e999ff1f7ed59dd4546596447059cc7',1,'HeapBlock']]],
   ['allsoundoff',['allSoundOff',['../classMidiMessage.html#a3a56275d5dd5bebc9edba4e6ab8aa467',1,'MidiMessage']]],
   ['alphachanged',['alphaChanged',['../classComponent.html#af83c72f9c98476811522ba8cad855003',1,'Component::alphaChanged()'],['../classNSViewComponent.html#a6302dbcb95361a82312a1633f5762bbc',1,'NSViewComponent::alphaChanged()']]],
-  ['ambisonic',['ambisonic',['../classAudioChannelSet.html#ab16647dcce7ae98b9a4bafe2c5deabab',1,'AudioChannelSet']]],
+  ['ambisonic',['ambisonic',['../classAudioChannelSet.html#a16dde93635a1374f6b398ad65b49fa75',1,'AudioChannelSet']]],
   ['animatecomponent',['animateComponent',['../classComponentAnimator.html#ac4606415aa267cdb0be7e8f17abd8435',1,'ComponentAnimator']]],
   ['animatedappcomponent',['AnimatedAppComponent',['../classAnimatedAppComponent.html#a89ac9111921c5037aafd8db92e0b20b5',1,'AnimatedAppComponent']]],
   ['animatedposition',['AnimatedPosition',['../classAnimatedPosition.html#a364daf059e5e4ac2bce94ea8a236c02c',1,'AnimatedPosition']]],

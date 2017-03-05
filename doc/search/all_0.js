@@ -222,7 +222,7 @@ var searchData=
   ['alphabits',['alphaBits',['../classOpenGLPixelFormat.html#a4d947e7a9831d9158f2a0b519d7d3497',1,'OpenGLPixelFormat']]],
   ['alphachanged',['alphaChanged',['../classComponent.html#af83c72f9c98476811522ba8cad855003',1,'Component::alphaChanged()'],['../classNSViewComponent.html#a6302dbcb95361a82312a1633f5762bbc',1,'NSViewComponent::alphaChanged()']]],
   ['altmodifier',['altModifier',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba06a1a39ebe788d01c5d421f8f472347d',1,'ModifierKeys']]],
-  ['ambisonic',['ambisonic',['../classAudioChannelSet.html#ab16647dcce7ae98b9a4bafe2c5deabab',1,'AudioChannelSet']]],
+  ['ambisonic',['ambisonic',['../classAudioChannelSet.html#a16dde93635a1374f6b398ad65b49fa75',1,'AudioChannelSet']]],
   ['ambisonicw',['ambisonicW',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea67aee72580ffafb485260470d135a3b4',1,'AudioChannelSet']]],
   ['ambisonicx',['ambisonicX',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead4e8c1dc7e9175420e59561e18ee681a',1,'AudioChannelSet']]],
   ['ambisonicy',['ambisonicY',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea34e23dcfaba94768a9854aad5be33626',1,'AudioChannelSet']]],

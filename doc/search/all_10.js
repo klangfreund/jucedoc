@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['quadraphonic',['quadraphonic',['../classAudioChannelSet.html#a8596c948f2696983bd7697d59c5001cb',1,'AudioChannelSet']]],
+  ['quadraphonic',['quadraphonic',['../classAudioChannelSet.html#ab216c3d458cbd3965e321a29d12d591d',1,'AudioChannelSet']]],
   ['quadraticto',['QuadraticTo',['../classRelativePointPath_1_1QuadraticTo.html',1,'RelativePointPath']]],
   ['quadraticto',['QuadraticTo',['../classRelativePointPath_1_1QuadraticTo.html#aba89135707082499521af4acc13d8182',1,'RelativePointPath::QuadraticTo::QuadraticTo()'],['../classPath_1_1Iterator.html#a62b1a329e3fdbcbdad78bb6c90c7bcfda3a092657aa2dec64c33926a6528c9f9b',1,'Path::Iterator::quadraticTo()'],['../classPath.html#ab50510cf385b9ea3fe64fef6be45f85b',1,'Path::quadraticTo(float controlPointX, float controlPointY, float endPointX, float endPointY)'],['../classPath.html#ae8f91ebcdb4b89fda5771be9792b29c9',1,'Path::quadraticTo(const Point&lt; float &gt; controlPoint, const Point&lt; float &gt; endPoint)']]],
   ['quadratictoelement',['quadraticToElement',['../classDrawablePath_1_1ValueTreeWrapper_1_1Element.html#ab21ea7edef3d68b071eba53b3232cc65',1,'DrawablePath::ValueTreeWrapper::Element::quadraticToElement()'],['../classRelativePointPath.html#a741fbc9bca4a156a84514f20987483e9a8494c007547e881252ae413d840908ca',1,'RelativePointPath::quadraticToElement()']]],

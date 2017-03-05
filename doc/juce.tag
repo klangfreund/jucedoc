@@ -13827,199 +13827,199 @@
       <arglist>(const AudioChannelSet &amp;) const noexcept</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>disabled</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a707681c4a7fc696d05c887e37e29bbc2</anchor>
+      <anchor>a18675dc100238ac22868c41717ef2ffe</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>mono</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a10e2d897e8242e1cfb133bb4b01fbbb0</anchor>
+      <anchor>a17a0a8ab8f24eebf463baf8d99a39617</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>stereo</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a48ad477fe7a908ee23030d198d9b50eb</anchor>
+      <anchor>a2f5463f3941cf8ca3ecf1eadf1537c19</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>createLCR</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a3689327d326cbaef99d3d4e5bfd5d837</anchor>
+      <anchor>ad5c77216a991efb167699b97f9f7aabe</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>createLRS</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a746b44b43d0d2cb7812f269c8dbd7ba6</anchor>
+      <anchor>a1e47157da153eefa5e732916a4972ca3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>createLCRS</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>abd9782e68c302f4dc222af5676839fb3</anchor>
+      <anchor>a1c8dd6193af98174ede1f65f9ca2dd23</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create5point0</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>afa0d4df7126f123cb1dd23de69069a0b</anchor>
+      <anchor>a481da36757abd6ade6d674f6539605fd</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create5point1</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a0229170f480c70668850383809600bd3</anchor>
+      <anchor>a8c0c22c3be59ca79cbf65dac2c729573</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create6point0</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>ac351cc945b2b837bea38307e0bcbd035</anchor>
+      <anchor>ae29c53c0837115ba3ec96ccf6ad5a8e0</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create6point1</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a792e2bd7a0b5f156a2474d73511d027f</anchor>
+      <anchor>a464368199f8b765ce46c6e7341ef44a3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create6point0Music</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>ab7207d691320d8c8ffc87419359215a4</anchor>
+      <anchor>a145082302f6d8019576dee2a71ada59f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create6point1Music</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a7188d1c2910df0bc1d013042acfdde57</anchor>
+      <anchor>aa7ed045141d4e0b821392595bb5af686</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create7point0</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>ac512f8f010cc0719f5fd7ff893400338</anchor>
+      <anchor>a2c2266136930be772725548e066bdbf8</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create7point0SDDS</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a93c8027e1240fcb128766bbdb0e52226</anchor>
+      <anchor>ad14e2f15df79b9b844be3b5d0ed1951b</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create7point1</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>acf400d2cdb7d2d12ec6b9c23e7b3b76c</anchor>
+      <anchor>a5a984db8c4b9036f22109c9e4dd74f6c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>create7point1SDDS</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a1ba1b825429abb83dde01c8de7845cae</anchor>
+      <anchor>a1ba00eb4a12b3c0d1340eebcf5503b7c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>ambisonic</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>ab16647dcce7ae98b9a4bafe2c5deabab</anchor>
+      <anchor>a16dde93635a1374f6b398ad65b49fa75</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>quadraphonic</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a8596c948f2696983bd7697d59c5001cb</anchor>
+      <anchor>ab216c3d458cbd3965e321a29d12d591d</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>pentagonal</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>abea9536daa8a1805116199c72dc7b2f6</anchor>
+      <anchor>a39849baf1751401d0fd89048f639fd01</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>hexagonal</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>adf061419ae04631b802ed6716da910e7</anchor>
+      <anchor>a7ed53c9a23d40bd2dd50e1d7129837f8</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>octagonal</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a741ed7da3ad990c305cb4de2f0baaa79</anchor>
+      <anchor>a14d45a67ee15c7a79e6ce9dafb86d340</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>discreteChannels</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a55e33e3cdc5895c403cff9dd4414b6d7</anchor>
+      <anchor>a8366b0a736e2f3bb58120f3f51f67f01</anchor>
       <arglist>(int numChannels)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>canonicalChannelSet</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a2a0e656eeb59c2ef0e2ac17433381ddf</anchor>
+      <anchor>a44b57c53c6535be6718d661abaf49048</anchor>
       <arglist>(int numChannels)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static AudioChannelSet</type>
+      <type>static AudioChannelSet JUCE_CALLTYPE</type>
       <name>namedChannelSet</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a8864c1da410b3ec81ed3698ea61f2d12</anchor>
+      <anchor>ab472655043c601c3d0175fbda60e7a30</anchor>
       <arglist>(int numChannels)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static Array&lt; AudioChannelSet &gt;</type>
+      <type>static Array&lt; AudioChannelSet &gt; JUCE_CALLTYPE</type>
       <name>channelSetsWithNumberOfChannels</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a80d68c67160dc1e5f549fda2314391cc</anchor>
+      <anchor>a0abacdf460e6e57f1f3478ea897b2fd9</anchor>
       <arglist>(int numChannels)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static String</type>
+      <type>static String JUCE_CALLTYPE</type>
       <name>getChannelTypeName</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a0cac91d52815c80b9df670112d0bde08</anchor>
+      <anchor>ad7777d56f1c9499c98a3e17d2dbe7353</anchor>
       <arglist>(ChannelType)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static String</type>
+      <type>static String JUCE_CALLTYPE</type>
       <name>getAbbreviatedChannelTypeName</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>af906e8d711de27842262383fdd1a0c42</anchor>
+      <anchor>acb86a7e5f7cbac28800fd2531ecd1117</anchor>
       <arglist>(ChannelType)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static ChannelType</type>
+      <type>static ChannelType JUCE_CALLTYPE</type>
       <name>getChannelTypeFromAbbreviation</name>
       <anchorfile>classAudioChannelSet.html</anchorfile>
-      <anchor>a8156f489af380f5176fc6db6b2b3257a</anchor>
+      <anchor>a5cea1fb43cba0a065382445668e23d65</anchor>
       <arglist>(const String &amp;abbreviation)</arglist>
     </member>
     <member kind="function" static="yes">

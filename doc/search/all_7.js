@@ -256,7 +256,7 @@ var searchData=
   ['heapblock_3c_20zipentryholder_20_2a_20_3e',['HeapBlock&lt; ZipEntryHolder * &gt;',['../classHeapBlock.html',1,'']]],
   ['height',['height',['../classImage_1_1BitmapData.html#ac81ba5621e83a0bc7d090bf2a17dcc8a',1,'Image::BitmapData::height()'],['../classImagePixelData.html#af792076cc5a5339766f1efb20592943c',1,'ImagePixelData::height()'],['../classFlexItem.html#ab3c3e66c4869d3a05ecdf7ae8eaf3ef1',1,'FlexItem::height()'],['../structRelativeCoordinate_1_1Strings.html#a35375bd34335440a8b494eeb1fddf99d',1,'RelativeCoordinate::Strings::height()'],['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65baeb31efdb32a2c853ec60f5ad453afbdd',1,'RelativeCoordinate::StandardStrings::height()']]],
   ['heightunits',['heightUnits',['../structBlockDataSheet.html#a73bc9c4e70502730f2cafe7c122fdb96',1,'BlockDataSheet']]],
-  ['hexagonal',['hexagonal',['../classAudioChannelSet.html#adf061419ae04631b802ed6716da910e7',1,'AudioChannelSet']]],
+  ['hexagonal',['hexagonal',['../classAudioChannelSet.html#a7ed53c9a23d40bd2dd50e1d7129837f8',1,'AudioChannelSet']]],
   ['hexparser',['HexParser',['../structCharacterFunctions_1_1HexParser.html',1,'CharacterFunctions']]],
   ['hiddenfromkeyeditor',['hiddenFromKeyEditor',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72a626b4f9f1aa2bd0761b89b376063d254',1,'ApplicationCommandInfo']]],
   ['hide',['hide',['../classProcess.html#a01a7ddde215bcef03cd16587ed4b0a64',1,'Process']]],

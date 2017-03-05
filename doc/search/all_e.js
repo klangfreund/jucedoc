@@ -3,7 +3,7 @@ var searchData=
   ['charpointertype',['CharPointerType',['../classIdentifier.html#ae5ef972983c99050e88f3e29cd5e4a4f',1,'Identifier::CharPointerType()'],['../classStringRef.html#ad55d30afe25364e21e2f3a69c65de747',1,'StringRef::CharPointerType()']]],
   ['chartype_20_2a',['CharType *',['../classStringRef.html#a9fdf0812da686c16598871b20ae7bab8',1,'StringRef']]],
   ['objectclassptr',['ObjectClassPtr',['../classReferenceCountedArray.html#a5aeb8e0e9bc7f0cb0f19237edf286f64',1,'ReferenceCountedArray']]],
-  ['octagonal',['octagonal',['../classAudioChannelSet.html#a741ed7da3ad990c305cb4de2f0baaa79',1,'AudioChannelSet']]],
+  ['octagonal',['octagonal',['../classAudioChannelSet.html#a14d45a67ee15c7a79e6ce9dafb86d340',1,'AudioChannelSet']]],
   ['octave',['octave',['../classControlButton.html#a891776295057786f99f14631b1aa2794a340de50f29503c78ff28749dead05530',1,'ControlButton::octave()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a02f42abb97dea8a94c2443cd9fdd4022',1,'juce::ControlButton::octave()']]],
   ['odditemscolourid',['oddItemsColourId',['../classTreeView.html#abeebe6dbdc6ae466495aabc64eb51d6aae28e90557dcf45d9ab9f18d22cd01269',1,'TreeView']]],
   ['off',['off',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922adeb8e0c25e24978beb9013836745cb4b',1,'MPENote']]],

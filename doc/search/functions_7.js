@@ -98,7 +98,7 @@ var searchData=
   ['hastype',['hasType',['../classValueTree.html#a5d41bc2066cae65b69aa614aa0f68ff1',1,'ValueTree']]],
   ['haswriteaccess',['hasWriteAccess',['../classFile.html#a11825b7fffe497f31c15c4a35e1e0353',1,'File']]],
   ['heapblock',['HeapBlock',['../classHeapBlock.html#ab7643beefa078bb4692dbfff40f6f3bb',1,'HeapBlock::HeapBlock() noexcept'],['../classHeapBlock.html#a31427ded49cc996e6f894f124c4aa5ba',1,'HeapBlock::HeapBlock(const size_t numElements)'],['../classHeapBlock.html#adcd966a89c09b50e2fa4efc1a7b20ca6',1,'HeapBlock::HeapBlock(const size_t numElements, const bool initialiseToZero)'],['../classHeapBlock.html#a43e44081c3cbef5f634dd5a2a58cd1bd',1,'HeapBlock::HeapBlock(HeapBlock &amp;&amp;other) noexcept']]],
-  ['hexagonal',['hexagonal',['../classAudioChannelSet.html#adf061419ae04631b802ed6716da910e7',1,'AudioChannelSet']]],
+  ['hexagonal',['hexagonal',['../classAudioChannelSet.html#a7ed53c9a23d40bd2dd50e1d7129837f8',1,'AudioChannelSet']]],
   ['hide',['hide',['../classProcess.html#a01a7ddde215bcef03cd16587ed4b0a64',1,'Process']]],
   ['hidecursor',['hideCursor',['../classMouseInputSource.html#a61bc07273b91b328bcff92e721a2461e',1,'MouseInputSource']]],
   ['hideeditor',['hideEditor',['../classLabel.html#a6f5fd9653da51af4720d1ac5e54f18d8',1,'Label']]],
