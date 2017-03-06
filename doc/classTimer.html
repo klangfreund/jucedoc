@@ -153,6 +153,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae7100e8b84d2a8d6adac3d14cbbd27d6"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimer.html#ae7100e8b84d2a8d6adac3d14cbbd27d6">callAfterDelay</a> (int milliseconds, std::function&lt; void()&gt; functionToCall)</td></tr>
+<tr class="memdesc:ae7100e8b84d2a8d6adac3d14cbbd27d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a lambda after a given number of milliseconds.  <a href="#ae7100e8b84d2a8d6adac3d14cbbd27d6">More...</a><br/></td></tr>
+<tr class="separator:ae7100e8b84d2a8d6adac3d14cbbd27d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7074d145c7408da67fdbbe7359aa3b74"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimer.html#a7074d145c7408da67fdbbe7359aa3b74">callPendingTimersSynchronously</a> ()</td></tr>
 <tr class="memdesc:a7074d145c7408da67fdbbe7359aa3b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only: invokes any timers that need callbacks.  <a href="#a7074d145c7408da67fdbbe7359aa3b74">More...</a><br/></td></tr>
 <tr class="separator:a7074d145c7408da67fdbbe7359aa3b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,6 +427,42 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae7100e8b84d2a8d6adac3d14cbbd27d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> Timer::callAfterDelay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>milliseconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>functionToCall</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invokes a lambda after a given number of milliseconds. </p>
+
+</div>
+</div>
 <a class="anchor" id="a7074d145c7408da67fdbbe7359aa3b74"></a>
 <div class="memitem">
 <div class="memproto">
@@ -457,7 +496,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2017 20:01:10 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 6 2017 20:00:54 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

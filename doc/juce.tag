@@ -61187,6 +61187,13 @@
       <anchor>a1e7c585bcb1a775e40ab014267ebc200</anchor>
       <arglist>(AlertWindow::AlertIconType iconType, const String &amp;title, const String &amp;message, Component *associatedComponent=nullptr, ModalComponentManager::Callback *callback=nullptr)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static int JUCE_CALLTYPE</type>
+      <name>showYesNoBox</name>
+      <anchorfile>classNativeMessageBox.html</anchorfile>
+      <anchor>a4cae915126cdadecbca3bd2818a350c8</anchor>
+      <arglist>(AlertWindow::AlertIconType iconType, const String &amp;title, const String &amp;message, Component *associatedComponent=nullptr, ModalComponentManager::Callback *callback=nullptr)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>NewLine</name>
@@ -83847,6 +83854,13 @@
       <anchorfile>classTimer.html</anchorfile>
       <anchor>a3515b6e7a1e3777965e35686eaeb2da7</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void JUCE_CALLTYPE</type>
+      <name>callAfterDelay</name>
+      <anchorfile>classTimer.html</anchorfile>
+      <anchor>ae7100e8b84d2a8d6adac3d14cbbd27d6</anchor>
+      <arglist>(int milliseconds, std::function&lt; void()&gt; functionToCall)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void JUCE_CALLTYPE</type>

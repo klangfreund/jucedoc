@@ -106,6 +106,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e7c585bcb1a775e40ab014267ebc200"><td class="memItemLeft" align="right" valign="top">static int <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNativeMessageBox.html#a1e7c585bcb1a775e40ab014267ebc200">showYesNoCancelBox</a> (<a class="el" href="classAlertWindow.html#a2582d1f79937cb47a6a3764c7d9bdba3">AlertWindow::AlertIconType</a> iconType, const <a class="el" href="classString.html">String</a> &amp;title, const <a class="el" href="classString.html">String</a> &amp;message, <a class="el" href="classComponent.html">Component</a> *associatedComponent=nullptr, <a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *callback=nullptr)</td></tr>
 <tr class="memdesc:a1e7c585bcb1a775e40ab014267ebc200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a dialog box with three buttons.  <a href="#a1e7c585bcb1a775e40ab014267ebc200">More...</a><br/></td></tr>
 <tr class="separator:a1e7c585bcb1a775e40ab014267ebc200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cae915126cdadecbca3bd2818a350c8"><td class="memItemLeft" align="right" valign="top">static int <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNativeMessageBox.html#a4cae915126cdadecbca3bd2818a350c8">showYesNoBox</a> (<a class="el" href="classAlertWindow.html#a2582d1f79937cb47a6a3764c7d9bdba3">AlertWindow::AlertIconType</a> iconType, const <a class="el" href="classString.html">String</a> &amp;title, const <a class="el" href="classString.html">String</a> &amp;message, <a class="el" href="classComponent.html">Component</a> *associatedComponent=nullptr, <a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *callback=nullptr)</td></tr>
+<tr class="memdesc:a4cae915126cdadecbca3bd2818a350c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a dialog box with three buttons.  <a href="#a4cae915126cdadecbca3bd2818a350c8">More...</a><br/></td></tr>
+<tr class="separator:a4cae915126cdadecbca3bd2818a350c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class contains some static methods for showing native alert windows. </p>
@@ -373,6 +376,78 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4cae915126cdadecbca3bd2818a350c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> NativeMessageBox::showYesNoBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAlertWindow.html#a2582d1f79937cb47a6a3764c7d9bdba3">AlertWindow::AlertIconType</a>&#160;</td>
+          <td class="paramname"><em>iconType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>associatedComponent</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModalComponentManager_1_1Callback.html">ModalComponentManager::Callback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows a dialog box with three buttons. </p>
+<p>Ideal for yes/no boxes.</p>
+<p>The escape key can be used to trigger the no button.</p>
+<p>If the callback parameter is null, the box is shown modally, and the method will block until the user has clicked the button (or pressed the escape or return keys). If the callback parameter is non-null, the box will be displayed and placed into a modal state, but this method will return immediately, and the callback will be invoked later when the user dismisses the box.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iconType</td><td>the type of icon to show </td></tr>
+    <tr><td class="paramname">title</td><td>the headline to show at the top of the box </td></tr>
+    <tr><td class="paramname">message</td><td>a longer, more descriptive message to show underneath the title </td></tr>
+    <tr><td class="paramname">associatedComponent</td><td>if this is non-null, it specifies the component that the alert window should be associated with. Depending on the look and feel, this might be used for positioning of the alert window. </td></tr>
+    <tr><td class="paramname">callback</td><td>if this is non-null, the box will be launched asynchronously, returning immediately, and the callback will receive a call to its modalStateFinished() when the box is dismissed, with its parameter being 1 if the "yes" button was pressed or 0 for the "no" button was pressed. The callback object will be owned and deleted by the system, so make sure that it works safely and doesn't keep any references to objects that might be deleted before it gets called.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the callback parameter has been set, this returns 0. Otherwise, it returns one of the following values:<ul>
+<li>0 if 'no' was pressed</li>
+<li>1 if 'yes' was pressed </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__NativeMessageBox_8h.html">juce_NativeMessageBox.h</a></li>
 </ul>
@@ -380,7 +455,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2017 20:01:00 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 6 2017 20:00:49 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
