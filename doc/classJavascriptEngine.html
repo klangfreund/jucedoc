@@ -110,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a875997c4f7e2ac48977b04d707253851"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJavascriptEngine.html#a875997c4f7e2ac48977b04d707253851">callFunction</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;function, const <a class="el" href="structvar_1_1NativeFunctionArgs.html">var::NativeFunctionArgs</a> &amp;args, <a class="el" href="classResult.html">Result</a> *errorMessage=nullptr)</td></tr>
 <tr class="memdesc:a875997c4f7e2ac48977b04d707253851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function in the root namespace, and returns the result.  <a href="#a875997c4f7e2ac48977b04d707253851">More...</a><br/></td></tr>
 <tr class="separator:a875997c4f7e2ac48977b04d707253851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60397f0665c53381cb1ff5ac9456771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar.html">var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJavascriptEngine.html#aa60397f0665c53381cb1ff5ac9456771">callFunctionObject</a> (<a class="el" href="classDynamicObject.html">DynamicObject</a> *objectScope, const <a class="el" href="classvar.html">var</a> &amp;functionObject, const <a class="el" href="structvar_1_1NativeFunctionArgs.html">var::NativeFunctionArgs</a> &amp;args, <a class="el" href="classResult.html">Result</a> *errorMessage=nullptr)</td></tr>
+<tr class="memdesc:aa60397f0665c53381cb1ff5ac9456771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function object in the namespace of a dynamic object, and returns the result.  <a href="#aa60397f0665c53381cb1ff5ac9456771">More...</a><br/></td></tr>
+<tr class="separator:aa60397f0665c53381cb1ff5ac9456771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9f43562e6e82084d5e92a714bfa5eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJavascriptEngine.html#a0c9f43562e6e82084d5e92a714bfa5eb">registerNativeObject</a> (const <a class="el" href="classIdentifier.html">Identifier</a> &amp;objectName, <a class="el" href="classDynamicObject.html">DynamicObject</a> *object)</td></tr>
 <tr class="memdesc:a0c9f43562e6e82084d5e92a714bfa5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a native object to the root namespace.  <a href="#a0c9f43562e6e82084d5e92a714bfa5eb">More...</a><br/></td></tr>
 <tr class="separator:a0c9f43562e6e82084d5e92a714bfa5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +254,47 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa60397f0665c53381cb1ff5ac9456771"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvar.html">var</a> JavascriptEngine::callFunctionObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDynamicObject.html">DynamicObject</a> *&#160;</td>
+          <td class="paramname"><em>objectScope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvar.html">var</a> &amp;&#160;</td>
+          <td class="paramname"><em>functionObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structvar_1_1NativeFunctionArgs.html">var::NativeFunctionArgs</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classResult.html">Result</a> *&#160;</td>
+          <td class="paramname"><em>errorMessage</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls a function object in the namespace of a dynamic object, and returns the result. </p>
+<p>The function arguments are passed in the same format as used by native methods in the var class. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0c9f43562e6e82084d5e92a714bfa5eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +397,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 6 2017 20:00:46 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 7 2017 20:00:45 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

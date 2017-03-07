@@ -46636,6 +46636,13 @@
       <arglist>(const Identifier &amp;function, const var::NativeFunctionArgs &amp;args, Result *errorMessage=nullptr)</arglist>
     </member>
     <member kind="function">
+      <type>var</type>
+      <name>callFunctionObject</name>
+      <anchorfile>classJavascriptEngine.html</anchorfile>
+      <anchor>aa60397f0665c53381cb1ff5ac9456771</anchor>
+      <arglist>(DynamicObject *objectScope, const var &amp;functionObject, const var::NativeFunctionArgs &amp;args, Result *errorMessage=nullptr)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>registerNativeObject</name>
       <anchorfile>classJavascriptEngine.html</anchorfile>
