@@ -322,6 +322,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac263b589275580c0a2a89de9e02f0061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#ac263b589275580c0a2a89de9e02f0061">setScrollToShowCursor</a> (bool shouldScrollToShowCaret)</td></tr>
 <tr class="memdesc:ac263b589275580c0a2a89de9e02f0061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to disable the auto-scrolling which keeps the caret visible.  <a href="#ac263b589275580c0a2a89de9e02f0061">More...</a><br/></td></tr>
 <tr class="separator:ac263b589275580c0a2a89de9e02f0061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a4fd8f52f4ef0f2c9a3be499ef5fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#a16a4fd8f52f4ef0f2c9a3be499ef5fca">setLineSpacing</a> (float newLineSpacing) noexcept</td></tr>
+<tr class="memdesc:a16a4fd8f52f4ef0f2c9a3be499ef5fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the line spacing of the <a class="el" href="classTextEditor.html" title="An editable text box. ">TextEditor</a>.  <a href="#a16a4fd8f52f4ef0f2c9a3be499ef5fca">More...</a><br/></td></tr>
+<tr class="separator:a16a4fd8f52f4ef0f2c9a3be499ef5fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9baf01223dba7bcc90c67b4ad4a372"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#a2a9baf01223dba7bcc90c67b4ad4a372">getLineSpacing</a> () const noexcept</td></tr>
+<tr class="memdesc:a2a9baf01223dba7bcc90c67b4ad4a372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current line spacing of the <a class="el" href="classTextEditor.html" title="An editable text box. ">TextEditor</a>.  <a href="#a2a9baf01223dba7bcc90c67b4ad4a372">More...</a><br/></td></tr>
+<tr class="separator:a2a9baf01223dba7bcc90c67b4ad4a372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6410ba48e5c16b668d83e2f661a6b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#af6410ba48e5c16b668d83e2f661a6b54">moveCaretToEnd</a> ()</td></tr>
 <tr class="separator:af6410ba48e5c16b668d83e2f661a6b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab707c995a249a259d27d86c271ed2822"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#ab707c995a249a259d27d86c271ed2822">moveCaretLeft</a> (bool moveInWholeWordSteps, bool selecting)</td></tr>
@@ -2247,6 +2253,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a16a4fd8f52f4ef0f2c9a3be499ef5fca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextEditor::setLineSpacing </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newLineSpacing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the line spacing of the <a class="el" href="classTextEditor.html" title="An editable text box. ">TextEditor</a>. </p>
+<p>The default (and minimum) value is 1.0 and values &gt; 1.0 will increase the line spacing as a multiple of the line height e.g. for double-spacing call this method with an argument of 2.0. </p>
+
+<p>References <a class="el" href="juce__MathsFunctions_8h.html#aafa7f705c9f978725910c5956d04226c">jmax()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a9baf01223dba7bcc90c67b4ad4a372"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TextEditor::getLineSpacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current line spacing of the <a class="el" href="classTextEditor.html" title="An editable text box. ">TextEditor</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="af6410ba48e5c16b668d83e2f661a6b54"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3408,7 +3468,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:10 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:06 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

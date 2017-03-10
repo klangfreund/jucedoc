@@ -28,7 +28,7 @@ var searchData=
   ['heapblock_3c_20button_3a_3alistener_20_2a_20_3e',['HeapBlock&lt; Button::Listener * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20bytesequence_20_3e',['HeapBlock&lt; ByteSequence &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20changelistener_20_2a_20_3e',['HeapBlock&lt; ChangeListener * &gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20changemessage_20_3e',['HeapBlock&lt; ChangeMessage &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20changemessage_20_2a_20_3e',['HeapBlock&lt; ChangeMessage * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20channelinfo_20_2a_20_3e',['HeapBlock&lt; ChannelInfo * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20char_20_3e',['HeapBlock&lt; char &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20char_2c_20true_20_3e',['HeapBlock&lt; char, true &gt;',['../classHeapBlock.html',1,'']]],

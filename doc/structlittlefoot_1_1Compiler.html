@@ -99,27 +99,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2047b5b6043439bb3d0350e0c24b29f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a2047b5b6043439bb3d0350e0c24b29f2">Compiler</a> ()</td></tr>
-<tr class="separator:a2047b5b6043439bb3d0350e0c24b29f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac951b0faf94d572762763b89f675d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#aac951b0faf94d572762763b89f675d85">Compiler</a> ()=default</td></tr>
+<tr class="separator:aac951b0faf94d572762763b89f675d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac88d8e3c7c5acda96891d4eb215b02b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#ac88d8e3c7c5acda96891d4eb215b02b5">addNativeFunctions</a> (const char *const *functionPrototypes)</td></tr>
+<tr class="memdesc:ac88d8e3c7c5acda96891d4eb215b02b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the compiler a zero-terminated list of native function prototypes to use when parsing function calls.  <a href="#ac88d8e3c7c5acda96891d4eb215b02b5">More...</a><br/></td></tr>
 <tr class="separator:ac88d8e3c7c5acda96891d4eb215b02b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1c1fb92a743b21492e40b95abe5ba0"><td class="memTemplParams" colspan="2">template&lt;typename RunnerType &gt; </td></tr>
 <tr class="memitem:a7e1c1fb92a743b21492e40b95abe5ba0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a7e1c1fb92a743b21492e40b95abe5ba0">addNativeFunctions</a> (const RunnerType &amp;runner)</td></tr>
+<tr class="memdesc:a7e1c1fb92a743b21492e40b95abe5ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the compiler to use the list of native function prototypes from this <a class="el" href="structlittlefoot_1_1Runner.html" title="Loads a program, and lets the user execute its functions. ">littlefoot::Runner</a> object.  <a href="#a7e1c1fb92a743b21492e40b95abe5ba0">More...</a><br/></td></tr>
 <tr class="separator:a7e1c1fb92a743b21492e40b95abe5ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5d34327c001eebe3c1c7934fddad6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#aaa5d34327c001eebe3c1c7934fddad6c">compile</a> (const <a class="el" href="classString.html">String</a> &amp;sourceCode, <a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a> heapSizeBytesRequired)</td></tr>
-<tr class="separator:aaa5d34327c001eebe3c1c7934fddad6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c9e2c07ea3e9f540a6104e690d7a29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a07c9e2c07ea3e9f540a6104e690d7a29">compile</a> (const <a class="el" href="classString.html">String</a> &amp;sourceCode, <a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a> defaultHeapSize)</td></tr>
+<tr class="memdesc:a07c9e2c07ea3e9f540a6104e690d7a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles a littlefoot program.  <a href="#a07c9e2c07ea3e9f540a6104e690d7a29">More...</a><br/></td></tr>
+<tr class="separator:a07c9e2c07ea3e9f540a6104e690d7a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bad97ab5cb0737a3bf75d42dd157849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlittlefoot_1_1Program.html">Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a1bad97ab5cb0737a3bf75d42dd157849">getCompiledProgram</a> () const noexcept</td></tr>
+<tr class="memdesc:a1bad97ab5cb0737a3bf75d42dd157849"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a successful compilation, this returns the finished <a class="el" href="structlittlefoot_1_1Program.html" title="A reference to a block of memory which contains a complete program. ">Program</a>.  <a href="#a1bad97ab5cb0737a3bf75d42dd157849">More...</a><br/></td></tr>
+<tr class="separator:a1bad97ab5cb0737a3bf75d42dd157849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4f30f7019befb6569f49d5be2210fd32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a4f30f7019befb6569f49d5be2210fd32">compiledObjectCode</a></td></tr>
+<tr class="memdesc:a4f30f7019befb6569f49d5be2210fd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a successful call to <a class="el" href="structlittlefoot_1_1Compiler.html#a07c9e2c07ea3e9f540a6104e690d7a29" title="Compiles a littlefoot program. ">compile()</a>, this contains the bytecode generated.  <a href="#a4f30f7019befb6569f49d5be2210fd32">More...</a><br/></td></tr>
 <tr class="separator:a4f30f7019befb6569f49d5be2210fd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class compiles littlefoot source code into a <a class="el" href="structlittlefoot_1_1Program.html" title="A reference to a block of memory which contains a complete program. ">littlefoot::Program</a> object which can be executed by a <a class="el" href="structlittlefoot_1_1Runner.html" title="Loads a program, and lets the user execute its functions. ">littlefoot::Runner</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2047b5b6043439bb3d0350e0c24b29f2"></a>
+<a class="anchor" id="aac951b0faf94d572762763b89f675d85"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">littlefoot::Compiler::Compiler </td>
@@ -128,6 +138,11 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -147,6 +162,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gives the compiler a zero-terminated list of native function prototypes to use when parsing function calls. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7e1c1fb92a743b21492e40b95abe5ba0"></a>
@@ -165,9 +182,11 @@ template&lt;typename RunnerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tells the compiler to use the list of native function prototypes from this <a class="el" href="structlittlefoot_1_1Runner.html" title="Loads a program, and lets the user execute its functions. ">littlefoot::Runner</a> object. </p>
+
 </div>
 </div>
-<a class="anchor" id="aaa5d34327c001eebe3c1c7934fddad6c"></a>
+<a class="anchor" id="a07c9e2c07ea3e9f540a6104e690d7a29"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -181,7 +200,7 @@ template&lt;typename RunnerType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a>&#160;</td>
-          <td class="paramname"><em>heapSizeBytesRequired</em>&#160;</td>
+          <td class="paramname"><em>defaultHeapSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,7 +210,35 @@ template&lt;typename RunnerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Compiles a littlefoot program. </p>
+<p>If there's an error, this returns it, otherwise the compiled bytecode is placed in the compiledObjectCode member. </p>
+
 <p>References <a class="el" href="classResult.html#a2b51de8f6f8c27c3de29f9da5cce8f75">Result::fail()</a>, and <a class="el" href="classResult.html#af20c96ffa94adac90e10a8395d8c8852">Result::ok()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1bad97ab5cb0737a3bf75d42dd157849"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlittlefoot_1_1Program.html">Program</a> littlefoot::Compiler::getCompiledProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>After a successful compilation, this returns the finished <a class="el" href="structlittlefoot_1_1Program.html" title="A reference to a block of memory which contains a complete program. ">Program</a>. </p>
 
 </div>
 </div>
@@ -206,6 +253,9 @@ template&lt;typename RunnerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>After a successful call to <a class="el" href="structlittlefoot_1_1Compiler.html#a07c9e2c07ea3e9f540a6104e690d7a29" title="Compiles a littlefoot program. ">compile()</a>, this contains the bytecode generated. </p>
+<p>A <a class="el" href="structlittlefoot_1_1Program.html" title="A reference to a block of memory which contains a complete program. ">littlefoot::Program</a> object can be created directly from this array. </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -215,7 +265,7 @@ template&lt;typename RunnerType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

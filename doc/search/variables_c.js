@@ -5,7 +5,7 @@ var searchData=
   ['map',['map',['../classMemoryMappedAudioFormatReader.html#a6b88bdb8bd8d5b5acf75cda6fac75f31',1,'MemoryMappedAudioFormatReader']]],
   ['mappedsection',['mappedSection',['../classMemoryMappedAudioFormatReader.html#a33d4ab9328d5a4e588053c894b7a8c45',1,'MemoryMappedAudioFormatReader']]],
   ['margin',['margin',['../classFlexItem.html#a995f3c4d01fc78a564a2d4db0e909532',1,'FlexItem']]],
-  ['markerindex',['markerIndex',['../structjuce_1_1littlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html#acc2d3bf9091c31bd0bd2a465e2eb81da',1,'juce::littlefoot::Compiler::CodeGenerator::MarkerAndAddress::markerIndex()'],['../structlittlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html#a33800b9349f2c9cb8d5ea6bedd3fe64e',1,'littlefoot::Compiler::CodeGenerator::MarkerAndAddress::markerIndex()']]],
+  ['marker',['marker',['../structjuce_1_1littlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html#ab6b793c4101b0e911879d1667d016862',1,'juce::littlefoot::Compiler::CodeGenerator::MarkerAndAddress::marker()'],['../structlittlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html#adde022b4b1c5832f1572e848c2b1c8b0',1,'littlefoot::Compiler::CodeGenerator::MarkerAndAddress::marker()']]],
   ['markertag',['markerTag',['../classMarkerList_1_1ValueTreeWrapper.html#a6ee3f514e213161c74b047b9bc6011d2',1,'MarkerList::ValueTreeWrapper']]],
   ['maroon',['maroon',['../classColours.html#a4790622961dd6a1eff7179d89cc78617',1,'Colours']]],
   ['mat',['mat',['../classMatrix3D.html#ad7e9eecc94c0a33a029a5de12c5c056b',1,'Matrix3D']]],

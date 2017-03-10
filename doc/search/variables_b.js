@@ -12,7 +12,6 @@ var searchData=
   ['lavender',['lavender',['../classColours.html#a42bdd3828e3e453f1aacd8e129d7ba4c',1,'Colours']]],
   ['lavenderblush',['lavenderblush',['../classColours.html#a189b1d3e8c5a8f324de759efc8325496',1,'Colours']]],
   ['leading',['leading',['../classTextLayout_1_1Line.html#a9ff2dde46ca08de8bfd9f69a3b4409ba',1,'TextLayout::Line']]],
-  ['ledgrid',['ledGrid',['../structLEDGrid_1_1Program.html#a18472e9f39b7231f97db4965690184d6',1,'LEDGrid::Program::ledGrid()'],['../structjuce_1_1LEDGrid_1_1Program.html#aa6713571a381aa92ccf7ef6a13ed247e',1,'juce::LEDGrid::Program::ledGrid()']]],
   ['left',['left',['../structFlexItem_1_1Margin.html#a7db889eb288018455d37a9da2591a354',1,'FlexItem::Margin::left()'],['../structRelativeCoordinate_1_1Strings.html#ad3b2d7198a43883ea4c4b64f44e0faf5',1,'RelativeCoordinate::Strings::left()'],['../classRelativeRectangle.html#a4418206ad8d8830d55d37a3bdefbe085',1,'RelativeRectangle::left()']]],
   ['leftkey',['leftKey',['../classKeyPress.html#ad2961244072158eee77e11844a968f61',1,'KeyPress']]],
   ['leftmost',['leftmost',['../structVstEditorBounds.html#a624bc315686fb475aa3faa3c5ac6a6fb',1,'VstEditorBounds']]],

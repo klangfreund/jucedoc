@@ -100,12 +100,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">Program</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A program that can be loaded onto an <a class="el" href="classjuce_1_1LEDGrid.html" title="Represents a 2D grid of LEDs on a block device. ">LEDGrid</a>.  <a href="structjuce_1_1LEDGrid_1_1Program.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html">ProgramEventMessage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message that can be sent to the currently loaded program.  <a href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -122,36 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20ee5fc50b5ad4fa81bcc02da954e74d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a20ee5fc50b5ad4fa81bcc02da954e74d">getNumRows</a> () const =0</td></tr>
 <tr class="memdesc:a20ee5fc50b5ad4fa81bcc02da954e74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of rows in the LED grid.  <a href="#a20ee5fc50b5ad4fa81bcc02da954e74d">More...</a><br/></td></tr>
 <tr class="separator:a20ee5fc50b5ad4fa81bcc02da954e74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd74402d751f952d422d0550e7565e0"><td class="memItemLeft" align="right" valign="top">virtual juce::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#acfd74402d751f952d422d0550e7565e0">setProgram</a> (<a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">Program</a> *)=0</td></tr>
-<tr class="memdesc:acfd74402d751f952d422d0550e7565e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html" title="A program that can be loaded onto an LEDGrid. ">Program</a> to run on this <a class="el" href="classjuce_1_1LEDGrid.html" title="Represents a 2D grid of LEDs on a block device. ">LEDGrid</a>.  <a href="#acfd74402d751f952d422d0550e7565e0">More...</a><br/></td></tr>
-<tr class="separator:acfd74402d751f952d422d0550e7565e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856809f060bcf8b9b7796b88539722ff"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a856809f060bcf8b9b7796b88539722ff">getProgram</a> () const =0</td></tr>
-<tr class="memdesc:a856809f060bcf8b9b7796b88539722ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the currently loaded program.  <a href="#a856809f060bcf8b9b7796b88539722ff">More...</a><br/></td></tr>
-<tr class="separator:a856809f060bcf8b9b7796b88539722ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f779fc66732257bf3a0968c9a0321a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a7f779fc66732257bf3a0968c9a0321a0">sendProgramEvent</a> (const <a class="el" href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html">ProgramEventMessage</a> &amp;)=0</td></tr>
-<tr class="memdesc:a7f779fc66732257bf3a0968c9a0321a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the currently loaded program.  <a href="#a7f779fc66732257bf3a0968c9a0321a0">More...</a><br/></td></tr>
-<tr class="separator:a7f779fc66732257bf3a0968c9a0321a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a33db40ff04d3237e02151dc1e013d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a84a33db40ff04d3237e02151dc1e013d">setDataByte</a> (size_t offset, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)=0</td></tr>
-<tr class="memdesc:a84a33db40ff04d3237e02151dc1e013d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a single byte on the heap.  <a href="#a84a33db40ff04d3237e02151dc1e013d">More...</a><br/></td></tr>
-<tr class="separator:a84a33db40ff04d3237e02151dc1e013d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2436ce33b2eba4208cfd05b516974b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a8b2436ce33b2eba4208cfd05b516974b">setDataBytes</a> (size_t offset, const void *data, size_t num)=0</td></tr>
-<tr class="memdesc:a8b2436ce33b2eba4208cfd05b516974b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets multiple bytes on the heap.  <a href="#a8b2436ce33b2eba4208cfd05b516974b">More...</a><br/></td></tr>
-<tr class="separator:a8b2436ce33b2eba4208cfd05b516974b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dd8fa67fb27a1d54c98237d6002e2a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a2dd8fa67fb27a1d54c98237d6002e2a3">setDataBits</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> startBit, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> numBits, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)=0</td></tr>
-<tr class="memdesc:a2dd8fa67fb27a1d54c98237d6002e2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets multiple bits on the heap.  <a href="#a2dd8fa67fb27a1d54c98237d6002e2a3">More...</a><br/></td></tr>
-<tr class="separator:a2dd8fa67fb27a1d54c98237d6002e2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68f93b0e2c32ff268cb97889a2f96d72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a68f93b0e2c32ff268cb97889a2f96d72">getDataByte</a> (size_t offset)=0</td></tr>
-<tr class="memdesc:a68f93b0e2c32ff268cb97889a2f96d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a byte from the heap.  <a href="#a68f93b0e2c32ff268cb97889a2f96d72">More...</a><br/></td></tr>
-<tr class="separator:a68f93b0e2c32ff268cb97889a2f96d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca116769e700e0244b62a6ec42f0346a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#aca116769e700e0244b62a6ec42f0346a">saveProgramAsDefault</a> ()=0</td></tr>
-<tr class="memdesc:aca116769e700e0244b62a6ec42f0346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current program as the block's default state.  <a href="#aca116769e700e0244b62a6ec42f0346a">More...</a><br/></td></tr>
-<tr class="separator:aca116769e700e0244b62a6ec42f0346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1c9871bbc6b337ec020559180e4a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a6c1c9871bbc6b337ec020559180e4a2d">setRenderer</a> (<a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a> *newRenderer) noexcept</td></tr>
-<tr class="memdesc:a6c1c9871bbc6b337ec020559180e4a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visualiser that will create visuals for this block (nullptr for none).  <a href="#a6c1c9871bbc6b337ec020559180e4a2d">More...</a><br/></td></tr>
-<tr class="separator:a6c1c9871bbc6b337ec020559180e4a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240f9c42b79849b2242f19b7b32f68ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a240f9c42b79849b2242f19b7b32f68ff">getRenderer</a> () const noexcept</td></tr>
-<tr class="memdesc:a240f9c42b79849b2242f19b7b32f68ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visualiser currently attached to this block (nullptr for none).  <a href="#a240f9c42b79849b2242f19b7b32f68ff">More...</a><br/></td></tr>
-<tr class="separator:a240f9c42b79849b2242f19b7b32f68ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24eb6a3adbc5e7f2eb5cfc244e68e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#aa24eb6a3adbc5e7f2eb5cfc244e68e31">setRenderer</a> (<a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html#af76b1b9e607122458c241865b20cfe6e">Renderer::Ptr</a> newRenderer) noexcept</td></tr>
+<tr class="memdesc:aa24eb6a3adbc5e7f2eb5cfc244e68e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visualiser that will create visuals for this block (nullptr for none).  <a href="#aa24eb6a3adbc5e7f2eb5cfc244e68e31">More...</a><br/></td></tr>
+<tr class="separator:aa24eb6a3adbc5e7f2eb5cfc244e68e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22de759d3919d83b57a837bcf656d622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html#af76b1b9e607122458c241865b20cfe6e">Renderer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html#a22de759d3919d83b57a837bcf656d622">getRenderer</a> () const noexcept</td></tr>
+<tr class="memdesc:a22de759d3919d83b57a837bcf656d622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visualiser currently attached to this block (nullptr for none).  <a href="#a22de759d3919d83b57a837bcf656d622">More...</a><br/></td></tr>
+<tr class="separator:a22de759d3919d83b57a837bcf656d622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -254,261 +224,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acfd74402d751f952d422d0550e7565e0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual juce::Result juce::LEDGrid::setProgram </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">Program</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html" title="A program that can be loaded onto an LEDGrid. ">Program</a> to run on this <a class="el" href="classjuce_1_1LEDGrid.html" title="Represents a 2D grid of LEDs on a block device. ">LEDGrid</a>. </p>
-<p>The supplied <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html" title="A program that can be loaded onto an LEDGrid. ">Program</a>'s lifetime will be managed by this class, so do not use the <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html" title="A program that can be loaded onto an LEDGrid. ">Program</a> in other places in your code. </p>
-
-</div>
-</div>
-<a class="anchor" id="a856809f060bcf8b9b7796b88539722ff"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">Program</a>* juce::LEDGrid::getProgram </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the currently loaded program. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7f779fc66732257bf3a0968c9a0321a0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void juce::LEDGrid::sendProgramEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html">ProgramEventMessage</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sends a message to the currently loaded program. </p>
-<p>To receive the message the program must provide a function called handleMessage with the following form: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> handleMessage (<span class="keywordtype">int</span> param1, <span class="keywordtype">int</span> param2)</div>
-<div class="line">{</div>
-<div class="line">    <span class="comment">// Do something with the two integer parameters that the app has sent...</span></div>
-<div class="line">}</div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="a84a33db40ff04d3237e02151dc1e013d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void juce::LEDGrid::setDataByte </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets a single byte on the heap. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8b2436ce33b2eba4208cfd05b516974b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void juce::LEDGrid::setDataBytes </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets multiple bytes on the heap. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2dd8fa67fb27a1d54c98237d6002e2a3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void juce::LEDGrid::setDataBits </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
-          <td class="paramname"><em>startBit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
-          <td class="paramname"><em>numBits</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets multiple bits on the heap. </p>
-
-</div>
-</div>
-<a class="anchor" id="a68f93b0e2c32ff268cb97889a2f96d72"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> juce::LEDGrid::getDataByte </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets a byte from the heap. </p>
-
-</div>
-</div>
-<a class="anchor" id="aca116769e700e0244b62a6ec42f0346a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void juce::LEDGrid::saveProgramAsDefault </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the current program as the block's default state. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6c1c9871bbc6b337ec020559180e4a2d"></a>
+<a class="anchor" id="aa24eb6a3adbc5e7f2eb5cfc244e68e31"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -518,7 +234,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void juce::LEDGrid::setRenderer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html#af76b1b9e607122458c241865b20cfe6e">Renderer::Ptr</a>&#160;</td>
           <td class="paramname"><em>newRenderer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -535,7 +251,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a240f9c42b79849b2242f19b7b32f68ff"></a>
+<a class="anchor" id="a22de759d3919d83b57a837bcf656d622"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -543,7 +259,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">Renderer</a>* juce::LEDGrid::getRenderer </td>
+          <td class="memname"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html#af76b1b9e607122458c241865b20cfe6e">Renderer::Ptr</a> juce::LEDGrid::getRenderer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -582,7 +298,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

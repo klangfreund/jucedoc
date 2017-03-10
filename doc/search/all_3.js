@@ -297,7 +297,7 @@ var searchData=
   ['dropshadoweffect',['DropShadowEffect',['../classDropShadowEffect.html',1,'DropShadowEffect'],['../classDropShadowEffect.html#a385d398423cf81f8e073195ea84473b2',1,'DropShadowEffect::DropShadowEffect()']]],
   ['dropshadower',['DropShadower',['../classDropShadower.html',1,'DropShadower'],['../classDropShadower.html#a14c45e01c95902e0a8f5a975c1519d69',1,'DropShadower::DropShadower()']]],
   ['drumpadgridprogram',['DrumPadGridProgram',['../structjuce_1_1DrumPadGridProgram.html',1,'juce']]],
-  ['drumpadgridprogram',['DrumPadGridProgram',['../structDrumPadGridProgram.html',1,'DrumPadGridProgram'],['../structjuce_1_1DrumPadGridProgram.html#a2f59ddee9c510dc75b982aa7fda194ee',1,'juce::DrumPadGridProgram::DrumPadGridProgram()'],['../structDrumPadGridProgram.html#ab9181eafba45350a054d55d2d94d7d8e',1,'DrumPadGridProgram::DrumPadGridProgram()']]],
+  ['drumpadgridprogram',['DrumPadGridProgram',['../structDrumPadGridProgram.html',1,'DrumPadGridProgram'],['../structjuce_1_1DrumPadGridProgram.html#a0e2f0125b6a377754043989699a908ea',1,'juce::DrumPadGridProgram::DrumPadGridProgram()'],['../structDrumPadGridProgram.html#a000cdc2e5e8e5fe677be2feeb08717ca',1,'DrumPadGridProgram::DrumPadGridProgram()']]],
   ['drylevel',['dryLevel',['../structReverb_1_1Parameters.html#add75191e7a163d95cd807cbc72fa192c',1,'Reverb::Parameters']]],
   ['dshowdefault',['dshowDefault',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75a620a1e36deb4388aadeb49be5097867a',1,'DirectShowComponent']]],
   ['dshowevr',['dshowEVR',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75a4bd766a5f5a12e8a4a0f07a8f41e6a60',1,'DirectShowComponent']]],

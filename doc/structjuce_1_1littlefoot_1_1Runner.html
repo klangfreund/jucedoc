@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0823f3445611c79b564e26d441a88b5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a0823f3445611c79b564e26d441a88b5f">reset</a> () noexcept</td></tr>
 <tr class="memdesc:a0823f3445611c79b564e26d441a88b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the memory state.  <a href="#a0823f3445611c79b564e26d441a88b5f">More...</a><br/></td></tr>
 <tr class="separator:a0823f3445611c79b564e26d441a88b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa290769d5eebb867ced879f4dfe1277d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#aa290769d5eebb867ced879f4dfe1277d">clearHeapAndGlobals</a> () noexcept</td></tr>
+<tr class="memdesc:aa290769d5eebb867ced879f4dfe1277d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the non-program data.  <a href="#aa290769d5eebb867ced879f4dfe1277d">More...</a><br/></td></tr>
+<tr class="separator:aa290769d5eebb867ced879f4dfe1277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f36b4c853488c5bbe48b6e689d2243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294b">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ab9f36b4c853488c5bbe48b6e689d2243">callFunction</a> (const char *functionSignature) noexcept</td></tr>
 <tr class="memdesc:ab9f36b4c853488c5bbe48b6e689d2243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls one of the functions in the program, by its textual signature.  <a href="#ab9f36b4c853488c5bbe48b6e689d2243">More...</a><br/></td></tr>
 <tr class="separator:ab9f36b4c853488c5bbe48b6e689d2243"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +163,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f16ccecd551e87f07ffe8f65f1df497"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a4f16ccecd551e87f07ffe8f65f1df497">isProgramValid</a> () const noexcept</td></tr>
 <tr class="separator:a4f16ccecd551e87f07ffe8f65f1df497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd49f315febbf4d9b032f29d823d818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abdd49f315febbf4d9b032f29d823d818">setDataByte</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, <a class="el" href="namespacejuce_1_1littlefoot.html#ac151ec550bdd1d11a90219badc68998d">uint8</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
+<tr class="memdesc:abdd49f315febbf4d9b032f29d823d818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a byte of data.  <a href="#abdd49f315febbf4d9b032f29d823d818">More...</a><br/></td></tr>
 <tr class="separator:abdd49f315febbf4d9b032f29d823d818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7884aa88f7deb1db0b4ec0b4d1a4990f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a7884aa88f7deb1db0b4ec0b4d1a4990f">setHeapByte</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792">index</a>, <a class="el" href="namespacejuce_1_1littlefoot.html#ac151ec550bdd1d11a90219badc68998d">uint8</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="separator:a7884aa88f7deb1db0b4ec0b4d1a4990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,13 +171,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a44b6e223f5b3dbc18e332ed95e7129d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e291041cb870a677f4d5a75d4f0cf56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a0e291041cb870a677f4d5a75d4f0cf56">getHeapBits</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> startBit, <a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> numBits) const noexcept</td></tr>
 <tr class="separator:a0e291041cb870a677f4d5a75d4f0cf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1773b88a6ded03b4bd2f9212a4ba54c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejuce_1_1littlefoot.html#af357d20994b45cbbdc1bfdcccb24e171">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ac1773b88a6ded03b4bd2f9212a4ba54c">setHeapInt</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> byteOffset, <a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
+<tr class="memitem:ac1773b88a6ded03b4bd2f9212a4ba54c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ac1773b88a6ded03b4bd2f9212a4ba54c">setHeapInt</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> byteOffset, <a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="separator:ac1773b88a6ded03b4bd2f9212a4ba54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3356f8f85b242c8b1c3d7a57095e3ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejuce_1_1littlefoot.html#af357d20994b45cbbdc1bfdcccb24e171">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a3356f8f85b242c8b1c3d7a57095e3ff7">getHeapInt</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> byteOffset) const noexcept</td></tr>
+<tr class="memitem:a3356f8f85b242c8b1c3d7a57095e3ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a3356f8f85b242c8b1c3d7a57095e3ff7">getHeapInt</a> (<a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a> byteOffset) const noexcept</td></tr>
 <tr class="separator:a3356f8f85b242c8b1c3d7a57095e3ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ace8d35b8104920640ec4d321259d2c3e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#ace8d35b8104920640ec4d321259d2c3e">getErrorDescription</a> (<a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294b">ErrorCode</a> e) noexcept</td></tr>
+<tr class="memdesc:ace8d35b8104920640ec4d321259d2c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a text description for an error code.  <a href="#ace8d35b8104920640ec4d321259d2c3e">More...</a><br/></td></tr>
+<tr class="separator:ace8d35b8104920640ec4d321259d2c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b6d3865d2e0b30dc27d6385104bcb4e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#a9b6d3865d2e0b30dc27d6385104bcb4e">getMaximumProgramSize</a> () noexcept</td></tr>
 <tr class="separator:a9b6d3865d2e0b30dc27d6385104bcb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -394,6 +401,61 @@ template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
 </div><div class="memdoc">
 
 <p>Clears the memory state. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa290769d5eebb867ced879f4dfe1277d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::clearHeapAndGlobals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears all the non-program data. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace8d35b8104920640ec4d321259d2c3e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const char* <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::getErrorDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294b">ErrorCode</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a text description for an error code. </p>
 
 </div>
 </div>
@@ -687,6 +749,8 @@ template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sets a byte of data. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7884aa88f7deb1db0b4ec0b4d1a4990f"></a>
@@ -797,7 +861,7 @@ template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejuce_1_1littlefoot.html#af357d20994b45cbbdc1bfdcccb24e171">int32</a> <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::setHeapInt </td>
+          <td class="memname"><a class="el" href="namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290">int32</a> <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::setHeapInt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a>&#160;</td>
           <td class="paramname"><em>byteOffset</em>, </td>
@@ -833,7 +897,7 @@ template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejuce_1_1littlefoot.html#af357d20994b45cbbdc1bfdcccb24e171">int32</a> <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::getHeapInt </td>
+          <td class="memname"><a class="el" href="namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290">int32</a> <a class="el" href="structjuce_1_1littlefoot_1_1Runner.html">juce::littlefoot::Runner</a>&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::getHeapInt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">uint32</a>&#160;</td>
           <td class="paramname"><em>byteOffset</em></td><td>)</td>
@@ -929,7 +993,7 @@ template&lt;int programAndHeapSpace, int stackAndGlobalsSpace&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

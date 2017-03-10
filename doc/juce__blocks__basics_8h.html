@@ -101,6 +101,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1ConnectionPort.html">juce::Block::ConnectionPort</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the edge-connectors that a device may have.  <a href="structjuce_1_1Block_1_1ConnectionPort.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1Program.html">juce::Block::Program</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A program that can be loaded onto a block.  <a href="structjuce_1_1Block_1_1Program.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1ProgramEventMessage.html">juce::Block::ProgramEventMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message that can be sent to the currently loaded program.  <a href="structjuce_1_1Block_1_1ProgramEventMessage.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">juce::Block::ProgramEventListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for objects listening to custom program events.  <a href="structjuce_1_1Block_1_1ProgramEventListener.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1DataInputPortListener.html">juce::Block::DataInputPortListener</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for objects listening to input data port.  <a href="structjuce_1_1Block_1_1DataInputPortListener.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,12 +126,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1LEDGrid.html">juce::LEDGrid</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 2D grid of LEDs on a block device.  <a href="classjuce_1_1LEDGrid.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1Program.html">juce::LEDGrid::Program</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A program that can be loaded onto an <a class="el" href="classjuce_1_1LEDGrid.html" title="Represents a 2D grid of LEDs on a block device. ">LEDGrid</a>.  <a href="structjuce_1_1LEDGrid_1_1Program.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html">juce::LEDGrid::ProgramEventMessage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message that can be sent to the currently loaded program.  <a href="structjuce_1_1LEDGrid_1_1ProgramEventMessage.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1LEDGrid_1_1Renderer.html">juce::LEDGrid::Renderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,16 +216,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a1925c497cab90d639873261ac38181ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a1925c497cab90d639873261ac38181ce">juce::littlefoot::int8</a> = char</td></tr>
-<tr class="separator:a1925c497cab90d639873261ac38181ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407d5403ba3f14b9a4c4f2a3e5dc8b3c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a407d5403ba3f14b9a4c4f2a3e5dc8b3c">juce::littlefoot::int8</a> = signed char</td></tr>
+<tr class="separator:a407d5403ba3f14b9a4c4f2a3e5dc8b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac151ec550bdd1d11a90219badc68998d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#ac151ec550bdd1d11a90219badc68998d">juce::littlefoot::uint8</a> = unsigned char</td></tr>
 <tr class="separator:ac151ec550bdd1d11a90219badc68998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d8168ea7c301b733768ff7017b76c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a93d8168ea7c301b733768ff7017b76c9">juce::littlefoot::int16</a> = short</td></tr>
-<tr class="separator:a93d8168ea7c301b733768ff7017b76c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3d0480a8e1cb35f84c9f701f975675"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#adb3d0480a8e1cb35f84c9f701f975675">juce::littlefoot::int16</a> = signed short</td></tr>
+<tr class="separator:adb3d0480a8e1cb35f84c9f701f975675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e49a863d4330f68e822ff827c244005"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a8e49a863d4330f68e822ff827c244005">juce::littlefoot::uint16</a> = unsigned short</td></tr>
 <tr class="separator:a8e49a863d4330f68e822ff827c244005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af357d20994b45cbbdc1bfdcccb24e171"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#af357d20994b45cbbdc1bfdcccb24e171">juce::littlefoot::int32</a> = int</td></tr>
-<tr class="separator:af357d20994b45cbbdc1bfdcccb24e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603051c551bb1417349684d6e4b24290"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290">juce::littlefoot::int32</a> = signed int</td></tr>
+<tr class="separator:a603051c551bb1417349684d6e4b24290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a19808b76c5ad46952071fe0246cd67"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#a6a19808b76c5ad46952071fe0246cd67">juce::littlefoot::uint32</a> = unsigned int</td></tr>
 <tr class="separator:a6a19808b76c5ad46952071fe0246cd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcba142243bbec868407a7c3db0bab73"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejuce_1_1littlefoot.html#afcba142243bbec868407a7c3db0bab73">juce::littlefoot::FunctionID</a> = <a class="el" href="juce__MathsFunctions_8h.html#a259fa4834387bd68627ddf37bb3ebdb9">int16</a></td></tr>
@@ -246,7 +249,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:00:44 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

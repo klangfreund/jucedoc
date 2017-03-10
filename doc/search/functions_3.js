@@ -180,7 +180,7 @@ var searchData=
   ['dropshadow',['DropShadow',['../structDropShadow.html#a4ed8af89cfe25cfbd823ce0a70413aa3',1,'DropShadow::DropShadow() noexcept'],['../structDropShadow.html#a151588cf37044442a7ca07b0a80e70d3',1,'DropShadow::DropShadow(Colour shadowColour, int radius, Point&lt; int &gt; offset) noexcept']]],
   ['dropshadoweffect',['DropShadowEffect',['../classDropShadowEffect.html#a385d398423cf81f8e073195ea84473b2',1,'DropShadowEffect']]],
   ['dropshadower',['DropShadower',['../classDropShadower.html#a14c45e01c95902e0a8f5a975c1519d69',1,'DropShadower']]],
-  ['drumpadgridprogram',['DrumPadGridProgram',['../structjuce_1_1DrumPadGridProgram.html#a2f59ddee9c510dc75b982aa7fda194ee',1,'juce::DrumPadGridProgram::DrumPadGridProgram()'],['../structDrumPadGridProgram.html#ab9181eafba45350a054d55d2d94d7d8e',1,'DrumPadGridProgram::DrumPadGridProgram()']]],
+  ['drumpadgridprogram',['DrumPadGridProgram',['../structjuce_1_1DrumPadGridProgram.html#a0e2f0125b6a377754043989699a908ea',1,'juce::DrumPadGridProgram::DrumPadGridProgram()'],['../structDrumPadGridProgram.html#a000cdc2e5e8e5fe677be2feeb08717ca',1,'DrumPadGridProgram::DrumPadGridProgram()']]],
   ['dummycriticalsection',['DummyCriticalSection',['../classDummyCriticalSection.html#aed067ef6b51dcca1f25f19231a99b595',1,'DummyCriticalSection']]],
   ['duplicateifshared',['duplicateIfShared',['../classImage.html#ad995cd253234063d22b604984e83489d',1,'Image']]],
   ['dynamiclibrary',['DynamicLibrary',['../classDynamicLibrary.html#a7c6a13e65177869af7116175c7745e2e',1,'DynamicLibrary::DynamicLibrary() noexcept'],['../classDynamicLibrary.html#af9ad02ee239000e67ff664ef4b5dfe2c',1,'DynamicLibrary::DynamicLibrary(const String &amp;name)']]],

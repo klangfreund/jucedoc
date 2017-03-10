@@ -119,6 +119,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1DataInputPortListener.html">DataInputPortListener</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for objects listening to input data port.  <a href="structjuce_1_1Block_1_1DataInputPortListener.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1Program.html">Program</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A program that can be loaded onto a block.  <a href="structjuce_1_1Block_1_1Program.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for objects listening to custom program events.  <a href="structjuce_1_1Block_1_1ProgramEventListener.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjuce_1_1Block_1_1ProgramEventMessage.html">ProgramEventMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message that can be sent to the currently loaded program.  <a href="structjuce_1_1Block_1_1ProgramEventMessage.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -205,11 +214,50 @@ Public Member Functions</h2></td></tr>
 &lt; <a class="el" href="structjuce_1_1Block_1_1ConnectionPort.html">ConnectionPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aa31681c9144312b220056b72b867c198">getPorts</a> () const =0</td></tr>
 <tr class="memdesc:aa31681c9144312b220056b72b867c198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the connectors that this device has.  <a href="#aa31681c9144312b220056b72b867c198">More...</a><br/></td></tr>
 <tr class="separator:aa31681c9144312b220056b72b867c198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8906a3bc9455330768f0d43e91bdd7f"><td class="memItemLeft" align="right" valign="top">virtual juce::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aa8906a3bc9455330768f0d43e91bdd7f">setProgram</a> (<a class="el" href="structjuce_1_1Block_1_1Program.html">Program</a> *)=0</td></tr>
+<tr class="memdesc:aa8906a3bc9455330768f0d43e91bdd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="structjuce_1_1Block_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block.  <a href="#aa8906a3bc9455330768f0d43e91bdd7f">More...</a><br/></td></tr>
+<tr class="separator:aa8906a3bc9455330768f0d43e91bdd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb476b4324823ca6894a2e144ef8237"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structjuce_1_1Block_1_1Program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a1cb476b4324823ca6894a2e144ef8237">getProgram</a> () const =0</td></tr>
+<tr class="memdesc:a1cb476b4324823ca6894a2e144ef8237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the currently loaded program.  <a href="#a1cb476b4324823ca6894a2e144ef8237">More...</a><br/></td></tr>
+<tr class="separator:a1cb476b4324823ca6894a2e144ef8237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b25a86d6c3c3fdb4d7a9779a4ef7233"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a3b25a86d6c3c3fdb4d7a9779a4ef7233">sendProgramEvent</a> (const <a class="el" href="structjuce_1_1Block_1_1ProgramEventMessage.html">ProgramEventMessage</a> &amp;)=0</td></tr>
+<tr class="memdesc:a3b25a86d6c3c3fdb4d7a9779a4ef7233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the currently loaded program.  <a href="#a3b25a86d6c3c3fdb4d7a9779a4ef7233">More...</a><br/></td></tr>
+<tr class="separator:a3b25a86d6c3c3fdb4d7a9779a4ef7233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d2c426770ecb1b7f8c855da0b25ff2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a24d2c426770ecb1b7f8c855da0b25ff2">addProgramEventListener</a> (<a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
+<tr class="memdesc:a24d2c426770ecb1b7f8c855da0b25ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for custom program events from the block.  <a href="#a24d2c426770ecb1b7f8c855da0b25ff2">More...</a><br/></td></tr>
+<tr class="separator:a24d2c426770ecb1b7f8c855da0b25ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d7876da4129efc3f694ac796a1c87d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aa3d7876da4129efc3f694ac796a1c87d">removeProgramEventListener</a> (<a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
+<tr class="memdesc:aa3d7876da4129efc3f694ac796a1c87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for custom program events from the block.  <a href="#aa3d7876da4129efc3f694ac796a1c87d">More...</a><br/></td></tr>
+<tr class="separator:aa3d7876da4129efc3f694ac796a1c87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7563d65f78570efa21ce5576f3d9d16c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a7563d65f78570efa21ce5576f3d9d16c">getMemorySize</a> ()=0</td></tr>
+<tr class="memdesc:a7563d65f78570efa21ce5576f3d9d16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the data block that setDataByte and other functions can write to.  <a href="#a7563d65f78570efa21ce5576f3d9d16c">More...</a><br/></td></tr>
+<tr class="separator:a7563d65f78570efa21ce5576f3d9d16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8b4b8cf390f24f369f3794b0eb3320"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a5e8b4b8cf390f24f369f3794b0eb3320">setDataByte</a> (size_t offset, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)=0</td></tr>
+<tr class="memdesc:a5e8b4b8cf390f24f369f3794b0eb3320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a single byte on the littlefoot heap.  <a href="#a5e8b4b8cf390f24f369f3794b0eb3320">More...</a><br/></td></tr>
+<tr class="separator:a5e8b4b8cf390f24f369f3794b0eb3320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96f42d533e161444b991f468b0d6cc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#ae96f42d533e161444b991f468b0d6cc4">setDataBytes</a> (size_t offset, const void *data, size_t num)=0</td></tr>
+<tr class="memdesc:ae96f42d533e161444b991f468b0d6cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets multiple bytes on the littlefoot heap.  <a href="#ae96f42d533e161444b991f468b0d6cc4">More...</a><br/></td></tr>
+<tr class="separator:ae96f42d533e161444b991f468b0d6cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ae58b21b8e26fa17abeb3e1dbb19ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#af5ae58b21b8e26fa17abeb3e1dbb19ca">setDataBits</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> startBit, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> numBits, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)=0</td></tr>
+<tr class="memdesc:af5ae58b21b8e26fa17abeb3e1dbb19ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets multiple bits on the littlefoot heap.  <a href="#af5ae58b21b8e26fa17abeb3e1dbb19ca">More...</a><br/></td></tr>
+<tr class="separator:af5ae58b21b8e26fa17abeb3e1dbb19ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4768f9ea76826b0a0abfb69e335e2702"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a4768f9ea76826b0a0abfb69e335e2702">getDataByte</a> (size_t offset)=0</td></tr>
+<tr class="memdesc:a4768f9ea76826b0a0abfb69e335e2702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a byte from the littlefoot heap.  <a href="#a4768f9ea76826b0a0abfb69e335e2702">More...</a><br/></td></tr>
+<tr class="separator:a4768f9ea76826b0a0abfb69e335e2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5838b4ee45ab80d4d987e1d48105460"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#ac5838b4ee45ab80d4d987e1d48105460">saveProgramAsDefault</a> ()=0</td></tr>
+<tr class="memdesc:ac5838b4ee45ab80d4d987e1d48105460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current program as the block's default state.  <a href="#ac5838b4ee45ab80d4d987e1d48105460">More...</a><br/></td></tr>
+<tr class="separator:ac5838b4ee45ab80d4d987e1d48105460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace55dfe47a21efaf72cd15f06a4c78b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aace55dfe47a21efaf72cd15f06a4c78b">setLogger</a> (std::function&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
+<tr class="memdesc:aace55dfe47a21efaf72cd15f06a4c78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the user to provide a function that will receive log messages from the block.  <a href="#aace55dfe47a21efaf72cd15f06a4c78b">More...</a><br/></td></tr>
+<tr class="separator:aace55dfe47a21efaf72cd15f06a4c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#af173f3ccc3b6dfcfdc3b7dfeb2bb3586">sendFirmwareUpdatePacket</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *data, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> size, std::function&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>)&gt; packetAckCallback)=0</td></tr>
+<tr class="memdesc:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#af173f3ccc3b6dfcfdc3b7dfeb2bb3586">More...</a><br/></td></tr>
+<tr class="separator:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855e00966a805452a678c3189b7f81ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a855e00966a805452a678c3189b7f81ae">addDataInputPortListener</a> (<a class="el" href="structjuce_1_1Block_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
-<tr class="memdesc:a855e00966a805452a678c3189b7f81ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener of data input port.  <a href="#a855e00966a805452a678c3189b7f81ae">More...</a><br/></td></tr>
+<tr class="memdesc:a855e00966a805452a678c3189b7f81ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for the data input port.  <a href="#a855e00966a805452a678c3189b7f81ae">More...</a><br/></td></tr>
 <tr class="separator:a855e00966a805452a678c3189b7f81ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa9eaf496d52ad5b365fa97a90ad0bce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aaa9eaf496d52ad5b365fa97a90ad0bce">removeDataInputPortListener</a> (<a class="el" href="structjuce_1_1Block_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
-<tr class="memdesc:aaa9eaf496d52ad5b365fa97a90ad0bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener of data input port.  <a href="#aaa9eaf496d52ad5b365fa97a90ad0bce">More...</a><br/></td></tr>
+<tr class="memdesc:aaa9eaf496d52ad5b365fa97a90ad0bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for the data input port.  <a href="#aaa9eaf496d52ad5b365fa97a90ad0bce">More...</a><br/></td></tr>
 <tr class="separator:aaa9eaf496d52ad5b365fa97a90ad0bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c230d445890adf54044a913cfebe52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a33c230d445890adf54044a913cfebe52">sendMessage</a> (const void *messageData, size_t messageSize)=0</td></tr>
 <tr class="memdesc:a33c230d445890adf54044a913cfebe52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the block.  <a href="#a33c230d445890adf54044a913cfebe52">More...</a><br/></td></tr>
@@ -234,6 +282,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5b6ead23d89a8ba36a3c63d59d40a06b"><td class="memItemLeft" align="right" valign="top">juce::ListenerList<br class="typebreak"/>
 &lt; <a class="el" href="structjuce_1_1Block_1_1DataInputPortListener.html">DataInputPortListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a5b6ead23d89a8ba36a3c63d59d40a06b">dataInputPortListeners</a></td></tr>
 <tr class="separator:a5b6ead23d89a8ba36a3c63d59d40a06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3530a53621205863b795fae5ded906"><td class="memItemLeft" align="right" valign="top">juce::ListenerList<br class="typebreak"/>
+&lt; <a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a5a3530a53621205863b795fae5ded906">programEventListeners</a></td></tr>
+<tr class="separator:a5a3530a53621205863b795fae5ded906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an individual BLOCKS device. </p>
@@ -808,6 +859,406 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa8906a3bc9455330768f0d43e91bdd7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual juce::Result juce::Block::setProgram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjuce_1_1Block_1_1Program.html">Program</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="structjuce_1_1Block_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block. </p>
+<p>The supplied <a class="el" href="structjuce_1_1Block_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a>'s lifetime will be managed by this class, so do not use the <a class="el" href="structjuce_1_1Block_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> in other places in your code. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1cb476b4324823ca6894a2e144ef8237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structjuce_1_1Block_1_1Program.html">Program</a>* juce::Block::getProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the currently loaded program. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b25a86d6c3c3fdb4d7a9779a4ef7233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::sendProgramEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structjuce_1_1Block_1_1ProgramEventMessage.html">ProgramEventMessage</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a message to the currently loaded program. </p>
+<p>To receive the message the program must provide a littlefoot function called handleMessage with the following form: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> handleMessage (<span class="keywordtype">int</span> param1, <span class="keywordtype">int</span> param2)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// Do something with the two integer parameters that the app has sent...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a24d2c426770ecb1b7f8c855da0b25ff2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::addProgramEventListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a new listener for custom program events from the block. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa3d7876da4129efc3f694ac796a1c87d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::removeProgramEventListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a listener for custom program events from the block. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7563d65f78570efa21ce5576f3d9d16c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> juce::Block::getMemorySize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size of the data block that setDataByte and other functions can write to. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e8b4b8cf390f24f369f3794b0eb3320"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::setDataByte </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a single byte on the littlefoot heap. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae96f42d533e161444b991f468b0d6cc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::setDataBytes </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets multiple bytes on the littlefoot heap. </p>
+
+</div>
+</div>
+<a class="anchor" id="af5ae58b21b8e26fa17abeb3e1dbb19ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::setDataBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>numBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets multiple bits on the littlefoot heap. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4768f9ea76826b0a0abfb69e335e2702"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> juce::Block::getDataByte </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a byte from the littlefoot heap. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5838b4ee45ab80d4d987e1d48105460"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::saveProgramAsDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the current program as the block's default state. </p>
+
+</div>
+</div>
+<a class="anchor" id="aace55dfe47a21efaf72cd15f06a4c78b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void juce::Block::setLogger </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>loggingCallback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows the user to provide a function that will receive log messages from the block. </p>
+
+</div>
+</div>
+<a class="anchor" id="af173f3ccc3b6dfcfdc3b7dfeb2bb3586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool juce::Block::sendFirmwareUpdatePacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>)&gt;&#160;</td>
+          <td class="paramname"><em>packetAckCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a firmware update packet to a block, and waits for a reply. </p>
+<p>Returns an error code. </p>
+
+</div>
+</div>
 <a class="anchor" id="a855e00966a805452a678c3189b7f81ae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -830,7 +1281,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds a new listener of data input port. </p>
+<p>Adds a new listener for the data input port. </p>
 
 </div>
 </div>
@@ -856,7 +1307,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes a listener of data input port. </p>
+<p>Removes a listener for the data input port. </p>
 
 </div>
 </div>
@@ -946,6 +1397,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5a3530a53621205863b795fae5ded906"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">juce::ListenerList&lt;<a class="el" href="structjuce_1_1Block_1_1ProgramEventListener.html">ProgramEventListener</a>&gt; juce::Block::programEventListeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__blocks__basics_8h.html">juce_blocks_basics.h</a></li>
 </ul>
@@ -953,7 +1424,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

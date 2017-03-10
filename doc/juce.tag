@@ -587,6 +587,9 @@
     <filename>juce__Block_8h</filename>
     <class kind="class">Block</class>
     <class kind="struct">Block::ConnectionPort</class>
+    <class kind="struct">Block::Program</class>
+    <class kind="struct">Block::ProgramEventMessage</class>
+    <class kind="struct">Block::ProgramEventListener</class>
     <class kind="struct">Block::DataInputPortListener</class>
   </compound>
   <compound kind="file">
@@ -603,14 +606,15 @@
     <filename>juce__blocks__basics_8h</filename>
     <class kind="class">juce::Block</class>
     <class kind="struct">juce::Block::ConnectionPort</class>
+    <class kind="struct">juce::Block::Program</class>
+    <class kind="struct">juce::Block::ProgramEventMessage</class>
+    <class kind="struct">juce::Block::ProgramEventListener</class>
     <class kind="struct">juce::Block::DataInputPortListener</class>
     <class kind="class">juce::TouchSurface</class>
     <class kind="struct">juce::TouchSurface::Touch</class>
     <class kind="struct">juce::TouchSurface::Listener</class>
     <class kind="struct">juce::LEDColour</class>
     <class kind="class">juce::LEDGrid</class>
-    <class kind="struct">juce::LEDGrid::Program</class>
-    <class kind="struct">juce::LEDGrid::ProgramEventMessage</class>
     <class kind="struct">juce::LEDGrid::Renderer</class>
     <class kind="class">juce::LEDRow</class>
     <class kind="class">juce::ControlButton</class>
@@ -643,10 +647,10 @@
     <namespace>juce</namespace>
     <namespace>juce::littlefoot</namespace>
     <member kind="typedef">
-      <type>char</type>
+      <type>signed char</type>
       <name>int8</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>a1925c497cab90d639873261ac38181ce</anchor>
+      <anchor>a407d5403ba3f14b9a4c4f2a3e5dc8b3c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -657,10 +661,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>short</type>
+      <type>signed short</type>
       <name>int16</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>a93d8168ea7c301b733768ff7017b76c9</anchor>
+      <anchor>adb3d0480a8e1cb35f84c9f701f975675</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -671,10 +675,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>int</type>
+      <type>signed int</type>
       <name>int32</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>af357d20994b45cbbdc1bfdcccb24e171</anchor>
+      <anchor>a603051c551bb1417349684d6e4b24290</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -882,6 +886,20 @@
       <anchor>abe0b996e200f440873df4a8e29c961c1</anchor>
       <arglist></arglist>
     </member>
+    <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 7 &gt;</type>
+      <name>FirmwareUpdateACKCode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ae18c12e82c1ce77afe594fb7478a56ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 7 &gt;</type>
+      <name>FirmwareUpdatePacketSize</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a14e9615d6d3ff3888ce0689380fe92f9</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>MessageFromDevice</name>
@@ -890,6 +908,7 @@
       <arglist></arglist>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d">deviceTopology</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1ac3b437dd7850dd77e5723bf042832c3d">packetACK</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</enumvalue>
@@ -898,12 +917,28 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">touchEndWithVelocity</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">controlButtonDown</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">controlButtonUp</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">logMessage</enumvalue>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>packetACK</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1ac3b437dd7850dd77e5723bf042832c3d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>firmwareUpdateACK</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>programEventMessage</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -915,6 +950,7 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbabbbbfdecd3eaf2ad82b2f33786a67687">deviceCommandMessage</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cba24dd14178f112a548f94ac8a9252f854">sharedDataChange</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">firmwareUpdatePacket</enumvalue>
     </member>
     <member kind="enumvalue">
       <type>@</type>
@@ -1096,6 +1132,13 @@
       <name>packetACK</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1ab160915e283a508f01b6c4fac415669a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>firmwareUpdateACK</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a99afd2a70e5de620bf123059c4c9a8a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -2323,8 +2366,6 @@
     <filename>juce__LEDGrid_8h</filename>
     <class kind="struct">LEDColour</class>
     <class kind="class">LEDGrid</class>
-    <class kind="struct">LEDGrid::Program</class>
-    <class kind="struct">LEDGrid::ProgramEventMessage</class>
     <class kind="struct">LEDGrid::Renderer</class>
   </compound>
   <compound kind="file">
@@ -2494,6 +2535,34 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>LITTLEFOOT_OP</name>
+      <anchorfile>juce__blocks__basics_8h.html</anchorfile>
+      <anchor>a1b3544c2056e3aca149ead659534b63a</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT8</name>
+      <anchorfile>juce__blocks__basics_8h.html</anchorfile>
+      <anchor>ac11f16f590f9adf5e7a8d7d75034c203</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT16</name>
+      <anchorfile>juce__blocks__basics_8h.html</anchorfile>
+      <anchor>a3b075e958f98c57ba5fe2378629a289a</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT32</name>
+      <anchorfile>juce__blocks__basics_8h.html</anchorfile>
+      <anchor>a4d152d4f9f135385189278236974a572</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>LITTLEFOOT_PERFORM_OP</name>
       <anchorfile>juce__blocks__basics_8h.html</anchorfile>
       <anchor>adf1a22a2a443f1731efa9a82a84cbc51</anchor>
@@ -2550,6 +2619,34 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>LITTLEFOOT_OP</name>
+      <anchorfile>juce__LittleFootRunner_8h.html</anchorfile>
+      <anchor>a1b3544c2056e3aca149ead659534b63a</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT8</name>
+      <anchorfile>juce__LittleFootRunner_8h.html</anchorfile>
+      <anchor>ac11f16f590f9adf5e7a8d7d75034c203</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT16</name>
+      <anchorfile>juce__LittleFootRunner_8h.html</anchorfile>
+      <anchor>a3b075e958f98c57ba5fe2378629a289a</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>LITTLEFOOT_OP_INT32</name>
+      <anchorfile>juce__LittleFootRunner_8h.html</anchorfile>
+      <anchor>a4d152d4f9f135385189278236974a572</anchor>
+      <arglist>(name)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>LITTLEFOOT_PERFORM_OP</name>
       <anchorfile>juce__LittleFootRunner_8h.html</anchorfile>
       <anchor>adf1a22a2a443f1731efa9a82a84cbc51</anchor>
@@ -2577,10 +2674,10 @@
       <arglist>(name)</arglist>
     </member>
     <member kind="typedef">
-      <type>char</type>
+      <type>signed char</type>
       <name>int8</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>a4217b8b14e3a82c19d115879172369fc</anchor>
+      <anchor>a0e7499324fa7198411b83aec5a9581e4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -2591,10 +2688,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>short</type>
+      <type>signed short</type>
       <name>int16</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>af97fa4639b8f2ed268359ca056868ff4</anchor>
+      <anchor>ada240f433c50e81ac698bbf32d6a2c10</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -2605,10 +2702,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>int</type>
+      <type>signed int</type>
       <name>int32</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>aec160adbd27451c33bc7b91dc94cfa20</anchor>
+      <anchor>afc5264c0714df002ef584815c72b219e</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -20699,13 +20796,13 @@
   <compound kind="struct">
     <name>BitmapLEDProgram</name>
     <filename>structBitmapLEDProgram.html</filename>
-    <base>LEDGrid::Program</base>
+    <base>Block::Program</base>
     <member kind="function">
       <type></type>
       <name>BitmapLEDProgram</name>
       <anchorfile>structBitmapLEDProgram.html</anchorfile>
-      <anchor>a3e4791f4567a1f8023aca5ad0d77d216</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
+      <anchor>ad6a66bb38167081be419fbdf03bfed90</anchor>
+      <arglist>(Block &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -20717,22 +20814,22 @@
     <member kind="function">
       <type></type>
       <name>Program</name>
-      <anchorfile>structLEDGrid_1_1Program.html</anchorfile>
-      <anchor>accc8eb40e5617b95b4c4243eebd8abdb</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
+      <anchorfile>structBlock_1_1Program.html</anchorfile>
+      <anchor>a57c9aa349a09d7c1b74bbaf7aa0b48bc</anchor>
+      <arglist>(Block &amp;)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Program</name>
-      <anchorfile>structLEDGrid_1_1Program.html</anchorfile>
-      <anchor>a26fe2fd993872f1d5eddde4a2ff10972</anchor>
+      <anchorfile>structBlock_1_1Program.html</anchorfile>
+      <anchor>ab5cdcb7497b58a7ddfd4fb015b6b39f4</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="variable">
-      <type>LEDGrid &amp;</type>
-      <name>ledGrid</name>
-      <anchorfile>structLEDGrid_1_1Program.html</anchorfile>
-      <anchor>a18472e9f39b7231f97db4965690184d6</anchor>
+      <type>Block &amp;</type>
+      <name>block</name>
+      <anchorfile>structBlock_1_1Program.html</anchorfile>
+      <anchor>a2b39067fad835a24a04776556cc5a972</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -20741,6 +20838,9 @@
     <filename>classBlock.html</filename>
     <class kind="struct">Block::ConnectionPort</class>
     <class kind="struct">Block::DataInputPortListener</class>
+    <class kind="struct">Block::Program</class>
+    <class kind="struct">Block::ProgramEventListener</class>
+    <class kind="struct">Block::ProgramEventMessage</class>
     <member kind="enumeration">
       <type></type>
       <name>Type</name>
@@ -20944,6 +21044,97 @@
       <anchor>a4d7cdf778c1a7b1f52962f3397624565</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual juce::Result</type>
+      <name>setProgram</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ac955a783098b02900299fc734afcfe0c</anchor>
+      <arglist>(Program *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Program *</type>
+      <name>getProgram</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a403be8126dd2b96d440c942b6ab20e66</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>sendProgramEvent</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a558774394aea4e459ad9db4e069b711c</anchor>
+      <arglist>(const ProgramEventMessage &amp;)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>addProgramEventListener</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a2b28f24106caca131de4be097ac7eb33</anchor>
+      <arglist>(ProgramEventListener *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>removeProgramEventListener</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>aa35f86e4320184df425ef26bf78d0bb2</anchor>
+      <arglist>(ProgramEventListener *)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>getMemorySize</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ae3d08344c1b453e6958a2aafcb0d2bd2</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataByte</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a88d94c2477d0cbb2d50aa4ddd5d0701f</anchor>
+      <arglist>(size_t offset, uint8 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataBytes</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a6729813625ef9b25a685a5fe9c9fa0c3</anchor>
+      <arglist>(size_t offset, const void *data, size_t num)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataBits</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>adb33b9abd94155ef4c04d994f07ce99a</anchor>
+      <arglist>(uint32 startBit, uint32 numBits, uint32 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint8</type>
+      <name>getDataByte</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a433b5291a424966377b71c580b747a58</anchor>
+      <arglist>(size_t offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>saveProgramAsDefault</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a267e131fc12d47c5afabfe17afbd5ec4</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLogger</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ab14c53fe0485b084f129626d7d3829b0</anchor>
+      <arglist>(std::function&lt; void(const String &amp;)&gt; loggingCallback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>sendFirmwareUpdatePacket</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>aef359e7ae647b875a802332a4211f8b4</anchor>
+      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>addDataInputPortListener</name>
@@ -20991,6 +21182,13 @@
       <name>dataInputPortListeners</name>
       <anchorfile>classBlock.html</anchorfile>
       <anchor>a86de54de4f53ae04cc3fdd5ce9b841bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>juce::ListenerList&lt; ProgramEventListener &gt;</type>
+      <name>programEventListeners</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a0c0e1985883bc5fab5535d82c8fe62b3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -21053,6 +21251,46 @@
       <anchorfile>structBlock_1_1DataInputPortListener.html</anchorfile>
       <anchor>ac90519100c7ffb63ed70bfe174ce6d24</anchor>
       <arglist>(Block &amp;source, const void *messageData, size_t messageSize)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Block::Program</name>
+    <filename>structBlock_1_1Program.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual juce::String</type>
+      <name>getLittleFootProgram</name>
+      <anchorfile>structBlock_1_1Program.html</anchorfile>
+      <anchor>a162fefdf847a319008d2384e97c492c4</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Block::ProgramEventListener</name>
+    <filename>structBlock_1_1ProgramEventListener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ProgramEventListener</name>
+      <anchorfile>structBlock_1_1ProgramEventListener.html</anchorfile>
+      <anchor>a4f4f79cf82f9df206c3a5b71e054699c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>handleProgramEvent</name>
+      <anchorfile>structBlock_1_1ProgramEventListener.html</anchorfile>
+      <anchor>a7311deaab13c38f2b80ecfadb5e89af3</anchor>
+      <arglist>(Block &amp;source, const ProgramEventMessage &amp;)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Block::ProgramEventMessage</name>
+    <filename>structBlock_1_1ProgramEventMessage.html</filename>
+    <member kind="variable">
+      <type>int32</type>
+      <name>values</name>
+      <anchorfile>structBlock_1_1ProgramEventMessage.html</anchorfile>
+      <anchor>aec4510472128b7de03b5ff86968787ec</anchor>
+      <arglist>[3]</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -36491,7 +36729,7 @@
   <compound kind="struct">
     <name>DrumPadGridProgram</name>
     <filename>structDrumPadGridProgram.html</filename>
-    <base>LEDGrid::Program</base>
+    <base>Block::Program</base>
     <class kind="struct">DrumPadGridProgram::GridFill</class>
     <member kind="enumeration">
       <type></type>
@@ -36539,8 +36777,8 @@
       <type></type>
       <name>DrumPadGridProgram</name>
       <anchorfile>structDrumPadGridProgram.html</anchorfile>
-      <anchor>ab9181eafba45350a054d55d2d94d7d8e</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
+      <anchor>a000cdc2e5e8e5fe677be2feeb08717ca</anchor>
+      <arglist>(Block &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -44473,6 +44711,13 @@
       <anchor>af69d0b848cbad07b164705a3bf2a872f</anchor>
       <arglist>(const int32 *messageData)</arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addFirmwareUpdatePacket</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>a4f2573e8695c565a35bd4b528c87fb81</anchor>
+      <arglist>(const uint8 *packetData, uint8 size)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>HostPacketDecoder</name>
@@ -44543,9 +44788,30 @@
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
+      <name>handleCustomMessage</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>a520269334382a0584231723e87e02384</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex, PacketTimestamp packetTimestamp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
       <name>handlePacketACK</name>
       <anchorfile>structHostPacketDecoder.html</anchorfile>
       <anchor>a967b2cdd6f583ac93baa6093a71fdd87</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>handleFirmwareUpdateACK</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>aa7bea3b910d1a64966f7fab360327122</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>handleLogMessage</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>ad8f1873075623f5407e8c5f57c9df678</anchor>
       <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex)</arglist>
     </member>
   </compound>
@@ -49264,8 +49530,6 @@
   <compound kind="class">
     <name>LEDGrid</name>
     <filename>classLEDGrid.html</filename>
-    <class kind="struct">LEDGrid::Program</class>
-    <class kind="struct">LEDGrid::ProgramEventMessage</class>
     <class kind="struct">LEDGrid::Renderer</class>
     <member kind="function">
       <type></type>
@@ -49295,74 +49559,18 @@
       <anchor>a43229e88d085a33b8bd9159eb0acab01</anchor>
       <arglist>() const =0</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual juce::Result</type>
-      <name>setProgram</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a54c1d6f1afd20958c0cb0bebace26ac9</anchor>
-      <arglist>(Program *)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual Program *</type>
-      <name>getProgram</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a0c7325f84585e7643749a00f61ab84cd</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>sendProgramEvent</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a912196d177130b8442306f4e16f9d249</anchor>
-      <arglist>(const ProgramEventMessage &amp;)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataByte</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a5720ee29e46908d71b9f9f1492adf968</anchor>
-      <arglist>(size_t offset, uint8 value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataBytes</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>af034afafa3334cb684a360cff0f95a8f</anchor>
-      <arglist>(size_t offset, const void *data, size_t num)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataBits</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>aee67342ec95e61b027c9c30e0938c19a</anchor>
-      <arglist>(uint32 startBit, uint32 numBits, uint32 value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint8</type>
-      <name>getDataByte</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a8aafbd8d9ac756df365f43b7e9ffb67d</anchor>
-      <arglist>(size_t offset)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>saveProgramAsDefault</name>
-      <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a484cc57fb7df8ca865bf8058989af0fd</anchor>
-      <arglist>()=0</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>setRenderer</name>
       <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a09e84751f5d4dbd1215f81b945fc67e4</anchor>
-      <arglist>(Renderer *newRenderer) noexcept</arglist>
+      <anchor>a42131676ff6601c6e8f29e2e0c9ed88c</anchor>
+      <arglist>(Renderer::Ptr newRenderer) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>Renderer *</type>
+      <type>Renderer::Ptr</type>
       <name>getRenderer</name>
       <anchorfile>classLEDGrid.html</anchorfile>
-      <anchor>a173034705c3d488c2cf83a54fd8f1288</anchor>
+      <anchor>a7c7c72dda7ebeaeeff4a4d1caaee1af8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="variable">
@@ -49374,37 +49582,15 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>LEDGrid::Program</name>
-    <filename>structLEDGrid_1_1Program.html</filename>
-    <member kind="function" virtualness="pure">
-      <type>virtual juce::String</type>
-      <name>getLittleFootProgram</name>
-      <anchorfile>structLEDGrid_1_1Program.html</anchorfile>
-      <anchor>a5c6d09fe219b65f37f17614ef6671070</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint32</type>
-      <name>getHeapSize</name>
-      <anchorfile>structLEDGrid_1_1Program.html</anchorfile>
-      <anchor>a0f953f11445bb80efcf71b3a9d1e0b02</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>LEDGrid::ProgramEventMessage</name>
-    <filename>structLEDGrid_1_1ProgramEventMessage.html</filename>
-    <member kind="variable">
-      <type>int32</type>
-      <name>values</name>
-      <anchorfile>structLEDGrid_1_1ProgramEventMessage.html</anchorfile>
-      <anchor>a6adc3a64de3418ad908c601798fec8e7</anchor>
-      <arglist>[2]</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>LEDGrid::Renderer</name>
     <filename>structLEDGrid_1_1Renderer.html</filename>
+    <member kind="typedef">
+      <type>juce::ReferenceCountedObjectPtr&lt; Renderer &gt;</type>
+      <name>Ptr</name>
+      <anchorfile>structLEDGrid_1_1Renderer.html</anchorfile>
+      <anchor>a36e8719150045ffc9ab23200209f8854</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Renderer</name>
@@ -82023,6 +82209,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setLineSpacing</name>
+      <anchorfile>classTextEditor.html</anchorfile>
+      <anchor>a16a4fd8f52f4ef0f2c9a3be499ef5fca</anchor>
+      <arglist>(float newLineSpacing) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getLineSpacing</name>
+      <anchorfile>classTextEditor.html</anchorfile>
+      <anchor>a2a9baf01223dba7bcc90c67b4ad4a372</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>moveCaretToEnd</name>
       <anchorfile>classTextEditor.html</anchorfile>
       <anchor>af6410ba48e5c16b668d83e2f661a6b54</anchor>
@@ -92181,6 +92381,9 @@
     <filename>classjuce_1_1Block.html</filename>
     <class kind="struct">juce::Block::ConnectionPort</class>
     <class kind="struct">juce::Block::DataInputPortListener</class>
+    <class kind="struct">juce::Block::Program</class>
+    <class kind="struct">juce::Block::ProgramEventListener</class>
+    <class kind="struct">juce::Block::ProgramEventMessage</class>
     <member kind="enumeration">
       <type></type>
       <name>Type</name>
@@ -92384,6 +92587,97 @@
       <anchor>aa31681c9144312b220056b72b867c198</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual juce::Result</type>
+      <name>setProgram</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>aa8906a3bc9455330768f0d43e91bdd7f</anchor>
+      <arglist>(Program *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Program *</type>
+      <name>getProgram</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a1cb476b4324823ca6894a2e144ef8237</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>sendProgramEvent</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a3b25a86d6c3c3fdb4d7a9779a4ef7233</anchor>
+      <arglist>(const ProgramEventMessage &amp;)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>addProgramEventListener</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a24d2c426770ecb1b7f8c855da0b25ff2</anchor>
+      <arglist>(ProgramEventListener *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>removeProgramEventListener</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>aa3d7876da4129efc3f694ac796a1c87d</anchor>
+      <arglist>(ProgramEventListener *)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>getMemorySize</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a7563d65f78570efa21ce5576f3d9d16c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataByte</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a5e8b4b8cf390f24f369f3794b0eb3320</anchor>
+      <arglist>(size_t offset, uint8 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataBytes</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>ae96f42d533e161444b991f468b0d6cc4</anchor>
+      <arglist>(size_t offset, const void *data, size_t num)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setDataBits</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>af5ae58b21b8e26fa17abeb3e1dbb19ca</anchor>
+      <arglist>(uint32 startBit, uint32 numBits, uint32 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint8</type>
+      <name>getDataByte</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a4768f9ea76826b0a0abfb69e335e2702</anchor>
+      <arglist>(size_t offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>saveProgramAsDefault</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>ac5838b4ee45ab80d4d987e1d48105460</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLogger</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>aace55dfe47a21efaf72cd15f06a4c78b</anchor>
+      <arglist>(std::function&lt; void(const String &amp;)&gt; loggingCallback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>sendFirmwareUpdatePacket</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>af173f3ccc3b6dfcfdc3b7dfeb2bb3586</anchor>
+      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>addDataInputPortListener</name>
@@ -92431,6 +92725,13 @@
       <name>dataInputPortListeners</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
       <anchor>a5b6ead23d89a8ba36a3c63d59d40a06b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>juce::ListenerList&lt; ProgramEventListener &gt;</type>
+      <name>programEventListeners</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a5a3530a53621205863b795fae5ded906</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -92493,6 +92794,67 @@
       <anchorfile>structjuce_1_1Block_1_1DataInputPortListener.html</anchorfile>
       <anchor>a019c25b21389c2fbcf88bf004b86a4f1</anchor>
       <arglist>(Block &amp;source, const void *messageData, size_t messageSize)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>juce::Block::Program</name>
+    <filename>structjuce_1_1Block_1_1Program.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Program</name>
+      <anchorfile>structjuce_1_1Block_1_1Program.html</anchorfile>
+      <anchor>a1f2529b900398d7b1feec52cfe784cb1</anchor>
+      <arglist>(Block &amp;)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Program</name>
+      <anchorfile>structjuce_1_1Block_1_1Program.html</anchorfile>
+      <anchor>af87031f5b4a2b683ca018797b109c717</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual juce::String</type>
+      <name>getLittleFootProgram</name>
+      <anchorfile>structjuce_1_1Block_1_1Program.html</anchorfile>
+      <anchor>a0c12f78d067c2778591d8c32803196ae</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>Block &amp;</type>
+      <name>block</name>
+      <anchorfile>structjuce_1_1Block_1_1Program.html</anchorfile>
+      <anchor>a912f6edbf86e8f2ee889fc44c11d0362</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>juce::Block::ProgramEventListener</name>
+    <filename>structjuce_1_1Block_1_1ProgramEventListener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ProgramEventListener</name>
+      <anchorfile>structjuce_1_1Block_1_1ProgramEventListener.html</anchorfile>
+      <anchor>a87b185aa30a9d88ebe50052beff85f18</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>handleProgramEvent</name>
+      <anchorfile>structjuce_1_1Block_1_1ProgramEventListener.html</anchorfile>
+      <anchor>a6419feaeec2f55103f5f4c6e73c9d420</anchor>
+      <arglist>(Block &amp;source, const ProgramEventMessage &amp;)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>juce::Block::ProgramEventMessage</name>
+    <filename>structjuce_1_1Block_1_1ProgramEventMessage.html</filename>
+    <member kind="variable">
+      <type>int32</type>
+      <name>values</name>
+      <anchorfile>structjuce_1_1Block_1_1ProgramEventMessage.html</anchorfile>
+      <anchor>a9a0ea6d8bb4bc4cc769c95387719ad97</anchor>
+      <arglist>[3]</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -92761,8 +93123,6 @@
   <compound kind="class">
     <name>juce::LEDGrid</name>
     <filename>classjuce_1_1LEDGrid.html</filename>
-    <class kind="struct">juce::LEDGrid::Program</class>
-    <class kind="struct">juce::LEDGrid::ProgramEventMessage</class>
     <class kind="struct">juce::LEDGrid::Renderer</class>
     <member kind="function">
       <type></type>
@@ -92792,74 +93152,18 @@
       <anchor>a20ee5fc50b5ad4fa81bcc02da954e74d</anchor>
       <arglist>() const =0</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual juce::Result</type>
-      <name>setProgram</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>acfd74402d751f952d422d0550e7565e0</anchor>
-      <arglist>(Program *)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual Program *</type>
-      <name>getProgram</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a856809f060bcf8b9b7796b88539722ff</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>sendProgramEvent</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a7f779fc66732257bf3a0968c9a0321a0</anchor>
-      <arglist>(const ProgramEventMessage &amp;)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataByte</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a84a33db40ff04d3237e02151dc1e013d</anchor>
-      <arglist>(size_t offset, uint8 value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataBytes</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a8b2436ce33b2eba4208cfd05b516974b</anchor>
-      <arglist>(size_t offset, const void *data, size_t num)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>setDataBits</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a2dd8fa67fb27a1d54c98237d6002e2a3</anchor>
-      <arglist>(uint32 startBit, uint32 numBits, uint32 value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint8</type>
-      <name>getDataByte</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a68f93b0e2c32ff268cb97889a2f96d72</anchor>
-      <arglist>(size_t offset)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>saveProgramAsDefault</name>
-      <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>aca116769e700e0244b62a6ec42f0346a</anchor>
-      <arglist>()=0</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>setRenderer</name>
       <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a6c1c9871bbc6b337ec020559180e4a2d</anchor>
-      <arglist>(Renderer *newRenderer) noexcept</arglist>
+      <anchor>aa24eb6a3adbc5e7f2eb5cfc244e68e31</anchor>
+      <arglist>(Renderer::Ptr newRenderer) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>Renderer *</type>
+      <type>Renderer::Ptr</type>
       <name>getRenderer</name>
       <anchorfile>classjuce_1_1LEDGrid.html</anchorfile>
-      <anchor>a240f9c42b79849b2242f19b7b32f68ff</anchor>
+      <anchor>a22de759d3919d83b57a837bcf656d622</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="variable">
@@ -92871,58 +93175,15 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>juce::LEDGrid::Program</name>
-    <filename>structjuce_1_1LEDGrid_1_1Program.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Program</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1Program.html</anchorfile>
-      <anchor>a5ca490219b796c226120fe18ba2f7fa6</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~Program</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1Program.html</anchorfile>
-      <anchor>a69025845f784cb8ef9ec2af4e8ac82e1</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual juce::String</type>
-      <name>getLittleFootProgram</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1Program.html</anchorfile>
-      <anchor>a2e34292c188f281e35b60773e3053cda</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint32</type>
-      <name>getHeapSize</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1Program.html</anchorfile>
-      <anchor>a328030d896006b4cf80550dc4015815e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="variable">
-      <type>LEDGrid &amp;</type>
-      <name>ledGrid</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1Program.html</anchorfile>
-      <anchor>aa6713571a381aa92ccf7ef6a13ed247e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>juce::LEDGrid::ProgramEventMessage</name>
-    <filename>structjuce_1_1LEDGrid_1_1ProgramEventMessage.html</filename>
-    <member kind="variable">
-      <type>int32</type>
-      <name>values</name>
-      <anchorfile>structjuce_1_1LEDGrid_1_1ProgramEventMessage.html</anchorfile>
-      <anchor>a2fbdc10339007a646fd6eb3ef4ceaa6d</anchor>
-      <arglist>[2]</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>juce::LEDGrid::Renderer</name>
     <filename>structjuce_1_1LEDGrid_1_1Renderer.html</filename>
+    <member kind="typedef">
+      <type>juce::ReferenceCountedObjectPtr&lt; Renderer &gt;</type>
+      <name>Ptr</name>
+      <anchorfile>structjuce_1_1LEDGrid_1_1Renderer.html</anchorfile>
+      <anchor>af76b1b9e607122458c241865b20cfe6e</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Renderer</name>
@@ -93752,7 +94013,7 @@
   <compound kind="struct">
     <name>juce::DrumPadGridProgram</name>
     <filename>structjuce_1_1DrumPadGridProgram.html</filename>
-    <base>juce::LEDGrid::Program</base>
+    <base>juce::Block::Program</base>
     <class kind="struct">juce::DrumPadGridProgram::GridFill</class>
     <member kind="enumeration">
       <type></type>
@@ -93800,8 +94061,8 @@
       <type></type>
       <name>DrumPadGridProgram</name>
       <anchorfile>structjuce_1_1DrumPadGridProgram.html</anchorfile>
-      <anchor>a2f59ddee9c510dc75b982aa7fda194ee</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
+      <anchor>a0e2f0125b6a377754043989699a908ea</anchor>
+      <arglist>(Block &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -93944,13 +94205,13 @@
   <compound kind="struct">
     <name>juce::BitmapLEDProgram</name>
     <filename>structjuce_1_1BitmapLEDProgram.html</filename>
-    <base>juce::LEDGrid::Program</base>
+    <base>juce::Block::Program</base>
     <member kind="function">
       <type></type>
       <name>BitmapLEDProgram</name>
       <anchorfile>structjuce_1_1BitmapLEDProgram.html</anchorfile>
-      <anchor>a655ceb2dd00b3aa0cd44adc9d7ce3565</anchor>
-      <arglist>(LEDGrid &amp;)</arglist>
+      <anchor>a03d6e594266452bfb4e4188a2fa97a53</anchor>
+      <arglist>(Block &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -94767,10 +95028,10 @@
     <class kind="struct">juce::littlefoot::Compiler</class>
     <class kind="struct">juce::littlefoot::LittleFootRemoteHeap</class>
     <member kind="typedef">
-      <type>char</type>
+      <type>signed char</type>
       <name>int8</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>a1925c497cab90d639873261ac38181ce</anchor>
+      <anchor>a407d5403ba3f14b9a4c4f2a3e5dc8b3c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -94781,10 +95042,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>short</type>
+      <type>signed short</type>
       <name>int16</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>a93d8168ea7c301b733768ff7017b76c9</anchor>
+      <anchor>adb3d0480a8e1cb35f84c9f701f975675</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -94795,10 +95056,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>int</type>
+      <type>signed int</type>
       <name>int32</name>
       <anchorfile>namespacejuce_1_1littlefoot.html</anchorfile>
-      <anchor>af357d20994b45cbbdc1bfdcccb24e171</anchor>
+      <anchor>a603051c551bb1417349684d6e4b24290</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -94929,13 +95190,6 @@
     </member>
     <member kind="function">
       <type>uint32</type>
-      <name>getProgramSize</name>
-      <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
-      <anchor>acbf5d0e18d8af33f6dbe7684308f4a07</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>uint32</type>
       <name>getNumFunctions</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
       <anchor>ac986aebc9050e8f23577ca95f9090032</anchor>
@@ -94963,10 +95217,10 @@
       <arglist>(uint32 functionIndex) const noexcept</arglist>
     </member>
     <member kind="function">
-      <type>uint16</type>
-      <name>getNumGlobals</name>
+      <type>uint32</type>
+      <name>getProgramSize</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
-      <anchor>af11c3cad659c1dea6c18a397972c082e</anchor>
+      <anchor>acbf5d0e18d8af33f6dbe7684308f4a07</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -94975,6 +95229,27 @@
       <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
       <anchor>a2547d70543dfc2868a5602a2d59e392b</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16</type>
+      <name>getNumGlobals</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
+      <anchor>af11c3cad659c1dea6c18a397972c082e</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32</type>
+      <name>getTotalSpaceNeeded</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
+      <anchor>a94a725218689bb8449aecef1610a1639</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint8</type>
+      <name>getNumExtraBytesForOpcode</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Program.html</anchorfile>
+      <anchor>a8d379eafb47ba24ec043a56b35fd6099</anchor>
+      <arglist>(OpCode op) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static float</type>
@@ -95097,6 +95372,13 @@
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>clearHeapAndGlobals</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
+      <anchor>aa290769d5eebb867ced879f4dfe1277d</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>ErrorCode</type>
       <name>callFunction</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
@@ -95200,6 +95482,13 @@
       <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
       <anchor>a3356f8f85b242c8b1c3d7a57095e3ff7</anchor>
       <arglist>(uint32 byteOffset) const noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>getErrorDescription</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Runner.html</anchorfile>
+      <anchor>ace8d35b8104920640ec4d321259d2c3e</anchor>
+      <arglist>(ErrorCode e) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static uint32</type>
@@ -95311,8 +95600,8 @@
       <type></type>
       <name>Compiler</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Compiler.html</anchorfile>
-      <anchor>a2c94ab0baab3eaa963147186c420e47c</anchor>
-      <arglist>()</arglist>
+      <anchor>a6e83dbacb62f6944a3c6a15b2bab2894</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -95332,8 +95621,15 @@
       <type>Result</type>
       <name>compile</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Compiler.html</anchorfile>
-      <anchor>ad986ccd2daa320c014c0b2e46ab18c88</anchor>
-      <arglist>(const String &amp;sourceCode, uint32 heapSizeBytesRequired)</arglist>
+      <anchor>acde52abb8b8e252acb581c0f5f891a11</anchor>
+      <arglist>(const String &amp;sourceCode, uint32 defaultHeapSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>Program</type>
+      <name>getCompiledProgram</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1Compiler.html</anchorfile>
+      <anchor>aef65f7534452b02a707975d0ed48078c</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="variable">
       <type>Array&lt; uint8 &gt;</type>
@@ -95358,10 +95654,10 @@
     <name>juce::littlefoot::Compiler::CodeGenerator::MarkerAndAddress</name>
     <filename>structjuce_1_1littlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html</filename>
     <member kind="variable">
-      <type>int</type>
-      <name>markerIndex</name>
+      <type>Marker</type>
+      <name>marker</name>
       <anchorfile>structjuce_1_1littlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html</anchorfile>
-      <anchor>acc2d3bf9091c31bd0bd2a465e2eb81da</anchor>
+      <anchor>ab6b793c4101b0e911879d1667d016862</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -95435,6 +95731,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>resetDeviceStateToUnknown</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>a123914d16df1fab86ca620ec8b7aea41</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resetDataRangeToUnknown</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>ace15ff6f57667d9887bd5fd688ba11c9</anchor>
+      <arglist>(size_t offset, size_t size) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setByte</name>
       <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
       <anchor>ab37f7d37eea5e05ef81e751435f9e7f3</anchor>
@@ -95465,15 +95775,22 @@
       <type>void</type>
       <name>invalidateData</name>
       <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
-      <anchor>af16476e6af26dc103e0f1bbc408610a1</anchor>
-      <arglist>()</arglist>
+      <anchor>a99560b38795c3e41ad6e7a7ebeb5a8b4</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFullySynced</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>ac4b74741c102733b36cd0e2594d16d2f</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sendChanges</name>
       <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
-      <anchor>a69d0fd84135540b2204f103149a131fc</anchor>
-      <arglist>(ImplementationClass &amp;bi)</arglist>
+      <anchor>ad0858088f4f389b363c17b1246543235</anchor>
+      <arglist>(ImplementationClass &amp;bi, bool forceSend)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -95513,10 +95830,10 @@
     <class kind="struct">littlefoot::Program</class>
     <class kind="struct">littlefoot::Runner</class>
     <member kind="typedef">
-      <type>char</type>
+      <type>signed char</type>
       <name>int8</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>a4217b8b14e3a82c19d115879172369fc</anchor>
+      <anchor>a0e7499324fa7198411b83aec5a9581e4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -95527,10 +95844,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>short</type>
+      <type>signed short</type>
       <name>int16</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>af97fa4639b8f2ed268359ca056868ff4</anchor>
+      <anchor>ada240f433c50e81ac698bbf32d6a2c10</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -95541,10 +95858,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>int</type>
+      <type>signed int</type>
       <name>int32</name>
       <anchorfile>namespacelittlefoot.html</anchorfile>
-      <anchor>aec160adbd27451c33bc7b91dc94cfa20</anchor>
+      <anchor>afc5264c0714df002ef584815c72b219e</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -95589,8 +95906,8 @@
       <type></type>
       <name>Compiler</name>
       <anchorfile>structlittlefoot_1_1Compiler.html</anchorfile>
-      <anchor>a2047b5b6043439bb3d0350e0c24b29f2</anchor>
-      <arglist>()</arglist>
+      <anchor>aac951b0faf94d572762763b89f675d85</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -95610,8 +95927,15 @@
       <type>Result</type>
       <name>compile</name>
       <anchorfile>structlittlefoot_1_1Compiler.html</anchorfile>
-      <anchor>aaa5d34327c001eebe3c1c7934fddad6c</anchor>
-      <arglist>(const String &amp;sourceCode, uint32 heapSizeBytesRequired)</arglist>
+      <anchor>a07c9e2c07ea3e9f540a6104e690d7a29</anchor>
+      <arglist>(const String &amp;sourceCode, uint32 defaultHeapSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>Program</type>
+      <name>getCompiledProgram</name>
+      <anchorfile>structlittlefoot_1_1Compiler.html</anchorfile>
+      <anchor>a1bad97ab5cb0737a3bf75d42dd157849</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="variable">
       <type>Array&lt; uint8 &gt;</type>
@@ -95636,10 +95960,10 @@
     <name>littlefoot::Compiler::CodeGenerator::MarkerAndAddress</name>
     <filename>structlittlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html</filename>
     <member kind="variable">
-      <type>int</type>
-      <name>markerIndex</name>
+      <type>Marker</type>
+      <name>marker</name>
       <anchorfile>structlittlefoot_1_1Compiler_1_1CodeGenerator_1_1MarkerAndAddress.html</anchorfile>
-      <anchor>a33800b9349f2c9cb8d5ea6bedd3fe64e</anchor>
+      <anchor>adde022b4b1c5832f1572e848c2b1c8b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -95713,6 +96037,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>resetDeviceStateToUnknown</name>
+      <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>a8dc61b4f0494e30366d7c2a445c212be</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resetDataRangeToUnknown</name>
+      <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>a2266981d92e240e310812e667f625460</anchor>
+      <arglist>(size_t offset, size_t size) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setByte</name>
       <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
       <anchor>aa5ee115e4d8b164ebb7c54f15736648f</anchor>
@@ -95743,15 +96081,22 @@
       <type>void</type>
       <name>invalidateData</name>
       <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
-      <anchor>a19f1f99e6f02cb0c8acc411b137bf337</anchor>
-      <arglist>()</arglist>
+      <anchor>a0903d12be37d95e5afe20d6d37ea4784</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFullySynced</name>
+      <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>a3afc089afddbc6f46cfa43b07fa6a954</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sendChanges</name>
       <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
-      <anchor>a32f4f40e3e2c3852f7b35bb907409067</anchor>
-      <arglist>(ImplementationClass &amp;bi)</arglist>
+      <anchor>a880caba7689d2ef3f47ba47d378434ce</anchor>
+      <arglist>(ImplementationClass &amp;bi, bool forceSend)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -95875,13 +96220,6 @@
     </member>
     <member kind="function">
       <type>uint32</type>
-      <name>getProgramSize</name>
-      <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
-      <anchor>a95446937ae9cefacb7556f80f7d13823</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>uint32</type>
       <name>getNumFunctions</name>
       <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
       <anchor>a3ae1b02702924595db42bed99de14de3</anchor>
@@ -95909,10 +96247,10 @@
       <arglist>(uint32 functionIndex) const noexcept</arglist>
     </member>
     <member kind="function">
-      <type>uint16</type>
-      <name>getNumGlobals</name>
+      <type>uint32</type>
+      <name>getProgramSize</name>
       <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
-      <anchor>a222f005cb35520fac5dce5746a7303c5</anchor>
+      <anchor>a95446937ae9cefacb7556f80f7d13823</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -95921,6 +96259,27 @@
       <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
       <anchor>ae586b29c507aa7b89551abb2f855a583</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16</type>
+      <name>getNumGlobals</name>
+      <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
+      <anchor>a222f005cb35520fac5dce5746a7303c5</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32</type>
+      <name>getTotalSpaceNeeded</name>
+      <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
+      <anchor>a91c8c029d9b6800bfd7c979605a607c7</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint8</type>
+      <name>getNumExtraBytesForOpcode</name>
+      <anchorfile>structlittlefoot_1_1Program.html</anchorfile>
+      <anchor>ab5b3c42a6a9b15b2c18ddb06d525564d</anchor>
+      <arglist>(OpCode op) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static float</type>
@@ -96043,6 +96402,13 @@
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>clearHeapAndGlobals</name>
+      <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
+      <anchor>a5eb6ec27999054287fb4b4ff38697804</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>ErrorCode</type>
       <name>callFunction</name>
       <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
@@ -96146,6 +96512,13 @@
       <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
       <anchor>af4d93d3a5d3a0843667ff0c0c98ea0cc</anchor>
       <arglist>(uint32 byteOffset) const noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>getErrorDescription</name>
+      <anchorfile>structlittlefoot_1_1Runner.html</anchorfile>
+      <anchor>afa412a9ac92b6096881cf8094e69bddb</anchor>
+      <arglist>(ErrorCode e) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static uint32</type>

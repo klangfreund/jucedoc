@@ -112,8 +112,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:adcd576683bdd4ec9b18b12496e9b0e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265efe26ad890365d596cb2ed291f07f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketDecoder.html#a265efe26ad890365d596cb2ed291f07f">handleButtonDownOrUp</a> (Handler &amp;handler, <a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a> deviceIndex, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae5e54646a38a0b24af61fd4a829d84fc">PacketTimestamp</a> packetTimestamp, bool isDown)</td></tr>
 <tr class="separator:a265efe26ad890365d596cb2ed291f07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520269334382a0584231723e87e02384"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketDecoder.html#a520269334382a0584231723e87e02384">handleCustomMessage</a> (Handler &amp;handler, <a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a> deviceIndex, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae5e54646a38a0b24af61fd4a829d84fc">PacketTimestamp</a> packetTimestamp)</td></tr>
+<tr class="separator:a520269334382a0584231723e87e02384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967b2cdd6f583ac93baa6093a71fdd87"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketDecoder.html#a967b2cdd6f583ac93baa6093a71fdd87">handlePacketACK</a> (Handler &amp;handler, <a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a> deviceIndex)</td></tr>
 <tr class="separator:a967b2cdd6f583ac93baa6093a71fdd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7bea3b910d1a64966f7fab360327122"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketDecoder.html#aa7bea3b910d1a64966f7fab360327122">handleFirmwareUpdateACK</a> (Handler &amp;handler, <a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a> deviceIndex)</td></tr>
+<tr class="separator:aa7bea3b910d1a64966f7fab360327122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f1873075623f5407e8c5f57c9df678"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketDecoder.html#ad8f1873075623f5407e8c5f57c9df678">handleLogMessage</a> (Handler &amp;handler, <a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a> deviceIndex)</td></tr>
+<tr class="separator:ad8f1873075623f5407e8c5f57c9df678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Handler&gt;<br/>
@@ -217,7 +223,7 @@ template&lt;typename Handler &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">controlButtonDown</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">controlButtonUp</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d">deviceTopology</a>, <a class="el" href="structPacked7BitArrayReader.html#a898e6e860e9538804e745d3ce790b511">Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="structHostPacketDecoder.html#a265efe26ad890365d596cb2ed291f07f">HostPacketDecoder&lt; Handler &gt;::handleButtonDownOrUp()</a>, <a class="el" href="structHostPacketDecoder.html#a967b2cdd6f583ac93baa6093a71fdd87">HostPacketDecoder&lt; Handler &gt;::handlePacketACK()</a>, <a class="el" href="structHostPacketDecoder.html#acc256d98d681a9e5638e8a4dcb11477c">HostPacketDecoder&lt; Handler &gt;::handleTopology()</a>, <a class="el" href="structHostPacketDecoder.html#a5399035cb5f56629c451ea2f7a9c5436">HostPacketDecoder&lt; Handler &gt;::handleTouch()</a>, <a class="el" href="structHostPacketDecoder.html#a4301b98e5911f74c30ea6cd598928217">HostPacketDecoder&lt; Handler &gt;::handleTouchWithVelocity()</a>, <a class="el" href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1ab160915e283a508f01b6c4fac415669a">packetACK</a>, <a class="el" href="structPacked7BitArrayReader.html#a42826fd856483fb8d6e8c687106f11d0">Packed7BitArrayReader::read()</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">touchEndWithVelocity</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">touchMoveWithVelocity</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">touchStartWithVelocity</a>.</p>
+<p>References <a class="el" href="structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">controlButtonDown</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">controlButtonUp</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d">deviceTopology</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a99afd2a70e5de620bf123059c4c9a8a1">firmwareUpdateACK</a>, <a class="el" href="structPacked7BitArrayReader.html#a898e6e860e9538804e745d3ce790b511">Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="structHostPacketDecoder.html#a265efe26ad890365d596cb2ed291f07f">HostPacketDecoder&lt; Handler &gt;::handleButtonDownOrUp()</a>, <a class="el" href="structHostPacketDecoder.html#a520269334382a0584231723e87e02384">HostPacketDecoder&lt; Handler &gt;::handleCustomMessage()</a>, <a class="el" href="structHostPacketDecoder.html#aa7bea3b910d1a64966f7fab360327122">HostPacketDecoder&lt; Handler &gt;::handleFirmwareUpdateACK()</a>, <a class="el" href="structHostPacketDecoder.html#ad8f1873075623f5407e8c5f57c9df678">HostPacketDecoder&lt; Handler &gt;::handleLogMessage()</a>, <a class="el" href="structHostPacketDecoder.html#a967b2cdd6f583ac93baa6093a71fdd87">HostPacketDecoder&lt; Handler &gt;::handlePacketACK()</a>, <a class="el" href="structHostPacketDecoder.html#acc256d98d681a9e5638e8a4dcb11477c">HostPacketDecoder&lt; Handler &gt;::handleTopology()</a>, <a class="el" href="structHostPacketDecoder.html#a5399035cb5f56629c451ea2f7a9c5436">HostPacketDecoder&lt; Handler &gt;::handleTouch()</a>, <a class="el" href="structHostPacketDecoder.html#a4301b98e5911f74c30ea6cd598928217">HostPacketDecoder&lt; Handler &gt;::handleTouchWithVelocity()</a>, <a class="el" href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">logMessage</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1ab160915e283a508f01b6c4fac415669a">packetACK</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a2c17076f692e60a1b7f19328757ffaa5">programEventMessage</a>, <a class="el" href="structPacked7BitArrayReader.html#a42826fd856483fb8d6e8c687106f11d0">Packed7BitArrayReader::read()</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">touchEndWithVelocity</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">touchMoveWithVelocity</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">touchStartWithVelocity</a>.</p>
 
 <p>Referenced by <a class="el" href="structHostPacketDecoder.html#aa4f6e63e352311d0dbe6a87cb180ca9b">HostPacketDecoder&lt; Handler &gt;::processNextPacket()</a>.</p>
 
@@ -601,6 +607,58 @@ template&lt;typename Handler &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a520269334382a0584231723e87e02384"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="structHostPacketDecoder.html">HostPacketDecoder</a>&lt; Handler &gt;::handleCustomMessage </td>
+          <td>(</td>
+          <td class="paramtype">Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a>&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae5e54646a38a0b24af61fd4a829d84fc">PacketTimestamp</a>&#160;</td>
+          <td class="paramname"><em>packetTimestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structIntegerWithBitSize.html#a5acca6d541f72c50cd4f8f83fbed633f">IntegerWithBitSize&lt; numBits &gt;::get()</a>, <a class="el" href="structPacked7BitArrayReader.html#a898e6e860e9538804e745d3ce790b511">Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a2c17076f692e60a1b7f19328757ffaa5">programEventMessage</a>, and <a class="el" href="structPacked7BitArrayReader.html#a42826fd856483fb8d6e8c687106f11d0">Packed7BitArrayReader::read()</a>.</p>
+
+<p>Referenced by <a class="el" href="structHostPacketDecoder.html#a038d84662c34a3e0a72ab33288b5794d">HostPacketDecoder&lt; Handler &gt;::processNextMessage()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a967b2cdd6f583ac93baa6093a71fdd87"></a>
 <div class="memitem">
 <div class="memproto">
@@ -647,6 +705,98 @@ template&lt;typename Handler &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aa7bea3b910d1a64966f7fab360327122"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="structHostPacketDecoder.html">HostPacketDecoder</a>&lt; Handler &gt;::handleFirmwareUpdateACK </td>
+          <td>(</td>
+          <td class="paramtype">Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a>&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structPacked7BitArrayReader.html#a898e6e860e9538804e745d3ce790b511">Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, and <a class="el" href="structPacked7BitArrayReader.html#a42826fd856483fb8d6e8c687106f11d0">Packed7BitArrayReader::read()</a>.</p>
+
+<p>Referenced by <a class="el" href="structHostPacketDecoder.html#a038d84662c34a3e0a72ab33288b5794d">HostPacketDecoder&lt; Handler &gt;::processNextMessage()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8f1873075623f5407e8c5f57c9df678"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="structHostPacketDecoder.html">HostPacketDecoder</a>&lt; Handler &gt;::handleLogMessage </td>
+          <td>(</td>
+          <td class="paramtype">Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPacked7BitArrayReader.html">Packed7BitArrayReader</a> &amp;&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14b6e13f3164f7e2484972511373fad0">TopologyIndex</a>&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structPacked7BitArrayReader.html#a898e6e860e9538804e745d3ce790b511">Packed7BitArrayReader::getRemainingBits()</a>, and <a class="el" href="structPacked7BitArrayReader.html#a42826fd856483fb8d6e8c687106f11d0">Packed7BitArrayReader::read()</a>.</p>
+
+<p>Referenced by <a class="el" href="structHostPacketDecoder.html#a038d84662c34a3e0a72ab33288b5794d">HostPacketDecoder&lt; Handler &gt;::processNextMessage()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__HostPacketDecoder_8h.html">juce_HostPacketDecoder.h</a></li>
 </ul>
@@ -654,7 +804,7 @@ template&lt;typename Handler &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:00:55 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:00:58 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

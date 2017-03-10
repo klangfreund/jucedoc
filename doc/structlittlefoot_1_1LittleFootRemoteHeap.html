@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca4cb4bfd7d97d85e5534fd075c21a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ce74720ce0af67db2e4dfa4cfbdfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">clear</a> () noexcept</td></tr>
 <tr class="separator:a56ce74720ce0af67db2e4dfa4cfbdfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc61b4f0494e30366d7c2a445c212be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">resetDeviceStateToUnknown</a> ()</td></tr>
+<tr class="separator:a8dc61b4f0494e30366d7c2a445c212be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2266981d92e240e310812e667f625460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a2266981d92e240e310812e667f625460">resetDataRangeToUnknown</a> (size_t offset, size_t size) noexcept</td></tr>
+<tr class="separator:a2266981d92e240e310812e667f625460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ee115e4d8b164ebb7c54f15736648f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#aa5ee115e4d8b164ebb7c54f15736648f">setByte</a> (size_t offset, <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
 <tr class="separator:aa5ee115e4d8b164ebb7c54f15736648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92601c321cc89df4c966045377ff00f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a92601c321cc89df4c966045377ff00f9">setBytes</a> (size_t offset, const <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a> *data, size_t num) noexcept</td></tr>
@@ -112,10 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5afe3e48de059081a84d304775e1654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9c7cc53bc25df462759a868eca1d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#acc9c7cc53bc25df462759a868eca1d0b">getByte</a> (size_t offset) noexcept</td></tr>
 <tr class="separator:acc9c7cc53bc25df462759a868eca1d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f1f99e6f02cb0c8acc411b137bf337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a19f1f99e6f02cb0c8acc411b137bf337">invalidateData</a> ()</td></tr>
-<tr class="separator:a19f1f99e6f02cb0c8acc411b137bf337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f4f40e3e2c3852f7b35bb907409067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a32f4f40e3e2c3852f7b35bb907409067">sendChanges</a> (ImplementationClass &amp;bi)</td></tr>
-<tr class="separator:a32f4f40e3e2c3852f7b35bb907409067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0903d12be37d95e5afe20d6d37ea4784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784">invalidateData</a> () noexcept</td></tr>
+<tr class="separator:a0903d12be37d95e5afe20d6d37ea4784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afc089afddbc6f46cfa43b07fa6a954"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a3afc089afddbc6f46cfa43b07fa6a954">isFullySynced</a> () const noexcept</td></tr>
+<tr class="separator:a3afc089afddbc6f46cfa43b07fa6a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880caba7689d2ef3f47ba47d378434ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a880caba7689d2ef3f47ba47d378434ce">sendChanges</a> (ImplementationClass &amp;bi, bool forceSend)</td></tr>
+<tr class="separator:a880caba7689d2ef3f47ba47d378434ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cfb4a3b900cd183167d21855c34f01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01">handleACKFromDevice</a> (ImplementationClass &amp;bi, <a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a> packetIndex) noexcept</td></tr>
 <tr class="separator:a49cfb4a3b900cd183167d21855c34f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8646275914cfe851145c8ef566a6b8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#ab8646275914cfe851145c8ef566a6b8c">isProgramLoaded</a> () noexcept</td></tr>
@@ -189,6 +195,59 @@ template&lt;typename ImplementationClass &gt; </div>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="juce__Memory_8h.html#a48fb9b158a3767e6573d27a8160956ea">zeromem()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dc61b4f0494e30366d7c2a445c212be"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ImplementationClass &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::resetDeviceStateToUnknown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2266981d92e240e310812e667f625460"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ImplementationClass &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::resetDataRangeToUnknown </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -344,11 +403,14 @@ template&lt;typename ImplementationClass &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a19f1f99e6f02cb0c8acc411b137bf337"></a>
+<a class="anchor" id="a0903d12be37d95e5afe20d6d37ea4784"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ImplementationClass &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::invalidateData </td>
@@ -357,11 +419,41 @@ template&lt;typename ImplementationClass &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a32f4f40e3e2c3852f7b35bb907409067"></a>
+<a class="anchor" id="a3afc089afddbc6f46cfa43b07fa6a954"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ImplementationClass &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::isFullySynced </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a880caba7689d2ef3f47ba47d378434ce"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -371,8 +463,18 @@ template&lt;typename ImplementationClass &gt; </div>
           <td class="memname">void <a class="el" href="structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::sendChanges </td>
           <td>(</td>
           <td class="paramtype">ImplementationClass &amp;&#160;</td>
-          <td class="paramname"><em>bi</em></td><td>)</td>
+          <td class="paramname"><em>bi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forceSend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,7 +542,7 @@ template&lt;typename ImplementationClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="structjuce_1_1littlefoot_1_1Program.html#a14bc256e9f7c2656daa5f12c1cebe328">juce::littlefoot::Program::checksumMatches()</a>.</p>
+<p>References <a class="el" href="structjuce_1_1littlefoot_1_1Program.html#a14bc256e9f7c2656daa5f12c1cebe328">juce::littlefoot::Program::checksumMatches()</a>, and <a class="el" href="structjuce_1_1littlefoot_1_1Program.html#acbf5d0e18d8af33f6dbe7684308f4a07">juce::littlefoot::Program::getProgramSize()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +590,7 @@ template&lt;typename ImplementationClass &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 20:01:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
