@@ -170,8 +170,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6207099299458ff24641883b01a083e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will attempt to return some kind of string describing the device.  <a href="#a6207099299458ff24641883b01a083e5">More...</a><br/></td></tr>
 <tr class="separator:a6207099299458ff24641883b01a083e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa9257a60a26848174b2b8bd6cbb970"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a2fa9257a60a26848174b2b8bd6cbb970">getNumCpus</a> () noexcept</td></tr>
-<tr class="memdesc:a2fa9257a60a26848174b2b8bd6cbb970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of CPU cores.  <a href="#a2fa9257a60a26848174b2b8bd6cbb970">More...</a><br/></td></tr>
+<tr class="memdesc:a2fa9257a60a26848174b2b8bd6cbb970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of logical CPU cores.  <a href="#a2fa9257a60a26848174b2b8bd6cbb970">More...</a><br/></td></tr>
 <tr class="separator:a2fa9257a60a26848174b2b8bd6cbb970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08366c3ded1734c4855d0b66c707cf1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#af08366c3ded1734c4855d0b66c707cf1">getNumPhysicalCpus</a> () noexcept</td></tr>
+<tr class="memdesc:af08366c3ded1734c4855d0b66c707cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of physical CPU cores.  <a href="#af08366c3ded1734c4855d0b66c707cf1">More...</a><br/></td></tr>
+<tr class="separator:af08366c3ded1734c4855d0b66c707cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50852f1e0c28d06eeebbd18af4559770"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a50852f1e0c28d06eeebbd18af4559770">getCpuSpeedInMegaherz</a> ()</td></tr>
 <tr class="memdesc:a50852f1e0c28d06eeebbd18af4559770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the approximate CPU speed.  <a href="#a50852f1e0c28d06eeebbd18af4559770">More...</a><br/></td></tr>
 <tr class="separator:a50852f1e0c28d06eeebbd18af4559770"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -652,7 +655,32 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of CPU cores. </p>
+<p>Returns the number of logical CPU cores. </p>
+
+</div>
+</div>
+<a class="anchor" id="af08366c3ded1734c4855d0b66c707cf1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SystemStats::getNumPhysicalCpus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of physical CPU cores. </p>
 
 </div>
 </div>
@@ -1122,7 +1150,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 11 2017 20:00:53 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 20:01:06 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

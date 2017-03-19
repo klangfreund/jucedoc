@@ -563,9 +563,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab04851d4bb0e7c36e20202541ab6fdf0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ab04851d4bb0e7c36e20202541ab6fdf0">createStringFromData</a> (const void *data, int size)</td></tr>
 <tr class="memdesc:ab04851d4bb0e7c36e20202541ab6fdf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string from data in an unknown format.  <a href="#ab04851d4bb0e7c36e20202541ab6fdf0">More...</a><br/></td></tr>
 <tr class="separator:ab04851d4bb0e7c36e20202541ab6fdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42e4a0dee272e886879685dc0c83387"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ac42e4a0dee272e886879685dc0c83387">formatted</a> (const <a class="el" href="classString.html">String</a> formatString,...)</td></tr>
-<tr class="memdesc:ac42e4a0dee272e886879685dc0c83387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from a printf-style parameter list.  <a href="#ac42e4a0dee272e886879685dc0c83387">More...</a><br/></td></tr>
-<tr class="separator:ac42e4a0dee272e886879685dc0c83387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f23f877701fd4783c8c3bd9f514f12d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a8f23f877701fd4783c8c3bd9f514f12d"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classString.html#a8f23f877701fd4783c8c3bd9f514f12d">formatted</a> (const <a class="el" href="classString.html">String</a> &amp;formatStr, Args...args)</td></tr>
+<tr class="memdesc:a8f23f877701fd4783c8c3bd9f514f12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from a printf-style parameter list.  <a href="#a8f23f877701fd4783c8c3bd9f514f12d">More...</a><br/></td></tr>
+<tr class="separator:a8f23f877701fd4783c8c3bd9f514f12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8791d592b21b466cf040c1728b92dac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac">toHexString</a> (int number)</td></tr>
 <tr class="memdesc:af8791d592b21b466cf040c1728b92dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string representing this 32-bit value in hexadecimal.  <a href="#af8791d592b21b466cf040c1728b92dac">More...</a><br/></td></tr>
 <tr class="separator:af8791d592b21b466cf040c1728b92dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2029,7 +2030,7 @@ template&lt;class CharPointer &gt; </div>
 
 <p>References <a class="el" href="classCharPointer__ASCII.html#ab1c9259029e592aa64823f196779bfe3">CharPointer_ASCII::isEmpty()</a>.</p>
 
-<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a5a8cd39a398b0b62838a4ec62778429e">StandalonePluginHolder::getFilePatterns()</a>, <a class="el" href="structComponentPeer_1_1DragInfo.html#a06d2c54a7b17a8ba2136595f86a111f9">ComponentPeer::DragInfo::isEmpty()</a>, and <a class="el" href="classIdentifier.html#a7917ad4ed89e4442b950a7fcf37df170">Identifier::isNull()</a>.</p>
+<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a5a8cd39a398b0b62838a4ec62778429e">StandalonePluginHolder::getFilePatterns()</a>, and <a class="el" href="classIdentifier.html#a7917ad4ed89e4442b950a7fcf37df170">Identifier::isNull()</a>.</p>
 
 </div>
 </div>
@@ -2086,8 +2087,6 @@ template&lt;class CharPointer &gt; </div>
 </div><div class="memdoc">
 
 <p>Resets this string to be empty. </p>
-
-<p>Referenced by <a class="el" href="structComponentPeer_1_1DragInfo.html#a477efd4543a4b35c8d01b7c2d6db8d34">ComponentPeer::DragInfo::clear()</a>.</p>
 
 </div>
 </div>
@@ -4117,9 +4116,11 @@ template&lt;class CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac42e4a0dee272e886879685dc0c83387"></a>
+<a class="anchor" id="a8f23f877701fd4783c8c3bd9f514f12d"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -4127,14 +4128,14 @@ template&lt;class CharPointer &gt; </div>
         <tr>
           <td class="memname">static <a class="el" href="classString.html">String</a> String::formatted </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classString.html">String</a>&#160;</td>
-          <td class="paramname"><em>formatString</em>, </td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>formatStr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4972,7 +4973,7 @@ template&lt;class CharPointer &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 11 2017 20:00:52 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 20:01:06 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
