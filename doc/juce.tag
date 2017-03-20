@@ -4563,59 +4563,59 @@
     <filename>juce__RelativeTime_8h</filename>
     <class kind="class">RelativeTime</class>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator==</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>acd52d8802611055ef527ee2334be5c6b</anchor>
+      <anchor>ad8eba5412b95e2a33c2d12677e413cc0</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator!=</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a0c3cc26057571f8ba62f809fd9702fa8</anchor>
+      <anchor>a2ae58ee77e09705bae17d091eb7fb940</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator&gt;</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a12da8d1499f8897fec708e5040b37cd9</anchor>
+      <anchor>a2b1806f62d42a909a3497e8adab10c7b</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator&lt;</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a1a7c3d5861d0fa9ccabb88b308cc0c66</anchor>
+      <anchor>a7939d62bcca4d0e877f72663e27755ec</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator&gt;=</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a720431c319a22825d6d52a5d7eda9612</anchor>
+      <anchor>aa5521bf4cae8648f6e7705208efbe1a4</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>JUCE_API bool JUCE_CALLTYPE</type>
       <name>operator&lt;=</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a0bf2a0e4602a11166aff4e3fc7ad797d</anchor>
+      <anchor>afe03fed8a94819661ffd6c4579ad99c5</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>RelativeTime</type>
+      <type>JUCE_API RelativeTime JUCE_CALLTYPE</type>
       <name>operator+</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a162fe7f8da07d9f16ecd01c92d8d09b4</anchor>
+      <anchor>ac92293d29740032d9026dc6176ad5928</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
     <member kind="function">
-      <type>RelativeTime</type>
+      <type>JUCE_API RelativeTime JUCE_CALLTYPE</type>
       <name>operator-</name>
       <anchorfile>juce__RelativeTime_8h.html</anchorfile>
-      <anchor>a40727594edf1b67ce4a64e103527f7ac</anchor>
+      <anchor>a0f52da796dc7a54cd2c7926a8ca71ef3</anchor>
       <arglist>(RelativeTime t1, RelativeTime t2) noexcept</arglist>
     </member>
   </compound>
@@ -75124,6 +75124,13 @@
       <name>operator-&gt;</name>
       <anchorfile>classSharedResourcePointer.html</anchorfile>
       <anchor>ac66baf5a23724ae4da705d4f31008d63</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getReferenceCount</name>
+      <anchorfile>classSharedResourcePointer.html</anchorfile>
+      <anchor>abff7933c3ea884dda535acdfba665c48</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
