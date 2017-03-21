@@ -63044,8 +63044,8 @@
       <type></type>
       <name>Attribute</name>
       <anchorfile>structOpenGLShaderProgram_1_1Attribute.html</anchorfile>
-      <anchor>a949a6c57085f3560a269f6980df43bfe</anchor>
-      <arglist>(const OpenGLShaderProgram &amp;program, const char *attributeName)</arglist>
+      <anchor>a42f3b15e5d08e7f31c9117e71682b400</anchor>
+      <arglist>(const OpenGLShaderProgram &amp;, const char *attributeName)</arglist>
     </member>
     <member kind="variable">
       <type>GLuint</type>
@@ -91732,17 +91732,17 @@
       <arglist>(const String &amp;regValuePath, WoW64Mode mode=WoW64_Default)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static void JUCE_CALLTYPE</type>
+      <type>static bool JUCE_CALLTYPE</type>
       <name>deleteValue</name>
       <anchorfile>classWindowsRegistry.html</anchorfile>
-      <anchor>a263ce2b622765b60a1357a279099a783</anchor>
+      <anchor>a2247119b1699bc71a61a90fc990ce35b</anchor>
       <arglist>(const String &amp;regValuePath, WoW64Mode mode=WoW64_Default)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static void JUCE_CALLTYPE</type>
+      <type>static bool JUCE_CALLTYPE</type>
       <name>deleteKey</name>
       <anchorfile>classWindowsRegistry.html</anchorfile>
-      <anchor>a9393883c4ec4502ceedf1f88abbb95d6</anchor>
+      <anchor>a784cc82704f8b6fc1047075a31d9972f</anchor>
       <arglist>(const String &amp;regKeyPath, WoW64Mode mode=WoW64_Default)</arglist>
     </member>
     <member kind="function" static="yes">
