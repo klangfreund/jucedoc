@@ -8,5 +8,5 @@ var searchData=
   ['connectioncount',['ConnectionCount',['../juce__BlocksProtocolDefinitions_8h.html#aa6e54c8927fa209478df66084a47645a',1,'juce_BlocksProtocolDefinitions.h']]],
   ['connectorport',['ConnectorPort',['../juce__BlocksProtocolDefinitions_8h.html#afbd923a3399a826c42a0074bc76c7f5e',1,'juce_BlocksProtocolDefinitions.h']]],
   ['controlbuttonid',['ControlButtonID',['../juce__BlocksProtocolDefinitions_8h.html#abcbb30c582bb1d4c6575307e43f6def1',1,'juce_BlocksProtocolDefinitions.h']]],
-  ['crashhandlerfunction',['CrashHandlerFunction',['../classSystemStats.html#a13a353aacff3688e62dcc8ab1acea080',1,'SystemStats']]]
+  ['crashhandlerfunction',['CrashHandlerFunction',['../classSystemStats.html#a3c18a082adf09730f6d425d9d4606dce',1,'SystemStats']]]
 ];

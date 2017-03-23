@@ -79912,8 +79912,8 @@
       <type>void(*</type>
       <name>CrashHandlerFunction</name>
       <anchorfile>classSystemStats.html</anchorfile>
-      <anchor>a13a353aacff3688e62dcc8ab1acea080</anchor>
-      <arglist>)()</arglist>
+      <anchor>a3c18a082adf09730f6d425d9d4606dce</anchor>
+      <arglist>)(void *)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
