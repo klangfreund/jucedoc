@@ -6,6 +6,7 @@ var searchData=
   ['x3',['x3',['../classPath_1_1Iterator.html#afb477336904d08b7869a536444071df0',1,'Path::Iterator']]],
   ['xaxis',['xAxis',['../classVector3D.html#a686d4ba2447a671bab0cdf2e65636309',1,'Vector3D']]],
   ['xcoord',['Xcoord',['../structTouchPosition.html#a53f2f9d3e63520999c8d9c4d98ed7923',1,'TouchPosition']]],
+  ['xembedcomponent',['XEmbedComponent',['../classXEmbedComponent.html',1,'XEmbedComponent'],['../classXEmbedComponent.html#a20b75cc894a09ce3bd49fcfa61afac65',1,'XEmbedComponent::XEmbedComponent()']]],
   ['xleft',['xLeft',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427edae2539f35e48e3c7396cffeb8079e27dd',1,'RectanglePlacement']]],
   ['xmid',['xMid',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427edad1348e06780084037a29fc0621d10392',1,'RectanglePlacement']]],
   ['xmldocument',['XmlDocument',['../classXmlDocument.html',1,'XmlDocument'],['../classXmlDocument.html#a87ad794c62c8ee9ac78961af99b2f30d',1,'XmlDocument::XmlDocument(const String &amp;documentText)'],['../classXmlDocument.html#a0bb84c6d5a591e3ab53199b081766901',1,'XmlDocument::XmlDocument(const File &amp;file)']]],

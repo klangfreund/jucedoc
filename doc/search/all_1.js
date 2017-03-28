@@ -91,7 +91,7 @@ var searchData=
   ['bringmodalcomponentstofront',['bringModalComponentsToFront',['../classModalComponentManager.html#a3e398829cf3016f4f370b21330686d1b',1,'ModalComponentManager']]],
   ['broadcast',['broadcast',['../classIPAddress.html#aac219a18652ad5a4b39d76c401bcd0bc',1,'IPAddress']]],
   ['broadcastmessage',['broadcastMessage',['../classMessageManager.html#a252262c8bfe857ea77fe4e7b4b42ae80',1,'MessageManager']]],
-  ['broughttofront',['broughtToFront',['../classComponent.html#a4bf084bcf5b0e4398ee3a0007f803865',1,'Component::broughtToFront()'],['../classMultiDocumentPanelWindow.html#a20c72163daf02f9f777f1272f82c6d67',1,'MultiDocumentPanelWindow::broughtToFront()']]],
+  ['broughttofront',['broughtToFront',['../classComponent.html#a4bf084bcf5b0e4398ee3a0007f803865',1,'Component::broughtToFront()'],['../classMultiDocumentPanelWindow.html#a20c72163daf02f9f777f1272f82c6d67',1,'MultiDocumentPanelWindow::broughtToFront()'],['../classXEmbedComponent.html#a032530d1ab711192e14b2487b83f55a1',1,'XEmbedComponent::broughtToFront()']]],
   ['brown',['brown',['../classColours.html#a4c9ecea4fcd6707c997848245cdb1aea',1,'Colours']]],
   ['browsefordirectory',['browseForDirectory',['../classFileChooser.html#afdbce2d962f0c6c117d897e9e8687116',1,'FileChooser']]],
   ['browseforfiletoopen',['browseForFileToOpen',['../classFileChooser.html#a546ef74bcd139b67a90e4459cd591d21',1,'FileChooser']]],

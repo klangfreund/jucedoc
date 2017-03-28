@@ -7752,6 +7752,26 @@
     <class kind="class">WindowsRegistry</class>
   </compound>
   <compound kind="file">
+    <name>juce_XEmbedComponent.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_gui_extra/embedding/</path>
+    <filename>juce__XEmbedComponent_8h</filename>
+    <class kind="class">XEmbedComponent</class>
+    <member kind="function">
+      <type>bool</type>
+      <name>juce_handleXEmbedEvent</name>
+      <anchorfile>juce__XEmbedComponent_8h.html</anchorfile>
+      <anchor>a2cad300cf70fc35a54a9a260022017a9</anchor>
+      <arglist>(ComponentPeer *, void *)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned long</type>
+      <name>juce_getCurrentFocusWindow</name>
+      <anchorfile>juce__XEmbedComponent_8h.html</anchorfile>
+      <anchor>a1e77cbdf932273a55384442ffdcb4766</anchor>
+      <arglist>(ComponentPeer *)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>juce_XMLCodeTokeniser.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_gui_extra/code_editor/</path>
     <filename>juce__XMLCodeTokeniser_8h</filename>
@@ -9290,6 +9310,20 @@
       <anchorfile>classComponent.html</anchorfile>
       <anchor>a9338014ab407f6b41c14495ab2a7fc4d</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setViewportIgnoreDragFlag</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>ab5b3dca20d2a26b90545c6da6c51fd99</anchor>
+      <arglist>(bool ignoreDrag)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getViewportIgnoreDragFlag</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>ac50eafebee9559800c9efab51bd4635d</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -91754,6 +91788,67 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>XEmbedComponent</name>
+    <filename>classXEmbedComponent.html</filename>
+    <base>Component</base>
+    <member kind="function">
+      <type></type>
+      <name>XEmbedComponent</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a20b75cc894a09ce3bd49fcfa61afac65</anchor>
+      <arglist>(unsigned long wID, bool wantsKeyboardFocus=true)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~XEmbedComponent</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a276380d121b1516541de97de830665f8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>paint</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a76023dec230cdd66c0bfa355303b9b7d</anchor>
+      <arglist>(Graphics &amp;) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>focusGained</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a07ec55a64e7fe285cdba962b328389d0</anchor>
+      <arglist>(FocusChangeType) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>focusLost</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a02dc0a7cef046d6456116aa77e362858</anchor>
+      <arglist>(FocusChangeType) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>broughtToFront</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a032530d1ab711192e14b2487b83f55a1</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend bool</type>
+      <name>juce::juce_handleXEmbedEvent</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>ab77965533bbfc70c1bea0b5fcc314671</anchor>
+      <arglist>(ComponentPeer *, void *)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend unsigned long</type>
+      <name>juce_getCurrentFocusWindow</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a1e77cbdf932273a55384442ffdcb4766</anchor>
+      <arglist>(ComponentPeer *)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>XmlDocument</name>
     <filename>classXmlDocument.html</filename>
     <member kind="function">
@@ -97242,6 +97337,7 @@
     <file>juce_ActiveXControlComponent.h</file>
     <file>juce_NSViewComponent.h</file>
     <file>juce_UIViewComponent.h</file>
+    <file>juce_XEmbedComponent.h</file>
   </compound>
   <compound kind="dir">
     <name>encryption</name>

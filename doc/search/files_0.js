@@ -495,6 +495,7 @@ var searchData=
   ['juce_5fwindowshooks_2eh',['juce_WindowsHooks.h',['../juce__WindowsHooks_8h.html',1,'']]],
   ['juce_5fwindowsmediaaudioformat_2eh',['juce_WindowsMediaAudioFormat.h',['../juce__WindowsMediaAudioFormat_8h.html',1,'']]],
   ['juce_5fwindowsregistry_2eh',['juce_WindowsRegistry.h',['../juce__WindowsRegistry_8h.html',1,'']]],
+  ['juce_5fxembedcomponent_2eh',['juce_XEmbedComponent.h',['../juce__XEmbedComponent_8h.html',1,'']]],
   ['juce_5fxmlcodetokeniser_2eh',['juce_XMLCodeTokeniser.h',['../juce__XMLCodeTokeniser_8h.html',1,'']]],
   ['juce_5fxmldocument_2eh',['juce_XmlDocument.h',['../juce__XmlDocument_8h.html',1,'']]],
   ['juce_5fxmlelement_2eh',['juce_XmlElement.h',['../juce__XmlElement_8h.html',1,'']]],

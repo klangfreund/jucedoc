@@ -472,6 +472,7 @@ var searchData=
   ['_7ewhirlpool',['~Whirlpool',['../classWhirlpool.html#a12c58afcee2504dfe807e8c427f04eb7',1,'Whirlpool']]],
   ['_7ewildcardfilefilter',['~WildcardFileFilter',['../classWildcardFileFilter.html#a64858d78dbf60590b6144856c491c053',1,'WildcardFileFilter']]],
   ['_7ewindowsmediaaudioformat',['~WindowsMediaAudioFormat',['../classWindowsMediaAudioFormat.html#a08708926b20fe6e2b7545ae9eead9fd5',1,'WindowsMediaAudioFormat']]],
+  ['_7exembedcomponent',['~XEmbedComponent',['../classXEmbedComponent.html#a276380d121b1516541de97de830665f8',1,'XEmbedComponent']]],
   ['_7exmldocument',['~XmlDocument',['../classXmlDocument.html#ab18742228f580a5e4ec87e4b39c8a68c',1,'XmlDocument']]],
   ['_7exmlelement',['~XmlElement',['../classXmlElement.html#a07d66d0ced63876ca8d1aecfd2cd7ef9',1,'XmlElement']]],
   ['_7exmltokeniser',['~XmlTokeniser',['../classXmlTokeniser.html#ae16c9c07d9a802a2e8f2282c298ddbd5',1,'XmlTokeniser']]],
