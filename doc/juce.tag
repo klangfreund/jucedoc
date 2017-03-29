@@ -9315,15 +9315,15 @@
       <type>void</type>
       <name>setViewportIgnoreDragFlag</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>ab5b3dca20d2a26b90545c6da6c51fd99</anchor>
-      <arglist>(bool ignoreDrag)</arglist>
+      <anchor>aaab69a75feb776176af1395da5dc1ed2</anchor>
+      <arglist>(bool ignoreDrag) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>getViewportIgnoreDragFlag</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>ac50eafebee9559800c9efab51bd4635d</anchor>
-      <arglist>()</arglist>
+      <anchor>acfa055bd52942ae4f870167a2f5617d3</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -55077,8 +55077,8 @@
       <type>static void</type>
       <name>callAsync</name>
       <anchorfile>classMessageManager.html</anchorfile>
-      <anchor>ad45b6558d8c58b3714a764b4238e3e5b</anchor>
-      <arglist>(std::function&lt; void(void)&gt;)</arglist>
+      <anchor>ac3ed7c9a9885eba962cca454552b2902</anchor>
+      <arglist>(FunctionType functionToCall)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -84367,22 +84367,29 @@
       <type>void</type>
       <name>addTimeSliceClient</name>
       <anchorfile>classTimeSliceThread.html</anchorfile>
-      <anchor>ac8244dfb9ed53d0c8b10d301d8897d8f</anchor>
-      <arglist>(TimeSliceClient *client, int millisecondsBeforeStarting=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>removeTimeSliceClient</name>
-      <anchorfile>classTimeSliceThread.html</anchorfile>
-      <anchor>a07b538bee2ba11da5b66bd59af25f153</anchor>
-      <arglist>(TimeSliceClient *client)</arglist>
+      <anchor>a32774664744aed47f22d255889fd50f2</anchor>
+      <arglist>(TimeSliceClient *clientToAdd, int millisecondsBeforeStarting=0)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>moveToFrontOfQueue</name>
       <anchorfile>classTimeSliceThread.html</anchorfile>
-      <anchor>a58c97295da5d454c299b9252a7a0999d</anchor>
-      <arglist>(TimeSliceClient *client)</arglist>
+      <anchor>a690e5733cc918dcad9d9e4d98f2326f5</anchor>
+      <arglist>(TimeSliceClient *clientToMove)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeTimeSliceClient</name>
+      <anchorfile>classTimeSliceThread.html</anchorfile>
+      <anchor>a63268fd875e85e7bf705fd608e2988cf</anchor>
+      <arglist>(TimeSliceClient *clientToRemove)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeAllClients</name>
+      <anchorfile>classTimeSliceThread.html</anchorfile>
+      <anchor>a6a8c1f22111376a440e79498127701a0</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>int</type>

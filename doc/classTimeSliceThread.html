@@ -111,15 +111,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4374e45b3ffabac2abd5ebc04594b8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#aa4374e45b3ffabac2abd5ebc04594b8d">~TimeSliceThread</a> ()</td></tr>
 <tr class="memdesc:aa4374e45b3ffabac2abd5ebc04594b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa4374e45b3ffabac2abd5ebc04594b8d">More...</a><br/></td></tr>
 <tr class="separator:aa4374e45b3ffabac2abd5ebc04594b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8244dfb9ed53d0c8b10d301d8897d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#ac8244dfb9ed53d0c8b10d301d8897d8f">addTimeSliceClient</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *client, int millisecondsBeforeStarting=0)</td></tr>
-<tr class="memdesc:ac8244dfb9ed53d0c8b10d301d8897d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a client to the list.  <a href="#ac8244dfb9ed53d0c8b10d301d8897d8f">More...</a><br/></td></tr>
-<tr class="separator:ac8244dfb9ed53d0c8b10d301d8897d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b538bee2ba11da5b66bd59af25f153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a07b538bee2ba11da5b66bd59af25f153">removeTimeSliceClient</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *client)</td></tr>
-<tr class="memdesc:a07b538bee2ba11da5b66bd59af25f153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a client from the list.  <a href="#a07b538bee2ba11da5b66bd59af25f153">More...</a><br/></td></tr>
-<tr class="separator:a07b538bee2ba11da5b66bd59af25f153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c97295da5d454c299b9252a7a0999d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a58c97295da5d454c299b9252a7a0999d">moveToFrontOfQueue</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *client)</td></tr>
-<tr class="memdesc:a58c97295da5d454c299b9252a7a0999d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given client is waiting in the queue, it will be moved to the front and given a time-slice as soon as possible.  <a href="#a58c97295da5d454c299b9252a7a0999d">More...</a><br/></td></tr>
-<tr class="separator:a58c97295da5d454c299b9252a7a0999d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32774664744aed47f22d255889fd50f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a32774664744aed47f22d255889fd50f2">addTimeSliceClient</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *clientToAdd, int millisecondsBeforeStarting=0)</td></tr>
+<tr class="memdesc:a32774664744aed47f22d255889fd50f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a client to the list.  <a href="#a32774664744aed47f22d255889fd50f2">More...</a><br/></td></tr>
+<tr class="separator:a32774664744aed47f22d255889fd50f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690e5733cc918dcad9d9e4d98f2326f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a690e5733cc918dcad9d9e4d98f2326f5">moveToFrontOfQueue</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *clientToMove)</td></tr>
+<tr class="memdesc:a690e5733cc918dcad9d9e4d98f2326f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given client is waiting in the queue, it will be moved to the front and given a time-slice as soon as possible.  <a href="#a690e5733cc918dcad9d9e4d98f2326f5">More...</a><br/></td></tr>
+<tr class="separator:a690e5733cc918dcad9d9e4d98f2326f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63268fd875e85e7bf705fd608e2988cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a63268fd875e85e7bf705fd608e2988cf">removeTimeSliceClient</a> (<a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *clientToRemove)</td></tr>
+<tr class="memdesc:a63268fd875e85e7bf705fd608e2988cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a client from the list.  <a href="#a63268fd875e85e7bf705fd608e2988cf">More...</a><br/></td></tr>
+<tr class="separator:a63268fd875e85e7bf705fd608e2988cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8c1f22111376a440e79498127701a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a6a8c1f22111376a440e79498127701a0">removeAllClients</a> ()</td></tr>
+<tr class="memdesc:a6a8c1f22111376a440e79498127701a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the active and pending clients from the list.  <a href="#a6a8c1f22111376a440e79498127701a0">More...</a><br/></td></tr>
+<tr class="separator:a6a8c1f22111376a440e79498127701a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b440ac33a366ddc6ee8507a840d2eb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSliceThread.html#a2b440ac33a366ddc6ee8507a840d2eb2">getNumClients</a> () const </td></tr>
 <tr class="memdesc:a2b440ac33a366ddc6ee8507a840d2eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of registered clients.  <a href="#a2b440ac33a366ddc6ee8507a840d2eb2">More...</a><br/></td></tr>
 <tr class="separator:a2b440ac33a366ddc6ee8507a840d2eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +260,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac8244dfb9ed53d0c8b10d301d8897d8f"></a>
+<a class="anchor" id="a32774664744aed47f22d255889fd50f2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -265,7 +268,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void TimeSliceThread::addTimeSliceClient </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramname"><em>clientToAdd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -286,7 +289,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07b538bee2ba11da5b66bd59af25f153"></a>
+<a class="anchor" id="a690e5733cc918dcad9d9e4d98f2326f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimeSliceThread::moveToFrontOfQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *&#160;</td>
+          <td class="paramname"><em>clientToMove</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If the given client is waiting in the queue, it will be moved to the front and given a time-slice as soon as possible. </p>
+<p>If the specified client has not been added, nothing will happen. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63268fd875e85e7bf705fd608e2988cf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -294,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void TimeSliceThread::removeTimeSliceClient </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
+          <td class="paramname"><em>clientToRemove</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -305,22 +327,21 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58c97295da5d454c299b9252a7a0999d"></a>
+<a class="anchor" id="a6a8c1f22111376a440e79498127701a0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TimeSliceThread::moveToFrontOfQueue </td>
+          <td class="memname">void TimeSliceThread::removeAllClients </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTimeSliceClient.html">TimeSliceClient</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>If the given client is waiting in the queue, it will be moved to the front and given a time-slice as soon as possible. </p>
-<p>If the specified client has not been added, nothing will happen. </p>
+<p>Removes all the active and pending clients from the list. </p>
+<p>This method will make sure that all callbacks to clients have finished before the method returns. </p>
 
 </div>
 </div>
@@ -366,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 20:01:00 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 29 2017 20:01:05 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

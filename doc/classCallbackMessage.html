@@ -158,7 +158,8 @@ Additional Inherited Members</h2></td></tr>
 <p>You can use this class to fire off actions that you want to be performed later on the message thread.</p>
 <p>To use it, create a subclass of <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a> which implements the <a class="el" href="classCallbackMessage.html#a1f72c1e680e26f44780ac9437f3450de" title="Called when the message is delivered. ">messageCallback()</a> method, then call <a class="el" href="classMessageManager_1_1MessageBase.html#a2bcdf57123967a59650bd46543906796">post()</a> to dispatch it. The event thread will then invoke your <a class="el" href="classCallbackMessage.html#a1f72c1e680e26f44780ac9437f3450de" title="Called when the message is delivered. ">messageCallback()</a> method later on, and will automatically delete the message object afterwards.</p>
 <p>Always create a new instance of a <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a> on the heap, as it will be deleted automatically after the message has been delivered.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, <a class="el" href="classMessageListener.html" title="MessageListener subclasses can post and receive Message objects. ">MessageListener</a>, <a class="el" href="classActionListener.html" title="Interface class for delivery of events that are sent by an ActionBroadcaster. ">ActionListener</a>, <a class="el" href="classChangeListener.html" title="Receives change event callbacks that are sent out by a ChangeBroadcaster. ">ChangeListener</a> </dd></dl>
+<p>Note that this class was essential back in the days before C++11, but in modern times you may prefer to use <a class="el" href="classMessageManager.html#ac3ed7c9a9885eba962cca454552b2902" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync()</a> with a lambda.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classMessageManager.html#ac3ed7c9a9885eba962cca454552b2902" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync</a>, <a class="el" href="classMessageListener.html" title="MessageListener subclasses can post and receive Message objects. ">MessageListener</a>, <a class="el" href="classActionListener.html" title="Interface class for delivery of events that are sent by an ActionBroadcaster. ">ActionListener</a>, <a class="el" href="classChangeListener.html" title="Receives change event callbacks that are sent out by a ChangeBroadcaster. ">ChangeListener</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a670d5e9feb62e19814b1dfc25c00e9f7"></a>
 <div class="memitem">
@@ -237,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 20:00:48 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 29 2017 20:00:49 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

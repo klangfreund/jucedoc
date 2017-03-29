@@ -165,7 +165,7 @@ var searchData=
   ['addtextblock',['addTextBlock',['../classAlertWindow.html#a06c68ddf379fcd3247182d0fee87a7f4',1,'AlertWindow']]],
   ['addtexteditor',['addTextEditor',['../classAlertWindow.html#ad3de30e292b03b2204c6faaeea55b9a9',1,'AlertWindow']]],
   ['addtextelement',['addTextElement',['../classXmlElement.html#aea61ae26c5c1e71f9119dd9dffac4f0d',1,'XmlElement']]],
-  ['addtimesliceclient',['addTimeSliceClient',['../classTimeSliceThread.html#ac8244dfb9ed53d0c8b10d301d8897d8f',1,'TimeSliceThread']]],
+  ['addtimesliceclient',['addTimeSliceClient',['../classTimeSliceThread.html#a32774664744aed47f22d255889fd50f2',1,'TimeSliceThread']]],
   ['addtimetomessages',['addTimeToMessages',['../classMidiMessageSequence.html#ad19c814526207b0f38c12307f5588510',1,'MidiMessageSequence']]],
   ['addto',['addTo',['../classBorderSize.html#a58e8866ce59503a31f71574fb1799065',1,'BorderSize']]],
   ['addtoblacklist',['addToBlacklist',['../classKnownPluginList.html#a1f99f1fe2cee88552502ee525a93f3aa',1,'KnownPluginList']]],
