@@ -434,7 +434,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 <p>Returns a raw pointer to the allocated data. </p>
 <p>This may be a null pointer if the data hasn't yet been allocated, or if it has been freed by calling the <a class="el" href="classHeapBlock.html#a8ec3fb69997d6f530d60cb5e0969f97f" title="Frees any currently-allocated data. ">free()</a> method. </p>
 
-<p>Referenced by <a class="el" href="classReferenceCountedArray.html#ae4d087d8723db7a39fb876d419d9f960">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::addOrReplaceSorted()</a>, <a class="el" href="classReferenceCountedArray.html#afb1a9958a818b6c410d79fc65b23432e">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43">OwnedArray&lt; MidiBuffer &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#a4ae4a483c09550d8432b98db14f2d132">OwnedArray&lt; MidiBuffer &gt;::contains()</a>, <a class="el" href="classReferenceCountedArray.html#a5660a4dab2e9765784f1c5af73d7c303">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::contains()</a>, <a class="el" href="classOwnedArray.html#a6660424693e4edbc687fc8352a71ca92">OwnedArray&lt; MidiBuffer &gt;::indexOf()</a>, <a class="el" href="classReferenceCountedArray.html#a034cad62a8ebb5854db4db2ff4afbf71">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::indexOf()</a>, <a class="el" href="classOwnedArray.html#a2b783fa66f082b890fc20d8d9c948494">OwnedArray&lt; MidiBuffer &gt;::removeObject()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>, <a class="el" href="classAudioBuffer.html#a05e3b4cec4a2c446df87de34c2788f7b">AudioBuffer&lt; float &gt;::setSize()</a>, <a class="el" href="classReferenceCountedArray.html#a51248166d0e546e8f6ba9f831a835a7a">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::sort()</a>, and <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">OwnedArray&lt; MidiBuffer &gt;::sort()</a>.</p>
+<p>Referenced by <a class="el" href="classReferenceCountedArray.html#ae4d087d8723db7a39fb876d419d9f960">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::addOrReplaceSorted()</a>, <a class="el" href="classReferenceCountedArray.html#afb1a9958a818b6c410d79fc65b23432e">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43">OwnedArray&lt; MidiBuffer &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#a4ae4a483c09550d8432b98db14f2d132">OwnedArray&lt; MidiBuffer &gt;::contains()</a>, <a class="el" href="classReferenceCountedArray.html#a5660a4dab2e9765784f1c5af73d7c303">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::contains()</a>, <a class="el" href="classOwnedArray.html#a6660424693e4edbc687fc8352a71ca92">OwnedArray&lt; MidiBuffer &gt;::indexOf()</a>, <a class="el" href="classReferenceCountedArray.html#a034cad62a8ebb5854db4db2ff4afbf71">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::indexOf()</a>, <a class="el" href="classOwnedArray.html#a2b783fa66f082b890fc20d8d9c948494">OwnedArray&lt; MidiBuffer &gt;::removeObject()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>, <a class="el" href="classAudioBuffer.html#a4434de94aa03d7db6d7ef06977ddf0ac">AudioBuffer&lt; float &gt;::setSize()</a>, <a class="el" href="classReferenceCountedArray.html#a51248166d0e546e8f6ba9f831a835a7a">ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;::sort()</a>, and <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">OwnedArray&lt; MidiBuffer &gt;::sort()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +737,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 <p>Allocates a specified amount of memory and optionally clears it. </p>
 <p>This does the same job as either <a class="el" href="classHeapBlock.html#a1a196c4ebdb6a5ff9517e262b91894cf" title="Allocates a specified amount of memory. ">malloc()</a> or <a class="el" href="classHeapBlock.html#a59dc4dfb0d05906164f4362b2086cd50" title="Allocates a specified amount of memory and clears it. ">calloc()</a>, depending on the initialiseToZero parameter. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a05e3b4cec4a2c446df87de34c2788f7b">AudioBuffer&lt; float &gt;::setSize()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a4434de94aa03d7db6d7ef06977ddf0ac">AudioBuffer&lt; float &gt;::setSize()</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 <p>Frees any currently-allocated data. </p>
 <p>This will free the data and reset this object to be a null pointer. </p>
 
-<p>Referenced by <a class="el" href="classAudioUnitHelpers_1_1ChannelRemapper.html#a149a4f20954320f89e4e2ffd65166d3d">AudioUnitHelpers::ChannelRemapper::release()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#ac802ae2d716fab534a42a53313648e7d">AudioUnitHelpers::CoreAudioBufferList::release()</a>, <a class="el" href="classArrayAllocationBase.html#a56354968cbfcf19977aae75b00768df6">ArrayAllocationBase&lt; ProgressBar *, DummyCriticalSection &gt;::setAllocatedSize()</a>, and <a class="el" href="classAudioBuffer.html#a3d020d53eedb4dd8e465ea7fe896c37c">AudioBuffer&lt; float &gt;::setDataToReferTo()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioUnitHelpers_1_1ChannelRemapper.html#a149a4f20954320f89e4e2ffd65166d3d">AudioUnitHelpers::ChannelRemapper::release()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#ac802ae2d716fab534a42a53313648e7d">AudioUnitHelpers::CoreAudioBufferList::release()</a>, <a class="el" href="classArrayAllocationBase.html#a56354968cbfcf19977aae75b00768df6">ArrayAllocationBase&lt; ProgressBar *, DummyCriticalSection &gt;::setAllocatedSize()</a>, and <a class="el" href="classAudioBuffer.html#a241b1340efd9e55a752a002579021950">AudioBuffer&lt; float &gt;::setDataToReferTo()</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ template&lt;bool otherBlockThrows&gt; </div>
 <p>Swaps this object's data with the data of another <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a>. </p>
 <p>The two objects simply exchange their data pointers. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a05e3b4cec4a2c446df87de34c2788f7b">AudioBuffer&lt; float &gt;::setSize()</a>, and <a class="el" href="classArrayAllocationBase.html#a48910e0a2c0c3243c8fee9226d2d158a">ArrayAllocationBase&lt; ProgressBar *, DummyCriticalSection &gt;::swapWith()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a4434de94aa03d7db6d7ef06977ddf0ac">AudioBuffer&lt; float &gt;::setSize()</a>, and <a class="el" href="classArrayAllocationBase.html#a48910e0a2c0c3243c8fee9226d2d158a">ArrayAllocationBase&lt; ProgressBar *, DummyCriticalSection &gt;::swapWith()</a>.</p>
 
 </div>
 </div>
@@ -864,7 +864,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 <p>This fills the block with zeros, up to the number of elements specified. </p>
 <p>Since the block has no way of knowing its own size, you must make sure that the number of elements you specify doesn't exceed the allocated size. </p>
 
-<p>Referenced by <a class="el" href="classAudioBuffer.html#a05e3b4cec4a2c446df87de34c2788f7b">AudioBuffer&lt; float &gt;::setSize()</a>.</p>
+<p>Referenced by <a class="el" href="classAudioBuffer.html#a4434de94aa03d7db6d7ef06977ddf0ac">AudioBuffer&lt; float &gt;::setSize()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 29 2017 20:00:56 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 30 2017 20:00:49 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

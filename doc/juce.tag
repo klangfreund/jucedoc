@@ -12859,36 +12859,36 @@
       <type></type>
       <name>AudioBuffer</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>af7058cce920523b97116ee7e228ee350</anchor>
-      <arglist>(int numChannelsToAllocate, int numSamplesToAllocate) noexcept</arglist>
+      <anchor>ab2e7c447c820c6ef23b0f7a9cacf920d</anchor>
+      <arglist>(int numChannelsToAllocate, int numSamplesToAllocate)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>AudioBuffer</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a3e0beee01a96f4fd162ea8347c7a50aa</anchor>
-      <arglist>(Type *const *dataToReferTo, int numChannelsToUse, int numSamples) noexcept</arglist>
+      <anchor>ada2cf3f1e306a207f3d689d37192b823</anchor>
+      <arglist>(Type *const *dataToReferTo, int numChannelsToUse, int numSamples)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>AudioBuffer</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a4d788fe19d1bd23274b85bf4028a0fb8</anchor>
-      <arglist>(Type *const *dataToReferTo, int numChannelsToUse, int startSample, int numSamples) noexcept</arglist>
+      <anchor>afcd4c606bb2fde74fea189eedcea96ec</anchor>
+      <arglist>(Type *const *dataToReferTo, int numChannelsToUse, int startSample, int numSamples)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>AudioBuffer</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a3d9d5b59ccfee79f6aadbaf6ed4ffc28</anchor>
-      <arglist>(const AudioBuffer &amp;other) noexcept</arglist>
+      <anchor>ad773e1b58a9ec886349456b5f1a926d5</anchor>
+      <arglist>(const AudioBuffer &amp;other)</arglist>
     </member>
     <member kind="function">
       <type>AudioBuffer &amp;</type>
       <name>operator=</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a60a3e64901c3e9ddeca5512ad8d82bd7</anchor>
-      <arglist>(const AudioBuffer &amp;other) noexcept</arglist>
+      <anchor>af43cdfdf05d2de26b8fdaa6ab86dc246</anchor>
+      <arglist>(const AudioBuffer &amp;other)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -12971,22 +12971,22 @@
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a05e3b4cec4a2c446df87de34c2788f7b</anchor>
-      <arglist>(int newNumChannels, int newNumSamples, bool keepExistingContent=false, bool clearExtraSpace=false, bool avoidReallocating=false) noexcept</arglist>
+      <anchor>a4434de94aa03d7db6d7ef06977ddf0ac</anchor>
+      <arglist>(int newNumChannels, int newNumSamples, bool keepExistingContent=false, bool clearExtraSpace=false, bool avoidReallocating=false)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setDataToReferTo</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>a3d020d53eedb4dd8e465ea7fe896c37c</anchor>
-      <arglist>(Type **dataToReferTo, const int newNumChannels, const int newStartSample, const int newNumSamples) noexcept</arglist>
+      <anchor>a241b1340efd9e55a752a002579021950</anchor>
+      <arglist>(Type **dataToReferTo, int newNumChannels, int newStartSample, int newNumSamples)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setDataToReferTo</name>
       <anchorfile>classAudioBuffer.html</anchorfile>
-      <anchor>ab2daca36339708bc76e01fea7b7b3059</anchor>
-      <arglist>(Type **dataToReferTo, const int newNumChannels, const int newNumSamples) noexcept</arglist>
+      <anchor>a53b0fa1f2d51e3d1fb48b99d6988fe8b</anchor>
+      <arglist>(Type **dataToReferTo, int newNumChannels, int newNumSamples)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
