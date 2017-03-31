@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70823aaec07b0fc92fcf420c36c2c704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConcertinaPanel.html#a70823aaec07b0fc92fcf420c36c2c704">setPanelHeaderSize</a> (<a class="el" href="classComponent.html">Component</a> *panelComponent, int headerSize)</td></tr>
 <tr class="memdesc:a70823aaec07b0fc92fcf420c36c2c704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the height of the header section for one of the panels.  <a href="#a70823aaec07b0fc92fcf420c36c2c704">More...</a><br/></td></tr>
 <tr class="separator:a70823aaec07b0fc92fcf420c36c2c704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1adae8020333d759495538d231e8279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConcertinaPanel.html#ae1adae8020333d759495538d231e8279">setCustomPanelHeader</a> (<a class="el" href="classComponent.html">Component</a> *panelComponent, <a class="el" href="classComponent.html">Component</a> *customHeaderComponent, bool takeOwnership)</td></tr>
+<tr class="memdesc:ae1adae8020333d759495538d231e8279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a custom header <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a> for one of the panels.  <a href="#ae1adae8020333d759495538d231e8279">More...</a><br/></td></tr>
+<tr class="separator:ae1adae8020333d759495538d231e8279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classComponent.html">Component</a></td></tr>
 <tr class="memitem:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5ee1827aaa22388d22da5200b70eeeee">Component</a> () noexcept</td></tr>
 <tr class="memdesc:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a component.  <a href="#a5ee1827aaa22388d22da5200b70eeeee">More...</a><br/></td></tr>
@@ -1017,6 +1020,48 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae1adae8020333d759495538d231e8279"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConcertinaPanel::setCustomPanelHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>panelComponent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>customHeaderComponent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>takeOwnership</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a custom header <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a> for one of the panels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">panelComponent</td><td>the panel component to add the custom header to. </td></tr>
+    <tr><td class="paramname">customHeaderComponent</td><td>the custom component to use for the panel header. This can be nullptr to clear the custom header component and just use the standard <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> panel. </td></tr>
+    <tr><td class="paramname">takeOwnership</td><td>if true, then the PanelHolder will take ownership of the custom header component, and will delete it later when it's no longer needed. If false, it won't delete it, and you must make sure it doesn't get deleted while in use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__ConcertinaPanel_8h.html">juce_ConcertinaPanel.h</a></li>
 </ul>
@@ -1024,7 +1069,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2017 20:00:44 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 31 2017 20:00:45 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

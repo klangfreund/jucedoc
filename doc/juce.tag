@@ -5113,6 +5113,13 @@
       <type>JUCE_API String &amp;JUCE_CALLTYPE</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>juce__String_8h.html</anchorfile>
+      <anchor>a1b685ab58ba104c6cd8112a1e298d992</anchor>
+      <arglist>(String &amp;string1, unsigned long number)</arglist>
+    </member>
+    <member kind="function">
+      <type>JUCE_API String &amp;JUCE_CALLTYPE</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>juce__String_8h.html</anchorfile>
       <anchor>aa63100aa19309480c9650073ace12a6b</anchor>
       <arglist>(String &amp;string1, int64 number)</arglist>
     </member>
@@ -31196,6 +31203,13 @@
       <anchorfile>classConcertinaPanel.html</anchorfile>
       <anchor>a70823aaec07b0fc92fcf420c36c2c704</anchor>
       <arglist>(Component *panelComponent, int headerSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCustomPanelHeader</name>
+      <anchorfile>classConcertinaPanel.html</anchorfile>
+      <anchor>ae1adae8020333d759495538d231e8279</anchor>
+      <arglist>(Component *panelComponent, Component *customHeaderComponent, bool takeOwnership)</arglist>
     </member>
   </compound>
   <compound kind="struct">
