@@ -16360,6 +16360,20 @@
     </member>
     <member kind="enumvalue">
       <type>@</type>
+      <name>fps60</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>a9afad1749c8002945b2a6921eef92b25aeb48438349dc6a8939da5a892a7a9fb7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>fps60drop</name>
+      <anchorfile>classAudioPlayHead.html</anchorfile>
+      <anchor>a9afad1749c8002945b2a6921eef92b25a836efe6670caaf85325dd6d92bf596fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
       <name>fpsUnknown</name>
       <anchorfile>classAudioPlayHead.html</anchorfile>
       <anchor>a9afad1749c8002945b2a6921eef92b25a7e58343767d199b598a16ea25c09b062</anchor>

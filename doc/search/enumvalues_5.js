@@ -28,6 +28,8 @@ var searchData=
   ['fps2997drop',['fps2997drop',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25ac03944a2bba5e61cabcca112edfd1efd',1,'AudioPlayHead']]],
   ['fps30',['fps30',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a77c3bd70c42f416f663c83036bff401d',1,'AudioPlayHead::fps30()'],['../classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96aba91e489a4210c9f5cbe2a47c4d3e26194',1,'MidiMessage::fps30()']]],
   ['fps30drop',['fps30drop',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a2263e006dec6f9cf53adbbcecdc9e287',1,'AudioPlayHead::fps30drop()'],['../classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96aba16b56e3f81f4265ffc0d553e763f6a4f',1,'MidiMessage::fps30drop()']]],
+  ['fps60',['fps60',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25aeb48438349dc6a8939da5a892a7a9fb7',1,'AudioPlayHead']]],
+  ['fps60drop',['fps60drop',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a836efe6670caaf85325dd6d92bf596fb',1,'AudioPlayHead']]],
   ['fpsunknown',['fpsUnknown',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a7e58343767d199b598a16ea25c09b062',1,'AudioPlayHead']]],
   ['framespersecond',['framesPerSecond',['../classAudioCDReader.html#a1862227d7416b7b600f41b3f9ab31d6eabcf6b807bcb841f2ae1fb9c3f518aa61',1,'AudioCDReader']]],
   ['frombutton',['fromButton',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22ad4374a114c5dc22c1767e03274176f1b',1,'ApplicationCommandTarget::InvocationInfo']]],
