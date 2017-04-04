@@ -175,19 +175,21 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d">MessageFromDevice::deviceTopology</a> = 0x01, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1ac3b437dd7850dd77e5723bf042832c3d">packetACK</a> = 0x02, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</a> = 0x03, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed">MessageFromDevice::deviceTopologyExtend</a> = 0x04, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">MessageFromDevice::deviceTopologyEnd</a> = 0x05, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">MessageFromDevice::touchStart</a> = 0x10, 
-<br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">MessageFromDevice::touchMove</a> = 0x11, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">MessageFromDevice::touchMove</a> = 0x11, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">MessageFromDevice::touchEnd</a> = 0x12, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">MessageFromDevice::touchStartWithVelocity</a> = 0x13, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">MessageFromDevice::touchStartWithVelocity</a> = 0x13, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">MessageFromDevice::touchMoveWithVelocity</a> = 0x14, 
-<br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">MessageFromDevice::touchEndWithVelocity</a> = 0x15, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">MessageFromDevice::touchEndWithVelocity</a> = 0x15, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">MessageFromDevice::controlButtonDown</a> = 0x20, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">MessageFromDevice::controlButtonUp</a> = 0x21, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">MessageFromDevice::controlButtonUp</a> = 0x21, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
 <br/>
  }</td></tr>
 <tr class="memdesc:a1513500452861490fb3bf17ea8e8deb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages that a device may send to the host.  <a href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7">More...</a><br/></td></tr>
@@ -594,6 +596,10 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b"></a>firmwareUpdateACK</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed"></a>deviceTopologyExtend</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594"></a>deviceTopologyEnd</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033"></a>touchStart</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773"></a>touchMove</em>&#160;</td><td class="fielddoc">
@@ -754,7 +760,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 3 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 4 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

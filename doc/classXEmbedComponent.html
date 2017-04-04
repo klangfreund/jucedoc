@@ -108,12 +108,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a95bde401bb0a638753763cdc63060a73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXEmbedComponent.html#a95bde401bb0a638753763cdc63060a73">XEmbedComponent</a> (bool wantsKeyboardFocus=true)</td></tr>
+<tr class="memdesc:a95bde401bb0a638753763cdc63060a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a JUCE component wrapping a foreign widget.  <a href="#a95bde401bb0a638753763cdc63060a73">More...</a><br/></td></tr>
+<tr class="separator:a95bde401bb0a638753763cdc63060a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b75cc894a09ce3bd49fcfa61afac65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXEmbedComponent.html#a20b75cc894a09ce3bd49fcfa61afac65">XEmbedComponent</a> (unsigned long wID, bool wantsKeyboardFocus=true)</td></tr>
 <tr class="memdesc:a20b75cc894a09ce3bd49fcfa61afac65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a JUCE component wrapping the foreign widget with id wID.  <a href="#a20b75cc894a09ce3bd49fcfa61afac65">More...</a><br/></td></tr>
 <tr class="separator:a20b75cc894a09ce3bd49fcfa61afac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276380d121b1516541de97de830665f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXEmbedComponent.html#a276380d121b1516541de97de830665f8">~XEmbedComponent</a> ()</td></tr>
 <tr class="memdesc:a276380d121b1516541de97de830665f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a276380d121b1516541de97de830665f8">More...</a><br/></td></tr>
 <tr class="separator:a276380d121b1516541de97de830665f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8064cdd0dbde3db7513ee6bd367682c"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXEmbedComponent.html#ae8064cdd0dbde3db7513ee6bd367682c">getHostWindowID</a> ()</td></tr>
+<tr class="memdesc:ae8064cdd0dbde3db7513ee6bd367682c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to retrieve the host's window id when using the host initiated version of the XEmbedProtocol.  <a href="#ae8064cdd0dbde3db7513ee6bd367682c">More...</a><br/></td></tr>
+<tr class="separator:ae8064cdd0dbde3db7513ee6bd367682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classComponent.html">Component</a></td></tr>
 <tr class="memitem:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5ee1827aaa22388d22da5200b70eeeee">Component</a> () noexcept</td></tr>
 <tr class="memdesc:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a component.  <a href="#a5ee1827aaa22388d22da5200b70eeeee">More...</a><br/></td></tr>
@@ -729,10 +735,31 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Linux-specific class that can embed a foreign X11 widget. </p>
 <p>Use this class to embed a foreign X11 widget from other toolkits such as GTK+ or QT.</p>
-<p>For GTK+, create a gtk_plug container and pass the plug's id (gtk_plug_get_id) to the constructor of this class.</p>
-<p>For QT, use the QX11EmbedWidget class and pass the widget's id (containerWinId()) to the constructor of this class.</p>
+<p>There are two ways to initiate the Xembed protocol. Either the client creates a window and passes this to the host (client initiated) or the host creates a window in which the client can reparent it's client widget (host initiated). <a class="el" href="classXEmbedComponent.html" title="A Linux-specific class that can embed a foreign X11 widget. ">XEmbedComponent</a> supports both protocol types.</p>
+<p>This is how you embed a GTK+ widget: if you are using the client initiated version of the protocol, then create a new gtk widget with gtk_plug_new (0). Then query the window id of the plug via gtk_plug_get_id(). Pass this id to the constructor of this class.</p>
+<p>If you are using the host initiated version of the protocol, then first create the <a class="el" href="classXEmbedComponent.html" title="A Linux-specific class that can embed a foreign X11 widget. ">XEmbedComponent</a> using the default constructor. Use getHostWindowID to get the window id of the host, use this to construct your gtk plug via gtk_plug_new.</p>
+<p>A similar approach can be used to embed QT widgets via QT's QX11EmbedWidget class.</p>
 <p>Other toolkits or raw X11 widgets should follow the X11 embed protocol: <a href="https://specifications.freedesktop.org/xembed-spec/xembed-spec-latest.html">https://specifications.freedesktop.org/xembed-spec/xembed-spec-latest.html</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a95bde401bb0a638753763cdc63060a73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XEmbedComponent::XEmbedComponent </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wantsKeyboardFocus</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a JUCE component wrapping a foreign widget. </p>
+<p>Use this constructor if you are using the host initiated version of the XEmbedProtocol. When using this version of the protocol you must call <a class="el" href="classXEmbedComponent.html#ae8064cdd0dbde3db7513ee6bd367682c" title="Use this method to retrieve the host&#39;s window id when using the host initiated version of the XEmbedP...">getHostWindowID()</a> and pass this id to the foreign toolkit. </p>
+
+</div>
+</div>
 <a class="anchor" id="a20b75cc894a09ce3bd49fcfa61afac65"></a>
 <div class="memitem">
 <div class="memproto">
@@ -758,6 +785,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a JUCE component wrapping the foreign widget with id wID. </p>
+<p>Use this constructor if you are using the client initiated version of the XEmbedProtocol. </p>
 
 </div>
 </div>
@@ -779,6 +807,23 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae8064cdd0dbde3db7513ee6bd367682c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long XEmbedComponent::getHostWindowID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use this method to retrieve the host's window id when using the host initiated version of the XEmbedProtocol. </p>
+
+</div>
+</div>
 <a class="anchor" id="a76023dec230cdd66c0bfa355303b9b7d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -958,7 +1003,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 3 2017 20:00:53 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 4 2017 20:00:57 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

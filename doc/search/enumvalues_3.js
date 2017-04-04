@@ -13,6 +13,8 @@ var searchData=
   ['developercontrolblock',['developerControlBlock',['../classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a98ca592426170135a53fdd46bc6d2a53',1,'Block::developerControlBlock()'],['../classjuce_1_1Block.html#a1c008a40f29753a54bce01d6b95fbb50a7a2fb0f1f22978da9cf46906be459a45',1,'juce::Block::developerControlBlock()']]],
   ['devicecommandmessage',['deviceCommandMessage',['../juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbabbbbfdecd3eaf2ad82b2f33786a67687',1,'juce_BlocksProtocolDefinitions.h']]],
   ['devicetopology',['deviceTopology',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['devicetopologyend',['deviceTopologyEnd',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['devicetopologyextend',['deviceTopologyExtend',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed',1,'juce_BlocksProtocolDefinitions.h']]],
   ['digidesignprotools',['DigidesignProTools',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a98abcd7b565c269a115d7f419114bb9c',1,'PluginHostType']]],
   ['digitalperformer',['DigitalPerformer',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5fc16668f994993c5f9a7276cd840f4a',1,'PluginHostType']]],
   ['direct',['direct',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22a5da64d78c06aae22ea9c1315e99f9557',1,'ApplicationCommandTarget::InvocationInfo']]],

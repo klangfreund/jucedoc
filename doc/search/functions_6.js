@@ -496,6 +496,7 @@ var searchData=
   ['gethostname',['getHostName',['../classStreamingSocket.html#a1f0908b06027d58c1070f5bf1d700959',1,'StreamingSocket']]],
   ['gethostpath',['getHostPath',['../classPluginHostType.html#a6060f772f5cb2c53589c1acc43815426',1,'PluginHostType']]],
   ['gethosttype',['getHostType',['../namespacejuce.html#aac8f4243feb65824717064a710249b8e',1,'juce']]],
+  ['gethostwindowid',['getHostWindowID',['../classXEmbedComponent.html#ae8064cdd0dbde3db7513ee6bd367682c',1,'XEmbedComponent']]],
   ['gethours',['getHours',['../classTime.html#ab946ef04018a381a292448bbeb6e989e',1,'Time']]],
   ['gethoursinampmformat',['getHoursInAmPmFormat',['../classTime.html#a0d3a0664160d9e6f37a7afe93df0a12b',1,'Time']]],
   ['gethsb',['getHSB',['../classColour.html#a8f59eb28e10446aefd7b7b504641195d',1,'Colour']]],

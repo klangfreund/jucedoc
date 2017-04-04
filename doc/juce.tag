@@ -909,6 +909,8 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d">deviceTopology</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1ac3b437dd7850dd77e5723bf042832c3d">packetACK</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed">deviceTopologyExtend</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">deviceTopologyEnd</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</enumvalue>
@@ -44805,7 +44807,14 @@
       <type>static bool</type>
       <name>handleTopology</name>
       <anchorfile>structHostPacketDecoder.html</anchorfile>
-      <anchor>acc256d98d681a9e5638e8a4dcb11477c</anchor>
+      <anchor>a3769daa60bd03f6ec66728ff0fc92947</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, bool newTopology)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>handleTopologyEnd</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>a31e6633d0cc21dc6ab156103636abd9f</anchor>
       <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -61683,6 +61692,13 @@
       <anchorfile>classNormalisableRange.html</anchorfile>
       <anchor>af50c7a38edc0ae19e60ee068808194fa</anchor>
       <arglist>(ValueType rangeStart, ValueType rangeEnd) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NormalisableRange</name>
+      <anchorfile>classNormalisableRange.html</anchorfile>
+      <anchor>a74564ebe17e4af5f5ec1032810f6d126</anchor>
+      <arglist>(ValueType rangeStart, ValueType rangeEnd, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt; convertFrom0To1Func, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt; convertTo0To1Func, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt; snapToLegalValueFunc=nullptr) noexcept</arglist>
     </member>
     <member kind="function">
       <type>ValueType</type>
@@ -91830,6 +91846,13 @@
       <type></type>
       <name>XEmbedComponent</name>
       <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>a95bde401bb0a638753763cdc63060a73</anchor>
+      <arglist>(bool wantsKeyboardFocus=true)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>XEmbedComponent</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
       <anchor>a20b75cc894a09ce3bd49fcfa61afac65</anchor>
       <arglist>(unsigned long wID, bool wantsKeyboardFocus=true)</arglist>
     </member>
@@ -91838,6 +91861,13 @@
       <name>~XEmbedComponent</name>
       <anchorfile>classXEmbedComponent.html</anchorfile>
       <anchor>a276380d121b1516541de97de830665f8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned long</type>
+      <name>getHostWindowID</name>
+      <anchorfile>classXEmbedComponent.html</anchorfile>
+      <anchor>ae8064cdd0dbde3db7513ee6bd367682c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
