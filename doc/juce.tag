@@ -83084,8 +83084,8 @@
       <type>void</type>
       <name>draw</name>
       <anchorfile>classTextLayout.html</anchorfile>
-      <anchor>a7645f8120cffd4a2fa471af048783789</anchor>
-      <arglist>(Graphics &amp;, const Rectangle&lt; float &gt; &amp;area) const </arglist>
+      <anchor>a9d827311042c8938c6d8e539104802ee</anchor>
+      <arglist>(Graphics &amp;, Rectangle&lt; float &gt; area) const </arglist>
     </member>
     <member kind="function">
       <type>float</type>
