@@ -307,8 +307,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an empty, invalid <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a>. </p>
-<p>A <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> that is created with this constructor can't actually be used for anything, it's just a default 'null' <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> that can be returned to indicate some sort of failure. To create a real one, use the constructor that takes a string.</p>
-<dl class="section see"><dt>See Also</dt><dd>ValueTree::invalid </dd></dl>
+<p>A <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> that is created with this constructor can't actually be used for anything, it's just a default 'null' <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> that can be returned to indicate some sort of failure. To create a real one, use the constructor that takes a string. </p>
 
 </div>
 </div>
@@ -1346,7 +1345,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns one of this node's siblings in its parent's child list. </p>
-<p>The delta specifies how far to move through the list, so a value of 1 would return the node that follows this one, -1 would return the node before it, 0 will return this node itself, etc. If the requested position is beyond the range of available nodes, this will return ValueTree::invalid. </p>
+<p>The delta specifies how far to move through the list, so a value of 1 would return the node that follows this one, -1 would return the node before it, 0 will return this node itself, etc. If the requested position is beyond the range of available nodes, this will return an empty <a class="el" href="classValueTree.html#ad5671081941b3db9db42bf7fcbd2629c" title="Creates an empty, invalid ValueTree. ">ValueTree()</a>. </p>
 
 </div>
 </div>
@@ -1770,7 +1769,7 @@ template&lt;typename ElementComparator &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 10 2017 20:00:42 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

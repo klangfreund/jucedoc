@@ -204,7 +204,7 @@ var searchData=
   ['alertwindow',['AlertWindow',['../classAlertWindow.html',1,'AlertWindow'],['../classAlertWindow.html#a881fc5e753335f28fad5144eca5c1a3b',1,'AlertWindow::AlertWindow()']]],
   ['aliceblue',['aliceblue',['../classColours.html#aa90d486409e9c3634ec3f9abbaeb14d7',1,'Colours']]],
   ['aligncontent',['alignContent',['../classFlexBox.html#a8e1ae8a873d7ff198f439d3088192bcf',1,'FlexBox::alignContent()'],['../classFlexBox.html#a11793a1ebd50cc74be89f720f4a05084',1,'FlexBox::AlignContent()']]],
-  ['alignitems',['alignItems',['../classFlexBox.html#a9e928c10773d54e50e4bfcfc2814f541',1,'FlexBox::alignItems()'],['../classFlexBox.html#ae187b70583f1446fb017cfeea7a91c09',1,'FlexBox::AlignItems()']]],
+  ['alignitems',['AlignItems',['../classFlexBox.html#ae187b70583f1446fb017cfeea7a91c09',1,'FlexBox::AlignItems()'],['../classFlexBox.html#a9e928c10773d54e50e4bfcfc2814f541',1,'FlexBox::alignItems()']]],
   ['alignself',['alignSelf',['../classFlexItem.html#a7b9190e838f5ee0d70d1cac494621fd7',1,'FlexItem::alignSelf()'],['../classFlexItem.html#a8bba729fda8779a2d3dfc576b2fc77fa',1,'FlexItem::AlignSelf()']]],
   ['allbuttons',['allButtons',['../classDocumentWindow.html#a104d68bc145157c6ce79169a36fc3c31af4a9b49869cebf7e8cecaf7f6dd93420',1,'DocumentWindow']]],
   ['allcontrollersoff',['allControllersOff',['../classMidiMessage.html#ac691395427e8cece84124508e8650387',1,'MidiMessage']]],
