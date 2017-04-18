@@ -91368,6 +91368,13 @@
       <anchor>af0353e28029daad4a95144e0a7706c84</anchor>
       <arglist>(FocusChangeType) override</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>clearCookies</name>
+      <anchorfile>classWebBrowserComponent.html</anchorfile>
+      <anchor>abbbc4a471b09dc10008ccf123edf0e35</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>WebInputStream</name>

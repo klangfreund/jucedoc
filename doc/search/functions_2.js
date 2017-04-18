@@ -102,6 +102,7 @@ var searchData=
   ['clearcolours',['clearColours',['../classColourGradient.html#a634055607de82695189730cf409e3ecd',1,'ColourGradient']]],
   ['clearcommands',['clearCommands',['../classApplicationCommandManager.html#a33f916c7f4ac00736958a83883057df0',1,'ApplicationCommandManager']]],
   ['clearcontentcomponent',['clearContentComponent',['../classResizableWindow.html#a44edd8f80203fd6a44459df7ae953979',1,'ResizableWindow']]],
+  ['clearcookies',['clearCookies',['../classWebBrowserComponent.html#abbbc4a471b09dc10008ccf123edf0e35',1,'WebBrowserComponent']]],
   ['clearcurrentnote',['clearCurrentNote',['../classMPESynthesiserVoice.html#ac4c127e835481315ebd02421edf15bd5',1,'MPESynthesiserVoice::clearCurrentNote()'],['../classSynthesiserVoice.html#a55d1e7a062f8dc9a6cd78526b0da049c',1,'SynthesiserVoice::clearCurrentNote()']]],
   ['clearformats',['clearFormats',['../classAudioFormatManager.html#aa321a315fd1fdb294779832386092450',1,'AudioFormatManager']]],
   ['clearheapandglobals',['clearHeapAndGlobals',['../structjuce_1_1littlefoot_1_1Runner.html#aa290769d5eebb867ced879f4dfe1277d',1,'juce::littlefoot::Runner::clearHeapAndGlobals()'],['../structlittlefoot_1_1Runner.html#a5eb6ec27999054287fb4b4ff38697804',1,'littlefoot::Runner::clearHeapAndGlobals()']]],
