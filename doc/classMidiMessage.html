@@ -129,6 +129,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac37614dc438a8adfaf335daa0c67e1db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#ac37614dc438a8adfaf335daa0c67e1db">MidiMessage</a> (int byte1, double timeStamp=0) noexcept</td></tr>
 <tr class="memdesc:ac37614dc438a8adfaf335daa0c67e1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 1-byte short midi message.  <a href="#ac37614dc438a8adfaf335daa0c67e1db">More...</a><br/></td></tr>
 <tr class="separator:ac37614dc438a8adfaf335daa0c67e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7881f09391d1e5625bb04cec132e7923"><td class="memTemplParams" colspan="2">template&lt;typename... Data&gt; </td></tr>
+<tr class="memitem:a7881f09391d1e5625bb04cec132e7923"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a7881f09391d1e5625bb04cec132e7923">MidiMessage</a> (int byte1, int byte2, int byte3, Data...otherBytes)</td></tr>
+<tr class="memdesc:a7881f09391d1e5625bb04cec132e7923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a midi message from a list of bytes.  <a href="#a7881f09391d1e5625bb04cec132e7923">More...</a><br/></td></tr>
+<tr class="separator:a7881f09391d1e5625bb04cec132e7923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6adcb5182a0e1446f5b9d77c9e08c7b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessage.html#a6adcb5182a0e1446f5b9d77c9e08c7b3">MidiMessage</a> (const void *data, int numBytes, double timeStamp=0)</td></tr>
 <tr class="memdesc:a6adcb5182a0e1446f5b9d77c9e08c7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a midi message from a block of data.  <a href="#a6adcb5182a0e1446f5b9d77c9e08c7b3">More...</a><br/></td></tr>
 <tr class="separator:a6adcb5182a0e1446f5b9d77c9e08c7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -718,6 +722,50 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a7881f09391d1e5625bb04cec132e7923"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Data&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MidiMessage::MidiMessage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>byte1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>byte2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>byte3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Data...&#160;</td>
+          <td class="paramname"><em>otherBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a midi message from a list of bytes. </p>
+
+<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
 
 </div>
 </div>
@@ -4615,7 +4663,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 19 2017 20:00:53 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 20 2017 20:00:58 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

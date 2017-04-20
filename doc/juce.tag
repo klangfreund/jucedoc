@@ -56356,6 +56356,13 @@
       <type></type>
       <name>MidiMessage</name>
       <anchorfile>classMidiMessage.html</anchorfile>
+      <anchor>a7881f09391d1e5625bb04cec132e7923</anchor>
+      <arglist>(int byte1, int byte2, int byte3, Data...otherBytes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MidiMessage</name>
+      <anchorfile>classMidiMessage.html</anchorfile>
       <anchor>a6adcb5182a0e1446f5b9d77c9e08c7b3</anchor>
       <arglist>(const void *data, int numBytes, double timeStamp=0)</arglist>
     </member>
