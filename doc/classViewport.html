@@ -187,6 +187,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32ee4e893ff1d3b67ba91c5c275f2d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScrollBar.html">ScrollBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a32ee4e893ff1d3b67ba91c5c275f2d21">getHorizontalScrollBar</a> () noexcept</td></tr>
 <tr class="memdesc:a32ee4e893ff1d3b67ba91c5c275f2d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the scrollbar component being used.  <a href="#a32ee4e893ff1d3b67ba91c5c275f2d21">More...</a><br/></td></tr>
 <tr class="separator:a32ee4e893ff1d3b67ba91c5c275f2d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f7b21675ff1e097f0ed1becfa2d104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a96f7b21675ff1e097f0ed1becfa2d104">canScrollVertically</a> () const noexcept</td></tr>
+<tr class="memdesc:a96f7b21675ff1e097f0ed1becfa2d104"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if there's any off-screen content that could be scrolled vertically, or false if everything is currently visible.  <a href="#a96f7b21675ff1e097f0ed1becfa2d104">More...</a><br/></td></tr>
+<tr class="separator:a96f7b21675ff1e097f0ed1becfa2d104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d2c92ed585bee17e19ce64a34f5d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#a46d2c92ed585bee17e19ce64a34f5d56">canScrollHorizontally</a> () const noexcept</td></tr>
+<tr class="memdesc:a46d2c92ed585bee17e19ce64a34f5d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if there's any off-screen content that could be scrolled horizontally, or false if everything is currently visible.  <a href="#a46d2c92ed585bee17e19ce64a34f5d56">More...</a><br/></td></tr>
+<tr class="separator:a46d2c92ed585bee17e19ce64a34f5d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada0061f2174a6a8ab76a305b8362417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewport.html#aada0061f2174a6a8ab76a305b8362417">setScrollOnDragEnabled</a> (bool shouldScrollOnDrag)</td></tr>
 <tr class="memdesc:aada0061f2174a6a8ab76a305b8362417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables drag-to-scroll functionality in the viewport.  <a href="#aada0061f2174a6a8ab76a305b8362417">More...</a><br/></td></tr>
 <tr class="separator:aada0061f2174a6a8ab76a305b8362417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1404,7 +1410,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Changes the width of the scrollbars. </p>
-<p>If this isn't specified, the default width from the <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> class will be used.</p>
+<p>If this isn't specified, the default width from the <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> class will be used. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structScrollBar_1_1LookAndFeelMethods.html#a368b37f896619b1c65efc8dc53d42dde" title="Returns the default thickness to use for a scrollbar. ">LookAndFeel::getDefaultScrollbarWidth</a> </dd></dl>
 
 </div>
@@ -1504,6 +1510,56 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a pointer to the scrollbar component being used. </p>
 <p>Handy if you need to customise the bar somehow. </p>
+
+</div>
+</div>
+<a class="anchor" id="a96f7b21675ff1e097f0ed1becfa2d104"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::canScrollVertically </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if there's any off-screen content that could be scrolled vertically, or false if everything is currently visible. </p>
+
+</div>
+</div>
+<a class="anchor" id="a46d2c92ed585bee17e19ce64a34f5d56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::canScrollHorizontally </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if there's any off-screen content that could be scrolled horizontally, or false if everything is currently visible. </p>
 
 </div>
 </div>
@@ -1823,7 +1879,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 20 2017 20:01:05 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 21 2017 20:00:55 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

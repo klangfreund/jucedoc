@@ -89021,6 +89021,20 @@
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>canScrollVertically</name>
+      <anchorfile>classViewport.html</anchorfile>
+      <anchor>a96f7b21675ff1e097f0ed1becfa2d104</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>canScrollHorizontally</name>
+      <anchorfile>classViewport.html</anchorfile>
+      <anchor>a46d2c92ed585bee17e19ce64a34f5d56</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>setScrollOnDragEnabled</name>
       <anchorfile>classViewport.html</anchorfile>
