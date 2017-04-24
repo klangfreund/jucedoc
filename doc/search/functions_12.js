@@ -529,7 +529,7 @@ var searchData=
   ['setscreenposition',['setScreenPosition',['../classMouseInputSource.html#adb92bc833aaf6e7cb15c3f1f01fd7f09',1,'MouseInputSource']]],
   ['setscreensaverenabled',['setScreenSaverEnabled',['../classDesktop.html#a12b63736985b72fc78bebe7bf9903597',1,'Desktop']]],
   ['setscrollbarsshown',['setScrollbarsShown',['../classTextEditor.html#aea30c7c5e684898eb2cac76983c38b48',1,'TextEditor::setScrollbarsShown()'],['../classViewport.html#ab4b846094f30a0a72bd707dee545ec20',1,'Viewport::setScrollBarsShown()']]],
-  ['setscrollbarthickness',['setScrollBarThickness',['../classViewport.html#a865ce481cedc67a4553d65f8e787acbb',1,'Viewport::setScrollBarThickness()'],['../classTextEditor.html#a9f71873e9e95c27cf8d5ef8b3c12b1e0',1,'TextEditor::setScrollBarThickness()'],['../classCodeEditorComponent.html#a75ac5d9c886a72d925d62417d1171c65',1,'CodeEditorComponent::setScrollbarThickness()']]],
+  ['setscrollbarthickness',['setScrollbarThickness',['../classCodeEditorComponent.html#a75ac5d9c886a72d925d62417d1171c65',1,'CodeEditorComponent::setScrollbarThickness()'],['../classViewport.html#a865ce481cedc67a4553d65f8e787acbb',1,'Viewport::setScrollBarThickness()'],['../classTextEditor.html#a9f71873e9e95c27cf8d5ef8b3c12b1e0',1,'TextEditor::setScrollBarThickness()']]],
   ['setscrollbuttonsvisible',['setScrollButtonsVisible',['../classMidiKeyboardComponent.html#a209f55725a073395da946d8cb4652f0d',1,'MidiKeyboardComponent']]],
   ['setscrollondragenabled',['setScrollOnDragEnabled',['../classViewport.html#aada0061f2174a6a8ab76a305b8362417',1,'Viewport']]],
   ['setscrolltoshowcursor',['setScrollToShowCursor',['../classTextEditor.html#ac263b589275580c0a2a89de9e02f0061',1,'TextEditor']]],
