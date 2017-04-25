@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a837b0054a74938bf8ea783d5cdd53897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColourGradient.html#a837b0054a74938bf8ea783d5cdd53897">ColourGradient</a> (<a class="el" href="classColour.html">Colour</a> colour1, float x1, float y1, <a class="el" href="classColour.html">Colour</a> colour2, float x2, float y2, bool <a class="el" href="classColourGradient.html#a42c5382b7e7bda2b7efdb7b1a9258a44">isRadial</a>)</td></tr>
 <tr class="memdesc:a837b0054a74938bf8ea783d5cdd53897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a gradient object.  <a href="#a837b0054a74938bf8ea783d5cdd53897">More...</a><br/></td></tr>
 <tr class="separator:a837b0054a74938bf8ea783d5cdd53897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63b38ed9b718c45c1ae21feef05b4d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColourGradient.html#aa63b38ed9b718c45c1ae21feef05b4d5">ColourGradient</a> (<a class="el" href="classColour.html">Colour</a> colour1, <a class="el" href="classPoint.html">Point</a>&lt; float &gt; <a class="el" href="classColourGradient.html#ac016d8472f6ce47c16d1df1e49c39dfc">point1</a>, <a class="el" href="classColour.html">Colour</a> colour2, <a class="el" href="classPoint.html">Point</a>&lt; float &gt; <a class="el" href="classColourGradient.html#a218351e8768cb2f956d2186d85710787">point2</a>, bool <a class="el" href="classColourGradient.html#a42c5382b7e7bda2b7efdb7b1a9258a44">isRadial</a>)</td></tr>
+<tr class="memdesc:aa63b38ed9b718c45c1ae21feef05b4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a gradient object.  <a href="#aa63b38ed9b718c45c1ae21feef05b4d5">More...</a><br/></td></tr>
+<tr class="separator:aa63b38ed9b718c45c1ae21feef05b4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73556e9dd8b02b0d10e4f5ec9e0edec1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColourGradient.html#a73556e9dd8b02b0d10e4f5ec9e0edec1">ColourGradient</a> () noexcept</td></tr>
 <tr class="memdesc:a73556e9dd8b02b0d10e4f5ec9e0edec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an uninitialised gradient.  <a href="#a73556e9dd8b02b0d10e4f5ec9e0edec1">More...</a><br/></td></tr>
 <tr class="separator:a73556e9dd8b02b0d10e4f5ec9e0edec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +222,56 @@ Public Attributes</h2></td></tr>
 <p>Creates a gradient object. </p>
 <p>(x1, y1) is the location to draw with colour1. Likewise (x2, y2) is where colour2 should be. In between them there's a gradient.</p>
 <p>If isRadial is true, the colours form a circular gradient with (x1, y1) at its centre.</p>
+<p>The alpha transparencies of the colours are used, so note that if you blend from transparent to a solid colour, the RGB of the transparent colour will become visible in parts of the gradient. e.g. blending from Colour::transparentBlack to <a class="el" href="classColours.html#a9e57055bbdf8261e776d2ea8bb44514a" title="ARGB = 0xffffffff. ">Colours::white</a> will produce a muddy grey colour midway, but Colour::transparentWhite to <a class="el" href="classColours.html#a9e57055bbdf8261e776d2ea8bb44514a" title="ARGB = 0xffffffff. ">Colours::white</a> will be white all the way across.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classColourGradient.html" title="Describes the layout and colours that should be used to paint a colour gradient. ">ColourGradient</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa63b38ed9b718c45c1ae21feef05b4d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ColourGradient::ColourGradient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>colour1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>colour2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPoint.html">Point</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>point2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isRadial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a gradient object. </p>
+<p>point1 is the location to draw with colour1. Likewise point2 is where colour2 should be. In between them there's a gradient.</p>
+<p>If isRadial is true, the colours form a circular gradient with point1 at its centre.</p>
 <p>The alpha transparencies of the colours are used, so note that if you blend from transparent to a solid colour, the RGB of the transparent colour will become visible in parts of the gradient. e.g. blending from Colour::transparentBlack to <a class="el" href="classColours.html#a9e57055bbdf8261e776d2ea8bb44514a" title="ARGB = 0xffffffff. ">Colours::white</a> will produce a muddy grey colour midway, but Colour::transparentWhite to <a class="el" href="classColours.html#a9e57055bbdf8261e776d2ea8bb44514a" title="ARGB = 0xffffffff. ">Colours::white</a> will be white all the way across.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classColourGradient.html" title="Describes the layout and colours that should be used to paint a colour gradient. ">ColourGradient</a> </dd></dl>
 
@@ -726,7 +779,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 24 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 25 2017 20:00:51 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

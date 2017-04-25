@@ -140,7 +140,7 @@ var searchData=
   ['setboundsforcomponent',['setBoundsForComponent',['../classComponentBoundsConstrainer.html#afaf4fe2f6d2002463fce84ebdefc8db1',1,'ComponentBoundsConstrainer']]],
   ['setboundsinset',['setBoundsInset',['../classComponent.html#a0bdbe4ff05b03ddde7d87be82d5b0d15',1,'Component']]],
   ['setboundsrelative',['setBoundsRelative',['../classComponent.html#a8752a76d1d0b2b27af1da1169ed5c534',1,'Component']]],
-  ['setboundstoenclose',['setBoundsToEnclose',['../classDrawable.html#adcc45223d94b972f04d6734544df179e',1,'Drawable']]],
+  ['setboundstoenclose',['setBoundsToEnclose',['../classDrawable.html#a14caccc06f0f432ddccd5b2b0a9fdbd4',1,'Drawable']]],
   ['setboundstofit',['setBoundsToFit',['../classComponent.html#a104daed5d4a04cd0b50ecb8c11b1c856',1,'Component']]],
   ['setboundswithcorrectaspectratio',['setBoundsWithCorrectAspectRatio',['../classDirectShowComponent.html#a3b593cf1d96c52f68693375f1a9091e9',1,'DirectShowComponent::setBoundsWithCorrectAspectRatio()'],['../classMovieComponent.html#ac335c88c45687b29f98b3e34eddb5834',1,'MovieComponent::setBoundsWithCorrectAspectRatio()']]],
   ['setbroughttofrontonmouseclick',['setBroughtToFrontOnMouseClick',['../classComponent.html#a2e31d54832bfa8b916fef77c4d9eb649',1,'Component']]],

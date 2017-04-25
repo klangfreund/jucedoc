@@ -27818,6 +27818,13 @@
       <type></type>
       <name>ColourGradient</name>
       <anchorfile>classColourGradient.html</anchorfile>
+      <anchor>aa63b38ed9b718c45c1ae21feef05b4d5</anchor>
+      <arglist>(Colour colour1, Point&lt; float &gt; point1, Colour colour2, Point&lt; float &gt; point2, bool isRadial)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ColourGradient</name>
+      <anchorfile>classColourGradient.html</anchorfile>
       <anchor>a73556e9dd8b02b0d10e4f5ec9e0edec1</anchor>
       <arglist>() noexcept</arglist>
     </member>
@@ -34435,8 +34442,8 @@
       <type>void</type>
       <name>draw</name>
       <anchorfile>classDrawable.html</anchorfile>
-      <anchor>acce7399caa7c8c47568f9c0a64b81d60</anchor>
-      <arglist>(Graphics &amp;g, float opacity, const AffineTransform &amp;transform=AffineTransform()) const </arglist>
+      <anchor>a2934f5237bda521aa8555195fd9de9de</anchor>
+      <arglist>(Graphics &amp;g, float opacity, const AffineTransform &amp;transform={}) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -34449,8 +34456,8 @@
       <type>void</type>
       <name>drawWithin</name>
       <anchorfile>classDrawable.html</anchorfile>
-      <anchor>a484cfb917c5ea906c4fa50e5034d2511</anchor>
-      <arglist>(Graphics &amp;g, const Rectangle&lt; float &gt; &amp;destArea, RectanglePlacement placement, float opacity) const </arglist>
+      <anchor>a601ede550e6c05e638984064e2923ac8</anchor>
+      <arglist>(Graphics &amp;g, Rectangle&lt; float &gt; destArea, RectanglePlacement placement, float opacity) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -34568,8 +34575,8 @@
       <type>void</type>
       <name>setBoundsToEnclose</name>
       <anchorfile>classDrawable.html</anchorfile>
-      <anchor>adcc45223d94b972f04d6734544df179e</anchor>
-      <arglist>(const Rectangle&lt; float &gt; &amp;)</arglist>
+      <anchor>a14caccc06f0f432ddccd5b2b0a9fdbd4</anchor>
+      <arglist>(Rectangle&lt; float &gt;)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>Point&lt; int &gt;</type>
