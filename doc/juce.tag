@@ -91348,6 +91348,13 @@
       <arglist>(const String &amp;url)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>pageLoadHadNetworkError</name>
+      <anchorfile>classWebBrowserComponent.html</anchorfile>
+      <anchor>aa6e4ef5f536aa8149e66936dffc43540</anchor>
+      <arglist>(const String &amp;errorInfo)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>windowCloseRequest</name>
       <anchorfile>classWebBrowserComponent.html</anchorfile>

@@ -134,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad30ce73038359cfefd38c139ea77a21a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebBrowserComponent.html#ad30ce73038359cfefd38c139ea77a21a">pageFinishedLoading</a> (const <a class="el" href="classString.html">String</a> &amp;url)</td></tr>
 <tr class="memdesc:ad30ce73038359cfefd38c139ea77a21a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback happens when the browser has finished loading a page.  <a href="#ad30ce73038359cfefd38c139ea77a21a">More...</a><br/></td></tr>
 <tr class="separator:ad30ce73038359cfefd38c139ea77a21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e4ef5f536aa8149e66936dffc43540"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebBrowserComponent.html#aa6e4ef5f536aa8149e66936dffc43540">pageLoadHadNetworkError</a> (const <a class="el" href="classString.html">String</a> &amp;errorInfo)</td></tr>
+<tr class="memdesc:aa6e4ef5f536aa8149e66936dffc43540"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback happens when a network error was encountered while trying to load a page.  <a href="#aa6e4ef5f536aa8149e66936dffc43540">More...</a><br/></td></tr>
+<tr class="separator:aa6e4ef5f536aa8149e66936dffc43540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f735f686b6c55ba5e5996763517b8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWebBrowserComponent.html#a94f735f686b6c55ba5e5996763517b8d">windowCloseRequest</a> ()</td></tr>
 <tr class="memdesc:a94f735f686b6c55ba5e5996763517b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback occurs when a script or other activity in the browser asks for the window to be closed.  <a href="#a94f735f686b6c55ba5e5996763517b8d">More...</a><br/></td></tr>
 <tr class="separator:a94f735f686b6c55ba5e5996763517b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -987,6 +990,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa6e4ef5f536aa8149e66936dffc43540"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool WebBrowserComponent::pageLoadHadNetworkError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>errorInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This callback happens when a network error was encountered while trying to load a page. </p>
+<p>You can override this method to show some other error page by calling goToURL. Return true to allow the browser to carry on to the internal browser error page.</p>
+<p>The errorInfo contains some platform dependent string describing the error. </p>
+
+</div>
+</div>
 <a class="anchor" id="a94f735f686b6c55ba5e5996763517b8d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1173,7 +1204,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 25 2017 20:01:08 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 26 2017 20:00:56 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
