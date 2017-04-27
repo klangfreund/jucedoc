@@ -131,6 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <area href="classLookAndFeel__V2.html" title="This LookAndFeel subclass implements the juce style from around 2008-12. " alt="LookAndFeel_V2" shape="rect" coords="217,1624,642,1648"/>
 <area href="classLookAndFeel__V1.html" title="The original JUCE look-and-feel, as used back from 2002 to about 2007ish. " alt="LookAndFeel_V1" shape="rect" coords="0,1680,425,1704"/>
 <area href="classLookAndFeel__V3.html" title="The latest JUCE look-and-feel style, as introduced in 2013. " alt="LookAndFeel_V3" shape="rect" coords="435,1680,860,1704"/>
+<area href="classLookAndFeel__V4.html" alt="LookAndFeel_V4" shape="rect" coords="435,1736,860,1760"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -644,6 +645,8 @@ Static Public Member Functions</h2></td></tr>
 <p>If you're looking up a colour for use in drawing a component, it's usually best not to call this directly, but to use the <a class="el" href="classComponent.html#a5e4c30e25faebe1d0854f96623d6d890" title="Looks for a colour that has been registered with the given colour ID number. ">Component::findColour()</a> method instead. That will first check whether a suitable colour has been registered directly with the component, and will fall-back on calling the component's <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a>'s <a class="el" href="classLookAndFeel.html#aa7f9faa480c9ec9d61b66672425f380b" title="Looks for a colour that has been registered with the given colour ID number. ">findColour()</a> method if none is found.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookAndFeel.html#a167a1e914771f32e433a0d45aaba45e3" title="Registers a colour to be used for a particular purpose. ">setColour</a>, <a class="el" href="classComponent.html#a5e4c30e25faebe1d0854f96623d6d890" title="Looks for a colour that has been registered with the given colour ID number. ">Component::findColour</a>, <a class="el" href="classComponent.html#a875e6cc05407cea2d6a04dced62e13cd" title="Registers a colour to be used for a particular purpose. ">Component::setColour</a> </dd></dl>
 
+<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder::showAudioSettingsDialog()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a167a1e914771f32e433a0d45aaba45e3"></a>
@@ -942,7 +945,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a tick shape for use in yes/no boxes, etc. </p>
 
-<p>Implemented in <a class="el" href="classLookAndFeel__V2.html#a66e0aec30282cee33f6e0b86ed5624f1">LookAndFeel_V2</a>, and <a class="el" href="classLookAndFeel__V3.html#a7f4548429a6b816775a111cda8d655a1">LookAndFeel_V3</a>.</p>
+<p>Implemented in <a class="el" href="classLookAndFeel__V4.html#a96ca80c2e4669077622c8ca49e3a1f64">LookAndFeel_V4</a>, <a class="el" href="classLookAndFeel__V2.html#a66e0aec30282cee33f6e0b86ed5624f1">LookAndFeel_V2</a>, and <a class="el" href="classLookAndFeel__V3.html#a7f4548429a6b816775a111cda8d655a1">LookAndFeel_V3</a>.</p>
 
 </div>
 </div>
@@ -970,7 +973,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a cross shape for use in yes/no boxes, etc. </p>
 
-<p>Implemented in <a class="el" href="classLookAndFeel__V2.html#ad1afb3b936b037b1a187ba25d0344888">LookAndFeel_V2</a>, and <a class="el" href="classLookAndFeel__V3.html#a064814f31d79eb4fadb7dbacda579193">LookAndFeel_V3</a>.</p>
+<p>Implemented in <a class="el" href="classLookAndFeel__V4.html#a8a8d5e6d6a21209543f345c746be88fe">LookAndFeel_V4</a>, <a class="el" href="classLookAndFeel__V2.html#ad1afb3b936b037b1a187ba25d0344888">LookAndFeel_V2</a>, and <a class="el" href="classLookAndFeel__V3.html#a064814f31d79eb4fadb7dbacda579193">LookAndFeel_V3</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1035,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 26 2017 20:00:49 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 20:00:44 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

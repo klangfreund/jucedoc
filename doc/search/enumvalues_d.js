@@ -17,6 +17,7 @@ var searchData=
   ['notsortable',['notSortable',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831abd10990c4c70636a0b969b7dcdad112d',1,'TableHeaderComponent']]],
   ['nowrap',['noWrap',['../classFlexBox.html#a252f351ef4317467a58ad25922f64e63a7c6a2ecda2b948866fc1326a2ae5aad7',1,'FlexBox']]],
   ['nullelement',['nullElement',['../classRelativePointPath.html#a741fbc9bca4a156a84514f20987483e9ae971a25058687b29600ebb7c9a038437',1,'RelativePointPath']]],
+  ['numcolours',['numColours',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4a6c765ee004cf9073d5414a7b7244cdcb',1,'LookAndFeel_V4::ColourScheme']]],
   ['numerickeyboard',['numericKeyboard',['../classTextInputTarget.html#a097550317e3bf2aee470a20540b9edc7ad6a4c6dad692fe4625b23d7ff5a7a5af',1,'TextInputTarget']]],
   ['numstandardcursortypes',['NumStandardCursorTypes',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a48398e8dcad5bee53f6319d3f9b7f012',1,'MouseCursor']]]
 ];

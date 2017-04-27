@@ -46,6 +46,7 @@ var searchData=
   ['juce_5fno_5fcompiler_5fthread_5flocal',['JUCE_NO_COMPILER_THREAD_LOCAL',['../juce__ThreadLocalValue_8h.html#ace6df6344d7f87952a787d9c35dd159d',1,'juce_ThreadLocalValue.h']]],
   ['juce_5fosc_5fh_5fincluded',['JUCE_OSC_H_INCLUDED',['../juce__osc_8h.html#a49c8a7d36792ed53dc7a8c6e2105adcd',1,'juce_osc.h']]],
   ['juce_5fprevent_5fheap_5fallocation',['JUCE_PREVENT_HEAP_ALLOCATION',['../juce__PlatformDefs_8h.html#abe12fb8b712ed0602dd1678599a3167b',1,'juce_PlatformDefs.h']]],
+  ['juce_5fproduct_5funlocking_5fh_5fincluded',['JUCE_PRODUCT_UNLOCKING_H_INCLUDED',['../juce__product__unlocking_8h.html#aea95200024062291ca7c8f2635b2a758',1,'juce_product_unlocking.h']]],
   ['juce_5fpublic_5ffunction',['JUCE_PUBLIC_FUNCTION',['../juce__StandardHeader_8h.html#a96fbdc03e0c892905daef7b47337c84e',1,'juce_StandardHeader.h']]],
   ['juce_5fpublic_5fin_5fdll_5fbuild',['JUCE_PUBLIC_IN_DLL_BUILD',['../juce__StandardHeader_8h.html#a8d339dd1e85e6fbefaf7638692d085c2',1,'juce_StandardHeader.h']]],
   ['juce_5fstate_5fdictionary_5fkey',['JUCE_STATE_DICTIONARY_KEY',['../juce__AU__Shared_8h.html#ac7db797621c267348ba0dae6c874e4c5',1,'juce_AU_Shared.h']]],

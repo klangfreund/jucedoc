@@ -169,6 +169,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6207099299458ff24641883b01a083e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a6207099299458ff24641883b01a083e5">getDeviceDescription</a> ()</td></tr>
 <tr class="memdesc:a6207099299458ff24641883b01a083e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will attempt to return some kind of string describing the device.  <a href="#a6207099299458ff24641883b01a083e5">More...</a><br/></td></tr>
 <tr class="separator:a6207099299458ff24641883b01a083e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615e7128ab91eab1a76aa4cf40476b90"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a615e7128ab91eab1a76aa4cf40476b90">getDeviceIdentifiers</a> ()</td></tr>
+<tr class="memdesc:a615e7128ab91eab1a76aa4cf40476b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates some IDs to uniquely identify the device.  <a href="#a615e7128ab91eab1a76aa4cf40476b90">More...</a><br/></td></tr>
+<tr class="separator:a615e7128ab91eab1a76aa4cf40476b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa9257a60a26848174b2b8bd6cbb970"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a2fa9257a60a26848174b2b8bd6cbb970">getNumCpus</a> () noexcept</td></tr>
 <tr class="memdesc:a2fa9257a60a26848174b2b8bd6cbb970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of logical CPU cores.  <a href="#a2fa9257a60a26848174b2b8bd6cbb970">More...</a><br/></td></tr>
 <tr class="separator:a2fa9257a60a26848174b2b8bd6cbb970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -632,6 +635,32 @@ Static Public Member Functions</h2></td></tr>
 
 <p>This will attempt to return some kind of string describing the device. </p>
 <p>If no description is available, it'll just return an empty string. You may want to use this for things like determining the type of phone/iPad, etc. </p>
+
+</div>
+</div>
+<a class="anchor" id="a615e7128ab91eab1a76aa4cf40476b90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classStringArray.html">StringArray</a> SystemStats::getDeviceIdentifiers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method calculates some IDs to uniquely identify the device. </p>
+<p>The first choice for an ID is a filesystem ID for the user's home folder or windows directory. If that fails then this function returns the MAC addresses. </p>
 
 </div>
 </div>
@@ -1151,7 +1180,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 26 2017 20:00:54 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 20:00:50 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

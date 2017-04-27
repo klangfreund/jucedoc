@@ -19,6 +19,7 @@ var searchData=
   ['juceapplicationbase',['JUCEApplicationBase',['../classJUCEApplicationBase.html#a3b64c47474ca9bf96c4ad7c0ee8cb3f5',1,'JUCEApplicationBase']]],
   ['jucechannelindextoau',['juceChannelIndexToAu',['../structAudioUnitHelpers.html#a3f0f49089b990ec2c7a652f3b3687aa7',1,'AudioUnitHelpers']]],
   ['jucechanneltypetocoreaudiolabel',['JuceChannelTypeToCoreAudioLabel',['../structAudioUnitHelpers.html#a1976196d3f6e79fe0280d3504686634e',1,'AudioUnitHelpers']]],
+  ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html#ace2db6a7a5b1219e3ec5163978242495',1,'JUCESplashScreen']]],
   ['justification',['Justification',['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]]
 ];

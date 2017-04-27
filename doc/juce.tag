@@ -2260,6 +2260,12 @@
     <class kind="class">JSON</class>
   </compound>
   <compound kind="file">
+    <name>juce_JUCESplashScreen.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_gui_basics/misc/</path>
+    <filename>juce__JUCESplashScreen_8h</filename>
+    <class kind="class">JUCESplashScreen</class>
+  </compound>
+  <compound kind="file">
     <name>juce_Justification.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_graphics/placement/</path>
     <filename>juce__Justification_8h</filename>
@@ -2273,7 +2279,7 @@
   </compound>
   <compound kind="file">
     <name>juce_KeyFileGeneration.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/marketplace/</path>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/marketplace/</path>
     <filename>juce__KeyFileGeneration_8h</filename>
     <class kind="class">KeyGeneration</class>
   </compound>
@@ -2838,6 +2844,13 @@
     <path>/home/juce/data/res/development/juce/modules/juce_gui_basics/lookandfeel/</path>
     <filename>juce__LookAndFeel__V3_8h</filename>
     <class kind="class">LookAndFeel_V3</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_LookAndFeel_V4.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_gui_basics/lookandfeel/</path>
+    <filename>juce__LookAndFeel__V4_8h</filename>
+    <class kind="class">LookAndFeel_V4</class>
+    <class kind="class">LookAndFeel_V4::ColourScheme</class>
   </compound>
   <compound kind="file">
     <name>juce_LowLevelGraphicsContext.h</name>
@@ -3807,13 +3820,13 @@
   </compound>
   <compound kind="file">
     <name>juce_OnlineUnlockForm.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/marketplace/</path>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/marketplace/</path>
     <filename>juce__OnlineUnlockForm_8h</filename>
     <class kind="class">OnlineUnlockForm</class>
   </compound>
   <compound kind="file">
     <name>juce_OnlineUnlockStatus.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/marketplace/</path>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/marketplace/</path>
     <filename>juce__OnlineUnlockStatus_8h</filename>
     <class kind="class">OnlineUnlockStatus</class>
     <class kind="struct">OnlineUnlockStatus::UnlockResult</class>
@@ -4371,6 +4384,20 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/threads/</path>
     <filename>juce__Process_8h</filename>
     <class kind="class">Process</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_product_unlocking.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/</path>
+    <filename>juce__product__unlocking_8h</filename>
+    <class kind="class">juce::KeyGeneration</class>
+    <namespace>juce</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_PRODUCT_UNLOCKING_H_INCLUDED</name>
+      <anchorfile>juce__product__unlocking_8h.html</anchorfile>
+      <anchor>aea95200024062291ca7c8f2635b2a758</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>juce_ProgressBar.h</name>
@@ -5767,7 +5794,7 @@
   </compound>
   <compound kind="file">
     <name>juce_TracktionMarketplaceStatus.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/marketplace/</path>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/marketplace/</path>
     <filename>juce__TracktionMarketplaceStatus_8h</filename>
     <class kind="class">TracktionMarketplaceStatus</class>
   </compound>
@@ -8033,6 +8060,13 @@
       <arglist>(Graphics &amp;) override</arglist>
     </member>
     <member kind="function">
+      <type>intptr_t</type>
+      <name>offerEventToActiveXControl</name>
+      <anchorfile>classActiveXControlComponent.html</anchorfile>
+      <anchor>a94fe14c527c29febc94029106c871676</anchor>
+      <arglist>(void *)</arglist>
+    </member>
+    <member kind="function">
       <type></type>
       <name>Component</name>
       <anchorfile>classComponent.html</anchorfile>
@@ -9362,33 +9396,12 @@
       <anchor>a9d4fc9354c8e4109c9b8f0d4b50dd440</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>FocusChangeType</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>a7fd775ea6b1190d5d694fdffa539dfac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>focusChangedByMouseClick</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>a7fd775ea6b1190d5d694fdffa539dfaca350527c976c183a1543958e0698572df</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>focusChangedByTabKey</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>a7fd775ea6b1190d5d694fdffa539dfaca1a14be78d7c4bdf7cdd9a08100bb6a43</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>focusChangedDirectly</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>a7fd775ea6b1190d5d694fdffa539dfacad71927268411a4afe7f75bf6034add04</anchor>
-      <arglist></arglist>
+    <member kind="function" static="yes">
+      <type>static intptr_t</type>
+      <name>offerEventToActiveXControlStatic</name>
+      <anchorfile>classActiveXControlComponent.html</anchorfile>
+      <anchor>ab1b56b6bd198e411a94c19e2e14970e3</anchor>
+      <arglist>(void *)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Component *JUCE_CALLTYPE</type>
@@ -9431,6 +9444,34 @@
       <anchorfile>classComponent.html</anchorfile>
       <anchor>af281d9bc711b70c43ae5891a35165cb3</anchor>
       <arglist>(int index=0) noexcept</arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>FocusChangeType</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>a7fd775ea6b1190d5d694fdffa539dfac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>focusChangedByMouseClick</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>a7fd775ea6b1190d5d694fdffa539dfaca350527c976c183a1543958e0698572df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>focusChangedByTabKey</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>a7fd775ea6b1190d5d694fdffa539dfaca1a14be78d7c4bdf7cdd9a08100bb6a43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>focusChangedDirectly</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>a7fd775ea6b1190d5d694fdffa539dfacad71927268411a4afe7f75bf6034add04</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -47401,6 +47442,27 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>JUCESplashScreen</name>
+    <filename>classJUCESplashScreen.html</filename>
+    <base>Component</base>
+    <base protection="private">Timer</base>
+    <base protection="private">DeletedAtShutdown</base>
+    <member kind="function">
+      <type></type>
+      <name>JUCESplashScreen</name>
+      <anchorfile>classJUCESplashScreen.html</anchorfile>
+      <anchor>ace2db6a7a5b1219e3ec5163978242495</anchor>
+      <arglist>(Component &amp;parentToAddTo)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~JUCESplashScreen</name>
+      <anchorfile>classJUCESplashScreen.html</anchorfile>
+      <anchor>ab4b7f806c3b23d08d4c9f7a5603536d4</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>Justification</name>
     <filename>classJustification.html</filename>
     <member kind="enumeration">
@@ -52738,6 +52800,513 @@
       <anchorfile>classLookAndFeel__V3.html</anchorfile>
       <anchor>a33bd1c5cb3e6c9ffc2e34804c185dfa3</anchor>
       <arglist>(const TabBarButton &amp;button, float length, float depth, Colour colour, TextLayout &amp;)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>LookAndFeel_V4</name>
+    <filename>classLookAndFeel__V4.html</filename>
+    <base>LookAndFeel_V3</base>
+    <class kind="class">LookAndFeel_V4::ColourScheme</class>
+    <member kind="function">
+      <type></type>
+      <name>LookAndFeel_V4</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ab0e02d1c994974f2def1a2caf3a0e0ed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>LookAndFeel_V4</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a81b53ac853116374318d33015c7b1ae6</anchor>
+      <arglist>(ColourScheme)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~LookAndFeel_V4</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a1d45d094b1ad643ab09e83113fb6bbd0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a7fa28660b7e3cdd947a54802780a68bd</anchor>
+      <arglist>(ColourScheme)</arglist>
+    </member>
+    <member kind="function">
+      <type>ColourScheme &amp;</type>
+      <name>getCurrentColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>aa4102b2c709f692577070493bf2b88d1</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Button *</type>
+      <name>createDocumentWindowButton</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a0e08025a7e1475950d10fb9a77765323</anchor>
+      <arglist>(int) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>positionDocumentWindowButtons</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>af6109f315e0fdb0dee0b448ba60a765c</anchor>
+      <arglist>(DocumentWindow &amp;, int, int, int, int, Button *, Button *, Button *, bool) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawDocumentWindowTitleBar</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>afbf663aed00220d7b0ad7be834167cbc</anchor>
+      <arglist>(DocumentWindow &amp;, Graphics &amp;, int, int, int, int, const Image *, bool) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawButtonBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ad827d717c7b40977dfb744f567c73b83</anchor>
+      <arglist>(Graphics &amp;, Button &amp;, const Colour &amp;backgroundColour, bool isMouseOverButton, bool isButtonDown) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawToggleButton</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a9a49c39a65ce4d2ce45800318fc3ae4c</anchor>
+      <arglist>(Graphics &amp;, ToggleButton &amp;, bool isMouseOverButton, bool isButtonDown) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawTickBox</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a8c203952acb97c00860e35968929ed71</anchor>
+      <arglist>(Graphics &amp;, Component &amp;, float x, float y, float w, float h, bool ticked, bool isEnabled, bool isMouseOverButton, bool isButtonDown) override</arglist>
+    </member>
+    <member kind="function">
+      <type>AlertWindow *</type>
+      <name>createAlertWindow</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a68efd04b8507b8ee41bf71a6889baaca</anchor>
+      <arglist>(const String &amp;title, const String &amp;message, const String &amp;button1, const String &amp;button2, const String &amp;button3, AlertWindow::AlertIconType iconType, int numButtons, Component *associatedComponent) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawAlertBox</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ad60ae6ed6c7818fc8b93cea3a2690d48</anchor>
+      <arglist>(Graphics &amp;, AlertWindow &amp;, const Rectangle&lt; int &gt; &amp;textArea, TextLayout &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getAlertWindowButtonHeight</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a1f48ff6e82a8478a2db788738d4e3ca7</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Font</type>
+      <name>getAlertWindowTitleFont</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a9905c11bd4097e5be83e2624221236d4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Font</type>
+      <name>getAlertWindowMessageFont</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a3d2d4cca04532cd3365eafdd3b419ca9</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Font</type>
+      <name>getAlertWindowFont</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>acd57eec9051ae0c25ded954dd8abc090</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawProgressBar</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a0c379d2fbf66106b667a79c78cd2e198</anchor>
+      <arglist>(Graphics &amp;, ProgressBar &amp;, int width, int height, double progress, const String &amp;textToShow) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isProgressBarOpaque</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a37ddc9ff844ac37eb00332d675f65a9b</anchor>
+      <arglist>(ProgressBar &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getDefaultScrollbarWidth</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a84ed2907808c79e6a44e4a92d0cf5b2c</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawScrollbar</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a848bfc85593ee769dcb93dd63ff79d82</anchor>
+      <arglist>(Graphics &amp;, ScrollBar &amp;, int x, int y, int width, int height, bool isScrollbarVertical, int thumbStartPosition, int thumbSize, bool isMouseOver, bool isMouseDown) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getTickShape</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a96ca80c2e4669077622c8ca49e3a1f64</anchor>
+      <arglist>(float height) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getCrossShape</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a8a8d5e6d6a21209543f345c746be88fe</anchor>
+      <arglist>(float height) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>fillTextEditorBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>afc54172552aa64ae60c569b52fe953dd</anchor>
+      <arglist>(Graphics &amp;, int width, int height, TextEditor &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawTextEditorOutline</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>af3ec00284cbca87ae13bbbbb0ef5e900</anchor>
+      <arglist>(Graphics &amp;, int width, int height, TextEditor &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Button *</type>
+      <name>createFileBrowserGoUpButton</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a7e2d9cd3dafb74fc89a3c571f0c01c8a</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>layoutFileBrowserComponent</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>abd63febb3c2e143bfa6937d8bfb868d0</anchor>
+      <arglist>(FileBrowserComponent &amp;, DirectoryContentsDisplayComponent *, FilePreviewComponent *, ComboBox *currentPathBox, TextEditor *filenameBox, Button *goUpButton) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawFileBrowserRow</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a9acb9ff6279d4079d5d8e7fe95014215</anchor>
+      <arglist>(Graphics &amp;, int width, int height, const String &amp;filename, Image *icon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawPopupMenuItem</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>afe0593d32df90d0cb3b3bb921f3de6c3</anchor>
+      <arglist>(Graphics &amp;, const Rectangle&lt; int &gt; &amp;area, bool isSeparator, bool isActive, bool isHighlighted, bool isTicked, bool hasSubMenu, const String &amp;text, const String &amp;shortcutKeyText, const Drawable *icon, const Colour *textColour) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>getIdealPopupMenuItemSize</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a6dd618fd2e4e4736e7026c4ab79445ee</anchor>
+      <arglist>(const String &amp;text, bool isSeparator, int standardMenuItemHeight, int &amp;idealWidth, int &amp;idealHeight) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawMenuBarBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a64d79d98cfd361bef8418536d8fc81a0</anchor>
+      <arglist>(Graphics &amp;, int width, int height, bool isMouseOverBar, MenuBarComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawMenuBarItem</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a2e37fdc0b529083dde85456427297438</anchor>
+      <arglist>(Graphics &amp;, int width, int height, int itemIndex, const String &amp;itemText, bool isMouseOverItem, bool isMenuOpen, bool isMouseOverBar, MenuBarComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawComboBox</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a7f036f6a06458b529bfcdd4cb46248fd</anchor>
+      <arglist>(Graphics &amp;, int width, int height, bool isButtonDown, int buttonX, int buttonY, int buttonW, int buttonH, ComboBox &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Font</type>
+      <name>getComboBoxFont</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a92b3e6e54a5c424822a3531f8c44789c</anchor>
+      <arglist>(ComboBox &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>positionComboBoxText</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a15d92b5c0ac9908e381d7fdc4088301f</anchor>
+      <arglist>(ComboBox &amp;, Label &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawLinearSlider</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a5a3956a3c5b66c83001c773e8c671f22</anchor>
+      <arglist>(Graphics &amp;, int x, int y, int width, int height, float sliderPos, float minSliderPos, float maxSliderPos, const Slider::SliderStyle, Slider &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawRotarySlider</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a853e1ecd2b3f1cf687348e699e83e5b4</anchor>
+      <arglist>(Graphics &amp;, int x, int y, int width, int height, float sliderPosProportional, float rotaryStartAngle, float rotaryEndAngle, Slider &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawPointer</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ab8a0f00c02b791e40df53cace92b5bec</anchor>
+      <arglist>(Graphics &amp;, float x, float y, float diameter, const Colour &amp;, int direction) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawTooltip</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a96161378d85ee3342191c67f1eda064d</anchor>
+      <arglist>(Graphics &amp;, const String &amp;text, int width, int height) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawConcertinaPanelHeader</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a140ecde1cfe8bd9aec6324d81f6c54bf</anchor>
+      <arglist>(Graphics &amp;, const Rectangle&lt; int &gt; &amp;area, bool isMouseOver, bool isMouseDown, ConcertinaPanel &amp;, Component &amp;panel) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawLevelMeter</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a83d46af4a197d7d2b7d63760bdbe3304</anchor>
+      <arglist>(Graphics &amp;, int, int, float) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paintToolbarBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a074230dcc29e549da52f0e09467d592d</anchor>
+      <arglist>(Graphics &amp;, int width, int height, Toolbar &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paintToolbarButtonLabel</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a531295ace881e2ec8a886fcdba22c5a6</anchor>
+      <arglist>(Graphics &amp;, int x, int y, int width, int height, const String &amp;text, ToolbarItemComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawPropertyPanelSectionHeader</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>aa42c767b813edf34e0068dca7b46123b</anchor>
+      <arglist>(Graphics &amp;, const String &amp;name, bool isOpen, int width, int height) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawPropertyComponentBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a8dacd1ed113426e546fb2b7625b6f1aa</anchor>
+      <arglist>(Graphics &amp;, int width, int height, PropertyComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawPropertyComponentLabel</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a37821dcd7262580e7fbd5e80c3a23d3a</anchor>
+      <arglist>(Graphics &amp;, int width, int height, PropertyComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Rectangle&lt; int &gt;</type>
+      <name>getPropertyComponentContentPosition</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a40d01208cb53699c3a8fc34d737d8f20</anchor>
+      <arglist>(PropertyComponent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawCallOutBoxBackground</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a293272a58b50350438ec57a364435cf2</anchor>
+      <arglist>(CallOutBox &amp;, Graphics &amp;, const Path &amp;, Image &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>drawStretchableLayoutResizerBar</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>abab3bfb9865d0d5e1f744b0978ee35ce</anchor>
+      <arglist>(Graphics &amp;, int, int, bool, bool, bool) override</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ColourScheme</type>
+      <name>getDarkColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ae14af3baf40bf39742aebc5095f40632</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ColourScheme</type>
+      <name>getMidnightColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>ae52729eaf09fd719450bd9ac81735975</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ColourScheme</type>
+      <name>getGreyColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a0f2239b0d94aef8b0c82c8f8ad57e6eb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ColourScheme</type>
+      <name>getLightColourScheme</name>
+      <anchorfile>classLookAndFeel__V4.html</anchorfile>
+      <anchor>a47cc7fba4882ff3793ff28f30564ee25</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>LookAndFeel_V4::ColourScheme</name>
+    <filename>classLookAndFeel__V4_1_1ColourScheme.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>UIColour</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>windowBackground</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4af7bd6c0acbe077e98091696f8457644d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>widgetBackground</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4a695c7f401ba50951b1891e97c540a19a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>menuBackground</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4ad4b5c737c806ce6ca95b5a8a18aa8f76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>outline</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4a14b94478e1a8aca02eb1f2d8cc7177de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>defaultText</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4a4592fbe250183875c6b3dd6506abebde</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>defaultFill</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4ae9f12511493c3841cfb6880bb86b46a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>highlightedText</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4a0b1fc486b4d9d616f88495ba6b34d748</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>highlightedFill</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4add67f73730cdcc64b275078f33b34734</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>menuText</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4aa97d345b3ef500135ac0a3a36119abd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>numColours</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a3a0b01b5a192545b3692ed288597b2f4a6c765ee004cf9073d5414a7b7244cdcb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ColourScheme</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a6d4c24d910553949f37158d2f27f63ce</anchor>
+      <arglist>(ItemColours...coloursToUse)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ColourScheme</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a69e09dc02ca99e3795192117f735217b</anchor>
+      <arglist>(const ColourScheme &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>ColourScheme &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a07c48255b2e8dba914708efbee67f93e</anchor>
+      <arglist>(const ColourScheme &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Colour</type>
+      <name>getUIColour</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a1786f79c57298e68c22abe5b6114e01a</anchor>
+      <arglist>(UIColour colourToGet) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUIColour</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a7c6776ef545dfaea6273a4fc6556a306</anchor>
+      <arglist>(UIColour colourToSet, Colour newColour) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a745beabdd372162b2345f6ec7de89aee</anchor>
+      <arglist>(const ColourScheme &amp;) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>classLookAndFeel__V4_1_1ColourScheme.html</anchorfile>
+      <anchor>a02b07aaf419abed63888e7cf5c084e3b</anchor>
+      <arglist>(const ColourScheme &amp;) const noexcept</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -80092,6 +80661,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static StringArray</type>
+      <name>getDeviceIdentifiers</name>
+      <anchorfile>classSystemStats.html</anchorfile>
+      <anchor>a615e7128ab91eab1a76aa4cf40476b90</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static int</type>
       <name>getNumCpus</name>
       <anchorfile>classSystemStats.html</anchorfile>
@@ -91888,15 +92464,15 @@
       <type></type>
       <name>XEmbedComponent</name>
       <anchorfile>classXEmbedComponent.html</anchorfile>
-      <anchor>a95bde401bb0a638753763cdc63060a73</anchor>
-      <arglist>(bool wantsKeyboardFocus=true)</arglist>
+      <anchor>aee59015b1ccd4ace4268f257aed812a3</anchor>
+      <arglist>(bool wantsKeyboardFocus=true, bool allowForeignWidgetToResizeComponent=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>XEmbedComponent</name>
       <anchorfile>classXEmbedComponent.html</anchorfile>
-      <anchor>a20b75cc894a09ce3bd49fcfa61afac65</anchor>
-      <arglist>(unsigned long wID, bool wantsKeyboardFocus=true)</arglist>
+      <anchor>a06655450f87c94d833056684a3c6eb02</anchor>
+      <arglist>(unsigned long wID, bool wantsKeyboardFocus=true, bool allowForeignWidgetToResizeComponent=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -92832,6 +93408,7 @@
     <class kind="class">juce::OSCBundle</class>
     <class kind="class">juce::OSCReceiver</class>
     <class kind="class">juce::OSCSender</class>
+    <class kind="class">juce::KeyGeneration</class>
     <member kind="typedef">
       <type>char</type>
       <name>OSCType</name>
@@ -95504,6 +96081,31 @@
       <arglist>(const String &amp;targetIPAddress, int targetPortNumber, const OSCAddressPattern &amp;address, Args &amp;&amp;...args)</arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>juce::KeyGeneration</name>
+    <filename>classjuce_1_1KeyGeneration.html</filename>
+    <member kind="function" static="yes">
+      <type>static String JUCE_CALLTYPE</type>
+      <name>generateKeyFile</name>
+      <anchorfile>classjuce_1_1KeyGeneration.html</anchorfile>
+      <anchor>a7db28a0bad9c249dbee92f2d4a65ce30</anchor>
+      <arglist>(const String &amp;appName, const String &amp;userEmail, const String &amp;userName, const String &amp;machineNumbers, const RSAKey &amp;privateKey)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String JUCE_CALLTYPE</type>
+      <name>generateExpiringKeyFile</name>
+      <anchorfile>classjuce_1_1KeyGeneration.html</anchorfile>
+      <anchor>a627d590503f9a5f9a9456eade32fa414</anchor>
+      <arglist>(const String &amp;appName, const String &amp;userEmail, const String &amp;userName, const String &amp;machineNumbers, const Time expiryTime, const RSAKey &amp;privateKey)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>keyGenerationAppMain</name>
+      <anchorfile>classjuce_1_1KeyGeneration.html</anchorfile>
+      <anchor>a9eed00885a39e44ed829a157c976cd6c</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+  </compound>
   <compound kind="namespace">
     <name>juce::littlefoot</name>
     <filename>namespacejuce_1_1littlefoot.html</filename>
@@ -97777,10 +98379,11 @@
     <file>juce_osc.h</file>
   </compound>
   <compound kind="dir">
-    <name>juce_tracktion_marketplace</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/</path>
-    <filename>dir_870f723834bb564bfdcf32bf648bedaa.html</filename>
+    <name>juce_product_unlocking</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/</path>
+    <filename>dir_73678c62d7e351d18e07fb46522b0b8c.html</filename>
     <dir>marketplace</dir>
+    <file>juce_product_unlocking.h</file>
   </compound>
   <compound kind="dir">
     <name>juce_video</name>
@@ -97851,11 +98454,12 @@
     <file>juce_LookAndFeel_V1.h</file>
     <file>juce_LookAndFeel_V2.h</file>
     <file>juce_LookAndFeel_V3.h</file>
+    <file>juce_LookAndFeel_V4.h</file>
   </compound>
   <compound kind="dir">
     <name>marketplace</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_tracktion_marketplace/marketplace/</path>
-    <filename>dir_d97511bc3ec2bd34686fa8ad4161be51.html</filename>
+    <path>/home/juce/data/res/development/juce/modules/juce_product_unlocking/marketplace/</path>
+    <filename>dir_624899265b20a3be4987c8c2c8bf230a.html</filename>
     <file>juce_KeyFileGeneration.h</file>
     <file>juce_OnlineUnlockForm.h</file>
     <file>juce_OnlineUnlockStatus.h</file>
@@ -97947,6 +98551,7 @@
     <filename>dir_7f4afdfe34c639489253952ecf7d0fba.html</filename>
     <file>juce_BubbleComponent.h</file>
     <file>juce_DropShadower.h</file>
+    <file>juce_JUCESplashScreen.h</file>
   </compound>
   <compound kind="dir">
     <name>misc</name>
@@ -97985,7 +98590,7 @@
     <dir>juce_gui_extra</dir>
     <dir>juce_opengl</dir>
     <dir>juce_osc</dir>
-    <dir>juce_tracktion_marketplace</dir>
+    <dir>juce_product_unlocking</dir>
     <dir>juce_video</dir>
   </compound>
   <compound kind="dir">

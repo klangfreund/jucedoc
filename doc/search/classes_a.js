@@ -1,6 +1,7 @@
 var searchData=
 [
   ['keyboardfocustraverser',['KeyboardFocusTraverser',['../classKeyboardFocusTraverser.html',1,'']]],
+  ['keygeneration',['KeyGeneration',['../classjuce_1_1KeyGeneration.html',1,'juce']]],
   ['keygeneration',['KeyGeneration',['../classKeyGeneration.html',1,'']]],
   ['keylistener',['KeyListener',['../classKeyListener.html',1,'']]],
   ['keymappingeditorcomponent',['KeyMappingEditorComponent',['../classKeyMappingEditorComponent.html',1,'']]],

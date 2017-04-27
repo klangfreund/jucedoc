@@ -360,7 +360,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">className (<span class="keyword">const</span> className&amp;) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>;\</div>
 <div class="line">    className&amp; operator= (const className&amp;) JUCE_DELETED_FUNCTION;</div>
-<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:139</div></div>
+<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:131</div></div>
 </div><!-- fragment -->
 <p>This is a shorthand macro for declaring stubs for a class's copy constructor and operator=. </p>
 <p>For example, instead of </p>
@@ -398,8 +398,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a>(className) <a class="code" href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">\</a></div>
 <div class="line"><a class="code" href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">    JUCE_LEAK_DETECTOR</a>(className)</div>
-<div class="ttc" id="juce__PlatformDefs_8h_html_a6ab7a603bf4435c7cb286b1744366eb2"><div class="ttname"><a href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define JUCE_DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for declaring stubs for a class&#39;s copy constructor and operator=. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:200</div></div>
-<div class="ttc" id="juce__LeakedObjectDetector_8h_html_ab3639a79598b35f2116f4572af0d93f1"><div class="ttname"><a href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a></div><div class="ttdeci">#define JUCE_LEAK_DETECTOR(OwnerClass)</div><div class="ttdoc">This macro lets you embed a leak-detecting object inside a class. </div><div class="ttdef"><b>Definition:</b> juce_LeakedObjectDetector.h:137</div></div>
+<div class="ttc" id="juce__PlatformDefs_8h_html_a6ab7a603bf4435c7cb286b1744366eb2"><div class="ttname"><a href="juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2">JUCE_DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define JUCE_DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for declaring stubs for a class&#39;s copy constructor and operator=. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:192</div></div>
+<div class="ttc" id="juce__LeakedObjectDetector_8h_html_ab3639a79598b35f2116f4572af0d93f1"><div class="ttname"><a href="juce__LeakedObjectDetector_8h.html#ab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a></div><div class="ttdeci">#define JUCE_LEAK_DETECTOR(OwnerClass)</div><div class="ttdoc">This macro lets you embed a leak-detecting object inside a class. </div><div class="ttdef"><b>Definition:</b> juce_LeakedObjectDetector.h:129</div></div>
 </div><!-- fragment -->
 <p>This is a shorthand way of writing both a JUCE_DECLARE_NON_COPYABLE and JUCE_LEAK_DETECTOR macro for a class. </p>
 
@@ -417,7 +417,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>: \</div>
 <div class="line">    static <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span> (size_t) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>; \</div>
 <div class="line">    static <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span> (<span class="keywordtype">void</span>*) <a class="code" href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a>;</div>
-<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:139</div></div>
+<div class="ttc" id="juce__CompilerSupport_8h_html_a1bd79588ea529f27e89c255c0ebd7be3"><div class="ttname"><a href="juce__CompilerSupport_8h.html#a1bd79588ea529f27e89c255c0ebd7be3">JUCE_DELETED_FUNCTION</a></div><div class="ttdeci">#define JUCE_DELETED_FUNCTION</div><div class="ttdoc">This macro can be placed after a method declaration to allow the use of the C++11 feature &quot;= delete&quot; ...</div><div class="ttdef"><b>Definition:</b> juce_CompilerSupport.h:131</div></div>
 </div><!-- fragment -->
 <p>This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable. </p>
 
@@ -539,7 +539,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 26 2017 20:00:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

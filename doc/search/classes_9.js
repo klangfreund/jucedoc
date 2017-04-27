@@ -6,5 +6,6 @@ var searchData=
   ['json',['JSON',['../classJSON.html',1,'']]],
   ['juceapplication',['JUCEApplication',['../classJUCEApplication.html',1,'']]],
   ['juceapplicationbase',['JUCEApplicationBase',['../classJUCEApplicationBase.html',1,'']]],
+  ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html',1,'']]],
   ['justification',['Justification',['../classJustification.html',1,'']]]
 ];
