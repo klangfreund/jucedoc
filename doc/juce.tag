@@ -8277,10 +8277,10 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
-      <type>const Rectangle&lt; int &gt; &amp;</type>
+      <type>Rectangle&lt; int &gt;</type>
       <name>getBounds</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>ad01eb84d8a989eb238bbf69aaf09e7ee</anchor>
+      <anchor>ad398af02aaa10efeaa46cc691ddfdc5a</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -8343,8 +8343,8 @@
       <type>Rectangle&lt; int &gt;</type>
       <name>getLocalArea</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>ad430b1614d5cca921dc344641b584675</anchor>
-      <arglist>(const Component *sourceComponent, const Rectangle&lt; int &gt; &amp;areaRelativeToSourceComponent) const </arglist>
+      <anchor>a32063bd38cc47919bc5a9285f6abc37e</anchor>
+      <arglist>(const Component *sourceComponent, Rectangle&lt; int &gt; areaRelativeToSourceComponent) const </arglist>
     </member>
     <member kind="function">
       <type>Point&lt; int &gt;</type>
@@ -8364,8 +8364,8 @@
       <type>Rectangle&lt; int &gt;</type>
       <name>localAreaToGlobal</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>a9ad906ec22da2091eed7b65b21dc4ee9</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;localArea) const </arglist>
+      <anchor>a8513e611949a46488445106f38407194</anchor>
+      <arglist>(Rectangle&lt; int &gt; localArea) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8406,22 +8406,8 @@
       <type>void</type>
       <name>setBounds</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>aaddf6f72515109d53cb671d5292bea3f</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;newBounds)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setBounds</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>afff8d34ac49e7303e60cd6cfcd68e8f6</anchor>
-      <arglist>(const RelativeRectangle &amp;newBounds)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setBounds</name>
-      <anchorfile>classComponent.html</anchorfile>
-      <anchor>a821833808f451753df397802d9d6160a</anchor>
-      <arglist>(const String &amp;newBoundsExpression)</arglist>
+      <anchor>a1bd97a58b5ab72b3e803c6b90a41ea4f</anchor>
+      <arglist>(Rectangle&lt; int &gt; newBounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8434,8 +8420,8 @@
       <type>void</type>
       <name>setBoundsInset</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>a0bdbe4ff05b03ddde7d87be82d5b0d15</anchor>
-      <arglist>(const BorderSize&lt; int &gt; &amp;borders)</arglist>
+      <anchor>addbc665dd6b57d71cc9c620ef7184f73</anchor>
+      <arglist>(BorderSize&lt; int &gt; borders)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8450,6 +8436,13 @@
       <anchorfile>classComponent.html</anchorfile>
       <anchor>ada48e2fac4a8bd49ee8fe567309e41b0</anchor>
       <arglist>(int x, int y)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCentrePosition</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>ac25e98441c3671ed0811492d996b6f43</anchor>
+      <arglist>(Point&lt; int &gt; newCentrePosition)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8721,8 +8714,8 @@
       <type>void</type>
       <name>repaint</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>a756adec76560d1ae66b1448814828531</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;area)</arglist>
+      <anchor>a8fabfa143270abc2a5ba090fcfc8bf41</anchor>
+      <arglist>(Rectangle&lt; int &gt; area)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8735,8 +8728,8 @@
       <type>Image</type>
       <name>createComponentSnapshot</name>
       <anchorfile>classComponent.html</anchorfile>
-      <anchor>a9a5c8fc0c5c69bda41a23c351e2d5164</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;areaToGrab, bool clipImageToComponentBounds=true, float scaleFactor=1.0f)</arglist>
+      <anchor>a275e46e5a8147f89c142c91ba5c793a5</anchor>
+      <arglist>(Rectangle&lt; int &gt; areaToGrab, bool clipImageToComponentBounds=true, float scaleFactor=1.0f)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -9388,6 +9381,20 @@
       <anchorfile>classComponent.html</anchorfile>
       <anchor>a947f10bbb7a68691de5d3f8af394c5a9</anchor>
       <arglist>(Point&lt; int &gt; relativePositionToOtherComponent(const Component *, Point&lt; int &gt;) const)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>JUCE_DEPRECATED</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>aef9b4d31ad93e37f8327a396e7b4814a</anchor>
+      <arglist>(void setBounds(const RelativeRectangle &amp;))</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>JUCE_DEPRECATED</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>afb7bc6bb40953f07c612475785303d96</anchor>
+      <arglist>(void setBounds(const String &amp;))</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -29095,8 +29102,8 @@
       <type>virtual void</type>
       <name>setSwatchColour</name>
       <anchorfile>classColourSelector.html</anchorfile>
-      <anchor>a6004e7dd347d157a9f80b4d79207f526</anchor>
-      <arglist>(int index, const Colour &amp;newColour) const </arglist>
+      <anchor>a62272cb883ecc53d7be91a5135c8e852</anchor>
+      <arglist>(int index, const Colour &amp;newColour)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -54931,11 +54938,11 @@
       <anchor>a857ab88ffdc45bb42ca1468ce2b17e35</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>bool</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
       <name>mapSectionOfFile</name>
       <anchorfile>classMemoryMappedAudioFormatReader.html</anchorfile>
-      <anchor>aee6db6421fa50c948b724fd362359bf9</anchor>
+      <anchor>a02cf933883633cf70fba6fc7abb08236</anchor>
       <arglist>(Range&lt; int64 &gt; samplesToMap)</arglist>
     </member>
     <member kind="function">
@@ -72635,8 +72642,8 @@
       <type></type>
       <name>RelativeCoordinatePositionerBase</name>
       <anchorfile>classRelativeCoordinatePositionerBase.html</anchorfile>
-      <anchor>a230959223a8375a554c244c654e039b5</anchor>
-      <arglist>(Component &amp;component)</arglist>
+      <anchor>a83b8a59e3c81caeef95d33692c2a1c04</anchor>
+      <arglist>(Component &amp;)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -72684,8 +72691,8 @@
       <type>void</type>
       <name>markerListBeingDeleted</name>
       <anchorfile>classRelativeCoordinatePositionerBase.html</anchorfile>
-      <anchor>ad5fc1026853001dfdcbb5e7b0de4df33</anchor>
-      <arglist>(MarkerList *markerList)</arglist>
+      <anchor>a85224021ab5a61df462c56ad1d273356</anchor>
+      <arglist>(MarkerList *)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -72698,15 +72705,15 @@
       <type>bool</type>
       <name>addCoordinate</name>
       <anchorfile>classRelativeCoordinatePositionerBase.html</anchorfile>
-      <anchor>aa296c39de3913289e780cf7338a84520</anchor>
-      <arglist>(const RelativeCoordinate &amp;coord)</arglist>
+      <anchor>a1e01694defaa6c2684e7ba8e8598fb49</anchor>
+      <arglist>(const RelativeCoordinate &amp;)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>addPoint</name>
       <anchorfile>classRelativeCoordinatePositionerBase.html</anchorfile>
-      <anchor>a45607fa0e9eee050d44bde9cbb0963f6</anchor>
-      <arglist>(const RelativePoint &amp;point)</arglist>
+      <anchor>a1946ad2266abbc872c070d028f9a284b</anchor>
+      <arglist>(const RelativePoint &amp;)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual bool</type>
@@ -72731,8 +72738,8 @@
       <type></type>
       <name>ComponentScope</name>
       <anchorfile>classRelativeCoordinatePositionerBase_1_1ComponentScope.html</anchorfile>
-      <anchor>a412aff63dd65bd8d8bd540835216bcb3</anchor>
-      <arglist>(Component &amp;component)</arglist>
+      <anchor>af77781d63424da7b7e0db08551e848ef</anchor>
+      <arglist>(Component &amp;)</arglist>
     </member>
     <member kind="function">
       <type>Expression</type>
@@ -72745,8 +72752,8 @@
       <type>void</type>
       <name>visitRelativeScope</name>
       <anchorfile>classRelativeCoordinatePositionerBase_1_1ComponentScope.html</anchorfile>
-      <anchor>a88bd1695823c980a0d82c1233d7ecc0b</anchor>
-      <arglist>(const String &amp;scopeName, Visitor &amp;visitor) const </arglist>
+      <anchor>ac68036fa2af1910c2f9869c3fb4129b7</anchor>
+      <arglist>(const String &amp;scopeName, Visitor &amp;) const </arglist>
     </member>
     <member kind="function">
       <type>String</type>

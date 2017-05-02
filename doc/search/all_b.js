@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['Label',['../classLabel.html',1,'Label'],['../classLabel.html#ad6d7e15decfae7d38cc9396037f9b220',1,'Label::Label()'],['../structVstIndividualSpeakerInfo.html#aaf088212bd7f1ca3b8698bfd2d4416a4',1,'VstIndividualSpeakerInfo::label()'],['../classAudioProcessorParameterWithID.html#ac9e5aa7e602b64e78fda51972375579c',1,'AudioProcessorParameterWithID::label()']]],
+  ['label',['Label',['../classLabel.html',1,'Label'],['../structVstIndividualSpeakerInfo.html#aaf088212bd7f1ca3b8698bfd2d4416a4',1,'VstIndividualSpeakerInfo::label()'],['../classAudioProcessorParameterWithID.html#ac9e5aa7e602b64e78fda51972375579c',1,'AudioProcessorParameterWithID::label()'],['../classLabel.html#ad6d7e15decfae7d38cc9396037f9b220',1,'Label::Label()']]],
   ['labellistener',['LabelListener',['../juce__Label_8h.html#ab9b5d624453111189a1343155b81218e',1,'juce_Label.h']]],
   ['labeltextchanged',['labelTextChanged',['../classComboBox.html#a8db239b93e77646b61f3646bc223844b',1,'ComboBox::labelTextChanged()'],['../classLabel_1_1Listener.html#ad2a3e79ba106bfa64cab523e197b1514',1,'Label::Listener::labelTextChanged()']]],
   ['labeltextcolourid',['labelTextColourId',['../classPropertyComponent.html#ab0dbefdbbbaa3f69df288b6970529c5ba8c2fb4e7c4bdf509c98bac7ea8a81b5b',1,'PropertyComponent::labelTextColourId()'],['../classToolbar.html#ae89655c1fc755d7648eedcefcb620bc9a6f6e4cc767b4f37b600ddcbe58f4b55a',1,'Toolbar::labelTextColourId()'],['../classColourSelector.html#a65fa6c43362eb075049881086dc3ffcaaaa24cca7ebcab0317445ff12196e0362',1,'ColourSelector::labelTextColourId()']]],
@@ -227,7 +227,7 @@ var searchData=
   ['loadpathfromstream',['loadPathFromStream',['../classPath.html#a00e0e38020c035feb29e498a0ab93433',1,'Path']]],
   ['loadthumb',['loadThumb',['../classAudioThumbnailCache.html#a0c02c3ed2e7868c20e9d77c16915d818',1,'AudioThumbnailCache']]],
   ['local',['local',['../classIPAddress.html#ad66c4a32144c7dd4ccb8d21e10e19472',1,'IPAddress']]],
-  ['localareatoglobal',['localAreaToGlobal',['../classComponent.html#a9ad906ec22da2091eed7b65b21dc4ee9',1,'Component']]],
+  ['localareatoglobal',['localAreaToGlobal',['../classComponent.html#a8513e611949a46488445106f38407194',1,'Component']]],
   ['localisedstrings',['LocalisedStrings',['../classLocalisedStrings.html',1,'LocalisedStrings'],['../classLocalisedStrings.html#afaa3a94f9ca94eb11b519f734e2adc08',1,'LocalisedStrings::LocalisedStrings(const String &amp;fileContents, bool ignoreCaseOfKeys)'],['../classLocalisedStrings.html#a7227cbea1f200fe77615c6a39bd3a2f8',1,'LocalisedStrings::LocalisedStrings(const File &amp;fileToLoad, bool ignoreCaseOfKeys)'],['../classLocalisedStrings.html#a781d562968f3cc492816751d7b91bdfe',1,'LocalisedStrings::LocalisedStrings(const LocalisedStrings &amp;)']]],
   ['localpointtoglobal',['localPointToGlobal',['../classComponent.html#a275a896a2d25a6eb1624ba33345ab2cb',1,'Component::localPointToGlobal(Point&lt; int &gt; localPoint) const '],['../classComponent.html#aaec6ae5420b38f9ea7448a1b015d78c5',1,'Component::localPointToGlobal(Point&lt; float &gt; localPoint) const ']]],
   ['localposition',['localPosition',['../classDragAndDropTarget_1_1SourceDetails.html#ae56f0216335992ae66fdfacc3f4c6837',1,'DragAndDropTarget::SourceDetails']]],

@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a857ab88ffdc45bb42ca1468ce2b17e35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35">mapEntireFile</a> ()</td></tr>
 <tr class="memdesc:a857ab88ffdc45bb42ca1468ce2b17e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to map the entire file into memory.  <a href="#a857ab88ffdc45bb42ca1468ce2b17e35">More...</a><br/></td></tr>
 <tr class="separator:a857ab88ffdc45bb42ca1468ce2b17e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee6db6421fa50c948b724fd362359bf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedAudioFormatReader.html#aee6db6421fa50c948b724fd362359bf9">mapSectionOfFile</a> (<a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt; samplesToMap)</td></tr>
-<tr class="memdesc:aee6db6421fa50c948b724fd362359bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to map a section of the file into memory.  <a href="#aee6db6421fa50c948b724fd362359bf9">More...</a><br/></td></tr>
-<tr class="separator:aee6db6421fa50c948b724fd362359bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cf933883633cf70fba6fc7abb08236"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedAudioFormatReader.html#a02cf933883633cf70fba6fc7abb08236">mapSectionOfFile</a> (<a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt; samplesToMap)</td></tr>
+<tr class="memdesc:a02cf933883633cf70fba6fc7abb08236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to map a section of the file into memory.  <a href="#a02cf933883633cf70fba6fc7abb08236">More...</a><br/></td></tr>
+<tr class="separator:a02cf933883633cf70fba6fc7abb08236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540e94883cb7ba8eea8b079953df7950"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryMappedAudioFormatReader.html#a540e94883cb7ba8eea8b079953df7950">getMappedSection</a> () const noexcept</td></tr>
 <tr class="memdesc:a540e94883cb7ba8eea8b079953df7950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sample range that's currently memory-mapped and available for reading.  <a href="#a540e94883cb7ba8eea8b079953df7950">More...</a><br/></td></tr>
 <tr class="separator:a540e94883cb7ba8eea8b079953df7950"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A specialised type of <a class="el" href="classAudioFormatReader.html" title="Reads samples from an audio file stream. ">AudioFormatReader</a> that uses a <a class="el" href="classMemoryMappedFile.html" title="Maps a file into virtual memory for easy reading and/or writing. ">MemoryMappedFile</a> to read directly from an audio file. </p>
 <p>This allows for incredibly fast random-access to sample data in the mapped region of the file, but not all audio formats support it - see <a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed" title="Attempts to create a MemoryMappedAudioFormatReader, if possible for this format. ">AudioFormat::createMemoryMappedReader()</a>.</p>
-<p>Note that before reading samples from a <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a>, you must first call <a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35" title="Attempts to map the entire file into memory. ">mapEntireFile()</a> or <a class="el" href="classMemoryMappedAudioFormatReader.html#aee6db6421fa50c948b724fd362359bf9" title="Attempts to map a section of the file into memory. ">mapSectionOfFile()</a> to ensure that the region you want to read has been mapped.</p>
+<p>Note that before reading samples from a <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a>, you must first call <a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35" title="Attempts to map the entire file into memory. ">mapEntireFile()</a> or <a class="el" href="classMemoryMappedAudioFormatReader.html#a02cf933883633cf70fba6fc7abb08236" title="Attempts to map a section of the file into memory. ">mapSectionOfFile()</a> to ensure that the region you want to read has been mapped.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed" title="Attempts to create a MemoryMappedAudioFormatReader, if possible for this format. ">AudioFormat::createMemoryMappedReader</a>, <a class="el" href="classAudioFormatReader.html" title="Reads samples from an audio file stream. ">AudioFormatReader</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a127960954592065ea578535aad801222"></a>
@@ -278,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a> object. </p>
-<p>Note that before attempting to read any data, you must call <a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35" title="Attempts to map the entire file into memory. ">mapEntireFile()</a> or <a class="el" href="classMemoryMappedAudioFormatReader.html#aee6db6421fa50c948b724fd362359bf9" title="Attempts to map a section of the file into memory. ">mapSectionOfFile()</a> to ensure that the region you want to read has been mapped. </p>
+<p>Note that before attempting to read any data, you must call <a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35" title="Attempts to map the entire file into memory. ">mapEntireFile()</a> or <a class="el" href="classMemoryMappedAudioFormatReader.html#a02cf933883633cf70fba6fc7abb08236" title="Attempts to map a section of the file into memory. ">mapSectionOfFile()</a> to ensure that the region you want to read has been mapped. </p>
 
 </div>
 </div>
@@ -325,18 +325,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee6db6421fa50c948b724fd362359bf9"></a>
+<a class="anchor" id="a02cf933883633cf70fba6fc7abb08236"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool MemoryMappedAudioFormatReader::mapSectionOfFile </td>
+          <td class="memname">virtual bool MemoryMappedAudioFormatReader::mapSectionOfFile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> &gt;&#160;</td>
           <td class="paramname"><em>samplesToMap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Attempts to map a section of the file into memory. </p>
@@ -702,7 +710,7 @@ template&lt;typename SampleType , typename Endianness &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 1 2017 20:00:41 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 2 2017 20:00:59 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
