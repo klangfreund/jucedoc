@@ -416,6 +416,7 @@ var searchData=
   ['juce_5fstandardheader_2eh',['juce_StandardHeader.h',['../juce__StandardHeader_8h.html',1,'']]],
   ['juce_5fstatisticsaccumulator_2eh',['juce_StatisticsAccumulator.h',['../juce__StatisticsAccumulator_8h.html',1,'']]],
   ['juce_5fstatuslight_2eh',['juce_StatusLight.h',['../juce__StatusLight_8h.html',1,'']]],
+  ['juce_5fstdfunctioncompat_2eh',['juce_StdFunctionCompat.h',['../juce__StdFunctionCompat_8h.html',1,'']]],
   ['juce_5fstretchablelayoutmanager_2eh',['juce_StretchableLayoutManager.h',['../juce__StretchableLayoutManager_8h.html',1,'']]],
   ['juce_5fstretchablelayoutresizerbar_2eh',['juce_StretchableLayoutResizerBar.h',['../juce__StretchableLayoutResizerBar_8h.html',1,'']]],
   ['juce_5fstretchableobjectresizer_2eh',['juce_StretchableObjectResizer.h',['../juce__StretchableObjectResizer_8h.html',1,'']]],

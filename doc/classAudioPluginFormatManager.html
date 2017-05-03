@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae347b83fed14e1db1744242fdba6e7dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ae347b83fed14e1db1744242fdba6e7dd">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, <a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">AudioPluginFormat::InstantiationCompletionCallback</a> *callback)</td></tr>
 <tr class="memdesc:ae347b83fed14e1db1744242fdba6e7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about.  <a href="#ae347b83fed14e1db1744242fdba6e7dd">More...</a><br/></td></tr>
 <tr class="separator:ae347b83fed14e1db1744242fdba6e7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c00eeb1a876da59d86478ef114b68b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a6c00eeb1a876da59d86478ef114b68b1">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, std::function&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt; completionCallback)</td></tr>
+<tr class="memitem:a6c00eeb1a876da59d86478ef114b68b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a6c00eeb1a876da59d86478ef114b68b1">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, int initialBufferSize, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt; completionCallback)</td></tr>
 <tr class="separator:a6c00eeb1a876da59d86478ef114b68b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72ffaa8d7fa00a3b510a75064bcb913"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#aa72ffaa8d7fa00a3b510a75064bcb913">doesPluginStillExist</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description) const </td></tr>
 <tr class="memdesc:aa72ffaa8d7fa00a3b510a75064bcb913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the file or component for this plugin actually still exists.  <a href="#aa72ffaa8d7fa00a3b510a75064bcb913">More...</a><br/></td></tr>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>completionCallback</em>&#160;</td>
         </tr>
         <tr>
@@ -387,7 +387,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2017 20:00:45 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 3 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

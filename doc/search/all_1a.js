@@ -175,6 +175,7 @@ var searchData=
   ['_7eflexbox',['~FlexBox',['../classFlexBox.html#a8acaf64b1e4f64d76d6707b2e22f127a',1,'FlexBox']]],
   ['_7efocuschangelistener',['~FocusChangeListener',['../classFocusChangeListener.html#aa63a86374b76c70ecc0bbae3977f17a3',1,'FocusChangeListener']]],
   ['_7efont',['~Font',['../classFont.html#af7a69b535952054cd42b65000d8182f4',1,'Font']]],
+  ['_7efunction',['~function',['../classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html#a9638479a551f3bfe66c5680c1e813482',1,'std::function&lt; Result(Arguments...)&gt;']]],
   ['_7egenericaudioprocessoreditor',['~GenericAudioProcessorEditor',['../classGenericAudioProcessorEditor.html#a3a06a90ce44f2715a2741eed8636c5ab',1,'GenericAudioProcessorEditor']]],
   ['_7egenericscopedlock',['~GenericScopedLock',['../classGenericScopedLock.html#a02234589cd2f1c0ff057d4d64beb12e1',1,'GenericScopedLock']]],
   ['_7egenericscopedtrylock',['~GenericScopedTryLock',['../classGenericScopedTryLock.html#aa552ec1121d42230080f6dbc614ead99',1,'GenericScopedTryLock']]],

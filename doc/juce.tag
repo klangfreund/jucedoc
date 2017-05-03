@@ -4989,6 +4989,13 @@
     <class kind="class">StatusLight</class>
   </compound>
   <compound kind="file">
+    <name>juce_StdFunctionCompat.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_core/misc/</path>
+    <filename>juce__StdFunctionCompat_8h</filename>
+    <class kind="class">std::function</class>
+    <class kind="class">std::function&lt; Result(Arguments...)&gt;</class>
+  </compound>
+  <compound kind="file">
     <name>juce_StretchableLayoutManager.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_gui_basics/layout/</path>
     <filename>juce__StretchableLayoutManager_8h</filename>
@@ -50528,8 +50535,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a77b70d2c36e1bab9a707bed97a17653c</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)())</arglist>
+      <anchor>a610d0f516f84dd4b1536745bc514f0b5</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)())</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50542,8 +50549,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a57b707f3d08e69fa5fe346da93b89ed2</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</arglist>
+      <anchor>a3c29675f6466e5a02e8f9cdf0a839796</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)())</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50556,8 +50563,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a842d85beb3ee7e2721c96bf1fe173202</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
+      <anchor>a2da3cb6aa3ebd4b09e9f47fd15960942</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50570,8 +50577,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a45350c9c1450551b21829833eb0c38b3</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
+      <anchor>a7f5e7a3fedc625a3011e68d6ad517736</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1), LL_PARAM(1))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50584,8 +50591,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a175032777084686c2106cb42e50d2618</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
+      <anchor>a148c758e18b04ffcff252bf9221be667</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50598,8 +50605,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a02b915332aed668579682ab0fabb8dc4</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
+      <anchor>a24eb8a2027fa21ce9975d803c63c9b9b</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2), LL_PARAM(1), LL_PARAM(2))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50612,8 +50619,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a358369bb074cdca768059c3bfa007c4a</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
+      <anchor>a3ea1f69ca1ec8b5f6834ad0dd323c123</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50626,8 +50633,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a2130d4c317306606d5b509fa7de6d473</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
+      <anchor>ad53c127ad7a3302d85baf81d5347cefa</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50640,8 +50647,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a0b9ebd1126493146a22e10b0a77d3ddf</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
+      <anchor>a7dc24778d108cdc9392414de39741ec4</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50654,8 +50661,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>ae23b32f91ff09fb3333c8a168fda0f04</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
+      <anchor>a026a7fe1ab702c438fce38010faf201a</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50668,8 +50675,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a267162b2e1e0aadf1ebbe63ebd4d7563</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
+      <anchor>a2c07faeb31d1d511d942656d487e70a4</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50682,8 +50689,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a09058bf5d7d946428d1c3bb3bb7472c9</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
+      <anchor>a8bebbb4fb9b7cec6595d549dfd4b5679</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50696,8 +50703,8 @@
       <type>void</type>
       <name>callExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a9d13fa831fd59b6e92bbaf03185f8a5d</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
+      <anchor>a9c4181397376e9c098ef6bcecab7ba81</anchor>
+      <arglist>(ListenerClass *listenerToExclude, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -50710,8 +50717,8 @@
       <type>void</type>
       <name>callCheckedExcluding</name>
       <anchorfile>classListenerList.html</anchorfile>
-      <anchor>a925fca48c6049ae81f2cd309c05cb3a7</anchor>
-      <arglist>(ListenerClass &amp;listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
+      <anchor>a842fa1a3a4097b56330aac892d1c8834</anchor>
+      <arglist>(ListenerClass *listenerToExclude, const BailOutCheckerType &amp;bailOutChecker, void(ListenerClass::*callbackFunction)(P1, P2, P3, P4, P5, P6), LL_PARAM(1), LL_PARAM(2), LL_PARAM(3), LL_PARAM(4), LL_PARAM(5), LL_PARAM(6))</arglist>
     </member>
     <member kind="function">
       <type>const ArrayType &amp;</type>
@@ -97784,6 +97791,108 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>std::function</name>
+    <filename>classstd_1_1function.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>std::function&lt; Result(Arguments...)&gt;</name>
+    <filename>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</filename>
+    <templarg></templarg>
+    <templarg>Arguments</templarg>
+    <member kind="function">
+      <type></type>
+      <name>function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a10838eb40359ce7051765774350efbed</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a16d47f2f671060f0b3f996808827f77c</anchor>
+      <arglist>(decltype(nullptr)) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a0462667bb134fa4c7ce8d5d6a7d21ebe</anchor>
+      <arglist>(Functor f)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a873770b5cab65bf6511abb1306a72b7f</anchor>
+      <arglist>(function const &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a2bf9dc1c31c2e3b003b9a0e30b40cbac</anchor>
+      <arglist>(function &amp;&amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~function</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a9638479a551f3bfe66c5680c1e813482</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>function &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a2b3407f09fcf4bc52714358560781ef9</anchor>
+      <arglist>(function const &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>function &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a964fc73db7c090b856b1cfd2cbc816c7</anchor>
+      <arglist>(function &amp;&amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator bool</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>acc9ddfbbebd22a88055a3f4052270ed4</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>swap</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a17fcf7f956e1117dadcac74c8bed2495</anchor>
+      <arglist>(function &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>Result</type>
+      <name>operator()</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a1cbef097e5f9f3f13e011726277cef31</anchor>
+      <arglist>(Arguments...args) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a76cf776d6cac77de0d441ffe962c0d2a</anchor>
+      <arglist>(decltype(nullptr)) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>classstd_1_1function_3_01Result_07Arguments_8_8_8_08_4.html</anchorfile>
+      <anchor>a3f67fc6e95d38077f8d8cf50de525b67</anchor>
+      <arglist>(decltype(nullptr)) const noexcept</arglist>
+    </member>
+  </compound>
   <compound kind="namespace">
     <name>Steinberg</name>
     <filename>namespaceSteinberg.html</filename>
@@ -98549,6 +98658,7 @@
     <filename>dir_b40a9385104e60b06f22b68481204d33.html</filename>
     <file>juce_Result.h</file>
     <file>juce_RuntimePermissions.h</file>
+    <file>juce_StdFunctionCompat.h</file>
     <file>juce_Uuid.h</file>
     <file>juce_WindowsRegistry.h</file>
   </compound>

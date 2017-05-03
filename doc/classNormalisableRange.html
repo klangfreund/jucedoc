@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af50c7a38edc0ae19e60ee068808194fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#af50c7a38edc0ae19e60ee068808194fa">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd) noexcept</td></tr>
 <tr class="memdesc:af50c7a38edc0ae19e60ee068808194fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range, continuous interval, but a dummy skew-factor.  <a href="#af50c7a38edc0ae19e60ee068808194fa">More...</a><br/></td></tr>
 <tr class="separator:af50c7a38edc0ae19e60ee068808194fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74564ebe17e4af5f5ec1032810f6d126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a74564ebe17e4af5f5ec1032810f6d126">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt; convertFrom0To1Func, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt; convertTo0To1Func, std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt; snapToLegalValueFunc=nullptr) noexcept</td></tr>
+<tr class="memitem:a74564ebe17e4af5f5ec1032810f6d126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a74564ebe17e4af5f5ec1032810f6d126">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt; convertFrom0To1Func, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt; convertTo0To1Func, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt; snapToLegalValueFunc=nullptr) noexcept</td></tr>
 <tr class="memdesc:a74564ebe17e4af5f5ec1032810f6d126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range and an injective mapping function.  <a href="#a74564ebe17e4af5f5ec1032810f6d126">More...</a><br/></td></tr>
 <tr class="separator:a74564ebe17e4af5f5ec1032810f6d126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec8267d9cdc54f0cf29e1af03df1c3a"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">convertTo0to1</a> (ValueType v) const noexcept</td></tr>
@@ -375,19 +375,19 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt;&#160;</td>
           <td class="paramname"><em>convertFrom0To1Func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt;&#160;</td>
           <td class="paramname"><em>convertTo0To1Func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt;&#160;</td>
           <td class="paramname"><em>snapToLegalValueFunc</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -695,7 +695,7 @@ template&lt;typename ValueType&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2017 20:01:01 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 3 2017 20:00:51 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -595,10 +595,10 @@ var searchData=
   ['iterate',['iterate',['../classEdgeTable.html#af2a5e19d16658853b61684af190e03f6',1,'EdgeTable']]],
   ['iterator',['Iterator',['../classMidiBuffer_1_1Iterator.html#a4a30662a2e2d79787da4cc7ff6f7df00',1,'MidiBuffer::Iterator::Iterator()'],['../structHashMap_1_1Iterator.html#a1f638b01f90ece3081f6456a57f9991e',1,'HashMap::Iterator::Iterator(const HashMap &amp;hashMapToIterate) noexcept'],['../structHashMap_1_1Iterator.html#a1e2e802a4f40adec1120079695142869',1,'HashMap::Iterator::Iterator(const Iterator &amp;other) noexcept'],['../classListenerList_1_1Iterator.html#aec6ff5dcf548392d46dd38b26168c79d',1,'ListenerList::Iterator::Iterator()'],['../structValueTree_1_1Iterator.html#a884bf2e0ac9c06422755d5137d356a0d',1,'ValueTree::Iterator::Iterator()'],['../classPath_1_1Iterator.html#aa0ad8341b6836a7ae789faa10bc7de5f',1,'Path::Iterator::Iterator()'],['../classCodeDocument_1_1Iterator.html#a350e1a7a64043f010e5467a1d862830f',1,'CodeDocument::Iterator::Iterator(const CodeDocument &amp;document) noexcept'],['../classCodeDocument_1_1Iterator.html#ae4ccddcd44ec79ac604a0abf4c5ea1e5',1,'CodeDocument::Iterator::Iterator(const Iterator &amp;) noexcept']]],
   ['iterator',['Iterator',['../structHashMap_1_1Iterator.html',1,'HashMap']]],
-  ['iterator',['Iterator',['../classMidiBuffer_1_1Iterator.html',1,'MidiBuffer']]],
+  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
   ['iterator',['Iterator',['../classListenerList_1_1Iterator.html',1,'ListenerList']]],
   ['iterator',['Iterator',['../classCodeDocument_1_1Iterator.html',1,'CodeDocument']]],
   ['iterator',['Iterator',['../classPath_1_1Iterator.html',1,'Path']]],
-  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
+  ['iterator',['Iterator',['../classMidiBuffer_1_1Iterator.html',1,'MidiBuffer']]],
   ['ivory',['ivory',['../classColours.html#a97ea5f64838c6c2d1301c32108e830d3',1,'Colours']]]
 ];
