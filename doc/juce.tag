@@ -72749,6 +72749,13 @@
       <arglist>(Component &amp;)</arglist>
     </member>
     <member kind="function">
+      <type>ComponentScope &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classRelativeCoordinatePositionerBase_1_1ComponentScope.html</anchorfile>
+      <anchor>a48f44368f8ad9f649ccaa23ad267de4f</anchor>
+      <arglist>(const ComponentScope &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
       <type>Expression</type>
       <name>getSymbolValue</name>
       <anchorfile>classRelativeCoordinatePositionerBase_1_1ComponentScope.html</anchorfile>
@@ -87810,6 +87817,34 @@
       <arglist>(const Uuid &amp;) const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a671bfe140359d2bea90e3e7ba81b0bed</anchor>
+      <arglist>(const Uuid &amp;) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>ac48365b8a702a2cdd7fff86790ddf190</anchor>
+      <arglist>(const Uuid &amp;) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;=</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>ac199ef05b854126afe075b814409fac4</anchor>
+      <arglist>(const Uuid &amp;) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;=</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a3cb76f69f6a4605f0853a5b1d01a1ff9</anchor>
+      <arglist>(const Uuid &amp;) const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>String</type>
       <name>toString</name>
       <anchorfile>classUuid.html</anchorfile>
@@ -87836,6 +87871,48 @@
       <anchorfile>classUuid.html</anchorfile>
       <anchor>a94d863e1d7853c72fd2a8986c52b53e0</anchor>
       <arglist>(const String &amp;uuidString)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32</type>
+      <name>getTimeLow</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a56fab24c16b09e24d8b17fd22048c791</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16</type>
+      <name>getTimeMid</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>aa100b77acf8cc73ddb4c084b89fe7cf9</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint16</type>
+      <name>getTimeHighAndVersion</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a73b43135afaabb30dc0bd5ada04a8e4b</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8</type>
+      <name>getClockSeqAndReserved</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a227816a8b6c3166548dae3ff5399c607</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8</type>
+      <name>getClockSeqLow</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>a5dcaaab6a03bfb014cde0ec1ab55978c</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64</type>
+      <name>getNode</name>
+      <anchorfile>classUuid.html</anchorfile>
+      <anchor>ac954556143ec20ff97d83e274695d1fc</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const uint8 *</type>
@@ -89189,6 +89266,13 @@
       <anchorfile>structvar_1_1NativeFunctionArgs.html</anchorfile>
       <anchor>a8ee7e2f72e487191674312e3da2e2996</anchor>
       <arglist>(const var &amp;thisObject, const var *args, int numArgs) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>NativeFunctionArgs &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structvar_1_1NativeFunctionArgs.html</anchorfile>
+      <anchor>aa2e89ac17991a484ebfdda9171647ade</anchor>
+      <arglist>(const NativeFunctionArgs &amp;)=delete</arglist>
     </member>
     <member kind="variable">
       <type>const var &amp;</type>

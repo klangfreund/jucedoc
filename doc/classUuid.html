@@ -114,6 +114,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92a6b35ab35b3d29fd087d467fac5e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f4f4e5f62532b63212d1424fa790d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a34f4f4e5f62532b63212d1424fa790d3">operator!=</a> (const <a class="el" href="classUuid.html">Uuid</a> &amp;) const noexcept</td></tr>
 <tr class="separator:a34f4f4e5f62532b63212d1424fa790d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671bfe140359d2bea90e3e7ba81b0bed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a671bfe140359d2bea90e3e7ba81b0bed">operator&lt;</a> (const <a class="el" href="classUuid.html">Uuid</a> &amp;) const noexcept</td></tr>
+<tr class="separator:a671bfe140359d2bea90e3e7ba81b0bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48365b8a702a2cdd7fff86790ddf190"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#ac48365b8a702a2cdd7fff86790ddf190">operator&gt;</a> (const <a class="el" href="classUuid.html">Uuid</a> &amp;) const noexcept</td></tr>
+<tr class="separator:ac48365b8a702a2cdd7fff86790ddf190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac199ef05b854126afe075b814409fac4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#ac199ef05b854126afe075b814409fac4">operator&lt;=</a> (const <a class="el" href="classUuid.html">Uuid</a> &amp;) const noexcept</td></tr>
+<tr class="separator:ac199ef05b854126afe075b814409fac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb76f69f6a4605f0853a5b1d01a1ff9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a3cb76f69f6a4605f0853a5b1d01a1ff9">operator&gt;=</a> (const <a class="el" href="classUuid.html">Uuid</a> &amp;) const noexcept</td></tr>
+<tr class="separator:a3cb76f69f6a4605f0853a5b1d01a1ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e752a7dab662c872befd86843324f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a77e752a7dab662c872befd86843324f3">toString</a> () const </td></tr>
 <tr class="memdesc:a77e752a7dab662c872befd86843324f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a stringified version of this UUID.  <a href="#a77e752a7dab662c872befd86843324f3">More...</a><br/></td></tr>
 <tr class="separator:a77e752a7dab662c872befd86843324f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +134,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94d863e1d7853c72fd2a8986c52b53e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUuid.html">Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a94d863e1d7853c72fd2a8986c52b53e0">operator=</a> (const <a class="el" href="classString.html">String</a> &amp;uuidString)</td></tr>
 <tr class="memdesc:a94d863e1d7853c72fd2a8986c52b53e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies from a stringified UUID.  <a href="#a94d863e1d7853c72fd2a8986c52b53e0">More...</a><br/></td></tr>
 <tr class="separator:a94d863e1d7853c72fd2a8986c52b53e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fab24c16b09e24d8b17fd22048c791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a56fab24c16b09e24d8b17fd22048c791">getTimeLow</a> () const noexcept</td></tr>
+<tr class="memdesc:a56fab24c16b09e24d8b17fd22048c791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time-low section of the UUID.  <a href="#a56fab24c16b09e24d8b17fd22048c791">More...</a><br/></td></tr>
+<tr class="separator:a56fab24c16b09e24d8b17fd22048c791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa100b77acf8cc73ddb4c084b89fe7cf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#aa100b77acf8cc73ddb4c084b89fe7cf9">getTimeMid</a> () const noexcept</td></tr>
+<tr class="memdesc:aa100b77acf8cc73ddb4c084b89fe7cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time-mid section of the UUID.  <a href="#aa100b77acf8cc73ddb4c084b89fe7cf9">More...</a><br/></td></tr>
+<tr class="separator:aa100b77acf8cc73ddb4c084b89fe7cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b43135afaabb30dc0bd5ada04a8e4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a73b43135afaabb30dc0bd5ada04a8e4b">getTimeHighAndVersion</a> () const noexcept</td></tr>
+<tr class="memdesc:a73b43135afaabb30dc0bd5ada04a8e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time-high-and-version section of the UUID.  <a href="#a73b43135afaabb30dc0bd5ada04a8e4b">More...</a><br/></td></tr>
+<tr class="separator:a73b43135afaabb30dc0bd5ada04a8e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227816a8b6c3166548dae3ff5399c607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a227816a8b6c3166548dae3ff5399c607">getClockSeqAndReserved</a> () const noexcept</td></tr>
+<tr class="memdesc:a227816a8b6c3166548dae3ff5399c607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the clock-seq-and-reserved section of the UUID.  <a href="#a227816a8b6c3166548dae3ff5399c607">More...</a><br/></td></tr>
+<tr class="separator:a227816a8b6c3166548dae3ff5399c607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcaaab6a03bfb014cde0ec1ab55978c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#a5dcaaab6a03bfb014cde0ec1ab55978c">getClockSeqLow</a> () const noexcept</td></tr>
+<tr class="memdesc:a5dcaaab6a03bfb014cde0ec1ab55978c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the clock-seq-low section of the UUID.  <a href="#a5dcaaab6a03bfb014cde0ec1ab55978c">More...</a><br/></td></tr>
+<tr class="separator:a5dcaaab6a03bfb014cde0ec1ab55978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac954556143ec20ff97d83e274695d1fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#a29940ae63ec06c9998bba873e25407ad">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#ac954556143ec20ff97d83e274695d1fc">getNode</a> () const noexcept</td></tr>
+<tr class="memdesc:ac954556143ec20ff97d83e274695d1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the node section of the UUID.  <a href="#ac954556143ec20ff97d83e274695d1fc">More...</a><br/></td></tr>
+<tr class="separator:ac954556143ec20ff97d83e274695d1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa49adbefce0fa9e1ce31bfa1ff6e887f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUuid.html#aa49adbefce0fa9e1ce31bfa1ff6e887f">getRawData</a> () const noexcept</td></tr>
 <tr class="memdesc:aa49adbefce0fa9e1ce31bfa1ff6e887f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the internal binary representation of the ID.  <a href="#aa49adbefce0fa9e1ce31bfa1ff6e887f">More...</a><br/></td></tr>
 <tr class="separator:aa49adbefce0fa9e1ce31bfa1ff6e887f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,6 +412,102 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a671bfe140359d2bea90e3e7ba81b0bed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Uuid::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classUuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac48365b8a702a2cdd7fff86790ddf190"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Uuid::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classUuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac199ef05b854126afe075b814409fac4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Uuid::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classUuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cb76f69f6a4605f0853a5b1d01a1ff9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Uuid::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classUuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a77e752a7dab662c872befd86843324f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -439,6 +561,156 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Copies from a stringified UUID. </p>
 <p>The string passed in should be one that was created with the <a class="el" href="classUuid.html#a77e752a7dab662c872befd86843324f3" title="Returns a stringified version of this UUID. ">toString()</a> method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a56fab24c16b09e24d8b17fd22048c791"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> Uuid::getTimeLow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time-low section of the UUID. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa100b77acf8cc73ddb4c084b89fe7cf9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> Uuid::getTimeMid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time-mid section of the UUID. </p>
+
+</div>
+</div>
+<a class="anchor" id="a73b43135afaabb30dc0bd5ada04a8e4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> Uuid::getTimeHighAndVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time-high-and-version section of the UUID. </p>
+
+</div>
+</div>
+<a class="anchor" id="a227816a8b6c3166548dae3ff5399c607"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Uuid::getClockSeqAndReserved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the clock-seq-and-reserved section of the UUID. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5dcaaab6a03bfb014cde0ec1ab55978c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Uuid::getClockSeqLow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the clock-seq-low section of the UUID. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac954556143ec20ff97d83e274695d1fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#a29940ae63ec06c9998bba873e25407ad">uint64</a> Uuid::getNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the node section of the UUID. </p>
 
 </div>
 </div>
@@ -501,7 +773,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2017 20:00:57 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 4 2017 20:01:02 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
