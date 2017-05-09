@@ -368,6 +368,7 @@ var searchData=
   ['isresizable',['isResizable',['../classAudioProcessorEditor.html#a9092ff3e3e5090dd37f0b67d4235a637',1,'AudioProcessorEditor::isResizable()'],['../classResizableWindow.html#afa786ee064166bebe3df0843ad96b979',1,'ResizableWindow::isResizable()']]],
   ['isrgb',['isRGB',['../classImage.html#a53b8b72f6cf08ce6d6179666250aedc7',1,'Image']]],
   ['isrightbuttondown',['isRightButtonDown',['../classModifierKeys.html#a25e86fa7211644350b4b946989d1623c',1,'ModifierKeys']]],
+  ['isroot',['isRoot',['../classFile.html#ac1b2a5031e3ff77ddfa44f7068b79fc0',1,'File']]],
   ['isrootitemvisible',['isRootItemVisible',['../classTreeView.html#a8a6f74ca5b60ecd97451e32bf386e419',1,'TreeView']]],
   ['isrotary',['isRotary',['../classSlider.html#adc48bff087378f8be0e6164e449d655e',1,'Slider']]],
   ['isrotationvalid',['isRotationValid',['../classMouseEvent.html#a77532893df9f0ef5391b8dd953033c10',1,'MouseEvent::isRotationValid()'],['../classMouseInputSource.html#a074fe9137656cecfca7da39656eb0467',1,'MouseInputSource::isRotationValid()']]],

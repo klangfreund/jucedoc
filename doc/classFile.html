@@ -169,6 +169,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d02d044cfec9c218a57bd7f00ff71f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#a0d02d044cfec9c218a57bd7f00ff71f1">isDirectory</a> () const </td></tr>
 <tr class="memdesc:a0d02d044cfec9c218a57bd7f00ff71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the file is a directory that exists.  <a href="#a0d02d044cfec9c218a57bd7f00ff71f1">More...</a><br/></td></tr>
 <tr class="separator:a0d02d044cfec9c218a57bd7f00ff71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b2a5031e3ff77ddfa44f7068b79fc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#ac1b2a5031e3ff77ddfa44f7068b79fc0">isRoot</a> () const </td></tr>
+<tr class="memdesc:ac1b2a5031e3ff77ddfa44f7068b79fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the path of this file represents the root of a file system, irrespective of its existance.  <a href="#ac1b2a5031e3ff77ddfa44f7068b79fc0">More...</a><br/></td></tr>
+<tr class="separator:ac1b2a5031e3ff77ddfa44f7068b79fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e368252255a9310aceac2aca02ed238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#a4e368252255a9310aceac2aca02ed238">getSize</a> () const </td></tr>
 <tr class="memdesc:a4e368252255a9310aceac2aca02ed238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the file in bytes.  <a href="#a4e368252255a9310aceac2aca02ed238">More...</a><br/></td></tr>
 <tr class="separator:a4e368252255a9310aceac2aca02ed238"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -773,6 +776,24 @@ Static Public Attributes</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classFile.html#a44ecfb6abf4c56065e773785787f2fb0" title="Checks whether the file actually exists. ">exists</a>, <a class="el" href="classFile.html#a2810f7ad22c4cb4e8927dae25bd53345" title="Checks whether the file exists and is a file rather than a directory. ">existsAsFile</a> </dd></dl>
 
 <p>Referenced by <a class="el" href="structFile_1_1NaturalFileComparator.html#a9450d36ba8fbad91b35144761058e9a6">File::NaturalFileComparator::compareElements()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1b2a5031e3ff77ddfa44f7068b79fc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool File::isRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the path of this file represents the root of a file system, irrespective of its existance. </p>
+<p>This will return true for "C:", "D:", etc on Windows and "/" on other platforms. </p>
 
 </div>
 </div>
@@ -2706,7 +2727,7 @@ Static Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 8 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 9 2017 20:00:50 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

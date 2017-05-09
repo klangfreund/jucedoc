@@ -38133,6 +38133,13 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isRoot</name>
+      <anchorfile>classFile.html</anchorfile>
+      <anchor>ac1b2a5031e3ff77ddfa44f7068b79fc0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>int64</type>
       <name>getSize</name>
       <anchorfile>classFile.html</anchorfile>
@@ -47473,6 +47480,13 @@
       <name>~JUCESplashScreen</name>
       <anchorfile>classJUCESplashScreen.html</anchorfile>
       <anchor>ab4b7f806c3b23d08d4c9f7a5603536d4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Drawable *</type>
+      <name>getSplashScreenLogo</name>
+      <anchorfile>classJUCESplashScreen.html</anchorfile>
+      <anchor>a89d804c2a12f6995fe2365266ae7fd82</anchor>
       <arglist>()</arglist>
     </member>
   </compound>

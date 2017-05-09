@@ -1112,6 +1112,7 @@ var searchData=
   ['getspeakerarrangementasstring',['getSpeakerArrangementAsString',['../classAudioChannelSet.html#ab73f1bea9e022cbea1e6882983535deb',1,'AudioChannelSet']]],
   ['getspeakertype',['getSpeakerType',['../structSpeakerMappings.html#ae6fde18fe328e52ba2289dbede8d82e3',1,'SpeakerMappings']]],
   ['getspeciallocation',['getSpecialLocation',['../classFile.html#a2a4396bc0e6f8b0430f6f54d029899e5',1,'File']]],
+  ['getsplashscreenlogo',['getSplashScreenLogo',['../classJUCESplashScreen.html#a89d804c2a12f6995fe2365266ae7fd82',1,'JUCESplashScreen']]],
   ['getstackbacktrace',['getStackBacktrace',['../classSystemStats.html#a98386990494318ab5ecfba5c3bae89b0',1,'SystemStats']]],
   ['getstandarddeviation',['getStandardDeviation',['../classStatisticsAccumulator.html#a0b04b4414ef33033bf049fd374c8b7fa',1,'StatisticsAccumulator']]],
   ['getstandarditemheight',['getStandardItemHeight',['../classPopupMenu_1_1Options.html#afc510a3ea8d4f646d22b6a8d3c9fe934',1,'PopupMenu::Options']]],
