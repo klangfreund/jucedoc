@@ -567,17 +567,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f23f877701fd4783c8c3bd9f514f12d"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classString.html#a8f23f877701fd4783c8c3bd9f514f12d">formatted</a> (const <a class="el" href="classString.html">String</a> &amp;formatStr, Args...args)</td></tr>
 <tr class="memdesc:a8f23f877701fd4783c8c3bd9f514f12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from a printf-style parameter list.  <a href="#a8f23f877701fd4783c8c3bd9f514f12d">More...</a><br/></td></tr>
 <tr class="separator:a8f23f877701fd4783c8c3bd9f514f12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8791d592b21b466cf040c1728b92dac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac">toHexString</a> (int number)</td></tr>
-<tr class="memdesc:af8791d592b21b466cf040c1728b92dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string representing this 32-bit value in hexadecimal.  <a href="#af8791d592b21b466cf040c1728b92dac">More...</a><br/></td></tr>
-<tr class="separator:af8791d592b21b466cf040c1728b92dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4129cbdaaa1ead05285c46290e0329"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a4d4129cbdaaa1ead05285c46290e0329">toHexString</a> (<a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> number)</td></tr>
-<tr class="memdesc:a4d4129cbdaaa1ead05285c46290e0329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string representing this 64-bit value in hexadecimal.  <a href="#a4d4129cbdaaa1ead05285c46290e0329">More...</a><br/></td></tr>
-<tr class="separator:a4d4129cbdaaa1ead05285c46290e0329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b4c11f55b69aae296bfa8671a82e97"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a43b4c11f55b69aae296bfa8671a82e97">toHexString</a> (short number)</td></tr>
-<tr class="memdesc:a43b4c11f55b69aae296bfa8671a82e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string representing this 16-bit value in hexadecimal.  <a href="#a43b4c11f55b69aae296bfa8671a82e97">More...</a><br/></td></tr>
-<tr class="separator:a43b4c11f55b69aae296bfa8671a82e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab501daf0fa0bbba1479218447d1f936"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:aab501daf0fa0bbba1479218447d1f936"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936">toHexString</a> (IntegerType number)</td></tr>
+<tr class="memdesc:aab501daf0fa0bbba1479218447d1f936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representing this numeric value in hexadecimal.  <a href="#aab501daf0fa0bbba1479218447d1f936">More...</a><br/></td></tr>
+<tr class="separator:aab501daf0fa0bbba1479218447d1f936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75e1ef8ccb4c326e9dab9de960c7d85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#aa75e1ef8ccb4c326e9dab9de960c7d85">toHexString</a> (const void *data, int size, int groupSize=1)</td></tr>
-<tr class="memdesc:aa75e1ef8ccb4c326e9dab9de960c7d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string containing a hex dump of a block of binary data.  <a href="#aa75e1ef8ccb4c326e9dab9de960c7d85">More...</a><br/></td></tr>
+<tr class="memdesc:aa75e1ef8ccb4c326e9dab9de960c7d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string containing a hex dump of a block of binary data.  <a href="#aa75e1ef8ccb4c326e9dab9de960c7d85">More...</a><br/></td></tr>
 <tr class="separator:aa75e1ef8ccb4c326e9dab9de960c7d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0116dc51d7bdd363d14c72bba60060a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#aa0116dc51d7bdd363d14c72bba60060a">fromUTF8</a> (const char *utf8buffer, int bufferSizeBytes=-1)</td></tr>
 <tr class="memdesc:aa0116dc51d7bdd363d14c72bba60060a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from a UTF-8 encoded buffer.  <a href="#aa0116dc51d7bdd363d14c72bba60060a">More...</a><br/></td></tr>
@@ -1109,7 +1104,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this signed 32-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1136,7 +1131,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this unsigned 32-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1163,7 +1158,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this signed 16-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1190,7 +1185,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this unsigned 16-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1217,7 +1212,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this signed 64-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#a6dccbaf8b50ab06bf2f26cf0559c9950" title="Reads the value of the string as a decimal number (up to 64 bits in size). ">getLargeIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#a6dccbaf8b50ab06bf2f26cf0559c9950" title="Reads the value of the string as a decimal number (up to 64 bits in size). ">getLargeIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1244,7 +1239,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this unsigned 64-bit integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#a6dccbaf8b50ab06bf2f26cf0559c9950" title="Reads the value of the string as a decimal number (up to 64 bits in size). ">getLargeIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#a6dccbaf8b50ab06bf2f26cf0559c9950" title="Reads the value of the string as a decimal number (up to 64 bits in size). ">getLargeIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1271,7 +1266,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this signed long integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -1298,7 +1293,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a string containing this unsigned long integer as a decimal number. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#af8791d592b21b466cf040c1728b92dac" title="Creates a string representing this 32-bit value in hexadecimal. ">toHexString</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classString.html#accbe0d347261658661458bad2c63dbe1" title="Reads the value of the string as a decimal number (up to 32 bits in size). ">getIntValue</a>, <a class="el" href="classString.html#a2ec3f03e88700a5ff13f5b61857003f4" title="Parses this string as a floating point number. ">getFloatValue</a>, <a class="el" href="classString.html#a6d747e66888a9c7ee562ab5b67e78c3b" title="Parses this string as a floating point number. ">getDoubleValue</a>, <a class="el" href="classString.html#aab501daf0fa0bbba1479218447d1f936" title="Returns a string representing this numeric value in hexadecimal. ">toHexString</a> </dd></dl>
 
 </div>
 </div>
@@ -4347,9 +4342,11 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af8791d592b21b466cf040c1728b92dac"></a>
+<a class="anchor" id="aab501daf0fa0bbba1479218447d1f936"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntegerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -4357,7 +4354,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">static <a class="el" href="classString.html">String</a> String::toHexString </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">IntegerType&#160;</td>
           <td class="paramname"><em>number</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4369,61 +4366,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a string representing this 32-bit value in hexadecimal. </p>
+<p>Returns a string representing this numeric value in hexadecimal. </p>
 
 <p>Referenced by <a class="el" href="structCppTokeniserFunctions.html#aec2241fa18131c4d828d1a953f942b32">CppTokeniserFunctions::writeEscapeChars()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4d4129cbdaaa1ead05285c46290e0329"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classString.html">String</a> String::toHexString </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a>&#160;</td>
-          <td class="paramname"><em>number</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a string representing this 64-bit value in hexadecimal. </p>
-
-</div>
-</div>
-<a class="anchor" id="a43b4c11f55b69aae296bfa8671a82e97"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classString.html">String</a> String::toHexString </td>
-          <td>(</td>
-          <td class="paramtype">short&#160;</td>
-          <td class="paramname"><em>number</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a string representing this 16-bit value in hexadecimal. </p>
 
 </div>
 </div>
@@ -4465,7 +4410,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a string containing a hex dump of a block of binary data. </p>
+<p>Returns a string containing a hex dump of a block of binary data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>the binary data to use as input </td></tr>
@@ -4973,7 +4918,7 @@ template&lt;typename... Args&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2017 20:00:59 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 10 2017 20:00:54 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

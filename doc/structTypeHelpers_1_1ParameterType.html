@@ -107,14 +107,13 @@ struct TypeHelpers::ParameterType&lt; Type &gt;</h3>
 
 <p>The <a class="el" href="structTypeHelpers_1_1ParameterType.html" title="The ParameterType struct is used to find the best type to use when passing some kind of object as a p...">ParameterType</a> struct is used to find the best type to use when passing some kind of object as a parameter. </p>
 <p>Of course, this is only likely to be useful in certain esoteric template situations.</p>
-<p>Because "typename TypeHelpers::ParameterType&lt;SomeClass&gt;::type" is a bit of a mouthful, there's a <a class="el" href="juce__MathsFunctions_8h.html#ab17e68e410cbcdaf3074214aed490ec8" title="A helpful macro to simplify the use of the ParameterType template. ">PARAMETER_TYPE(SomeClass)</a> macro that you can use to get the same effect.</p>
-<p>E.g. "myFunction (PARAMETER_TYPE (int), PARAMETER_TYPE (MyObject))" would evaluate to "myfunction (int, const MyObject&amp;)", keeping any primitive types as pass-by-value, but passing objects as a const reference, to avoid copying. </p>
+<p>E.g. "myFunction (typename TypeHelpers::ParameterType&lt;int&gt;::type, typename TypeHelpers::ParameterType&lt;MyObject&gt;::type)" would evaluate to "myfunction (int, const MyObject&amp;)", keeping any primitive types as pass-by-value, but passing objects as a const reference, to avoid copying. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a90e2de8ebb3e15f18a94a73a08aaad46"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Type &gt; </div>
+template&lt;typename Type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef const Type&amp; <a class="el" href="structTypeHelpers_1_1ParameterType.html">TypeHelpers::ParameterType</a>&lt; Type &gt;::<a class="el" href="structTypeHelpers_1_1ParameterType.html#a90e2de8ebb3e15f18a94a73a08aaad46">type</a></td>
@@ -131,7 +130,7 @@ template&lt;typename Type &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2017 20:01:05 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 10 2017 20:00:58 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -43,8 +43,8 @@ var searchData=
   ['relativepointpath',['RelativePointPath',['../classRelativePointPath.html',1,'']]],
   ['relativerectangle',['RelativeRectangle',['../classRelativeRectangle.html',1,'']]],
   ['relativetime',['RelativeTime',['../classRelativeTime.html',1,'']]],
-  ['renderer',['Renderer',['../structjuce_1_1LEDGrid_1_1Renderer.html',1,'juce::LEDGrid']]],
   ['renderer',['Renderer',['../structLEDGrid_1_1Renderer.html',1,'LEDGrid']]],
+  ['renderer',['Renderer',['../structjuce_1_1LEDGrid_1_1Renderer.html',1,'juce::LEDGrid']]],
   ['resamplingaudiosource',['ResamplingAudioSource',['../classResamplingAudioSource.html',1,'']]],
   ['resizablebordercomponent',['ResizableBorderComponent',['../classResizableBorderComponent.html',1,'']]],
   ['resizablecornercomponent',['ResizableCornerComponent',['../classResizableCornerComponent.html',1,'']]],
@@ -60,7 +60,7 @@ var searchData=
   ['rulebasedtopologysource',['RuleBasedTopologySource',['../classRuleBasedTopologySource.html',1,'']]],
   ['rulebasedtopologysource',['RuleBasedTopologySource',['../classjuce_1_1RuleBasedTopologySource.html',1,'juce']]],
   ['run',['Run',['../classTextLayout_1_1Run.html',1,'TextLayout']]],
-  ['runner',['Runner',['../structjuce_1_1littlefoot_1_1Runner.html',1,'juce::littlefoot']]],
   ['runner',['Runner',['../structlittlefoot_1_1Runner.html',1,'littlefoot']]],
+  ['runner',['Runner',['../structjuce_1_1littlefoot_1_1Runner.html',1,'juce::littlefoot']]],
   ['runtimepermissions',['RuntimePermissions',['../classRuntimePermissions.html',1,'']]]
 ];

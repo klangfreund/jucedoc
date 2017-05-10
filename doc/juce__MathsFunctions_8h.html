@@ -105,6 +105,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1SmallestFloatType_3_01double_01_4.html">TypeHelpers::SmallestFloatType&lt; double &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1UnsignedTypeWithSize.html">TypeHelpers::UnsignedTypeWithSize&lt; bytes &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">These templates are designed to take an integer type, and return an unsigned int version with the same size.  <a href="structTypeHelpers_1_1UnsignedTypeWithSize.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1UnsignedTypeWithSize_3_011_01_4.html">TypeHelpers::UnsignedTypeWithSize&lt; 1 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1UnsignedTypeWithSize_3_012_01_4.html">TypeHelpers::UnsignedTypeWithSize&lt; 2 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1UnsignedTypeWithSize_3_014_01_4.html">TypeHelpers::UnsignedTypeWithSize&lt; 4 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTypeHelpers_1_1UnsignedTypeWithSize_3_018_01_4.html">TypeHelpers::UnsignedTypeWithSize&lt; 8 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -117,9 +128,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a339666bd60cc6cb0831cb79c8f1b07b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__MathsFunctions_8h.html#a339666bd60cc6cb0831cb79c8f1b07b6">JUCE_UNDENORMALISE</a>(x)&#160;&#160;&#160;{ (x) += 0.1f; (x) -= 0.1f; }</td></tr>
 <tr class="memdesc:a339666bd60cc6cb0831cb79c8f1b07b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro can be applied to a float variable to check whether it contains a denormalised value, and to normalise it if necessary.  <a href="#a339666bd60cc6cb0831cb79c8f1b07b6">More...</a><br/></td></tr>
 <tr class="separator:a339666bd60cc6cb0831cb79c8f1b07b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17e68e410cbcdaf3074214aed490ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__MathsFunctions_8h.html#ab17e68e410cbcdaf3074214aed490ec8">PARAMETER_TYPE</a>(a)&#160;&#160;&#160;typename <a class="el" href="structTypeHelpers_1_1ParameterType.html">TypeHelpers::ParameterType</a>&lt;a&gt;::type</td></tr>
-<tr class="memdesc:ab17e68e410cbcdaf3074214aed490ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helpful macro to simplify the use of the ParameterType template.  <a href="#ab17e68e410cbcdaf3074214aed490ec8">More...</a><br/></td></tr>
-<tr class="separator:ab17e68e410cbcdaf3074214aed490ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -340,25 +348,6 @@ Variables</h2></td></tr>
 
 <p>This macro can be applied to a float variable to check whether it contains a denormalised value, and to normalise it if necessary. </p>
 <p>On CPUs that aren't vulnerable to denormalisation problems, this will have no effect. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab17e68e410cbcdaf3074214aed490ec8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PARAMETER_TYPE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;typename <a class="el" href="structTypeHelpers_1_1ParameterType.html">TypeHelpers::ParameterType</a>&lt;a&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A helpful macro to simplify the use of the ParameterType template. </p>
-<dl class="section see"><dt>See Also</dt><dd>ParameterType </dd></dl>
 
 </div>
 </div>
@@ -2089,7 +2078,7 @@ template&lt;typename NumericType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2017 20:00:41 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 10 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

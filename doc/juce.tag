@@ -2899,6 +2899,11 @@
     <class kind="struct">TypeHelpers::ParameterType</class>
     <class kind="struct">TypeHelpers::SmallestFloatType</class>
     <class kind="struct">TypeHelpers::SmallestFloatType&lt; double &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 1 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 2 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 4 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 8 &gt;</class>
     <namespace>TypeHelpers</namespace>
     <member kind="define">
       <type>#define</type>
@@ -2906,13 +2911,6 @@
       <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
       <anchor>a339666bd60cc6cb0831cb79c8f1b07b6</anchor>
       <arglist>(x)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>PARAMETER_TYPE</name>
-      <anchorfile>juce__MathsFunctions_8h.html</anchorfile>
-      <anchor>ab17e68e410cbcdaf3074214aed490ec8</anchor>
-      <arglist>(a)</arglist>
     </member>
     <member kind="typedef">
       <type>signed char</type>
@@ -6569,6 +6567,20 @@
       <name>plugInOpcodeSetSampleFloatType</name>
       <anchorfile>juce__VSTInterface_8h.html</anchorfile>
       <anchor>a3f29e0dd57930320dee5ed3bd059a3d2a52d2c776441342bbd0859bc8a4cc7e68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pluginOpcodeGetNumMidiInputChannels</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a3f29e0dd57930320dee5ed3bd059a3d2a0bd09c01328c10a743692f0eaf93b547</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pluginOpcodeGetNumMidiOutputChannels</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a3f29e0dd57930320dee5ed3bd059a3d2a38ae88fc3f38da53c070cd943a163b4e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -27363,8 +27375,8 @@
       <type>void</type>
       <name>set</name>
       <anchorfile>structCodeEditorComponent_1_1ColourScheme.html</anchorfile>
-      <anchor>ad3dbb1b39e99178039e810ae6bdaa84e</anchor>
-      <arglist>(const String &amp;name, const Colour colour)</arglist>
+      <anchor>a95609aacec6d7f18e7ac7aab8822d079</anchor>
+      <arglist>(const String &amp;name, Colour colour)</arglist>
     </member>
     <member kind="variable">
       <type>Array&lt; TokenType &gt;</type>
@@ -75446,12 +75458,12 @@
       <anchor>aa3cd462d404a5449eab0f85f04a08187</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type>typedef</type>
-      <name>PARAMETER_TYPE</name>
+    <member kind="typedef">
+      <type>TypeHelpers::ParameterType&lt; SelectableItemType &gt;::type</type>
+      <name>ParameterType</name>
       <anchorfile>classSelectedItemSet.html</anchorfile>
-      <anchor>a80e1e81065dbc4cb307bf4dd0d41fedd</anchor>
-      <arglist>(SelectableItemType) ParameterType</arglist>
+      <anchor>a976c15de158f2e675310ff4a345a4ea5</anchor>
+      <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -79253,22 +79265,8 @@
       <type>static String</type>
       <name>toHexString</name>
       <anchorfile>classString.html</anchorfile>
-      <anchor>af8791d592b21b466cf040c1728b92dac</anchor>
-      <arglist>(int number)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static String</type>
-      <name>toHexString</name>
-      <anchorfile>classString.html</anchorfile>
-      <anchor>a4d4129cbdaaa1ead05285c46290e0329</anchor>
-      <arglist>(int64 number)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static String</type>
-      <name>toHexString</name>
-      <anchorfile>classString.html</anchorfile>
-      <anchor>a43b4c11f55b69aae296bfa8671a82e97</anchor>
-      <arglist>(short number)</arglist>
+      <anchor>aab501daf0fa0bbba1479218447d1f936</anchor>
+      <arglist>(IntegerType number)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
@@ -98001,11 +97999,16 @@
     <class kind="struct">TypeHelpers::ParameterType</class>
     <class kind="struct">TypeHelpers::SmallestFloatType</class>
     <class kind="struct">TypeHelpers::SmallestFloatType&lt; double &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 1 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 2 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 4 &gt;</class>
+    <class kind="struct">TypeHelpers::UnsignedTypeWithSize&lt; 8 &gt;</class>
   </compound>
   <compound kind="struct">
     <name>TypeHelpers::ParameterType</name>
     <filename>structTypeHelpers_1_1ParameterType.html</filename>
-    <templarg></templarg>
+    <templarg>Type</templarg>
     <member kind="typedef">
       <type>const Type &amp;</type>
       <name>type</name>
@@ -98034,6 +98037,55 @@
       <name>type</name>
       <anchorfile>structTypeHelpers_1_1SmallestFloatType_3_01double_01_4.html</anchorfile>
       <anchor>a0a4a0932df0912df21abd2678281239b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>TypeHelpers::UnsignedTypeWithSize</name>
+    <filename>structTypeHelpers_1_1UnsignedTypeWithSize.html</filename>
+    <templarg>bytes</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>TypeHelpers::UnsignedTypeWithSize&lt; 1 &gt;</name>
+    <filename>structTypeHelpers_1_1UnsignedTypeWithSize_3_011_01_4.html</filename>
+    <member kind="typedef">
+      <type>uint8</type>
+      <name>type</name>
+      <anchorfile>structTypeHelpers_1_1UnsignedTypeWithSize_3_011_01_4.html</anchorfile>
+      <anchor>a3453e622e5cdd4cb09293c21cc00f217</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>TypeHelpers::UnsignedTypeWithSize&lt; 2 &gt;</name>
+    <filename>structTypeHelpers_1_1UnsignedTypeWithSize_3_012_01_4.html</filename>
+    <member kind="typedef">
+      <type>uint16</type>
+      <name>type</name>
+      <anchorfile>structTypeHelpers_1_1UnsignedTypeWithSize_3_012_01_4.html</anchorfile>
+      <anchor>a89bbcbf21bc2378562609e0760dd5db5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>TypeHelpers::UnsignedTypeWithSize&lt; 4 &gt;</name>
+    <filename>structTypeHelpers_1_1UnsignedTypeWithSize_3_014_01_4.html</filename>
+    <member kind="typedef">
+      <type>uint32</type>
+      <name>type</name>
+      <anchorfile>structTypeHelpers_1_1UnsignedTypeWithSize_3_014_01_4.html</anchorfile>
+      <anchor>a78cfc910df1b204ea2870cb25a1706e9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>TypeHelpers::UnsignedTypeWithSize&lt; 8 &gt;</name>
+    <filename>structTypeHelpers_1_1UnsignedTypeWithSize_3_018_01_4.html</filename>
+    <member kind="typedef">
+      <type>uint64</type>
+      <name>type</name>
+      <anchorfile>structTypeHelpers_1_1UnsignedTypeWithSize_3_018_01_4.html</anchorfile>
+      <anchor>a7f4ac580d1b0fc6c7eba79c75ef249f5</anchor>
       <arglist></arglist>
     </member>
   </compound>

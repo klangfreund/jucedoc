@@ -31,6 +31,8 @@ var searchData=
   ['pluginopcodegetmanufacturerproductname',['plugInOpcodeGetManufacturerProductName',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a599b3b550f57d46030edf5fc6d886693',1,'juce_VSTInterface.h']]],
   ['pluginopcodegetmanufacturerversion',['plugInOpcodeGetManufacturerVersion',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2aee7c370a2c06e340ce2df9ece759869a',1,'juce_VSTInterface.h']]],
   ['pluginopcodegetmouse',['plugInOpcodeGetMouse',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a9607ebb32e04e53b5134321c8b35d9e3',1,'juce_VSTInterface.h']]],
+  ['pluginopcodegetnummidiinputchannels',['pluginOpcodeGetNumMidiInputChannels',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a0bd09c01328c10a743692f0eaf93b547',1,'juce_VSTInterface.h']]],
+  ['pluginopcodegetnummidioutputchannels',['pluginOpcodeGetNumMidiOutputChannels',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a38ae88fc3f38da53c070cd943a163b4e',1,'juce_VSTInterface.h']]],
   ['pluginopcodegetoutputpinproperties',['plugInOpcodeGetOutputPinProperties',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a95f7f372b10be7f0f983b2c5212b2497',1,'juce_VSTInterface.h']]],
   ['pluginopcodegetparameterlabel',['plugInOpcodeGetParameterLabel',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a0f44465df57bce9a1d5263f5efe7b32f',1,'juce_VSTInterface.h']]],
   ['pluginopcodegetparametername',['plugInOpcodeGetParameterName',['../juce__VSTInterface_8h.html#a3f29e0dd57930320dee5ed3bd059a3d2a57d161bbab49dda03a5f9c6919e0d319',1,'juce_VSTInterface.h']]],
