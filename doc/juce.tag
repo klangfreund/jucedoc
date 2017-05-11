@@ -71362,15 +71362,15 @@
       <type>bool</type>
       <name>contains</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>a1897bfd827a2194af6b125110e022706</anchor>
-      <arglist>(const Rectangle &amp;other) const noexcept</arglist>
+      <anchor>a4559a9486fc7223b20dbe0cbe2b15f7a</anchor>
+      <arglist>(Rectangle other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>intersects</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>a55ba80762b504054c3aaa02ae833f350</anchor>
-      <arglist>(const Rectangle &amp;other) const noexcept</arglist>
+      <anchor>a5193a98fc4117a3f2161dcf4e3a4e264</anchor>
+      <arglist>(Rectangle other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -71383,8 +71383,8 @@
       <type>Rectangle</type>
       <name>getIntersection</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>a28a09961d9ad8b60909fd7d946521db9</anchor>
-      <arglist>(const Rectangle &amp;other) const noexcept</arglist>
+      <anchor>a50e80bae322913e844bc628a99fa3166</anchor>
+      <arglist>(Rectangle other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -71404,29 +71404,29 @@
       <type>Rectangle</type>
       <name>getUnion</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>af8cd7e93ec67369fd194202a27e992c1</anchor>
-      <arglist>(const Rectangle &amp;other) const noexcept</arglist>
+      <anchor>a26d128bf3cf8dd1a50afcf946cbc5521</anchor>
+      <arglist>(Rectangle other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>enlargeIfAdjacent</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>a2c3c2823f8e96240cde13789760de52b</anchor>
-      <arglist>(const Rectangle &amp;other) noexcept</arglist>
+      <anchor>af3f86ce678a35c2947aac7278c239963</anchor>
+      <arglist>(Rectangle other) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>reduceIfPartlyContainedIn</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>afeb73325b68201f34d2e51502ba286e6</anchor>
-      <arglist>(const Rectangle &amp;other) noexcept</arglist>
+      <anchor>ac03eff4db439689694cfef30fb20ee0c</anchor>
+      <arglist>(Rectangle other) noexcept</arglist>
     </member>
     <member kind="function">
       <type>Rectangle</type>
       <name>constrainedWithin</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>ab3c4c6a30141ae1568de871763a9f453</anchor>
-      <arglist>(const Rectangle &amp;areaToFitWithin) const noexcept</arglist>
+      <anchor>a5dae3865af00a4264f7f26ea4eeecf98</anchor>
+      <arglist>(Rectangle areaToFitWithin) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>Rectangle</type>
@@ -71488,15 +71488,15 @@
       <type>static Rectangle</type>
       <name>findAreaContainingPoints</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>afd26907ad3c7deb3bb9cf8b298e774ae</anchor>
-      <arglist>(const Point&lt; ValueType &gt; *const points, const int numPoints) noexcept</arglist>
+      <anchor>af5314d11e2fc89f836762c7b7e4b3e83</anchor>
+      <arglist>(const Point&lt; ValueType &gt; *points, int numPoints) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>intersectRectangles</name>
       <anchorfile>classRectangle.html</anchorfile>
-      <anchor>ab8097b9c1774aebde29eb84fc3d1072c</anchor>
-      <arglist>(ValueType &amp;x1, ValueType &amp;y1, ValueType &amp;w1, ValueType &amp;h1, const ValueType x2, const ValueType y2, const ValueType w2, const ValueType h2) noexcept</arglist>
+      <anchor>a8800d48d36cdd694dc50db3e66c2cabc</anchor>
+      <arglist>(ValueType &amp;x1, ValueType &amp;y1, ValueType &amp;w1, ValueType &amp;h1, ValueType x2, ValueType y2, ValueType w2, ValueType h2) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Rectangle</type>

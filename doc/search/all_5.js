@@ -93,7 +93,7 @@ var searchData=
   ['findalltypefacenames',['findAllTypefaceNames',['../classFont.html#a8dd330a501635eb452c07c0f3e937c31',1,'Font']]],
   ['findalltypefacestyles',['findAllTypefaceStyles',['../classFont.html#a4504ff88b0af4aec852736d267f837cc',1,'Font']]],
   ['findalltypesforfile',['findAllTypesForFile',['../classAudioPluginFormat.html#a9d23e71b2c2429cad9775a14e021abd6',1,'AudioPluginFormat::findAllTypesForFile()'],['../classAudioUnitPluginFormat.html#a3d1e00a1c24ebf0f8ff5326f810f5e4a',1,'AudioUnitPluginFormat::findAllTypesForFile()'],['../classLADSPAPluginFormat.html#a76711d244ec5279f43d4a9340429824e',1,'LADSPAPluginFormat::findAllTypesForFile()'],['../classVST3PluginFormat.html#aab02f337b7231856a2b762d2276c92df',1,'VST3PluginFormat::findAllTypesForFile()'],['../classVSTPluginFormat.html#af6c88835c362d055ec0f0694ebb2a955',1,'VSTPluginFormat::findAllTypesForFile()']]],
-  ['findareacontainingpoints',['findAreaContainingPoints',['../classRectangle.html#afd26907ad3c7deb3bb9cf8b298e774ae',1,'Rectangle']]],
+  ['findareacontainingpoints',['findAreaContainingPoints',['../classRectangle.html#af5314d11e2fc89f836762c7b7e4b3e83',1,'Rectangle']]],
   ['findavailabledevices',['findAvailableDevices',['../classAudioCDBurner.html#aa91adde6eab8e134842597c331cc3afb',1,'AudioCDBurner']]],
   ['findchildfiles',['findChildFiles',['../classFile.html#a6b382c3eb3cbbbfd7ef5550e42b5260a',1,'File::findChildFiles()'],['../classFileSearchPath.html#a4ba70d62200ad57a85b1cb0ade33b1cf',1,'FileSearchPath::findChildFiles()']]],
   ['findchildwithid',['findChildWithID',['../classComponent.html#a5607d97a62a8c9d8d1d28ce3b31dd764',1,'Component']]],
