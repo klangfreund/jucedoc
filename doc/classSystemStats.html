@@ -217,6 +217,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad62b5935a7cee2b45cc34296e90ae699"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#ad62b5935a7cee2b45cc34296e90ae699">hasAVX2</a> () noexcept</td></tr>
 <tr class="memdesc:ad62b5935a7cee2b45cc34296e90ae699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if Intel AVX2 instructions are available.  <a href="#ad62b5935a7cee2b45cc34296e90ae699">More...</a><br/></td></tr>
 <tr class="separator:ad62b5935a7cee2b45cc34296e90ae699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e193b24d50ed44287099c8fbd879311"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a0e193b24d50ed44287099c8fbd879311">hasNeon</a> () noexcept</td></tr>
+<tr class="memdesc:a0e193b24d50ed44287099c8fbd879311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if ARM NEON instructions are available.  <a href="#a0e193b24d50ed44287099c8fbd879311">More...</a><br/></td></tr>
+<tr class="separator:a0e193b24d50ed44287099c8fbd879311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77b0a6c165e59b8c15f8f0a2f037a584"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a77b0a6c165e59b8c15f8f0a2f037a584">getMemorySizeInMegabytes</a> ()</td></tr>
 <tr class="memdesc:a77b0a6c165e59b8c15f8f0a2f037a584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds out how much RAM is in the machine.  <a href="#a77b0a6c165e59b8c15f8f0a2f037a584">More...</a><br/></td></tr>
 <tr class="separator:a77b0a6c165e59b8c15f8f0a2f037a584"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1042,6 +1045,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0e193b24d50ed44287099c8fbd879311"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SystemStats::hasNeon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if ARM NEON instructions are available. </p>
+
+</div>
+</div>
 <a class="anchor" id="a77b0a6c165e59b8c15f8f0a2f037a584"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1180,7 +1208,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 20:00:42 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 16 2017 20:00:40 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

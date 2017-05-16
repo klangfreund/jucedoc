@@ -86,6 +86,7 @@ var searchData=
   ['hasmousecursor',['hasMouseCursor',['../classMouseInputSource.html#ad2b2d3176e07d9672e949dc88135f532',1,'MouseInputSource']]],
   ['hasmousemovedsignificantlysincepressed',['hasMouseMovedSignificantlySincePressed',['../classMouseInputSource.html#a351f9a0c4b526c0d2702417e54fc726a',1,'MouseInputSource']]],
   ['hasmousewheel',['hasMouseWheel',['../classMouseInputSource.html#a691068a9661fb11b3e7b10f51a4254b0',1,'MouseInputSource']]],
+  ['hasneon',['hasNeon',['../classSystemStats.html#a0e193b24d50ed44287099c8fbd879311',1,'SystemStats']]],
   ['hasownservicetimer',['hasOwnServiceTimer',['../classjuce_1_1PhysicalTopologySource.html#abc0804d4b0fa44e3f3a6a5103257689e',1,'juce::PhysicalTopologySource::hasOwnServiceTimer()'],['../classPhysicalTopologySource.html#af81cb87dee3c3d93ce6e739238909097',1,'PhysicalTopologySource::hasOwnServiceTimer()']]],
   ['hasprefix',['hasPrefix',['../structBlockSerialNumber.html#a01b8ec89af09161466d7f29d318f7bc8',1,'BlockSerialNumber']]],
   ['hasproperty',['hasProperty',['../classDynamicObject.html#aed8e9e391f64fd8ed239ebf63c9b61c8',1,'DynamicObject::hasProperty()'],['../classValueTree.html#a0dbec0d665fb9d57b9fd7b3189ec0ee0',1,'ValueTree::hasProperty()']]],

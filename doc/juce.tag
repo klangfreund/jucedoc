@@ -80806,6 +80806,13 @@
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>hasNeon</name>
+      <anchorfile>classSystemStats.html</anchorfile>
+      <anchor>a0e193b24d50ed44287099c8fbd879311</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static int</type>
       <name>getMemorySizeInMegabytes</name>
       <anchorfile>classSystemStats.html</anchorfile>
