@@ -210,7 +210,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when you should render the next openGL frame. </p>
-<p>Note that this callback will be made on a background thread, not the message thread, so make sure that your implementation is thread-safe. If the context is attached to a component in order to do component rendering, then the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> may be locked when this callback is made. For information about how to trigger a render callback, see <a class="el" href="classOpenGLContext.html#acc0fc11c02ebbe4af1cc234eb5d8b84a" title="Asynchronously causes a repaint to be made. ">OpenGLContext::triggerRepaint()</a> and <a class="el" href="classOpenGLContext.html#a7c305575ef3337ae64940db3c00abdc6" title="Enables or disables continuous repainting. ">OpenGLContext::setContinuousRepainting()</a>. </p>
+<p>Note that this callback will be made on a background thread.</p>
+<p>If the context is attached to a component in order to do component rendering, then the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> will be locked when this callback is made.</p>
+<p>If no component rendering is being done, then the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> will not be locked, and you'll need to make sure your code is thread-safe in any interactions it has with your GUI classes.</p>
+<p>For information about how to trigger a render callback, see <a class="el" href="classOpenGLContext.html#acc0fc11c02ebbe4af1cc234eb5d8b84a" title="Asynchronously causes a repaint to be made. ">OpenGLContext::triggerRepaint()</a> and <a class="el" href="classOpenGLContext.html#a7c305575ef3337ae64940db3c00abdc6" title="Enables or disables continuous repainting. ">OpenGLContext::setContinuousRepainting()</a>. </p>
 
 </div>
 </div>
@@ -249,7 +252,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 18 2017 20:00:48 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 19 2017 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
