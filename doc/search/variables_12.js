@@ -21,6 +21,7 @@ var searchData=
   ['shortname',['shortName',['../structApplicationCommandInfo.html#a2da18de634cf7794fcd0b26e4121e3ec',1,'ApplicationCommandInfo']]],
   ['shorttext',['shortText',['../structVstPinInfo.html#a6594139efae58014637f77d95f929151',1,'VstPinInfo']]],
   ['shouldbezero',['shouldBeZero',['../structvst2FxBank.html#a15da448908cc0d8bfac717d822dd1772',1,'vst2FxBank']]],
+  ['shouldmuteinput',['shouldMuteInput',['../classStandalonePluginHolder.html#aa908cd3ed76d0af8c7cc47bb644377d4',1,'StandalonePluginHolder']]],
   ['sienna',['sienna',['../classColours.html#aef8c3caf18a816ecc8180ca9d639ab3c',1,'Colours']]],
   ['silver',['silver',['../classColours.html#ac171c2c4d749ed079e56de4fe35ba2a3',1,'Colours']]],
   ['size',['size',['../structVstEvent.html#a88a96238e749fc150be9027f295abb4f',1,'VstEvent::size()'],['../structVstMidiEvent.html#a0c3bf3faa2785665830ad96d84d08437',1,'VstMidiEvent::size()'],['../structVstSysExEvent.html#a02cd1c87118b202814353a9f1def9893',1,'VstSysExEvent::size()'],['../structvst2FxBank.html#aa9b0fa41a9c1a81c7257ea037fc08139',1,'vst2FxBank::size()']]],

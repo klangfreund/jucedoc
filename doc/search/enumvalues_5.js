@@ -31,7 +31,7 @@ var searchData=
   ['fps60',['fps60',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25aeb48438349dc6a8939da5a892a7a9fb7',1,'AudioPlayHead']]],
   ['fps60drop',['fps60drop',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a836efe6670caaf85325dd6d92bf596fb',1,'AudioPlayHead']]],
   ['fpsunknown',['fpsUnknown',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a7e58343767d199b598a16ea25c09b062',1,'AudioPlayHead']]],
-  ['framespersecond',['framesPerSecond',['../classAudioCDReader.html#a1862227d7416b7b600f41b3f9ab31d6eabcf6b807bcb841f2ae1fb9c3f518aa61',1,'AudioCDReader']]],
+  ['framespersecond',['framesPerSecond',['../classAudioCDReader.html#ab18640300d04ffeb90c59816cbac81d9abcf6b807bcb841f2ae1fb9c3f518aa61',1,'AudioCDReader']]],
   ['frombutton',['fromButton',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22ad4374a114c5dc22c1767e03274176f1b',1,'ApplicationCommandTarget::InvocationInfo']]],
   ['fromkeypress',['fromKeyPress',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22af89cceaaf6b2fbe277117d06f4c71cdf',1,'ApplicationCommandTarget::InvocationInfo']]],
   ['frommenu',['fromMenu',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22aa026666fb6700a11ab0822ca15ee0a9d',1,'ApplicationCommandTarget::InvocationInfo']]],

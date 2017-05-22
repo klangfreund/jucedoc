@@ -14,7 +14,7 @@ var searchData=
   ['maxchannelsofnamedlayout',['maxChannelsOfNamedLayout',['../classAudioChannelSet.html#aa232fc50bb02ddf633ebc4e7522d010fa19df1572e8f673a0433d98d2a3d6bd09',1,'AudioChannelSet']]],
   ['maximisebutton',['maximiseButton',['../classDocumentWindow.html#a104d68bc145157c6ce79169a36fc3c31a84fe4bbe25739fe241f2e6128e7a51c9',1,'DocumentWindow']]],
   ['maximisedwindowswithtabs',['MaximisedWindowsWithTabs',['../classMultiDocumentPanel.html#a493599178acb0ddea50f7059faa4f8f3abefd8f86bfe674ec6c95337947d3754c',1,'MultiDocumentPanel']]],
-  ['maxvalue',['maxValue',['../structIntegerWithBitSize.html#a99378c5403d6b4d6dde69e410681d436a84dc35fa7acdf4c6d989d29fa2a0d3a5',1,'IntegerWithBitSize']]],
+  ['maxvalue',['maxValue',['../structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8a84dc35fa7acdf4c6d989d29fa2a0d3a5',1,'IntegerWithBitSize']]],
   ['mediumresamplingquality',['mediumResamplingQuality',['../classGraphics.html#a5da218e649d1b5ac3d67443ae77caf87a5d8dfbf84457e91eb309b1402562f2af',1,'Graphics']]],
   ['menubackground',['menuBackground',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4ad4b5c737c806ce6ca95b5a8a18aa8f76',1,'LookAndFeel_V4::ColourScheme']]],
   ['menubutton',['menuButton',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a4763e099e23574fe8e7b649e3c964cc9',1,'AppleRemoteDevice']]],

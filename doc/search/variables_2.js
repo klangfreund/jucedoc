@@ -7,6 +7,7 @@ var searchData=
   ['categoryname',['categoryName',['../structApplicationCommandInfo.html#a38af85def791bf7f344d18ddb6f65f66',1,'ApplicationCommandInfo']]],
   ['changes',['changes',['../classTextDiff.html#af3d45ea829e24a3ab37460646778bf82',1,'TextDiff']]],
   ['channel',['channel',['../structMidiRPNMessage.html#a06144aeca5c4cd011745881564329d16',1,'MidiRPNMessage']]],
+  ['channelconfiguration',['channelConfiguration',['../classStandalonePluginHolder.html#ac08ef3e462b625a461d54acb41071740',1,'StandalonePluginHolder']]],
   ['channels',['channels',['../structSpeakerMappings_1_1Mapping.html#a4bd54e10adf49ce9a185dae6b90d2218',1,'SpeakerMappings::Mapping']]],
   ['chartreuse',['chartreuse',['../classColours.html#aadcaa70cc7028fee7c6dba0a04926b6d',1,'Colours']]],
   ['chocolate',['chocolate',['../classColours.html#a0c018189a4e1c0810a8838abb1763135',1,'Colours']]],

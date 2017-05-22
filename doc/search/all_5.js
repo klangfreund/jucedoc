@@ -220,7 +220,7 @@ var searchData=
   ['fpsunknown',['fpsUnknown',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25a7e58343767d199b598a16ea25c09b062',1,'AudioPlayHead']]],
   ['framerate',['frameRate',['../structAudioPlayHead_1_1CurrentPositionInfo.html#aca5544d9204e4fedfdf6088dcdf339aa',1,'AudioPlayHead::CurrentPositionInfo']]],
   ['frameratetype',['FrameRateType',['../classAudioPlayHead.html#a9afad1749c8002945b2a6921eef92b25',1,'AudioPlayHead']]],
-  ['framespersecond',['framesPerSecond',['../classAudioCDReader.html#a1862227d7416b7b600f41b3f9ab31d6eabcf6b807bcb841f2ae1fb9c3f518aa61',1,'AudioCDReader']]],
+  ['framespersecond',['framesPerSecond',['../classAudioCDReader.html#ab18640300d04ffeb90c59816cbac81d9abcf6b807bcb841f2ae1fb9c3f518aa61',1,'AudioCDReader']]],
   ['free',['free',['../classHeapBlock.html#a8ec3fb69997d6f530d60cb5e0969f97f',1,'HeapBlock']]],
   ['freezemode',['freezeMode',['../structReverb_1_1Parameters.html#a394c3bfbd67ad681222410952dbed0c6',1,'Reverb::Parameters']]],
   ['from14bitint',['from14BitInt',['../classMPEValue.html#ab8606e727fc51c6175949d8d35af3693',1,'MPEValue']]],

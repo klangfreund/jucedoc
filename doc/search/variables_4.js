@@ -7,6 +7,7 @@ var searchData=
   ['elementtype',['elementType',['../classPath_1_1Iterator.html#a3b33636d181ff130a4c0e475da2824db',1,'Path::Iterator']]],
   ['elevationangle',['elevationAngle',['../structVstIndividualSpeakerInfo.html#a8874c9f2022074295797aa549cc38815',1,'VstIndividualSpeakerInfo']]],
   ['emailbox',['emailBox',['../classOnlineUnlockForm.html#a280e428e2560942b321d724a85b8f6ba',1,'OnlineUnlockForm']]],
+  ['emptybuffer',['emptyBuffer',['../classStandalonePluginHolder.html#add80ae89f130d96688aa8fac62f405bf',1,'StandalonePluginHolder']]],
   ['emptyspace',['emptySpace',['../structVstEffectInterface.html#ab15796ca33277d2a99efcb0adf402595',1,'VstEffectInterface']]],
   ['encodername',['encoderName',['../classOggVorbisAudioFormat.html#a1c97a40ce37de0766efdaec9b1d4fcb5',1,'OggVorbisAudioFormat']]],
   ['end',['end',['../classNormalisableRange.html#aa8aba814e8121157ba79ccbf03152b82',1,'NormalisableRange']]],

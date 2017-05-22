@@ -8,7 +8,7 @@ var searchData=
   ['reaper',['Reaper',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aec2843d65058124f4d29e70027f06e83',1,'PluginHostType']]],
   ['record',['record',['../classControlButton.html#a891776295057786f99f14631b1aa2794a3534bd78b4a9437ce34c79388cdb7705',1,'ControlButton::record()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832ae61ee859d15de4b463198c18515a1cce',1,'juce::ControlButton::record()']]],
   ['recordaudio',['recordAudio',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535',1,'RuntimePermissions']]],
-  ['redo',['redo',['../namespaceStandardApplicationCommandIDs.html#ad348cc9beaaea88093769e2da468320aaa2a9602bedb21d34ea2b7cb620d5be1f',1,'StandardApplicationCommandIDs']]],
+  ['redo',['redo',['../namespaceStandardApplicationCommandIDs.html#a8393f475b47d752d5910753795d3f68baa2a9602bedb21d34ea2b7cb620d5be1f',1,'StandardApplicationCommandIDs']]],
   ['renoise',['Renoise',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a17d9c92fbae8bdff143b83043fada217',1,'PluginHostType']]],
   ['requesttopologymessage',['requestTopologyMessage',['../juce__BlocksProtocolDefinitions_8h.html#a43b1837fd2667d8513becbb6a7060a9dac74ea907c0e1f7b6a67ace2fa1f3b841',1,'juce_BlocksProtocolDefinitions.h']]],
   ['resizable',['resizable',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831ae21b31a36ae1a8a25aed0c8cc5301720',1,'TableHeaderComponent']]],

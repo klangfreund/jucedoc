@@ -21,7 +21,6 @@ var searchData=
   ['deletebackwards',['deleteBackwards',['../classTextEditor.html#a7779055c39661e834c359f6fcb5cf6b3',1,'TextEditor::deleteBackwards()'],['../classCodeEditorComponent.html#ae867bf29668d137a9d4edb3632dd01c4',1,'CodeEditorComponent::deleteBackwards()']]],
   ['deletecontrol',['deleteControl',['../classActiveXControlComponent.html#ac2d524d7b6a6c17611e9aaff213f3443',1,'ActiveXControlComponent']]],
   ['deletedatshutdown',['DeletedAtShutdown',['../classDeletedAtShutdown.html#ad03334a429dfa1c465dd8ad52fb94190',1,'DeletedAtShutdown']]],
-  ['deleteeditorcomp',['deleteEditorComp',['../classStandaloneFilterWindow.html#a9c570b6b027a99d746a31f1b7e72f1e8',1,'StandaloneFilterWindow']]],
   ['deleteevent',['deleteEvent',['../classMidiMessageSequence.html#a67b6db1465ea07fb7493909409d89a44',1,'MidiMessageSequence']]],
   ['deletefile',['deleteFile',['../classFile.html#acca30337faecf8c3d97a1e70c725db23',1,'File']]],
   ['deleteforwards',['deleteForwards',['../classTextEditor.html#a855bfe3297879cdb7000e23f1f4d3695',1,'TextEditor::deleteForwards()'],['../classCodeEditorComponent.html#a2fbd2473cca409c0faa16ad5d7493878',1,'CodeEditorComponent::deleteForwards()']]],

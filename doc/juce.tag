@@ -119,63 +119,63 @@
       <type>@</type>
       <name>quit</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa0e06bba45d6039ddc74f0b437d982fba</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba0e06bba45d6039ddc74f0b437d982fba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>del</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa3519307963b37e47b3c0935a553c8a13</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba3519307963b37e47b3c0935a553c8a13</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>cut</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aac0037bfec469a888d3a7ab1c0c222765</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bac0037bfec469a888d3a7ab1c0c222765</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>copy</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa3584c202667823072c928fd699725466</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba3584c202667823072c928fd699725466</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>paste</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aae98071537aab261471df0788ab5405de</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bae98071537aab261471df0788ab5405de</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>selectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa651985a70b21b1d0b7a89007fc8793df</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba651985a70b21b1d0b7a89007fc8793df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>deselectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aacdd0c589b2b1904cde27f75185f65e4a</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bacdd0c589b2b1904cde27f75185f65e4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>undo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa5b866e822eb795f30f0c77ebecc84f7f</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba5b866e822eb795f30f0c77ebecc84f7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>redo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aaa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68baa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -537,7 +537,7 @@
       <type>@</type>
       <name>kAudioUnitProperty_SupportsMPE</name>
       <anchorfile>juce__AudioUnitPluginFormat_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06ca3d9d3125ae195114257428b622aebb52</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ea3d9d3125ae195114257428b622aebb52</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -13475,14 +13475,14 @@
       <type>@</type>
       <name>framesPerSecond</name>
       <anchorfile>classAudioCDReader.html</anchorfile>
-      <anchor>a1862227d7416b7b600f41b3f9ab31d6eabcf6b807bcb841f2ae1fb9c3f518aa61</anchor>
+      <anchor>ab18640300d04ffeb90c59816cbac81d9abcf6b807bcb841f2ae1fb9c3f518aa61</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>samplesPerFrame</name>
       <anchorfile>classAudioCDReader.html</anchorfile>
-      <anchor>a1862227d7416b7b600f41b3f9ab31d6ea1db74900d5d80b397c1bbf11691cee93</anchor>
+      <anchor>ab18640300d04ffeb90c59816cbac81d9a1db74900d5d80b397c1bbf11691cee93</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -24551,28 +24551,28 @@
       <type>@</type>
       <name>byteOrderMarkBE1</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a5a33e69697b3b8e7181f39f2fcc05cdaaec96c813c427ded95e8d412690c08c9a</anchor>
+      <anchor>ae1f59f46a9f5421aa561afa745c43ad0aec96c813c427ded95e8d412690c08c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>byteOrderMarkBE2</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a5a33e69697b3b8e7181f39f2fcc05cdaa0e9e3e062cd6caa2ddbd9861763a5aef</anchor>
+      <anchor>ae1f59f46a9f5421aa561afa745c43ad0a0e9e3e062cd6caa2ddbd9861763a5aef</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>byteOrderMarkLE1</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a5a33e69697b3b8e7181f39f2fcc05cdaae1379594854299323a3c64115026d288</anchor>
+      <anchor>ae1f59f46a9f5421aa561afa745c43ad0ae1379594854299323a3c64115026d288</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>byteOrderMarkLE2</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a5a33e69697b3b8e7181f39f2fcc05cdaae603365b2895acc018233efeb0da3d6b</anchor>
+      <anchor>ae1f59f46a9f5421aa561afa745c43ad0ae603365b2895acc018233efeb0da3d6b</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -25434,21 +25434,21 @@
       <type>@</type>
       <name>byteOrderMark1</name>
       <anchorfile>classCharPointer__UTF8.html</anchorfile>
-      <anchor>ad6480de7be0d714832e4f15474c3d675a8085c34bfa20125556249baba7268ebc</anchor>
+      <anchor>a8855f40472aec3583ad6789d00996526a8085c34bfa20125556249baba7268ebc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>byteOrderMark2</name>
       <anchorfile>classCharPointer__UTF8.html</anchorfile>
-      <anchor>ad6480de7be0d714832e4f15474c3d675a2e5a169828d5d53f24d89f12ea14d308</anchor>
+      <anchor>a8855f40472aec3583ad6789d00996526a2e5a169828d5d53f24d89f12ea14d308</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>byteOrderMark3</name>
       <anchorfile>classCharPointer__UTF8.html</anchorfile>
-      <anchor>ad6480de7be0d714832e4f15474c3d675aa535790ae396383e305fbf9af74624f7</anchor>
+      <anchor>a8855f40472aec3583ad6789d00996526aa535790ae396383e305fbf9af74624f7</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -46599,14 +46599,14 @@
       <type>@</type>
       <name>bits</name>
       <anchorfile>structIntegerWithBitSize.html</anchorfile>
-      <anchor>a99378c5403d6b4d6dde69e410681d436ac75ed2706ec532de316e420d3cfcf20c</anchor>
+      <anchor>a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>maxValue</name>
       <anchorfile>structIntegerWithBitSize.html</anchorfile>
-      <anchor>a99378c5403d6b4d6dde69e410681d436a84dc35fa7acdf4c6d989d29fa2a0d3a5</anchor>
+      <anchor>a3d56b21472fa5f8b6268099ac6c84bb8a84dc35fa7acdf4c6d989d29fa2a0d3a5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -66442,7 +66442,7 @@
       <type>@</type>
       <name>indexA</name>
       <anchorfile>classPixelAlpha.html</anchorfile>
-      <anchor>a9bafe936852a1044d21215fd707e832ca31d54b036f46396c28eb848b84ee6ba7</anchor>
+      <anchor>a7826a68f953430ace13c9be0830d3bc1a31d54b036f46396c28eb848b84ee6ba7</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -66614,28 +66614,28 @@
       <type>@</type>
       <name>indexA</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a59039374e21c0c2576269f84c13b9c41ae2c758a6eebfdf52dde60687f68a68ab</anchor>
+      <anchor>a2ceafbed596b82e115f20dbd1bb707d1ae2c758a6eebfdf52dde60687f68a68ab</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexR</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a59039374e21c0c2576269f84c13b9c41a5d38bdd8f5ffaa9917b6fff622ddb23f</anchor>
+      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a5d38bdd8f5ffaa9917b6fff622ddb23f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexG</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a59039374e21c0c2576269f84c13b9c41a9f00e7f7cddc8b6d27053806abb1630a</anchor>
+      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a9f00e7f7cddc8b6d27053806abb1630a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexB</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a59039374e21c0c2576269f84c13b9c41a7eab5933695a1fcdfee5a25cb5ef60ea</anchor>
+      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a7eab5933695a1fcdfee5a25cb5ef60ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -66849,21 +66849,21 @@
       <type>@</type>
       <name>indexR</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>af1c1cc31c25d4dee0f61f266271849b8a2725faa86a75bea4242137ab8b9fb128</anchor>
+      <anchor>ab199b1a785c1f00bfbc1de6848146d35a2725faa86a75bea4242137ab8b9fb128</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexG</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>af1c1cc31c25d4dee0f61f266271849b8ae889bdfe358ad3b6395e1bf584e198f8</anchor>
+      <anchor>ab199b1a785c1f00bfbc1de6848146d35ae889bdfe358ad3b6395e1bf584e198f8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexB</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>af1c1cc31c25d4dee0f61f266271849b8a59222359427902da4ec4353ee7d7c431</anchor>
+      <anchor>ab199b1a785c1f00bfbc1de6848146d35a59222359427902da4ec4353ee7d7c431</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -77510,8 +77510,8 @@
       <type></type>
       <name>StandaloneFilterWindow</name>
       <anchorfile>classStandaloneFilterWindow.html</anchorfile>
-      <anchor>ac008829a9ecf58b98814eca1a006fe13</anchor>
-      <arglist>(const String &amp;title, Colour backgroundColour, PropertySet *settingsToUse, bool takeOwnershipOfSettings, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr)</arglist>
+      <anchor>aca24df652dc5162324d0b5eb74624555</anchor>
+      <arglist>(const String &amp;title, Colour backgroundColour, PropertySet *settingsToUse, bool takeOwnershipOfSettings, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const std::initializer_list&lt; const short[2]&gt; &amp;constrainToConfiguration={})</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -77533,20 +77533,6 @@
       <anchorfile>classStandaloneFilterWindow.html</anchorfile>
       <anchor>aa912d8a4473ce219db1605b56049b51e</anchor>
       <arglist>() const noexcept</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>createEditorComp</name>
-      <anchorfile>classStandaloneFilterWindow.html</anchorfile>
-      <anchor>a8f7e30a417aeab18ef51d95efc4520a2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>deleteEditorComp</name>
-      <anchorfile>classStandaloneFilterWindow.html</anchorfile>
-      <anchor>a9c570b6b027a99d746a31f1b7e72f1e8</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -77608,13 +77594,14 @@
   <compound kind="class">
     <name>StandalonePluginHolder</name>
     <filename>classStandalonePluginHolder.html</filename>
+    <base protection="private">AudioIODeviceCallback</base>
     <base protection="private">Timer</base>
     <member kind="function">
       <type></type>
       <name>StandalonePluginHolder</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
-      <anchor>a01907d1aa9e4ce519e1e691f96eb2c06</anchor>
-      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr)</arglist>
+      <anchor>a9ac2dc852699cd1e189d053c2c8016d9</anchor>
+      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const std::initializer_list&lt; const short[2]&gt; &amp;constrainToConfiguration={})</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -77636,6 +77623,20 @@
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
       <anchor>a9eb8c1bd9c771ed5ee9a0c1b4e632c1a</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Value &amp;</type>
+      <name>getMuteInputValue</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>a46b152c11c535bd3216285cb66d5e4e1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getProcessorHasPotentialFeedbackLoop</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>aef5d79ab24c114f4c8a36f6eae7ef9e1</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>File</type>
@@ -77768,6 +77769,34 @@
       <name>player</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
       <anchor>a7dd25ebd12047b7c040f4128f4690c52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::initializer_list&lt; const short[2]&gt;</type>
+      <name>channelConfiguration</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>ac08ef3e462b625a461d54acb41071740</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>processorHasPotentialFeedbackLoop</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>a4519d0e13026290888f3ec59e73fdf41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Value</type>
+      <name>shouldMuteInput</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>aa908cd3ed76d0af8c7cc47bb644377d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>AudioSampleBuffer</type>
+      <name>emptyBuffer</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>add80ae89f130d96688aa8fac62f405bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -86078,7 +86107,7 @@
       <type>@</type>
       <name>bits</name>
       <anchorfile>structTouchPosition.html</anchorfile>
-      <anchor>ad3dd85f18e4109beb120fecee06d58ccac26f97e9093728fffecb625097d10bcc</anchor>
+      <anchor>ada67c981bf595b8023d54a2c79a2b1a1ac26f97e9093728fffecb625097d10bcc</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -86313,7 +86342,7 @@
       <type>@</type>
       <name>bits</name>
       <anchorfile>structTouchVelocity.html</anchorfile>
-      <anchor>a69c0f0d74a3c6dff1742bdd77d4319f5a3ac57d25aaa2ecc07ab6cd5067f57586</anchor>
+      <anchor>a7027e2fcb57bffe49225d340a304ad04a3ac57d25aaa2ecc07ab6cd5067f57586</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -97834,63 +97863,63 @@
       <type>@</type>
       <name>quit</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa0e06bba45d6039ddc74f0b437d982fba</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba0e06bba45d6039ddc74f0b437d982fba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>del</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa3519307963b37e47b3c0935a553c8a13</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba3519307963b37e47b3c0935a553c8a13</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>cut</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aac0037bfec469a888d3a7ab1c0c222765</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bac0037bfec469a888d3a7ab1c0c222765</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>copy</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa3584c202667823072c928fd699725466</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba3584c202667823072c928fd699725466</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>paste</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aae98071537aab261471df0788ab5405de</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bae98071537aab261471df0788ab5405de</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>selectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa651985a70b21b1d0b7a89007fc8793df</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba651985a70b21b1d0b7a89007fc8793df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>deselectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aacdd0c589b2b1904cde27f75185f65e4a</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68bacdd0c589b2b1904cde27f75185f65e4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>undo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aa5b866e822eb795f30f0c77ebecc84f7f</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68ba5b866e822eb795f30f0c77ebecc84f7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>redo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>ad348cc9beaaea88093769e2da468320aaa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
+      <anchor>a8393f475b47d752d5910753795d3f68baa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
       <arglist></arglist>
     </member>
   </compound>

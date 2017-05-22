@@ -1663,8 +1663,6 @@ template&lt;typename FloatType &gt; </div>
 <p>This method will return the total number of input channels by accumulating the number of channels on each input bus. The number of channels of the buffer passed to your processBlock callback will be equivalent to either getTotalNumInputChannels or getTotalNumOutputChannels - which ever is greater.</p>
 <p>Note that getTotalNumInputChannels is equivalent to getMainBusNumInputChannels if your processor does not have any sidechains or aux buses. </p>
 
-<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a0b2e109349c027391f470318bd4d23ba">StandalonePluginHolder::reloadAudioDeviceState()</a>, and <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder::showAudioSettingsDialog()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a2a99a78e2a1e2b7f2d4dffee0819a225"></a>
@@ -1691,8 +1689,6 @@ template&lt;typename FloatType &gt; </div>
 <p>Returns the total number of output channels. </p>
 <p>This method will return the total number of output channels by accumulating the number of channels on each output bus. The number of channels of the buffer passed to your processBlock callback will be equivalent to either getTotalNumInputChannels or getTotalNumOutputChannels - which ever is greater.</p>
 <p>Note that getTotalNumOutputChannels is equivalent to getMainBusNumOutputChannels if your processor does not have any sidechains or aux buses. </p>
-
-<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#a0b2e109349c027391f470318bd4d23ba">StandalonePluginHolder::reloadAudioDeviceState()</a>, and <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder::showAudioSettingsDialog()</a>.</p>
 
 </div>
 </div>
@@ -1721,6 +1717,8 @@ template&lt;typename FloatType &gt; </div>
 
 <p>References <a class="el" href="classAudioProcessor.html#a17f5020380dbfcd84dff17578143fddc">getChannelCountOfBus()</a>.</p>
 
+<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>, <a class="el" href="classStandalonePluginHolder.html#a0b2e109349c027391f470318bd4d23ba">StandalonePluginHolder::reloadAudioDeviceState()</a>, and <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder::showAudioSettingsDialog()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a89e5d408f21d930bd56c21dd2aa8f69b"></a>
@@ -1747,6 +1745,8 @@ template&lt;typename FloatType &gt; </div>
 <p>Returns the number of output channels on the main bus. </p>
 
 <p>References <a class="el" href="classAudioProcessor.html#a17f5020380dbfcd84dff17578143fddc">getChannelCountOfBus()</a>.</p>
+
+<p>Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>, <a class="el" href="classStandalonePluginHolder.html#a0b2e109349c027391f470318bd4d23ba">StandalonePluginHolder::reloadAudioDeviceState()</a>, and <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder::showAudioSettingsDialog()</a>.</p>
 
 </div>
 </div>
@@ -3584,8 +3584,6 @@ template&lt;int numLayouts&gt; </div>
 
 <p>Not for public use - this is called before deleting an editor component. </p>
 
-<p>Referenced by <a class="el" href="classStandaloneFilterWindow.html#a9c570b6b027a99d746a31f1b7e72f1e8">StandaloneFilterWindow::deleteEditorComp()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a6d0c1c945bebbc967d187c0f08b42c4b"></a>
@@ -3877,7 +3875,7 @@ template&lt;int numLayouts&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 21 2017 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 22 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

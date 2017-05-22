@@ -25,6 +25,7 @@ var searchData=
   ['elevationangle',['elevationAngle',['../structVstIndividualSpeakerInfo.html#a8874c9f2022074295797aa549cc38815',1,'VstIndividualSpeakerInfo']]],
   ['emailaddresskeyboard',['emailAddressKeyboard',['../classTextInputTarget.html#a097550317e3bf2aee470a20540b9edc7a5cb8da15324fce23d70f1bd1eae86ff8',1,'TextInputTarget']]],
   ['emailbox',['emailBox',['../classOnlineUnlockForm.html#a280e428e2560942b321d724a85b8f6ba',1,'OnlineUnlockForm']]],
+  ['emptybuffer',['emptyBuffer',['../classStandalonePluginHolder.html#add80ae89f130d96688aa8fac62f405bf',1,'StandalonePluginHolder']]],
   ['emptyrange',['emptyRange',['../classRange.html#ad7d026bfc44eaa1dc8725fd13bfe8d77',1,'Range']]],
   ['emptyspace',['emptySpace',['../structVstEffectInterface.html#ab15796ca33277d2a99efcb0adf402595',1,'VstEffectInterface']]],
   ['enable',['enable',['../classAudioProcessor_1_1Bus.html#a8a148a2e2f175a7a266ca67319fba000',1,'AudioProcessor::Bus']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kaudiounitproperty_5fsupportsmpe',['kAudioUnitProperty_SupportsMPE',['../juce__AudioUnitPluginFormat_8h.html#adc29c2ff13d900c2f185ee95427fb06ca3d9d3125ae195114257428b622aebb52',1,'juce_AudioUnitPluginFormat.h']]],
+  ['kaudiounitproperty_5fsupportsmpe',['kAudioUnitProperty_SupportsMPE',['../juce__AudioUnitPluginFormat_8h.html#a61dadd085c1777f559549e05962b2c9ea3d9d3125ae195114257428b622aebb52',1,'juce_AudioUnitPluginFormat.h']]],
   ['keyboardfocustraverser',['KeyboardFocusTraverser',['../classKeyboardFocusTraverser.html',1,'KeyboardFocusTraverser'],['../classKeyboardFocusTraverser.html#a275c834346e37c782d74f08365f1a06f',1,'KeyboardFocusTraverser::KeyboardFocusTraverser()']]],
   ['keydown',['keyDown',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a895ffc865cb90899c347efefb881e2ce',1,'MPENote']]],
   ['keydownandsustained',['keyDownAndSustained',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a31c427116ac75e042f9f5315a7aad129',1,'MPENote']]],
