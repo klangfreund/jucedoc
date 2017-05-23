@@ -71,7 +71,6 @@ var searchData=
   ['channelremappingaudiosource',['ChannelRemappingAudioSource',['../classChannelRemappingAudioSource.html#ad6cfa532e77dc3993a0516cae1623b2b',1,'ChannelRemappingAudioSource']]],
   ['channelsetswithnumberofchannels',['channelSetsWithNumberOfChannels',['../classAudioChannelSet.html#a0abacdf460e6e57f1f3478ea897b2fd9',1,'AudioChannelSet']]],
   ['channelsettocalayouttag',['ChannelSetToCALayoutTag',['../structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727',1,'AudioUnitHelpers']]],
-  ['channelsettovstarrangement',['channelSetToVstArrangement',['../structSpeakerMappings.html#a85e146736b986b0b4e35b5f061d857fa',1,'SpeakerMappings']]],
   ['channelsettovstarrangementtype',['channelSetToVstArrangementType',['../structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613',1,'SpeakerMappings']]],
   ['charpointer_5fascii',['CharPointer_ASCII',['../classCharPointer__ASCII.html#a5f3a9f5183fc777f6d48814bcbbcce71',1,'CharPointer_ASCII::CharPointer_ASCII(const CharType *const rawPointer) noexcept'],['../classCharPointer__ASCII.html#a9de29da955a20e66c3b867de345bf629',1,'CharPointer_ASCII::CharPointer_ASCII(const CharPointer_ASCII &amp;other) noexcept']]],
   ['charpointer_5futf16',['CharPointer_UTF16',['../classCharPointer__UTF16.html#a3b8f36f58c2899ba6e620965473397ab',1,'CharPointer_UTF16::CharPointer_UTF16(const CharType *const rawPointer) noexcept'],['../classCharPointer__UTF16.html#ae8a672d80bd54445f2c32038b1e3d89e',1,'CharPointer_UTF16::CharPointer_UTF16(const CharPointer_UTF16 &amp;other) noexcept']]],

@@ -152,6 +152,7 @@ var searchData=
   ['heapblock_3c_20valuetree_3a_3alistener_20_2a_20_3e',['HeapBlock&lt; ValueTree::Listener * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20variable_20_3e',['HeapBlock&lt; Variable &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20void_20_2a_20_3e',['HeapBlock&lt; void * &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20vstspeakerconfiguration_20_3e',['HeapBlock&lt; VstSpeakerConfiguration &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20weakreference_3c_20component_20_3e_20_3e',['HeapBlock&lt; WeakReference&lt; Component &gt; &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20zipentryholder_20_2a_20_3e',['HeapBlock&lt; ZipEntryHolder * &gt;',['../classHeapBlock.html',1,'']]],
   ['hexparser',['HexParser',['../structCharacterFunctions_1_1HexParser.html',1,'CharacterFunctions']]],

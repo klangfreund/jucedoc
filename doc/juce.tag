@@ -6098,6 +6098,7 @@
     <filename>juce__VSTCommon_8h</filename>
     <class kind="struct">SpeakerMappings</class>
     <class kind="struct">SpeakerMappings::Mapping</class>
+    <class kind="class">SpeakerMappings::VstSpeakerConfigurationHolder</class>
   </compound>
   <compound kind="file">
     <name>juce_VSTInterface.h</name>
@@ -77332,6 +77333,7 @@
     <filename>structSpeakerMappings.html</filename>
     <base protection="private">AudioChannelSet</base>
     <class kind="struct">SpeakerMappings::Mapping</class>
+    <class kind="class">SpeakerMappings::VstSpeakerConfigurationHolder</class>
     <member kind="function" static="yes">
       <type>static AudioChannelSet</type>
       <name>vstArrangementTypeToChannelSet</name>
@@ -77352,13 +77354,6 @@
       <anchorfile>structSpeakerMappings.html</anchorfile>
       <anchor>a9049a026ab41806fb5dc6aad8a426613</anchor>
       <arglist>(AudioChannelSet channels)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>channelSetToVstArrangement</name>
-      <anchorfile>structSpeakerMappings.html</anchorfile>
-      <anchor>a85e146736b986b0b4e35b5f061d857fa</anchor>
-      <arglist>(const AudioChannelSet &amp;channels, VstSpeakerConfiguration &amp;result)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static const Mapping *</type>
@@ -77405,6 +77400,73 @@
       <anchorfile>structSpeakerMappings_1_1Mapping.html</anchorfile>
       <anchor>a4bd54e10adf49ce9a185dae6b90d2218</anchor>
       <arglist>[13]</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SpeakerMappings::VstSpeakerConfigurationHolder</name>
+    <filename>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VstSpeakerConfigurationHolder</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>afff7afa7723cefab63d92760a903872c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VstSpeakerConfigurationHolder</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a1bc2eeedad1cd72ee843cf4fa8b4127a</anchor>
+      <arglist>(const VstSpeakerConfiguration &amp;vstConfig)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VstSpeakerConfigurationHolder</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a0018bd297769e7cab2720f6598b4f307</anchor>
+      <arglist>(const VstSpeakerConfigurationHolder &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VstSpeakerConfigurationHolder</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a1448b76a86db99435cdc57b811a58cb4</anchor>
+      <arglist>(VstSpeakerConfigurationHolder &amp;&amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VstSpeakerConfigurationHolder</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>acb8c4e917f6d2d0bb62c5a95dbba85d5</anchor>
+      <arglist>(const AudioChannelSet &amp;channels)</arglist>
+    </member>
+    <member kind="function">
+      <type>VstSpeakerConfigurationHolder &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a6761d4d0387e0e7433a000da801198f4</anchor>
+      <arglist>(const VstSpeakerConfigurationHolder &amp;vstConfig)</arglist>
+    </member>
+    <member kind="function">
+      <type>VstSpeakerConfigurationHolder &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a46df71002891b1035483c54c1b135ed3</anchor>
+      <arglist>(const VstSpeakerConfiguration &amp;vstConfig)</arglist>
+    </member>
+    <member kind="function">
+      <type>VstSpeakerConfigurationHolder &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>a2af3407c50bf7f603deaf8097068b2c0</anchor>
+      <arglist>(VstSpeakerConfigurationHolder &amp;&amp;vstConfig)</arglist>
+    </member>
+    <member kind="function">
+      <type>const VstSpeakerConfiguration &amp;</type>
+      <name>get</name>
+      <anchorfile>classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html</anchorfile>
+      <anchor>afff27f2f2a4ee8b79c56c89480b4a777</anchor>
+      <arglist>() const </arglist>
     </member>
   </compound>
   <compound kind="class">

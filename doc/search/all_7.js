@@ -258,6 +258,7 @@ var searchData=
   ['heapblock_3c_20valuetree_3a_3alistener_20_2a_20_3e',['HeapBlock&lt; ValueTree::Listener * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20variable_20_3e',['HeapBlock&lt; Variable &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20void_20_2a_20_3e',['HeapBlock&lt; void * &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20vstspeakerconfiguration_20_3e',['HeapBlock&lt; VstSpeakerConfiguration &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20weakreference_3c_20component_20_3e_20_3e',['HeapBlock&lt; WeakReference&lt; Component &gt; &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20zipentryholder_20_2a_20_3e',['HeapBlock&lt; ZipEntryHolder * &gt;',['../classHeapBlock.html',1,'']]],
   ['height',['height',['../classImage_1_1BitmapData.html#ac81ba5621e83a0bc7d090bf2a17dcc8a',1,'Image::BitmapData::height()'],['../classImagePixelData.html#af792076cc5a5339766f1efb20592943c',1,'ImagePixelData::height()'],['../classFlexItem.html#ab3c3e66c4869d3a05ecdf7ae8eaf3ef1',1,'FlexItem::height()'],['../structRelativeCoordinate_1_1Strings.html#a35375bd34335440a8b494eeb1fddf99d',1,'RelativeCoordinate::Strings::height()'],['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65baeb31efdb32a2c853ec60f5ad453afbdd',1,'RelativeCoordinate::StandardStrings::height()']]],
