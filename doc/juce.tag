@@ -30103,8 +30103,8 @@
       <type>void</type>
       <name>setBoundsForComponent</name>
       <anchorfile>classComponentBoundsConstrainer.html</anchorfile>
-      <anchor>afaf4fe2f6d2002463fce84ebdefc8db1</anchor>
-      <arglist>(Component *component, const Rectangle&lt; int &gt; &amp;bounds, bool isStretchingTop, bool isStretchingLeft, bool isStretchingBottom, bool isStretchingRight)</arglist>
+      <anchor>ad342bd6b985c77e3adb7dcdc92ddc672</anchor>
+      <arglist>(Component *component, Rectangle&lt; int &gt; bounds, bool isStretchingTop, bool isStretchingLeft, bool isStretchingBottom, bool isStretchingRight)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -30117,8 +30117,8 @@
       <type>virtual void</type>
       <name>applyBoundsToComponent</name>
       <anchorfile>classComponentBoundsConstrainer.html</anchorfile>
-      <anchor>a064cdd9798ea6a06c774fc9c554a8214</anchor>
-      <arglist>(Component *component, const Rectangle&lt; int &gt; &amp;bounds)</arglist>
+      <anchor>a7591fbbe7013d71122afcd42976a0cec</anchor>
+      <arglist>(Component &amp;, Rectangle&lt; int &gt; bounds)</arglist>
     </member>
   </compound>
   <compound kind="class">

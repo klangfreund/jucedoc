@@ -206,7 +206,7 @@ var searchData=
   ['appliestonote',['appliesToNote',['../classSynthesiserSound.html#abc192aba46964c8539206db1e6f6f747',1,'SynthesiserSound::appliesToNote()'],['../classSamplerSound.html#ac579ceea6ee78e6dae8026b4b9b33038',1,'SamplerSound::appliesToNote()']]],
   ['apply',['apply',['../classRelativeCoordinatePositionerBase.html#ade8880abbddebcb48ee7e113902ee40a',1,'RelativeCoordinatePositionerBase']]],
   ['applyblacklistingsfromdeadmanspedal',['applyBlacklistingsFromDeadMansPedal',['../classPluginDirectoryScanner.html#a728d0462d34e67643a0d2a79e2c19f94',1,'PluginDirectoryScanner']]],
-  ['applyboundstocomponent',['applyBoundsToComponent',['../classComponentBoundsConstrainer.html#a064cdd9798ea6a06c774fc9c554a8214',1,'ComponentBoundsConstrainer']]],
+  ['applyboundstocomponent',['applyBoundsToComponent',['../classComponentBoundsConstrainer.html#a7591fbbe7013d71122afcd42976a0cec',1,'ComponentBoundsConstrainer']]],
   ['applychange',['applyChange',['../classValueTreeSynchroniser.html#a987b026099f040bd1fb85a5ee1431fe3',1,'ValueTreeSynchroniser']]],
   ['applychanges',['applyChanges',['../classCodeDocument.html#a6ce285d0b51126f464791407ea9b3e60',1,'CodeDocument']]],
   ['applyeffect',['applyEffect',['../classDropShadowEffect.html#aeee3f19864372e9c6ef4623df4e5a686',1,'DropShadowEffect::applyEffect()'],['../classGlowEffect.html#a1addc87c44d02d6c864dd8d7c1cadf35',1,'GlowEffect::applyEffect()'],['../classImageEffectFilter.html#afcdcb809146e0774b8d7ca24591771ad',1,'ImageEffectFilter::applyEffect()']]],
