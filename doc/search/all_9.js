@@ -13,7 +13,7 @@ var searchData=
   ['jobstatus',['JobStatus',['../classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3',1,'ThreadPoolJob']]],
   ['joinintostring',['joinIntoString',['../classStringArray.html#a53bea36f7d9663c8b3cf69619ae5462b',1,'StringArray']]],
   ['joinmulticast',['joinMulticast',['../classDatagramSocket.html#a2b2bed0e6b34949f0e0cdaa9c0a96f62',1,'DatagramSocket']]],
-  ['jointstyle',['JointStyle',['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8',1,'PathStrokeType::JointStyle()'],['../classDrawableShape_1_1FillAndStrokeState.html#adf99bd7ed361ea8c43d293ef7f868d3e',1,'DrawableShape::FillAndStrokeState::jointStyle()']]],
+  ['jointstyle',['jointStyle',['../classDrawableShape_1_1FillAndStrokeState.html#adf99bd7ed361ea8c43d293ef7f868d3e',1,'DrawableShape::FillAndStrokeState::jointStyle()'],['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8',1,'PathStrokeType::JointStyle()']]],
   ['jpegimageformat',['JPEGImageFormat',['../classJPEGImageFormat.html',1,'JPEGImageFormat'],['../classJPEGImageFormat.html#a3e000b303a2a2d90dca7be44ace102c3',1,'JPEGImageFormat::JPEGImageFormat()']]],
   ['json',['JSON',['../classJSON.html',1,'']]],
   ['juce',['juce',['../namespacejuce.html',1,'']]],
@@ -590,7 +590,7 @@ var searchData=
   ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html',1,'JUCESplashScreen'],['../classJUCESplashScreen.html#ace2db6a7a5b1219e3ec5163978242495',1,'JUCESplashScreen::JUCESplashScreen()']]],
   ['jucevstinterfaceidentifier',['juceVstInterfaceIdentifier',['../juce__VSTInterface_8h.html#aa0141325b2a7d73302b4415761d632fc',1,'juce_VSTInterface.h']]],
   ['jucevstinterfaceversion',['juceVstInterfaceVersion',['../juce__VSTInterface_8h.html#a60c58657ea50f8347da505110bed0475',1,'juce_VSTInterface.h']]],
-  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept']]],
+  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()']]],
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]]

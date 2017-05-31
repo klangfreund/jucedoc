@@ -90,7 +90,7 @@ var searchData=
   ['changetogglebuttonwidthtofittext',['changeToggleButtonWidthToFitText',['../structButton_1_1LookAndFeelMethods.html#a78ae999a958a78a087035752fdf4f9d3',1,'Button::LookAndFeelMethods::changeToggleButtonWidthToFitText()'],['../classLookAndFeel__V2.html#a36348746bdedec3abbe65a4c9c4c29e6',1,'LookAndFeel_V2::changeToggleButtonWidthToFitText()']]],
   ['changewidthtofittext',['changeWidthToFitText',['../classHyperlinkButton.html#adab11697af1e6c4c886537e03cedd8ef',1,'HyperlinkButton::changeWidthToFitText()'],['../classTextButton.html#a989aa5c523c2af3ed0ede9e006d73d6f',1,'TextButton::changeWidthToFitText()'],['../classTextButton.html#a671c82560fd59c6f0ff846c4970d9cdc',1,'TextButton::changeWidthToFitText(int newHeight)'],['../classToggleButton.html#a5b2996c62b836a05bada17312ac7361c',1,'ToggleButton::changeWidthToFitText()']]],
   ['channel',['channel',['../structMidiRPNMessage.html#a06144aeca5c4cd011745881564329d16',1,'MidiRPNMessage']]],
-  ['channelconfiguration',['channelConfiguration',['../classStandalonePluginHolder.html#ac08ef3e462b625a461d54acb41071740',1,'StandalonePluginHolder']]],
+  ['channelconfiguration',['channelConfiguration',['../classStandalonePluginHolder.html#aad5c101e55ab3e2f6f381f66f3889ad9',1,'StandalonePluginHolder']]],
   ['channelpressurechange',['channelPressureChange',['../classMidiMessage.html#af3100fb66d5fc20c8c0d458c51ddb309',1,'MidiMessage']]],
   ['channelpressurechanged',['channelPressureChanged',['../classSynthesiserVoice.html#a5ec285dd9db207415f64ac83efe86859',1,'SynthesiserVoice']]],
   ['channelremapper',['ChannelRemapper',['../classAudioUnitHelpers_1_1ChannelRemapper.html#a42e3fbc35743773e6b2a1550e45ad167',1,'AudioUnitHelpers::ChannelRemapper']]],

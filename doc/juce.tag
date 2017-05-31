@@ -4918,6 +4918,7 @@
     <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/Standalone/</path>
     <filename>juce__StandaloneFilterWindow_8h</filename>
     <class kind="class">StandalonePluginHolder</class>
+    <class kind="struct">StandalonePluginHolder::PluginInOuts</class>
     <class kind="class">StandaloneFilterWindow</class>
   </compound>
   <compound kind="file">
@@ -77568,12 +77569,19 @@
     <name>StandaloneFilterWindow</name>
     <filename>classStandaloneFilterWindow.html</filename>
     <base>DocumentWindow</base>
+    <member kind="typedef">
+      <type>StandalonePluginHolder::PluginInOuts</type>
+      <name>PluginInOuts</name>
+      <anchorfile>classStandaloneFilterWindow.html</anchorfile>
+      <anchor>a6c10ebbc7b2013247891e3c37a641f87</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>StandaloneFilterWindow</name>
       <anchorfile>classStandaloneFilterWindow.html</anchorfile>
-      <anchor>aca24df652dc5162324d0b5eb74624555</anchor>
-      <arglist>(const String &amp;title, Colour backgroundColour, PropertySet *settingsToUse, bool takeOwnershipOfSettings, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const std::initializer_list&lt; const short[2]&gt; &amp;constrainToConfiguration={})</arglist>
+      <anchor>a6031a5b2f6b2f041f7ca8de3343eec7a</anchor>
+      <arglist>(const String &amp;title, Colour backgroundColour, PropertySet *settingsToUse, bool takeOwnershipOfSettings, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const Array&lt; PluginInOuts &gt; &amp;constrainToConfiguration=Array&lt; PluginInOuts &gt;())</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -77658,12 +77666,13 @@
     <filename>classStandalonePluginHolder.html</filename>
     <base protection="private">AudioIODeviceCallback</base>
     <base protection="private">Timer</base>
+    <class kind="struct">StandalonePluginHolder::PluginInOuts</class>
     <member kind="function">
       <type></type>
       <name>StandalonePluginHolder</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
-      <anchor>a9ac2dc852699cd1e189d053c2c8016d9</anchor>
-      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const std::initializer_list&lt; const short[2]&gt; &amp;constrainToConfiguration={})</arglist>
+      <anchor>a3724188bbb84e04e70ebff2493d6bc1e</anchor>
+      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const Array&lt; PluginInOuts &gt; &amp;constrainToConfiguration=Array&lt; PluginInOuts &gt;())</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -77834,10 +77843,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>std::initializer_list&lt; const short[2]&gt;</type>
+      <type>Array&lt; PluginInOuts &gt;</type>
       <name>channelConfiguration</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
-      <anchor>ac08ef3e462b625a461d54acb41071740</anchor>
+      <anchor>aad5c101e55ab3e2f6f381f66f3889ad9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -77866,6 +77875,24 @@
       <name>lastMidiDevices</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
       <anchor>a6495b714b1b911b9352da94e282efa2d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>StandalonePluginHolder::PluginInOuts</name>
+    <filename>structStandalonePluginHolder_1_1PluginInOuts.html</filename>
+    <member kind="variable">
+      <type>short</type>
+      <name>numIns</name>
+      <anchorfile>structStandalonePluginHolder_1_1PluginInOuts.html</anchorfile>
+      <anchor>a2c18cb6876bc952ba5df80df92500c34</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>short</type>
+      <name>numOuts</name>
+      <anchorfile>structStandalonePluginHolder_1_1PluginInOuts.html</anchorfile>
+      <anchor>ae8defe449815bf6e651a92944240f6c0</anchor>
       <arglist></arglist>
     </member>
   </compound>

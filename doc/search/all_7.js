@@ -222,6 +222,7 @@ var searchData=
   ['heapblock_3c_20relativepointpath_3a_3aelementbase_20_2a_20_3e',['HeapBlock&lt; RelativePointPath::ElementBase * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20scrollbar_3a_3alistener_20_2a_20_3e',['HeapBlock&lt; ScrollBar::Listener * &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20selectableitemtype_20_3e',['HeapBlock&lt; SelectableItemType &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20standalonepluginholder_3a_3aplugininouts_20_3e',['HeapBlock&lt; StandalonePluginHolder::PluginInOuts &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20statementptr_20_3e',['HeapBlock&lt; StatementPtr &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20steinberg_3a_3avst_3a_3aevent_20_3e',['HeapBlock&lt; Steinberg::Vst::Event &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20string_20_3e',['HeapBlock&lt; String &gt;',['../classHeapBlock.html',1,'']]],
