@@ -63148,6 +63148,13 @@
       <anchor>a3e204724fd78bbc272023525226caad7</anchor>
       <arglist></arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend void</type>
+      <name>componentPeerAboutToChange</name>
+      <anchorfile>classOpenGLContext.html</anchorfile>
+      <anchor>a53fd33df415dbae93694d04bc927b087</anchor>
+      <arglist>(ComponentPeer &amp;, bool)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>OpenGLFrameBuffer</name>
