@@ -16892,6 +16892,13 @@
       <anchor>a71affad7782adb55b183d6d4d0853253</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual StringArray</type>
+      <name>getAlternateDisplayNames</name>
+      <anchorfile>classAudioProcessor.html</anchorfile>
+      <anchor>a3c5110061b44b0121036c7ac91aa176c</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>prepareToPlay</name>
@@ -83022,8 +83029,8 @@
       <type>void</type>
       <name>applyFontToAllText</name>
       <anchorfile>classTextEditor.html</anchorfile>
-      <anchor>acaea31f07a346e26627cf2744f2a702f</anchor>
-      <arglist>(const Font &amp;newFont)</arglist>
+      <anchor>af446cfc2b48595e3c724d34ae4b0082e</anchor>
+      <arglist>(const Font &amp;newFont, bool changeCurrentFont=true)</arglist>
     </member>
     <member kind="function">
       <type>const Font &amp;</type>
@@ -83031,6 +83038,13 @@
       <anchorfile>classTextEditor.html</anchorfile>
       <anchor>ab7bf7ea7c0c2b72b0382e12a02c9ea92</anchor>
       <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>applyColourToAllText</name>
+      <anchorfile>classTextEditor.html</anchorfile>
+      <anchor>a9c4c1cceaadc0ce0531789c39a2715c2</anchor>
+      <arglist>(const Colour &amp;newColour, bool changeCurrentTextColour=true)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

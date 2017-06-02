@@ -226,12 +226,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92819cc8faf1b9755d23c3757948f1c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#a92819cc8faf1b9755d23c3757948f1c7">setFont</a> (const <a class="el" href="classFont.html">Font</a> &amp;newFont)</td></tr>
 <tr class="memdesc:a92819cc8faf1b9755d23c3757948f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font to use for newly added text.  <a href="#a92819cc8faf1b9755d23c3757948f1c7">More...</a><br/></td></tr>
 <tr class="separator:a92819cc8faf1b9755d23c3757948f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaea31f07a346e26627cf2744f2a702f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#acaea31f07a346e26627cf2744f2a702f">applyFontToAllText</a> (const <a class="el" href="classFont.html">Font</a> &amp;newFont)</td></tr>
-<tr class="memdesc:acaea31f07a346e26627cf2744f2a702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a font to all the text in the editor.  <a href="#acaea31f07a346e26627cf2744f2a702f">More...</a><br/></td></tr>
-<tr class="separator:acaea31f07a346e26627cf2744f2a702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af446cfc2b48595e3c724d34ae4b0082e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#af446cfc2b48595e3c724d34ae4b0082e">applyFontToAllText</a> (const <a class="el" href="classFont.html">Font</a> &amp;newFont, bool changeCurrentFont=true)</td></tr>
+<tr class="memdesc:af446cfc2b48595e3c724d34ae4b0082e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a font to all the text in the editor.  <a href="#af446cfc2b48595e3c724d34ae4b0082e">More...</a><br/></td></tr>
+<tr class="separator:af446cfc2b48595e3c724d34ae4b0082e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bf7ea7c0c2b72b0382e12a02c9ea92"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classFont.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#ab7bf7ea7c0c2b72b0382e12a02c9ea92">getFont</a> () const noexcept</td></tr>
 <tr class="memdesc:ab7bf7ea7c0c2b72b0382e12a02c9ea92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font that's currently being used for new text.  <a href="#ab7bf7ea7c0c2b72b0382e12a02c9ea92">More...</a><br/></td></tr>
 <tr class="separator:ab7bf7ea7c0c2b72b0382e12a02c9ea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4c1cceaadc0ce0531789c39a2715c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#a9c4c1cceaadc0ce0531789c39a2715c2">applyColourToAllText</a> (const <a class="el" href="classColour.html">Colour</a> &amp;newColour, bool changeCurrentTextColour=true)</td></tr>
+<tr class="memdesc:a9c4c1cceaadc0ce0531789c39a2715c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a colour to all the text in the editor.  <a href="#a9c4c1cceaadc0ce0531789c39a2715c2">More...</a><br/></td></tr>
+<tr class="separator:a9c4c1cceaadc0ce0531789c39a2715c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12de680fb05a19ca5d20107787ec73cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor.html#a12de680fb05a19ca5d20107787ec73cf">setSelectAllWhenFocused</a> (bool shouldSelectAll)</td></tr>
 <tr class="memdesc:a12de680fb05a19ca5d20107787ec73cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true, focusing on the editor will highlight all its text.  <a href="#a12de680fb05a19ca5d20107787ec73cf">More...</a><br/></td></tr>
 <tr class="separator:a12de680fb05a19ca5d20107787ec73cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1037,7 +1040,7 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="aa805220923c93cd808a92fff0e3fb71daf840969fe4a492f0e5fbe30f5948c8ca"></a>textColourId</em>&#160;</td><td class="fielddoc">
 <p>The colour that will be used when text is added to the editor. </p>
-<p>Note that because the editor can contain multiple colours, calling this method won't change the colour of existing text - to do that, call <a class="el" href="classTextEditor.html#acaea31f07a346e26627cf2744f2a702f" title="Applies a font to all the text in the editor. ">applyFontToAllText()</a> after calling this method. </p>
+<p>Note that because the editor can contain multiple colours, calling this method won't change the colour of existing text - to do that, use the <a class="el" href="classTextEditor.html#a9c4c1cceaadc0ce0531789c39a2715c2" title="Applies a colour to all the text in the editor. ">applyColourToAllText()</a> method </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="aa805220923c93cd808a92fff0e3fb71da6308b1f46eba9b07247588f1d313ae09"></a>highlightColourId</em>&#160;</td><td class="fielddoc">
 <p>The colour with which to fill the background of highlighted sections of the text - this can be transparent if you don't want to show any highlighting. </p>
@@ -1543,12 +1546,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the font to use for newly added text. </p>
-<p>This will change the font that will be used next time any text is added or entered into the editor. It won't change the font of any existing text - to do that, use <a class="el" href="classTextEditor.html#acaea31f07a346e26627cf2744f2a702f" title="Applies a font to all the text in the editor. ">applyFontToAllText()</a> instead.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTextEditor.html#acaea31f07a346e26627cf2744f2a702f" title="Applies a font to all the text in the editor. ">applyFontToAllText</a> </dd></dl>
+<p>This will change the font that will be used next time any text is added or entered into the editor. It won't change the font of any existing text - to do that, use <a class="el" href="classTextEditor.html#af446cfc2b48595e3c724d34ae4b0082e" title="Applies a font to all the text in the editor. ">applyFontToAllText()</a> instead.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTextEditor.html#af446cfc2b48595e3c724d34ae4b0082e" title="Applies a font to all the text in the editor. ">applyFontToAllText</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="acaea31f07a346e26627cf2744f2a702f"></a>
+<a class="anchor" id="af446cfc2b48595e3c724d34ae4b0082e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1556,14 +1559,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void TextEditor::applyFontToAllText </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classFont.html">Font</a> &amp;&#160;</td>
-          <td class="paramname"><em>newFont</em></td><td>)</td>
+          <td class="paramname"><em>newFont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>changeCurrentFont</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Applies a font to all the text in the editor. </p>
-<p>This will also set the current font to use for any new text that's added. </p>
+<p>If the changeCurrentFont argument is true then this will also set the new font as the font to be used for any new text that's added.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTextEditor.html#a92819cc8faf1b9755d23c3757948f1c7" title="Sets the font to use for newly added text. ">setFont</a> </dd></dl>
 
 </div>
@@ -1591,6 +1604,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the font that's currently being used for new text. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTextEditor.html#a92819cc8faf1b9755d23c3757948f1c7" title="Sets the font to use for newly added text. ">setFont</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c4c1cceaadc0ce0531789c39a2715c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextEditor::applyColourToAllText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classColour.html">Colour</a> &amp;&#160;</td>
+          <td class="paramname"><em>newColour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>changeCurrentTextColour</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a colour to all the text in the editor. </p>
+<p>If the changeCurrentTextColour argument is true then this will also set the new colour as the colour to be used for any new text that's added. </p>
 
 </div>
 </div>
@@ -3475,7 +3517,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 1 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 2 2017 20:00:45 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
