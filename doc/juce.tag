@@ -84198,6 +84198,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setInterestedInFileDrag</name>
+      <anchorfile>classTextPropertyComponent.html</anchorfile>
+      <anchor>a55f9025aaa41698b8a49ebee10438937</anchor>
+      <arglist>(bool isInterested)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>refresh</name>
       <anchorfile>classTextPropertyComponent.html</anchorfile>
       <anchor>a2068f72dd3702dc23127b06b440185ef</anchor>
