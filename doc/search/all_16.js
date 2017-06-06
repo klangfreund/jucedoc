@@ -176,6 +176,7 @@ var searchData=
   ['writedouble',['writeDouble',['../classOutputStream.html#af48e3b3934bf5b4624dcbe00989581a0',1,'OutputStream']]],
   ['writedoublebigendian',['writeDoubleBigEndian',['../classOutputStream.html#a03a42d49d4a1aba31b38a2069cbe18b0',1,'OutputStream']]],
   ['writeescapechars',['writeEscapeChars',['../structCppTokeniserFunctions.html#aec2241fa18131c4d828d1a953f942b32',1,'CppTokeniserFunctions']]],
+  ['writeexternalstorage',['writeExternalStorage',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a4d086e9600ef7245a13bb7dd3c6d0687',1,'RuntimePermissions']]],
   ['writefloat',['writeFloat',['../classOutputStream.html#a0a1d967388deb957e573a8bfa0aede56',1,'OutputStream']]],
   ['writefloatbigendian',['writeFloatBigEndian',['../classOutputStream.html#a84cb925582b87dc5c1f5e6d569a74208',1,'OutputStream']]],
   ['writefromaudioreader',['writeFromAudioReader',['../classAudioFormatWriter.html#a3a691c94e9609383c915af71cbf760db',1,'AudioFormatWriter']]],

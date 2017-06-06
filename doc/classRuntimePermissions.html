@@ -96,7 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae35d63b8c00dab34a1546fd1eef90878"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878">PermissionID</a> { <a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535">recordAudio</a> = 1, 
-<a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959">bluetoothMidi</a> = 2
+<a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959">bluetoothMidi</a> = 2, 
+<a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a9ff6c2449be1b1755540bce8f20dc1ce">readExternalStorage</a> = 3, 
+<a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a4d086e9600ef7245a13bb7dd3c6d0687">writeExternalStorage</a> = 4
  }</td></tr>
 <tr class="separator:ae35d63b8c00dab34a1546fd1eef90878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6138db5251bc8067e85154b32627d1ab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(bool)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuntimePermissions.html#a6138db5251bc8067e85154b32627d1ab">Callback</a></td></tr>
@@ -164,6 +166,12 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959"></a>bluetoothMidi</em>&#160;</td><td class="fielddoc">
 <p>Permission to scan for and pair to Bluetooth MIDI devices (required on Android). </p>
 <p>You need to request this before calling <a class="el" href="classBluetoothMidiDevicePairingDialogue.html#a368ee42f0c472a93a1654643ee308ead" title="Opens the Bluetooth MIDI pairing dialogue, if it is available. ">BluetoothMidiDevicePairingDialogue::open()</a>, otherwise no devices will be found. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae35d63b8c00dab34a1546fd1eef90878a9ff6c2449be1b1755540bce8f20dc1ce"></a>readExternalStorage</em>&#160;</td><td class="fielddoc">
+<p>Permission to read from external storage such as SD cards. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae35d63b8c00dab34a1546fd1eef90878a4d086e9600ef7245a13bb7dd3c6d0687"></a>writeExternalStorage</em>&#160;</td><td class="fielddoc">
+<p>Permission to write to external storage such as SD cards. </p>
 </td></tr>
 </table>
 
@@ -275,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 5 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 6 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

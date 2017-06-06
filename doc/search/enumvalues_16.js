@@ -50,5 +50,6 @@ var searchData=
   ['wrappertype_5fvst3',['wrapperType_VST3',['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcfac12c7f266e9f234367307597b332fa10',1,'AudioProcessor']]],
   ['wrapreverse',['wrapReverse',['../classFlexBox.html#a252f351ef4317467a58ad25922f64e63ab12e4e95d6f64f54dc5bb5de8dbe2d49',1,'FlexBox']]],
   ['writablediskpresent',['writableDiskPresent',['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846ab2074d30eb1882e6cfc92b6f4ff24c31',1,'AudioCDBurner']]],
+  ['writeexternalstorage',['writeExternalStorage',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a4d086e9600ef7245a13bb7dd3c6d0687',1,'RuntimePermissions']]],
   ['writeonly',['writeOnly',['../classImage_1_1BitmapData.html#aef68f9fb2440dd6a56a3c0b8c8b6fc13a5cf46bf61ad8fd0449364d4e0a0eeac7',1,'Image::BitmapData']]]
 ];

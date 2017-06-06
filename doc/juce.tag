@@ -33744,21 +33744,21 @@
       <type>void</type>
       <name>sendDoubleClickMessage</name>
       <anchorfile>classDirectoryContentsDisplayComponent.html</anchorfile>
-      <anchor>ad07df8fccc59a5e38bb6a8604eacb8a7</anchor>
-      <arglist>(const File &amp;file)</arglist>
+      <anchor>a4cc8b203ba6f3a61c2d7239ddfbae3cc</anchor>
+      <arglist>(const File &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sendMouseClickMessage</name>
       <anchorfile>classDirectoryContentsDisplayComponent.html</anchorfile>
-      <anchor>ade19bf62883c81f828eaac675fe6d6e3</anchor>
-      <arglist>(const File &amp;file, const MouseEvent &amp;e)</arglist>
+      <anchor>a73caf925b79c9617793d45d22e120b89</anchor>
+      <arglist>(const File &amp;, const MouseEvent &amp;)</arglist>
     </member>
-    <member kind="variable" protection="protected">
+    <member kind="variable">
       <type>DirectoryContentsList &amp;</type>
-      <name>fileList</name>
+      <name>directoryContentsList</name>
       <anchorfile>classDirectoryContentsDisplayComponent.html</anchorfile>
-      <anchor>a5107067c830054515cd287dc3db2bc45</anchor>
+      <anchor>ac1eef63c05c6a3dc42de447ace64a3dd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -74664,6 +74664,20 @@
       <name>bluetoothMidi</name>
       <anchorfile>classRuntimePermissions.html</anchorfile>
       <anchor>ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>readExternalStorage</name>
+      <anchorfile>classRuntimePermissions.html</anchorfile>
+      <anchor>ae35d63b8c00dab34a1546fd1eef90878a9ff6c2449be1b1755540bce8f20dc1ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>writeExternalStorage</name>
+      <anchorfile>classRuntimePermissions.html</anchorfile>
+      <anchor>ae35d63b8c00dab34a1546fd1eef90878a4d086e9600ef7245a13bb7dd3c6d0687</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">

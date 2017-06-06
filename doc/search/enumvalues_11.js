@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readexternalstorage',['readExternalStorage',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a9ff6c2449be1b1755540bce8f20dc1ce',1,'RuntimePermissions']]],
   ['readonly',['readOnly',['../classMemoryMappedFile.html#a1fb6563237aaf7bd02f4b30f13b0e2d0adcfba7d8c4095759d308001cd11cbdc4',1,'MemoryMappedFile::readOnly()'],['../classImage_1_1BitmapData.html#aef68f9fb2440dd6a56a3c0b8c8b6fc13a97c870458227b8f45385b81515b25534',1,'Image::BitmapData::readOnly()']]],
   ['readonlydiskpresent',['readOnlyDiskPresent',['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846a5c5dd3ef71603fe3b53c41fda2690db9',1,'AudioCDBurner']]],
   ['readonlyinkeyeditor',['readOnlyInKeyEditor',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72a57e236658a383bd74c76fadfe6c49370',1,'ApplicationCommandInfo']]],
