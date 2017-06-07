@@ -39,6 +39,7 @@ var searchData=
   ['juce_5flog_5fcurrent_5fassertion',['JUCE_LOG_CURRENT_ASSERTION',['../juce__PlatformDefs_8h.html#a5e6590da0ba1d0c109e96560289f5449',1,'juce_PlatformDefs.h']]],
   ['juce_5fmajor_5fversion',['JUCE_MAJOR_VERSION',['../juce__StandardHeader_8h.html#ad39afa9c8302295c83a3c431c553bc8b',1,'juce_StandardHeader.h']]],
   ['juce_5fminor_5fversion',['JUCE_MINOR_VERSION',['../juce__StandardHeader_8h.html#a2a583ff83063cc1e7f9abeb35a21dff1',1,'juce_StandardHeader.h']]],
+  ['juce_5fmultichar_5fconstant',['JUCE_MULTICHAR_CONSTANT',['../juce__VSTInterface_8h.html#ae8dbd3d8e927eb86e9c04fe68cf2df3c',1,'juce_VSTInterface.h']]],
   ['juce_5fnative_5fwchar_5fis_5futf16',['JUCE_NATIVE_WCHAR_IS_UTF16',['../juce__CharacterFunctions_8h.html#a8472d1d49a6a5a7692e2ec94e17ce63c',1,'juce_CharacterFunctions.h']]],
   ['juce_5fnative_5fwchar_5fis_5futf32',['JUCE_NATIVE_WCHAR_IS_UTF32',['../juce__CharacterFunctions_8h.html#a32ffe19f7697fad5b1febdce3b5fab4d',1,'juce_CharacterFunctions.h']]],
   ['juce_5fnative_5fwchar_5fis_5futf8',['JUCE_NATIVE_WCHAR_IS_UTF8',['../juce__CharacterFunctions_8h.html#adee5e9cf98ee0bd0a2e5a91fb479f640',1,'juce_CharacterFunctions.h']]],

@@ -70,6 +70,8 @@ var searchData=
   ['plusbutton',['plusButton',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a0a1a0de82c6d765607247bf97fb9f106',1,'AppleRemoteDevice']]],
   ['pointinghandcursor',['PointingHandCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a8d9a75ed7f8d15943c53fe50d584c250',1,'MouseCursor']]],
   ['popupmenuclickmodifier',['popupMenuClickModifier',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba95a2100e9a4b1a5786b253c065936627',1,'ModifierKeys']]],
+  ['presonussetcontentscalefactor',['presonusSetContentScaleFactor',['../juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920ae2b6696e22eee1fd763f4c9c8db107e7',1,'juce_VSTInterface.h']]],
+  ['presonusvendorid',['presonusVendorID',['../juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920a346ce709a30d935dcb657b66fe1a4d81',1,'juce_VSTInterface.h']]],
   ['programeventmessage',['programEventMessage',['../juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a2c17076f692e60a1b7f19328757ffaa5',1,'programEventMessage():&#160;juce_BlocksProtocolDefinitions.h'],['../juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c',1,'programEventMessage():&#160;juce_BlocksProtocolDefinitions.h'],['../juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c',1,'programEventMessage():&#160;juce_BlocksProtocolDefinitions.h']]],
   ['putnumbersinbrackets',['putNumbersInBrackets',['../classTemporaryFile.html#af04f4ef2ea1bee0b20cdb4c072442e8da756fae13005d397744383ecd04539914',1,'TemporaryFile']]]
 ];

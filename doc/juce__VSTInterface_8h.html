@@ -126,6 +126,8 @@ Macros</h2></td></tr>
 <tr class="separator:a0d02c518782f9b09f4b0f5dbc2212d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83ccabb469697b2416ffb6a7451da73f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VSTInterface_8h.html#a83ccabb469697b2416ffb6a7451da73f">VSTINTERFACECALL</a></td></tr>
 <tr class="separator:a83ccabb469697b2416ffb6a7451da73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dbd3d8e927eb86e9c04fe68cf2df3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VSTInterface_8h.html#ae8dbd3d8e927eb86e9c04fe68cf2df3c">JUCE_MULTICHAR_CONSTANT</a>(a, b, c, d)&#160;&#160;&#160;(a | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) b) &lt;&lt; 8) | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) c) &lt;&lt; 16) | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) d) &lt;&lt; 24))</td></tr>
+<tr class="separator:ae8dbd3d8e927eb86e9c04fe68cf2df3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -441,6 +443,10 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:aff56bb041ec3487b43c6405dd49ed6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c513bbee68b3e363fa96be28c86f920"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920">PresonusExtensionConstants</a> { <a class="el" href="juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920a346ce709a30d935dcb657b66fe1a4d81">presonusVendorID</a> = JUCE_MULTICHAR_CONSTANT ('P', 'r', 'e', 'S'), 
+<a class="el" href="juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920ae2b6696e22eee1fd763f4c9c8db107e7">presonusSetContentScaleFactor</a> = JUCE_MULTICHAR_CONSTANT ('A', 'e', 'C', 's')
+ }</td></tr>
+<tr class="separator:a4c513bbee68b3e363fa96be28c86f920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -473,6 +479,44 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define VSTINTERFACECALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8dbd3d8e927eb86e9c04fe68cf2df3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_MULTICHAR_CONSTANT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">d&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(a | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) b) &lt;&lt; 8) | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) c) &lt;&lt; 16) | (((<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>) d) &lt;&lt; 24))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1139,6 +1183,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4c513bbee68b3e363fa96be28c86f920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="juce__VSTInterface_8h.html#a4c513bbee68b3e363fa96be28c86f920">PresonusExtensionConstants</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4c513bbee68b3e363fa96be28c86f920a346ce709a30d935dcb657b66fe1a4d81"></a>presonusVendorID</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4c513bbee68b3e363fa96be28c86f920ae2b6696e22eee1fd763f4c9c8db107e7"></a>presonusSetContentScaleFactor</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ae6eaae971f9919553303c8c6a449fa5a"></a>
 <div class="memitem">
@@ -1185,7 +1247,7 @@ Variables</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 6 2017 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

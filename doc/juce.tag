@@ -6130,6 +6130,13 @@
       <anchor>a83ccabb469697b2416ffb6a7451da73f</anchor>
       <arglist></arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_MULTICHAR_CONSTANT</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>ae8dbd3d8e927eb86e9c04fe68cf2df3c</anchor>
+      <arglist>(a, b, c, d)</arglist>
+    </member>
     <member kind="typedef">
       <type>int32</type>
       <name>op</name>
@@ -7710,6 +7717,27 @@
       <name>vstSpeakerConfigTypeLRCLfeLsRsTflTfcTfrTrlTrrLfe2</name>
       <anchorfile>juce__VSTInterface_8h.html</anchorfile>
       <anchor>aff56bb041ec3487b43c6405dd49ed6bda0278ac52fce09124bf87afb34c2df883</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>PresonusExtensionConstants</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a4c513bbee68b3e363fa96be28c86f920</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>presonusVendorID</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a4c513bbee68b3e363fa96be28c86f920a346ce709a30d935dcb657b66fe1a4d81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>presonusSetContentScaleFactor</name>
+      <anchorfile>juce__VSTInterface_8h.html</anchorfile>
+      <anchor>a4c513bbee68b3e363fa96be28c86f920ae2b6696e22eee1fd763f4c9c8db107e7</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -18104,6 +18132,13 @@
       <anchorfile>classAudioProcessorEditor.html</anchorfile>
       <anchor>a5f1501ac7caa5a12cab2d05bd5d020fe</anchor>
       <arglist>(Component &amp;)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setScaleFactor</name>
+      <anchorfile>classAudioProcessorEditor.html</anchorfile>
+      <anchor>a2b80bdfc3ba742fed44fe834a8293eb9</anchor>
+      <arglist>(float newScale)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -77699,8 +77734,15 @@
       <type></type>
       <name>StandalonePluginHolder</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
-      <anchor>a3724188bbb84e04e70ebff2493d6bc1e</anchor>
-      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const Array&lt; PluginInOuts &gt; &amp;constrainToConfiguration=Array&lt; PluginInOuts &gt;())</arglist>
+      <anchor>adc3e91fc2c769c22001746ab2d8d248c</anchor>
+      <arglist>(PropertySet *settingsToUse, bool takeOwnershipOfSettings=true, const String &amp;preferredDefaultDeviceName=String(), const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions=nullptr, const Array&lt; PluginInOuts &gt; &amp;channels=Array&lt; PluginInOuts &gt;())</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>init</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>a012f86edb9487366c49a4378716bf775</anchor>
+      <arglist>(bool enableAudioInput, const String &amp;preferredDefaultDeviceName)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -77797,8 +77839,8 @@
       <type>void</type>
       <name>reloadAudioDeviceState</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
-      <anchor>a0b2e109349c027391f470318bd4d23ba</anchor>
-      <arglist>(const String &amp;preferredDefaultDeviceName, const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions)</arglist>
+      <anchor>a0e01aecaf781b507c74ed9d1c341b2d9</anchor>
+      <arglist>(bool enableAudioInput, const String &amp;preferredDefaultDeviceName, const AudioDeviceManager::AudioDeviceSetup *preferredSetupOptions)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -77896,6 +77938,13 @@
       <name>emptyBuffer</name>
       <anchorfile>classStandalonePluginHolder.html</anchorfile>
       <anchor>add80ae89f130d96688aa8fac62f405bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ScopedPointer&lt; AudioDeviceManager::AudioDeviceSetup &gt;</type>
+      <name>options</name>
+      <anchorfile>classStandalonePluginHolder.html</anchorfile>
+      <anchor>af80746a4aaf71ff43e09e50a9b3fbc6c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
