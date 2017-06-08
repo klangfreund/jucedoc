@@ -234,13 +234,6 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/memory/</path>
     <filename>juce__Atomic_8h</filename>
     <class kind="class">Atomic</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_ATOMICS_MAC_LEGACY</name>
-      <anchorfile>juce__Atomic_8h.html</anchorfile>
-      <anchor>af8e994784b4febc6f040e4d8d68a4e72</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_AttributedString.h</name>
@@ -12409,6 +12402,13 @@
     <name>Atomic</name>
     <filename>classAtomic.html</filename>
     <templarg>Type</templarg>
+    <member kind="typedef">
+      <type>AtomicBase&lt; Type &gt;::DiffType</type>
+      <name>DiffType</name>
+      <anchorfile>classAtomic.html</anchorfile>
+      <anchor>a1e72933a773e5f84bac851aec9ec7b03</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>Atomic</name>
@@ -12469,22 +12469,22 @@
       <type>Type</type>
       <name>exchange</name>
       <anchorfile>classAtomic.html</anchorfile>
-      <anchor>a98405cfea37d5635bdddf47e92da81ea</anchor>
-      <arglist>(Type value) noexcept</arglist>
+      <anchor>ac224791c1725400f6cb6a37aa7b4dd7f</anchor>
+      <arglist>(Type v) noexcept</arglist>
     </member>
     <member kind="function">
       <type>Type</type>
       <name>operator+=</name>
       <anchorfile>classAtomic.html</anchorfile>
-      <anchor>ab5c7b49a22075389a3edac358c83c92e</anchor>
-      <arglist>(Type amountToAdd) noexcept</arglist>
+      <anchor>a4a7ba896941874fb59a3f128913a3aaf</anchor>
+      <arglist>(DiffType amountToAdd) noexcept</arglist>
     </member>
     <member kind="function">
       <type>Type</type>
       <name>operator-=</name>
       <anchorfile>classAtomic.html</anchorfile>
-      <anchor>af9803bc3177c75dbaf00c3a34eb3556c</anchor>
-      <arglist>(Type amountToSubtract) noexcept</arglist>
+      <anchor>a07571339cdc9cb7b5f3e92f6e7542b14</anchor>
+      <arglist>(DiffType amountToSubtract) noexcept</arglist>
     </member>
     <member kind="function">
       <type>Type</type>
@@ -12518,15 +12518,8 @@
       <type>static void</type>
       <name>memoryBarrier</name>
       <anchorfile>classAtomic.html</anchorfile>
-      <anchor>a33a7257fe866463a370c8e92a208be01</anchor>
+      <anchor>af427d87b6e491f44d6b57551815c89d5</anchor>
       <arglist>() noexcept</arglist>
-    </member>
-    <member kind="variable">
-      <type>volatile Type</type>
-      <name>value</name>
-      <anchorfile>classAtomic.html</anchorfile>
-      <anchor>a4c042c01777b1efe30266a45b7df36f4</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">

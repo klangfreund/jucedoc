@@ -50,7 +50,7 @@ var searchData=
   ['estimateoggfilequality',['estimateOggFileQuality',['../classOggVorbisAudioFormat.html#aa9f91556cc01ecd9583c85d398d43ccb',1,'OggVorbisAudioFormat']]],
   ['evaluate',['evaluate',['../classJavascriptEngine.html#a0cf3bac2ba4e208b69b09777f84a3f8c',1,'JavascriptEngine::evaluate()'],['../classExpression.html#a4321a7ad5078d5a8af0991f5580b3f99',1,'Expression::evaluate() const '],['../classExpression.html#a2a09ff11f4ffaebdcc3f7bf62c77bbf8',1,'Expression::evaluate(const Scope &amp;scope) const '],['../classExpression.html#a32d7e977a1f77939f78b6c5b803f15e3',1,'Expression::evaluate(const Scope &amp;scope, String &amp;evaluationError) const ']]],
   ['evaluatefunction',['evaluateFunction',['../classExpression_1_1Scope.html#a04568143f34090043d9d2fcc81a3c2c6',1,'Expression::Scope']]],
-  ['exchange',['exchange',['../classAtomic.html#a98405cfea37d5635bdddf47e92da81ea',1,'Atomic']]],
+  ['exchange',['exchange',['../classAtomic.html#ac224791c1725400f6cb6a37aa7b4dd7f',1,'Atomic']]],
   ['excludecliprectangle',['excludeClipRectangle',['../classLowLevelGraphicsContext.html#a3e116f9953846c0506f06bdc3db24822',1,'LowLevelGraphicsContext::excludeClipRectangle()'],['../classLowLevelGraphicsPostScriptRenderer.html#ad1e23e51c84641b7995b08ba56671e7c',1,'LowLevelGraphicsPostScriptRenderer::excludeClipRectangle()']]],
   ['excludeclipregion',['excludeClipRegion',['../classGraphics.html#a50949e3315daf0cb8c3c0abbdb272720',1,'Graphics']]],
   ['excluderectangle',['excludeRectangle',['../classEdgeTable.html#ace4a4713af3e35ed6276ebc176e078e1',1,'EdgeTable']]],

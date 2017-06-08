@@ -82,9 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classAtomic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Atomic&lt; Type &gt; Class Template Reference</div>  </div>
@@ -93,7 +93,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Simple class to hold a primitive value and perform atomic operations on it.  
  <a href="classAtomic.html#details">More...</a></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Atomic&lt; Type &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="classAtomic.png" usemap="#Atomic&lt; Type &gt;_map" alt=""/>
+  <map id="Atomic&lt; Type &gt;_map" name="Atomic&lt; Type &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1e72933a773e5f84bac851aec9ec7b03"><td class="memItemLeft" align="right" valign="top">typedef AtomicBase&lt; Type &gt;<br class="typebreak"/>
+::<a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a></td></tr>
+<tr class="memdesc:a1e72933a773e5f84bac851aec9ec7b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resulting type when subtracting the underlying Type.  <a href="#a1e72933a773e5f84bac851aec9ec7b03">More...</a><br/></td></tr>
+<tr class="separator:a1e72933a773e5f84bac851aec9ec7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a903ef283284109ee6bdaa43d9b477224"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a903ef283284109ee6bdaa43d9b477224">Atomic</a> () noexcept</td></tr>
@@ -120,15 +137,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52abf7d407845b5ff44b46b1c96f00d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a52abf7d407845b5ff44b46b1c96f00d1">set</a> (Type newValue) noexcept</td></tr>
 <tr class="memdesc:a52abf7d407845b5ff44b46b1c96f00d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically sets the current value.  <a href="#a52abf7d407845b5ff44b46b1c96f00d1">More...</a><br/></td></tr>
 <tr class="separator:a52abf7d407845b5ff44b46b1c96f00d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98405cfea37d5635bdddf47e92da81ea"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a98405cfea37d5635bdddf47e92da81ea">exchange</a> (Type <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>) noexcept</td></tr>
-<tr class="memdesc:a98405cfea37d5635bdddf47e92da81ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically sets the current value, returning the value that was replaced.  <a href="#a98405cfea37d5635bdddf47e92da81ea">More...</a><br/></td></tr>
-<tr class="separator:a98405cfea37d5635bdddf47e92da81ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c7b49a22075389a3edac358c83c92e"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#ab5c7b49a22075389a3edac358c83c92e">operator+=</a> (Type amountToAdd) noexcept</td></tr>
-<tr class="memdesc:ab5c7b49a22075389a3edac358c83c92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically adds a number to this value, returning the new value.  <a href="#ab5c7b49a22075389a3edac358c83c92e">More...</a><br/></td></tr>
-<tr class="separator:ab5c7b49a22075389a3edac358c83c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9803bc3177c75dbaf00c3a34eb3556c"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#af9803bc3177c75dbaf00c3a34eb3556c">operator-=</a> (Type amountToSubtract) noexcept</td></tr>
-<tr class="memdesc:af9803bc3177c75dbaf00c3a34eb3556c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically subtracts a number from this value, returning the new value.  <a href="#af9803bc3177c75dbaf00c3a34eb3556c">More...</a><br/></td></tr>
-<tr class="separator:af9803bc3177c75dbaf00c3a34eb3556c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac224791c1725400f6cb6a37aa7b4dd7f"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#ac224791c1725400f6cb6a37aa7b4dd7f">exchange</a> (Type v) noexcept</td></tr>
+<tr class="memdesc:ac224791c1725400f6cb6a37aa7b4dd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically sets the current value, returning the value that was replaced.  <a href="#ac224791c1725400f6cb6a37aa7b4dd7f">More...</a><br/></td></tr>
+<tr class="separator:ac224791c1725400f6cb6a37aa7b4dd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7ba896941874fb59a3f128913a3aaf"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a4a7ba896941874fb59a3f128913a3aaf">operator+=</a> (<a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a> amountToAdd) noexcept</td></tr>
+<tr class="memdesc:a4a7ba896941874fb59a3f128913a3aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically adds a number to this value, returning the new value.  <a href="#a4a7ba896941874fb59a3f128913a3aaf">More...</a><br/></td></tr>
+<tr class="separator:a4a7ba896941874fb59a3f128913a3aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07571339cdc9cb7b5f3e92f6e7542b14"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a07571339cdc9cb7b5f3e92f6e7542b14">operator-=</a> (<a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a> amountToSubtract) noexcept</td></tr>
+<tr class="memdesc:a07571339cdc9cb7b5f3e92f6e7542b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically subtracts a number from this value, returning the new value.  <a href="#a07571339cdc9cb7b5f3e92f6e7542b14">More...</a><br/></td></tr>
+<tr class="separator:a07571339cdc9cb7b5f3e92f6e7542b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc5a6c2e1f07cc097317fe1685819dd"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a9cc5a6c2e1f07cc097317fe1685819dd">operator++</a> () noexcept</td></tr>
 <tr class="memdesc:a9cc5a6c2e1f07cc097317fe1685819dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically increments this value, returning the new value.  <a href="#a9cc5a6c2e1f07cc097317fe1685819dd">More...</a><br/></td></tr>
 <tr class="separator:a9cc5a6c2e1f07cc097317fe1685819dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,15 +161,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33a7257fe866463a370c8e92a208be01"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a33a7257fe866463a370c8e92a208be01">memoryBarrier</a> () noexcept</td></tr>
-<tr class="memdesc:a33a7257fe866463a370c8e92a208be01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a memory read/write barrier.  <a href="#a33a7257fe866463a370c8e92a208be01">More...</a><br/></td></tr>
-<tr class="separator:a33a7257fe866463a370c8e92a208be01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a4c042c01777b1efe30266a45b7df36f4"><td class="memItemLeft" align="right" valign="top">volatile Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#a4c042c01777b1efe30266a45b7df36f4">value</a></td></tr>
-<tr class="memdesc:a4c042c01777b1efe30266a45b7df36f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The raw value that this class operates on.  <a href="#a4c042c01777b1efe30266a45b7df36f4">More...</a><br/></td></tr>
-<tr class="separator:a4c042c01777b1efe30266a45b7df36f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af427d87b6e491f44d6b57551815c89d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAtomic.html#af427d87b6e491f44d6b57551815c89d5">memoryBarrier</a> () noexcept</td></tr>
+<tr class="memdesc:af427d87b6e491f44d6b57551815c89d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a memory read/write barrier.  <a href="#af427d87b6e491f44d6b57551815c89d5">More...</a><br/></td></tr>
+<tr class="separator:af427d87b6e491f44d6b57551815c89d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Type&gt;<br/>
@@ -160,7 +171,24 @@ class Atomic&lt; Type &gt;</h3>
 
 <p>Simple class to hold a primitive value and perform atomic operations on it. </p>
 <p>The type used must be a 32 or 64 bit primitive, like an int, pointer, etc. There are methods to perform most of the basic atomic operations. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a1e72933a773e5f84bac851aec9ec7b03"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AtomicBase&lt;Type&gt;::<a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a> <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::<a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resulting type when subtracting the underlying Type. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a903ef283284109ee6bdaa43d9b477224"></a>
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +304,7 @@ template&lt;typename Type&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Type &gt; </div>
+template&lt;typename Type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -385,7 +413,7 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a98405cfea37d5635bdddf47e92da81ea"></a>
+<a class="anchor" id="ac224791c1725400f6cb6a37aa7b4dd7f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -398,7 +426,7 @@ template&lt;typename Type&gt; </div>
           <td class="memname">Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::exchange </td>
           <td>(</td>
           <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -411,11 +439,11 @@ template&lt;typename Type&gt; </div>
 
 <p>Atomically sets the current value, returning the value that was replaced. </p>
 
-<p>Referenced by <a class="el" href="classAtomic.html#aee8b91de965363416796ee90ff84d0e2">Atomic&lt; int &gt;::operator=()</a>, and <a class="el" href="classAtomic.html#a52abf7d407845b5ff44b46b1c96f00d1">Atomic&lt; int &gt;::set()</a>.</p>
+<p>Referenced by <a class="el" href="classAtomic.html#a52abf7d407845b5ff44b46b1c96f00d1">Atomic&lt; int &gt;::set()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab5c7b49a22075389a3edac358c83c92e"></a>
+<a class="anchor" id="a4a7ba896941874fb59a3f128913a3aaf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -427,7 +455,7 @@ template&lt;typename Type&gt; </div>
         <tr>
           <td class="memname">Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::operator+= </td>
           <td>(</td>
-          <td class="paramtype">Type&#160;</td>
+          <td class="paramtype"><a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a>&#160;</td>
           <td class="paramname"><em>amountToAdd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -443,7 +471,7 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af9803bc3177c75dbaf00c3a34eb3556c"></a>
+<a class="anchor" id="a07571339cdc9cb7b5f3e92f6e7542b14"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -455,7 +483,7 @@ template&lt;typename Type&gt; </div>
         <tr>
           <td class="memname">Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::operator-= </td>
           <td>(</td>
-          <td class="paramtype">Type&#160;</td>
+          <td class="paramtype"><a class="el" href="classAtomic.html#a1e72933a773e5f84bac851aec9ec7b03">DiffType</a>&#160;</td>
           <td class="paramname"><em>amountToSubtract</em></td><td>)</td>
           <td></td>
         </tr>
@@ -469,15 +497,13 @@ template&lt;typename Type&gt; </div>
 
 <p>Atomically subtracts a number from this value, returning the new value. </p>
 
-<p>References <a class="el" href="juce__NewLine_8h.html#a6d460ba81bfa9206b0258b8af122bc64">operator+=()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9cc5a6c2e1f07cc097317fe1685819dd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Type &gt; </div>
+template&lt;typename Type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -504,7 +530,7 @@ template&lt;typename Type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Type &gt; </div>
+template&lt;typename Type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -629,17 +655,17 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a33a7257fe866463a370c8e92a208be01"></a>
+<a class="anchor" id="af427d87b6e491f44d6b57551815c89d5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Type &gt; </div>
+template&lt;typename Type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::memoryBarrier </td>
+          <td class="memname">static void <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::memoryBarrier </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -656,26 +682,6 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4c042c01777b1efe30266a45b7df36f4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile Type <a class="el" href="classAtomic.html">Atomic</a>&lt; Type &gt;::<a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The raw value that this class operates on. </p>
-<p>This is exposed publicly in case you need to manipulate it directly for performance reasons. </p>
-
-<p>Referenced by <a class="el" href="classThreadLocalValue.html#a5f84ce8c97c0c3d76be387b0d9cd5feb">ThreadLocalValue&lt; Type &gt;::~ThreadLocalValue()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Atomic_8h.html">juce_Atomic.h</a></li>
 </ul>
@@ -683,7 +689,7 @@ template&lt;typename Type&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 7 2017 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

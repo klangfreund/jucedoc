@@ -46,7 +46,6 @@ var searchData=
   ['juce_5farrowbutton_2eh',['juce_ArrowButton.h',['../juce__ArrowButton_8h.html',1,'']]],
   ['juce_5fasyncupdater_2eh',['juce_AsyncUpdater.h',['../juce__AsyncUpdater_8h.html',1,'']]],
   ['juce_5fatomic_2eh',['juce_Atomic.h',['../juce__Atomic_8h.html',1,'']]],
-  ['juce_5fatomics_5fmac_5flegacy',['JUCE_ATOMICS_MAC_LEGACY',['../juce__Atomic_8h.html#af8e994784b4febc6f040e4d8d68a4e72',1,'juce_Atomic.h']]],
   ['juce_5fattributedstring_2eh',['juce_AttributedString.h',['../juce__AttributedString_8h.html',1,'']]],
   ['juce_5fau_5fshared_2eh',['juce_AU_Shared.h',['../juce__AU__Shared_8h.html',1,'']]],
   ['juce_5faudioappcomponent_2eh',['juce_AudioAppComponent.h',['../juce__AudioAppComponent_8h.html',1,'']]],
@@ -591,7 +590,7 @@ var searchData=
   ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html',1,'JUCESplashScreen'],['../classJUCESplashScreen.html#ace2db6a7a5b1219e3ec5163978242495',1,'JUCESplashScreen::JUCESplashScreen()']]],
   ['jucevstinterfaceidentifier',['juceVstInterfaceIdentifier',['../juce__VSTInterface_8h.html#aa0141325b2a7d73302b4415761d632fc',1,'juce_VSTInterface.h']]],
   ['jucevstinterfaceversion',['juceVstInterfaceVersion',['../juce__VSTInterface_8h.html#a60c58657ea50f8347da505110bed0475',1,'juce_VSTInterface.h']]],
-  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept']]],
+  ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()']]],
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]]
