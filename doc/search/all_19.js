@@ -13,5 +13,6 @@ var searchData=
   ['zonelayoutchanged',['zoneLayoutChanged',['../classMPEZoneLayout_1_1Listener.html#a4db05a5bda15f42eb55c61722f11a832',1,'MPEZoneLayout::Listener']]],
   ['zonelayoutmessagesrpnnumber',['zoneLayoutMessagesRpnNumber',['../classMPEMessages.html#abef11ba61a0031916d74066f718b407d',1,'MPEMessages']]],
   ['zones',['Zones',['../classResizableBorderComponent_1_1Zone.html#ad6fba9e9d2be9a3c7e31f14ba8f6881e',1,'ResizableBorderComponent::Zone']]],
+  ['ztrackingmode',['zTrackingMode',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a36e4df4de5f5b268b8044ac830ddcfa1',1,'juce_BlocksProtocolDefinitions.h']]],
   ['zvelocity',['zVelocity',['../structTouchSurface_1_1Touch.html#a2b8802b24914bf59ddfe60f82957075f',1,'TouchSurface::Touch::zVelocity()'],['../structjuce_1_1TouchSurface_1_1Touch.html#a9ef327a4d3becc5ea0e482a25a0d7b85',1,'juce::TouchSurface::Touch::zVelocity()']]]
 ];

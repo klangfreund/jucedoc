@@ -14,5 +14,6 @@ var searchData=
   ['xmltokeniser',['XmlTokeniser',['../classXmlTokeniser.html',1,'XmlTokeniser'],['../classXmlTokeniser.html#a1eb68f27d7f5a8dbec9107fd9358df93',1,'XmlTokeniser::XmlTokeniser()']]],
   ['xoffset',['xOffset',['../structLowLevelGraphicsPostScriptRenderer_1_1SavedState.html#a10d46be69faae4c3c27ae95dfac5a713',1,'LowLevelGraphicsPostScriptRenderer::SavedState']]],
   ['xright',['xRight',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427eda72a92773894d10ec3b4ff55b56d08915',1,'RectanglePlacement']]],
+  ['xtrackingmode',['xTrackingMode',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a51874489fd98f3db0be1aced90dfcb4f',1,'juce_BlocksProtocolDefinitions.h']]],
   ['xvelocity',['xVelocity',['../structTouchSurface_1_1Touch.html#ac21bd9597d030f2cdddd181401b5851b',1,'TouchSurface::Touch::xVelocity()'],['../structjuce_1_1TouchSurface_1_1Touch.html#af58a9c18c623470be6190e24828656dd',1,'juce::TouchSurface::Touch::xVelocity()']]]
 ];

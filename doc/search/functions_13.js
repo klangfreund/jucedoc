@@ -54,6 +54,7 @@ var searchData=
   ['tobehind',['toBehind',['../classComponent.html#a1b0cca8b9a9fea673aefc84a42602bcd',1,'Component::toBehind()'],['../classComponentPeer.html#afd04fab397a9c85cb7251582d9c6b461',1,'ComponentPeer::toBehind()']]],
   ['tobipolarfloat',['toBipolarFloat',['../structIntegerWithBitSize.html#a4a4bb97f730168d6c875b6e4dc14f859',1,'IntegerWithBitSize']]],
   ['tocfstring',['toCFString',['../classString.html#a3d3927f416d704b9d1878b379aafdc84',1,'String']]],
+  ['toconfigmetadata',['toConfigMetaData',['../structBlockConfigManager_1_1ConfigDescription.html#af1395c279c717bbabe0881213ecfcbc8',1,'BlockConfigManager::ConfigDescription']]],
   ['todashedstring',['toDashedString',['../classUuid.html#af9c3f68f05b23e0508723d523b0ce6c9',1,'Uuid']]],
   ['todisplaystring',['toDisplayString',['../classColour.html#af67d6e061dcf0429339fe6b8b999ece6',1,'Colour']]],
   ['todouble',['toDouble',['../classLine.html#adbfed230f1a83b399812a4889122ef68',1,'Line::toDouble()'],['../classPoint.html#ab30b19304bf09c2a8c9d01904585738e',1,'Point::toDouble()'],['../classRectangle.html#a92fbbb29fe83b6d2aa033d4507fb441d',1,'Rectangle::toDouble()']]],

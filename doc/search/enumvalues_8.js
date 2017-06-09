@@ -29,6 +29,7 @@ var searchData=
   ['int32be',['int32BE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50ae66e24664940104a48ec3fa5e9c73e81',1,'AudioDataConverters']]],
   ['int32le',['int32LE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a7dbfa7f347adba31c018c85f4e88e474',1,'AudioDataConverters']]],
   ['int_5f',['int_',['../namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94ad7488204e92ed01986284bef5650eb53',1,'juce::littlefoot::int_()'],['../namespacelittlefoot.html#a4fb4051df81acdbcaa446ab5a02dd8e7ad7488204e92ed01986284bef5650eb53',1,'littlefoot::int_()']]],
+  ['integer',['integer',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eea0bb8c71391407f76a2a638a9ee90eaeb',1,'BlockConfigManager']]],
   ['invokedexecutablefile',['invokedExecutableFile',['../classFile.html#a3e19cafabb03c5838160263a6e76313dafdae061dc559a8e9ac3a9623d2cd8081',1,'File']]],
   ['ios',['iOS',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaac9450b81876366666cc4ef6dbaa7496e',1,'SystemStats']]],
   ['isdisabled',['isDisabled',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72a202cb5c15583e30f2f59b48e6c18c90b',1,'ApplicationCommandInfo']]],

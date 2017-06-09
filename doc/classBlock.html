@@ -109,6 +109,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata for a given config item.  <a href="structBlock_1_1ConfigMetaData.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ConnectionPort.html">ConnectionPort</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the edge-connectors that a device may have.  <a href="structBlock_1_1ConnectionPort.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +137,7 @@ Public Types</h2></td></tr>
 <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a53a61b7ffc6c027d254d52373a5d2d2b">loopBlock</a>, 
 <br/>
 &#160;&#160;<a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a98ca592426170135a53fdd46bc6d2a53">developerControlBlock</a>, 
+<a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a96792e301d0fbaeea7e35a88b1bbb054">touchBlock</a>, 
 <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324ad44a5d974e8503f978e605adc27ca156">seaboardBlock</a>
 <br/>
  }</td></tr>
@@ -243,12 +247,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a267e131fc12d47c5afabfe17afbd5ec4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a267e131fc12d47c5afabfe17afbd5ec4">saveProgramAsDefault</a> ()=0</td></tr>
 <tr class="memdesc:a267e131fc12d47c5afabfe17afbd5ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current program as the block's default state.  <a href="#a267e131fc12d47c5afabfe17afbd5ec4">More...</a><br/></td></tr>
 <tr class="separator:a267e131fc12d47c5afabfe17afbd5ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ace6be0165c85b5269db6dc22971c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#af8ace6be0165c85b5269db6dc22971c1">getMaxConfigIndex</a> ()=0</td></tr>
+<tr class="memdesc:af8ace6be0165c85b5269db6dc22971c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of config items available.  <a href="#af8ace6be0165c85b5269db6dc22971c1">More...</a><br/></td></tr>
+<tr class="separator:af8ace6be0165c85b5269db6dc22971c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6669da03a71b1ad2c38d6c7803588ea1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a6669da03a71b1ad2c38d6c7803588ea1">isValidUserConfigIndex</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item)=0</td></tr>
+<tr class="memdesc:a6669da03a71b1ad2c38d6c7803588ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this is a valid config item index.  <a href="#a6669da03a71b1ad2c38d6c7803588ea1">More...</a><br/></td></tr>
+<tr class="separator:a6669da03a71b1ad2c38d6c7803588ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab426a6fb6026726c6aae818e76dce107"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab426a6fb6026726c6aae818e76dce107">getLocalConfigValue</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item)=0</td></tr>
+<tr class="memdesc:ab426a6fb6026726c6aae818e76dce107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get local config item value.  <a href="#ab426a6fb6026726c6aae818e76dce107">More...</a><br/></td></tr>
+<tr class="separator:ab426a6fb6026726c6aae818e76dce107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071f5994d0d76caf3edbe3002668d738"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a071f5994d0d76caf3edbe3002668d738">setLocalConfigValue</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item, <a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="el" href="juce__VSTInterface_8h.html#abfa595d43bf960020c2afada3d371389">value</a>)=0</td></tr>
+<tr class="memdesc:a071f5994d0d76caf3edbe3002668d738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local config item value.  <a href="#a071f5994d0d76caf3edbe3002668d738">More...</a><br/></td></tr>
+<tr class="separator:a071f5994d0d76caf3edbe3002668d738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3f6dfd3df6633d9da154aea8739c6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aae3f6dfd3df6633d9da154aea8739c6c">setLocalConfigRange</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item, <a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> min, <a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> max)=0</td></tr>
+<tr class="memdesc:aae3f6dfd3df6633d9da154aea8739c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set local config item range.  <a href="#aae3f6dfd3df6633d9da154aea8739c6c">More...</a><br/></td></tr>
+<tr class="separator:aae3f6dfd3df6633d9da154aea8739c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f6246482b5da2adea45a1df717b36d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a62f6246482b5da2adea45a1df717b36d">setLocalConfigItemActive</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item, bool isActive)=0</td></tr>
+<tr class="memdesc:a62f6246482b5da2adea45a1df717b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if config item is active or not.  <a href="#a62f6246482b5da2adea45a1df717b36d">More...</a><br/></td></tr>
+<tr class="separator:a62f6246482b5da2adea45a1df717b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537a2fbda5382836aa41d6577cff4cd1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a537a2fbda5382836aa41d6577cff4cd1">isLocalConfigItemActive</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item)=0</td></tr>
+<tr class="memdesc:a537a2fbda5382836aa41d6577cff4cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if config item is active or not.  <a href="#a537a2fbda5382836aa41d6577cff4cd1">More...</a><br/></td></tr>
+<tr class="separator:a537a2fbda5382836aa41d6577cff4cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8cbc8bd4d90e67f7e1d5e3823b1786"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#abf8cbc8bd4d90e67f7e1d5e3823b1786">getLocalConfigMetaData</a> (<a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> item)=0</td></tr>
+<tr class="memdesc:abf8cbc8bd4d90e67f7e1d5e3823b1786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get config item metadata.  <a href="#abf8cbc8bd4d90e67f7e1d5e3823b1786">More...</a><br/></td></tr>
+<tr class="separator:abf8cbc8bd4d90e67f7e1d5e3823b1786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2229b911ce24d4681082f86265e7e8a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a2229b911ce24d4681082f86265e7e8a3">requestFactoryConfigSync</a> ()=0</td></tr>
+<tr class="memdesc:a2229b911ce24d4681082f86265e7e8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request sync of factory config with block.  <a href="#a2229b911ce24d4681082f86265e7e8a3">More...</a><br/></td></tr>
+<tr class="separator:a2229b911ce24d4681082f86265e7e8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197b5e99c821d2243bca77a0b71feb92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a197b5e99c821d2243bca77a0b71feb92">resetConfigListActiveStatus</a> ()=0</td></tr>
+<tr class="memdesc:a197b5e99c821d2243bca77a0b71feb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all items active status.  <a href="#a197b5e99c821d2243bca77a0b71feb92">More...</a><br/></td></tr>
+<tr class="separator:a197b5e99c821d2243bca77a0b71feb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14c53fe0485b084f129626d7d3829b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab14c53fe0485b084f129626d7d3829b0">setLogger</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
 <tr class="memdesc:ab14c53fe0485b084f129626d7d3829b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the user to provide a function that will receive log messages from the block.  <a href="#ab14c53fe0485b084f129626d7d3829b0">More...</a><br/></td></tr>
 <tr class="separator:ab14c53fe0485b084f129626d7d3829b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef359e7ae647b875a802332a4211f8b4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aef359e7ae647b875a802332a4211f8b4">sendFirmwareUpdatePacket</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *data, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> size, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>)&gt; packetAckCallback)=0</td></tr>
 <tr class="memdesc:aef359e7ae647b875a802332a4211f8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#aef359e7ae647b875a802332a4211f8b4">More...</a><br/></td></tr>
 <tr class="separator:aef359e7ae647b875a802332a4211f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936ae972ef533d2aa30229c2de961c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a936ae972ef533d2aa30229c2de961c63">setConfigChangedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>)&gt;)=0</td></tr>
+<tr class="memdesc:a936ae972ef533d2aa30229c2de961c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a config changes.  <a href="#a936ae972ef533d2aa30229c2de961c63">More...</a><br/></td></tr>
+<tr class="separator:a936ae972ef533d2aa30229c2de961c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018545f50301b7d56574574e00b68e0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a018545f50301b7d56574574e00b68e0f">addDataInputPortListener</a> (<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
 <tr class="memdesc:a018545f50301b7d56574574e00b68e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for the data input port.  <a href="#a018545f50301b7d56574574e00b68e0f">More...</a><br/></td></tr>
 <tr class="separator:a018545f50301b7d56574574e00b68e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +301,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7d8d1dbd650aa0dad8c37b5b1efbed3e"><td class="memItemLeft" align="right" valign="top">const juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a7d8d1dbd650aa0dad8c37b5b1efbed3e">serialNumber</a></td></tr>
 <tr class="memdesc:a7d8d1dbd650aa0dad8c37b5b1efbed3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s serial number.  <a href="#a7d8d1dbd650aa0dad8c37b5b1efbed3e">More...</a><br/></td></tr>
 <tr class="separator:a7d8d1dbd650aa0dad8c37b5b1efbed3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="memItemLeft" align="right" valign="top">juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c">versionNumber</a></td></tr>
+<tr class="memdesc:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s version number.  <a href="#ab0a9f022d5a0f691f753e4b8203c4d4c">More...</a><br/></td></tr>
+<tr class="separator:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">UID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a1c23c1f7ca58fcc032eb45cfc029d9">uid</a></td></tr>
 <tr class="memdesc:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s UID.  <a href="#a8a1c23c1f7ca58fcc032eb45cfc029d9">More...</a><br/></td></tr>
 <tr class="separator:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,6 +312,8 @@ Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a596d7845cc8ff7d29fdc0300bac04203"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a596d7845cc8ff7d29fdc0300bac04203">Block</a> (const juce::String &amp;serialNumberToUse)</td></tr>
 <tr class="separator:a596d7845cc8ff7d29fdc0300bac04203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72ed32ffacf2c061f07167c838ea32f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aa72ed32ffacf2c061f07167c838ea32f">Block</a> (const juce::String &amp;serial, const juce::String &amp;version)</td></tr>
+<tr class="separator:aa72ed32ffacf2c061f07167c838ea32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -364,6 +406,8 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a2c6b3c425b9b8cb708b23e553fa81324a98ca592426170135a53fdd46bc6d2a53"></a>developerControlBlock</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a2c6b3c425b9b8cb708b23e553fa81324a96792e301d0fbaeea7e35a88b1bbb054"></a>touchBlock</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a2c6b3c425b9b8cb708b23e553fa81324ad44a5d974e8503f978e605adc27ca156"></a>seaboardBlock</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
@@ -409,6 +453,40 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const juce::String &amp;&#160;</td>
           <td class="paramname"><em>serialNumberToUse</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa72ed32ffacf2c061f07167c838ea32f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Block::Block </td>
+          <td>(</td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1186,6 +1264,299 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af8ace6be0165c85b5269db6dc22971c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> Block::getMaxConfigIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum number of config items available. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6669da03a71b1ad2c38d6c7803588ea1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Block::isValidUserConfigIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if this is a valid config item index. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab426a6fb6026726c6aae818e76dce107"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> Block::getLocalConfigValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get local config item value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a071f5994d0d76caf3edbe3002668d738"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::setLocalConfigValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set local config item value. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae3f6dfd3df6633d9da154aea8739c6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::setLocalConfigRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set local config item range. </p>
+
+</div>
+</div>
+<a class="anchor" id="a62f6246482b5da2adea45a1df717b36d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::setLocalConfigItemActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set if config item is active or not. </p>
+
+</div>
+</div>
+<a class="anchor" id="a537a2fbda5382836aa41d6577cff4cd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Block::isLocalConfigItemActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if config item is active or not. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf8cbc8bd4d90e67f7e1d5e3823b1786"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> Block::getLocalConfigMetaData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get config item metadata. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2229b911ce24d4681082f86265e7e8a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::requestFactoryConfigSync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request sync of factory config with block. </p>
+
+</div>
+</div>
+<a class="anchor" id="a197b5e99c821d2243bca77a0b71feb92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::resetConfigListActiveStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset all items active status. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab14c53fe0485b084f129626d7d3829b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1252,6 +1623,32 @@ Protected Attributes</h2></td></tr>
 
 <p>Sends a firmware update packet to a block, and waits for a reply. </p>
 <p>Returns an error code. </p>
+
+</div>
+</div>
+<a class="anchor" id="a936ae972ef533d2aa30229c2de961c63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::setConfigChangedCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>)&gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides a callback that will be called when a config changes. </p>
 
 </div>
 </div>
@@ -1358,6 +1755,20 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab0a9f022d5a0f691f753e4b8203c4d4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">juce::String Block::versionNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s version number. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8a1c23c1f7ca58fcc032eb45cfc029d9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1420,7 +1831,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

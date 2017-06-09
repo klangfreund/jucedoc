@@ -30,6 +30,7 @@ var searchData=
   ['ardour',['Ardour',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a7ae3835e601d60614473084f07aa447e',1,'PluginHostType']]],
   ['argb',['ARGB',['../classImage.html#ab47b5746d2df286ae6f8da6af5463c01a9adefc17fe4663de8e3fc9621c891b8b',1,'Image']]],
   ['arp',['arp',['../classControlButton.html#a891776295057786f99f14631b1aa2794adab22b88ae7ce5fe608b846917051771',1,'ControlButton::arp()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a43cf9552fef0a0e22a71e023a9a458ef',1,'juce::ControlButton::arp()']]],
+  ['arppattern',['arpPattern',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a5b0ad2b9e536bd1db5d6c961ef73b32c',1,'juce_BlocksProtocolDefinitions.h']]],
   ['arrowcolourid',['arrowColourId',['../classComboBox.html#aa2eff88125f77f8e278374e716202e6ea784b5c333839f9cfc0b6e890f1c2ef66',1,'ComboBox']]],
   ['audioinputnode',['audioInputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aa002564f5df42036b1b8a791d8c3a760d',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],
   ['audiooutputnode',['audioOutputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aac004122d6a09fdb5bce7fdb2221340f4',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],

@@ -19,6 +19,7 @@ var searchData=
   ['lefttoright',['leftToRight',['../classAttributedString.html#a254fea6774b4e74f786cc5ad3abac400a0ea06be4944f880c21db20dd073a979e',1,'AttributedString']]],
   ['lfe',['LFE',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eae9c3c0d319ffaa4a452fefd1f04b0cc6',1,'AudioChannelSet']]],
   ['lfe2',['LFE2',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea0fdd29070c1802006e6e0601614a5774',1,'AudioChannelSet']]],
+  ['liftsensitivity',['liftSensitivity',['../classControlButton.html#a891776295057786f99f14631b1aa2794ae11770d81559478b6e7ba9e8c4c8b01d',1,'ControlButton::liftSensitivity()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832a34aad8c777c209eb0754328470eb2992',1,'juce::ControlButton::liftSensitivity()'],['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa4abeb28c022bcfd53bb89a72f78b7aa',1,'liftSensitivity():&#160;juce_BlocksProtocolDefinitions.h']]],
   ['lightpadblock',['lightPadBlock',['../classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324ae901f3708edf53ccf96ff94ff361a3fa',1,'Block::lightPadBlock()'],['../classjuce_1_1Block.html#a1c008a40f29753a54bce01d6b95fbb50a6ce1e8ab778f488d4e3f789791a6e226',1,'juce::Block::lightPadBlock()']]],
   ['linearbar',['LinearBar',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a0092c810419dab80d4692363d9564c5d',1,'Slider']]],
   ['linearbarvertical',['LinearBarVertical',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a8a942813d4d457e0344e725bd9faffc5',1,'Slider']]],

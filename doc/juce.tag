@@ -583,7 +583,15 @@
     <class kind="struct">Block::Program</class>
     <class kind="struct">Block::ProgramEventMessage</class>
     <class kind="struct">Block::ProgramEventListener</class>
+    <class kind="struct">Block::ConfigMetaData</class>
     <class kind="struct">Block::DataInputPortListener</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_BlockConfigManager.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_blocks_basics/blocks/</path>
+    <filename>juce__BlockConfigManager_8h</filename>
+    <class kind="struct">BlockConfigManager</class>
+    <class kind="struct">BlockConfigManager::ConfigDescription</class>
   </compound>
   <compound kind="file">
     <name>juce_BlockModels.h</name>
@@ -602,6 +610,7 @@
     <class kind="struct">juce::Block::Program</class>
     <class kind="struct">juce::Block::ProgramEventMessage</class>
     <class kind="struct">juce::Block::ProgramEventListener</class>
+    <class kind="struct">juce::Block::ConfigMetaData</class>
     <class kind="struct">juce::Block::DataInputPortListener</class>
     <class kind="class">juce::TouchSurface</class>
     <class kind="struct">juce::TouchSurface::Touch</class>
@@ -714,8 +723,10 @@
     <path>/home/juce/data/res/development/juce/modules/juce_blocks_basics/protocol/</path>
     <filename>juce__BlocksProtocolDefinitions_8h</filename>
     <class kind="struct">BlockSerialNumber</class>
+    <class kind="struct">VersionNumber</class>
     <class kind="struct">DeviceStatus</class>
     <class kind="struct">DeviceConnection</class>
+    <class kind="struct">DeviceVersion</class>
     <class kind="struct">TouchPosition</class>
     <class kind="struct">TouchVelocity</class>
     <member kind="typedef">
@@ -807,6 +818,27 @@
       <name>DeviceCommand</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a88c5caacae1f43b96c1fb0f284dee81d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 4 &gt;</type>
+      <name>ConfigCommand</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a0f11fcc0da792c5140ee66736115dcb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 8 &gt;</type>
+      <name>ConfigItemIndex</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ac7527bbacd3f5c91954cd18bd5a04f87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 32 &gt;</type>
+      <name>ConfigItemValue</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a8da124e9f8755871b44c73d830a2f5a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -904,12 +936,14 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed">deviceTopologyExtend</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">deviceTopologyEnd</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa">deviceVersionList</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">touchStartWithVelocity</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">touchMoveWithVelocity</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">touchEndWithVelocity</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac836d2245e27287da29e0ad9dd230f73">configMessage</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">controlButtonDown</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">controlButtonUp</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</enumvalue>
@@ -946,12 +980,440 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cba24dd14178f112a548f94ac8a9252f854">sharedDataChange</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">firmwareUpdatePacket</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</enumvalue>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>programEventMessage</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ConfigItemId</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>midiStartChannel</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aa3d3b28911e050bcc3cf4b75752c3e99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>midiEndChannel</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a6b925a5ac1bca69747649f835d7d897d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>midiUseMPE</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ad481db19a15ff086112d4617003e1b1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pitchBendRange</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a5badb396c19d4e158e82a260b458c429</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>octave</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a8814055847f25f8382285c7b54222f1b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>transpose</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a09a6cad7eb6f4e5d3a5458c683cd1461</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>slideCC</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a45e5ccc0054b9b80613991b4fe910380</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>slideMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a4dea0d2fc92d67a0d26ee46fa621759b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>octaveTopology</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a3d7f5181a97ea194b924481653c9d63e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>velocitySensitivity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a313445ac04a10bd82a8e6b573087f035</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideSensitivity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a192352478baea90583b34703f42e0474</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>slideSensitivity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3adec3c55ad34e9c83964f9fd0d3f1de86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pressureSensitivity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a9e35276daa49b1c7c4de75ec0067dbaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>liftSensitivity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aa4abeb28c022bcfd53bb89a72f78b7aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>fixedVelocity</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a71b3e37de94f71ce86ba597190b45b41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>fixedVelocityValue</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ad165ef99559fc2fa4fe2cc7d0a80db6a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pianoMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a1807a024bdfdc8fa107501f143bb2ae4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideLock</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a4afa33103853d734e4deb332a41f74dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>mode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3af1982b2b77f9b0e7cd29e39b39d8a0b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>volume</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a627ba5be940770a536a66f655349e97f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>scale</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a83809220a14c97170cd08f22e480acdc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>hideMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ad37c8c5ed64a402271d6fb13ec02913a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>chord</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a3ded4e41c00354c2060873629c14ea68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>arpPattern</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a5b0ad2b9e536bd1db5d6c961ef73b32c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>tempo</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a94af8057d79cef2a0628d1e9315f9e5d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>xTrackingMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a51874489fd98f3db0be1aced90dfcb4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>yTrackingMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aa00be52744d5a1a26cc2480fbae7f92b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>zTrackingMode</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a36e4df4de5f5b268b8044ac830ddcfa1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user0</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a0803a66989ae16d839121394b0797fdf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user1</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a8c4437d26c744f646a9d6f03369503da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user2</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ac6fe05fe5a514a253d3c166bb0c0b817</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user3</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aad0b797a8ee6060e320113751743564e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user4</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a08ec4fbfb8910207aa54bed6e221cca7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user5</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a4b7154843e3d441572485676b778aa83</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user6</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ab513723e4d07ecb8891c87a25c9c63e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user7</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aba168201777f9aff63233eb68a236edf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user8</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a41798994a070a623c1f2b31f822b9eba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user9</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a3228ad3e532f467e686b8b06ffa203f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user10</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a44330789bb8cb0a0167333225bcd78ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user11</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a7f910a7e02f60110584095d511c0df9a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user12</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ae6da54a39e265ee5172d1a86130ed12e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user13</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a0451881ecbe4cbb17bf6a0b2430a4219</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user14</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a0b805dc65deaa12999c91dbe53095769</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user15</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aa80258469383384181ca586e88cf5520</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user16</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ad49095d4622f7cf4a07f0e4429dc7532</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user17</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a2581be049b62d3d090cadad325a834a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user18</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3aae3fe9cfe453b7b20b78ebdaff75297c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user19</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a4ba6c2b1329206305f9e9a1b83bbfbd4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user20</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a2aab1427c8e2d457367ed7a91fca1d5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user21</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a3245b35430ab559f4ca11f0b4da4612c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user22</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a56549d74b3196c105907347e695bf4d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user23</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a9530ef1c4cc5d3578bba75cf9c885d5f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user24</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a5ffd7599e6ef406d8500c37751dab4af</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user25</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a9edd40b70e566510a0668f831860fb6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user26</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3af17a057cae1240493d9543f8a08c0c17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user27</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a17c08b9327fdd0dc282b5da90755413d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user28</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a5d19cd084a766d454a45fef638e4fbe6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user29</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3a0cb74d08d0b375a02b942d26bbcaff49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user30</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3ac830490687763373d36de609273c4ec2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>user31</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a6f92f2ffae18d56f68c5c4987e081ea3af60945cb06c584d7beb39bfd54ac2c5d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -1001,6 +1463,69 @@
       <name>saveProgramAsDefault</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a43b1837fd2667d8513becbb6a7060a9dacf43dc3b77f199062ee683b90f54ba0c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ConfigCommands</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>setConfig</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcdaf17917d35be60f3f27cd8649b6d293f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>requestConfig</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>requestFactorySync</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcdaa6e8d9df3d00df9e79ea5c744d59978f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>requestUserSync</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda75e6abfc0cfa2d87201559ca0a838d47</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>updateConfig</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda592a2aa76bf9c607a847edff1e208bc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>updateUserConfig</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda39ea91ed36bb7921679b902d32d13190</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>setConfigState</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda0ef45a60feb984f135610221e9ffb0bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>factorySyncEnd</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -1141,6 +1666,27 @@
       <name>controlButtonMessage</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>configSetMessage</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1acdeebdfa88f110318566c26487863252</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>configRespMessage</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a98f4abb88c20e5071bf5b7469195260f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>configSyncEndMessage</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>a4bafdbd4d494258c67ba3ca5b9fd55e1a19a1b1ec3879149558d7102996a9157e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -20999,6 +21545,7 @@
   <compound kind="class">
     <name>Block</name>
     <filename>classBlock.html</filename>
+    <class kind="struct">Block::ConfigMetaData</class>
     <class kind="struct">Block::ConnectionPort</class>
     <class kind="struct">Block::DataInputPortListener</class>
     <class kind="struct">Block::Program</class>
@@ -21044,6 +21591,13 @@
       <name>developerControlBlock</name>
       <anchorfile>classBlock.html</anchorfile>
       <anchor>a2c6b3c425b9b8cb708b23e553fa81324a98ca592426170135a53fdd46bc6d2a53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>touchBlock</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a2c6b3c425b9b8cb708b23e553fa81324a96792e301d0fbaeea7e35a88b1bbb054</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -21285,6 +21839,76 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>getMaxConfigIndex</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>af8ace6be0165c85b5269db6dc22971c1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>isValidUserConfigIndex</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a6669da03a71b1ad2c38d6c7803588ea1</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int32</type>
+      <name>getLocalConfigValue</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ab426a6fb6026726c6aae818e76dce107</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigValue</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a071f5994d0d76caf3edbe3002668d738</anchor>
+      <arglist>(uint32 item, int32 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigRange</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>aae3f6dfd3df6633d9da154aea8739c6c</anchor>
+      <arglist>(uint32 item, int32 min, int32 max)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigItemActive</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a62f6246482b5da2adea45a1df717b36d</anchor>
+      <arglist>(uint32 item, bool isActive)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>isLocalConfigItemActive</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a537a2fbda5382836aa41d6577cff4cd1</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual ConfigMetaData</type>
+      <name>getLocalConfigMetaData</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>abf8cbc8bd4d90e67f7e1d5e3823b1786</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>requestFactoryConfigSync</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a2229b911ce24d4681082f86265e7e8a3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>resetConfigListActiveStatus</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a197b5e99c821d2243bca77a0b71feb92</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>setLogger</name>
       <anchorfile>classBlock.html</anchorfile>
@@ -21297,6 +21921,13 @@
       <anchorfile>classBlock.html</anchorfile>
       <anchor>aef359e7ae647b875a802332a4211f8b4</anchor>
       <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setConfigChangedCallback</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a936ae972ef533d2aa30229c2de961c63</anchor>
+      <arglist>(std::function&lt; void(Block &amp;, const ConfigMetaData &amp;, uint32)&gt;)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -21327,6 +21958,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>juce::String</type>
+      <name>versionNumber</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ab0a9f022d5a0f691f753e4b8203c4d4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>const UID</type>
       <name>uid</name>
       <anchorfile>classBlock.html</anchorfile>
@@ -21340,6 +21978,13 @@
       <anchor>a596d7845cc8ff7d29fdc0300bac04203</anchor>
       <arglist>(const juce::String &amp;serialNumberToUse)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>Block</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>aa72ed32ffacf2c061f07167c838ea32f</anchor>
+      <arglist>(const juce::String &amp;serial, const juce::String &amp;version)</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>juce::ListenerList&lt; DataInputPortListener &gt;</type>
       <name>dataInputPortListeners</name>
@@ -21352,6 +21997,115 @@
       <name>programEventListeners</name>
       <anchorfile>classBlock.html</anchorfile>
       <anchor>a0c0e1985883bc5fab5535d82c8fe62b3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Block::ConfigMetaData</name>
+    <filename>structBlock_1_1ConfigMetaData.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ad5c46e38930577609e2631688c20d7ab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ad94ecc9cc1c8aa5a7de181009e79f2f8</anchor>
+      <arglist>(uint32 itemIndex, int32 itemValue, juce::Range&lt; int32 &gt; rangeToUse, bool active, const char *itemName, uint32 itemType, const char *options[ConfigMetaData::numOptionNames], const char *groupName)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a03389b9503077827649c34784e25e6d3</anchor>
+      <arglist>(const ConfigMetaData &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ConfigMetaData &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a4d836764501bdb0001f53d3cc6ba9be1</anchor>
+      <arglist>(const ConfigMetaData &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ac86a3ea5b6adfa0df6a6d5b83d0a8813</anchor>
+      <arglist>(const ConfigMetaData &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a781c5772182470be6ce81e682b2a60b3</anchor>
+      <arglist>(const ConfigMetaData &amp;other) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32</type>
+      <name>item</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a4266eeea52a9b67c8e995451692dfe41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int32</type>
+      <name>value</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a87daf77dc59868b7c737ccf9b2f96350</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::Range&lt; int32 &gt;</type>
+      <name>range</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a5e83f923a89ddf03a301efe06016c7ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isActive</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a75c5b3b45d4b85b98c93710d87637b3c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>name</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a2b573896ca5e114ff9179d3870ff4ea1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32</type>
+      <name>type</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a66c6125487e7820acc9e80023d4dac7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>optionNames</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a817279cab678fd75cc69ff7dfd1dfcee</anchor>
+      <arglist>[numOptionNames]</arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>group</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ac8d71b576e9c9b94fb15da85f2a8acb8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr int32</type>
+      <name>numOptionNames</name>
+      <anchorfile>structBlock_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a20bc761b99279c69e7c53cca52505a47</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -21454,6 +22208,274 @@
       <anchorfile>structBlock_1_1ProgramEventMessage.html</anchorfile>
       <anchor>aec4510472128b7de03b5ff86968787ec</anchor>
       <arglist>[3]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BlockConfigManager</name>
+    <filename>structBlockConfigManager.html</filename>
+    <class kind="struct">BlockConfigManager::ConfigDescription</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>ConfigType</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>integer</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072eea0bb8c71391407f76a2a638a9ee90eaeb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>floating</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072eeab1431d9ddac49a1469a9c9c5040e6737</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>boolean</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072eea23c97c77e7c6903136c039ef769bfde5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>colour</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072eea60653ee5dad2e4090294f3d5b4206f48</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>options</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6148f6d6cdb6f788bd6d009b40f072eea2a2c3e3aa9f59b2b4b662fa8636eda93</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDeviceIndex</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a6afae389370f26ccced6e3ec723ce03b</anchor>
+      <arglist>(TopologyIndex newDeviceIndex)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDeviceComms</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a8a1afa66ee07d833bce4153ffa61c29a</anchor>
+      <arglist>(PhysicalTopologySource::DeviceConnection *newConn)</arglist>
+    </member>
+    <member kind="function">
+      <type>int32</type>
+      <name>getItemValue</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>af0371ed5aae8b990dbd580aa14b7705e</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setItemValue</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a004a93b9b7c299cc4b6f364d8989f86c</anchor>
+      <arglist>(ConfigItemId item, int32 value)</arglist>
+    </member>
+    <member kind="function">
+      <type>int32</type>
+      <name>getItemMin</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>acf3f68e3860748f0af9c16f4e424f5de</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setItemMin</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a348830697a499536036e6e9088bf4727</anchor>
+      <arglist>(ConfigItemId item, int32 min)</arglist>
+    </member>
+    <member kind="function">
+      <type>int32</type>
+      <name>getItemMax</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a963ea5d2d75149f1f64122369cd45fb6</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setItemMax</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>ae64cdfe1b7fc62fde30f38cd04589b9a</anchor>
+      <arglist>(ConfigItemId item, int32 max)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getItemActive</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a35654cc932fddaa1f657b709d3f41796</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setItemActive</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>aa51be0a63d19b7d8f69df62c24149c49</anchor>
+      <arglist>(ConfigItemId item, bool isActive)</arglist>
+    </member>
+    <member kind="function">
+      <type>juce::String</type>
+      <name>getOptionName</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a823c32e83298b0f1dfb4c515e286ee3a</anchor>
+      <arglist>(ConfigItemId item, uint8 optionIndex)</arglist>
+    </member>
+    <member kind="function">
+      <type>Block::ConfigMetaData</type>
+      <name>getMetaData</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a08106dcee3002da4728e293ef01d7caa</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resetConfigListActiveStatus</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>ac64474936ae911599d470569d1a175c9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBlockConfig</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a97f1d91cb10396143709a468684524ea</anchor>
+      <arglist>(ConfigItemId item, int32 value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>requestBlockConfig</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a492b4a5f810e0918445fbe65855f0f83</anchor>
+      <arglist>(ConfigItemId item)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>requestFactoryConfigSync</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a3f2b658f27b8991624df5d418a32ea3a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>requestUserConfigSync</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a73d8d4cf98487a4e03b6258a81ebb39f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>handleConfigUpdateMessage</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a00d14839a104bb200e4b4d0f518dd8d9</anchor>
+      <arglist>(int32 item, int32 value, int32 min, int32 max)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>handleConfigSetMessage</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a58bd69c29360b02aaab1baad292954f7</anchor>
+      <arglist>(int32 item, int32 value)</arglist>
+    </member>
+    <member kind="variable">
+      <type>ConfigDescription</type>
+      <name>configList</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a7fafd4c77ddf1b07f50fe2d6d24438d1</anchor>
+      <arglist>[numConfigItems]</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr uint32</type>
+      <name>numConfigItems</name>
+      <anchorfile>structBlockConfigManager.html</anchorfile>
+      <anchor>a42ceb197a7a1466f1b9e1105699665d5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BlockConfigManager::ConfigDescription</name>
+    <filename>structBlockConfigManager_1_1ConfigDescription.html</filename>
+    <member kind="function">
+      <type>Block::ConfigMetaData</type>
+      <name>toConfigMetaData</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>af1395c279c717bbabe0881213ecfcbc8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>ConfigItemId</type>
+      <name>item</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>a62e5491b900224c37e71f98854a68097</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int32</type>
+      <name>value</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>ab5eee8d6f0fc0bd335dba2538a330233</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int32</type>
+      <name>min</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>a1e1dd97b04b8e0fc47183c0b9ab0870d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int32</type>
+      <name>max</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>add78fbe617a4b3bc3ac08b85b6a24637</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isActive</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>ad19bb37cb82aeaff7307b1cd5ff4f226</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>name</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>a82894f92593c38894ee628f27ca12f27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ConfigType</type>
+      <name>type</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>aecee220242a958915e5aa30bc214f03d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>optionNames</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>a85c7efdd2b251618a1a482662a4454f2</anchor>
+      <arglist>[configMaxOptions]</arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>group</name>
+      <anchorfile>structBlockConfigManager_1_1ConfigDescription.html</anchorfile>
+      <anchor>a6b7651824fd2c511d9702e6034a843d5</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -21720,6 +22742,20 @@
       <name>isDevCtrlBlock</name>
       <anchorfile>structBlockSerialNumber.html</anchorfile>
       <anchor>a89738368379500328f7beb27d8974205</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isTouchBlock</name>
+      <anchorfile>structBlockSerialNumber.html</anchorfile>
+      <anchor>ab452d6fd5629f09a229a4bc4165bc013</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSeaboardBlock</name>
+      <anchorfile>structBlockSerialNumber.html</anchorfile>
+      <anchor>a6dd01100926c43a5e20e790200298910</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -31548,6 +32584,62 @@
       <anchor>a891776295057786f99f14631b1aa2794a4acf073fd402d4897b9bb274e9dfcd33</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>velocitySensitivity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794ab040931e32a7b97779637fccdd82c128</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideSensitivity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794ac349b62c3f098211573dd55e5fa604aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>slideSensitivity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794acca11dd1c754621ac2d4ef3686f68e60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pressSensitivity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794acfd2544e0c838cfeb444fc95ce8d3b37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>liftSensitivity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794ae11770d81559478b6e7ba9e8c4c8b01d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>fixedVelocity</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794a9acaa35e30ac65f51df5149c281340c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideLock</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794a966c488cd3e2bc27e4ebfe752cd7e36f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pianoMode</name>
+      <anchorfile>classControlButton.html</anchorfile>
+      <anchor>a891776295057786f99f14631b1aa2794ac09492a41be9520f359df6af992acd99</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>ControlButton</name>
@@ -32828,6 +33920,13 @@
       <arglist>(int allowedOrientations)</arglist>
     </member>
     <member kind="function">
+      <type>int</type>
+      <name>getOrientationsEnabled</name>
+      <anchorfile>classDesktop.html</anchorfile>
+      <anchor>ac18d391af21fd546fc059c77014a4c9b</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>isOrientationEnabled</name>
       <anchorfile>classDesktop.html</anchorfile>
@@ -33052,6 +34151,24 @@
       <name>batteryCharging</name>
       <anchorfile>structDeviceStatus.html</anchorfile>
       <anchor>aac9f242216c5f7e5217b65eef63d7fcc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>DeviceVersion</name>
+    <filename>structDeviceVersion.html</filename>
+    <member kind="variable">
+      <type>TopologyIndex</type>
+      <name>index</name>
+      <anchorfile>structDeviceVersion.html</anchorfile>
+      <anchor>a2103de2f431e4495b298ae96be52d765</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>VersionNumber</type>
+      <name>version</name>
+      <anchorfile>structDeviceVersion.html</anchorfile>
+      <anchor>a54695d4be42e34408322a256ba37ec42</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -44902,6 +46019,34 @@
       <anchor>a4f2573e8695c565a35bd4b528c87fb81</anchor>
       <arglist>(const uint8 *packetData, uint8 size)</arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addConfigSetMessage</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>ac48c8b5eec6087d96f10f7fd58c817cc</anchor>
+      <arglist>(int32 item, int32 value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addRequestMessage</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>ac0e2f03a7af4fd0c941d18d2788f2961</anchor>
+      <arglist>(int32 item)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addRequestFactorySyncMessage</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>a8c3885aa89bf538ed8acf2f3eb714040</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addRequestUserSyncMessage</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>a9172534bd1de83bd42314362d3918eab</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>HostPacketDecoder</name>
@@ -44951,6 +46096,13 @@
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
+      <name>handleVersion</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>adcf65caf7c48ce53f1fc83f2b970ea03</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
       <name>handleTouch</name>
       <anchorfile>structHostPacketDecoder.html</anchorfile>
       <anchor>a5399035cb5f56629c451ea2f7a9c5436</anchor>
@@ -44996,6 +46148,13 @@
       <name>handleFirmwareUpdateACK</name>
       <anchorfile>structHostPacketDecoder.html</anchorfile>
       <anchor>aa7bea3b910d1a64966f7fab360327122</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>handleConfigMessage</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>a7efec0d34ca00c492b3ae30a8cf05e19</anchor>
       <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader, TopologyIndex deviceIndex)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -89734,6 +90893,24 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>VersionNumber</name>
+    <filename>structVersionNumber.html</filename>
+    <member kind="variable">
+      <type>uint8</type>
+      <name>version</name>
+      <anchorfile>structVersionNumber.html</anchorfile>
+      <anchor>ac0a6df1e60a7a2b384f5278c9b30ce33</anchor>
+      <arglist>[21]</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8</type>
+      <name>length</name>
+      <anchorfile>structVersionNumber.html</anchorfile>
+      <anchor>a53b7d7ee283ac681022db194f463126b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>Viewport</name>
     <filename>classViewport.html</filename>
@@ -93760,6 +94937,7 @@
   <compound kind="class">
     <name>juce::Block</name>
     <filename>classjuce_1_1Block.html</filename>
+    <class kind="struct">juce::Block::ConfigMetaData</class>
     <class kind="struct">juce::Block::ConnectionPort</class>
     <class kind="struct">juce::Block::DataInputPortListener</class>
     <class kind="struct">juce::Block::Program</class>
@@ -93805,6 +94983,13 @@
       <name>developerControlBlock</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
       <anchor>a1c008a40f29753a54bce01d6b95fbb50a7a2fb0f1f22978da9cf46906be459a45</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>touchBlock</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a1c008a40f29753a54bce01d6b95fbb50a88f98afd926672f904113e523a2f1a19</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -94046,6 +95231,76 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>getMaxConfigIndex</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>ae3d1da4c2ffcf804af352e45f8961c89</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>isValidUserConfigIndex</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>add70521bb59fabb3119253c6b322d65a</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int32</type>
+      <name>getLocalConfigValue</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a5ba2700efab77a91b4ad09e5b70654ff</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigValue</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>af292bdd912ebce74b3328a326692aed0</anchor>
+      <arglist>(uint32 item, int32 value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigRange</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a7c10010c7d1deca06de9b79ae68f53da</anchor>
+      <arglist>(uint32 item, int32 min, int32 max)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setLocalConfigItemActive</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a2418bebb37c963e540bee1a09beb882f</anchor>
+      <arglist>(uint32 item, bool isActive)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>isLocalConfigItemActive</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a1c998f7661c2ee7d01f64f3d71b51c6b</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual ConfigMetaData</type>
+      <name>getLocalConfigMetaData</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a77942bac15d470b381784effc21338a1</anchor>
+      <arglist>(uint32 item)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>requestFactoryConfigSync</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a94ac1929fc2ac8192492c1e3f11e0a0d</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>resetConfigListActiveStatus</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a920dc178b910e71552482c6b64347c82</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>setLogger</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
@@ -94058,6 +95313,13 @@
       <anchorfile>classjuce_1_1Block.html</anchorfile>
       <anchor>af173f3ccc3b6dfcfdc3b7dfeb2bb3586</anchor>
       <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setConfigChangedCallback</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a079142f8ca19c696c63fbab2c46a9abe</anchor>
+      <arglist>(std::function&lt; void(Block &amp;, const ConfigMetaData &amp;, uint32)&gt;)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -94088,6 +95350,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>juce::String</type>
+      <name>versionNumber</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a44766c4df37ea906e1d1f0eaaac9685d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>const UID</type>
       <name>uid</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
@@ -94101,6 +95370,13 @@
       <anchor>ae0a47602b25a0dd6e491c742517fa349</anchor>
       <arglist>(const juce::String &amp;serialNumberToUse)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>Block</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a4985045f9d77011ee37837889f3ce5cf</anchor>
+      <arglist>(const juce::String &amp;serial, const juce::String &amp;version)</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>juce::ListenerList&lt; DataInputPortListener &gt;</type>
       <name>dataInputPortListeners</name>
@@ -94113,6 +95389,115 @@
       <name>programEventListeners</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
       <anchor>a5a3530a53621205863b795fae5ded906</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>juce::Block::ConfigMetaData</name>
+    <filename>structjuce_1_1Block_1_1ConfigMetaData.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>af498658a16ca4cce389ed0f2035a6641</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a5cc3325af9050fb85fb5b304f5a18158</anchor>
+      <arglist>(uint32 itemIndex, int32 itemValue, juce::Range&lt; int32 &gt; rangeToUse, bool active, const char *itemName, uint32 itemType, const char *options[ConfigMetaData::numOptionNames], const char *groupName)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ConfigMetaData</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ab3af190bcb43550851b56b90fae99b81</anchor>
+      <arglist>(const ConfigMetaData &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ConfigMetaData &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a931d15c0156c080feaf3d1006be35021</anchor>
+      <arglist>(const ConfigMetaData &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ae265742e59c8028647472070cd1efcac</anchor>
+      <arglist>(const ConfigMetaData &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ad3cac8a6e0256da80a9687eaa6e50238</anchor>
+      <arglist>(const ConfigMetaData &amp;other) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32</type>
+      <name>item</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ae7735013a3189be1e40c95d1ce169abb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int32</type>
+      <name>value</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a15e8936393d5298fe9b8e1febd778f9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::Range&lt; int32 &gt;</type>
+      <name>range</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ab320b20b82da017491ad06d9aa1af651</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isActive</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a1e72b5f48a7610d996e528845fbaeedd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>name</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>aa9130e5135a812aa95505dfd81aa225d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32</type>
+      <name>type</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ade169d1a9d6cf56f020785fa6ac0e268</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>optionNames</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ae3502f7d213b6e55649f4261e7790998</anchor>
+      <arglist>[numOptionNames]</arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>group</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>a8f8b2b4b25cbab530f8d344b49504d46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr int32</type>
+      <name>numOptionNames</name>
+      <anchorfile>structjuce_1_1Block_1_1ConfigMetaData.html</anchorfile>
+      <anchor>ad075a4ec7fbafb9fae0cd2c440ba441f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -94810,6 +96195,62 @@
       <name>button7</name>
       <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
       <anchor>a255db90f7880221e85f4d1d426291832a344a7ff166d066c4cfd64cf6e8b948e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>velocitySensitivity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832abf9a03d2fa4df37a71775c725e7353cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideSensitivity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a659f1682b306f24cc65620eac510260f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>slideSensitivity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a0e41678d72bf007eac6701a9d7448c7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pressSensitivity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a027ab973b335f0b13d810198f0529ea1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>liftSensitivity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a34aad8c777c209eb0754328470eb2992</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>fixedVelocity</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a9b2bd48696029d32ed41a14f4f4f91c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>glideLock</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832ad4765271675b4375ffca4aad0eb450ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>pianoMode</name>
+      <anchorfile>classjuce_1_1ControlButton.html</anchorfile>
+      <anchor>a255db90f7880221e85f4d1d426291832a3adc204bcea3dccbbda3a126ed35cf96</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -97212,6 +98653,13 @@
       <anchor>add5d39fb43b47f0f7e177da4ccf746e4</anchor>
       <arglist>() noexcept</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isAllZero</name>
+      <anchorfile>structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>a414b4580930948b8d5649feb42d2cede</anchor>
+      <arglist>(const uint8 *data, size_t size) noexcept</arglist>
+    </member>
     <member kind="variable">
       <type>const size_t</type>
       <name>blockSize</name>
@@ -97517,6 +98965,13 @@
       <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
       <anchor>ab8646275914cfe851145c8ef566a6b8c</anchor>
       <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isAllZero</name>
+      <anchorfile>structlittlefoot_1_1LittleFootRemoteHeap.html</anchorfile>
+      <anchor>ad5287a38e8faf5dfc5c6db9fa20b1702</anchor>
+      <arglist>(const uint8 *data, size_t size) noexcept</arglist>
     </member>
     <member kind="variable">
       <type>const size_t</type>
@@ -98344,6 +99799,7 @@
     <path>/home/juce/data/res/development/juce/modules/juce_blocks_basics/blocks/</path>
     <filename>dir_54fb0b797b7f951f79340f90428dbac7.html</filename>
     <file>juce_Block.h</file>
+    <file>juce_BlockConfigManager.h</file>
     <file>juce_ControlButton.h</file>
     <file>juce_LEDGrid.h</file>
     <file>juce_LEDRow.h</file>

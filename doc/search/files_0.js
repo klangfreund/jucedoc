@@ -71,6 +71,7 @@ var searchData=
   ['juce_5fbitmapledprogram_2eh',['juce_BitmapLEDProgram.h',['../juce__BitmapLEDProgram_8h.html',1,'']]],
   ['juce_5fbitpackingutilities_2eh',['juce_BitPackingUtilities.h',['../juce__BitPackingUtilities_8h.html',1,'']]],
   ['juce_5fblock_2eh',['juce_Block.h',['../juce__Block_8h.html',1,'']]],
+  ['juce_5fblockconfigmanager_2eh',['juce_BlockConfigManager.h',['../juce__BlockConfigManager_8h.html',1,'']]],
   ['juce_5fblockmodels_2eh',['juce_BlockModels.h',['../juce__BlockModels_8h.html',1,'']]],
   ['juce_5fblocks_5fbasics_2eh',['juce_blocks_basics.h',['../juce__blocks__basics_8h.html',1,'']]],
   ['juce_5fblocksprotocoldefinitions_2eh',['juce_BlocksProtocolDefinitions.h',['../juce__BlocksProtocolDefinitions_8h.html',1,'']]],

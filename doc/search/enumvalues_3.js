@@ -17,6 +17,7 @@ var searchData=
   ['devicetopology',['deviceTopology',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8c9e8c9c9b42aacde92c009d1f9fcf1d',1,'juce_BlocksProtocolDefinitions.h']]],
   ['devicetopologyend',['deviceTopologyEnd',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594',1,'juce_BlocksProtocolDefinitions.h']]],
   ['devicetopologyextend',['deviceTopologyExtend',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['deviceversionlist',['deviceVersionList',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa',1,'juce_BlocksProtocolDefinitions.h']]],
   ['digidesignprotools',['DigidesignProTools',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a98abcd7b565c269a115d7f419114bb9c',1,'PluginHostType']]],
   ['digitalperformer',['DigitalPerformer',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5fc16668f994993c5f9a7276cd840f4a',1,'PluginHostType']]],
   ['direct',['direct',['../structApplicationCommandTarget_1_1InvocationInfo.html#a87e99a7b4b51787a40700bce2a7acc22a5da64d78c06aae22ea9c1315e99f9557',1,'ApplicationCommandTarget::InvocationInfo']]],

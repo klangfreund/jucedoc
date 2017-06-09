@@ -96,9 +96,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockSerialNumber.html">BlockSerialNumber</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVersionNumber.html">VersionNumber</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceStatus.html">DeviceStatus</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceConnection.html">DeviceConnection</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceVersion.html">DeviceVersion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTouchPosition.html">TouchPosition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinates of a touch.  <a href="structTouchPosition.html#details">More...</a><br/></td></tr>
@@ -143,6 +147,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a69b6622d96af486d38d829329a1bf08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c5caacae1f43b96c1fb0f284dee81d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a88c5caacae1f43b96c1fb0f284dee81d">DeviceCommand</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 9 &gt;</td></tr>
 <tr class="separator:a88c5caacae1f43b96c1fb0f284dee81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f11fcc0da792c5140ee66736115dcb6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a0f11fcc0da792c5140ee66736115dcb6">ConfigCommand</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 4 &gt;</td></tr>
+<tr class="separator:a0f11fcc0da792c5140ee66736115dcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7527bbacd3f5c91954cd18bd5a04f87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ac7527bbacd3f5c91954cd18bd5a04f87">ConfigItemIndex</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 8 &gt;</td></tr>
+<tr class="separator:ac7527bbacd3f5c91954cd18bd5a04f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da124e9f8755871b44c73d830a2f5a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a8da124e9f8755871b44c73d830a2f5a1">ConfigItemValue</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 32 &gt;</td></tr>
+<tr class="separator:a8da124e9f8755871b44c73d830a2f5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcbb30c582bb1d4c6575307e43f6def1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#abcbb30c582bb1d4c6575307e43f6def1">ControlButtonID</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 12 &gt;</td></tr>
 <tr class="memdesc:abcbb30c582bb1d4c6575307e43f6def1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An ID for a control-block button type.  <a href="#abcbb30c582bb1d4c6575307e43f6def1">More...</a><br/></td></tr>
 <tr class="separator:abcbb30c582bb1d4c6575307e43f6def1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,29 +188,115 @@ Enumerations</h2></td></tr>
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed">MessageFromDevice::deviceTopologyExtend</a> = 0x04, 
 <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">MessageFromDevice::deviceTopologyEnd</a> = 0x05, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa">MessageFromDevice::deviceVersionList</a> = 0x06, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">MessageFromDevice::touchStart</a> = 0x10, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">MessageFromDevice::touchMove</a> = 0x11, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">MessageFromDevice::touchEnd</a> = 0x12, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">MessageFromDevice::touchStartWithVelocity</a> = 0x13, 
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">MessageFromDevice::touchEnd</a> = 0x12, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">MessageFromDevice::touchStartWithVelocity</a> = 0x13, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">MessageFromDevice::touchMoveWithVelocity</a> = 0x14, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">MessageFromDevice::touchEndWithVelocity</a> = 0x15, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">MessageFromDevice::controlButtonDown</a> = 0x20, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">MessageFromDevice::controlButtonUp</a> = 0x21, 
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac836d2245e27287da29e0ad9dd230f73">MessageFromDevice::configMessage</a> = 0x18, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">MessageFromDevice::controlButtonDown</a> = 0x20, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">MessageFromDevice::controlButtonUp</a> = 0x21, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
 <br/>
  }</td></tr>
 <tr class="memdesc:a1513500452861490fb3bf17ea8e8deb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages that a device may send to the host.  <a href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7">More...</a><br/></td></tr>
 <tr class="separator:a1513500452861490fb3bf17ea8e8deb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c5a206ff37bc45a372d4ab02c956cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cb">MessageFromHost</a> { <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbabbbbfdecd3eaf2ad82b2f33786a67687">MessageFromHost::deviceCommandMessage</a> = 0x01, 
+<tr class="memitem:ab8c5a206ff37bc45a372d4ab02c956cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cb">MessageFromHost</a> { <br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbabbbbfdecd3eaf2ad82b2f33786a67687">MessageFromHost::deviceCommandMessage</a> = 0x01, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cba24dd14178f112a548f94ac8a9252f854">MessageFromHost::sharedDataChange</a> = 0x02, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x03, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">MessageFromHost::firmwareUpdatePacket</a> = 0x04
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">MessageFromHost::firmwareUpdatePacket</a> = 0x04, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">MessageFromHost::configMessage</a> = 0x10
+<br/>
  }</td></tr>
 <tr class="memdesc:ab8c5a206ff37bc45a372d4ab02c956cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages that the host may send to a device.  <a href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cb">More...</a><br/></td></tr>
 <tr class="separator:ab8c5a206ff37bc45a372d4ab02c956cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f92f2ffae18d56f68c5c4987e081ea3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3">ConfigItemId</a> { <br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa3d3b28911e050bcc3cf4b75752c3e99">midiStartChannel</a> = 0, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a6b925a5ac1bca69747649f835d7d897d">midiEndChannel</a> = 1, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ad481db19a15ff086112d4617003e1b1d">midiUseMPE</a> = 2, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a5badb396c19d4e158e82a260b458c429">pitchBendRange</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a8814055847f25f8382285c7b54222f1b">octave</a> = 4, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a09a6cad7eb6f4e5d3a5458c683cd1461">transpose</a> = 5, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a45e5ccc0054b9b80613991b4fe910380">slideCC</a> = 6, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a4dea0d2fc92d67a0d26ee46fa621759b">slideMode</a> = 7, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a3d7f5181a97ea194b924481653c9d63e">octaveTopology</a> = 8, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a313445ac04a10bd82a8e6b573087f035">velocitySensitivity</a> = 10, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a192352478baea90583b34703f42e0474">glideSensitivity</a> = 11, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3adec3c55ad34e9c83964f9fd0d3f1de86">slideSensitivity</a> = 12, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a9e35276daa49b1c7c4de75ec0067dbaa">pressureSensitivity</a> = 13, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa4abeb28c022bcfd53bb89a72f78b7aa">liftSensitivity</a> = 14, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a71b3e37de94f71ce86ba597190b45b41">fixedVelocity</a> = 15, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ad165ef99559fc2fa4fe2cc7d0a80db6a">fixedVelocityValue</a> = 16, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a1807a024bdfdc8fa107501f143bb2ae4">pianoMode</a> = 17, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a4afa33103853d734e4deb332a41f74dd">glideLock</a> = 18, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3af1982b2b77f9b0e7cd29e39b39d8a0b4">mode</a> = 20, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a627ba5be940770a536a66f655349e97f">volume</a> = 21, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a83809220a14c97170cd08f22e480acdc">scale</a> = 22, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ad37c8c5ed64a402271d6fb13ec02913a">hideMode</a> = 23, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a3ded4e41c00354c2060873629c14ea68">chord</a> = 24, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a5b0ad2b9e536bd1db5d6c961ef73b32c">arpPattern</a> = 25, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a94af8057d79cef2a0628d1e9315f9e5d">tempo</a> = 26, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a51874489fd98f3db0be1aced90dfcb4f">xTrackingMode</a> = 30, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa00be52744d5a1a26cc2480fbae7f92b">yTrackingMode</a> = 31, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a36e4df4de5f5b268b8044ac830ddcfa1">zTrackingMode</a> = 32, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a0803a66989ae16d839121394b0797fdf">user0</a> = 64, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a8c4437d26c744f646a9d6f03369503da">user1</a> = 65, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ac6fe05fe5a514a253d3c166bb0c0b817">user2</a> = 66, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aad0b797a8ee6060e320113751743564e">user3</a> = 67, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a08ec4fbfb8910207aa54bed6e221cca7">user4</a> = 68, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a4b7154843e3d441572485676b778aa83">user5</a> = 69, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ab513723e4d07ecb8891c87a25c9c63e9">user6</a> = 70, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aba168201777f9aff63233eb68a236edf">user7</a> = 71, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a41798994a070a623c1f2b31f822b9eba">user8</a> = 72, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a3228ad3e532f467e686b8b06ffa203f1">user9</a> = 73, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a44330789bb8cb0a0167333225bcd78ac">user10</a> = 74, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a7f910a7e02f60110584095d511c0df9a">user11</a> = 75, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ae6da54a39e265ee5172d1a86130ed12e">user12</a> = 76, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a0451881ecbe4cbb17bf6a0b2430a4219">user13</a> = 77, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a0b805dc65deaa12999c91dbe53095769">user14</a> = 78, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa80258469383384181ca586e88cf5520">user15</a> = 79, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ad49095d4622f7cf4a07f0e4429dc7532">user16</a> = 80, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a2581be049b62d3d090cadad325a834a7">user17</a> = 81, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aae3fe9cfe453b7b20b78ebdaff75297c">user18</a> = 82, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a4ba6c2b1329206305f9e9a1b83bbfbd4">user19</a> = 83, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a2aab1427c8e2d457367ed7a91fca1d5c">user20</a> = 84, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a3245b35430ab559f4ca11f0b4da4612c">user21</a> = 85, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a56549d74b3196c105907347e695bf4d6">user22</a> = 86, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a9530ef1c4cc5d3578bba75cf9c885d5f">user23</a> = 87, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a5ffd7599e6ef406d8500c37751dab4af">user24</a> = 88, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a9edd40b70e566510a0668f831860fb6e">user25</a> = 89, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3af17a057cae1240493d9543f8a08c0c17">user26</a> = 90, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a17c08b9327fdd0dc282b5da90755413d">user27</a> = 91, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a5d19cd084a766d454a45fef638e4fbe6">user28</a> = 92, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a0cb74d08d0b375a02b942d26bbcaff49">user29</a> = 93, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3ac830490687763373d36de609273c4ec2">user30</a> = 94, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3af60945cb06c584d7beb39bfd54ac2c5d">user31</a> = 95
+<br/>
+ }</td></tr>
+<tr class="memdesc:a6f92f2ffae18d56f68c5c4987e081ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration Item Identifiers.  <a href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3">More...</a><br/></td></tr>
+<tr class="separator:a6f92f2ffae18d56f68c5c4987e081ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b1837fd2667d8513becbb6a7060a9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a43b1837fd2667d8513becbb6a7060a9d">DeviceCommands</a> { <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a43b1837fd2667d8513becbb6a7060a9da5d56a582a8c9e8f7be54f87b9a9fbf5f">beginAPIMode</a> = 0x00, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a43b1837fd2667d8513becbb6a7060a9dac74ea907c0e1f7b6a67ace2fa1f3b841">requestTopologyMessage</a> = 0x01, 
@@ -212,6 +308,19 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:a43b1837fd2667d8513becbb6a7060a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f0c78fe5174a0fb7d0451722721bcd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcd">ConfigCommands</a> { <br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaf17917d35be60f3f27cd8649b6d293f0">setConfig</a> = 0x00, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075">requestConfig</a> = 0x01, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaa6e8d9df3d00df9e79ea5c744d59978f">requestFactorySync</a> = 0x02, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda75e6abfc0cfa2d87201559ca0a838d47">requestUserSync</a> = 0x03, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda592a2aa76bf9c607a847edff1e208bc9">updateConfig</a> = 0x04, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda39ea91ed36bb7921679b902d32d13190">updateUserConfig</a> = 0x05, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0ef45a60feb984f135610221e9ffb0bb">setConfigState</a> = 0x06, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a">factorySyncEnd</a> = 0x07
+<br/>
+ }</td></tr>
+<tr class="separator:ad2f0c78fe5174a0fb7d0451722721bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad1962e0df7ab8b2b6062dbb3b2f632"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632">DataChangeCommands</a> { <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632a8a756f931b5858f3e7db3f0c1828f92a">endOfPacket</a> = 0, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632a5c8de79f1a00eda23746786117065cbf">endOfChanges</a> = 1, 
@@ -242,7 +351,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a99afd2a70e5de620bf123059c4c9a8a1">firmwareUpdateACK</a> = MessageType::bits + FirmwareUpdateACKCode::bits, 
 <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</a> = 0x03, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085">controlButtonMessage</a> = typeDeviceAndTime + ControlButtonID::bits
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085">controlButtonMessage</a> = typeDeviceAndTime + ControlButtonID::bits, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1acdeebdfa88f110318566c26487863252">configSetMessage</a> = MessageType::bits + ConfigCommand::bits + ConfigItemIndex::bits + ConfigItemValue::bits, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a98f4abb88c20e5071bf5b7469195260f">configRespMessage</a> = MessageType::bits + ConfigCommand::bits + ConfigItemIndex::bits + (ConfigItemValue::bits * 3), 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a19a1b1ec3879149558d7102996a9157e">configSyncEndMessage</a> = MessageType::bits + ConfigCommand::bits
 <br/>
  }</td></tr>
 <tr class="memdesc:a4bafdbd4d494258c67ba3ca5b9fd55e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the number of bits required to encode various items in the packets.  <a href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1">More...</a><br/></td></tr>
@@ -417,6 +530,42 @@ Enumerations</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a88c5caacae1f43b96c1fb0f284dee81d">DeviceCommand</a> =  <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt;9&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f11fcc0da792c5140ee66736115dcb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a0f11fcc0da792c5140ee66736115dcb6">ConfigCommand</a> =  <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt;4&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7527bbacd3f5c91954cd18bd5a04f87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ac7527bbacd3f5c91954cd18bd5a04f87">ConfigItemIndex</a> =  <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt;8&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8da124e9f8755871b44c73d830a2f5a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a8da124e9f8755871b44c73d830a2f5a1">ConfigItemValue</a> =  <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt;32&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -600,6 +749,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594"></a>deviceTopologyEnd</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa"></a>deviceVersionList</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033"></a>touchStart</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773"></a>touchMove</em>&#160;</td><td class="fielddoc">
@@ -611,6 +762,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e"></a>touchMoveWithVelocity</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe"></a>touchEndWithVelocity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ac836d2245e27287da29e0ad9dd230f73"></a>configMessage</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef"></a>controlButtonDown</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -652,6 +805,144 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b"></a>firmwareUpdatePacket</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73"></a>configMessage</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3">ConfigItemId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configuration Item Identifiers. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aa3d3b28911e050bcc3cf4b75752c3e99"></a>midiStartChannel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a6b925a5ac1bca69747649f835d7d897d"></a>midiEndChannel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ad481db19a15ff086112d4617003e1b1d"></a>midiUseMPE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a5badb396c19d4e158e82a260b458c429"></a>pitchBendRange</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a8814055847f25f8382285c7b54222f1b"></a>octave</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a09a6cad7eb6f4e5d3a5458c683cd1461"></a>transpose</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a45e5ccc0054b9b80613991b4fe910380"></a>slideCC</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a4dea0d2fc92d67a0d26ee46fa621759b"></a>slideMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a3d7f5181a97ea194b924481653c9d63e"></a>octaveTopology</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a313445ac04a10bd82a8e6b573087f035"></a>velocitySensitivity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a192352478baea90583b34703f42e0474"></a>glideSensitivity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3adec3c55ad34e9c83964f9fd0d3f1de86"></a>slideSensitivity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a9e35276daa49b1c7c4de75ec0067dbaa"></a>pressureSensitivity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aa4abeb28c022bcfd53bb89a72f78b7aa"></a>liftSensitivity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a71b3e37de94f71ce86ba597190b45b41"></a>fixedVelocity</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ad165ef99559fc2fa4fe2cc7d0a80db6a"></a>fixedVelocityValue</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a1807a024bdfdc8fa107501f143bb2ae4"></a>pianoMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a4afa33103853d734e4deb332a41f74dd"></a>glideLock</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3af1982b2b77f9b0e7cd29e39b39d8a0b4"></a>mode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a627ba5be940770a536a66f655349e97f"></a>volume</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a83809220a14c97170cd08f22e480acdc"></a>scale</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ad37c8c5ed64a402271d6fb13ec02913a"></a>hideMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a3ded4e41c00354c2060873629c14ea68"></a>chord</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a5b0ad2b9e536bd1db5d6c961ef73b32c"></a>arpPattern</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a94af8057d79cef2a0628d1e9315f9e5d"></a>tempo</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a51874489fd98f3db0be1aced90dfcb4f"></a>xTrackingMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aa00be52744d5a1a26cc2480fbae7f92b"></a>yTrackingMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a36e4df4de5f5b268b8044ac830ddcfa1"></a>zTrackingMode</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a0803a66989ae16d839121394b0797fdf"></a>user0</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a8c4437d26c744f646a9d6f03369503da"></a>user1</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ac6fe05fe5a514a253d3c166bb0c0b817"></a>user2</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aad0b797a8ee6060e320113751743564e"></a>user3</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a08ec4fbfb8910207aa54bed6e221cca7"></a>user4</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a4b7154843e3d441572485676b778aa83"></a>user5</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ab513723e4d07ecb8891c87a25c9c63e9"></a>user6</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aba168201777f9aff63233eb68a236edf"></a>user7</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a41798994a070a623c1f2b31f822b9eba"></a>user8</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a3228ad3e532f467e686b8b06ffa203f1"></a>user9</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a44330789bb8cb0a0167333225bcd78ac"></a>user10</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a7f910a7e02f60110584095d511c0df9a"></a>user11</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ae6da54a39e265ee5172d1a86130ed12e"></a>user12</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a0451881ecbe4cbb17bf6a0b2430a4219"></a>user13</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a0b805dc65deaa12999c91dbe53095769"></a>user14</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aa80258469383384181ca586e88cf5520"></a>user15</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ad49095d4622f7cf4a07f0e4429dc7532"></a>user16</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a2581be049b62d3d090cadad325a834a7"></a>user17</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3aae3fe9cfe453b7b20b78ebdaff75297c"></a>user18</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a4ba6c2b1329206305f9e9a1b83bbfbd4"></a>user19</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a2aab1427c8e2d457367ed7a91fca1d5c"></a>user20</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a3245b35430ab559f4ca11f0b4da4612c"></a>user21</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a56549d74b3196c105907347e695bf4d6"></a>user22</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a9530ef1c4cc5d3578bba75cf9c885d5f"></a>user23</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a5ffd7599e6ef406d8500c37751dab4af"></a>user24</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a9edd40b70e566510a0668f831860fb6e"></a>user25</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3af17a057cae1240493d9543f8a08c0c17"></a>user26</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a17c08b9327fdd0dc282b5da90755413d"></a>user27</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a5d19cd084a766d454a45fef638e4fbe6"></a>user28</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3a0cb74d08d0b375a02b942d26bbcaff49"></a>user29</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3ac830490687763373d36de609273c4ec2"></a>user30</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a6f92f2ffae18d56f68c5c4987e081ea3af60945cb06c584d7beb39bfd54ac2c5d"></a>user31</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -677,6 +968,36 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a43b1837fd2667d8513becbb6a7060a9da7c69daf30c09e98f789122bf75ca0a36"></a>debugMode</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a43b1837fd2667d8513becbb6a7060a9dacf43dc3b77f199062ee683b90f54ba0c"></a>saveProgramAsDefault</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcd">ConfigCommands</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcdaf17917d35be60f3f27cd8649b6d293f0"></a>setConfig</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075"></a>requestConfig</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcdaa6e8d9df3d00df9e79ea5c744d59978f"></a>requestFactorySync</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda75e6abfc0cfa2d87201559ca0a838d47"></a>requestUserSync</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda592a2aa76bf9c607a847edff1e208bc9"></a>updateConfig</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda39ea91ed36bb7921679b902d32d13190"></a>updateUserConfig</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda0ef45a60feb984f135610221e9ffb0bb"></a>setConfigState</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a"></a>factorySyncEnd</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -752,6 +1073,12 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085"></a>controlButtonMessage</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4bafdbd4d494258c67ba3ca5b9fd55e1acdeebdfa88f110318566c26487863252"></a>configSetMessage</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4bafdbd4d494258c67ba3ca5b9fd55e1a98f4abb88c20e5071bf5b7469195260f"></a>configRespMessage</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4bafdbd4d494258c67ba3ca5b9fd55e1a19a1b1ec3879149558d7102996a9157e"></a>configSyncEndMessage</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -760,7 +1087,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -14,6 +14,7 @@ var searchData=
   ['devicedetector',['DeviceDetector',['../structjuce_1_1PhysicalTopologySource_1_1DeviceDetector.html',1,'juce::PhysicalTopologySource']]],
   ['devicedetector',['DeviceDetector',['../structPhysicalTopologySource_1_1DeviceDetector.html',1,'PhysicalTopologySource']]],
   ['devicestatus',['DeviceStatus',['../structDeviceStatus.html',1,'']]],
+  ['deviceversion',['DeviceVersion',['../structDeviceVersion.html',1,'']]],
   ['dialogwindow',['DialogWindow',['../classDialogWindow.html',1,'']]],
   ['directorycontentsdisplaycomponent',['DirectoryContentsDisplayComponent',['../classDirectoryContentsDisplayComponent.html',1,'']]],
   ['directorycontentslist',['DirectoryContentsList',['../classDirectoryContentsList.html',1,'']]],

@@ -6,6 +6,9 @@ var searchData=
   ['colourselectoroptions',['ColourSelectorOptions',['../classColourSelector.html#a42bcef80614375bb812096797d7439f4',1,'ColourSelector']]],
   ['columnpropertyflags',['ColumnPropertyFlags',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831',1,'TableHeaderComponent']]],
   ['commandflags',['CommandFlags',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72',1,'ApplicationCommandInfo']]],
+  ['configcommands',['ConfigCommands',['../juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcd',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['configitemid',['ConfigItemId',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['configtype',['ConfigType',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072ee',1,'BlockConfigManager']]],
   ['connectededgeflags',['ConnectedEdgeFlags',['../classButton.html#aebb14d53173b13f0e98d01a02aee8e82',1,'Button']]],
   ['customisationflags',['CustomisationFlags',['../classToolbar.html#a9036434be5b014285c69d2b87841fb3f',1,'Toolbar']]]
 ];

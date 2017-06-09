@@ -13,5 +13,6 @@ var searchData=
   ['ymid',['yMid',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427eda8bfb9c8cceb359b4f00a9839168a7769',1,'RectanglePlacement']]],
   ['yoffset',['yOffset',['../structLowLevelGraphicsPostScriptRenderer_1_1SavedState.html#a0f4d17295aea556882e47a9a8b07b9cb',1,'LowLevelGraphicsPostScriptRenderer::SavedState']]],
   ['ytop',['yTop',['../classRectanglePlacement.html#afd5464553fd6bb41d697f3fc1d7427eda1b650115227b059f9eb2c07ecdfcb3ad',1,'RectanglePlacement']]],
+  ['ytrackingmode',['yTrackingMode',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3aa00be52744d5a1a26cc2480fbae7f92b',1,'juce_BlocksProtocolDefinitions.h']]],
   ['yvelocity',['yVelocity',['../structTouchSurface_1_1Touch.html#a95f9109bda88a8dc13157ec1b73eb200',1,'TouchSurface::Touch::yVelocity()'],['../structjuce_1_1TouchSurface_1_1Touch.html#ad8ff81766dd77bcbfb5fd0c7f5087cc7',1,'juce::TouchSurface::Touch::yVelocity()']]]
 ];

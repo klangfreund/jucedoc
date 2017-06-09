@@ -13,5 +13,6 @@ var searchData=
   ['green',['green',['../classColours.html#a9a561532a8aa26019e40aa0460a40646',1,'Colours']]],
   ['greenbits',['greenBits',['../classOpenGLPixelFormat.html#a75cc537f0d7ad936b3353426735515dd',1,'OpenGLPixelFormat']]],
   ['greenyellow',['greenyellow',['../classColours.html#a9d690d0eb0194caa2c91dfba4afbff4c',1,'Colours']]],
-  ['grey',['grey',['../classColours.html#a631686f2c072d2bf0988f418dea3c27f',1,'Colours']]]
+  ['grey',['grey',['../classColours.html#a631686f2c072d2bf0988f418dea3c27f',1,'Colours']]],
+  ['group',['group',['../structBlock_1_1ConfigMetaData.html#ac8d71b576e9c9b94fb15da85f2a8acb8',1,'Block::ConfigMetaData::group()'],['../structBlockConfigManager_1_1ConfigDescription.html#a6b7651824fd2c511d9702e6034a843d5',1,'BlockConfigManager::ConfigDescription::group()'],['../structjuce_1_1Block_1_1ConfigMetaData.html#a8f8b2b4b25cbab530f8d344b49504d46',1,'juce::Block::ConfigMetaData::group()']]]
 ];
