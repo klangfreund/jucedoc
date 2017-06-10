@@ -46,6 +46,7 @@ var searchData=
   ['juce_5farrowbutton_2eh',['juce_ArrowButton.h',['../juce__ArrowButton_8h.html',1,'']]],
   ['juce_5fasyncupdater_2eh',['juce_AsyncUpdater.h',['../juce__AsyncUpdater_8h.html',1,'']]],
   ['juce_5fatomic_2eh',['juce_Atomic.h',['../juce__Atomic_8h.html',1,'']]],
+  ['juce_5fatomic_5favailable',['JUCE_ATOMIC_AVAILABLE',['../juce__CompilerSupport_8h.html#ac707ede30b800f8e5c6da73f3e19719e',1,'juce_CompilerSupport.h']]],
   ['juce_5fattributedstring_2eh',['juce_AttributedString.h',['../juce__AttributedString_8h.html',1,'']]],
   ['juce_5fau_5fshared_2eh',['juce_AU_Shared.h',['../juce__AU__Shared_8h.html',1,'']]],
   ['juce_5faudioappcomponent_2eh',['juce_AudioAppComponent.h',['../juce__AudioAppComponent_8h.html',1,'']]],

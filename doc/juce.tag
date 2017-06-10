@@ -2028,6 +2028,13 @@
       <anchor>a1bd79588ea529f27e89c255c0ebd7be3</anchor>
       <arglist></arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_ATOMIC_AVAILABLE</name>
+      <anchorfile>juce__CompilerSupport_8h.html</anchorfile>
+      <anchor>ac707ede30b800f8e5c6da73f3e19719e</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>juce_Component.h</name>
