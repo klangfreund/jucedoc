@@ -33913,6 +33913,13 @@
       <arglist>(int millisecondsBetweenCallbacks)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>clearAllTouchSources</name>
+      <anchorfile>classDesktop.html</anchorfile>
+      <anchor>a7b241ca1763b5c7059f2b93c1d1d4446</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>DisplayOrientation</type>
       <name>getCurrentOrientation</name>
       <anchorfile>classDesktop.html</anchorfile>

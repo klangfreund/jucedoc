@@ -96,6 +96,7 @@ var searchData=
   ['clearallkeypresses',['clearAllKeyPresses',['../classKeyPressMappingSet.html#a16e2d91480adcd22ee5dbfdce01c0156',1,'KeyPressMappingSet::clearAllKeyPresses()'],['../classKeyPressMappingSet.html#a9f3803440dd3d36fd79680c8dc2cc779',1,'KeyPressMappingSet::clearAllKeyPresses(CommandID commandID)']]],
   ['clearallmappings',['clearAllMappings',['../classChannelRemappingAudioSource.html#a373b386b0873abccac53601fa0760f2c',1,'ChannelRemappingAudioSource']]],
   ['clearallpendingmessages',['clearAllPendingMessages',['../classMidiOutput.html#a9a93ddda8444806f3daf69c1486ae5be',1,'MidiOutput']]],
+  ['clearalltouchsources',['clearAllTouchSources',['../classDesktop.html#a7b241ca1763b5c7059f2b93c1d1d4446',1,'Desktop']]],
   ['clearallzones',['clearAllZones',['../classMPEMessages.html#afd71490eb42bccb50b03186742f1efc2',1,'MPEMessages::clearAllZones()'],['../classMPEZoneLayout.html#a1a8cb8ce77e33b80ad12906f7d67d7cd',1,'MPEZoneLayout::clearAllZones()']]],
   ['clearaudiobuffer',['clearAudioBuffer',['../structAudioUnitHelpers.html#a502793d0d94d69f92ee0251a274eb48e',1,'AudioUnitHelpers']]],
   ['clearbit',['clearBit',['../classBigInteger.html#a84b70003be75f5c9465087828b3b8e3b',1,'BigInteger']]],
