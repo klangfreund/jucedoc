@@ -293,7 +293,7 @@ var searchData=
   ['setfullscreen',['setFullScreen',['../classComponentPeer.html#ae14a735045acf686a945392d29cb1b2b',1,'ComponentPeer::setFullScreen()'],['../classResizableWindow.html#a08a0f1863417c80e6494d113a5c1fbd2',1,'ResizableWindow::setFullScreen()']]],
   ['setgain',['setGain',['../classSystemAudioVolume.html#af33f4390cb26d8fc590840333b4ea7dd',1,'SystemAudioVolume::setGain()'],['../classAudioSourcePlayer.html#a6750b0c4ed1258abe4c108c80dfeff4d',1,'AudioSourcePlayer::setGain()'],['../classAudioTransportSource.html#a694930a9778a641b71d006a07cd7a5df',1,'AudioTransportSource::setGain()']]],
   ['setglobalscalefactor',['setGlobalScaleFactor',['../classDesktop.html#a1a10b63e1495aac17b5848335c6ea4cf',1,'Desktop']]],
-  ['setglowproperties',['setGlowProperties',['../classGlowEffect.html#a3136cfcbf3a1da48ffce8f70ac3d885d',1,'GlowEffect']]],
+  ['setglowproperties',['setGlowProperties',['../classGlowEffect.html#a3e1e4360e653ac156317c299d8fc07f6',1,'GlowEffect']]],
   ['setgradient',['setGradient',['../classFillType.html#a56bd20de45bbd44cd262245ea1ff3615',1,'FillType']]],
   ['setgradientfill',['setGradientFill',['../classGraphics.html#a57478bc2496ebb84696e5ba64b455965',1,'Graphics']]],
   ['setgridfills',['setGridFills',['../structjuce_1_1DrumPadGridProgram.html#a210cf3da59ceb2c95d9cdd7d27c3ece1',1,'juce::DrumPadGridProgram::setGridFills()'],['../structDrumPadGridProgram.html#a00dff0bc8385c3ab4c0d14734bc17ed3',1,'DrumPadGridProgram::setGridFills()']]],

@@ -19663,8 +19663,8 @@
       <type>AudioProcessorParameterWithID *</type>
       <name>createAndAddParameter</name>
       <anchorfile>classAudioProcessorValueTreeState.html</anchorfile>
-      <anchor>a6b108d8bfaa0cdb2cd0b9f0118b4d542</anchor>
-      <arglist>(const String &amp;parameterID, const String &amp;parameterName, const String &amp;labelText, NormalisableRange&lt; float &gt; valueRange, float defaultValue, std::function&lt; String(float)&gt; valueToTextFunction, std::function&lt; float(const String &amp;)&gt; textToValueFunction)</arglist>
+      <anchor>a23222d417ef62e3dcb76d4cd9a25c2d3</anchor>
+      <arglist>(const String &amp;parameterID, const String &amp;parameterName, const String &amp;labelText, NormalisableRange&lt; float &gt; valueRange, float defaultValue, std::function&lt; String(float)&gt; valueToTextFunction, std::function&lt; float(const String &amp;)&gt; textToValueFunction, bool isMetaParameter=false)</arglist>
     </member>
     <member kind="function">
       <type>AudioProcessorParameterWithID *</type>
@@ -37990,8 +37990,8 @@
       <type>void</type>
       <name>applyEffect</name>
       <anchorfile>classDropShadowEffect.html</anchorfile>
-      <anchor>aeee3f19864372e9c6ef4623df4e5a686</anchor>
-      <arglist>(Image &amp;sourceImage, Graphics &amp;destContext, float scaleFactor, float alpha)</arglist>
+      <anchor>a279a71d78cde938ef199077732b15aad</anchor>
+      <arglist>(Image &amp;sourceImage, Graphics &amp;destContext, float scaleFactor, float alpha) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -44471,15 +44471,15 @@
       <type>void</type>
       <name>setGlowProperties</name>
       <anchorfile>classGlowEffect.html</anchorfile>
-      <anchor>a3136cfcbf3a1da48ffce8f70ac3d885d</anchor>
-      <arglist>(float newRadius, Colour newColour)</arglist>
+      <anchor>a3e1e4360e653ac156317c299d8fc07f6</anchor>
+      <arglist>(float newRadius, Colour newColour, Point&lt; int &gt; offset={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>applyEffect</name>
       <anchorfile>classGlowEffect.html</anchorfile>
-      <anchor>a1addc87c44d02d6c864dd8d7c1cadf35</anchor>
-      <arglist>(Image &amp;sourceImage, Graphics &amp;destContext, float scaleFactor, float alpha)</arglist>
+      <anchor>a8e78a111c5386330dbed7e1a22357db8</anchor>
+      <arglist>(Image &amp;, Graphics &amp;, float scaleFactor, float alpha) override</arglist>
     </member>
   </compound>
   <compound kind="class">
