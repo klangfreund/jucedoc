@@ -277,6 +277,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a197b5e99c821d2243bca77a0b71feb92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a197b5e99c821d2243bca77a0b71feb92">resetConfigListActiveStatus</a> ()=0</td></tr>
 <tr class="memdesc:a197b5e99c821d2243bca77a0b71feb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all items active status.  <a href="#a197b5e99c821d2243bca77a0b71feb92">More...</a><br/></td></tr>
 <tr class="separator:a197b5e99c821d2243bca77a0b71feb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45fcc07cd2959a2be3f3537f67a7d396"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a45fcc07cd2959a2be3f3537f67a7d396">factoryReset</a> ()=0</td></tr>
+<tr class="memdesc:a45fcc07cd2959a2be3f3537f67a7d396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform factory reset on <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>.  <a href="#a45fcc07cd2959a2be3f3537f67a7d396">More...</a><br/></td></tr>
+<tr class="separator:a45fcc07cd2959a2be3f3537f67a7d396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb64678b86e39075ac3623983cc95bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#abdb64678b86e39075ac3623983cc95bc">blockReset</a> ()=0</td></tr>
+<tr class="memdesc:abdb64678b86e39075ac3623983cc95bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>.  <a href="#abdb64678b86e39075ac3623983cc95bc">More...</a><br/></td></tr>
+<tr class="separator:abdb64678b86e39075ac3623983cc95bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fae4b5fe40d3f893cedcc8654ed4b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ae1fae4b5fe40d3f893cedcc8654ed4b7">setName</a> (const juce::String &amp;<a class="el" href="classBlock.html#adb92f385905d241f03a66ccb9206cf00">name</a>)=0</td></tr>
+<tr class="memdesc:ae1fae4b5fe40d3f893cedcc8654ed4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> name.  <a href="#ae1fae4b5fe40d3f893cedcc8654ed4b7">More...</a><br/></td></tr>
+<tr class="separator:ae1fae4b5fe40d3f893cedcc8654ed4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14c53fe0485b084f129626d7d3829b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab14c53fe0485b084f129626d7d3829b0">setLogger</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
 <tr class="memdesc:ab14c53fe0485b084f129626d7d3829b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the user to provide a function that will receive log messages from the block.  <a href="#ab14c53fe0485b084f129626d7d3829b0">More...</a><br/></td></tr>
 <tr class="separator:ab14c53fe0485b084f129626d7d3829b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,6 +313,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="memItemLeft" align="right" valign="top">juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c">versionNumber</a></td></tr>
 <tr class="memdesc:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s version number.  <a href="#ab0a9f022d5a0f691f753e4b8203c4d4c">More...</a><br/></td></tr>
 <tr class="separator:ab0a9f022d5a0f691f753e4b8203c4d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb92f385905d241f03a66ccb9206cf00"><td class="memItemLeft" align="right" valign="top">juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#adb92f385905d241f03a66ccb9206cf00">name</a></td></tr>
+<tr class="memdesc:adb92f385905d241f03a66ccb9206cf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s name.  <a href="#adb92f385905d241f03a66ccb9206cf00">More...</a><br/></td></tr>
+<tr class="separator:adb92f385905d241f03a66ccb9206cf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">UID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a1c23c1f7ca58fcc032eb45cfc029d9">uid</a></td></tr>
 <tr class="memdesc:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s UID.  <a href="#a8a1c23c1f7ca58fcc032eb45cfc029d9">More...</a><br/></td></tr>
 <tr class="separator:a8a1c23c1f7ca58fcc032eb45cfc029d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,8 +324,8 @@ Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a596d7845cc8ff7d29fdc0300bac04203"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a596d7845cc8ff7d29fdc0300bac04203">Block</a> (const juce::String &amp;serialNumberToUse)</td></tr>
 <tr class="separator:a596d7845cc8ff7d29fdc0300bac04203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72ed32ffacf2c061f07167c838ea32f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aa72ed32ffacf2c061f07167c838ea32f">Block</a> (const juce::String &amp;serial, const juce::String &amp;version)</td></tr>
-<tr class="separator:aa72ed32ffacf2c061f07167c838ea32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfaaed6e3ee5fa3a23469b3d2810d6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aadfaaed6e3ee5fa3a23469b3d2810d6a">Block</a> (const juce::String &amp;serial, const juce::String &amp;version, const juce::String &amp;<a class="el" href="classBlock.html#adb92f385905d241f03a66ccb9206cf00">name</a>)</td></tr>
+<tr class="separator:aadfaaed6e3ee5fa3a23469b3d2810d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -464,7 +476,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa72ed32ffacf2c061f07167c838ea32f"></a>
+<a class="anchor" id="aadfaaed6e3ee5fa3a23469b3d2810d6a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -481,7 +493,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const juce::String &amp;&#160;</td>
-          <td class="paramname"><em>version</em>&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1557,6 +1575,82 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a45fcc07cd2959a2be3f3537f67a7d396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::factoryReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform factory reset on <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="abdb64678b86e39075ac3623983cc95bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::blockReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fae4b5fe40d3f893cedcc8654ed4b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Block::setName </td>
+          <td>(</td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> name. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab14c53fe0485b084f129626d7d3829b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1769,6 +1863,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adb92f385905d241f03a66ccb9206cf00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">juce::String Block::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a>'s name. </p>
+
+<p>Referenced by <a class="el" href="structBlock_1_1ConfigMetaData.html#a4d836764501bdb0001f53d3cc6ba9be1">Block::ConfigMetaData::operator=()</a>, and <a class="el" href="structBlock_1_1ConfigMetaData.html#ac86a3ea5b6adfa0df6a6d5b83d0a8813">Block::ConfigMetaData::operator==()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8a1c23c1f7ca58fcc032eb45cfc029d9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1831,7 +1941,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

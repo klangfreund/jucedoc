@@ -98,11 +98,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVersionNumber.html">VersionNumber</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockName.html">BlockName</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceStatus.html">DeviceStatus</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceConnection.html">DeviceConnection</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceVersion.html">DeviceVersion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDeviceName.html">DeviceName</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTouchPosition.html">TouchPosition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinates of a touch.  <a href="structTouchPosition.html#details">More...</a><br/></td></tr>
@@ -189,20 +193,21 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">MessageFromDevice::deviceTopologyEnd</a> = 0x05, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa">MessageFromDevice::deviceVersionList</a> = 0x06, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac65035415f08dbed22584f0c3c9fbb15">MessageFromDevice::deviceNameList</a> = 0x07, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">MessageFromDevice::touchStart</a> = 0x10, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">MessageFromDevice::touchMove</a> = 0x11, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">MessageFromDevice::touchEnd</a> = 0x12, 
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">MessageFromDevice::touchMove</a> = 0x11, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">MessageFromDevice::touchEnd</a> = 0x12, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7adcf26c89c7d0f92ed8f9d6f47376535f">MessageFromDevice::touchStartWithVelocity</a> = 0x13, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a96c51d6b9de54f271195f7c6a045bf1e">MessageFromDevice::touchMoveWithVelocity</a> = 0x14, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">MessageFromDevice::touchEndWithVelocity</a> = 0x15, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac836d2245e27287da29e0ad9dd230f73">MessageFromDevice::configMessage</a> = 0x18, 
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ada9920d1552829a6edd57187d44a12fe">MessageFromDevice::touchEndWithVelocity</a> = 0x15, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ac836d2245e27287da29e0ad9dd230f73">MessageFromDevice::configMessage</a> = 0x18, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef">MessageFromDevice::controlButtonDown</a> = 0x20, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92">MessageFromDevice::controlButtonUp</a> = 0x21, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a8a7fa8a0049c12cea5e129eccae0979c">MessageFromDevice::logMessage</a> = 0x30
 <br/>
  }</td></tr>
 <tr class="memdesc:a1513500452861490fb3bf17ea8e8deb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages that a device may send to the host.  <a href="juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7">More...</a><br/></td></tr>
@@ -213,7 +218,10 @@ Enumerations</h2></td></tr>
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x03, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">MessageFromHost::firmwareUpdatePacket</a> = 0x04, 
 <br/>
-&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">MessageFromHost::configMessage</a> = 0x10
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">MessageFromHost::configMessage</a> = 0x10, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae0f2ae7e0e97577600beb5620efd6b24">MessageFromHost::factoryReset</a> = 0x11, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae4e7ca4ecc749afa432db71e30a21a35">MessageFromHost::blockReset</a> = 0x12, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbade5d7a1c8b618fecc81bd22b79ef798a">MessageFromHost::setName</a> = 0x20
 <br/>
  }</td></tr>
 <tr class="memdesc:ab8c5a206ff37bc45a372d4ab02c956cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages that the host may send to a device.  <a href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cb">More...</a><br/></td></tr>
@@ -751,6 +759,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa"></a>deviceVersionList</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ac65035415f08dbed22584f0c3c9fbb15"></a>deviceNameList</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033"></a>touchStart</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773"></a>touchMove</em>&#160;</td><td class="fielddoc">
@@ -806,6 +816,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b"></a>firmwareUpdatePacket</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73"></a>configMessage</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbae0f2ae7e0e97577600beb5620efd6b24"></a>factoryReset</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbae4e7ca4ecc749afa432db71e30a21a35"></a>blockReset</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab8c5a206ff37bc45a372d4ab02c956cbade5d7a1c8b618fecc81bd22b79ef798a"></a>setName</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -1087,7 +1103,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

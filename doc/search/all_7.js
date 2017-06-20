@@ -40,6 +40,7 @@ var searchData=
   ['handlemouseevent',['handleMouseEvent',['../classComponentPeer.html#a744403dd1c8970e1ed742ee8d60c0011',1,'ComponentPeer']]],
   ['handlemousewheel',['handleMouseWheel',['../classComponentPeer.html#a9d8e4c4c9a151d697d0e5e06d0634756',1,'ComponentPeer']]],
   ['handlemovedorresized',['handleMovedOrResized',['../classComponentPeer.html#a8fb507144ba1144b75b63da1075807b9',1,'ComponentPeer']]],
+  ['handlename',['handleName',['../structHostPacketDecoder.html#a8713cf3a3522e7b159ce57579daf816a',1,'HostPacketDecoder']]],
   ['handlenoteoff',['handleNoteOff',['../classMidiKeyboardStateListener.html#a11e569656febf461f2a3562d208ead61',1,'MidiKeyboardStateListener::handleNoteOff()'],['../classMidiMessageCollector.html#a07e1a9bbeb9131dbe8d55431bb166ee8',1,'MidiMessageCollector::handleNoteOff()'],['../classMidiKeyboardComponent.html#a808c146824bf5635e1e2c1a101e761b7',1,'MidiKeyboardComponent::handleNoteOff()']]],
   ['handlenoteon',['handleNoteOn',['../classMidiKeyboardStateListener.html#a0f4b54bd89239c0e184f155060a4397a',1,'MidiKeyboardStateListener::handleNoteOn()'],['../classMidiMessageCollector.html#a0e6368630ea8c456c79f86d8aebcaeb6',1,'MidiMessageCollector::handleNoteOn()'],['../classMidiKeyboardComponent.html#a92c81b4d77a09fbe9de21af2040d98d5',1,'MidiKeyboardComponent::handleNoteOn()']]],
   ['handlepacketack',['handlePacketACK',['../structHostPacketDecoder.html#a967b2cdd6f583ac93baa6093a71fdd87',1,'HostPacketDecoder']]],

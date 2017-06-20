@@ -128,9 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4632f7ae2228fe64f4595291dcc813d6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a4632f7ae2228fe64f4595291dcc813d6">createCopy</a> () const =0</td></tr>
 <tr class="memdesc:a4632f7ae2228fe64f4595291dcc813d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a deep copy of this <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> object.  <a href="#a4632f7ae2228fe64f4595291dcc813d6">More...</a><br/></td></tr>
 <tr class="separator:a4632f7ae2228fe64f4595291dcc813d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2934f5237bda521aa8555195fd9de9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a2934f5237bda521aa8555195fd9de9de">draw</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;g, float opacity, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform={}) const </td></tr>
-<tr class="memdesc:a2934f5237bda521aa8555195fd9de9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders this <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> object.  <a href="#a2934f5237bda521aa8555195fd9de9de">More...</a><br/></td></tr>
-<tr class="separator:a2934f5237bda521aa8555195fd9de9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2082bc995b8e035079b71b32c1460f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPath.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#ace2082bc995b8e035079b71b32c1460f">getOutlineAsPath</a> () const =0</td></tr>
+<tr class="memdesc:ace2082bc995b8e035079b71b32c1460f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a path that describes the outline of this drawable.  <a href="#ace2082bc995b8e035079b71b32c1460f">More...</a><br/></td></tr>
+<tr class="separator:ace2082bc995b8e035079b71b32c1460f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce7399caa7c8c47568f9c0a64b81d60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#acce7399caa7c8c47568f9c0a64b81d60">draw</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;g, float opacity, const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;transform=<a class="el" href="classAffineTransform.html">AffineTransform</a>()) const </td></tr>
+<tr class="memdesc:acce7399caa7c8c47568f9c0a64b81d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders this <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> object.  <a href="#acce7399caa7c8c47568f9c0a64b81d60">More...</a><br/></td></tr>
+<tr class="separator:acce7399caa7c8c47568f9c0a64b81d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ec80262ebef1fd06d01b51893cee10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a25ec80262ebef1fd06d01b51893cee10">drawAt</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;g, float x, float y, float opacity) const </td></tr>
 <tr class="memdesc:a25ec80262ebef1fd06d01b51893cee10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> at a given offset within the <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a> context.  <a href="#a25ec80262ebef1fd06d01b51893cee10">More...</a><br/></td></tr>
 <tr class="separator:a25ec80262ebef1fd06d01b51893cee10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a201ad5150a8a37b26a6587c6e51c75c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDrawableComposite.html">DrawableComposite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a201ad5150a8a37b26a6587c6e51c75c6">getParent</a> () const </td></tr>
 <tr class="memdesc:a201ad5150a8a37b26a6587c6e51c75c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classDrawableComposite.html" title="A drawable object which acts as a container for a set of other Drawables. ">DrawableComposite</a> that contains this object, if there is one.  <a href="#a201ad5150a8a37b26a6587c6e51c75c6">More...</a><br/></td></tr>
 <tr class="separator:a201ad5150a8a37b26a6587c6e51c75c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad8b6fdc4046cb169bcae67daffa62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a4ad8b6fdc4046cb169bcae67daffa62f">setClipPath</a> (<a class="el" href="classDrawable.html">Drawable</a> *<a class="el" href="classDrawable.html#a929bf0524fb8ddf11b7661ccda98076c">drawableClipPath</a>)</td></tr>
+<tr class="memdesc:a4ad8b6fdc4046cb169bcae67daffa62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a the clipping region of this drawable using another drawable.  <a href="#a4ad8b6fdc4046cb169bcae67daffa62f">More...</a><br/></td></tr>
+<tr class="separator:a4ad8b6fdc4046cb169bcae67daffa62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf0372cb695f03099384f1dadcc5b0a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#accf0372cb695f03099384f1dadcc5b0a">createValueTree</a> (<a class="el" href="classComponentBuilder_1_1ImageProvider.html">ComponentBuilder::ImageProvider</a> *imageProvider) const =0</td></tr>
 <tr class="memdesc:accf0372cb695f03099384f1dadcc5b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> to represent this <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a>.  <a href="#accf0372cb695f03099384f1dadcc5b0a">More...</a><br/></td></tr>
 <tr class="separator:accf0372cb695f03099384f1dadcc5b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -741,6 +747,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af1fa4fa00c6e37bcaa7a9322a81bd2ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#af1fa4fa00c6e37bcaa7a9322a81bd2ec">createFromSVG</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;svgDocument)</td></tr>
 <tr class="memdesc:af1fa4fa00c6e37bcaa7a9322a81bd2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="#af1fa4fa00c6e37bcaa7a9322a81bd2ec">More...</a><br/></td></tr>
 <tr class="separator:af1fa4fa00c6e37bcaa7a9322a81bd2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b89bd78998ffd1f4888a143b15e2258"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a7b89bd78998ffd1f4888a143b15e2258">createFromSVGFile</a> (const <a class="el" href="classFile.html">File</a> &amp;svgFile)</td></tr>
+<tr class="memdesc:a7b89bd78998ffd1f4888a143b15e2258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document from a file, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="#a7b89bd78998ffd1f4888a143b15e2258">More...</a><br/></td></tr>
+<tr class="separator:a7b89bd78998ffd1f4888a143b15e2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebfffe1d689c9ab863c5c80526703d3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classPath.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#aebfffe1d689c9ab863c5c80526703d3f">parseSVGPath</a> (const <a class="el" href="classString.html">String</a> &amp;svgPath)</td></tr>
 <tr class="memdesc:aebfffe1d689c9ab863c5c80526703d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an SVG path string and returns it.  <a href="#aebfffe1d689c9ab863c5c80526703d3f">More...</a><br/></td></tr>
 <tr class="separator:aebfffe1d689c9ab863c5c80526703d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -781,11 +790,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a5a0e439f6bae4acaf6c38895533cf8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14caccc06f0f432ddccd5b2b0a9fdbd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a14caccc06f0f432ddccd5b2b0a9fdbd4">setBoundsToEnclose</a> (<a class="el" href="classRectangle.html">Rectangle</a>&lt; float &gt;)</td></tr>
 <tr class="separator:a14caccc06f0f432ddccd5b2b0a9fdbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9016edcbef166365751269779446c118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a9016edcbef166365751269779446c118">applyDrawableClipPath</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;)</td></tr>
+<tr class="separator:a9016edcbef166365751269779446c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a6f6686d94ab6c007bc89e97667fb1ef4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a6f6686d94ab6c007bc89e97667fb1ef4">originRelativeToComponent</a></td></tr>
 <tr class="separator:a6f6686d94ab6c007bc89e97667fb1ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929bf0524fb8ddf11b7661ccda98076c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a929bf0524fb8ddf11b7661ccda98076c">drawableClipPath</a></td></tr>
+<tr class="separator:a929bf0524fb8ddf11b7661ccda98076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -882,7 +895,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2934f5237bda521aa8555195fd9de9de"></a>
+<a class="anchor" id="ace2082bc995b8e035079b71b32c1460f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classPath.html">Path</a> Drawable::getOutlineAsPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a path that describes the outline of this drawable. </p>
+
+<p>Implemented in <a class="el" href="classDrawableShape.html#af99c7bc98ba64915034ac4b266dbb276">DrawableShape</a>, <a class="el" href="classDrawableComposite.html#a8d731413aa937436812376a01f50ba3f">DrawableComposite</a>, <a class="el" href="classDrawableText.html#acc661942508f36a39d64d9bd595c53e8">DrawableText</a>, and <a class="el" href="classDrawableImage.html#a065b74db46b8719fb3e8d0485da7cd0d">DrawableImage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acce7399caa7c8c47568f9c0a64b81d60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -902,7 +942,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classAffineTransform.html">AffineTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="classAffineTransform.html">AffineTransform</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -956,7 +996,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Renders the <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> at a given offset within the <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a> context. </p>
 <p>The coordinates passed-in are used to translate the object relative to its own origin before drawing it - this is basically a quick way of saying:</p>
-<div class="fragment"><div class="line"><a class="code" href="classDrawable.html#a2934f5237bda521aa8555195fd9de9de">draw</a> (g, <a class="code" href="classAffineTransform.html#a3bfac94ec99d54ee375d6e1326477271">AffineTransform::translation</a> (x, y)).</div>
+<div class="fragment"><div class="line"><a class="code" href="classDrawable.html#acce7399caa7c8c47568f9c0a64b81d60">draw</a> (g, <a class="code" href="classAffineTransform.html#a3bfac94ec99d54ee375d6e1326477271">AffineTransform::translation</a> (x, y)).</div>
 </div><!-- fragment --><p>Note that the preferred way to render a drawable in future is by using it as a component and adding it to a parent, so you might want to consider that before using this method. </p>
 
 </div>
@@ -1072,6 +1112,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the <a class="el" href="classDrawableComposite.html" title="A drawable object which acts as a container for a set of other Drawables. ">DrawableComposite</a> that contains this object, if there is one. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ad8b6fdc4046cb169bcae67daffa62f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setClipPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDrawable.html">Drawable</a> *&#160;</td>
+          <td class="paramname"><em>drawableClipPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a the clipping region of this drawable using another drawable. </p>
+<p>The drawbale passed in ill be deleted when no longer needed. </p>
 
 </div>
 </div>
@@ -1191,6 +1250,35 @@ Additional Inherited Members</h2></td></tr>
 <p>Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree. </p>
 <p>The object returned must be deleted by the caller. If something goes wrong while parsing, it may return nullptr.</p>
 <p>SVG is a pretty large and complex spec, and this doesn't aim to be a full implementation, but it can return the basic vector objects. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b89bd78998ffd1f4888a143b15e2258"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classDrawable.html">Drawable</a>* Drawable::createFromSVGFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>svgFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document from a file, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree. </p>
+<p>The object returned must be deleted by the caller. If something goes wrong while parsing, it may return nullptr.</p>
+<p>SVG is a pretty large and complex spec, and this doesn't aim to be a full implementation, but it can return the basic vector objects.</p>
+<p>Any references to references to external image files will be relative to the parent directory of the file passed. </p>
 
 </div>
 </div>
@@ -1455,6 +1543,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9016edcbef166365751269779446c118"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::applyDrawableClipPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGraphics.html">Graphics</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a6f6686d94ab6c007bc89e97667fb1ef4"></a>
 <div class="memitem">
@@ -1476,6 +1588,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a929bf0524fb8ddf11b7661ccda98076c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt;<a class="el" href="classDrawable.html">Drawable</a>&gt; Drawable::drawableClipPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Drawable_8h.html">juce_Drawable.h</a></li>
 </ul>
@@ -1483,7 +1615,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

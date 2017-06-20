@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['factoryreset',['factoryReset',['../classBlock.html#a45fcc07cd2959a2be3f3537f67a7d396',1,'Block::factoryReset()'],['../classjuce_1_1Block.html#abdc54e36c074adb6ce2c4219beeebf60',1,'juce::Block::factoryReset()']]],
   ['fadein',['fadeIn',['../classComponentAnimator.html#a7ccf95ec264eb19e0b33833fbef80aaa',1,'ComponentAnimator']]],
   ['fadeout',['fadeOut',['../classComponentAnimator.html#ad89563171f4a80402380cf1c7873fe6e',1,'ComponentAnimator']]],
   ['fail',['fail',['../classResult.html#a2b51de8f6f8c27c3de29f9da5cce8f75',1,'Result']]],

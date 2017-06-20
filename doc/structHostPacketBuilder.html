@@ -132,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8c3885aa89bf538ed8acf2f3eb714040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9172534bd1de83bd42314362d3918eab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketBuilder.html#a9172534bd1de83bd42314362d3918eab">addRequestUserSyncMessage</a> ()</td></tr>
 <tr class="separator:a9172534bd1de83bd42314362d3918eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12567e50b6f5905144427c7b431dae5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketBuilder.html#ab12567e50b6f5905144427c7b431dae5">addFactoryReset</a> ()</td></tr>
+<tr class="separator:ab12567e50b6f5905144427c7b431dae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390d4159a7035af053a714896cb90660"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketBuilder.html#a390d4159a7035af053a714896cb90660">addBlockReset</a> ()</td></tr>
+<tr class="separator:a390d4159a7035af053a714896cb90660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1e7d11765be4df1e10ab1822f60850"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHostPacketBuilder.html#a6a1e7d11765be4df1e10ab1822f60850">addSetBlockName</a> (const juce::String &amp;name)</td></tr>
+<tr class="separator:a6a1e7d11765be4df1e10ab1822f60850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;int maxPacketBytes&gt;<br/>
@@ -606,7 +612,7 @@ template&lt;int maxPacketBytes&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaf17917d35be60f3f27cd8649b6d293f0">setConfig</a>.</p>
+<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1acdeebdfa88f110318566c26487863252">configSetMessage</a>, <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaf17917d35be60f3f27cd8649b6d293f0">setConfig</a>.</p>
 
 <p>Referenced by <a class="el" href="structBlockConfigManager.html#a97f1d91cb10396143709a468684524ea">BlockConfigManager::setBlockConfig()</a>.</p>
 
@@ -628,7 +634,7 @@ template&lt;int maxPacketBytes&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075">requestConfig</a>.</p>
+<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1acdeebdfa88f110318566c26487863252">configSetMessage</a>, <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075">requestConfig</a>.</p>
 
 <p>Referenced by <a class="el" href="structBlockConfigManager.html#a492b4a5f810e0918445fbe65855f0f83">BlockConfigManager::requestBlockConfig()</a>.</p>
 
@@ -649,7 +655,7 @@ template&lt;int maxPacketBytes&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaa6e8d9df3d00df9e79ea5c744d59978f">requestFactorySync</a>.</p>
+<p>References <a class="el" href="structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdaa6e8d9df3d00df9e79ea5c744d59978f">requestFactorySync</a>.</p>
 
 <p>Referenced by <a class="el" href="structBlockConfigManager.html#a3f2b658f27b8991624df5d418a32ea3a">BlockConfigManager::requestFactoryConfigSync()</a>.</p>
 
@@ -670,9 +676,67 @@ template&lt;int maxPacketBytes&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda75e6abfc0cfa2d87201559ca0a838d47">requestUserSync</a>.</p>
+<p>References <a class="el" href="structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</a>, <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda75e6abfc0cfa2d87201559ca0a838d47">requestUserSync</a>.</p>
 
 <p>Referenced by <a class="el" href="structBlockConfigManager.html#a73d8d4cf98487a4e03b6258a81ebb39f">BlockConfigManager::requestUserConfigSync()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab12567e50b6f5905144427c7b431dae5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int maxPacketBytes&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structHostPacketBuilder.html">HostPacketBuilder</a>&lt; maxPacketBytes &gt;::addFactoryReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae0f2ae7e0e97577600beb5620efd6b24">factoryReset</a>, and <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a390d4159a7035af053a714896cb90660"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int maxPacketBytes&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structHostPacketBuilder.html">HostPacketBuilder</a>&lt; maxPacketBytes &gt;::addBlockReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae4e7ca4ecc749afa432db71e30a21a35">blockReset</a>, and <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a1e7d11765be4df1e10ab1822f60850"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int maxPacketBytes&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structHostPacketBuilder.html">HostPacketBuilder</a>&lt; maxPacketBytes &gt;::addSetBlockName </td>
+          <td>(</td>
+          <td class="paramtype">const juce::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c">IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structPacked7BitArrayBuilder.html#a151adc892dc573c9cf863d2e11369b5a">Packed7BitArrayBuilder&lt; allocatedBytes &gt;::hasCapacity()</a>, and <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbade5d7a1c8b618fecc81bd22b79ef798a">setName</a>.</p>
 
 </div>
 </div>
@@ -683,7 +747,7 @@ template&lt;int maxPacketBytes&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

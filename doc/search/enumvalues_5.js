@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['factoryreset',['factoryReset',['../juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae0f2ae7e0e97577600beb5620efd6b24',1,'juce_BlocksProtocolDefinitions.h']]],
   ['factorysyncend',['factorySyncEnd',['../juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a',1,'juce_BlocksProtocolDefinitions.h']]],
   ['failedtowritetofile',['failedToWriteToFile',['../classFileBasedDocument.html#a89d417326aed46fb561c599265e426d2a7b2f3f4edd3dc5b02d1578ef4594f394',1,'FileBasedDocument']]],
   ['filenameboxisreadonly',['filenameBoxIsReadOnly',['../classFileBrowserComponent.html#a32888a950cc0e51c8e1350f53bea43d6ab3724f30e884acc493ed9cb6bd064971',1,'FileBrowserComponent']]],

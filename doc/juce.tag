@@ -724,9 +724,11 @@
     <filename>juce__BlocksProtocolDefinitions_8h</filename>
     <class kind="struct">BlockSerialNumber</class>
     <class kind="struct">VersionNumber</class>
+    <class kind="struct">BlockName</class>
     <class kind="struct">DeviceStatus</class>
     <class kind="struct">DeviceConnection</class>
     <class kind="struct">DeviceVersion</class>
+    <class kind="struct">DeviceName</class>
     <class kind="struct">TouchPosition</class>
     <class kind="struct">TouchVelocity</class>
     <member kind="typedef">
@@ -937,6 +939,7 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7aee11eab8875c2da9c67a1dfca807e9ed">deviceTopologyExtend</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ab5ff02276a8f50fe2a1b66cc440e6594">deviceTopologyEnd</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ad3a17779e5818c4c5465ea5430958ffa">deviceVersionList</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac65035415f08dbed22584f0c3c9fbb15">deviceNameList</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7ac01ecf8f98c29d1b5bef2899eb0f4033">touchStart</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a570ce4f8772ec08dc667ba8356543773">touchMove</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a1513500452861490fb3bf17ea8e8deb7a89d8d02bbf9974414643a62a91ed93f4">touchEnd</enumvalue>
@@ -981,6 +984,9 @@
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbab45b2e85ad498156f2e34b5df351731b">firmwareUpdatePacket</enumvalue>
       <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbac836d2245e27287da29e0ad9dd230f73">configMessage</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbae0f2ae7e0e97577600beb5620efd6b24">factoryReset</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbae4e7ca4ecc749afa432db71e30a21a35">blockReset</enumvalue>
+      <enumvalue file="juce__BlocksProtocolDefinitions_8h.html" anchor="ab8c5a206ff37bc45a372d4ab02c956cbade5d7a1c8b618fecc81bd22b79ef798a">setName</enumvalue>
     </member>
     <member kind="enumvalue">
       <type>@</type>
@@ -21917,6 +21923,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>factoryReset</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>a45fcc07cd2959a2be3f3537f67a7d396</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>blockReset</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>abdb64678b86e39075ac3623983cc95bc</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setName</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>ae1fae4b5fe40d3f893cedcc8654ed4b7</anchor>
+      <arglist>(const juce::String &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>setLogger</name>
       <anchorfile>classBlock.html</anchorfile>
       <anchor>ab14c53fe0485b084f129626d7d3829b0</anchor>
@@ -21972,6 +21999,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>juce::String</type>
+      <name>name</name>
+      <anchorfile>classBlock.html</anchorfile>
+      <anchor>adb92f385905d241f03a66ccb9206cf00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>const UID</type>
       <name>uid</name>
       <anchorfile>classBlock.html</anchorfile>
@@ -21989,8 +22023,8 @@
       <type></type>
       <name>Block</name>
       <anchorfile>classBlock.html</anchorfile>
-      <anchor>aa72ed32ffacf2c061f07167c838ea32f</anchor>
-      <arglist>(const juce::String &amp;serial, const juce::String &amp;version)</arglist>
+      <anchor>aadfaaed6e3ee5fa3a23469b3d2810d6a</anchor>
+      <arglist>(const juce::String &amp;serial, const juce::String &amp;version, const juce::String &amp;name)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>juce::ListenerList&lt; DataInputPortListener &gt;</type>
@@ -22710,6 +22744,24 @@
       <name>connectionPortOnDevice2</name>
       <anchorfile>structBlockDeviceConnection.html</anchorfile>
       <anchor>af1e309e087f992e5cb487ab05fcedacc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BlockName</name>
+    <filename>structBlockName.html</filename>
+    <member kind="variable">
+      <type>uint8</type>
+      <name>name</name>
+      <anchorfile>structBlockName.html</anchorfile>
+      <anchor>aac73dc3bf193aef4758cec77f466bffb</anchor>
+      <arglist>[33]</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8</type>
+      <name>length</name>
+      <anchorfile>structBlockName.html</anchorfile>
+      <anchor>abd0b5a4a26c8c98c8dddc19bf2ae560a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -34130,6 +34182,24 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>DeviceName</name>
+    <filename>structDeviceName.html</filename>
+    <member kind="variable">
+      <type>TopologyIndex</type>
+      <name>index</name>
+      <anchorfile>structDeviceName.html</anchorfile>
+      <anchor>a2a4a864b215e3f76601a0b8e6c643f2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>BlockName</type>
+      <name>name</name>
+      <anchorfile>structDeviceName.html</anchorfile>
+      <anchor>af70ca80e23f57d33f1e333d3bcd3b2e8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>DeviceStatus</name>
     <filename>structDeviceStatus.html</filename>
     <member kind="variable">
@@ -35666,12 +35736,19 @@
       <anchor>a4632f7ae2228fe64f4595291dcc813d6</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Path</type>
+      <name>getOutlineAsPath</name>
+      <anchorfile>classDrawable.html</anchorfile>
+      <anchor>ace2082bc995b8e035079b71b32c1460f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>draw</name>
       <anchorfile>classDrawable.html</anchorfile>
-      <anchor>a2934f5237bda521aa8555195fd9de9de</anchor>
-      <arglist>(Graphics &amp;g, float opacity, const AffineTransform &amp;transform={}) const </arglist>
+      <anchor>acce7399caa7c8c47568f9c0a64b81d60</anchor>
+      <arglist>(Graphics &amp;g, float opacity, const AffineTransform &amp;transform=AffineTransform()) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -35707,6 +35784,13 @@
       <anchorfile>classDrawable.html</anchorfile>
       <anchor>a201ad5150a8a37b26a6587c6e51c75c6</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setClipPath</name>
+      <anchorfile>classDrawable.html</anchorfile>
+      <anchor>a4ad8b6fdc4046cb169bcae67daffa62f</anchor>
+      <arglist>(Drawable *drawableClipPath)</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ValueTree</type>
@@ -35758,6 +35842,13 @@
       <arglist>(const XmlElement &amp;svgDocument)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static Drawable *</type>
+      <name>createFromSVGFile</name>
+      <anchorfile>classDrawable.html</anchorfile>
+      <anchor>a7b89bd78998ffd1f4888a143b15e2258</anchor>
+      <arglist>(const File &amp;svgFile)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static Path</type>
       <name>parseSVGPath</name>
       <anchorfile>classDrawable.html</anchorfile>
@@ -35806,11 +35897,25 @@
       <anchor>a14caccc06f0f432ddccd5b2b0a9fdbd4</anchor>
       <arglist>(Rectangle&lt; float &gt;)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>applyDrawableClipPath</name>
+      <anchorfile>classDrawable.html</anchorfile>
+      <anchor>a9016edcbef166365751269779446c118</anchor>
+      <arglist>(Graphics &amp;)</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>Point&lt; int &gt;</type>
       <name>originRelativeToComponent</name>
       <anchorfile>classDrawable.html</anchorfile>
       <anchor>a6f6686d94ab6c007bc89e97667fb1ef4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>ScopedPointer&lt; Drawable &gt;</type>
+      <name>drawableClipPath</name>
+      <anchorfile>classDrawable.html</anchorfile>
+      <anchor>a929bf0524fb8ddf11b7661ccda98076c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -36171,6 +36276,13 @@
       <anchor>a3e27579fe6e7d79e6084fdc70e10a5a3</anchor>
       <arglist>(bool xAxis) override</arglist>
     </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getOutlineAsPath</name>
+      <anchorfile>classDrawableComposite.html</anchorfile>
+      <anchor>a8d731413aa937436812376a01f50ba3f</anchor>
+      <arglist>() const override</arglist>
+    </member>
     <member kind="variable" static="yes">
       <type>static const char *const</type>
       <name>contentLeftMarkerName</name>
@@ -36426,6 +36538,13 @@
       <anchorfile>classDrawableImage.html</anchorfile>
       <anchor>a19f4df3e18af13ff8ed41de98cfdf4d4</anchor>
       <arglist>(ComponentBuilder::ImageProvider *) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getOutlineAsPath</name>
+      <anchorfile>classDrawableImage.html</anchorfile>
+      <anchor>a065b74db46b8719fb3e8d0485da7cd0d</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const Identifier</type>
@@ -36752,6 +36871,13 @@
       <anchorfile>classDrawableShape.html</anchorfile>
       <anchor>a0b99604d0b25dac36aaf17c51a631450</anchor>
       <arglist>(Colour originalColour, Colour replacementColour) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getOutlineAsPath</name>
+      <anchorfile>classDrawableShape.html</anchorfile>
+      <anchor>af99c7bc98ba64915034ac4b266dbb276</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const Identifier</type>
@@ -37704,6 +37830,13 @@
       <name>getDrawableBounds</name>
       <anchorfile>classDrawableText.html</anchorfile>
       <anchor>adaaf0906b78f3e723ae799b2296bfe58</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>Path</type>
+      <name>getOutlineAsPath</name>
+      <anchorfile>classDrawableText.html</anchorfile>
+      <anchor>acc661942508f36a39d64d9bd595c53e8</anchor>
       <arglist>() const override</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -46054,6 +46187,27 @@
       <anchor>a9172534bd1de83bd42314362d3918eab</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addFactoryReset</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>ab12567e50b6f5905144427c7b431dae5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addBlockReset</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>a390d4159a7035af053a714896cb90660</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addSetBlockName</name>
+      <anchorfile>structHostPacketBuilder.html</anchorfile>
+      <anchor>a6a1e7d11765be4df1e10ab1822f60850</anchor>
+      <arglist>(const juce::String &amp;name)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>HostPacketDecoder</name>
@@ -46106,6 +46260,13 @@
       <name>handleVersion</name>
       <anchorfile>structHostPacketDecoder.html</anchorfile>
       <anchor>adcf65caf7c48ce53f1fc83f2b970ea03</anchor>
+      <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>handleName</name>
+      <anchorfile>structHostPacketDecoder.html</anchorfile>
+      <anchor>a8713cf3a3522e7b159ce57579daf816a</anchor>
       <arglist>(Handler &amp;handler, Packed7BitArrayReader &amp;reader)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -48545,6 +48706,13 @@
       <anchorfile>classJUCEApplicationBase.html</anchorfile>
       <anchor>a318021f86bf379caeb4cb27c32f0f229</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>backButtonPressed</name>
+      <anchorfile>classJUCEApplicationBase.html</anchorfile>
+      <anchor>adfda4c28041c0166758cedd67139307a</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -95309,6 +95477,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>factoryReset</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>abdc54e36c074adb6ce2c4219beeebf60</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>blockReset</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>ac2f5d5d4a6616074c2f66465d4b9eac7</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setName</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>ab79807d8d5f62d6f34b079693b42fcba</anchor>
+      <arglist>(const juce::String &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>setLogger</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
       <anchor>aace55dfe47a21efaf72cd15f06a4c78b</anchor>
@@ -95364,6 +95553,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>juce::String</type>
+      <name>name</name>
+      <anchorfile>classjuce_1_1Block.html</anchorfile>
+      <anchor>a955c874ebd391abf140ed3c497e6c507</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>const UID</type>
       <name>uid</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
@@ -95381,8 +95577,8 @@
       <type></type>
       <name>Block</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
-      <anchor>a4985045f9d77011ee37837889f3ce5cf</anchor>
-      <arglist>(const juce::String &amp;serial, const juce::String &amp;version)</arglist>
+      <anchor>a866238eb580b5327cfd819330f99c762</anchor>
+      <arglist>(const juce::String &amp;serial, const juce::String &amp;version, const juce::String &amp;name)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>juce::ListenerList&lt; DataInputPortListener &gt;</type>

@@ -14,6 +14,7 @@ var searchData=
   ['blockdatasheet',['BlockDataSheet',['../structBlockDataSheet.html',1,'']]],
   ['blockdeviceconnection',['BlockDeviceConnection',['../structjuce_1_1BlockDeviceConnection.html',1,'juce']]],
   ['blockdeviceconnection',['BlockDeviceConnection',['../structBlockDeviceConnection.html',1,'']]],
+  ['blockname',['BlockName',['../structBlockName.html',1,'']]],
   ['blockserialnumber',['BlockSerialNumber',['../structBlockSerialNumber.html',1,'']]],
   ['blocktopology',['BlockTopology',['../structjuce_1_1BlockTopology.html',1,'juce']]],
   ['blocktopology',['BlockTopology',['../structBlockTopology.html',1,'']]],

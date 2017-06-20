@@ -348,6 +348,7 @@ var searchData=
   ['createfromimagedatastream',['createFromImageDataStream',['../classDrawable.html#a763ef7e95af00fb88b4c45a1c38bd942',1,'Drawable']]],
   ['createfromimagefile',['createFromImageFile',['../classDrawable.html#a71c90179ca2a582ef0814c983be41dc9',1,'Drawable']]],
   ['createfromsvg',['createFromSVG',['../classDrawable.html#af1fa4fa00c6e37bcaa7a9322a81bd2ec',1,'Drawable']]],
+  ['createfromsvgfile',['createFromSVGFile',['../classDrawable.html#a7b89bd78998ffd1f4888a143b15e2258',1,'Drawable']]],
   ['createfromvaluetree',['createFromValueTree',['../classDrawable.html#a59ef4e2922c93f3ec4cef7d11c980c69',1,'Drawable']]],
   ['creategaussianblur',['createGaussianBlur',['../classImageConvolutionKernel.html#a622a69a6e139de9ccc3bf8f15b841dfe',1,'ImageConvolutionKernel']]],
   ['creategraphicscontext',['createGraphicsContext',['../classLookAndFeel.html#a41151fa0e1d0ef87d26f1bf17c457e7c',1,'LookAndFeel']]],

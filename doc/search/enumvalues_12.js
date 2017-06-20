@@ -19,6 +19,7 @@ var searchData=
   ['setfewbyteswithlastvalue',['setFewBytesWithLastValue',['../juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632a67dad7b4eff53c4725b2423d16c00700',1,'juce_BlocksProtocolDefinitions.h']]],
   ['setfewbyteswithvalue',['setFewBytesWithValue',['../juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632a10c33d3c741d58616b2384ec2eef9c08',1,'juce_BlocksProtocolDefinitions.h']]],
   ['setmanybyteswithvalue',['setManyBytesWithValue',['../juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632af3b7e4c7977b7bb56ee5d180543f349d',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['setname',['setName',['../juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbade5d7a1c8b618fecc81bd22b79ef798a',1,'juce_BlocksProtocolDefinitions.h']]],
   ['setsequenceofbytes',['setSequenceOfBytes',['../juce__BlocksProtocolDefinitions_8h.html#a0ad1962e0df7ab8b2b6062dbb3b2f632a4df943aa5b96fa30191ae05f7124063e',1,'juce_BlocksProtocolDefinitions.h']]],
   ['shadowcolourid',['shadowColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05eac149269e32db08853eb0c6d285b11f68',1,'MidiKeyboardComponent::shadowColourId()'],['../classTextEditor.html#aa805220923c93cd808a92fff0e3fb71dab6ed00bbcce56fef5ff92d6bb705f988',1,'TextEditor::shadowColourId()']]],
   ['shareddatachange',['sharedDataChange',['../juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cba24dd14178f112a548f94ac8a9252f854',1,'juce_BlocksProtocolDefinitions.h']]],

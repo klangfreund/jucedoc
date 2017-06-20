@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb182f77016ee90f8d5443abcb0bb3f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#adb182f77016ee90f8d5443abcb0bb3f0">unhandledException</a> (const std::exception *, const <a class="el" href="classString.html">String</a> &amp;sourceFilename, int lineNumber)=0</td></tr>
 <tr class="memdesc:adb182f77016ee90f8d5443abcb0bb3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any unhandled exceptions make it through to the message dispatch loop, this callback will be triggered, in case you want to log them or do some other type of error-handling.  <a href="#adb182f77016ee90f8d5443abcb0bb3f0">More...</a><br/></td></tr>
 <tr class="separator:adb182f77016ee90f8d5443abcb0bb3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfda4c28041c0166758cedd67139307a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#adfda4c28041c0166758cedd67139307a">backButtonPressed</a> ()</td></tr>
+<tr class="memdesc:adfda4c28041c0166758cedd67139307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to be informed when the back button is pressed on a device.  <a href="#adfda4c28041c0166758cedd67139307a">More...</a><br/></td></tr>
+<tr class="separator:adfda4c28041c0166758cedd67139307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8eff5c3954a4a4f09153cc10165a588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#aa8eff5c3954a4a4f09153cc10165a588">setApplicationReturnValue</a> (int newReturnValue) noexcept</td></tr>
 <tr class="memdesc:aa8eff5c3954a4a4f09153cc10165a588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value that should be returned as the application's exit code when the app quits.  <a href="#aa8eff5c3954a4a4f09153cc10165a588">More...</a><br/></td></tr>
 <tr class="separator:aa8eff5c3954a4a4f09153cc10165a588"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,6 +590,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adfda4c28041c0166758cedd67139307a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JUCEApplicationBase::backButtonPressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this method to be informed when the back button is pressed on a device. </p>
+<p>This is currently only implemented on Android devices. </p>
+
+</div>
+</div>
 <a class="anchor" id="a542e212605f0aa693f687d8798998615"></a>
 <div class="memitem">
 <div class="memproto">
@@ -781,7 +810,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 19 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 20 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -11,6 +11,7 @@ var searchData=
   ['bits',['bits',['../structIntegerWithBitSize.html#a3d56b21472fa5f8b6268099ac6c84bb8ac75ed2706ec532de316e420d3cfcf20c',1,'IntegerWithBitSize::bits()'],['../structTouchPosition.html#ada67c981bf595b8023d54a2c79a2b1a1ac26f97e9093728fffecb625097d10bcc',1,'TouchPosition::bits()'],['../structTouchVelocity.html#a7027e2fcb57bffe49225d340a304ad04a3ac57d25aaa2ecc07ab6cd5067f57586',1,'TouchVelocity::bits()']]],
   ['bitwigstudio',['BitwigStudio',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a6cf4bc70a9e21bc5e978a4960084fc58',1,'PluginHostType']]],
   ['blacknotecolourid',['blackNoteColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05eadaf19e83bcd2d13a33a2e84d982b3506',1,'MidiKeyboardComponent']]],
+  ['blockreset',['blockReset',['../juce__BlocksProtocolDefinitions_8h.html#ab8c5a206ff37bc45a372d4ab02c956cbae4e7ca4ecc749afa432db71e30a21a35',1,'juce_BlocksProtocolDefinitions.h']]],
   ['bluetoothmidi',['bluetoothMidi',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959',1,'RuntimePermissions']]],
   ['bold',['bold',['../classFont.html#a52a35b5dc1e6f782e25283c9283bae4fa1af8035a650d8a663a3f67b3b6208eed',1,'Font']]],
   ['bool_5f',['bool_',['../namespacejuce_1_1littlefoot.html#aaff5d0af0320619fa775b5e3826ddc94a467afb5838aa377d55cce81f84c5512b',1,'juce::littlefoot::bool_()'],['../namespacelittlefoot.html#a4fb4051df81acdbcaa446ab5a02dd8e7a467afb5838aa377d55cce81f84c5512b',1,'littlefoot::bool_()']]],

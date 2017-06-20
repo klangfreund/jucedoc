@@ -16,7 +16,7 @@ var searchData=
   ['leftkey',['leftKey',['../classKeyPress.html#ad2961244072158eee77e11844a968f61',1,'KeyPress']]],
   ['leftmost',['leftmost',['../structVstEditorBounds.html#a624bc315686fb475aa3faa3c5ac6a6fb',1,'VstEditorBounds']]],
   ['lemonchiffon',['lemonchiffon',['../classColours.html#aac8ef45b16855e5990afa7efca9a19cf',1,'Colours']]],
-  ['length',['length',['../structVersionNumber.html#a53b7d7ee283ac681022db194f463126b',1,'VersionNumber::length()'],['../structTextDiff_1_1Change.html#a82c0c693885a3e9c43d5e3f88b4175a8',1,'TextDiff::Change::length()']]],
+  ['length',['length',['../structVersionNumber.html#a53b7d7ee283ac681022db194f463126b',1,'VersionNumber::length()'],['../structBlockName.html#abd0b5a4a26c8c98c8dddc19bf2ae560a',1,'BlockName::length()'],['../structTextDiff_1_1Change.html#a82c0c693885a3e9c43d5e3f88b4175a8',1,'TextDiff::Change::length()']]],
   ['lengthinsamples',['lengthInSamples',['../classAudioFormatReader.html#af7373fd7e45ed1f026647fc8671e997f',1,'AudioFormatReader']]],
   ['lightblue',['lightblue',['../classColours.html#a7c6d7f45d8e84964320b3c510b15ac29',1,'Colours']]],
   ['lightcoral',['lightcoral',['../classColours.html#ac7ec898bf0d0e640c2272479e4e83262',1,'Colours']]],

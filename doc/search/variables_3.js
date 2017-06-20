@@ -59,5 +59,6 @@ var searchData=
   ['downkey',['downKey',['../classKeyPress.html#aeb9a20dd50b39f66d7d778d31b6b5f88',1,'KeyPress']]],
   ['downloaded',['downloaded',['../classURL_1_1DownloadTask.html#a4754c8c08c94390dac2ffdcf76badd86',1,'URL::DownloadTask']]],
   ['dpi',['dpi',['../structDesktop_1_1Displays_1_1Display.html#acfea525d7724fa5b442648346bff2af0',1,'Desktop::Displays::Display']]],
+  ['drawableclippath',['drawableClipPath',['../classDrawable.html#a929bf0524fb8ddf11b7661ccda98076c',1,'Drawable']]],
   ['drylevel',['dryLevel',['../structReverb_1_1Parameters.html#add75191e7a163d95cd807cbc72fa192c',1,'Reverb::Parameters']]]
 ];
