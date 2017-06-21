@@ -101,8 +101,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f3a9f5183fc777f6d48814bcbbcce71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a5f3a9f5183fc777f6d48814bcbbcce71">CharPointer_ASCII</a> (const <a class="el" href="classCharPointer__ASCII.html#add860ee0ed357926cb0cb5f0f8707283">CharType</a> *const rawPointer) noexcept</td></tr>
-<tr class="separator:a5f3a9f5183fc777f6d48814bcbbcce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964782459dc27e8d013e4d70c7f8df7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a964782459dc27e8d013e4d70c7f8df7f">CharPointer_ASCII</a> (const <a class="el" href="classCharPointer__ASCII.html#add860ee0ed357926cb0cb5f0f8707283">CharType</a> *rawPointer) noexcept</td></tr>
+<tr class="separator:a964782459dc27e8d013e4d70c7f8df7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9de29da955a20e66c3b867de345bf629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a9de29da955a20e66c3b867de345bf629">CharPointer_ASCII</a> (const <a class="el" href="classCharPointer__ASCII.html">CharPointer_ASCII</a> &amp;other) noexcept</td></tr>
 <tr class="separator:a9de29da955a20e66c3b867de345bf629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d4c71731aaadfa1008143242764de17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__ASCII.html">CharPointer_ASCII</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a3d4c71731aaadfa1008143242764de17">operator=</a> (const <a class="el" href="classCharPointer__ASCII.html">CharPointer_ASCII</a> other) noexcept</td></tr>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1c9259029e592aa64823f196779bfe3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#ab1c9259029e592aa64823f196779bfe3">isEmpty</a> () const noexcept</td></tr>
 <tr class="memdesc:ab1c9259029e592aa64823f196779bfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this pointer is pointing to a null character.  <a href="#ab1c9259029e592aa64823f196779bfe3">More...</a><br/></td></tr>
 <tr class="separator:ab1c9259029e592aa64823f196779bfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613996c09767634507078a6006c97e2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a613996c09767634507078a6006c97e2c">isNotEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:a613996c09767634507078a6006c97e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this pointer is not pointing to a null character.  <a href="#a613996c09767634507078a6006c97e2c">More...</a><br/></td></tr>
+<tr class="separator:a613996c09767634507078a6006c97e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86513f6fa77d4bf8cfeadf1496252745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__ASCII.html#a86513f6fa77d4bf8cfeadf1496252745">operator*</a> () const noexcept</td></tr>
 <tr class="memdesc:a86513f6fa77d4bf8cfeadf1496252745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unicode character that this pointer is pointing to.  <a href="#a86513f6fa77d4bf8cfeadf1496252745">More...</a><br/></td></tr>
 <tr class="separator:a86513f6fa77d4bf8cfeadf1496252745"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,7 +303,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5f3a9f5183fc777f6d48814bcbbcce71"></a>
+<a class="anchor" id="a964782459dc27e8d013e4d70c7f8df7f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -310,7 +313,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">CharPointer_ASCII::CharPointer_ASCII </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharPointer__ASCII.html#add860ee0ed357926cb0cb5f0f8707283">CharType</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCharPointer__ASCII.html#add860ee0ed357926cb0cb5f0f8707283">CharType</a> *&#160;</td>
           <td class="paramname"><em>rawPointer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -624,6 +627,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a613996c09767634507078a6006c97e2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CharPointer_ASCII::isNotEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if this pointer is not pointing to a null character. </p>
+
+</div>
+</div>
 <a class="anchor" id="a86513f6fa77d4bf8cfeadf1496252745"></a>
 <div class="memitem">
 <div class="memproto">
@@ -850,7 +878,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a pointer which is moved forwards from this one by the specified number of characters. </p>
 
-<p>References <a class="el" href="classCharPointer__ASCII.html#a5f3a9f5183fc777f6d48814bcbbcce71">CharPointer_ASCII()</a>.</p>
+<p>References <a class="el" href="classCharPointer__ASCII.html#a964782459dc27e8d013e4d70c7f8df7f">CharPointer_ASCII()</a>.</p>
 
 </div>
 </div>
@@ -878,7 +906,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a pointer which is moved backwards from this one by the specified number of characters. </p>
 
-<p>References <a class="el" href="classCharPointer__ASCII.html#a5f3a9f5183fc777f6d48814bcbbcce71">CharPointer_ASCII()</a>.</p>
+<p>References <a class="el" href="classCharPointer__ASCII.html#a964782459dc27e8d013e4d70c7f8df7f">CharPointer_ASCII()</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1174,7 @@ template&lt;class CharPointer &gt; </div>
 
 <p>Returns a pointer to the null character that terminates this string. </p>
 
-<p>References <a class="el" href="classCharPointer__ASCII.html#a5f3a9f5183fc777f6d48814bcbbcce71">CharPointer_ASCII()</a>, and <a class="el" href="classCharPointer__ASCII.html#a0337abc21ab3c3bf9a86fa1082f0b314">length()</a>.</p>
+<p>References <a class="el" href="classCharPointer__ASCII.html#a964782459dc27e8d013e4d70c7f8df7f">CharPointer_ASCII()</a>, and <a class="el" href="classCharPointer__ASCII.html#a0337abc21ab3c3bf9a86fa1082f0b314">length()</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +1937,7 @@ template&lt;typename CharPointer &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 20 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

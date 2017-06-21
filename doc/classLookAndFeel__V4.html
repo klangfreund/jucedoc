@@ -205,8 +205,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7e2d9cd3dafb74fc89a3c571f0c01c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd63febb3c2e143bfa6937d8bfb868d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V4.html#abd63febb3c2e143bfa6937d8bfb868d0">layoutFileBrowserComponent</a> (<a class="el" href="classFileBrowserComponent.html">FileBrowserComponent</a> &amp;, <a class="el" href="classDirectoryContentsDisplayComponent.html">DirectoryContentsDisplayComponent</a> *, <a class="el" href="classFilePreviewComponent.html">FilePreviewComponent</a> *, <a class="el" href="classComboBox.html">ComboBox</a> *currentPathBox, <a class="el" href="classTextEditor.html">TextEditor</a> *filenameBox, <a class="el" href="classButton.html">Button</a> *goUpButton) override</td></tr>
 <tr class="separator:abd63febb3c2e143bfa6937d8bfb868d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9acb9ff6279d4079d5d8e7fe95014215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V4.html#a9acb9ff6279d4079d5d8e7fe95014215">drawFileBrowserRow</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, int width, int height, const <a class="el" href="classString.html">String</a> &amp;filename, <a class="el" href="classImage.html">Image</a> *icon, const <a class="el" href="classString.html">String</a> &amp;fileSizeDescription, const <a class="el" href="classString.html">String</a> &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, <a class="el" href="classDirectoryContentsDisplayComponent.html">DirectoryContentsDisplayComponent</a> &amp;) override</td></tr>
-<tr class="separator:a9acb9ff6279d4079d5d8e7fe95014215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827187e7686f017e5d78026e3ce36636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V4.html#a827187e7686f017e5d78026e3ce36636">drawFileBrowserRow</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, int width, int height, const <a class="el" href="classFile.html">File</a> &amp;file, const <a class="el" href="classString.html">String</a> &amp;filename, <a class="el" href="classImage.html">Image</a> *icon, const <a class="el" href="classString.html">String</a> &amp;fileSizeDescription, const <a class="el" href="classString.html">String</a> &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, <a class="el" href="classDirectoryContentsDisplayComponent.html">DirectoryContentsDisplayComponent</a> &amp;) override</td></tr>
+<tr class="separator:a827187e7686f017e5d78026e3ce36636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe0593d32df90d0cb3b3bb921f3de6c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V4.html#afe0593d32df90d0cb3b3bb921f3de6c3">drawPopupMenuItem</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, const <a class="el" href="classRectangle.html">Rectangle</a>&lt; int &gt; &amp;area, bool isSeparator, bool isActive, bool isHighlighted, bool isTicked, bool hasSubMenu, const <a class="el" href="classString.html">String</a> &amp;text, const <a class="el" href="classString.html">String</a> &amp;shortcutKeyText, const <a class="el" href="classDrawable.html">Drawable</a> *icon, const <a class="el" href="classColour.html">Colour</a> *textColour) override</td></tr>
 <tr class="memdesc:afe0593d32df90d0cb3b3bb921f3de6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws one of the items in a popup menu.  <a href="#afe0593d32df90d0cb3b3bb921f3de6c3">More...</a><br/></td></tr>
 <tr class="separator:afe0593d32df90d0cb3b3bb921f3de6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1804,7 +1804,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9acb9ff6279d4079d5d8e7fe95014215"></a>
+<a class="anchor" id="a827187e7686f017e5d78026e3ce36636"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1828,6 +1828,12 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1890,7 +1896,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classLookAndFeel__V2.html#a0d8a70183cd3db5e05bb9009e34487b8">LookAndFeel_V2</a>.</p>
+<p>Reimplemented from <a class="el" href="classLookAndFeel__V2.html#a3b564419f60e3f34e4d987f4e50dcdcf">LookAndFeel_V2</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3101,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 20 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

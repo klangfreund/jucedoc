@@ -101,8 +101,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8af5362ad32f31575d76998d70e1ce2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a8af5362ad32f31575d76998d70e1ce2a">CharPointer_UTF32</a> (const <a class="el" href="classCharPointer__UTF32.html#aec00e72e5c5324d92e97f17ff7cd70f1">CharType</a> *const rawPointer) noexcept</td></tr>
-<tr class="separator:a8af5362ad32f31575d76998d70e1ce2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc298873c42439612953e8cf81d0a7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#abdc298873c42439612953e8cf81d0a7b">CharPointer_UTF32</a> (const <a class="el" href="classCharPointer__UTF32.html#aec00e72e5c5324d92e97f17ff7cd70f1">CharType</a> *rawPointer) noexcept</td></tr>
+<tr class="separator:abdc298873c42439612953e8cf81d0a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb743befaaa4aabd6ae57cd4b0c4e2d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#abb743befaaa4aabd6ae57cd4b0c4e2d0">CharPointer_UTF32</a> (const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> &amp;other) noexcept</td></tr>
 <tr class="separator:abb743befaaa4aabd6ae57cd4b0c4e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263b1ff4576a5028a67e94a7651cb29e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a263b1ff4576a5028a67e94a7651cb29e">operator=</a> (<a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> other) noexcept</td></tr>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afeb22ca18bf5130341bf3dfc5dd63f62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#afeb22ca18bf5130341bf3dfc5dd63f62">isEmpty</a> () const noexcept</td></tr>
 <tr class="memdesc:afeb22ca18bf5130341bf3dfc5dd63f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this pointer is pointing to a null character.  <a href="#afeb22ca18bf5130341bf3dfc5dd63f62">More...</a><br/></td></tr>
 <tr class="separator:afeb22ca18bf5130341bf3dfc5dd63f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c863554630d2d00a7183320adad259"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a01c863554630d2d00a7183320adad259">isNotEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:a01c863554630d2d00a7183320adad259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this pointer is not pointing to a null character.  <a href="#a01c863554630d2d00a7183320adad259">More...</a><br/></td></tr>
+<tr class="separator:a01c863554630d2d00a7183320adad259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ce448fd1f52d5e0c8911e83eb8d378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a47ce448fd1f52d5e0c8911e83eb8d378">operator*</a> () const noexcept</td></tr>
 <tr class="memdesc:a47ce448fd1f52d5e0c8911e83eb8d378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unicode character that this pointer is pointing to.  <a href="#a47ce448fd1f52d5e0c8911e83eb8d378">More...</a><br/></td></tr>
 <tr class="separator:a47ce448fd1f52d5e0c8911e83eb8d378"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,84 +149,84 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef7aab932a9ad8b07c6efb908c0767f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aef7aab932a9ad8b07c6efb908c0767f4">operator++</a> (int) noexcept</td></tr>
 <tr class="memdesc:aef7aab932a9ad8b07c6efb908c0767f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves this pointer along to the next character in the string.  <a href="#aef7aab932a9ad8b07c6efb908c0767f4">More...</a><br/></td></tr>
 <tr class="separator:aef7aab932a9ad8b07c6efb908c0767f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb35aa950c3d29d99596ebd0f438ddb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#abb35aa950c3d29d99596ebd0f438ddb6">operator+=</a> (const int numToSkip) noexcept</td></tr>
-<tr class="memdesc:abb35aa950c3d29d99596ebd0f438ddb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves this pointer forwards by the specified number of characters.  <a href="#abb35aa950c3d29d99596ebd0f438ddb6">More...</a><br/></td></tr>
-<tr class="separator:abb35aa950c3d29d99596ebd0f438ddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fb27a5c1c1c85fcee28f5df6c1cd720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a0fb27a5c1c1c85fcee28f5df6c1cd720">operator-=</a> (const int numToSkip) noexcept</td></tr>
-<tr class="separator:a0fb27a5c1c1c85fcee28f5df6c1cd720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac88fe872f66b05f840380d5e26d50005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ac88fe872f66b05f840380d5e26d50005">operator[]</a> (const int characterIndex) const noexcept</td></tr>
-<tr class="memdesc:ac88fe872f66b05f840380d5e26d50005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character at a given character index from the start of the string.  <a href="#ac88fe872f66b05f840380d5e26d50005">More...</a><br/></td></tr>
-<tr class="separator:ac88fe872f66b05f840380d5e26d50005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f7099f07fd5946acc38f7266655f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#af6f7099f07fd5946acc38f7266655f89">operator+</a> (const int numToSkip) const noexcept</td></tr>
-<tr class="memdesc:af6f7099f07fd5946acc38f7266655f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer which is moved forwards from this one by the specified number of characters.  <a href="#af6f7099f07fd5946acc38f7266655f89">More...</a><br/></td></tr>
-<tr class="separator:af6f7099f07fd5946acc38f7266655f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae137213e4c83554c724c299f68cc91d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ae137213e4c83554c724c299f68cc91d4">operator-</a> (const int numToSkip) const noexcept</td></tr>
-<tr class="memdesc:ae137213e4c83554c724c299f68cc91d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer which is moved backwards from this one by the specified number of characters.  <a href="#ae137213e4c83554c724c299f68cc91d4">More...</a><br/></td></tr>
-<tr class="separator:ae137213e4c83554c724c299f68cc91d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5d291f1afe51b6930b5ffbe52f0de4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a4d5d291f1afe51b6930b5ffbe52f0de4">write</a> (const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToWrite) noexcept</td></tr>
-<tr class="memdesc:a4d5d291f1afe51b6930b5ffbe52f0de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a unicode character to this string, and advances this pointer to point to the next position.  <a href="#a4d5d291f1afe51b6930b5ffbe52f0de4">More...</a><br/></td></tr>
-<tr class="separator:a4d5d291f1afe51b6930b5ffbe52f0de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affdec15df0e21e4985da83f3df64f263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#affdec15df0e21e4985da83f3df64f263">replaceChar</a> (const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> newChar) noexcept</td></tr>
-<tr class="separator:affdec15df0e21e4985da83f3df64f263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ad80d71ca2e51df8d24e07d00eb97f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aa5ad80d71ca2e51df8d24e07d00eb97f">operator+=</a> (int numToSkip) noexcept</td></tr>
+<tr class="memdesc:aa5ad80d71ca2e51df8d24e07d00eb97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves this pointer forwards by the specified number of characters.  <a href="#aa5ad80d71ca2e51df8d24e07d00eb97f">More...</a><br/></td></tr>
+<tr class="separator:aa5ad80d71ca2e51df8d24e07d00eb97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1fa8bd3b32fcbe4a68d82304948e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a1c1fa8bd3b32fcbe4a68d82304948e82">operator-=</a> (int numToSkip) noexcept</td></tr>
+<tr class="separator:a1c1fa8bd3b32fcbe4a68d82304948e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6a25a3b9e702143a3b2f9728df93eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aed6a25a3b9e702143a3b2f9728df93eb">operator[]</a> (int characterIndex) const noexcept</td></tr>
+<tr class="memdesc:aed6a25a3b9e702143a3b2f9728df93eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character at a given character index from the start of the string.  <a href="#aed6a25a3b9e702143a3b2f9728df93eb">More...</a><br/></td></tr>
+<tr class="separator:aed6a25a3b9e702143a3b2f9728df93eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145b87b568577f09a2cf3efbe28113e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a145b87b568577f09a2cf3efbe28113e8">operator+</a> (int numToSkip) const noexcept</td></tr>
+<tr class="memdesc:a145b87b568577f09a2cf3efbe28113e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer which is moved forwards from this one by the specified number of characters.  <a href="#a145b87b568577f09a2cf3efbe28113e8">More...</a><br/></td></tr>
+<tr class="separator:a145b87b568577f09a2cf3efbe28113e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9e21e010bb9739a97c93eba083f288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aec9e21e010bb9739a97c93eba083f288">operator-</a> (int numToSkip) const noexcept</td></tr>
+<tr class="memdesc:aec9e21e010bb9739a97c93eba083f288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer which is moved backwards from this one by the specified number of characters.  <a href="#aec9e21e010bb9739a97c93eba083f288">More...</a><br/></td></tr>
+<tr class="separator:aec9e21e010bb9739a97c93eba083f288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d463e4ab0a4c20ef9343b70e5c694c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ad5d463e4ab0a4c20ef9343b70e5c694c">write</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToWrite) noexcept</td></tr>
+<tr class="memdesc:ad5d463e4ab0a4c20ef9343b70e5c694c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a unicode character to this string, and advances this pointer to point to the next position.  <a href="#ad5d463e4ab0a4c20ef9343b70e5c694c">More...</a><br/></td></tr>
+<tr class="separator:ad5d463e4ab0a4c20ef9343b70e5c694c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa07dc4007a5362799796bd29e2dd0d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#afa07dc4007a5362799796bd29e2dd0d3">replaceChar</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> newChar) noexcept</td></tr>
+<tr class="separator:afa07dc4007a5362799796bd29e2dd0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa990904698eefcae216fd1a0324c3fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aa990904698eefcae216fd1a0324c3fb5">writeNull</a> () const noexcept</td></tr>
 <tr class="memdesc:aa990904698eefcae216fd1a0324c3fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a null character to this string (leaving the pointer's position unchanged).  <a href="#aa990904698eefcae216fd1a0324c3fb5">More...</a><br/></td></tr>
 <tr class="separator:aa990904698eefcae216fd1a0324c3fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ae1bf956ba06132575fd396516fb6f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a17ae1bf956ba06132575fd396516fb6f">length</a> () const noexcept</td></tr>
 <tr class="memdesc:a17ae1bf956ba06132575fd396516fb6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in this string.  <a href="#a17ae1bf956ba06132575fd396516fb6f">More...</a><br/></td></tr>
 <tr class="separator:a17ae1bf956ba06132575fd396516fb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5af051053dc120126f3f04a9c88871b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ab5af051053dc120126f3f04a9c88871b">lengthUpTo</a> (const size_t maxCharsToCount) const noexcept</td></tr>
-<tr class="memdesc:ab5af051053dc120126f3f04a9c88871b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in this string, or the given value, whichever is lower.  <a href="#ab5af051053dc120126f3f04a9c88871b">More...</a><br/></td></tr>
-<tr class="separator:ab5af051053dc120126f3f04a9c88871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4a66e11bd3cb5daa3ad9de119ee5c1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a7e4a66e11bd3cb5daa3ad9de119ee5c1">lengthUpTo</a> (const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> end) const noexcept</td></tr>
-<tr class="memdesc:a7e4a66e11bd3cb5daa3ad9de119ee5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in this string, or up to the given end pointer, whichever is lower.  <a href="#a7e4a66e11bd3cb5daa3ad9de119ee5c1">More...</a><br/></td></tr>
-<tr class="separator:a7e4a66e11bd3cb5daa3ad9de119ee5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3b9ad9ef565b39792d639866bb8027"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a9a3b9ad9ef565b39792d639866bb8027">lengthUpTo</a> (size_t maxCharsToCount) const noexcept</td></tr>
+<tr class="memdesc:a9a3b9ad9ef565b39792d639866bb8027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in this string, or the given value, whichever is lower.  <a href="#a9a3b9ad9ef565b39792d639866bb8027">More...</a><br/></td></tr>
+<tr class="separator:a9a3b9ad9ef565b39792d639866bb8027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4426d43226941275212a21c2e9aae90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ab4426d43226941275212a21c2e9aae90">lengthUpTo</a> (<a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> end) const noexcept</td></tr>
+<tr class="memdesc:ab4426d43226941275212a21c2e9aae90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in this string, or up to the given end pointer, whichever is lower.  <a href="#ab4426d43226941275212a21c2e9aae90">More...</a><br/></td></tr>
+<tr class="separator:ab4426d43226941275212a21c2e9aae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68aa1761ab4b0bd01dd9cb12c7512f36"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a68aa1761ab4b0bd01dd9cb12c7512f36">sizeInBytes</a> () const noexcept</td></tr>
 <tr class="memdesc:a68aa1761ab4b0bd01dd9cb12c7512f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that are used to represent this string.  <a href="#a68aa1761ab4b0bd01dd9cb12c7512f36">More...</a><br/></td></tr>
 <tr class="separator:a68aa1761ab4b0bd01dd9cb12c7512f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7b2bd51355a8a467f664ece48bdde5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#abd7b2bd51355a8a467f664ece48bdde5">findTerminatingNull</a> () const noexcept</td></tr>
 <tr class="memdesc:abd7b2bd51355a8a467f664ece48bdde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the null character that terminates this string.  <a href="#abd7b2bd51355a8a467f664ece48bdde5">More...</a><br/></td></tr>
 <tr class="separator:abd7b2bd51355a8a467f664ece48bdde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad246d2eb02d4f3259ac6212cff8a2d53"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:ad246d2eb02d4f3259ac6212cff8a2d53"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ad246d2eb02d4f3259ac6212cff8a2d53">writeAll</a> (const CharPointer src) noexcept</td></tr>
-<tr class="memdesc:ad246d2eb02d4f3259ac6212cff8a2d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#ad246d2eb02d4f3259ac6212cff8a2d53">More...</a><br/></td></tr>
-<tr class="separator:ad246d2eb02d4f3259ac6212cff8a2d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48e79084ee4b1b1ee8e53a63f7350eef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a48e79084ee4b1b1ee8e53a63f7350eef">writeAll</a> (const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> src) noexcept</td></tr>
-<tr class="memdesc:a48e79084ee4b1b1ee8e53a63f7350eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a48e79084ee4b1b1ee8e53a63f7350eef">More...</a><br/></td></tr>
-<tr class="separator:a48e79084ee4b1b1ee8e53a63f7350eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad135388edfba78ee61601325e3c6194"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:aad135388edfba78ee61601325e3c6194"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#aad135388edfba78ee61601325e3c6194">writeWithDestByteLimit</a> (const CharPointer src, const size_t maxDestBytes) noexcept</td></tr>
-<tr class="memdesc:aad135388edfba78ee61601325e3c6194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#aad135388edfba78ee61601325e3c6194">More...</a><br/></td></tr>
-<tr class="separator:aad135388edfba78ee61601325e3c6194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd6f1db5dd0f9a65fa09dd600a16e1d"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a1bd6f1db5dd0f9a65fa09dd600a16e1d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a1bd6f1db5dd0f9a65fa09dd600a16e1d">writeWithCharLimit</a> (const CharPointer src, const int maxChars) noexcept</td></tr>
-<tr class="memdesc:a1bd6f1db5dd0f9a65fa09dd600a16e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a1bd6f1db5dd0f9a65fa09dd600a16e1d">More...</a><br/></td></tr>
-<tr class="separator:a1bd6f1db5dd0f9a65fa09dd600a16e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ecc47df85543129a5382ee30ac36338"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a4ecc47df85543129a5382ee30ac36338"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a4ecc47df85543129a5382ee30ac36338">compare</a> (const CharPointer other) const noexcept</td></tr>
-<tr class="memdesc:a4ecc47df85543129a5382ee30ac36338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one.  <a href="#a4ecc47df85543129a5382ee30ac36338">More...</a><br/></td></tr>
-<tr class="separator:a4ecc47df85543129a5382ee30ac36338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73946fdcc82e0e03501976e1cd47b323"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a73946fdcc82e0e03501976e1cd47b323"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a73946fdcc82e0e03501976e1cd47b323">compareUpTo</a> (const CharPointer other, const int maxChars) const noexcept</td></tr>
-<tr class="memdesc:a73946fdcc82e0e03501976e1cd47b323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one, up to a specified number of characters.  <a href="#a73946fdcc82e0e03501976e1cd47b323">More...</a><br/></td></tr>
-<tr class="separator:a73946fdcc82e0e03501976e1cd47b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48be323705c2ad8d8238c212e7ceba81"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a48be323705c2ad8d8238c212e7ceba81"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a48be323705c2ad8d8238c212e7ceba81">compareIgnoreCase</a> (const CharPointer other) const </td></tr>
-<tr class="memdesc:a48be323705c2ad8d8238c212e7ceba81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one.  <a href="#a48be323705c2ad8d8238c212e7ceba81">More...</a><br/></td></tr>
-<tr class="separator:a48be323705c2ad8d8238c212e7ceba81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945448d9c3f38546a433a9f71332d695"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a945448d9c3f38546a433a9f71332d695"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a945448d9c3f38546a433a9f71332d695">compareIgnoreCaseUpTo</a> (const CharPointer other, const int maxChars) const noexcept</td></tr>
-<tr class="memdesc:a945448d9c3f38546a433a9f71332d695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one, up to a specified number of characters.  <a href="#a945448d9c3f38546a433a9f71332d695">More...</a><br/></td></tr>
-<tr class="separator:a945448d9c3f38546a433a9f71332d695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7462a3d4ad9f36271a6d44023e7f177f"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
-<tr class="memitem:a7462a3d4ad9f36271a6d44023e7f177f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a7462a3d4ad9f36271a6d44023e7f177f">indexOf</a> (const CharPointer stringToFind) const noexcept</td></tr>
-<tr class="memdesc:a7462a3d4ad9f36271a6d44023e7f177f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a substring, or -1 if it isn't found.  <a href="#a7462a3d4ad9f36271a6d44023e7f177f">More...</a><br/></td></tr>
-<tr class="separator:a7462a3d4ad9f36271a6d44023e7f177f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21049d77a1723e3baae318728d300bda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a21049d77a1723e3baae318728d300bda">indexOf</a> (const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToFind) const noexcept</td></tr>
-<tr class="memdesc:a21049d77a1723e3baae318728d300bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a unicode character, or -1 if it isn't found.  <a href="#a21049d77a1723e3baae318728d300bda">More...</a><br/></td></tr>
-<tr class="separator:a21049d77a1723e3baae318728d300bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa2ac897c0e6d978ff12907f61892b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a9fa2ac897c0e6d978ff12907f61892b0">indexOf</a> (const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToFind, const bool ignoreCase) const noexcept</td></tr>
-<tr class="memdesc:a9fa2ac897c0e6d978ff12907f61892b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a unicode character, or -1 if it isn't found.  <a href="#a9fa2ac897c0e6d978ff12907f61892b0">More...</a><br/></td></tr>
-<tr class="separator:a9fa2ac897c0e6d978ff12907f61892b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3674b695d973669e6fc88759522fb19c"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a3674b695d973669e6fc88759522fb19c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a3674b695d973669e6fc88759522fb19c">writeAll</a> (CharPointer src) noexcept</td></tr>
+<tr class="memdesc:a3674b695d973669e6fc88759522fb19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a3674b695d973669e6fc88759522fb19c">More...</a><br/></td></tr>
+<tr class="separator:a3674b695d973669e6fc88759522fb19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294d0e9a1c39adefe23c1b566865431b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a294d0e9a1c39adefe23c1b566865431b">writeAll</a> (<a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> src) noexcept</td></tr>
+<tr class="memdesc:a294d0e9a1c39adefe23c1b566865431b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a294d0e9a1c39adefe23c1b566865431b">More...</a><br/></td></tr>
+<tr class="separator:a294d0e9a1c39adefe23c1b566865431b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873d4da48f21f6849a0ff0c9ea5e4bdd"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a873d4da48f21f6849a0ff0c9ea5e4bdd"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a873d4da48f21f6849a0ff0c9ea5e4bdd">writeWithDestByteLimit</a> (CharPointer src, size_t maxDestBytes) noexcept</td></tr>
+<tr class="memdesc:a873d4da48f21f6849a0ff0c9ea5e4bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a873d4da48f21f6849a0ff0c9ea5e4bdd">More...</a><br/></td></tr>
+<tr class="separator:a873d4da48f21f6849a0ff0c9ea5e4bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236a9e6a7f183110f45cc5aa9703cd6a"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a236a9e6a7f183110f45cc5aa9703cd6a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a236a9e6a7f183110f45cc5aa9703cd6a">writeWithCharLimit</a> (CharPointer src, int maxChars) noexcept</td></tr>
+<tr class="memdesc:a236a9e6a7f183110f45cc5aa9703cd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a source string to this pointer, advancing this pointer as it goes.  <a href="#a236a9e6a7f183110f45cc5aa9703cd6a">More...</a><br/></td></tr>
+<tr class="separator:a236a9e6a7f183110f45cc5aa9703cd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fad84ebc2ef03af4b1919189d0d07c"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a02fad84ebc2ef03af4b1919189d0d07c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a02fad84ebc2ef03af4b1919189d0d07c">compare</a> (CharPointer other) const noexcept</td></tr>
+<tr class="memdesc:a02fad84ebc2ef03af4b1919189d0d07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one.  <a href="#a02fad84ebc2ef03af4b1919189d0d07c">More...</a><br/></td></tr>
+<tr class="separator:a02fad84ebc2ef03af4b1919189d0d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42959e9c2dfeaa2cdb23b1c567269a05"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a42959e9c2dfeaa2cdb23b1c567269a05"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a42959e9c2dfeaa2cdb23b1c567269a05">compareUpTo</a> (CharPointer other, int maxChars) const noexcept</td></tr>
+<tr class="memdesc:a42959e9c2dfeaa2cdb23b1c567269a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one, up to a specified number of characters.  <a href="#a42959e9c2dfeaa2cdb23b1c567269a05">More...</a><br/></td></tr>
+<tr class="separator:a42959e9c2dfeaa2cdb23b1c567269a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bf0e2e21f1863733f7f8b2b329f607"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:a06bf0e2e21f1863733f7f8b2b329f607"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a06bf0e2e21f1863733f7f8b2b329f607">compareIgnoreCase</a> (CharPointer other) const </td></tr>
+<tr class="memdesc:a06bf0e2e21f1863733f7f8b2b329f607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one.  <a href="#a06bf0e2e21f1863733f7f8b2b329f607">More...</a><br/></td></tr>
+<tr class="separator:a06bf0e2e21f1863733f7f8b2b329f607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6872969cb5ea1d116d962ec251cb30e"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:ae6872969cb5ea1d116d962ec251cb30e"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ae6872969cb5ea1d116d962ec251cb30e">compareIgnoreCaseUpTo</a> (CharPointer other, int maxChars) const noexcept</td></tr>
+<tr class="memdesc:ae6872969cb5ea1d116d962ec251cb30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this string with another one, up to a specified number of characters.  <a href="#ae6872969cb5ea1d116d962ec251cb30e">More...</a><br/></td></tr>
+<tr class="separator:ae6872969cb5ea1d116d962ec251cb30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae105d60c15af5cbe3a0fd0f21183a0ef"><td class="memTemplParams" colspan="2">template&lt;typename CharPointer &gt; </td></tr>
+<tr class="memitem:ae105d60c15af5cbe3a0fd0f21183a0ef"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ae105d60c15af5cbe3a0fd0f21183a0ef">indexOf</a> (CharPointer stringToFind) const noexcept</td></tr>
+<tr class="memdesc:ae105d60c15af5cbe3a0fd0f21183a0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a substring, or -1 if it isn't found.  <a href="#ae105d60c15af5cbe3a0fd0f21183a0ef">More...</a><br/></td></tr>
+<tr class="separator:ae105d60c15af5cbe3a0fd0f21183a0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2115553db53ee3d9a88b7aa49b84313"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ab2115553db53ee3d9a88b7aa49b84313">indexOf</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToFind) const noexcept</td></tr>
+<tr class="memdesc:ab2115553db53ee3d9a88b7aa49b84313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a unicode character, or -1 if it isn't found.  <a href="#ab2115553db53ee3d9a88b7aa49b84313">More...</a><br/></td></tr>
+<tr class="separator:ab2115553db53ee3d9a88b7aa49b84313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd8ed3cfa6366b31419f9629a61df18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a2fd8ed3cfa6366b31419f9629a61df18">indexOf</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> charToFind, bool ignoreCase) const noexcept</td></tr>
+<tr class="memdesc:a2fd8ed3cfa6366b31419f9629a61df18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character index of a unicode character, or -1 if it isn't found.  <a href="#a2fd8ed3cfa6366b31419f9629a61df18">More...</a><br/></td></tr>
+<tr class="separator:a2fd8ed3cfa6366b31419f9629a61df18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7178b3b784f737ef422ed8e2ab9230e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ad7178b3b784f737ef422ed8e2ab9230e">isWhitespace</a> () const </td></tr>
 <tr class="memdesc:ad7178b3b784f737ef422ed8e2ab9230e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the first character of this string is whitespace.  <a href="#ad7178b3b784f737ef422ed8e2ab9230e">More...</a><br/></td></tr>
 <tr class="separator:ad7178b3b784f737ef422ed8e2ab9230e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,19 +263,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a609babf8df00758db3e44c676d61d457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a609babf8df00758db3e44c676d61d457">findEndOfWhitespace</a> () const noexcept</td></tr>
 <tr class="memdesc:a609babf8df00758db3e44c676d61d457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first non-whitespace character in the string.  <a href="#a609babf8df00758db3e44c676d61d457">More...</a><br/></td></tr>
 <tr class="separator:a609babf8df00758db3e44c676d61d457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7318a669eeda82ada4ab6afc32973b57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a7318a669eeda82ada4ab6afc32973b57">atomicSwap</a> (const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> newValue)</td></tr>
-<tr class="memdesc:a7318a669eeda82ada4ab6afc32973b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically swaps this pointer for a new value, returning the previous value.  <a href="#a7318a669eeda82ada4ab6afc32973b57">More...</a><br/></td></tr>
-<tr class="separator:a7318a669eeda82ada4ab6afc32973b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b75b97c148ccb39e40554730bb44ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ae7b75b97c148ccb39e40554730bb44ba">atomicSwap</a> (<a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> newValue)</td></tr>
+<tr class="memdesc:ae7b75b97c148ccb39e40554730bb44ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically swaps this pointer for a new value, returning the previous value.  <a href="#ae7b75b97c148ccb39e40554730bb44ba">More...</a><br/></td></tr>
+<tr class="separator:ae7b75b97c148ccb39e40554730bb44ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8132e312b73ab73df7b990336b002b6d"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a8132e312b73ab73df7b990336b002b6d">getBytesRequiredFor</a> (const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>) noexcept</td></tr>
-<tr class="memdesc:a8132e312b73ab73df7b990336b002b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that would be needed to represent the given unicode character in this encoding format.  <a href="#a8132e312b73ab73df7b990336b002b6d">More...</a><br/></td></tr>
-<tr class="separator:a8132e312b73ab73df7b990336b002b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5595f424d651c1a1b8e74e9345964727"><td class="memTemplParams" colspan="2">template&lt;class CharPointer &gt; </td></tr>
-<tr class="memitem:a5595f424d651c1a1b8e74e9345964727"><td class="memTemplItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#a5595f424d651c1a1b8e74e9345964727">getBytesRequiredFor</a> (const CharPointer text) noexcept</td></tr>
-<tr class="memdesc:a5595f424d651c1a1b8e74e9345964727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that would be needed to represent the given string in this encoding format.  <a href="#a5595f424d651c1a1b8e74e9345964727">More...</a><br/></td></tr>
-<tr class="separator:a5595f424d651c1a1b8e74e9345964727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08399b2568c37081648bc513f7aed3a"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ac08399b2568c37081648bc513f7aed3a">getBytesRequiredFor</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>) noexcept</td></tr>
+<tr class="memdesc:ac08399b2568c37081648bc513f7aed3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that would be needed to represent the given unicode character in this encoding format.  <a href="#ac08399b2568c37081648bc513f7aed3a">More...</a><br/></td></tr>
+<tr class="separator:ac08399b2568c37081648bc513f7aed3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6456f06f6280d905c463043b685614e"><td class="memTemplParams" colspan="2">template&lt;class CharPointer &gt; </td></tr>
+<tr class="memitem:ad6456f06f6280d905c463043b685614e"><td class="memTemplItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ad6456f06f6280d905c463043b685614e">getBytesRequiredFor</a> (CharPointer text) noexcept</td></tr>
+<tr class="memdesc:ad6456f06f6280d905c463043b685614e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that would be needed to represent the given string in this encoding format.  <a href="#ad6456f06f6280d905c463043b685614e">More...</a><br/></td></tr>
+<tr class="separator:ad6456f06f6280d905c463043b685614e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad350d6d84f72f876d0fdb4257edae6f0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharPointer__UTF32.html#ad350d6d84f72f876d0fdb4257edae6f0">canRepresent</a> (<a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a> character) noexcept</td></tr>
 <tr class="memdesc:ad350d6d84f72f876d0fdb4257edae6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given unicode character can be represented in this encoding.  <a href="#ad350d6d84f72f876d0fdb4257edae6f0">More...</a><br/></td></tr>
 <tr class="separator:ad350d6d84f72f876d0fdb4257edae6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8af5362ad32f31575d76998d70e1ce2a"></a>
+<a class="anchor" id="abdc298873c42439612953e8cf81d0a7b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -307,7 +310,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">CharPointer_UTF32::CharPointer_UTF32 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharPointer__UTF32.html#aec00e72e5c5324d92e97f17ff7cd70f1">CharType</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCharPointer__UTF32.html#aec00e72e5c5324d92e97f17ff7cd70f1">CharType</a> *&#160;</td>
           <td class="paramname"><em>rawPointer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -319,7 +322,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#a7318a669eeda82ada4ab6afc32973b57">atomicSwap()</a>, <a class="el" href="classCharPointer__UTF32.html#abd7b2bd51355a8a467f664ece48bdde5">findTerminatingNull()</a>, <a class="el" href="classCharPointer__UTF32.html#af6f7099f07fd5946acc38f7266655f89">operator+()</a>, and <a class="el" href="classCharPointer__UTF32.html#ae137213e4c83554c724c299f68cc91d4">operator-()</a>.</p>
+<p>Referenced by <a class="el" href="classCharPointer__UTF32.html#ae7b75b97c148ccb39e40554730bb44ba">atomicSwap()</a>, <a class="el" href="classCharPointer__UTF32.html#abd7b2bd51355a8a467f664ece48bdde5">findTerminatingNull()</a>, <a class="el" href="classCharPointer__UTF32.html#a145b87b568577f09a2cf3efbe28113e8">operator+()</a>, and <a class="el" href="classCharPointer__UTF32.html#aec9e21e010bb9739a97c93eba083f288">operator-()</a>.</p>
 
 </div>
 </div>
@@ -617,6 +620,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a01c863554630d2d00a7183320adad259"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CharPointer_UTF32::isNotEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if this pointer is not pointing to a null character. </p>
+
+</div>
+</div>
 <a class="anchor" id="a47ce448fd1f52d5e0c8911e83eb8d378"></a>
 <div class="memitem">
 <div class="memproto">
@@ -743,7 +771,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb35aa950c3d29d99596ebd0f438ddb6"></a>
+<a class="anchor" id="aa5ad80d71ca2e51df8d24e07d00eb97f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -753,7 +781,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void CharPointer_UTF32::operator+= </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numToSkip</em></td><td>)</td>
           <td></td>
         </tr>
@@ -769,7 +797,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0fb27a5c1c1c85fcee28f5df6c1cd720"></a>
+<a class="anchor" id="a1c1fa8bd3b32fcbe4a68d82304948e82"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -779,7 +807,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void CharPointer_UTF32::operator-= </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numToSkip</em></td><td>)</td>
           <td></td>
         </tr>
@@ -793,7 +821,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac88fe872f66b05f840380d5e26d50005"></a>
+<a class="anchor" id="aed6a25a3b9e702143a3b2f9728df93eb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -803,7 +831,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&amp; CharPointer_UTF32::operator[] </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>characterIndex</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -819,7 +847,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af6f7099f07fd5946acc38f7266655f89"></a>
+<a class="anchor" id="a145b87b568577f09a2cf3efbe28113e8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -829,7 +857,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> CharPointer_UTF32::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numToSkip</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -843,11 +871,11 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a pointer which is moved forwards from this one by the specified number of characters. </p>
 
-<p>References <a class="el" href="classCharPointer__UTF32.html#a8af5362ad32f31575d76998d70e1ce2a">CharPointer_UTF32()</a>.</p>
+<p>References <a class="el" href="classCharPointer__UTF32.html#abdc298873c42439612953e8cf81d0a7b">CharPointer_UTF32()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae137213e4c83554c724c299f68cc91d4"></a>
+<a class="anchor" id="aec9e21e010bb9739a97c93eba083f288"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -857,7 +885,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> CharPointer_UTF32::operator- </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>numToSkip</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -871,11 +899,11 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns a pointer which is moved backwards from this one by the specified number of characters. </p>
 
-<p>References <a class="el" href="classCharPointer__UTF32.html#a8af5362ad32f31575d76998d70e1ce2a">CharPointer_UTF32()</a>.</p>
+<p>References <a class="el" href="classCharPointer__UTF32.html#abdc298873c42439612953e8cf81d0a7b">CharPointer_UTF32()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4d5d291f1afe51b6930b5ffbe52f0de4"></a>
+<a class="anchor" id="ad5d463e4ab0a4c20ef9343b70e5c694c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -885,7 +913,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void CharPointer_UTF32::write </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
           <td class="paramname"><em>charToWrite</em></td><td>)</td>
           <td></td>
         </tr>
@@ -901,7 +929,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="affdec15df0e21e4985da83f3df64f263"></a>
+<a class="anchor" id="afa07dc4007a5362799796bd29e2dd0d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -911,7 +939,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void CharPointer_UTF32::replaceChar </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
           <td class="paramname"><em>newChar</em></td><td>)</td>
           <td></td>
         </tr>
@@ -977,7 +1005,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab5af051053dc120126f3f04a9c88871b"></a>
+<a class="anchor" id="a9a3b9ad9ef565b39792d639866bb8027"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -987,7 +1015,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t CharPointer_UTF32::lengthUpTo </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>maxCharsToCount</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1005,7 +1033,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7e4a66e11bd3cb5daa3ad9de119ee5c1"></a>
+<a class="anchor" id="ab4426d43226941275212a21c2e9aae90"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1015,7 +1043,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t CharPointer_UTF32::lengthUpTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
           <td class="paramname"><em>end</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1061,7 +1089,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8132e312b73ab73df7b990336b002b6d"></a>
+<a class="anchor" id="ac08399b2568c37081648bc513f7aed3a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1071,7 +1099,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static size_t CharPointer_UTF32::getBytesRequiredFor </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1087,7 +1115,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5595f424d651c1a1b8e74e9345964727"></a>
+<a class="anchor" id="ad6456f06f6280d905c463043b685614e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1099,7 +1127,7 @@ template&lt;class CharPointer &gt; </div>
         <tr>
           <td class="memname">static size_t CharPointer_UTF32::getBytesRequiredFor </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>text</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1139,11 +1167,11 @@ template&lt;class CharPointer &gt; </div>
 
 <p>Returns a pointer to the null character that terminates this string. </p>
 
-<p>References <a class="el" href="classCharPointer__UTF32.html#a8af5362ad32f31575d76998d70e1ce2a">CharPointer_UTF32()</a>, and <a class="el" href="classCharPointer__UTF32.html#a17ae1bf956ba06132575fd396516fb6f">length()</a>.</p>
+<p>References <a class="el" href="classCharPointer__UTF32.html#abdc298873c42439612953e8cf81d0a7b">CharPointer_UTF32()</a>, and <a class="el" href="classCharPointer__UTF32.html#a17ae1bf956ba06132575fd396516fb6f">length()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad246d2eb02d4f3259ac6212cff8a2d53"></a>
+<a class="anchor" id="a3674b695d973669e6fc88759522fb19c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1155,7 +1183,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">void CharPointer_UTF32::writeAll </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1173,7 +1201,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a48e79084ee4b1b1ee8e53a63f7350eef"></a>
+<a class="anchor" id="a294d0e9a1c39adefe23c1b566865431b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1183,7 +1211,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">void CharPointer_UTF32::writeAll </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1199,7 +1227,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aad135388edfba78ee61601325e3c6194"></a>
+<a class="anchor" id="a873d4da48f21f6849a0ff0c9ea5e4bdd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1211,13 +1239,13 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">size_t CharPointer_UTF32::writeWithDestByteLimit </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>maxDestBytes</em>&#160;</td>
         </tr>
         <tr>
@@ -1240,7 +1268,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1bd6f1db5dd0f9a65fa09dd600a16e1d"></a>
+<a class="anchor" id="a236a9e6a7f183110f45cc5aa9703cd6a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1252,13 +1280,13 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">void CharPointer_UTF32::writeWithCharLimit </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>maxChars</em>&#160;</td>
         </tr>
         <tr>
@@ -1281,7 +1309,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4ecc47df85543129a5382ee30ac36338"></a>
+<a class="anchor" id="a02fad84ebc2ef03af4b1919189d0d07c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1293,7 +1321,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::compare </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1311,7 +1339,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a73946fdcc82e0e03501976e1cd47b323"></a>
+<a class="anchor" id="a42959e9c2dfeaa2cdb23b1c567269a05"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1323,13 +1351,13 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::compareUpTo </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>other</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>maxChars</em>&#160;</td>
         </tr>
         <tr>
@@ -1351,7 +1379,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a48be323705c2ad8d8238c212e7ceba81"></a>
+<a class="anchor" id="a06bf0e2e21f1863733f7f8b2b329f607"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1360,7 +1388,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::compareIgnoreCase </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1373,7 +1401,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a945448d9c3f38546a433a9f71332d695"></a>
+<a class="anchor" id="ae6872969cb5ea1d116d962ec251cb30e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1385,13 +1413,13 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::compareIgnoreCaseUpTo </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>other</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>maxChars</em>&#160;</td>
         </tr>
         <tr>
@@ -1413,7 +1441,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7462a3d4ad9f36271a6d44023e7f177f"></a>
+<a class="anchor" id="ae105d60c15af5cbe3a0fd0f21183a0ef"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1425,7 +1453,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::indexOf </td>
           <td>(</td>
-          <td class="paramtype">const CharPointer&#160;</td>
+          <td class="paramtype">CharPointer&#160;</td>
           <td class="paramname"><em>stringToFind</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1443,7 +1471,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a21049d77a1723e3baae318728d300bda"></a>
+<a class="anchor" id="ab2115553db53ee3d9a88b7aa49b84313"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1453,7 +1481,7 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::indexOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
           <td class="paramname"><em>charToFind</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1469,7 +1497,7 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9fa2ac897c0e6d978ff12907f61892b0"></a>
+<a class="anchor" id="a2fd8ed3cfa6366b31419f9629a61df18"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1479,13 +1507,13 @@ template&lt;typename CharPointer &gt; </div>
         <tr>
           <td class="memname">int CharPointer_UTF32::indexOf </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="juce__CharacterFunctions_8h.html#a7d83261f3888884bbf04a58edc2672da">juce_wchar</a>&#160;</td>
           <td class="paramname"><em>charToFind</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bool&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>ignoreCase</em>&#160;</td>
         </tr>
         <tr>
@@ -1845,14 +1873,14 @@ template&lt;typename CharPointer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7318a669eeda82ada4ab6afc32973b57"></a>
+<a class="anchor" id="ae7b75b97c148ccb39e40554730bb44ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a> CharPointer_UTF32::atomicSwap </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCharPointer__UTF32.html">CharPointer_UTF32</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1861,7 +1889,7 @@ template&lt;typename CharPointer &gt; </div>
 
 <p>Atomically swaps this pointer for a new value, returning the previous value. </p>
 
-<p>References <a class="el" href="classCharPointer__UTF32.html#a8af5362ad32f31575d76998d70e1ce2a">CharPointer_UTF32()</a>.</p>
+<p>References <a class="el" href="classCharPointer__UTF32.html#abdc298873c42439612953e8cf81d0a7b">CharPointer_UTF32()</a>.</p>
 
 </div>
 </div>
@@ -1872,7 +1900,7 @@ template&lt;typename CharPointer &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 20 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 21 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

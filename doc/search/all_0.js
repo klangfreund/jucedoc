@@ -565,7 +565,7 @@ var searchData=
   ['atomic',['Atomic',['../classAtomic.html',1,'Atomic&lt; Type &gt;'],['../classAtomic.html#a903ef283284109ee6bdaa43d9b477224',1,'Atomic::Atomic() noexcept'],['../classAtomic.html#aa5bd78cad5b124a086688f112f2d24aa',1,'Atomic::Atomic(const Type initialValue) noexcept'],['../classAtomic.html#a482fb9fec9e47b18884a5d1f1ac4c815',1,'Atomic::Atomic(const Atomic &amp;other) noexcept']]],
   ['atomic_3c_20int_20_3e',['Atomic&lt; int &gt;',['../classAtomic.html',1,'']]],
   ['atomic_3c_20objectholder_20_2a_20_3e',['Atomic&lt; ObjectHolder * &gt;',['../classAtomic.html',1,'']]],
-  ['atomicswap',['atomicSwap',['../classCharPointer__UTF16.html#a707b15339e842553d65a95f07ffd2306',1,'CharPointer_UTF16::atomicSwap()'],['../classCharPointer__UTF32.html#a7318a669eeda82ada4ab6afc32973b57',1,'CharPointer_UTF32::atomicSwap()'],['../classCharPointer__UTF8.html#a51b2d5b8382bc3c6dec9e9b758c6ee61',1,'CharPointer_UTF8::atomicSwap()']]],
+  ['atomicswap',['atomicSwap',['../classCharPointer__UTF16.html#abf36eb39fed41f743013d029688455f5',1,'CharPointer_UTF16::atomicSwap()'],['../classCharPointer__UTF32.html#ae7b75b97c148ccb39e40554730bb44ba',1,'CharPointer_UTF32::atomicSwap()'],['../classCharPointer__UTF8.html#a51b2d5b8382bc3c6dec9e9b758c6ee61',1,'CharPointer_UTF8::atomicSwap()']]],
   ['attachcallback',['attachCallback',['../classModalComponentManager.html#a2ce962253cf2c8e42d5575ad2a41d888',1,'ModalComponentManager']]],
   ['attachto',['attachTo',['../classOpenGLContext.html#ad320cd274bba96c11dc1ea32310ad37c',1,'OpenGLContext']]],
   ['attachtocomponent',['attachToComponent',['../classLabel.html#a3c2397c0da1249f9e27e2279e0f2d4eb',1,'Label']]],

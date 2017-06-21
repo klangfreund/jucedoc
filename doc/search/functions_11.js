@@ -207,7 +207,7 @@ var searchData=
   ['repeatedstring',['repeatedString',['../classString.html#a4fc0dd97b394be6c28879fd4595b0667',1,'String']]],
   ['replace',['replace',['../classString.html#ae70a4747280356abf4704d234bd23020',1,'String']]],
   ['replaceallcontent',['replaceAllContent',['../classCodeDocument.html#a621939da95a3a245a9474c003b59f65e',1,'CodeDocument']]],
-  ['replacechar',['replaceChar',['../classCharPointer__ASCII.html#a054bda19b12a24917cb206135d28abd4',1,'CharPointer_ASCII::replaceChar()'],['../classCharPointer__UTF32.html#affdec15df0e21e4985da83f3df64f263',1,'CharPointer_UTF32::replaceChar()']]],
+  ['replacechar',['replaceChar',['../classCharPointer__ASCII.html#a054bda19b12a24917cb206135d28abd4',1,'CharPointer_ASCII::replaceChar()'],['../classCharPointer__UTF32.html#afa07dc4007a5362799796bd29e2dd0d3',1,'CharPointer_UTF32::replaceChar()']]],
   ['replacecharacter',['replaceCharacter',['../classString.html#a9ea2aecb5316d2777e7911dae3c74d01',1,'String']]],
   ['replacecharacters',['replaceCharacters',['../classString.html#ac2f2123e32f791b575c4ab6b9461590e',1,'String']]],
   ['replacechildelement',['replaceChildElement',['../classXmlElement.html#a37bfa0575b47295b7d689369e4982310',1,'XmlElement']]],

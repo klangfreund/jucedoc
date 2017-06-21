@@ -25259,8 +25259,8 @@
       <type></type>
       <name>CharPointer_ASCII</name>
       <anchorfile>classCharPointer__ASCII.html</anchorfile>
-      <anchor>a5f3a9f5183fc777f6d48814bcbbcce71</anchor>
-      <arglist>(const CharType *const rawPointer) noexcept</arglist>
+      <anchor>a964782459dc27e8d013e4d70c7f8df7f</anchor>
+      <arglist>(const CharType *rawPointer) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -25344,6 +25344,13 @@
       <name>isEmpty</name>
       <anchorfile>classCharPointer__ASCII.html</anchorfile>
       <anchor>ab1c9259029e592aa64823f196779bfe3</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isNotEmpty</name>
+      <anchorfile>classCharPointer__ASCII.html</anchorfile>
+      <anchor>a613996c09767634507078a6006c97e2c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -25718,8 +25725,8 @@
       <type></type>
       <name>CharPointer_UTF16</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a3b8f36f58c2899ba6e620965473397ab</anchor>
-      <arglist>(const CharType *const rawPointer) noexcept</arglist>
+      <anchor>a0034402ef471767dd9a38503322bbcd8</anchor>
+      <arglist>(const CharType *rawPointer) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -25806,6 +25813,13 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isNotEmpty</name>
+      <anchorfile>classCharPointer__UTF16.html</anchorfile>
+      <anchor>acbc629b25ad5696c2956f5f05a3ebf06</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>juce_wchar</type>
       <name>operator*</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
@@ -25858,22 +25872,22 @@
       <type>juce_wchar</type>
       <name>operator[]</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a5e59116f71c716371e991344b047101e</anchor>
-      <arglist>(const int characterIndex) const noexcept</arglist>
+      <anchor>a5ced9cadcfa603c41d652eeb4ab4ba56</anchor>
+      <arglist>(int characterIndex) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>CharPointer_UTF16</type>
       <name>operator+</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a2ee5d01bc02e2a22bf4765823d95608b</anchor>
-      <arglist>(const int numToSkip) const noexcept</arglist>
+      <anchor>ab68367f6666a0668043f595b2511c4bf</anchor>
+      <arglist>(int numToSkip) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>CharPointer_UTF16</type>
       <name>operator-</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a319e3ff5ce3e87ec79bbaa19fafd5f04</anchor>
-      <arglist>(const int numToSkip) const noexcept</arglist>
+      <anchor>a24196ff903761b986244e83c7b147357</anchor>
+      <arglist>(int numToSkip) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -25900,15 +25914,15 @@
       <type>size_t</type>
       <name>lengthUpTo</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a18b7fd72a75236159029a595afcdc32e</anchor>
-      <arglist>(const size_t maxCharsToCount) const noexcept</arglist>
+      <anchor>abf956f66d6fde16ef8744b840226d5ca</anchor>
+      <arglist>(size_t maxCharsToCount) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>lengthUpTo</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a24b7bee2c71a1b54b87f5ee93929a1b8</anchor>
-      <arglist>(const CharPointer_UTF16 end) const noexcept</arglist>
+      <anchor>a09077726d441c987d346ba39ac999d1e</anchor>
+      <arglist>(CharPointer_UTF16 end) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -25928,78 +25942,78 @@
       <type>void</type>
       <name>writeAll</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a9f92e575c699c6b3bc19348fd809ce67</anchor>
-      <arglist>(const CharPointer src) noexcept</arglist>
+      <anchor>ab592d9b950317ef397d15b470d62ed86</anchor>
+      <arglist>(CharPointer src) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>writeAll</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a621fe27fa14022ef4c68083423319fea</anchor>
-      <arglist>(const CharPointer_UTF16 src) noexcept</arglist>
+      <anchor>ac0735418d2bfe17f4c85759ad6351576</anchor>
+      <arglist>(CharPointer_UTF16 src) noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>writeWithDestByteLimit</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a1921440a1aae42ec7ea2264e5e3af118</anchor>
-      <arglist>(const CharPointer src, const size_t maxDestBytes) noexcept</arglist>
+      <anchor>a5b2d9b01f3678808849a419f7bca01c3</anchor>
+      <arglist>(CharPointer src, size_t maxDestBytes) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>writeWithCharLimit</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>ad2dd0f3ae4e8075de1e550095e0316a6</anchor>
-      <arglist>(const CharPointer src, const int maxChars) noexcept</arglist>
+      <anchor>a277f16196d86297bc735a9134ae1cc17</anchor>
+      <arglist>(CharPointer src, int maxChars) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compare</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a84aa805a85c3654ab0149c26a5388d03</anchor>
-      <arglist>(const CharPointer other) const noexcept</arglist>
+      <anchor>a874ffe842032e15a443918e1e02d9a2e</anchor>
+      <arglist>(CharPointer other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareUpTo</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>aeee6d47d6f1de43422d9bc73234fe781</anchor>
-      <arglist>(const CharPointer other, const int maxChars) const noexcept</arglist>
+      <anchor>a932cae59b0386d82970cafbee0cf077a</anchor>
+      <arglist>(CharPointer other, int maxChars) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareIgnoreCase</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>ac45dc36f8c5ba3ec6313ec55d669fb52</anchor>
-      <arglist>(const CharPointer other) const noexcept</arglist>
+      <anchor>aceb9dc6cb8117548367ff9731e982377</anchor>
+      <arglist>(CharPointer other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareIgnoreCaseUpTo</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a25d2b63a258f5deda19e5e06ed40bc9a</anchor>
-      <arglist>(const CharPointer other, const int maxChars) const noexcept</arglist>
+      <anchor>a428d9af866259dbd8aabfb9d0c48507d</anchor>
+      <arglist>(CharPointer other, int maxChars) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>aca092edd0c9aa14d467af69a1e2b88e7</anchor>
-      <arglist>(const CharPointer stringToFind) const noexcept</arglist>
+      <anchor>a22a41b91daead74cdfb601c0f32c5011</anchor>
+      <arglist>(CharPointer stringToFind) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a9898fcd1d82b488162fdeb469320a5e5</anchor>
-      <arglist>(const juce_wchar charToFind) const noexcept</arglist>
+      <anchor>afb85c409536806ac2dd5cfde18aaf6c3</anchor>
+      <arglist>(juce_wchar charToFind) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a6f2bff8fe087a58422205c20b5108105</anchor>
-      <arglist>(const juce_wchar charToFind, const bool ignoreCase) const noexcept</arglist>
+      <anchor>a1f346746d9c5cc5bd8e7c81417d45328</anchor>
+      <arglist>(juce_wchar charToFind, bool ignoreCase) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -26089,15 +26103,15 @@
       <type>CharPointer_UTF16</type>
       <name>atomicSwap</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a707b15339e842553d65a95f07ffd2306</anchor>
-      <arglist>(const CharPointer_UTF16 newValue)</arglist>
+      <anchor>abf36eb39fed41f743013d029688455f5</anchor>
+      <arglist>(CharPointer_UTF16 newValue)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static size_t</type>
       <name>getBytesRequiredFor</name>
       <anchorfile>classCharPointer__UTF16.html</anchorfile>
-      <anchor>a2c7e013dd52871e441d013342ce4d82f</anchor>
-      <arglist>(const juce_wchar charToWrite) noexcept</arglist>
+      <anchor>a2f6c53eb1709a389a5f9c0dba4b1caad</anchor>
+      <arglist>(juce_wchar charToWrite) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static size_t</type>
@@ -26149,8 +26163,8 @@
       <type></type>
       <name>CharPointer_UTF32</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a8af5362ad32f31575d76998d70e1ce2a</anchor>
-      <arglist>(const CharType *const rawPointer) noexcept</arglist>
+      <anchor>abdc298873c42439612953e8cf81d0a7b</anchor>
+      <arglist>(const CharType *rawPointer) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -26237,6 +26251,13 @@
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isNotEmpty</name>
+      <anchorfile>classCharPointer__UTF32.html</anchorfile>
+      <anchor>a01c863554630d2d00a7183320adad259</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>juce_wchar</type>
       <name>operator*</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
@@ -26275,50 +26296,50 @@
       <type>void</type>
       <name>operator+=</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>abb35aa950c3d29d99596ebd0f438ddb6</anchor>
-      <arglist>(const int numToSkip) noexcept</arglist>
+      <anchor>aa5ad80d71ca2e51df8d24e07d00eb97f</anchor>
+      <arglist>(int numToSkip) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>operator-=</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a0fb27a5c1c1c85fcee28f5df6c1cd720</anchor>
-      <arglist>(const int numToSkip) noexcept</arglist>
+      <anchor>a1c1fa8bd3b32fcbe4a68d82304948e82</anchor>
+      <arglist>(int numToSkip) noexcept</arglist>
     </member>
     <member kind="function">
       <type>juce_wchar &amp;</type>
       <name>operator[]</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>ac88fe872f66b05f840380d5e26d50005</anchor>
-      <arglist>(const int characterIndex) const noexcept</arglist>
+      <anchor>aed6a25a3b9e702143a3b2f9728df93eb</anchor>
+      <arglist>(int characterIndex) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>CharPointer_UTF32</type>
       <name>operator+</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>af6f7099f07fd5946acc38f7266655f89</anchor>
-      <arglist>(const int numToSkip) const noexcept</arglist>
+      <anchor>a145b87b568577f09a2cf3efbe28113e8</anchor>
+      <arglist>(int numToSkip) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>CharPointer_UTF32</type>
       <name>operator-</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>ae137213e4c83554c724c299f68cc91d4</anchor>
-      <arglist>(const int numToSkip) const noexcept</arglist>
+      <anchor>aec9e21e010bb9739a97c93eba083f288</anchor>
+      <arglist>(int numToSkip) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>write</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a4d5d291f1afe51b6930b5ffbe52f0de4</anchor>
-      <arglist>(const juce_wchar charToWrite) noexcept</arglist>
+      <anchor>ad5d463e4ab0a4c20ef9343b70e5c694c</anchor>
+      <arglist>(juce_wchar charToWrite) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>replaceChar</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>affdec15df0e21e4985da83f3df64f263</anchor>
-      <arglist>(const juce_wchar newChar) noexcept</arglist>
+      <anchor>afa07dc4007a5362799796bd29e2dd0d3</anchor>
+      <arglist>(juce_wchar newChar) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -26338,15 +26359,15 @@
       <type>size_t</type>
       <name>lengthUpTo</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>ab5af051053dc120126f3f04a9c88871b</anchor>
-      <arglist>(const size_t maxCharsToCount) const noexcept</arglist>
+      <anchor>a9a3b9ad9ef565b39792d639866bb8027</anchor>
+      <arglist>(size_t maxCharsToCount) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>lengthUpTo</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a7e4a66e11bd3cb5daa3ad9de119ee5c1</anchor>
-      <arglist>(const CharPointer_UTF32 end) const noexcept</arglist>
+      <anchor>ab4426d43226941275212a21c2e9aae90</anchor>
+      <arglist>(CharPointer_UTF32 end) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -26366,78 +26387,78 @@
       <type>void</type>
       <name>writeAll</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>ad246d2eb02d4f3259ac6212cff8a2d53</anchor>
-      <arglist>(const CharPointer src) noexcept</arglist>
+      <anchor>a3674b695d973669e6fc88759522fb19c</anchor>
+      <arglist>(CharPointer src) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>writeAll</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a48e79084ee4b1b1ee8e53a63f7350eef</anchor>
-      <arglist>(const CharPointer_UTF32 src) noexcept</arglist>
+      <anchor>a294d0e9a1c39adefe23c1b566865431b</anchor>
+      <arglist>(CharPointer_UTF32 src) noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>writeWithDestByteLimit</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>aad135388edfba78ee61601325e3c6194</anchor>
-      <arglist>(const CharPointer src, const size_t maxDestBytes) noexcept</arglist>
+      <anchor>a873d4da48f21f6849a0ff0c9ea5e4bdd</anchor>
+      <arglist>(CharPointer src, size_t maxDestBytes) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>writeWithCharLimit</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a1bd6f1db5dd0f9a65fa09dd600a16e1d</anchor>
-      <arglist>(const CharPointer src, const int maxChars) noexcept</arglist>
+      <anchor>a236a9e6a7f183110f45cc5aa9703cd6a</anchor>
+      <arglist>(CharPointer src, int maxChars) noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compare</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a4ecc47df85543129a5382ee30ac36338</anchor>
-      <arglist>(const CharPointer other) const noexcept</arglist>
+      <anchor>a02fad84ebc2ef03af4b1919189d0d07c</anchor>
+      <arglist>(CharPointer other) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareUpTo</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a73946fdcc82e0e03501976e1cd47b323</anchor>
-      <arglist>(const CharPointer other, const int maxChars) const noexcept</arglist>
+      <anchor>a42959e9c2dfeaa2cdb23b1c567269a05</anchor>
+      <arglist>(CharPointer other, int maxChars) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareIgnoreCase</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a48be323705c2ad8d8238c212e7ceba81</anchor>
-      <arglist>(const CharPointer other) const </arglist>
+      <anchor>a06bf0e2e21f1863733f7f8b2b329f607</anchor>
+      <arglist>(CharPointer other) const </arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>compareIgnoreCaseUpTo</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a945448d9c3f38546a433a9f71332d695</anchor>
-      <arglist>(const CharPointer other, const int maxChars) const noexcept</arglist>
+      <anchor>ae6872969cb5ea1d116d962ec251cb30e</anchor>
+      <arglist>(CharPointer other, int maxChars) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a7462a3d4ad9f36271a6d44023e7f177f</anchor>
-      <arglist>(const CharPointer stringToFind) const noexcept</arglist>
+      <anchor>ae105d60c15af5cbe3a0fd0f21183a0ef</anchor>
+      <arglist>(CharPointer stringToFind) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a21049d77a1723e3baae318728d300bda</anchor>
-      <arglist>(const juce_wchar charToFind) const noexcept</arglist>
+      <anchor>ab2115553db53ee3d9a88b7aa49b84313</anchor>
+      <arglist>(juce_wchar charToFind) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>indexOf</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a9fa2ac897c0e6d978ff12907f61892b0</anchor>
-      <arglist>(const juce_wchar charToFind, const bool ignoreCase) const noexcept</arglist>
+      <anchor>a2fd8ed3cfa6366b31419f9629a61df18</anchor>
+      <arglist>(juce_wchar charToFind, bool ignoreCase) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -26527,22 +26548,22 @@
       <type>CharPointer_UTF32</type>
       <name>atomicSwap</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a7318a669eeda82ada4ab6afc32973b57</anchor>
-      <arglist>(const CharPointer_UTF32 newValue)</arglist>
+      <anchor>ae7b75b97c148ccb39e40554730bb44ba</anchor>
+      <arglist>(CharPointer_UTF32 newValue)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static size_t</type>
       <name>getBytesRequiredFor</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a8132e312b73ab73df7b990336b002b6d</anchor>
-      <arglist>(const juce_wchar) noexcept</arglist>
+      <anchor>ac08399b2568c37081648bc513f7aed3a</anchor>
+      <arglist>(juce_wchar) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static size_t</type>
       <name>getBytesRequiredFor</name>
       <anchorfile>classCharPointer__UTF32.html</anchorfile>
-      <anchor>a5595f424d651c1a1b8e74e9345964727</anchor>
-      <arglist>(const CharPointer text) noexcept</arglist>
+      <anchor>ad6456f06f6280d905c463043b685614e</anchor>
+      <arglist>(CharPointer text) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
@@ -26594,8 +26615,8 @@
       <type></type>
       <name>CharPointer_UTF8</name>
       <anchorfile>classCharPointer__UTF8.html</anchorfile>
-      <anchor>aef82dd41c193bbffec176c7b2a0dd810</anchor>
-      <arglist>(const CharType *const rawPointer) noexcept</arglist>
+      <anchor>a6da942c93f61f7dab8b6d0a63e789e5f</anchor>
+      <arglist>(const CharType *rawPointer) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -26679,6 +26700,13 @@
       <name>isEmpty</name>
       <anchorfile>classCharPointer__UTF8.html</anchorfile>
       <anchor>a452c936eef0f27624b4fcecf3988e861</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isNotEmpty</name>
+      <anchorfile>classCharPointer__UTF8.html</anchorfile>
+      <anchor>a1d63b70ba01664f18b045edb69f117ee</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -40593,8 +40621,8 @@
       <type>virtual void</type>
       <name>drawFileBrowserRow</name>
       <anchorfile>structFileBrowserComponent_1_1LookAndFeelMethods.html</anchorfile>
-      <anchor>affa014bf2d85d751e3deac3d1cf881e0</anchor>
-      <arglist>(Graphics &amp;, int width, int height, const String &amp;filename, Image *optionalIcon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;)=0</arglist>
+      <anchor>ab44187dec465f6a85f3872ce2c2677e3</anchor>
+      <arglist>(Graphics &amp;, int width, int height, const File &amp;file, const String &amp;filename, Image *optionalIcon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual Button *</type>
@@ -53457,8 +53485,8 @@
       <type>void</type>
       <name>drawFileBrowserRow</name>
       <anchorfile>classLookAndFeel__V2.html</anchorfile>
-      <anchor>a0d8a70183cd3db5e05bb9009e34487b8</anchor>
-      <arglist>(Graphics &amp;, int width, int height, const String &amp;filename, Image *icon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;) override</arglist>
+      <anchor>a3b564419f60e3f34e4d987f4e50dcdcf</anchor>
+      <arglist>(Graphics &amp;, int width, int height, const File &amp;file, const String &amp;filename, Image *icon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;) override</arglist>
     </member>
     <member kind="function">
       <type>Button *</type>
@@ -54411,8 +54439,8 @@
       <type>void</type>
       <name>drawFileBrowserRow</name>
       <anchorfile>classLookAndFeel__V4.html</anchorfile>
-      <anchor>a9acb9ff6279d4079d5d8e7fe95014215</anchor>
-      <arglist>(Graphics &amp;, int width, int height, const String &amp;filename, Image *icon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;) override</arglist>
+      <anchor>a827187e7686f017e5d78026e3ce36636</anchor>
+      <arglist>(Graphics &amp;, int width, int height, const File &amp;file, const String &amp;filename, Image *icon, const String &amp;fileSizeDescription, const String &amp;fileTimeDescription, bool isDirectory, bool isItemSelected, int itemIndex, DirectoryContentsDisplayComponent &amp;) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
