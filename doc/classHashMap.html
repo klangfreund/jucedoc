@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad123e7a5d4d6a0fef5196d5e0475c21"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#aad123e7a5d4d6a0fef5196d5e0475c21">operator[]</a> (<a class="el" href="classButton_1_1Listener.html">KeyTypeParameter</a> keyToLookFor) const </td></tr>
 <tr class="memdesc:aad123e7a5d4d6a0fef5196d5e0475c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value corresponding to a given key.  <a href="#aad123e7a5d4d6a0fef5196d5e0475c21">More...</a><br/></td></tr>
 <tr class="separator:aad123e7a5d4d6a0fef5196d5e0475c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250dcb6b64ac843e0e4fb30e5fa1d909"><td class="memItemLeft" align="right" valign="top">ValueType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#a250dcb6b64ac843e0e4fb30e5fa1d909">getReference</a> (<a class="el" href="classButton_1_1Listener.html">KeyTypeParameter</a> keyToLookFor)</td></tr>
+<tr class="memdesc:a250dcb6b64ac843e0e4fb30e5fa1d909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the value corresponding to a given key.  <a href="#a250dcb6b64ac843e0e4fb30e5fa1d909">More...</a><br/></td></tr>
+<tr class="separator:a250dcb6b64ac843e0e4fb30e5fa1d909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ea6487128a798b22e3937731cab111"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashMap.html#a76ea6487128a798b22e3937731cab111">contains</a> (<a class="el" href="classButton_1_1Listener.html">KeyTypeParameter</a> keyToLookFor) const </td></tr>
 <tr class="memdesc:a76ea6487128a798b22e3937731cab111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the map contains an item with the specied key.  <a href="#a76ea6487128a798b22e3937731cab111">More...</a><br/></td></tr>
 <tr class="separator:a76ea6487128a798b22e3937731cab111"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,7 +358,38 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
   </dd>
 </dl>
 
-<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, and <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>.</p>
+<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a250dcb6b64ac843e0e4fb30e5fa1d909"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyType, typename ValueType, class HashFunctionType = DefaultHashFunctions, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueType&amp; <a class="el" href="classHashMap.html">HashMap</a>&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getReference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classButton_1_1Listener.html">KeyTypeParameter</a>&#160;</td>
+          <td class="paramname"><em>keyToLookFor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the value corresponding to a given key. </p>
+<p>If the map doesn't contain the key, a default instance of the value type is added to the map and a reference to this is returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyToLookFor</td><td>the key of the item being requested </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, <a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getNumSlots()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, and <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::set()</a>.</p>
+
+<p>Referenced by <a class="el" href="classThreadLocalValue.html#a0350ab3d9b5d1877dec3244d5b4e71e9">ThreadLocalValue&lt; Type &gt;::get()</a>, and <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +411,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 <p>Returns true if the map contains an item with the specied key. </p>
 
-<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, and <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>.</p>
+<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>.</p>
 
 </div>
 </div>
@@ -432,9 +466,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 <p>Adds or replaces an element in the hash-map. </p>
 <p>If there's already an item with the given key, this will replace its value. Otherwise, a new item will be added to the map. </p>
 
-<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, <a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getNumSlots()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, and <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::set()</a>.</p>
-
-<p>Referenced by <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>.</p>
+<p>References <a class="el" href="classHashMap.html#a250dcb6b64ac843e0e4fb30e5fa1d909">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getReference()</a>.</p>
 
 </div>
 </div>
@@ -456,7 +488,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 <p>Removes an item with the given key. </p>
 
-<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, and <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::set()</a>.</p>
+<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, <a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getNumSlots()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, and <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::set()</a>.</p>
 
 </div>
 </div>
@@ -502,9 +534,9 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 <p>Each slot corresponds to a single hash-code, and each one can contain multiple items. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072" title="Returns the number of slots which are available for hashing. ">getNumSlots()</a> </dd></dl>
 
-<p>References <a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getNumSlots()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>, and <a class="el" href="classHashMap.html#a885345c5f15712041e6e46d38d6e564b">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::swapWith()</a>.</p>
+<p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, <a class="el" href="classHashMap.html#a28c5938ec533466631b98451c6b78072">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getNumSlots()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getUnchecked()</a>, <a class="el" href="classArray.html#a0cadf83bcfba696c6a4adc15f4e0a78f">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::insertMultiple()</a>, <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::set()</a>, and <a class="el" href="classArray.html#a921a70882553967e2998beeb30d99f83">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::swapWith()</a>.</p>
 
-<p>Referenced by <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>.</p>
+<p>Referenced by <a class="el" href="classHashMap.html#a250dcb6b64ac843e0e4fb30e5fa1d909">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getReference()</a>.</p>
 
 </div>
 </div>
@@ -537,7 +569,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 
 <p>References <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::next()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, <a class="el" href="structHashMap_1_1Iterator.html#a23667db4b0294862723097ed5230fb3e">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::resetToEnd()</a>, and <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>.</p>
+<p>Referenced by <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="classHashMap.html#a250dcb6b64ac843e0e4fb30e5fa1d909">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getReference()</a>, <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::next()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, <a class="el" href="classHashMap.html#ac308687ea47efa4d1559ec1b35505ad2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remove()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, and <a class="el" href="structHashMap_1_1Iterator.html#a23667db4b0294862723097ed5230fb3e">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator::resetToEnd()</a>.</p>
 
 </div>
 </div>
@@ -571,8 +603,6 @@ template&lt;class OtherHashMapType &gt; </div>
 
 <p>References <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getLock()</a>, and <a class="el" href="classArray.html#a921a70882553967e2998beeb30d99f83">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::swapWith()</a>.</p>
 
-<p>Referenced by <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a539b127c2f399e4d5f6c235222fb7bf2"></a>
@@ -601,7 +631,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 <p>Returns the <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> that locks this structure. </p>
 <p>To lock, you can call <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2" title="Returns the CriticalSection that locks this structure. ">getLock()</a>.enter() and <a class="el" href="classHashMap.html#a539b127c2f399e4d5f6c235222fb7bf2" title="Returns the CriticalSection that locks this structure. ">getLock()</a>.exit(), or preferably use an object of ScopedLockType as an RAII lock for it. </p>
 
-<p>Referenced by <a class="el" href="classHashMap.html#a2922931b85fa384901d82de2b46b0845">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::clear()</a>, <a class="el" href="classHashMap.html#a76ea6487128a798b22e3937731cab111">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::contains()</a>, <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="classHashMap.html#aad123e7a5d4d6a0fef5196d5e0475c21">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::operator[]()</a>, <a class="el" href="classHashMap.html#ac308687ea47efa4d1559ec1b35505ad2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remove()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, <a class="el" href="classHashMap.html#a875c55a3b720118cd6687fd6494f7afd">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::set()</a>, and <a class="el" href="classHashMap.html#a885345c5f15712041e6e46d38d6e564b">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::swapWith()</a>.</p>
+<p>Referenced by <a class="el" href="classHashMap.html#a2922931b85fa384901d82de2b46b0845">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::clear()</a>, <a class="el" href="classHashMap.html#a76ea6487128a798b22e3937731cab111">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::contains()</a>, <a class="el" href="classHashMap.html#aa18110ae5d5de81f4e64efcc117e43d8">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::containsValue()</a>, <a class="el" href="classHashMap.html#a250dcb6b64ac843e0e4fb30e5fa1d909">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::getReference()</a>, <a class="el" href="classHashMap.html#aad123e7a5d4d6a0fef5196d5e0475c21">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::operator[]()</a>, <a class="el" href="classHashMap.html#aadd0f7eaeacd996eed49440b27d9f308">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remapTable()</a>, <a class="el" href="classHashMap.html#ac308687ea47efa4d1559ec1b35505ad2">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::remove()</a>, <a class="el" href="classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::removeValue()</a>, and <a class="el" href="classHashMap.html#a885345c5f15712041e6e46d38d6e564b">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::swapWith()</a>.</p>
 
 </div>
 </div>
@@ -670,7 +700,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

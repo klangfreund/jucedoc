@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4cc8d01e5ca1517ababd36fb3b23771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1767e4e85c7dce5560a3621345ebdfc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#a1767e4e85c7dce5560a3621345ebdfc4">preparePopupMenuWindow</a> (<a class="el" href="classComponent.html">Component</a> &amp;newWindow)=0</td></tr>
 <tr class="separator:a1767e4e85c7dce5560a3621345ebdfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456f9fc08cb32ae33d1799103aaaed2f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#a456f9fc08cb32ae33d1799103aaaed2f">shouldPopupMenuScaleWithTargetComponent</a> (const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;options)=0</td></tr>
+<tr class="memdesc:a456f9fc08cb32ae33d1799103aaaed2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want your popup menus to scale with the target component's <a class="el" href="classAffineTransform.html" title="Represents a 2D affine-transformation matrix. ">AffineTransform</a> or scale factor.  <a href="#a456f9fc08cb32ae33d1799103aaaed2f">More...</a><br/></td></tr>
+<tr class="separator:a456f9fc08cb32ae33d1799103aaaed2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract base class is implemented by <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> classes to provide menu drawing functionality. </p>
@@ -802,6 +805,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a456f9fc08cb32ae33d1799103aaaed2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PopupMenu::LookAndFeelMethods::shouldPopupMenuScaleWithTargetComponent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if you want your popup menus to scale with the target component's <a class="el" href="classAffineTransform.html" title="Represents a 2D affine-transformation matrix. ">AffineTransform</a> or scale factor. </p>
+
+<p>Implemented in <a class="el" href="classLookAndFeel__V2.html#a606ee1b1a9b5c72f4e5ba6c8af1124a5">LookAndFeel_V2</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__PopupMenu_8h.html">juce_PopupMenu.h</a></li>
 </ul>
@@ -809,7 +840,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

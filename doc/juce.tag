@@ -6147,13 +6147,6 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/threads/</path>
     <filename>juce__ThreadLocalValue_8h</filename>
     <class kind="class">ThreadLocalValue</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>JUCE_NO_COMPILER_THREAD_LOCAL</name>
-      <anchorfile>juce__ThreadLocalValue_8h.html</anchorfile>
-      <anchor>ace6df6344d7f87952a787d9c35dd159d</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>juce_ThreadPool.h</name>
@@ -23583,6 +23576,13 @@
       <name>~BufferedInputStream</name>
       <anchorfile>classBufferedInputStream.html</anchorfile>
       <anchor>ab353c2eacfa486206f3e155619162c3c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>char</type>
+      <name>peekByte</name>
+      <anchorfile>classBufferedInputStream.html</anchorfile>
+      <anchor>a651347b9987a6fb96c03c2e6b8655d24</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -45707,6 +45707,13 @@
       <arglist>(KeyTypeParameter keyToLookFor) const </arglist>
     </member>
     <member kind="function">
+      <type>ValueType &amp;</type>
+      <name>getReference</name>
+      <anchorfile>classHashMap.html</anchorfile>
+      <anchor>a250dcb6b64ac843e0e4fb30e5fa1d909</anchor>
+      <arglist>(KeyTypeParameter keyToLookFor)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>contains</name>
       <anchorfile>classHashMap.html</anchorfile>
@@ -52692,6 +52699,13 @@
       <anchor>a1767e4e85c7dce5560a3621345ebdfc4</anchor>
       <arglist>(Component &amp;newWindow)=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>shouldPopupMenuScaleWithTargetComponent</name>
+      <anchorfile>structPopupMenu_1_1LookAndFeelMethods.html</anchorfile>
+      <anchor>a456f9fc08cb32ae33d1799103aaaed2f</anchor>
+      <arglist>(const PopupMenu::Options &amp;options)=0</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~LookAndFeelMethods</name>
@@ -53612,6 +53626,13 @@
       <name>getParentComponentForMenuOptions</name>
       <anchorfile>classLookAndFeel__V2.html</anchorfile>
       <anchor>a8e33a2a72238adb3099c09b6113aea13</anchor>
+      <arglist>(const PopupMenu::Options &amp;options) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>shouldPopupMenuScaleWithTargetComponent</name>
+      <anchorfile>classLookAndFeel__V2.html</anchorfile>
+      <anchor>a606ee1b1a9b5c72f4e5ba6c8af1124a5</anchor>
       <arglist>(const PopupMenu::Options &amp;options) override</arglist>
     </member>
     <member kind="function">

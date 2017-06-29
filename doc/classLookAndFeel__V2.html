@@ -271,6 +271,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab95999ea94bed43aa989e682cbc94c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e33a2a72238adb3099c09b6113aea13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a8e33a2a72238adb3099c09b6113aea13">getParentComponentForMenuOptions</a> (const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;options) override</td></tr>
 <tr class="separator:a8e33a2a72238adb3099c09b6113aea13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606ee1b1a9b5c72f4e5ba6c8af1124a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a606ee1b1a9b5c72f4e5ba6c8af1124a5">shouldPopupMenuScaleWithTargetComponent</a> (const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;options) override</td></tr>
+<tr class="memdesc:a606ee1b1a9b5c72f4e5ba6c8af1124a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if you want your popup menus to scale with the target component's <a class="el" href="classAffineTransform.html" title="Represents a 2D affine-transformation matrix. ">AffineTransform</a> or scale factor.  <a href="#a606ee1b1a9b5c72f4e5ba6c8af1124a5">More...</a><br/></td></tr>
+<tr class="separator:a606ee1b1a9b5c72f4e5ba6c8af1124a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb2791512cd4fb8609b044686ed5c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#afdb2791512cd4fb8609b044686ed5c55">drawComboBox</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, int width, int height, bool isButtonDown, int buttonX, int buttonY, int buttonW, int buttonH, <a class="el" href="classComboBox.html">ComboBox</a> &amp;) override</td></tr>
 <tr class="separator:afdb2791512cd4fb8609b044686ed5c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4076050f06f686b3f74908e888936c1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFont.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLookAndFeel__V2.html#a4076050f06f686b3f74908e888936c1a">getComboBoxFont</a> (<a class="el" href="classComboBox.html">ComboBox</a> &amp;) override</td></tr>
@@ -3037,6 +3040,34 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#ab4cc8d01e5ca1517ababd36fb3b23771">PopupMenu::LookAndFeelMethods</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a606ee1b1a9b5c72f4e5ba6c8af1124a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LookAndFeel_V2::shouldPopupMenuScaleWithTargetComponent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPopupMenu_1_1Options.html">PopupMenu::Options</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if you want your popup menus to scale with the target component's <a class="el" href="classAffineTransform.html" title="Represents a 2D affine-transformation matrix. ">AffineTransform</a> or scale factor. </p>
+
+<p>Implements <a class="el" href="structPopupMenu_1_1LookAndFeelMethods.html#a456f9fc08cb32ae33d1799103aaaed2f">PopupMenu::LookAndFeelMethods</a>.</p>
 
 </div>
 </div>
@@ -6082,7 +6113,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

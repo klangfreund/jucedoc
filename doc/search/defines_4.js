@@ -44,7 +44,6 @@ var searchData=
   ['juce_5fnative_5fwchar_5fis_5futf32',['JUCE_NATIVE_WCHAR_IS_UTF32',['../juce__CharacterFunctions_8h.html#a32ffe19f7697fad5b1febdce3b5fab4d',1,'juce_CharacterFunctions.h']]],
   ['juce_5fnative_5fwchar_5fis_5futf8',['JUCE_NATIVE_WCHAR_IS_UTF8',['../juce__CharacterFunctions_8h.html#adee5e9cf98ee0bd0a2e5a91fb479f640',1,'juce_CharacterFunctions.h']]],
   ['juce_5fno_5fassociative_5fmath_5foptimisations',['JUCE_NO_ASSOCIATIVE_MATH_OPTIMISATIONS',['../juce__PlatformDefs_8h.html#a909bde880b0a0a8cde591314de213c0a',1,'juce_PlatformDefs.h']]],
-  ['juce_5fno_5fcompiler_5fthread_5flocal',['JUCE_NO_COMPILER_THREAD_LOCAL',['../juce__ThreadLocalValue_8h.html#ace6df6344d7f87952a787d9c35dd159d',1,'juce_ThreadLocalValue.h']]],
   ['juce_5fosc_5fh_5fincluded',['JUCE_OSC_H_INCLUDED',['../juce__osc_8h.html#a49c8a7d36792ed53dc7a8c6e2105adcd',1,'juce_osc.h']]],
   ['juce_5fprevent_5fheap_5fallocation',['JUCE_PREVENT_HEAP_ALLOCATION',['../juce__PlatformDefs_8h.html#abe12fb8b712ed0602dd1678599a3167b',1,'juce_PlatformDefs.h']]],
   ['juce_5fproduct_5funlocking_5fh_5fincluded',['JUCE_PRODUCT_UNLOCKING_H_INCLUDED',['../juce__product__unlocking_8h.html#aea95200024062291ca7c8f2635b2a758',1,'juce_product_unlocking.h']]],
