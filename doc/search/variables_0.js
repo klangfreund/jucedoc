@@ -42,7 +42,7 @@ var searchData=
   ['associatedcomponent',['associatedComponent',['../classFlexItem.html#a844775f34c346b8e807c66d3623d9ea8',1,'FlexItem']]],
   ['associatedflexbox',['associatedFlexBox',['../classFlexItem.html#ae91dba1ed2ad5a26f0b2733060dbd5ac',1,'FlexItem']]],
   ['attributeid',['attributeID',['../structOpenGLShaderProgram_1_1Attribute.html#a57907b3f4e21a42bae5d483b16b14f0f',1,'OpenGLShaderProgram::Attribute']]],
-  ['auchannelstreamorder',['auChannelStreamOrder',['../structAudioUnitHelpers_1_1StreamOrder.html#a1d7ea82974b92196443cca8e5b9086fa',1,'AudioUnitHelpers::StreamOrder']]],
+  ['auchannelstreamorder',['auChannelStreamOrder',['../structAudioUnitHelpers.html#a17acb3dac54f5f9562693ab81c15ce49',1,'AudioUnitHelpers::auChannelStreamOrder()'],['../structAudioUnitHelpers_1_1StreamOrder.html#a1d7ea82974b92196443cca8e5b9086fa',1,'AudioUnitHelpers::StreamOrder::auChannelStreamOrder()']]],
   ['aulayouttag',['auLayoutTag',['../structAudioUnitHelpers_1_1AUChannelStreamOrder.html#afc45e29183fc45b1bebfb7f97d8e48db',1,'AudioUnitHelpers::AUChannelStreamOrder']]],
   ['autovalue',['autoValue',['../classFlexItem.html#af32603bdf7f814f6d73a999b54a34df6',1,'FlexItem']]],
   ['averageseconds',['averageSeconds',['../structPerformanceCounter_1_1Statistics.html#a1ddbe61fd1a766973cc19d9c3432a4c6',1,'PerformanceCounter::Statistics']]],

@@ -49,7 +49,7 @@ var searchData=
   ['juce_5fproduct_5funlocking_5fh_5fincluded',['JUCE_PRODUCT_UNLOCKING_H_INCLUDED',['../juce__product__unlocking_8h.html#aea95200024062291ca7c8f2635b2a758',1,'juce_product_unlocking.h']]],
   ['juce_5fpublic_5ffunction',['JUCE_PUBLIC_FUNCTION',['../juce__StandardHeader_8h.html#a96fbdc03e0c892905daef7b47337c84e',1,'juce_StandardHeader.h']]],
   ['juce_5fpublic_5fin_5fdll_5fbuild',['JUCE_PUBLIC_IN_DLL_BUILD',['../juce__StandardHeader_8h.html#a8d339dd1e85e6fbefaf7638692d085c2',1,'juce_StandardHeader.h']]],
-  ['juce_5fstate_5fdictionary_5fkey',['JUCE_STATE_DICTIONARY_KEY',['../juce__AU__Shared_8h.html#ac7db797621c267348ba0dae6c874e4c5',1,'juce_AU_Shared.h']]],
+  ['juce_5fstate_5fdictionary_5fkey',['JUCE_STATE_DICTIONARY_KEY',['../juce__audio__plugin__client_2AU_2juce__AU__Shared_8h.html#ac7db797621c267348ba0dae6c874e4c5',1,'JUCE_STATE_DICTIONARY_KEY():&#160;juce_AU_Shared.h'],['../juce__audio__processors_2format__types_2juce__AU__Shared_8h.html#ac7db797621c267348ba0dae6c874e4c5',1,'JUCE_STATE_DICTIONARY_KEY():&#160;juce_AU_Shared.h']]],
   ['juce_5fstringify',['JUCE_STRINGIFY',['../juce__PlatformDefs_8h.html#a7fab1bb48f05df367f0a57bc6cf3d12f',1,'juce_PlatformDefs.h']]],
   ['juce_5ftry',['JUCE_TRY',['../juce__ApplicationBase_8h.html#a267fd4f83073fb084b389df70243c52e',1,'juce_ApplicationBase.h']]],
   ['juce_5fundenormalise',['JUCE_UNDENORMALISE',['../juce__MathsFunctions_8h.html#a339666bd60cc6cb0831cb79c8f1b07b6',1,'juce_MathsFunctions.h']]],

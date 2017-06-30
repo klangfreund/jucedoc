@@ -53,7 +53,6 @@ var searchData=
   ['directorycontentsdisplaycomponent',['DirectoryContentsDisplayComponent',['../classDirectoryContentsDisplayComponent.html#a77753970a52f8b388bb7142f662d82c0',1,'DirectoryContentsDisplayComponent']]],
   ['directorycontentslist',['DirectoryContentsList',['../classDirectoryContentsList.html#ae36fae5fbad4ae302ffed71120a554fc',1,'DirectoryContentsList']]],
   ['directoryiterator',['DirectoryIterator',['../classDirectoryIterator.html#a524ffc16900daf13217680423458b328',1,'DirectoryIterator']]],
-  ['directshowcomponent',['DirectShowComponent',['../classDirectShowComponent.html#af377e8270137e9905e93963acc49c2ea',1,'DirectShowComponent']]],
   ['disabled',['disabled',['../classAudioChannelSet.html#a18675dc100238ac22868c41717ef2ffe',1,'AudioChannelSet']]],
   ['disabledenormalisednumbersupport',['disableDenormalisedNumberSupport',['../classFloatVectorOperations.html#aff6d068c58da16b48dbf738a48ecd400',1,'FloatVectorOperations']]],
   ['disablenonmainbuses',['disableNonMainBuses',['../classAudioProcessor.html#a95e1cedbe30a03547baa4f8341c5f04a',1,'AudioProcessor']]],

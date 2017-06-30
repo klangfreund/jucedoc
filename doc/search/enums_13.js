@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['videorenderertype',['VideoRendererType',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75',1,'DirectShowComponent']]],
   ['virtualkeyboardtype',['VirtualKeyboardType',['../classTextInputTarget.html#a097550317e3bf2aee470a20540b9edc7',1,'TextInputTarget']]],
   ['vsteffectinterfaceflags',['VstEffectInterfaceFlags',['../juce__VSTInterface_8h.html#a5b9075cb1c502b45ea05a52c32a3c4c5',1,'juce_VSTInterface.h']]],
   ['vsteventtypes',['VstEventTypes',['../juce__VSTInterface_8h.html#a97d16bafbef4126002a53e12b93a7d18',1,'juce_VSTInterface.h']]],

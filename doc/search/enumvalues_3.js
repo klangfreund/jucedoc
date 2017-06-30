@@ -34,8 +34,5 @@ var searchData=
   ['down',['down',['../classControlButton.html#a891776295057786f99f14631b1aa2794aa76d350670f78fda703039b0dbf571ff',1,'ControlButton::down()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832afe83f0c46fa4bc0e0181fc150fede7c4',1,'juce::ControlButton::down()'],['../structjuce_1_1DrumPadGridProgram.html#acd1f16a328fcc468ac6b46446b3b4226a6c1fdf39e6c43b173acd5a6bcb050a54',1,'juce::DrumPadGridProgram::down()'],['../structDrumPadGridProgram.html#ae0883fdca11734f26ab431b89c52255fac484ce03a21cd3a465ce6fb5f163ee1b',1,'DrumPadGridProgram::down()']]],
   ['draganddropindicatorcolourid',['dragAndDropIndicatorColourId',['../classTreeView.html#abeebe6dbdc6ae466495aabc64eb51d6aad580cdecf3960d0d68904675383bb2ec',1,'TreeView']]],
   ['draggable',['draggable',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831acc6c3bf14f3e100d490d1e9cd307e1fe',1,'TableHeaderComponent']]],
-  ['dragginghandcursor',['DraggingHandCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a95198e14e2dede840964e9bd4c785770',1,'MouseCursor']]],
-  ['dshowdefault',['dshowDefault',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75a620a1e36deb4388aadeb49be5097867a',1,'DirectShowComponent']]],
-  ['dshowevr',['dshowEVR',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75a4bd766a5f5a12e8a4a0f07a8f41e6a60',1,'DirectShowComponent']]],
-  ['dshowvmr7',['dshowVMR7',['../classDirectShowComponent.html#aa3d9ec3787a0af2478c59ff11a830f75a5108392f04c0124e700030eb9b284830',1,'DirectShowComponent']]]
+  ['dragginghandcursor',['DraggingHandCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a95198e14e2dede840964e9bd4c785770',1,'MouseCursor']]]
 ];

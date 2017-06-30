@@ -243,9 +243,25 @@
     <class kind="class">AttributedString::Attribute</class>
   </compound>
   <compound kind="file">
-    <name>juce_AU_Shared.h</name>
+    <name>juce_audio_plugin_client/AU/juce_AU_Shared.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/AU/</path>
+    <filename>juce__audio__plugin__client_2AU_2juce__AU__Shared_8h</filename>
+    <class kind="struct">AudioUnitHelpers</class>
+    <class kind="struct">AudioUnitHelpers::AUChannelStreamOrder</class>
+    <class kind="class">AudioUnitHelpers::ChannelRemapper</class>
+    <class kind="class">AudioUnitHelpers::CoreAudioBufferList</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>JUCE_STATE_DICTIONARY_KEY</name>
+      <anchorfile>juce__audio__plugin__client_2AU_2juce__AU__Shared_8h.html</anchorfile>
+      <anchor>ac7db797621c267348ba0dae6c874e4c5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>juce_audio_processors/format_types/juce_AU_Shared.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_processors/format_types/</path>
-    <filename>juce__AU__Shared_8h</filename>
+    <filename>juce__audio__processors_2format__types_2juce__AU__Shared_8h</filename>
     <class kind="struct">AudioUnitHelpers</class>
     <class kind="struct">AudioUnitHelpers::AUChannelStreamOrder</class>
     <class kind="struct">AudioUnitHelpers::StreamOrder</class>
@@ -254,7 +270,7 @@
     <member kind="define">
       <type>#define</type>
       <name>JUCE_STATE_DICTIONARY_KEY</name>
-      <anchorfile>juce__AU__Shared_8h.html</anchorfile>
+      <anchorfile>juce__audio__processors_2format__types_2juce__AU__Shared_8h.html</anchorfile>
       <anchor>ac7db797621c267348ba0dae6c874e4c5</anchor>
       <arglist></arglist>
     </member>
@@ -2223,12 +2239,6 @@
     <path>/home/juce/data/res/development/juce/modules/juce_core/files/</path>
     <filename>juce__DirectoryIterator_8h</filename>
     <class kind="class">DirectoryIterator</class>
-  </compound>
-  <compound kind="file">
-    <name>juce_DirectShowComponent.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
-    <filename>juce__DirectShowComponent_8h</filename>
-    <class kind="class">DirectShowComponent</class>
   </compound>
   <compound kind="file">
     <name>juce_DocumentWindow.h</name>
@@ -4989,11 +4999,6 @@
     <class kind="class">Quaternion</class>
   </compound>
   <compound kind="file">
-    <name>juce_QuickTimeAudioFormat.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_audio_formats/codecs/</path>
-    <filename>juce__QuickTimeAudioFormat_8h</filename>
-  </compound>
-  <compound kind="file">
     <name>juce_Random.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_core/maths/</path>
     <filename>juce__Random_8h</filename>
@@ -6517,6 +6522,12 @@
     <path>/home/juce/data/res/development/juce/modules/juce_opengl/geometry/</path>
     <filename>juce__Vector3D_8h</filename>
     <class kind="class">Vector3D</class>
+  </compound>
+  <compound kind="file">
+    <name>juce_VideoComponent.h</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
+    <filename>juce__VideoComponent_8h</filename>
+    <class kind="class">VideoComponent</class>
   </compound>
   <compound kind="file">
     <name>juce_Viewport.h</name>
@@ -20569,6 +20580,97 @@
       <arglist>(const float *src, const int channel, const UInt32 size, AudioBufferList &amp;audioBuffer) noexcept</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static Array&lt; AUChannelInfo &gt;</type>
+      <name>getAUChannelInfo</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>ae77df3111352e6ac54e4094f27cede51</anchor>
+      <arglist>(PluginBusUtilities &amp;busUtils)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelSet::ChannelType</type>
+      <name>CoreAudioChannelLabelToJuceType</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>ac68ad178d4178ad91a11fb91ced08290</anchor>
+      <arglist>(AudioChannelLabel label) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelLabel</type>
+      <name>JuceChannelTypeToCoreAudioLabel</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a1976196d3f6e79fe0280d3504686634e</anchor>
+      <arglist>(const AudioChannelSet::ChannelType &amp;label) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelSet</type>
+      <name>CoreAudioChannelBitmapToJuceType</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>aaa03a90fe271fda5c558f1c607d8113f</anchor>
+      <arglist>(UInt32 bitmap) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelSet</type>
+      <name>CoreAudioChannelLayoutToJuceType</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a941026e5949e35df064df023ec05956b</anchor>
+      <arglist>(const AudioChannelLayout &amp;layout) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelSet</type>
+      <name>CALayoutTagToChannelSet</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a21271d10f524034499c8b0439d457d9b</anchor>
+      <arglist>(AudioChannelLayoutTag tag) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static AudioChannelLayoutTag</type>
+      <name>ChannelSetToCALayoutTag</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>ac68a1469332bd2a144fa795027b91727</anchor>
+      <arglist>(const AudioChannelSet &amp;set) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>auChannelIndexToJuce</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>abb43c8086087796cb74a57c791a27e40</anchor>
+      <arglist>(int auIndex, const AudioChannelSet &amp;channelSet)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>juceChannelIndexToAu</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a3f0f49089b990ec2c7a652f3b3687aa7</anchor>
+      <arglist>(int juceIndex, const AudioChannelSet &amp;channelSet)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isAudioBufferInterleaved</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a2085fcf1704685ccf9b378d8daa75523</anchor>
+      <arglist>(const AudioBufferList &amp;audioBuffer) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>clearAudioBuffer</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a502793d0d94d69f92ee0251a274eb48e</anchor>
+      <arglist>(const AudioBufferList &amp;audioBuffer) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>copyAudioBuffer</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>ac27199a857891d4ceaf411569d20709b</anchor>
+      <arglist>(const AudioBufferList &amp;audioBuffer, const int channel, const UInt32 size, float *dst) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>copyAudioBuffer</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a82dd544b757329d7cdf033eacaed06d1</anchor>
+      <arglist>(const float *src, const int channel, const UInt32 size, AudioBufferList &amp;audioBuffer) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static bool</type>
       <name>isLayoutSupported</name>
       <anchorfile>structAudioUnitHelpers.html</anchorfile>
@@ -20603,6 +20705,13 @@
       <anchor>a2e13cc1304fce78d837abe4a8cccef61</anchor>
       <arglist>(const AudioProcessor *juceFilter)</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static AUChannelStreamOrder</type>
+      <name>auChannelStreamOrder</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a17acb3dac54f5f9562693ab81c15ce49</anchor>
+      <arglist>[]</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>AudioUnitHelpers::AUChannelStreamOrder</name>
@@ -20615,6 +20724,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>AudioChannelLabel</type>
+      <name>speakerOrder</name>
+      <anchorfile>structAudioUnitHelpers_1_1AUChannelStreamOrder.html</anchorfile>
+      <anchor>a3c3cd8212d0e53b4ff20f35f5251149f</anchor>
+      <arglist>[8]</arglist>
+    </member>
+    <member kind="variable">
       <type>AudioChannelSet::ChannelType</type>
       <name>speakerOrder</name>
       <anchorfile>structAudioUnitHelpers_1_1AUChannelStreamOrder.html</anchorfile>
@@ -20625,6 +20741,41 @@
   <compound kind="class">
     <name>AudioUnitHelpers::ChannelRemapper</name>
     <filename>classAudioUnitHelpers_1_1ChannelRemapper.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ChannelRemapper</name>
+      <anchorfile>classAudioUnitHelpers_1_1ChannelRemapper.html</anchorfile>
+      <anchor>a70679a65fae283bf0c793414e07f9455</anchor>
+      <arglist>(PluginBusUtilities &amp;bUtils)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ChannelRemapper</name>
+      <anchorfile>classAudioUnitHelpers_1_1ChannelRemapper.html</anchorfile>
+      <anchor>a39f01c1aebe0ef2f257ee0a72ec48bd7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>alloc</name>
+      <anchorfile>classAudioUnitHelpers_1_1ChannelRemapper.html</anchorfile>
+      <anchor>aee51531605d0b0cc8f7f7e549aea3470</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>release</name>
+      <anchorfile>classAudioUnitHelpers_1_1ChannelRemapper.html</anchorfile>
+      <anchor>a149a4f20954320f89e4e2ffd65166d3d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const int *</type>
+      <name>get</name>
+      <anchorfile>classAudioUnitHelpers_1_1ChannelRemapper.html</anchorfile>
+      <anchor>a4cce2263d3c691c3560e866a6d4446d0</anchor>
+      <arglist>(bool input, int bus) const noexcept</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>ChannelRemapper</name>
@@ -20664,6 +20815,76 @@
   <compound kind="class">
     <name>AudioUnitHelpers::CoreAudioBufferList</name>
     <filename>classAudioUnitHelpers_1_1CoreAudioBufferList.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CoreAudioBufferList</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>a720d47f9178b3f66cd9f1d099d588507</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>prepare</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>a7e4cd6becddb903c974fb6e643afe8b4</anchor>
+      <arglist>(int inChannels, int outChannels, int maxFrames)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>release</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>ac802ae2d716fab534a42a53313648e7d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>aa06cbf692838e38fa57a45b2b3daca00</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>float *</type>
+      <name>setBuffer</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>adc7e8afd6102e99e0b5d18a97cb3c8cb</anchor>
+      <arglist>(const int idx, float *ptr=nullptr) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>float *</type>
+      <name>push</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>aa24515fd83834e0734ee67cd7d20dcea</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>push</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>a6f0a021337e80e30ad91afb7c8fe55df</anchor>
+      <arglist>(AudioBufferList &amp;bufferList, const int *channelMap) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>float *</type>
+      <name>pop</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>a115ccebe2a6ccbe501732ab209f4f96c</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>pop</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>aa5e3bbd964561829502a3362b34a084a</anchor>
+      <arglist>(AudioBufferList &amp;buffer, const int *channelMap) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>AudioSampleBuffer &amp;</type>
+      <name>getBuffer</name>
+      <anchorfile>classAudioUnitHelpers_1_1CoreAudioBufferList.html</anchorfile>
+      <anchor>aeac6d2651e2880146cfe7a78dda9cc8d</anchor>
+      <arglist>(UInt32 frames) noexcept</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>CoreAudioBufferList</name>
@@ -35242,207 +35463,6 @@
       <anchorfile>classDirectoryIterator.html</anchorfile>
       <anchor>a32667fc239e42f3db031ae2cc2646b3c</anchor>
       <arglist>() const </arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>DirectShowComponent</name>
-    <filename>classDirectShowComponent.html</filename>
-    <base>Component</base>
-    <member kind="enumeration">
-      <type></type>
-      <name>VideoRendererType</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aa3d9ec3787a0af2478c59ff11a830f75</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>dshowDefault</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aa3d9ec3787a0af2478c59ff11a830f75a620a1e36deb4388aadeb49be5097867a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>dshowVMR7</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aa3d9ec3787a0af2478c59ff11a830f75a5108392f04c0124e700030eb9b284830</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <type>@</type>
-      <name>dshowEVR</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aa3d9ec3787a0af2478c59ff11a830f75a4bd766a5f5a12e8a4a0f07a8f41e6a60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DirectShowComponent</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>af377e8270137e9905e93963acc49c2ea</anchor>
-      <arglist>(VideoRendererType type=dshowDefault)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~DirectShowComponent</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a3a031b3db994fcd730cc6a5899f76462</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a0507e6218c2e5b3989cb1ecb7d8de6e5</anchor>
-      <arglist>(const String &amp;fileOrURLPath)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a2fa45b9cc38e2bb703993751a08f2ca4</anchor>
-      <arglist>(const File &amp;videoFile)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a38f8befa6cdbc6cfcd2cb90b8eb0a787</anchor>
-      <arglist>(const URL &amp;videoURL)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>closeMovie</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aa67b15760af62bd603c21755875ede6b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>File</type>
-      <name>getCurrentMoviePath</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>ad8d9681483157f588821bf46548e506f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isMovieOpen</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a91155448dda4da76e0aa43d7edc7a273</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getMovieDuration</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a703329107a31c9dcb9abf0e557f335e9</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>getMovieNormalSize</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a480353733e58cf0c058fc9ea1c8389c6</anchor>
-      <arglist>(int &amp;width, int &amp;height) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setBoundsWithCorrectAspectRatio</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a3b593cf1d96c52f68693375f1a9091e9</anchor>
-      <arglist>(const Rectangle&lt; int &gt; &amp;spaceToFitWithin, RectanglePlacement placement)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>play</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a3dc4bbafdac3d59bbc315acb702b5d5e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>stop</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aadf35a6d2c19a56daf048bb0b35fbdbe</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isPlaying</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a1a7a6acb5d1023b9d1a98c32a2d68f7e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>goToStart</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a4085f670398f80f9fe1c9239031b6f2d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>abb6c7953230480059531079f1b4d85e3</anchor>
-      <arglist>(double seconds)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getPosition</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a1fec1718a781ad2dc1a928c3de6e24b8</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setSpeed</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a288657f65e80827b7bdfe66fe3e36f2e</anchor>
-      <arglist>(float newSpeed)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setMovieVolume</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>aed7c40f62febda7379a324426785fa55</anchor>
-      <arglist>(float newVolume)</arglist>
-    </member>
-    <member kind="function">
-      <type>float</type>
-      <name>getMovieVolume</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>ad907cc2dd51b8cbc8190978e4dd70f97</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setLooping</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>ae41e98c70c7054ff829f55804e577315</anchor>
-      <arglist>(bool shouldLoop)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isLooping</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a2d893091757b5af3d7ca22304a8e96dc</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>paint</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a88f8c1ca2cbd95adb30074bf7a7e2273</anchor>
-      <arglist>(Graphics &amp;) override</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isDirectShowAvailable</name>
-      <anchorfile>classDirectShowComponent.html</anchorfile>
-      <anchor>a00bd500520826772c092c9c66db1440f</anchor>
-      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -91136,6 +91156,138 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>VideoComponent</name>
+    <filename>classVideoComponent.html</filename>
+    <base>Component</base>
+    <base protection="private">Timer</base>
+    <member kind="function">
+      <type></type>
+      <name>VideoComponent</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a78f1857685dbb617b16e795431bdc1ef</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VideoComponent</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a414644e995ef7d30fcaac542dcfc5994</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Result</type>
+      <name>load</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>aa596daa7938bab6dad5ae25dd130fba9</anchor>
+      <arglist>(const File &amp;file)</arglist>
+    </member>
+    <member kind="function">
+      <type>Result</type>
+      <name>load</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a2d4a5850898a15a5234370c111ddb342</anchor>
+      <arglist>(const URL &amp;url)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>closeVideo</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>ab9e0174e14d9786958137b94d07a7554</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isVideoOpen</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a8059b7054b8fe3f6d5b599c7a7a11bbe</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>File</type>
+      <name>getCurrentVideoFile</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a6290ee9515186e432b884f4a1709ddd9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>URL</type>
+      <name>getCurrentVideoURL</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a80448ca7e97fec4802a75c65a54b8c50</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getVideoDuration</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a5e9f5e773671ba31313e887d71a37c45</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Rectangle&lt; int &gt;</type>
+      <name>getVideoNativeSize</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a85d31d4ab08b2c765a2ea9d087fea604</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>play</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a039d6784ed3e0d91afd056e0662dfff7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a99d51e8b4057a9063f1e4c245e32cc2d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPlaying</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>afdb0c7943aa6629f04d973c0cb76d635</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPlayPosition</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a6a86bf214d3e0acf657fac949f03937e</anchor>
+      <arglist>(double newPositionSeconds)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getPlayPosition</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a4acabd2416896ed4bf2363e10face4bc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPlaySpeed</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a2c4877f02766b0925ec7112efec02b4d</anchor>
+      <arglist>(double newSpeed)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setAudioVolume</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>aed2f213ac574199c45d1d6ca62be8323</anchor>
+      <arglist>(float newVolume)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getAudioVolume</name>
+      <anchorfile>classVideoComponent.html</anchorfile>
+      <anchor>a2f364b4e4c49434ff283dc186f6c2534</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>Viewport</name>
     <filename>classViewport.html</filename>
     <base>Component</base>
@@ -100025,6 +100177,12 @@
     <file>juce_Application.h</file>
   </compound>
   <compound kind="dir">
+    <name>AU</name>
+    <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/AU/</path>
+    <filename>dir_5418502185ed1d1f1bbe99b0d6a399d7.html</filename>
+    <file>juce_audio_plugin_client/AU/juce_AU_Shared.h</file>
+  </compound>
+  <compound kind="dir">
     <name>audio_cd</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_utils/audio_cd/</path>
     <filename>dir_617114d1f92be5c1cd99704e7807d718.html</filename>
@@ -100120,7 +100278,6 @@
     <file>juce_LAMEEncoderAudioFormat.h</file>
     <file>juce_MP3AudioFormat.h</file>
     <file>juce_OggVorbisAudioFormat.h</file>
-    <file>juce_QuickTimeAudioFormat.h</file>
     <file>juce_WavAudioFormat.h</file>
     <file>juce_WindowsMediaAudioFormat.h</file>
   </compound>
@@ -100305,7 +100462,7 @@
     <name>format_types</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_processors/format_types/</path>
     <filename>dir_2a7909535a105f39de04582d8ecd141c.html</filename>
-    <file>juce_AU_Shared.h</file>
+    <file>juce_audio_processors/format_types/juce_AU_Shared.h</file>
     <file>juce_AudioUnitPluginFormat.h</file>
     <file>juce_LADSPAPluginFormat.h</file>
     <file>juce_VST3Common.h</file>
@@ -100418,6 +100575,7 @@
     <path>/home/juce/data/res/development/juce/modules/juce_audio_plugin_client/</path>
     <filename>dir_f95fe33f0a68643d3992baa35a302cf5.html</filename>
     <dir>AAX</dir>
+    <dir>AU</dir>
     <dir>RTAS</dir>
     <dir>Standalone</dir>
     <dir>utility</dir>
@@ -100858,8 +101016,8 @@
     <name>playback</name>
     <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
     <filename>dir_24d5b5e63cdfae66768b16561bf4f7b0.html</filename>
-    <file>juce_DirectShowComponent.h</file>
     <file>juce_MovieComponent.h</file>
+    <file>juce_VideoComponent.h</file>
   </compound>
   <compound kind="dir">
     <name>players</name>

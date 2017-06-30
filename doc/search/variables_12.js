@@ -40,7 +40,7 @@ var searchData=
   ['sourcecomponent',['sourceComponent',['../classDragAndDropTarget_1_1SourceDetails.html#ad64cf556308af58fb6873d16f4a590de',1,'DragAndDropTarget::SourceDetails']]],
   ['sourcenodeid',['sourceNodeId',['../structAudioProcessorGraph_1_1Connection.html#aeffe3c3426cd49761f8dbf0e01b8be97',1,'AudioProcessorGraph::Connection']]],
   ['spacekey',['spaceKey',['../classKeyPress.html#a60f802af5aff465d7ff910009608e343',1,'KeyPress']]],
-  ['speakerorder',['speakerOrder',['../structAudioUnitHelpers_1_1AUChannelStreamOrder.html#a74710deb4640ef3ae8495d432a1ec66f',1,'AudioUnitHelpers::AUChannelStreamOrder']]],
+  ['speakerorder',['speakerOrder',['../structAudioUnitHelpers_1_1AUChannelStreamOrder.html#a3c3cd8212d0e53b4ff20f35f5251149f',1,'AudioUnitHelpers::AUChannelStreamOrder::speakerOrder()'],['../structAudioUnitHelpers_1_1AUChannelStreamOrder.html#a74710deb4640ef3ae8495d432a1ec66f',1,'AudioUnitHelpers::AUChannelStreamOrder::speakerOrder()']]],
   ['speakers',['speakers',['../structVstSpeakerConfiguration.html#a28435008442dd5cf9fbef564c439909c',1,'VstSpeakerConfiguration']]],
   ['springgreen',['springgreen',['../classColours.html#a3e179fc221c9922880646454e451562b',1,'Colours']]],
   ['start',['start',['../classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3',1,'NormalisableRange::start()'],['../structTextDiff_1_1Change.html#ac72e9e25d35530fac7837a2d22c31958',1,'TextDiff::Change::start()']]],
