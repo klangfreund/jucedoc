@@ -110,6 +110,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a57e37e78ad201531166b450b64c428b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classThread.html#a57e37e78ad201531166b450b64c428b6a0ee7fcab9f979f4e867c718460ce5503">realtimeAudioPriority</a> = -1
+ }</td></tr>
+<tr class="memdesc:a57e37e78ad201531166b450b64c428b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special realtime audio thread priority.  <a href="classThread.html#a57e37e78ad201531166b450b64c428b6">More...</a><br/></td></tr>
+<tr class="separator:a57e37e78ad201531166b450b64c428b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077e20855a3c974c2fc6f9e7caa8412c"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a077e20855a3c974c2fc6f9e7caa8412c">ThreadID</a></td></tr>
 <tr class="memdesc:a077e20855a3c974c2fc6f9e7caa8412c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value type used for thread IDs.  <a href="#a077e20855a3c974c2fc6f9e7caa8412c">More...</a><br/></td></tr>
 <tr class="separator:a077e20855a3c974c2fc6f9e7caa8412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +213,31 @@ Static Public Member Functions</h2></td></tr>
 
 <p>A value type used for thread IDs. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId()</a>, <a class="el" href="classThread.html#a39ca822734b9b20ab32eeba774c9a803" title="Returns the ID of this thread. ">getThreadId()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a57e37e78ad201531166b450b64c428b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Special realtime audio thread priority. </p>
+<p>This priority will create a high-priority thread which is best suited for realtime audio processing.</p>
+<p>Currently, this priority is identical to priority 9, except when building for Android with OpenSL support.</p>
+<p>In this case, JUCE will ask OpenSL to consturct a super high priority thread specifically for realtime audio processing.</p>
+<p>Note that this priority can only be set <b>before</b> the thread has started. Switching to this priority, or from this priority to a different priority, is not supported under Android and will assert.</p>
+<p>For best performance this thread should yield at regular intervals and not call any blocking APIS.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread</a>, <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f" title="Changes the thread&#39;s priority. ">setPriority</a>, <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926">sleep</a>, <a class="el" href="classWaitableEvent.html" title="Allows threads to wait for events triggered by other threads. ">WaitableEvent</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a57e37e78ad201531166b450b64c428b6a0ee7fcab9f979f4e867c718460ce5503"></a>realtimeAudioPriority</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -346,7 +375,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Starts the thread with a given priority. </p>
 <p>Launches the thread with a given priority, where 0 = lowest, 10 = highest. If the thread is already running, its priority will be changed.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread</a>, <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f" title="Changes the thread&#39;s priority. ">setPriority</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread</a>, <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f" title="Changes the thread&#39;s priority. ">setPriority</a>, <a class="el" href="classThread.html#a57e37e78ad201531166b450b64c428b6a0ee7fcab9f979f4e867c718460ce5503">realtimeAudioPriority</a> </dd></dl>
 
 </div>
 </div>
@@ -508,10 +537,11 @@ Static Public Member Functions</h2></td></tr>
 <p>May return false if for some reason the priority can't be changed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">priority</td><td>the new priority, in the range 0 (lowest) to 10 (highest). A priority of 5 is normal. </td></tr>
+    <tr><td class="paramname">priority</td><td>the new priority, in the range 0 (lowest) to 10 (highest). A priority of 5 is normal.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#a57e37e78ad201531166b450b64c428b6a0ee7fcab9f979f4e867c718460ce5503">realtimeAudioPriority</a> </dd></dl>
 
 </div>
 </div>
@@ -816,7 +846,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

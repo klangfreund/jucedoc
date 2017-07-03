@@ -1,7 +1,7 @@
 var searchData=
 [
   ['underlined',['underlined',['../classFont.html#a52a35b5dc1e6f782e25283c9283bae4fa3bb23d4d794ac926cd255a886aa37190',1,'Font']]],
-  ['undo',['undo',['../namespaceStandardApplicationCommandIDs.html#a8393f475b47d752d5910753795d3f68ba5b866e822eb795f30f0c77ebecc84f7f',1,'StandardApplicationCommandIDs']]],
+  ['undo',['undo',['../namespaceStandardApplicationCommandIDs.html#a3a2502bea3e0bd91f2e1d70d9d03f37da5b866e822eb795f30f0c77ebecc84f7f',1,'StandardApplicationCommandIDs']]],
   ['unknown',['unknown',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eaaa4afa88e8da74c57e088bb364518d6c',1,'AudioChannelSet::unknown()'],['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846acfe4c1971599161b618335acaa202fac',1,'AudioCDBurner::unknown()'],['../classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a55520dc971c98c77e00eb4331207058d',1,'Block::unknown()'],['../classjuce_1_1Block.html#a1c008a40f29753a54bce01d6b95fbb50a71c72aefa6467752e1dc8d0a4c204f3a',1,'juce::Block::unknown()'],['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65ba2d62eaf1459a818a13429d7acfdfbde2',1,'RelativeCoordinate::StandardStrings::unknown()']]],
   ['unknownformat',['UnknownFormat',['../classImage.html#ab47b5746d2df286ae6f8da6af5463c01a54eec5e1c5371ae7ad7242c6a2be067d',1,'Image']]],
   ['unknownfunction',['unknownFunction',['../structjuce_1_1littlefoot_1_1Runner.html#abc6ea9afd46eeba408824c5f1c69294baf1ab6f6a6dfd9f6248aacb40fff4ca38',1,'juce::littlefoot::Runner::unknownFunction()'],['../structlittlefoot_1_1Runner.html#a8bee4ec6b7ef24029af89651ecd452c9af1ab6f6a6dfd9f6248aacb40fff4ca38',1,'littlefoot::Runner::unknownFunction()']]],

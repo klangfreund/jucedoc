@@ -38,7 +38,7 @@ var searchData=
   ['controlbuttondown',['controlButtonDown',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7ae7cdfc666d66322628cb46fb3a4b32ef',1,'juce_BlocksProtocolDefinitions.h']]],
   ['controlbuttonmessage',['controlButtonMessage',['../juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085',1,'juce_BlocksProtocolDefinitions.h']]],
   ['controlbuttonup',['controlButtonUp',['../juce__BlocksProtocolDefinitions_8h.html#a1513500452861490fb3bf17ea8e8deb7a43e54c3b903be170a143c954e11ecc92',1,'juce_BlocksProtocolDefinitions.h']]],
-  ['copy',['copy',['../namespaceStandardApplicationCommandIDs.html#a8393f475b47d752d5910753795d3f68ba3584c202667823072c928fd699725466',1,'StandardApplicationCommandIDs']]],
+  ['copy',['copy',['../namespaceStandardApplicationCommandIDs.html#a3a2502bea3e0bd91f2e1d70d9d03f37da3584c202667823072c928fd699725466',1,'StandardApplicationCommandIDs']]],
   ['copyingcursor',['CopyingCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97abe0154531e3b7b07ea1241be32850c3c',1,'MouseCursor']]],
   ['crosshaircursor',['CrosshairCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97add4ed956814986c922cdeae70fdad9d3',1,'MouseCursor']]],
   ['ctrlaltcommandmodifiers',['ctrlAltCommandModifiers',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba2647f9ed4b2db164973d8b735f3b216a',1,'ModifierKeys']]],
@@ -48,5 +48,5 @@ var searchData=
   ['currentapplicationfile',['currentApplicationFile',['../classFile.html#a3e19cafabb03c5838160263a6e76313da8292b316ce9eb8ebc0d0980b788a877c',1,'File']]],
   ['currentexecutablefile',['currentExecutableFile',['../classFile.html#a3e19cafabb03c5838160263a6e76313dab960741272c75e94482f295a516aae62',1,'File']]],
   ['curved',['curved',['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8aa0e50e387cbe6533b830061006cb3747',1,'PathStrokeType']]],
-  ['cut',['cut',['../namespaceStandardApplicationCommandIDs.html#a8393f475b47d752d5910753795d3f68bac0037bfec469a888d3a7ab1c0c222765',1,'StandardApplicationCommandIDs']]]
+  ['cut',['cut',['../namespaceStandardApplicationCommandIDs.html#a3a2502bea3e0bd91f2e1d70d9d03f37dac0037bfec469a888d3a7ab1c0c222765',1,'StandardApplicationCommandIDs']]]
 ];

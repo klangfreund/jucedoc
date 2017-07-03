@@ -119,63 +119,63 @@
       <type>@</type>
       <name>quit</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba0e06bba45d6039ddc74f0b437d982fba</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da0e06bba45d6039ddc74f0b437d982fba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>del</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba3519307963b37e47b3c0935a553c8a13</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da3519307963b37e47b3c0935a553c8a13</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>cut</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bac0037bfec469a888d3a7ab1c0c222765</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dac0037bfec469a888d3a7ab1c0c222765</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>copy</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba3584c202667823072c928fd699725466</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da3584c202667823072c928fd699725466</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>paste</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bae98071537aab261471df0788ab5405de</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dae98071537aab261471df0788ab5405de</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>selectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba651985a70b21b1d0b7a89007fc8793df</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da651985a70b21b1d0b7a89007fc8793df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>deselectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bacdd0c589b2b1904cde27f75185f65e4a</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dacdd0c589b2b1904cde27f75185f65e4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>undo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba5b866e822eb795f30f0c77ebecc84f7f</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da5b866e822eb795f30f0c77ebecc84f7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>redo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68baa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37daa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -67889,7 +67889,7 @@
       <type>@</type>
       <name>indexA</name>
       <anchorfile>classPixelAlpha.html</anchorfile>
-      <anchor>a7826a68f953430ace13c9be0830d3bc1a31d54b036f46396c28eb848b84ee6ba7</anchor>
+      <anchor>a7cfe841f6b0121ad16ced3ec66bf521da31d54b036f46396c28eb848b84ee6ba7</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -68061,28 +68061,28 @@
       <type>@</type>
       <name>indexA</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a2ceafbed596b82e115f20dbd1bb707d1ae2c758a6eebfdf52dde60687f68a68ab</anchor>
+      <anchor>a182abc552d01bc93dee7cc0d7e5fdac6ae2c758a6eebfdf52dde60687f68a68ab</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexR</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a5d38bdd8f5ffaa9917b6fff622ddb23f</anchor>
+      <anchor>a182abc552d01bc93dee7cc0d7e5fdac6a5d38bdd8f5ffaa9917b6fff622ddb23f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexG</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a9f00e7f7cddc8b6d27053806abb1630a</anchor>
+      <anchor>a182abc552d01bc93dee7cc0d7e5fdac6a9f00e7f7cddc8b6d27053806abb1630a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexB</name>
       <anchorfile>classPixelARGB.html</anchorfile>
-      <anchor>a2ceafbed596b82e115f20dbd1bb707d1a7eab5933695a1fcdfee5a25cb5ef60ea</anchor>
+      <anchor>a182abc552d01bc93dee7cc0d7e5fdac6a7eab5933695a1fcdfee5a25cb5ef60ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -68296,21 +68296,21 @@
       <type>@</type>
       <name>indexR</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>ab199b1a785c1f00bfbc1de6848146d35a2725faa86a75bea4242137ab8b9fb128</anchor>
+      <anchor>ae215f9700ff80babce00422b8d3c1c1ea2725faa86a75bea4242137ab8b9fb128</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexG</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>ab199b1a785c1f00bfbc1de6848146d35ae889bdfe358ad3b6395e1bf584e198f8</anchor>
+      <anchor>ae215f9700ff80babce00422b8d3c1c1eae889bdfe358ad3b6395e1bf584e198f8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>indexB</name>
       <anchorfile>classPixelRGB.html</anchorfile>
-      <anchor>ab199b1a785c1f00bfbc1de6848146d35a59222359427902da4ec4353ee7d7c431</anchor>
+      <anchor>ae215f9700ff80babce00422b8d3c1c1ea59222359427902da4ec4353ee7d7c431</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -85705,6 +85705,13 @@
   <compound kind="class">
     <name>Thread</name>
     <filename>classThread.html</filename>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>realtimeAudioPriority</name>
+      <anchorfile>classThread.html</anchorfile>
+      <anchor>a57e37e78ad201531166b450b64c428b6a0ee7fcab9f979f4e867c718460ce5503</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>void *</type>
       <name>ThreadID</name>
@@ -99895,63 +99902,63 @@
       <type>@</type>
       <name>quit</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba0e06bba45d6039ddc74f0b437d982fba</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da0e06bba45d6039ddc74f0b437d982fba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>del</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba3519307963b37e47b3c0935a553c8a13</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da3519307963b37e47b3c0935a553c8a13</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>cut</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bac0037bfec469a888d3a7ab1c0c222765</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dac0037bfec469a888d3a7ab1c0c222765</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>copy</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba3584c202667823072c928fd699725466</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da3584c202667823072c928fd699725466</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>paste</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bae98071537aab261471df0788ab5405de</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dae98071537aab261471df0788ab5405de</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>selectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba651985a70b21b1d0b7a89007fc8793df</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da651985a70b21b1d0b7a89007fc8793df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>deselectAll</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68bacdd0c589b2b1904cde27f75185f65e4a</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37dacdd0c589b2b1904cde27f75185f65e4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>undo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68ba5b866e822eb795f30f0c77ebecc84f7f</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37da5b866e822eb795f30f0c77ebecc84f7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <type>@</type>
       <name>redo</name>
       <anchorfile>namespaceStandardApplicationCommandIDs.html</anchorfile>
-      <anchor>a8393f475b47d752d5910753795d3f68baa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
+      <anchor>a3a2502bea3e0bd91f2e1d70d9d03f37daa2a9602bedb21d34ea2b7cb620d5be1f</anchor>
       <arglist></arglist>
     </member>
   </compound>
