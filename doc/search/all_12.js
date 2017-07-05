@@ -1058,7 +1058,7 @@ var searchData=
   ['stopthread',['stopThread',['../classThread.html#a18583d51411d6a34c59b63f0adff4697',1,'Thread']]],
   ['stoptimer',['stopTimer',['../classHighResolutionTimer.html#a141251dfd58c8564709a15da52dffd3a',1,'HighResolutionTimer::stopTimer()'],['../classMultiTimer.html#a3eec2bf5bb83c0307bdb4568c7391a2b',1,'MultiTimer::stopTimer()'],['../classTimer.html#ab918b8c1f80bf1de92dd1a5878f498bd',1,'Timer::stopTimer()']]],
   ['stopvoice',['stopVoice',['../classMPESynthesiser.html#ad3bc7bb58287b2ee1828fbca0ad40a19',1,'MPESynthesiser::stopVoice()'],['../classSynthesiser.html#a715f8ad1d64d728fb2ab764acf939bdb',1,'Synthesiser::stopVoice()']]],
-  ['storageformat',['storageFormat',['../structPropertiesFile_1_1Options.html#aed68b3ff89a6943aeac93af26effec2d',1,'PropertiesFile::Options::storageFormat()'],['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05e',1,'PropertiesFile::StorageFormat()']]],
+  ['storageformat',['StorageFormat',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05e',1,'PropertiesFile::StorageFormat()'],['../structPropertiesFile_1_1Options.html#aed68b3ff89a6943aeac93af26effec2d',1,'PropertiesFile::Options::storageFormat()']]],
   ['storeasbinary',['storeAsBinary',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05eadd1552fd266d926522dfa0e162de5328',1,'PropertiesFile']]],
   ['storeascompressedbinary',['storeAsCompressedBinary',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05eab1ddcaf9fc8d45b4141749e325844f42',1,'PropertiesFile']]],
   ['storeasxml',['storeAsXML',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05eab0145370e12c4174bd36dc6ac6ccc147',1,'PropertiesFile']]],

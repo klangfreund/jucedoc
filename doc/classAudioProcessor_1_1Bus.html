@@ -442,6 +442,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> </dd></dl>
 
+<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a69296da23df2353c6d8964c4383a9c82">AudioUnitHelpers::isNumberOfChannelsSupported()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="acb3c103daadf6fa83eb25961f3347d11"></a>
@@ -460,8 +462,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Checks if this bus can support a given number of channels. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a1272fcafe09a0dc0139b7d4705f211dd"></a>
@@ -479,8 +479,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a ChannelSet that the bus supports with a given number of channels. </p>
-
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
 
 </div>
 </div>
@@ -524,8 +522,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the resulting layouts of all buses after changing the layout of this bus. </p>
 <p>Changing an individual layout of a bus may also change the layout of all the other buses. This method returns what the layouts of all the buses of the audio processor would be, if you were to change the layout of this bus to the given layout. If there is no way to support the given layout then this method will return the next best layout. </p>
-
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a72c5a76c5a1721f88d9ee0a3e0656926">AudioUnitHelpers::getAUChannelInfo()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +649,7 @@ template&lt;typename FloatType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 4 2017 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 5 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

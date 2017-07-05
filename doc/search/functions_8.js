@@ -308,7 +308,7 @@ var searchData=
   ['isnotestealingenabled',['isNoteStealingEnabled',['../classSynthesiser.html#a069564c6c68a5cbd4872fa3da0e80d1f',1,'Synthesiser']]],
   ['isnuendo',['isNuendo',['../classPluginHostType.html#a0ecff6b668919a87e723b0dd1156c318',1,'PluginHostType']]],
   ['isnull',['isNull',['../classUuid.html#aa235a82db41c07260c444b0d0c9b9196',1,'Uuid::isNull()'],['../classMACAddress.html#a999d550f9a74abb93229d00d5fb38aa7',1,'MACAddress::isNull()'],['../classIdentifier.html#a7917ad4ed89e4442b950a7fcf37df170',1,'Identifier::isNull()'],['../classImage.html#a4084a24d1034249f29a7781ef44159d8',1,'Image::isNull()']]],
-  ['isnumberofchannelssupported',['isNumberOfChannelsSupported',['../classAudioProcessor_1_1Bus.html#acb3c103daadf6fa83eb25961f3347d11',1,'AudioProcessor::Bus']]],
+  ['isnumberofchannelssupported',['isNumberOfChannelsSupported',['../structAudioUnitHelpers.html#a69296da23df2353c6d8964c4383a9c82',1,'AudioUnitHelpers::isNumberOfChannelsSupported()'],['../classAudioProcessor_1_1Bus.html#acb3c103daadf6fa83eb25961f3347d11',1,'AudioProcessor::Bus::isNumberOfChannelsSupported()']]],
   ['isobject',['isObject',['../classvar.html#aeded7ac8af755cc9ca8488ae04b6cdd4',1,'var']]],
   ['isoctaldigit',['isOctalDigit',['../structCppTokeniserFunctions.html#a3fea938ab1c80d3dae78df5e95dcb42b',1,'CppTokeniserFunctions']]],
   ['isoncdromdrive',['isOnCDRomDrive',['../classFile.html#a4c71649a114a7f475599cbfa91af0f60',1,'File']]],

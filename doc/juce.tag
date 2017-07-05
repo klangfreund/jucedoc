@@ -20685,6 +20685,13 @@
       <arglist>(const AudioProcessor &amp;processor)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isNumberOfChannelsSupported</name>
+      <anchorfile>structAudioUnitHelpers.html</anchorfile>
+      <anchor>a69296da23df2353c6d8964c4383a9c82</anchor>
+      <arglist>(const AudioProcessor::Bus *b, int numChannels, AudioProcessor::BusesLayout &amp;inOutCurrentLayout)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static int</type>
       <name>getBusCount</name>
       <anchorfile>structAudioUnitHelpers.html</anchorfile>
