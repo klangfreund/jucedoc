@@ -4173,12 +4173,6 @@
     <class kind="class">MouseListener</class>
   </compound>
   <compound kind="file">
-    <name>juce_MovieComponent.h</name>
-    <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
-    <filename>juce__MovieComponent_8h</filename>
-    <class kind="class">MovieComponent</class>
-  </compound>
-  <compound kind="file">
     <name>juce_MP3AudioFormat.h</name>
     <path>/home/juce/data/res/development/juce/modules/juce_audio_formats/codecs/</path>
     <filename>juce__MP3AudioFormat_8h</filename>
@@ -59389,15 +59383,15 @@
       <type></type>
       <name>MidiMessageSequence</name>
       <anchorfile>classMidiMessageSequence.html</anchorfile>
-      <anchor>af537eeb78ee14af78034bc5661298c08</anchor>
-      <arglist>(MidiMessageSequence &amp;&amp;other) noexcept</arglist>
+      <anchor>a1032d29b433b6b9a0c3a233c173ed2ba</anchor>
+      <arglist>(MidiMessageSequence &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>MidiMessageSequence &amp;</type>
       <name>operator=</name>
       <anchorfile>classMidiMessageSequence.html</anchorfile>
-      <anchor>a64800a707bf39517dfc6e5b0842683b1</anchor>
-      <arglist>(MidiMessageSequence &amp;&amp;other) noexcept</arglist>
+      <anchor>ad78d0f3d5d9f132ab1836c07dc2abe7a</anchor>
+      <arglist>(MidiMessageSequence &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -59426,6 +59420,20 @@
       <anchorfile>classMidiMessageSequence.html</anchorfile>
       <anchor>af5004c2160fdcf3cb4746f81388fa1f1</anchor>
       <arglist>(int index) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>MidiEventHolder **</type>
+      <name>begin</name>
+      <anchorfile>classMidiMessageSequence.html</anchorfile>
+      <anchor>a26db5183cfc2e38383f6edcb29869947</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>MidiEventHolder **</type>
+      <name>end</name>
+      <anchorfile>classMidiMessageSequence.html</anchorfile>
+      <anchor>a2fc481aee742ae00252522264c16f13b</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -59482,6 +59490,13 @@
       <anchorfile>classMidiMessageSequence.html</anchorfile>
       <anchor>abcfb3b7334ccd8bf72fc95e5019cddd6</anchor>
       <arglist>(const MidiMessage &amp;newMessage, double timeAdjustment=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>MidiEventHolder *</type>
+      <name>addEvent</name>
+      <anchorfile>classMidiMessageSequence.html</anchorfile>
+      <anchor>a401cb7590a3b6e89b8766eb9fc5fc0a0</anchor>
+      <arglist>(MidiMessage &amp;&amp;newMessage, double timeAdjustment=0)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -61390,186 +61405,6 @@
       <anchorfile>structMouseWheelDetails.html</anchorfile>
       <anchor>ada4d5e78fddeb6054a17c0b6851043e1</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>MovieComponent</name>
-    <filename>classMovieComponent.html</filename>
-    <base>NSViewComponent</base>
-    <member kind="function">
-      <type></type>
-      <name>MovieComponent</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a59470eefa47a4a467a0b79ac4941e26f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~MovieComponent</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a111d84fb612750554a9def189ed79f8f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>adaeca5545e8b9492a535e1d680f1bab4</anchor>
-      <arglist>(const File &amp;file)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>loadMovie</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>aca56105dfbdd8511b9b7962b9ee8f4c1</anchor>
-      <arglist>(const URL &amp;file)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>closeMovie</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>af8e03f9d20fa19e9edd9866818fa97a0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isMovieOpen</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a3f62371eb4dc50ab1127a5909a95b048</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>getCurrentMoviePath</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a65e118ded8fb1115b4a79e58f461a64c</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>play</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>acdccbfcaf033545fd489fe4c75eca56a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>stop</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>af0aa7a095a8e54c65a1f4d6174314faa</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getDuration</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>aa89e76f95119d9d1782698f78561e8a6</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>getPosition</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a5053682a11d1cd1614ee26f884a7f611</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>ae0b8d3c7e352c249479e84245e6c8bed</anchor>
-      <arglist>(double seconds)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setVolume</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>af9f97cc6eefa2616dac30a499e649997</anchor>
-      <arglist>(float newVolume)</arglist>
-    </member>
-    <member kind="function">
-      <type>float</type>
-      <name>getVolume</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>ad3e8f2f4c0ab6dc5c12064f6b3c3dd73</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>Rectangle&lt; int &gt;</type>
-      <name>getNativeSize</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>a485c6de29367c7bdb786609b20453f83</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setBoundsWithCorrectAspectRatio</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>ac335c88c45687b29f98b3e34eddb5834</anchor>
-      <arglist>(Rectangle&lt; int &gt; spaceToFitWithin, RectanglePlacement placement)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>NSViewComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a47f7a2b57ee9175115e1d8c5206e191f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~NSViewComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a8b7861229080258227eba895b5925bac</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a8768c07d38bf12419b1a77cd42625e8e</anchor>
-      <arglist>(void *nsView)</arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>getView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a45bc5a9f0a80c60342bd0fd93814feb4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>resizeToFitView</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a3d7466089ae77b3428df1986f89ad949</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>paint</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>ac991588b04fb3d201ee6cfd399b412d4</anchor>
-      <arglist>(Graphics &amp;) override</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>alphaChanged</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a6302dbcb95361a82312a1633f5762bbc</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>resized</name>
-      <anchorfile>classMovieComponent.html</anchorfile>
-      <anchor>ab4706cbd3ecac65b4d83f499d34ba487</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static ReferenceCountedObject *</type>
-      <name>attachViewToComponent</name>
-      <anchorfile>classNSViewComponent.html</anchorfile>
-      <anchor>a5b009937017986682dea33c7d8f4290c</anchor>
-      <arglist>(Component &amp;, void *)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -63845,6 +63680,62 @@
     <name>NSViewComponent</name>
     <filename>classNSViewComponent.html</filename>
     <base>Component</base>
+    <member kind="function">
+      <type></type>
+      <name>NSViewComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a47f7a2b57ee9175115e1d8c5206e191f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~NSViewComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a8b7861229080258227eba895b5925bac</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a8768c07d38bf12419b1a77cd42625e8e</anchor>
+      <arglist>(void *nsView)</arglist>
+    </member>
+    <member kind="function">
+      <type>void *</type>
+      <name>getView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a45bc5a9f0a80c60342bd0fd93814feb4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resizeToFitView</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a3d7466089ae77b3428df1986f89ad949</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paint</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>ac991588b04fb3d201ee6cfd399b412d4</anchor>
+      <arglist>(Graphics &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>alphaChanged</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a6302dbcb95361a82312a1633f5762bbc</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ReferenceCountedObject *</type>
+      <name>attachViewToComponent</name>
+      <anchorfile>classNSViewComponent.html</anchorfile>
+      <anchor>a5b009937017986682dea33c7d8f4290c</anchor>
+      <arglist>(Component &amp;, void *)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>OggVorbisAudioFormat</name>
@@ -101030,7 +100921,6 @@
     <name>playback</name>
     <path>/home/juce/data/res/development/juce/modules/juce_video/playback/</path>
     <filename>dir_24d5b5e63cdfae66768b16561bf4f7b0.html</filename>
-    <file>juce_MovieComponent.h</file>
     <file>juce_VideoComponent.h</file>
   </compound>
   <compound kind="dir">

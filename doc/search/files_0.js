@@ -295,7 +295,6 @@ var searchData=
   ['juce_5fmouseinactivitydetector_2eh',['juce_MouseInactivityDetector.h',['../juce__MouseInactivityDetector_8h.html',1,'']]],
   ['juce_5fmouseinputsource_2eh',['juce_MouseInputSource.h',['../juce__MouseInputSource_8h.html',1,'']]],
   ['juce_5fmouselistener_2eh',['juce_MouseListener.h',['../juce__MouseListener_8h.html',1,'']]],
-  ['juce_5fmoviecomponent_2eh',['juce_MovieComponent.h',['../juce__MovieComponent_8h.html',1,'']]],
   ['juce_5fmp3audioformat_2eh',['juce_MP3AudioFormat.h',['../juce__MP3AudioFormat_8h.html',1,'']]],
   ['juce_5fmpeinstrument_2eh',['juce_MPEInstrument.h',['../juce__MPEInstrument_8h.html',1,'']]],
   ['juce_5fmpemessages_2eh',['juce_MPEMessages.h',['../juce__MPEMessages_8h.html',1,'']]],

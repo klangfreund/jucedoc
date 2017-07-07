@@ -140,7 +140,6 @@ var searchData=
   ['closebuttonpressed',['closeButtonPressed',['../classStandaloneFilterWindow.html#a0ecb7e5d6264a99e213987021ae863a9',1,'StandaloneFilterWindow::closeButtonPressed()'],['../classMultiDocumentPanelWindow.html#a265b9d619f2c3e07faecde566b6df24a',1,'MultiDocumentPanelWindow::closeButtonPressed()'],['../classDocumentWindow.html#a71c46283a6fe63f2cad49d01997e16d5',1,'DocumentWindow::closeButtonPressed()']]],
   ['closedocument',['closeDocument',['../classMultiDocumentPanel.html#adedf8a2aa07d2a92788e22ab8fa6cae4',1,'MultiDocumentPanel']]],
   ['closefiles',['closeFiles',['../classApplicationProperties.html#a5f0c75ea625bf1cca3ef8fe9f66687af',1,'ApplicationProperties']]],
-  ['closemovie',['closeMovie',['../classMovieComponent.html#af8e03f9d20fa19e9edd9866818fa97a0',1,'MovieComponent']]],
   ['closesubpath',['CloseSubPath',['../classRelativePointPath_1_1CloseSubPath.html#a06cc20d4d28f01c18c94306f62f607d0',1,'RelativePointPath::CloseSubPath::CloseSubPath()'],['../classPath.html#a3fb7879fd6e09ce7657260c7b2934162',1,'Path::closeSubPath()']]],
   ['closevideo',['closeVideo',['../classVideoComponent.html#ab9e0174e14d9786958137b94d07a7554',1,'VideoComponent']]],
   ['codedocument',['CodeDocument',['../classCodeDocument.html#a9b4bff1cc4d65445d0563fb286d3799d',1,'CodeDocument']]],

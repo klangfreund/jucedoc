@@ -291,7 +291,6 @@ var searchData=
   ['_7emouseinactivitydetector',['~MouseInactivityDetector',['../classMouseInactivityDetector.html#ade7d22c8971f90f878fec2837cd05a26',1,'MouseInactivityDetector']]],
   ['_7emouseinputsource',['~MouseInputSource',['../classMouseInputSource.html#ad5e7c3fd30aa82348a40e18c161bb0fd',1,'MouseInputSource']]],
   ['_7emouselistener',['~MouseListener',['../classMouseListener.html#a9d4fc9354c8e4109c9b8f0d4b50dd440',1,'MouseListener']]],
-  ['_7emoviecomponent',['~MovieComponent',['../classMovieComponent.html#a111d84fb612750554a9def189ed79f8f',1,'MovieComponent']]],
   ['_7emp3audioformat',['~MP3AudioFormat',['../classMP3AudioFormat.html#ad007683fabc7f1abcaa4f0502703989b',1,'MP3AudioFormat']]],
   ['_7empeinstrument',['~MPEInstrument',['../classMPEInstrument.html#af3a344a77b71383652f5b6a47421b0e5',1,'MPEInstrument']]],
   ['_7empesynthesiser',['~MPESynthesiser',['../classMPESynthesiser.html#a12a9a600b33b5c04c3616b7ed724e689',1,'MPESynthesiser']]],
