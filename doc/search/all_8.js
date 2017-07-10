@@ -199,7 +199,7 @@ var searchData=
   ['isarray',['isArray',['../classvar.html#a2a6f765fc4845723607f6556191c84ad',1,'var']]],
   ['isattached',['isAttached',['../classOpenGLContext.html#ac2a9392e74c56fd8a0ee45d1a845b0f0',1,'OpenGLContext']]],
   ['isattachedonleft',['isAttachedOnLeft',['../classLabel.html#a4a36509a1bc34089dfdf1828dc87d23d',1,'Label']]],
-  ['isaudiobufferinterleaved',['isAudioBufferInterleaved',['../structAudioUnitHelpers.html#a2085fcf1704685ccf9b378d8daa75523',1,'AudioUnitHelpers::isAudioBufferInterleaved(const AudioBufferList &amp;audioBuffer) noexcept'],['../structAudioUnitHelpers.html#a2085fcf1704685ccf9b378d8daa75523',1,'AudioUnitHelpers::isAudioBufferInterleaved(const AudioBufferList &amp;audioBuffer) noexcept']]],
+  ['isaudiobufferinterleaved',['isAudioBufferInterleaved',['../structAudioUnitHelpers.html#a2085fcf1704685ccf9b378d8daa75523',1,'AudioUnitHelpers']]],
   ['isautomatable',['isAutomatable',['../classAudioProcessorParameter.html#a1114c7cca3bfde9ab668191a41b27641',1,'AudioProcessorParameter']]],
   ['isautosizemenuoptionshown',['isAutoSizeMenuOptionShown',['../classTableListBox.html#a5ec338f9837d64b3099bdcff45bae697',1,'TableListBox']]],
   ['isavailable',['isAvailable',['../classBluetoothMidiDevicePairingDialogue.html#ae098fb3df2ff875817d3540b0bdb6c26',1,'BluetoothMidiDevicePairingDialogue']]],

@@ -85,7 +85,7 @@ var searchData=
   ['_7ecatmullrominterpolator',['~CatmullRomInterpolator',['../classCatmullRomInterpolator.html#a6581f9213b489fa925c2ea7a3302ec8c',1,'CatmullRomInterpolator']]],
   ['_7echangebroadcaster',['~ChangeBroadcaster',['../classChangeBroadcaster.html#a3b2f8465cc6c09c0583c8bdf56319742',1,'ChangeBroadcaster']]],
   ['_7echangelistener',['~ChangeListener',['../classChangeListener.html#a0498f9374464e4b59fada8b4445c0e98',1,'ChangeListener']]],
-  ['_7echannelremapper',['~ChannelRemapper',['../classAudioUnitHelpers_1_1ChannelRemapper.html#a39f01c1aebe0ef2f257ee0a72ec48bd7',1,'AudioUnitHelpers::ChannelRemapper::~ChannelRemapper()'],['../classAudioUnitHelpers_1_1ChannelRemapper.html#a39f01c1aebe0ef2f257ee0a72ec48bd7',1,'AudioUnitHelpers::ChannelRemapper::~ChannelRemapper()']]],
+  ['_7echannelremapper',['~ChannelRemapper',['../classAudioUnitHelpers_1_1ChannelRemapper.html#a39f01c1aebe0ef2f257ee0a72ec48bd7',1,'AudioUnitHelpers::ChannelRemapper']]],
   ['_7echannelremappingaudiosource',['~ChannelRemappingAudioSource',['../classChannelRemappingAudioSource.html#ac95f5a646e2c8ad1fb90a69c1f251a65',1,'ChannelRemappingAudioSource']]],
   ['_7echildprocess',['~ChildProcess',['../classChildProcess.html#a3749642d15c9fce912f9e7f9daaf52f0',1,'ChildProcess']]],
   ['_7echildprocessmaster',['~ChildProcessMaster',['../classChildProcessMaster.html#ab140f15a3cbabd52a9be0a38a217ff2b',1,'ChildProcessMaster']]],
