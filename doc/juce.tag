@@ -35334,15 +35334,15 @@
       <type>static bool</type>
       <name>performExternalDragDropOfFiles</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>ae9e29e4a49717401e4631fc5864f0a04</anchor>
-      <arglist>(const StringArray &amp;files, bool canMoveFiles)</arglist>
+      <anchor>a43b6d3859067db19865815c71a2055d6</anchor>
+      <arglist>(const StringArray &amp;files, bool canMoveFiles, Component *sourceComponent=nullptr)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>performExternalDragDropOfText</name>
       <anchorfile>classDragAndDropContainer.html</anchorfile>
-      <anchor>a42446d76aa9b798d56936f6de6c270a5</anchor>
-      <arglist>(const String &amp;text)</arglist>
+      <anchor>aa008ebaa27be87970337a58278332d13</anchor>
+      <arglist>(const String &amp;text, Component *sourceComponent=nullptr)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>

@@ -132,12 +132,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2862f4fe5815a2089c886ab96193949"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDragAndDropContainer.html">DragAndDropContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#ab2862f4fe5815a2089c886ab96193949">findParentDragContainerFor</a> (<a class="el" href="classComponent.html">Component</a> *childComponent)</td></tr>
 <tr class="memdesc:ab2862f4fe5815a2089c886ab96193949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to find the <a class="el" href="classDragAndDropContainer.html" title="Enables drag-and-drop behaviour for a component and all its sub-components. ">DragAndDropContainer</a> for a given <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a>.  <a href="#ab2862f4fe5815a2089c886ab96193949">More...</a><br/></td></tr>
 <tr class="separator:ab2862f4fe5815a2089c886ab96193949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9e29e4a49717401e4631fc5864f0a04"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#ae9e29e4a49717401e4631fc5864f0a04">performExternalDragDropOfFiles</a> (const <a class="el" href="classStringArray.html">StringArray</a> &amp;files, bool canMoveFiles)</td></tr>
-<tr class="memdesc:ae9e29e4a49717401e4631fc5864f0a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This performs a synchronous drag-and-drop of a set of files to some external application.  <a href="#ae9e29e4a49717401e4631fc5864f0a04">More...</a><br/></td></tr>
-<tr class="separator:ae9e29e4a49717401e4631fc5864f0a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42446d76aa9b798d56936f6de6c270a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a42446d76aa9b798d56936f6de6c270a5">performExternalDragDropOfText</a> (const <a class="el" href="classString.html">String</a> &amp;text)</td></tr>
-<tr class="memdesc:a42446d76aa9b798d56936f6de6c270a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This performs a synchronous drag-and-drop of a block of text to some external application.  <a href="#a42446d76aa9b798d56936f6de6c270a5">More...</a><br/></td></tr>
-<tr class="separator:a42446d76aa9b798d56936f6de6c270a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b6d3859067db19865815c71a2055d6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#a43b6d3859067db19865815c71a2055d6">performExternalDragDropOfFiles</a> (const <a class="el" href="classStringArray.html">StringArray</a> &amp;files, bool canMoveFiles, <a class="el" href="classComponent.html">Component</a> *sourceComponent=nullptr)</td></tr>
+<tr class="memdesc:a43b6d3859067db19865815c71a2055d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This performs a synchronous drag-and-drop of a set of files to some external application.  <a href="#a43b6d3859067db19865815c71a2055d6">More...</a><br/></td></tr>
+<tr class="separator:a43b6d3859067db19865815c71a2055d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa008ebaa27be87970337a58278332d13"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDragAndDropContainer.html#aa008ebaa27be87970337a58278332d13">performExternalDragDropOfText</a> (const <a class="el" href="classString.html">String</a> &amp;text, <a class="el" href="classComponent.html">Component</a> *sourceComponent=nullptr)</td></tr>
+<tr class="memdesc:aa008ebaa27be87970337a58278332d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This performs a synchronous drag-and-drop of a block of text to some external application.  <a href="#aa008ebaa27be87970337a58278332d13">More...</a><br/></td></tr>
+<tr class="separator:aa008ebaa27be87970337a58278332d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -346,7 +346,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae9e29e4a49717401e4631fc5864f0a04"></a>
+<a class="anchor" id="a43b6d3859067db19865815c71a2055d6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -363,7 +363,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>canMoveFiles</em>&#160;</td>
+          <td class="paramname"><em>canMoveFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>sourceComponent</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -384,15 +390,16 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">files</td><td>a list of filenames to drag </td></tr>
     <tr><td class="paramname">canMoveFiles</td><td>if true, the app that receives the files is allowed to move the files to a new location (if this is appropriate). If false, the receiver is expected to make a copy of them. </td></tr>
+    <tr><td class="paramname">sourceComponent</td><td>Normally, JUCE will assume that the component under the mouse is the source component of the drag, but you can use this parameter to override this. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the files were successfully dropped somewhere, or false if it was interrupted </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a42446d76aa9b798d56936f6de6c270a5" title="This performs a synchronous drag-and-drop of a block of text to some external application. ">performExternalDragDropOfText</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#aa008ebaa27be87970337a58278332d13" title="This performs a synchronous drag-and-drop of a block of text to some external application. ">performExternalDragDropOfText</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a42446d76aa9b798d56936f6de6c270a5"></a>
+<a class="anchor" id="aa008ebaa27be87970337a58278332d13"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -403,8 +410,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static bool DragAndDropContainer::performExternalDragDropOfText </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>sourceComponent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -419,11 +436,12 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>the text to copy </td></tr>
+    <tr><td class="paramname">sourceComponent</td><td>Normally, JUCE will assume that the component under the mouse is the source component of the drag, but you can use this parameter to override this. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the text was successfully dropped somewhere, or false if it was interrupted </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#ae9e29e4a49717401e4631fc5864f0a04" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a43b6d3859067db19865815c71a2055d6" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles</a> </dd></dl>
 
 </div>
 </div>
@@ -471,11 +489,11 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sourceDetails</td><td>information about the source of the drag operation </td></tr>
     <tr><td class="paramname">files</td><td>on return, the filenames you want to drag </td></tr>
-    <tr><td class="paramname">canMoveFiles</td><td>on return, true if it's ok for the receiver to move the files; false if it must make a copy of them (see the <a class="el" href="classDragAndDropContainer.html#ae9e29e4a49717401e4631fc5864f0a04" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles()</a> method) </td></tr>
+    <tr><td class="paramname">canMoveFiles</td><td>on return, true if it's ok for the receiver to move the files; false if it must make a copy of them (see the <a class="el" href="classDragAndDropContainer.html#a43b6d3859067db19865815c71a2055d6" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles()</a> method) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#ae9e29e4a49717401e4631fc5864f0a04" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles</a>, <a class="el" href="classDragAndDropContainer.html#ad6fe3741189a1158f451f77580bf452c" title="Override this if you want to be able to perform an external drag of text when the user drags outside ...">shouldDropTextWhenDraggedExternally</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classDragAndDropContainer.html#a43b6d3859067db19865815c71a2055d6" title="This performs a synchronous drag-and-drop of a set of files to some external application. ">performExternalDragDropOfFiles</a>, <a class="el" href="classDragAndDropContainer.html#ad6fe3741189a1158f451f77580bf452c" title="Override this if you want to be able to perform an external drag of text when the user drags outside ...">shouldDropTextWhenDraggedExternally</a> </dd></dl>
 
 </div>
 </div>
@@ -583,7 +601,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 10 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 11 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
