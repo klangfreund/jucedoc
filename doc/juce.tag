@@ -68706,6 +68706,13 @@
     </member>
     <member kind="enumvalue">
       <type>@</type>
+      <name>TracktionWaveform</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8a5118c37bc4576bdd92b6b6e1135fae3d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
       <name>VBVSTScanner</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>a69d9330e82ef7520f9aa8b2ad78ce5a8a8e958c465a06a9ea17d95f02b8735580</anchor>
@@ -68919,6 +68926,13 @@
       <name>isTracktion</name>
       <anchorfile>classPluginHostType.html</anchorfile>
       <anchor>ad0ecde6e33e2dc003ac414823856f982</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isTracktionWaveform</name>
+      <anchorfile>classPluginHostType.html</anchorfile>
+      <anchor>a6f584f6faa6b7e51357ac5a821f29dbb</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">

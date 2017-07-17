@@ -70,6 +70,7 @@ var searchData=
   ['trackcolourid',['trackColourId',['../classScrollBar.html#a5cdce553497ae1b7fc7fcd3caa805167ab32d64c0802a57b8c50d138e00a4716e',1,'ScrollBar::trackColourId()'],['../classSlider.html#a1012002c53381ccc7c1fe7e604a75f44a1a7a91f54b703cf78f028edc0ed7786b',1,'Slider::trackColourId()']]],
   ['tracktion3',['Tracktion3',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a52cbcf5a6c5c9d2d8aca658d29b08850',1,'PluginHostType']]],
   ['tracktiongeneric',['TracktionGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac2bfcb06432d1e95e9ef3a370bec88ce',1,'PluginHostType']]],
+  ['tracktionwaveform',['TracktionWaveform',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5118c37bc4576bdd92b6b6e1135fae3d',1,'PluginHostType']]],
   ['transpose',['transpose',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a09a6cad7eb6f4e5d3a5458c683cd1461',1,'juce_BlocksProtocolDefinitions.h']]],
   ['trayopen',['trayOpen',['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846ab8a44178fa9c27bf9b55a9c56de9b448',1,'AudioCDBurner']]],
   ['twovaluehorizontal',['TwoValueHorizontal',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a2ce77695813bb317c2d1863d2e71213b',1,'Slider']]],

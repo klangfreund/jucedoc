@@ -437,6 +437,7 @@ var searchData=
   ['istrackmetaevent',['isTrackMetaEvent',['../classMidiMessage.html#acecc7e99f8287e851d6d944a4babc08e',1,'MidiMessage']]],
   ['istracknameevent',['isTrackNameEvent',['../classMidiMessage.html#aeb18602ea05f67cad490f8866e07c172',1,'MidiMessage']]],
   ['istracktion',['isTracktion',['../classPluginHostType.html#ad0ecde6e33e2dc003ac414823856f982',1,'PluginHostType']]],
+  ['istracktionwaveform',['isTracktionWaveform',['../classPluginHostType.html#a6f584f6faa6b7e51357ac5a821f29dbb',1,'PluginHostType']]],
   ['istransformed',['isTransformed',['../classComponent.html#a50a4de1bca6c487a8fa899f1b721e1d5',1,'Component']]],
   ['istransparent',['isTransparent',['../classColour.html#a30c68aad96d0a126d68b410089ae9993',1,'Colour']]],
   ['istriggeredautomatically',['isTriggeredAutomatically',['../classPopupMenu_1_1CustomComponent.html#a302fa7c66c7e5c1d83842815030171d9',1,'PopupMenu::CustomComponent']]],
