@@ -180,6 +180,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:abe0b996e200f440873df4a8e29c961c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18c12e82c1ce77afe594fb7478a56ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae18c12e82c1ce77afe594fb7478a56ec">FirmwareUpdateACKCode</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 7 &gt;</td></tr>
 <tr class="separator:ae18c12e82c1ce77afe594fb7478a56ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58400989aa76953808b4db8b36b5df9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae58400989aa76953808b4db8b36b5df9">FirmwareUpdateACKDetail</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 32 &gt;</td></tr>
+<tr class="separator:ae58400989aa76953808b4db8b36b5df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e9615d6d3ff3888ce0689380fe92f9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a14e9615d6d3ff3888ce0689380fe92f9">FirmwareUpdatePacketSize</a> = <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt; 7 &gt;</td></tr>
 <tr class="separator:a14e9615d6d3ff3888ce0689380fe92f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -325,7 +327,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda592a2aa76bf9c607a847edff1e208bc9">updateConfig</a> = 0x04, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda39ea91ed36bb7921679b902d32d13190">updateUserConfig</a> = 0x05, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0ef45a60feb984f135610221e9ffb0bb">setConfigState</a> = 0x06, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a">factorySyncEnd</a> = 0x07
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a">factorySyncEnd</a> = 0x07, 
+<br/>
+&#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdab05f4968e5e04202b814053e95c6904d">clusterConfigSync</a> = 0x08
 <br/>
  }</td></tr>
 <tr class="separator:ad2f0c78fe5174a0fb7d0451722721bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,7 +360,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x03, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1ab160915e283a508f01b6c4fac415669a">packetACK</a> = MessageType::bits + PacketCounter::bits, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1ac3b437dd7850dd77e5723bf042832c3d">packetACK</a> = 0x02, 
-<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a99afd2a70e5de620bf123059c4c9a8a1">firmwareUpdateACK</a> = MessageType::bits + FirmwareUpdateACKCode::bits, 
+<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a99afd2a70e5de620bf123059c4c9a8a1">firmwareUpdateACK</a> = MessageType::bits + FirmwareUpdateACKCode::bits + FirmwareUpdateACKDetail::bits, 
 <br/>
 &#160;&#160;<a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</a> = 0x03, 
 <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1aad24fa0e1db39ea051f3384f30d05085">controlButtonMessage</a> = typeDeviceAndTime + ControlButtonID::bits, 
@@ -714,6 +718,18 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae58400989aa76953808b4db8b36b5df9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="juce__BlocksProtocolDefinitions_8h.html#ae58400989aa76953808b4db8b36b5df9">FirmwareUpdateACKDetail</a> =  <a class="el" href="structIntegerWithBitSize.html">IntegerWithBitSize</a>&lt;32&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a14e9615d6d3ff3888ce0689380fe92f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1015,6 +1031,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a"></a>factorySyncEnd</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ad2f0c78fe5174a0fb7d0451722721bcdab05f4968e5e04202b814053e95c6904d"></a>clusterConfigSync</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -1103,7 +1121,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 18 2017 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 19 2017 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

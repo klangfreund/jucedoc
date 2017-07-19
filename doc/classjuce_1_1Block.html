@@ -293,9 +293,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aace55dfe47a21efaf72cd15f06a4c78b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#aace55dfe47a21efaf72cd15f06a4c78b">setLogger</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
 <tr class="memdesc:aace55dfe47a21efaf72cd15f06a4c78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the user to provide a function that will receive log messages from the block.  <a href="#aace55dfe47a21efaf72cd15f06a4c78b">More...</a><br/></td></tr>
 <tr class="separator:aace55dfe47a21efaf72cd15f06a4c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#af173f3ccc3b6dfcfdc3b7dfeb2bb3586">sendFirmwareUpdatePacket</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *data, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> size, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>)&gt; packetAckCallback)=0</td></tr>
-<tr class="memdesc:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#af173f3ccc3b6dfcfdc3b7dfeb2bb3586">More...</a><br/></td></tr>
-<tr class="separator:af173f3ccc3b6dfcfdc3b7dfeb2bb3586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a97172180b9febd1c2af4e2efd4aeb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#ab4a97172180b9febd1c2af4e2efd4aeb">sendFirmwareUpdatePacket</a> (const <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *data, <a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> size, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>)&gt; packetAckCallback)=0</td></tr>
+<tr class="memdesc:ab4a97172180b9febd1c2af4e2efd4aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#ab4a97172180b9febd1c2af4e2efd4aeb">More...</a><br/></td></tr>
+<tr class="separator:ab4a97172180b9febd1c2af4e2efd4aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079142f8ca19c696c63fbab2c46a9abe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjuce_1_1Block.html#a079142f8ca19c696c63fbab2c46a9abe">setConfigChangedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classjuce_1_1Block.html">Block</a> &amp;, const <a class="el" href="structjuce_1_1Block_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>)&gt;)=0</td></tr>
 <tr class="memdesc:a079142f8ca19c696c63fbab2c46a9abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a config changes.  <a href="#a079142f8ca19c696c63fbab2c46a9abe">More...</a><br/></td></tr>
 <tr class="separator:a079142f8ca19c696c63fbab2c46a9abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1681,7 +1681,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af173f3ccc3b6dfcfdc3b7dfeb2bb3586"></a>
+<a class="anchor" id="ab4a97172180b9febd1c2af4e2efd4aeb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1703,7 +1703,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="juce__MathsFunctions_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>, <a class="el" href="juce__MathsFunctions_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>)&gt;&#160;</td>
           <td class="paramname"><em>packetAckCallback</em>&#160;</td>
         </tr>
         <tr>
@@ -1943,7 +1943,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 18 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 19 2017 20:00:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

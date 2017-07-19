@@ -19,6 +19,7 @@ var searchData=
   ['closebutton',['closeButton',['../classDocumentWindow.html#a104d68bc145157c6ce79169a36fc3c31a80e87a70beeecc78adc89517fa1df978',1,'DocumentWindow']]],
   ['closepath',['closePath',['../classPath_1_1Iterator.html#a62b1a329e3fdbcbdad78bb6c90c7bcfda38a8ed95a6ef321e0a558c3807bac952',1,'Path::Iterator']]],
   ['closesubpathelement',['closeSubPathElement',['../classRelativePointPath.html#a741fbc9bca4a156a84514f20987483e9a60ad7fe5cfbf04c489c878ce5e6cbeb5',1,'RelativePointPath']]],
+  ['clusterconfigsync',['clusterConfigSync',['../juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcdab05f4968e5e04202b814053e95c6904d',1,'juce_BlocksProtocolDefinitions.h']]],
   ['colour',['colour',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eea60653ee5dad2e4090294f3d5b4206f48',1,'BlockConfigManager']]],
   ['column',['column',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015a1afd32818d1c9525f82aff4c09efd254',1,'FlexBox']]],
   ['columnreverse',['columnReverse',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015af6ee385127321f0a2c579444f938bc7f',1,'FlexBox']]],

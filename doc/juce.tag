@@ -921,6 +921,13 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
+      <type>IntegerWithBitSize&lt; 32 &gt;</type>
+      <name>FirmwareUpdateACKDetail</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ae58400989aa76953808b4db8b36b5df9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>IntegerWithBitSize&lt; 7 &gt;</type>
       <name>FirmwareUpdatePacketSize</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
@@ -1532,6 +1539,13 @@
       <name>factorySyncEnd</name>
       <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
       <anchor>ad2f0c78fe5174a0fb7d0451722721bcda0a02afa70516c408744313af2d500d5a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <type>@</type>
+      <name>clusterConfigSync</name>
+      <anchorfile>juce__BlocksProtocolDefinitions_8h.html</anchorfile>
+      <anchor>ad2f0c78fe5174a0fb7d0451722721bcdab05f4968e5e04202b814053e95c6904d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -9117,6 +9131,13 @@
       <anchorfile>classComponent.html</anchorfile>
       <anchor>a00c1dcf8a0a926da17daef178ca63426</anchor>
       <arglist>(const Component *child) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>const Array&lt; Component * &gt; &amp;</type>
+      <name>getChildren</name>
+      <anchorfile>classComponent.html</anchorfile>
+      <anchor>aebd403a4bf3e65c852304290a058d33a</anchor>
+      <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>Component *</type>
@@ -21942,8 +21963,8 @@
       <type>virtual bool</type>
       <name>sendFirmwareUpdatePacket</name>
       <anchorfile>classBlock.html</anchorfile>
-      <anchor>aef359e7ae647b875a802332a4211f8b4</anchor>
-      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+      <anchor>ad1631dcb70f40a4d870ee6f7afbc7942</anchor>
+      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8, uint32)&gt; packetAckCallback)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -64262,8 +64283,8 @@
       <type>friend void</type>
       <name>componentPeerAboutToChange</name>
       <anchorfile>classOpenGLContext.html</anchorfile>
-      <anchor>a53fd33df415dbae93694d04bc927b087</anchor>
-      <arglist>(ComponentPeer &amp;, bool)</arglist>
+      <anchor>ad2636dc00c28a5daeebed69898395aff</anchor>
+      <arglist>(Component &amp;, bool)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -95401,8 +95422,8 @@
       <type>virtual bool</type>
       <name>sendFirmwareUpdatePacket</name>
       <anchorfile>classjuce_1_1Block.html</anchorfile>
-      <anchor>af173f3ccc3b6dfcfdc3b7dfeb2bb3586</anchor>
-      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8)&gt; packetAckCallback)=0</arglist>
+      <anchor>ab4a97172180b9febd1c2af4e2efd4aeb</anchor>
+      <arglist>(const uint8 *data, uint8 size, std::function&lt; void(uint8, uint32)&gt; packetAckCallback)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>

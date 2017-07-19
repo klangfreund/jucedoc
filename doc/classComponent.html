@@ -390,6 +390,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00c1dcf8a0a926da17daef178ca63426"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426">getIndexOfChildComponent</a> (const <a class="el" href="classComponent.html">Component</a> *child) const noexcept</td></tr>
 <tr class="memdesc:a00c1dcf8a0a926da17daef178ca63426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of this component in the list of child components.  <a href="#a00c1dcf8a0a926da17daef178ca63426">More...</a><br/></td></tr>
 <tr class="separator:a00c1dcf8a0a926da17daef178ca63426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd403a4bf3e65c852304290a058d33a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classComponent.html">Component</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#aebd403a4bf3e65c852304290a058d33a">getChildren</a> () const noexcept</td></tr>
+<tr class="memdesc:aebd403a4bf3e65c852304290a058d33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the underlying array of child components.  <a href="#aebd403a4bf3e65c852304290a058d33a">More...</a><br/></td></tr>
+<tr class="separator:aebd403a4bf3e65c852304290a058d33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5607d97a62a8c9d8d1d28ce3b31dd764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponent.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5607d97a62a8c9d8d1d28ce3b31dd764">findChildWithID</a> (<a class="el" href="classStringRef.html">StringRef</a> componentID) const noexcept</td></tr>
 <tr class="memdesc:a5607d97a62a8c9d8d1d28ce3b31dd764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for a child component with the specified ID.  <a href="#a5607d97a62a8c9d8d1d28ce3b31dd764">More...</a><br/></td></tr>
 <tr class="separator:a5607d97a62a8c9d8d1d28ce3b31dd764"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2533,7 +2536,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of child components that this component contains. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f" title="Returns one of this component&#39;s child components, by it index. ">getChildComponent</a>, <a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426" title="Returns the index of this component in the list of child components. ">getIndexOfChildComponent</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#aebd403a4bf3e65c852304290a058d33a" title="Provides access to the underlying array of child components. ">getChildren</a>, <a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f" title="Returns one of this component&#39;s child components, by it index. ">getChildComponent</a>, <a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426" title="Returns the index of this component in the list of child components. ">getIndexOfChildComponent</a> </dd></dl>
 
 </div>
 </div>
@@ -2562,7 +2565,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns one of this component's child components, by it index. </p>
 <p>The component with index 0 is at the back of the z-order, the one at the front will have index (<a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d" title="Returns the number of child components that this component contains. ">getNumChildComponents()</a> - 1).</p>
 <p>If the index is out-of-range, this will return a null pointer.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d" title="Returns the number of child components that this component contains. ">getNumChildComponents</a>, <a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426" title="Returns the index of this component in the list of child components. ">getIndexOfChildComponent</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#aebd403a4bf3e65c852304290a058d33a" title="Provides access to the underlying array of child components. ">getChildren</a>, <a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d" title="Returns the number of child components that this component contains. ">getNumChildComponents</a>, <a class="el" href="classComponent.html#a00c1dcf8a0a926da17daef178ca63426" title="Returns the index of this component in the list of child components. ">getIndexOfChildComponent</a> </dd></dl>
 
 </div>
 </div>
@@ -2591,7 +2594,33 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the index of this component in the list of child components. </p>
 <p>A value of 0 means it is first in the list (i.e. behind all other components). Higher values are further towards the front.</p>
 <p>Returns -1 if the component passed-in is not a child of this component.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d" title="Returns the number of child components that this component contains. ">getNumChildComponents</a>, <a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f" title="Returns one of this component&#39;s child components, by it index. ">getChildComponent</a>, <a class="el" href="classComponent.html#a3340a63ebd9f3a9df41bc0e8fbe3bf0c" title="Adds a child component to this one. ">addChildComponent</a>, <a class="el" href="classComponent.html#ace6d99879585ba31a4212431d01d00f5" title="Brings the component to the front of its siblings. ">toFront</a>, <a class="el" href="classComponent.html#ae9cd68d901dd4426b27c6c40f4759d4c" title="Changes this component&#39;s z-order to be at the back of all its siblings. ">toBack</a>, <a class="el" href="classComponent.html#a1b0cca8b9a9fea673aefc84a42602bcd" title="Changes this component&#39;s z-order so that it&#39;s just behind another component. ">toBehind</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classComponent.html#aebd403a4bf3e65c852304290a058d33a" title="Provides access to the underlying array of child components. ">getChildren</a>, <a class="el" href="classComponent.html#afa33580cab86ac3b80c9c1f9d85ad81d" title="Returns the number of child components that this component contains. ">getNumChildComponents</a>, <a class="el" href="classComponent.html#a9a86caea9a03be32d7a6b6dfbd09d09f" title="Returns one of this component&#39;s child components, by it index. ">getChildComponent</a>, <a class="el" href="classComponent.html#a3340a63ebd9f3a9df41bc0e8fbe3bf0c" title="Adds a child component to this one. ">addChildComponent</a>, <a class="el" href="classComponent.html#ace6d99879585ba31a4212431d01d00f5" title="Brings the component to the front of its siblings. ">toFront</a>, <a class="el" href="classComponent.html#ae9cd68d901dd4426b27c6c40f4759d4c" title="Changes this component&#39;s z-order to be at the back of all its siblings. ">toBack</a>, <a class="el" href="classComponent.html#a1b0cca8b9a9fea673aefc84a42602bcd" title="Changes this component&#39;s z-order so that it&#39;s just behind another component. ">toBehind</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebd403a4bf3e65c852304290a058d33a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="classComponent.html">Component</a>*&gt;&amp; Component::getChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides access to the underlying array of child components. </p>
+<p>The most likely reason you may want to use this is for iteration in a range-based for loop. </p>
 
 </div>
 </div>
@@ -6171,7 +6200,7 @@ template&lt;class TargetClass &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 18 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 19 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

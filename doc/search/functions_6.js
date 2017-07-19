@@ -173,6 +173,7 @@ var searchData=
   ['getchildfile',['getChildFile',['../classFile.html#a0885161c1d05eedd980e3dfe4d057545',1,'File']]],
   ['getchildlist',['getChildList',['../classDrawableComposite_1_1ValueTreeWrapper.html#a8450173efdb5e66a89ddfbdfb1a4e6b3',1,'DrawableComposite::ValueTreeWrapper']]],
   ['getchildlistcreating',['getChildListCreating',['../classDrawableComposite_1_1ValueTreeWrapper.html#ae840e7be6efa39e431701021b2122d23',1,'DrawableComposite::ValueTreeWrapper']]],
+  ['getchildren',['getChildren',['../classComponent.html#aebd403a4bf3e65c852304290a058d33a',1,'Component']]],
   ['getchildurl',['getChildURL',['../classURL.html#a9a90a4094536644741ed6da1bba7a202',1,'URL']]],
   ['getchildwithname',['getChildWithName',['../classValueTree.html#a00e9d09ad2439b9eb5cb79cb146c5a73',1,'ValueTree']]],
   ['getchildwithproperty',['getChildWithProperty',['../classValueTree.html#a99c2e890ecbed6c7fab83c1a95d824a6',1,'ValueTree']]],
