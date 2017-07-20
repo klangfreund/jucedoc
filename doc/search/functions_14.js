@@ -13,7 +13,7 @@ var searchData=
   ['unhandledexception',['unhandledException',['../classJUCEApplicationBase.html#adb182f77016ee90f8d5443abcb0bb3f0',1,'JUCEApplicationBase::unhandledException()'],['../classJUCEApplication.html#af7939b3650dbba8e9abcaa9600f107d6',1,'JUCEApplication::unhandledException()']]],
   ['uniform',['Uniform',['../structOpenGLShaderProgram_1_1Uniform.html#a1c2e8f310fb8b3a45f60d3958567d922',1,'OpenGLShaderProgram::Uniform']]],
   ['unindentselection',['unindentSelection',['../classCodeEditorComponent.html#ad96b0eadd14eee69dbbc4a691918d803',1,'CodeEditorComponent']]],
-  ['unittest',['UnitTest',['../classUnitTest.html#a3fb00e56f1df45efabba981f84e5a578',1,'UnitTest']]],
+  ['unittest',['UnitTest',['../classUnitTest.html#addae2765d33a079b2b6b116994f825da',1,'UnitTest']]],
   ['unittestrunner',['UnitTestRunner',['../classUnitTestRunner.html#ae0e3c870085be83f4821127b99269d78',1,'UnitTestRunner']]],
   ['unpremultiply',['unpremultiply',['../classPixelARGB.html#a6270aec4f8b98a22f3487be2b8db4dc2',1,'PixelARGB::unpremultiply()'],['../classPixelRGB.html#a43bd818ac8d55e02b8b3e14cc865a1b7',1,'PixelRGB::unpremultiply()'],['../classPixelAlpha.html#a739f660b3d4b93d86bf99e791aea1999',1,'PixelAlpha::unpremultiply()']]],
   ['unquoted',['unquoted',['../classString.html#a3f11c24fd2d9f5d2ba5d964a7f69dd63',1,'String']]],

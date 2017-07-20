@@ -88452,8 +88452,8 @@
       <type></type>
       <name>UnitTest</name>
       <anchorfile>classUnitTest.html</anchorfile>
-      <anchor>a3fb00e56f1df45efabba981f84e5a578</anchor>
-      <arglist>(const String &amp;name)</arglist>
+      <anchor>addae2765d33a079b2b6b116994f825da</anchor>
+      <arglist>(const String &amp;name, const String &amp;category=String())</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -88467,6 +88467,13 @@
       <name>getName</name>
       <anchorfile>classUnitTest.html</anchorfile>
       <anchor>a2a670b333cacbe8056ebb64881009d86</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>const String &amp;</type>
+      <name>getCategory</name>
+      <anchorfile>classUnitTest.html</anchorfile>
+      <anchor>accf6057584d2c485fc213dce3b1971cd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
@@ -88581,6 +88588,20 @@
       <anchor>a2e5b516d7976360c375e5c870e52798f</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static Array&lt; UnitTest * &gt;</type>
+      <name>getTestsInCategory</name>
+      <anchorfile>classUnitTest.html</anchorfile>
+      <anchor>a126eda3ce7a8db3866ee4a8e91eae442</anchor>
+      <arglist>(const String &amp;category)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static StringArray</type>
+      <name>getAllCategories</name>
+      <anchorfile>classUnitTest.html</anchorfile>
+      <anchor>a1aa423d641a6a9fe4b6882b22845cafa</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>UnitTestRunner</name>
@@ -88613,6 +88634,13 @@
       <anchorfile>classUnitTestRunner.html</anchorfile>
       <anchor>a1ba728a212df4926b0784fb1dda6659e</anchor>
       <arglist>(int64 randomSeed=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>runTestsInCategory</name>
+      <anchorfile>classUnitTestRunner.html</anchorfile>
+      <anchor>adeae54e632c394de98198f2f4f363a4f</anchor>
+      <arglist>(const String &amp;category, int64 randomSeed=0)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

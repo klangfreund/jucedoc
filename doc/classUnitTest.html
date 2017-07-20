@@ -95,15 +95,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3fb00e56f1df45efabba981f84e5a578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a3fb00e56f1df45efabba981f84e5a578">UnitTest</a> (const <a class="el" href="classString.html">String</a> &amp;name)</td></tr>
-<tr class="memdesc:a3fb00e56f1df45efabba981f84e5a578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a test with the given name.  <a href="#a3fb00e56f1df45efabba981f84e5a578">More...</a><br/></td></tr>
-<tr class="separator:a3fb00e56f1df45efabba981f84e5a578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addae2765d33a079b2b6b116994f825da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#addae2765d33a079b2b6b116994f825da">UnitTest</a> (const <a class="el" href="classString.html">String</a> &amp;name, const <a class="el" href="classString.html">String</a> &amp;category=<a class="el" href="classString.html">String</a>())</td></tr>
+<tr class="memdesc:addae2765d33a079b2b6b116994f825da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a test with the given name and optionally places it in a category.  <a href="#addae2765d33a079b2b6b116994f825da">More...</a><br/></td></tr>
+<tr class="separator:addae2765d33a079b2b6b116994f825da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a57054084ce200e1e92ff3eecc8420a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a5a57054084ce200e1e92ff3eecc8420a">~UnitTest</a> ()</td></tr>
 <tr class="memdesc:a5a57054084ce200e1e92ff3eecc8420a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5a57054084ce200e1e92ff3eecc8420a">More...</a><br/></td></tr>
 <tr class="separator:a5a57054084ce200e1e92ff3eecc8420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a670b333cacbe8056ebb64881009d86"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a2a670b333cacbe8056ebb64881009d86">getName</a> () const noexcept</td></tr>
 <tr class="memdesc:a2a670b333cacbe8056ebb64881009d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the test.  <a href="#a2a670b333cacbe8056ebb64881009d86">More...</a><br/></td></tr>
 <tr class="separator:a2a670b333cacbe8056ebb64881009d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf6057584d2c485fc213dce3b1971cd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#accf6057584d2c485fc213dce3b1971cd">getCategory</a> () const noexcept</td></tr>
+<tr class="memdesc:accf6057584d2c485fc213dce3b1971cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the category of the test.  <a href="#accf6057584d2c485fc213dce3b1971cd">More...</a><br/></td></tr>
+<tr class="separator:accf6057584d2c485fc213dce3b1971cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ac76c71297c8d336e1503515e34232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a45ac76c71297c8d336e1503515e34232">performTest</a> (<a class="el" href="classUnitTestRunner.html">UnitTestRunner</a> *runner)</td></tr>
 <tr class="memdesc:a45ac76c71297c8d336e1503515e34232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the test, using the specified <a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a>.  <a href="#a45ac76c71297c8d336e1503515e34232">More...</a><br/></td></tr>
 <tr class="separator:a45ac76c71297c8d336e1503515e34232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e5b516d7976360c375e5c870e52798f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classUnitTest.html">UnitTest</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a2e5b516d7976360c375e5c870e52798f">getAllTests</a> ()</td></tr>
 <tr class="memdesc:a2e5b516d7976360c375e5c870e52798f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of all <a class="el" href="classUnitTest.html" title="This is a base class for classes that perform a unit test. ">UnitTest</a> objects that currently exist.  <a href="#a2e5b516d7976360c375e5c870e52798f">More...</a><br/></td></tr>
 <tr class="separator:a2e5b516d7976360c375e5c870e52798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126eda3ce7a8db3866ee4a8e91eae442"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classUnitTest.html">UnitTest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a126eda3ce7a8db3866ee4a8e91eae442">getTestsInCategory</a> (const <a class="el" href="classString.html">String</a> &amp;category)</td></tr>
+<tr class="memdesc:a126eda3ce7a8db3866ee4a8e91eae442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of UnitTests in a specified category.  <a href="#a126eda3ce7a8db3866ee4a8e91eae442">More...</a><br/></td></tr>
+<tr class="separator:a126eda3ce7a8db3866ee4a8e91eae442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa423d641a6a9fe4b6882b22845cafa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitTest.html#a1aa423d641a6a9fe4b6882b22845cafa">getAllCategories</a> ()</td></tr>
+<tr class="memdesc:a1aa423d641a6a9fe4b6882b22845cafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a> containing all of the categories of UnitTests that have been registered.  <a href="#a1aa423d641a6a9fe4b6882b22845cafa">More...</a><br/></td></tr>
+<tr class="separator:a1aa423d641a6a9fe4b6882b22845cafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a base class for classes that perform a unit test. </p>
@@ -194,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- fragment --><p>To run a test, use the <a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a> class.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3fb00e56f1df45efabba981f84e5a578"></a>
+<a class="anchor" id="addae2765d33a079b2b6b116994f825da"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -205,8 +214,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">UnitTest::UnitTest </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em> = <code><a class="el" href="classString.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -216,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a test with the given name. </p>
+<p>Creates a test with the given name and optionally places it in a category. </p>
 
 </div>
 </div>
@@ -271,6 +290,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="accf6057584d2c485fc213dce3b1971cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classString.html">String</a>&amp; UnitTest::getCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the category of the test. </p>
+
+</div>
+</div>
 <a class="anchor" id="a45ac76c71297c8d336e1503515e34232"></a>
 <div class="memitem">
 <div class="memproto">
@@ -312,6 +356,57 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the set of all <a class="el" href="classUnitTest.html" title="This is a base class for classes that perform a unit test. ">UnitTest</a> objects that currently exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="a126eda3ce7a8db3866ee4a8e91eae442"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="classUnitTest.html">UnitTest</a>*&gt; UnitTest::getTestsInCategory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the set of UnitTests in a specified category. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1aa423d641a6a9fe4b6882b22845cafa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classStringArray.html">StringArray</a> UnitTest::getAllCategories </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a> containing all of the categories of UnitTests that have been registered. </p>
 
 </div>
 </div>
@@ -758,7 +853,7 @@ template&lt;class ValueType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 19 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
