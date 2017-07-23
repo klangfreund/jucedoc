@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96bcb7013ec2d56da8b918da7fc0809c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArray.html#a96bcb7013ec2d56da8b918da7fc0809c">clearQuick</a> ()</td></tr>
 <tr class="memdesc:a96bcb7013ec2d56da8b918da7fc0809c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements from the array without freeing the array's allocated storage.  <a href="#a96bcb7013ec2d56da8b918da7fc0809c">More...</a><br/></td></tr>
 <tr class="separator:a96bcb7013ec2d56da8b918da7fc0809c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00bf412578e2730347a112b58d3ccba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArray.html#ad00bf412578e2730347a112b58d3ccba">fill</a> (const ParameterType &amp;newValue) noexcept</td></tr>
+<tr class="memdesc:ad00bf412578e2730347a112b58d3ccba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the <a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a> with the provided value.  <a href="#ad00bf412578e2730347a112b58d3ccba">More...</a><br/></td></tr>
+<tr class="separator:ad00bf412578e2730347a112b58d3ccba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79ec3b32d0c9a80dfff8ffbc41f8523"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">size</a> () const noexcept</td></tr>
 <tr class="memdesc:ae79ec3b32d0c9a80dfff8ffbc41f8523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of elements in the array.  <a href="#ae79ec3b32d0c9a80dfff8ffbc41f8523">More...</a><br/></td></tr>
 <tr class="separator:ae79ec3b32d0c9a80dfff8ffbc41f8523"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +188,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae81ab0d9abbd36bf4aab593c255eef38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArray.html#ae81ab0d9abbd36bf4aab593c255eef38">add</a> (ElementType &amp;&amp;newElement)</td></tr>
 <tr class="memdesc:ae81ab0d9abbd36bf4aab593c255eef38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new element at the end of the array.  <a href="#ae81ab0d9abbd36bf4aab593c255eef38">More...</a><br/></td></tr>
 <tr class="separator:ae81ab0d9abbd36bf4aab593c255eef38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14eac3d85820bc83479fad108af09003"><td class="memTemplParams" colspan="2">template&lt;typename... OtherElements&gt; </td></tr>
+<tr class="memitem:a14eac3d85820bc83479fad108af09003"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classArray.html#a14eac3d85820bc83479fad108af09003">add</a> (const ElementType &amp;firstNewElement, OtherElements...otherElements)</td></tr>
+<tr class="memdesc:a14eac3d85820bc83479fad108af09003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends multiple new elements at the end of the array.  <a href="#a14eac3d85820bc83479fad108af09003">More...</a><br/></td></tr>
+<tr class="separator:a14eac3d85820bc83479fad108af09003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6489e595052d7696d259273759de63d1"><td class="memTemplParams" colspan="2">template&lt;typename... OtherElements&gt; </td></tr>
+<tr class="memitem:a6489e595052d7696d259273759de63d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classArray.html#a6489e595052d7696d259273759de63d1">add</a> (ElementType &amp;&amp;firstNewElement, OtherElements...otherElements)</td></tr>
+<tr class="memdesc:a6489e595052d7696d259273759de63d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends multiple new elements at the end of the array.  <a href="#a6489e595052d7696d259273759de63d1">More...</a><br/></td></tr>
+<tr class="separator:a6489e595052d7696d259273759de63d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef96810c21931d9676c08cad82de45c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArray.html#aef96810c21931d9676c08cad82de45c7">insert</a> (int indexToInsertAt, ParameterType newElement)</td></tr>
 <tr class="memdesc:aef96810c21931d9676c08cad82de45c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new element into the array at a given position.  <a href="#aef96810c21931d9676c08cad82de45c7">More...</a><br/></td></tr>
 <tr class="separator:aef96810c21931d9676c08cad82de45c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -676,6 +687,34 @@ template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCri
 
 </div>
 </div>
+<a class="anchor" id="ad00bf412578e2730347a112b58d3ccba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCriticalSection, int minimumAllocatedSize = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classArray.html">Array</a>&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::fill </td>
+          <td>(</td>
+          <td class="paramtype">const ParameterType &amp;&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fills the <a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a> with the provided value. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae79ec3b32d0c9a80dfff8ffbc41f8523"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1075,6 +1114,70 @@ template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCri
   </dd>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686" title="Replaces an element with a new value. ">set</a>, <a class="el" href="classArray.html#aef96810c21931d9676c08cad82de45c7" title="Inserts a new element into the array at a given position. ">insert</a>, <a class="el" href="classArray.html#a41d110cdb239af70fa8416cb8a430a03" title="Appends a new element at the end of the array as long as the array doesn&#39;t already contain it...">addIfNotAlreadyThere</a>, <a class="el" href="classArray.html#afc5417019f110034658b3c1c02af5a5e" title="Inserts a new element into the array, assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classArray.html#a88466744eccb48806b74defa442c843b" title="Inserts a new element into the array, assuming that the array is sorted. ">addUsingDefaultSort</a>, <a class="el" href="classArray.html#a3cb98449214bf8993d64dd06c33133eb" title="Adds elements from an array to the end of this array. ">addArray</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14eac3d85820bc83479fad108af09003"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCriticalSection, int minimumAllocatedSize = 0&gt; </div>
+<div class="memtemplate">
+template&lt;typename... OtherElements&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classArray.html">Array</a>&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">const ElementType &amp;&#160;</td>
+          <td class="paramname"><em>firstNewElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OtherElements...&#160;</td>
+          <td class="paramname"><em>otherElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends multiple new elements at the end of the array. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6489e595052d7696d259273759de63d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCriticalSection, int minimumAllocatedSize = 0&gt; </div>
+<div class="memtemplate">
+template&lt;typename... OtherElements&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classArray.html">Array</a>&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">ElementType &amp;&amp;&#160;</td>
+          <td class="paramname"><em>firstNewElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OtherElements...&#160;</td>
+          <td class="paramname"><em>otherElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends multiple new elements at the end of the array. </p>
 
 </div>
 </div>
@@ -2165,7 +2268,7 @@ template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCri
 <p>Returns the <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> that locks this array. </p>
 <p>To lock, you can call <a class="el" href="classArray.html#a37f02f5c6eedcc9bd661069e1b991bb1" title="Returns the CriticalSection that locks this array. ">getLock()</a>.enter() and <a class="el" href="classArray.html#a37f02f5c6eedcc9bd661069e1b991bb1" title="Returns the CriticalSection that locks this array. ">getLock()</a>.exit(), or preferably use an object of ScopedLockType as an RAII lock for it. </p>
 
-<p>Referenced by <a class="el" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">Array&lt; Button::Listener * &gt;::add()</a>, <a class="el" href="classArray.html#a3cb98449214bf8993d64dd06c33133eb">Array&lt; Button::Listener * &gt;::addArray()</a>, <a class="el" href="classArray.html#a41d110cdb239af70fa8416cb8a430a03">Array&lt; Button::Listener * &gt;::addIfNotAlreadyThere()</a>, <a class="el" href="classArray.html#afc5417019f110034658b3c1c02af5a5e">Array&lt; Button::Listener * &gt;::addSorted()</a>, <a class="el" href="classArray.html#a738abff2826095c6f95ffa9e1e2a04bc">Array&lt; Button::Listener * &gt;::Array()</a>, <a class="el" href="classArray.html#a86dc5fe378bb99b85beb8ab86c279654">Array&lt; Button::Listener * &gt;::clear()</a>, <a class="el" href="classArray.html#a96bcb7013ec2d56da8b918da7fc0809c">Array&lt; Button::Listener * &gt;::clearQuick()</a>, <a class="el" href="classArray.html#a57f5f5977d81f1d54315732bc30b33ab">Array&lt; Button::Listener * &gt;::contains()</a>, <a class="el" href="classArray.html#a43d61929a72c859191859f02e35d2058">Array&lt; Button::Listener * &gt;::ensureStorageAllocated()</a>, <a class="el" href="classArray.html#ae1884e2e59a1f2a7a2959a1f090da894">Array&lt; Button::Listener * &gt;::getFirst()</a>, <a class="el" href="classArray.html#abcdc6472b527f4b470ae705ed7fad38f">Array&lt; Button::Listener * &gt;::getLast()</a>, <a class="el" href="classSortedSet.html#a5a0b04e366f0a1faa768d05e400208ca">SortedSet&lt; ColourSetting &gt;::getLock()</a>, <a class="el" href="classArray.html#ac1cb5babc0950eb9897812b221695b3c">Array&lt; Button::Listener * &gt;::getReference()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; Button::Listener * &gt;::getUnchecked()</a>, <a class="el" href="classSortedSet.html#ac51e0a933c5902a55f68ee8eef9cba00">SortedSet&lt; ColourSetting &gt;::indexOf()</a>, <a class="el" href="classArray.html#af3e6b6c7c55897224b923bb4409b958a">Array&lt; Button::Listener * &gt;::indexOf()</a>, <a class="el" href="classArray.html#ad3faadfb7b8eb05350afb1c9dd951ff5">Array&lt; Button::Listener * &gt;::indexOfSorted()</a>, <a class="el" href="classArray.html#aef96810c21931d9676c08cad82de45c7">Array&lt; Button::Listener * &gt;::insert()</a>, <a class="el" href="classArray.html#acb0477221ce1538611a9fcd84028b387">Array&lt; Button::Listener * &gt;::insertArray()</a>, <a class="el" href="classArray.html#a0cadf83bcfba696c6a4adc15f4e0a78f">Array&lt; Button::Listener * &gt;::insertMultiple()</a>, <a class="el" href="classArray.html#a0773349e71721e177ee12c8ffd20b5d8">Array&lt; Button::Listener * &gt;::minimiseStorageOverheads()</a>, <a class="el" href="classArray.html#aed7d9992d0e88297d4d92487205436e2">Array&lt; Button::Listener * &gt;::move()</a>, <a class="el" href="classArray.html#aa76bb296af35230df5f7cd631ae1293b">Array&lt; Button::Listener * &gt;::operator=()</a>, <a class="el" href="classArray.html#abe323c4e118f22cd1d09c2557a74c3d5">Array&lt; Button::Listener * &gt;::operator==()</a>, <a class="el" href="classArray.html#a9e369f019d7ba8f7587bcab1906e4087">Array&lt; Button::Listener * &gt;::operator[]()</a>, <a class="el" href="classArray.html#ae3ca48a00050e5fec873488300049eea">Array&lt; Button::Listener * &gt;::remove()</a>, <a class="el" href="classArray.html#a30b2ea3341f9c6156a42da4821438299">Array&lt; Button::Listener * &gt;::removeAllInstancesOf()</a>, <a class="el" href="classArray.html#af1a03b0e4ae3120db6886fea3d895afe">Array&lt; Button::Listener * &gt;::removeAndReturn()</a>, <a class="el" href="classArray.html#adb629ebfbcba98f1f5e1ca47ccca594e">Array&lt; Button::Listener * &gt;::removeFirstMatchingValue()</a>, <a class="el" href="classArray.html#ac6273a9f83364b169c9c5a938c7de3c7">Array&lt; Button::Listener * &gt;::removeIf()</a>, <a class="el" href="classArray.html#af6fe3614e877f04a42330f440a5548da">Array&lt; Button::Listener * &gt;::removeLast()</a>, <a class="el" href="classArray.html#ae9f26706cc40ce178424b2b4ba1f9647">Array&lt; Button::Listener * &gt;::removeRange()</a>, <a class="el" href="classArray.html#a1474eae027a73758ca12734001ec9da0">Array&lt; Button::Listener * &gt;::removeValuesIn()</a>, <a class="el" href="classArray.html#af3d9c435c3cddb0de674306b809430e3">Array&lt; Button::Listener * &gt;::removeValuesNotIn()</a>, <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; Button::Listener * &gt;::set()</a>, <a class="el" href="classArray.html#a8fb9db1598de3bcf85754ff2169dd7eb">Array&lt; Button::Listener * &gt;::setUnchecked()</a>, <a class="el" href="classArray.html#ae41b43e6f47cfa888c01cc09d58f08fa">Array&lt; Button::Listener * &gt;::sort()</a>, <a class="el" href="classArray.html#ae686a3e14b9134ddae4b6bd6088350e5">Array&lt; Button::Listener * &gt;::swap()</a>, and <a class="el" href="classArray.html#a921a70882553967e2998beeb30d99f83">Array&lt; Button::Listener * &gt;::swapWith()</a>.</p>
+<p>Referenced by <a class="el" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">Array&lt; Button::Listener * &gt;::add()</a>, <a class="el" href="classArray.html#a3cb98449214bf8993d64dd06c33133eb">Array&lt; Button::Listener * &gt;::addArray()</a>, <a class="el" href="classArray.html#a41d110cdb239af70fa8416cb8a430a03">Array&lt; Button::Listener * &gt;::addIfNotAlreadyThere()</a>, <a class="el" href="classArray.html#afc5417019f110034658b3c1c02af5a5e">Array&lt; Button::Listener * &gt;::addSorted()</a>, <a class="el" href="classArray.html#a738abff2826095c6f95ffa9e1e2a04bc">Array&lt; Button::Listener * &gt;::Array()</a>, <a class="el" href="classArray.html#a86dc5fe378bb99b85beb8ab86c279654">Array&lt; Button::Listener * &gt;::clear()</a>, <a class="el" href="classArray.html#a96bcb7013ec2d56da8b918da7fc0809c">Array&lt; Button::Listener * &gt;::clearQuick()</a>, <a class="el" href="classArray.html#a57f5f5977d81f1d54315732bc30b33ab">Array&lt; Button::Listener * &gt;::contains()</a>, <a class="el" href="classArray.html#a43d61929a72c859191859f02e35d2058">Array&lt; Button::Listener * &gt;::ensureStorageAllocated()</a>, <a class="el" href="classArray.html#ad00bf412578e2730347a112b58d3ccba">Array&lt; Button::Listener * &gt;::fill()</a>, <a class="el" href="classArray.html#ae1884e2e59a1f2a7a2959a1f090da894">Array&lt; Button::Listener * &gt;::getFirst()</a>, <a class="el" href="classArray.html#abcdc6472b527f4b470ae705ed7fad38f">Array&lt; Button::Listener * &gt;::getLast()</a>, <a class="el" href="classSortedSet.html#a5a0b04e366f0a1faa768d05e400208ca">SortedSet&lt; ColourSetting &gt;::getLock()</a>, <a class="el" href="classArray.html#ac1cb5babc0950eb9897812b221695b3c">Array&lt; Button::Listener * &gt;::getReference()</a>, <a class="el" href="classArray.html#ada77bc1217cc15d8815e2685090de379">Array&lt; Button::Listener * &gt;::getUnchecked()</a>, <a class="el" href="classSortedSet.html#ac51e0a933c5902a55f68ee8eef9cba00">SortedSet&lt; ColourSetting &gt;::indexOf()</a>, <a class="el" href="classArray.html#af3e6b6c7c55897224b923bb4409b958a">Array&lt; Button::Listener * &gt;::indexOf()</a>, <a class="el" href="classArray.html#ad3faadfb7b8eb05350afb1c9dd951ff5">Array&lt; Button::Listener * &gt;::indexOfSorted()</a>, <a class="el" href="classArray.html#aef96810c21931d9676c08cad82de45c7">Array&lt; Button::Listener * &gt;::insert()</a>, <a class="el" href="classArray.html#acb0477221ce1538611a9fcd84028b387">Array&lt; Button::Listener * &gt;::insertArray()</a>, <a class="el" href="classArray.html#a0cadf83bcfba696c6a4adc15f4e0a78f">Array&lt; Button::Listener * &gt;::insertMultiple()</a>, <a class="el" href="classArray.html#a0773349e71721e177ee12c8ffd20b5d8">Array&lt; Button::Listener * &gt;::minimiseStorageOverheads()</a>, <a class="el" href="classArray.html#aed7d9992d0e88297d4d92487205436e2">Array&lt; Button::Listener * &gt;::move()</a>, <a class="el" href="classArray.html#aa76bb296af35230df5f7cd631ae1293b">Array&lt; Button::Listener * &gt;::operator=()</a>, <a class="el" href="classArray.html#abe323c4e118f22cd1d09c2557a74c3d5">Array&lt; Button::Listener * &gt;::operator==()</a>, <a class="el" href="classArray.html#a9e369f019d7ba8f7587bcab1906e4087">Array&lt; Button::Listener * &gt;::operator[]()</a>, <a class="el" href="classArray.html#ae3ca48a00050e5fec873488300049eea">Array&lt; Button::Listener * &gt;::remove()</a>, <a class="el" href="classArray.html#a30b2ea3341f9c6156a42da4821438299">Array&lt; Button::Listener * &gt;::removeAllInstancesOf()</a>, <a class="el" href="classArray.html#af1a03b0e4ae3120db6886fea3d895afe">Array&lt; Button::Listener * &gt;::removeAndReturn()</a>, <a class="el" href="classArray.html#adb629ebfbcba98f1f5e1ca47ccca594e">Array&lt; Button::Listener * &gt;::removeFirstMatchingValue()</a>, <a class="el" href="classArray.html#ac6273a9f83364b169c9c5a938c7de3c7">Array&lt; Button::Listener * &gt;::removeIf()</a>, <a class="el" href="classArray.html#af6fe3614e877f04a42330f440a5548da">Array&lt; Button::Listener * &gt;::removeLast()</a>, <a class="el" href="classArray.html#ae9f26706cc40ce178424b2b4ba1f9647">Array&lt; Button::Listener * &gt;::removeRange()</a>, <a class="el" href="classArray.html#a1474eae027a73758ca12734001ec9da0">Array&lt; Button::Listener * &gt;::removeValuesIn()</a>, <a class="el" href="classArray.html#af3d9c435c3cddb0de674306b809430e3">Array&lt; Button::Listener * &gt;::removeValuesNotIn()</a>, <a class="el" href="classArray.html#a2fb91e8ec10caa9474a28c88e35f9686">Array&lt; Button::Listener * &gt;::set()</a>, <a class="el" href="classArray.html#a8fb9db1598de3bcf85754ff2169dd7eb">Array&lt; Button::Listener * &gt;::setUnchecked()</a>, <a class="el" href="classArray.html#ae41b43e6f47cfa888c01cc09d58f08fa">Array&lt; Button::Listener * &gt;::sort()</a>, <a class="el" href="classArray.html#ae686a3e14b9134ddae4b6bd6088350e5">Array&lt; Button::Listener * &gt;::swap()</a>, and <a class="el" href="classArray.html#a921a70882553967e2998beeb30d99f83">Array&lt; Button::Listener * &gt;::swapWith()</a>.</p>
 
 </div>
 </div>
@@ -2176,7 +2279,7 @@ template&lt;typename ElementType, typename TypeOfCriticalSectionToUse = DummyCri
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 22 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 23 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

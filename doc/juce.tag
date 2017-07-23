@@ -12035,6 +12035,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>fill</name>
+      <anchorfile>classArray.html</anchorfile>
+      <anchor>ad00bf412578e2730347a112b58d3ccba</anchor>
+      <arglist>(const ParameterType &amp;newValue) noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>int</type>
       <name>size</name>
       <anchorfile>classArray.html</anchorfile>
@@ -12131,6 +12138,20 @@
       <anchorfile>classArray.html</anchorfile>
       <anchor>ae81ab0d9abbd36bf4aab593c255eef38</anchor>
       <arglist>(ElementType &amp;&amp;newElement)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add</name>
+      <anchorfile>classArray.html</anchorfile>
+      <anchor>a14eac3d85820bc83479fad108af09003</anchor>
+      <arglist>(const ElementType &amp;firstNewElement, OtherElements...otherElements)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add</name>
+      <anchorfile>classArray.html</anchorfile>
+      <anchor>a6489e595052d7696d259273759de63d1</anchor>
+      <arglist>(ElementType &amp;&amp;firstNewElement, OtherElements...otherElements)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -25246,8 +25267,8 @@
       <type>static Type</type>
       <name>findEndOfToken</name>
       <anchorfile>classCharacterFunctions.html</anchorfile>
-      <anchor>ac8ab82cc29024a8bb4f8dc1508fd75e1</anchor>
-      <arglist>(Type text, const BreakType breakCharacters, const Type quoteCharacters)</arglist>
+      <anchor>ab13a2cfcef3af28ca4916a855967a2ac</anchor>
+      <arglist>(Type text, BreakType breakCharacters, Type quoteCharacters)</arglist>
     </member>
   </compound>
   <compound kind="struct">
