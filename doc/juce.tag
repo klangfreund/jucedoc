@@ -12634,6 +12634,13 @@
       <arglist>(bool isTriggeredOnMouseDown) noexcept</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>getTriggeredOnMouseDown</name>
+      <anchorfile>classButton.html</anchorfile>
+      <anchor>aab8d51c3db8f7085429322f740599842</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
       <type>uint32</type>
       <name>getMillisecondsSinceButtonDown</name>
       <anchorfile>classButton.html</anchorfile>
