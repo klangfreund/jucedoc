@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['gain',['Gain',['../classjuce_1_1dsp_1_1Gain.html',1,'juce::dsp']]],
+  ['gain',['Gain',['../classGain.html',1,'']]],
   ['genericaudioprocessoreditor',['GenericAudioProcessorEditor',['../classGenericAudioProcessorEditor.html',1,'']]],
   ['genericscopedlock',['GenericScopedLock',['../classGenericScopedLock.html',1,'']]],
   ['genericscopedtrylock',['GenericScopedTryLock',['../classGenericScopedTryLock.html',1,'']]],
@@ -9,8 +11,8 @@ var searchData=
   ['glyph',['Glyph',['../classTextLayout_1_1Glyph.html',1,'TextLayout']]],
   ['glypharrangement',['GlyphArrangement',['../classGlyphArrangement.html',1,'']]],
   ['graphics',['Graphics',['../classGraphics.html',1,'']]],
-  ['gridfill',['GridFill',['../structjuce_1_1DrumPadGridProgram_1_1GridFill.html',1,'juce::DrumPadGridProgram']]],
   ['gridfill',['GridFill',['../structDrumPadGridProgram_1_1GridFill.html',1,'DrumPadGridProgram']]],
+  ['gridfill',['GridFill',['../structjuce_1_1DrumPadGridProgram_1_1GridFill.html',1,'juce::DrumPadGridProgram']]],
   ['groupcomponent',['GroupComponent',['../classGroupComponent.html',1,'']]],
   ['gzipcompressoroutputstream',['GZIPCompressorOutputStream',['../classGZIPCompressorOutputStream.html',1,'']]],
   ['gzipdecompressorinputstream',['GZIPDecompressorInputStream',['../classGZIPDecompressorInputStream.html',1,'']]]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['typehelpers',['TypeHelpers',['../namespaceTypeHelpers.html',1,'']]]
+  ['littlefoot',['littlefoot',['../namespacelittlefoot.html',1,'']]]
 ];

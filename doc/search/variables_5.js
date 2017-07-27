@@ -52,6 +52,7 @@ var searchData=
   ['fuchsia',['fuchsia',['../classColours.html#a612e521b7168865f48fc7d1612658a79',1,'Colours']]],
   ['function',['function',['../structjuce_1_1littlefoot_1_1NativeFunction.html#a168e97a41a64a85021568d9de6d50a47',1,'juce::littlefoot::NativeFunction::function()'],['../structlittlefoot_1_1NativeFunction.html#a4ebe99d811a2ee3d15d50736cdf53067',1,'littlefoot::NativeFunction::function()']]],
   ['functionid',['functionID',['../structjuce_1_1littlefoot_1_1NativeFunction.html#aa89688026baa6a59c2ca057cd759d0a3',1,'juce::littlefoot::NativeFunction::functionID()'],['../structlittlefoot_1_1NativeFunction.html#a94166672b2671d4aefabcd86d18c0fe6',1,'littlefoot::NativeFunction::functionID()']]],
+  ['functiontouse',['functionToUse',['../structjuce_1_1dsp_1_1WaveShaper.html#a013c3cdf300d3c94763fe73740ba4204',1,'juce::dsp::WaveShaper::functionToUse()'],['../structWaveShaper.html#a3c2cbccc06d4d27bfff4974d0ed8f0f8',1,'WaveShaper::functionToUse()']]],
   ['future',['future',['../structVstEventBlock.html#a71a259f1468b61bbfa138510304d1be7',1,'VstEventBlock']]],
   ['future1',['future1',['../structVstMidiEvent.html#a33dabf8e63280ca400793f9055fc54a7',1,'VstMidiEvent::future1()'],['../structVstSysExEvent.html#acb2a7f8415b2b777c293524db2ef1f9f',1,'VstSysExEvent::future1()']]],
   ['future2',['future2',['../structVstMidiEvent.html#adce10c803df5bf44c7c11bca398b728b',1,'VstMidiEvent::future2()'],['../structVstSysExEvent.html#a9f6497897ac4298969a84c081a6740d9',1,'VstSysExEvent::future2()']]],

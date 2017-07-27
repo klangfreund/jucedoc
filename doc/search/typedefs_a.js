@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['objectclassptr',['ObjectClassPtr',['../classReferenceCountedArray.html#a5aeb8e0e9bc7f0cb0f19237edf286f64',1,'ReferenceCountedArray']]],
-  ['op',['op',['../juce__VSTInterface_8h.html#a6b997c48cf4a35136cd340327269804c',1,'juce_VSTInterface.h']]],
-  ['openstreamprogresscallback',['OpenStreamProgressCallback',['../classURL.html#a24e0205b0375cff235d64cc33d8c8550',1,'URL']]],
-  ['opt',['opt',['../juce__VSTInterface_8h.html#a86c8ab0c81c155375327ea3cce72a7c5',1,'juce_VSTInterface.h']]],
-  ['osctype',['OSCType',['../namespacejuce.html#a9badb0acd9b91a759d7f355e36f4ee6c',1,'juce::OSCType()'],['../juce__OSCTypes_8h.html#a5d660db6ad1f1d5f9a59438cc9109aea',1,'OSCType():&#160;juce_OSCTypes.h']]],
-  ['osctypelist',['OSCTypeList',['../namespacejuce.html#a1e6393bb8a679e0a45c80ee34b534a1b',1,'juce::OSCTypeList()'],['../juce__OSCTypes_8h.html#a78ee134f1df32978ba1d7161262a8de5',1,'OSCTypeList():&#160;juce_OSCTypes.h']]]
+  ['nativefunction',['NativeFunction',['../classvar.html#ae639f9a33534812a529a97740682d992',1,'var']]],
+  ['nativeops',['NativeOps',['../structSIMDRegister.html#acee79d51dfe5b695452405a4d9b6dc04',1,'SIMDRegister']]],
+  ['numerictype',['NumericType',['../classAudioBlock.html#accddb828c95e57ec4a56c253270c74f5',1,'AudioBlock::NumericType()'],['../classjuce_1_1dsp_1_1AudioBlock.html#a0827efe67f8464cdf98ad02b9bd102a6',1,'juce::dsp::AudioBlock::NumericType()'],['../classjuce_1_1dsp_1_1IIR_1_1Filter.html#a927db6115ce59b8f3e79f387572d5c53',1,'juce::dsp::IIR::Filter::NumericType()'],['../classjuce_1_1dsp_1_1FIR_1_1Filter.html#a35f89d31e89225714683eb98172d7fc5',1,'juce::dsp::FIR::Filter::NumericType()'],['../classjuce_1_1dsp_1_1Oscillator.html#a604ecef6c925572762cb653b3ea756d5',1,'juce::dsp::Oscillator::NumericType()'],['../classjuce_1_1dsp_1_1StateVariableFilter_1_1Filter.html#af257bf2f9124b1b51bd30503bd042952',1,'juce::dsp::StateVariableFilter::Filter::NumericType()'],['../classFIR_1_1Filter.html#ab18897bd8f71d96aea1fcc7ea9ab6079',1,'FIR::Filter::NumericType()'],['../classIIR_1_1Filter.html#a2ed6568f580c9d84389346d8a9666562',1,'IIR::Filter::NumericType()'],['../classOscillator.html#ad3eb44ec8603aa023ddb4835b7dab85f',1,'Oscillator::NumericType()'],['../classStateVariableFilter_1_1Filter.html#a14c901c734bd469814c8b567b890e953',1,'StateVariableFilter::Filter::NumericType()']]]
 ];

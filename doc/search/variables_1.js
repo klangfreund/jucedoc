@@ -6,6 +6,7 @@ var searchData=
   ['behaviour',['behaviour',['../classAnimatedPosition.html#a8dee430f7730c4f6ff98b7f53d2f1d7b',1,'AnimatedPosition']]],
   ['beige',['beige',['../classColours.html#a3dfd5f795dbfe57bd3d2b856455b68ab',1,'Colours']]],
   ['bisque',['bisque',['../classColours.html#ae6dbea8a5a7948d1b7e9189dce936e52',1,'Colours']]],
+  ['bits',['bits',['../structSIMDFallbackOps.html#affc2151a2c0f0a3444dae0943d40aa0b',1,'SIMDFallbackOps']]],
   ['bitsincurrentbyte',['bitsInCurrentByte',['../structPacked7BitArrayBuilder_1_1State.html#a412a7fcc8e6c64b9da22779179a95468',1,'Packed7BitArrayBuilder::State']]],
   ['bitspersample',['bitsPerSample',['../classAudioFormatReader.html#aa450170dd89d247be8eb1f657b8b47d5',1,'AudioFormatReader::bitsPerSample()'],['../classAudioFormatWriter.html#aa1c1c0accbc262067e2f9ad75d70d155',1,'AudioFormatWriter::bitsPerSample()']]],
   ['black',['black',['../classColours.html#aad3910013bf00a80305c082284cd5ee2',1,'Colours']]],

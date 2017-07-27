@@ -2,6 +2,8 @@ var searchData=
 [
   ['waitableevent',['WaitableEvent',['../classWaitableEvent.html',1,'']]],
   ['wavaudioformat',['WavAudioFormat',['../classWavAudioFormat.html',1,'']]],
+  ['waveshaper',['WaveShaper',['../structWaveShaper.html',1,'']]],
+  ['waveshaper',['WaveShaper',['../structjuce_1_1dsp_1_1WaveShaper.html',1,'juce::dsp']]],
   ['weakreference',['WeakReference',['../classWeakReference.html',1,'']]],
   ['weakreference_3c_20actionbroadcaster_20_3e',['WeakReference&lt; ActionBroadcaster &gt;',['../classWeakReference.html',1,'']]],
   ['weakreference_3c_20applicationcommandtarget_20_3e',['WeakReference&lt; ApplicationCommandTarget &gt;',['../classWeakReference.html',1,'']]],
@@ -13,6 +15,8 @@ var searchData=
   ['webinputstream',['WebInputStream',['../classWebInputStream.html',1,'']]],
   ['whirlpool',['Whirlpool',['../classWhirlpool.html',1,'']]],
   ['wildcardfilefilter',['WildcardFileFilter',['../classWildcardFileFilter.html',1,'']]],
+  ['windowingfunction',['WindowingFunction',['../structjuce_1_1dsp_1_1WindowingFunction.html',1,'juce::dsp']]],
+  ['windowingfunction',['WindowingFunction',['../structWindowingFunction.html',1,'']]],
   ['windowsmediaaudioformat',['WindowsMediaAudioFormat',['../classWindowsMediaAudioFormat.html',1,'']]],
   ['windowsregistry',['WindowsRegistry',['../classWindowsRegistry.html',1,'']]],
   ['writehelper',['WriteHelper',['../structAudioFormatWriter_1_1WriteHelper.html',1,'AudioFormatWriter']]]

@@ -73,6 +73,7 @@ var searchData=
   ['tracktionwaveform',['TracktionWaveform',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5118c37bc4576bdd92b6b6e1135fae3d',1,'PluginHostType']]],
   ['transpose',['transpose',['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a09a6cad7eb6f4e5d3a5458c683cd1461',1,'juce_BlocksProtocolDefinitions.h']]],
   ['trayopen',['trayOpen',['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846ab8a44178fa9c27bf9b55a9c56de9b448',1,'AudioCDBurner']]],
+  ['triangular',['triangular',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5ca7590cc4a95702ff2aad694941c9c7f13',1,'WindowingFunction::triangular()'],['../structjuce_1_1dsp_1_1WindowingFunction.html#a0f93d68684da251f9aee7eb62ad7ff2aa23cb248be0d50ca0565105515ec0aa05',1,'juce::dsp::WindowingFunction::triangular()']]],
   ['twovaluehorizontal',['TwoValueHorizontal',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a2ce77695813bb317c2d1863d2e71213b',1,'Slider']]],
   ['twovaluevertical',['TwoValueVertical',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a7477c3163edc14c8740d464e523e5ac8',1,'Slider']]],
   ['typedeviceandtime',['typeDeviceAndTime',['../juce__BlocksProtocolDefinitions_8h.html#a4bafdbd4d494258c67ba3ca5b9fd55e1a3e248e1578017629642370b1a8c7b4b7',1,'juce_BlocksProtocolDefinitions.h']]]

@@ -148,6 +148,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad13516434d025d9427fab9ac9b208a77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter.html#ad13516434d025d9427fab9ac9b208a77">AudioFormatWriter</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *destStream, const <a class="el" href="classString.html">String</a> &amp;formatName, double <a class="el" href="classAudioFormatWriter.html#aafefbda90e2a58cb057e89e995decfd2">sampleRate</a>, unsigned int numberOfChannels, unsigned int <a class="el" href="classAudioFormatWriter.html#aa1c1c0accbc262067e2f9ad75d70d155">bitsPerSample</a>)</td></tr>
 <tr class="memdesc:ad13516434d025d9427fab9ac9b208a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object.  <a href="#ad13516434d025d9427fab9ac9b208a77">More...</a><br/></td></tr>
 <tr class="separator:ad13516434d025d9427fab9ac9b208a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80fc17df0e5d0d893abb11e0ce53c21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter.html#ae80fc17df0e5d0d893abb11e0ce53c21">AudioFormatWriter</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *destStream, const <a class="el" href="classString.html">String</a> &amp;formatName, double <a class="el" href="classAudioFormatWriter.html#aafefbda90e2a58cb057e89e995decfd2">sampleRate</a>, const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;audioChannelLayout, unsigned int <a class="el" href="classAudioFormatWriter.html#aa1c1c0accbc262067e2f9ad75d70d155">bitsPerSample</a>)</td></tr>
+<tr class="memdesc:ae80fc17df0e5d0d893abb11e0ce53c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object.  <a href="#ae80fc17df0e5d0d893abb11e0ce53c21">More...</a><br/></td></tr>
+<tr class="separator:ae80fc17df0e5d0d893abb11e0ce53c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -163,6 +166,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a876800b982bbe25e583633d3876a9a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter.html#a876800b982bbe25e583633d3876a9a02">usesFloatingPointData</a></td></tr>
 <tr class="memdesc:a876800b982bbe25e583633d3876a9a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if it's a floating-point format, false if it's fixed-point.  <a href="#a876800b982bbe25e583633d3876a9a02">More...</a><br/></td></tr>
 <tr class="separator:a876800b982bbe25e583633d3876a9a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd821aaba068593364888cb97c47a0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter.html#abfd821aaba068593364888cb97c47a0b">channelLayout</a></td></tr>
+<tr class="memdesc:abfd821aaba068593364888cb97c47a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The audio channel layout that the writer should use.  <a href="#abfd821aaba068593364888cb97c47a0b">More...</a><br/></td></tr>
+<tr class="separator:abfd821aaba068593364888cb97c47a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef1f96e051a7f40b69664636393bf5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter.html#aeef1f96e051a7f40b69664636393bf5f">output</a></td></tr>
 <tr class="memdesc:aeef1f96e051a7f40b69664636393bf5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output stream for use by subclasses.  <a href="#aeef1f96e051a7f40b69664636393bf5f">More...</a><br/></td></tr>
 <tr class="separator:aeef1f96e051a7f40b69664636393bf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +236,70 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">formatName</td><td>the description that will be returned by the <a class="el" href="classAudioFormatWriter.html#aea144b105a5d45fb91acfb484b0ff303" title="Returns a description of what type of format this is. ">getFormatName()</a> method </td></tr>
     <tr><td class="paramname">sampleRate</td><td>the sample rate to use - the base class just stores this value, it doesn't do anything with it </td></tr>
     <tr><td class="paramname">numberOfChannels</td><td>the number of channels to write - the base class just stores this value, it doesn't do anything with it </td></tr>
+    <tr><td class="paramname">bitsPerSample</td><td>the bit depth of the stream - the base class just stores this value, it doesn't do anything with it </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae80fc17df0e5d0d893abb11e0ce53c21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioFormatWriter::AudioFormatWriter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td>
+          <td class="paramname"><em>destStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>formatName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sampleRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>audioChannelLayout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitsPerSample</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destStream</td><td>the stream to write to - this will be deleted by this object when it is no longer needed </td></tr>
+    <tr><td class="paramname">formatName</td><td>the description that will be returned by the <a class="el" href="classAudioFormatWriter.html#aea144b105a5d45fb91acfb484b0ff303" title="Returns a description of what type of format this is. ">getFormatName()</a> method </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate to use - the base class just stores this value, it doesn't do anything with it </td></tr>
+    <tr><td class="paramname">channelLayout</td><td>the channel layout to use for the writer - the base class just stores this value, it doesn't do anything with it </td></tr>
     <tr><td class="paramname">bitsPerSample</td><td>the bit depth of the stream - the base class just stores this value, it doesn't do anything with it </td></tr>
   </table>
   </dd>
@@ -697,6 +767,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abfd821aaba068593364888cb97c47a0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> AudioFormatWriter::channelLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The audio channel layout that the writer should use. </p>
+
+</div>
+</div>
 <a class="anchor" id="aeef1f96e051a7f40b69664636393bf5f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -726,7 +818,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

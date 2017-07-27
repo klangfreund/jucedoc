@@ -4,6 +4,8 @@ var searchData=
   ['iircoefficients',['IIRCoefficients',['../classIIRCoefficients.html',1,'']]],
   ['iirfilter',['IIRFilter',['../classIIRFilter.html',1,'']]],
   ['iirfilteraudiosource',['IIRFilterAudioSource',['../classIIRFilterAudioSource.html',1,'']]],
+  ['iirpolyphaseallpassstructure',['IIRPolyphaseAllpassStructure',['../structjuce_1_1dsp_1_1FilterDesign_1_1IIRPolyphaseAllpassStructure.html',1,'juce::dsp::FilterDesign']]],
+  ['iirpolyphaseallpassstructure',['IIRPolyphaseAllpassStructure',['../structFilterDesign_1_1IIRPolyphaseAllpassStructure.html',1,'FilterDesign']]],
   ['image',['Image',['../classImage.html',1,'']]],
   ['imagebutton',['ImageButton',['../classImageButton.html',1,'']]],
   ['imagecache',['ImageCache',['../classImageCache.html',1,'']]],
@@ -32,9 +34,9 @@ var searchData=
   ['ipaddress',['IPAddress',['../classIPAddress.html',1,'']]],
   ['item',['Item',['../structPopupMenu_1_1Item.html',1,'PopupMenu']]],
   ['iterator',['Iterator',['../classMidiBuffer_1_1Iterator.html',1,'MidiBuffer']]],
+  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
   ['iterator',['Iterator',['../classListenerList_1_1Iterator.html',1,'ListenerList']]],
   ['iterator',['Iterator',['../structHashMap_1_1Iterator.html',1,'HashMap']]],
-  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
-  ['iterator',['Iterator',['../classPath_1_1Iterator.html',1,'Path']]],
-  ['iterator',['Iterator',['../classCodeDocument_1_1Iterator.html',1,'CodeDocument']]]
+  ['iterator',['Iterator',['../classCodeDocument_1_1Iterator.html',1,'CodeDocument']]],
+  ['iterator',['Iterator',['../classPath_1_1Iterator.html',1,'Path']]]
 ];

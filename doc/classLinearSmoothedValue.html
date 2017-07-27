@@ -115,6 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a3ba8bb37cd75cd07953577e3bd549aa3">getTargetValue</a> () const noexcept</td></tr>
 <tr class="memdesc:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target value towards which the smoothed value is currently moving.  <a href="#a3ba8bb37cd75cd07953577e3bd549aa3">More...</a><br/></td></tr>
 <tr class="separator:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1abd9fd441941920563c1edbdeeca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#abd1abd9fd441941920563c1edbdeeca2">applyGain</a> (FloatType *samples, int numSamples) noexcept</td></tr>
+<tr class="memdesc:abd1abd9fd441941920563c1edbdeeca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a linear smoothed gain to a stream of samples S[i] *= gain.  <a href="#abd1abd9fd441941920563c1edbdeeca2">More...</a><br/></td></tr>
+<tr class="separator:abd1abd9fd441941920563c1edbdeeca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55677de4af7e47e415206f87da7a4a04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a55677de4af7e47e415206f87da7a4a04">applyGain</a> (FloatType *samplesOut, const FloatType *samplesIn, int numSamples) noexcept</td></tr>
+<tr class="memdesc:a55677de4af7e47e415206f87da7a4a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes output as linear smoothed gain applied to a stream of samples.  <a href="#a55677de4af7e47e415206f87da7a4a04">More...</a><br/></td></tr>
+<tr class="separator:a55677de4af7e47e415206f87da7a4a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf539071a3cea702de1e39e711179ba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#aaf539071a3cea702de1e39e711179ba1">applyGain</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; buffer, int numSamples) noexcept</td></tr>
+<tr class="memdesc:aaf539071a3cea702de1e39e711179ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a linear smoothed gain to a buffer.  <a href="#aaf539071a3cea702de1e39e711179ba1">More...</a><br/></td></tr>
+<tr class="separator:aaf539071a3cea702de1e39e711179ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename FloatType&gt;<br/>
@@ -214,8 +223,15 @@ template&lt;typename FloatType&gt; </div>
 </div><div class="memdoc">
 
 <p>Reset to a new sample rate and ramp length. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sampleRate</td><td>The sampling rate </td></tr>
+    <tr><td class="paramname">rampLengthInSeconds</td><td>The duration of the ramp in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Referenced by <a class="el" href="classReverb.html#a98c91d03e4a2484123dc3d8f92896b86">Reverb::setSampleRate()</a>.</p>
+<p>Referenced by <a class="el" href="classOscillator.html#a1952454f74d72842697d46b05eb4e903">Oscillator&lt; SampleType &gt;::reset()</a>, and <a class="el" href="classReverb.html#a98c91d03e4a2484123dc3d8f92896b86">Reverb::setSampleRate()</a>.</p>
 
 </div>
 </div>
@@ -244,8 +260,14 @@ template&lt;typename FloatType&gt; </div>
 </div><div class="memdoc">
 
 <p>Set a new target value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>New target value </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Referenced by <a class="el" href="classReverb.html#af1b8609045ccadf2f6c4760f9a6d945a">Reverb::setParameters()</a>.</p>
+<p>Referenced by <a class="el" href="classOscillator.html#a1eac8a35129231dacded22b7771ee45c">Oscillator&lt; SampleType &gt;::setFrequency()</a>, and <a class="el" href="classReverb.html#af1b8609045ccadf2f6c4760f9a6d945a">Reverb::setParameters()</a>.</p>
 
 </div>
 </div>
@@ -273,8 +295,9 @@ template&lt;typename FloatType&gt; </div>
 </div><div class="memdoc">
 
 <p>Compute the next value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Smoothed value </dd></dl>
 
-<p>Referenced by <a class="el" href="classReverb.html#a04c43dc7b91788df75f434a957499e2d">Reverb::processMono()</a>, and <a class="el" href="classReverb.html#aba79aa61c18e8b3cf70dfd83fda7d099">Reverb::processStereo()</a>.</p>
+<p>Referenced by <a class="el" href="classLinearSmoothedValue.html#abd1abd9fd441941920563c1edbdeeca2">LinearSmoothedValue&lt; NumericType &gt;::applyGain()</a>, <a class="el" href="classOscillator.html#a1dc9ccdf171866772b88ad047724bbb6">Oscillator&lt; SampleType &gt;::process()</a>, <a class="el" href="classReverb.html#a04c43dc7b91788df75f434a957499e2d">Reverb::processMono()</a>, <a class="el" href="classOscillator.html#a023aecf8bbbb9ae8282668ea1787c805">Oscillator&lt; SampleType &gt;::processSample()</a>, and <a class="el" href="classReverb.html#aba79aa61c18e8b3cf70dfd83fda7d099">Reverb::processStereo()</a>.</p>
 
 </div>
 </div>
@@ -303,6 +326,8 @@ template&lt;typename FloatType&gt; </div>
 
 <p>Returns true if the current value is currently being interpolated. </p>
 
+<p>Referenced by <a class="el" href="classLinearSmoothedValue.html#abd1abd9fd441941920563c1edbdeeca2">LinearSmoothedValue&lt; NumericType &gt;::applyGain()</a>, and <a class="el" href="classOscillator.html#a1dc9ccdf171866772b88ad047724bbb6">Oscillator&lt; SampleType &gt;::process()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3ba8bb37cd75cd07953577e3bd549aa3"></a>
@@ -330,6 +355,144 @@ template&lt;typename FloatType&gt; </div>
 
 <p>Returns the target value towards which the smoothed value is currently moving. </p>
 
+<p>Referenced by <a class="el" href="classOscillator.html#a42e52bfc88aa67cfb5c315630c9f8c15">Oscillator&lt; SampleType &gt;::getFrequency()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd1abd9fd441941920563c1edbdeeca2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::applyGain </td>
+          <td>(</td>
+          <td class="paramtype">FloatType *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numSamples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies a linear smoothed gain to a stream of samples S[i] *= gain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>Pointer to a raw array of samples </td></tr>
+    <tr><td class="paramname">numSamples</td><td>Length of array of samples </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a55677de4af7e47e415206f87da7a4a04"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::applyGain </td>
+          <td>(</td>
+          <td class="paramtype">FloatType *&#160;</td>
+          <td class="paramname"><em>samplesOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FloatType *&#160;</td>
+          <td class="paramname"><em>samplesIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numSamples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes output as linear smoothed gain applied to a stream of samples. </p>
+<p>Sout[i] = Sin[i] * gain </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>Pointer to a raw array of samples </td></tr>
+    <tr><td class="paramname">numSamples</td><td>Length of sample array </td></tr>
+    <tr><td class="paramname">numSamples</td><td>Length of array of samples </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf539071a3cea702de1e39e711179ba1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::applyGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numSamples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies a linear smoothed gain to a buffer. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -339,7 +502,7 @@ template&lt;typename FloatType&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

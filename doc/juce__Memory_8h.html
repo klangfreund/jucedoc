@@ -124,6 +124,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aec283d962b8cbfef5e73f51129305913"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="juce__Memory_8h.html#aec283d962b8cbfef5e73f51129305913">addBytesToPointer</a> (Type *basePointer, IntegerType bytes) noexcept</td></tr>
 <tr class="memdesc:aec283d962b8cbfef5e73f51129305913"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy function which adds a number of bytes to any type of pointer and returns the result.  <a href="#aec283d962b8cbfef5e73f51129305913">More...</a><br/></td></tr>
 <tr class="separator:aec283d962b8cbfef5e73f51129305913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4503bc356769b69967532e23cb5595f1"><td class="memTemplParams" colspan="2">template&lt;typename Type , typename IntegerType &gt; </td></tr>
+<tr class="memitem:a4503bc356769b69967532e23cb5595f1"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="juce__Memory_8h.html#a4503bc356769b69967532e23cb5595f1">snapPointerToAlignment</a> (Type *basePointer, IntegerType alignmentBytes) noexcept</td></tr>
+<tr class="memdesc:a4503bc356769b69967532e23cb5595f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy function to round up a pointer to the nearest multiple of a given number of bytes.  <a href="#a4503bc356769b69967532e23cb5595f1">More...</a><br/></td></tr>
+<tr class="separator:a4503bc356769b69967532e23cb5595f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667897ead2d6fd7f9f682bd8f75da26a"><td class="memTemplParams" colspan="2">template&lt;typename Type1 , typename Type2 &gt; </td></tr>
 <tr class="memitem:a667897ead2d6fd7f9f682bd8f75da26a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="juce__Memory_8h.html#a667897ead2d6fd7f9f682bd8f75da26a">getAddressDifference</a> (Type1 *pointer1, Type2 *pointer2) noexcept</td></tr>
 <tr class="memdesc:a667897ead2d6fd7f9f682bd8f75da26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy function which returns the difference between any two pointers, in bytes.  <a href="#a667897ead2d6fd7f9f682bd8f75da26a">More...</a><br/></td></tr>
@@ -206,7 +210,7 @@ Functions</h2></td></tr>
 
 <p>Fills a block of memory with zeros. </p>
 
-<p>Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::clear()</a>, <a class="el" href="classHeapBlock.html#a658838e2b07f498b169c87c73040b509">HeapBlock&lt; ObjectClass * &gt;::clear()</a>, <a class="el" href="structAudioUnitHelpers.html#a502793d0d94d69f92ee0251a274eb48e">AudioUnitHelpers::clearAudioBuffer()</a>, <a class="el" href="classAudioFormatReader.html#a263fd3b6a51850da53fe57688f9ccb46">AudioFormatReader::clearSamplesBeyondAvailableLength()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+<p>Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::clear()</a>, <a class="el" href="classMatrix.html#a570ac6ecc61ae923d8541bba5077638e">Matrix&lt; ElementType &gt;::clear()</a>, <a class="el" href="classHeapBlock.html#a658838e2b07f498b169c87c73040b509">HeapBlock&lt; ObjectClass * &gt;::clear()</a>, <a class="el" href="structAudioUnitHelpers.html#a502793d0d94d69f92ee0251a274eb48e">AudioUnitHelpers::clearAudioBuffer()</a>, <a class="el" href="classAudioFormatReader.html#a263fd3b6a51850da53fe57688f9ccb46">AudioFormatReader::clearSamplesBeyondAvailableLength()</a>, <a class="el" href="classAudioUnitHelpers_1_1CoreAudioBufferList.html#aa06cbf692838e38fa57a45b2b3daca00">AudioUnitHelpers::CoreAudioBufferList::reset()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
 
 </div>
 </div>
@@ -296,7 +300,48 @@ template&lt;typename Type , typename IntegerType &gt; </div>
 <p>A handy function which adds a number of bytes to any type of pointer and returns the result. </p>
 <p>This can be useful to avoid casting pointers to a char* and back when you want to move them by a specific number of bytes, </p>
 
-<p>Referenced by <a class="el" href="classString.html#a9b85316a9a8ab9a4c7b771cb07e06ecd">String::appendCharPointer()</a>, <a class="el" href="classAudioData_1_1ConverterInstance.html#a07faa7a55572f1f7ae837a9c8cbb0e1b">AudioData::ConverterInstance&lt; SourceSampleType, DestSampleType &gt;::convertSamples()</a>, <a class="el" href="structAudioFormatReader_1_1ReadHelper.html#ab1158f4802796adedd47088948930c7d">AudioFormatReader::ReadHelper&lt; DestSampleType, SourceSampleType, SourceEndianness &gt;::read()</a>, <a class="el" href="classMemoryMappedAudioFormatReader.html#a24f42faedcc80c376351a60de55593e9">MemoryMappedAudioFormatReader::sampleToPointer()</a>, <a class="el" href="classMemoryMappedAudioFormatReader.html#add131d9db2dfcdba098c4cc489797bb8">MemoryMappedAudioFormatReader::scanMinAndMaxInterleaved()</a>, and <a class="el" href="structAudioFormatWriter_1_1WriteHelper.html#af9c774c70ec8e459e633be63c049c915">AudioFormatWriter::WriteHelper&lt; DestSampleType, SourceSampleType, DestEndianness &gt;::write()</a>.</p>
+<p>Referenced by <a class="el" href="classString.html#a9b85316a9a8ab9a4c7b771cb07e06ecd">String::appendCharPointer()</a>, <a class="el" href="classAudioBlock.html#aeb336de5d0dcc24a7d5a10b1caddbfd2">AudioBlock&lt; SampleType &gt;::AudioBlock()</a>, <a class="el" href="classAudioData_1_1ConverterInstance.html#a07faa7a55572f1f7ae837a9c8cbb0e1b">AudioData::ConverterInstance&lt; SourceSampleType, DestSampleType &gt;::convertSamples()</a>, <a class="el" href="structAudioFormatReader_1_1ReadHelper.html#ab1158f4802796adedd47088948930c7d">AudioFormatReader::ReadHelper&lt; DestSampleType, SourceSampleType, SourceEndianness &gt;::read()</a>, <a class="el" href="classMemoryMappedAudioFormatReader.html#a24f42faedcc80c376351a60de55593e9">MemoryMappedAudioFormatReader::sampleToPointer()</a>, <a class="el" href="classMemoryMappedAudioFormatReader.html#add131d9db2dfcdba098c4cc489797bb8">MemoryMappedAudioFormatReader::scanMinAndMaxInterleaved()</a>, and <a class="el" href="structAudioFormatWriter_1_1WriteHelper.html#af9c774c70ec8e459e633be63c049c915">AudioFormatWriter::WriteHelper&lt; DestSampleType, SourceSampleType, DestEndianness &gt;::write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4503bc356769b69967532e23cb5595f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , typename IntegerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type* snapPointerToAlignment </td>
+          <td>(</td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>basePointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerType&#160;</td>
+          <td class="paramname"><em>alignmentBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A handy function to round up a pointer to the nearest multiple of a given number of bytes. </p>
+<p>alignmentBytes must be a power of two. </p>
+
+<p>Referenced by <a class="el" href="classAudioBlock.html#aeb336de5d0dcc24a7d5a10b1caddbfd2">AudioBlock&lt; SampleType &gt;::AudioBlock()</a>, <a class="el" href="structSIMDRegister.html#a1c48b5e542e3317652a275394ed716c0">SIMDRegister&lt; Type &gt;::getNextSIMDAlignedPtr()</a>, and <a class="el" href="classFIR_1_1Filter.html#ae46879e5b0b30f52ebfc77416a17942b">FIR::Filter&lt; SampleType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +478,7 @@ template&lt;typename Type &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

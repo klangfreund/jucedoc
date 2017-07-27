@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r',['r',['../structFFT_1_1Complex.html#aacf60a9d5fb15df15ba49171e337bf90',1,'FFT::Complex']]],
+  ['r2',['R2',['../structjuce_1_1dsp_1_1StateVariableFilter_1_1Parameters.html#ae51933bd43c16fdb768dfc2a44dbf726',1,'juce::dsp::StateVariableFilter::Parameters::R2()'],['../structStateVariableFilter_1_1Parameters.html#a1d3319e70497e230708dfade6c81521e',1,'StateVariableFilter::Parameters::R2()']]],
   ['radial',['radial',['../classDrawableShape_1_1FillAndStrokeState.html#a35b2d94ae6a13721f581b582400007bb',1,'DrawableShape::FillAndStrokeState']]],
   ['radius',['radius',['../structVstIndividualSpeakerInfo.html#a87356e6e9f3144fb7cb38f946adbd283',1,'VstIndividualSpeakerInfo::radius()'],['../structDropShadow.html#a96cbbc37579f9a2627f342a7dc6be568',1,'DropShadow::radius()']]],
   ['range',['range',['../classAudioParameterFloat.html#a7e860466dbc1319bc064cd6e7db382e3',1,'AudioParameterFloat::range()'],['../structBlock_1_1ConfigMetaData.html#a5e83f923a89ddf03a301efe06016c7ea',1,'Block::ConfigMetaData::range()'],['../structjuce_1_1Block_1_1ConfigMetaData.html#ab320b20b82da017491ad06d9aa1af651',1,'juce::Block::ConfigMetaData::range()'],['../classAttributedString_1_1Attribute.html#ab35a1ef10e233d3d0125b01baf4e086e',1,'AttributedString::Attribute::range()']]],

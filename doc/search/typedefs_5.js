@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['implementationfunction',['ImplementationFunction',['../structjuce_1_1littlefoot_1_1NativeFunction.html#acea89a2c3c1a2002e2e2f66a031910dc',1,'juce::littlefoot::NativeFunction::ImplementationFunction()'],['../structlittlefoot_1_1NativeFunction.html#aa82b9d379e798cb8387f376455ff17db',1,'littlefoot::NativeFunction::ImplementationFunction()']]],
-  ['index',['index',['../juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792',1,'juce_VSTInterface.h']]],
-  ['int16',['int16',['../namespacejuce_1_1littlefoot.html#adb3d0480a8e1cb35f84c9f701f975675',1,'juce::littlefoot::int16()'],['../namespacelittlefoot.html#ada240f433c50e81ac698bbf32d6a2c10',1,'littlefoot::int16()'],['../juce__MathsFunctions_8h.html#a259fa4834387bd68627ddf37bb3ebdb9',1,'int16():&#160;juce_MathsFunctions.h']]],
-  ['int32',['int32',['../namespacejuce_1_1littlefoot.html#a603051c551bb1417349684d6e4b24290',1,'juce::littlefoot::int32()'],['../namespacelittlefoot.html#afc5264c0714df002ef584815c72b219e',1,'littlefoot::int32()'],['../juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481',1,'int32():&#160;juce_MathsFunctions.h']]],
-  ['int64',['int64',['../juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df',1,'juce_MathsFunctions.h']]],
-  ['int8',['int8',['../namespacejuce_1_1littlefoot.html#a407d5403ba3f14b9a4c4f2a3e5dc8b3c',1,'juce::littlefoot::int8()'],['../namespacelittlefoot.html#a0e7499324fa7198411b83aec5a9581e4',1,'littlefoot::int8()'],['../juce__MathsFunctions_8h.html#a1b956fe1df85f3c132b21edb4e116458',1,'int8():&#160;juce_MathsFunctions.h']]],
-  ['itemarray',['ItemArray',['../classSelectedItemSet.html#aa3cd462d404a5449eab0f85f04a08187',1,'SelectedItemSet']]],
-  ['itemtype',['ItemType',['../classSelectedItemSet.html#adac8d78df1c308ca17aa9cbfada787fa',1,'SelectedItemSet']]]
+  ['fircoefficientsptr',['FIRCoefficientsPtr',['../structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006',1,'FilterDesign::FIRCoefficientsPtr()'],['../structjuce_1_1dsp_1_1FilterDesign.html#a3de01789632229d0288573e8af0164b1',1,'juce::dsp::FilterDesign::FIRCoefficientsPtr()']]],
+  ['firmwareupdateackcode',['FirmwareUpdateACKCode',['../juce__BlocksProtocolDefinitions_8h.html#ae18c12e82c1ce77afe594fb7478a56ec',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['firmwareupdateackdetail',['FirmwareUpdateACKDetail',['../juce__BlocksProtocolDefinitions_8h.html#ae58400989aa76953808b4db8b36b5df9',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['firmwareupdatepacketsize',['FirmwareUpdatePacketSize',['../juce__BlocksProtocolDefinitions_8h.html#a14e9615d6d3ff3888ce0689380fe92f9',1,'juce_BlocksProtocolDefinitions.h']]],
+  ['floattype',['FloatType',['../classPoint.html#a81e5862bbe44912a39cb87042bea7c5b',1,'Point']]],
+  ['formaterrorhandler',['FormatErrorHandler',['../classjuce_1_1OSCReceiver.html#a6b54ac3dbe870fa6bd6ff10f3d645b06',1,'juce::OSCReceiver::FormatErrorHandler()'],['../classOSCReceiver.html#a503681147b58b945514651171086bf84',1,'OSCReceiver::FormatErrorHandler()']]],
+  ['functionid',['FunctionID',['../namespacejuce_1_1littlefoot.html#afcba142243bbec868407a7c3db0bab73',1,'juce::littlefoot::FunctionID()'],['../namespacelittlefoot.html#a5f139c5c9fd4fc79b8fd203ce4725338',1,'littlefoot::FunctionID()']]]
 ];

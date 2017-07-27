@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['value',['value',['../structSIMDInternal_1_1Log2Helper.html#aca0c66cd0a8f0e8e73ae205d566939f8ac2159e670d4c36a8bb4c6466aeef7467',1,'SIMDInternal::Log2Helper::value()'],['../structSIMDInternal_1_1Log2Helper_3_011_01_4.html#aa2b37acd14dcd51931c17e627ff964aaa5ec432b6be7c49def4ecb87926438f85',1,'SIMDInternal::Log2Helper&lt; 1 &gt;::value()']]],
   ['vbvstscanner',['VBVSTScanner',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a8e958c465a06a9ea17d95f02b8735580',1,'PluginHostType']]],
   ['velocitydrag',['velocityDrag',['../classSlider.html#a42fd96ac0f5dca7e6942022c9a75cbdeab6cd67202d007534532a43f4eeeef153',1,'Slider']]],
   ['velocitysensitivity',['velocitySensitivity',['../classControlButton.html#a891776295057786f99f14631b1aa2794ab040931e32a7b97779637fccdd82c128',1,'ControlButton::velocitySensitivity()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832abf9a03d2fa4df37a71775c725e7353cf',1,'juce::ControlButton::velocitySensitivity()'],['../juce__BlocksProtocolDefinitions_8h.html#a6f92f2ffae18d56f68c5c4987e081ea3a313445ac04a10bd82a8e6b573087f035',1,'velocitySensitivity():&#160;juce_BlocksProtocolDefinitions.h']]],

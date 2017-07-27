@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['hadarmard',['hadarmard',['../classjuce_1_1dsp_1_1Matrix.html#a10948fb248c9da2e4d2f1aeeca9feb19',1,'juce::dsp::Matrix::hadarmard(const Matrix &amp;other) noexcept'],['../classjuce_1_1dsp_1_1Matrix.html#a431293e2565c1e475b4d866a6fc67ded',1,'juce::dsp::Matrix::hadarmard(const Matrix &amp;a, const Matrix &amp;b)'],['../classMatrix.html#ad6127a5497b9c307ae2673cff2e162ad',1,'Matrix::hadarmard(const Matrix &amp;other) noexcept'],['../classMatrix.html#a655aea9fc1a17b1d79a4813a0fe88fa7',1,'Matrix::hadarmard(const Matrix &amp;a, const Matrix &amp;b)']]],
   ['haderror',['hadError',['../classURL_1_1DownloadTask.html#a8dc47e68b23530361966dd3daff05b9e',1,'URL::DownloadTask']]],
   ['handleackfromdevice',['handleACKFromDevice',['../structjuce_1_1littlefoot_1_1LittleFootRemoteHeap.html#ae33ef7eb7dc3af932c6c14dbf9fe89fb',1,'juce::littlefoot::LittleFootRemoteHeap::handleACKFromDevice()'],['../structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01',1,'littlefoot::LittleFootRemoteHeap::handleACKFromDevice()']]],
   ['handleaftertouch',['handleAftertouch',['../classSynthesiser.html#ae92ed64d170257574b9009b3384bde01',1,'Synthesiser']]],
@@ -65,6 +66,7 @@ var searchData=
   ['handleuserclosingwindow',['handleUserClosingWindow',['../classComponentPeer.html#a13b9987266c93f3e73148c7c3e83da64',1,'ComponentPeer']]],
   ['handleversion',['handleVersion',['../structHostPacketDecoder.html#adcf65caf7c48ce53f1fc83f2b970ea03',1,'HostPacketDecoder']]],
   ['handlevstmanufacturerspecific',['handleVstManufacturerSpecific',['../structVSTCallbackHandler.html#a7158d63b0c27896792191d1598a740d5',1,'VSTCallbackHandler']]],
+  ['hankel',['hankel',['../classjuce_1_1dsp_1_1Matrix.html#ad7ab7c972048f015f54f29733bb39981',1,'juce::dsp::Matrix::hankel()'],['../classMatrix.html#a7de8298c3f026b292102d720f52f3849',1,'Matrix::hankel()']]],
   ['has3dnow',['has3DNow',['../classSystemStats.html#a1879ae7e393b289d3f5a62f673bfc031',1,'SystemStats']]],
   ['hasalphachannel',['hasAlphaChannel',['../classImage.html#abb862a4402074ef0dc0382e2c6267a32',1,'Image']]],
   ['hasattribute',['hasAttribute',['../classXmlElement.html#a261f32c557ef6c15b20ebe622ed8aec1',1,'XmlElement']]],

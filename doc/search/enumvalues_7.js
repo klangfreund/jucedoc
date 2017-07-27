@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['hamming',['hamming',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5cab48298fa086f23c0bce8615bcd11a59f',1,'WindowingFunction::hamming()'],['../structjuce_1_1dsp_1_1WindowingFunction.html#a0f93d68684da251f9aee7eb62ad7ff2aa1052b0a19ab84afa99e619cc6cfd152b',1,'juce::dsp::WindowingFunction::hamming()']]],
+  ['hann',['hann',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5ca23fe9f09d70e19f0b5f056ee139db5f2',1,'WindowingFunction::hann()'],['../structjuce_1_1dsp_1_1WindowingFunction.html#a0f93d68684da251f9aee7eb62ad7ff2aaf1a74cca3d108fe6f733c508ae1e2bae',1,'juce::dsp::WindowingFunction::hann()']]],
   ['headertextcolourid',['headerTextColourId',['../classPopupMenu.html#a0888091ddab0f599bb9d2fab28153f6ba964cf665c7c5a26b63866e537e9bfed0',1,'PopupMenu']]],
   ['height',['height',['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65baeb31efdb32a2c853ec60f5ad453afbdd',1,'RelativeCoordinate::StandardStrings']]],
   ['hiddenfromkeyeditor',['hiddenFromKeyEditor',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72a626b4f9f1aa2bd0761b89b376063d254',1,'ApplicationCommandInfo']]],
@@ -10,6 +12,7 @@ var searchData=
   ['highlightedfill',['highlightedFill',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4add67f73730cdcc64b275078f33b34734',1,'LookAndFeel_V4::ColourScheme']]],
   ['highlightedtext',['highlightedText',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4a0b1fc486b4d9d616f88495ba6b34d748',1,'LookAndFeel_V4::ColourScheme']]],
   ['highlightedtextcolourid',['highlightedTextColourId',['../classPopupMenu.html#a0888091ddab0f599bb9d2fab28153f6ba1ec81989e7186fa2dff6b57bb057f834',1,'PopupMenu::highlightedTextColourId()'],['../classTextEditor.html#aa805220923c93cd808a92fff0e3fb71da85b3b328db89b6946cda395dae78ebad',1,'TextEditor::highlightedTextColourId()']]],
+  ['highpass',['highPass',['../structjuce_1_1dsp_1_1StateVariableFilter_1_1Parameters.html#ae910266e97cb673bd75a30b134153e93a6fd1c9967f998287b197099caa57bb6d',1,'juce::dsp::StateVariableFilter::Parameters::highPass()'],['../structStateVariableFilter_1_1Parameters.html#a07be0077b3b460c5a19ee57e426c6afda6fd1c9967f998287b197099caa57bb6d',1,'StateVariableFilter::Parameters::highPass()']]],
   ['highpriority',['HighPriority',['../classProcess.html#ad7b18ceb7a8c0a2b6b71856894feb6efaa72f09a6d0e30d394c6fe7095372a711',1,'Process']]],
   ['highresamplingquality',['highResamplingQuality',['../classGraphics.html#a5da218e649d1b5ac3d67443ae77caf87ae3c4b3cdf28f0aefc035977522675e8e',1,'Graphics']]],
   ['hollow',['hollow',['../structjuce_1_1DrumPadGridProgram_1_1GridFill.html#a99d8d8f3ea5860da1b5fbfffa81793b9a04dbd6157f727391fcd3a311dae69c91',1,'juce::DrumPadGridProgram::GridFill::hollow()'],['../structDrumPadGridProgram_1_1GridFill.html#ae8c97bf48e8f16e99118f2d12dab6948a52fd84059bd308d6a783b09b0d1b4af3',1,'DrumPadGridProgram::GridFill::hollow()']]],

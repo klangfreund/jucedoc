@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['i',['i',['../structFFT_1_1Complex.html#a19a9cf233a26fc6c1abaed083222de4a',1,'FFT::Complex']]],
   ['id3album',['id3album',['../classOggVorbisAudioFormat.html#ab00862fe52a02021c8f34df09002a7e7',1,'OggVorbisAudioFormat']]],
   ['id3artist',['id3artist',['../classOggVorbisAudioFormat.html#ac88645d7fd07e48cd71ee8ad7b559e95',1,'OggVorbisAudioFormat']]],
   ['id3comment',['id3comment',['../classOggVorbisAudioFormat.html#a9bcec7c7659b16b1f2852a10e4a93b4c',1,'OggVorbisAudioFormat']]],
@@ -42,6 +41,7 @@ var searchData=
   ['is14bitvalue',['is14BitValue',['../structMidiRPNMessage.html#a92cdc002bd727e2eb703e8e8b8683cfb',1,'MidiRPNMessage']]],
   ['isactivatedbydefault',['isActivatedByDefault',['../structAudioProcessor_1_1BusProperties.html#a9f1acd435666c510282b378fc805d199',1,'AudioProcessor::BusProperties']]],
   ['isactive',['isActive',['../structBlock_1_1ConfigMetaData.html#a75c5b3b45d4b85b98c93710d87637b3c',1,'Block::ConfigMetaData::isActive()'],['../structBlockConfigManager_1_1ConfigDescription.html#ad19bb37cb82aeaff7307b1cd5ff4f226',1,'BlockConfigManager::ConfigDescription::isActive()'],['../structjuce_1_1Block_1_1ConfigMetaData.html#a1e72b5f48a7610d996e528845fbaeedd',1,'juce::Block::ConfigMetaData::isActive()']]],
+  ['isbypassed',['isBypassed',['../structjuce_1_1dsp_1_1ProcessContextReplacing.html#ab330cb2e7b8920ab90eeb7852a4b4038',1,'juce::dsp::ProcessContextReplacing::isBypassed()'],['../structjuce_1_1dsp_1_1ProcessContextNonReplacing.html#ade7142ebfa4246066e103f0f1d432019',1,'juce::dsp::ProcessContextNonReplacing::isBypassed()'],['../structProcessContextReplacing.html#a11cc0404742c342f4ff167452673fe66',1,'ProcessContextReplacing::isBypassed()'],['../structProcessContextNonReplacing.html#a2447c129ed7e24e56032a47d4ef24f0c',1,'ProcessContextNonReplacing::isBypassed()']]],
   ['isdirectory',['isDirectory',['../structDirectoryContentsList_1_1FileInfo.html#a493b51197cd6cc4042d9c8b13a0dbdab',1,'DirectoryContentsList::FileInfo']]],
   ['isenabled',['isEnabled',['../structPopupMenu_1_1Item.html#ae5d0de64db79f723975d6b02cab10d98',1,'PopupMenu::Item']]],
   ['ishighlighted',['isHighlighted',['../structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html#a7f442332239058eabeaeaa73be17889a',1,'AudioProcessorEditor::ParameterControlHighlightInfo']]],

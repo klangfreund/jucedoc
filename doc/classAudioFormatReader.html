@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a088e8f4f625a23a4fd0234eec16ec53a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#a088e8f4f625a23a4fd0234eec16ec53a">searchForLevel</a> (<a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> startSample, <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> numSamplesToSearch, double magnitudeRangeMinimum, double magnitudeRangeMaximum, int minimumConsecutiveSamples)</td></tr>
 <tr class="memdesc:a088e8f4f625a23a4fd0234eec16ec53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the source looking for a sample whose magnitude is in a specified range.  <a href="#a088e8f4f625a23a4fd0234eec16ec53a">More...</a><br/></td></tr>
 <tr class="separator:a088e8f4f625a23a4fd0234eec16ec53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2cfd04dfd8bd86b84e5a7804e96d05"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#a4a2cfd04dfd8bd86b84e5a7804e96d05">getChannelLayout</a> ()</td></tr>
+<tr class="memdesc:a4a2cfd04dfd8bd86b84e5a7804e96d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel layout of the audio stream.  <a href="#a4a2cfd04dfd8bd86b84e5a7804e96d05">More...</a><br/></td></tr>
+<tr class="separator:a4a2cfd04dfd8bd86b84e5a7804e96d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8447eed7f81e0b931248a8eb98ed106f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#a8447eed7f81e0b931248a8eb98ed106f">readSamples</a> (int **destSamples, int numDestChannels, int startOffsetInDestBuffer, <a class="el" href="juce__MathsFunctions_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> startSampleInFile, int numSamples)=0</td></tr>
 <tr class="memdesc:a8447eed7f81e0b931248a8eb98ed106f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses must implement this method to perform the low-level read operation.  <a href="#a8447eed7f81e0b931248a8eb98ed106f">More...</a><br/></td></tr>
 <tr class="separator:a8447eed7f81e0b931248a8eb98ed106f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -583,6 +586,31 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4a2cfd04dfd8bd86b84e5a7804e96d05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> AudioFormatReader::getChannelLayout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the channel layout of the audio stream. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8447eed7f81e0b931248a8eb98ed106f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -820,7 +848,7 @@ Static Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a507f233bee0df2059b74d032460de870"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#a507f233bee0df2059b74d032460de870">isCompressed</a> ()</td></tr>
 <tr class="memdesc:a507f233bee0df2059b74d032460de870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the format uses compressed data.  <a href="#a507f233bee0df2059b74d032460de870">More...</a><br/></td></tr>
 <tr class="separator:a507f233bee0df2059b74d032460de870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a78fd9209eba29550871e5de314121"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#a76a78fd9209eba29550871e5de314121">isChannelLayoutSupported</a> (const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;channelSet)</td></tr>
+<tr class="memdesc:a76a78fd9209eba29550871e5de314121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel layout is supported by this format.  <a href="#a76a78fd9209eba29550871e5de314121">More...</a><br/></td></tr>
+<tr class="separator:a76a78fd9209eba29550871e5de314121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5140c58d4c58d5949a0792604a976c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classStringArray.html">StringArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#af5140c58d4c58d5949a0792604a976c8">getQualityOptions</a> ()</td></tr>
 <tr class="memdesc:af5140c58d4c58d5949a0792604a976c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of different qualities that can be used when writing.  <a href="#af5140c58d4c58d5949a0792604a976c8">More...</a><br/></td></tr>
 <tr class="separator:af5140c58d4c58d5949a0792604a976c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae93a8144520e5bd2902a5daa97cc443b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAudioFormatWriter.html">AudioFormatWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#ae93a8144520e5bd2902a5daa97cc443b">createWriterFor</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *streamToWriteTo, double sampleRateToUse, unsigned int numberOfChannels, int bitsPerSample, const <a class="el" href="classStringPairArray.html">StringPairArray</a> &amp;metadataValues, int qualityOptionIndex)=0</td></tr>
 <tr class="memdesc:ae93a8144520e5bd2902a5daa97cc443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create an object that can write to a stream with this audio format.  <a href="#ae93a8144520e5bd2902a5daa97cc443b">More...</a><br/></td></tr>
 <tr class="separator:ae93a8144520e5bd2902a5daa97cc443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f07da28b7e50170bdcaf81083dab53"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAudioFormatWriter.html">AudioFormatWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormat.html#a08f07da28b7e50170bdcaf81083dab53">createWriterFor</a> (<a class="el" href="classOutputStream.html">OutputStream</a> *streamToWriteTo, double sampleRateToUse, const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;channelLayout, int bitsPerSample, const <a class="el" href="classStringPairArray.html">StringPairArray</a> &amp;metadataValues, int qualityOptionIndex)</td></tr>
+<tr class="memdesc:a08f07da28b7e50170bdcaf81083dab53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create an object that can write to a stream with this audio format.  <a href="#a08f07da28b7e50170bdcaf81083dab53">More...</a><br/></td></tr>
+<tr class="separator:a08f07da28b7e50170bdcaf81083dab53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -483,6 +489,34 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a76a78fd9209eba29550871e5de314121"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AudioFormat::isChannelLayoutSupported </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the channel layout is supported by this format. </p>
+
+<p>Reimplemented in <a class="el" href="classWavAudioFormat.html#ad6f06db106e233f34f5e71c6f7d284b2">WavAudioFormat</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af5140c58d4c58d5949a0792604a976c8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -690,6 +724,82 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a08f07da28b7e50170bdcaf81083dab53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classAudioFormatWriter.html">AudioFormatWriter</a>* AudioFormat::createWriterFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td>
+          <td class="paramname"><em>streamToWriteTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sampleRateToUse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelLayout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bitsPerSample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classStringPairArray.html">StringPairArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>metadataValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>qualityOptionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to create an object that can write to a stream with this audio format. </p>
+<p>The writer object that is returned can be used to write to the stream, and should then be deleted by the caller.</p>
+<p>If the stream can't be created for some reason (e.g. the parameters passed in here aren't suitable), this will return nullptr.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamToWriteTo</td><td>the stream that the data will go to - this will be deleted by the <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object when it's no longer needed. If no <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> can be created by this method, the stream will NOT be deleted, so that the caller can re-use it to try to open a different format, etc </td></tr>
+    <tr><td class="paramname">sampleRateToUse</td><td>the sample rate for the file, which must be one of the ones returned by <a class="el" href="classAudioFormat.html#a2ed8c044df0018c8efea32798c244354" title="Returns a set of sample rates that the format can read and write. ">getPossibleSampleRates()</a> </td></tr>
+    <tr><td class="paramname">channelLayout</td><td>the channel layout for the file. Use isChannelLayoutSupported to check if the writer supports this layout. </td></tr>
+    <tr><td class="paramname">bitsPerSample</td><td>the bits per sample to use - this must be one of the values returned by <a class="el" href="classAudioFormat.html#a6dc00e2fac5bdff1ae391b03d8be302c" title="Returns a set of bit depths that the format can read and write. ">getPossibleBitDepths()</a> </td></tr>
+    <tr><td class="paramname">metadataValues</td><td>a set of metadata values that the writer should try to write to the stream. Exactly what these are depends on the format, and the subclass doesn't actually have to do anything with them if it doesn't want to. Have a look at the specific format implementation classes to see possible values that can be used </td></tr>
+    <tr><td class="paramname">qualityOptionIndex</td><td>the index of one of compression qualities returned by the <a class="el" href="classAudioFormat.html#af5140c58d4c58d5949a0792604a976c8" title="Returns a list of different qualities that can be used when writing. ">getQualityOptions()</a> method. If there aren't any quality options for this format, just pass 0 in this parameter, as it'll be ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classWavAudioFormat.html#af252fe3c9ab9d924e420f36d0916b088">WavAudioFormat</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__AudioFormat_8h.html">juce_AudioFormat.h</a></li>
 </ul>
@@ -697,7 +807,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

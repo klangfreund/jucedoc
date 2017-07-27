@@ -101,8 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <div class="center">
   <img src="classAudioChannelSet.png" usemap="#AudioChannelSet_map" alt=""/>
   <map id="AudioChannelSet_map" name="AudioChannelSet_map">
-<area href="structAudioUnitHelpers_1_1StreamOrder.html" alt="AudioUnitHelpers::StreamOrder" shape="rect" coords="0,56,189,80"/>
-<area href="structSpeakerMappings.html" alt="SpeakerMappings" shape="rect" coords="199,56,388,80"/>
+<area href="structSpeakerMappings.html" alt="SpeakerMappings" shape="rect" coords="0,56,114,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -192,6 +191,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85c5ed0b33bc20e6861d3bd669f0d63e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#a85c5ed0b33bc20e6861d3bd669f0d63e">intersect</a> (const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;other)</td></tr>
 <tr class="memdesc:a85c5ed0b33bc20e6861d3bd669f0d63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intersect two channel layouts.  <a href="#a85c5ed0b33bc20e6861d3bd669f0d63e">More...</a><br/></td></tr>
 <tr class="separator:a85c5ed0b33bc20e6861d3bd669f0d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca53119943d3231559ae4d9039a2cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#adca53119943d3231559ae4d9039a2cb8">getWaveChannelMask</a> () const noexcept</td></tr>
+<tr class="memdesc:adca53119943d3231559ae4d9039a2cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a WAVEFORMATEXTENSIBLE channelMask representation (typically used in .wav files) of the receiver.  <a href="#adca53119943d3231559ae4d9039a2cb8">More...</a><br/></td></tr>
+<tr class="separator:adca53119943d3231559ae4d9039a2cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b8b4bbcc371b09cd23953227244191"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#a04b8b4bbcc371b09cd23953227244191">operator==</a> (const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;) const noexcept</td></tr>
 <tr class="separator:a04b8b4bbcc371b09cd23953227244191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8752cb942f70251af2cb8206e8bbede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#ae8752cb942f70251af2cb8206e8bbede">operator!=</a> (const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;) const noexcept</td></tr>
@@ -313,6 +315,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a335e98878c7e1e6ab280fe96e30a6189"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#a335e98878c7e1e6ab280fe96e30a6189">fromAbbreviatedString</a> (const <a class="el" href="classString.html">String</a> &amp;set)</td></tr>
 <tr class="memdesc:a335e98878c7e1e6ab280fe96e30a6189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> from a string returned by getSpeakerArrangementAsString.  <a href="#a335e98878c7e1e6ab280fe96e30a6189">More...</a><br/></td></tr>
 <tr class="separator:a335e98878c7e1e6ab280fe96e30a6189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48a760d60d390c58f387f24ca14a788"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> <br class="typebreak"/>
+<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#af48a760d60d390c58f387f24ca14a788">channelSetWithChannels</a> (const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">ChannelType</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:af48a760d60d390c58f387f24ca14a788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a channel set for a list of channel types.  <a href="#af48a760d60d390c58f387f24ca14a788">More...</a><br/></td></tr>
+<tr class="separator:af48a760d60d390c58f387f24ca14a788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97cdd3f0d62b669f3f0da1c32401d89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> <br class="typebreak"/>
+<a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioChannelSet.html#af97cdd3f0d62b669f3f0da1c32401d89">fromWaveChannelMask</a> (<a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> dwChannelMask)</td></tr>
+<tr class="memdesc:af97cdd3f0d62b669f3f0da1c32401d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an <a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> from a WAVEFORMATEXTENSIBLE channelMask (typically used in .wav files).  <a href="#af97cdd3f0d62b669f3f0da1c32401d89">More...</a><br/></td></tr>
+<tr class="separator:af97cdd3f0d62b669f3f0da1c32401d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a set of audio channel types. </p>
@@ -464,7 +474,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a zero-channel set which can be used to indicate that a bus is disabled. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, <a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">AudioUnitHelpers::setBusesLayout()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, <a class="el" href="structAudioUnitHelpers.html#ad1e17712bdffc5d7a180c09d561329fa">AudioUnitHelpers::setBusesLayout()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -492,7 +502,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a one-channel mono set (centre). </p>
 <p>Is equivalent to: kMonoAAX (VST), AAX_eStemFormat_Mono (AAX), kAudioChannelLayoutTag_Mono (CoreAudio) </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -520,7 +530,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a set containing a stereo set (left, right). </p>
 <p>Is equivalent to: kStereo (VST), AAX_eStemFormat_Stereo (AAX), kAudioChannelLayoutTag_Stereo (CoreAudio) </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +559,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k30Cine (VST), AAX_eStemFormat_LCR (AAX), kAudioChannelLayoutTag_MPEG_3_0_A (CoreAudio)</p>
 <p>This format is referred to as "LRC" in Cubase. This format is referred to as "LCR" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -578,7 +588,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k30Music (VST), n/a (AAX), kAudioChannelLayoutTag_ITU_2_1 (CoreAudio)</p>
 <p>This format is referred to as "LRS" in Cubase. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -607,7 +617,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k40Cine (VST), AAX_eStemFormat_LCRS (AAX), kAudioChannelLayoutTag_MPEG_4_0_A (CoreAudio)</p>
 <p>This format is referred to as "LCRS (Pro Logic)" in Logic Pro. This format is referred to as "LRCS" in Cubase. This format is referred to as "LCRS" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -636,7 +646,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k50 (VST), AAX_eStemFormat_5_0 (AAX), kAudioChannelLayoutTag_MPEG_5_0_A (CoreAudio)</p>
 <p>This format is referred to as "5.0" in Cubase. This format is referred to as "5.0" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -665,7 +675,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k51 (VST), AAX_eStemFormat_5_1 (AAX), kAudioChannelLayoutTag_MPEG_5_1_A (CoreAudio)</p>
 <p>This format is referred to as "5.1 (ITU 775)" in Logic Pro. This format is referred to as "5.1" in Cubase. This format is referred to as "5.1" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -694,7 +704,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k60Cine (VST), AAX_eStemFormat_6_0 (AAX), kAudioChannelLayoutTag_AudioUnit_6_0 (CoreAudio)</p>
 <p>Logic Pro incorrectly uses this for the surround format labeled "6.1 (ES/EX)". This format is referred to as "6.0 Cine" in Cubase. This format is referred to as "6.0" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -723,7 +733,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k61Cine (VST), AAX_eStemFormat_6_1 (AAX), kAudioChannelLayoutTag_MPEG_6_1_A (CoreAudio)</p>
 <p>This format is referred to as "6.1" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -752,7 +762,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k60Music (VST), n/a (AAX), kAudioChannelLayoutTag_DTS_6_0_A (CoreAudio)</p>
 <p>This format is referred to as "6.0 Music" in Cubase. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -780,7 +790,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a set for a 6.0 Music surround setup (left, right, leftSurround, rightSurround, leftSurroundSide, rightSurroundSide, LFE). </p>
 <p>Is equivalent to: k61Music (VST), n/a (AAX), kAudioChannelLayoutTag_DTS_6_1_A (CoreAudio) </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +819,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k70Music (VST), AAX_eStemFormat_7_0_DTS (AAX), kAudioChannelLayoutTag_AudioUnit_7_0 (CoreAudio)</p>
 <p>This format is referred to as "7.0" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -838,7 +848,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k70Cine (VST), AAX_eStemFormat_7_0_SDDS (AAX), kAudioChannelLayoutTag_AudioUnit_7_0_Front (CoreAudio)</p>
 <p>This format is referred to as "7.0 SDDS" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -867,7 +877,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k71CineSideFill (VST), AAX_eStemFormat_7_1_DTS (AAX), kAudioChannelLayoutTag_MPEG_7_1_C/kAudioChannelLayoutTag_ITU_3_4_1 (CoreAudio)</p>
 <p>This format is referred to as "7.1 (3/4.1)" in Logic Pro. This format is referred to as "7.1" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -896,7 +906,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k71Cine (VST), AAX_eStemFormat_7_1_SDDS (AAX), kAudioChannelLayoutTag_MPEG_7_1_A (CoreAudio)</p>
 <p>This format is referred to as "7.1 (SDDS)" in Logic Pro. This format is referred to as "7.1 SDDS" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -923,8 +933,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a set for ambisonic surround setups (ambisonicW, ambisonicX, ambisonicY, ambisonicZ). </p>
 <p>Is equivalent to: kBFormat (VST), n/a (AAX), kAudioChannelLayoutTag_Ambisonic_B_Format (CoreAudio) </p>
-
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, and <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>.</p>
 
 </div>
 </div>
@@ -953,7 +961,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Is equivalent to: k40Music (VST), AAX_eStemFormat_Quad (AAX), kAudioChannelLayoutTag_Quadraphonic (CoreAudio)</p>
 <p>This format is referred to as "Quadraphonic" in Logic Pro. This format is referred to as "Quadro" in Cubase. This format is referred to as "Quad" in Pro Tools. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>, <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -981,8 +989,6 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a set for pentagonal surround setup (left, right, centre, leftSurroundRear, rightSurroundRear). </p>
 <p>Is equivalent to: n/a (VST), n/a (AAX), kAudioChannelLayoutTag_Pentagonal (CoreAudio) </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, and <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a7ed53c9a23d40bd2dd50e1d7129837f8"></a>
@@ -1008,8 +1014,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a set for hexagonal surround setup (left, right, leftSurroundRear, rightSurroundRear, centre, surroundCentre). </p>
 <p>Is equivalent to: n/a (VST), n/a (AAX), kAudioChannelLayoutTag_Hexagonal (CoreAudio) </p>
-
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, and <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>.</p>
 
 </div>
 </div>
@@ -1037,8 +1041,6 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a set for octagonal surround setup (left, right, leftSurround, rightSurround, centre, centreSurround, wideLeft, wideRight). </p>
 <p>Is equivalent to: n/a (VST), n/a (AAX), kAudioChannelLayoutTag_Octagonal (CoreAudio) </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, and <a class="el" href="structAudioUnitHelpers.html#ac68a1469332bd2a144fa795027b91727">AudioUnitHelpers::ChannelSetToCALayoutTag()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8366b0a736e2f3bb58120f3f51f67f01"></a>
@@ -1065,7 +1067,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a set of untyped discrete channels. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a21271d10f524034499c8b0439d457d9b">AudioUnitHelpers::CALayoutTagToChannelSet()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structCoreAudioLayouts.html#a595c4c2844387c96a520024d6188140a">CoreAudioLayouts::getCoreAudioLayoutChannels()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1249,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Adds a channel to the set. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#aaa03a90fe271fda5c558f1c607d8113f">AudioUnitHelpers::CoreAudioChannelBitmapToJuceType()</a>, <a class="el" href="structAudioUnitHelpers.html#a941026e5949e35df064df023ec05956b">AudioUnitHelpers::CoreAudioChannelLayoutToJuceType()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
+<p>Referenced by <a class="el" href="structCoreAudioLayouts.html#a1e24262adff7d46c59e80545eda5e82d">CoreAudioLayouts::toCoreAudio()</a>, and <a class="el" href="structSpeakerMappings.html#a231aa444606ba6163fac1f8d5a00427c">SpeakerMappings::vstArrangementTypeToChannelSet()</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1294,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the number of channels in the set. </p>
 
-<p>Referenced by <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a9610324ff03e26720dcc7cbed75a3611">AudioProcessor::BusesLayout::getNumChannels()</a>, <a class="el" href="structVST3BufferExchange.html#aef619a230b18ed73332f85a6e7e53b3f">VST3BufferExchange&lt; float &gt;::mapArrangementToBuses()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+<p>Referenced by <a class="el" href="structAudioProcessor_1_1BusesLayout.html#a9610324ff03e26720dcc7cbed75a3611">AudioProcessor::BusesLayout::getNumChannels()</a>, <a class="el" href="structVST3BufferExchange.html#aef619a230b18ed73332f85a6e7e53b3f">VST3BufferExchange&lt; float &gt;::mapArrangementToBuses()</a>, <a class="el" href="structCoreAudioLayouts.html#a1e24262adff7d46c59e80545eda5e82d">CoreAudioLayouts::toCoreAudio()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +1338,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns an array of all the types in this channel set. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#abb43c8086087796cb74a57c791a27e40">AudioUnitHelpers::auChannelIndexToJuce()</a>, and <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>.</p>
+<p>Referenced by <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">SpeakerMappings::channelSetToVstArrangementType()</a>, and <a class="el" href="structCoreAudioLayouts.html#a595c4c2844387c96a520024d6188140a">CoreAudioLayouts::getCoreAudioLayoutChannels()</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1366,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns the type of one of the channels in the set, by index. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a3f0f49089b990ec2c7a652f3b3687aa7">AudioUnitHelpers::juceChannelIndexToAu()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+<p>Referenced by <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
 
 </div>
 </div>
@@ -1481,8 +1483,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns if this is a channel layout made-up of discrete channels. </p>
 
-<p>Referenced by <a class="el" href="structAudioUnitHelpers.html#a3f0f49089b990ec2c7a652f3b3687aa7">AudioUnitHelpers::juceChannelIndexToAu()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a85c5ed0b33bc20e6861d3bd669f0d63e"></a>
@@ -1500,6 +1500,90 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Intersect two channel layouts. </p>
+
+</div>
+</div>
+<a class="anchor" id="af48a760d60d390c58f387f24ca14a788"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> AudioChannelSet::channelSetWithChannels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">ChannelType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a channel set for a list of channel types. </p>
+<p>This function will assert if you supply a duplicate channel.</p>
+<p>Note that this method ignores the order in which the channels are given, i.e. two arrays with the same elements but in a different order will still result in the same channel set. </p>
+
+<p>Referenced by <a class="el" href="structCoreAudioLayouts.html#a22b317a8fd97f348ffdeda677bd00fd8">CoreAudioLayouts::fromCoreAudio()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af97cdd3f0d62b669f3f0da1c32401d89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> <a class="el" href="juce__PlatformDefs_8h.html#af0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> AudioChannelSet::fromWaveChannelMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a>&#160;</td>
+          <td class="paramname"><em>dwChannelMask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an <a class="el" href="classAudioChannelSet.html" title="Represents a set of audio channel types. ">AudioChannelSet</a> from a WAVEFORMATEXTENSIBLE channelMask (typically used in .wav files). </p>
+
+<p>Referenced by <a class="el" href="structCoreAudioLayouts.html#a595c4c2844387c96a520024d6188140a">CoreAudioLayouts::getCoreAudioLayoutChannels()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adca53119943d3231559ae4d9039a2cb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="juce__MathsFunctions_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> AudioChannelSet::getWaveChannelMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a WAVEFORMATEXTENSIBLE channelMask representation (typically used in .wav files) of the receiver. </p>
+<p>Returns -1 if the receiver cannot be represented in a WAVEFORMATEXTENSIBLE channelMask representation. </p>
 
 </div>
 </div>
@@ -1582,7 +1666,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

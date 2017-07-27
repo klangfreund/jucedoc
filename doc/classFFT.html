@@ -82,7 +82,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classFFT-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -90,26 +89,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A very minimal <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> class.  
+<p>Performs a fast fourier transform.  
  <a href="classFFT.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFFT_1_1Complex.html">Complex</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A complex number, for the purposes of the <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> class.  <a href="structFFT_1_1Complex.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4351b09df7fff4082f371b7f4753bd45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a4351b09df7fff4082f371b7f4753bd45">FFT</a> (int order, bool isInverse)</td></tr>
-<tr class="memdesc:a4351b09df7fff4082f371b7f4753bd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises an object for performing either a forward or inverse <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> with the given size.  <a href="#a4351b09df7fff4082f371b7f4753bd45">More...</a><br/></td></tr>
-<tr class="separator:a4351b09df7fff4082f371b7f4753bd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29792182e4e785e4b9a575be976bca4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a29792182e4e785e4b9a575be976bca4c">FFT</a> (int order)</td></tr>
+<tr class="memdesc:a29792182e4e785e4b9a575be976bca4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises an object for performing forward and inverse <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> with the given size.  <a href="#a29792182e4e785e4b9a575be976bca4c">More...</a><br/></td></tr>
+<tr class="separator:a29792182e4e785e4b9a575be976bca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b8b0fb23ec45833952992d7f9ad2ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a69b8b0fb23ec45833952992d7f9ad2ad">~FFT</a> ()</td></tr>
 <tr class="memdesc:a69b8b0fb23ec45833952992d7f9ad2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a69b8b0fb23ec45833952992d7f9ad2ad">More...</a><br/></td></tr>
 <tr class="separator:a69b8b0fb23ec45833952992d7f9ad2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48bdedde84a2bd47f897945ba5a04f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#ae48bdedde84a2bd47f897945ba5a04f7">perform</a> (const <a class="el" href="structFFT_1_1Complex.html">Complex</a> *input, <a class="el" href="structFFT_1_1Complex.html">Complex</a> *output) const noexcept</td></tr>
-<tr class="memdesc:ae48bdedde84a2bd47f897945ba5a04f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an out-of-place <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a>, either forward or inverse depending on the mode that was passed to this object's constructor.  <a href="#ae48bdedde84a2bd47f897945ba5a04f7">More...</a><br/></td></tr>
-<tr class="separator:ae48bdedde84a2bd47f897945ba5a04f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8b172556973b7b3a336e4d335912ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a5e8b172556973b7b3a336e4d335912ad">perform</a> (const Complex&lt; float &gt; *input, Complex&lt; float &gt; *output, bool inverse) const noexcept</td></tr>
+<tr class="memdesc:a5e8b172556973b7b3a336e4d335912ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an out-of-place <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a>, either forward or inverse.  <a href="#a5e8b172556973b7b3a336e4d335912ad">More...</a><br/></td></tr>
+<tr class="separator:a5e8b172556973b7b3a336e4d335912ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879d3e58058eb37b81f647fa8d9f63ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a879d3e58058eb37b81f647fa8d9f63ff">performRealOnlyForwardTransform</a> (float *inputOutputData) const noexcept</td></tr>
 <tr class="memdesc:a879d3e58058eb37b81f647fa8d9f63ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an in-place forward transform on a block of real data.  <a href="#a879d3e58058eb37b81f647fa8d9f63ff">More...</a><br/></td></tr>
 <tr class="separator:a879d3e58058eb37b81f647fa8d9f63ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,18 +110,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8713f9b3a469d255b21229904d78fd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a reverse operation to data created in <a class="el" href="classFFT.html#a879d3e58058eb37b81f647fa8d9f63ff" title="Performs an in-place forward transform on a block of real data. ">performRealOnlyForwardTransform()</a>.  <a href="#a8713f9b3a469d255b21229904d78fd94">More...</a><br/></td></tr>
 <tr class="separator:a8713f9b3a469d255b21229904d78fd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d0d847721d5dfc1a3c583d3340f946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#a88d0d847721d5dfc1a3c583d3340f946">performFrequencyOnlyForwardTransform</a> (float *inputOutputData) const noexcept</td></tr>
-<tr class="memdesc:a88d0d847721d5dfc1a3c583d3340f946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an array and simply transforms it to the frequency spectrum.  <a href="#a88d0d847721d5dfc1a3c583d3340f946">More...</a><br/></td></tr>
+<tr class="memdesc:a88d0d847721d5dfc1a3c583d3340f946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an array and simply transforms it to the magnitude frequency response spectrum.  <a href="#a88d0d847721d5dfc1a3c583d3340f946">More...</a><br/></td></tr>
 <tr class="separator:a88d0d847721d5dfc1a3c583d3340f946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad31b8261ecd82dda721df4705b57940f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f">getSize</a> () const noexcept</td></tr>
-<tr class="memdesc:ad31b8261ecd82dda721df4705b57940f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of data points that this <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> was created to work with.  <a href="#ad31b8261ecd82dda721df4705b57940f">More...</a><br/></td></tr>
+<tr class="memdesc:ad31b8261ecd82dda721df4705b57940f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of data points that this <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> was created to work with.  <a href="#ad31b8261ecd82dda721df4705b57940f">More...</a><br/></td></tr>
 <tr class="separator:ad31b8261ecd82dda721df4705b57940f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A very minimal <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> class. </p>
-<p>This is only a simple low-footprint implementation and isn't tuned for speed - it may be useful for simple applications where one of the more complex <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> libraries would be overkill. (But in the future it may end up becoming optimised of course...)</p>
-<p>The <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> class itself contains lookup tables, so there's some overhead in creating one, you should create and cache an <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> object for each size/direction of transform that you need, and re-use them to perform the actual operation. </p>
+<div class="textblock"><p>Performs a fast fourier transform. </p>
+<p>This is only a simple low-footprint implementation and isn't tuned for speed - it may be useful for simple applications where one of the more complex <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> libraries would be overkill. (But in the future it may end up becoming optimised of course...)</p>
+<p>The <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> class itself contains lookup tables, so there's some overhead in creating one, you should create and cache an <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> object for each size/direction of transform that you need, and re-use them to perform the actual operation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4351b09df7fff4082f371b7f4753bd45"></a>
+<a class="anchor" id="a29792182e4e785e4b9a575be976bca4c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -136,24 +129,14 @@ Public Member Functions</h2></td></tr>
           <td class="memname">FFT::FFT </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>order</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>order</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isInverse</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialises an object for performing either a forward or inverse <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> with the given size. </p>
-<p>The the number of points the <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> will operate on will be 2 ^ order. </p>
+<p>Initialises an object for performing forward and inverse <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> with the given size. </p>
+<p>The number of points the <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> will operate on will be 2 ^ order. </p>
 
 </div>
 </div>
@@ -175,7 +158,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae48bdedde84a2bd47f897945ba5a04f7"></a>
+<a class="anchor" id="a5e8b172556973b7b3a336e4d335912ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -185,14 +168,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void FFT::perform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structFFT_1_1Complex.html">Complex</a> *&#160;</td>
+          <td class="paramtype">const Complex&lt; float &gt; *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structFFT_1_1Complex.html">Complex</a> *&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramtype">Complex&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inverse</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,7 +196,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Performs an out-of-place <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a>, either forward or inverse depending on the mode that was passed to this object's constructor. </p>
+<p>Performs an out-of-place <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a>, either forward or inverse. </p>
 <p>The arrays must contain at least <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a> elements. </p>
 
 </div>
@@ -235,7 +224,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs an in-place forward transform on a block of real data. </p>
-<p>The size of the array passed in must be 2 * <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>, and the first half should contain your raw input sample data. On return, the array will contain complex frequency + phase data, and can be passed to <a class="el" href="classFFT.html#a8713f9b3a469d255b21229904d78fd94" title="Performs a reverse operation to data created in performRealOnlyForwardTransform(). ">performRealOnlyInverseTransform()</a> in order to convert it back to reals. </p>
+<p>The size of the array passed in must be 2 * <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>, and the first half should contain your raw input sample data. On return, the array will contain size complex real + imaginary parts data interleaved, and can be passed to <a class="el" href="classFFT.html#a8713f9b3a469d255b21229904d78fd94" title="Performs a reverse operation to data created in performRealOnlyForwardTransform(). ">performRealOnlyInverseTransform()</a> in order to convert it back to reals. </p>
 
 </div>
 </div>
@@ -262,7 +251,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a reverse operation to data created in <a class="el" href="classFFT.html#a879d3e58058eb37b81f647fa8d9f63ff" title="Performs an in-place forward transform on a block of real data. ">performRealOnlyForwardTransform()</a>. </p>
-<p>The size of the array passed in must be 2 * <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>, containing complex frequency and phase data. On return, the first half of the array will contain the reconstituted samples. </p>
+<p>The size of the array passed in must be 2 * <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>, containing size complex real and imaginary parts interleaved numbers. On return, the first half of the array will contain the reconstituted samples. </p>
 
 </div>
 </div>
@@ -288,8 +277,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Takes an array and simply transforms it to the frequency spectrum. </p>
-<p>This may be handy for things like frequency displays or analysis. </p>
+<p>Takes an array and simply transforms it to the magnitude frequency response spectrum. </p>
+<p>This may be handy for things like frequency displays or analysis. The size of the array passed in must be 2 * <a class="el" href="classFFT.html#ad31b8261ecd82dda721df4705b57940f" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>. </p>
 
 </div>
 </div>
@@ -314,7 +303,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of data points that this <a class="el" href="classFFT.html" title="A very minimal FFT class. ">FFT</a> was created to work with. </p>
+<p>Returns the number of data points that this <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> was created to work with. </p>
 
 </div>
 </div>
@@ -325,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 26 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 27 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
