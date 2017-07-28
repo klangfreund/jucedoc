@@ -128,6 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f1501ac7caa5a12cab2d05bd5d020fe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a5f1501ac7caa5a12cab2d05bd5d020fe">getControlParameterIndex</a> (<a class="el" href="classComponent.html">Component</a> &amp;)</td></tr>
 <tr class="memdesc:a5f1501ac7caa5a12cab2d05bd5d020fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by certain plug-in wrappers to find out whether a component is used to control a parameter.  <a href="#a5f1501ac7caa5a12cab2d05bd5d020fe">More...</a><br/></td></tr>
 <tr class="separator:a5f1501ac7caa5a12cab2d05bd5d020fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac1ddf79785c61159ac895fda1c17c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a7ac1ddf79785c61159ac895fda1c17c8">supportsHostMIDIControllerPresence</a> (bool <a class="el" href="classAudioProcessorEditor.html#a0e943df67341fbed55d08b93f6773170">hostMIDIControllerIsAvailable</a>)</td></tr>
+<tr class="memdesc:a7ac1ddf79785c61159ac895fda1c17c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to indicate if your editor supports the presence or absence of a host-provided MIDI controller.  <a href="#a7ac1ddf79785c61159ac895fda1c17c8">More...</a><br/></td></tr>
+<tr class="separator:a7ac1ddf79785c61159ac895fda1c17c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e943df67341fbed55d08b93f6773170"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a0e943df67341fbed55d08b93f6773170">hostMIDIControllerIsAvailable</a> (bool controllerIsAvailable)</td></tr>
+<tr class="memdesc:a0e943df67341fbed55d08b93f6773170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to indicate if a host is providing a MIDI controller when the host reconfigures its layout.  <a href="#a0e943df67341fbed55d08b93f6773170">More...</a><br/></td></tr>
+<tr class="separator:a0e943df67341fbed55d08b93f6773170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b80bdfc3ba742fed44fe834a8293eb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a2b80bdfc3ba742fed44fe834a8293eb9">setScaleFactor</a> (float newScale)</td></tr>
 <tr class="memdesc:a2b80bdfc3ba742fed44fe834a8293eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be called by a host to tell the editor that it should use a non-unity GUI scale.  <a href="#a2b80bdfc3ba742fed44fe834a8293eb9">More...</a><br/></td></tr>
 <tr class="separator:a2b80bdfc3ba742fed44fe834a8293eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -929,6 +935,62 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7ac1ddf79785c61159ac895fda1c17c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AudioProcessorEditor::supportsHostMIDIControllerPresence </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hostMIDIControllerIsAvailable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this method to indicate if your editor supports the presence or absence of a host-provided MIDI controller. </p>
+<p>Currently only AUv3 plug-ins compiled for MacOS 10.13 or iOS 11.0 (or later) support this functionality, and even then the host may choose to ignore this information.</p>
+<p>The default behaviour is to report support for both cases. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e943df67341fbed55d08b93f6773170"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AudioProcessorEditor::hostMIDIControllerIsAvailable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>controllerIsAvailable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called to indicate if a host is providing a MIDI controller when the host reconfigures its layout. </p>
+<p>Use this as an opportunity to hide or display your own onscreen keyboard or other input component.</p>
+<p>Currently only AUv3 plug-ins compiled for MacOS 10.13 or iOS 11.0 (or later) support this functionality. </p>
+
+</div>
+</div>
 <a class="anchor" id="a2b80bdfc3ba742fed44fe834a8293eb9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1167,7 +1229,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 27 2017 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 28 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

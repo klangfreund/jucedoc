@@ -130,6 +130,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f1501ac7caa5a12cab2d05bd5d020fe inherit pub_methods_classAudioProcessorEditor"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a5f1501ac7caa5a12cab2d05bd5d020fe">getControlParameterIndex</a> (<a class="el" href="classComponent.html">Component</a> &amp;)</td></tr>
 <tr class="memdesc:a5f1501ac7caa5a12cab2d05bd5d020fe inherit pub_methods_classAudioProcessorEditor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by certain plug-in wrappers to find out whether a component is used to control a parameter.  <a href="#a5f1501ac7caa5a12cab2d05bd5d020fe">More...</a><br/></td></tr>
 <tr class="separator:a5f1501ac7caa5a12cab2d05bd5d020fe inherit pub_methods_classAudioProcessorEditor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac1ddf79785c61159ac895fda1c17c8 inherit pub_methods_classAudioProcessorEditor"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a7ac1ddf79785c61159ac895fda1c17c8">supportsHostMIDIControllerPresence</a> (bool <a class="el" href="classAudioProcessorEditor.html#a0e943df67341fbed55d08b93f6773170">hostMIDIControllerIsAvailable</a>)</td></tr>
+<tr class="memdesc:a7ac1ddf79785c61159ac895fda1c17c8 inherit pub_methods_classAudioProcessorEditor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to indicate if your editor supports the presence or absence of a host-provided MIDI controller.  <a href="#a7ac1ddf79785c61159ac895fda1c17c8">More...</a><br/></td></tr>
+<tr class="separator:a7ac1ddf79785c61159ac895fda1c17c8 inherit pub_methods_classAudioProcessorEditor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e943df67341fbed55d08b93f6773170 inherit pub_methods_classAudioProcessorEditor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a0e943df67341fbed55d08b93f6773170">hostMIDIControllerIsAvailable</a> (bool controllerIsAvailable)</td></tr>
+<tr class="memdesc:a0e943df67341fbed55d08b93f6773170 inherit pub_methods_classAudioProcessorEditor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to indicate if a host is providing a MIDI controller when the host reconfigures its layout.  <a href="#a0e943df67341fbed55d08b93f6773170">More...</a><br/></td></tr>
+<tr class="separator:a0e943df67341fbed55d08b93f6773170 inherit pub_methods_classAudioProcessorEditor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b80bdfc3ba742fed44fe834a8293eb9 inherit pub_methods_classAudioProcessorEditor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorEditor.html#a2b80bdfc3ba742fed44fe834a8293eb9">setScaleFactor</a> (float newScale)</td></tr>
 <tr class="memdesc:a2b80bdfc3ba742fed44fe834a8293eb9 inherit pub_methods_classAudioProcessorEditor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be called by a host to tell the editor that it should use a non-unity GUI scale.  <a href="#a2b80bdfc3ba742fed44fe834a8293eb9">More...</a><br/></td></tr>
 <tr class="separator:a2b80bdfc3ba742fed44fe834a8293eb9 inherit pub_methods_classAudioProcessorEditor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -880,7 +886,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 27 2017 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 28 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

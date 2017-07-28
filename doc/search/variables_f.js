@@ -19,7 +19,7 @@ var searchData=
   ['path',['path',['../classDrawableShape_1_1FillAndStrokeState.html#ae8ba259de68b9df6260e6ba9ce4cf584',1,'DrawableShape::FillAndStrokeState::path()'],['../classDrawableShape.html#a21fde06c1c09e9498575cbbfd36e7793',1,'DrawableShape::path()']]],
   ['peachpuff',['peachpuff',['../classColours.html#aa83a3ec486288727ffa82d9e8e4a82b0',1,'Colours']]],
   ['peru',['peru',['../classColours.html#a8417b7053caaf567a98eb61eccf57838',1,'Colours']]],
-  ['pi',['pi',['../structMathConstants.html#aacb402350ef90fa1f4ab91a37032ba2c',1,'MathConstants']]],
+  ['pi',['pi',['../structMathConstants.html#aaec4bd5a00718fbf776203289b9b8645',1,'MathConstants']]],
   ['pink',['pink',['../classColours.html#aa959194b957e4113dcdc9ec488464229',1,'Colours']]],
   ['pitchbend',['pitchbend',['../structMPENote.html#aebfdbfc173bc19cc97b97659c412078f',1,'MPENote']]],
   ['pixelformat',['pixelFormat',['../classImage_1_1BitmapData.html#aae26ad39defa124117e3a7d8da499e6b',1,'Image::BitmapData::pixelFormat()'],['../classImagePixelData.html#a7af8920b587eebc3d94a0883375ca08f',1,'ImagePixelData::pixelFormat()']]],

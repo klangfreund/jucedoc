@@ -313,6 +313,7 @@ var searchData=
   ['horizontallycentred',['horizontallyCentred',['../classJustification.html#a1f8c07756c56fe8f31ed44964e51bfbcac9fd148cf8547fab0e3aeee306223ab2',1,'Justification']]],
   ['horizontallyjustified',['horizontallyJustified',['../classJustification.html#a1f8c07756c56fe8f31ed44964e51bfbca0881c08fa2d58e9d6f36ab8bbea4b800',1,'Justification']]],
   ['hostapplicationpath',['hostApplicationPath',['../classFile.html#a3e19cafabb03c5838160263a6e76313dafab1d75c642d3f8eb23564f1cfb408a3',1,'File']]],
+  ['hostmidicontrollerisavailable',['hostMIDIControllerIsAvailable',['../classAudioProcessorEditor.html#a0e943df67341fbed55d08b93f6773170',1,'AudioProcessorEditor']]],
   ['hostopcodecanhostdo',['hostOpcodeCanHostDo',['../juce__VSTInterface_8h.html#a13942f5626bb2fcba846e559fbc42385a5dd62722eaa6260adff3336036cf72d7',1,'juce_VSTInterface.h']]],
   ['hostopcodecloseeditorwindow',['hostOpcodeCloseEditorWindow',['../juce__VSTInterface_8h.html#a13942f5626bb2fcba846e559fbc42385af341ec3f35f79d4c5dec4d5cb828ab4b',1,'juce_VSTInterface.h']]],
   ['hostopcodecurrentid',['hostOpcodeCurrentId',['../juce__VSTInterface_8h.html#a13942f5626bb2fcba846e559fbc42385aac858deb504ff3f464d19d61d6be7172',1,'juce_VSTInterface.h']]],
