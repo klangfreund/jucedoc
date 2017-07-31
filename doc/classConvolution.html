@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Performs stereo uniform-partitioned convolution of an input signal with an impulse response in the frequency domain, using the juce <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> class. </p>
 <p>It provides some thread-safe functions to load impulse responses as well, from audio files or memory on the fly without any noticeable artefacts, performing resampling and trimming if necessary.</p>
 <p>The processing is equivalent to the time domain convolution done in the class FIRFilter, with a FIRFilter::Coefficients object having as coefficients the samples of the impulse response. However, it is more efficient in general to do frequency domain convolution when the size of the impulse response is higher than 64 samples.</p>
-<p>see , ::Coefficients,  </p>
+<dl class="section see"><dt>See Also</dt><dd>FIRFilter, FIRFilter::Coefficients, <a class="el" href="classFFT.html" title="Performs a fast fourier transform. ">FFT</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9fd1a996a2d826c01991e6913f6163bf"></a>
 <div class="memitem">
@@ -383,7 +383,7 @@ template&lt;typename ProcessContext &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2017 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 31 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

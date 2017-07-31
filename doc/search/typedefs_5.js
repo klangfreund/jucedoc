@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fircoefficientsptr',['FIRCoefficientsPtr',['../structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006',1,'FilterDesign::FIRCoefficientsPtr()'],['../structjuce_1_1dsp_1_1FilterDesign.html#a3de01789632229d0288573e8af0164b1',1,'juce::dsp::FilterDesign::FIRCoefficientsPtr()']]],
+  ['fircoefficientsptr',['FIRCoefficientsPtr',['../structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006',1,'FilterDesign']]],
   ['firmwareupdateackcode',['FirmwareUpdateACKCode',['../juce__BlocksProtocolDefinitions_8h.html#ae18c12e82c1ce77afe594fb7478a56ec',1,'juce_BlocksProtocolDefinitions.h']]],
   ['firmwareupdateackdetail',['FirmwareUpdateACKDetail',['../juce__BlocksProtocolDefinitions_8h.html#ae58400989aa76953808b4db8b36b5df9',1,'juce_BlocksProtocolDefinitions.h']]],
   ['firmwareupdatepacketsize',['FirmwareUpdatePacketSize',['../juce__BlocksProtocolDefinitions_8h.html#a14e9615d6d3ff3888ce0689380fe92f9',1,'juce_BlocksProtocolDefinitions.h']]],

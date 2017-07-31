@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h',['h',['../structjuce_1_1dsp_1_1StateVariableFilter_1_1Parameters.html#ae78b58f87b9343d60b5f0b912c2e3ac6',1,'juce::dsp::StateVariableFilter::Parameters::h()'],['../structStateVariableFilter_1_1Parameters.html#ad36aff9f27558ec34e79dc6544c5c3ce',1,'StateVariableFilter::Parameters::h()']]],
+  ['h',['h',['../structStateVariableFilter_1_1Parameters.html#ad36aff9f27558ec34e79dc6544c5c3ce',1,'StateVariableFilter::Parameters']]],
   ['handlemessagefromdevice',['handleMessageFromDevice',['../structjuce_1_1PhysicalTopologySource_1_1DeviceConnection.html#a6b0fdfd67698b1e8ebcd1d6bf03a2a2c',1,'juce::PhysicalTopologySource::DeviceConnection::handleMessageFromDevice()'],['../structPhysicalTopologySource_1_1DeviceConnection.html#a2ce59400d3693dba6704feb9b9588822',1,'PhysicalTopologySource::DeviceConnection::handleMessageFromDevice()']]],
   ['hassharedcontainer',['hasSharedContainer',['../classPluginDescription.html#a87c408ae648128912fc8bb1a0cb9be2d',1,'PluginDescription']]],
   ['hastouchsurface',['hasTouchSurface',['../structBlockDataSheet.html#afc7d50120343ec4de04e17efac8c7841',1,'BlockDataSheet']]],

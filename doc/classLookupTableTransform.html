@@ -204,12 +204,10 @@ template&lt;typename FloatType&gt; </div>
     <tr><td class="paramname">functionToApproximate</td><td>The function to be approximated. This should be a mapping from a FloatType to FloatType. </td></tr>
     <tr><td class="paramname">minInputValueToUse</td><td>The lowest input value used. The approximation will fail for values lower than this. </td></tr>
     <tr><td class="paramname">maxInputValueToUse</td><td>The highest input value used. The approximation will fail for values higher than this. </td></tr>
-    <tr><td class="paramname">numPointsToUse</td><td>The number of pre-calculated values stored. </td></tr>
+    <tr><td class="paramname">numPoints</td><td>The number of pre-calculated values stored. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>References <a class="el" href="classLookupTableTransform.html#a04c0024ea964d7ed735be8148c7ddbb4">LookupTableTransform&lt; FloatType &gt;::initialise()</a>.</p>
 
 </div>
 </div>
@@ -258,12 +256,12 @@ template&lt;typename FloatType&gt; </div>
     <tr><td class="paramname">functionToApproximate</td><td>The function to be approximated. This should be a mapping from a FloatType to FloatType. </td></tr>
     <tr><td class="paramname">minInputValueToUse</td><td>The lowest input value used. The approximation will fail for values lower than this. </td></tr>
     <tr><td class="paramname">maxInputValueToUse</td><td>The highest input value used. The approximation will fail for values higher than this. </td></tr>
-    <tr><td class="paramname">numPointsToUse</td><td>The number of pre-calculated values stored. </td></tr>
+    <tr><td class="paramname">numPoints</td><td>The number of pre-calculated values stored. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="classLookupTableTransform.html#ac193ea4655b0209da460b87352acd620">LookupTableTransform&lt; FloatType &gt;::LookupTableTransform()</a>.</p>
+<p>Referenced by <a class="el" href="classLookupTableTransform.html#ac193ea4655b0209da460b87352acd620">LookupTableTransform&lt; NumericType &gt;::LookupTableTransform()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +300,7 @@ template&lt;typename FloatType&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The approximated value for the provided input value.</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#a7870b3710ee1da7ce50cf720c7de7601" title="Calculates the approximated value for the given input value with range checking. ">processSample</a>, operator(), operator[] </dd></dl>
 
-<p>References <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>.</p>
-
-<p>Referenced by <a class="el" href="classLookupTableTransform.html#aae5843399d2147b84ae3f6d8f562487c">LookupTableTransform&lt; FloatType &gt;::operator[]()</a>, and <a class="el" href="classLookupTableTransform.html#ae2adc92d0dd28dff6cddf1ba85d38a3e">LookupTableTransform&lt; FloatType &gt;::processUnchecked()</a>.</p>
+<p>Referenced by <a class="el" href="classLookupTableTransform.html#aae5843399d2147b84ae3f6d8f562487c">LookupTableTransform&lt; NumericType &gt;::operator[]()</a>, and <a class="el" href="classLookupTableTransform.html#ae2adc92d0dd28dff6cddf1ba85d38a3e">LookupTableTransform&lt; NumericType &gt;::processUnchecked()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +340,7 @@ template&lt;typename FloatType&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The approximated value for the provided input value.</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#ae4b38036379d38c203b1c3c1cf7fa0b2" title="Calculates the approximated value for the given input value without range checking. ">processSampleUnchecked</a>, operator(), operator[] </dd></dl>
 
-<p>References <a class="el" href="juce__MathsFunctions_8h.html#a73c8f4283f104ebb3b9e026e5f487f1d">isPositiveAndBelow()</a>, <a class="el" href="juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a">jassert</a>, and <a class="el" href="juce__MathsFunctions_8h.html#a6efeed0752de995d3bc123123f199735">jlimit()</a>.</p>
-
-<p>Referenced by <a class="el" href="classLookupTableTransform.html#a484e16257ff49e8034482a314888c09d">LookupTableTransform&lt; FloatType &gt;::operator()()</a>, and <a class="el" href="classLookupTableTransform.html#a7dddcedddb6c320aec3f51b20e05a61e">LookupTableTransform&lt; FloatType &gt;::process()</a>.</p>
+<p>Referenced by <a class="el" href="classLookupTableTransform.html#a484e16257ff49e8034482a314888c09d">LookupTableTransform&lt; NumericType &gt;::operator()()</a>, and <a class="el" href="classLookupTableTransform.html#a7dddcedddb6c320aec3f51b20e05a61e">LookupTableTransform&lt; NumericType &gt;::process()</a>.</p>
 
 </div>
 </div>
@@ -375,8 +369,6 @@ template&lt;typename FloatType&gt; </div>
 </div><div class="memdoc">
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#ae4b38036379d38c203b1c3c1cf7fa0b2" title="Calculates the approximated value for the given input value without range checking. ">processSampleUnchecked</a> </dd></dl>
 
-<p>References <a class="el" href="classLookupTableTransform.html#ae4b38036379d38c203b1c3c1cf7fa0b2">LookupTableTransform&lt; FloatType &gt;::processSampleUnchecked()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a484e16257ff49e8034482a314888c09d"></a>
@@ -403,8 +395,6 @@ template&lt;typename FloatType&gt; </div>
 </table>
 </div><div class="memdoc">
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#a7870b3710ee1da7ce50cf720c7de7601" title="Calculates the approximated value for the given input value with range checking. ">processSample</a> </dd></dl>
-
-<p>References <a class="el" href="classLookupTableTransform.html#a7870b3710ee1da7ce50cf720c7de7601">LookupTableTransform&lt; FloatType &gt;::processSample()</a>.</p>
 
 </div>
 </div>
@@ -451,8 +441,6 @@ template&lt;typename FloatType&gt; </div>
 <p>Processes an array of input values without range checking. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#a7dddcedddb6c320aec3f51b20e05a61e" title="Processes an array of input values with range checking. ">process</a> </dd></dl>
 
-<p>References <a class="el" href="classLookupTableTransform.html#ae4b38036379d38c203b1c3c1cf7fa0b2">LookupTableTransform&lt; FloatType &gt;::processSampleUnchecked()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a7dddcedddb6c320aec3f51b20e05a61e"></a>
@@ -497,8 +485,6 @@ template&lt;typename FloatType&gt; </div>
 
 <p>Processes an array of input values with range checking. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classLookupTableTransform.html#ae2adc92d0dd28dff6cddf1ba85d38a3e" title="Processes an array of input values without range checking. ">processUnchecked</a> </dd></dl>
-
-<p>References <a class="el" href="classLookupTableTransform.html#a7870b3710ee1da7ce50cf720c7de7601">LookupTableTransform&lt; FloatType &gt;::processSample()</a>.</p>
 
 </div>
 </div>
@@ -556,10 +542,14 @@ template&lt;typename FloatType&gt; </div>
 
 <p>Calculates the maximum relative error of the approximation for the specified parameter set. </p>
 <p>The closer the returned value is to zero the more accurate the approximation is.</p>
-<p>This function compares the approximated output of this class to the function it approximates at a range of points and returns the maximum relative error. This can be used to determine if the approximatiokn is suitable for the given problem. The accuracy of the approximation can generally be improved by increasing numPoints.</p>
+<p>This function compares the approximated output of this class to the function it approximates at a range of points and returns the maximum relative error. This can be used to determine if the approximation is suitable for the given problem. The accuracy of the approximation can generally be improved by increasing numPoints.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">numTestPoints</td><td>The number of input values used for error calculation. Higher numbers can increase the accuracy of the error calculation. If it's zero 100 * numPoints will be used. </td></tr>
+    <tr><td class="paramname">functionToApproximate</td><td>The approximated function. This should be a mapping from a FloatType to FloatType. </td></tr>
+    <tr><td class="paramname">minInputValue</td><td>The lowest input value used. </td></tr>
+    <tr><td class="paramname">maxInputValue</td><td>The highest input value used. </td></tr>
+    <tr><td class="paramname">numPoints</td><td>The number of pre-calculated values stored. </td></tr>
+    <tr><td class="paramname">numTestPoints</td><td>The number of input values used for error calculation. Higher numbers can increase the accuracy of the error calculation. If it's zero then 100 * numPoints will be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -573,7 +563,7 @@ template&lt;typename FloatType&gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2017 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 31 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

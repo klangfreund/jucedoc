@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kaiser',['kaiser',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5ca1d9e29c015719d2cd637d5c660909661',1,'WindowingFunction::kaiser()'],['../structjuce_1_1dsp_1_1WindowingFunction.html#a0f93d68684da251f9aee7eb62ad7ff2aa1d233bc5154178e6d723d6bc34471ab9',1,'juce::dsp::WindowingFunction::kaiser()']]],
+  ['kaiser',['kaiser',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5ca1d9e29c015719d2cd637d5c660909661',1,'WindowingFunction']]],
   ['kaudiounitproperty_5fsupportsmpe',['kAudioUnitProperty_SupportsMPE',['../juce__AudioUnitPluginFormat_8h.html#a61dadd085c1777f559549e05962b2c9ea3d9d3125ae195114257428b622aebb52',1,'juce_AudioUnitPluginFormat.h']]],
   ['keyboardfocustraverser',['KeyboardFocusTraverser',['../classKeyboardFocusTraverser.html',1,'KeyboardFocusTraverser'],['../classKeyboardFocusTraverser.html#a275c834346e37c782d74f08365f1a06f',1,'KeyboardFocusTraverser::KeyboardFocusTraverser()']]],
   ['keydown',['keyDown',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a895ffc865cb90899c347efefb881e2ce',1,'MPENote']]],

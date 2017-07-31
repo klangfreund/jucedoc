@@ -20,7 +20,7 @@ var searchData=
   ['mat12',['mat12',['../classAffineTransform.html#ae26718eb62e1240ad8f800f7e7ce3a74',1,'AffineTransform']]],
   ['max',['max',['../structBlockConfigManager_1_1ConfigDescription.html#add78fbe617a4b3bc3ac08b85b6a24637',1,'BlockConfigManager::ConfigDescription']]],
   ['maxheight',['maxHeight',['../classFlexItem.html#a166fa48e4268692cce0419f8ed5ad56a',1,'FlexItem']]],
-  ['maximumblocksize',['maximumBlockSize',['../structjuce_1_1dsp_1_1ProcessSpec.html#af298a8ee9114572706aa59de7caec09e',1,'juce::dsp::ProcessSpec::maximumBlockSize()'],['../structProcessSpec.html#aaacd746b34e4dc12cfc1b2f793fc7b13',1,'ProcessSpec::maximumBlockSize()']]],
+  ['maximumblocksize',['maximumBlockSize',['../structProcessSpec.html#aaacd746b34e4dc12cfc1b2f793fc7b13',1,'ProcessSpec']]],
   ['maximumexecutiontime',['maximumExecutionTime',['../classJavascriptEngine.html#a4a08635cda469509d851264f9fcf2c46',1,'JavascriptEngine']]],
   ['maximumseconds',['maximumSeconds',['../structPerformanceCounter_1_1Statistics.html#a560f9606307b0a9a7b4f44d839c80f61',1,'PerformanceCounter::Statistics']]],
   ['maxprogramsize',['maxProgramSize',['../structjuce_1_1littlefoot_1_1Program.html#a9b52405d6d6e2c36c8fdfb72354feb3e',1,'juce::littlefoot::Program::maxProgramSize()'],['../structlittlefoot_1_1Program.html#a2b9f4b333cb9a2bfa4dffc0a8b3f7dce',1,'littlefoot::Program::maxProgramSize()']]],

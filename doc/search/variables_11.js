@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r2',['R2',['../structjuce_1_1dsp_1_1StateVariableFilter_1_1Parameters.html#ae51933bd43c16fdb768dfc2a44dbf726',1,'juce::dsp::StateVariableFilter::Parameters::R2()'],['../structStateVariableFilter_1_1Parameters.html#a1d3319e70497e230708dfade6c81521e',1,'StateVariableFilter::Parameters::R2()']]],
+  ['r2',['R2',['../structStateVariableFilter_1_1Parameters.html#a1d3319e70497e230708dfade6c81521e',1,'StateVariableFilter::Parameters']]],
   ['radial',['radial',['../classDrawableShape_1_1FillAndStrokeState.html#a35b2d94ae6a13721f581b582400007bb',1,'DrawableShape::FillAndStrokeState']]],
   ['radius',['radius',['../structVstIndividualSpeakerInfo.html#a87356e6e9f3144fb7cb38f946adbd283',1,'VstIndividualSpeakerInfo::radius()'],['../structDropShadow.html#a96cbbc37579f9a2627f342a7dc6be568',1,'DropShadow::radius()']]],
   ['range',['range',['../classAudioParameterFloat.html#a7e860466dbc1319bc064cd6e7db382e3',1,'AudioParameterFloat::range()'],['../structBlock_1_1ConfigMetaData.html#a5e83f923a89ddf03a301efe06016c7ea',1,'Block::ConfigMetaData::range()'],['../structjuce_1_1Block_1_1ConfigMetaData.html#ab320b20b82da017491ad06d9aa1af651',1,'juce::Block::ConfigMetaData::range()'],['../classAttributedString_1_1Attribute.html#ab35a1ef10e233d3d0125b01baf4e086e',1,'AttributedString::Attribute::range()']]],
@@ -19,6 +19,7 @@ var searchData=
   ['riffinfobaseurl',['riffInfoBaseURL',['../classWavAudioFormat.html#a4e2fdf5d072f3cb1409cea6afcd69aba',1,'WavAudioFormat']]],
   ['riffinfocinematographer',['riffInfoCinematographer',['../classWavAudioFormat.html#ade05c518170372bb379192de82f8e71d',1,'WavAudioFormat']]],
   ['riffinfocomment',['riffInfoComment',['../classWavAudioFormat.html#a759dc8a3cdb9b65abd02618b6e8db619',1,'WavAudioFormat']]],
+  ['riffinfocomment2',['riffInfoComment2',['../classWavAudioFormat.html#a4a3099bf333a473f316ecc231776d565',1,'WavAudioFormat']]],
   ['riffinfocomments',['riffInfoComments',['../classWavAudioFormat.html#a98df291c5bf42a8c29a4bd9033af437a',1,'WavAudioFormat']]],
   ['riffinfocommissioned',['riffInfoCommissioned',['../classWavAudioFormat.html#a49588b1f708d26d943ae844f28f8e140',1,'WavAudioFormat']]],
   ['riffinfocopyright',['riffInfoCopyright',['../classWavAudioFormat.html#a8f19e1225e3c04c9d0306cda02c57f26',1,'WavAudioFormat']]],
@@ -61,6 +62,7 @@ var searchData=
   ['riffinfoproducedby',['riffInfoProducedBy',['../classWavAudioFormat.html#a1076df5794cf433c8e0e0450d71cd96c',1,'WavAudioFormat']]],
   ['riffinfoproductiondesigner',['riffInfoProductionDesigner',['../classWavAudioFormat.html#acf60b7c1db4977a59d7e13b65c3a7fd0',1,'WavAudioFormat']]],
   ['riffinfoproductionstudio',['riffInfoProductionStudio',['../classWavAudioFormat.html#a101f738b931d2068d9ec16e3fe69c3f5',1,'WavAudioFormat']]],
+  ['riffinfoproductname',['riffInfoProductName',['../classWavAudioFormat.html#a6d2dac84b02899b86667958da2826c93',1,'WavAudioFormat']]],
   ['riffinforate',['riffInfoRate',['../classWavAudioFormat.html#a738b99975c3ee261b420494355b82de5',1,'WavAudioFormat']]],
   ['riffinforated',['riffInfoRated',['../classWavAudioFormat.html#a4f387b9d497ee212492e4a5c716a5783',1,'WavAudioFormat']]],
   ['riffinforating',['riffInfoRating',['../classWavAudioFormat.html#a5d2ac599e559d5b217be8dca2e24957d',1,'WavAudioFormat']]],
@@ -84,6 +86,7 @@ var searchData=
   ['riffinfothirdlanguage',['riffInfoThirdLanguage',['../classWavAudioFormat.html#a00a475dca44eb3a84cf32007bff67b79',1,'WavAudioFormat']]],
   ['riffinfotimecode',['riffInfoTimeCode',['../classWavAudioFormat.html#a2538ca0eac9fca783ff984a7ebf1be84',1,'WavAudioFormat']]],
   ['riffinfotitle',['riffInfoTitle',['../classWavAudioFormat.html#a2da916847a684739ab3aec385da740f1',1,'WavAudioFormat']]],
+  ['riffinfotrackno',['riffInfoTrackNo',['../classWavAudioFormat.html#afe94ae7b98f6c2487e1e6d25bf78b9be',1,'WavAudioFormat']]],
   ['riffinfotracknumber',['riffInfoTrackNumber',['../classWavAudioFormat.html#a315ce7fa45fbee8c5805c40cbac0d1cd',1,'WavAudioFormat']]],
   ['riffinfourl',['riffInfoURL',['../classWavAudioFormat.html#a63e37c6adbe971535e7a91fa6477623c',1,'WavAudioFormat']]],
   ['riffinfovegasversionmajor',['riffInfoVegasVersionMajor',['../classWavAudioFormat.html#afa85f13bf4f567e471e620aab716e119',1,'WavAudioFormat']]],

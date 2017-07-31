@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['dsp',['dsp',['../namespacejuce_1_1dsp.html',1,'juce']]],
-  ['fir',['FIR',['../namespacejuce_1_1dsp_1_1FIR.html',1,'juce::dsp']]],
-  ['iir',['IIR',['../namespacejuce_1_1dsp_1_1IIR.html',1,'juce::dsp']]],
   ['jassert',['jassert',['../juce__PlatformDefs_8h.html#a1f96ab6751237979b907a54f52a7296a',1,'juce_PlatformDefs.h']]],
   ['jassertfalse',['jassertfalse',['../juce__PlatformDefs_8h.html#adc044ce5efecbecf2f5a44cd00db67b3',1,'juce_PlatformDefs.h']]],
   ['javascriptengine',['JavascriptEngine',['../classJavascriptEngine.html',1,'JavascriptEngine'],['../classJavascriptEngine.html#a4982557880163aadbad5337751057269',1,'JavascriptEngine::JavascriptEngine()']]],
@@ -47,7 +44,6 @@ var searchData=
   ['juce_5farray_2eh',['juce_Array.h',['../juce__Array_8h.html',1,'']]],
   ['juce_5farrayallocationbase_2eh',['juce_ArrayAllocationBase.h',['../juce__ArrayAllocationBase_8h.html',1,'']]],
   ['juce_5farrowbutton_2eh',['juce_ArrowButton.h',['../juce__ArrowButton_8h.html',1,'']]],
-  ['juce_5fassertion_5ffirfilter',['JUCE_ASSERTION_FIRFILTER',['../juce__dsp_8h.html#a3f5e68e55c957da13e6821fdb99d3815',1,'juce_dsp.h']]],
   ['juce_5fasyncupdater_2eh',['juce_AsyncUpdater.h',['../juce__AsyncUpdater_8h.html',1,'']]],
   ['juce_5fatomic_2eh',['juce_Atomic.h',['../juce__Atomic_8h.html',1,'']]],
   ['juce_5fatomic_5favailable',['JUCE_ATOMIC_AVAILABLE',['../juce__CompilerSupport_8h.html#ac707ede30b800f8e5c6da73f3e19719e',1,'juce_CompilerSupport.h']]],
@@ -209,11 +205,6 @@ var searchData=
   ['juce_5fdropshadoweffect_2eh',['juce_DropShadowEffect.h',['../juce__DropShadowEffect_8h.html',1,'']]],
   ['juce_5fdropshadower_2eh',['juce_DropShadower.h',['../juce__DropShadower_8h.html',1,'']]],
   ['juce_5fdrumpadledprogram_2eh',['juce_DrumPadLEDProgram.h',['../juce__DrumPadLEDProgram_8h.html',1,'']]],
-  ['juce_5fdsp_2eh',['juce_dsp.h',['../juce__dsp_8h.html',1,'']]],
-  ['juce_5fdsp_5fh_5fincluded',['JUCE_DSP_H_INCLUDED',['../juce__dsp_8h.html#a4b8d66c1b2d984ed65470398b5dd024d',1,'juce_dsp.h']]],
-  ['juce_5fdsp_5fuse_5fintel_5fmkl',['JUCE_DSP_USE_INTEL_MKL',['../juce__dsp_8h.html#a9e3423e06acd347699b686f4a8802b92',1,'juce_dsp.h']]],
-  ['juce_5fdsp_5fuse_5fshared_5ffftw',['JUCE_DSP_USE_SHARED_FFTW',['../juce__dsp_8h.html#a2b6ed194652c3b8e77105ce67d73ef44',1,'juce_dsp.h']]],
-  ['juce_5fdsp_5fuse_5fstatic_5ffftw',['JUCE_DSP_USE_STATIC_FFTW',['../juce__dsp_8h.html#ad2285c815f2b04aaa4bb9578babfab38',1,'juce_dsp.h']]],
   ['juce_5fdynamiclibrary_2eh',['juce_DynamicLibrary.h',['../juce__DynamicLibrary_8h.html',1,'']]],
   ['juce_5fdynamicobject_2eh',['juce_DynamicObject.h',['../juce__DynamicObject_8h.html',1,'']]],
   ['juce_5fedgetable_2eh',['juce_EdgeTable.h',['../juce__EdgeTable_8h.html',1,'']]],
@@ -258,8 +249,8 @@ var searchData=
   ['juce_5fgroupcomponent_2eh',['juce_GroupComponent.h',['../juce__GroupComponent_8h.html',1,'']]],
   ['juce_5fgzipcompressoroutputstream_2eh',['juce_GZIPCompressorOutputStream.h',['../juce__GZIPCompressorOutputStream_8h.html',1,'']]],
   ['juce_5fgzipdecompressorinputstream_2eh',['juce_GZIPDecompressorInputStream.h',['../juce__GZIPDecompressorInputStream_8h.html',1,'']]],
-  ['juce_5fhandlexembedevent',['juce_handleXEmbedEvent',['../classXEmbedComponent.html#ab77965533bbfc70c1bea0b5fcc314671',1,'XEmbedComponent']]],
   ['juce_5fhandlexembedevent',['juce_handleXEmbedEvent',['../juce__XEmbedComponent_8h.html#a2cad300cf70fc35a54a9a260022017a9',1,'juce_XEmbedComponent.h']]],
+  ['juce_5fhandlexembedevent',['juce_handleXEmbedEvent',['../classXEmbedComponent.html#ab77965533bbfc70c1bea0b5fcc314671',1,'XEmbedComponent']]],
   ['juce_5fhashmap_2eh',['juce_HashMap.h',['../juce__HashMap_8h.html',1,'']]],
   ['juce_5fheapblock_2eh',['juce_HeapBlock.h',['../juce__HeapBlock_8h.html',1,'']]],
   ['juce_5fhighresolutiontimer_2eh',['juce_HighResolutionTimer.h',['../juce__HighResolutionTimer_8h.html',1,'']]],
@@ -582,7 +573,6 @@ var searchData=
   ['juce_5fundomanager_2eh',['juce_UndoManager.h',['../juce__UndoManager_8h.html',1,'']]],
   ['juce_5funittest_2eh',['juce_UnitTest.h',['../juce__UnitTest_8h.html',1,'']]],
   ['juce_5furl_2eh',['juce_URL.h',['../juce__URL_8h.html',1,'']]],
-  ['juce_5fuse_5fsimd',['JUCE_USE_SIMD',['../juce__dsp_8h.html#a7cb84f1e06e22203908c4a4b79e0e43f',1,'juce_dsp.h']]],
   ['juce_5fusedebuggingnewoperator',['juce_UseDebuggingNewOperator',['../juce__Memory_8h.html#a881926ad904a631336e5d4b15f05c548',1,'juce_Memory.h']]],
   ['juce_5fuuid_2eh',['juce_Uuid.h',['../juce__Uuid_8h.html',1,'']]],
   ['juce_5fvalue_2eh',['juce_Value.h',['../juce__Value_8h.html',1,'']]],
@@ -590,7 +580,6 @@ var searchData=
   ['juce_5fvaluetreesynchroniser_2eh',['juce_ValueTreeSynchroniser.h',['../juce__ValueTreeSynchroniser_8h.html',1,'']]],
   ['juce_5fvariant_2eh',['juce_Variant.h',['../juce__Variant_8h.html',1,'']]],
   ['juce_5fvector3d_2eh',['juce_Vector3D.h',['../juce__Vector3D_8h.html',1,'']]],
-  ['juce_5fvector_5fcalltype',['JUCE_VECTOR_CALLTYPE',['../juce__dsp_8h.html#a42cc6e3db83b3e5c1af99584468727c8',1,'juce_dsp.h']]],
   ['juce_5fversion',['JUCE_VERSION',['../juce__StandardHeader_8h.html#a8e9e97736d05e318de09b9bedab1aaa0',1,'juce_StandardHeader.h']]],
   ['juce_5fvideocomponent_2eh',['juce_VideoComponent.h',['../juce__VideoComponent_8h.html',1,'']]],
   ['juce_5fviewport_2eh',['juce_Viewport.h',['../juce__Viewport_8h.html',1,'']]],
@@ -630,6 +619,5 @@ var searchData=
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#a04002a24d0dea5eb7b893e364a12d0e7',1,'Justification::Justification(const Justification &amp;other) noexcept'],['../classDrawableText_1_1ValueTreeWrapper.html#a568480e7695b8c4be65f179e34fc1b61',1,'DrawableText::ValueTreeWrapper::justification()']]],
   ['justifycontent',['JustifyContent',['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
-  ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]],
-  ['statevariablefilter',['StateVariableFilter',['../namespacejuce_1_1dsp_1_1StateVariableFilter.html',1,'juce::dsp']]]
+  ['littlefoot',['littlefoot',['../namespacejuce_1_1littlefoot.html',1,'juce']]]
 ];

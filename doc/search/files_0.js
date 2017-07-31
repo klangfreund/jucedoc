@@ -160,7 +160,6 @@ var searchData=
   ['juce_5fdropshadoweffect_2eh',['juce_DropShadowEffect.h',['../juce__DropShadowEffect_8h.html',1,'']]],
   ['juce_5fdropshadower_2eh',['juce_DropShadower.h',['../juce__DropShadower_8h.html',1,'']]],
   ['juce_5fdrumpadledprogram_2eh',['juce_DrumPadLEDProgram.h',['../juce__DrumPadLEDProgram_8h.html',1,'']]],
-  ['juce_5fdsp_2eh',['juce_dsp.h',['../juce__dsp_8h.html',1,'']]],
   ['juce_5fdynamiclibrary_2eh',['juce_DynamicLibrary.h',['../juce__DynamicLibrary_8h.html',1,'']]],
   ['juce_5fdynamicobject_2eh',['juce_DynamicObject.h',['../juce__DynamicObject_8h.html',1,'']]],
   ['juce_5fedgetable_2eh',['juce_EdgeTable.h',['../juce__EdgeTable_8h.html',1,'']]],

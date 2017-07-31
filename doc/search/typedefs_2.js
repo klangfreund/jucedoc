@@ -6,7 +6,6 @@ var searchData=
   ['cmplxops',['CmplxOps',['../structSIMDRegister.html#a55446e1c62edef815dee798ea83e7f41',1,'SIMDRegister']]],
   ['comboboxlistener',['ComboBoxListener',['../juce__ComboBox_8h.html#ab480afea56011a420dab466db0dac97e',1,'juce_ComboBox.h']]],
   ['commandid',['CommandID',['../juce__ApplicationCommandID_8h.html#afd69b5d28aad07b587b693925e09308b',1,'juce_ApplicationCommandID.h']]],
-  ['complex',['Complex',['../namespacejuce_1_1dsp.html#acf483c70bc05634ad29b2e1fcff21502',1,'juce::dsp']]],
   ['configcommand',['ConfigCommand',['../juce__BlocksProtocolDefinitions_8h.html#a0f11fcc0da792c5140ee66736115dcb6',1,'juce_BlocksProtocolDefinitions.h']]],
   ['configitemindex',['ConfigItemIndex',['../juce__BlocksProtocolDefinitions_8h.html#ac7527bbacd3f5c91954cd18bd5a04f87',1,'juce_BlocksProtocolDefinitions.h']]],
   ['configitemvalue',['ConfigItemValue',['../juce__BlocksProtocolDefinitions_8h.html#a8da124e9f8755871b44c73d830a2f5a1',1,'juce_BlocksProtocolDefinitions.h']]],

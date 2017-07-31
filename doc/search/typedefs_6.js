@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['iircoefficients',['IIRCoefficients',['../structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a',1,'FilterDesign::IIRCoefficients()'],['../structjuce_1_1dsp_1_1FilterDesign.html#a2f114ccdd2284d268115d8e1a61d3e4f',1,'juce::dsp::FilterDesign::IIRCoefficients()']]],
+  ['iircoefficients',['IIRCoefficients',['../structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a',1,'FilterDesign']]],
   ['implementationfunction',['ImplementationFunction',['../structjuce_1_1littlefoot_1_1NativeFunction.html#acea89a2c3c1a2002e2e2f66a031910dc',1,'juce::littlefoot::NativeFunction::ImplementationFunction()'],['../structlittlefoot_1_1NativeFunction.html#aa82b9d379e798cb8387f376455ff17db',1,'littlefoot::NativeFunction::ImplementationFunction()']]],
   ['index',['index',['../juce__VSTInterface_8h.html#ab57c9d4e7c6d9726b6ea1da3521e4792',1,'juce_VSTInterface.h']]],
   ['int16',['int16',['../namespacejuce_1_1littlefoot.html#adb3d0480a8e1cb35f84c9f701f975675',1,'juce::littlefoot::int16()'],['../namespacelittlefoot.html#ada240f433c50e81ac698bbf32d6a2c10',1,'littlefoot::int16()'],['../juce__MathsFunctions_8h.html#a259fa4834387bd68627ddf37bb3ebdb9',1,'int16():&#160;juce_MathsFunctions.h']]],

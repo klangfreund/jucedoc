@@ -10,7 +10,7 @@ var searchData=
   ['reaper',['Reaper',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aec2843d65058124f4d29e70027f06e83',1,'PluginHostType']]],
   ['record',['record',['../classControlButton.html#a891776295057786f99f14631b1aa2794a3534bd78b4a9437ce34c79388cdb7705',1,'ControlButton::record()'],['../classjuce_1_1ControlButton.html#a255db90f7880221e85f4d1d426291832ae61ee859d15de4b463198c18515a1cce',1,'juce::ControlButton::record()']]],
   ['recordaudio',['recordAudio',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535',1,'RuntimePermissions']]],
-  ['rectangular',['rectangular',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5caaaae050f2d5982e00bb1dd385ff0818c',1,'WindowingFunction::rectangular()'],['../structjuce_1_1dsp_1_1WindowingFunction.html#a0f93d68684da251f9aee7eb62ad7ff2aa67fa24248cc181d9fcbc3d5d95d96653',1,'juce::dsp::WindowingFunction::rectangular()']]],
+  ['rectangular',['rectangular',['../structWindowingFunction.html#acab1d9c135270ef4983845fe3f47da5caaaae050f2d5982e00bb1dd385ff0818c',1,'WindowingFunction']]],
   ['redo',['redo',['../namespaceStandardApplicationCommandIDs.html#a7888896f76408059bfe6a8ac9db5c984aa2a9602bedb21d34ea2b7cb620d5be1f',1,'StandardApplicationCommandIDs']]],
   ['renoise',['Renoise',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a17d9c92fbae8bdff143b83043fada217',1,'PluginHostType']]],
   ['requestconfig',['requestConfig',['../juce__BlocksProtocolDefinitions_8h.html#ad2f0c78fe5174a0fb7d0451722721bcda531fdd899befde688ca55e3326f32075',1,'juce_BlocksProtocolDefinitions.h']]],
