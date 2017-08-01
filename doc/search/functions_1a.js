@@ -185,6 +185,8 @@ var searchData=
   ['_7eglyph',['~Glyph',['../classTextLayout_1_1Glyph.html#a3a4ac36125aef996113f63a01aa07352',1,'TextLayout::Glyph']]],
   ['_7eglypharrangement',['~GlyphArrangement',['../classGlyphArrangement.html#aa6a89d95ae356910d04d56121f44d693',1,'GlyphArrangement']]],
   ['_7egraphics',['~Graphics',['../classGraphics.html#a7841c9a961ac9bca33bd30ddf8066cdb',1,'Graphics']]],
+  ['_7egrid',['~Grid',['../classGrid.html#a1be2455ab8cefa3b34954da6aa372de5',1,'Grid']]],
+  ['_7egriditem',['~GridItem',['../classGridItem.html#a28f883b34d9134673673b85e4180c0e5',1,'GridItem']]],
   ['_7egroupcomponent',['~GroupComponent',['../classGroupComponent.html#a558f46ecb72027cdac88676f98a1d649',1,'GroupComponent']]],
   ['_7egzipcompressoroutputstream',['~GZIPCompressorOutputStream',['../classGZIPCompressorOutputStream.html#a7e77d9225c8d3b44d7a55fd328f710d5',1,'GZIPCompressorOutputStream']]],
   ['_7egzipdecompressorinputstream',['~GZIPDecompressorInputStream',['../classGZIPDecompressorInputStream.html#a4bcf594ac091cb9def1938a8aa85e448',1,'GZIPDecompressorInputStream']]],

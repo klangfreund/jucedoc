@@ -14,7 +14,7 @@ var searchData=
   ['orange',['orange',['../classColours.html#a8c31c34f70dbdc0cad0f7cddf6cdb59a',1,'Colours']]],
   ['orangered',['orangered',['../classColours.html#a9a18c3a1066dd40816a1847450b7df1d',1,'Colours']]],
   ['orchid',['orchid',['../classColours.html#a713c49555dcbf132b3f147f4a66e2cb4',1,'Colours']]],
-  ['order',['order',['../classFlexItem.html#a65a0d2e16a904472eaa9ada3cdfcbf13',1,'FlexItem']]],
+  ['order',['order',['../classFlexItem.html#a65a0d2e16a904472eaa9ada3cdfcbf13',1,'FlexItem::order()'],['../classGridItem.html#a4c5e79aea3733b6ad55efbe986b3e32c',1,'GridItem::order()']]],
   ['orientation',['orientation',['../classMouseEvent.html#aaa5e044371383eb9c9e0990d55e05807',1,'MouseEvent']]],
   ['originalcomponent',['originalComponent',['../classMouseEvent.html#abe6b50fe43981f161200d99e6d235953',1,'MouseEvent']]],
   ['originatingcomponent',['originatingComponent',['../structApplicationCommandTarget_1_1InvocationInfo.html#a829cd8dbab1753320b750727df99ba41',1,'ApplicationCommandTarget::InvocationInfo']]],

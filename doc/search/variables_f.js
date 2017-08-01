@@ -23,6 +23,7 @@ var searchData=
   ['pink',['pink',['../classColours.html#aa959194b957e4113dcdc9ec488464229',1,'Colours']]],
   ['pitchbend',['pitchbend',['../structMPENote.html#aebfdbfc173bc19cc97b97659c412078f',1,'MPENote']]],
   ['pixelformat',['pixelFormat',['../classImage_1_1BitmapData.html#aae26ad39defa124117e3a7d8da499e6b',1,'Image::BitmapData::pixelFormat()'],['../classImagePixelData.html#a7af8920b587eebc3d94a0883375ca08f',1,'ImagePixelData::pixelFormat()']]],
+  ['pixels',['pixels',['../structGrid_1_1Px.html#a9e04a04d3b8452bfcde9c4320187b7c0',1,'Grid::Px']]],
   ['pixelstride',['pixelStride',['../classImage_1_1BitmapData.html#a7fc1d9da2a609dd67e8e9ad70e5f38f0',1,'Image::BitmapData']]],
   ['player',['player',['../classStandalonePluginHolder.html#a7dd25ebd12047b7c040f4128f4690c52',1,'StandalonePluginHolder']]],
   ['playhead',['playHead',['../classAudioProcessor.html#a78d1c3e1cabecff818b93de44891d973',1,'AudioProcessor']]],

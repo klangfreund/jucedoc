@@ -95,13 +95,15 @@ var searchData=
   ['riffinfowatermarkurl',['riffInfoWatermarkURL',['../classWavAudioFormat.html#a6965a365ca073102fd96ba61046080d6',1,'WavAudioFormat']]],
   ['riffinfowrittenby',['riffInfoWrittenBy',['../classWavAudioFormat.html#a3c3fac740a1a98be1795830207f99d6e',1,'WavAudioFormat']]],
   ['riffinfoyear',['riffInfoYear',['../classWavAudioFormat.html#a1e987faff09ae874c16120dcd0d13634',1,'WavAudioFormat']]],
-  ['right',['right',['../structFlexItem_1_1Margin.html#a162fe662f55f930a611297e2b85c56ad',1,'FlexItem::Margin::right()'],['../structRelativeCoordinate_1_1Strings.html#a39fa56a500b153b8bf66a8eaa56d72cf',1,'RelativeCoordinate::Strings::right()'],['../classRelativeRectangle.html#aa5d7a81e56ebaa8101aa23d43e652dd2',1,'RelativeRectangle::right()']]],
+  ['right',['right',['../structFlexItem_1_1Margin.html#a162fe662f55f930a611297e2b85c56ad',1,'FlexItem::Margin::right()'],['../structGridItem_1_1Margin.html#a1927cd4daf44c5e5dde06b73c0ab5427',1,'GridItem::Margin::right()'],['../structRelativeCoordinate_1_1Strings.html#a39fa56a500b153b8bf66a8eaa56d72cf',1,'RelativeCoordinate::Strings::right()'],['../classRelativeRectangle.html#aa5d7a81e56ebaa8101aa23d43e652dd2',1,'RelativeRectangle::right()']]],
   ['rightkey',['rightKey',['../classKeyPress.html#aff89b4c5876819968ff83a6c6ee15416',1,'KeyPress']]],
   ['rightmost',['rightmost',['../structVstEditorBounds.html#a45a396041a5c49b89d1b6f3f1a6a0b35',1,'VstEditorBounds']]],
   ['roomsize',['roomSize',['../structReverb_1_1Parameters.html#a31a5e2e56f91cb29e902e045960218a8',1,'Reverb::Parameters']]],
   ['rosybrown',['rosybrown',['../classColours.html#ac80422785f2552e8738a6b450f335dfa',1,'Colours']]],
   ['rotation',['rotation',['../classMouseEvent.html#a3a3b74f77f12503d059d8f0495a8237d',1,'MouseEvent::rotation()'],['../structPenDetails.html#a7856c25b7bfa1da8e9b9e86eb202b098',1,'PenDetails::rotation()']]],
   ['roundedmode',['roundedMode',['../classDrawablePath_1_1ValueTreeWrapper_1_1Element.html#ac0a638e6c79fa05a4ffd78efc2061d78',1,'DrawablePath::ValueTreeWrapper::Element']]],
+  ['row',['row',['../classGridItem.html#a7cb916f4a5cdc7da46727f54e5af89f8',1,'GridItem']]],
+  ['rowgap',['rowGap',['../classGrid.html#aa23bb39ce1bf833161597a8ee5076771',1,'Grid']]],
   ['royalblue',['royalblue',['../classColours.html#a2f85b97be33e07c1ca9a0187c4883df3',1,'Colours']]],
   ['runs',['runs',['../classTextLayout_1_1Line.html#a77c79b53611e1897fbc3d0ed40d7e0e3',1,'TextLayout::Line']]]
 ];

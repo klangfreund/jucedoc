@@ -175,9 +175,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39ca822734b9b20ab32eeba774c9a803 inherit pub_methods_classThread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThread.html#a077e20855a3c974c2fc6f9e7caa8412c">ThreadID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a39ca822734b9b20ab32eeba774c9a803">getThreadId</a> () const noexcept</td></tr>
 <tr class="memdesc:a39ca822734b9b20ab32eeba774c9a803 inherit pub_methods_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of this thread.  <a href="#a39ca822734b9b20ab32eeba774c9a803">More...</a><br/></td></tr>
 <tr class="separator:a39ca822734b9b20ab32eeba774c9a803 inherit pub_methods_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d88d5b8246418b568a1e6d50dddeb2 inherit pub_methods_classThread"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a88d88d5b8246418b568a1e6d50dddeb2">getThreadName</a> () const </td></tr>
-<tr class="memdesc:a88d88d5b8246418b568a1e6d50dddeb2 inherit pub_methods_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the thread.  <a href="#a88d88d5b8246418b568a1e6d50dddeb2">More...</a><br/></td></tr>
-<tr class="separator:a88d88d5b8246418b568a1e6d50dddeb2 inherit pub_methods_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ae21de0884d0814efe13de1ff475be inherit pub_methods_classThread"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a04ae21de0884d0814efe13de1ff475be">getThreadName</a> () const noexcept</td></tr>
+<tr class="memdesc:a04ae21de0884d0814efe13de1ff475be inherit pub_methods_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the thread.  <a href="#a04ae21de0884d0814efe13de1ff475be">More...</a><br/></td></tr>
+<tr class="separator:a04ae21de0884d0814efe13de1ff475be inherit pub_methods_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -190,6 +190,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a077e20855a3c974c2fc6f9e7caa8412c inherit pub_types_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value type used for thread IDs.  <a href="#a077e20855a3c974c2fc6f9e7caa8412c">More...</a><br/></td></tr>
 <tr class="separator:a077e20855a3c974c2fc6f9e7caa8412c inherit pub_types_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classThread"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classThread')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classThread.html">Thread</a></td></tr>
+<tr class="memitem:a0a1c520e431e3e5101ce2da8606baf26 inherit pub_static_methods_classThread"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a0a1c520e431e3e5101ce2da8606baf26">launch</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt; functionToRun)</td></tr>
+<tr class="memdesc:a0a1c520e431e3e5101ce2da8606baf26 inherit pub_static_methods_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a lambda or function on its own thread.  <a href="#a0a1c520e431e3e5101ce2da8606baf26">More...</a><br/></td></tr>
+<tr class="separator:a0a1c520e431e3e5101ce2da8606baf26 inherit pub_static_methods_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92778089556fd0b5ab9c31557669ce8 inherit pub_static_methods_classThread"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#ac92778089556fd0b5ab9c31557669ce8">currentThreadShouldExit</a> ()</td></tr>
 <tr class="memdesc:ac92778089556fd0b5ab9c31557669ce8 inherit pub_static_methods_classThread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current thread has been told to stop running.  <a href="#ac92778089556fd0b5ab9c31557669ce8">More...</a><br/></td></tr>
 <tr class="separator:ac92778089556fd0b5ab9c31557669ce8 inherit pub_static_methods_classThread"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,7 +394,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 31 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 1 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

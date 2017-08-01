@@ -200,6 +200,8 @@ var searchData=
   ['juce_5fgloweffect_2eh',['juce_GlowEffect.h',['../juce__GlowEffect_8h.html',1,'']]],
   ['juce_5fglypharrangement_2eh',['juce_GlyphArrangement.h',['../juce__GlyphArrangement_8h.html',1,'']]],
   ['juce_5fgraphicscontext_2eh',['juce_GraphicsContext.h',['../juce__GraphicsContext_8h.html',1,'']]],
+  ['juce_5fgrid_2eh',['juce_Grid.h',['../juce__Grid_8h.html',1,'']]],
+  ['juce_5fgriditem_2eh',['juce_GridItem.h',['../juce__GridItem_8h.html',1,'']]],
   ['juce_5fgroupcomponent_2eh',['juce_GroupComponent.h',['../juce__GroupComponent_8h.html',1,'']]],
   ['juce_5fgzipcompressoroutputstream_2eh',['juce_GZIPCompressorOutputStream.h',['../juce__GZIPCompressorOutputStream_8h.html',1,'']]],
   ['juce_5fgzipdecompressorinputstream_2eh',['juce_GZIPDecompressorInputStream.h',['../juce__GZIPDecompressorInputStream_8h.html',1,'']]],

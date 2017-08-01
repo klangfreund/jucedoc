@@ -90,6 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">FilterDesign&lt; FloatType &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class provides a set of functions which generates <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> and <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, of high-order lowpass filters.  
+ <a href="structFilterDesign.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -109,27 +112,44 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a00c884ddf6e84275f4ea3d729b84a030"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a00c884ddf6e84275f4ea3d729b84a030">designFIRLowpassWindowMethod</a> (FloatType frequency, double sampleRate, size_t order, <a class="el" href="structFilterDesign.html#ada75c4c44fa0e81d3c70be875f1dd707">WindowingMethod</a> type, FloatType beta=static_cast&lt; FloatType &gt;(2))</td></tr>
+<tr class="memdesc:a00c884ddf6e84275f4ea3d729b84a030"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, using the windowing design method, applied to a sinc impulse response.  <a href="#a00c884ddf6e84275f4ea3d729b84a030">More...</a><br/></td></tr>
 <tr class="separator:a00c884ddf6e84275f4ea3d729b84a030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e30118800374aa9edd00e8aaaa156f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a73e30118800374aa9edd00e8aaaa156f">designFIRLowpassKaiserMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType attenuationdB)</td></tr>
+<tr class="memdesc:a73e30118800374aa9edd00e8aaaa156f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This a variant of the function designFIRLowpassWindowMethod, which allows the user to specify a transition width and an attenuation in dB, to get a low-pass filter using the Kaiser windowing function, with calculated values of the filter order and of the beta parameter, to satisfy the constraints.  <a href="#a73e30118800374aa9edd00e8aaaa156f">More...</a><br/></td></tr>
 <tr class="separator:a73e30118800374aa9edd00e8aaaa156f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f41dfc834846342d21842c1c0c5370"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a88f41dfc834846342d21842c1c0c5370">designFIRLowpassTransitionMethod</a> (FloatType frequency, double sampleRate, size_t order, FloatType normalizedTransitionWidth, FloatType spline)</td></tr>
+<tr class="memdesc:a88f41dfc834846342d21842c1c0c5370"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is also a variant of the function designFIRLowpassWindowMethod, using a rectangular window as a basis, and a spline transition between the pass band and the stop band, to reduce the Gibbs phenomenon.  <a href="#a88f41dfc834846342d21842c1c0c5370">More...</a><br/></td></tr>
 <tr class="separator:a88f41dfc834846342d21842c1c0c5370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995c724e9db5a338c518a0a9335fe230"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a995c724e9db5a338c518a0a9335fe230">designFIRLowpassLeastSquaresMethod</a> (FloatType frequency, double sampleRate, size_t order, FloatType normalizedTransitionWidth, FloatType stopBandWeight)</td></tr>
+<tr class="memdesc:a995c724e9db5a338c518a0a9335fe230"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, by minimizing the average error between the generated filter and an ideal one using the least squares error criterion and matrices operations.  <a href="#a995c724e9db5a338c518a0a9335fe230">More...</a><br/></td></tr>
 <tr class="separator:a995c724e9db5a338c518a0a9335fe230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b1863a497e8c5b54121349ff3027fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign.html#a4346a6c52c36bbc2818bbacad8017006">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a20b1863a497e8c5b54121349ff3027fe">designFIRLowpassHalfBandEquirippleMethod</a> (FloatType normalizedTransitionWidth, FloatType attenuationdB)</td></tr>
+<tr class="memdesc:a20b1863a497e8c5b54121349ff3027fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Design of Half-Band FIR Filters for Signal Compression" from Pavel Zahradnik, to get an equiripple like high order <a class="el" href="namespaceFIR.html" title="Classes for FIR filter processing. ">FIR</a> filter, without the need of an iterative method and convergence failure risks.  <a href="#a20b1863a497e8c5b54121349ff3027fe">More...</a><br/></td></tr>
 <tr class="separator:a20b1863a497e8c5b54121349ff3027fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80c52b870a894d47cc03682a39e56db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#ad80c52b870a894d47cc03682a39e56db">designIIRLowpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:ad80c52b870a894d47cc03682a39e56db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the pass band and in the stop band.  <a href="#ad80c52b870a894d47cc03682a39e56db">More...</a><br/></td></tr>
 <tr class="separator:ad80c52b870a894d47cc03682a39e56db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c5af74254b4129f8e849f11848cfe86"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a3c5af74254b4129f8e849f11848cfe86">designIIRLowpassHighOrderChebyshev1Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a3c5af74254b4129f8e849f11848cfe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the stop band only.  <a href="#a3c5af74254b4129f8e849f11848cfe86">More...</a><br/></td></tr>
 <tr class="separator:a3c5af74254b4129f8e849f11848cfe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0215f891c35fbba0fdab3ecfc1059152"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a0215f891c35fbba0fdab3ecfc1059152">designIIRLowpassHighOrderChebyshev2Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a0215f891c35fbba0fdab3ecfc1059152"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the pass band only.  <a href="#a0215f891c35fbba0fdab3ecfc1059152">More...</a><br/></td></tr>
 <tr class="separator:a0215f891c35fbba0fdab3ecfc1059152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1770a61fff659de43f45f2e295d5ffc8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structFilterDesign.html#a5dc6fa66e98d18fda6ec3849836c8f7a">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a1770a61fff659de43f45f2e295d5ffc8">designIIRLowpassHighOrderEllipticMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a1770a61fff659de43f45f2e295d5ffc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIR::Filters, providing a minimum phase lowpass filter with ripples in both the pass band and in the stop band.  <a href="#a1770a61fff659de43f45f2e295d5ffc8">More...</a><br/></td></tr>
 <tr class="separator:a1770a61fff659de43f45f2e295d5ffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9102a03e66d80bcc59de3a9f9a6f4d3e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structFilterDesign_1_1IIRPolyphaseAllpassStructure.html">IIRPolyphaseAllpassStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilterDesign.html#a9102a03e66d80bcc59de3a9f9a6f4d3e">designIIRLowpassHalfBandPolyphaseAllpassMethod</a> (FloatType normalizedTransitionWidth, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a9102a03e66d80bcc59de3a9f9a6f4d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates arrays of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Digital Signal Processing Schemes for efficient interpolation and decimation" from Pavel Valenzuela and Constantinides.  <a href="#a9102a03e66d80bcc59de3a9f9a6f4d3e">More...</a><br/></td></tr>
 <tr class="separator:a9102a03e66d80bcc59de3a9f9a6f4d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename FloatType&gt;<br/>
+struct FilterDesign&lt; FloatType &gt;</h3>
+
+<p>This class provides a set of functions which generates <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> and <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, of high-order lowpass filters. </p>
+<p>They can be used for processing directly audio as an equalizer, in resampling algorithms etc.</p>
+<p>see FIRFilter::Coefficients, FIRFilter, <a class="el" href="structWindowingFunction.html" title="A class which provides multiple windowing functions useful for filter design and spectrum analyzers...">WindowingFunction</a>, IIRFilter::Coefficients, <a class="el" href="classIIRFilter.html" title="An IIR filter that can perform low, high, or band-pass filtering on an audio signal. ">IIRFilter</a> </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4346a6c52c36bbc2818bbacad8017006"></a>
 <div class="memitem">
 <div class="memproto">
@@ -225,6 +245,21 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, using the windowing design method, applied to a sinc impulse response. </p>
+<p>It is one of the simplest method used to generate a high order low-pass filter, which has the downside of needing more coefficients than more complex method to perform a given attenuation in the stop band.</p>
+<p>It generates linear phase filters coefficients.</p>
+<p>Note : the flatTop WindowingMethod generates an impulse response with a maximum amplitude higher than one, and might be normalized if necessary depending on the applications.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">order</td><td>the order of the filter </td></tr>
+    <tr><td class="paramname">type</td><td>the type, must be a WindowingFunction::WindowingType </td></tr>
+    <tr><td class="paramname">beta</td><td>an optional additional parameter useful for the Kaiser windowing function </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a73e30118800374aa9edd00e8aaaa156f"></a>
@@ -272,6 +307,18 @@ template&lt;typename FloatType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This a variant of the function designFIRLowpassWindowMethod, which allows the user to specify a transition width and an attenuation in dB, to get a low-pass filter using the Kaiser windowing function, with calculated values of the filter order and of the beta parameter, to satisfy the constraints. </p>
+<p>It generates linear phase filters coefficients.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">attenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -327,6 +374,19 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method is also a variant of the function designFIRLowpassWindowMethod, using a rectangular window as a basis, and a spline transition between the pass band and the stop band, to reduce the Gibbs phenomenon. </p>
+<p>It generates linear phase filters coefficients.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">order</td><td>the order of the filter </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">spline</td><td>between 1.0 and 4.0, indicates how much the transition is curved, with 1.0 meaning a straight line </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a995c724e9db5a338c518a0a9335fe230"></a>
@@ -381,6 +441,19 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, by minimizing the average error between the generated filter and an ideal one using the least squares error criterion and matrices operations. </p>
+<p>It generates linear phase filters coefficients.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">order</td><td>the order of the filter </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">stopBandWeight</td><td>between 1.0 and 100.0, indicates how much we want attenuation in the stop band, against some oscillation in the pass band </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a20b1863a497e8c5b54121349ff3027fe"></a>
@@ -416,6 +489,16 @@ template&lt;typename FloatType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This method generates a <a class="el" href="structFIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Design of Half-Band FIR Filters for Signal Compression" from Pavel Zahradnik, to get an equiripple like high order <a class="el" href="namespaceFIR.html" title="Classes for FIR filter processing. ">FIR</a> filter, without the need of an iterative method and convergence failure risks. </p>
+<p>It generates linear phase filters coefficients.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">attenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -471,6 +554,19 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the pass band and in the stop band. </p>
+<p>The algorithms are based on "Lecture Notes on Elliptic Filter Design" by Sophocles J. Orfanidis.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">passbandAttenuationdB</td><td>the lowest attenuation in dB expected in the pass band </td></tr>
+    <tr><td class="paramname">stopbandAttenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3c5af74254b4129f8e849f11848cfe86"></a>
@@ -524,6 +620,19 @@ template&lt;typename FloatType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the stop band only. </p>
+<p>The algorithms are based on "Lecture Notes on Elliptic Filter Design" by Sophocles J. Orfanidis.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">passbandAttenuationdB</td><td>the lowest attenuation in dB expected in the pass band </td></tr>
+    <tr><td class="paramname">stopbandAttenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -579,6 +688,19 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase lowpass filter without any ripple in the pass band only. </p>
+<p>The algorithms are based on "Lecture Notes on Elliptic Filter Design" by Sophocles J. Orfanidis.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">passbandAttenuationdB</td><td>the lowest attenuation in dB expected in the pass band </td></tr>
+    <tr><td class="paramname">stopbandAttenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a1770a61fff659de43f45f2e295d5ffc8"></a>
@@ -633,6 +755,19 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method returns an array of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIR::Filters, providing a minimum phase lowpass filter with ripples in both the pass band and in the stop band. </p>
+<p>The algorithms are based on "Lecture Notes on Elliptic Filter Design" by Sophocles J. Orfanidis.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequency</td><td>the cutoff frequency of the low-pass filter </td></tr>
+    <tr><td class="paramname">sampleRate</td><td>the sample rate being used in the filter design </td></tr>
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">passbandAttenuationdB</td><td>the lowest attenuation in dB expected in the pass band </td></tr>
+    <tr><td class="paramname">stopbandAttenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a9102a03e66d80bcc59de3a9f9a6f4d3e"></a>
@@ -669,6 +804,18 @@ template&lt;typename FloatType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>This method generates arrays of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Digital Signal Processing Schemes for efficient interpolation and decimation" from Pavel Valenzuela and Constantinides. </p>
+<p>The result is a <a class="el" href="structFilterDesign_1_1IIRPolyphaseAllpassStructure.html" title="The structure returned by the function designIIRLowpassHalfBandPolyphaseAllpassMethod. ">IIRPolyphaseAllpassStructure</a> object.</p>
+<p>The two members of this structure directPath and delayedPath are arrays of <a class="el" href="structIIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made of polyphase second order allpass filters and an additional delay in the second array, that can be used in cascaded filters processed in two parallel paths, which must be summed at the end to get the high order efficient low-pass filtering.</p>
+<p>The gain of the resulting pass-band is 6 dB, so don't forget to compensate it if you want to use that method for something else than two times oversampling.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalizedTransitionWidth</td><td>the normalized size between 0 and 0.5 of the transition between the pass band and the stop band </td></tr>
+    <tr><td class="paramname">stopbandAttenuationdB</td><td>the attenuation in dB expected in the stop band </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
@@ -678,7 +825,7 @@ template&lt;typename FloatType &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 31 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 1 2017 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

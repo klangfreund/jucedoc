@@ -165,12 +165,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39ca822734b9b20ab32eeba774c9a803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThread.html#a077e20855a3c974c2fc6f9e7caa8412c">ThreadID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a39ca822734b9b20ab32eeba774c9a803">getThreadId</a> () const noexcept</td></tr>
 <tr class="memdesc:a39ca822734b9b20ab32eeba774c9a803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of this thread.  <a href="#a39ca822734b9b20ab32eeba774c9a803">More...</a><br/></td></tr>
 <tr class="separator:a39ca822734b9b20ab32eeba774c9a803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d88d5b8246418b568a1e6d50dddeb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a88d88d5b8246418b568a1e6d50dddeb2">getThreadName</a> () const </td></tr>
-<tr class="memdesc:a88d88d5b8246418b568a1e6d50dddeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the thread.  <a href="#a88d88d5b8246418b568a1e6d50dddeb2">More...</a><br/></td></tr>
-<tr class="separator:a88d88d5b8246418b568a1e6d50dddeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ae21de0884d0814efe13de1ff475be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a04ae21de0884d0814efe13de1ff475be">getThreadName</a> () const noexcept</td></tr>
+<tr class="memdesc:a04ae21de0884d0814efe13de1ff475be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the thread.  <a href="#a04ae21de0884d0814efe13de1ff475be">More...</a><br/></td></tr>
+<tr class="separator:a04ae21de0884d0814efe13de1ff475be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a1c520e431e3e5101ce2da8606baf26"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a0a1c520e431e3e5101ce2da8606baf26">launch</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt; functionToRun)</td></tr>
+<tr class="memdesc:a0a1c520e431e3e5101ce2da8606baf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a lambda or function on its own thread.  <a href="#a0a1c520e431e3e5101ce2da8606baf26">More...</a><br/></td></tr>
+<tr class="separator:a0a1c520e431e3e5101ce2da8606baf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92778089556fd0b5ab9c31557669ce8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#ac92778089556fd0b5ab9c31557669ce8">currentThreadShouldExit</a> ()</td></tr>
 <tr class="memdesc:ac92778089556fd0b5ab9c31557669ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current thread has been told to stop running.  <a href="#ac92778089556fd0b5ab9c31557669ce8">More...</a><br/></td></tr>
 <tr class="separator:ac92778089556fd0b5ab9c31557669ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,6 +411,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0a1c520e431e3e5101ce2da8606baf26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Thread::launch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>functionToRun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invokes a lambda or function on its own thread. </p>
+<p>This will spin up a <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> object which calls the function and then exits. Bear in mind that starting and stopping a thread can be a fairly heavyweight operation, so you might prefer to use a <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a> if you're kicking off a lot of short background tasks. Also note that using an anonymous thread makes it very difficult to interrupt the function when you need to stop it, e.g. when your app quits. So it's up to you to deal with situations where the function may fail to stop in time. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab02ad2d11a2dacfea4a78b06224a3e87"></a>
 <div class="memitem">
 <div class="memproto">
@@ -508,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Waits for the thread to stop. </p>
-<p>This will waits until <a class="el" href="classThread.html#ab02ad2d11a2dacfea4a78b06224a3e87" title="Returns true if the thread is currently active. ">isThreadRunning()</a> is false or until a timeout expires.</p>
+<p>This will wait until <a class="el" href="classThread.html#ab02ad2d11a2dacfea4a78b06224a3e87" title="Returns true if the thread is currently active. ">isThreadRunning()</a> is false or until a timeout expires.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeOutMilliseconds</td><td>the time to wait, in milliseconds. If this value is less than zero, it will wait forever. </td></tr>
@@ -788,15 +818,17 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the ID of this thread. </p>
-<p>That means the ID of this thread object - not of the thread that's calling the method.</p>
-<p>This can change when the thread is started and stopped, and will be invalid if the thread's not actually running.</p>
+<p>That means the ID of this thread object - not of the thread that's calling the method. This can change when the thread is started and stopped, and will be invalid if the thread's not actually running. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a88d88d5b8246418b568a1e6d50dddeb2"></a>
+<a class="anchor" id="a04ae21de0884d0814efe13de1ff475be"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classString.html">String</a>&amp; Thread::getThreadName </td>
@@ -805,6 +837,11 @@ Static Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the name of the thread. </p>
@@ -846,7 +883,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 31 2017 20:00:35 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 1 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

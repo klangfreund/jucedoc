@@ -44,7 +44,7 @@ var searchData=
   ['spacekey',['spaceKey',['../classKeyPress.html#a60f802af5aff465d7ff910009608e343',1,'KeyPress']]],
   ['speakers',['speakers',['../structVstSpeakerConfiguration.html#a28435008442dd5cf9fbef564c439909c',1,'VstSpeakerConfiguration']]],
   ['springgreen',['springgreen',['../classColours.html#a3e179fc221c9922880646454e451562b',1,'Colours']]],
-  ['start',['start',['../classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3',1,'NormalisableRange::start()'],['../structTextDiff_1_1Change.html#ac72e9e25d35530fac7837a2d22c31958',1,'TextDiff::Change::start()']]],
+  ['start',['start',['../classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3',1,'NormalisableRange::start()'],['../structTextDiff_1_1Change.html#ac72e9e25d35530fac7837a2d22c31958',1,'TextDiff::Change::start()'],['../structGridItem_1_1StartAndEndProperty.html#a1f4e27e7a91ec09563b7655a3b4f5ccf',1,'GridItem::StartAndEndProperty::start()']]],
   ['startangleradians',['startAngleRadians',['../structSlider_1_1RotaryParameters.html#a1b4090a3f77b0183b1c847525f4edb8a',1,'Slider::RotaryParameters']]],
   ['startpos',['startPos',['../classRelativePointPath_1_1StartSubPath.html#afcaa4975b6ef2fcc78e99b873a38d2d2',1,'RelativePointPath::StartSubPath']]],
   ['startsample',['startSample',['../structAudioSourceChannelInfo.html#a42e88ccc05d4893015e2415785390259',1,'AudioSourceChannelInfo']]],

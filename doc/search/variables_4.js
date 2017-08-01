@@ -10,7 +10,7 @@ var searchData=
   ['emptybuffer',['emptyBuffer',['../classStandalonePluginHolder.html#add80ae89f130d96688aa8fac62f405bf',1,'StandalonePluginHolder']]],
   ['emptyspace',['emptySpace',['../structVstEffectInterface.html#ab15796ca33277d2a99efcb0adf402595',1,'VstEffectInterface']]],
   ['encodername',['encoderName',['../classOggVorbisAudioFormat.html#a1c97a40ce37de0766efdaec9b1d4fcb5',1,'OggVorbisAudioFormat']]],
-  ['end',['end',['../classNormalisableRange.html#aa8aba814e8121157ba79ccbf03152b82',1,'NormalisableRange']]],
+  ['end',['end',['../classNormalisableRange.html#aa8aba814e8121157ba79ccbf03152b82',1,'NormalisableRange::end()'],['../structGridItem_1_1StartAndEndProperty.html#a6952f8a0355511921f6e1efd9051ab43',1,'GridItem::StartAndEndProperty::end()']]],
   ['endangleradians',['endAngleRadians',['../structSlider_1_1RotaryParameters.html#a4d099642ed3116c61391839b2a79bd49',1,'Slider::RotaryParameters']]],
   ['endkey',['endKey',['../classKeyPress.html#a54ced410db4096610651498e85e63b1e',1,'KeyPress']]],
   ['endpoint',['endPoint',['../classRelativePointPath_1_1LineTo.html#a947b4b9d2bf6208e8955eca0e6c5c66c',1,'RelativePointPath::LineTo']]],

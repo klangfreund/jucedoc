@@ -10,6 +10,7 @@ var searchData=
   ['lastindexofanyof',['lastIndexOfAnyOf',['../classString.html#a0d7b8d46182d86bc4b57d2d5fb40430e',1,'String']]],
   ['lastindexofchar',['lastIndexOfChar',['../classString.html#a0ced47fc04dd1be838e1e45dbeb8454f',1,'String']]],
   ['lastindexofignorecase',['lastIndexOfIgnoreCase',['../classString.html#acef7fabc5dae953eabbea57f1ab0a05c',1,'String']]],
+  ['launch',['launch',['../classThread.html#a0a1c520e431e3e5101ce2da8606baf26',1,'Thread']]],
   ['launchasync',['launchAsync',['../structDialogWindow_1_1LaunchOptions.html#ade02f0c6ea259f9a37ab15474159ca11',1,'DialogWindow::LaunchOptions']]],
   ['launchasynchronously',['launchAsynchronously',['../classCallOutBox.html#a55dd3c214fc70d1ee94a3e501b85e02d',1,'CallOutBox']]],
   ['launchindefaultbrowser',['launchInDefaultBrowser',['../classURL.html#ab56bf9814dfe828db465582b3af50c69',1,'URL']]],

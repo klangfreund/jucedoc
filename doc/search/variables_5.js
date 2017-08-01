@@ -47,6 +47,7 @@ var searchData=
   ['fontheight',['fontHeight',['../classDrawableText_1_1ValueTreeWrapper.html#a2b1cf90acc44a5ca2b9a7717962b44de',1,'DrawableText::ValueTreeWrapper']]],
   ['fonthscale',['fontHScale',['../classDrawableText_1_1ValueTreeWrapper.html#ac0a4ff12678830dd3a2cd0d1bd3c6e2d',1,'DrawableText::ValueTreeWrapper']]],
   ['forestgreen',['forestgreen',['../classColours.html#a34c336f65b06cb988f89bddc14a5041e',1,'Colours']]],
+  ['fraction',['fraction',['../structGrid_1_1Fr.html#a61017c40010278bfb0b7bde8a2d470f0',1,'Grid::Fr']]],
   ['framerate',['frameRate',['../structAudioPlayHead_1_1CurrentPositionInfo.html#aca5544d9204e4fedfdf6088dcdf339aa',1,'AudioPlayHead::CurrentPositionInfo']]],
   ['freezemode',['freezeMode',['../structReverb_1_1Parameters.html#a394c3bfbd67ad681222410952dbed0c6',1,'Reverb::Parameters']]],
   ['fuchsia',['fuchsia',['../classColours.html#a612e521b7168865f48fc7d1612658a79',1,'Colours']]],

@@ -606,7 +606,7 @@ var searchData=
   ['itemdropped',['itemDropped',['../classDragAndDropTarget.html#ac2240ffc2dd0ccf61670780a15b66017',1,'DragAndDropTarget::itemDropped()'],['../classToolbar.html#a834c50d62372f02a7b9c217d3e9130ba',1,'Toolbar::itemDropped()'],['../classTreeViewItem.html#afade9c99b85939fe8521d55b0b2ab285',1,'TreeViewItem::itemDropped()'],['../classTreeView.html#a1dddbf29a676760f6ba45bde53e952e9',1,'TreeView::itemDropped()']]],
   ['itemid',['itemID',['../structPopupMenu_1_1Item.html#ac2f737fa43d4a2c2e1115af850ea3d01',1,'PopupMenu::Item']]],
   ['itemopennesschanged',['itemOpennessChanged',['../classTreeViewItem.html#ae675d65af3c2ab3455b98aa6d025d070',1,'TreeViewItem']]],
-  ['items',['items',['../classFlexBox.html#aebe0aeb88e2a044a737df0f5ac26bc3b',1,'FlexBox']]],
+  ['items',['items',['../classFlexBox.html#aebe0aeb88e2a044a737df0f5ac26bc3b',1,'FlexBox::items()'],['../classGrid.html#ab63aa167bd2e481a4a92afaa694ef788',1,'Grid::items()']]],
   ['itemselected',['itemSelected',['../classSelectedItemSet.html#a251fa7c411d226f354f9aa8153d20d4d',1,'SelectedItemSet']]],
   ['itemselectionchanged',['itemSelectionChanged',['../classTreeViewItem.html#a2b1fe5d650ef8cc31a16f1eaed03e837',1,'TreeViewItem']]],
   ['itemtype',['ItemType',['../classSelectedItemSet.html#adac8d78df1c308ca17aa9cbfada787fa',1,'SelectedItemSet']]],

@@ -10,8 +10,10 @@ var searchData=
   ['glyph',['Glyph',['../classTextLayout_1_1Glyph.html',1,'TextLayout']]],
   ['glypharrangement',['GlyphArrangement',['../classGlyphArrangement.html',1,'']]],
   ['graphics',['Graphics',['../classGraphics.html',1,'']]],
-  ['gridfill',['GridFill',['../structjuce_1_1DrumPadGridProgram_1_1GridFill.html',1,'juce::DrumPadGridProgram']]],
+  ['grid',['Grid',['../classGrid.html',1,'']]],
   ['gridfill',['GridFill',['../structDrumPadGridProgram_1_1GridFill.html',1,'DrumPadGridProgram']]],
+  ['gridfill',['GridFill',['../structjuce_1_1DrumPadGridProgram_1_1GridFill.html',1,'juce::DrumPadGridProgram']]],
+  ['griditem',['GridItem',['../classGridItem.html',1,'']]],
   ['groupcomponent',['GroupComponent',['../classGroupComponent.html',1,'']]],
   ['gzipcompressoroutputstream',['GZIPCompressorOutputStream',['../classGZIPCompressorOutputStream.html',1,'']]],
   ['gzipdecompressorinputstream',['GZIPDecompressorInputStream',['../classGZIPDecompressorInputStream.html',1,'']]]

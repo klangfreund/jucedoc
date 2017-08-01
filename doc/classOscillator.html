@@ -102,6 +102,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af232ed0e45012b83dd44aa5b7203281d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOscillator.html#af232ed0e45012b83dd44aa5b7203281d">Oscillator</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classOscillator.html#ad3eb44ec8603aa023ddb4835b7dab85f">NumericType</a>(<a class="el" href="classOscillator.html#ad3eb44ec8603aa023ddb4835b7dab85f">NumericType</a>)&gt; &amp;function, size_t lookupTableNumPoints=0)</td></tr>
+<tr class="memdesc:af232ed0e45012b83dd44aa5b7203281d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an oscillator with a periodic input function (-pi..pi).  <a href="#af232ed0e45012b83dd44aa5b7203281d">More...</a><br/></td></tr>
 <tr class="separator:af232ed0e45012b83dd44aa5b7203281d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eac8a35129231dacded22b7771ee45c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOscillator.html#a1eac8a35129231dacded22b7771ee45c">setFrequency</a> (<a class="el" href="classOscillator.html#ad3eb44ec8603aa023ddb4835b7dab85f">NumericType</a> newGain) noexcept</td></tr>
 <tr class="memdesc:a1eac8a35129231dacded22b7771ee45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frequency of the oscillator.  <a href="#a1eac8a35129231dacded22b7771ee45c">More...</a><br/></td></tr>
@@ -171,6 +172,9 @@ template&lt;typename SampleType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates an oscillator with a periodic input function (-pi..pi). </p>
+<p>If lookup table is not zero, then the function will be approximated with a lookup table. </p>
 
 <p>References <a class="el" href="juce__MathsFunctions_8h.html#aa929b9e10eedb3b7a6bd8f6ba2d9ddaa">double_Pi</a>.</p>
 
@@ -366,7 +370,7 @@ template&lt;typename ProcessContext &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 31 2017 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 1 2017 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

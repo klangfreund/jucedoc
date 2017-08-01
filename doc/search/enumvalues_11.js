@@ -39,6 +39,7 @@ var searchData=
   ['rotatedanticlockwise',['rotatedAntiClockwise',['../classDesktop.html#a5e06947d2d1295bdb6f5c4fab7beb98aab48176789b5764aae6aae6a393916712',1,'Desktop']]],
   ['rotatedclockwise',['rotatedClockwise',['../classDesktop.html#a5e06947d2d1295bdb6f5c4fab7beb98aae1e0629de1668ef16f700b7278fd0f04',1,'Desktop']]],
   ['rounded',['rounded',['../classPathStrokeType.html#a9050e37133047ab699b44b704e4f96cfa6b01d7b3e9809f0b62dcb151d552a96f',1,'PathStrokeType']]],
-  ['row',['row',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015af1965a857bc285d26fe22023aa5ab50d',1,'FlexBox']]],
+  ['row',['row',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015af1965a857bc285d26fe22023aa5ab50d',1,'FlexBox::row()'],['../classGrid.html#a1987dcfa56a91b8c3b41dff63dc6364aaf1965a857bc285d26fe22023aa5ab50d',1,'Grid::row()']]],
+  ['rowdense',['rowDense',['../classGrid.html#a1987dcfa56a91b8c3b41dff63dc6364aa3c4bf7353d907dc54698890400541709',1,'Grid']]],
   ['rowreverse',['rowReverse',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015ac6376864f7e71e1685d440473eace55b',1,'FlexBox']]]
 ];

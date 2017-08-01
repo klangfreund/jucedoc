@@ -66,6 +66,6 @@ var searchData=
   ['istouchstart',['isTouchStart',['../structTouchSurface_1_1Touch.html#abbb23178c550bc0a0a7ddd40fb931002',1,'TouchSurface::Touch::isTouchStart()'],['../structjuce_1_1TouchSurface_1_1Touch.html#aada3c47dc092aaeac0ff874aeb650d68',1,'juce::TouchSurface::Touch::isTouchStart()']]],
   ['item',['item',['../structBlock_1_1ConfigMetaData.html#a4266eeea52a9b67c8e995451692dfe41',1,'Block::ConfigMetaData::item()'],['../structBlockConfigManager_1_1ConfigDescription.html#a62e5491b900224c37e71f98854a68097',1,'BlockConfigManager::ConfigDescription::item()'],['../structjuce_1_1Block_1_1ConfigMetaData.html#ae7735013a3189be1e40c95d1ce169abb',1,'juce::Block::ConfigMetaData::item()']]],
   ['itemid',['itemID',['../structPopupMenu_1_1Item.html#ac2f737fa43d4a2c2e1115af850ea3d01',1,'PopupMenu::Item']]],
-  ['items',['items',['../classFlexBox.html#aebe0aeb88e2a044a737df0f5ac26bc3b',1,'FlexBox']]],
+  ['items',['items',['../classFlexBox.html#aebe0aeb88e2a044a737df0f5ac26bc3b',1,'FlexBox::items()'],['../classGrid.html#ab63aa167bd2e481a4a92afaa694ef788',1,'Grid::items()']]],
   ['ivory',['ivory',['../classColours.html#a97ea5f64838c6c2d1301c32108e830d3',1,'Colours']]]
 ];
