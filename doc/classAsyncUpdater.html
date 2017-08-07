@@ -199,9 +199,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Causes the callback to be triggered at a later time. </p>
-<p>This method returns immediately, having made sure that a callback to the <a class="el" href="classAsyncUpdater.html#a446f3af793131f8772329f1f8b526578" title="Called back to do whatever your class needs to do. ">handleAsyncUpdate()</a> method will occur as soon as possible.</p>
-<p>If an update callback is already pending but hasn't happened yet, calls to this method will be ignored.</p>
-<p>It's thread-safe to call this method from any number of threads without needing to worry about locking. </p>
+<p>This method returns immediately, after which a callback to the <a class="el" href="classAsyncUpdater.html#a446f3af793131f8772329f1f8b526578" title="Called back to do whatever your class needs to do. ">handleAsyncUpdate()</a> method will be made by the message thread as soon as possible.</p>
+<p>If an update callback is already pending but hasn't happened yet, calling this method will have no effect.</p>
+<p>It's thread-safe to call this method from any thread, BUT beware of calling it from a real-time (e.g. audio) thread, because it involves posting a message to the system queue, which means it may block (and in general will do on most OSes). </p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2017 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 7 2017 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
