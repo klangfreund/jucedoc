@@ -174,7 +174,7 @@ var searchData=
   ['scopedreadlock',['ScopedReadLock',['../classScopedReadLock.html',1,'ScopedReadLock'],['../classScopedReadLock.html#a656bd081a1ce9eaebaf1b612ad35ea18',1,'ScopedReadLock::ScopedReadLock()']]],
   ['scopedsavestate',['ScopedSaveState',['../classGraphics_1_1ScopedSaveState.html#a7c4999b18096c05aefaa72ead0cd9d6a',1,'Graphics::ScopedSaveState']]],
   ['scopedsavestate',['ScopedSaveState',['../classGraphics_1_1ScopedSaveState.html',1,'Graphics']]],
-  ['scopedtimemeasurement',['ScopedTimeMeasurement',['../classScopedTimeMeasurement.html',1,'ScopedTimeMeasurement'],['../classScopedTimeMeasurement.html#a2c3d7cabdbed4a476340ea42cdefa496',1,'ScopedTimeMeasurement::ScopedTimeMeasurement()']]],
+  ['scopedtimemeasurement',['ScopedTimeMeasurement',['../classScopedTimeMeasurement.html',1,'ScopedTimeMeasurement'],['../classScopedTimeMeasurement.html#a708c8c7433cb0c0fb81d8a59389429c2',1,'ScopedTimeMeasurement::ScopedTimeMeasurement()']]],
   ['scopedtrylock',['ScopedTryLock',['../juce__CriticalSection_8h.html#a5d3ed387d4c09d8fbfb8ad1f2db610df',1,'juce_CriticalSection.h']]],
   ['scopedtrylocktype',['ScopedTryLockType',['../classCriticalSection.html#a745e5e36d8c6a33ea1fcbbfa2fff00a3',1,'CriticalSection']]],
   ['scopedunlock',['ScopedUnlock',['../juce__CriticalSection_8h.html#a4cc435f24ace2a8f59b488ed66d9cf2c',1,'juce_CriticalSection.h']]],
