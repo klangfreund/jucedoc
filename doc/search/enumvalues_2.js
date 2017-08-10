@@ -2,6 +2,7 @@ var searchData=
 [
   ['cakewalksonar8',['CakewalkSonar8',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a9346912590305747f0c38d7c3208de17',1,'PluginHostType']]],
   ['cakewalksonargeneric',['CakewalkSonarGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a0b64ed512c677bef44381479de35c425',1,'PluginHostType']]],
+  ['cancelled',['cancelled',['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7da38881e0a24039dc2621e1d6f86cb71f7',1,'InAppPurchases::Download::cancelled()'],['../structjuce_1_1InAppPurchases_1_1Download.html#a741cd4c8046fb08675a0cddb7448944fa38881e0a24039dc2621e1d6f86cb71f7',1,'juce::InAppPurchases::Download::cancelled()']]],
   ['canselectdirectories',['canSelectDirectories',['../classFileBrowserComponent.html#a32888a950cc0e51c8e1350f53bea43d6ab7e808e7b8a33afb0150e9ea6047c2dd',1,'FileBrowserComponent']]],
   ['canselectfiles',['canSelectFiles',['../classFileBrowserComponent.html#a32888a950cc0e51c8e1350f53bea43d6a07878819a9559235bff2789c1fdbd8e9',1,'FileBrowserComponent']]],
   ['canselectmultipleitems',['canSelectMultipleItems',['../classFileBrowserComponent.html#a32888a950cc0e51c8e1350f53bea43d6a0eacc483cb1561acdce859beed28364f',1,'FileBrowserComponent']]],

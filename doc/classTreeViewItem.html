@@ -215,12 +215,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef65553f9c368989185c07be261c3dbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#aef65553f9c368989185c07be261c3dbd">paintVerticalConnectingLine</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, const <a class="el" href="classLine.html">Line</a>&lt; float &gt; &amp;line)</td></tr>
 <tr class="memdesc:aef65553f9c368989185c07be261c3dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the line that extends vertically up towards one of its parents, or down to one of its children.  <a href="#aef65553f9c368989185c07be261c3dbd">More...</a><br/></td></tr>
 <tr class="separator:aef65553f9c368989185c07be261c3dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d16cbc797adba8e7dda4db01f868f72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a1d16cbc797adba8e7dda4db01f868f72">itemClicked</a> (const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
-<tr class="memdesc:a1d16cbc797adba8e7dda4db01f868f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the user clicks on this item.  <a href="#a1d16cbc797adba8e7dda4db01f868f72">More...</a><br/></td></tr>
-<tr class="separator:a1d16cbc797adba8e7dda4db01f868f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f6bac320a0ed884006e25558c6b513"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a44f6bac320a0ed884006e25558c6b513">itemDoubleClicked</a> (const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
-<tr class="memdesc:a44f6bac320a0ed884006e25558c6b513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the user double-clicks on this item.  <a href="#a44f6bac320a0ed884006e25558c6b513">More...</a><br/></td></tr>
-<tr class="separator:a44f6bac320a0ed884006e25558c6b513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b0ad85c76825c94356da8b24f856fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a10b0ad85c76825c94356da8b24f856fd">itemClicked</a> (const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;)</td></tr>
+<tr class="memdesc:a10b0ad85c76825c94356da8b24f856fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the user clicks on this item.  <a href="#a10b0ad85c76825c94356da8b24f856fd">More...</a><br/></td></tr>
+<tr class="separator:a10b0ad85c76825c94356da8b24f856fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17f8145bdbe1dec8aeeed09ffc6bf20"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#aa17f8145bdbe1dec8aeeed09ffc6bf20">itemDoubleClicked</a> (const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;)</td></tr>
+<tr class="memdesc:aa17f8145bdbe1dec8aeeed09ffc6bf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the user double-clicks on this item.  <a href="#aa17f8145bdbe1dec8aeeed09ffc6bf20">More...</a><br/></td></tr>
+<tr class="separator:aa17f8145bdbe1dec8aeeed09ffc6bf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b1fe5d650ef8cc31a16f1eaed03e837"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeViewItem.html#a2b1fe5d650ef8cc31a16f1eaed03e837">itemSelectionChanged</a> (bool isNowSelected)</td></tr>
 <tr class="memdesc:a2b1fe5d650ef8cc31a16f1eaed03e837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the item is selected or deselected.  <a href="#a2b1fe5d650ef8cc31a16f1eaed03e837">More...</a><br/></td></tr>
 <tr class="separator:a2b1fe5d650ef8cc31a16f1eaed03e837"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +360,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of sub-items that have been added to this item. </p>
-<p>Note that this doesn't mean much if the node isn't open.</p>
+<p>Note that this doesn't mean much if the node isn't open. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTreeViewItem.html#ad12c774c2434074f795ba37a5c2d1755" title="Returns one of the item&#39;s sub-items. ">getSubItem</a>, <a class="el" href="classTreeViewItem.html#a1d4dc3f8e9971147e2649a128bd0344d" title="Tells the tree whether this item can potentially be opened. ">mightContainSubItems</a>, <a class="el" href="classTreeViewItem.html#a536e1e4edaf0b0a472c485050d54eb5a" title="Adds a sub-item. ">addSubItem</a> </dd></dl>
 
 </div>
@@ -1133,7 +1133,7 @@ template&lt;class ElementComparator &gt; </div>
 
 <p>Draws the item's contents. </p>
 <p>You can choose to either implement this method and draw each item, or you can use <a class="el" href="classTreeViewItem.html#af821a303a31a9256e00b94ff8fe2595d" title="Creates a component that will be used to represent this item. ">createItemComponent()</a> to create a component that will represent the item.</p>
-<p>If all you need in your tree is to be able to draw the items and detect when the user selects or double-clicks one of them, it's probably enough to use <a class="el" href="classTreeViewItem.html#adc3e3a7c09443e28b1f48fe10b9569b2" title="Draws the item&#39;s contents. ">paintItem()</a>, <a class="el" href="classTreeViewItem.html#a1d16cbc797adba8e7dda4db01f868f72" title="Called when the user clicks on this item. ">itemClicked()</a> and <a class="el" href="classTreeViewItem.html#a44f6bac320a0ed884006e25558c6b513" title="Called when the user double-clicks on this item. ">itemDoubleClicked()</a>. If you need more complicated interactions, you may need to use <a class="el" href="classTreeViewItem.html#af821a303a31a9256e00b94ff8fe2595d" title="Creates a component that will be used to represent this item. ">createItemComponent()</a> instead.</p>
+<p>If all you need in your tree is to be able to draw the items and detect when the user selects or double-clicks one of them, it's probably enough to use <a class="el" href="classTreeViewItem.html#adc3e3a7c09443e28b1f48fe10b9569b2" title="Draws the item&#39;s contents. ">paintItem()</a>, <a class="el" href="classTreeViewItem.html#a10b0ad85c76825c94356da8b24f856fd" title="Called when the user clicks on this item. ">itemClicked()</a> and <a class="el" href="classTreeViewItem.html#aa17f8145bdbe1dec8aeeed09ffc6bf20" title="Called when the user double-clicks on this item. ">itemDoubleClicked()</a>. If you need more complicated interactions, you may need to use <a class="el" href="classTreeViewItem.html#af821a303a31a9256e00b94ff8fe2595d" title="Creates a component that will be used to represent this item. ">createItemComponent()</a> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>the graphics context to draw into </td></tr>
@@ -1266,7 +1266,7 @@ template&lt;class ElementComparator &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1d16cbc797adba8e7dda4db01f868f72"></a>
+<a class="anchor" id="a10b0ad85c76825c94356da8b24f856fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1277,7 +1277,7 @@ template&lt;class ElementComparator &gt; </div>
           <td class="memname">virtual void TreeViewItem::itemClicked </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1291,11 +1291,11 @@ template&lt;class ElementComparator &gt; </div>
 <p>Called when the user clicks on this item. </p>
 <p>If you're using <a class="el" href="classTreeViewItem.html#af821a303a31a9256e00b94ff8fe2595d" title="Creates a component that will be used to represent this item. ">createItemComponent()</a> to create a custom component for the item, the mouse-clicks might not make it through to the treeview, but this is how you find out about clicks when just drawing each item individually.</p>
 <p>The associated mouse-event details are passed in, so you can find out about which button, where it was, etc.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTreeViewItem.html#a44f6bac320a0ed884006e25558c6b513" title="Called when the user double-clicks on this item. ">itemDoubleClicked</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTreeViewItem.html#aa17f8145bdbe1dec8aeeed09ffc6bf20" title="Called when the user double-clicks on this item. ">itemDoubleClicked</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a44f6bac320a0ed884006e25558c6b513"></a>
+<a class="anchor" id="aa17f8145bdbe1dec8aeeed09ffc6bf20"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1306,7 +1306,7 @@ template&lt;class ElementComparator &gt; </div>
           <td class="memname">virtual void TreeViewItem::itemDoubleClicked </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1321,7 +1321,7 @@ template&lt;class ElementComparator &gt; </div>
 <p>If you're using <a class="el" href="classTreeViewItem.html#af821a303a31a9256e00b94ff8fe2595d" title="Creates a component that will be used to represent this item. ">createItemComponent()</a> to create a custom component for the item, the mouse-clicks might not make it through to the treeview, but this is how you find out about clicks when just drawing each item individually.</p>
 <p>The associated mouse-event details are passed in, so you can find out about which button, where it was, etc.</p>
 <p>If not overridden, the base class method here will open or close the item as if the 'plus' button had been clicked.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTreeViewItem.html#a1d16cbc797adba8e7dda4db01f868f72" title="Called when the user clicks on this item. ">itemClicked</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classTreeViewItem.html#a10b0ad85c76825c94356da8b24f856fd" title="Called when the user clicks on this item. ">itemClicked</a> </dd></dl>
 
 </div>
 </div>
@@ -1741,7 +1741,7 @@ template&lt;class ElementComparator &gt; </div>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 9 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 10 2017 20:00:38 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

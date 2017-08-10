@@ -33,6 +33,7 @@ var searchData=
   ['applerootnote',['appleRootNote',['../classAiffAudioFormat.html#a90cde1895684b0f9acc38dfd3d7fda74',1,'AiffAudioFormat']]],
   ['applerootset',['appleRootSet',['../classAiffAudioFormat.html#a9f25a210dab1aab2077575121ac722c0',1,'AiffAudioFormat']]],
   ['appletag',['appleTag',['../classAiffAudioFormat.html#ae70d490b15000091780a97d9b1913f32',1,'AiffAudioFormat']]],
+  ['applicationbundlename',['applicationBundleName',['../structInAppPurchases_1_1Purchase.html#a5950a9e263d0834b3f42851bcfa23c48',1,'InAppPurchases::Purchase::applicationBundleName()'],['../structjuce_1_1InAppPurchases_1_1Purchase.html#ad913da282c9c0fcd3790de933c7446ce',1,'juce::InAppPurchases::Purchase::applicationBundleName()']]],
   ['applicationname',['applicationName',['../structPropertiesFile_1_1Options.html#a6222c4cfec8124ae0af33398a61f2517',1,'PropertiesFile::Options']]],
   ['aqua',['aqua',['../classColours.html#a8e8c52db61e74dde6972c2f9c727796f',1,'Colours']]],
   ['aquamarine',['aquamarine',['../classColours.html#aa16a1a5bd7d1e56f3d36ce7bf7706cd6',1,'Colours']]],

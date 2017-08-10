@@ -23,6 +23,8 @@ var searchData=
   ['display',['Display',['../structDesktop_1_1Displays_1_1Display.html',1,'Desktop::Displays']]],
   ['displays',['Displays',['../classDesktop_1_1Displays.html',1,'Desktop']]],
   ['documentwindow',['DocumentWindow',['../classDocumentWindow.html',1,'']]],
+  ['download',['Download',['../structInAppPurchases_1_1Download.html',1,'InAppPurchases']]],
+  ['download',['Download',['../structjuce_1_1InAppPurchases_1_1Download.html',1,'juce::InAppPurchases']]],
   ['downloadtask',['DownloadTask',['../classURL_1_1DownloadTask.html',1,'URL']]],
   ['draganddropcontainer',['DragAndDropContainer',['../classDragAndDropContainer.html',1,'']]],
   ['draganddroptarget',['DragAndDropTarget',['../classDragAndDropTarget.html',1,'']]],

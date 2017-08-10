@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e41899bfdfc13eb61cff655a7ef6098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundPlayer.html#a0e41899bfdfc13eb61cff655a7ef6098">play</a> (<a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *buffer, bool deleteWhenFinished=false)</td></tr>
 <tr class="memdesc:a0e41899bfdfc13eb61cff655a7ef6098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound from an audio format reader.  <a href="#a0e41899bfdfc13eb61cff655a7ef6098">More...</a><br/></td></tr>
 <tr class="separator:a0e41899bfdfc13eb61cff655a7ef6098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb431c681934390906a7a15cfc84a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundPlayer.html#a8fb431c681934390906a7a15cfc84a7d">play</a> (<a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a> *audioSource, bool deleteWhenFinished=false)</td></tr>
-<tr class="memdesc:a8fb431c681934390906a7a15cfc84a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound from a positionable audio source.  <a href="#a8fb431c681934390906a7a15cfc84a7d">More...</a><br/></td></tr>
-<tr class="separator:a8fb431c681934390906a7a15cfc84a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847f35441069a47d739f8b695f8d40ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundPlayer.html#a847f35441069a47d739f8b695f8d40ff">play</a> (<a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a> *audioSource, bool deleteWhenFinished=false, double sampleRateOfSource=0.0)</td></tr>
+<tr class="memdesc:a847f35441069a47d739f8b695f8d40ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound from a positionable audio source.  <a href="#a847f35441069a47d739f8b695f8d40ff">More...</a><br/></td></tr>
+<tr class="separator:a847f35441069a47d739f8b695f8d40ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4123bb5f4325cd80f3825931085c591b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundPlayer.html#a4123bb5f4325cd80f3825931085c591b">play</a> (<a class="el" href="juce__AudioSampleBuffer_8h.html#a97a2916214efbd76c6b870f9c48efba0">AudioSampleBuffer</a> *buffer, bool deleteWhenFinished=false, bool playOnAllOutputChannels=false)</td></tr>
 <tr class="memdesc:a4123bb5f4325cd80f3825931085c591b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound from an audio sample buffer.  <a href="#a4123bb5f4325cd80f3825931085c591b">More...</a><br/></td></tr>
 <tr class="separator:a4123bb5f4325cd80f3825931085c591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8fb431c681934390906a7a15cfc84a7d"></a>
+<a class="anchor" id="a847f35441069a47d739f8b695f8d40ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -275,7 +275,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteWhenFinished</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>deleteWhenFinished</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sampleRateOfSource</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,6 +298,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">audioSource</td><td>the audio source to play </td></tr>
     <tr><td class="paramname">deleteWhenFinished</td><td>If this is true then the audio source will be deleted once the device manager has finished playing. </td></tr>
+    <tr><td class="paramname">sampleRateOfSource</td><td>The sample rate of the source. If this is zero, JUCE will assume that the sample rate is the same as the audio output device. </td></tr>
   </table>
   </dd>
 </dl>
@@ -490,7 +497,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 9 2017 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 10 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

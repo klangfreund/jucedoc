@@ -224,6 +224,7 @@ var searchData=
   ['juce_5fimageeffectfilter_2eh',['juce_ImageEffectFilter.h',['../juce__ImageEffectFilter_8h.html',1,'']]],
   ['juce_5fimagefileformat_2eh',['juce_ImageFileFormat.h',['../juce__ImageFileFormat_8h.html',1,'']]],
   ['juce_5fimagepreviewcomponent_2eh',['juce_ImagePreviewComponent.h',['../juce__ImagePreviewComponent_8h.html',1,'']]],
+  ['juce_5finapppurchases_2eh',['juce_InAppPurchases.h',['../juce__InAppPurchases_8h.html',1,'']]],
   ['juce_5fincludemoduleheaders_2eh',['juce_IncludeModuleHeaders.h',['../juce__IncludeModuleHeaders_8h.html',1,'']]],
   ['juce_5fincludesystemheaders_2eh',['juce_IncludeSystemHeaders.h',['../juce__IncludeSystemHeaders_8h.html',1,'']]],
   ['juce_5finitialisation_2eh',['juce_Initialisation.h',['../juce__Initialisation_8h.html',1,'']]],

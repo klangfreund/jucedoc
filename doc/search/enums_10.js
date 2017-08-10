@@ -8,6 +8,7 @@ var searchData=
   ['specialitemids',['SpecialItemIds',['../classToolbarItemFactory.html#a415ffaa38b6306574ad6777ccf6d2ac4',1,'ToolbarItemFactory']]],
   ['speciallocationtype',['SpecialLocationType',['../classFile.html#a3e19cafabb03c5838160263a6e76313d',1,'File']]],
   ['standardcursortype',['StandardCursorType',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97',1,'MouseCursor']]],
+  ['status',['Status',['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7d',1,'InAppPurchases::Download::Status()'],['../structjuce_1_1InAppPurchases_1_1Download.html#a741cd4c8046fb08675a0cddb7448944f',1,'juce::InAppPurchases::Download::Status()']]],
   ['storageformat',['StorageFormat',['../classPropertiesFile.html#ac4d1ac9a6b624f7e0de7787de46dc05e',1,'PropertiesFile']]],
   ['streamflags',['StreamFlags',['../classChildProcess.html#a9e7be158550b4d2a470e4cceef501892',1,'ChildProcess']]],
   ['styleflags',['StyleFlags',['../classComponentPeer.html#a94a21f91c61f8211774d6f43243a6ddc',1,'ComponentPeer']]]

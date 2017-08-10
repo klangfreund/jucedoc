@@ -6,6 +6,7 @@ var searchData=
   ['abletonlivegeneric',['AbletonLiveGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a665226cd0a77007d5e3a8673f6e91dd4',1,'PluginHostType']]],
   ['above',['above',['../classBubbleComponent.html#aba96d481d723fd2549f497ccd7ed41a3a46398aeabcf45a9b397beca92dcf85b1',1,'BubbleComponent']]],
   ['absolutedrag',['absoluteDrag',['../classSlider.html#a42fd96ac0f5dca7e6942022c9a75cbdead37417ff73089a45f77534d75e1a1647',1,'Slider']]],
+  ['active',['active',['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7dac76a5e84e4bdee527e274ea30c680d79',1,'InAppPurchases::Download::active()'],['../structjuce_1_1InAppPurchases_1_1Download.html#a741cd4c8046fb08675a0cddb7448944fac76a5e84e4bdee527e274ea30c680d79',1,'juce::InAppPurchases::Download::active()']]],
   ['adobeaudition',['AdobeAudition',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aace510334a69f21f5ced14e5ade5e1db',1,'PluginHostType']]],
   ['adobepremierepro',['AdobePremierePro',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aba59eb46b76ef7fb9b0d2b0a5a370e9b',1,'PluginHostType']]],
   ['aftertext',['afterText',['../classTabBarButton.html#a9ff26e542aa2f688e6c5609ab4d3899aaee8f78f95528103403371a9964950484',1,'TabBarButton']]],

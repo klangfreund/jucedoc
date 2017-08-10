@@ -16,6 +16,8 @@ var searchData=
   ['imagepreviewcomponent',['ImagePreviewComponent',['../classImagePreviewComponent.html',1,'']]],
   ['imageprovider',['ImageProvider',['../classComponentBuilder_1_1ImageProvider.html',1,'ComponentBuilder']]],
   ['imagetype',['ImageType',['../classImageType.html',1,'']]],
+  ['inapppurchases',['InAppPurchases',['../classInAppPurchases.html',1,'']]],
+  ['inapppurchases',['InAppPurchases',['../classjuce_1_1InAppPurchases.html',1,'juce']]],
   ['incomingdatareceiver',['IncomingDataReceiver',['../classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html',1,'AudioFormatWriter::ThreadedWriter']]],
   ['inputfilter',['InputFilter',['../classTextEditor_1_1InputFilter.html',1,'TextEditor']]],
   ['inputsource',['InputSource',['../classInputSource.html',1,'']]],
@@ -32,10 +34,10 @@ var searchData=
   ['invocationinfo',['InvocationInfo',['../structApplicationCommandTarget_1_1InvocationInfo.html',1,'ApplicationCommandTarget']]],
   ['ipaddress',['IPAddress',['../classIPAddress.html',1,'']]],
   ['item',['Item',['../structPopupMenu_1_1Item.html',1,'PopupMenu']]],
-  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
-  ['iterator',['Iterator',['../classCodeDocument_1_1Iterator.html',1,'CodeDocument']]],
-  ['iterator',['Iterator',['../classPath_1_1Iterator.html',1,'Path']]],
-  ['iterator',['Iterator',['../classListenerList_1_1Iterator.html',1,'ListenerList']]],
   ['iterator',['Iterator',['../classMidiBuffer_1_1Iterator.html',1,'MidiBuffer']]],
+  ['iterator',['Iterator',['../structValueTree_1_1Iterator.html',1,'ValueTree']]],
+  ['iterator',['Iterator',['../classListenerList_1_1Iterator.html',1,'ListenerList']]],
+  ['iterator',['Iterator',['../classPath_1_1Iterator.html',1,'Path']]],
+  ['iterator',['Iterator',['../classCodeDocument_1_1Iterator.html',1,'CodeDocument']]],
   ['iterator',['Iterator',['../structHashMap_1_1Iterator.html',1,'HashMap']]]
 ];
