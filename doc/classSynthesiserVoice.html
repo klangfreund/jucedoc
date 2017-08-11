@@ -146,6 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a72ab7856c1e7651b1ce955388645a0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the next block of data for this voice.  <a href="#a72ab7856c1e7651b1ce955388645a0a1">More...</a><br/></td></tr>
 <tr class="separator:a72ab7856c1e7651b1ce955388645a0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61fa7d3dd5180a561fc1c0ab418077e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSynthesiserVoice.html#ac61fa7d3dd5180a561fc1c0ab418077e">renderNextBlock</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; double &gt; &amp;outputBuffer, int startSample, int numSamples)</td></tr>
+<tr class="memdesc:ac61fa7d3dd5180a561fc1c0ab418077e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A double-precision version of <a class="el" href="classSynthesiserVoice.html#a72ab7856c1e7651b1ce955388645a0a1" title="Renders the next block of data for this voice. ">renderNextBlock()</a>  <a href="#ac61fa7d3dd5180a561fc1c0ab418077e">More...</a><br/></td></tr>
 <tr class="separator:ac61fa7d3dd5180a561fc1c0ab418077e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a423708524f139af52bd5771006b14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSynthesiserVoice.html#a31a423708524f139af52bd5771006b14">setCurrentPlaybackSampleRate</a> (double newRate)</td></tr>
 <tr class="memdesc:a31a423708524f139af52bd5771006b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the voice's reference sample rate.  <a href="#a31a423708524f139af52bd5771006b14">More...</a><br/></td></tr>
@@ -159,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0f9adb8d02f26099dea4467fd6fc170"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSynthesiserVoice.html#ae0f9adb8d02f26099dea4467fd6fc170">isKeyDown</a> () const noexcept</td></tr>
 <tr class="memdesc:ae0f9adb8d02f26099dea4467fd6fc170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the key that triggered this voice is still held down.  <a href="#ae0f9adb8d02f26099dea4467fd6fc170">More...</a><br/></td></tr>
 <tr class="separator:ae0f9adb8d02f26099dea4467fd6fc170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7a6e44584873c6753aa902d826e246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSynthesiserVoice.html#a6e7a6e44584873c6753aa902d826e246">setKeyDown</a> (bool isNowDown) noexcept</td></tr>
+<tr class="memdesc:a6e7a6e44584873c6753aa902d826e246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows you to modify the flag indicating that the key that triggered this voice is still held down.  <a href="#a6e7a6e44584873c6753aa902d826e246">More...</a><br/></td></tr>
+<tr class="separator:a6e7a6e44584873c6753aa902d826e246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6524e841fc7ebb1936690f8be147417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSynthesiserVoice.html#ab6524e841fc7ebb1936690f8be147417">isSustainPedalDown</a> () const noexcept</td></tr>
 <tr class="memdesc:ab6524e841fc7ebb1936690f8be147417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the sustain pedal is currently active for this voice.  <a href="#ab6524e841fc7ebb1936690f8be147417">More...</a><br/></td></tr>
 <tr class="separator:ab6524e841fc7ebb1936690f8be147417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -635,6 +639,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A double-precision version of <a class="el" href="classSynthesiserVoice.html#a72ab7856c1e7651b1ce955388645a0a1" title="Renders the next block of data for this voice. ">renderNextBlock()</a> </p>
+
 </div>
 </div>
 <a class="anchor" id="a31a423708524f139af52bd5771006b14"></a>
@@ -741,6 +747,33 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns true if the key that triggered this voice is still held down. </p>
 <p>Note that the voice may still be playing after the key was released (e.g because the sostenuto pedal is down). </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e7a6e44584873c6753aa902d826e246"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SynthesiserVoice::setKeyDown </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isNowDown</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows you to modify the flag indicating that the key that triggered this voice is still held down. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classSynthesiserVoice.html#ae0f9adb8d02f26099dea4467fd6fc170" title="Returns true if the key that triggered this voice is still held down. ">isKeyDown</a> </dd></dl>
 
 </div>
 </div>
@@ -880,7 +913,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 20:00:37 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 20:00:41 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>

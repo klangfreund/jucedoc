@@ -842,7 +842,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implement this method to set up any GL objects that you need for rendering. </p>
-<p>The GL context will be active when this method is called. </p>
+<p>The GL context will be active when this method is called.</p>
+<p>Note that because the GL context could be destroyed and re-created ad-hoc by the underlying platform, the <a class="el" href="classOpenGLAppComponent.html#ae6d8beb75f3b1f8a8d4c9c34282cc008" title="Implement this method to free any GL objects that you created during rendering. ">shutdown()</a> and <a class="el" href="classOpenGLAppComponent.html#a153ccca8ccf6852000af46e5a437bef3" title="Implement this method to set up any GL objects that you need for rendering. ">initialise()</a> calls could be called multiple times while your app is running. So don't make your code assume that this will only be called once! </p>
 
 </div>
 </div>
@@ -868,7 +869,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implement this method to free any GL objects that you created during rendering. </p>
-<p>The GL context will still be active when this method is called. </p>
+<p>The GL context will still be active when this method is called.</p>
+<p>Note that because the GL context could be destroyed and re-created ad-hoc by the underlying platform, the <a class="el" href="classOpenGLAppComponent.html#ae6d8beb75f3b1f8a8d4c9c34282cc008" title="Implement this method to free any GL objects that you created during rendering. ">shutdown()</a> and <a class="el" href="classOpenGLAppComponent.html#a153ccca8ccf6852000af46e5a437bef3" title="Implement this method to set up any GL objects that you need for rendering. ">initialise()</a> calls could be called multiple times while your app is running. So don't make your code assume that this will only be called once! </p>
 
 </div>
 </div>
@@ -920,7 +922,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 20:00:34 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 20:00:39 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
