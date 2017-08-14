@@ -164,6 +164,7 @@ var searchData=
   ['juce_5fcomponentpeer_2eh',['juce_ComponentPeer.h',['../juce__ComponentPeer_8h.html',1,'']]],
   ['juce_5fconcertinapanel_2eh',['juce_ConcertinaPanel.h',['../juce__ConcertinaPanel_8h.html',1,'']]],
   ['juce_5fconnectedchildprocess_2eh',['juce_ConnectedChildProcess.h',['../juce__ConnectedChildProcess_8h.html',1,'']]],
+  ['juce_5fconstexpr',['JUCE_CONSTEXPR',['../juce__CompilerSupport_8h.html#af41251c36d1579b74e6c54bf4fa5383a',1,'juce_CompilerSupport.h']]],
   ['juce_5fcontainerdeletepolicy_2eh',['juce_ContainerDeletePolicy.h',['../juce__ContainerDeletePolicy_8h.html',1,'']]],
   ['juce_5fcontrolbutton_2eh',['juce_ControlButton.h',['../juce__ControlButton_8h.html',1,'']]],
   ['juce_5fconvolution_2eh',['juce_Convolution.h',['../juce__Convolution_8h.html',1,'']]],

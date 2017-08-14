@@ -19,6 +19,7 @@ var searchData=
   ['juce_5fcdecl',['JUCE_CDECL',['../juce__PlatformDefs_8h.html#af6815e7d8ca906bd8a6087d4d72d694c',1,'juce_PlatformDefs.h']]],
   ['juce_5fchecksettingmacros_5fh',['JUCE_CHECKSETTINGMACROS_H',['../juce__CheckSettingMacros_8h.html#acdf46c2bef73873331a20a8992ea1401',1,'juce_CheckSettingMacros.h']]],
   ['juce_5fcompiler_5fwarning',['JUCE_COMPILER_WARNING',['../juce__PlatformDefs_8h.html#a8cde62e24a0b5fd34e82402175587739',1,'juce_PlatformDefs.h']]],
+  ['juce_5fconstexpr',['JUCE_CONSTEXPR',['../juce__CompilerSupport_8h.html#af41251c36d1579b74e6c54bf4fa5383a',1,'juce_CompilerSupport.h']]],
   ['juce_5fdebug',['JUCE_DEBUG',['../juce__TargetPlatform_8h.html#a5f55c9671da5cfdf8377deba11c06044',1,'juce_TargetPlatform.h']]],
   ['juce_5fdeclare_5fnon_5fcopyable',['JUCE_DECLARE_NON_COPYABLE',['../juce__PlatformDefs_8h.html#a6ab7a603bf4435c7cb286b1744366eb2',1,'juce_PlatformDefs.h']]],
   ['juce_5fdeclare_5fnon_5fcopyable_5fwith_5fleak_5fdetector',['JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR',['../juce__PlatformDefs_8h.html#a851b02724a8158a7f746c66b5758b3dd',1,'juce_PlatformDefs.h']]],

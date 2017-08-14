@@ -816,6 +816,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Appends a custom menu item. </p>
 <p>This will add a user-defined component to use as a menu item. The component passed in will be deleted by this menu when it's no longer needed.</p>
+<p>Note that native macOS menus do not support custom components.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classPopupMenu_1_1CustomComponent.html" title="A user-defined component that can be used as an item in a popup menu. ">CustomComponent</a> </dd></dl>
 
 </div>
@@ -870,7 +871,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Appends a custom menu item that can't be used to trigger a result. </p>
 <p>This will add a user-defined component to use as a menu item. It's the caller's responsibility to delete the component that is passed-in when it's no longer needed after the menu has been hidden.</p>
-<p>If triggerMenuItemAutomaticallyWhenClicked is true, the menu itself will handle detection of a mouse-click on your component, and use that to trigger the menu ID specified in itemResultID. If this is false, the menu item can't be triggered, so itemResultID is not used. </p>
+<p>If triggerMenuItemAutomaticallyWhenClicked is true, the menu itself will handle detection of a mouse-click on your component, and use that to trigger the menu ID specified in itemResultID. If this is false, the menu item can't be triggered, so itemResultID is not used.</p>
+<p>Note that native macOS menus do support custom components. </p>
 
 </div>
 </div>
@@ -1391,7 +1393,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.10-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2017 20:00:31 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 14 2017 20:00:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6 . All content &copy ROLI Ltd.
 </small></address>
