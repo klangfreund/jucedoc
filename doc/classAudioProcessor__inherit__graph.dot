@@ -1,0 +1,13 @@
+digraph "AudioProcessor"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="AudioProcessor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="AudioPluginInstance",height=0.2,width=0.4,color="black",URL="$classAudioPluginInstance.html",tooltip="Base class for an active instance of a plugin. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AudioProcessorGraph\l::AudioGraphIOProcessor",height=0.2,width=0.4,color="black",URL="$classAudioProcessorGraph_1_1AudioGraphIOProcessor.html",tooltip="A special type of AudioProcessor that can live inside an AudioProcessorGraph in order to use the audi..."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AudioProcessorGraph",height=0.2,width=0.4,color="black",URL="$classAudioProcessorGraph.html",tooltip="A type of AudioProcessor which plays back a graph of other AudioProcessors. "];
+}

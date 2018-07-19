@@ -1,0 +1,13 @@
+digraph "ImageType"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="ImageType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="NativeImageType",height=0.2,width=0.4,color="black",URL="$classNativeImageType.html",tooltip="An image storage type which holds the pixels using whatever is the default storage format on the curr..."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLImageType",height=0.2,width=0.4,color="black",URL="$classOpenGLImageType.html",tooltip="A type of ImagePixelData that stores its image data in an OpenGL framebuffer, allowing a JUCE Image o..."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SoftwareImageType",height=0.2,width=0.4,color="black",URL="$classSoftwareImageType.html",tooltip="An image storage type which holds the pixels in-memory as a simple block of values. "];
+}

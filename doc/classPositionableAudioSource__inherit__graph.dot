@@ -1,0 +1,15 @@
+digraph "PositionableAudioSource"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="PositionableAudioSource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="AudioSource",height=0.2,width=0.4,color="black",URL="$classAudioSource.html",tooltip="Base class for objects that can produce a continuous stream of audio. "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AudioFormatReaderSource",height=0.2,width=0.4,color="black",URL="$classAudioFormatReaderSource.html",tooltip="A type of AudioSource that will read from an AudioFormatReader. "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AudioTransportSource",height=0.2,width=0.4,color="black",URL="$classAudioTransportSource.html",tooltip="An AudioSource that takes a PositionableAudioSource and allows it to be played, stopped, started, etc. "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BufferingAudioSource",height=0.2,width=0.4,color="black",URL="$classBufferingAudioSource.html",tooltip="An AudioSource which takes another source as input, and buffers it using a thread. "];
+}

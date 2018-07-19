@@ -17,7 +17,7 @@ git pull
 
 # Update the documentation
 cd $juceDirectory/doxygen/
-doxygen
+make
 
 # Copy it over
 cd $currentDirectory
