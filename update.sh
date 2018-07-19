@@ -9,7 +9,7 @@
 # 00      20      *       *       *       cd /home/juce/data/docs/development/jucedoc/; /home/juce/data/docs/development/jucedoc/update.sh >/dev/null
 
 currentDirectory=`pwd`
-juceDirectory=~/data/res/development/juce
+juceDirectory=~/data/res/code/juce
 
 # Get the latest JUCE
 cd $juceDirectory
