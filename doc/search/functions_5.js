@@ -70,6 +70,8 @@ var searchData=
   ['findcomponentat',['findComponentAt',['../classDesktop.html#ab8695d705a461020361e51abb428132c',1,'Desktop']]],
   ['findcurrenttextinputtarget',['findCurrentTextInputTarget',['../classComponentPeer.html#a85355b1df4c5e7fa8692c7a3ede22d9e',1,'ComponentPeer']]],
   ['finddefaultcomponenttarget',['findDefaultComponentTarget',['../classApplicationCommandManager.html#add1c985aacfb09c72d038e88ce91341a',1,'ApplicationCommandManager']]],
+  ['finddisplayforpoint',['findDisplayForPoint',['../classDisplays.html#af14ee3f1c7c41a34f60fc5b7b4f56ef6',1,'Displays']]],
+  ['finddisplayforrect',['findDisplayForRect',['../classDisplays.html#af1be11be947660baa839e98c4f695874',1,'Displays']]],
   ['findendoftoken',['findEndOfToken',['../classCharacterFunctions.html#ab13a2cfcef3af28ca4916a855967a2ac',1,'CharacterFunctions']]],
   ['findendofwhitespace',['findEndOfWhitespace',['../classCharacterFunctions.html#ad1b0612e60e31641f0f2460d646b8e80',1,'CharacterFunctions::findEndOfWhitespace()'],['../classCharPointer__ASCII.html#a46e66abf5a596aaf031ee70699ab5ab9',1,'CharPointer_ASCII::findEndOfWhitespace()'],['../classCharPointer__UTF16.html#a390416da21c0599f732fe6c7815f67cd',1,'CharPointer_UTF16::findEndOfWhitespace()'],['../classCharPointer__UTF32.html#a609babf8df00758db3e44c676d61d457',1,'CharPointer_UTF32::findEndOfWhitespace()'],['../classCharPointer__UTF8.html#a955fb7d8289c3b1e61f1bd70b74df117',1,'CharPointer_UTF8::findEndOfWhitespace()']]],
   ['findfilesystemroots',['findFileSystemRoots',['../classFile.html#a694de291d70096e9d31d0c95b432bcb6',1,'File']]],

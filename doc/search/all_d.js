@@ -13,6 +13,7 @@ var searchData=
   ['nativeimagetype',['NativeImageType',['../classNativeImageType.html',1,'NativeImageType'],['../classNativeImageType.html#a55b2d128303a0a60a8a44490c64b87b2',1,'NativeImageType::NativeImageType()']]],
   ['nativemessagebox',['NativeMessageBox',['../classNativeMessageBox.html',1,'']]],
   ['nativeops',['NativeOps',['../structdsp_1_1SIMDRegister.html#ab2a6e539ebdc6be03f6cd76cfca7ce53',1,'dsp::SIMDRegister']]],
+  ['nativescalefactorchanged',['nativeScaleFactorChanged',['../structComponentPeer_1_1ScaleFactorListener.html#a6133e08cbcfe30381b2795510a3ecce2',1,'ComponentPeer::ScaleFactorListener']]],
   ['natural',['natural',['../classAttributedString.html#a254fea6774b4e74f786cc5ad3abac400ab64fe4e1ad4457691eabf047b0b48c89',1,'AttributedString']]],
   ['naturalfilecomparator',['NaturalFileComparator',['../structFile_1_1NaturalFileComparator.html',1,'File::NaturalFileComparator'],['../structFile_1_1NaturalFileComparator.html#adf4f4af4bc21c7efbc6d20d89b233f0e',1,'File::NaturalFileComparator::NaturalFileComparator()']]],
   ['navajowhite',['navajowhite',['../classColours.html#a3aae0d537d9c4103f0be6e84443bae6f',1,'Colours']]],

@@ -221,6 +221,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3b0af7dfc24f836ce50cd50b65e99d56"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
 <tr class="memitem:ga3b0af7dfc24f836ce50cd50b65e99d56"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-maths.html#ga3b0af7dfc24f836ce50cd50b65e99d56">isPositiveAndNotGreaterThan</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> valueToTest, Type upperLimit) noexcept</td></tr>
 <tr class="separator:ga3b0af7dfc24f836ce50cd50b65e99d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b5f32cb048248ad43eab875e2bc7cdb"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:ga4b5f32cb048248ad43eab875e2bc7cdb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-maths.html#ga4b5f32cb048248ad43eab875e2bc7cdb">isWithin</a> (Type a, Type b, Type tolerance) noexcept</td></tr>
+<tr class="memdesc:ga4b5f32cb048248ad43eab875e2bc7cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the absolute difference between two values and returns true if it is less than or equal to a given tolerance, otherwise it returns false.  <a href="#ga4b5f32cb048248ad43eab875e2bc7cdb">More...</a><br /></td></tr>
+<tr class="separator:ga4b5f32cb048248ad43eab875e2bc7cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a1911249b2e8ff54c8f0538a1ba0182"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:ga7a1911249b2e8ff54c8f0538a1ba0182"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-maths.html#ga7a1911249b2e8ff54c8f0538a1ba0182">approximatelyEqual</a> (Type a, Type b) noexcept</td></tr>
+<tr class="memdesc:ga7a1911249b2e8ff54c8f0538a1ba0182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the two numbers are approximately equal.  <a href="#ga7a1911249b2e8ff54c8f0538a1ba0182">More...</a><br /></td></tr>
+<tr class="separator:ga7a1911249b2e8ff54c8f0538a1ba0182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5158e6e8faa5553204f90af596fafaf5"><td class="memTemplParams" colspan="2">template&lt;typename... Types&gt; </td></tr>
 <tr class="memitem:ga5158e6e8faa5553204f90af596fafaf5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused</a> (Types &amp;&amp;...) noexcept</td></tr>
 <tr class="memdesc:ga5158e6e8faa5553204f90af596fafaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handy function for avoiding unused variables warning.  <a href="#ga5158e6e8faa5553204f90af596fafaf5">More...</a><br /></td></tr>
@@ -1197,6 +1205,97 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="ga4b5f32cb048248ad43eab875e2bc7cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b5f32cb048248ad43eab875e2bc7cdb">&#9670;&nbsp;</a></span>isWithin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isWithin </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the absolute difference between two values and returns true if it is less than or equal to a given tolerance, otherwise it returns false. </p>
+
+<p class="reference">References <a class="el" href="group__LittleFootFunctions.html#ga83b97b49b2135e525b55a3a7ff42036e">abs()</a>.</p>
+
+</div>
+</div>
+<a id="ga7a1911249b2e8ff54c8f0538a1ba0182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a1911249b2e8ff54c8f0538a1ba0182">&#9670;&nbsp;</a></span>approximatelyEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool approximatelyEqual </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the two numbers are approximately equal. </p>
+<p>This is useful for floating-point and double comparisons. </p>
+
+<p class="reference">References <a class="el" href="group__LittleFootFunctions.html#ga83b97b49b2135e525b55a3a7ff42036e">abs()</a>, <a class="el" href="group__LittleFootFunctions.html#gaf082905f7eac6d03e92015146bbc1925">max()</a>, and <a class="el" href="group__LittleFootFunctions.html#gabd8bbcfabb3ddef2ccaafb9928a37b95">min()</a>.</p>
+
+</div>
+</div>
 <a id="ga5158e6e8faa5553204f90af596fafaf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5158e6e8faa5553204f90af596fafaf5">&#9670;&nbsp;</a></span>ignoreUnused()</h2>
 
@@ -2035,7 +2134,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 10 2018 13:30:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

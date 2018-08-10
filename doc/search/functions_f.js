@@ -66,6 +66,7 @@ var searchData=
   ['performrealonlyforwardtransform',['performRealOnlyForwardTransform',['../classdsp_1_1FFT.html#a741278c596a0f050c7ba3aa496aae89f',1,'dsp::FFT']]],
   ['performrealonlyinversetransform',['performRealOnlyInverseTransform',['../classdsp_1_1FFT.html#aac11526dee412dd3cc0143d0065ea0b1',1,'dsp::FFT']]],
   ['performtest',['performTest',['../classUnitTest.html#a45ac76c71297c8d336e1503515e34232',1,'UnitTest']]],
+  ['physicaltological',['physicalToLogical',['../classDisplays.html#a95cd9a4ef859318de05ff6f59c4d6035',1,'Displays::physicalToLogical(Rectangle&lt; int &gt;, const Display *useScaleFactorOfDisplay=nullptr) const noexcept'],['../classDisplays.html#a1d0a3119f693f0ac68c2c7104f6138d3',1,'Displays::physicalToLogical(Point&lt; ValueType &gt;, const Display *useScaleFactorOfDisplay=nullptr) const noexcept']]],
   ['physicaltopologysource',['PhysicalTopologySource',['../classPhysicalTopologySource.html#a626fd1c4ef50b821fe8905d1535f73f5',1,'PhysicalTopologySource::PhysicalTopologySource()'],['../classPhysicalTopologySource.html#a20031cc8685d98abd0cbc55951774271',1,'PhysicalTopologySource::PhysicalTopologySource(DeviceDetector &amp;detectorToUse)']]],
   ['pitchbend',['pitchbend',['../classMPEInstrument.html#ada2ec3f0dc9821d2c8fbf86402c05444',1,'MPEInstrument']]],
   ['pitchbendtopitchwheelpos',['pitchbendToPitchwheelPos',['../classMidiMessage.html#aaa9b7273ede328166d038587d871ba4c',1,'MidiMessage']]],

@@ -235,6 +235,7 @@ var searchData=
   ['removerange',['removeRange',['../classArray.html#ae9f26706cc40ce178424b2b4ba1f9647',1,'Array::removeRange()'],['../classOwnedArray.html#a6ca377ada4d52033b6bc9efd3614b5c2',1,'OwnedArray::removeRange()'],['../classReferenceCountedArray.html#acb4e3c244b7a82f16aa0038f86581b77',1,'ReferenceCountedArray::removeRange()'],['../classSparseSet.html#a5366cfbfe1cfbd7683a9ce331afd8e81',1,'SparseSet::removeRange()'],['../classStringArray.html#a2216e379f5d770af94d4d6c2fec4cee3',1,'StringArray::removeRange()']]],
   ['removerangeofglyphs',['removeRangeOfGlyphs',['../classGlyphArrangement.html#ad3fcc973e64f466911320e90ca57a322',1,'GlyphArrangement']]],
   ['removeredundantpaths',['removeRedundantPaths',['../classFileSearchPath.html#ada0f0c385326ce152cf1b23c39b31516',1,'FileSearchPath']]],
+  ['removescalefactorlistener',['removeScaleFactorListener',['../classComponentPeer.html#a81cf3d13df6f5f8f55237ac9274f17bc',1,'ComponentPeer']]],
   ['removesection',['removeSection',['../classMemoryBlock.html#a7fb654675288d40483f9150ffd38e16a',1,'MemoryBlock::removeSection()'],['../classPropertyPanel.html#a294b75e52e40abe16e01020ea78774b0',1,'PropertyPanel::removeSection()']]],
   ['removeselectedplugins',['removeSelectedPlugins',['../classPluginListComponent.html#a31cbbd642f3055ccbb59ffea1adae378',1,'PluginListComponent']]],
   ['removesound',['removeSound',['../classSynthesiser.html#a4e90dec472345cac6c827fb402fd382f',1,'Synthesiser']]],

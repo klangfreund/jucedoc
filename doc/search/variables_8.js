@@ -53,7 +53,7 @@ var searchData=
   ['isipv6',['isIPv6',['../classIPAddress.html#a06b9fe2fa973d89d0e91137fa7cc8f94',1,'IPAddress']]],
   ['iskeydown',['isKeyDown',['../structApplicationCommandTarget_1_1InvocationInfo.html#a40f339e15279d78b003e3598f11c1424',1,'ApplicationCommandTarget::InvocationInfo']]],
   ['islooping',['isLooping',['../structAudioPlayHead_1_1CurrentPositionInfo.html#a69d7734277c893a624b2ea7392cb96e5',1,'AudioPlayHead::CurrentPositionInfo']]],
-  ['ismain',['isMain',['../structDesktop_1_1Displays_1_1Display.html#a392d751b64069c4b4a212e2f07f1766a',1,'Desktop::Displays::Display']]],
+  ['ismain',['isMain',['../structDisplays_1_1Display.html#ab2ff0443fdf8b1ff1c70fe4527d43436',1,'Displays::Display']]],
   ['isnrpn',['isNRPN',['../structMidiRPNMessage.html#ae4c0b2e8bf824e2f3f359ee680bf1642',1,'MidiRPNMessage']]],
   ['isplaying',['isPlaying',['../structAudioPlayHead_1_1CurrentPositionInfo.html#a84105c58665f2daae7a18809c964b397',1,'AudioPlayHead::CurrentPositionInfo']]],
   ['isradial',['isRadial',['../classColourGradient.html#a42c5382b7e7bda2b7efdb7b1a9258a44',1,'ColourGradient']]],

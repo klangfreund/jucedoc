@@ -13,7 +13,7 @@ var searchData=
   ['usedefaultinputchannels',['useDefaultInputChannels',['../structAudioDeviceManager_1_1AudioDeviceSetup.html#af4ee7e75cc152be926202c6a7a822d0c',1,'AudioDeviceManager::AudioDeviceSetup']]],
   ['usedefaultoutputchannels',['useDefaultOutputChannels',['../structAudioDeviceManager_1_1AudioDeviceSetup.html#a0506caa1460f630b207e1dcf1093f791',1,'AudioDeviceManager::AudioDeviceSetup']]],
   ['usenativetitlebar',['useNativeTitleBar',['../structDialogWindow_1_1LaunchOptions.html#a8a67e5ca3f075102c1dc40aee20856b5',1,'DialogWindow::LaunchOptions']]],
-  ['userarea',['userArea',['../structDesktop_1_1Displays_1_1Display.html#a7b9601b6a4c7de297099ff4e3b8651ec',1,'Desktop::Displays::Display']]],
+  ['userarea',['userArea',['../structDisplays_1_1Display.html#aa4b3d9d1db526136b527aeb6f740bd9f',1,'Displays::Display']]],
   ['userdata',['userData',['../classImagePixelData.html#a881fd3f8939e4994ca95c052b27221ae',1,'ImagePixelData']]],
   ['userid',['userID',['../structAnalyticsDestination_1_1AnalyticsEvent.html#a2d253f17697dfb4471a71e9bddc29a36',1,'AnalyticsDestination::AnalyticsEvent']]],
   ['userproperties',['userProperties',['../structAnalyticsDestination_1_1AnalyticsEvent.html#afcea7cedd0ebe96dfd29c7848429fcb4',1,'AnalyticsDestination::AnalyticsEvent']]],

@@ -79,6 +79,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponentPeer_1_1DragInfo.html">DragInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to describe drag and drop information.  <a href="structComponentPeer_1_1DragInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to receive callbacks when the OS scale factor of this <a class="el" href="classComponentPeer.html" title="The Component class uses a ComponentPeer internally to create and manage a real operating-system wind...">ComponentPeer</a> changes.  <a href="structComponentPeer_1_1ScaleFactorListener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -285,6 +288,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae318c6674927088507331b03736f546b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44614a1572c6c8860821f3ab5db12ea5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#a44614a1572c6c8860821f3ab5db12ea5">setCurrentRenderingEngine</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index)</td></tr>
 <tr class="separator:a44614a1572c6c8860821f3ab5db12ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c81c49b886b8eb404ae66c5ec270ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#a95c81c49b886b8eb404ae66c5ec270ba">addScaleFactorListener</a> (<a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a> *listenerToAdd)</td></tr>
+<tr class="memdesc:a95c81c49b886b8eb404ae66c5ec270ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a scale factor listener.  <a href="#a95c81c49b886b8eb404ae66c5ec270ba">More...</a><br /></td></tr>
+<tr class="separator:a95c81c49b886b8eb404ae66c5ec270ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cf3d13df6f5f8f55237ac9274f17bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#a81cf3d13df6f5f8f55237ac9274f17bc">removeScaleFactorListener</a> (<a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a> *listenerToRemove)</td></tr>
+<tr class="memdesc:a81cf3d13df6f5f8f55237ac9274f17bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a scale factor listener.  <a href="#a81cf3d13df6f5f8f55237ac9274f17bc">More...</a><br /></td></tr>
+<tr class="separator:a81cf3d13df6f5f8f55237ac9274f17bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56b66a5373b0ff6b98b7b3fbeee23a6"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#aa56b66a5373b0ff6b98b7b3fbeee23a6">getPlatformScaleFactor</a> () const noexcept</td></tr>
+<tr class="memdesc:aa56b66a5373b0ff6b98b7b3fbeee23a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">On Windows and Linux this will return the OS scaling factor currently being applied to the native window.  <a href="#aa56b66a5373b0ff6b98b7b3fbeee23a6">More...</a><br /></td></tr>
+<tr class="separator:aa56b66a5373b0ff6b98b7b3fbeee23a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -314,6 +326,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2aee1a16331876b88555838cd75caeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75216f7f562c5bbf8b7758a1198d2744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponentBoundsConstrainer.html">ComponentBoundsConstrainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#a75216f7f562c5bbf8b7758a1198d2744">constrainer</a> = nullptr</td></tr>
 <tr class="separator:a75216f7f562c5bbf8b7758a1198d2744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c815b759167f87c6c9aead83b737b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentPeer.html#a3c815b759167f87c6c9aead83b737b3f">scaleFactorListeners</a></td></tr>
+<tr class="separator:a3c815b759167f87c6c9aead83b737b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -2256,6 +2270,74 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a95c81c49b886b8eb404ae66c5ec270ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c81c49b886b8eb404ae66c5ec270ba">&#9670;&nbsp;</a></span>addScaleFactorListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ComponentPeer::addScaleFactorListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a> *&#160;</td>
+          <td class="paramname"><em>listenerToAdd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a scale factor listener. </p>
+
+</div>
+</div>
+<a id="a81cf3d13df6f5f8f55237ac9274f17bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cf3d13df6f5f8f55237ac9274f17bc">&#9670;&nbsp;</a></span>removeScaleFactorListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ComponentPeer::removeScaleFactorListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a> *&#160;</td>
+          <td class="paramname"><em>listenerToRemove</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a scale factor listener. </p>
+
+</div>
+</div>
+<a id="aa56b66a5373b0ff6b98b7b3fbeee23a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56b66a5373b0ff6b98b7b3fbeee23a6">&#9670;&nbsp;</a></span>getPlatformScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double ComponentPeer::getPlatformScaleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>On Windows and Linux this will return the OS scaling factor currently being applied to the native window. </p>
+<p>This is used to convert between physical and logical pixels at the OS API level and you shouldn't need to use it in your own code unless you are dealing directly with the native window. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a597272f3a78e8f1d02471692c2e2932a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a597272f3a78e8f1d02471692c2e2932a">&#9670;&nbsp;</a></span>component</h2>
@@ -2367,13 +2449,35 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c815b759167f87c6c9aead83b737b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c815b759167f87c6c9aead83b737b3f">&#9670;&nbsp;</a></span>scaleFactorListeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt;<a class="el" href="structComponentPeer_1_1ScaleFactorListener.html">ScaleFactorListener</a>&gt; ComponentPeer::scaleFactorListeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__ComponentPeer_8h.html">juce_ComponentPeer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 10 2018 13:30:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

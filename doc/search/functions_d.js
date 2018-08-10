@@ -7,6 +7,7 @@ var searchData=
   ['nativefunction',['NativeFunction',['../structlittlefoot_1_1NativeFunction.html#ac8c9928ce1ad7eb10f7e8fa55ee44d36',1,'littlefoot::NativeFunction']]],
   ['nativefunctionargs',['NativeFunctionArgs',['../structvar_1_1NativeFunctionArgs.html#a8ee7e2f72e487191674312e3da2e2996',1,'var::NativeFunctionArgs']]],
   ['nativeimagetype',['NativeImageType',['../classNativeImageType.html#a55b2d128303a0a60a8a44490c64b87b2',1,'NativeImageType']]],
+  ['nativescalefactorchanged',['nativeScaleFactorChanged',['../structComponentPeer_1_1ScaleFactorListener.html#a6133e08cbcfe30381b2795510a3ecce2',1,'ComponentPeer::ScaleFactorListener']]],
   ['naturalfilecomparator',['NaturalFileComparator',['../structFile_1_1NaturalFileComparator.html#adf4f4af4bc21c7efbc6d20d89b233f0e',1,'File::NaturalFileComparator']]],
   ['needstobesaved',['needsToBeSaved',['../classPropertiesFile.html#a47742aee82eacbc1259a93df9b0d2ad4',1,'PropertiesFile']]],
   ['negate',['negate',['../classFloatVectorOperations.html#ac9ea8d3e460667b69be7c9f0e7590299',1,'FloatVectorOperations::negate(float *dest, const float *src, int numValues) noexcept'],['../classFloatVectorOperations.html#a32ea0fd222be354458651ed99739adf1',1,'FloatVectorOperations::negate(double *dest, const double *src, int numValues) noexcept'],['../classBigInteger.html#a2f597f0f63ffc2410423626c5a850e60',1,'BigInteger::negate()'],['../classdsp_1_1AudioBlock.html#aa8b55d7fa5e86f540dbbcd9f6d59a7ee',1,'dsp::AudioBlock::negate()']]],
