@@ -174,12 +174,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33c6c59951845799410ce84fd41abf06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument.html#a33c6c59951845799410ce84fd41abf06">findLineContaining</a> (const <a class="el" href="classCodeDocument_1_1Position.html">Position</a> &amp;pos, <a class="el" href="classCodeDocument_1_1Position.html">Position</a> &amp;start, <a class="el" href="classCodeDocument_1_1Position.html">Position</a> &amp;end) const noexcept</td></tr>
 <tr class="memdesc:a33c6c59951845799410ce84fd41abf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the line that contains the given position.  <a href="#a33c6c59951845799410ce84fd41abf06">More...</a><br /></td></tr>
 <tr class="separator:a33c6c59951845799410ce84fd41abf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a449f7459c2784ac56c24ddb0e5bb9d41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument.html#a449f7459c2784ac56c24ddb0e5bb9d41">addListener</a> (<a class="el" href="classCodeDocument_1_1Listener.html">Listener</a> *listener) noexcept</td></tr>
-<tr class="memdesc:a449f7459c2784ac56c24ddb0e5bb9d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a listener object to receive callbacks when the document changes.  <a href="#a449f7459c2784ac56c24ddb0e5bb9d41">More...</a><br /></td></tr>
-<tr class="separator:a449f7459c2784ac56c24ddb0e5bb9d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaf96503a0445a145f50667ce33d6cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument.html#acaf96503a0445a145f50667ce33d6cad">removeListener</a> (<a class="el" href="classCodeDocument_1_1Listener.html">Listener</a> *listener) noexcept</td></tr>
-<tr class="memdesc:acaf96503a0445a145f50667ce33d6cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregisters a listener.  <a href="#acaf96503a0445a145f50667ce33d6cad">More...</a><br /></td></tr>
-<tr class="separator:acaf96503a0445a145f50667ce33d6cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23b21fdf64caf455dc9ffcec44b6d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument.html#ad23b21fdf64caf455dc9ffcec44b6d26">addListener</a> (<a class="el" href="classCodeDocument_1_1Listener.html">Listener</a> *listener)</td></tr>
+<tr class="memdesc:ad23b21fdf64caf455dc9ffcec44b6d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a listener object to receive callbacks when the document changes.  <a href="#ad23b21fdf64caf455dc9ffcec44b6d26">More...</a><br /></td></tr>
+<tr class="separator:ad23b21fdf64caf455dc9ffcec44b6d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a95db08470090582a2b4a63b61fcb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument.html#a83a95db08470090582a2b4a63b61fcb3">removeListener</a> (<a class="el" href="classCodeDocument_1_1Listener.html">Listener</a> *listener)</td></tr>
+<tr class="memdesc:a83a95db08470090582a2b4a63b61fcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregisters a listener.  <a href="#a83a95db08470090582a2b4a63b61fcb3">More...</a><br /></td></tr>
+<tr class="separator:a83a95db08470090582a2b4a63b61fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing and manipulating a source code file. </p>
@@ -703,7 +703,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a new undo transaction. </p>
-<p>The document itself will not call this internally, so relies on whatever is using the document to periodically call this to break up the undo sequence into sensible chunks. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoManager.html#ae05cd5e09da8e1208bd82a4d2d433e74" title="Starts a new group of actions that together will be treated as a single transaction. ">UndoManager::beginNewTransaction</a> </dd></dl>
+<p>The document itself will not call this internally, so relies on whatever is using the document to periodically call this to break up the undo sequence into sensible chunks. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoManager.html#a2b60b5f1763023351eddf813d4e7cc78" title="Starts a new group of actions that together will be treated as a single transaction. ">UndoManager::beginNewTransaction</a> </dd></dl>
 
 </div>
 </div>
@@ -995,14 +995,11 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a449f7459c2784ac56c24ddb0e5bb9d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a449f7459c2784ac56c24ddb0e5bb9d41">&#9670;&nbsp;</a></span>addListener()</h2>
+<a id="ad23b21fdf64caf455dc9ffcec44b6d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23b21fdf64caf455dc9ffcec44b6d26">&#9670;&nbsp;</a></span>addListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void CodeDocument::addListener </td>
@@ -1012,26 +1009,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Registers a listener object to receive callbacks when the document changes. </p>
-<p>If the listener is already registered, this method has no effect. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#acaf96503a0445a145f50667ce33d6cad" title="Deregisters a listener. ">removeListener</a> </dd></dl>
+<p>If the listener is already registered, this method has no effect. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#a83a95db08470090582a2b4a63b61fcb3" title="Deregisters a listener. ">removeListener</a> </dd></dl>
 
 </div>
 </div>
-<a id="acaf96503a0445a145f50667ce33d6cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaf96503a0445a145f50667ce33d6cad">&#9670;&nbsp;</a></span>removeListener()</h2>
+<a id="a83a95db08470090582a2b4a63b61fcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a95db08470090582a2b4a63b61fcb3">&#9670;&nbsp;</a></span>removeListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void CodeDocument::removeListener </td>
@@ -1041,15 +1030,10 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Deregisters a listener. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#a449f7459c2784ac56c24ddb0e5bb9d41" title="Registers a listener object to receive callbacks when the document changes. ">addListener</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#ad23b21fdf64caf455dc9ffcec44b6d26" title="Registers a listener object to receive callbacks when the document changes. ">addListener</a> </dd></dl>
 
 </div>
 </div>
@@ -1059,7 +1043,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 19 2018 20:14:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2018 13:21:03 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

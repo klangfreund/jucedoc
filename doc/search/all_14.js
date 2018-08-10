@@ -8,7 +8,7 @@ var searchData=
   ['undomanager',['undomanager',['../group__juce__data__structures-undomanager.html',1,'']]],
   ['utils',['utils',['../group__juce__opengl-utils.html',1,'']]],
   ['uicolour',['UIColour',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4',1,'LookAndFeel_V4::ColourScheme']]],
-  ['uid',['UID',['../classBlock.html#a23857e2a9f15761beabb4b7a3339e156',1,'Block::UID()'],['../structAudioProcessorGraph_1_1NodeID.html#a2f04646021963e962022b6558f51b75a',1,'AudioProcessorGraph::NodeID::uid()'],['../classPluginDescription.html#a6bddaeaf4147bb0827c18724cbc7bd4b',1,'PluginDescription::uid()'],['../classBlock.html#a8a1c23c1f7ca58fcc032eb45cfc029d9',1,'Block::uid()']]],
+  ['uid',['uid',['../structAudioProcessorGraph_1_1NodeID.html#a2f04646021963e962022b6558f51b75a',1,'AudioProcessorGraph::NodeID::uid()'],['../classPluginDescription.html#a6bddaeaf4147bb0827c18724cbc7bd4b',1,'PluginDescription::uid()'],['../classBlock.html#a8a1c23c1f7ca58fcc032eb45cfc029d9',1,'Block::uid()'],['../classBlock.html#a23857e2a9f15761beabb4b7a3339e156',1,'Block::UID()']]],
   ['uint16',['uint16',['../namespacelittlefoot.html#aab688ac828c9bbf4cfc80f684f2d522b',1,'littlefoot::uint16()'],['../group__juce__core-maths.html#gaf6e23a20bd7abf3ca3c82295c2b323e5',1,'uint16():&#160;juce_MathsFunctions.h']]],
   ['uint32',['uint32',['../namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9',1,'littlefoot::uint32()'],['../group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b',1,'uint32():&#160;juce_MathsFunctions.h']]],
   ['uint64',['uint64',['../group__juce__core-maths.html#gaba41bf2b6f6da5945ee08fb99931aede',1,'juce_MathsFunctions.h']]],

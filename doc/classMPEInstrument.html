@@ -159,12 +159,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae7b1c81fb769a83587d07cbdf7883ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMPENote.html">MPENote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#aae7b1c81fb769a83587d07cbdf7883ed">getMostRecentNoteOtherThan</a> (<a class="el" href="structMPENote.html">MPENote</a> otherThanThisNote) const noexcept</td></tr>
 <tr class="memdesc:aae7b1c81fb769a83587d07cbdf7883ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent note that is not the note passed in.  <a href="#aae7b1c81fb769a83587d07cbdf7883ed">More...</a><br /></td></tr>
 <tr class="separator:aae7b1c81fb769a83587d07cbdf7883ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105bebec46b5413207366771887c15ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a105bebec46b5413207366771887c15ad">addListener</a> (<a class="el" href="classMPEInstrument_1_1Listener.html">Listener</a> *listenerToAdd) noexcept</td></tr>
-<tr class="memdesc:a105bebec46b5413207366771887c15ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener.  <a href="#a105bebec46b5413207366771887c15ad">More...</a><br /></td></tr>
-<tr class="separator:a105bebec46b5413207366771887c15ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52f3ab0f0a42969ff62523a53e6fc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#ad52f3ab0f0a42969ff62523a53e6fc21">removeListener</a> (<a class="el" href="classMPEInstrument_1_1Listener.html">Listener</a> *listenerToRemove) noexcept</td></tr>
-<tr class="memdesc:ad52f3ab0f0a42969ff62523a53e6fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener.  <a href="#ad52f3ab0f0a42969ff62523a53e6fc21">More...</a><br /></td></tr>
-<tr class="separator:ad52f3ab0f0a42969ff62523a53e6fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645681e5f34c1d18007de1152bb0de60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a645681e5f34c1d18007de1152bb0de60">addListener</a> (<a class="el" href="classMPEInstrument_1_1Listener.html">Listener</a> *listenerToAdd)</td></tr>
+<tr class="memdesc:a645681e5f34c1d18007de1152bb0de60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener.  <a href="#a645681e5f34c1d18007de1152bb0de60">More...</a><br /></td></tr>
+<tr class="separator:a645681e5f34c1d18007de1152bb0de60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d3e9434362da8324d920832f638759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#ab4d3e9434362da8324d920832f638759">removeListener</a> (<a class="el" href="classMPEInstrument_1_1Listener.html">Listener</a> *listenerToRemove)</td></tr>
+<tr class="memdesc:ab4d3e9434362da8324d920832f638759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener.  <a href="#ab4d3e9434362da8324d920832f638759">More...</a><br /></td></tr>
+<tr class="separator:ab4d3e9434362da8324d920832f638759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a947eb3f30c2566ba448ce48b2925f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a5a947eb3f30c2566ba448ce48b2925f8">enableLegacyMode</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> pitchbendRange=2, <a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &gt; channelRange=<a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &gt;(1, 17))</td></tr>
 <tr class="memdesc:a5a947eb3f30c2566ba448ce48b2925f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the instrument into legacy mode.  <a href="#a5a947eb3f30c2566ba448ce48b2925f8">More...</a><br /></td></tr>
 <tr class="separator:a5a947eb3f30c2566ba448ce48b2925f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -945,14 +945,11 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a105bebec46b5413207366771887c15ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105bebec46b5413207366771887c15ad">&#9670;&nbsp;</a></span>addListener()</h2>
+<a id="a645681e5f34c1d18007de1152bb0de60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645681e5f34c1d18007de1152bb0de60">&#9670;&nbsp;</a></span>addListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MPEInstrument::addListener </td>
@@ -962,25 +959,17 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds a listener. </p>
 
 </div>
 </div>
-<a id="ad52f3ab0f0a42969ff62523a53e6fc21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad52f3ab0f0a42969ff62523a53e6fc21">&#9670;&nbsp;</a></span>removeListener()</h2>
+<a id="ab4d3e9434362da8324d920832f638759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d3e9434362da8324d920832f638759">&#9670;&nbsp;</a></span>removeListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MPEInstrument::removeListener </td>
@@ -990,11 +979,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Removes a listener. </p>
@@ -1203,7 +1187,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 19 2018 20:14:36 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2018 13:21:06 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

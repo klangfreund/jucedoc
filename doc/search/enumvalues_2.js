@@ -25,7 +25,7 @@ var searchData=
   ['closepath',['closePath',['../classPath_1_1Iterator.html#a62b1a329e3fdbcbdad78bb6c90c7bcfda38a8ed95a6ef321e0a558c3807bac952',1,'Path::Iterator']]],
   ['closesubpathelement',['closeSubPathElement',['../classRelativePointPath.html#a741fbc9bca4a156a84514f20987483e9a60ad7fe5cfbf04c489c878ce5e6cbeb5',1,'RelativePointPath']]],
   ['clusterconfigsync',['clusterConfigSync',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524a9f2dba367b1b285d34769e56819b4537',1,'BlocksProtocol']]],
-  ['colour',['colour',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eea60653ee5dad2e4090294f3d5b4206f48',1,'BlockConfigManager']]],
+  ['colour',['colour',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80da296cc9a02b167493f6ff885c48ca71ff',1,'Block::ConfigMetaData']]],
   ['column',['column',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015a1afd32818d1c9525f82aff4c09efd254',1,'FlexBox::column()'],['../classGrid.html#a1987dcfa56a91b8c3b41dff63dc6364aa1afd32818d1c9525f82aff4c09efd254',1,'Grid::column()']]],
   ['columndense',['columnDense',['../classGrid.html#a1987dcfa56a91b8c3b41dff63dc6364aad2a63751df3e06d670aeb63fb555241f',1,'Grid']]],
   ['columnreverse',['columnReverse',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015af6ee385127321f0a2c579444f938bc7f',1,'FlexBox']]],

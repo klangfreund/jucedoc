@@ -19,7 +19,7 @@ var searchData=
   ['bluetoothmidi',['bluetoothMidi',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878af9db427de56e5cc282cea35e58f47959',1,'RuntimePermissions']]],
   ['bold',['bold',['../classFont.html#a52a35b5dc1e6f782e25283c9283bae4fa1af8035a650d8a663a3f67b3b6208eed',1,'Font']]],
   ['bool_5f',['bool_',['../namespacelittlefoot.html#a4fb4051df81acdbcaa446ab5a02dd8e7a467afb5838aa377d55cce81f84c5512b',1,'littlefoot']]],
-  ['boolean',['boolean',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eea23c97c77e7c6903136c039ef769bfde5',1,'BlockConfigManager']]],
+  ['boolean',['boolean',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80da84e2c64f38f78ba3ea5c905ab5a2da27',1,'Block::ConfigMetaData']]],
   ['bottom',['bottom',['../classJustification.html#a1f8c07756c56fe8f31ed44964e51bfbcac77cede28d3cecdc46227f503446207b',1,'Justification::bottom()'],['../classResizableBorderComponent_1_1Zone.html#ad6fba9e9d2be9a3c7e31f14ba8f6881eaa21beed256039ab04e501c4bae4ba67b',1,'ResizableBorderComponent::Zone::bottom()'],['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65bafc1bb72a21d2a99a30df488a9ac34763',1,'RelativeCoordinate::StandardStrings::bottom()']]],
   ['bottomedge',['bottomEdge',['../classResizableEdgeComponent.html#a5dfd6990713a931c4411f4ab89b51e25a0b55203e426589ff7ae67c750889ad41',1,'ResizableEdgeComponent']]],
   ['bottomedgeresizecursor',['BottomEdgeResizeCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97ad5aac7a930b9b99cbd426166e9f51060',1,'MouseCursor']]],

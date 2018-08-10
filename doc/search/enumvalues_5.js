@@ -27,7 +27,7 @@ var searchData=
   ['float32be',['float32BE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a967b624b78df07208abf588c3c87636c',1,'AudioDataConverters']]],
   ['float32le',['float32LE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50ac0a9af131ea728266516d78d7ed60b60',1,'AudioDataConverters']]],
   ['float_5f',['float_',['../namespacelittlefoot.html#a4fb4051df81acdbcaa446ab5a02dd8e7aefe6d5085c67bc38cd3746f2dc8013e1',1,'littlefoot']]],
-  ['floating',['floating',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eeab1431d9ddac49a1469a9c9c5040e6737',1,'BlockConfigManager']]],
+  ['floating',['floating',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80da374515b23d6f106696387776a6077d17',1,'Block::ConfigMetaData']]],
   ['floatingwindows',['FloatingWindows',['../classMultiDocumentPanel.html#a493599178acb0ddea50f7059faa4f8f3aa9d0aa1885d047c950adf06e10b47014',1,'MultiDocumentPanel']]],
   ['focuschangedbymouseclick',['focusChangedByMouseClick',['../classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca350527c976c183a1543958e0698572df',1,'Component']]],
   ['focuschangedbytabkey',['focusChangedByTabKey',['../classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca1a14be78d7c4bdf7cdd9a08100bb6a43',1,'Component']]],

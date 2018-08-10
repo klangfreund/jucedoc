@@ -30,7 +30,7 @@ var searchData=
   ['int32be',['int32BE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50ae66e24664940104a48ec3fa5e9c73e81',1,'AudioDataConverters']]],
   ['int32le',['int32LE',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50a7dbfa7f347adba31c018c85f4e88e474',1,'AudioDataConverters']]],
   ['int_5f',['int_',['../namespacelittlefoot.html#a4fb4051df81acdbcaa446ab5a02dd8e7ad7488204e92ed01986284bef5650eb53',1,'littlefoot']]],
-  ['integer',['integer',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072eea0bb8c71391407f76a2a638a9ee90eaeb',1,'BlockConfigManager']]],
+  ['integer',['integer',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80da157db7df530023575515d366c9b672e8',1,'Block::ConfigMetaData']]],
   ['internalconfig',['internalConfig',['../group__LittleFootFunctions.html#gga8005f1f182fd0248a710ca64f72508d4a02daacd6d9b1590513de098311dc70af',1,'juce_LittleFootFunctions.dox']]],
   ['invokedexecutablefile',['invokedExecutableFile',['../classFile.html#a3e19cafabb03c5838160263a6e76313dafdae061dc559a8e9ac3a9623d2cd8081',1,'File']]],
   ['ios',['iOS',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaac9450b81876366666cc4ef6dbaa7496e',1,'SystemStats']]],

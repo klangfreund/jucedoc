@@ -71,6 +71,7 @@ var searchData=
   ['handleupdatenowifneeded',['handleUpdateNowIfNeeded',['../classAsyncUpdater.html#a5f65e2ad091e96ce4e3979d2b701bc85',1,'AsyncUpdater']]],
   ['handleuserclosingwindow',['handleUserClosingWindow',['../classComponentPeer.html#a13b9987266c93f3e73148c7c3e83da64',1,'ComponentPeer']]],
   ['handleversion',['handleVersion',['../structBlocksProtocol_1_1HostPacketDecoder.html#a8183df35e338b9adfd1c82e6bd9c9c0f',1,'BlocksProtocol::HostPacketDecoder']]],
+  ['handlevsthostcallbackavailable',['handleVstHostCallbackAvailable',['../structVSTCallbackHandler.html#a9901281297bd02b8eaf86bc9daa681e3',1,'VSTCallbackHandler']]],
   ['handlevstmanufacturerspecific',['handleVstManufacturerSpecific',['../structVSTCallbackHandler.html#a7158d63b0c27896792191d1598a740d5',1,'VSTCallbackHandler']]],
   ['handlevstplugincando',['handleVstPluginCanDo',['../structVSTCallbackHandler.html#aa522585537ebd9295473526d4e086b1f',1,'VSTCallbackHandler']]],
   ['hankel',['hankel',['../classdsp_1_1Matrix.html#aebd286b87365abfd3ccee493fb0532d1',1,'dsp::Matrix']]],

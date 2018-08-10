@@ -354,6 +354,7 @@ var searchData=
   ['ispanelshowing',['isPanelShowing',['../classSidePanel.html#ab51ca8ce05720ea1e2d112264dff20e6',1,'SidePanel']]],
   ['isparentof',['isParentOf',['../classComponent.html#a2fc08a04c79abc21d65c70855b792ab9',1,'Component']]],
   ['ispen',['isPen',['../classMouseInputSource.html#ad49aa3fe550df7f9267cbf348a5744bf',1,'MouseInputSource']]],
+  ['isperformingundoredo',['isPerformingUndoRedo',['../classUndoManager.html#a6f87ee26bf81334bde06e69f347c8d24',1,'UndoManager']]],
   ['ispitchwheel',['isPitchWheel',['../classMidiMessage.html#aaa504ef83e8d0c5fd8f652bf0712c4e1',1,'MidiMessage']]],
   ['isplatformdialogavailable',['isPlatformDialogAvailable',['../classFileChooser.html#abd0c4f123d2c2a47f55523cd2fb74f00',1,'FileChooser']]],
   ['isplaying',['isPlaying',['../classAudioIODevice.html#af8b5c71cb2512bcdf477267e3fc4faf7',1,'AudioIODevice::isPlaying()'],['../classAudioTransportSource.html#aa730c63d2cff661d8bfcb5c002ec0bce',1,'AudioTransportSource::isPlaying()'],['../classVideoComponent.html#a3a53630939d990e5c95d4a4eb0418a2f',1,'VideoComponent::isPlaying()']]],

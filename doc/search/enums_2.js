@@ -8,7 +8,7 @@ var searchData=
   ['commandflags',['CommandFlags',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72',1,'ApplicationCommandInfo']]],
   ['configcommands',['ConfigCommands',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524',1,'BlocksProtocol']]],
   ['configitemid',['ConfigItemId',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79',1,'BlocksProtocol']]],
-  ['configtype',['ConfigType',['../structBlockConfigManager.html#a6148f6d6cdb6f788bd6d009b40f072ee',1,'BlockConfigManager']]],
+  ['configtype',['ConfigType',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80d',1,'Block::ConfigMetaData']]],
   ['connectededgeflags',['ConnectedEdgeFlags',['../classButton.html#aebb14d53173b13f0e98d01a02aee8e82',1,'Button']]],
   ['controlmode',['ControlMode',['../group__LittleFootFunctions.html#gaee3ea37f4f505980157cf93a84687bcb',1,'juce_LittleFootFunctions.dox']]],
   ['controltype',['ControlType',['../group__LittleFootFunctions.html#ga8005f1f182fd0248a710ca64f72508d4',1,'juce_LittleFootFunctions.dox']]],
