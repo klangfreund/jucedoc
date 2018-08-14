@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">finalAlpha</td><td>the alpha value that the component should have at the end of the animation </td></tr>
     <tr><td class="paramname">animationDurationMilliseconds</td><td>how long the animation should last, in milliseconds </td></tr>
     <tr><td class="paramname">useProxyComponent</td><td>if true, this means the component should be replaced by an internally managed temporary component which is a snapshot of the original component. This avoids the component having to paint itself as it moves, so may be more efficient. This option also allows you to delete the original component immediately after starting the animation, because the animation can proceed without it. If you use a proxy, the original component will be made invisible by this call, and then will become visible again at the end of the animation. It'll also mean that the proxy component will be temporarily added to the component's parent, so avoid it if this might confuse the parent component, or if there's a chance the parent might decide to delete its children. </td></tr>
-    <tr><td class="paramname">startSpeed</td><td>a value to indicate the relative start speed of the animation. If this is 0, the component will start by accelerating from rest; higher values mean that it will have an initial speed greater than zero. If the value if greater than 1, it will decelerate towards the middle of its journey. To move the component at a constant rate for its entire animation, set both the start and end speeds to 1.0 </td></tr>
+    <tr><td class="paramname">startSpeed</td><td>a value to indicate the relative start speed of the animation. If this is 0, the component will start by accelerating from rest; higher values mean that it will have an initial speed greater than zero. If the value is greater than 1, it will decelerate towards the middle of its journey. To move the component at a constant rate for its entire animation, set both the start and end speeds to 1.0 </td></tr>
     <tr><td class="paramname">endSpeed</td><td>a relative speed at which the component should be moving when the animation finishes. If this is 0, the component will decelerate to a standstill at its final position; higher values mean the component will still be moving when it stops. To move the component at a constant rate for its entire animation, set both the start and end speeds to 1.0 </td></tr>
   </table>
   </dd>
@@ -452,7 +452,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 13 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 14 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
