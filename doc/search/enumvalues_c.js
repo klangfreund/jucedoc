@@ -28,6 +28,7 @@ var searchData=
   ['middlebuttonmodifier',['middleButtonModifier',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba332cb354a7b1cb322e97c6678d94ee22',1,'ModifierKeys']]],
   ['midicc',['midiCC',['../group__LittleFootFunctions.html#gga8005f1f182fd0248a710ca64f72508d4a12fe82638258f05b4f2718ca18109781',1,'juce_LittleFootFunctions.dox']]],
   ['midichannelindex',['midiChannelIndex',['../classAudioProcessorGraph.html#a90d6609d5eaf0c722974067e8aeb1a2da9b786f73b4d7c08b308e827381104325',1,'AudioProcessorGraph']]],
+  ['midichannelrange',['midiChannelRange',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79ade6248a1ef42cf3a892f313d6db67679',1,'BlocksProtocol']]],
   ['midiendchannel',['midiEndChannel',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a9ff1cf926df4af91f91dd743938d227a',1,'BlocksProtocol']]],
   ['midiinputnode',['midiInputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aa6ba4fa6ffb1f9ca1025fca01a222e000',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],
   ['midioutputnode',['midiOutputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aac88e470585a2a9265dda58a0911b1c0f',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],
@@ -48,5 +49,6 @@ var searchData=
   ['mode',['mode',['../classControlButton.html#a891776295057786f99f14631b1aa2794a4e084a5a84e6736bfd222863f305ec51',1,'ControlButton::mode()'],['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a57ec44264103a447a671582d02f0e18c',1,'BlocksProtocol::mode()']]],
   ['mouse',['mouse',['../classMouseInputSource.html#abbe78de59be271b2b7a2b6d61e4d538ba243cdc5af573a753daa0e4b5cad1f594',1,'MouseInputSource']]],
   ['mouseoverkeyoverlaycolourid',['mouseOverKeyOverlayColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05ead204f469f2f66e619d2c8778ed83a5b2',1,'MidiKeyboardComponent']]],
+  ['mpezone',['MPEZone',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a19ef0148deca158394b139a006c70dd0',1,'BlocksProtocol']]],
   ['musereceptorgeneric',['MuseReceptorGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac44eee1f6720c9ef9296f0c655526230',1,'PluginHostType']]]
 ];

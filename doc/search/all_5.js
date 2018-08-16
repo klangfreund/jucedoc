@@ -37,6 +37,7 @@ var searchData=
   ['f9key',['F9Key',['../classKeyPress.html#ab2826f73bf6f9851a03908984e9ef85a',1,'KeyPress']]],
   ['factoryreset',['factoryReset',['../classBlock.html#a45fcc07cd2959a2be3f3537f67a7d396',1,'Block::factoryReset()'],['../namespaceBlocksProtocol.html#a01770550cdd3086814fa4169d9fa39b4ae0f2ae7e0e97577600beb5620efd6b24',1,'BlocksProtocol::factoryReset()']]],
   ['factorysyncend',['factorySyncEnd',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524adba49e6fe70e0a926ae762e7128dc8f7',1,'BlocksProtocol']]],
+  ['factorysyncreset',['factorySyncReset',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524a0bc3e28046e4fdb0e1d13417167b3a1b',1,'BlocksProtocol']]],
   ['fadein',['fadeIn',['../classComponentAnimator.html#a7ccf95ec264eb19e0b33833fbef80aaa',1,'ComponentAnimator']]],
   ['fadeout',['fadeOut',['../classComponentAnimator.html#ad89563171f4a80402380cf1c7873fe6e',1,'ComponentAnimator']]],
   ['fadepressuremap',['fadePressureMap',['../group__LittleFootFunctions.html#ga6366c1bb2e2cd7fc0c3115bd53fe4a7e',1,'juce_LittleFootFunctions.dox']]],

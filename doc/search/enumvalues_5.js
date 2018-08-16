@@ -2,6 +2,7 @@ var searchData=
 [
   ['factoryreset',['factoryReset',['../namespaceBlocksProtocol.html#a01770550cdd3086814fa4169d9fa39b4ae0f2ae7e0e97577600beb5620efd6b24',1,'BlocksProtocol']]],
   ['factorysyncend',['factorySyncEnd',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524adba49e6fe70e0a926ae762e7128dc8f7',1,'BlocksProtocol']]],
+  ['factorysyncreset',['factorySyncReset',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524a0bc3e28046e4fdb0e1d13417167b3a1b',1,'BlocksProtocol']]],
   ['failed',['failed',['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7da26934eb377001f66e37289a5c93fe284',1,'InAppPurchases::Download']]],
   ['failedtowritetofile',['failedToWriteToFile',['../classFileBasedDocument.html#a89d417326aed46fb561c599265e426d2a7b2f3f4edd3dc5b02d1578ef4594f394',1,'FileBasedDocument']]],
   ['filenameboxbackgroundcolourid',['filenameBoxBackgroundColourId',['../classFileBrowserComponent.html#a97c8e2837fcbc106996be4a651181090a2001af1644a66113c5c3a3eb36d94154',1,'FileBrowserComponent']]],
