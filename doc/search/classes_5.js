@@ -49,6 +49,7 @@ var searchData=
   ['function_3c_20void_28_29_3e',['function&lt; void()&gt;',['../classstd_1_1function.html',1,'std']]],
   ['function_3c_20void_28bool_29_3e',['function&lt; void(bool)&gt;',['../classstd_1_1function.html',1,'std']]],
   ['function_3c_20void_28bool_2c_20string_29_3e',['function&lt; void(bool, String)&gt;',['../classstd_1_1function.html',1,'std']]],
+  ['function_3c_20void_28const_20argumentlist_20_26_29_3e',['function&lt; void(const ArgumentList &amp;)&gt;',['../classstd_1_1function.html',1,'std']]],
   ['function_3c_20void_28const_20filechooser_20_26_29_3e',['function&lt; void(const FileChooser &amp;)&gt;',['../classstd_1_1function.html',1,'std']]],
   ['function_3c_20void_28const_20string_20_26_29_3e',['function&lt; void(const String &amp;)&gt;',['../classstd_1_1function.html',1,'std']]],
   ['function_3c_20void_28const_20void_20_2adata_2c_20size_5ft_20datasize_29_3e',['function&lt; void(const void *data, size_t dataSize)&gt;',['../classstd_1_1function.html',1,'std']]],

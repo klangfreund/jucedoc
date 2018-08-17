@@ -189,6 +189,7 @@ var searchData=
   ['juce_5fcomponentpeer_2eh',['juce_ComponentPeer.h',['../juce__ComponentPeer_8h.html',1,'']]],
   ['juce_5fconcertinapanel_2eh',['juce_ConcertinaPanel.h',['../juce__ConcertinaPanel_8h.html',1,'']]],
   ['juce_5fconnectedchildprocess_2eh',['juce_ConnectedChildProcess.h',['../juce__ConnectedChildProcess_8h.html',1,'']]],
+  ['juce_5fconsoleapplication_2eh',['juce_ConsoleApplication.h',['../juce__ConsoleApplication_8h.html',1,'']]],
   ['juce_5fconstexpr',['JUCE_CONSTEXPR',['../group__juce__core-system.html#gaf41251c36d1579b74e6c54bf4fa5383a',1,'juce_CompilerSupport.h']]],
   ['juce_5fcontainerdeletepolicy_2eh',['juce_ContainerDeletePolicy.h',['../juce__ContainerDeletePolicy_8h.html',1,'']]],
   ['juce_5fcontentsharer_2eh',['juce_ContentSharer.h',['../juce__ContentSharer_8h.html',1,'']]],
@@ -688,8 +689,8 @@ var searchData=
   ['jucepluginhost',['JUCEPluginHost',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a753f502e9e851da85e157ed32a8f1b1d',1,'PluginHostType']]],
   ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html',1,'JUCESplashScreen'],['../classJUCESplashScreen.html#ace2db6a7a5b1219e3ec5163978242495',1,'JUCESplashScreen::JUCESplashScreen()']]],
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#ac4b5b9f0403512d91215fec879fa9e77',1,'Justification::Justification(const Justification &amp;)=default']]],
-  ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
+  ['justifycontent',['JustifyContent',['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()'],['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
-  ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
+  ['justifyself',['JustifySelf',['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()'],['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()']]]
 ];
