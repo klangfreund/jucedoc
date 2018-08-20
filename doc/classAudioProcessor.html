@@ -3992,7 +3992,7 @@ template&lt;int numLayouts&gt; </div>
 
 <p>Callback to query if adding/removing buses currently possible. </p>
 <p>This callback is called when the host calls addBus or removeBus. Similar to canApplyBusesLayout, this callback is only called while the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> is stopped and gives the processor a last chance to reject a requested bus change. It can also be used to apply the bus count change to an underlying wrapped plug-in.</p>
-<p>When adding a bus, isAddingBuses will be true and the plug-in is expected to fill out outNewBusProperties with the properties of the bus which will be created just after the succesful return of this callback.</p>
+<p>When adding a bus, isAddingBuses will be true and the plug-in is expected to fill out outNewBusProperties with the properties of the bus which will be created just after the successful return of this callback.</p>
 <p>Implementations of <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> will rarely need to override this method. Only override this method if your processor supports adding and removing buses and if it needs more fine grain control over the naming of new buses or may reject bus number changes although canAddBus or canRemoveBus returned true.</p>
 <p>The default implementation will return false if canAddBus/canRemoveBus returns false (the default behavior). Otherwise, this method returns "Input #busIndex" for input buses and "Output #busIndex" for output buses where busIndex is the index for newly created buses. The default layout in this case will be the layout of the previous bus of the same direction. </p>
 
@@ -4079,7 +4079,7 @@ template&lt;int numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 17 2018 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

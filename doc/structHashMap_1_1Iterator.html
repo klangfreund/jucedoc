@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
 struct HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator</h3>
 
 <p>Iterates over the items in a <a class="el" href="classHashMap.html" title="Holds a set of mappings between some key/value pairs. ">HashMap</a>. </p>
-<p>To use it, repeatedly call <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804" title="Moves to the next item, if one is available. ">next()</a> until it returns false, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classHashMap.html">HashMap &lt;String, String&gt;</a> myMap;</div><div class="line"></div><div class="line"><a class="code" href="structHashMap_1_1Iterator.html">HashMap&lt;String, String&gt;::Iterator</a> i (myMap);</div><div class="line"></div><div class="line"><span class="keywordflow">while</span> (i.next())</div><div class="line">{</div><div class="line">    <a class="code" href="group__juce__core-system.html#ga679635952a5d2eb25f3b31398f0fcc25">DBG</a> (i.getKey() &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i.getValue());</div><div class="line">}</div></div><!-- fragment --><p>The order in which items are iterated bears no resemblence to the order in which they were originally added!</p>
+<p>To use it, repeatedly call <a class="el" href="structHashMap_1_1Iterator.html#a4266d184eebca2ad08e4b72025a98804" title="Moves to the next item, if one is available. ">next()</a> until it returns false, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classHashMap.html">HashMap &lt;String, String&gt;</a> myMap;</div><div class="line"></div><div class="line"><a class="code" href="structHashMap_1_1Iterator.html">HashMap&lt;String, String&gt;::Iterator</a> i (myMap);</div><div class="line"></div><div class="line"><span class="keywordflow">while</span> (i.next())</div><div class="line">{</div><div class="line">    <a class="code" href="group__juce__core-system.html#ga679635952a5d2eb25f3b31398f0fcc25">DBG</a> (i.getKey() &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i.getValue());</div><div class="line">}</div></div><!-- fragment --><p>The order in which items are iterated bears no resemblance to the order in which they were originally added!</p>
 <p>Obviously as soon as you call any non-const methods on the original hash-map, any iterators that were created beforehand will cease to be valid, and should not be used.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classHashMap.html" title="Holds a set of mappings between some key/value pairs. ">HashMap</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -382,7 +382,7 @@ template&lt;typename KeyType, typename ValueType, class HashFunctionType = Defau
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 17 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

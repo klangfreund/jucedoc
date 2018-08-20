@@ -303,7 +303,7 @@ Static Public Attributes</h2></td></tr>
 struct dsp::SIMDRegister&lt; Type &gt;</h3>
 
 <p>A wrapper around the platform's native SIMD register type. </p>
-<p>This class is only availabe on SIMD machines. Use JUCE_USE_SIMD to query if SIMD is avaialble for your system.</p>
+<p>This class is only available on SIMD machines. Use JUCE_USE_SIMD to query if SIMD is avaialble for your system.</p>
 <p>SIMDRegister&lt;Type&gt; is a templated class representing the native vectorized version of FloatingType. <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> supports all numerical primitive types and std:complex&lt;float&gt; and std::complex&lt;double&gt; supports and most operations of the corresponding primitive type. Additionally, <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> can be accessed like an array to extract the individual elements.</p>
 <p>If you are using <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> as a pointer, then you must ensure that the memory is suffeciently aligned for SIMD vector operations. Failing to do so will result in crashes or very slow code. Use <a class="el" href="structdsp_1_1SIMDRegister.html#a2615629aee806ef6b0990301544d2170" title="Checks if the given pointer is suffeciently aligned for using SIMD operations. ">SIMDRegister::isSIMDAligned</a> to query if a pointer is suffeciently aligned for SIMD vector operations.</p>
 <p>Note that using <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> without enabling optimizations will result in code with very poor performance.</p>
@@ -2347,7 +2347,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 17 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
