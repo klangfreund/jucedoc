@@ -91,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bdda7b77f76579ae526cc1f4f4a8ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMidiMessageCollector.html">MidiMessageCollector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorPlayer.html#a1bdda7b77f76579ae526cc1f4f4a8ba7">getMidiMessageCollector</a> () noexcept</td></tr>
 <tr class="memdesc:a1bdda7b77f76579ae526cc1f4f4a8ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a midi message collector that you can pass midi messages to if you want them to be injected into the midi stream that is being sent to the processor.  <a href="#a1bdda7b77f76579ae526cc1f4f4a8ba7">More...</a><br /></td></tr>
 <tr class="separator:a1bdda7b77f76579ae526cc1f4f4a8ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d5d8fab2764cfcd8ed55695a785f0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorPlayer.html#af3d5d8fab2764cfcd8ed55695a785f0f">setMidiOutput</a> (<a class="el" href="classMidiOutput.html">MidiOutput</a> *midiOutputToUse)</td></tr>
+<tr class="memdesc:af3d5d8fab2764cfcd8ed55695a785f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the MIDI output that should be used, if required.  <a href="#af3d5d8fab2764cfcd8ed55695a785f0f">More...</a><br /></td></tr>
+<tr class="separator:af3d5d8fab2764cfcd8ed55695a785f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d49f631fc1c0aac6f432fe4b524ff1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorPlayer.html#a7d49f631fc1c0aac6f432fe4b524ff1d">setDoublePrecisionProcessing</a> (bool doublePrecision)</td></tr>
 <tr class="memdesc:a7d49f631fc1c0aac6f432fe4b524ff1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch between double and single floating point precisions processing.  <a href="#a7d49f631fc1c0aac6f432fe4b524ff1d">More...</a><br /></td></tr>
 <tr class="separator:a7d49f631fc1c0aac6f432fe4b524ff1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="classAudioIODeviceCallback.html" title="One of these is passed to an AudioIODevice object to stream the audio data in and out...">AudioIODeviceCallback</a> object which streams audio through an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>. </p>
 <p>To use one of these, just make it the callback used by your <a class="el" href="classAudioIODevice.html" title="Base class for an audio device with synchronised input and output channels. ">AudioIODevice</a>, and give it a processor to use by calling <a class="el" href="classAudioProcessorPlayer.html#a1a0491edbdbcb7e64375c42b8b48ed64" title="Sets the processor that should be played. ">setProcessor()</a>.</p>
-<p>It's also a <a class="el" href="classMidiInputCallback.html" title="Receives incoming messages from a physical MIDI input device. ">MidiInputCallback</a>, so you can connect it to both an audio and midi input to send both streams through the processor.</p>
+<p>It's also a <a class="el" href="classMidiInputCallback.html" title="Receives incoming messages from a physical MIDI input device. ">MidiInputCallback</a>, so you can connect it to both an audio and midi input to send both streams through the processor. To set a <a class="el" href="classMidiOutput.html" title="Controls a physical MIDI output device. ">MidiOutput</a> for the processor, use the <a class="el" href="classAudioProcessorPlayer.html#af3d5d8fab2764cfcd8ed55695a785f0f" title="Sets the MIDI output that should be used, if required. ">setMidiOutput()</a> method.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>, <a class="el" href="classAudioProcessorGraph.html" title="A type of AudioProcessor which plays back a graph of other AudioProcessors. ">AudioProcessorGraph</a></dd></dl>
 <p>{Audio} </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -249,6 +252,27 @@ Public Member Functions</h2></td></tr>
 <p>Returns a midi message collector that you can pass midi messages to if you want them to be injected into the midi stream that is being sent to the processor. </p>
 
 <p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#abe71702a98a39970d3e56a06a9dfc62a">StandalonePluginHolder::startPlaying()</a>.</p>
+
+</div>
+</div>
+<a id="af3d5d8fab2764cfcd8ed55695a785f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d5d8fab2764cfcd8ed55695a785f0f">&#9670;&nbsp;</a></span>setMidiOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioProcessorPlayer::setMidiOutput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMidiOutput.html">MidiOutput</a> *&#160;</td>
+          <td class="paramname"><em>midiOutputToUse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the MIDI output that should be used, if required. </p>
+<p>The MIDI output will not be deleted or owned by this object. If the MIDI output is deleted, pass a nullptr to this method. </p>
 
 </div>
 </div>
@@ -449,7 +473,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 20 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
