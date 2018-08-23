@@ -91,6 +91,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11df0f2057673fea795dec66428d465b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBlockTopology.html">BlockTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a11df0f2057673fea795dec66428d465b">getCurrentTopology</a> () const =0</td></tr>
 <tr class="memdesc:a11df0f2057673fea795dec66428d465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current topology that this object manages.  <a href="#a11df0f2057673fea795dec66428d465b">More...</a><br /></td></tr>
 <tr class="separator:a11df0f2057673fea795dec66428d465b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeedb6e4d263a17d9dd8190fbc0785fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#aeeedb6e4d263a17d9dd8190fbc0785fb">setActive</a> (bool shouldBeActive)=0</td></tr>
+<tr class="memdesc:aeeedb6e4d263a17d9dd8190fbc0785fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices.  <a href="#aeeedb6e4d263a17d9dd8190fbc0785fb">More...</a><br /></td></tr>
+<tr class="separator:aeeedb6e4d263a17d9dd8190fbc0785fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe00c2393e3a382e9774f36a576e777"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a5fe00c2393e3a382e9774f36a576e777">isActive</a> () const =0</td></tr>
+<tr class="memdesc:a5fe00c2393e3a382e9774f36a576e777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#a5fe00c2393e3a382e9774f36a576e777">More...</a><br /></td></tr>
+<tr class="separator:a5fe00c2393e3a382e9774f36a576e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69466671a2d86f6eb2cc7581a3d33673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a69466671a2d86f6eb2cc7581a3d33673">addListener</a> (<a class="el" href="structTopologySource_1_1Listener.html">Listener</a> *l)</td></tr>
 <tr class="separator:a69466671a2d86f6eb2cc7581a3d33673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c80cc4169578b03a30b94f17744955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a22c80cc4169578b03a30b94f17744955">removeListener</a> (<a class="el" href="structTopologySource_1_1Listener.html">Listener</a> *l)</td></tr>
@@ -133,7 +139,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="reference">References <a class="el" href="classTopologySource.html#a11df0f2057673fea795dec66428d465b">getCurrentTopology()</a>.</p>
+<p class="reference">References <a class="el" href="classTopologySource.html#a11df0f2057673fea795dec66428d465b">getCurrentTopology()</a>, <a class="el" href="classTopologySource.html#a5fe00c2393e3a382e9774f36a576e777">isActive()</a>, and <a class="el" href="classTopologySource.html#aeeedb6e4d263a17d9dd8190fbc0785fb">setActive()</a>.</p>
 
 </div>
 </div>
@@ -163,7 +169,70 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the current topology that this object manages. </p>
 
-<p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#a8421667b65f76e0393629b1eaa4546c4">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a5b05bfe7c015f971273087312d21ea89">PhysicalTopologySource</a>.</p>
+<p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#aa3752bb3164cb449cef7233eb82fb81f">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a5b05bfe7c015f971273087312d21ea89">PhysicalTopologySource</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">~TopologySource()</a>.</p>
+
+</div>
+</div>
+<a id="aeeedb6e4d263a17d9dd8190fbc0785fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeedb6e4d263a17d9dd8190fbc0785fb">&#9670;&nbsp;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TopologySource::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldBeActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices. </p>
+
+<p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#a62636e54f6f9ec489219d844e3702f38">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a775a2a59e4488e7f50ce3770ba2e3d10">PhysicalTopologySource</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">~TopologySource()</a>.</p>
+
+</div>
+</div>
+<a id="a5fe00c2393e3a382e9774f36a576e777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe00c2393e3a382e9774f36a576e777">&#9670;&nbsp;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool TopologySource::isActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices. </p>
+
+<p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#aaff6b030f309928f267e7a20aa0c2655">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a9257c42a1b91a72dd2d14af4a815dc6b">PhysicalTopologySource</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">~TopologySource()</a>.</p>
 
@@ -269,7 +338,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 23 2018 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

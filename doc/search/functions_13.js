@@ -60,6 +60,7 @@ var searchData=
   ['tocfstring',['toCFString',['../classString.html#acadf7f10fd01e3d5bd1e98e55444b060',1,'String']]],
   ['toconfigmetadata',['toConfigMetaData',['../structBlockConfigManager_1_1ConfigDescription.html#a37023ff475cf3ebbb078918fedf2059d',1,'BlockConfigManager::ConfigDescription']]],
   ['todashedstring',['toDashedString',['../classUuid.html#a9012e3e34b26bd9b870d98a239635f23',1,'Uuid']]],
+  ['todecimalstringwithsignificantfigures',['toDecimalStringWithSignificantFigures',['../classString.html#aa4ecbb61a758329a88a2bd568e3c7502',1,'String']]],
   ['todisplaystring',['toDisplayString',['../classColour.html#a5793441056ee16ac7ba87980d2cb43eb',1,'Colour']]],
   ['todouble',['toDouble',['../classLine.html#adbfed230f1a83b399812a4889122ef68',1,'Line::toDouble()'],['../classPoint.html#a5586b3e375224befdcd4881679295cf3',1,'Point::toDouble()'],['../classRectangle.html#a92fbbb29fe83b6d2aa033d4507fb441d',1,'Rectangle::toDouble()']]],
   ['toeplitz',['toeplitz',['../classdsp_1_1Matrix.html#afe7931cb736008c1aebbefa1f9a23c6a',1,'dsp::Matrix']]],

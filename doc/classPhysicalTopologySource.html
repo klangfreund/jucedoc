@@ -89,9 +89,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a626fd1c4ef50b821fe8905d1535f73f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a626fd1c4ef50b821fe8905d1535f73f5">PhysicalTopologySource</a> ()</td></tr>
-<tr class="memdesc:a626fd1c4ef50b821fe8905d1535f73f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a626fd1c4ef50b821fe8905d1535f73f5">More...</a><br /></td></tr>
-<tr class="separator:a626fd1c4ef50b821fe8905d1535f73f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27ef3c6362ae0a2fc4c7af4a841986b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#af27ef3c6362ae0a2fc4c7af4a841986b">PhysicalTopologySource</a> (bool startDetached=false)</td></tr>
+<tr class="memdesc:af27ef3c6362ae0a2fc4c7af4a841986b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#af27ef3c6362ae0a2fc4c7af4a841986b">More...</a><br /></td></tr>
+<tr class="separator:af27ef3c6362ae0a2fc4c7af4a841986b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae24d54e68d1d427d71c87d0dd7794096"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#ae24d54e68d1d427d71c87d0dd7794096">~PhysicalTopologySource</a> ()</td></tr>
 <tr class="memdesc:ae24d54e68d1d427d71c87d0dd7794096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae24d54e68d1d427d71c87d0dd7794096">More...</a><br /></td></tr>
 <tr class="separator:ae24d54e68d1d427d71c87d0dd7794096"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,9 +101,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6d0f4c11f0562068e5bc0991827bce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#ac6d0f4c11f0562068e5bc0991827bce9">cancelAllActiveTouches</a> () noexcept override</td></tr>
 <tr class="memdesc:ac6d0f4c11f0562068e5bc0991827bce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all touches.  <a href="#ac6d0f4c11f0562068e5bc0991827bce9">More...</a><br /></td></tr>
 <tr class="separator:ac6d0f4c11f0562068e5bc0991827bce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20031cc8685d98abd0cbc55951774271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a20031cc8685d98abd0cbc55951774271">PhysicalTopologySource</a> (<a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html">DeviceDetector</a> &amp;detectorToUse)</td></tr>
-<tr class="memdesc:a20031cc8685d98abd0cbc55951774271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for custom transport systems.  <a href="#a20031cc8685d98abd0cbc55951774271">More...</a><br /></td></tr>
-<tr class="separator:a20031cc8685d98abd0cbc55951774271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775a2a59e4488e7f50ce3770ba2e3d10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a775a2a59e4488e7f50ce3770ba2e3d10">setActive</a> (bool shouldBeActive) override</td></tr>
+<tr class="memdesc:a775a2a59e4488e7f50ce3770ba2e3d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices.  <a href="#a775a2a59e4488e7f50ce3770ba2e3d10">More...</a><br /></td></tr>
+<tr class="separator:a775a2a59e4488e7f50ce3770ba2e3d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a9257c42a1b91a72dd2d14af4a815dc6b">isActive</a> () const override</td></tr>
+<tr class="memdesc:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#a9257c42a1b91a72dd2d14af4a815dc6b">More...</a><br /></td></tr>
+<tr class="separator:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ca81f7d5f231033e55978daaba600a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#ae7ca81f7d5f231033e55978daaba600a">PhysicalTopologySource</a> (<a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html">DeviceDetector</a> &amp;detectorToUse, bool startDetached=false)</td></tr>
+<tr class="memdesc:ae7ca81f7d5f231033e55978daaba600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for custom transport systems.  <a href="#ae7ca81f7d5f231033e55978daaba600a">More...</a><br /></td></tr>
+<tr class="separator:ae7ca81f7d5f231033e55978daaba600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTopologySource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTopologySource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTopologySource.html">TopologySource</a></td></tr>
 <tr class="memitem:ade15ca0fdbe3f3b18dc587efce4cd22e inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">~TopologySource</a> ()</td></tr>
 <tr class="memdesc:ade15ca0fdbe3f3b18dc587efce4cd22e inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">More...</a><br /></td></tr>
@@ -136,8 +142,8 @@ Additional Inherited Members</h2></td></tr>
 <p>It maintains a list of them and tells listeners when physical devices are added or removed.</p>
 <p>{Blocks} </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a626fd1c4ef50b821fe8905d1535f73f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a626fd1c4ef50b821fe8905d1535f73f5">&#9670;&nbsp;</a></span>PhysicalTopologySource() <span class="overload">[1/2]</span></h2>
+<a id="af27ef3c6362ae0a2fc4c7af4a841986b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27ef3c6362ae0a2fc4c7af4a841986b">&#9670;&nbsp;</a></span>PhysicalTopologySource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +151,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">PhysicalTopologySource::PhysicalTopologySource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>startDetached</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -174,8 +181,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a20031cc8685d98abd0cbc55951774271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20031cc8685d98abd0cbc55951774271">&#9670;&nbsp;</a></span>PhysicalTopologySource() <span class="overload">[2/2]</span></h2>
+<a id="ae7ca81f7d5f231033e55978daaba600a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ca81f7d5f231033e55978daaba600a">&#9670;&nbsp;</a></span>PhysicalTopologySource() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,8 +191,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">PhysicalTopologySource::PhysicalTopologySource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html">DeviceDetector</a> &amp;&#160;</td>
-          <td class="paramname"><em>detectorToUse</em></td><td>)</td>
+          <td class="paramname"><em>detectorToUse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>startDetached</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -250,6 +267,65 @@ Additional Inherited Members</h2></td></tr>
 <p>Reset all touches. </p>
 
 <p>Reimplemented from <a class="el" href="classTopologySource.html#a17364736db6eb6d0dd40a2caccd8f2e0">TopologySource</a>.</p>
+
+</div>
+</div>
+<a id="a775a2a59e4488e7f50ce3770ba2e3d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775a2a59e4488e7f50ce3770ba2e3d10">&#9670;&nbsp;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhysicalTopologySource::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldBeActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#aeeedb6e4d263a17d9dd8190fbc0785fb">TopologySource</a>.</p>
+
+</div>
+</div>
+<a id="a9257c42a1b91a72dd2d14af4a815dc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9257c42a1b91a72dd2d14af4a815dc6b">&#9670;&nbsp;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PhysicalTopologySource::isActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#a5fe00c2393e3a382e9774f36a576e777">TopologySource</a>.</p>
 
 </div>
 </div>
@@ -334,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 23 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

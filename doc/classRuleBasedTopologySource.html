@@ -90,15 +90,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac56f643544fbafbdf55ec28858398485"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#ac56f643544fbafbdf55ec28858398485">~RuleBasedTopologySource</a> ()</td></tr>
 <tr class="memdesc:ac56f643544fbafbdf55ec28858398485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ac56f643544fbafbdf55ec28858398485">More...</a><br /></td></tr>
 <tr class="separator:ac56f643544fbafbdf55ec28858398485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8421667b65f76e0393629b1eaa4546c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBlockTopology.html">BlockTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#a8421667b65f76e0393629b1eaa4546c4">getCurrentTopology</a> () const</td></tr>
-<tr class="memdesc:a8421667b65f76e0393629b1eaa4546c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently active topology.  <a href="#a8421667b65f76e0393629b1eaa4546c4">More...</a><br /></td></tr>
-<tr class="separator:a8421667b65f76e0393629b1eaa4546c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3752bb3164cb449cef7233eb82fb81f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBlockTopology.html">BlockTopology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#aa3752bb3164cb449cef7233eb82fb81f">getCurrentTopology</a> () const override</td></tr>
+<tr class="memdesc:aa3752bb3164cb449cef7233eb82fb81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently active topology.  <a href="#aa3752bb3164cb449cef7233eb82fb81f">More...</a><br /></td></tr>
+<tr class="separator:aa3752bb3164cb449cef7233eb82fb81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e356922f970bc90a49e61149718b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#ac2e356922f970bc90a49e61149718b73">clearRules</a> ()</td></tr>
 <tr class="memdesc:ac2e356922f970bc90a49e61149718b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the list of active rules.  <a href="#ac2e356922f970bc90a49e61149718b73">More...</a><br /></td></tr>
 <tr class="separator:ac2e356922f970bc90a49e61149718b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf97d142e900ddd8800887a259c134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#a0ddf97d142e900ddd8800887a259c134">addRule</a> (<a class="el" href="structRuleBasedTopologySource_1_1Rule.html">Rule</a> *)</td></tr>
 <tr class="memdesc:a0ddf97d142e900ddd8800887a259c134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a rule to the list that will be applied.  <a href="#a0ddf97d142e900ddd8800887a259c134">More...</a><br /></td></tr>
 <tr class="separator:a0ddf97d142e900ddd8800887a259c134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62636e54f6f9ec489219d844e3702f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#a62636e54f6f9ec489219d844e3702f38">setActive</a> (bool shouldBeActive) override</td></tr>
+<tr class="memdesc:a62636e54f6f9ec489219d844e3702f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices.  <a href="#a62636e54f6f9ec489219d844e3702f38">More...</a><br /></td></tr>
+<tr class="separator:a62636e54f6f9ec489219d844e3702f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff6b030f309928f267e7a20aa0c2655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#aaff6b030f309928f267e7a20aa0c2655">isActive</a> () const override</td></tr>
+<tr class="memdesc:aaff6b030f309928f267e7a20aa0c2655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#aaff6b030f309928f267e7a20aa0c2655">More...</a><br /></td></tr>
+<tr class="separator:aaff6b030f309928f267e7a20aa0c2655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTopologySource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTopologySource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTopologySource.html">TopologySource</a></td></tr>
 <tr class="memitem:ade15ca0fdbe3f3b18dc587efce4cd22e inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">~TopologySource</a> ()</td></tr>
 <tr class="memdesc:ade15ca0fdbe3f3b18dc587efce4cd22e inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classTopologySource.html#ade15ca0fdbe3f3b18dc587efce4cd22e">More...</a><br /></td></tr>
@@ -162,8 +168,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8421667b65f76e0393629b1eaa4546c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8421667b65f76e0393629b1eaa4546c4">&#9670;&nbsp;</a></span>getCurrentTopology()</h2>
+<a id="aa3752bb3164cb449cef7233eb82fb81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3752bb3164cb449cef7233eb82fb81f">&#9670;&nbsp;</a></span>getCurrentTopology()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -236,13 +242,76 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a62636e54f6f9ec489219d844e3702f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62636e54f6f9ec489219d844e3702f38">&#9670;&nbsp;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RuleBasedTopologySource::setActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldBeActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> as active, occupying the midi port and trying to connect to the block devices. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#aeeedb6e4d263a17d9dd8190fbc0785fb">TopologySource</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="structRuleBasedTopologySource_1_1Rule.html#aff9c2f0ed4c1ac8b286f6d7304490b31">RuleBasedTopologySource::Rule::~Rule()</a>.</p>
+
+</div>
+</div>
+<a id="aaff6b030f309928f267e7a20aa0c2655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff6b030f309928f267e7a20aa0c2655">&#9670;&nbsp;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RuleBasedTopologySource::isActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#a5fe00c2393e3a382e9774f36a576e777">TopologySource</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="structRuleBasedTopologySource_1_1Rule.html#aff9c2f0ed4c1ac8b286f6d7304490b31">RuleBasedTopologySource::Rule::~Rule()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__RuleBasedTopologySource_8h.html">juce_RuleBasedTopologySource.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 23 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
