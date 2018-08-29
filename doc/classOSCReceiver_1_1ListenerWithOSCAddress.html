@@ -90,7 +90,7 @@ class OSCReceiver::ListenerWithOSCAddress&lt; CallbackType &gt;</h3>
 <p>Use this class if your app receives OSC messages with different address patterns (for example "/juce/fader1", /juce/knob2" etc.) and you want to route those to different objects. This class contains pre-build functionality for that OSC address routing, including wildcard pattern matching (e.g. "/juce/fader[0-9]").</p>
 <p>This class implements the concept of an "OSC Method" from the OpenSoundControl 1.0 specification.</p>
 <p>The template argument CallbackType determines how the callback will be called and has to be either <a class="el" href="structOSCReceiver_1_1MessageLoopCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">MessageLoopCallback</a> or <a class="el" href="structOSCReceiver_1_1RealtimeCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">RealtimeCallback</a>. If not specified, <a class="el" href="structOSCReceiver_1_1MessageLoopCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">MessageLoopCallback</a> will be used by default.</p>
-<p>Note: this type of listener will ignore OSC bundles.</p>
+<p>Note: This type of listener will ignore OSC bundles.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classOSCReceiver.html#adcaed63b17d8749c937363d7e3732a4f" title="Adds a listener that listens to OSC messages and bundles. ">OSCReceiver::addListener</a>, <a class="el" href="classOSCReceiver_1_1Listener.html" title="A class for receiving OSC data from an OSCReceiver. ">OSCReceiver::Listener</a>, <a class="el" href="structOSCReceiver_1_1MessageLoopCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">OSCReceiver::MessageLoopCallback</a>, <a class="el" href="structOSCReceiver_1_1RealtimeCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">OSCReceiver::RealtimeCallback</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ad949fbd2d7d9e8a0253d1dfe93b394"></a>
@@ -159,7 +159,7 @@ template&lt;typename CallbackType = MessageLoopCallback&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <p>The file should already exist, and should already be the size that you want to work with when you call this. If the file is resized after being opened, the behaviour is undefined.</p>
 <p>If the file exists and the operation succeeds, the <a class="el" href="classMemoryMappedFile.html#a201023945c6c0f7d729fc68157430f41" title="Returns the address at which this file has been mapped, or a null pointer if the file couldn&#39;t be suc...">getData()</a> and <a class="el" href="classMemoryMappedFile.html#a98d9f4380b1343520779570fbe5bf2b0" title="Returns the number of bytes of data that are available for reading or writing. ">getSize()</a> methods will return the location and size of the data that can be read or written. Note that the entire file is not read into memory immediately - the OS simply creates a virtual mapping, which will lazily pull the data into memory when blocks are accessed.</p>
 <p>If the file can't be opened for some reason, the <a class="el" href="classMemoryMappedFile.html#a201023945c6c0f7d729fc68157430f41" title="Returns the address at which this file has been mapped, or a null pointer if the file couldn&#39;t be suc...">getData()</a> method will return a null pointer.</p>
-<p>NOTE: the start of the actual range used may be rounded-down to a multiple of the OS's page-size, so do not assume that the mapped memory will begin at exactly the position you requested - always use <a class="el" href="classMemoryMappedFile.html#a581be9425c7e7256c4b7c9a80ad3bd16" title="Returns the section of the file at which the mapped memory represents. ">getRange()</a> to check the actual range that is being used. </p>
+<p>NOTE: The start of the actual range used may be rounded-down to a multiple of the OS's page-size, so do not assume that the mapped memory will begin at exactly the position you requested - always use <a class="el" href="classMemoryMappedFile.html#a581be9425c7e7256c4b7c9a80ad3bd16" title="Returns the section of the file at which the mapped memory represents. ">getRange()</a> to check the actual range that is being used. </p>
 
 </div>
 </div>
@@ -326,7 +326,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

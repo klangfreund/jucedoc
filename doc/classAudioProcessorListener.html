@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receives a callback when a parameter is changed. </p>
-<p>IMPORTANT NOTE: this will be called synchronously when a parameter changes, and many audio processors will change their parameter during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to on the message thread. </p>
+<p>IMPORTANT NOTE: This will be called synchronously when a parameter changes, and many audio processors will change their parameter during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to on the message thread. </p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called to indicate that something else in the plugin has changed, like its program, number of parameters, etc. </p>
-<p>IMPORTANT NOTE: this will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread. </p>
+<p>IMPORTANT NOTE: This will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread. </p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Indicates that a parameter change gesture has started. </p>
 <p>E.g. if the user is dragging a slider, this would be called when they first press the mouse button, and audioProcessorParameterChangeGestureEnd would be called when they release it.</p>
-<p>IMPORTANT NOTE: this will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread.</p>
+<p>IMPORTANT NOTE: This will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorListener.html#a3d78c8d30a546bcccf98827c1b6effb4" title="Indicates that a parameter change gesture has finished. ">audioProcessorParameterChangeGestureEnd</a> </dd></dl>
 
 </div>
@@ -272,7 +272,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Indicates that a parameter change gesture has finished. </p>
 <p>E.g. if the user is dragging a slider, this would be called when they release the mouse button.</p>
-<p>IMPORTANT NOTE: this will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread.</p>
+<p>IMPORTANT NOTE: This will be called synchronously, and many audio processors will call it during their audio callback. This means that not only has your handler code got to be completely thread-safe, but it's also got to be VERY fast, and avoid blocking. If you need to handle this event on your message thread, use this callback to trigger an <a class="el" href="classAsyncUpdater.html" title="Has a callback method that is triggered asynchronously. ">AsyncUpdater</a> or <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> which you can respond to later on the message thread.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorListener.html#a38075b5e4654a8c50e135eee40c74f2e" title="Indicates that a parameter change gesture has started. ">audioProcessorParameterChangeGestureBegin</a> </dd></dl>
 
 </div>
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 28 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 29 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
