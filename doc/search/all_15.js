@@ -54,7 +54,7 @@ var searchData=
   ['visibleareachanged',['visibleAreaChanged',['../classViewport.html#abd21eaef2a7a3c30c238e13e60dfd778',1,'Viewport']]],
   ['visit',['visit',['../classExpression_1_1Scope_1_1Visitor.html#a843db0686a8680c7108985b18dd8c4b6',1,'Expression::Scope::Visitor']]],
   ['visitor',['Visitor',['../classExpression_1_1Scope_1_1Visitor.html',1,'Expression::Scope']]],
-  ['visitrelativescope',['visitRelativeScope',['../classExpression_1_1Scope.html#a6e838f064354389a3b398fdf3ddd5ded',1,'Expression::Scope::visitRelativeScope()'],['../classRelativeCoordinatePositionerBase_1_1ComponentScope.html#add987ead6b4f941f864baf50f01e10c5',1,'RelativeCoordinatePositionerBase::ComponentScope::visitRelativeScope()']]],
+  ['visitrelativescope',['visitRelativeScope',['../classExpression_1_1Scope.html#a6e838f064354389a3b398fdf3ddd5ded',1,'Expression::Scope::visitRelativeScope()'],['../classRelativeCoordinatePositionerBase_1_1ComponentScope.html#a014837628cb67298af1a9da4f1f642a0',1,'RelativeCoordinatePositionerBase::ComponentScope::visitRelativeScope()']]],
   ['vmasksimdtype',['vMaskSIMDType',['../structdsp_1_1SIMDRegister.html#a5caf8a1bffd0c9462d1fcc3ccb5ffe45',1,'dsp::SIMDRegister']]],
   ['vmasktype',['vMaskType',['../structdsp_1_1SIMDRegister.html#a35604c900344b10ae5fe5b1a2424a7e7',1,'dsp::SIMDRegister']]],
   ['voices',['voices',['../classMPESynthesiser.html#ae8ff04bfb33a5de6d649ed78bab37274',1,'MPESynthesiser::voices()'],['../classSynthesiser.html#a260d964d6764a51b2315233e0bf76980',1,'Synthesiser::voices()']]],
