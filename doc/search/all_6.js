@@ -635,6 +635,7 @@ var searchData=
   ['getkioskmodecomponent',['getKioskModeComponent',['../classDesktop.html#a3f09558177477a50a1fa092871f4aab1',1,'Desktop']]],
   ['getknownformat',['getKnownFormat',['../classAudioFormatManager.html#a524a10b28ad040510bb1d337d07db8a2',1,'AudioFormatManager']]],
   ['getlabel',['getLabel',['../classAudioProcessorParameter.html#a1413a29855168b5e0ca5a1cd648d352a',1,'AudioProcessorParameter']]],
+  ['getlabelbordersize',['getLabelBorderSize',['../classLookAndFeel__V2.html#ac08055311b69a6f1fd3f5ab7a2817da5',1,'LookAndFeel_V2::getLabelBorderSize()'],['../structLabel_1_1LookAndFeelMethods.html#a93c6c3732fd6690e886e2e117a77ce65',1,'Label::LookAndFeelMethods::getLabelBorderSize()']]],
   ['getlabelfont',['getLabelFont',['../classLookAndFeel__V2.html#a6f7d84ed6514c03bdf5cb2d4846a39f1',1,'LookAndFeel_V2::getLabelFont()'],['../structLabel_1_1LookAndFeelMethods.html#a0eb798ec3b1fe4d101fee9945f94764d',1,'Label::LookAndFeelMethods::getLabelFont()']]],
   ['getlanguagename',['getLanguageName',['../classLocalisedStrings.html#ac49d8221ed6dceca9417396be4ed6682',1,'LocalisedStrings']]],
   ['getlanguageversion',['getLanguageVersion',['../classOpenGLShaderProgram.html#a77d9d36da09b9cc5b19439bb1215886b',1,'OpenGLShaderProgram']]],
