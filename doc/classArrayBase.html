@@ -66,6 +66,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A basic object container.  
+ <a href="classArrayBase.html#details">More...</a></p>
+
 <p>Inherits TypeOfCriticalSectionToUse.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -145,7 +148,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40e4d62f38a502b829865cc94cbcf049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayBase.html#a40e4d62f38a502b829865cc94cbcf049">move</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> currentIndex, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> newIndex) noexcept</td></tr>
 <tr class="separator:a40e4d62f38a502b829865cc94cbcf049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt;<br />
+class ArrayBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</h3>
+
+<p>A basic object container. </p>
+<p>This class isn't really for public use - it's used by the other array classes, but might come in handy for some purposes.</p>
+<p>It inherits from a critical section class to allow the arrays to use the "empty base class optimisation" pattern to reduce their footprint.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a></dd></dl>
+<p>{Core} </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b3cfd750addb52f1faef4ff45cba7c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b3cfd750addb52f1faef4ff45cba7c8">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[1/2]</span></h2>
 
@@ -1095,7 +1107,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 4 2018 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 5 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

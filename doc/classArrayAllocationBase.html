@@ -109,9 +109,7 @@ Public Attributes</h2></td></tr>
 class ArrayAllocationBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</h3>
 
 <p>Implements some basic array storage allocation functions. </p>
-<p>This class isn't really for public use - it's used by the other array classes, but might come in handy for some purposes.</p>
-<p>It inherits from a critical section class to allow the arrays to use the "empty base class optimisation" pattern to reduce their footprint.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a></dd></dl>
+<p>This class isn't really for public use - it used to be part of the container classes but has since been superseded by <a class="el" href="classArrayBase.html" title="A basic object container. ">ArrayBase</a>. Eventually it will be removed from the API.</p>
 <p>{Core} </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a11d8bab507f8c7bf1e6c9e536a9d8093"></a>
@@ -394,7 +392,7 @@ template&lt;class ElementType , class TypeOfCriticalSectionToUse &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 4 2018 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 5 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
