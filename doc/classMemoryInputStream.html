@@ -107,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86d8876c0c32633f42e232435e21ebaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInputStream.html#a86d8876c0c32633f42e232435e21ebaa">read</a> (void *destBuffer, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maxBytesToRead) override</td></tr>
 <tr class="memdesc:a86d8876c0c32633f42e232435e21ebaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads some data from the stream into a memory buffer.  <a href="#a86d8876c0c32633f42e232435e21ebaa">More...</a><br /></td></tr>
 <tr class="separator:a86d8876c0c32633f42e232435e21ebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17251d28efc41bc753538421e05e0690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInputStream.html#a17251d28efc41bc753538421e05e0690">skipNextBytes</a> (<a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> numBytesToSkip) override</td></tr>
+<tr class="memdesc:a17251d28efc41bc753538421e05e0690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and discards a number of bytes from the stream.  <a href="#a17251d28efc41bc753538421e05e0690">More...</a><br /></td></tr>
+<tr class="separator:a17251d28efc41bc753538421e05e0690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classInputStream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classInputStream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classInputStream.html">InputStream</a></td></tr>
 <tr class="memitem:a8c49246dd62e559578732f518f159432 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a8c49246dd62e559578732f518f159432">~InputStream</a> ()</td></tr>
 <tr class="memdesc:a8c49246dd62e559578732f518f159432 inherit pub_methods_classInputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classInputStream.html#a8c49246dd62e559578732f518f159432">More...</a><br /></td></tr>
@@ -165,9 +168,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7708d25af96e8d8b937a4642dcf55a23 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7708d25af96e8d8b937a4642dcf55a23">readIntoMemoryBlock</a> (<a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;destBlock, ssize_t maxNumBytesToRead=-1)</td></tr>
 <tr class="memdesc:a7708d25af96e8d8b937a4642dcf55a23 inherit pub_methods_classInputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from the stream and appends the data to a <a class="el" href="classMemoryBlock.html" title="A class to hold a resizable block of raw data. ">MemoryBlock</a>.  <a href="classInputStream.html#a7708d25af96e8d8b937a4642dcf55a23">More...</a><br /></td></tr>
 <tr class="separator:a7708d25af96e8d8b937a4642dcf55a23 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3005cc6a58cd2ded6094dd6dd06542 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">skipNextBytes</a> (<a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> numBytesToSkip)</td></tr>
-<tr class="memdesc:a7e3005cc6a58cd2ded6094dd6dd06542 inherit pub_methods_classInputStream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and discards a number of bytes from the stream.  <a href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">More...</a><br /></td></tr>
-<tr class="separator:a7e3005cc6a58cd2ded6094dd6dd06542 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -333,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the number of bytes of source data in the block from which this stream is reading. </p>
 
-<p class="reference">References <a class="el" href="classInputStream.html#abf909e2de145df97221ab4deb2824c5c">InputStream::getPosition()</a>, <a class="el" href="classInputStream.html#aebacb933570264e9697f6c984e348d01">InputStream::getTotalLength()</a>, <a class="el" href="classInputStream.html#aabacc50cde9fcabe4752c796648fde49">InputStream::isExhausted()</a>, <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, <a class="el" href="classInputStream.html#aa5350c414bad6b97ae3b463a3401c0d6">InputStream::read()</a>, and <a class="el" href="classInputStream.html#ad7b4e8cec1e383657900e27bbcb3b06c">InputStream::setPosition()</a>.</p>
+<p class="reference">References <a class="el" href="classInputStream.html#abf909e2de145df97221ab4deb2824c5c">InputStream::getPosition()</a>, <a class="el" href="classInputStream.html#aebacb933570264e9697f6c984e348d01">InputStream::getTotalLength()</a>, <a class="el" href="classInputStream.html#aabacc50cde9fcabe4752c796648fde49">InputStream::isExhausted()</a>, <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, <a class="el" href="classInputStream.html#aa5350c414bad6b97ae3b463a3401c0d6">InputStream::read()</a>, <a class="el" href="classInputStream.html#ad7b4e8cec1e383657900e27bbcb3b06c">InputStream::setPosition()</a>, and <a class="el" href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">InputStream::skipNextBytes()</a>.</p>
 
 </div>
 </div>
@@ -511,13 +511,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a17251d28efc41bc753538421e05e0690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17251d28efc41bc753538421e05e0690">&#9670;&nbsp;</a></span>skipNextBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MemoryInputStream::skipNextBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a>&#160;</td>
+          <td class="paramname"><em>numBytesToSkip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads and discards a number of bytes from the stream. </p>
+<p>Some input streams might implement this more efficiently, but the base class will just keep reading data until the requisite number of bytes have been done. For large skips it may be quicker to call <a class="el" href="classMemoryInputStream.html#abd8d0c1ab9fef76fd49b7ad9aeeb506c" title="Tries to move the current read position of the stream. ">setPosition()</a> with the required position. </p>
+
+<p>Reimplemented from <a class="el" href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">InputStream</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__MemoryInputStream_8h.html">juce_MemoryInputStream.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -787,7 +787,7 @@ var searchData=
   ['skipbytes',['skipBytes',['../structBlocksProtocol_1_1HostPacketBuilder.html#a09e8b158d7935c145d641c4ce295841d',1,'BlocksProtocol::HostPacketBuilder']]],
   ['skipcomment',['skipComment',['../structCppTokeniserFunctions.html#acc20b010695f2ea7cba36da65c606219',1,'CppTokeniserFunctions']]],
   ['skipifnextcharmatches',['skipIfNextCharMatches',['../structCppTokeniserFunctions.html#a537b688c16a211d4826bcccf338aad79',1,'CppTokeniserFunctions::skipIfNextCharMatches(Iterator &amp;source, const juce_wchar c) noexcept'],['../structCppTokeniserFunctions.html#a6a7fb9d8843cda49644b5c9c0e7ea352',1,'CppTokeniserFunctions::skipIfNextCharMatches(Iterator &amp;source, const juce_wchar c1, const juce_wchar c2) noexcept']]],
-  ['skipnextbytes',['skipNextBytes',['../classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542',1,'InputStream']]],
+  ['skipnextbytes',['skipNextBytes',['../classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542',1,'InputStream::skipNextBytes()'],['../classMemoryInputStream.html#a17251d28efc41bc753538421e05e0690',1,'MemoryInputStream::skipNextBytes()']]],
   ['skipnextfile',['skipNextFile',['../classPluginDirectoryScanner.html#a85ef4f6094d91b010e79c3790018b539',1,'PluginDirectoryScanner']]],
   ['skipnumbersuffix',['skipNumberSuffix',['../structCppTokeniserFunctions.html#abd84f7c1b1b5df145e88819cf0ccd0d0',1,'CppTokeniserFunctions']]],
   ['skippreprocessorline',['skipPreprocessorLine',['../structCppTokeniserFunctions.html#a905f50dc9cdd44e54772c3ab69538338',1,'CppTokeniserFunctions']]],

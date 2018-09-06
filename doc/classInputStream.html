@@ -955,7 +955,11 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads and discards a number of bytes from the stream. </p>
-<p>The base class implementation will try to do this efficiently by moving the position along by numBytesToSkip, but if this fails it will fall back to reading the data until the requisite number of bytes have been done. </p>
+<p>Some input streams might implement this more efficiently, but the base class will just keep reading data until the requisite number of bytes have been done. For large skips it may be quicker to call <a class="el" href="classInputStream.html#ad7b4e8cec1e383657900e27bbcb3b06c" title="Tries to move the current read position of the stream. ">setPosition()</a> with the required position. </p>
+
+<p>Reimplemented in <a class="el" href="classMemoryInputStream.html#a17251d28efc41bc753538421e05e0690">MemoryInputStream</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classMemoryInputStream.html#aca7db79c18dbd0d425249aef22b22ba3">MemoryInputStream::getDataSize()</a>.</p>
 
 </div>
 </div>
@@ -965,7 +969,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
