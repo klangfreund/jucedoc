@@ -53,6 +53,7 @@ var searchData=
   ['juce_5faudiopluginformat_2eh',['juce_AudioPluginFormat.h',['../juce__AudioPluginFormat_8h.html',1,'']]],
   ['juce_5faudiopluginformatmanager_2eh',['juce_AudioPluginFormatManager.h',['../juce__AudioPluginFormatManager_8h.html',1,'']]],
   ['juce_5faudioplugininstance_2eh',['juce_AudioPluginInstance.h',['../juce__AudioPluginInstance_8h.html',1,'']]],
+  ['juce_5faudioprocessloadmeasurer_2eh',['juce_AudioProcessLoadMeasurer.h',['../juce__AudioProcessLoadMeasurer_8h.html',1,'']]],
   ['juce_5faudioprocessor_2eh',['juce_AudioProcessor.h',['../juce__AudioProcessor_8h.html',1,'']]],
   ['juce_5faudioprocessoreditor_2eh',['juce_AudioProcessorEditor.h',['../juce__AudioProcessorEditor_8h.html',1,'']]],
   ['juce_5faudioprocessorgraph_2eh',['juce_AudioProcessorGraph.h',['../juce__AudioProcessorGraph_8h.html',1,'']]],

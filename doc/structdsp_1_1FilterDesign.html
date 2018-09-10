@@ -107,24 +107,24 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a472a9d1e6827eb240da3179c5937b17b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1FilterDesign.html#ac2ec41da614cadb901480dc30690aa79">FIRCoefficientsPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a472a9d1e6827eb240da3179c5937b17b">designFIRLowpassHalfBandEquirippleMethod</a> (FloatType normalizedTransitionWidth, FloatType attenuationdB)</td></tr>
 <tr class="memdesc:a472a9d1e6827eb240da3179c5937b17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates a <a class="el" href="structdsp_1_1FIR_1_1Coefficients.html" title="A set of coefficients for use in an FIRFilter object. ">FIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Design of Half-Band FIR Filters for Signal Compression" from Pavel Zahradnik, to get an equiripple like high order <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filter, without the need of an iterative method and convergence failure risks.  <a href="#a472a9d1e6827eb240da3179c5937b17b">More...</a><br /></td></tr>
 <tr class="separator:a472a9d1e6827eb240da3179c5937b17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22711d4d4552ba1f9af6f22458328b71"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a22711d4d4552ba1f9af6f22458328b71">designIIRLowpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
-<tr class="memdesc:a22711d4d4552ba1f9af6f22458328b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band and in the stop band.  <a href="#a22711d4d4552ba1f9af6f22458328b71">More...</a><br /></td></tr>
-<tr class="separator:a22711d4d4552ba1f9af6f22458328b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78977c5717e442e168e94cdb2b4e241f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a78977c5717e442e168e94cdb2b4e241f">designIIRLowpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> order)</td></tr>
-<tr class="memdesc:a78977c5717e442e168e94cdb2b4e241f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band and in the stop band.  <a href="#a78977c5717e442e168e94cdb2b4e241f">More...</a><br /></td></tr>
-<tr class="separator:a78977c5717e442e168e94cdb2b4e241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19617f04882655e5248e07ae4151b097"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a19617f04882655e5248e07ae4151b097">designIIRHighpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> order)</td></tr>
-<tr class="memdesc:a19617f04882655e5248e07ae4151b097"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase high-pass filter without any ripple in the pass band and in the stop band.  <a href="#a19617f04882655e5248e07ae4151b097">More...</a><br /></td></tr>
-<tr class="separator:a19617f04882655e5248e07ae4151b097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ef50c9492e2bb7fe62c5d583cf44ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a09ef50c9492e2bb7fe62c5d583cf44ce">designIIRLowpassHighOrderChebyshev1Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
-<tr class="memdesc:a09ef50c9492e2bb7fe62c5d583cf44ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the stop band only.  <a href="#a09ef50c9492e2bb7fe62c5d583cf44ce">More...</a><br /></td></tr>
-<tr class="separator:a09ef50c9492e2bb7fe62c5d583cf44ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac0985f8098daafb36552c0d552c1f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a8ac0985f8098daafb36552c0d552c1f5">designIIRLowpassHighOrderChebyshev2Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
-<tr class="memdesc:a8ac0985f8098daafb36552c0d552c1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band only.  <a href="#a8ac0985f8098daafb36552c0d552c1f5">More...</a><br /></td></tr>
-<tr class="separator:a8ac0985f8098daafb36552c0d552c1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da565f0a09262e1b9e807d775580816"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a0da565f0a09262e1b9e807d775580816">designIIRLowpassHighOrderEllipticMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
-<tr class="memdesc:a0da565f0a09262e1b9e807d775580816"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIR::Filters, providing a minimum phase low-pass filter with ripples in both the pass band and in the stop band.  <a href="#a0da565f0a09262e1b9e807d775580816">More...</a><br /></td></tr>
-<tr class="separator:a0da565f0a09262e1b9e807d775580816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2915d52c071dd66344b09311451639"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#aed2915d52c071dd66344b09311451639">designIIRLowpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:aed2915d52c071dd66344b09311451639"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band and in the stop band.  <a href="#aed2915d52c071dd66344b09311451639">More...</a><br /></td></tr>
+<tr class="separator:aed2915d52c071dd66344b09311451639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65846b16fe1c71ae6b4ff39ea890c499"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a65846b16fe1c71ae6b4ff39ea890c499">designIIRLowpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> order)</td></tr>
+<tr class="memdesc:a65846b16fe1c71ae6b4ff39ea890c499"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band and in the stop band.  <a href="#a65846b16fe1c71ae6b4ff39ea890c499">More...</a><br /></td></tr>
+<tr class="separator:a65846b16fe1c71ae6b4ff39ea890c499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37cbc9918ee475b1ccb0c4d0aced12e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#ab37cbc9918ee475b1ccb0c4d0aced12e">designIIRHighpassHighOrderButterworthMethod</a> (FloatType frequency, double sampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> order)</td></tr>
+<tr class="memdesc:ab37cbc9918ee475b1ccb0c4d0aced12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase high-pass filter without any ripple in the pass band and in the stop band.  <a href="#ab37cbc9918ee475b1ccb0c4d0aced12e">More...</a><br /></td></tr>
+<tr class="separator:ab37cbc9918ee475b1ccb0c4d0aced12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d9939050a75c4a27ab25868f7b106b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a09d9939050a75c4a27ab25868f7b106b">designIIRLowpassHighOrderChebyshev1Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a09d9939050a75c4a27ab25868f7b106b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the stop band only.  <a href="#a09d9939050a75c4a27ab25868f7b106b">More...</a><br /></td></tr>
+<tr class="separator:a09d9939050a75c4a27ab25868f7b106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5e7e736980e47a20c74737bd4c2c51"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a4b5e7e736980e47a20c74737bd4c2c51">designIIRLowpassHighOrderChebyshev2Method</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a4b5e7e736980e47a20c74737bd4c2c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIRFilters, providing a minimum phase low-pass filter without any ripple in the pass band only.  <a href="#a4b5e7e736980e47a20c74737bd4c2c51">More...</a><br /></td></tr>
+<tr class="separator:a4b5e7e736980e47a20c74737bd4c2c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab8f61b9d0b75bed3de89789d736d39"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#a1ab8f61b9d0b75bed3de89789d736d39">designIIRLowpassHighOrderEllipticMethod</a> (FloatType frequency, double sampleRate, FloatType normalizedTransitionWidth, FloatType passbandAttenuationdB, FloatType stopbandAttenuationdB)</td></tr>
+<tr class="memdesc:a1ab8f61b9d0b75bed3de89789d736d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns an array of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made to be used in cascaded IIR::Filters, providing a minimum phase low-pass filter with ripples in both the pass band and in the stop band.  <a href="#a1ab8f61b9d0b75bed3de89789d736d39">More...</a><br /></td></tr>
+<tr class="separator:a1ab8f61b9d0b75bed3de89789d736d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9c0ea5cd9cae7d0ee4a2a4c0d9ed957"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1FilterDesign_1_1IIRPolyphaseAllpassStructure.html">IIRPolyphaseAllpassStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign.html#ac9c0ea5cd9cae7d0ee4a2a4c0d9ed957">designIIRLowpassHalfBandPolyphaseAllpassMethod</a> (FloatType normalizedTransitionWidth, FloatType stopbandAttenuationdB)</td></tr>
 <tr class="memdesc:ac9c0ea5cd9cae7d0ee4a2a4c0d9ed957"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method generates arrays of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a> for a low-pass filter, with a cutoff frequency at half band, using an algorithm described in the article "Digital Signal Processing Schemes for efficient interpolation and decimation" from Pavel Valenzuela and Constantinides.  <a href="#ac9c0ea5cd9cae7d0ee4a2a4c0d9ed957">More...</a><br /></td></tr>
 <tr class="separator:ac9c0ea5cd9cae7d0ee4a2a4c0d9ed957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,8 +506,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a22711d4d4552ba1f9af6f22458328b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22711d4d4552ba1f9af6f22458328b71">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderButterworthMethod() <span class="overload">[1/2]</span></h2>
+<a id="aed2915d52c071dd66344b09311451639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2915d52c071dd66344b09311451639">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderButterworthMethod() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,7 +518,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderButterworthMethod </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderButterworthMethod </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -575,8 +575,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a78977c5717e442e168e94cdb2b4e241f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78977c5717e442e168e94cdb2b4e241f">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderButterworthMethod() <span class="overload">[2/2]</span></h2>
+<a id="a65846b16fe1c71ae6b4ff39ea890c499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65846b16fe1c71ae6b4ff39ea890c499">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderButterworthMethod() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,7 +587,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderButterworthMethod </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderButterworthMethod </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -629,8 +629,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a19617f04882655e5248e07ae4151b097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19617f04882655e5248e07ae4151b097">&#9670;&nbsp;</a></span>designIIRHighpassHighOrderButterworthMethod()</h2>
+<a id="ab37cbc9918ee475b1ccb0c4d0aced12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37cbc9918ee475b1ccb0c4d0aced12e">&#9670;&nbsp;</a></span>designIIRHighpassHighOrderButterworthMethod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -641,7 +641,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRHighpassHighOrderButterworthMethod </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRHighpassHighOrderButterworthMethod </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -683,8 +683,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a09ef50c9492e2bb7fe62c5d583cf44ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09ef50c9492e2bb7fe62c5d583cf44ce">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderChebyshev1Method()</h2>
+<a id="a09d9939050a75c4a27ab25868f7b106b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d9939050a75c4a27ab25868f7b106b">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderChebyshev1Method()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +695,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderChebyshev1Method </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderChebyshev1Method </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -752,8 +752,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a8ac0985f8098daafb36552c0d552c1f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ac0985f8098daafb36552c0d552c1f5">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderChebyshev2Method()</h2>
+<a id="a4b5e7e736980e47a20c74737bd4c2c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5e7e736980e47a20c74737bd4c2c51">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderChebyshev2Method()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +764,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderChebyshev2Method </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderChebyshev2Method </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -821,8 +821,8 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
-<a id="a0da565f0a09262e1b9e807d775580816"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0da565f0a09262e1b9e807d775580816">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderEllipticMethod()</h2>
+<a id="a1ab8f61b9d0b75bed3de89789d736d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab8f61b9d0b75bed3de89789d736d39">&#9670;&nbsp;</a></span>designIIRLowpassHighOrderEllipticMethod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -833,7 +833,7 @@ template&lt;typename FloatType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classArray.html">Array</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderEllipticMethod </td>
+          <td class="memname">static <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt;<a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a>&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::designIIRLowpassHighOrderEllipticMethod </td>
           <td>(</td>
           <td class="paramtype">FloatType&#160;</td>
           <td class="paramname"><em>frequency</em>, </td>
@@ -946,7 +946,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 6 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 10 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -71,7 +71,7 @@ var searchData=
   ['heapblock_3c_20focuschangelistener_20_2a_3e',['HeapBlock&lt; FocusChangeListener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20glyphinfo_20_2a_3e',['HeapBlock&lt; GlyphInfo *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20hashentry_20_2a_3e',['HeapBlock&lt; HashEntry *&gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20iircoefficients_20_3e',['HeapBlock&lt; IIRCoefficients &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20iircoefficients_20_2a_3e',['HeapBlock&lt; IIRCoefficients *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20iirfilter_20_2a_3e',['HeapBlock&lt; IIRFilter *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20imagepixeldata_3a_3alistener_20_2a_3e',['HeapBlock&lt; ImagePixelData::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20inapppurchases_3a_3adownload_20_2a_3e',['HeapBlock&lt; InAppPurchases::Download *&gt;',['../classHeapBlock.html',1,'']]],

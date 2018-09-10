@@ -471,7 +471,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Changes this object to be a reference to the given tree. </p>
-<p>Note that calling this just points this at the new object and invokes the <a class="el" href="classValueTree_1_1Listener.html#a0fe714c55225f9f814801f875e5d41ca" title="This method is called when a tree is made to point to a different internal shared object...">Listener::valueTreeRedirected</a> callback, but it's not an undoable operation. If you're trying to replace an entire tree in an undoable way, you probably want to use copyPropertiesAndChildren() instead. </p>
+<p>Note that calling this just points this at the new object and invokes the <a class="el" href="classValueTree_1_1Listener.html#a0fe714c55225f9f814801f875e5d41ca" title="This method is called when a tree is made to point to a different internal shared object...">Listener::valueTreeRedirected</a> callback, but it's not an undoable operation. If you're trying to replace an entire tree in an undoable way, you probably want to use <a class="el" href="classValueTree.html#aa87912c9c35741a91a91a3ab23d6c49a" title="Replaces all children and properties of this object with copies of those from the source object...">copyPropertiesAndChildrenFrom()</a> instead. </p>
 
 </div>
 </div>
@@ -1977,7 +1977,7 @@ template&lt;typename ElementComparator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 6 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 10 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

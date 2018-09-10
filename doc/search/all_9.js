@@ -82,6 +82,7 @@ var searchData=
   ['juce_5faudiopluginformat_2eh',['juce_AudioPluginFormat.h',['../juce__AudioPluginFormat_8h.html',1,'']]],
   ['juce_5faudiopluginformatmanager_2eh',['juce_AudioPluginFormatManager.h',['../juce__AudioPluginFormatManager_8h.html',1,'']]],
   ['juce_5faudioplugininstance_2eh',['juce_AudioPluginInstance.h',['../juce__AudioPluginInstance_8h.html',1,'']]],
+  ['juce_5faudioprocessloadmeasurer_2eh',['juce_AudioProcessLoadMeasurer.h',['../juce__AudioProcessLoadMeasurer_8h.html',1,'']]],
   ['juce_5faudioprocessor_2eh',['juce_AudioProcessor.h',['../juce__AudioProcessor_8h.html',1,'']]],
   ['juce_5faudioprocessoreditor_2eh',['juce_AudioProcessorEditor.h',['../juce__AudioProcessorEditor_8h.html',1,'']]],
   ['juce_5faudioprocessorgraph_2eh',['juce_AudioProcessorGraph.h',['../juce__AudioProcessorGraph_8h.html',1,'']]],
@@ -691,6 +692,6 @@ var searchData=
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#ac4b5b9f0403512d91215fec879fa9e77',1,'Justification::Justification(const Justification &amp;)=default']]],
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
-  ['justifyitems',['JustifyItems',['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()'],['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()']]],
+  ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
   ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
 ];

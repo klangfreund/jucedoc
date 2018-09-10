@@ -26,6 +26,7 @@ var searchData=
   ['scopedreadwrite',['ScopedReadWrite',['../classAbstractFifo_1_1ScopedReadWrite.html',1,'AbstractFifo']]],
   ['scopedsavestate',['ScopedSaveState',['../classGraphics_1_1ScopedSaveState.html',1,'Graphics']]],
   ['scopedtimemeasurement',['ScopedTimeMeasurement',['../classScopedTimeMeasurement.html',1,'']]],
+  ['scopedtimer',['ScopedTimer',['../structAudioProcessLoadMeasurer_1_1ScopedTimer.html',1,'AudioProcessLoadMeasurer']]],
   ['scopedvaluesetter',['ScopedValueSetter',['../classScopedValueSetter.html',1,'']]],
   ['scopedwritelock',['ScopedWriteLock',['../classScopedWriteLock.html',1,'']]],
   ['scrollbar',['ScrollBar',['../classScrollBar.html',1,'']]],

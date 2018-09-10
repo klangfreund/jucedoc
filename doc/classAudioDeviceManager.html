@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9898f5fc97622b0887bd60d838683293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a9898f5fc97622b0887bd60d838683293">createStateXml</a> () const</td></tr>
 <tr class="memdesc:a9898f5fc97622b0887bd60d838683293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some XML representing the current state of the manager.  <a href="#a9898f5fc97622b0887bd60d838683293">More...</a><br /></td></tr>
 <tr class="separator:a9898f5fc97622b0887bd60d838683293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84855d2826ebd28f1bb61fb77005fb7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a84855d2826ebd28f1bb61fb77005fb7a">getAudioDeviceSetup</a> () const</td></tr>
+<tr class="memdesc:a84855d2826ebd28f1bb61fb77005fb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device properties that are in use.  <a href="#a84855d2826ebd28f1bb61fb77005fb7a">More...</a><br /></td></tr>
+<tr class="separator:a84855d2826ebd28f1bb61fb77005fb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67ef90034c2980f264951f18f86fbcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#ac67ef90034c2980f264951f18f86fbcb">getAudioDeviceSetup</a> (<a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> &amp;result) const</td></tr>
 <tr class="memdesc:ac67ef90034c2980f264951f18f86fbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device properties that are in use.  <a href="#ac67ef90034c2980f264951f18f86fbcb">More...</a><br /></td></tr>
 <tr class="separator:ac67ef90034c2980f264951f18f86fbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,8 +387,28 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a84855d2826ebd28f1bb61fb77005fb7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84855d2826ebd28f1bb61fb77005fb7a">&#9670;&nbsp;</a></span>getAudioDeviceSetup() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a> AudioDeviceManager::getAudioDeviceSetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current device properties that are in use. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#aef0249d178aa5448ad2e949ae059c461" title="Changes the current device or its settings. ">setAudioDeviceSetup</a> </dd></dl>
+
+</div>
+</div>
 <a id="ac67ef90034c2980f264951f18f86fbcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac67ef90034c2980f264951f18f86fbcb">&#9670;&nbsp;</a></span>getAudioDeviceSetup()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67ef90034c2980f264951f18f86fbcb">&#9670;&nbsp;</a></span>getAudioDeviceSetup() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +424,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current device properties that are in use. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#aef0249d178aa5448ad2e949ae059c461" title="Changes the current device or its settings. ">setAudioDeviceSetup</a> </dd></dl>
+<p>This is an old method, kept around for compatibility, but you should prefer the new version which returns the result rather than taking an out-parameter. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a84855d2826ebd28f1bb61fb77005fb7a" title="Returns the current device properties that are in use. ">getAudioDeviceSetup()</a> </dd></dl>
 
 </div>
 </div>
@@ -432,7 +455,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Changes the current device or its settings. </p>
-<p>If you want to change a device property, like the current sample rate or block size, you can call <a class="el" href="classAudioDeviceManager.html#ac67ef90034c2980f264951f18f86fbcb" title="Returns the current device properties that are in use. ">getAudioDeviceSetup()</a> to retrieve the current settings, then tweak the appropriate fields in the <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html" title="This structure holds a set of properties describing the current audio setup. ">AudioDeviceSetup</a> structure, and pass it back into this method to apply the new settings.</p>
+<p>If you want to change a device property, like the current sample rate or block size, you can call <a class="el" href="classAudioDeviceManager.html#a84855d2826ebd28f1bb61fb77005fb7a" title="Returns the current device properties that are in use. ">getAudioDeviceSetup()</a> to retrieve the current settings, then tweak the appropriate fields in the <a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html" title="This structure holds a set of properties describing the current audio setup. ">AudioDeviceSetup</a> structure, and pass it back into this method to apply the new settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newSetup</td><td>the settings that you'd like to use </td></tr>
@@ -441,7 +464,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an error message if anything went wrong, or an empty string if it worked ok.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#ac67ef90034c2980f264951f18f86fbcb" title="Returns the current device properties that are in use. ">getAudioDeviceSetup</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a84855d2826ebd28f1bb61fb77005fb7a" title="Returns the current device properties that are in use. ">getAudioDeviceSetup</a> </dd></dl>
 
 </div>
 </div>
@@ -1090,7 +1113,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 6 2018 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 10 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

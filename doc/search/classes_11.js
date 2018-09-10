@@ -19,6 +19,7 @@ var searchData=
   ['rectangleplacement',['RectanglePlacement',['../classRectanglePlacement.html',1,'']]],
   ['referencecountedarray',['ReferenceCountedArray',['../classReferenceCountedArray.html',1,'']]],
   ['referencecountedarray_3c_20audioprocessorgraph_3a_3anode_20_3e',['ReferenceCountedArray&lt; AudioProcessorGraph::Node &gt;',['../classReferenceCountedArray.html',1,'']]],
+  ['referencecountedarray_3c_20iircoefficients_20_3e',['ReferenceCountedArray&lt; IIRCoefficients &gt;',['../classReferenceCountedArray.html',1,'']]],
   ['referencecountedarray_3c_20synthesisersound_20_3e',['ReferenceCountedArray&lt; SynthesiserSound &gt;',['../classReferenceCountedArray.html',1,'']]],
   ['referencecountedarray_3c_20upload_20_3e',['ReferenceCountedArray&lt; Upload &gt;',['../classReferenceCountedArray.html',1,'']]],
   ['referencecountedobject',['ReferenceCountedObject',['../classReferenceCountedObject.html',1,'']]],

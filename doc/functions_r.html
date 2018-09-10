@@ -396,6 +396,9 @@ $(function() {
 <li>registerBasicFormats()
 : <a class="el" href="classAudioFormatManager.html#a1a8510b3078662358013ad78239d688e">AudioFormatManager</a>
 </li>
+<li>registerBlockRenderTime()
+: <a class="el" href="classAudioProcessLoadMeasurer.html#a1a106a9539bc081264bcd64563785666">AudioProcessLoadMeasurer</a>
+</li>
 <li>registerBroadcastListener()
 : <a class="el" href="classMessageManager.html#ad4ee5d1cae2b55eb45507b491489e5de">MessageManager</a>
 </li>
@@ -862,14 +865,14 @@ $(function() {
 , <a class="el" href="classSynthesiserVoice.html#ac61fa7d3dd5180a561fc1c0ab418077e">SynthesiserVoice</a>
 </li>
 <li>renderNextSubBlock()
-: <a class="el" href="classMPESynthesiser.html#a5192d64f9a0f664dbeb28b34e216381c">MPESynthesiser</a>
+: <a class="el" href="classMPESynthesiser.html#a98c17883ec58f43951ac70026cb7ffd8">MPESynthesiser</a>
 , <a class="el" href="structMPESynthesiserBase.html#a35cb8fe7b87b603884ee3f4837be07aa">MPESynthesiserBase</a>
 </li>
 <li>renderOpenGL()
 : <a class="el" href="classOpenGLRenderer.html#a34077b4eaeb3207814b9e4302f724912">OpenGLRenderer</a>
 </li>
 <li>renderVoices()
-: <a class="el" href="classSynthesiser.html#a0682b53979e6f2ed5f08b385d155c60c">Synthesiser</a>
+: <a class="el" href="classSynthesiser.html#a838f270e38f2c79c38a1085284f1fc41">Synthesiser</a>
 </li>
 <li>Renoise
 : <a class="el" href="classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a17d9c92fbae8bdff143b83043fada217">PluginHostType</a>
@@ -984,6 +987,7 @@ $(function() {
 <li>reset()
 : <a class="el" href="classAbstractFifo.html#a33ba0f93c22c9cc182f8fa78af07862f">AbstractFifo</a>
 , <a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a48e39e836142669e489b04389123536a">AudioFormatWriter::ThreadedWriter::IncomingDataReceiver</a>
+, <a class="el" href="classAudioProcessLoadMeasurer.html#abd0e34bd125fd9505edcb64b9208ccba">AudioProcessLoadMeasurer</a>
 , <a class="el" href="classAudioProcessor.html#ab10c4739ceb56e5cd70dbce8aa8c4f61">AudioProcessor</a>
 , <a class="el" href="classAudioProcessorGraph.html#a3ceaedc1c4d645ccc20b22151bedc297">AudioProcessorGraph</a>
 , <a class="el" href="classAudioThumbnail.html#a9a99b62ab38df9acf50ce84e9488bf6e">AudioThumbnail</a>
@@ -993,7 +997,7 @@ $(function() {
 , <a class="el" href="classdsp_1_1Convolution.html#ad957d14c1d0d0cb3a6c20c90e0126012">dsp::Convolution</a>
 , <a class="el" href="classdsp_1_1FIR_1_1Filter.html#abac4f624e95a75fb073ed890ea32228c">dsp::FIR::Filter&lt; SampleType &gt;</a>
 , <a class="el" href="classdsp_1_1Gain.html#ae6b4e13fc4130fa84aac69ef0267baa1">dsp::Gain&lt; FloatType &gt;</a>
-, <a class="el" href="classdsp_1_1IIR_1_1Filter.html#a30f9606daa23415316c524eb3de5e0aa">dsp::IIR::Filter&lt; SampleType &gt;</a>
+, <a class="el" href="classdsp_1_1IIR_1_1Filter.html#ab54eb5792eaba1b529f0e6f95342f517">dsp::IIR::Filter&lt; SampleType &gt;</a>
 , <a class="el" href="classdsp_1_1LadderFilter.html#a356118085674c8242dbb3cc5b80dc54f">dsp::LadderFilter&lt; Type &gt;</a>
 , <a class="el" href="classdsp_1_1Oscillator.html#ac4f0e60d1e0bdc56b78c31aa0bdb05d8">dsp::Oscillator&lt; SampleType &gt;</a>
 , <a class="el" href="classdsp_1_1Oversampling.html#a2a9cedc303110b61c32f929018f7c8fd">dsp::Oversampling&lt; SampleType &gt;</a>
@@ -1019,7 +1023,7 @@ $(function() {
 , <a class="el" href="classOptionalScopedPointer.html#afed41a6c80a9254397bbefefa69a21b9">OptionalScopedPointer&lt; ObjectType &gt;</a>
 , <a class="el" href="classReferenceCountedObjectPtr.html#adfc5fb60bf0c5e0d820dc51c9edfa823">ReferenceCountedObjectPtr&lt; ObjectType &gt;</a>
 , <a class="el" href="classReverb.html#a5d132bb7b4edbeeedbd2d1ef7e4c87ef">Reverb</a>
-, <a class="el" href="classScopedPointer.html#a6792ecbc86107b81bdfc76f61a589e60">ScopedPointer&lt; ObjectType &gt;</a>
+, <a class="el" href="classScopedPointer.html#a2d96a7e7ae6f857c4d5b8c9d3f749e8f">ScopedPointer&lt; ObjectType &gt;</a>
 , <a class="el" href="classStatisticsAccumulator.html#aae1f7582ed244087615aab9bea80b58d">StatisticsAccumulator&lt; FloatType &gt;</a>
 , <a class="el" href="structUnityAudioEffectDefinition.html#ac61fba3aba34d06885506c907f0a400c">UnityAudioEffectDefinition</a>
 , <a class="el" href="classWaitableEvent.html#aa9b3db111ba17e13d5e74360367bcc9b">WaitableEvent</a>
@@ -1094,7 +1098,7 @@ $(function() {
 : <a class="el" href="classResizableEdgeComponent.html#a50df447594f67bdb95d5d334c4f97889">ResizableEdgeComponent</a>
 </li>
 <li>ResizableWindow()
-: <a class="el" href="classResizableWindow.html#a72a45d75d7e14d157e01143969e51361">ResizableWindow</a>
+: <a class="el" href="classResizableWindow.html#a16e8710f342007dbcb7c7d4171043f0c">ResizableWindow</a>
 </li>
 <li>resize()
 : <a class="el" href="classArray.html#ade015d02494b59f2e8e7600f136c09af">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
@@ -1600,7 +1604,7 @@ $(function() {
 : <a class="el" href="classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a46ac50fdae2ac4df9a2f3ad630589224">Slider</a>
 </li>
 <li>rotated()
-: <a class="el" href="classAffineTransform.html#a46df67778a846c4ca39e43bd474e68a0">AffineTransform</a>
+: <a class="el" href="classAffineTransform.html#a0dcf19186a3e5964e1bbf39843f644dd">AffineTransform</a>
 </li>
 <li>rotatedAboutOrigin()
 : <a class="el" href="classPoint.html#a95b4c38a22f712224a6f23cd7d556580">Point&lt; ValueType &gt;</a>
@@ -1612,7 +1616,7 @@ $(function() {
 : <a class="el" href="classDesktop.html#a5e06947d2d1295bdb6f5c4fab7beb98aae1e0629de1668ef16f700b7278fd0f04">Desktop</a>
 </li>
 <li>rotation()
-: <a class="el" href="classAffineTransform.html#aa8cbff1ba0c430acf5294cab160585a2">AffineTransform</a>
+: <a class="el" href="classAffineTransform.html#a4428d9a178f059264fdd7e8034f8d1c3">AffineTransform</a>
 , <a class="el" href="classMatrix3D.html#afb17be8508c30f19cab07cabf0239cd8">Matrix3D&lt; Type &gt;</a>
 , <a class="el" href="classMouseEvent.html#a3a3b74f77f12503d059d8f0495a8237d">MouseEvent</a>
 , <a class="el" href="structPenDetails.html#a7856c25b7bfa1da8e9b9e86eb202b098">PenDetails</a>
@@ -1642,7 +1646,7 @@ $(function() {
 : <a class="el" href="structlittlefoot_1_1Runner_1_1FunctionExecutionContext.html#ac586a0a6f7d18b6f115817e800178547">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::FunctionExecutionContext</a>
 </li>
 <li>Run()
-: <a class="el" href="classTextLayout_1_1Run.html#ab53068ea8b382a413c65c3bcc8be6f2c">TextLayout::Run</a>
+: <a class="el" href="classTextLayout_1_1Run.html#a80912a38013f0ba4b116a8b8be55455c">TextLayout::Run</a>
 </li>
 <li>run()
 : <a class="el" href="classThread.html#aae90dfabab3e1776cf01a26e7ee3a620">Thread</a>
@@ -1690,7 +1694,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 6 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 10 2018 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
