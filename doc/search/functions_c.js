@@ -1,6 +1,7 @@
 var searchData=
 [
   ['macaddress',['MACAddress',['../classMACAddress.html#ac7f1c6ac15784eedec58c4d4113a6042',1,'MACAddress::MACAddress() noexcept'],['../classMACAddress.html#ae813dc932cc82e5687e45c77abb738c2',1,'MACAddress::MACAddress(const MACAddress &amp;) noexcept'],['../classMACAddress.html#a8a8f0ab91c941fe7018b545500ef1f61',1,'MACAddress::MACAddress(const uint8 bytes[6]) noexcept'],['../classMACAddress.html#a6c5457952fdaedf5edde34d1bf3fdbf2',1,'MACAddress::MACAddress(StringRef address)']]],
+  ['make_5funique',['make_unique',['../juce__CompilerSupport_8h.html#afe10b4bfbaf3fc7e84112eb0b85d627a',1,'std']]],
   ['makeactive',['makeActive',['../classOpenGLContext.html#a318c8cc5821b9b2b2a9f726c623385f8',1,'OpenGLContext']]],
   ['makeallpass',['makeAllPass',['../classIIRCoefficients.html#a46168ce2c80a2fa8be089d9ec63d1996',1,'IIRCoefficients::makeAllPass(double sampleRate, double frequency) noexcept'],['../classIIRCoefficients.html#a19d7ee5f5c0ac036ada8f3f2ade79fc0',1,'IIRCoefficients::makeAllPass(double sampleRate, double frequency, double Q) noexcept'],['../structdsp_1_1IIR_1_1Coefficients.html#a1b51fe77e4703237d9764394e34bead7',1,'dsp::IIR::Coefficients::makeAllPass(double sampleRate, NumericType frequency)'],['../structdsp_1_1IIR_1_1Coefficients.html#af5b55b36926210293a21cfedbd8b3ee5',1,'dsp::IIR::Coefficients::makeAllPass(double sampleRate, NumericType frequency, NumericType Q)']]],
   ['makeargb',['makeARGB',['../group__LittleFootFunctions.html#ga70967dcba6beea8a66f216f75619ff35',1,'juce_LittleFootFunctions.dox']]],

@@ -576,6 +576,7 @@ var searchData=
   ['getint32',['getInt32',['../classOSCArgument.html#a4756f8299a51e82692b4d6612b0c639e',1,'OSCArgument']]],
   ['getintattribute',['getIntAttribute',['../classXmlElement.html#a9c8dee6737be692b099462ccd66bb252',1,'XmlElement']]],
   ['getinterceptsmouseclicks',['getInterceptsMouseClicks',['../classComponent.html#a219f9c96e896dfbbe3fb967a57297f14',1,'Component']]],
+  ['getinterfacebroadcastaddress',['getInterfaceBroadcastAddress',['../classIPAddress.html#afbd64a51c089029fa2bbed654d010d86',1,'IPAddress']]],
   ['getinternalcontext',['getInternalContext',['../classGraphics.html#a504995c303f45cce740dda9fa67f1a64',1,'Graphics']]],
   ['getinternalcoordforpoint',['getInternalCoordForPoint',['../classRelativeParallelogram.html#a63ad2d06c702c1bf91de98248710c2ae',1,'RelativeParallelogram']]],
   ['getintersection',['getIntersection',['../classLine.html#a2d14062da1753acfba9b8335935e218a',1,'Line::getIntersection()'],['../classRectangle.html#a50e80bae322913e844bc628a99fa3166',1,'Rectangle::getIntersection()']]],

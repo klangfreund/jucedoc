@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#aa9e8ce01e8530d0f5fb53b6b8a433925">IPAddress</a> (const <a class="el" href="classString.html">String</a> &amp;<a class="el" href="classIPAddress.html#a2be5eab7b1b7d2e39d8d5367642f3004">address</a>)</td></tr>
 <tr class="memdesc:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string IP address of the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6).  <a href="#aa9e8ce01e8530d0f5fb53b6b8a433925">More...</a><br /></td></tr>
 <tr class="separator:aa9e8ce01e8530d0f5fb53b6b8a433925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ee86b74f1a4718b25c74c96eb9244c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#ad0ee86b74f1a4718b25c74c96eb9244c">isNull</a> () const</td></tr>
+<tr class="memdesc:ad0ee86b74f1a4718b25c74c96eb9244c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the address contains the null address (e.g.  <a href="#ad0ee86b74f1a4718b25c74c96eb9244c">More...</a><br /></td></tr>
+<tr class="separator:ad0ee86b74f1a4718b25c74c96eb9244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c3ea343bc00b7fc7ec6b49ceb19f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#a42c3ea343bc00b7fc7ec6b49ceb19f6e">toString</a> () const</td></tr>
 <tr class="memdesc:a42c3ea343bc00b7fc7ec6b49ceb19f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a dot- or colon-separated string in the form "1.2.3.4" (IPv4) or "1:2:3:4:5:6:7:8" (IPv6).  <a href="#a42c3ea343bc00b7fc7ec6b49ceb19f6e">More...</a><br /></td></tr>
 <tr class="separator:a42c3ea343bc00b7fc7ec6b49ceb19f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8cd0581613ab75020e41aed971e19e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#ab8cd0581613ab75020e41aed971e19e6">convertIPv4AddressToIPv4Mapped</a> (const <a class="el" href="classIPAddress.html">IPAddress</a> &amp;addressToMap)</td></tr>
 <tr class="memdesc:ab8cd0581613ab75020e41aed971e19e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an IPv4 address to an IPv4-mapped IPv6 address.  <a href="#ab8cd0581613ab75020e41aed971e19e6">More...</a><br /></td></tr>
 <tr class="separator:ab8cd0581613ab75020e41aed971e19e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd64a51c089029fa2bbed654d010d86"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIPAddress.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIPAddress.html#afbd64a51c089029fa2bbed654d010d86">getInterfaceBroadcastAddress</a> (const <a class="el" href="classIPAddress.html">IPAddress</a> &amp;interfaceAddress)</td></tr>
+<tr class="memdesc:afbd64a51c089029fa2bbed654d010d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the IPAdress is the address of an interface on the machine, returns the associated broadcast address.  <a href="#afbd64a51c089029fa2bbed654d010d86">More...</a><br /></td></tr>
+<tr class="separator:afbd64a51c089029fa2bbed654d010d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -622,6 +628,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad0ee86b74f1a4718b25c74c96eb9244c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ee86b74f1a4718b25c74c96eb9244c">&#9670;&nbsp;</a></span>isNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IPAddress::isNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the address contains the null address (e.g. </p>
+<p>0.0.0.0). </p>
+
+</div>
+</div>
 <a id="a42c3ea343bc00b7fc7ec6b49ceb19f6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42c3ea343bc00b7fc7ec6b49ceb19f6e">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -945,6 +971,35 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afbd64a51c089029fa2bbed654d010d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd64a51c089029fa2bbed654d010d86">&#9670;&nbsp;</a></span>getInterfaceBroadcastAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classIPAddress.html">IPAddress</a> IPAddress::getInterfaceBroadcastAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIPAddress.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>interfaceAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the IPAdress is the address of an interface on the machine, returns the associated broadcast address. </p>
+<p>If the address is not an interface, it will return a null address. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a2be5eab7b1b7d2e39d8d5367642f3004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2be5eab7b1b7d2e39d8d5367642f3004">&#9670;&nbsp;</a></span>address</h2>
@@ -982,7 +1037,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 10 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 12 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

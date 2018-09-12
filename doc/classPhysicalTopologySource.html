@@ -107,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a9257c42a1b91a72dd2d14af4a815dc6b">isActive</a> () const override</td></tr>
 <tr class="memdesc:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#a9257c42a1b91a72dd2d14af4a815dc6b">More...</a><br /></td></tr>
 <tr class="separator:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b22cb0c898f850d209a6bd6c42225ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a6b22cb0c898f850d209a6bd6c42225ae">isLockedFromOutside</a> () const</td></tr>
+<tr class="memdesc:a6b22cb0c898f850d209a6bd6c42225ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will tell, if an other <a class="el" href="classPhysicalTopologySource.html" title="This topology source manages the topology of the physical Blocks devices that are currently connected...">PhysicalTopologySource</a> has locked the Midi connection.  <a href="#a6b22cb0c898f850d209a6bd6c42225ae">More...</a><br /></td></tr>
+<tr class="separator:a6b22cb0c898f850d209a6bd6c42225ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ca81f7d5f231033e55978daaba600a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#ae7ca81f7d5f231033e55978daaba600a">PhysicalTopologySource</a> (<a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html">DeviceDetector</a> &amp;detectorToUse, bool startDetached=false)</td></tr>
 <tr class="memdesc:ae7ca81f7d5f231033e55978daaba600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for custom transport systems.  <a href="#ae7ca81f7d5f231033e55978daaba600a">More...</a><br /></td></tr>
 <tr class="separator:ae7ca81f7d5f231033e55978daaba600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
+
+<p class="reference">Referenced by <a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html#a85649a9768f1ed91b855ecb0c4c9210f">PhysicalTopologySource::DeviceDetector::isLockedFromOutside()</a>.</p>
 
 </div>
 </div>
@@ -329,6 +334,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b22cb0c898f850d209a6bd6c42225ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b22cb0c898f850d209a6bd6c42225ae">&#9670;&nbsp;</a></span>isLockedFromOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PhysicalTopologySource::isLockedFromOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method will tell, if an other <a class="el" href="classPhysicalTopologySource.html" title="This topology source manages the topology of the physical Blocks devices that are currently connected...">PhysicalTopologySource</a> has locked the Midi connection. </p>
+
+</div>
+</div>
 <a id="a33811ad9256940e13e657febd014ad70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33811ad9256940e13e657febd014ad70">&#9670;&nbsp;</a></span>getStandardLittleFootFunctions()</h2>
 
@@ -351,6 +375,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html#a85649a9768f1ed91b855ecb0c4c9210f">PhysicalTopologySource::DeviceDetector::isLockedFromOutside()</a>.</p>
 
 </div>
 </div>
@@ -377,6 +403,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">Referenced by <a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html#a85649a9768f1ed91b855ecb0c4c9210f">PhysicalTopologySource::DeviceDetector::isLockedFromOutside()</a>.</p>
+
 </div>
 </div>
 <a id="a80bb01d5de8c19046589aa058da1a100"></a>
@@ -402,6 +430,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">Referenced by <a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html#a85649a9768f1ed91b855ecb0c4c9210f">PhysicalTopologySource::DeviceDetector::isLockedFromOutside()</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -410,7 +440,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 10 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 12 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
