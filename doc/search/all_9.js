@@ -88,6 +88,7 @@ var searchData=
   ['juce_5faudioprocessorgraph_2eh',['juce_AudioProcessorGraph.h',['../juce__AudioProcessorGraph_8h.html',1,'']]],
   ['juce_5faudioprocessorlistener_2eh',['juce_AudioProcessorListener.h',['../juce__AudioProcessorListener_8h.html',1,'']]],
   ['juce_5faudioprocessorparameter_2eh',['juce_AudioProcessorParameter.h',['../juce__AudioProcessorParameter_8h.html',1,'']]],
+  ['juce_5faudioprocessorparametergroup_2eh',['juce_AudioProcessorParameterGroup.h',['../juce__AudioProcessorParameterGroup_8h.html',1,'']]],
   ['juce_5faudioprocessorparameterwithid_2eh',['juce_AudioProcessorParameterWithID.h',['../juce__AudioProcessorParameterWithID_8h.html',1,'']]],
   ['juce_5faudioprocessorplayer_2eh',['juce_AudioProcessorPlayer.h',['../juce__AudioProcessorPlayer_8h.html',1,'']]],
   ['juce_5faudioprocessorvaluetreestate_2eh',['juce_AudioProcessorValueTreeState.h',['../juce__AudioProcessorValueTreeState_8h.html',1,'']]],
@@ -303,6 +304,8 @@ var searchData=
   ['juce_5fhandlexembedevent',['juce_handleXEmbedEvent',['../classXEmbedComponent.html#ab77965533bbfc70c1bea0b5fcc314671',1,'XEmbedComponent::juce_handleXEmbedEvent()'],['../group__juce__gui__extra-embedding.html#ga2cad300cf70fc35a54a9a260022017a9',1,'juce_handleXEmbedEvent():&#160;juce_XEmbedComponent.h']]],
   ['juce_5fhashmap_2eh',['juce_HashMap.h',['../juce__HashMap_8h.html',1,'']]],
   ['juce_5fheapblock_2eh',['juce_HeapBlock.h',['../juce__HeapBlock_8h.html',1,'']]],
+  ['juce_5fheavyweight_5fleak_5fdetector',['JUCE_HEAVYWEIGHT_LEAK_DETECTOR',['../group__juce__core-memory.html#gac77147a0a6422aea60c3422f89e55027',1,'juce_HeavyweightLeakedObjectDetector.h']]],
+  ['juce_5fheavyweightleakedobjectdetector_2eh',['juce_HeavyweightLeakedObjectDetector.h',['../juce__HeavyweightLeakedObjectDetector_8h.html',1,'']]],
   ['juce_5fhighresolutiontimer_2eh',['juce_HighResolutionTimer.h',['../juce__HighResolutionTimer_8h.html',1,'']]],
   ['juce_5fhostpacketbuilder_2eh',['juce_HostPacketBuilder.h',['../juce__HostPacketBuilder_8h.html',1,'']]],
   ['juce_5fhostpacketdecoder_2eh',['juce_HostPacketDecoder.h',['../juce__HostPacketDecoder_8h.html',1,'']]],
@@ -690,8 +693,8 @@ var searchData=
   ['jucepluginhost',['JUCEPluginHost',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a753f502e9e851da85e157ed32a8f1b1d',1,'PluginHostType']]],
   ['jucesplashscreen',['JUCESplashScreen',['../classJUCESplashScreen.html',1,'JUCESplashScreen'],['../classJUCESplashScreen.html#ace2db6a7a5b1219e3ec5163978242495',1,'JUCESplashScreen::JUCESplashScreen()']]],
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#ac4b5b9f0403512d91215fec879fa9e77',1,'Justification::Justification(const Justification &amp;)=default']]],
-  ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
+  ['justifycontent',['JustifyContent',['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()'],['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
-  ['justifyself',['JustifySelf',['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()'],['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()']]]
+  ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
 ];

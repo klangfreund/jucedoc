@@ -81,6 +81,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeapBlock.html">HeapBlock&lt; ElementType, throwOnFailure &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very simple container class to hold a pointer to some data on the heap.  <a href="classHeapBlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeavyweightLeakedObjectDetector.html">HeavyweightLeakedObjectDetector&lt; OwnerClass &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is a useful way of tracking down hard to find memory leaks when the regular <a class="el" href="classLeakedObjectDetector.html" title="Embedding an instance of this class inside another class can be used as a low-overhead way of detecti...">LeakedObjectDetector</a> isn't enough.  <a href="classHeavyweightLeakedObjectDetector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLeakedObjectDetector.html">LeakedObjectDetector&lt; OwnerClass &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embedding an instance of this class inside another class can be used as a low-overhead way of detecting leaked instances.  <a href="classLeakedObjectDetector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gac77147a0a6422aea60c3422f89e55027"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#gac77147a0a6422aea60c3422f89e55027">JUCE_HEAVYWEIGHT_LEAK_DETECTOR</a>(OwnerClass)</td></tr>
+<tr class="memdesc:gac77147a0a6422aea60c3422f89e55027"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro lets you embed a heavyweight leak-detecting object inside a class.  <a href="#gac77147a0a6422aea60c3422f89e55027">More...</a><br /></td></tr>
+<tr class="separator:gac77147a0a6422aea60c3422f89e55027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3639a79598b35f2116f4572af0d93f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>(OwnerClass)</td></tr>
 <tr class="memdesc:gab3639a79598b35f2116f4572af0d93f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro lets you embed a leak-detecting object inside a class.  <a href="#gab3639a79598b35f2116f4572af0d93f1">More...</a><br /></td></tr>
 <tr class="separator:gab3639a79598b35f2116f4572af0d93f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +305,30 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gac77147a0a6422aea60c3422f89e55027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac77147a0a6422aea60c3422f89e55027">&#9670;&nbsp;</a></span>JUCE_HEAVYWEIGHT_LEAK_DETECTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_HEAVYWEIGHT_LEAK_DETECTOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OwnerClass</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">friend</span> <span class="keyword">class </span>juce::HeavyweightLeakedObjectDetector&lt;OwnerClass&gt;; \</div><div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* getLeakedObjectClassName() noexcept { <span class="keywordflow">return</span> #OwnerClass; } \</div><div class="line">        juce::HeavyweightLeakedObjectDetector&lt;OwnerClass&gt; <a class="code" href="group__juce__core-system.html#ga4dac24572cf8155c09d75f34c8297a47">JUCE_JOIN_MACRO</a> (leakDetector, __LINE__);</div><div class="ttc" id="group__juce__core-system_html_ga4dac24572cf8155c09d75f34c8297a47"><div class="ttname"><a href="group__juce__core-system.html#ga4dac24572cf8155c09d75f34c8297a47">JUCE_JOIN_MACRO</a></div><div class="ttdeci">#define JUCE_JOIN_MACRO(item1, item2)</div><div class="ttdoc">A good old-fashioned C macro concatenation helper. </div><div class="ttdef"><b>Definition:</b> juce_PlatformDefs.h:164</div></div>
+</div><!-- fragment -->
+<p>This macro lets you embed a heavyweight leak-detecting object inside a class. </p>
+<p>To use it, simply declare a JUCE_HEAVYWEIGHT_LEAK_DETECTOR (YourClassName) inside a private section of the class declaration. E.g.</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>MyClass</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    MyClass();</div><div class="line">    <span class="keywordtype">void</span> blahBlah();</div><div class="line"></div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <a class="code" href="group__juce__core-memory.html#gac77147a0a6422aea60c3422f89e55027">JUCE_HEAVYWEIGHT_LEAK_DETECTOR</a> (MyClass)</div><div class="line">};</div></div><!-- fragment --><p>NB: you should only use this when you really need to track down a tricky memory leak, and should never leave one of these inside a class!</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classHeavyweightLeakedObjectDetector.html" title="This class is a useful way of tracking down hard to find memory leaks when the regular LeakedObjectDe...">HeavyweightLeakedObjectDetector</a>, <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1" title="This macro lets you embed a leak-detecting object inside a class. ">JUCE_LEAK_DETECTOR</a>, <a class="el" href="classLeakedObjectDetector.html" title="Embedding an instance of this class inside another class can be used as a low-overhead way of detecti...">LeakedObjectDetector</a> </dd></dl>
+
+</div>
+</div>
 <a id="gab3639a79598b35f2116f4572af0d93f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab3639a79598b35f2116f4572af0d93f1">&#9670;&nbsp;</a></span>JUCE_LEAK_DETECTOR</h2>
 
@@ -1991,7 +2021,7 @@ template&lt;class ObjectType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 13 2018 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -44,7 +44,7 @@ var searchData=
   ['imagetype',['ImageType',['../classImageType.html',1,'ImageType'],['../classImageType.html#acd073c0347c16656a21210f29563f3c8',1,'ImageType::ImageType()']]],
   ['immediately',['immediately',['../classOSCTimeTag.html#acc9dc841287eccfc21cbe030c473111c',1,'OSCTimeTag']]],
   ['implementationfunction',['ImplementationFunction',['../structlittlefoot_1_1NativeFunction.html#aa82b9d379e798cb8387f376455ff17db',1,'littlefoot::NativeFunction']]],
-  ['importance',['Importance',['../structPushNotifications_1_1Channel.html#ad32bec50436a8d988e0c64fcb75b65ef',1,'PushNotifications::Channel::Importance()'],['../structPushNotifications_1_1Channel.html#a5e3ef96c7d505e4cc500bec621050577',1,'PushNotifications::Channel::importance()']]],
+  ['importance',['importance',['../structPushNotifications_1_1Channel.html#a5e3ef96c7d505e4cc500bec621050577',1,'PushNotifications::Channel::importance()'],['../structPushNotifications_1_1Channel.html#ad32bec50436a8d988e0c64fcb75b65ef',1,'PushNotifications::Channel::Importance()']]],
   ['inapppurchases',['InAppPurchases',['../classInAppPurchases.html',1,'']]],
   ['incdec',['incDec',['../group__LittleFootFunctions.html#ggaee3ea37f4f505980157cf93a84687bcba5781841e760ece6b6df8082e5d52d59a',1,'juce_LittleFootFunctions.dox']]],
   ['incdecbuttonmode',['IncDecButtonMode',['../classSlider.html#a0ceaddd29269b6ec5a41f35bbb2ff74a',1,'Slider']]],

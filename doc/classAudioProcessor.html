@@ -367,8 +367,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab53b860c69380cb34e466b60a3bce3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The processor can call this when something (apart from a parameter value) has changed.  <a href="#ab53b860c69380cb34e466b60a3bce3f2">More...</a><br /></td></tr>
 <tr class="separator:ab53b860c69380cb34e466b60a3bce3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae686ddf13e3e8f6008cb7b4c41704aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba">addParameter</a> (<a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a> *)</td></tr>
-<tr class="memdesc:ae686ddf13e3e8f6008cb7b4c41704aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a parameter to the list.  <a href="#ae686ddf13e3e8f6008cb7b4c41704aba">More...</a><br /></td></tr>
+<tr class="memdesc:ae686ddf13e3e8f6008cb7b4c41704aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a parameter to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>.  <a href="#ae686ddf13e3e8f6008cb7b4c41704aba">More...</a><br /></td></tr>
 <tr class="separator:ae686ddf13e3e8f6008cb7b4c41704aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1c68379b59943112a5efb9e96ea79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a9b1c68379b59943112a5efb9e96ea79b">addParameterGroup</a> (std::unique_ptr&lt; <a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &gt;)</td></tr>
+<tr class="memdesc:a9b1c68379b59943112a5efb9e96ea79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a group of parameters to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>.  <a href="#a9b1c68379b59943112a5efb9e96ea79b">More...</a><br /></td></tr>
+<tr class="separator:a9b1c68379b59943112a5efb9e96ea79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61249cf9dad055bfea5ef3e0326354e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#af61249cf9dad055bfea5ef3e0326354e">getParameterTree</a> ()</td></tr>
+<tr class="memdesc:af61249cf9dad055bfea5ef3e0326354e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the group of parameters managed by this <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>.  <a href="#af61249cf9dad055bfea5ef3e0326354e">More...</a><br /></td></tr>
+<tr class="separator:af61249cf9dad055bfea5ef3e0326354e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc35c3439f44d55ca068d1144a3bea7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; <a class="el" href="classAudioProcessorParameter.html">AudioProcessorParameter</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a1cc35c3439f44d55ca068d1144a3bea7">getParameters</a> () const noexcept</td></tr>
 <tr class="memdesc:a1cc35c3439f44d55ca068d1144a3bea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current list of parameters.  <a href="#a1cc35c3439f44d55ca068d1144a3bea7">More...</a><br /></td></tr>
 <tr class="separator:a1cc35c3439f44d55ca068d1144a3bea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3031,8 +3037,49 @@ template&lt;int numLayouts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a parameter to the list. </p>
-<p>The parameter object will be managed and deleted automatically by the list when no longer needed. </p>
+<p>Adds a parameter to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>. </p>
+<p>The parameter object will be managed and deleted automatically by the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> when no longer needed. </p>
+
+</div>
+</div>
+<a id="a9b1c68379b59943112a5efb9e96ea79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1c68379b59943112a5efb9e96ea79b">&#9670;&nbsp;</a></span>addParameterGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioProcessor::addParameterGroup </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a group of parameters to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>. </p>
+<p>All the parameter objects contained within the group will be managed and deleted automatically by the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> when no longer needed.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba" title="Adds a parameter to the AudioProcessor. ">addParameter</a> </dd></dl>
+
+</div>
+</div>
+<a id="af61249cf9dad055bfea5ef3e0326354e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61249cf9dad055bfea5ef3e0326354e">&#9670;&nbsp;</a></span>getParameterTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a>&amp; AudioProcessor::getParameterTree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the group of parameters managed by this <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>. </p>
 
 </div>
 </div>
@@ -4079,7 +4126,7 @@ template&lt;int numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 13 2018 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

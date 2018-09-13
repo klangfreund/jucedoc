@@ -1,6 +1,7 @@
 var searchData=
 [
   ['hashmap',['HashMap',['../classHashMap.html',1,'']]],
+  ['hashmap_3c_20heavyweightleakedobjectdetector_3c_20ownerclass_20_3e_20_2a_2c_20string_20_3e',['HashMap&lt; HeavyweightLeakedObjectDetector&lt; OwnerClass &gt; *, String &gt;',['../classHashMap.html',1,'']]],
   ['heapblock',['HeapBlock',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20actionlistener_20_2a_3e',['HeapBlock&lt; ActionListener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20actionset_20_2a_3e',['HeapBlock&lt; ActionSet *&gt;',['../classHeapBlock.html',1,'']]],
@@ -51,6 +52,7 @@ var searchData=
   ['heapblock_3c_20componentpeer_20_2a_3e',['HeapBlock&lt; ComponentPeer *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20componentpeer_3a_3ascalefactorlistener_20_2a_3e',['HeapBlock&lt; ComponentPeer::ScaleFactorListener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20connection_20_3e',['HeapBlock&lt; Connection &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20const_20audioprocessorparametergroup_3a_3aaudioprocessorparameternode_20_2a_3e',['HeapBlock&lt; const AudioProcessorParameterGroup::AudioProcessorParameterNode *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20const_20float_20_2a_3e',['HeapBlock&lt; const float *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20const_20plugindescription_20_2a_3e',['HeapBlock&lt; const PluginDescription *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20const_20popupmenu_20_2a_3e',['HeapBlock&lt; const PopupMenu *&gt;',['../classHeapBlock.html',1,'']]],
@@ -163,6 +165,7 @@ var searchData=
   ['heapblock_3c_20vst2_3a_3avstspeakerarrangement_20_3e',['HeapBlock&lt; Vst2::VstSpeakerArrangement &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20weakreference_3c_20component_20_3e_20_3e',['HeapBlock&lt; WeakReference&lt; Component &gt; &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20zipentryholder_20_2a_3e',['HeapBlock&lt; ZipEntryHolder *&gt;',['../classHeapBlock.html',1,'']]],
+  ['heavyweightleakedobjectdetector',['HeavyweightLeakedObjectDetector',['../classHeavyweightLeakedObjectDetector.html',1,'']]],
   ['hexparser',['HexParser',['../structCharacterFunctions_1_1HexParser.html',1,'CharacterFunctions']]],
   ['highresolutiontimer',['HighResolutionTimer',['../classHighResolutionTimer.html',1,'']]],
   ['hostpacketbuilder',['HostPacketBuilder',['../structBlocksProtocol_1_1HostPacketBuilder.html',1,'BlocksProtocol']]],

@@ -195,6 +195,7 @@ var searchData=
   ['_7egzipdecompressorinputstream',['~GZIPDecompressorInputStream',['../classGZIPDecompressorInputStream.html#a4bcf594ac091cb9def1938a8aa85e448',1,'GZIPDecompressorInputStream']]],
   ['_7ehashmap',['~HashMap',['../classHashMap.html#a33001fb7329c32bdca37d969984f1e58',1,'HashMap']]],
   ['_7eheapblock',['~HeapBlock',['../classHeapBlock.html#abf392fafab8530d45132eaeb81ff372d',1,'HeapBlock']]],
+  ['_7eheavyweightleakedobjectdetector',['~HeavyweightLeakedObjectDetector',['../classHeavyweightLeakedObjectDetector.html#a613088bdce39df2022f4f21a4f990a07',1,'HeavyweightLeakedObjectDetector']]],
   ['_7ehighresolutiontimer',['~HighResolutionTimer',['../classHighResolutionTimer.html#a5eb450755a308ebc74e30085af52082b',1,'HighResolutionTimer']]],
   ['_7ehyperlinkbutton',['~HyperlinkButton',['../classHyperlinkButton.html#a277791602a973667098c9bcdbfed251b',1,'HyperlinkButton']]],
   ['_7eidentifier',['~Identifier',['../classIdentifier.html#a1adbff731160d315bc940efe9535ffb6',1,'Identifier']]],
