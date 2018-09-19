@@ -1169,6 +1169,7 @@ var searchData=
   ['getscrollbareffect',['getScrollbarEffect',['../structScrollBar_1_1LookAndFeelMethods.html#a62442900ce50bbef5c847cb1270aefbc',1,'ScrollBar::LookAndFeelMethods::getScrollbarEffect()'],['../classLookAndFeel__V1.html#a8e4bc1e8b4e7474ba3f4d1bcd77303d8',1,'LookAndFeel_V1::getScrollbarEffect()'],['../classLookAndFeel__V2.html#aa1ff7db2b533e412273198d01a4af7ff',1,'LookAndFeel_V2::getScrollbarEffect()']]],
   ['getscrollbarthickness',['getScrollBarThickness',['../classViewport.html#a13721812d0bb7df1f3fcbb948599b3a8',1,'Viewport::getScrollBarThickness()'],['../classCodeEditorComponent.html#ade6e0f9d0aabef8392e2bb9b41b64e92',1,'CodeEditorComponent::getScrollbarThickness()']]],
   ['getscrollbuttonwidth',['getScrollButtonWidth',['../classMidiKeyboardComponent.html#a241980aa3cebbce061903a65a6cfd61d',1,'MidiKeyboardComponent']]],
+  ['getsearchpaths',['getSearchPaths',['../structBlock_1_1Program.html#a3c742bc752a1a5cc27a8cac0657cf913',1,'Block::Program']]],
   ['getseconds',['getSeconds',['../classTime.html#a00ae85ee9d91d73508112b0ddac71904',1,'Time']]],
   ['getsectionnames',['getSectionNames',['../classPropertyPanel.html#a00bd936305bb03c34dc32393f8852430',1,'PropertyPanel']]],
   ['getseed',['getSeed',['../classRandom.html#a861cb0ae6a3d0387416b12c8efeabc9e',1,'Random']]],
