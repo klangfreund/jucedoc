@@ -161,6 +161,7 @@ var menudata={children:[
 {text:"y",url:"functions_eval_y.html#index_y"},
 {text:"z",url:"functions_eval_z.html#index_z"}]},
 {text:"Related Functions",url:"functions_rela.html",children:[
+{text:"c",url:"functions_rela.html#index_c"},
 {text:"g",url:"functions_rela.html#index_g"},
 {text:"j",url:"functions_rela.html#index_j"},
 {text:"s",url:"functions_rela.html#index_s"}]}]}]},

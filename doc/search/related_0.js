@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geturlbookmark',['getURLBookmark',['../classURL.html#a58b1e9ce6ef335a59328eb23f73b4b8c',1,'URL']]]
+  ['cancompare',['canCompare',['../classvar.html#ab990cec0ed7484455f2fa2e8e4972bc3',1,'var']]]
 ];
