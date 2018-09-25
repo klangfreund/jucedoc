@@ -130,19 +130,20 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classBlock.html#ab14c53fe0485b084f129626d7d3829b0">setLogger</a>(std::function&lt; void(const String &amp;)&gt; loggingCallback)=0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBlock.html#ae1fae4b5fe40d3f893cedcc8654ed4b7">setName</a>(const juce::String &amp;name)=0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBlock.html#ac955a783098b02900299fc734afcfe0c">setProgram</a>(Program *)=0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">supportsGraphics</a>() const =0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a7e97e8f893c4d37d02a50c4ea3fe42e6">Timestamp</a> typedef</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a96792e301d0fbaeea7e35a88b1bbb054">touchBlock</a> enum value</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Type</a> enum name</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">UID</a> typedef</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classBlock.html#a8a4d3ca73479399d978101003f356ea6">setProgramLoadedCallback</a>(std::function&lt; void(Block &amp;)&gt; programLoaded)=0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">supportsGraphics</a>() const =0</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBlock.html#a7e97e8f893c4d37d02a50c4ea3fe42e6">Timestamp</a> typedef</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a96792e301d0fbaeea7e35a88b1bbb054">touchBlock</a> enum value</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Type</a> enum name</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a8a1c23c1f7ca58fcc032eb45cfc029d9">uid</a></td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a55520dc971c98c77e00eb4331207058d">unknown</a> enum value</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c">versionNumber</a></td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBlock.html#a9f0026f5d2dafca3c101e70e4b34780f">~Block</a>()</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">UID</a> typedef</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324a55520dc971c98c77e00eb4331207058d">unknown</a> enum value</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c">versionNumber</a></td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBlock.html#a9f0026f5d2dafca3c101e70e4b34780f">~Block</a>()</td><td class="entry"><a class="el" href="classBlock.html">Block</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 22 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

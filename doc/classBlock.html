@@ -280,6 +280,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a936ae972ef533d2aa30229c2de961c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a936ae972ef533d2aa30229c2de961c63">setConfigChangedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;)=0</td></tr>
 <tr class="memdesc:a936ae972ef533d2aa30229c2de961c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a config changes.  <a href="#a936ae972ef533d2aa30229c2de961c63">More...</a><br /></td></tr>
 <tr class="separator:a936ae972ef533d2aa30229c2de961c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4d3ca73479399d978101003f356ea6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a4d3ca73479399d978101003f356ea6">setProgramLoadedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt; programLoaded)=0</td></tr>
+<tr class="memdesc:a8a4d3ca73479399d978101003f356ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a prgoram has been loaded.  <a href="#a8a4d3ca73479399d978101003f356ea6">More...</a><br /></td></tr>
+<tr class="separator:a8a4d3ca73479399d978101003f356ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018545f50301b7d56574574e00b68e0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a018545f50301b7d56574574e00b68e0f">addDataInputPortListener</a> (<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
 <tr class="memdesc:a018545f50301b7d56574574e00b68e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for the data input port.  <a href="#a018545f50301b7d56574574e00b68e0f">More...</a><br /></td></tr>
 <tr class="separator:a018545f50301b7d56574574e00b68e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2054,6 +2057,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a4d3ca73479399d978101003f356ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4d3ca73479399d978101003f356ea6">&#9670;&nbsp;</a></span>setProgramLoadedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Block::setProgramLoadedCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>programLoaded</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides a callback that will be called when a prgoram has been loaded. </p>
+
+</div>
+</div>
 <a id="a018545f50301b7d56574574e00b68e0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a018545f50301b7d56574574e00b68e0f">&#9670;&nbsp;</a></span>addDataInputPortListener()</h2>
 
@@ -2270,7 +2301,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 22 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
