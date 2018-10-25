@@ -103,8 +103,7 @@ class ThreadLocalValue&lt; Type &gt;</h3>
 <p>This class holds an internal list of objects of the templated type, keeping an instance for each thread that requests one. The first time a thread attempts to access its value, an object is created and added to the list for that thread.</p>
 <p>Typically, you'll probably want to create a static instance of a <a class="el" href="classThreadLocalValue.html" title="Provides cross-platform support for thread-local objects. ">ThreadLocalValue</a> object, or hold one within a singleton.</p>
 <p>The templated class for your value must be a primitive type, or a simple POD struct.</p>
-<p>When a thread no longer needs to use its value, it can call <a class="el" href="classThreadLocalValue.html#a78af45671b2b057f0f584a75f79ff5b5" title="Called by a thread before it terminates, to allow this class to release any storage associated with t...">releaseCurrentThreadStorage()</a> to allow the storage to be re-used by another thread. If a thread exits without calling this method, the object storage will be left allocated until the <a class="el" href="classThreadLocalValue.html" title="Provides cross-platform support for thread-local objects. ">ThreadLocalValue</a> object is deleted.</p>
-<p>{Core} </p>
+<p>When a thread no longer needs to use its value, it can call <a class="el" href="classThreadLocalValue.html#a78af45671b2b057f0f584a75f79ff5b5" title="Called by a thread before it terminates, to allow this class to release any storage associated with t...">releaseCurrentThreadStorage()</a> to allow the storage to be re-used by another thread. If a thread exits without calling this method, the object storage will be left allocated until the <a class="el" href="classThreadLocalValue.html" title="Provides cross-platform support for thread-local objects. ">ThreadLocalValue</a> object is deleted. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6cfe38fdd495adcfdad8dc3dc736f371"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cfe38fdd495adcfdad8dc3dc736f371">&#9670;&nbsp;</a></span>ThreadLocalValue()</h2>
@@ -331,7 +330,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -179,8 +179,7 @@ Protected Member Functions</h2></td></tr>
 <p>There's quite a lot of tedious logic involved in writing all the load/save/save-as functions you need for documents that get saved to a file, so this class attempts to abstract most of the boring stuff.</p>
 <p>Your subclass should just implement all the pure virtual methods, and you can then use the higher-level public methods to do the load/save dialogs, to warn the user about overwriting files, etc.</p>
 <p>The document object keeps track of whether it has changed since it was last saved or loaded, so when you change something, call its <a class="el" href="classFileBasedDocument.html#a3a058b73776404d76b828205ca058e42" title="Called to indicate that the document has changed and needs saving. ">changed()</a> method. This will set a flag so it knows it needs saving, and will also broadcast a change message using the <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> base class.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a></dd></dl>
-<p>{GUI} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a89d417326aed46fb561c599265e426d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89d417326aed46fb561c599265e426d2">&#9670;&nbsp;</a></span>SaveResult</h2>
@@ -787,7 +786,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -130,8 +130,7 @@ Public Attributes</h2></td></tr>
 <p>Because the class is simply a wrapper around a pointer, you should always pass it by value, not by reference.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> myStringFunction1 (<span class="keyword">const</span> <a class="code" href="classString.html">String</a>&amp;);</div><div class="line"><span class="keywordtype">void</span> myStringFunction2 (<a class="code" href="classStringRef.html">StringRef</a>);</div><div class="line"></div><div class="line">myStringFunction1 (<span class="stringliteral">&quot;abc&quot;</span>); <span class="comment">// Implicitly allocates a temporary String object.</span></div><div class="line">myStringFunction2 (<span class="stringliteral">&quot;abc&quot;</span>); <span class="comment">// Much faster, as no local allocations are needed.</span></div></div><!-- fragment --><p>For examples of it in use, see the <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> or <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a> classes.</p>
 <p>Bear in mind that there are still many cases where it's better to use an argument which is a const <a class="el" href="classString.html" title="The JUCE String class! ">String</a>&amp;. For example if the function stores the string or needs to internally create a <a class="el" href="classString.html" title="The JUCE String class! ">String</a> from the argument, then it's better for the original argument to already be a <a class="el" href="classString.html" title="The JUCE String class! ">String</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classString.html" title="The JUCE String class! ">String</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classString.html" title="The JUCE String class! ">String</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afdd484f4bdb44927ffc3ae24292f0cd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afdd484f4bdb44927ffc3ae24292f0cd6">&#9670;&nbsp;</a></span>StringRef() <span class="overload">[1/5]</span></h2>
@@ -569,7 +568,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

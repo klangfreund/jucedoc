@@ -175,7 +175,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac3655731cf4275be1b8909be161f2d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference-counted object that can be used to get the current input level.  <a href="#ac3655731cf4275be1b8909be161f2d1f">More...</a><br /></td></tr>
 <tr class="separator:ac3655731cf4275be1b8909be161f2d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6becaa71cf916260faad6b772f00450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDeviceManager_1_1LevelMeter.html#af408f72a1acdbfae004f5ee3e679ae9a">LevelMeter::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#ae6becaa71cf916260faad6b772f00450">getOutputLevelGetter</a> () noexcept</td></tr>
-<tr class="memdesc:ae6becaa71cf916260faad6b772f00450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference-counted object that can be used to get the current input level.  <a href="#ae6becaa71cf916260faad6b772f00450">More...</a><br /></td></tr>
+<tr class="memdesc:ae6becaa71cf916260faad6b772f00450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference-counted object that can be used to get the current output level.  <a href="#ae6becaa71cf916260faad6b772f00450">More...</a><br /></td></tr>
 <tr class="separator:ae6becaa71cf916260faad6b772f00450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e92ccc57a94f20639bcdfa68b628dc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCriticalSection.html">CriticalSection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a1e92ccc57a94f20639bcdfa68b628dc5">getAudioCallbackLock</a> () noexcept</td></tr>
 <tr class="memdesc:a1e92ccc57a94f20639bcdfa68b628dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the a lock that can be used to synchronise access to the audio callback.  <a href="#a1e92ccc57a94f20639bcdfa68b628dc5">More...</a><br /></td></tr>
@@ -222,8 +222,7 @@ Public Member Functions</h2></td></tr>
 <p>The manager also acts as a handy hub for incoming midi messages, allowing a listener to register for messages from either a specific midi device, or from whatever the current default midi input device is. The listener then doesn't have to worry about re-registering with different midi devices if they are changed or deleted.</p>
 <p>And yet another neat trick is that amount of CPU time being used is measured and available with the <a class="el" href="classAudioDeviceManager.html#a79563c9d2cc87d059d8b101515e8dee1" title="Returns the average proportion of available CPU being spent inside the audio callbacks. ">getCpuUsage()</a> method.</p>
 <p>The <a class="el" href="classAudioDeviceManager.html" title="Manages the state of some audio and midi i/o devices. ">AudioDeviceManager</a> is a <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>, and will send a change message to listeners whenever one of its settings is changed.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceSelectorComponent.html" title="A component containing controls to let the user change the audio settings of an AudioDeviceManager ob...">AudioDeviceSelectorComponent</a>, <a class="el" href="classAudioIODevice.html" title="Base class for an audio device with synchronised input and output channels. ">AudioIODevice</a>, <a class="el" href="classAudioIODeviceType.html" title="Represents a type of audio driver, such as DirectSound, ASIO, CoreAudio, etc. ">AudioIODeviceType</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceSelectorComponent.html" title="A component containing controls to let the user change the audio settings of an AudioDeviceManager ob...">AudioDeviceSelectorComponent</a>, <a class="el" href="classAudioIODevice.html" title="Base class for an audio device with synchronised input and output channels. ">AudioIODevice</a>, <a class="el" href="classAudioIODeviceType.html" title="Represents a type of audio driver, such as DirectSound, ASIO, CoreAudio, etc. ">AudioIODeviceType</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="accab16a03e809121d56e8b272125f3ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accab16a03e809121d56e8b272125f3ea">&#9670;&nbsp;</a></span>AudioDeviceManager()</h2>
@@ -1014,8 +1013,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a reference-counted object that can be used to get the current input level. </p>
-<p>You need to store this object locally to ensure that the reference count is incremented and decremented properly. The current input level value can be read using getCurrentLevel(). </p>
+<p>Returns a reference-counted object that can be used to get the current output level. </p>
+<p>You need to store this object locally to ensure that the reference count is incremented and decremented properly. The current output level value can be read using getCurrentLevel(). </p>
 
 </div>
 </div>
@@ -1113,7 +1112,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

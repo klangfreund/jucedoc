@@ -7,7 +7,7 @@ digraph "CodeTokeniser"
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 [label="CPlusPlusCodeTokeniser",height=0.2,width=0.4,color="black",URL="$classCPlusPlusCodeTokeniser.html",tooltip="A simple lexical analyser for syntax colouring of C++ code. "];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="LuaTokeniser",height=0.2,width=0.4,color="black",URL="$classLuaTokeniser.html",tooltip="{GUI} "];
+  Node2 [label="LuaTokeniser",height=0.2,width=0.4,color="black",URL="$classLuaTokeniser.html"];
   Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="XmlTokeniser",height=0.2,width=0.4,color="black",URL="$classXmlTokeniser.html",tooltip="{GUI} "];
+  Node3 [label="XmlTokeniser",height=0.2,width=0.4,color="black",URL="$classXmlTokeniser.html"];
 }

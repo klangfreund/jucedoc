@@ -98,6 +98,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a877202b3a190fecfc309e43cd706822a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHeapBlock.html">HeapBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeapBlock.html#a877202b3a190fecfc309e43cd706822a">operator=</a> (<a class="el" href="classHeapBlock.html">HeapBlock</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:a877202b3a190fecfc309e43cd706822a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="#a877202b3a190fecfc309e43cd706822a">More...</a><br /></td></tr>
 <tr class="separator:a877202b3a190fecfc309e43cd706822a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43360d0b67112a64db4c131cfe976a31"><td class="memTemplParams" colspan="2">template&lt;class OtherElementType , bool otherThrowOnFailure, typename  = AllowConversion&lt;OtherElementType&gt;&gt; </td></tr>
+<tr class="memitem:a43360d0b67112a64db4c131cfe976a31"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classHeapBlock.html#a43360d0b67112a64db4c131cfe976a31">HeapBlock</a> (<a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; OtherElementType, otherThrowOnFailure &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a43360d0b67112a64db4c131cfe976a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting move constructor.  <a href="#a43360d0b67112a64db4c131cfe976a31">More...</a><br /></td></tr>
+<tr class="separator:a43360d0b67112a64db4c131cfe976a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca20d7a90d0dd03cb13a6af59d5ec853"><td class="memTemplParams" colspan="2">template&lt;class OtherElementType , bool otherThrowOnFailure, typename  = AllowConversion&lt;OtherElementType&gt;&gt; </td></tr>
+<tr class="memitem:aca20d7a90d0dd03cb13a6af59d5ec853"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classHeapBlock.html">HeapBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classHeapBlock.html#aca20d7a90d0dd03cb13a6af59d5ec853">operator=</a> (<a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; OtherElementType, otherThrowOnFailure &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:aca20d7a90d0dd03cb13a6af59d5ec853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting move assignment operator.  <a href="#aca20d7a90d0dd03cb13a6af59d5ec853">More...</a><br /></td></tr>
+<tr class="separator:aca20d7a90d0dd03cb13a6af59d5ec853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d00012477feaaab90bcf100d05d08a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHeapBlock.html#af6d00012477feaaab90bcf100d05d08a">operator ElementType *</a> () const noexcept</td></tr>
 <tr class="memdesc:af6d00012477feaaab90bcf100d05d08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a raw pointer to the allocated data.  <a href="#af6d00012477feaaab90bcf100d05d08a">More...</a><br /></td></tr>
 <tr class="separator:af6d00012477feaaab90bcf100d05d08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,8 +176,7 @@ class HeapBlock&lt; ElementType, throwOnFailure &gt;</h3>
 <p>It also makes your code much more concise and readable than doing the same thing using direct allocations,</p>
 <p>E.g. instead of this: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span>* temp = (<span class="keywordtype">int</span>*) <a class="code" href="classHeapBlock.html#a29b2353f2433660bbb98066bbe3cf059">malloc</a> (1024 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div><div class="line">memcpy (temp, xyz, 1024 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div><div class="line"><a class="code" href="classHeapBlock.html#a8ec3fb69997d6f530d60cb5e0969f97f">free</a> (temp);</div><div class="line">temp = (<span class="keywordtype">int</span>*) <a class="code" href="classHeapBlock.html#ae85c772e650f78ec449611e4a5dea301">calloc</a> (2048 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div><div class="line">temp[0] = 1234;</div><div class="line">memcpy (foobar, temp, 2048 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div><div class="line"><a class="code" href="classHeapBlock.html#a8ec3fb69997d6f530d60cb5e0969f97f">free</a> (temp);</div></div><!-- fragment --><p>..you could just write this: </p><div class="fragment"><div class="line"><a class="code" href="classHeapBlock.html">HeapBlock&lt;int&gt;</a> temp (1024);</div><div class="line">memcpy (temp, xyz, 1024 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div><div class="line">temp.calloc (2048);</div><div class="line">temp[0] = 1234;</div><div class="line">memcpy (foobar, temp, 2048 * <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));</div></div><!-- fragment --><p>The class is extremely lightweight, containing only a pointer to the data, and exposes malloc/realloc/calloc/free methods that do the same jobs as their less object-oriented counterparts. Despite adding safety, you probably won't sacrifice any performance by using this in place of normal pointers.</p>
 <p>The throwOnFailure template parameter can be set to true if you'd like the class to throw a std::bad_alloc exception when an allocation fails. If this is false, then a failed allocation will just leave the heapblock with a null pointer (assuming that the system's <a class="el" href="classHeapBlock.html#a29b2353f2433660bbb98066bbe3cf059" title="Allocates a specified amount of memory. ">malloc()</a> function doesn't throw).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classMemoryBlock.html" title="A class to hold a resizable block of raw data. ">MemoryBlock</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classMemoryBlock.html" title="A class to hold a resizable block of raw data. ">MemoryBlock</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a307b1d80d74bd7b39c8b3b70a8a681b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a307b1d80d74bd7b39c8b3b70a8a681b1">&#9670;&nbsp;</a></span>Type</h2>
@@ -191,7 +198,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab7643beefa078bb4692dbfff40f6f3bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7643beefa078bb4692dbfff40f6f3bb">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7643beefa078bb4692dbfff40f6f3bb">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +228,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 </div>
 </div>
 <a id="af58b2b6cf89db787c63deb34afdc4a27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af58b2b6cf89db787c63deb34afdc4a27">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af58b2b6cf89db787c63deb34afdc4a27">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +262,7 @@ template&lt;typename SizeType &gt; </div>
 </div>
 </div>
 <a id="aa7d4b7c2597fbfea75cf1c7995141963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7d4b7c2597fbfea75cf1c7995141963">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d4b7c2597fbfea75cf1c7995141963">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +319,7 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 </div>
 </div>
 <a id="a43e44081c3cbef5f634dd5a2a58cd1bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43e44081c3cbef5f634dd5a2a58cd1bd">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e44081c3cbef5f634dd5a2a58cd1bd">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,9 +348,42 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 
 </div>
 </div>
+<a id="a43360d0b67112a64db4c131cfe976a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43360d0b67112a64db4c131cfe976a31">&#9670;&nbsp;</a></span>HeapBlock() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
+<div class="memtemplate">
+template&lt;class OtherElementType , bool otherThrowOnFailure, typename  = AllowConversion&lt;OtherElementType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; ElementType, throwOnFailure &gt;::<a class="el" href="classHeapBlock.html">HeapBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; OtherElementType, otherThrowOnFailure &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting move constructor. </p>
+<p>Only enabled if this is a HeapBlock&lt;Base*&gt; and the other object is a HeapBlock&lt;Derived*&gt;, where std::is_base_of&lt;Base, Derived&gt;::value == true. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a877202b3a190fecfc309e43cd706822a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a877202b3a190fecfc309e43cd706822a">&#9670;&nbsp;</a></span>operator=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a877202b3a190fecfc309e43cd706822a">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,6 +409,39 @@ template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
 </div><div class="memdoc">
 
 <p>Move assignment operator. </p>
+
+</div>
+</div>
+<a id="aca20d7a90d0dd03cb13a6af59d5ec853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca20d7a90d0dd03cb13a6af59d5ec853">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ElementType, bool throwOnFailure = false&gt; </div>
+<div class="memtemplate">
+template&lt;class OtherElementType , bool otherThrowOnFailure, typename  = AllowConversion&lt;OtherElementType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHeapBlock.html">HeapBlock</a>&amp; <a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; ElementType, throwOnFailure &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; OtherElementType, otherThrowOnFailure &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting move assignment operator. </p>
+<p>Only enabled if this is a HeapBlock&lt;Base*&gt; and the other object is a HeapBlock&lt;Derived*&gt;, where std::is_base_of&lt;Base, Derived&gt;::value == true. </p>
 
 </div>
 </div>
@@ -940,7 +1013,7 @@ template&lt;typename SizeType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

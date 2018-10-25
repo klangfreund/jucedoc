@@ -84,8 +84,7 @@ class LeakedObjectDetector&lt; OwnerClass &gt;</h3>
 
 <p>Embedding an instance of this class inside another class can be used as a low-overhead way of detecting leaked instances. </p>
 <p>This class keeps an internal static count of the number of instances that are active, so that when the app is shutdown and the static destructors are called, it can check whether there are any left-over instances that may have been leaked.</p>
-<p>To use it, use the JUCE_LEAK_DETECTOR macro as a simple way to put one in your class declaration. Have a look through the juce codebase for examples, it's used in most of the classes.</p>
-<p>{Core} </p>
+<p>To use it, use the JUCE_LEAK_DETECTOR macro as a simple way to put one in your class declaration. Have a look through the juce codebase for examples, it's used in most of the classes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a33b0ca6504a300f0c321e89f28512aab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33b0ca6504a300f0c321e89f28512aab">&#9670;&nbsp;</a></span>LeakedObjectDetector() <span class="overload">[1/2]</span></h2>
@@ -169,7 +168,7 @@ template&lt;class OwnerClass &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

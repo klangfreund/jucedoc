@@ -188,8 +188,7 @@ class SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;</h3>
 <p>Internally, the list of items is kept sorted (which means that whatever kind of primitive type is used must support the ==, &lt;, &gt;, &lt;= and &gt;= operators to determine the order), and searching the set for known values is very fast because it uses a binary-chop method.</p>
 <p>Note that if you're using a class or struct as the element type, it must be capable of being copied or moved with a straightforward memcpy, rather than needing construction and destruction code.</p>
 <p>To make all the set's methods thread-safe, pass in "CriticalSection" as the templated TypeOfCriticalSectionToUse parameter, instead of the default <a class="el" href="classDummyCriticalSection.html" title="A class that can be used in place of a real CriticalSection object, but which doesn&#39;t perform any loc...">DummyCriticalSection</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a>, <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a>, <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a>, <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a>, <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a490daddf0587190ba09eec23df3c42ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a490daddf0587190ba09eec23df3c42ce">&#9670;&nbsp;</a></span>ScopedLockType</h2>
@@ -1329,7 +1328,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

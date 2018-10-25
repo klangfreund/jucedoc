@@ -82,8 +82,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A utility object that helps you initialise and shutdown JUCE correctly using an RAII pattern. </p>
 <p>When the first instance of this class is created, it calls <a class="el" href="group__juce__events-messages.html#gaa648b242fe6ecc639ac53ec9c969822f" title="Initialises JUCE&#39;s GUI classes. ">initialiseJuce_GUI()</a>, and when the last instance is deleted, it calls <a class="el" href="group__juce__events-messages.html#ga1c949ca46c8ef9bcefbaf9256ab6ff80" title="Clears up any static data being used by JUCE&#39;s GUI classes. ">shutdownJuce_GUI()</a>, so that you can easily be sure that as long as at least one instance of the class exists, the library will be initialised.</p>
 <p>This class is particularly handy to use at the beginning of a console app's main() function, because it'll take care of shutting down whenever you return from the main() call.</p>
-<p>Be careful with your threading though - to be safe, you should always make sure that these objects are created and deleted on the message thread.</p>
-<p>{Events} </p>
+<p>Be careful with your threading though - to be safe, you should always make sure that these objects are created and deleted on the message thread. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1342c78002291c0ce1cf77c38fac2c9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1342c78002291c0ce1cf77c38fac2c9c">&#9670;&nbsp;</a></span>ScopedJuceInitialiser_GUI()</h2>
@@ -129,7 +128,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -153,8 +153,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This is a base class for classes that perform a unit test. </p>
 <p>To write a test using this class, your code should look something like this:</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>MyTest  : <span class="keyword">public</span> <a class="code" href="classUnitTest.html">UnitTest</a></div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    MyTest()  : <a class="code" href="classUnitTest.html">UnitTest</a> (<span class="stringliteral">&quot;Foobar testing&quot;</span>) {}</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classUnitTest.html#a1a95d7f09eb80442a8099663dfb92628">runTest</a>()<span class="keyword"> override</span></div><div class="line"><span class="keyword">    </span>{</div><div class="line">        <a class="code" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (<span class="stringliteral">&quot;Part 1&quot;</span>);</div><div class="line"></div><div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myFoobar.doesSomething());</div><div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myFoobar.doesSomethingElse());</div><div class="line"></div><div class="line">        <a class="code" href="classUnitTest.html#ae21d8c58358819742f379706b6b34753">beginTest</a> (<span class="stringliteral">&quot;Part 2&quot;</span>);</div><div class="line"></div><div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myOtherFoobar.doesSomething());</div><div class="line">        <a class="code" href="classUnitTest.html#a83e2912ee18731e0bfaf1c21a50b1131">expect</a> (myOtherFoobar.doesSomethingElse());</div><div class="line"></div><div class="line">        ...etc..</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="comment">// Creating a static instance will automatically add the instance to the array</span></div><div class="line"><span class="comment">// returned by UnitTest::getAllTests(), so the test will be included when you call</span></div><div class="line"><span class="comment">// UnitTestRunner::runAllTests()</span></div><div class="line"><span class="keyword">static</span> MyTest test;</div></div><!-- fragment --><p>To run a test, use the <a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a> class.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classUnitTestRunner.html" title="Runs a set of unit tests. ">UnitTestRunner</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addae2765d33a079b2b6b116994f825da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addae2765d33a079b2b6b116994f825da">&#9670;&nbsp;</a></span>UnitTest()</h2>
@@ -846,7 +845,7 @@ template&lt;class ValueType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

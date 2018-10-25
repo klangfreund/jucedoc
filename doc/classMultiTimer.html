@@ -104,8 +104,7 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>A type of timer class that can run multiple timers with different frequencies, all of which share a single callback. </p>
 <p>This class is very similar to the <a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a> class, but allows you run multiple separate timers, where each one has a unique ID number. The methods in this class are exactly equivalent to those in <a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a>, but with the addition of this ID number.</p>
 <p>To use it, you need to create a subclass of <a class="el" href="classMultiTimer.html" title="A type of timer class that can run multiple timers with different frequencies, all of which share a s...">MultiTimer</a>, implementing the <a class="el" href="classMultiTimer.html#a16dde865d7aaf32ba2649f498518e7a7" title="The user-defined callback routine that actually gets called by each of the timers that are running...">timerCallback()</a> method. Then you can start timers with <a class="el" href="classMultiTimer.html#ae1a9966181d6680a15cebb95168093b5" title="Starts a timer and sets the length of interval required. ">startTimer()</a>, and each time the callback is triggered, it passes in the ID of the timer that caused it.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a></dd></dl>
-<p>{Events} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a608fc823bb95f046f439424521615dc9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a608fc823bb95f046f439424521615dc9">&#9670;&nbsp;</a></span>MultiTimer() <span class="overload">[1/2]</span></h2>
@@ -361,7 +360,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

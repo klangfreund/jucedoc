@@ -56,6 +56,8 @@ var searchData=
   ['execute',['execute',['../classJavascriptEngine.html#a0726c85d9bad8b676f9820a36135b203',1,'JavascriptEngine']]],
   ['executeonglthread',['executeOnGLThread',['../classOpenGLContext.html#a48062bbab36b278a5ff95831dc8c333d',1,'OpenGLContext']]],
   ['exists',['exists',['../classFile.html#a53118ce36851cb1c6845a82f915fd8ba',1,'File']]],
+  ['existsandiscurrentthread',['existsAndIsCurrentThread',['../classMessageManager.html#a8effde7ef935b4881b3bd09d7a6169f9',1,'MessageManager']]],
+  ['existsandislockedbycurrentthread',['existsAndIsLockedByCurrentThread',['../classMessageManager.html#afe1711d0739f9de9e9a66cbde5b43632',1,'MessageManager']]],
   ['existsasfile',['existsAsFile',['../classFile.html#a2d79c296f148b00041aeeac0013716d9',1,'File']]],
   ['exit',['exit',['../classCriticalSection.html#a856bbcc18f0367ae231f7277d9cb33f8',1,'CriticalSection::exit()'],['../classDummyCriticalSection.html#a00630497a7c9a449eca4630abf115fa6',1,'DummyCriticalSection::exit()'],['../classInterProcessLock.html#a3387e77951f1777be407cf76d2691bd0',1,'InterProcessLock::exit()'],['../classSpinLock.html#a13a3a2f0d2a659b493a9c6e93e8d95f8',1,'SpinLock::exit()'],['../classMessageManager_1_1Lock.html#acab5d488a35276d014bbc9f99518173b',1,'MessageManager::Lock::exit()']]],
   ['exitmodalstate',['exitModalState',['../classComponent.html#a686e2440370ff4a97c7a7851907be650',1,'Component']]],

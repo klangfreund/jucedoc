@@ -80,7 +80,7 @@ var searchData=
   ['ownedarray_3c_20midimessagesequence_3a_3amidieventholder_20_3e',['OwnedArray&lt; MidiMessageSequence::MidiEventHolder &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20modalitem_20_3e',['OwnedArray&lt; ModalItem &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20mpesynthesiservoice_20_3e',['OwnedArray&lt; MPESynthesiserVoice &gt;',['../classOwnedArray.html',1,'']]],
-  ['ownedarray_3c_20oversamplingengine_3c_20sampletype_20_3e_20_3e',['OwnedArray&lt; OversamplingEngine&lt; SampleType &gt; &gt;',['../classOwnedArray.html',1,'']]],
+  ['ownedarray_3c_20oversamplingstage_20_3e',['OwnedArray&lt; OversamplingStage &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20panelholder_20_3e',['OwnedArray&lt; PanelHolder &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20plugindescription_20_3e',['OwnedArray&lt; PluginDescription &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20popupmenu_3a_3aitem_20_3e',['OwnedArray&lt; PopupMenu::Item &gt;',['../classOwnedArray.html',1,'']]],

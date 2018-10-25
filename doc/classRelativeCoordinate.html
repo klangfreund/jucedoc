@@ -137,8 +137,7 @@ Public Member Functions</h2></td></tr>
 <li>The name of one of the parent component's markers can also be used as a symbol. For markers to be used, the parent component must implement its Component::getMarkers() method, and return at least one valid <a class="el" href="classMarkerList.html" title="Holds a set of named marker points along a one-dimensional axis. ">MarkerList</a>. So if you want your component's top edge to be 10 pixels below the marker called "foobar", you'd set it to "foobar + 10".</li>
 </ul>
 <p>See the <a class="el" href="classExpression.html" title="A class for dynamically evaluating simple numeric expressions. ">Expression</a> class for details about the operators that are supported, but for example if you wanted to make your component remains centred within its parent with a size of 100, 100, you could express it as: </p><div class="fragment"><div class="line">myComp.setBounds (RelativeBounds (<span class="stringliteral">&quot;parent.width / 2 - 50, parent.height / 2 - 50, left + 100, top + 100&quot;</span>));</div></div><!-- fragment --><p> ..or an alternative way to achieve the same thing: </p><div class="fragment"><div class="line">myComp.setBounds (RelativeBounds (<span class="stringliteral">&quot;right - 100, bottom - 100, parent.width / 2 + 50, parent.height / 2 + 50&quot;</span>));</div></div><!-- fragment --><p>Or if you wanted a 100x100 component whose top edge is lined up to a marker called "topMarker" and which is positioned 50 pixels to the right of another component called "otherComp", you could write: </p><div class="fragment"><div class="line">myComp.setBounds (RelativeBounds (<span class="stringliteral">&quot;otherComp.right + 50, topMarker, left + 100, top + 100&quot;</span>));</div></div><!-- fragment --><p>Be careful not to make your coordinate expressions recursive, though, or exceptions and assertions will be thrown!</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classRelativePoint.html" title="An X-Y position stored as a pair of RelativeCoordinate values. ">RelativePoint</a>, <a class="el" href="classRelativeRectangle.html" title="A rectangle stored as a set of RelativeCoordinate values. ">RelativeRectangle</a></dd></dl>
-<p>{GUI} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classRelativePoint.html" title="An X-Y position stored as a pair of RelativeCoordinate values. ">RelativePoint</a>, <a class="el" href="classRelativeRectangle.html" title="A rectangle stored as a set of RelativeCoordinate values. ">RelativeRectangle</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a361f6a466bb575140226ee578f2f9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a361f6a466bb575140226ee578f2f9a">&#9670;&nbsp;</a></span>RelativeCoordinate() <span class="overload">[1/6]</span></h2>
@@ -557,7 +556,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

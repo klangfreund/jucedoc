@@ -79,13 +79,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a784606872384b743910554f1e41b2296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1ee8cddc6a38760b4d2a36cc371e34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; <a class="el" href="structdsp_1_1FilterDesign.html#a1e6317dd8dcbdd31cb15d1b0a1e08cbf">IIRCoefficients</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign_1_1IIRPolyphaseAllpassStructure.html#a5d1ee8cddc6a38760b4d2a36cc371e34">delayedPath</a></td></tr>
 <tr class="separator:a5d1ee8cddc6a38760b4d2a36cc371e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5dfc4c01cbec7c87be7b263f9c399be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArray.html">Array</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1FilterDesign_1_1IIRPolyphaseAllpassStructure.html#aa5dfc4c01cbec7c87be7b263f9c399be">alpha</a></td></tr>
+<tr class="separator:aa5dfc4c01cbec7c87be7b263f9c399be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename FloatType&gt;<br />
 struct dsp::FilterDesign&lt; FloatType &gt;::IIRPolyphaseAllpassStructure</h3>
 
 <p>The structure returned by the function designIIRLowpassHalfBandPolyphaseAllpassMethod. </p>
-<p>The two members of this structure directPath and delayedPath are arrays of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made of polyphase second order allpass filters and an additional delay in the second array, that can be used in cascaded filters processed in two parallel paths, which must be summed at the end to get the high order efficient low-pass filtering. </p>
+<p>The two first members of this structure directPath and delayedPath are arrays of <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html" title="A set of coefficients for use in an Filter object. ">IIR::Coefficients</a>, made of polyphase second order allpass filters and an additional delay in the second array, that can be used in cascaded filters processed in two parallel paths, which must be summed at the end to get the high order efficient low-pass filtering. The last member is an array with the useful parameters for simulating the structure using any custom processing function. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a784606872384b743910554f1e41b2296"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a784606872384b743910554f1e41b2296">&#9670;&nbsp;</a></span>directPath</h2>
@@ -119,13 +121,29 @@ template&lt;typename FloatType &gt; </div>
 
 </div>
 </div>
+<a id="aa5dfc4c01cbec7c87be7b263f9c399be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5dfc4c01cbec7c87be7b263f9c399be">&#9670;&nbsp;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArray.html">Array</a>&lt;double&gt; <a class="el" href="structdsp_1_1FilterDesign.html">dsp::FilterDesign</a>&lt; FloatType &gt;::IIRPolyphaseAllpassStructure::alpha</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__FilterDesign_8h.html">juce_FilterDesign.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -175,8 +175,7 @@ Public Member Functions</h2></td></tr>
 <p>To use this class, just create an AudioThumbNail class for the file you want to draw, call setSource to tell it which file or resource to use, then call <a class="el" href="classAudioThumbnail.html#ab9b136a4b025b6a0f283cef57c61b893" title="Draws the waveform for a channel. ">drawChannel()</a> to draw it.</p>
 <p>The class will asynchronously scan the wavefile to create its scaled-down view, so you should make your UI repaint itself as this data comes in. To do this, the <a class="el" href="classAudioThumbnail.html" title="Makes it easy to quickly draw scaled views of the waveform shape of an audio file. ">AudioThumbnail</a> is a <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>, and will broadcast a message when its listeners should repaint themselves.</p>
 <p>The thumbnail stores an internal low-res version of the wave data, and this can be loaded and saved to avoid having to scan the file again.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioThumbnailCache.html" title="An instance of this class is used to manage multiple AudioThumbnail objects. ">AudioThumbnailCache</a>, <a class="el" href="classAudioThumbnailBase.html" title="Provides a base for classes that can store and draw scaled views of an audio waveform. ">AudioThumbnailBase</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioThumbnailCache.html" title="An instance of this class is used to manage multiple AudioThumbnail objects. ">AudioThumbnailCache</a>, <a class="el" href="classAudioThumbnailBase.html" title="Provides a base for classes that can store and draw scaled views of an audio waveform. ">AudioThumbnailBase</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abfa7516538eb0518cddeec4c71cf329d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfa7516538eb0518cddeec4c71cf329d">&#9670;&nbsp;</a></span>AudioThumbnail()</h2>
@@ -898,7 +897,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

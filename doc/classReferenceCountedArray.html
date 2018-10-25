@@ -252,8 +252,7 @@ class ReferenceCountedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</h3
 <p>The template parameter specifies the class of the object you want to point to - the easiest way to make a class reference-countable is to simply make it inherit from <a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a> or <a class="el" href="classSingleThreadedReferenceCountedObject.html" title="Adds reference-counting to an object. ">SingleThreadedReferenceCountedObject</a>, but if you need to, you can roll your own reference-countable class by implementing a set of methods called incReferenceCount(), decReferenceCount(), and decReferenceCountWithoutDeleting(). See <a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a> for examples of how these methods should behave.</p>
 <p>A <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a> holds objects derived from <a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a>, and takes care of incrementing and decrementing their ref counts when they are added and removed from the array.</p>
 <p>To make all the array's methods thread-safe, pass in "CriticalSection" as the templated TypeOfCriticalSectionToUse parameter, instead of the default <a class="el" href="classDummyCriticalSection.html" title="A class that can be used in place of a real CriticalSection object, but which doesn&#39;t perform any loc...">DummyCriticalSection</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="afea3a2f6208f8bb4f57e27ed53db0819"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afea3a2f6208f8bb4f57e27ed53db0819">&#9670;&nbsp;</a></span>ObjectClassPtr</h2>
@@ -2093,7 +2092,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

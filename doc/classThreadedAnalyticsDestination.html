@@ -121,8 +121,7 @@ Protected Member Functions</h2></td></tr>
 <p>This class is particularly useful for sending analytics events to a web server without blocking the message thread. It can also save (and restore) events that were not dispatched so no information is lost when an internet connection is absent or something else prevents successful logging.</p>
 <p>Once startAnalyticsThread is called the logBatchedEvents method is periodically invoked on an analytics thread, with the period determined by calls to setBatchPeriod. Here events are grouped together into batches, with the maximum batch size set by the implementation of getMaximumBatchSize.</p>
 <p>It's important to call stopAnalyticsThread in the destructor of your subclass (or before then) to give the analytics thread time to shut down. Calling stopAnalyticsThread will, in turn, call stopLoggingEvents, which you should use to terminate the currently running logBatchedEvents call.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAnalytics.html" title="A singleton class to manage analytics data. ">Analytics</a>, <a class="el" href="structAnalyticsDestination.html" title="An interface for handling analytics events collected by an Analytics object. ">AnalyticsDestination</a>, <a class="el" href="structAnalyticsDestination_1_1AnalyticsEvent.html" title="Contains information about an event to be logged. ">AnalyticsDestination::AnalyticsEvent</a></dd></dl>
-<p>{<a class="el" href="classAnalytics.html" title="A singleton class to manage analytics data. ">Analytics</a>} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAnalytics.html" title="A singleton class to manage analytics data. ">Analytics</a>, <a class="el" href="structAnalyticsDestination.html" title="An interface for handling analytics events collected by an Analytics object. ">AnalyticsDestination</a>, <a class="el" href="structAnalyticsDestination_1_1AnalyticsEvent.html" title="Contains information about an event to be logged. ">AnalyticsDestination::AnalyticsEvent</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9a6dfe1046433c3b5b9ec764fc6260d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9a6dfe1046433c3b5b9ec764fc6260d">&#9670;&nbsp;</a></span>ThreadedAnalyticsDestination()</h2>
@@ -412,7 +411,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

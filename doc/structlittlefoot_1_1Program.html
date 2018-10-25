@@ -125,7 +125,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aab80cca2ee6780f5ebd07323e86f291b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Program.html#aab80cca2ee6780f5ebd07323e86f291b">programStart</a> = 0</td></tr>
+<tr class="memitem:aab80cca2ee6780f5ebd07323e86f291b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Program.html#aab80cca2ee6780f5ebd07323e86f291b">programStart</a> = nullptr</td></tr>
 <tr class="separator:aab80cca2ee6780f5ebd07323e86f291b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b9f4b333cb9a2bfa4dffc0a8b3f7dce"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Program.html#a2b9f4b333cb9a2bfa4dffc0a8b3f7dce">maxProgramSize</a></td></tr>
 <tr class="separator:a2b9f4b333cb9a2bfa4dffc0a8b3f7dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +137,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A reference to a block of memory which contains a complete program. </p>
-<p>Data format: 2 bytes - program checksum 2 bytes - program size 2 bytes - num functions 2 bytes - num globals 2 bytes - amount of heap space needed (bytes) 2 bytes - ID of function 1 2 bytes - byte offset of function 1 code 2 bytes - ID of function 2 2 bytes - byte offset of function 2 code etc.. ...function code...</p>
-<p>{Blocks} </p>
+<p>Data format: 2 bytes - program checksum 2 bytes - program size 2 bytes - num functions 2 bytes - num globals 2 bytes - amount of heap space needed (bytes) 2 bytes - ID of function 1 2 bytes - byte offset of function 1 code 2 bytes - ID of function 2 2 bytes - byte offset of function 2 code etc.. ...function code... </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abf9381e1de16e4faab04fa5601e049a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf9381e1de16e4faab04fa5601e049a4">&#9670;&nbsp;</a></span>Program()</h2>
@@ -717,7 +716,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a>* littlefoot::Program::programStart = 0</td>
+          <td class="memname">const <a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a>* littlefoot::Program::programStart = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -744,7 +743,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

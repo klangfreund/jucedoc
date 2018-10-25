@@ -110,8 +110,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A re-entrant mutex. </p>
 <p>A <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> acts as a re-entrant mutex object. The best way to lock and unlock one of these is by using RAII in the form of a local ScopedLock object - have a look through the codebase for many examples of how to do this.</p>
 <p>In almost all cases you'll want to declare your <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> as a member variable. Occasionally you may want to declare one as a static variable, but in that case the usual C++ static object order-of-construction warnings should be heeded.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__juce__core-threads.html#gadd0b55041ea549cc9b1dfae71670e543" title="Automatically locks and unlocks a CriticalSection object. ">ScopedLock</a>, <a class="el" href="group__juce__core-threads.html#ga5cd183417b285db9aacbb12c30e51d4f" title="Automatically tries to lock and unlock a CriticalSection object. ">ScopedTryLock</a>, <a class="el" href="group__juce__core-threads.html#ga1a3fa8167a53f3d021763968a03282ea" title="Automatically unlocks and re-locks a CriticalSection object. ">ScopedUnlock</a>, <a class="el" href="classSpinLock.html" title="A simple spin-lock class that can be used as a simple, low-overhead mutex for uncontended situations...">SpinLock</a>, <a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a>, <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a>, <a class="el" href="classInterProcessLock.html" title="Acts as a critical section which processes can use to block each other. ">InterProcessLock</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__juce__core-threads.html#gadd0b55041ea549cc9b1dfae71670e543" title="Automatically locks and unlocks a CriticalSection object. ">ScopedLock</a>, <a class="el" href="group__juce__core-threads.html#ga5cd183417b285db9aacbb12c30e51d4f" title="Automatically tries to lock and unlock a CriticalSection object. ">ScopedTryLock</a>, <a class="el" href="group__juce__core-threads.html#ga1a3fa8167a53f3d021763968a03282ea" title="Automatically unlocks and re-locks a CriticalSection object. ">ScopedUnlock</a>, <a class="el" href="classSpinLock.html" title="A simple spin-lock class that can be used as a simple, low-overhead mutex for uncontended situations...">SpinLock</a>, <a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a>, <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a>, <a class="el" href="classInterProcessLock.html" title="Acts as a critical section which processes can use to block each other. ">InterProcessLock</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4d398019b977a4c2151c6f1e2a06210b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d398019b977a4c2151c6f1e2a06210b">&#9670;&nbsp;</a></span>ScopedLockType</h2>
@@ -314,7 +313,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

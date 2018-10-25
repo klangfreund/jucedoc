@@ -173,8 +173,7 @@ class ReferenceCountedObjectPtr&lt; ObjectType &gt;</h3>
 
 <p>A smart-pointer class which points to a reference-counted object. </p>
 <p>The template parameter specifies the class of the object you want to point to - the easiest way to make a class reference-countable is to simply make it inherit from <a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a> or <a class="el" href="classSingleThreadedReferenceCountedObject.html" title="Adds reference-counting to an object. ">SingleThreadedReferenceCountedObject</a>, but if you need to, you can roll your own reference-countable class by implementing a set of methods called incReferenceCount(), decReferenceCount(), and decReferenceCountWithoutDeleting(). See <a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a> for examples of how these methods should behave.</p>
-<p>When using this class, you'll probably want to create a typedef to abbreviate the full templated name - e.g. </p><div class="fragment"><div class="line"><span class="keyword">struct </span>MyClass  : <span class="keyword">public</span> <a class="code" href="classReferenceCountedObject.html">ReferenceCountedObject</a></div><div class="line">{</div><div class="line">    <span class="keyword">using</span> Ptr = <a class="code" href="classReferenceCountedObjectPtr.html">ReferenceCountedObjectPtr&lt;MyClass&gt;</a>;</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a>, ReferenceCountedObjectArray</dd></dl>
-<p>{Core} </p>
+<p>When using this class, you'll probably want to create a typedef to abbreviate the full templated name - e.g. </p><div class="fragment"><div class="line"><span class="keyword">struct </span>MyClass  : <span class="keyword">public</span> <a class="code" href="classReferenceCountedObject.html">ReferenceCountedObject</a></div><div class="line">{</div><div class="line">    <span class="keyword">using</span> Ptr = <a class="code" href="classReferenceCountedObjectPtr.html">ReferenceCountedObjectPtr&lt;MyClass&gt;</a>;</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReferenceCountedObject.html" title="A base class which provides methods for reference-counting. ">ReferenceCountedObject</a>, ReferenceCountedObjectArray </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af855d98f47c2e91b418596949e97bbba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af855d98f47c2e91b418596949e97bbba">&#9670;&nbsp;</a></span>ReferencedType</h2>
@@ -966,7 +965,7 @@ template&lt;class ObjectType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

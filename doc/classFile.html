@@ -424,8 +424,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a local file or directory. </p>
 <p>This class encapsulates the absolute pathname of a file or directory, and has methods for finding out about the file and changing its properties.</p>
 <p>To read or write to the file, there are methods for returning an input or output stream.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a>, <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a>, <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a2e3d1ed8a9022434f3ddb7d34b24198c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e3d1ed8a9022434f3ddb7d34b24198c">&#9670;&nbsp;</a></span>TypesOfFileToFind</h2>
@@ -1999,7 +1998,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a stream to read from this file. </p>
-<dl class="section return"><dt>Returns</dt><dd>a stream that will read from this file (initially positioned at the start of the file), or nullptr if the file can't be opened for some reason </dd></dl>
+<p>Note that this is an old method, and actually it's usually best to avoid it and instead use an RAII pattern with an <a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a> directly, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classFileInputStream.html">FileInputStream</a> input (fileToOpen);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (input.openedOk())</div><div class="line">{</div><div class="line">    input.read (etc...</div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a stream that will read from this file (initially positioned at the start of the file), or nullptr if the file can't be opened for some reason </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#ac8db7b5cd2ccde94b1299da3bfd11d46" title="Creates a stream to write to this file. ">createOutputStream</a>, <a class="el" href="classFile.html#a889b8b0784b4f97c5bf93ffc24c3650d" title="Loads a file&#39;s contents into memory as a block of binary data. ">loadFileAsData</a> </dd></dl>
 
 </div>
@@ -2021,8 +2020,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a stream to write to this file. </p>
-<p>If the file exists, the stream that is returned will be positioned ready for writing at the end of the file, so you might want to use <a class="el" href="classFile.html#adc64f67a869db306afd65a67758e5a3e" title="Deletes a file. ">deleteFile()</a> first to write to an empty file.</p>
-<dl class="section return"><dt>Returns</dt><dd>a stream that will write to this file (initially positioned at the end of the file), or nullptr if the file can't be opened for some reason </dd></dl>
+<p>Note that this is an old method, and actually it's usually best to avoid it and instead use an RAII pattern with an <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> directly, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classFileOutputStream.html">FileOutputStream</a> output (fileToOpen);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (output.openedOk())</div><div class="line">{</div><div class="line">    output.read etc...</div><div class="line">}</div></div><!-- fragment --><p>If the file exists, the stream that is returned will be positioned ready for writing at the end of the file. If you want to write to the start of the file, replacing the existing content, then you can do the following: </p><div class="fragment"><div class="line"><a class="code" href="classFileOutputStream.html">FileOutputStream</a> output (fileToOverwrite);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (output.openedOk())</div><div class="line">{</div><div class="line">    output.setPosition (0);</div><div class="line">    output.truncate();</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a stream that will write to this file (initially positioned at the end of the file), or nullptr if the file can't be opened for some reason </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#ad5512424b64d50f10302788c294ab729" title="Creates a stream to read from this file. ">createInputStream</a>, <a class="el" href="classFile.html#a4d36e103c077497e393bb3b7de0c8d07" title="Appends a block of binary data to the end of the file. ">appendData</a>, <a class="el" href="classFile.html#a394e70abaa58e940a26b44fb38b89a67" title="Appends a string to the end of the file. ">appendText</a> </dd></dl>
 
 </div>
@@ -3068,7 +3066,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

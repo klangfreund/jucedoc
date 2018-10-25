@@ -95,8 +95,7 @@ Public Member Functions</h2></td></tr>
 <p>A <a class="el" href="classDirectoryIterator.html" title="Searches through the files in a directory, returning each file that is found. ">DirectoryIterator</a> will search through a directory and its subdirectories using a wildcard filepattern match.</p>
 <p>If you may be scanning a large number of files, it's usually smarter to use this class than <a class="el" href="classFile.html#a5d2231468698548f2edde113235b3001" title="Searches this directory for files matching a wildcard pattern. ">File::findChildFiles()</a> because it allows you to stop at any time, rather than having to wait for the entire scan to finish before getting the results.</p>
 <p>Please note that the order in which files are returned is completely undefined! They'll arrive in whatever order the underlying OS calls provide them, which will depend on the filesystem and other factors. If you need a sorted list, you'll need to manually sort them using your preferred comparator after collecting the list.</p>
-<p>It also provides an estimate of its progress, using a (highly inaccurate!) algorithm.</p>
-<p>{Core} </p>
+<p>It also provides an estimate of its progress, using a (highly inaccurate!) algorithm. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a524ffc16900daf13217680423458b328"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a524ffc16900daf13217680423458b328">&#9670;&nbsp;</a></span>DirectoryIterator()</h2>
@@ -292,7 +291,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

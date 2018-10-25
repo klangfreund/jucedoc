@@ -84,8 +84,7 @@ struct TypeHelpers::ParameterType&lt; Type &gt;</h3>
 
 <p>The <a class="el" href="structTypeHelpers_1_1ParameterType.html" title="The ParameterType struct is used to find the best type to use when passing some kind of object as a p...">ParameterType</a> struct is used to find the best type to use when passing some kind of object as a parameter. </p>
 <p>Of course, this is only likely to be useful in certain esoteric template situations.</p>
-<p>E.g. "myFunction (typename TypeHelpers::ParameterType&lt;int&gt;::type, typename TypeHelpers::ParameterType&lt;MyObject&gt;::type)" would evaluate to "myfunction (int, const MyObject&amp;)", keeping any primitive types as pass-by-value, but passing objects as a const reference, to avoid copying.</p>
-<p>{Core} </p>
+<p>E.g. "myFunction (typename TypeHelpers::ParameterType&lt;int&gt;::type, typename TypeHelpers::ParameterType&lt;MyObject&gt;::type)" would evaluate to "myfunction (int, const MyObject&amp;)", keeping any primitive types as pass-by-value, but passing objects as a const reference, to avoid copying. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad57e75d9eb3f3f675b9156c3850636a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad57e75d9eb3f3f675b9156c3850636a6">&#9670;&nbsp;</a></span>type</h2>
@@ -109,7 +108,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

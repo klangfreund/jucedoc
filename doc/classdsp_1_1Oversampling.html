@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdsp_1_1Oversampling-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">dsp::Oversampling&lt; SampleType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__juce__dsp.html">juce_dsp</a> &raquo; <a class="el" href="group__juce__dsp-processors.html">processors</a></div></div>  </div>
@@ -85,9 +86,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ae59914cbbefe675a46a9dcc84854c7cf">Oversampling</a> (size_t numChannels, size_t factor, <a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a> type, bool isMaxQuality=true)</td></tr>
+<tr class="memitem:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ae59914cbbefe675a46a9dcc84854c7cf">Oversampling</a> (size_t <a class="el" href="classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6">numChannels</a>, size_t factor, <a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a> type, bool isMaxQuality=true)</td></tr>
 <tr class="memdesc:ae59914cbbefe675a46a9dcc84854c7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the oversampling class.  <a href="#ae59914cbbefe675a46a9dcc84854c7cf">More...</a><br /></td></tr>
 <tr class="separator:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac898b2c638e87a3bf7fd6003257e7148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ac898b2c638e87a3bf7fd6003257e7148">Oversampling</a> ()</td></tr>
+<tr class="memdesc:ac898b2c638e87a3bf7fd6003257e7148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages.  <a href="#ac898b2c638e87a3bf7fd6003257e7148">More...</a><br /></td></tr>
+<tr class="separator:ac898b2c638e87a3bf7fd6003257e7148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aa0fb3908b5d80d27f0ee33ab774bd8c6">~Oversampling</a> ()</td></tr>
 <tr class="memdesc:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa0fb3908b5d80d27f0ee33ab774bd8c6">More...</a><br /></td></tr>
 <tr class="separator:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +113,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0505d62bb580226ad0512aa6118b7d54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a0505d62bb580226ad0512aa6118b7d54">processSamplesDown</a> (<a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;outputBlock) noexcept</td></tr>
 <tr class="memdesc:a0505d62bb580226ad0512aa6118b7d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the downsampling, after the upsampling and the non-linear processing.  <a href="#a0505d62bb580226ad0512aa6118b7d54">More...</a><br /></td></tr>
 <tr class="separator:a0505d62bb580226ad0512aa6118b7d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc1e7486ddb2f6ebc1b2b0a7300e19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aebc1e7486ddb2f6ebc1b2b0a7300e19f">addOversamplingStage</a> (<a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a>, float normalizedTransitionWidthUp, float stopbandAttenuationdBUp, float normalizedTransitionWidthDown, float stopbandAttenuationdBDown)</td></tr>
+<tr class="separator:aebc1e7486ddb2f6ebc1b2b0a7300e19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83befdb31af0832cf1e36cdb3817934e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a83befdb31af0832cf1e36cdb3817934e">addDummyOversamplingStage</a> ()</td></tr>
+<tr class="separator:a83befdb31af0832cf1e36cdb3817934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f16ea386937ffa73f3fa1c16cd5aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a86f16ea386937ffa73f3fa1c16cd5aed">clearOversamplingStages</a> ()</td></tr>
+<tr class="separator:a86f16ea386937ffa73f3fa1c16cd5aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac9c8f562dc19e0eb36a95c99dbfaabd5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ac9c8f562dc19e0eb36a95c99dbfaabd5">factorOversampling</a> = 1</td></tr>
+<tr class="separator:ac9c8f562dc19e0eb36a95c99dbfaabd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403476a4f3c540cbd5ad709435175ec6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6">numChannels</a> = 1</td></tr>
+<tr class="separator:a403476a4f3c540cbd5ad709435175ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SampleType&gt;<br />
@@ -118,8 +135,7 @@ class dsp::Oversampling&lt; SampleType &gt;</h3>
 <p>It can be configured to do 2 times, 4 times, 8 times or 16 times oversampling using a multi-stage approach, either polyphase allpass <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filters or <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filters for the filtering, and reports successfully the latency added by the filter stages.</p>
 <p>The principle of oversampling is to increase the sample rate of a given non-linear process, to prevent it from creating aliasing. <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> works by upsampling N times the input signal, processing the upsampling signal with the increased internal sample rate, and downsample the result to get back the original processing sample rate.</p>
 <p>Choose between <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> or <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering depending on your needs in term of latency and phase distortion. With <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filters, the phase is linear but the latency is maximum. With <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering, the phase is compromised around the Nyquist frequency but the latency is minimum.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdsp_1_1FilterDesign.html" title="This class provides a set of functions which generates FIR::Coefficients and IIR::Coefficients, of high-order low-pass filters. ">FilterDesign</a>.</dd></dl>
-<p>{DSP} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdsp_1_1FilterDesign.html" title="This class provides a set of functions which generates FIR::Coefficients and IIR::Coefficients, of high-order low-pass filters. ">FilterDesign</a>. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac3d048707b7807badec0df770c9778f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3d048707b7807badec0df770c9778f8">&#9670;&nbsp;</a></span>FilterType</h2>
@@ -146,7 +162,7 @@ template&lt;typename SampleType &gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae59914cbbefe675a46a9dcc84854c7cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae59914cbbefe675a46a9dcc84854c7cf">&#9670;&nbsp;</a></span>Oversampling()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59914cbbefe675a46a9dcc84854c7cf">&#9670;&nbsp;</a></span>Oversampling() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,6 +213,27 @@ template&lt;typename SampleType &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac898b2c638e87a3bf7fd6003257e7148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac898b2c638e87a3bf7fd6003257e7148">&#9670;&nbsp;</a></span>Oversampling() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1Oversampling.html">Oversampling</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages. </p>
 
 </div>
 </div>
@@ -395,13 +432,132 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
+<a id="aebc1e7486ddb2f6ebc1b2b0a7300e19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc1e7486ddb2f6ebc1b2b0a7300e19f">&#9670;&nbsp;</a></span>addOversamplingStage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::addOversamplingStage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>normalizedTransitionWidthUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>stopbandAttenuationdBUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>normalizedTransitionWidthDown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>stopbandAttenuationdBDown</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83befdb31af0832cf1e36cdb3817934e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83befdb31af0832cf1e36cdb3817934e">&#9670;&nbsp;</a></span>addDummyOversamplingStage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::addDummyOversamplingStage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86f16ea386937ffa73f3fa1c16cd5aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f16ea386937ffa73f3fa1c16cd5aed">&#9670;&nbsp;</a></span>clearOversamplingStages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::clearOversamplingStages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac9c8f562dc19e0eb36a95c99dbfaabd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c8f562dc19e0eb36a95c99dbfaabd5">&#9670;&nbsp;</a></span>factorOversampling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::factorOversampling = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a403476a4f3c540cbd5ad709435175ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403476a4f3c540cbd5ad709435175ec6">&#9670;&nbsp;</a></span>numChannels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::numChannels = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Oversampling_8h.html">juce_Oversampling.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

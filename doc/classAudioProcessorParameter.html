@@ -179,8 +179,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract base class for parameter objects that can be added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba" title="Adds a parameter to the AudioProcessor. ">AudioProcessor::addParameter</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba" title="Adds a parameter to the AudioProcessor. ">AudioProcessor::addParameter</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aef73dff71cb1abfdadd5b6f3649d7db2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef73dff71cb1abfdadd5b6f3649d7db2">&#9670;&nbsp;</a></span>Category</h2>
@@ -292,7 +291,7 @@ Public Member Functions</h2></td></tr>
 <p>Hosts will expect the value returned to be between 0 and 1.0.</p>
 <p>This could be called quite frequently, so try to make your code efficient. It's also likely to be called by non-UI threads, so the code in here should be thread-aware. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>, and <a class="el" href="classAudioParameterInt.html#ad476d8d42e4c67be9919e56e4255e96e">AudioParameterInt::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +324,7 @@ Public Member Functions</h2></td></tr>
 <p>If you want to set the value of a parameter internally, e.g. from your editor component, then don't call this directly - instead, use the <a class="el" href="classAudioProcessorParameter.html#ac9b67f35339db50d2bd9a026d89390e1" title="A processor should call this when it needs to change one of its parameters. ">setValueNotifyingHost()</a> method, which will also send a message to the host telling it about the change. If the message isn't sent, the host won't be able to automate your parameters properly.</p>
 <p>The value passed will be between 0 and 1.0. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>, and <a class="el" href="classAudioParameterInt.html#ad476d8d42e4c67be9919e56e4255e96e">AudioParameterInt::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +415,9 @@ Public Member Functions</h2></td></tr>
 
 <p>This should return the default value for this parameter. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p>Implemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#a5af26be6a43f8c07bda5d8c235a4dc57">AudioProcessorValueTreeState::Parameter</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>, and <a class="el" href="classAudioParameterInt.html#ad476d8d42e4c67be9919e56e4255e96e">AudioParameterInt::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -505,7 +506,7 @@ Public Member Functions</h2></td></tr>
 <p>The value that is returned may or may not be used, depending on the host. If you want the host to display stepped automation values, rather than a continuous interpolation between successive values, you should override isDiscrete to return true.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorParameter.html#a286803af380e0655a1717f6ea60c4b3c" title="Returns whether the parameter uses discrete values, based on the result of getNumSteps, or allows the host to select values continuously. ">isDiscrete</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p>Reimplemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#af9f91246fa1c46edc75e25666fde67d5">AudioProcessorValueTreeState::Parameter</a>, and <a class="el" href="classRangedAudioParameter.html#ad064a4b5a45dac60d8e8e4a26742273c">RangedAudioParameter</a>.</p>
 
 </div>
 </div>
@@ -536,7 +537,9 @@ Public Member Functions</h2></td></tr>
 <p>This information may or may not be used, depending on the host. If you want the host to display stepped automation values, rather than a continuous interpolation between successive values, override this method to return true.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorParameter.html#a3db5e5efc6319dc21c837a7f479cc511" title="Returns the number of steps that this parameter&#39;s range should be quantised into. ...">getNumSteps</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p>Reimplemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#a430009e7a86111e3465b393496fd078e">AudioProcessorValueTreeState::Parameter</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -567,7 +570,9 @@ Public Member Functions</h2></td></tr>
 <p>This information may or may not be used, depending on the host. If you want the host to display a switch, rather than a two item dropdown menu, override this method to return true. You also need to override <a class="el" href="classAudioProcessorParameter.html#a286803af380e0655a1717f6ea60c4b3c" title="Returns whether the parameter uses discrete values, based on the result of getNumSteps, or allows the host to select values continuously. ">isDiscrete()</a> to return <code>true</code> and <a class="el" href="classAudioProcessorParameter.html#a3db5e5efc6319dc21c837a7f479cc511" title="Returns the number of steps that this parameter&#39;s range should be quantised into. ...">getNumSteps()</a> to return <code>2</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorParameter.html#a286803af380e0655a1717f6ea60c4b3c" title="Returns whether the parameter uses discrete values, based on the result of getNumSteps, or allows the host to select values continuously. ">isDiscrete</a> <a class="el" href="classAudioProcessorParameter.html#a3db5e5efc6319dc21c837a7f479cc511" title="Returns the number of steps that this parameter&#39;s range should be quantised into. ...">getNumSteps</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p>Reimplemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#a47b89394fd6105215e59d432d903d7d7">AudioProcessorValueTreeState::Parameter</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -610,7 +615,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="structAudioPluginInstance_1_1Parameter.html#a05d0766b8483da8b9c3dafd0320ebd7f">AudioPluginInstance::Parameter</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>, and <a class="el" href="classAudioParameterInt.html#ad476d8d42e4c67be9919e56e4255e96e">AudioParameterInt::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -642,7 +647,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="structAudioPluginInstance_1_1Parameter.html#a228559fb5edcc8d1fb95deca7cdc3218">AudioPluginInstance::Parameter</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, and <a class="el" href="classAudioParameterBool.html#a5f0418697910d56b99edd5db110309b7">AudioParameterBool::operator bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classAudioParameterBool.html#a328dc727c90fbf4571c39d610cd6248a">AudioParameterBool::getNormalisableRange()</a>, and <a class="el" href="classAudioParameterInt.html#ad476d8d42e4c67be9919e56e4255e96e">AudioParameterInt::getNormalisableRange()</a>.</p>
 
 </div>
 </div>
@@ -700,6 +705,8 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if the host can automate this parameter. </p>
 <p>By default, this returns true. </p>
 
+<p>Reimplemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#a6b707108868756839d96dc588587a8a9">AudioProcessorValueTreeState::Parameter</a>.</p>
+
 </div>
 </div>
 <a id="a4e415c0f716226806880acf93d4237e6"></a>
@@ -727,6 +734,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Should return true if this parameter is a "meta" parameter. </p>
 <p>A meta-parameter is a parameter that changes other params. It is used by some hosts (e.g. AudioUnit hosts). By default this returns false. </p>
+
+<p>Reimplemented in <a class="el" href="classAudioProcessorValueTreeState_1_1Parameter.html#ae53faef47bdca3aab87aaf15965ed3d8">AudioProcessorValueTreeState::Parameter</a>.</p>
 
 </div>
 </div>
@@ -909,7 +918,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

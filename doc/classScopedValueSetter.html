@@ -85,8 +85,7 @@ Public Member Functions</h2></td></tr>
 class ScopedValueSetter&lt; ValueType &gt;</h3>
 
 <p>Helper class providing an RAII-based mechanism for temporarily setting and then re-setting a value. </p>
-<p>E.g.</p><div class="fragment"><div class="line"><span class="keywordtype">int</span> x = 1;</div><div class="line"></div><div class="line">{</div><div class="line">    <a class="code" href="classScopedValueSetter.html">ScopedValueSetter</a> setter (x, 2);</div><div class="line"></div><div class="line">    <span class="comment">// x is now 2</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// x is now 1 again</span></div><div class="line"></div><div class="line">{</div><div class="line">    <a class="code" href="classScopedValueSetter.html">ScopedValueSetter</a> setter (x, 3, 4);</div><div class="line"></div><div class="line">    <span class="comment">// x is now 3</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// x is now 4</span></div></div><!-- fragment --><p>{Core} </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>E.g.</p><div class="fragment"><div class="line"><span class="keywordtype">int</span> x = 1;</div><div class="line"></div><div class="line">{</div><div class="line">    <a class="code" href="classScopedValueSetter.html">ScopedValueSetter</a> setter (x, 2);</div><div class="line"></div><div class="line">    <span class="comment">// x is now 2</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// x is now 1 again</span></div><div class="line"></div><div class="line">{</div><div class="line">    <a class="code" href="classScopedValueSetter.html">ScopedValueSetter</a> setter (x, 3, 4);</div><div class="line"></div><div class="line">    <span class="comment">// x is now 3</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// x is now 4</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0cf278b4c7956af0c2b4e5c94e8cac4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cf278b4c7956af0c2b4e5c94e8cac4a">&#9670;&nbsp;</a></span>ScopedValueSetter() <span class="overload">[1/2]</span></h2>
 
@@ -184,7 +183,7 @@ template&lt;typename ValueType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

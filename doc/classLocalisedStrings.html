@@ -130,8 +130,7 @@ Static Public Member Functions</h2></td></tr>
 <p>E.g. for a french translation, the file might be:</p>
 <div class="fragment"><div class="line">language: French</div><div class="line">countries: fr be mc ch lu</div><div class="line"></div><div class="line"><span class="stringliteral">&quot;hello&quot;</span> = <span class="stringliteral">&quot;bonjour&quot;</span></div><div class="line"><span class="stringliteral">&quot;goodbye&quot;</span> = <span class="stringliteral">&quot;au revoir&quot;</span></div></div><!-- fragment --><p>If the strings need to contain a quote character, they can use '"' instead, and if the first non-whitespace character on a line isn't a quote, then it's ignored, (you can use this to add comments).</p>
 <p>Note that this is a singleton class, so don't create or destroy the object directly. There's also a <a class="el" href="group__juce__core-text.html#gaf3c28ad27b0d8fa2f615888701e32b07" title="Uses the LocalisedStrings class to translate the given string literal. ">TRANS(text)</a> macro defined to make it easy to use the this.</p>
-<p>E.g.</p><div class="fragment"><div class="line">printSomething (<a class="code" href="group__juce__core-text.html#gaf3c28ad27b0d8fa2f615888701e32b07">TRANS</a>(<span class="stringliteral">&quot;hello&quot;</span>));</div></div><!-- fragment --><p>This macro is used in the JUCE classes themselves, so your application has a chance to intercept and translate any internal JUCE text strings that might be shown. (You can easily get a list of all the messages by searching for the <a class="el" href="group__juce__core-text.html#gaf3c28ad27b0d8fa2f615888701e32b07" title="Uses the LocalisedStrings class to translate the given string literal. ">TRANS()</a> macro in the JUCE source code).</p>
-<p>{Core} </p>
+<p>E.g.</p><div class="fragment"><div class="line">printSomething (<a class="code" href="group__juce__core-text.html#gaf3c28ad27b0d8fa2f615888701e32b07">TRANS</a>(<span class="stringliteral">&quot;hello&quot;</span>));</div></div><!-- fragment --><p>This macro is used in the JUCE classes themselves, so your application has a chance to intercept and translate any internal JUCE text strings that might be shown. (You can easily get a list of all the messages by searching for the <a class="el" href="group__juce__core-text.html#gaf3c28ad27b0d8fa2f615888701e32b07" title="Uses the LocalisedStrings class to translate the given string literal. ">TRANS()</a> macro in the JUCE source code). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afaa3a94f9ca94eb11b519f734e2adc08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afaa3a94f9ca94eb11b519f734e2adc08">&#9670;&nbsp;</a></span>LocalisedStrings() <span class="overload">[1/3]</span></h2>
@@ -533,7 +532,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

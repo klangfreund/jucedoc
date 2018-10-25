@@ -8,6 +8,7 @@ var searchData=
   ['lastmididevices',['lastMidiDevices',['../classStandalonePluginHolder.html#a6495b714b1b911b9352da94e282efa2d',1,'StandalonePluginHolder']]],
   ['lastnonfullscreenbounds',['lastNonFullscreenBounds',['../classComponentPeer.html#a2aee1a16331876b88555838cd75caeda',1,'ComponentPeer']]],
   ['lastpitchwheelvalues',['lastPitchWheelValues',['../classSynthesiser.html#acceafe04420ce625e025e4a73c370ce4',1,'Synthesiser']]],
+  ['lastseen',['lastSeen',['../structNetworkServiceDiscovery_1_1Service.html#ad2e70cfd5386092dc69d6be8cf38a333',1,'NetworkServiceDiscovery::Service']]],
   ['lavender',['lavender',['../classColours.html#a42bdd3828e3e453f1aacd8e129d7ba4c',1,'Colours']]],
   ['lavenderblush',['lavenderblush',['../classColours.html#a189b1d3e8c5a8f324de759efc8325496',1,'Colours']]],
   ['lawngreen',['lawngreen',['../classColours.html#a1f203cbbc3766ae11fcd53fda4eb4812',1,'Colours']]],

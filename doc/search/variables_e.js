@@ -5,7 +5,7 @@ var searchData=
   ['oldlace',['oldlace',['../classColours.html#a8854bc208ff4c18d1359d48061801eed',1,'Colours']]],
   ['olive',['olive',['../classColours.html#afa863de7d2e3c645092e981ef4b47349',1,'Colours']]],
   ['olivedrab',['olivedrab',['../classColours.html#a470482f79ccbabc1cfe7c44e4123acfd',1,'Colours']]],
-  ['onchange',['onChange',['../classComboBox.html#a9cf2e20990541b9fbb539cd4a8e0ac4e',1,'ComboBox']]],
+  ['onchange',['onChange',['../structNetworkServiceDiscovery_1_1AvailableServiceList.html#a9b2c707bd1865b3676c46a25967ac7e5',1,'NetworkServiceDiscovery::AvailableServiceList::onChange()'],['../classComboBox.html#a9cf2e20990541b9fbb539cd4a8e0ac4e',1,'ComboBox::onChange()']]],
   ['onclick',['onClick',['../classButton.html#a30b76ab312dc7f66e67596ae20540ec2',1,'Button']]],
   ['ondefaultchange',['onDefaultChange',['../classValueWithDefault.html#aea515db1ed07e85ae99876623a4eada9',1,'ValueWithDefault']]],
   ['ondragend',['onDragEnd',['../classSlider.html#a9834a68453371d28a70cb9388529ab11',1,'Slider']]],

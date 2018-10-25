@@ -116,6 +116,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga10c79cf9cafd40244a741e5945878e79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__events-messages.html#ga10c79cf9cafd40244a741e5945878e79">START_JUCE_APPLICATION</a>(AppClass)</td></tr>
 <tr class="memdesc:ga10c79cf9cafd40244a741e5945878e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">To start a JUCE app, use this macro: START_JUCE_APPLICATION (AppSubClass) where AppSubClass is the name of a class derived from <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a> or <a class="el" href="classJUCEApplicationBase.html" title="Abstract base class for application classes. ">JUCEApplicationBase</a>.  <a href="#ga10c79cf9cafd40244a741e5945878e79">More...</a><br /></td></tr>
 <tr class="separator:ga10c79cf9cafd40244a741e5945878e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bb38b16ea145e2bb6b8b217a93d3052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__events-messages.html#ga2bb38b16ea145e2bb6b8b217a93d3052">JUCE_ASSERT_MESSAGE_MANAGER_IS_LOCKED</a>&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::existsAndIsLockedByCurrentThread());</td></tr>
+<tr class="memdesc:ga2bb38b16ea145e2bb6b8b217a93d3052"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to catch unsafe use of functions which expect to only be called on the message thread, or when a <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a> is in place.  <a href="#ga2bb38b16ea145e2bb6b8b217a93d3052">More...</a><br /></td></tr>
+<tr class="separator:ga2bb38b16ea145e2bb6b8b217a93d3052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2ae2032071a26beb5fb05a3745b8faf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__events-messages.html#gad2ae2032071a26beb5fb05a3745b8faf">JUCE_ASSERT_MESSAGE_THREAD</a>&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::existsAndIsCurrentThread());</td></tr>
+<tr class="memdesc:gad2ae2032071a26beb5fb05a3745b8faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to catch unsafe use of functions which expect to only be called on the message thread.  <a href="#gad2ae2032071a26beb5fb05a3745b8faf">More...</a><br /></td></tr>
+<tr class="separator:gad2ae2032071a26beb5fb05a3745b8faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f42cf2929930218a66aad06bb2d0a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__events-messages.html#ga9f42cf2929930218a66aad06bb2d0a43">JUCE_ASSERT_MESSAGE_MANAGER_EXISTS</a>&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::getInstanceWithoutCreating() != nullptr);</td></tr>
+<tr class="memdesc:ga9f42cf2929930218a66aad06bb2d0a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro is used to catch unsafe use of functions which expect to not be called outside the lifetime of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>.  <a href="#ga9f42cf2929930218a66aad06bb2d0a43">More...</a><br /></td></tr>
+<tr class="separator:ga9f42cf2929930218a66aad06bb2d0a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -196,6 +205,56 @@ Functions</h2></td></tr>
 
 <p>To start a JUCE app, use this macro: START_JUCE_APPLICATION (AppSubClass) where AppSubClass is the name of a class derived from <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a> or <a class="el" href="classJUCEApplicationBase.html" title="Abstract base class for application classes. ">JUCEApplicationBase</a>. </p>
 <p>See the <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a> and <a class="el" href="classJUCEApplicationBase.html" title="Abstract base class for application classes. ">JUCEApplicationBase</a> class documentation for more details. </p>
+
+</div>
+</div>
+<a id="ga2bb38b16ea145e2bb6b8b217a93d3052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bb38b16ea145e2bb6b8b217a93d3052">&#9670;&nbsp;</a></span>JUCE_ASSERT_MESSAGE_MANAGER_IS_LOCKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_ASSERT_MESSAGE_MANAGER_IS_LOCKED&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::existsAndIsLockedByCurrentThread());</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This macro is used to catch unsafe use of functions which expect to only be called on the message thread, or when a <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a> is in place. </p>
+<p>It will also fail if you try to use the function before the message manager has been created, which could happen if you accidentally invoke it during a static constructor. </p>
+
+</div>
+</div>
+<a id="gad2ae2032071a26beb5fb05a3745b8faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2ae2032071a26beb5fb05a3745b8faf">&#9670;&nbsp;</a></span>JUCE_ASSERT_MESSAGE_THREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_ASSERT_MESSAGE_THREAD&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::existsAndIsCurrentThread());</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This macro is used to catch unsafe use of functions which expect to only be called on the message thread. </p>
+<p>It will also fail if you try to use the function before the message manager has been created, which could happen if you accidentally invoke it during a static constructor. </p>
+
+</div>
+</div>
+<a id="ga9f42cf2929930218a66aad06bb2d0a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f42cf2929930218a66aad06bb2d0a43">&#9670;&nbsp;</a></span>JUCE_ASSERT_MESSAGE_MANAGER_EXISTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_ASSERT_MESSAGE_MANAGER_EXISTS&#160;&#160;&#160;<a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a> (juce::MessageManager::getInstanceWithoutCreating() != nullptr);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This macro is used to catch unsafe use of functions which expect to not be called outside the lifetime of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>. </p>
 
 </div>
 </div>
@@ -290,7 +349,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

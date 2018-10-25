@@ -205,8 +205,7 @@ Protected Attributes</h2></td></tr>
 <p>Then you can use the <a class="el" href="classSynthesiser.html#a0806a426d99a36367c714b7d433d4d4e" title="Adds a new voice to the synth. ">addVoice()</a> and <a class="el" href="classSynthesiser.html#ac76a3fe3505d18da550eddec5d151cab" title="Adds a new sound to the synthesiser. ">addSound()</a> methods to give the synthesiser a set of sounds, and a set of voices it can use to play them. If you only give it one voice it will be monophonic - the more voices it has, the more polyphony it'll have available.</p>
 <p>Then repeatedly call the <a class="el" href="classSynthesiser.html#a56b85b35ec0fbf296c58571ab5bc2ed8" title="Creates the next block of audio output. ">renderNextBlock()</a> method to produce the audio. Any midi events that go in will be scanned for note on/off messages, and these are used to start and stop the voices playing the appropriate sounds.</p>
 <p>While it's playing, you can also cause notes to be triggered by calling the <a class="el" href="classSynthesiser.html#a488dbf4f02973011c95656eefc1fb862" title="Triggers a note-on event. ">noteOn()</a>, <a class="el" href="classSynthesiser.html#af67d93a1499cbd875c6187cbd4add517" title="Triggers a note-off event. ">noteOff()</a> and other controller methods.</p>
-<p>Before rendering, be sure to call the <a class="el" href="classSynthesiser.html#ae0d6808e5a22bc3a56a68dab1f106ab8" title="Tells the synthesiser what the sample rate is for the audio it&#39;s being used to render. ">setCurrentPlaybackSampleRate()</a> to tell it what the target playback rate is. This value is passed on to the voices so that they can pitch their output correctly.</p>
-<p>{Audio} </p>
+<p>Before rendering, be sure to call the <a class="el" href="classSynthesiser.html#ae0d6808e5a22bc3a56a68dab1f106ab8" title="Tells the synthesiser what the sample rate is for the audio it&#39;s being used to render. ">setCurrentPlaybackSampleRate()</a> to tell it what the target playback rate is. This value is passed on to the voices so that they can pitch their output correctly. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c313d6f1fa875790e5c79dc621ee437"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c313d6f1fa875790e5c79dc621ee437">&#9670;&nbsp;</a></span>Synthesiser()</h2>
@@ -1624,7 +1623,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

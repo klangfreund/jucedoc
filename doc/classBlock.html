@@ -62,6 +62,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -139,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa09e9ff13441f8c6689acb398870c715"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType</a> () const =0</td></tr>
 <tr class="memdesc:aa09e9ff13441f8c6689acb398870c715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of this device.  <a href="#aa09e9ff13441f8c6689acb398870c715">More...</a><br /></td></tr>
 <tr class="separator:aa09e9ff13441f8c6689acb398870c715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6d6d45ac385e51e46d7fe8d0732a43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock</a> () const</td></tr>
+<tr class="memdesc:a3b6d6d45ac385e51e46d7fe8d0732a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this a control block.  <a href="#a3b6d6d45ac385e51e46d7fe8d0732a43">More...</a><br /></td></tr>
+<tr class="separator:a3b6d6d45ac385e51e46d7fe8d0732a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf4c5524d032bed6f4f9fe7ac42aac1"><td class="memItemLeft" align="right" valign="top">virtual juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a9bf4c5524d032bed6f4f9fe7ac42aac1">getDeviceDescription</a> () const =0</td></tr>
 <tr class="memdesc:a9bf4c5524d032bed6f4f9fe7ac42aac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a human-readable description of this device type.  <a href="#a9bf4c5524d032bed6f4f9fe7ac42aac1">More...</a><br /></td></tr>
 <tr class="separator:a9bf4c5524d032bed6f4f9fe7ac42aac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +182,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b5061298a0a23598edc5c204ff0458c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLEDGrid.html">LEDGrid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a6b5061298a0a23598edc5c204ff0458c">getLEDGrid</a> () const =0</td></tr>
 <tr class="memdesc:a6b5061298a0a23598edc5c204ff0458c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this block has a grid of LEDs, this will return an object to control it.  <a href="#a6b5061298a0a23598edc5c204ff0458c">More...</a><br /></td></tr>
 <tr class="separator:a6b5061298a0a23598edc5c204ff0458c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef05c2bacc416c450b9d4eeabf8d2d36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLEDRow.html">LEDRow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aef05c2bacc416c450b9d4eeabf8d2d36">getLEDRow</a> () const =0</td></tr>
-<tr class="memdesc:aef05c2bacc416c450b9d4eeabf8d2d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this block has a row of LEDs, this will return an object to control it.  <a href="#aef05c2bacc416c450b9d4eeabf8d2d36">More...</a><br /></td></tr>
-<tr class="separator:aef05c2bacc416c450b9d4eeabf8d2d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a2313ef84612f63b4e44c5b7e3e5e0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLEDRow.html">LEDRow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a77a2313ef84612f63b4e44c5b7e3e5e0">getLEDRow</a> ()=0</td></tr>
+<tr class="memdesc:a77a2313ef84612f63b4e44c5b7e3e5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this block has a row of LEDs, this will return an object to control it.  <a href="#a77a2313ef84612f63b4e44c5b7e3e5e0">More...</a><br /></td></tr>
+<tr class="separator:a77a2313ef84612f63b4e44c5b7e3e5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ba287c87d75f061eac4219df144e48"><td class="memItemLeft" align="right" valign="top">virtual juce::Array&lt; <a class="el" href="classStatusLight.html">StatusLight</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a89ba287c87d75f061eac4219df144e48">getStatusLights</a> () const =0</td></tr>
 <tr class="memdesc:a89ba287c87d75f061eac4219df144e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this block has any status LEDs, this will return an array of objects to control them.  <a href="#a89ba287c87d75f061eac4219df144e48">More...</a><br /></td></tr>
 <tr class="separator:a89ba287c87d75f061eac4219df144e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +297,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab20244f18141a5aea2f9c0c6696d2f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the block.  <a href="#ab20244f18141a5aea2f9c0c6696d2f1d">More...</a><br /></td></tr>
 <tr class="separator:ab20244f18141a5aea2f9c0c6696d2f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a581192a43eaf5c00b70115b474189b92"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a581192a43eaf5c00b70115b474189b92">isControlBlock</a> (<a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Block::Type</a>)</td></tr>
+<tr class="memdesc:a581192a43eaf5c00b70115b474189b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324" title="The different block types. ">Block::Type</a> is a control block.  <a href="#a581192a43eaf5c00b70115b474189b92">More...</a><br /></td></tr>
+<tr class="separator:a581192a43eaf5c00b70115b474189b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7d8d1dbd650aa0dad8c37b5b1efbed3e"><td class="memItemLeft" align="right" valign="top">const juce::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a7d8d1dbd650aa0dad8c37b5b1efbed3e">serialNumber</a></td></tr>
@@ -324,7 +334,6 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an individual BLOCKS device. </p>
-<p>{Blocks} </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab9125d8b89e8f6e121e6342ccfb96aec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9125d8b89e8f6e121e6342ccfb96aec">&#9670;&nbsp;</a></span>Ptr</h2>
@@ -576,7 +585,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Two blocks are considered equal if they have the same UID. </p>
 
-<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#aacdb47edd84a2dc54d05394771a80a07">getBlockAreaWithinLayout()</a>, <a class="el" href="classBlock.html#acc23b0d9ec2fb2c250a3b120da0dc337">getButtons()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#a9bf4c5524d032bed6f4f9fe7ac42aac1">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#a6b5061298a0a23598edc5c204ff0458c">getLEDGrid()</a>, <a class="el" href="classBlock.html#aef05c2bacc416c450b9d4eeabf8d2d36">getLEDRow()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#a74cf53cd8a93ea98115ff6f02a0dd011">getRotation()</a>, <a class="el" href="classBlock.html#a89ba287c87d75f061eac4219df144e48">getStatusLights()</a>, <a class="el" href="classBlock.html#aa70fa4170ec51dc2e78c0ff03fb12592">getTouchSurface()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>, and <a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">supportsGraphics()</a>.</p>
+<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#aacdb47edd84a2dc54d05394771a80a07">getBlockAreaWithinLayout()</a>, <a class="el" href="classBlock.html#acc23b0d9ec2fb2c250a3b120da0dc337">getButtons()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#a9bf4c5524d032bed6f4f9fe7ac42aac1">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#a6b5061298a0a23598edc5c204ff0458c">getLEDGrid()</a>, <a class="el" href="classBlock.html#a77a2313ef84612f63b4e44c5b7e3e5e0">getLEDRow()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#a74cf53cd8a93ea98115ff6f02a0dd011">getRotation()</a>, <a class="el" href="classBlock.html#a89ba287c87d75f061eac4219df144e48">getStatusLights()</a>, <a class="el" href="classBlock.html#aa70fa4170ec51dc2e78c0ff03fb12592">getTouchSurface()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>, and <a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">supportsGraphics()</a>.</p>
 
 </div>
 </div>
@@ -607,6 +616,55 @@ Protected Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324" title="The different block types. ">Block::Type</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
+
+</div>
+</div>
+<a id="a3b6d6d45ac385e51e46d7fe8d0732a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6d6d45ac385e51e46d7fe8d0732a43">&#9670;&nbsp;</a></span>isControlBlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Block::isControlBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this a control block. </p>
+
+<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
+
+</div>
+</div>
+<a id="a581192a43eaf5c00b70115b474189b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581192a43eaf5c00b70115b474189b92">&#9670;&nbsp;</a></span>isControlBlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Block::isControlBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Block::Type</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324" title="The different block types. ">Block::Type</a> is a control block. </p>
 
 </div>
 </div>
@@ -991,8 +1049,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aef05c2bacc416c450b9d4eeabf8d2d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef05c2bacc416c450b9d4eeabf8d2d36">&#9670;&nbsp;</a></span>getLEDRow()</h2>
+<a id="a77a2313ef84612f63b4e44c5b7e3e5e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a2313ef84612f63b4e44c5b7e3e5e0">&#9670;&nbsp;</a></span>getLEDRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1004,7 +1062,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">virtual <a class="el" href="classLEDRow.html">LEDRow</a>* Block::getLEDRow </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -2301,7 +2359,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

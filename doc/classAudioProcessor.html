@@ -502,8 +502,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class for audio processing classes or plugins. </p>
 <p>This is intended to act as a base class of audio processor that is general enough to be wrapped as a VST, AU, RTAS, etc, or used internally.</p>
 <p>It is also used by the plugin hosting code as the wrapper around an instance of a loaded plugin.</p>
-<p>You should derive your own class from this base class, and if you're building a plugin, you should implement a global function called createPluginFilter() which creates and returns a new instance of your subclass.</p>
-<p>{Audio} </p>
+<p>You should derive your own class from this base class, and if you're building a plugin, you should implement a global function called createPluginFilter() which creates and returns a new instance of your subclass. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a212c3670b59976559237cbf629af275f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a212c3670b59976559237cbf629af275f">&#9670;&nbsp;</a></span>ProcessingPrecision</h2>
@@ -2741,6 +2740,8 @@ template&lt;int numLayouts&gt; </div>
 <p>NOTE! This method will eventually be deprecated! It's recommended that you use <a class="el" href="classAudioProcessorParameter.html#a3db5e5efc6319dc21c837a7f479cc511" title="Returns the number of steps that this parameter&#39;s range should be quantised into. ...">AudioProcessorParameter::getNumSteps()</a> instead.</p>
 <dl class="section see"><dt>See also</dt><dd>getParameterNumSteps </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="classRangedAudioParameter.html#ad064a4b5a45dac60d8e8e4a26742273c">RangedAudioParameter::getNumSteps()</a>.</p>
+
 </div>
 </div>
 <a id="a90b1101204b40ab04f719f6716d9ca50"></a>
@@ -4126,7 +4127,7 @@ template&lt;int numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

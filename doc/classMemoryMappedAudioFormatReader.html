@@ -200,8 +200,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A specialised type of <a class="el" href="classAudioFormatReader.html" title="Reads samples from an audio file stream. ">AudioFormatReader</a> that uses a <a class="el" href="classMemoryMappedFile.html" title="Maps a file into virtual memory for easy reading and/or writing. ">MemoryMappedFile</a> to read directly from an audio file. </p>
 <p>This allows for incredibly fast random-access to sample data in the mapped region of the file, but not all audio formats support it - see <a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed" title="Attempts to create a MemoryMappedAudioFormatReader, if possible for this format. ">AudioFormat::createMemoryMappedReader()</a>.</p>
 <p>Note that before reading samples from a <a class="el" href="classMemoryMappedAudioFormatReader.html" title="A specialised type of AudioFormatReader that uses a MemoryMappedFile to read directly from an audio f...">MemoryMappedAudioFormatReader</a>, you must first call <a class="el" href="classMemoryMappedAudioFormatReader.html#a857ab88ffdc45bb42ca1468ce2b17e35" title="Attempts to map the entire file into memory. ">mapEntireFile()</a> or <a class="el" href="classMemoryMappedAudioFormatReader.html#a02cf933883633cf70fba6fc7abb08236" title="Attempts to map a section of the file into memory. ">mapSectionOfFile()</a> to ensure that the region you want to read has been mapped.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed" title="Attempts to create a MemoryMappedAudioFormatReader, if possible for this format. ">AudioFormat::createMemoryMappedReader</a>, <a class="el" href="classAudioFormatReader.html" title="Reads samples from an audio file stream. ">AudioFormatReader</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioFormat.html#a3f307a62245c7457877d934e2ff1ceed" title="Attempts to create a MemoryMappedAudioFormatReader, if possible for this format. ">AudioFormat::createMemoryMappedReader</a>, <a class="el" href="classAudioFormatReader.html" title="Reads samples from an audio file stream. ">AudioFormatReader</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a127960954592065ea578535aad801222"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a127960954592065ea578535aad801222">&#9670;&nbsp;</a></span>MemoryMappedAudioFormatReader()</h2>
@@ -723,7 +722,7 @@ template&lt;typename SampleType , typename Endianness &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

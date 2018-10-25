@@ -81,6 +81,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92323fdd01e6a249440adbca3bae5032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4581cca4a64904e295eb244c0a70bbc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArrayBase.html">ArrayBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayBase.html#a4581cca4a64904e295eb244c0a70bbc4">operator=</a> (<a class="el" href="classArrayBase.html">ArrayBase</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a4581cca4a64904e295eb244c0a70bbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac351030cf1c52513a19bba92eaf92c2e"><td class="memTemplParams" colspan="2">template&lt;class OtherElementType , class OtherCriticalSection , typename  = AllowConversion&lt;OtherElementType, OtherCriticalSection&gt;&gt; </td></tr>
+<tr class="memitem:ac351030cf1c52513a19bba92eaf92c2e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classArrayBase.html#ac351030cf1c52513a19bba92eaf92c2e">ArrayBase</a> (<a class="el" href="classArrayBase.html">ArrayBase</a>&lt; OtherElementType, OtherCriticalSection &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:ac351030cf1c52513a19bba92eaf92c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting move constructor.  <a href="#ac351030cf1c52513a19bba92eaf92c2e">More...</a><br /></td></tr>
+<tr class="separator:ac351030cf1c52513a19bba92eaf92c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81701bd9b8885db5132394b1c55fb88"><td class="memTemplParams" colspan="2">template&lt;class OtherElementType , class OtherCriticalSection , typename  = AllowConversion&lt;OtherElementType, OtherCriticalSection&gt;&gt; </td></tr>
+<tr class="memitem:aa81701bd9b8885db5132394b1c55fb88"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classArrayBase.html">ArrayBase</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classArrayBase.html#aa81701bd9b8885db5132394b1c55fb88">operator=</a> (<a class="el" href="classArrayBase.html">ArrayBase</a>&lt; OtherElementType, OtherCriticalSection &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:aa81701bd9b8885db5132394b1c55fb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting move assignment operator.  <a href="#aa81701bd9b8885db5132394b1c55fb88">More...</a><br /></td></tr>
+<tr class="separator:aa81701bd9b8885db5132394b1c55fb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1786df1dde4ba890d9a1fc7d1e7d51f9"><td class="memTemplParams" colspan="2">template&lt;class OtherArrayType &gt; </td></tr>
 <tr class="memitem:a1786df1dde4ba890d9a1fc7d1e7d51f9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classArrayBase.html#a1786df1dde4ba890d9a1fc7d1e7d51f9">operator==</a> (const OtherArrayType &amp;other) const noexcept</td></tr>
 <tr class="separator:a1786df1dde4ba890d9a1fc7d1e7d51f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,11 +163,10 @@ class ArrayBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</h3>
 <p>A basic object container. </p>
 <p>This class isn't really for public use - it's used by the other array classes, but might come in handy for some purposes.</p>
 <p>It inherits from a critical section class to allow the arrays to use the "empty base class optimisation" pattern to reduce their footprint.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArray.html" title="Holds a resizable array of primitive or copy-by-value objects. ">Array</a>, <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classReferenceCountedArray.html" title="Holds a list of objects derived from ReferenceCountedObject, or which implement basic reference-count...">ReferenceCountedArray</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b3cfd750addb52f1faef4ff45cba7c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b3cfd750addb52f1faef4ff45cba7c8">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3cfd750addb52f1faef4ff45cba7c8">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +212,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
 </div>
 </div>
 <a id="a92323fdd01e6a249440adbca3bae5032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92323fdd01e6a249440adbca3bae5032">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92323fdd01e6a249440adbca3bae5032">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,9 +239,42 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
 
 </div>
 </div>
+<a id="ac351030cf1c52513a19bba92eaf92c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac351030cf1c52513a19bba92eaf92c2e">&#9670;&nbsp;</a></span>ArrayBase() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
+<div class="memtemplate">
+template&lt;class OtherElementType , class OtherCriticalSection , typename  = AllowConversion&lt;OtherElementType, OtherCriticalSection&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArrayBase.html">ArrayBase</a>&lt; ElementType, TypeOfCriticalSectionToUse &gt;::<a class="el" href="classArrayBase.html">ArrayBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArrayBase.html">ArrayBase</a>&lt; OtherElementType, OtherCriticalSection &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting move constructor. </p>
+<p>Only enabled when the other array has a different type to this one. If you see a compile error here, it's probably because you're attempting a conversion that <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a> won't allow. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4581cca4a64904e295eb244c0a70bbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4581cca4a64904e295eb244c0a70bbc4">&#9670;&nbsp;</a></span>operator=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4581cca4a64904e295eb244c0a70bbc4">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +298,39 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa81701bd9b8885db5132394b1c55fb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81701bd9b8885db5132394b1c55fb88">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
+<div class="memtemplate">
+template&lt;class OtherElementType , class OtherCriticalSection , typename  = AllowConversion&lt;OtherElementType, OtherCriticalSection&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArrayBase.html">ArrayBase</a>&amp; <a class="el" href="classArrayBase.html">ArrayBase</a>&lt; ElementType, TypeOfCriticalSectionToUse &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArrayBase.html">ArrayBase</a>&lt; OtherElementType, OtherCriticalSection &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting move assignment operator. </p>
+<p>Only enabled when the other array has a different type to this one. If you see a compile error here, it's probably because you're attempting a conversion that <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a> won't allow. </p>
 
 </div>
 </div>
@@ -1107,7 +1180,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

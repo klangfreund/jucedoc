@@ -125,8 +125,7 @@ Static Public Member Functions</h2></td></tr>
 <li>call one of its browseFor.. methods</li>
 <li>if this returns true, the user has selected a file, so you can retrieve it with the <a class="el" href="classFileChooser.html#a0ece12c12985b388f4fe988cbccfade6" title="Returns the last file that was chosen by one of the browseFor methods. ">getResult()</a> method.</li>
 </ul>
-<p>e.g.</p><div class="fragment"><div class="line"><span class="keywordtype">void</span> loadMooseFile()</div><div class="line">{</div><div class="line">    <a class="code" href="classFileChooser.html">FileChooser</a> myChooser (<span class="stringliteral">&quot;Please select the moose you want to load...&quot;</span>,</div><div class="line">                           <a class="code" href="classFile.html#a2a4396bc0e6f8b0430f6f54d029899e5">File::getSpecialLocation</a> (<a class="code" href="classFile.html#a3e19cafabb03c5838160263a6e76313da8620eabc38cfbd921a52d10157463c5e">File::userHomeDirectory</a>),</div><div class="line">                           <span class="stringliteral">&quot;*.moose&quot;</span>);</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span> (myChooser.browseForFileToOpen())</div><div class="line">    {</div><div class="line">        <a class="code" href="classFile.html">File</a> mooseFile (myChooser.getResult());</div><div class="line"></div><div class="line">        loadMoose (mooseFile);</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p>{GUI} </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>e.g.</p><div class="fragment"><div class="line"><span class="keywordtype">void</span> loadMooseFile()</div><div class="line">{</div><div class="line">    <a class="code" href="classFileChooser.html">FileChooser</a> myChooser (<span class="stringliteral">&quot;Please select the moose you want to load...&quot;</span>,</div><div class="line">                           <a class="code" href="classFile.html#a2a4396bc0e6f8b0430f6f54d029899e5">File::getSpecialLocation</a> (<a class="code" href="classFile.html#a3e19cafabb03c5838160263a6e76313da8620eabc38cfbd921a52d10157463c5e">File::userHomeDirectory</a>),</div><div class="line">                           <span class="stringliteral">&quot;*.moose&quot;</span>);</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span> (myChooser.browseForFileToOpen())</div><div class="line">    {</div><div class="line">        <a class="code" href="classFile.html">File</a> mooseFile (myChooser.getResult());</div><div class="line"></div><div class="line">        loadMoose (mooseFile);</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afd55c3c97c97e23a0b18818156dfb71c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd55c3c97c97e23a0b18818156dfb71c">&#9670;&nbsp;</a></span>FileChooser()</h2>
 
@@ -563,7 +562,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

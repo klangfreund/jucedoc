@@ -144,8 +144,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="classAudioFormat.html" title="Subclasses of AudioFormat are used to read and write different audio file formats. ">AudioFormat</a> class which can use an installed version of the LAME mp3 encoder to encode a file. </p>
 <p>This format can't read MP3s, it just writes them. Internally, the <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object that is returned writes the incoming audio data to a temporary WAV file, and then when the writer is deleted, it invokes the LAME executable to convert the data to an MP3, whose data is then piped into the original <a class="el" href="classOutputStream.html" title="The base class for streams that write data to some kind of destination. ">OutputStream</a> that was used when first creating the writer.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioFormat.html" title="Subclasses of AudioFormat are used to read and write different audio file formats. ">AudioFormat</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioFormat.html" title="Subclasses of AudioFormat are used to read and write different audio file formats. ">AudioFormat</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a92122ede38e85507553663faa3f85e57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92122ede38e85507553663faa3f85e57">&#9670;&nbsp;</a></span>LAMEEncoderAudioFormat()</h2>
@@ -525,7 +524,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

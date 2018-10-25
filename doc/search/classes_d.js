@@ -8,6 +8,7 @@ var searchData=
   ['nativeimagetype',['NativeImageType',['../classNativeImageType.html',1,'']]],
   ['nativemessagebox',['NativeMessageBox',['../classNativeMessageBox.html',1,'']]],
   ['naturalfilecomparator',['NaturalFileComparator',['../structFile_1_1NaturalFileComparator.html',1,'File']]],
+  ['networkservicediscovery',['NetworkServiceDiscovery',['../structNetworkServiceDiscovery.html',1,'']]],
   ['newline',['NewLine',['../classNewLine.html',1,'']]],
   ['node',['Node',['../classAudioProcessorGraph_1_1Node.html',1,'AudioProcessorGraph']]],
   ['nodeandchannel',['NodeAndChannel',['../structAudioProcessorGraph_1_1NodeAndChannel.html',1,'AudioProcessorGraph']]],

@@ -148,7 +148,7 @@ var searchData=
   ['fromfrustum',['fromFrustum',['../classMatrix3D.html#af40888ae716dfc6db996412e4322773c',1,'Matrix3D']]],
   ['fromhsv',['fromHSV',['../classColour.html#a34cee4195baff72c95a9c99148acf6c2',1,'Colour']]],
   ['fromint32',['fromInt32',['../structOSCColour.html#aefe497b8d6811d7855b6a28922261741',1,'OSCColour']]],
-  ['fromiso8601',['fromISO8601',['../classTime.html#a3e1afd8d41f4072e207eb548ef9e59a5',1,'Time']]],
+  ['fromiso8601',['fromISO8601',['../classTime.html#af98978e0bd58d39a7f6aab2c40088d2c',1,'Time']]],
   ['fromlastoccurrenceof',['fromLastOccurrenceOf',['../classString.html#a9cd6dcd4536d1ecbc8fe6a954c946ad5',1,'String']]],
   ['fromlines',['fromLines',['../classStringArray.html#aa65070cc0eda93b9ebb7da2b1325781b',1,'StringArray']]],
   ['fromnative',['fromNative',['../structdsp_1_1SIMDRegister.html#af3d34b98f35c7a68ba3b0593a8263cd1',1,'dsp::SIMDRegister']]],

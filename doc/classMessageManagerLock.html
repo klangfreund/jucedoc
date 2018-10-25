@@ -95,8 +95,7 @@ Public Member Functions</h2></td></tr>
 <p>Because it's not thread-safe to call any of the <a class="el" href="classComponent.html" title="The base class for all JUCE user-interface objects. ">Component</a> or other UI classes from threads other than the message thread, one of these objects can be used to lock the message loop and allow this to be done. The message thread will be suspended for the lifetime of the <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a> object, so create one on the stack like this:</p><div class="fragment"><div class="line"><span class="keywordtype">void</span> MyThread::run()</div><div class="line">{</div><div class="line">    someData = 1234;</div><div class="line"></div><div class="line">    <span class="keyword">const</span> <a class="code" href="classMessageManagerLock.html">MessageManagerLock</a> mmLock;</div><div class="line">    <span class="comment">// the event loop will now be locked so it&#39;s safe to make a few calls..</span></div><div class="line"></div><div class="line">    myComponent-&gt;setBounds (newBounds);</div><div class="line">    myComponent-&gt;repaint();</div><div class="line"></div><div class="line">    <span class="comment">// ..the event loop will now be unlocked as the MessageManagerLock goes out of scope</span></div><div class="line">}</div></div><!-- fragment --><p>Obviously be careful not to create one of these and leave it lying around, or your app will grind to a halt!</p>
 <p>MessageManagerLocks are re-entrant, so can be safely nested if the current thread already has the lock.</p>
 <p>Another caveat is that using this in conjunction with other CriticalSections can create lots of interesting ways of producing a deadlock! In particular, if your message thread calls stopThread() for a thread that uses these locks, you'll get an (occasional) deadlock..</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, <a class="el" href="classMessageManager.html#aebd4b8896d7b6bdfa34d3cd8eb2e1777" title="Returns true if the caller thread has currently got the message manager locked. ">MessageManager::currentThreadHasLockedMessageManager</a></dd></dl>
-<p>{Events} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, <a class="el" href="classMessageManager.html#aebd4b8896d7b6bdfa34d3cd8eb2e1777" title="Returns true if the caller thread has currently got the message manager locked. ">MessageManager::currentThreadHasLockedMessageManager</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a294fab36d4e9fe48cc2b52b36974111c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a294fab36d4e9fe48cc2b52b36974111c">&#9670;&nbsp;</a></span>MessageManagerLock() <span class="overload">[1/2]</span></h2>
@@ -208,7 +207,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

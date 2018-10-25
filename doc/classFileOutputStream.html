@@ -180,8 +180,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An output stream that writes into a local file. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOutputStream.html" title="The base class for streams that write data to some kind of destination. ">OutputStream</a>, <a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a>, <a class="el" href="classFile.html#ac8db7b5cd2ccde94b1299da3bfd11d46" title="Creates a stream to write to this file. ">File::createOutputStream</a></dd></dl>
-<p>{Core} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOutputStream.html" title="The base class for streams that write data to some kind of destination. ">OutputStream</a>, <a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a>, <a class="el" href="classFile.html#ac8db7b5cd2ccde94b1299da3bfd11d46" title="Creates a stream to write to this file. ">File::createOutputStream</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab324bca74c6f7cc5c9180302daa7497f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab324bca74c6f7cc5c9180302daa7497f">&#9670;&nbsp;</a></span>FileOutputStream()</h2>
@@ -211,8 +210,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Creates a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a>. </p>
 <p>If the file doesn't exist, it will first be created. If the file can't be created or opened (for example, because the parent directory of the file does not exist), the <a class="el" href="classFileOutputStream.html#a616887c2791a85e35f00b6e38436d4be" title="Returns true if the stream couldn&#39;t be opened for some reason. ">failedToOpen()</a> method will return true.</p>
-<p>If the file already exists when opened, the stream's write-position will be set to the end of the file. To overwrite an existing file, use <a class="el" href="classFile.html#adc64f67a869db306afd65a67758e5a3e" title="Deletes a file. ">File::deleteFile()</a> before opening the stream, or use setPosition(0) after it's opened (although this won't truncate the file).</p>
-<p>Destroying a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> object does not force the operating system to write the buffered data to disk immediately. If this is required you should call <a class="el" href="classFileOutputStream.html#afc63785b8744278d51814c4892207414" title="If the stream is using a buffer, this will ensure it gets written out to the destination. ">flush()</a> before triggering the destructor.</p>
+<p>If the file already exists when opened, the stream's write-position will be set to the end of the file. To overwrite an existing file, you can truncate it like this:</p>
+<div class="fragment"><div class="line"><a class="code" href="classFileOutputStream.html">FileOutputStream</a> stream (file);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (stream.openedOk())</div><div class="line">{</div><div class="line">    stream.setPosition (0);</div><div class="line">    stream.truncate();</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>Destroying a <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> object does not force the operating system to write the buffered data to disk immediately. If this is required you should call <a class="el" href="classFileOutputStream.html#afc63785b8744278d51814c4892207414" title="If the stream is using a buffer, this will ensure it gets written out to the destination. ">flush()</a> before triggering the destructor.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classTemporaryFile.html" title="Manages a temporary file, which will be deleted when this object is deleted. ">TemporaryFile</a> </dd></dl>
 
 </div>
@@ -549,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

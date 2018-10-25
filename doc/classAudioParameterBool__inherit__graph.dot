@@ -5,7 +5,9 @@ digraph "AudioParameterBool"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="AudioParameterBool",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="AudioProcessorParameterWithID",height=0.2,width=0.4,color="black",URL="$classAudioProcessorParameterWithID.html",tooltip="This abstract base class is used by some AudioProcessorParameter helper classes. "];
+  Node1 [label="RangedAudioParameter",height=0.2,width=0.4,color="black",URL="$classRangedAudioParameter.html",tooltip="This abstract base class is used by some AudioProcessorParameter helper classes. "];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="AudioProcessorParameter",height=0.2,width=0.4,color="black",URL="$classAudioProcessorParameter.html",tooltip="An abstract base class for parameter objects that can be added to an AudioProcessor. "];
+  Node2 [label="AudioProcessorParameterWithID",height=0.2,width=0.4,color="black",URL="$classAudioProcessorParameterWithID.html",tooltip="This abstract base class is used by some AudioProcessorParameter helper classes. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AudioProcessorParameter",height=0.2,width=0.4,color="black",URL="$classAudioProcessorParameter.html",tooltip="An abstract base class for parameter objects that can be added to an AudioProcessor. "];
 }

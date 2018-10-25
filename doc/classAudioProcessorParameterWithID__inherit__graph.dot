@@ -7,11 +7,15 @@ digraph "AudioProcessorParameterWithID"
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 [label="AudioProcessorParameter",height=0.2,width=0.4,color="black",URL="$classAudioProcessorParameter.html",tooltip="An abstract base class for parameter objects that can be added to an AudioProcessor. "];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="AudioParameterBool",height=0.2,width=0.4,color="black",URL="$classAudioParameterBool.html",tooltip="Provides a class of AudioProcessorParameter that can be used as a boolean value. "];
-  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="AudioParameterChoice",height=0.2,width=0.4,color="black",URL="$classAudioParameterChoice.html",tooltip="Provides a class of AudioProcessorParameter that can be used to select an indexed, named choice from a list. "];
-  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="AudioParameterFloat",height=0.2,width=0.4,color="black",URL="$classAudioParameterFloat.html",tooltip="A subclass of AudioProcessorParameter that provides an easy way to create a parameter which maps onto..."];
-  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="AudioParameterInt",height=0.2,width=0.4,color="black",URL="$classAudioParameterInt.html",tooltip="Provides a class of AudioProcessorParameter that can be used as an integer value with a given range..."];
+  Node2 [label="RangedAudioParameter",height=0.2,width=0.4,color="black",URL="$classRangedAudioParameter.html",tooltip="This abstract base class is used by some AudioProcessorParameter helper classes. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AudioParameterBool",height=0.2,width=0.4,color="black",URL="$classAudioParameterBool.html",tooltip="Provides a class of AudioProcessorParameter that can be used as a boolean value. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AudioParameterChoice",height=0.2,width=0.4,color="black",URL="$classAudioParameterChoice.html",tooltip="Provides a class of AudioProcessorParameter that can be used to select an indexed, named choice from a list. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AudioParameterFloat",height=0.2,width=0.4,color="black",URL="$classAudioParameterFloat.html",tooltip="A subclass of AudioProcessorParameter that provides an easy way to create a parameter which maps onto..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AudioProcessorValueTreeState\l::Parameter",height=0.2,width=0.4,color="black",URL="$classAudioProcessorValueTreeState_1_1Parameter.html",tooltip="A parameter class that maintains backwards compatibility with deprecated AudioProcessorValueTreeState..."];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AudioParameterInt",height=0.2,width=0.4,color="black",URL="$classAudioParameterInt.html",tooltip="Provides a class of AudioProcessorParameter that can be used as an integer value with a given range..."];
 }

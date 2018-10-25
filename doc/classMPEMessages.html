@@ -114,8 +114,7 @@ Static Public Attributes</h2></td></tr>
 <p>You can then send them to your MPE device using <a class="el" href="classMidiOutput.html#ae54072205364d56260eaa11c7771289f" title="Sends out a sequence of MIDI messages immediately. ">MidiOutput::sendBlockOfMessagesNow</a>.</p>
 <p>All other MPE messages like per-note pitchbend, pressure, and third dimension, are ordinary MIDI messages that should be created using the <a class="el" href="classMidiMessage.html" title="Encapsulates a MIDI message. ">MidiMessage</a> class instead. You just need to take care to send them to the appropriate per-note MIDI channel.</p>
 <p>Note: If you are working with an <a class="el" href="classMPEZoneLayout.html" title="This class represents the current MPE zone layout of a device capable of handling MPE...">MPEZoneLayout</a> object inside your app, you should not use the message sequences provided here. Instead, you should change the zone layout programmatically with the member functions provided in the <a class="el" href="classMPEZoneLayout.html" title="This class represents the current MPE zone layout of a device capable of handling MPE...">MPEZoneLayout</a> class itself. You should also make sure that the Expressive MIDI zone layout of your C++ code and of the MPE device are kept in sync.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiMessage.html" title="Encapsulates a MIDI message. ">MidiMessage</a>, <a class="el" href="classMPEZoneLayout.html" title="This class represents the current MPE zone layout of a device capable of handling MPE...">MPEZoneLayout</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiMessage.html" title="Encapsulates a MIDI message. ">MidiMessage</a>, <a class="el" href="classMPEZoneLayout.html" title="This class represents the current MPE zone layout of a device capable of handling MPE...">MPEZoneLayout</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5725b687a5b543c52bdb46f72906c649"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5725b687a5b543c52bdb46f72906c649">&#9670;&nbsp;</a></span>setLowerZone()</h2>
@@ -459,7 +458,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

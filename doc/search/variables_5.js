@@ -35,6 +35,7 @@ var searchData=
   ['f7key',['F7Key',['../classKeyPress.html#a1600c88c7f1d109d1c098b89ed399eb7',1,'KeyPress']]],
   ['f8key',['F8Key',['../classKeyPress.html#a33c505fcea9f343a0682ea8b9ac38361',1,'KeyPress']]],
   ['f9key',['F9Key',['../classKeyPress.html#ab2826f73bf6f9851a03908984e9ef85a',1,'KeyPress']]],
+  ['factoroversampling',['factorOversampling',['../classdsp_1_1Oversampling.html#ac9c8f562dc19e0eb36a95c99dbfaabd5',1,'dsp::Oversampling']]],
   ['failures',['failures',['../structUnitTestRunner_1_1TestResult.html#aedbec24cdf2ccef537a994d18995a85c',1,'UnitTestRunner::TestResult']]],
   ['fastforwardkey',['fastForwardKey',['../classKeyPress.html#a5818ad479163ff4ee7d191b5c125a5ab',1,'KeyPress']]],
   ['file',['file',['../classMemoryMappedAudioFormatReader.html#ac4bebf9682f216abaf97e74ac3662c33',1,'MemoryMappedAudioFormatReader']]],

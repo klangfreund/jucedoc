@@ -98,8 +98,7 @@ Public Member Functions</h2></td></tr>
 <p>The <a class="el" href="classChildProcessSlave.html" title="Acts as the slave end of a master/slave pair of connected processes. ">ChildProcessSlave</a> and <a class="el" href="classChildProcessMaster.html" title="Acts as the master in a master/slave pair of connected processes. ">ChildProcessMaster</a> classes make it easy for an app to spawn a child process, and to manage a 2-way messaging connection to control it.</p>
 <p>To use the system, you need to create subclasses of both <a class="el" href="classChildProcessSlave.html" title="Acts as the slave end of a master/slave pair of connected processes. ">ChildProcessSlave</a> and <a class="el" href="classChildProcessMaster.html" title="Acts as the master in a master/slave pair of connected processes. ">ChildProcessMaster</a>. When you want your master process to launch the slave, you just call <a class="el" href="classChildProcessMaster.html#a1ff992de676f73bba4d9fd77ccbbbf90" title="Attempts to launch and connect to a slave process. ">launchSlaveProcess()</a>, and it'll attempt to launch the executable that you specify (which may be the same exe), and assuming it has been set-up to correctly parse the command-line parameters (see <a class="el" href="classChildProcessSlave.html" title="Acts as the slave end of a master/slave pair of connected processes. ">ChildProcessSlave</a>) then a two-way connection will be created.</p>
 <p>The juce demo app has a good example of this class in action.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classChildProcessSlave.html" title="Acts as the slave end of a master/slave pair of connected processes. ">ChildProcessSlave</a>, <a class="el" href="classInterprocessConnection.html" title="Manages a simple two-way messaging connection to another process, using either a socket or a named pi...">InterprocessConnection</a>, <a class="el" href="classChildProcess.html" title="Launches and monitors a child process. ">ChildProcess</a></dd></dl>
-<p>{Events} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classChildProcessSlave.html" title="Acts as the slave end of a master/slave pair of connected processes. ">ChildProcessSlave</a>, <a class="el" href="classInterprocessConnection.html" title="Manages a simple two-way messaging connection to another process, using either a socket or a named pi...">InterprocessConnection</a>, <a class="el" href="classChildProcess.html" title="Launches and monitors a child process. ">ChildProcess</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2ac2f078c51af01a6a2b09e39cae0d61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ac2f078c51af01a6a2b09e39cae0d61">&#9670;&nbsp;</a></span>ChildProcessMaster()</h2>
@@ -300,7 +299,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

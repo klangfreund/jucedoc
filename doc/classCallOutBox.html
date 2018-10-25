@@ -707,8 +707,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A box with a small arrow that can be used as a temporary pop-up window to show extra controls when a button or other component is clicked. </p>
 <p>Using one of these is similar to having a popup menu attached to a button or other component - but it looks fancier, and has an arrow that can indicate the object that it applies to.</p>
 <p>The class works best when shown modally, but obviously running modal loops is evil and must never be done, so the launchAsynchronously method is provided as a handy way of launching an instance of a <a class="el" href="classCallOutBox.html" title="A box with a small arrow that can be used as a temporary pop-up window to show extra controls when a ...">CallOutBox</a> and automatically managing its lifetime, e.g.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="classComponent.html#a9ef1d5efbd2b9c581c59ad75fb574fd4">mouseUp</a> (<span class="keyword">const</span> <a class="code" href="classMouseEvent.html">MouseEvent</a>&amp;)</div><div class="line">{</div><div class="line">    FoobarContentComp* content = <span class="keyword">new</span> FoobarContentComp();</div><div class="line">    content-&gt;setSize (300, 300);</div><div class="line"></div><div class="line">    <a class="code" href="classCallOutBox.html">CallOutBox</a>&amp; myBox</div><div class="line">        = <a class="code" href="classCallOutBox.html#aa3f502eb2c57bf098d80800061b6f7f9">CallOutBox::launchAsynchronously</a> (content, <a class="code" href="classComponent.html#a539c92d534e551bc40c721fca4b0cea8">getScreenBounds</a>(), <span class="keyword">nullptr</span>);</div><div class="line">}</div></div><!-- fragment --><p>The call-out will resize and position itself when the content changes size.</p>
-<p>{GUI} </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="classComponent.html#a9ef1d5efbd2b9c581c59ad75fb574fd4">mouseUp</a> (<span class="keyword">const</span> <a class="code" href="classMouseEvent.html">MouseEvent</a>&amp;)</div><div class="line">{</div><div class="line">    FoobarContentComp* content = <span class="keyword">new</span> FoobarContentComp();</div><div class="line">    content-&gt;setSize (300, 300);</div><div class="line"></div><div class="line">    <a class="code" href="classCallOutBox.html">CallOutBox</a>&amp; myBox</div><div class="line">        = <a class="code" href="classCallOutBox.html#aa3f502eb2c57bf098d80800061b6f7f9">CallOutBox::launchAsynchronously</a> (content, <a class="code" href="classComponent.html#a539c92d534e551bc40c721fca4b0cea8">getScreenBounds</a>(), <span class="keyword">nullptr</span>);</div><div class="line">}</div></div><!-- fragment --><p>The call-out will resize and position itself when the content changes size. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae980cf351173504ba3ef3438b1b8282e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae980cf351173504ba3ef3438b1b8282e">&#9670;&nbsp;</a></span>CallOutBox()</h2>
@@ -1197,7 +1196,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

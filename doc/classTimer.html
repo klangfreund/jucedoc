@@ -124,8 +124,7 @@ Protected Member Functions</h2></td></tr>
 <p>A <a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a>'s <a class="el" href="classTimer.html#a8adc40ca0fb4170737ba12e30481b9d8" title="The user-defined callback routine that actually gets called periodically. ">timerCallback()</a> method will be repeatedly called at a given interval. When you create a <a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a> object, it will do nothing until the <a class="el" href="classTimer.html#a3b1a51ac348c56a55fcef4570214f057" title="Starts the timer and sets the length of interval required. ">startTimer()</a> method is called, which will cause the message thread to start making callbacks at the specified interval, until <a class="el" href="classTimer.html#ab918b8c1f80bf1de92dd1a5878f498bd" title="Stops the timer. ">stopTimer()</a> is called or the object is deleted.</p>
 <p>The time interval isn't guaranteed to be precise to any more than maybe 10-20ms, and the intervals may end up being much longer than requested if the system is busy. Because the callbacks are made by the main message thread, anything that blocks the message queue for a period of time will also prevent any timers from running until it can carry on.</p>
 <p>If you need to have a single callback that is shared by multiple timers with different frequencies, then the <a class="el" href="classMultiTimer.html" title="A type of timer class that can run multiple timers with different frequencies, all of which share a s...">MultiTimer</a> class allows you to do that - its structure is very similar to the <a class="el" href="classTimer.html" title="Makes repeated callbacks to a virtual method at a specified time interval. ">Timer</a> class, but contains multiple timers internally, each one identified by an ID number.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classHighResolutionTimer.html" title="A high-resolution periodic timer. ">HighResolutionTimer</a>, <a class="el" href="classMultiTimer.html" title="A type of timer class that can run multiple timers with different frequencies, all of which share a s...">MultiTimer</a></dd></dl>
-<p>{Events} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classHighResolutionTimer.html" title="A high-resolution periodic timer. ">HighResolutionTimer</a>, <a class="el" href="classMultiTimer.html" title="A type of timer class that can run multiple timers with different frequencies, all of which share a s...">MultiTimer</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3d18ff196960cc65f19ff5452ece31db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d18ff196960cc65f19ff5452ece31db">&#9670;&nbsp;</a></span>Timer() <span class="overload">[1/2]</span></h2>
@@ -472,7 +471,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

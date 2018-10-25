@@ -246,8 +246,7 @@ Static Public Member Functions</h2></td></tr>
 class dsp::AudioBlock&lt; SampleType &gt;</h3>
 
 <p>Minimal and lightweight data-structure which contains a list of pointers to channels containing some kind of sample data. </p>
-<p>This class doesn't own any of the data which it points to, it's simply a view into data that is owned elsewhere. You can construct one from some raw data that you've allocated yourself, or give it a <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a> to use, or give it an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a> which it can refer to, but in all cases the user is responsible for making sure that the data doesn't get deleted while there's still an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> using it.</p>
-<p>{DSP} </p>
+<p>This class doesn't own any of the data which it points to, it's simply a view into data that is owned elsewhere. You can construct one from some raw data that you've allocated yourself, or give it a <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a> to use, or give it an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a> which it can refer to, but in all cases the user is responsible for making sure that the data doesn't get deleted while there's still an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> using it. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a685ac5e06593b78db6db78edd76ccce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a685ac5e06593b78db6db78edd76ccce5">&#9670;&nbsp;</a></span>NumericType</h2>
@@ -2241,7 +2240,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

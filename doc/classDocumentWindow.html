@@ -884,8 +884,7 @@ Additional Inherited Members</h2></td></tr>
 <p>All the methods available to a <a class="el" href="classResizableWindow.html" title="A base class for top-level windows that can be dragged around and resized. ">ResizableWindow</a> are also available to this, so it can easily be made resizable, minimised, maximised, etc.</p>
 <p>It's not advisable to add child components directly to a <a class="el" href="classDocumentWindow.html" title="A resizable window with a title bar and maximise, minimise and close buttons. ">DocumentWindow</a>: put them inside your content component instead. And overriding methods like <a class="el" href="classResizableWindow.html#ae42aa18209b1d14e8441dce5b991cb07" title="(if overriding this, make sure you call ResizableWindow::resized() in your subclass) ...">resized()</a>, <a class="el" href="classResizableWindow.html#acfb2ced15e476e78f9a71b0214414798" title="(if overriding this, make sure you call ResizableWindow::moved() in your subclass) ...">moved()</a>, etc is also not recommended - instead override these methods for your content component. (If for some obscure reason you do need to override these methods, always remember to call the super-class's <a class="el" href="classResizableWindow.html#ae42aa18209b1d14e8441dce5b991cb07" title="(if overriding this, make sure you call ResizableWindow::resized() in your subclass) ...">resized()</a> method too, otherwise it'll fail to lay out the window decorations correctly).</p>
 <p>You can also automatically add a menu bar to the window, using the <a class="el" href="classDocumentWindow.html#a4a808defbae48839786354a350eaf7ea" title="Creates a menu inside this window. ">setMenuBar()</a> method.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classResizableWindow.html" title="A base class for top-level windows that can be dragged around and resized. ">ResizableWindow</a>, <a class="el" href="classDialogWindow.html" title="A dialog-box style window. ">DialogWindow</a></dd></dl>
-<p>{GUI} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classResizableWindow.html" title="A base class for top-level windows that can be dragged around and resized. ">ResizableWindow</a>, <a class="el" href="classDialogWindow.html" title="A dialog-box style window. ">DialogWindow</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a104d68bc145157c6ce79169a36fc3c31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a104d68bc145157c6ce79169a36fc3c31">&#9670;&nbsp;</a></span>TitleBarButtons</h2>
@@ -1421,7 +1420,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -131,14 +131,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3ed7c9a9885eba962cca454552b2902"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMessageManager.html#ac3ed7c9a9885eba962cca454552b2902">callAsync</a> (FunctionType functionToCall)</td></tr>
 <tr class="memdesc:ac3ed7c9a9885eba962cca454552b2902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously invokes a function or C++11 lambda on the message thread.  <a href="#ac3ed7c9a9885eba962cca454552b2902">More...</a><br /></td></tr>
 <tr class="separator:ac3ed7c9a9885eba962cca454552b2902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1711d0739f9de9e9a66cbde5b43632"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#afe1711d0739f9de9e9a66cbde5b43632">existsAndIsLockedByCurrentThread</a> () noexcept</td></tr>
+<tr class="memdesc:afe1711d0739f9de9e9a66cbde5b43632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there's an instance of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, and if the current thread has the lock on it.  <a href="#afe1711d0739f9de9e9a66cbde5b43632">More...</a><br /></td></tr>
+<tr class="separator:afe1711d0739f9de9e9a66cbde5b43632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8effde7ef935b4881b3bd09d7a6169f9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a8effde7ef935b4881b3bd09d7a6169f9">existsAndIsCurrentThread</a> () noexcept</td></tr>
+<tr class="memdesc:a8effde7ef935b4881b3bd09d7a6169f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there's an instance of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, and if the current thread is running it.  <a href="#a8effde7ef935b4881b3bd09d7a6169f9">More...</a><br /></td></tr>
+<tr class="separator:a8effde7ef935b4881b3bd09d7a6169f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a252262c8bfe857ea77fe4e7b4b42ae80">broadcastMessage</a> (const <a class="el" href="classString.html">String</a> &amp;messageText)</td></tr>
 <tr class="memdesc:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to all other JUCE applications that are running.  <a href="#a252262c8bfe857ea77fe4e7b4b42ae80">More...</a><br /></td></tr>
 <tr class="separator:a252262c8bfe857ea77fe4e7b4b42ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is in charge of the application's event-dispatch loop. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html" title="The base class for objects that can be sent to a MessageListener. ">Message</a>, <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a>, <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a>, <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a>, <a class="el" href="classJUCEApplicationBase.html" title="Abstract base class for application classes. ">JUCEApplicationBase</a></dd></dl>
-<p>{Events} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html" title="The base class for objects that can be sent to a MessageListener. ">Message</a>, <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a>, <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a>, <a class="el" href="classJUCEApplication.html" title="An instance of this class is used to specify initialisation and shutdown code for the application...">JUCEApplication</a>, <a class="el" href="classJUCEApplicationBase.html" title="Abstract base class for application classes. ">JUCEApplicationBase</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aea95a541b6660b7cdcc79b675879f35d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea95a541b6660b7cdcc79b675879f35d">&#9670;&nbsp;</a></span>getInstance()</h2>
@@ -487,6 +492,60 @@ template&lt;typename FunctionType &gt; </div>
 
 </div>
 </div>
+<a id="afe1711d0739f9de9e9a66cbde5b43632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1711d0739f9de9e9a66cbde5b43632">&#9670;&nbsp;</a></span>existsAndIsLockedByCurrentThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool MessageManager::existsAndIsLockedByCurrentThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there's an instance of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, and if the current thread has the lock on it. </p>
+
+</div>
+</div>
+<a id="a8effde7ef935b4881b3bd09d7a6169f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8effde7ef935b4881b3bd09d7a6169f9">&#9670;&nbsp;</a></span>existsAndIsCurrentThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool MessageManager::existsAndIsCurrentThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there's an instance of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, and if the current thread is running it. </p>
+
+</div>
+</div>
 <a id="a252262c8bfe857ea77fe4e7b4b42ae80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a252262c8bfe857ea77fe4e7b4b42ae80">&#9670;&nbsp;</a></span>broadcastMessage()</h2>
 
@@ -570,7 +629,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -759,8 +759,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Your subclass's constructor must add some strings to the choices <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a> and these are shown in the list.</p>
 <p>The <a class="el" href="classChoicePropertyComponent.html#ad75197be393ddafe12d5a9172ad45812" title="Returns the index of the item that should currently be shown. ">getIndex()</a> method will be called to find out which option is the currently selected one. If you call <a class="el" href="classChoicePropertyComponent.html#a58f78f0a2820920be803a0513fbe961d">refresh()</a> it will call <a class="el" href="classChoicePropertyComponent.html#ad75197be393ddafe12d5a9172ad45812" title="Returns the index of the item that should currently be shown. ">getIndex()</a> to check whether the value has changed, and will update the combo box if needed.</p>
 <p>If the user selects a different item from the list, <a class="el" href="classChoicePropertyComponent.html#a96cc058a27b803f9fe954040c57951ec" title="Called when the user selects an item from the combo box. ">setIndex()</a> will be called to let your class process this.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyComponent.html" title="A base class for a component that goes in a PropertyPanel and displays one of an item&#39;s properties...">PropertyComponent</a>, <a class="el" href="classPropertyPanel.html" title="A panel that holds a list of PropertyComponent objects. ">PropertyPanel</a></dd></dl>
-<p>{GUI} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyComponent.html" title="A base class for a component that goes in a PropertyPanel and displays one of an item&#39;s properties...">PropertyComponent</a>, <a class="el" href="classPropertyPanel.html" title="A panel that holds a list of PropertyComponent objects. ">PropertyPanel</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c81bdfd97932a807b7f055dd9ef145b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c81bdfd97932a807b7f055dd9ef145b">&#9670;&nbsp;</a></span>ChoicePropertyComponent() <span class="overload">[1/4]</span></h2>
@@ -885,7 +884,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This will add an item to the <a class="el" href="classComboBox.html" title="A component that lets the user choose from a drop-down list of choices. ">ComboBox</a> for the default value with an ID of -1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">valueToControl</td><td>the <a class="el" href="classValueWithDefault.html" title="This class acts as a wrapper around a property inside a ValueTree. ">ValueWithDefault</a> object that contains the <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object that the combo box will read and control </td></tr>
+    <tr><td class="paramname">valueToControl</td><td>the <a class="el" href="classValueWithDefault.html" title="This class acts as a wrapper around a property inside a ValueTree. ">ValueWithDefault</a> object that contains the <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object that the combo box will read and control. NB: this object must outlive the <a class="el" href="classChoicePropertyComponent.html" title="A PropertyComponent that shows its value as a combo box. ">ChoicePropertyComponent</a>. </td></tr>
     <tr><td class="paramname">propertyName</td><td>the name of the property </td></tr>
     <tr><td class="paramname">choices</td><td>the list of possible values that the drop-down list will contain </td></tr>
     <tr><td class="paramname">correspondingValues</td><td>a list of values corresponding to each item in the 'choices' <a class="el" href="classStringArray.html" title="A special array for holding a list of strings. ">StringArray</a>. These are the values that will be read and written to the valueToControl value. This array must contain the same number of items as the choices array </td></tr>
@@ -1081,7 +1080,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

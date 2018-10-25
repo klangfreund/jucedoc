@@ -144,8 +144,7 @@ Public Member Functions</h2></td></tr>
 <p>A <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object contains a reference to a var object, and can get and set its value. Listeners can be attached to be told when the value is changed.</p>
 <p>The <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> class is a wrapper around a shared, reference-counted underlying data object - this means that multiple <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> objects can all refer to the same piece of data, allowing all of them to be notified when any of them changes it.</p>
 <p>When you create a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> with its default constructor, it acts as a wrapper around a simple var object, but by creating a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> that refers to a custom subclass of <a class="el" href="classValue_1_1ValueSource.html" title="Used internally by the Value class as the base class for its shared value objects. ">ValueSource</a>, you can map the <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> onto any kind of underlying data.</p>
-<p>Important note! The <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> class is not thread-safe! If you're accessing one from multiple threads, then you'll need to use your own synchronisation around any code that accesses it.</p>
-<p>{DataStructures} </p>
+<p>Important note! The <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> class is not thread-safe! If you're accessing one from multiple threads, then you'll need to use your own synchronisation around any code that accesses it. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc2a5a2e6484fac66dae2539cc955667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc2a5a2e6484fac66dae2539cc955667">&#9670;&nbsp;</a></span>Value() <span class="overload">[1/5]</span></h2>
@@ -584,7 +583,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

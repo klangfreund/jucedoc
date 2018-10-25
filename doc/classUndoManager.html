@@ -184,8 +184,7 @@ Public Member Functions</h2></td></tr>
 <p>To use it, create subclasses of <a class="el" href="classUndoableAction.html" title="Used by the UndoManager class to store an action which can be done and undone. ">UndoableAction</a> which perform all the actions you need, then when you need to actually perform an action, create one and pass it to the <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a>'s <a class="el" href="classUndoManager.html#a5f8b51dbb061ca3a1a8916938e0e2f49" title="Performs an action and adds it to the undo history list. ">perform()</a> method.</p>
 <p>The manager also uses the concept of 'transactions' to group the actions together - all actions performed between calls to <a class="el" href="classUndoManager.html#a2b60b5f1763023351eddf813d4e7cc78" title="Starts a new group of actions that together will be treated as a single transaction. ">beginNewTransaction()</a> are grouped together and are all undone/redone as a group.</p>
 <p>The <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a> is a <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>, so listeners can register to be told when actions are performed or undone.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoableAction.html" title="Used by the UndoManager class to store an action which can be done and undone. ">UndoableAction</a></dd></dl>
-<p>{DataStructures} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoableAction.html" title="Used by the UndoManager class to store an action which can be done and undone. ">UndoableAction</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a80479ce847ec1ac8cccb8bdf5bb5729e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80479ce847ec1ac8cccb8bdf5bb5729e">&#9670;&nbsp;</a></span>UndoManager()</h2>
@@ -766,7 +765,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

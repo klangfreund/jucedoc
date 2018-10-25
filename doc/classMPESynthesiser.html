@@ -244,8 +244,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Then you can use the <a class="el" href="classMPESynthesiser.html#acd5a57224ed678670766c3f0e1c611ac" title="Adds a new voice to the synth. ">addVoice()</a> methods to give the synthesiser a set of voices it can use to play notes. If you only give it one voice it will be monophonic - the more voices it has, the more polyphony it'll have available.</p>
 <p>Then repeatedly call the <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a> method to produce the audio (inherited from <a class="el" href="structMPESynthesiserBase.html" title="Derive from this class to create a basic audio generator capable of MPE. ">MPESynthesiserBase</a>). The voices will be started, stopped, and modulated automatically, based on the MPE/MIDI messages that the synthesiser receives.</p>
 <p>Before rendering, be sure to call the <a class="el" href="classMPESynthesiser.html#aaa4de3655921d4971ad4334001f096b1" title="Tells the synthesiser what the sample rate is for the audio it&#39;s being used to render. ">setCurrentPlaybackSampleRate()</a> to tell it what the target playback rate is. This value is passed on to the voices so that they can pitch their output correctly.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structMPESynthesiserBase.html" title="Derive from this class to create a basic audio generator capable of MPE. ">MPESynthesiserBase</a>, <a class="el" href="classMPESynthesiserVoice.html" title="Represents an MPE voice that an MPESynthesiser can use to play a sound. ">MPESynthesiserVoice</a>, <a class="el" href="structMPENote.html" title="This struct represents a playing MPE note. ">MPENote</a>, <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a></dd></dl>
-<p>{Audio} </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structMPESynthesiserBase.html" title="Derive from this class to create a basic audio generator capable of MPE. ">MPESynthesiserBase</a>, <a class="el" href="classMPESynthesiserVoice.html" title="Represents an MPE voice that an MPESynthesiser can use to play a sound. ">MPESynthesiserVoice</a>, <a class="el" href="structMPENote.html" title="This struct represents a playing MPE note. ">MPENote</a>, <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a64e54c0339818c5df93c2cb531b249c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64e54c0339818c5df93c2cb531b249c8">&#9670;&nbsp;</a></span>MPESynthesiser() <span class="overload">[1/2]</span></h2>
@@ -1167,7 +1166,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

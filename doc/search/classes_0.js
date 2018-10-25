@@ -5,6 +5,7 @@ var searchData=
   ['actionbroadcaster',['ActionBroadcaster',['../classActionBroadcaster.html',1,'']]],
   ['actionlistener',['ActionListener',['../classActionListener.html',1,'']]],
   ['activexcontrolcomponent',['ActiveXControlComponent',['../classActiveXControlComponent.html',1,'']]],
+  ['advertiser',['Advertiser',['../structNetworkServiceDiscovery_1_1Advertiser.html',1,'NetworkServiceDiscovery']]],
   ['affinetransform',['AffineTransform',['../classAffineTransform.html',1,'']]],
   ['aiffaudioformat',['AiffAudioFormat',['../classAiffAudioFormat.html',1,'']]],
   ['alertwindow',['AlertWindow',['../classAlertWindow.html',1,'']]],
@@ -53,6 +54,7 @@ var searchData=
   ['array_3c_20const_20plugindescription_20_2a_3e',['Array&lt; const PluginDescription *&gt;',['../classArray.html',1,'']]],
   ['array_3c_20const_20popupmenu_20_2a_3e',['Array&lt; const PopupMenu *&gt;',['../classArray.html',1,'']]],
   ['array_3c_20displays_3a_3adisplay_20_3e',['Array&lt; Displays::Display &gt;',['../classArray.html',1,'']]],
+  ['array_3c_20double_20_3e',['Array&lt; double &gt;',['../classArray.html',1,'']]],
   ['array_3c_20elementtype_20_3e',['Array&lt; ElementType &gt;',['../classArray.html',1,'']]],
   ['array_3c_20elementtype_2c_20typeofcriticalsectiontouse_20_3e',['Array&lt; ElementType, TypeOfCriticalSectionToUse &gt;',['../classArray.html',1,'']]],
   ['array_3c_20file_20_3e',['Array&lt; File &gt;',['../classArray.html',1,'']]],
@@ -168,6 +170,7 @@ var searchData=
   ['arraybase_3c_20const_20popupmenu_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; const PopupMenu *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20directorycontentslist_3a_3afileinfo_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; DirectoryContentsList::FileInfo *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20displays_3a_3adisplay_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; Displays::Display, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
+  ['arraybase_3c_20double_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; double, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20dragimagecomponent_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; DragImageComponent *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20drawablebutton_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; DrawableButton *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20elementtype_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; ElementType, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
@@ -216,7 +219,7 @@ var searchData=
   ['arraybase_3c_20objectclass_20_2a_2c_20typeofcriticalsectiontouse_20_3e',['ArrayBase&lt; ObjectClass *, TypeOfCriticalSectionToUse &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20oscargument_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; OSCArgument, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20oscbundle_3a_3aelement_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; OSCBundle::Element, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
-  ['arraybase_3c_20oversamplingengine_3c_20sampletype_20_3e_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; OversamplingEngine&lt; SampleType &gt; *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
+  ['arraybase_3c_20oversamplingstage_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; OversamplingStage *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20panelholder_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; PanelHolder *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20plugindescription_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; PluginDescription *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
   ['arraybase_3c_20popupmenu_3a_3aitem_20_2a_2c_20dummycriticalsection_20_3e',['ArrayBase&lt; PopupMenu::Item *, DummyCriticalSection &gt;',['../classArrayBase.html',1,'']]],
@@ -334,5 +337,6 @@ var searchData=
   ['audiothumbnailcache',['AudioThumbnailCache',['../classAudioThumbnailCache.html',1,'']]],
   ['audiotransportsource',['AudioTransportSource',['../classAudioTransportSource.html',1,'']]],
   ['audiounitpluginformat',['AudioUnitPluginFormat',['../classAudioUnitPluginFormat.html',1,'']]],
-  ['audiovisualisercomponent',['AudioVisualiserComponent',['../classAudioVisualiserComponent.html',1,'']]]
+  ['audiovisualisercomponent',['AudioVisualiserComponent',['../classAudioVisualiserComponent.html',1,'']]],
+  ['availableservicelist',['AvailableServiceList',['../structNetworkServiceDiscovery_1_1AvailableServiceList.html',1,'NetworkServiceDiscovery']]]
 ];

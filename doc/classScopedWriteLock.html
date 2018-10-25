@@ -81,8 +81,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Automatically locks and unlocks a <a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a> object. </p>
 <p>Use one of these as a local variable to control access to a <a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a>.</p>
-<p>e.g.</p><div class="fragment"><div class="line"><a class="code" href="classReadWriteLock.html">ReadWriteLock</a> myLock;</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (;;)</div><div class="line">{</div><div class="line">    <span class="keyword">const</span> <a class="code" href="classScopedWriteLock.html">ScopedWriteLock</a> myScopedLock (myLock);</div><div class="line">    <span class="comment">// myLock is now locked</span></div><div class="line"></div><div class="line">    ...do some stuff...</div><div class="line"></div><div class="line">    <span class="comment">// myLock gets unlocked here.</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a>, <a class="el" href="classScopedReadLock.html" title="Automatically locks and unlocks a ReadWriteLock object. ">ScopedReadLock</a></dd></dl>
-<p>{Core} </p>
+<p>e.g.</p><div class="fragment"><div class="line"><a class="code" href="classReadWriteLock.html">ReadWriteLock</a> myLock;</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (;;)</div><div class="line">{</div><div class="line">    <span class="keyword">const</span> <a class="code" href="classScopedWriteLock.html">ScopedWriteLock</a> myScopedLock (myLock);</div><div class="line">    <span class="comment">// myLock is now locked</span></div><div class="line"></div><div class="line">    ...do some stuff...</div><div class="line"></div><div class="line">    <span class="comment">// myLock gets unlocked here.</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReadWriteLock.html" title="A critical section that allows multiple simultaneous readers. ">ReadWriteLock</a>, <a class="el" href="classScopedReadLock.html" title="Automatically locks and unlocks a ReadWriteLock object. ">ScopedReadLock</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab06884cb60e1e7231cc0b16ed10d7004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab06884cb60e1e7231cc0b16ed10d7004">&#9670;&nbsp;</a></span>ScopedWriteLock()</h2>
@@ -151,7 +150,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -60,7 +60,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">xml<div class="ingroups"><a class="el" href="group__juce__core.html">juce_core</a></div></div>  </div>
 </div><!--header-->
@@ -83,6 +84,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga6cf39e14a10e2e46f753b0c79c66f2f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#ga6cf39e14a10e2e46f753b0c79c66f2f9">forEachXmlChildElementWithTagName</a>(parentXmlElement,  childElementVariableName,  requiredTagName)</td></tr>
 <tr class="memdesc:ga6cf39e14a10e2e46f753b0c79c66f2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro that makes it easy to iterate all the child elements of an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> which have a specified tag.  <a href="#ga6cf39e14a10e2e46f753b0c79c66f2f9">More...</a><br /></td></tr>
 <tr class="separator:ga6cf39e14a10e2e46f753b0c79c66f2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga69654d584331823d827e40d59f7aa24b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#ga69654d584331823d827e40d59f7aa24b">parseXML</a> (const <a class="el" href="classString.html">String</a> &amp;textToParse)</td></tr>
+<tr class="memdesc:ga69654d584331823d827e40d59f7aa24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid.  <a href="#ga69654d584331823d827e40d59f7aa24b">More...</a><br /></td></tr>
+<tr class="separator:ga69654d584331823d827e40d59f7aa24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1705fb40b71d5fa167da5e508b7388a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#gac1705fb40b71d5fa167da5e508b7388a">parseXML</a> (const <a class="el" href="classFile.html">File</a> &amp;fileToParse)</td></tr>
+<tr class="memdesc:gac1705fb40b71d5fa167da5e508b7388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid.  <a href="#gac1705fb40b71d5fa167da5e508b7388a">More...</a><br /></td></tr>
+<tr class="separator:gac1705fb40b71d5fa167da5e508b7388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -157,10 +167,53 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga69654d584331823d827e40d59f7aa24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69654d584331823d827e40d59f7aa24b">&#9670;&nbsp;</a></span>parseXML() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; parseXML </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>textToParse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid. </p>
+<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
+
+</div>
+</div>
+<a id="gac1705fb40b71d5fa167da5e508b7388a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1705fb40b71d5fa167da5e508b7388a">&#9670;&nbsp;</a></span>parseXML() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; parseXML </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileToParse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid. </p>
+<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 26 2018 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 25 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

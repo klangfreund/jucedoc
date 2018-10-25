@@ -6,7 +6,7 @@ digraph "ValueTree::Listener"
   rankdir="LR";
   Node0 [label="ValueTree::Listener",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="AudioProcessorValueTreeState",height=0.2,width=0.4,color="black",URL="$classAudioProcessorValueTreeState.html",tooltip="This class contains a ValueTree which is used to manage an AudioProcessor&#39;s entire state..."];
+  Node1 [label="AudioProcessorValueTreeState",height=0.2,width=0.4,color="black",URL="$classAudioProcessorValueTreeState.html",tooltip="This class contains a ValueTree that is used to manage an AudioProcessor&#39;s entire state..."];
   Node0 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="CachedValue\< Type \>",height=0.2,width=0.4,color="black",URL="$classCachedValue.html",tooltip="This class acts as a typed wrapper around a property inside a ValueTree. "];
   Node0 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
