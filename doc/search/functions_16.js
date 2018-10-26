@@ -12,7 +12,7 @@ var searchData=
   ['waituntilstatechange',['waitUntilStateChange',['../classAudioCDBurner.html#aad027c99aed40869ded438d730b8fa65',1,'AudioCDBurner']]],
   ['wasobjectdeleted',['wasObjectDeleted',['../classWeakReference.html#a523f66357f106bdf39cd5b49973b3177',1,'WeakReference']]],
   ['wasok',['wasOk',['../classResult.html#ad1cd6e48b8f41b1c5f6377109288cffe',1,'Result']]],
-  ['wasstartedbefore',['wasStartedBefore',['../classMPESynthesiserVoice.html#a1682e06d31bdb7fce2d4d692de9e6b8c',1,'MPESynthesiserVoice::wasStartedBefore()'],['../classSynthesiserVoice.html#aa9421602c148978426c98bf173d5e5c7',1,'SynthesiserVoice::wasStartedBefore()']]],
+  ['wasstartedbefore',['wasStartedBefore',['../classSynthesiserVoice.html#aa9421602c148978426c98bf173d5e5c7',1,'SynthesiserVoice']]],
   ['wavaudioformat',['WavAudioFormat',['../classWavAudioFormat.html#a79547799ef5300f2adf2390d0cb74982',1,'WavAudioFormat']]],
   ['weakreference',['WeakReference',['../classWeakReference.html#ae3208aa11ac7edae1816bc281113f4fa',1,'WeakReference::WeakReference() noexcept'],['../classWeakReference.html#ad158fa3b994aa2cbf4ffbd7209afcdee',1,'WeakReference::WeakReference(ObjectType *object)'],['../classWeakReference.html#a1dd877a29a839b13a046411f5c68f235',1,'WeakReference::WeakReference(const WeakReference &amp;other) noexcept'],['../classWeakReference.html#a7942f7ee23b8109f9fa591d25db7a810',1,'WeakReference::WeakReference(WeakReference &amp;&amp;other) noexcept']]],
   ['webbrowsercomponent',['WebBrowserComponent',['../classWebBrowserComponent.html#ad408275ac5ae9ec1e2f71d73fb0105ef',1,'WebBrowserComponent']]],
