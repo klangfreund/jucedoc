@@ -110,6 +110,7 @@ var searchData=
   ['numberpadseparator',['numberPadSeparator',['../classKeyPress.html#a53df5e582959f3ae2e3c75f383f251e1',1,'KeyPress']]],
   ['numberpadsubtract',['numberPadSubtract',['../classKeyPress.html#a3587df27be497fb3d805dc6ac8eadc5b',1,'KeyPress']]],
   ['numbuseschanged',['numBusesChanged',['../classAudioProcessor.html#acdca26c33ae737c3a824b455f136a23d',1,'AudioProcessor']]],
+  ['numbytesintype',['numBytesInType',['../namespacelittlefoot.html#a9fa04b820ae2d068de9fe4d8b99f3ce7',1,'littlefoot']]],
   ['numchannels',['numChannels',['../classAudioFormatReader.html#a2a7c577b4ececb03d3658fd0625c5b70',1,'AudioFormatReader::numChannels()'],['../classAudioFormatWriter.html#af33e6836e6dbbcd774ac166453c5446c',1,'AudioFormatWriter::numChannels()'],['../classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6',1,'dsp::Oversampling::numChannels()'],['../structdsp_1_1ProcessSpec.html#a272bee80f09ed6b4c573de9e2f3b245e',1,'dsp::ProcessSpec::numChannels()']]],
   ['numchannelschanged',['numChannelsChanged',['../classAudioProcessor.html#adb83690e0bdce0710f54b28c020e8e04',1,'AudioProcessor']]],
   ['numchars',['numChars',['../structCppTokeniserFunctions_1_1StringIterator.html#a87c5f347ec1afcfa2594b15892002c99',1,'CppTokeniserFunctions::StringIterator']]],
