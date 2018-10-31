@@ -53,7 +53,6 @@ var searchData=
   ['displayexponent',['displayExponent',['../structUnityAudioParameterDefinition.html#aba85a4154bec797e0e15a5374d746a23',1,'UnityAudioParameterDefinition']]],
   ['displays',['displays',['../classDisplays.html#a06cb25ef3be2ed477d2081e5a16369e2',1,'Displays']]],
   ['displayscale',['displayScale',['../structUnityAudioParameterDefinition.html#a5290d9289b912294a70308781a7bad4f',1,'UnityAudioParameterDefinition']]],
-  ['distanceattenuationcallback',['distanceAttenuationCallback',['../structUnityAudioSpatializerData.html#af14e575cb29165181325c02b8a184501',1,'UnityAudioSpatializerData::distanceAttenuationCallback()'],['../structUnityAudioAmbisonicData.html#a72ff79a11971297eba70e20084c37e36',1,'UnityAudioAmbisonicData::distanceAttenuationCallback()']]],
   ['dodgerblue',['dodgerblue',['../classColours.html#a1a07cae34389d93d4b3817a14ef6efda',1,'Colours']]],
   ['donotsave',['doNotSave',['../structPropertiesFile_1_1Options.html#a28680056e89b7947afe4de44c4ac26c9',1,'PropertiesFile::Options']]],
   ['downkey',['downKey',['../classKeyPress.html#aeb9a20dd50b39f66d7d778d31b6b5f88',1,'KeyPress']]],

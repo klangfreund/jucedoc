@@ -178,7 +178,7 @@ var searchData=
   ['displays',['Displays',['../classDisplays.html',1,'Displays'],['../classDisplays.html#a06cb25ef3be2ed477d2081e5a16369e2',1,'Displays::displays()']]],
   ['displayscale',['displayScale',['../structUnityAudioParameterDefinition.html#a5290d9289b912294a70308781a7bad4f',1,'UnityAudioParameterDefinition']]],
   ['displaytip',['displayTip',['../classTooltipWindow.html#aad35b93943a622861dd83d3cade7da4b',1,'TooltipWindow']]],
-  ['distanceattenuationcallback',['distanceAttenuationCallback',['../structUnityAudioSpatializerData.html#af14e575cb29165181325c02b8a184501',1,'UnityAudioSpatializerData::distanceAttenuationCallback()'],['../structUnityAudioAmbisonicData.html#a72ff79a11971297eba70e20084c37e36',1,'UnityAudioAmbisonicData::distanceAttenuationCallback()'],['../group__juce__audio__plugin__client-Unity.html#ga798b74d7f80aecedf3400fb4f1059240',1,'distanceAttenuationCallback():&#160;juce_UnityPluginInterface.h']]],
+  ['distanceattenuationcallback',['distanceAttenuationCallback',['../group__juce__audio__plugin__client-Unity.html#ga798b74d7f80aecedf3400fb4f1059240',1,'juce_UnityPluginInterface.h']]],
   ['divideby',['divideBy',['../classBigInteger.html#a9c0bd824652adc58adec98eafa452963',1,'BigInteger']]],
   ['divisionbyzero',['divisionByZero',['../structlittlefoot_1_1Runner.html#a8bee4ec6b7ef24029af89651ecd452c9a3078934da80939add9cdd5e203d938d0',1,'littlefoot::Runner']]],
   ['documentwindow',['DocumentWindow',['../classDocumentWindow.html',1,'DocumentWindow'],['../classDocumentWindow.html#a0b97fb8d09a99701368b33445bc0cf94',1,'DocumentWindow::DocumentWindow()']]],
