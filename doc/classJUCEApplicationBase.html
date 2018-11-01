@@ -322,7 +322,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Checks whether multiple instances of the app are allowed. </p>
 <p>If your application class returns true for this, more than one instance is permitted to run (except on the Mac where this isn't possible).</p>
-<p>If it's false, the second instance won't start, but it you will still get a callback to <a class="el" href="classJUCEApplicationBase.html#a77dc328a5400d0866b03a96684c0d9c4" title="Indicates that the user has tried to start up another instance of the app. ">anotherInstanceStarted()</a> to tell you about this - which gives you a chance to react to what the user was trying to do. </p>
+<p>If it's false, the second instance won't start, but you will still get a callback to <a class="el" href="classJUCEApplicationBase.html#a77dc328a5400d0866b03a96684c0d9c4" title="Indicates that the user has tried to start up another instance of the app. ">anotherInstanceStarted()</a> to tell you about this - which gives you a chance to react to what the user was trying to do.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classJUCEApplicationBase.html#a77dc328a5400d0866b03a96684c0d9c4" title="Indicates that the user has tried to start up another instance of the app. ">anotherInstanceStarted</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="classJUCEApplication.html#ae7f9d8176003e18a1b6f4c30a63fdbf6">JUCEApplication</a>.</p>
 
@@ -416,7 +417,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates that the user has tried to start up another instance of the app. </p>
-<p>This will get called even if <a class="el" href="classJUCEApplicationBase.html#a8b0b428b93e6972f3efae78bdda0fac6" title="Checks whether multiple instances of the app are allowed. ">moreThanOneInstanceAllowed()</a> is false. </p>
+<p>This will get called even if <a class="el" href="classJUCEApplicationBase.html#a8b0b428b93e6972f3efae78bdda0fac6" title="Checks whether multiple instances of the app are allowed. ">moreThanOneInstanceAllowed()</a> is false. It is currently only implemented on Windows and Mac.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classJUCEApplicationBase.html#a8b0b428b93e6972f3efae78bdda0fac6" title="Checks whether multiple instances of the app are allowed. ">moreThanOneInstanceAllowed</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="classJUCEApplication.html#adf79c71599bd3848e3d676ed4d95424e">JUCEApplication</a>.</p>
 
@@ -828,7 +830,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 31 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 1 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
