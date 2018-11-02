@@ -89,9 +89,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ae59914cbbefe675a46a9dcc84854c7cf">Oversampling</a> (size_t <a class="el" href="classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6">numChannels</a>, size_t factor, <a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a> type, bool isMaxQuality=true)</td></tr>
 <tr class="memdesc:ae59914cbbefe675a46a9dcc84854c7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the oversampling class.  <a href="#ae59914cbbefe675a46a9dcc84854c7cf">More...</a><br /></td></tr>
 <tr class="separator:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac898b2c638e87a3bf7fd6003257e7148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#ac898b2c638e87a3bf7fd6003257e7148">Oversampling</a> ()</td></tr>
-<tr class="memdesc:ac898b2c638e87a3bf7fd6003257e7148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages.  <a href="#ac898b2c638e87a3bf7fd6003257e7148">More...</a><br /></td></tr>
-<tr class="separator:ac898b2c638e87a3bf7fd6003257e7148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d688db26f17dfd1a1d72cd6de28f178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a3d688db26f17dfd1a1d72cd6de28f178">Oversampling</a> (size_t <a class="el" href="classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6">numChannels</a>=1)</td></tr>
+<tr class="memdesc:a3d688db26f17dfd1a1d72cd6de28f178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages.  <a href="#a3d688db26f17dfd1a1d72cd6de28f178">More...</a><br /></td></tr>
+<tr class="separator:a3d688db26f17dfd1a1d72cd6de28f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aa0fb3908b5d80d27f0ee33ab774bd8c6">~Oversampling</a> ()</td></tr>
 <tr class="memdesc:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa0fb3908b5d80d27f0ee33ab774bd8c6">More...</a><br /></td></tr>
 <tr class="separator:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,21 +216,30 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
-<a id="ac898b2c638e87a3bf7fd6003257e7148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac898b2c638e87a3bf7fd6003257e7148">&#9670;&nbsp;</a></span>Oversampling() <span class="overload">[2/2]</span></h2>
+<a id="a3d688db26f17dfd1a1d72cd6de28f178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d688db26f17dfd1a1d72cd6de28f178">&#9670;&nbsp;</a></span>Oversampling() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1Oversampling.html">Oversampling</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numChannels</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages. </p>
@@ -557,7 +566,7 @@ template&lt;typename SampleType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 1 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2018 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
