@@ -79,8 +79,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afa1bd86c966ab721efb384c739bf75c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e61849dbcd5a2abafbfda1472679b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a70e61849dbcd5a2abafbfda1472679b1">getMessageType</a> (<a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader)</td></tr>
 <tr class="separator:a70e61849dbcd5a2abafbfda1472679b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f400959748127b014d917bfc283603"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a07f400959748127b014d917bfc283603">messageIncludesTopologyChange</a> (<a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> messageType)</td></tr>
-<tr class="separator:a07f400959748127b014d917bfc283603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a477931da853641a4b8afcde303870e65"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a477931da853641a4b8afcde303870e65">processNextMessage</a> (Handler &amp;handler, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75">MessageFromDevice</a> messageType, <a class="el" href="namespaceBlocksProtocol.html#a1bf2d2c7537400206e98488ac4fa437e">TopologyIndex</a> deviceIndex, <a class="el" href="namespaceBlocksProtocol.html#aaa8038ca4f33f4c1805f59d4deeb4837">PacketTimestamp</a> packetTimestamp)</td></tr>
 <tr class="separator:a477931da853641a4b8afcde303870e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad93a755368b5c1f22808e726b373671"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#aad93a755368b5c1f22808e726b373671">handleTopology</a> (Handler &amp;handler, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html">Packed7BitArrayReader</a> &amp;reader, bool newTopology)</td></tr>
@@ -168,7 +166,7 @@ template&lt;typename Handler &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="structBlocksProtocol_1_1IntegerWithBitSize.html#a425c3f8906758d27070fcbc85b2cf0c9adc98160d5b96d8803ea5079a5692b42c">BlocksProtocol::IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#a59c0b8c60add8f796742bc3d798eed1e">BlocksProtocol::Packed7BitArrayReader::checksumIsOK()</a>, <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a70e61849dbcd5a2abafbfda1472679b1">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::getMessageType()</a>, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#aaff53f24dcfd16b535a115704922f128">BlocksProtocol::Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int()</a>, <a class="el" href="group__juce__core-system.html#gadc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a07f400959748127b014d917bfc283603">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::messageIncludesTopologyChange()</a>, <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a477931da853641a4b8afcde303870e65">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::processNextMessage()</a>, and <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#a73a0ef46c7f964c760ff5ee15fcc57f6">BlocksProtocol::Packed7BitArrayReader::read()</a>.</p>
+<p class="reference">References <a class="el" href="structBlocksProtocol_1_1IntegerWithBitSize.html#a425c3f8906758d27070fcbc85b2cf0c9adc98160d5b96d8803ea5079a5692b42c">BlocksProtocol::IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#a59c0b8c60add8f796742bc3d798eed1e">BlocksProtocol::Packed7BitArrayReader::checksumIsOK()</a>, <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a70e61849dbcd5a2abafbfda1472679b1">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::getMessageType()</a>, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#aaff53f24dcfd16b535a115704922f128">BlocksProtocol::Packed7BitArrayReader::getRemainingBits()</a>, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int()</a>, <a class="el" href="group__juce__core-system.html#gadc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#a477931da853641a4b8afcde303870e65">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::processNextMessage()</a>, and <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#a73a0ef46c7f964c760ff5ee15fcc57f6">BlocksProtocol::Packed7BitArrayReader::read()</a>.</p>
 
 </div>
 </div>
@@ -199,38 +197,6 @@ template&lt;typename Handler &gt; </div>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="structBlocksProtocol_1_1IntegerWithBitSize.html#a425c3f8906758d27070fcbc85b2cf0c9adc98160d5b96d8803ea5079a5692b42c">BlocksProtocol::IntegerWithBitSize&lt; numBits &gt;::bits</a>, <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#aaff53f24dcfd16b535a115704922f128">BlocksProtocol::Packed7BitArrayReader::getRemainingBits()</a>, and <a class="el" href="structBlocksProtocol_1_1Packed7BitArrayReader.html#a73a0ef46c7f964c760ff5ee15fcc57f6">BlocksProtocol::Packed7BitArrayReader::read()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#afa1bd86c966ab721efb384c739bf75c7">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::processNextPacket()</a>.</p>
-
-</div>
-</div>
-<a id="a07f400959748127b014d917bfc283603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f400959748127b014d917bfc283603">&#9670;&nbsp;</a></span>messageIncludesTopologyChange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Handler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html">BlocksProtocol::HostPacketDecoder</a>&lt; Handler &gt;::messageIncludesTopologyChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td>
-          <td class="paramname"><em>messageType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75a271feae7fbe3640a38493945a82be63f">BlocksProtocol::deviceName</a>, <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75a8c9e8c9c9b42aacde92c009d1f9fcf1d">BlocksProtocol::deviceTopology</a>, <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75ab5ff02276a8f50fe2a1b66cc440e6594">BlocksProtocol::deviceTopologyEnd</a>, <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75aee11eab8875c2da9c67a1dfca807e9ed">BlocksProtocol::deviceTopologyExtend</a>, and <a class="el" href="namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75ac8c875a93286db48fcd235c86ebdd50a">BlocksProtocol::deviceVersion</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="structBlocksProtocol_1_1HostPacketDecoder.html#afa1bd86c966ab721efb384c739bf75c7">BlocksProtocol::HostPacketDecoder&lt; Handler &gt;::processNextPacket()</a>.</p>
 
@@ -1072,7 +1038,7 @@ template&lt;typename Handler &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 7 2018 20:01:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

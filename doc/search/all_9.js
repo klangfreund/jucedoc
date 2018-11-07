@@ -249,6 +249,7 @@ var searchData=
   ['juce_5fdropshadower_2eh',['juce_DropShadower.h',['../juce__DropShadower_8h.html',1,'']]],
   ['juce_5fdrumpadledprogram_2eh',['juce_DrumPadLEDProgram.h',['../juce__DrumPadLEDProgram_8h.html',1,'']]],
   ['juce_5fdsp',['juce_dsp',['../group__juce__dsp.html',1,'']]],
+  ['juce_5fdump_5flittlefoot_5fheap_5fstatus',['JUCE_DUMP_LITTLEFOOT_HEAP_STATUS',['../group__juce__blocks__basics-littlefoot.html#ga012190503273925698facfa3b3541855',1,'juce_LittleFootRemoteHeap.h']]],
   ['juce_5fdynamiclibrary_2eh',['juce_DynamicLibrary.h',['../juce__DynamicLibrary_8h.html',1,'']]],
   ['juce_5fdynamicobject_2eh',['juce_DynamicObject.h',['../juce__DynamicObject_8h.html',1,'']]],
   ['juce_5fedgetable_2eh',['juce_EdgeTable.h',['../juce__EdgeTable_8h.html',1,'']]],
