@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classMPESynthesiserVoice-members.html">List of all members</a>  </div>
@@ -121,6 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4a38948a044093709fcfa2295a8110a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPESynthesiserVoice.html#ae4a38948a044093709fcfa2295a8110a">getSampleRate</a> () const noexcept</td></tr>
 <tr class="memdesc:ae4a38948a044093709fcfa2295a8110a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current target sample rate at which rendering is being done.  <a href="#ae4a38948a044093709fcfa2295a8110a">More...</a><br /></td></tr>
 <tr class="separator:ae4a38948a044093709fcfa2295a8110a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af46d76c6b3ea7ae3a14e6d4bb050d5fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPESynthesiserVoice.html#af46d76c6b3ea7ae3a14e6d4bb050d5fc">noteOnTime</a> = 0</td></tr>
+<tr class="memdesc:af46d76c6b3ea7ae3a14e6d4bb050d5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be set to an incrementing counter value in <a class="el" href="classMPESynthesiser.html#aee6881d2b047430ac2886fb606de6630" title="Starts a specified voice and tells it to play a particular MPENote. ">MPESynthesiser::startVoice()</a> and can be used to determine the order in which voices started.  <a href="#af46d76c6b3ea7ae3a14e6d4bb050d5fc">More...</a><br /></td></tr>
+<tr class="separator:af46d76c6b3ea7ae3a14e6d4bb050d5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -652,6 +659,22 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af46d76c6b3ea7ae3a14e6d4bb050d5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46d76c6b3ea7ae3a14e6d4bb050d5fc">&#9670;&nbsp;</a></span>noteOnTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> MPESynthesiserVoice::noteOnTime = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This will be set to an incrementing counter value in <a class="el" href="classMPESynthesiser.html#aee6881d2b047430ac2886fb606de6630" title="Starts a specified voice and tells it to play a particular MPENote. ">MPESynthesiser::startVoice()</a> and can be used to determine the order in which voices started. </p>
+
+</div>
+</div>
 <a id="a9310a73a44408ab65dfb9b875917c354"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9310a73a44408ab65dfb9b875917c354">&#9670;&nbsp;</a></span>currentSampleRate</h2>
 
@@ -702,7 +725,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 8 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 9 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
