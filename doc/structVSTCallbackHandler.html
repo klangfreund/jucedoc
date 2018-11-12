@@ -72,9 +72,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a81fc2f55e4f77f52238b4b2370c749ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVSTCallbackHandler.html#a81fc2f55e4f77f52238b4b2370c749ef">VstHostCallbackType</a> = <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a>(<a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> opcode, <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> index, <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> value, void *ptr, float opt)</td></tr>
-<tr class="memdesc:a81fc2f55e4f77f52238b4b2370c749ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The host callback function type.  <a href="#a81fc2f55e4f77f52238b4b2370c749ef">More...</a><br /></td></tr>
-<tr class="separator:a81fc2f55e4f77f52238b4b2370c749ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17714e037317a0089ca73305ff2fde86"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVSTCallbackHandler.html#a17714e037317a0089ca73305ff2fde86">VstHostCallbackType</a>(<a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> opcode, <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> index, <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> value, void *ptr, float opt)</td></tr>
+<tr class="memdesc:a17714e037317a0089ca73305ff2fde86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The host callback function type.  <a href="#a17714e037317a0089ca73305ff2fde86">More...</a><br /></td></tr>
+<tr class="separator:a17714e037317a0089ca73305ff2fde86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -86,21 +86,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7158d63b0c27896792191d1598a740d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVSTCallbackHandler.html#a7158d63b0c27896792191d1598a740d5">handleVstManufacturerSpecific</a> (<a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> index, <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> value, void *ptr, float opt)=0</td></tr>
 <tr class="memdesc:a7158d63b0c27896792191d1598a740d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called by the VST plug-in wrapper when it receives unhandled vendor specific calls from the host.  <a href="#a7158d63b0c27896792191d1598a740d5">More...</a><br /></td></tr>
 <tr class="separator:a7158d63b0c27896792191d1598a740d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9901281297bd02b8eaf86bc9daa681e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVSTCallbackHandler.html#a9901281297bd02b8eaf86bc9daa681e3">handleVstHostCallbackAvailable</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="structVSTCallbackHandler.html#a81fc2f55e4f77f52238b4b2370c749ef">VstHostCallbackType</a> &gt; &amp;&amp;callback)</td></tr>
+<tr class="memitem:a9901281297bd02b8eaf86bc9daa681e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVSTCallbackHandler.html#a9901281297bd02b8eaf86bc9daa681e3">handleVstHostCallbackAvailable</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="structVSTCallbackHandler.html#a17714e037317a0089ca73305ff2fde86">VstHostCallbackType</a> &gt; &amp;&amp;callback)</td></tr>
 <tr class="memdesc:a9901281297bd02b8eaf86bc9daa681e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called once by the VST plug-in wrapper after its constructor.  <a href="#a9901281297bd02b8eaf86bc9daa681e3">More...</a><br /></td></tr>
 <tr class="separator:a9901281297bd02b8eaf86bc9daa681e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An interface to allow an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> to send and receive VST specific calls from the host. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a81fc2f55e4f77f52238b4b2370c749ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81fc2f55e4f77f52238b4b2370c749ef">&#9670;&nbsp;</a></span>VstHostCallbackType</h2>
+<a id="a17714e037317a0089ca73305ff2fde86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17714e037317a0089ca73305ff2fde86">&#9670;&nbsp;</a></span>VstHostCallbackType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structVSTCallbackHandler.html#a81fc2f55e4f77f52238b4b2370c749ef">VSTCallbackHandler::VstHostCallbackType</a> =  <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> (<a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> opcode, <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> index, <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> value, void* ptr, float opt)</td>
+          <td class="memname">typedef <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a>() VSTCallbackHandler::VstHostCallbackType(<a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> opcode, <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a> index, <a class="el" href="group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d">pointer_sized_int</a> value, void *ptr, float opt)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -252,7 +252,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void VSTCallbackHandler::handleVstHostCallbackAvailable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="structVSTCallbackHandler.html#a81fc2f55e4f77f52238b4b2370c749ef">VstHostCallbackType</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="structVSTCallbackHandler.html#a17714e037317a0089ca73305ff2fde86">VstHostCallbackType</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -277,7 +277,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 10 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 12 2018 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

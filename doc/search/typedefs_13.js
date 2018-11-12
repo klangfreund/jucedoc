@@ -5,7 +5,7 @@ var searchData=
   ['vmasksimdtype',['vMaskSIMDType',['../structdsp_1_1SIMDRegister.html#a5caf8a1bffd0c9462d1fcc3ccb5ffe45',1,'dsp::SIMDRegister']]],
   ['vmasktype',['vMaskType',['../structdsp_1_1SIMDRegister.html#a35604c900344b10ae5fe5b1a2424a7e7',1,'dsp::SIMDRegister']]],
   ['vsimdtype',['vSIMDType',['../structdsp_1_1SIMDRegister.html#adb3f8a3aabf12df9e32c9edc934e01c6',1,'dsp::SIMDRegister']]],
-  ['vsthostcallbacktype',['VstHostCallbackType',['../structVSTCallbackHandler.html#a81fc2f55e4f77f52238b4b2370c749ef',1,'VSTCallbackHandler']]],
+  ['vsthostcallbacktype',['VstHostCallbackType',['../structVSTCallbackHandler.html#a17714e037317a0089ca73305ff2fde86',1,'VSTCallbackHandler']]],
   ['vxcoord',['VXcoord',['../structBlocksProtocol_1_1TouchVelocity.html#a65e34fa8d090de454b11f3824c3f28b4',1,'BlocksProtocol::TouchVelocity']]],
   ['vycoord',['VYcoord',['../structBlocksProtocol_1_1TouchVelocity.html#aef9edadbe92c2802cc5ee93707d4e6b5',1,'BlocksProtocol::TouchVelocity']]],
   ['vzcoord',['VZcoord',['../structBlocksProtocol_1_1TouchVelocity.html#a62d5a67eee76bc38dbf6f8c5688ca3ed',1,'BlocksProtocol::TouchVelocity']]]
