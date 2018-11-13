@@ -179,6 +179,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ba2a683ea8111c08db83092360b7226"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a8ba2a683ea8111c08db83092360b7226">setCurrentThreadName</a> (const <a class="el" href="classString.html">String</a> &amp;newThreadName)</td></tr>
 <tr class="memdesc:a8ba2a683ea8111c08db83092360b7226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the name of the caller thread.  <a href="#a8ba2a683ea8111c08db83092360b7226">More...</a><br /></td></tr>
 <tr class="separator:a8ba2a683ea8111c08db83092360b7226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414755620d63dbeada96b1de5309c778"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a414755620d63dbeada96b1de5309c778">initialiseJUCE</a> (void *jniEnv, void *jContext)</td></tr>
+<tr class="memdesc:a414755620d63dbeada96b1de5309c778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the JUCE subsystem for projects not created by the Projucer.  <a href="#a414755620d63dbeada96b1de5309c778">More...</a><br /></td></tr>
+<tr class="separator:a414755620d63dbeada96b1de5309c778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates a thread. </p>
@@ -954,13 +957,61 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a414755620d63dbeada96b1de5309c778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414755620d63dbeada96b1de5309c778">&#9670;&nbsp;</a></span>initialiseJUCE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Thread::initialiseJUCE </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>jniEnv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>jContext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialises the JUCE subsystem for projects not created by the Projucer. </p>
+<p>On Android, JUCE needs to be initialised once before it is used. The Projucer will automatically generate the necessary java code to do this. However, if you are using JUCE without the Projucer or are creating a library made with JUCE intended for use in non-JUCE apks, then you must call this method manually once on apk startup.</p>
+<p>You can call this method from C++ or directly from java by calling the following java method:</p>
+<div class="fragment"><div class="line">com.roli.juce.Java.initialiseJUCE (myContext);</div></div><!-- fragment --><p>Note that the above java method is only available in Android Studio projects created by the Projucer. If you need to call this from another type of project then you need to add the following java file to your project:</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.roli.juce;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Java</div><div class="line">{</div><div class="line">    <span class="keyword">static</span> { System.loadLibrary (<span class="stringliteral">&quot;juce_jni&quot;</span>); }</div><div class="line">    <span class="keyword">public</span> native <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classThread.html#a414755620d63dbeada96b1de5309c778">initialiseJUCE</a> (Context context);</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jniEnv</td><td>this is a pointer to JNI's JNIEnv variable. Any callback from Java into C++ will have this passed in as it's first parameter. </td></tr>
+    <tr><td class="paramname">jContext</td><td>this is a jobject referring to your app/service/receiver/ provider's Context. JUCE needs this for many of it's internal functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Thread_8h.html">juce_Thread.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 12 2018 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 13 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

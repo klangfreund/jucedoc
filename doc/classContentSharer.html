@@ -60,7 +60,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classContentSharer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ContentSharer Class Reference<div class="ingroups"><a class="el" href="group__juce__gui__basics.html">juce_gui_basics</a> &raquo; <a class="el" href="group__juce__gui__basics-filebrowser.html">filebrowser</a></div></div>  </div>
@@ -84,17 +83,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9753a50ae2d26a503f64661043fc5e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentSharer.html#a9753a50ae2d26a503f64661043fc5e1e">shareData</a> (const <a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;mb, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(bool, const <a class="el" href="classString.html">String</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:a9753a50ae2d26a503f64661043fc5e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience function to share arbitrary data.  <a href="#a9753a50ae2d26a503f64661043fc5e1e">More...</a><br /></td></tr>
 <tr class="separator:a9753a50ae2d26a503f64661043fc5e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a03a502d73dbd3f091c8f5aaad79b84db"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentSharer.html#a03a502d73dbd3f091c8f5aaad79b84db">juce_contentSharerOpenFile</a> (void *, void *, void *)</td></tr>
-<tr class="separator:a03a502d73dbd3f091c8f5aaad79b84db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc462a31a8164e4161cb9b27cf502f5c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentSharer.html#afc462a31a8164e4161cb9b27cf502f5c">juce_contentSharerQuery</a> (void *, void *, void *, void *, void *, void *)</td></tr>
-<tr class="separator:afc462a31a8164e4161cb9b27cf502f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367219c60d577e1a2655d769f2b3bf15"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentSharer.html#a367219c60d577e1a2655d769f2b3bf15">juce_contentSharerGetStreamTypes</a> (void *, void *)</td></tr>
-<tr class="separator:a367219c60d577e1a2655d769f2b3bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0daa04dd5fe74dda16cf14e506810417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentSharer.html#a0daa04dd5fe74dda16cf14e506810417">juce_contentSharingCompleted</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>)</td></tr>
-<tr class="separator:a0daa04dd5fe74dda16cf14e506810417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A singleton class responsible for sharing content between apps and devices. </p>
@@ -233,178 +221,13 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a03a502d73dbd3f091c8f5aaad79b84db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a502d73dbd3f091c8f5aaad79b84db">&#9670;&nbsp;</a></span>juce_contentSharerOpenFile</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* juce_contentSharerOpenFile </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc462a31a8164e4161cb9b27cf502f5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc462a31a8164e4161cb9b27cf502f5c">&#9670;&nbsp;</a></span>juce_contentSharerQuery</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* juce_contentSharerQuery </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a367219c60d577e1a2655d769f2b3bf15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367219c60d577e1a2655d769f2b3bf15">&#9670;&nbsp;</a></span>juce_contentSharerGetStreamTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* juce_contentSharerGetStreamTypes </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0daa04dd5fe74dda16cf14e506810417"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0daa04dd5fe74dda16cf14e506810417">&#9670;&nbsp;</a></span>juce_contentSharingCompleted</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void juce_contentSharingCompleted </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__ContentSharer_8h.html">juce_ContentSharer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 12 2018 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 13 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
