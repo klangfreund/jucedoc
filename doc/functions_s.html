@@ -1087,6 +1087,9 @@ $(function() {
 <li>setEndStyle()
 : <a class="el" href="classPathStrokeType.html#a7302b4ab3dd8e55cd1fa7660e5d01245">PathStrokeType</a>
 </li>
+<li>setEnvelopeParameters()
+: <a class="el" href="classSamplerSound.html#ae4bee9efd5149d6c14dd3635535c703a">SamplerSound</a>
+</li>
 <li>setEscapeAndReturnKeysConsumed()
 : <a class="el" href="classTextEditor.html#a60a856b5c49ff27fb5f2a00f92bd251f">TextEditor</a>
 </li>
@@ -1820,7 +1823,8 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#ab09a26934acb4d7fe3f71448aeb80f18">AudioProcessor</a>
 </li>
 <li>setParameters()
-: <a class="el" href="classdsp_1_1Reverb.html#a220b9abb91e01a1c10e029462f72f08b">dsp::Reverb</a>
+: <a class="el" href="classADSR.html#a621c70a6324e9bfaa3926f3da557ade9">ADSR</a>
+, <a class="el" href="classdsp_1_1Reverb.html#a220b9abb91e01a1c10e029462f72f08b">dsp::Reverb</a>
 , <a class="el" href="classReverb.html#af1b8609045ccadf2f6c4760f9a6d945a">Reverb</a>
 , <a class="el" href="classReverbAudioSource.html#abb05d4c6980825f841fabbc56d167d9b">ReverbAudioSource</a>
 </li>
@@ -2037,7 +2041,8 @@ $(function() {
 , <a class="el" href="classdsp_1_1AudioBlock.html#aace22dc119936051db057031de5014f7">dsp::AudioBlock&lt; SampleType &gt;</a>
 </li>
 <li>setSampleRate()
-: <a class="el" href="classReverb.html#a98c91d03e4a2484123dc3d8f92896b86">Reverb</a>
+: <a class="el" href="classADSR.html#a7c54cf78e83022987f87ee830db5b73e">ADSR</a>
+, <a class="el" href="classReverb.html#a98c91d03e4a2484123dc3d8f92896b86">Reverb</a>
 </li>
 <li>setSamplesPerBlock()
 : <a class="el" href="classAudioVisualiserComponent.html#a0e2fdccfb05a21cbca71958cc7988dab">AudioVisualiserComponent</a>
@@ -2400,7 +2405,7 @@ $(function() {
 : <a class="el" href="classFont.html#af107c023ff440651ae9291cdf058b7c1">Font</a>
 </li>
 <li>setUniform()
-: <a class="el" href="classOpenGLShaderProgram.html#ae77e1530e0f6a84c205023aa9ada81f3">OpenGLShaderProgram</a>
+: <a class="el" href="classOpenGLShaderProgram.html#af9c0145992ca9f0a1fec4532cac89bfb">OpenGLShaderProgram</a>
 </li>
 <li>setUniformMat2()
 : <a class="el" href="classOpenGLShaderProgram.html#ad481c6c6d05495b011e16e12e02e6a53">OpenGLShaderProgram</a>
@@ -2536,7 +2541,7 @@ $(function() {
 , <a class="el" href="structMPESynthesiserBase.html#afeac8dac88466e65c1b86c94be91fe02">MPESynthesiserBase</a>
 </li>
 <li>SHA256()
-: <a class="el" href="classSHA256.html#aca9f9e18f0fcec4403f7ba7a34d7d997">SHA256</a>
+: <a class="el" href="classSHA256.html#a78c36f04e7b93bceb284bc6fa1d4dc83">SHA256</a>
 </li>
 <li>shadowBaseColour
 : <a class="el" href="classSidePanel.html#a6cf8eb18bfffbc3ad3894e58ca04a81ea6ea3529ab9a39f78c359c64a38ccd6cb">SidePanel</a>
@@ -2633,7 +2638,7 @@ $(function() {
 <li>showAt()
 : <a class="el" href="classBubbleMessageComponent.html#accf152caac1319d8a05d145a94fc7022">BubbleMessageComponent</a>
 , <a class="el" href="classFileChooserDialogBox.html#a038683131a8efafe2b22484211043fb1">FileChooserDialogBox</a>
-, <a class="el" href="classPopupMenu.html#a09cbf58f5f3e8132ad1eb6afa7819d32">PopupMenu</a>
+, <a class="el" href="classPopupMenu.html#ac94916cb06208a99f0955084c561c92d">PopupMenu</a>
 </li>
 <li>showAudioSettingsDialog()
 : <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder</a>
@@ -2678,7 +2683,7 @@ $(function() {
 , <a class="el" href="classPopupMenu.html#abbeb6708a9b79a95c85e70db830cd7d5">PopupMenu</a>
 </li>
 <li>showMenuAsync()
-: <a class="el" href="classPopupMenu.html#a9b60e1d864215a76e6510b8e85079004">PopupMenu</a>
+: <a class="el" href="classPopupMenu.html#aafe397e60357ab6a12ffcc3f896ed4a7">PopupMenu</a>
 </li>
 <li>showMessageBox()
 : <a class="el" href="classAlertWindow.html#afce17dd21af1f740f736b757b52eba0a">AlertWindow</a>
@@ -2770,13 +2775,13 @@ $(function() {
 : <a class="el" href="structdsp_1_1SIMDRegister.html#a3a9f728b56ef1b9fd3fceddb51259918">dsp::SIMDRegister&lt; Type &gt;</a>
 </li>
 <li>SIMDRegister()
-: <a class="el" href="structdsp_1_1SIMDRegister.html#a041eb57cc8d23bb0df322f87db134bf3">dsp::SIMDRegister&lt; Type &gt;</a>
+: <a class="el" href="structdsp_1_1SIMDRegister.html#a96232e0fb4902d01aa81d57adb58de39">dsp::SIMDRegister&lt; Type &gt;</a>
 </li>
 <li>SIMDRegisterSize
 : <a class="el" href="structdsp_1_1SIMDRegister.html#a295428a84f540c2442e2c476abc49800">dsp::SIMDRegister&lt; Type &gt;</a>
 </li>
 <li>sin()
-: <a class="el" href="structdsp_1_1FastMathApproximations.html#a9684ff31cbb85616a5531ba89c105b7b">dsp::FastMathApproximations</a>
+: <a class="el" href="structdsp_1_1FastMathApproximations.html#ab1526516d48548ac7d4313ded55408f8">dsp::FastMathApproximations</a>
 </li>
 <li>SingleChannel
 : <a class="el" href="classImage.html#ab47b5746d2df286ae6f8da6af5463c01ab8bd2ed5df42fd15bd349195d81b64b4">Image</a>
@@ -2785,13 +2790,13 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#a212c3670b59976559237cbf629af275fabe443816497d7aa69a1cb30a0095dd22">AudioProcessor</a>
 </li>
 <li>SingleThreadedReferenceCountedObject()
-: <a class="el" href="classSingleThreadedReferenceCountedObject.html#a33487e345c10684a13f90bfeb6756fe3">SingleThreadedReferenceCountedObject</a>
+: <a class="el" href="classSingleThreadedReferenceCountedObject.html#a935acb3a5ac6cfc07a2d7c6c7530dd8b">SingleThreadedReferenceCountedObject</a>
 </li>
 <li>SingletonHolder()
 : <a class="el" href="structSingletonHolder.html#ad0efc710b6b774b33c964317c9b4161b">SingletonHolder&lt; Type, MutexType, onlyCreateOncePerRun &gt;</a>
 </li>
 <li>sinh()
-: <a class="el" href="structdsp_1_1FastMathApproximations.html#ad9a635a706b3db3472b7ff80df20c83f">dsp::FastMathApproximations</a>
+: <a class="el" href="structdsp_1_1FastMathApproximations.html#ae4ecb4d8954b4f1ea24a211da58829ca">dsp::FastMathApproximations</a>
 </li>
 <li>size()
 : <a class="el" href="structArgumentList.html#a917963c86bc601116e51da2350e9d8e7">ArgumentList</a>
@@ -2988,7 +2993,7 @@ $(function() {
 : <a class="el" href="classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831a87fb777f6e42c8e3c8b8234bb0291951">TableHeaderComponent</a>
 </li>
 <li>SortedSet()
-: <a class="el" href="classSortedSet.html#a15b0ac101a2404955c2fe24312bc5acd">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;</a>
+: <a class="el" href="classSortedSet.html#ad079fa402b1a783e31054d68950ca106">SortedSet&lt; ElementType, TypeOfCriticalSectionToUse &gt;</a>
 </li>
 <li>sortEntriesByFilename()
 : <a class="el" href="classZipFile.html#af33762dfb0bbe8ac0973d239eba4a376">ZipFile</a>
@@ -3046,7 +3051,7 @@ $(function() {
 : <a class="el" href="structGridItem_1_1Span.html#a857f4c7a551b53b954a12c4372c384f3">GridItem::Span</a>
 </li>
 <li>SparseSet()
-: <a class="el" href="classSparseSet.html#af0b3f86de26cddf0a1ac4638c07e4279">SparseSet&lt; Type &gt;</a>
+: <a class="el" href="classSparseSet.html#a4b48b68e384ce153f395265f7af7c091">SparseSet&lt; Type &gt;</a>
 </li>
 <li>spatialBlend
 : <a class="el" href="structUnityAudioAmbisonicData.html#a362baaf42fa930b30698dd4e646b2b69">UnityAudioAmbisonicData</a>
@@ -3135,7 +3140,7 @@ $(function() {
 </li>
 <li>startNewSubPath
 : <a class="el" href="classPath_1_1Iterator.html#a62b1a329e3fdbcbdad78bb6c90c7bcfdaebfff5dcac5415d6c7274ad2ef633215">Path::Iterator</a>
-, <a class="el" href="classPath.html#a9c24222b2226b0e082069dbf789dca07">Path</a>
+, <a class="el" href="classPath.html#a3de8e6d2cc6cdeaeaafc779b305eeea7">Path</a>
 </li>
 <li>startNote()
 : <a class="el" href="classSamplerVoice.html#ace2f7f448b19e026989e627729d7c35c">SamplerVoice</a>
@@ -3169,7 +3174,7 @@ $(function() {
 : <a class="el" href="classString.html#aebab6b7467cc776e5ccf2cc095dbb45b">String</a>
 </li>
 <li>startThread()
-: <a class="el" href="classThread.html#acc4aff2ceb97b0f16a0a08132315a900">Thread</a>
+: <a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983">Thread</a>
 </li>
 <li>startTimer()
 : <a class="el" href="classHighResolutionTimer.html#a9d3709eee45c33f0d2095ab80121a965">HighResolutionTimer</a>
@@ -3196,7 +3201,7 @@ $(function() {
 : <a class="el" href="classAudioProcessorValueTreeState.html#ad7de02052d045956f56018e009dc50c6">AudioProcessorValueTreeState</a>
 </li>
 <li>State()
-: <a class="el" href="structCodeEditorComponent_1_1State.html#a4a38fd3e47a1b6b2b4097e774e0aa6ca">CodeEditorComponent::State</a>
+: <a class="el" href="structCodeEditorComponent_1_1State.html#a14abacea08dda609922dd04d53a44d0f">CodeEditorComponent::State</a>
 </li>
 <li>state
 : <a class="el" href="classComponentBuilder.html#af09fdfb8bb0edf0a6c2f19d5d54563f4">ComponentBuilder</a>
@@ -3393,16 +3398,16 @@ $(function() {
 : <a class="el" href="classOSCTypes.html#ad427b15ae32b26b2e0c28f0932eed263">OSCTypes</a>
 </li>
 <li>String()
-: <a class="el" href="classString.html#a132ec3369f532f82de9087bc22a817c0">String</a>
+: <a class="el" href="classString.html#ad6ae56068e13148c8b055020c7234966">String</a>
 </li>
 <li>StringArray()
-: <a class="el" href="classStringArray.html#a0d5646cc1cb01041160f6ff69554798f">StringArray</a>
+: <a class="el" href="classStringArray.html#a13e92e592948b88812b63c5f59692882">StringArray</a>
 </li>
 <li>StringIterator()
 : <a class="el" href="structCppTokeniserFunctions_1_1StringIterator.html#ac7bb997127826fdc3d28e5f814dc105c">CppTokeniserFunctions::StringIterator</a>
 </li>
 <li>StringPairArray()
-: <a class="el" href="classStringPairArray.html#ae9d7222fa917d07fa51815681bd61f50">StringPairArray</a>
+: <a class="el" href="classStringPairArray.html#a606a520b01b1c8505ae5bba847ac0d85">StringPairArray</a>
 </li>
 <li>StringPool()
 : <a class="el" href="classStringPool.html#aab1fd1101bfe15304bd618b3eeedfc0e">StringPool</a>
@@ -3412,7 +3417,7 @@ $(function() {
 , <a class="el" href="classTextLayout_1_1Run.html#a5e78255b382519784f9950efeae14f57">TextLayout::Run</a>
 </li>
 <li>StringRef()
-: <a class="el" href="classStringRef.html#afdd484f4bdb44927ffc3ae24292f0cd6">StringRef</a>
+: <a class="el" href="classStringRef.html#a7ed3eed766b7dac3eaad6e7fe0f6a920">StringRef</a>
 </li>
 <li>strings
 : <a class="el" href="classStringArray.html#ac10f010a31e1dcd6220d278a1603e37a">StringArray</a>
@@ -3443,11 +3448,11 @@ $(function() {
 <li>style
 : <a class="el" href="classTypeface.html#a4169174330e29936cda2170a51a36df8">Typeface</a>
 </li>
-<li>StyleFlags
-: <a class="el" href="classComponentPeer.html#a94a21f91c61f8211774d6f43243a6ddc">ComponentPeer</a>
-</li>
 <li>styleFlags
 : <a class="el" href="classComponentPeer.html#a8322b7cdb134bc52f443cd587ffc3f75">ComponentPeer</a>
+</li>
+<li>StyleFlags
+: <a class="el" href="classComponentPeer.html#a94a21f91c61f8211774d6f43243a6ddc">ComponentPeer</a>
 </li>
 <li>subcategoryName
 : <a class="el" href="structUnitTestRunner_1_1TestResult.html#af0a632786980a63693a86bb9942959c0">UnitTestRunner::TestResult</a>
@@ -3468,14 +3473,14 @@ $(function() {
 : <a class="el" href="classPushNotifications.html#af6cb45cb738eeb7fc3664646a88a9e8a">PushNotifications</a>
 </li>
 <li>substring()
-: <a class="el" href="classString.html#a4e1f8aae399c56836b9a3ca4f31636da">String</a>
+: <a class="el" href="classString.html#a790b963e9b372e2dc6ce7e2deaceb01f">String</a>
 </li>
 <li>subtitle
 : <a class="el" href="structPushNotifications_1_1Notification.html#a187733b87ad3bba14b690f021ac4ee0a">PushNotifications::Notification</a>
 </li>
 <li>subtract()
-: <a class="el" href="classdsp_1_1AudioBlock.html#a25bdd578180715bdf6f21b7c1440f55c">dsp::AudioBlock&lt; SampleType &gt;</a>
-, <a class="el" href="classFloatVectorOperations.html#a84fc0e2af67681183064f05699b538de">FloatVectorOperations</a>
+: <a class="el" href="classdsp_1_1AudioBlock.html#a660236b857f19b525bde519419c66884">dsp::AudioBlock&lt; SampleType &gt;</a>
+, <a class="el" href="classFloatVectorOperations.html#a937c3235abc41ec11e7ad7109f976fc0">FloatVectorOperations</a>
 , <a class="el" href="classRectangleList.html#a6a93f136213fd5773e08ab69267cb749">RectangleList&lt; ValueType &gt;</a>
 </li>
 <li>subtractedFrom()
@@ -3527,7 +3532,8 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#a584d01c1c009c1ce49a45cd6e49d2dc5">AudioProcessor</a>
 </li>
 <li>sustain
-: <a class="el" href="classControlButton.html#a891776295057786f99f14631b1aa2794a2339a8eba5c6912f6c1958cf3c29f38b">ControlButton</a>
+: <a class="el" href="structADSR_1_1Parameters.html#a3722c4a821ccb7affd869fb257729aa8">ADSR::Parameters</a>
+, <a class="el" href="classControlButton.html#a891776295057786f99f14631b1aa2794a2339a8eba5c6912f6c1958cf3c29f38b">ControlButton</a>
 </li>
 <li>sustained
 : <a class="el" href="structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a3394b891d4bdd77fd39d141102c4a4bd">MPENote</a>
@@ -3539,7 +3545,7 @@ $(function() {
 : <a class="el" href="classArray.html#a27a6d4d6fe65364ec9913070a1d2aa0f">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
 , <a class="el" href="classArrayBase.html#ad5c6e12391c6c0a7e8b296dbf769f973">ArrayBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classAudioProcessorValueTreeState_1_1ParameterLayout.html#a787cf51071ed675f2bdb528b22c1bf8b">AudioProcessorValueTreeState::ParameterLayout</a>
-, <a class="el" href="group__juce__core-memory.html#gade6b08f22b211968f291fdb8cd72d981">ByteOrder</a>
+, <a class="el" href="group__juce__core-memory.html#ga9a5e786ddb2217cf8178866d52501627">ByteOrder</a>
 , <a class="el" href="classOwnedArray.html#aeae36e1f45837b3e3950fa51b0d67764">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classReferenceCountedArray.html#a390d2be27b40d47c24c881ca40ffdc44">ReferenceCountedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 </li>
@@ -3629,7 +3635,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 13 2018 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 14 2018 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

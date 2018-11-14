@@ -7,7 +7,7 @@ var searchData=
   ['red',['red',['../classColours.html#a5056e7857f2bc211569dfc89512244dd',1,'Colours::red()'],['../structOSCColour.html#ae4a8be4c32c1ab0d720b239fe7a400f2',1,'OSCColour::red()']]],
   ['redbits',['redBits',['../classOpenGLPixelFormat.html#ae35395197ac66ebfed1a94d1748a20b8',1,'OpenGLPixelFormat']]],
   ['registerbutton',['registerButton',['../classOnlineUnlockForm.html#a2a7d3a1f454b97beebf84bc5ffd23939',1,'OnlineUnlockForm']]],
-  ['release',['release',['../structUnityAudioEffectDefinition.html#a4d5d4ab625948bd04778dcb9ca6cc7bb',1,'UnityAudioEffectDefinition']]],
+  ['release',['release',['../structADSR_1_1Parameters.html#ac483aa7d25b7f9b08245486eaa7d9ae6',1,'ADSR::Parameters::release()'],['../structUnityAudioEffectDefinition.html#a4d5d4ab625948bd04778dcb9ca6cc7bb',1,'UnityAudioEffectDefinition::release()']]],
   ['repeat',['repeat',['../structPushNotifications_1_1Notification.html#a81062603230e4597d678e19ddb3a3ef0',1,'PushNotifications::Notification']]],
   ['reset',['reset',['../structUnityAudioEffectDefinition.html#ac61fba3aba34d06885506c907f0a400c',1,'UnityAudioEffectDefinition']]],
   ['resizable',['resizable',['../structDialogWindow_1_1LaunchOptions.html#a07bc81d41581d3d5bc1d05be03a5b4b6',1,'DialogWindow::LaunchOptions']]],

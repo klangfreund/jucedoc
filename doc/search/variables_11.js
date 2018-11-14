@@ -74,6 +74,7 @@ var searchData=
   ['subtitle',['subtitle',['../structPushNotifications_1_1Notification.html#a187733b87ad3bba14b690f021ac4ee0a',1,'PushNotifications::Notification']]],
   ['succeeded',['succeeded',['../structOnlineUnlockStatus_1_1UnlockResult.html#a05958e80831364da7c4a2bead72fad6a',1,'OnlineUnlockStatus::UnlockResult']]],
   ['suggestedcolour',['suggestedColour',['../structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html#ae06159d036b60b93709ac4a5553af0ba',1,'AudioProcessorEditor::ParameterControlHighlightInfo']]],
+  ['sustain',['sustain',['../structADSR_1_1Parameters.html#a3722c4a821ccb7affd869fb257729aa8',1,'ADSR::Parameters']]],
   ['symbolname',['symbolName',['../structExpression_1_1Symbol.html#a8ea461b91478b99e10a04956c38f5d68',1,'Expression::Symbol']]],
   ['symmetricskew',['symmetricSkew',['../classNormalisableRange.html#a3a588ad45b07463d74aca98d0589845d',1,'NormalisableRange']]]
 ];

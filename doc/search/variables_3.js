@@ -24,6 +24,7 @@ var searchData=
   ['datainputportlisteners',['dataInputPortListeners',['../classBlock.html#a86de54de4f53ae04cc3fdd5ce9b841bf',1,'Block']]],
   ['datalength',['dataLength',['../classMemoryMappedAudioFormatReader.html#ac19c1cd6d4aff52e7820ec40e1e4d271',1,'MemoryMappedAudioFormatReader']]],
   ['datareleaser',['dataReleaser',['../classImage_1_1BitmapData.html#a486bc70dddebcb42d5e5dbabfda371e4',1,'Image::BitmapData']]],
+  ['decay',['decay',['../structADSR_1_1Parameters.html#a23e64783cbd03a51f01133edfb38321d',1,'ADSR::Parameters']]],
   ['deeppink',['deeppink',['../classColours.html#a28f6cc1ccf53cef009f33f982100453f',1,'Colours']]],
   ['deepskyblue',['deepskyblue',['../classColours.html#ae7932af011b21184ce06f33c30396d69',1,'Colours']]],
   ['defaultcharacter',['defaultCharacter',['../classCustomTypeface.html#a253a2ab299747b043f623ddbdd354e15',1,'CustomTypeface']]],

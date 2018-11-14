@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['utilities',['utilities',['../group__juce__audio__basics-utilities.html',1,'']]],
   ['unity',['Unity',['../group__juce__audio__plugin__client-Unity.html',1,'']]],
   ['utility',['utility',['../group__juce__audio__plugin__client-utility.html',1,'']]],
   ['utilities',['utilities',['../group__juce__audio__processors-utilities.html',1,'']]],

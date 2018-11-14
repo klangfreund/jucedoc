@@ -89,6 +89,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ed59eca044e006221cf631d7452f0b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; float &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSamplerSound.html#a3ed59eca044e006221cf631d7452f0b6">getAudioData</a> () const noexcept</td></tr>
 <tr class="memdesc:a3ed59eca044e006221cf631d7452f0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the audio sample data.  <a href="#a3ed59eca044e006221cf631d7452f0b6">More...</a><br /></td></tr>
 <tr class="separator:a3ed59eca044e006221cf631d7452f0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bee9efd5149d6c14dd3635535c703a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSamplerSound.html#ae4bee9efd5149d6c14dd3635535c703a">setEnvelopeParameters</a> (<a class="el" href="structADSR_1_1Parameters.html">ADSR::Parameters</a> parametersToUse)</td></tr>
+<tr class="memdesc:ae4bee9efd5149d6c14dd3635535c703a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the parameters of the <a class="el" href="classADSR.html" title="A very simple ADSR envelope class. ">ADSR</a> envelope which will be applied to the sample.  <a href="#ae4bee9efd5149d6c14dd3635535c703a">More...</a><br /></td></tr>
+<tr class="separator:ae4bee9efd5149d6c14dd3635535c703a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac579ceea6ee78e6dae8026b4b9b33038"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSamplerSound.html#ac579ceea6ee78e6dae8026b4b9b33038">appliesToNote</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber) override</td></tr>
 <tr class="memdesc:ac579ceea6ee78e6dae8026b4b9b33038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this sound should be played when a given midi note is pressed.  <a href="#ac579ceea6ee78e6dae8026b4b9b33038">More...</a><br /></td></tr>
 <tr class="separator:ac579ceea6ee78e6dae8026b4b9b33038"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +300,26 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the audio sample data. </p>
 <p>This could return nullptr if there was a problem loading the data. </p>
 
+</div>
+</div>
+<a id="ae4bee9efd5149d6c14dd3635535c703a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bee9efd5149d6c14dd3635535c703a">&#9670;&nbsp;</a></span>setEnvelopeParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SamplerSound::setEnvelopeParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structADSR_1_1Parameters.html">ADSR::Parameters</a>&#160;</td>
+          <td class="paramname"><em>parametersToUse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the parameters of the <a class="el" href="classADSR.html" title="A very simple ADSR envelope class. ">ADSR</a> envelope which will be applied to the sample. </p>
+
 <p class="reference">References <a class="el" href="classSynthesiserSound.html#a3910c5fd83df051b05925bbddf4960cd">SynthesiserSound::appliesToChannel()</a>, and <a class="el" href="classSynthesiserSound.html#abc192aba46964c8539206db1e6f6f747">SynthesiserSound::appliesToNote()</a>.</p>
 
 </div>
@@ -369,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 13 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 14 2018 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

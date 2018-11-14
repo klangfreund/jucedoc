@@ -36,6 +36,7 @@ var searchData=
   ['deactivatecurrentcontext',['deactivateCurrentContext',['../classOpenGLContext.html#a5a3ece9be728d97e0343ae17a71f6562',1,'OpenGLContext']]],
   ['deassignchannel',['deassignChannel',['../group__LittleFootFunctions.html#ga1be0d36e941d3682f124bbf8b278911c',1,'juce_LittleFootFunctions.dox']]],
   ['debugmode',['debugMode',['../namespaceBlocksProtocol.html#af20b1d99b2ab723c554407138edc9af1a4a23ce0f79dec8942e2b2a3fa1dc5bbc',1,'BlocksProtocol']]],
+  ['decay',['decay',['../structADSR_1_1Parameters.html#a23e64783cbd03a51f01133edfb38321d',1,'ADSR::Parameters']]],
   ['decibels',['Decibels',['../classDecibels.html',1,'']]],
   ['decibelstogain',['decibelsToGain',['../classDecibels.html#aa8114cb97adb33d7723e8a5bc6f67c18',1,'Decibels']]],
   ['decifnotnull',['decIfNotNull',['../classReferenceCountedObjectPtr.html#a5910ba47645331c0e42c8797e76eb707',1,'ReferenceCountedObjectPtr']]],
