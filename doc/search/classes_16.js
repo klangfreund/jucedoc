@@ -7,6 +7,7 @@ var searchData=
   ['weakreference_3c_20component_20_3e',['WeakReference&lt; Component &gt;',['../classWeakReference.html',1,'']]],
   ['weakreference_3c_20lookandfeel_20_3e',['WeakReference&lt; LookAndFeel &gt;',['../classWeakReference.html',1,'']]],
   ['weakreference_3c_20messagelistener_20_3e',['WeakReference&lt; MessageListener &gt;',['../classWeakReference.html',1,'']]],
+  ['weakreference_3c_20valuewithdefault_20_3e',['WeakReference&lt; ValueWithDefault &gt;',['../classWeakReference.html',1,'']]],
   ['webbrowsercomponent',['WebBrowserComponent',['../classWebBrowserComponent.html',1,'']]],
   ['webinputstream',['WebInputStream',['../classWebInputStream.html',1,'']]],
   ['whirlpool',['Whirlpool',['../classWhirlpool.html',1,'']]],
