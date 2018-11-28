@@ -20,8 +20,6 @@ var searchData=
   ['_7earrowbutton',['~ArrowButton',['../classArrowButton.html#a9198279ce75060e66f9f4a52510bc76a',1,'ArrowButton']]],
   ['_7easyncupdater',['~AsyncUpdater',['../classAsyncUpdater.html#af28a6da5c2adf73e2c18286574939d4b',1,'AsyncUpdater']]],
   ['_7eatomic',['~Atomic',['../structAtomic.html#a25b0fe07fad7cfd1cf68bd02d7da2a3f',1,'Atomic']]],
-  ['_7eattribute',['~Attribute',['../classAttributedString_1_1Attribute.html#a875e4477eb4916c8bd671c26fd548b4f',1,'AttributedString::Attribute']]],
-  ['_7eattributedstring',['~AttributedString',['../classAttributedString.html#aa3421fc9e455bf25778e9398beb6ceef',1,'AttributedString']]],
   ['_7eaudioappcomponent',['~AudioAppComponent',['../classAudioAppComponent.html#a12b0ce2bef7fe80f6bc18f2ceea20907',1,'AudioAppComponent']]],
   ['_7eaudiobuffer',['~AudioBuffer',['../classAudioBuffer.html#afa2458169421626445472a0e22f79360',1,'AudioBuffer']]],
   ['_7eaudiocdburner',['~AudioCDBurner',['../classAudioCDBurner.html#a8d38668744c2e8a6e24ee98caff61ce2',1,'AudioCDBurner']]],

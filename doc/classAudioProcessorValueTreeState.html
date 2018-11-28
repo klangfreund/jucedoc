@@ -100,9 +100,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab00a4fdaa5890ba03a952d03c73aaee1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#ab00a4fdaa5890ba03a952d03c73aaee1">AudioProcessorValueTreeState</a> (<a class="el" href="classAudioProcessor.html">AudioProcessor</a> &amp;processorToConnectTo, <a class="el" href="classUndoManager.html">UndoManager</a> *undoManagerToUse, const juce::Identifier &amp;valueTreeType, <a class="el" href="classAudioProcessorValueTreeState_1_1ParameterLayout.html">ParameterLayout</a> parameterLayout)</td></tr>
-<tr class="memdesc:ab00a4fdaa5890ba03a952d03c73aaee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a state object for a given processor, and sets up all the parameters that will control that processor.  <a href="#ab00a4fdaa5890ba03a952d03c73aaee1">More...</a><br /></td></tr>
-<tr class="separator:ab00a4fdaa5890ba03a952d03c73aaee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca3c6aca19e89d2781f0d1314d639e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#acca3c6aca19e89d2781f0d1314d639e8">AudioProcessorValueTreeState</a> (<a class="el" href="classAudioProcessor.html">AudioProcessor</a> &amp;processorToConnectTo, <a class="el" href="classUndoManager.html">UndoManager</a> *undoManagerToUse, const <a class="el" href="classIdentifier.html">Identifier</a> &amp;valueTreeType, <a class="el" href="classAudioProcessorValueTreeState_1_1ParameterLayout.html">ParameterLayout</a> parameterLayout)</td></tr>
+<tr class="memdesc:acca3c6aca19e89d2781f0d1314d639e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a state object for a given processor, and sets up all the parameters that will control that processor.  <a href="#acca3c6aca19e89d2781f0d1314d639e8">More...</a><br /></td></tr>
+<tr class="separator:acca3c6aca19e89d2781f0d1314d639e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbdefeccca98cec191c7fe4811a9610"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a9bbdefeccca98cec191c7fe4811a9610">AudioProcessorValueTreeState</a> (<a class="el" href="classAudioProcessor.html">AudioProcessor</a> &amp;processorToConnectTo, <a class="el" href="classUndoManager.html">UndoManager</a> *undoManagerToUse)</td></tr>
 <tr class="memdesc:a9bbdefeccca98cec191c7fe4811a9610"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor is discouraged and will be deprecated in a future version of JUCE! Use the other constructor instead.  <a href="#a9bbdefeccca98cec191c7fe4811a9610">More...</a><br /></td></tr>
 <tr class="separator:a9bbdefeccca98cec191c7fe4811a9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,8 +162,8 @@ Public Attributes</h2></td></tr>
 <p>1) Create an <a class="el" href="classAudioProcessorValueTreeState.html" title="This class contains a ValueTree that is used to manage an AudioProcessor&#39;s entire state...">AudioProcessorValueTreeState</a>, and give it some parameters using <a class="el" href="classAudioProcessorValueTreeState.html#ac6313c4071fd2936cb1450d5e7b87c80" title="This function adds a parameter to the attached AudioProcessor and that parameter will be managed by t...">createAndAddParameter()</a>. 2) Initialise the state member variable with a type name.</p>
 <p>The deprecated constructor will be removed from the API in a future version of JUCE! </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab00a4fdaa5890ba03a952d03c73aaee1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab00a4fdaa5890ba03a952d03c73aaee1">&#9670;&nbsp;</a></span>AudioProcessorValueTreeState() <span class="overload">[1/2]</span></h2>
+<a id="acca3c6aca19e89d2781f0d1314d639e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca3c6aca19e89d2781f0d1314d639e8">&#9670;&nbsp;</a></span>AudioProcessorValueTreeState() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const juce::Identifier &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classIdentifier.html">Identifier</a> &amp;&#160;</td>
           <td class="paramname"><em>valueTreeType</em>, </td>
         </tr>
         <tr>
@@ -289,7 +289,7 @@ Public Attributes</h2></td></tr>
 <p>Previous calls to</p>
 <div class="fragment"><div class="line"><a class="code" href="classAudioProcessorValueTreeState.html#ac6313c4071fd2936cb1450d5e7b87c80">createAndAddParameter</a> (paramID1, paramName1, ...);</div></div><!-- fragment --><p>can be replaced with</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> Parameter = <a class="code" href="classAudioProcessorValueTreeState_1_1Parameter.html">AudioProcessorValueTreeState::Parameter</a>;</div><div class="line"><a class="code" href="classAudioProcessorValueTreeState.html#ac6313c4071fd2936cb1450d5e7b87c80">createAndAddParameter</a> (std::make_unique&lt;Parameter&gt; (paramID1, paramName1, ...));</div></div><!-- fragment --><p>However, a much better approach is to use the <a class="el" href="classAudioProcessorValueTreeState.html" title="This class contains a ValueTree that is used to manage an AudioProcessor&#39;s entire state...">AudioProcessorValueTreeState</a> constructor directly</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> Parameter = <a class="code" href="classAudioProcessorValueTreeState_1_1Parameter.html">AudioProcessorValueTreeState::Parameter</a>;</div><div class="line">YourAudioProcessor()</div><div class="line">    : apvts (*this, &amp;<a class="code" href="classAudioProcessorValueTreeState.html#a1dbe64c2074c51b19f54d55dc4292e07">undoManager</a>, <span class="stringliteral">&quot;PARAMETERS&quot;</span>, { std::make_unique&lt;Parameter&gt; (paramID1, paramName1, ...),</div><div class="line">                                                  std::make_unique&lt;Parameter&gt; (paramID2, paramName2, ...),</div><div class="line">                                                  ... })</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorValueTreeState.html#ab00a4fdaa5890ba03a952d03c73aaee1" title="Creates a state object for a given processor, and sets up all the parameters that will control that p...">AudioProcessorValueTreeState::AudioProcessorValueTreeState</a></dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">using</span> Parameter = <a class="code" href="classAudioProcessorValueTreeState_1_1Parameter.html">AudioProcessorValueTreeState::Parameter</a>;</div><div class="line">YourAudioProcessor()</div><div class="line">    : apvts (*this, &amp;<a class="code" href="classAudioProcessorValueTreeState.html#a1dbe64c2074c51b19f54d55dc4292e07">undoManager</a>, <span class="stringliteral">&quot;PARAMETERS&quot;</span>, { std::make_unique&lt;Parameter&gt; (paramID1, paramName1, ...),</div><div class="line">                                                  std::make_unique&lt;Parameter&gt; (paramID2, paramName2, ...),</div><div class="line">                                                  ... })</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessorValueTreeState.html#acca3c6aca19e89d2781f0d1314d639e8" title="Creates a state object for a given processor, and sets up all the parameters that will control that p...">AudioProcessorValueTreeState::AudioProcessorValueTreeState</a></dd></dl>
 <p>This function creates and returns a new parameter object for controlling a parameter with the given ID.</p>
 <p>Calling this will create and add a special type of <a class="el" href="classAudioProcessorParameter.html" title="An abstract base class for parameter objects that can be added to an AudioProcessor. ">AudioProcessorParameter</a> to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> to which this state is attached. </p>
 
@@ -578,7 +578,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 27 2018 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
