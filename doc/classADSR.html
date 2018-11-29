@@ -86,6 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d5d8ecf5b651adc8e18be21a811e1bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structADSR_1_1Parameters.html">Parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classADSR.html#a0d5d8ecf5b651adc8e18be21a811e1bb">getParameters</a> () const</td></tr>
 <tr class="memdesc:a0d5d8ecf5b651adc8e18be21a811e1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameters currently being used by an <a class="el" href="classADSR.html" title="A very simple ADSR envelope class. ">ADSR</a> object.  <a href="#a0d5d8ecf5b651adc8e18be21a811e1bb">More...</a><br /></td></tr>
 <tr class="separator:a0d5d8ecf5b651adc8e18be21a811e1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1422645c27f3ce0caedd2afa57bf19ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classADSR.html#a1422645c27f3ce0caedd2afa57bf19ef">isActive</a> () const noexcept</td></tr>
+<tr class="memdesc:a1422645c27f3ce0caedd2afa57bf19ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the envelope is in its attack, decay, sustain or release stage.  <a href="#a1422645c27f3ce0caedd2afa57bf19ef">More...</a><br /></td></tr>
+<tr class="separator:a1422645c27f3ce0caedd2afa57bf19ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c54cf78e83022987f87ee830db5b73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classADSR.html#a7c54cf78e83022987f87ee830db5b73e">setSampleRate</a> (double sampleRate)</td></tr>
 <tr class="memdesc:a7c54cf78e83022987f87ee830db5b73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sample rate that will be used for the envelope.  <a href="#a7c54cf78e83022987f87ee830db5b73e">More...</a><br /></td></tr>
 <tr class="separator:a7c54cf78e83022987f87ee830db5b73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,33 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the parameters currently being used by an <a class="el" href="classADSR.html" title="A very simple ADSR envelope class. ">ADSR</a> object. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classADSR.html#a621c70a6324e9bfaa3926f3da557ade9" title="Sets the parameters that will be used by an ADSR object. ">setParameters</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1422645c27f3ce0caedd2afa57bf19ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1422645c27f3ce0caedd2afa57bf19ef">&#9670;&nbsp;</a></span>isActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ADSR::isActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the envelope is in its attack, decay, sustain or release stage. </p>
 
 </div>
 </div>
@@ -333,7 +363,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 28 2018 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 29 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
