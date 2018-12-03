@@ -655,6 +655,7 @@ var searchData=
   ['assignedfloat',['asSignedFloat',['../classMPEValue.html#a01f951536a984cabcf11f1a3a93bf5d0',1,'MPEValue']]],
   ['associatedcomponent',['associatedComponent',['../classFlexItem.html#a844775f34c346b8e807c66d3623d9ea8',1,'FlexItem::associatedComponent()'],['../classGridItem.html#a3b95d4876ca9d55571b0be02369218a0',1,'GridItem::associatedComponent()']]],
   ['associatedflexbox',['associatedFlexBox',['../classFlexItem.html#ae91dba1ed2ad5a26f0b2733060dbd5ac',1,'FlexItem']]],
+  ['asstring',['asString',['../structBlocksProtocol_1_1VersionNumber.html#aa9b2c73b7bcd07fe274056f9f201ff99',1,'BlocksProtocol::VersionNumber::asString()'],['../structBlocksProtocol_1_1BlockName.html#ad0c4395b8fe91e931867af0399eb722e',1,'BlocksProtocol::BlockName::asString()']]],
   ['asunsignedfloat',['asUnsignedFloat',['../classMPEValue.html#a5f032f62652034056981da5fcfed3d99',1,'MPEValue']]],
   ['asyncupdater',['AsyncUpdater',['../classAsyncUpdater.html',1,'AsyncUpdater'],['../classAsyncUpdater.html#a5cb530c31e68d13bbdf078ed54911e0c',1,'AsyncUpdater::AsyncUpdater()']]],
   ['atomic',['Atomic',['../structAtomic.html',1,'Atomic&lt; Type &gt;'],['../structAtomic.html#a903ef283284109ee6bdaa43d9b477224',1,'Atomic::Atomic() noexcept'],['../structAtomic.html#abf82947f4041182b22ec5c8035575519',1,'Atomic::Atomic(Type initialValue) noexcept'],['../structAtomic.html#a482fb9fec9e47b18884a5d1f1ac4c815',1,'Atomic::Atomic(const Atomic &amp;other) noexcept']]],
