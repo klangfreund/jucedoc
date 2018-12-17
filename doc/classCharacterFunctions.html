@@ -134,6 +134,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae58bda3f52f99ffe9d331a07ee0e60d9"><td class="memTemplItemLeft" align="right" valign="top">static double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#ae58bda3f52f99ffe9d331a07ee0e60d9">getDoubleValue</a> (CharPointerType text) noexcept</td></tr>
 <tr class="memdesc:ae58bda3f52f99ffe9d331a07ee0e60d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a character string, to read a floating-point value.  <a href="#ae58bda3f52f99ffe9d331a07ee0e60d9">More...</a><br /></td></tr>
 <tr class="separator:ae58bda3f52f99ffe9d331a07ee0e60d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd1c80902d5a98dc11519394c6202ca"><td class="memTemplParams" colspan="2">template&lt;typename CharPointerType &gt; </td></tr>
+<tr class="memitem:afbd1c80902d5a98dc11519394c6202ca"><td class="memTemplItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#afbd1c80902d5a98dc11519394c6202ca">findLengthWithoutTrailingZeros</a> (CharPointerType text)</td></tr>
+<tr class="memdesc:afbd1c80902d5a98dc11519394c6202ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the input is a string representation of a floating-point number, this will find the length of the string without any trailing zeros.  <a href="#afbd1c80902d5a98dc11519394c6202ca">More...</a><br /></td></tr>
+<tr class="separator:afbd1c80902d5a98dc11519394c6202ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad032242c425770875015f8f6d4b0e4"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename CharPointerType &gt; </td></tr>
 <tr class="memitem:a1ad032242c425770875015f8f6d4b0e4"><td class="memTemplItemLeft" align="right" valign="top">static IntType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCharacterFunctions.html#a1ad032242c425770875015f8f6d4b0e4">getIntValue</a> (const CharPointerType text) noexcept</td></tr>
 <tr class="memdesc:a1ad032242c425770875015f8f6d4b0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a character string, to read an integer value.  <a href="#a1ad032242c425770875015f8f6d4b0e4">More...</a><br /></td></tr>
@@ -748,6 +752,38 @@ template&lt;typename CharPointerType &gt; </div>
 <p>Parses a character string, to read a floating-point value. </p>
 
 <p class="reference">Referenced by <a class="el" href="classCharPointer__UTF32.html#a64fc0ce7ef9331d755ab1847618d2eb4">CharPointer_UTF32::getDoubleValue()</a>, <a class="el" href="classCharPointer__ASCII.html#a477aaad22ed57ff0c6893ba90e7e8be7">CharPointer_ASCII::getDoubleValue()</a>, <a class="el" href="classCharPointer__UTF16.html#a8c8fa1d45d916c5cb685dc6e5a72736d">CharPointer_UTF16::getDoubleValue()</a>, and <a class="el" href="classCharPointer__UTF8.html#aceae335150864e9a0804748b3af8ce8e">CharPointer_UTF8::getDoubleValue()</a>.</p>
+
+</div>
+</div>
+<a id="afbd1c80902d5a98dc11519394c6202ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd1c80902d5a98dc11519394c6202ca">&#9670;&nbsp;</a></span>findLengthWithoutTrailingZeros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharPointerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t CharacterFunctions::findLengthWithoutTrailingZeros </td>
+          <td>(</td>
+          <td class="paramtype">CharPointerType&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the input is a string representation of a floating-point number, this will find the length of the string without any trailing zeros. </p>
+
+<p class="reference">References <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int()</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1640,7 @@ template&lt;typename Type , typename BreakType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 7 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 17 2018 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
