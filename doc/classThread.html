@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a614605563fceeac6f03d507bc35bdce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the affinity mask for the thread.  <a href="#a614605563fceeac6f03d507bc35bdce4">More...</a><br /></td></tr>
 <tr class="separator:a614605563fceeac6f03d507bc35bdce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ac29606fd57fd418dfd169939f7b25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25">wait</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> timeOutMilliseconds) const</td></tr>
-<tr class="memdesc:a99ac29606fd57fd418dfd169939f7b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the thread wait for a notification.  <a href="#a99ac29606fd57fd418dfd169939f7b25">More...</a><br /></td></tr>
+<tr class="memdesc:a99ac29606fd57fd418dfd169939f7b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends the execution of this thread until either the specified timeout period has elapsed, or another thread calls the <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> method to wake it up.  <a href="#a99ac29606fd57fd418dfd169939f7b25">More...</a><br /></td></tr>
 <tr class="separator:a99ac29606fd57fd418dfd169939f7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4d5a1ffaa35cc13f323a0524012a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b">notify</a> () const</td></tr>
 <tr class="memdesc:a0b4d5a1ffaa35cc13f323a0524012a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up the thread.  <a href="#a0b4d5a1ffaa35cc13f323a0524012a2b">More...</a><br /></td></tr>
@@ -166,9 +166,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac21eb5ae8c32bc2ecacba904f3411802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the affinity mask for the caller thread.  <a href="#ac21eb5ae8c32bc2ecacba904f3411802">More...</a><br /></td></tr>
 <tr class="separator:ac21eb5ae8c32bc2ecacba904f3411802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee1ddee32aa82ac90bc567cb7427926"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926">sleep</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> milliseconds)</td></tr>
+<tr class="memdesc:a4ee1ddee32aa82ac90bc567cb7427926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends the execution of the current thread until the specified timeout period has elapsed (note that this may not be exact).  <a href="#a4ee1ddee32aa82ac90bc567cb7427926">More...</a><br /></td></tr>
 <tr class="separator:a4ee1ddee32aa82ac90bc567cb7427926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf47a344b3b715e49ffcbc6119c72cdc"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#aaf47a344b3b715e49ffcbc6119c72cdc">yield</a> ()</td></tr>
-<tr class="memdesc:aaf47a344b3b715e49ffcbc6119c72cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the calling thread's current time-slot.  <a href="#aaf47a344b3b715e49ffcbc6119c72cdc">More...</a><br /></td></tr>
+<tr class="memdesc:aaf47a344b3b715e49ffcbc6119c72cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the current thread's CPU time-slot and allows a new thread to run.  <a href="#aaf47a344b3b715e49ffcbc6119c72cdc">More...</a><br /></td></tr>
 <tr class="separator:aaf47a344b3b715e49ffcbc6119c72cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4762b20144186ffc28280cedd224e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThread.html#adcf5808753df4373be08d38938880f65">ThreadID</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9">getCurrentThreadId</a> ()</td></tr>
 <tr class="memdesc:abd4762b20144186ffc28280cedd224e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an id that identifies the caller thread.  <a href="#abd4762b20144186ffc28280cedd224e9">More...</a><br /></td></tr>
@@ -186,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates a thread. </p>
 <p>Subclasses derive from <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> and implement the <a class="el" href="classThread.html#aae90dfabab3e1776cf01a26e7ee3a620" title="Must be implemented to perform the thread&#39;s actual code. ">run()</a> method, in which they do their business. The thread can then be started with the <a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread()</a> method and controlled with various other methods.</p>
-<p>This class also contains some thread-related static methods, such as <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926">sleep()</a>, <a class="el" href="classThread.html#aaf47a344b3b715e49ffcbc6119c72cdc" title="Yields the calling thread&#39;s current time-slot. ">yield()</a>, <a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId()</a> etc.</p>
+<p>This class also contains some thread-related static methods, such as <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926" title="Suspends the execution of the current thread until the specified timeout period has elapsed (note tha...">sleep()</a>, <a class="el" href="classThread.html#aaf47a344b3b715e49ffcbc6119c72cdc" title="Yields the current thread&#39;s CPU time-slot and allows a new thread to run. ">yield()</a>, <a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId()</a> etc.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a>, <a class="el" href="classWaitableEvent.html" title="Allows threads to wait for events triggered by other threads. ">WaitableEvent</a>, <a class="el" href="classProcess.html" title="Represents the current executable&#39;s process. ">Process</a>, <a class="el" href="classThreadWithProgressWindow.html" title="A thread that automatically pops up a modal dialog box with a progress bar and cancel button while it...">ThreadWithProgressWindow</a>, <a class="el" href="classMessageManagerLock.html" title="Used to make sure that the calling thread has exclusive access to the message loop. ">MessageManagerLock</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="adcf5808753df4373be08d38938880f65"></a>
@@ -225,7 +226,7 @@ Static Public Member Functions</h2></td></tr>
 <p>In this case, JUCE will ask OpenSL/Oboe to construct a super high priority thread specifically for realtime audio processing.</p>
 <p>Note that this priority can only be set <b>before</b> the thread has started. Switching to this priority, or from this priority to a different priority, is not supported under Android and will assert.</p>
 <p>For best performance this thread should yield at regular intervals and not call any blocking APIs.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread</a>, <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f" title="Changes the thread&#39;s priority. ">setPriority</a>, <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926">sleep</a>, <a class="el" href="classWaitableEvent.html" title="Allows threads to wait for events triggered by other threads. ">WaitableEvent</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a5502205d727c00752f95af27a063d983" title="Starts the thread running. ">startThread</a>, <a class="el" href="classThread.html#a0975d9ee9f403f5f82287fcce4a7168f" title="Changes the thread&#39;s priority. ">setPriority</a>, <a class="el" href="classThread.html#a4ee1ddee32aa82ac90bc567cb7427926" title="Suspends the execution of the current thread until the specified timeout period has elapsed (note tha...">sleep</a>, <a class="el" href="classWaitableEvent.html" title="Allows threads to wait for events triggered by other threads. ">WaitableEvent</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adca056d2e805e7b6fac3c4b52d56c7a5a0ee7fcab9f979f4e867c718460ce5503"></a>realtimeAudioPriority&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -401,7 +402,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Attempts to stop the thread running. </p>
 <p>This method will cause the <a class="el" href="classThread.html#ab89b68d53514e0b3978460aab3202fd7" title="Checks whether the thread has been told to stop running. ">threadShouldExit()</a> method to return true and call <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> in case the thread is currently waiting.</p>
 <p>Hopefully the thread will then respond to this by exiting cleanly, and the stopThread method will wait for a given time-period for this to happen.</p>
-<p>If the thread is stuck and fails to respond after the time-out, it gets forcibly killed, which is a very bad thing to happen, as it could still be holding locks, etc. which are needed by other parts of your program.</p>
+<p>If the thread is stuck and fails to respond after the timeout, it gets forcibly killed, which is a very bad thing to happen, as it could still be holding locks, etc. which are needed by other parts of your program.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeOutMilliseconds</td><td>The number of milliseconds to wait for the thread to finish before killing it by force. A negative value in here will wait forever. </td></tr>
@@ -438,7 +439,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Invokes a lambda or function on its own thread. </p>
-<p>This will spin up a <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> object which calls the function and then exits. Bear in mind that starting and stopping a thread can be a fairly heavyweight operation, so you might prefer to use a <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a> if you're kicking off a lot of short background tasks. Also note that using an anonymous thread makes it very difficult to interrupt the function when you need to stop it, e.g. when your app quits. So it's up to you to deal with situations where the function may fail to stop in time. </p>
+<p>This will spin up a <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> object which calls the function and then exits. Bear in mind that starting and stopping a thread can be a fairly heavyweight operation, so you might prefer to use a <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a> if you're kicking off a lot of short background tasks.</p>
+<p>Also note that using an anonymous thread makes it very difficult to interrupt the function when you need to stop it, e.g. when your app quits. So it's up to you to deal with situations where the function may fail to stop in time. </p>
 
 </div>
 </div>
@@ -478,10 +480,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Sets a flag to tell the thread it should stop. </p>
 <p>Calling this means that the <a class="el" href="classThread.html#ab89b68d53514e0b3978460aab3202fd7" title="Checks whether the thread has been told to stop running. ">threadShouldExit()</a> method will then return true. The thread should be regularly checking this to see whether it should exit.</p>
-<p>If your thread makes use of <a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Makes the thread wait for a notification. ">wait()</a>, you might want to call <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> after calling this method, to interrupt any waits that might be in progress, and allow it to reach a point where it can exit.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#ab89b68d53514e0b3978460aab3202fd7" title="Checks whether the thread has been told to stop running. ">threadShouldExit</a> </dd>
-<dd>
-<a class="el" href="classThread.html#ad9b6494f25d5d8eb07ed6fc96178eac5" title="Waits for the thread to stop. ">waitForThreadToExit</a> </dd></dl>
+<p>If your thread makes use of <a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Suspends the execution of this thread until either the specified timeout period has elapsed...">wait()</a>, you might want to call <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> after calling this method, to interrupt any waits that might be in progress, and allow it to reach a point where it can exit.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#ab89b68d53514e0b3978460aab3202fd7" title="Checks whether the thread has been told to stop running. ">threadShouldExit</a>, <a class="el" href="classThread.html#ad9b6494f25d5d8eb07ed6fc96178eac5" title="Waits for the thread to stop. ">waitForThreadToExit</a> </dd></dl>
 
 </div>
 </div>
@@ -624,7 +624,7 @@ Static Public Member Functions</h2></td></tr>
 <p>May return false if for some reason the priority can't be changed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">priority</td><td>the new priority, in the range 0 (lowest) to 10 (highest). A priority of 5 is normal.</td></tr>
+    <tr><td class="paramname">priority</td><td>the new priority, in the range 0 (lowest) to 10 (highest). A priority of 5 is normal. </td></tr>
   </table>
   </dd>
 </dl>
@@ -709,7 +709,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Changes the affinity mask for the caller thread. </p>
-<p>This will change the affinity mask for the thread that calls this static method. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a614605563fceeac6f03d507bc35bdce4" title="Sets the affinity mask for the thread. ">setAffinityMask</a> </dd></dl>
+<p>This will change the affinity mask for the thread that calls this static method.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a614605563fceeac6f03d507bc35bdce4" title="Sets the affinity mask for the thread. ">setAffinityMask</a> </dd></dl>
 
 </div>
 </div>
@@ -737,6 +738,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Suspends the execution of the current thread until the specified timeout period has elapsed (note that this may not be exact). </p>
+<p>The timeout period must not be negative and whilst sleeping the thread cannot be woken up so it should only be used for short periods of time and when other methods such as using a <a class="el" href="classWaitableEvent.html" title="Allows threads to wait for events triggered by other threads. ">WaitableEvent</a> or <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> are not possible. </p>
+
 </div>
 </div>
 <a id="aaf47a344b3b715e49ffcbc6119c72cdc"></a>
@@ -762,7 +766,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Yields the calling thread's current time-slot. </p>
+<p>Yields the current thread's CPU time-slot and allows a new thread to run. </p>
+<p>If there are no other threads of equal or higher priority currently running then this will return immediately and the current thread will continue to run. </p>
 
 </div>
 </div>
@@ -782,9 +787,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Makes the thread wait for a notification. </p>
-<p>This puts the thread to sleep until either the timeout period expires, or another thread calls the <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> method to wake it up.</p>
-<p>A negative time-out value means that the method will wait indefinitely.</p>
+<p>Suspends the execution of this thread until either the specified timeout period has elapsed, or another thread calls the <a class="el" href="classThread.html#a0b4d5a1ffaa35cc13f323a0524012a2b" title="Wakes up the thread. ">notify()</a> method to wake it up. </p>
+<p>A negative timeout value means that the method will wait indefinitely.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the event has been signalled, false if the timeout expires. </dd></dl>
 
 </div>
@@ -805,8 +809,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wakes up the thread. </p>
-<p>If the thread has called the <a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Makes the thread wait for a notification. ">wait()</a> method, this will wake it up.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Makes the thread wait for a notification. ">wait</a> </dd></dl>
+<p>If the thread has called the <a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Suspends the execution of this thread until either the specified timeout period has elapsed...">wait()</a> method, this will wake it up.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#a99ac29606fd57fd418dfd169939f7b25" title="Suspends the execution of this thread until either the specified timeout period has elapsed...">wait</a> </dd></dl>
 
 </div>
 </div>
@@ -894,7 +898,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the ID of this thread. </p>
-<p>That means the ID of this thread object - not of the thread that's calling the method. This can change when the thread is started and stopped, and will be invalid if the thread's not actually running. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId</a> </dd></dl>
+<p>That means the ID of this thread object - not of the thread that's calling the method. This can change when the thread is started and stopped, and will be invalid if the thread's not actually running.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classThread.html#abd4762b20144186ffc28280cedd224e9" title="Returns an id that identifies the caller thread. ">getCurrentThreadId</a> </dd></dl>
 
 </div>
 </div>
@@ -1011,7 +1016,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 17 2018 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 18 2018 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

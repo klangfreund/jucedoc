@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cakewalkbybandlab',['CakewalkByBandlab',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a2f88f807b19df8dbf3e24a4aa120e20d',1,'PluginHostType']]],
   ['cakewalksonar8',['CakewalkSonar8',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a9346912590305747f0c38d7c3208de17',1,'PluginHostType']]],
   ['cakewalksonargeneric',['CakewalkSonarGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a0b64ed512c677bef44381479de35c425',1,'PluginHostType']]],
   ['call',['call',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886ac0cf2d883f0dba78427b3e97f05e42ee',1,'PushNotifications::Notification']]],
