@@ -83,6 +83,7 @@ var searchData=
   ['juce_5fblockconfigmanager_2eh',['juce_BlockConfigManager.h',['../juce__BlockConfigManager_8h.html',1,'']]],
   ['juce_5fblockmodels_2eh',['juce_BlockModels.h',['../juce__BlockModels_8h.html',1,'']]],
   ['juce_5fblocksprotocoldefinitions_2eh',['juce_BlocksProtocolDefinitions.h',['../juce__BlocksProtocolDefinitions_8h.html',1,'']]],
+  ['juce_5fblocksversion_2eh',['juce_BlocksVersion.h',['../juce__BlocksVersion_8h.html',1,'']]],
   ['juce_5fblowfish_2eh',['juce_BlowFish.h',['../juce__BlowFish_8h.html',1,'']]],
   ['juce_5fbluetoothmididevicepairingdialogue_2eh',['juce_BluetoothMidiDevicePairingDialogue.h',['../juce__BluetoothMidiDevicePairingDialogue_8h.html',1,'']]],
   ['juce_5fbooleanpropertycomponent_2eh',['juce_BooleanPropertyComponent.h',['../juce__BooleanPropertyComponent_8h.html',1,'']]],

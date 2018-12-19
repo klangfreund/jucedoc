@@ -7,7 +7,7 @@ var searchData=
   ['values',['values',['../structBlock_1_1ProgramEventMessage.html#aec4510472128b7de03b5ff86968787ec',1,'Block::ProgramEventMessage']]],
   ['valueswithlisteners',['valuesWithListeners',['../classValue_1_1ValueSource.html#ac6c18c9323cbda13d3e967c1b3c7b3cf',1,'Value::ValueSource']]],
   ['vector',['vector',['../classQuaternion.html#aea2b69403fdef5dfde9c62c9aeac3925',1,'Quaternion']]],
-  ['version',['version',['../classPluginDescription.html#ad5d55de3c1ad1646e5cc49d04e5c41e8',1,'PluginDescription::version()'],['../structBlocksProtocol_1_1VersionNumber.html#aa783aa66c3e0e30f06d3cf38cd9a7917',1,'BlocksProtocol::VersionNumber::version()'],['../structBlocksProtocol_1_1DeviceVersion.html#a7a4c8c493b0bf2d43dfcd53568dbd896',1,'BlocksProtocol::DeviceVersion::version()']]],
+  ['version',['version',['../classPluginDescription.html#ad5d55de3c1ad1646e5cc49d04e5c41e8',1,'PluginDescription::version()'],['../structBlocksProtocol_1_1DeviceVersion.html#a7a4c8c493b0bf2d43dfcd53568dbd896',1,'BlocksProtocol::DeviceVersion::version()']]],
   ['versionnumber',['versionNumber',['../classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c',1,'Block']]],
   ['vibrationpattern',['vibrationPattern',['../structPushNotifications_1_1Notification.html#a11d67737e656b05529698fe54c7bc5f1',1,'PushNotifications::Notification::vibrationPattern()'],['../structPushNotifications_1_1Channel.html#a7b0ab8e6ce7d3fecb538cb74730ea818',1,'PushNotifications::Channel::vibrationPattern()']]],
   ['violet',['violet',['../classColours.html#a47d1f14979982a28936c5ec4f90e82aa',1,'Colours']]],

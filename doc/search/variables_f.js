@@ -18,6 +18,7 @@ var searchData=
   ['part2',['part2',['../classRSAKey.html#a8f404bb892955099f1495922fe43e0f8',1,'RSAKey']]],
   ['passes',['passes',['../structUnitTestRunner_1_1TestResult.html#a8ad1f84de7871ffdb1d4cbf5b702d74c',1,'UnitTestRunner::TestResult']]],
   ['passwordbox',['passwordBox',['../classOnlineUnlockForm.html#acc068c52c2ce6302f98b107bad3de684',1,'OnlineUnlockForm']]],
+  ['patch',['patch',['../structBlocksVersion.html#aff8c570cd3a8652f096825e23afde33e',1,'BlocksVersion']]],
   ['path',['path',['../classDrawableShape.html#a21fde06c1c09e9498575cbbfd36e7793',1,'DrawableShape']]],
   ['peachpuff',['peachpuff',['../classColours.html#aa83a3ec486288727ffa82d9e8e4a82b0',1,'Colours']]],
   ['pernotepitchbendrange',['perNotePitchbendRange',['../structMPEZoneLayout_1_1Zone.html#ae5f849443b3268cf79670f457d443fb8',1,'MPEZoneLayout::Zone']]],

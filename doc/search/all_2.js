@@ -237,6 +237,7 @@ var searchData=
   ['commandmodifier',['commandModifier',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba5e28f0dd247a86d9a21bdcabd644d058',1,'ModifierKeys']]],
   ['commandoption',['commandOption',['../structConsoleApplication_1_1Command.html#a98c8e5736f46b734d2b84216484bde39',1,'ConsoleApplication::Command']]],
   ['commandstatuschanged',['commandStatusChanged',['../classApplicationCommandManager.html#a91fef61705d98da881276733e304e7af',1,'ApplicationCommandManager']]],
+  ['commit',['commit',['../structBlocksVersion.html#a5df2d7fd3fa25fa03b1691d0b04ef002',1,'BlocksVersion']]],
   ['commonapplicationdatadirectory',['commonApplicationDataDirectory',['../classFile.html#a3e19cafabb03c5838160263a6e76313da18566f0ca926c8f6db1e178ba5f403c0',1,'File']]],
   ['commondocumentsdirectory',['commonDocumentsDirectory',['../classFile.html#a3e19cafabb03c5838160263a6e76313dada45b7958b5fc77f30e313f8dab12b23',1,'File']]],
   ['commontoallusers',['commonToAllUsers',['../structPropertiesFile_1_1Options.html#a1b4a530664906ebeadce842431f6f681',1,'PropertiesFile::Options']]],

@@ -28,6 +28,7 @@ var searchData=
   ['commandid',['commandID',['../structApplicationCommandInfo.html#ac8265d08896874e8aad4f9bfee9e7e03',1,'ApplicationCommandInfo::commandID()'],['../structApplicationCommandTarget_1_1InvocationInfo.html#a4416781aae4ac0dd75477ddd98cb31d4',1,'ApplicationCommandTarget::InvocationInfo::commandID()']]],
   ['commandmanager',['commandManager',['../structPopupMenu_1_1Item.html#a12a2df0e3fa6e652c0e461ed065cc6c3',1,'PopupMenu::Item']]],
   ['commandoption',['commandOption',['../structConsoleApplication_1_1Command.html#a98c8e5736f46b734d2b84216484bde39',1,'ConsoleApplication::Command']]],
+  ['commit',['commit',['../structBlocksVersion.html#a5df2d7fd3fa25fa03b1691d0b04ef002',1,'BlocksVersion']]],
   ['commontoallusers',['commonToAllUsers',['../structPropertiesFile_1_1Options.html#a1b4a530664906ebeadce842431f6f681',1,'PropertiesFile::Options']]],
   ['compiledobjectcode',['compiledObjectCode',['../structlittlefoot_1_1Compiler.html#a4f30f7019befb6569f49d5be2210fd32',1,'littlefoot::Compiler']]],
   ['component',['component',['../classRelativeCoordinatePositionerBase_1_1ComponentScope.html#a26a2cebf33c19aebbfccddaba42e81cc',1,'RelativeCoordinatePositionerBase::ComponentScope::component()'],['../classComponentPeer.html#a597272f3a78e8f1d02471692c2e2932a',1,'ComponentPeer::component()']]],

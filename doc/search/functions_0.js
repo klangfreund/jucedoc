@@ -271,7 +271,6 @@ var searchData=
   ['asne',['asne',['../structdsp_1_1SpecialFunctions.html#a9c57c7c01f0f505ab3d6a2da4abcac38',1,'dsp::SpecialFunctions']]],
   ['assignchannel',['assignChannel',['../group__LittleFootFunctions.html#ga44ca776755d575767dcabdbbee2b3abb',1,'juce_LittleFootFunctions.dox']]],
   ['assignedfloat',['asSignedFloat',['../classMPEValue.html#a01f951536a984cabcf11f1a3a93bf5d0',1,'MPEValue']]],
-  ['asstring',['asString',['../structBlocksProtocol_1_1VersionNumber.html#aa9b2c73b7bcd07fe274056f9f201ff99',1,'BlocksProtocol::VersionNumber::asString()'],['../structBlocksProtocol_1_1BlockName.html#ad0c4395b8fe91e931867af0399eb722e',1,'BlocksProtocol::BlockName::asString()']]],
   ['asunsignedfloat',['asUnsignedFloat',['../classMPEValue.html#a5f032f62652034056981da5fcfed3d99',1,'MPEValue']]],
   ['asyncupdater',['AsyncUpdater',['../classAsyncUpdater.html#a5cb530c31e68d13bbdf078ed54911e0c',1,'AsyncUpdater']]],
   ['atomic',['Atomic',['../structAtomic.html#a903ef283284109ee6bdaa43d9b477224',1,'Atomic::Atomic() noexcept'],['../structAtomic.html#abf82947f4041182b22ec5c8035575519',1,'Atomic::Atomic(Type initialValue) noexcept'],['../structAtomic.html#a482fb9fec9e47b18884a5d1f1ac4c815',1,'Atomic::Atomic(const Atomic &amp;other) noexcept']]],

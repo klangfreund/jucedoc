@@ -1,6 +1,7 @@
 var searchData=
 [
   ['magenta',['magenta',['../classColours.html#a9a33de3ccb10690341256154909b390e',1,'Colours']]],
+  ['major',['major',['../structBlocksVersion.html#ab205b0ed57e871fb1a10e7b0caba3dc6',1,'BlocksVersion']]],
   ['manufacturername',['manufacturerName',['../classPluginDescription.html#aa8c02c784dc999a1043877b29795fff0',1,'PluginDescription']]],
   ['map',['map',['../classMemoryMappedAudioFormatReader.html#abac7449f98c330b9a633210af2145c0f',1,'MemoryMappedAudioFormatReader']]],
   ['mappedsection',['mappedSection',['../classMemoryMappedAudioFormatReader.html#a33d4ab9328d5a4e588053c894b7a8c45',1,'MemoryMappedAudioFormatReader']]],
@@ -21,6 +22,7 @@ var searchData=
   ['maximumblocksize',['maximumBlockSize',['../structdsp_1_1ProcessSpec.html#aa57b782ce7ef5dd262ed688b39d7ac26',1,'dsp::ProcessSpec']]],
   ['maximumexecutiontime',['maximumExecutionTime',['../classJavascriptEngine.html#a4a08635cda469509d851264f9fcf2c46',1,'JavascriptEngine']]],
   ['maximumseconds',['maximumSeconds',['../structPerformanceCounter_1_1Statistics.html#a560f9606307b0a9a7b4f44d839c80f61',1,'PerformanceCounter::Statistics']]],
+  ['maxlength',['maxLength',['../structBlocksProtocol_1_1BlockStringData.html#afcb7a453d9ccf96c0fe9697df1daed2d',1,'BlocksProtocol::BlockStringData']]],
   ['maxprogramsize',['maxProgramSize',['../structlittlefoot_1_1Program.html#a2b9f4b333cb9a2bfa4dffc0a8b3f7dce',1,'littlefoot::Program']]],
   ['maxwidth',['maxWidth',['../classFlexItem.html#ae1b6c839d1aefdedd7e3a3c4fa3667aa',1,'FlexItem::maxWidth()'],['../classGridItem.html#aa9141fbfdf1ca5bb5246cdc144095202',1,'GridItem::maxWidth()']]],
   ['mediumaquamarine',['mediumaquamarine',['../classColours.html#a059c8c5ab845ec21bba2a86cd8240fc7',1,'Colours']]],
@@ -44,6 +46,7 @@ var searchData=
   ['mindistance',['minDistance',['../structUnityAudioSpatializerData.html#a95b20b4ed04214f76624453e947c6116',1,'UnityAudioSpatializerData']]],
   ['minheight',['minHeight',['../classFlexItem.html#ae2ea8deb9f2f112b791c03e80bfdfd63',1,'FlexItem::minHeight()'],['../classGridItem.html#a198556dd7a242251f1a0ef4c162d66d7',1,'GridItem::minHeight()']]],
   ['minimumseconds',['minimumSeconds',['../structPerformanceCounter_1_1Statistics.html#a63ac69c1fee92ba8d3cf31f34aec53da',1,'PerformanceCounter::Statistics']]],
+  ['minor',['minor',['../structBlocksVersion.html#a97710fc4596a4d5e9c01b158e313ed3c',1,'BlocksVersion']]],
   ['mintcream',['mintcream',['../classColours.html#ae73a01a9deca54c8f004320a2d24edfb',1,'Colours']]],
   ['minwidth',['minWidth',['../classFlexItem.html#ac4c4db40e054ed849f115a4b4ec89b1e',1,'FlexItem::minWidth()'],['../classGridItem.html#a0eb1c62d876b6c7099b36d880627b636',1,'GridItem::minWidth()']]],
   ['mistyrose',['mistyrose',['../classColours.html#a6f6db5e9de7a3d438ebe01a6a6c28baf',1,'Colours']]],

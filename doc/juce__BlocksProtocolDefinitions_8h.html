@@ -77,11 +77,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1BlockSerialNumber.html">BlocksProtocol::BlockSerialNumber</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a block's serial number.  <a href="structBlocksProtocol_1_1BlockSerialNumber.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1VersionNumber.html">BlocksProtocol::VersionNumber</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the version number.  <a href="structBlocksProtocol_1_1VersionNumber.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1BlockName.html">BlocksProtocol::BlockName</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the block name.  <a href="structBlocksProtocol_1_1BlockName.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1BlockStringData.html">BlocksProtocol::BlockStringData&lt; MaxSize &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for generic block data.  <a href="structBlocksProtocol_1_1BlockStringData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlocksProtocol_1_1DeviceStatus.html">BlocksProtocol::DeviceStatus</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the device status.  <a href="structBlocksProtocol_1_1DeviceStatus.html#details">More...</a><br /></td></tr>
@@ -136,6 +133,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1db5e098ab83aadeae6a82a25ed9efc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#a1db5e098ab83aadeae6a82a25ed9efc8">BlocksProtocol::ConnectorPort</a> = IntegerWithBitSize&lt; 5 &gt;</td></tr>
 <tr class="memdesc:a1db5e098ab83aadeae6a82a25ed9efc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConnectorPort is an index, starting at 0 for the leftmost port on the top edge, and going clockwise.  <a href="namespaceBlocksProtocol.html#a1db5e098ab83aadeae6a82a25ed9efc8">More...</a><br /></td></tr>
 <tr class="separator:a1db5e098ab83aadeae6a82a25ed9efc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29fc2bccf0e3f21100a3ec714fcff1e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#ac29fc2bccf0e3f21100a3ec714fcff1e">BlocksProtocol::VersionNumber</a> = BlockStringData&lt; 21 &gt;</td></tr>
+<tr class="separator:ac29fc2bccf0e3f21100a3ec714fcff1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9daa2a7ab09343ac6f1f82b21ca678c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#a9daa2a7ab09343ac6f1f82b21ca678c1">BlocksProtocol::BlockName</a> = BlockStringData&lt; 33 &gt;</td></tr>
+<tr class="separator:a9daa2a7ab09343ac6f1f82b21ca678c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec6985f2994cb5c42906336c94c885f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#aeec6985f2994cb5c42906336c94c885f">BlocksProtocol::TouchIndex</a> = IntegerWithBitSize&lt; 5 &gt;</td></tr>
 <tr class="memdesc:aeec6985f2994cb5c42906336c94c885f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of a touch, i.e.  <a href="namespaceBlocksProtocol.html#aeec6985f2994cb5c42906336c94c885f">More...</a><br /></td></tr>
 <tr class="separator:aeec6985f2994cb5c42906336c94c885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,7 +375,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 18 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2018 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

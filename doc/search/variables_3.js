@@ -19,7 +19,7 @@ var searchData=
   ['darkturquoise',['darkturquoise',['../classColours.html#a3cab3c29a15b8f727b4915512c7f0c63',1,'Colours']]],
   ['darkviolet',['darkviolet',['../classColours.html#a157085bc9d4d0bc75966b238b51a7ee3',1,'Colours']]],
   ['dashlengths',['dashLengths',['../classDrawableShape.html#a5c20c34a8e2f8de83cd9c83c3abd830d',1,'DrawableShape']]],
-  ['data',['data',['../classMidiBuffer.html#a7982121d5b53cc1dd6371898d6472de7',1,'MidiBuffer::data()'],['../classImage_1_1BitmapData.html#a20783df25b604990685fe8cbb0f1cf91',1,'Image::BitmapData::data()']]],
+  ['data',['data',['../classMidiBuffer.html#a7982121d5b53cc1dd6371898d6472de7',1,'MidiBuffer::data()'],['../structBlocksProtocol_1_1BlockStringData.html#acb105579c6142ad14fe93acd32ccd5c8',1,'BlocksProtocol::BlockStringData::data()'],['../classImage_1_1BitmapData.html#a20783df25b604990685fe8cbb0f1cf91',1,'Image::BitmapData::data()']]],
   ['datachunkstart',['dataChunkStart',['../classMemoryMappedAudioFormatReader.html#a50ccc5aaa756180f865ad1b6ff43bf0d',1,'MemoryMappedAudioFormatReader']]],
   ['datainputportlisteners',['dataInputPortListeners',['../classBlock.html#a86de54de4f53ae04cc3fdd5ce9b841bf',1,'Block']]],
   ['datalength',['dataLength',['../classMemoryMappedAudioFormatReader.html#ac19c1cd6d4aff52e7820ec40e1e4d271',1,'MemoryMappedAudioFormatReader']]],
