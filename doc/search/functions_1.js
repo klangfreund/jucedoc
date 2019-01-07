@@ -14,7 +14,7 @@ var searchData=
   ['begintransparencylayer',['beginTransparencyLayer',['../classGraphics.html#ab8d8ee1c6bb810074eff904fd3c21fc4',1,'Graphics::beginTransparencyLayer()'],['../classLowLevelGraphicsContext.html#a7779642c9e50269e96906915f8dd833d',1,'LowLevelGraphicsContext::beginTransparencyLayer()'],['../classLowLevelGraphicsPostScriptRenderer.html#aade6567b6bbde44f598f0c216cca1821',1,'LowLevelGraphicsPostScriptRenderer::beginTransparencyLayer()']]],
   ['beginwaitingforsocket',['beginWaitingForSocket',['../classInterprocessConnectionServer.html#a2f4fb097909c5baeaf1646d88a54c695',1,'InterprocessConnectionServer']]],
   ['besseli0',['besselI0',['../structdsp_1_1SpecialFunctions.html#a5e2d98499c8e8f15d907f5174e15e196',1,'dsp::SpecialFunctions']]],
-  ['between',['between',['../classRange.html#aa0165f9820b176b5df903e19c8a2a88b',1,'Range']]],
+  ['between',['between',['../classRange.html#aac352bda3230a38ea2ecace58f141ec0',1,'Range']]],
   ['bias',['Bias',['../classdsp_1_1Bias.html#a49472fab9aec0a6b38cca0e5a348d675',1,'dsp::Bias']]],
   ['bigendian24bit',['bigEndian24Bit',['../group__juce__core-memory.html#ga8fcf355ccb0994692f022c89df9ca023',1,'ByteOrder']]],
   ['bigendian24bittochars',['bigEndian24BitToChars',['../group__juce__core-memory.html#gaced79b19c10a01d8d08c4f52e41d5d0f',1,'ByteOrder']]],

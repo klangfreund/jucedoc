@@ -31,7 +31,7 @@ var searchData=
   ['beige',['beige',['../classColours.html#a3dfd5f795dbfe57bd3d2b856455b68ab',1,'Colours']]],
   ['below',['below',['../classBubbleComponent.html#aba96d481d723fd2549f497ccd7ed41a3a971b484b6fd9e0e0f97ec4ef2c64de50',1,'BubbleComponent']]],
   ['besseli0',['besselI0',['../structdsp_1_1SpecialFunctions.html#a5e2d98499c8e8f15d907f5174e15e196',1,'dsp::SpecialFunctions']]],
-  ['between',['between',['../classRange.html#aa0165f9820b176b5df903e19c8a2a88b',1,'Range']]],
+  ['between',['between',['../classRange.html#aac352bda3230a38ea2ecace58f141ec0',1,'Range']]],
   ['beveled',['beveled',['../classPathStrokeType.html#af1cf21018ccb9aa84572c1da4ae513b8a957c356587532b49af11000b024bd38b',1,'PathStrokeType']]],
   ['bias',['Bias',['../classdsp_1_1Bias.html',1,'dsp::Bias&lt; FloatType &gt;'],['../classdsp_1_1Bias.html#a49472fab9aec0a6b38cca0e5a348d675',1,'dsp::Bias::Bias()']]],
   ['bigendian24bit',['bigEndian24Bit',['../group__juce__core-memory.html#ga8fcf355ccb0994692f022c89df9ca023',1,'ByteOrder']]],
