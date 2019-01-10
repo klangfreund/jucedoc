@@ -323,7 +323,7 @@ var searchData=
   ['setdismissalmouseclicksarealwaysconsumed',['setDismissalMouseClicksAreAlwaysConsumed',['../classCallOutBox.html#a28c85c1cfc76bb0801e287950ec8ce45',1,'CallOutBox']]],
   ['setdockiconvisible',['setDockIconVisible',['../classProcess.html#abce4be274d956bdb4f7c36398e776bfb',1,'Process']]],
   ['setdocumenteditedstatus',['setDocumentEditedStatus',['../classComponentPeer.html#a3288b2b0df69ef748513219d0a01f78d',1,'ComponentPeer']]],
-  ['setdoubleclickreturnvalue',['setDoubleClickReturnValue',['../classSlider.html#ac22497e650b01ac15fcc992a2494e272',1,'Slider']]],
+  ['setdoubleclickreturnvalue',['setDoubleClickReturnValue',['../classSlider.html#a5fa32203d061a831c34a930d8084e550',1,'Slider']]],
   ['setdoubleclicktimeout',['setDoubleClickTimeout',['../classMouseEvent.html#a61131d747c89f4781a69619f5e07c535',1,'MouseEvent']]],
   ['setdoubleprecisionprocessing',['setDoublePrecisionProcessing',['../classAudioProcessorPlayer.html#a7d49f631fc1c0aac6f432fe4b524ff1d',1,'AudioProcessorPlayer']]],
   ['setdraganddropdescription',['setDragAndDropDescription',['../classFileTreeComponent.html#acf0d725ef9505914f37e60ab433c84d4',1,'FileTreeComponent']]],

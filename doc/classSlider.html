@@ -316,11 +316,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a846b68f0fe1624563399e540e38b4609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a846b68f0fe1624563399e540e38b4609">removeListener</a> (<a class="el" href="classSlider_1_1Listener.html">Listener</a> *listener)</td></tr>
 <tr class="memdesc:a846b68f0fe1624563399e540e38b4609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously-registered listener.  <a href="#a846b68f0fe1624563399e540e38b4609">More...</a><br /></td></tr>
 <tr class="separator:a846b68f0fe1624563399e540e38b4609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22497e650b01ac15fcc992a2494e272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#ac22497e650b01ac15fcc992a2494e272">setDoubleClickReturnValue</a> (bool shouldDoubleClickBeEnabled, double valueToSetOnDoubleClick)</td></tr>
-<tr class="memdesc:ac22497e650b01ac15fcc992a2494e272"><td class="mdescLeft">&#160;</td><td class="mdescRight">This lets you choose whether double-clicking moves the slider to a given position.  <a href="#ac22497e650b01ac15fcc992a2494e272">More...</a><br /></td></tr>
-<tr class="separator:ac22497e650b01ac15fcc992a2494e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa32203d061a831c34a930d8084e550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#a5fa32203d061a831c34a930d8084e550">setDoubleClickReturnValue</a> (bool shouldDoubleClickBeEnabled, double valueToSetOnDoubleClick, <a class="el" href="classModifierKeys.html">ModifierKeys</a> singleClickModifiers=<a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba06a1a39ebe788d01c5d421f8f472347d">ModifierKeys::altModifier</a>)</td></tr>
+<tr class="memdesc:a5fa32203d061a831c34a930d8084e550"><td class="mdescLeft">&#160;</td><td class="mdescRight">This lets you choose whether double-clicking or single-clicking with a specified key modifier moves the slider to a given position.  <a href="#a5fa32203d061a831c34a930d8084e550">More...</a><br /></td></tr>
+<tr class="separator:a5fa32203d061a831c34a930d8084e550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd2423167e9b726cb006848b96ab351"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#accd2423167e9b726cb006848b96ab351">getDoubleClickReturnValue</a> () const noexcept</td></tr>
-<tr class="memdesc:accd2423167e9b726cb006848b96ab351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the values last set by <a class="el" href="classSlider.html#ac22497e650b01ac15fcc992a2494e272" title="This lets you choose whether double-clicking moves the slider to a given position. ">setDoubleClickReturnValue()</a> method.  <a href="#accd2423167e9b726cb006848b96ab351">More...</a><br /></td></tr>
+<tr class="memdesc:accd2423167e9b726cb006848b96ab351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the values last set by <a class="el" href="classSlider.html#a5fa32203d061a831c34a930d8084e550" title="This lets you choose whether double-clicking or single-clicking with a specified key modifier moves t...">setDoubleClickReturnValue()</a> method.  <a href="#accd2423167e9b726cb006848b96ab351">More...</a><br /></td></tr>
 <tr class="separator:accd2423167e9b726cb006848b96ab351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad603b9b073cd1a8df35de2884c22f630"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlider.html#ad603b9b073cd1a8df35de2884c22f630">isDoubleClickReturnEnabled</a> () const noexcept</td></tr>
 <tr class="memdesc:ad603b9b073cd1a8df35de2884c22f630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if double-clicking to reset to a default value is enabled.  <a href="#ad603b9b073cd1a8df35de2884c22f630">More...</a><br /></td></tr>
@@ -2667,8 +2667,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac22497e650b01ac15fcc992a2494e272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac22497e650b01ac15fcc992a2494e272">&#9670;&nbsp;</a></span>setDoubleClickReturnValue()</h2>
+<a id="a5fa32203d061a831c34a930d8084e550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa32203d061a831c34a930d8084e550">&#9670;&nbsp;</a></span>setDoubleClickReturnValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2683,7 +2683,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>valueToSetOnDoubleClick</em>&#160;</td>
+          <td class="paramname"><em>valueToSetOnDoubleClick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModifierKeys.html">ModifierKeys</a>&#160;</td>
+          <td class="paramname"><em>singleClickModifiers</em> = <code><a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba06a1a39ebe788d01c5d421f8f472347d">ModifierKeys::altModifier</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2693,8 +2699,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This lets you choose whether double-clicking moves the slider to a given position. </p>
-<p>By default this is turned off, but it's handy if you want a double-click to act as a quick way of resetting a slider. Just pass in the value you want it to go to when double-clicked.</p>
+<p>This lets you choose whether double-clicking or single-clicking with a specified key modifier moves the slider to a given position. </p>
+<p>By default this is turned off, but it's handy if you want either of these actions to act as a quick way of resetting a slider. Just pass in the value you want it to go to when double-clicked. By default the key modifier is the alt key but you can pass in another key modifier, or none to disable this behaviour.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlider.html#accd2423167e9b726cb006848b96ab351" title="Returns the values last set by setDoubleClickReturnValue() method. ">getDoubleClickReturnValue</a> </dd></dl>
 
 </div>
@@ -2722,8 +2728,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the values last set by <a class="el" href="classSlider.html#ac22497e650b01ac15fcc992a2494e272" title="This lets you choose whether double-clicking moves the slider to a given position. ">setDoubleClickReturnValue()</a> method. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlider.html#ac22497e650b01ac15fcc992a2494e272" title="This lets you choose whether double-clicking moves the slider to a given position. ">setDoubleClickReturnValue</a> </dd></dl>
+<p>Returns the values last set by <a class="el" href="classSlider.html#a5fa32203d061a831c34a930d8084e550" title="This lets you choose whether double-clicking or single-clicking with a specified key modifier moves t...">setDoubleClickReturnValue()</a> method. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlider.html#a5fa32203d061a831c34a930d8084e550" title="This lets you choose whether double-clicking or single-clicking with a specified key modifier moves t...">setDoubleClickReturnValue</a> </dd></dl>
 
 </div>
 </div>
@@ -2751,7 +2757,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if double-clicking to reset to a default value is enabled. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlider.html#ac22497e650b01ac15fcc992a2494e272" title="This lets you choose whether double-clicking moves the slider to a given position. ">setDoubleClickReturnValue</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlider.html#a5fa32203d061a831c34a930d8084e550" title="This lets you choose whether double-clicking or single-clicking with a specified key modifier moves t...">setDoubleClickReturnValue</a> </dd></dl>
 
 </div>
 </div>
@@ -4041,7 +4047,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 10 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
