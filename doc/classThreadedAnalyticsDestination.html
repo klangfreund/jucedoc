@@ -81,9 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9a6dfe1046433c3b5b9ec764fc6260d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadedAnalyticsDestination.html#ab9a6dfe1046433c3b5b9ec764fc6260d">ThreadedAnalyticsDestination</a> (const <a class="el" href="classString.html">String</a> &amp;threadName=&quot;Analytics thread&quot;)</td></tr>
 <tr class="memdesc:ab9a6dfe1046433c3b5b9ec764fc6260d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classThreadedAnalyticsDestination.html" title="A base class for dispatching analytics events on a dedicated thread. ">ThreadedAnalyticsDestination</a>.  <a href="#ab9a6dfe1046433c3b5b9ec764fc6260d">More...</a><br /></td></tr>
 <tr class="separator:ab9a6dfe1046433c3b5b9ec764fc6260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43fde2e526d9c5c8dfd367ba4bfaf5b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadedAnalyticsDestination.html#ad43fde2e526d9c5c8dfd367ba4bfaf5b">~ThreadedAnalyticsDestination</a> ()</td></tr>
-<tr class="memdesc:ad43fde2e526d9c5c8dfd367ba4bfaf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ad43fde2e526d9c5c8dfd367ba4bfaf5b">More...</a><br /></td></tr>
-<tr class="separator:ad43fde2e526d9c5c8dfd367ba4bfaf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae993dee10c7bc385e9437472792b03b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadedAnalyticsDestination.html#aae993dee10c7bc385e9437472792b03b">~ThreadedAnalyticsDestination</a> () override</td></tr>
+<tr class="memdesc:aae993dee10c7bc385e9437472792b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aae993dee10c7bc385e9437472792b03b">More...</a><br /></td></tr>
+<tr class="separator:aae993dee10c7bc385e9437472792b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd72d3a1b982b1fe5c2bdbef147a5aae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadedAnalyticsDestination.html#afd72d3a1b982b1fe5c2bdbef147a5aae">getMaximumBatchSize</a> ()=0</td></tr>
 <tr class="memdesc:afd72d3a1b982b1fe5c2bdbef147a5aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to provide the maximum batch size you can handle in your subclass.  <a href="#afd72d3a1b982b1fe5c2bdbef147a5aae">More...</a><br /></td></tr>
 <tr class="separator:afd72d3a1b982b1fe5c2bdbef147a5aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,8 +149,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad43fde2e526d9c5c8dfd367ba4bfaf5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad43fde2e526d9c5c8dfd367ba4bfaf5b">&#9670;&nbsp;</a></span>~ThreadedAnalyticsDestination()</h2>
+<a id="aae993dee10c7bc385e9437472792b03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae993dee10c7bc385e9437472792b03b">&#9670;&nbsp;</a></span>~ThreadedAnalyticsDestination()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual ThreadedAnalyticsDestination::~ThreadedAnalyticsDestination </td>
+          <td class="memname">ThreadedAnalyticsDestination::~ThreadedAnalyticsDestination </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -167,7 +167,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -411,7 +411,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

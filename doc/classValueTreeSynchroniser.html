@@ -81,9 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85fc71c5c6f74a970ff2b0f45d0a679b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTreeSynchroniser.html#a85fc71c5c6f74a970ff2b0f45d0a679b">ValueTreeSynchroniser</a> (const <a class="el" href="classValueTree.html">ValueTree</a> &amp;tree)</td></tr>
 <tr class="memdesc:a85fc71c5c6f74a970ff2b0f45d0a679b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classValueTreeSynchroniser.html" title="This class can be used to watch for all changes to the state of a ValueTree, and to convert them to a...">ValueTreeSynchroniser</a> that watches the given tree.  <a href="#a85fc71c5c6f74a970ff2b0f45d0a679b">More...</a><br /></td></tr>
 <tr class="separator:a85fc71c5c6f74a970ff2b0f45d0a679b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0719684d20eee3d640551cef6c75e72"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTreeSynchroniser.html#ae0719684d20eee3d640551cef6c75e72">~ValueTreeSynchroniser</a> ()</td></tr>
-<tr class="memdesc:ae0719684d20eee3d640551cef6c75e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae0719684d20eee3d640551cef6c75e72">More...</a><br /></td></tr>
-<tr class="separator:ae0719684d20eee3d640551cef6c75e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5fcab970529bb8605e2f8dca11b903"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTreeSynchroniser.html#a5c5fcab970529bb8605e2f8dca11b903">~ValueTreeSynchroniser</a> () override</td></tr>
+<tr class="memdesc:a5c5fcab970529bb8605e2f8dca11b903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5c5fcab970529bb8605e2f8dca11b903">More...</a><br /></td></tr>
+<tr class="separator:a5c5fcab970529bb8605e2f8dca11b903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2f064583c5bf45d65c5ff1369f0a5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTreeSynchroniser.html#acd2f064583c5bf45d65c5ff1369f0a5b">stateChanged</a> (const void *encodedChange, size_t encodedChangeSize)=0</td></tr>
 <tr class="memdesc:acd2f064583c5bf45d65c5ff1369f0a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback happens when the <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> changes and the given state-change message needs to be applied to any other trees that need to stay in sync with it.  <a href="#acd2f064583c5bf45d65c5ff1369f0a5b">More...</a><br /></td></tr>
 <tr class="separator:acd2f064583c5bf45d65c5ff1369f0a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,8 +126,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0719684d20eee3d640551cef6c75e72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0719684d20eee3d640551cef6c75e72">&#9670;&nbsp;</a></span>~ValueTreeSynchroniser()</h2>
+<a id="a5c5fcab970529bb8605e2f8dca11b903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5fcab970529bb8605e2f8dca11b903">&#9670;&nbsp;</a></span>~ValueTreeSynchroniser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual ValueTreeSynchroniser::~ValueTreeSynchroniser </td>
+          <td class="memname">ValueTreeSynchroniser::~ValueTreeSynchroniser </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -144,7 +144,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -299,7 +299,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

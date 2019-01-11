@@ -598,8 +598,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Replaces prepareToWrite/finishedWrite with a single function. </p>
 <p>This function returns an object which contains the start indices and block sizes, and also automatically finishes the write operation when it goes out of scope. </p><div class="fragment"><div class="line">{</div><div class="line">    <span class="keyword">auto</span> writeHandle = fifo.write (5);</div><div class="line"></div><div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i != writeHandle.blockSize1; ++i)</div><div class="line">    {</div><div class="line">        <span class="comment">// write the item at index writeHandle.startIndex1 + i</span></div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i != writeHandle.blockSize2; ++i)</div><div class="line">    {</div><div class="line">        <span class="comment">// write the item at index writeHandle.startIndex2 + i</span></div><div class="line">    }</div><div class="line">} <span class="comment">// writeHandle goes out of scope here, finishing the write operation</span></div></div><!-- fragment --> 
-<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -608,7 +606,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
