@@ -80,9 +80,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a534254f7895a750d6e02863f0b1f72de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSubsectionReader.html#a534254f7895a750d6e02863f0b1f72de">AudioSubsectionReader</a> (<a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *sourceReader, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> subsectionStartSample, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> subsectionLength, bool deleteSourceWhenDeleted)</td></tr>
 <tr class="memdesc:a534254f7895a750d6e02863f0b1f72de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioSubsectionReader.html" title="This class is used to wrap an AudioFormatReader and only read from a subsection of the file...">AudioSubsectionReader</a> for a given data source.  <a href="#a534254f7895a750d6e02863f0b1f72de">More...</a><br /></td></tr>
 <tr class="separator:a534254f7895a750d6e02863f0b1f72de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ea56901d6a179240bbb18e8ade97c90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSubsectionReader.html#a6ea56901d6a179240bbb18e8ade97c90">~AudioSubsectionReader</a> ()</td></tr>
-<tr class="memdesc:a6ea56901d6a179240bbb18e8ade97c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a6ea56901d6a179240bbb18e8ade97c90">More...</a><br /></td></tr>
-<tr class="separator:a6ea56901d6a179240bbb18e8ade97c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d9e6319bd430083106e6c82dfd1c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSubsectionReader.html#a622d9e6319bd430083106e6c82dfd1c3">~AudioSubsectionReader</a> () override</td></tr>
+<tr class="memdesc:a622d9e6319bd430083106e6c82dfd1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a622d9e6319bd430083106e6c82dfd1c3">More...</a><br /></td></tr>
+<tr class="separator:a622d9e6319bd430083106e6c82dfd1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74503d803fbffeac827371b7f75e0749"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSubsectionReader.html#a74503d803fbffeac827371b7f75e0749">readSamples</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> **destSamples, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numDestChannels, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startOffsetInDestBuffer, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> startSampleInFile, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamples) override</td></tr>
 <tr class="memdesc:a74503d803fbffeac827371b7f75e0749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses must implement this method to perform the low-level read operation.  <a href="#a74503d803fbffeac827371b7f75e0749">More...</a><br /></td></tr>
 <tr class="separator:a74503d803fbffeac827371b7f75e0749"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,11 +201,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ea56901d6a179240bbb18e8ade97c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ea56901d6a179240bbb18e8ade97c90">&#9670;&nbsp;</a></span>~AudioSubsectionReader()</h2>
+<a id="a622d9e6319bd430083106e6c82dfd1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622d9e6319bd430083106e6c82dfd1c3">&#9670;&nbsp;</a></span>~AudioSubsectionReader()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AudioSubsectionReader::~AudioSubsectionReader </td>
@@ -214,6 +217,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -359,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 16 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 18 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

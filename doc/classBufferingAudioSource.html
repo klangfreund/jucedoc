@@ -80,9 +80,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a325821cdc46ccbfcbad4c0c4e224e9f6">BufferingAudioSource</a> (<a class="el" href="classPositionableAudioSource.html">PositionableAudioSource</a> *source, <a class="el" href="classTimeSliceThread.html">TimeSliceThread</a> &amp;backgroundThread, bool deleteSourceWhenDeleted, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numberOfSamplesToBuffer, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numberOfChannels=2, bool prefillBufferOnPrepareToPlay=true)</td></tr>
 <tr class="memdesc:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classBufferingAudioSource.html" title="An AudioSource which takes another source as input, and buffers it using a thread. ">BufferingAudioSource</a>.  <a href="#a325821cdc46ccbfcbad4c0c4e224e9f6">More...</a><br /></td></tr>
 <tr class="separator:a325821cdc46ccbfcbad4c0c4e224e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2633cef1b35b4d435db60374d7b2859f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a2633cef1b35b4d435db60374d7b2859f">~BufferingAudioSource</a> ()</td></tr>
-<tr class="memdesc:a2633cef1b35b4d435db60374d7b2859f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a2633cef1b35b4d435db60374d7b2859f">More...</a><br /></td></tr>
-<tr class="separator:a2633cef1b35b4d435db60374d7b2859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faf7e7e7ae778125a26b1dc8bc0964c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#a3faf7e7e7ae778125a26b1dc8bc0964c">~BufferingAudioSource</a> () override</td></tr>
+<tr class="memdesc:a3faf7e7e7ae778125a26b1dc8bc0964c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3faf7e7e7ae778125a26b1dc8bc0964c">More...</a><br /></td></tr>
+<tr class="separator:a3faf7e7e7ae778125a26b1dc8bc0964c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7fccfe307c0c3f8c4c1af52b97cb6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioSource.html#aa7fccfe307c0c3f8c4c1af52b97cb6c1">prepareToPlay</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> samplesPerBlockExpected, double sampleRate) override</td></tr>
 <tr class="memdesc:aa7fccfe307c0c3f8c4c1af52b97cb6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the <a class="el" href="classAudioSource.html" title="Base class for objects that can produce a continuous stream of audio. ">AudioSource</a> method.  <a href="#aa7fccfe307c0c3f8c4c1af52b97cb6c1">More...</a><br /></td></tr>
 <tr class="separator:aa7fccfe307c0c3f8c4c1af52b97cb6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,11 +200,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2633cef1b35b4d435db60374d7b2859f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2633cef1b35b4d435db60374d7b2859f">&#9670;&nbsp;</a></span>~BufferingAudioSource()</h2>
+<a id="a3faf7e7e7ae778125a26b1dc8bc0964c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faf7e7e7ae778125a26b1dc8bc0964c">&#9670;&nbsp;</a></span>~BufferingAudioSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">BufferingAudioSource::~BufferingAudioSource </td>
@@ -213,6 +216,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -478,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 16 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 18 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

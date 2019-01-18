@@ -165,7 +165,7 @@ var searchData=
   ['colourselector',['ColourSelector',['../classColourSelector.html#a897f79f6d20ae6c1827b4885bdf73923',1,'ColourSelector']]],
   ['columnclicked',['columnClicked',['../classTableHeaderComponent.html#a5208c784a0fa38581aa512323c4be183',1,'TableHeaderComponent']]],
   ['combineseed',['combineSeed',['../classRandom.html#af8a7c8f1f8aa96b761c441f34382cd4a',1,'Random']]],
-  ['combobox',['ComboBox',['../classComboBox.html#ac21bb836780eb59d049e360fb843244e',1,'ComboBox']]],
+  ['combobox',['ComboBox',['../classComboBox.html#a68fd262b00db0b932f4a81273232b12f',1,'ComboBox']]],
   ['comboboxattachment',['ComboBoxAttachment',['../classAudioProcessorValueTreeState_1_1ComboBoxAttachment.html#a57408bc03c0b20af59deafacbd3e27fc',1,'AudioProcessorValueTreeState::ComboBoxAttachment']]],
   ['comboboxchanged',['comboBoxChanged',['../classComboBox_1_1Listener.html#a9ed3676ad921acde0414966fc41f1000',1,'ComboBox::Listener']]],
   ['commandstatuschanged',['commandStatusChanged',['../classApplicationCommandManager.html#a91fef61705d98da881276733e304e7af',1,'ApplicationCommandManager']]],

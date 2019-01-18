@@ -80,8 +80,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab68442def75d9d7b8a1f78883992041c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioReader.html#ab68442def75d9d7b8a1f78883992041c">BufferingAudioReader</a> (<a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *sourceReader, <a class="el" href="classTimeSliceThread.html">TimeSliceThread</a> &amp;timeSliceThread, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> samplesToBuffer)</td></tr>
 <tr class="memdesc:ab68442def75d9d7b8a1f78883992041c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a reader.  <a href="#ab68442def75d9d7b8a1f78883992041c">More...</a><br /></td></tr>
 <tr class="separator:ab68442def75d9d7b8a1f78883992041c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568c48a6b62ce2acf4e0e59f7ac78711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioReader.html#a568c48a6b62ce2acf4e0e59f7ac78711">~BufferingAudioReader</a> ()</td></tr>
-<tr class="separator:a568c48a6b62ce2acf4e0e59f7ac78711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbb457bc089fbe7ff1d0d58ee052918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioReader.html#aafbb457bc089fbe7ff1d0d58ee052918">~BufferingAudioReader</a> () override</td></tr>
+<tr class="separator:aafbb457bc089fbe7ff1d0d58ee052918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a27246602984c5614b7f708005a9d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBufferingAudioReader.html#a5a27246602984c5614b7f708005a9d34">setReadTimeout</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> timeoutMilliseconds) noexcept</td></tr>
 <tr class="memdesc:a5a27246602984c5614b7f708005a9d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a number of milliseconds that the reader can block for in its <a class="el" href="classBufferingAudioReader.html#a578f7686c957cfb442a5a385c2ebbbeb" title="Subclasses must implement this method to perform the low-level read operation. ">readSamples()</a> method before giving up and returning silence.  <a href="#a5a27246602984c5614b7f708005a9d34">More...</a><br /></td></tr>
 <tr class="separator:a5a27246602984c5614b7f708005a9d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,11 +195,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a568c48a6b62ce2acf4e0e59f7ac78711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568c48a6b62ce2acf4e0e59f7ac78711">&#9670;&nbsp;</a></span>~BufferingAudioReader()</h2>
+<a id="aafbb457bc089fbe7ff1d0d58ee052918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbb457bc089fbe7ff1d0d58ee052918">&#9670;&nbsp;</a></span>~BufferingAudioReader()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">BufferingAudioReader::~BufferingAudioReader </td>
@@ -208,6 +211,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -317,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 16 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 18 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

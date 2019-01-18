@@ -226,7 +226,7 @@ var searchData=
   ['columnpropertyflags',['ColumnPropertyFlags',['../classTableHeaderComponent.html#abfee3b5ccd3289efb38e7b7dd1162831',1,'TableHeaderComponent']]],
   ['columnreverse',['columnReverse',['../classFlexBox.html#a674e8e1e731b68c17d600715fca63015af6ee385127321f0a2c579444f938bc7f',1,'FlexBox']]],
   ['combineseed',['combineSeed',['../classRandom.html#af8a7c8f1f8aa96b761c441f34382cd4a',1,'Random']]],
-  ['combobox',['ComboBox',['../classComboBox.html',1,'ComboBox'],['../classComboBox.html#ac21bb836780eb59d049e360fb843244e',1,'ComboBox::ComboBox()']]],
+  ['combobox',['ComboBox',['../classComboBox.html',1,'ComboBox'],['../classComboBox.html#a68fd262b00db0b932f4a81273232b12f',1,'ComboBox::ComboBox()']]],
   ['comboboxattachment',['ComboBoxAttachment',['../classAudioProcessorValueTreeState_1_1ComboBoxAttachment.html',1,'AudioProcessorValueTreeState::ComboBoxAttachment'],['../classAudioProcessorValueTreeState_1_1ComboBoxAttachment.html#a57408bc03c0b20af59deafacbd3e27fc',1,'AudioProcessorValueTreeState::ComboBoxAttachment::ComboBoxAttachment()']]],
   ['comboboxchanged',['comboBoxChanged',['../classComboBox_1_1Listener.html#a9ed3676ad921acde0414966fc41f1000',1,'ComboBox::Listener']]],
   ['command',['Command',['../structConsoleApplication_1_1Command.html',1,'ConsoleApplication::Command'],['../structConsoleApplication_1_1Command.html#ae7e3c6edd33bcecff3f6bfa362e401da',1,'ConsoleApplication::Command::command()'],['../group__juce__audio__plugin__client-Unity.html#gga485dc2a0e5ed7da3d9f826367b36ee55a6440030ae8284cee96c1c88b356c45a7',1,'command():&#160;juce_UnityPluginInterface.h']]],
