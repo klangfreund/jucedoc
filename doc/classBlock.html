@@ -79,6 +79,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1BlockArea.html">BlockArea</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple struct representing the area of a block.  <a href="structBlock_1_1BlockArea.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata for a given config item.  <a href="structBlock_1_1ConfigMetaData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,9 +176,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeaf40b6fba680e0722d2c0bb2835b695"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit</a> () const =0</td></tr>
 <tr class="memdesc:aeaf40b6fba680e0722d2c0bb2835b695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of one logical device unit as physical millimeters.  <a href="#aeaf40b6fba680e0722d2c0bb2835b695">More...</a><br /></td></tr>
 <tr class="separator:aeaf40b6fba680e0722d2c0bb2835b695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacdb47edd84a2dc54d05394771a80a07"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classRectangle.html">Rectangle</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aacdb47edd84a2dc54d05394771a80a07">getBlockAreaWithinLayout</a> () const =0</td></tr>
-<tr class="memdesc:aacdb47edd84a2dc54d05394771a80a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the area that this block covers within the layout of the group as a whole.  <a href="#aacdb47edd84a2dc54d05394771a80a07">More...</a><br /></td></tr>
-<tr class="separator:aacdb47edd84a2dc54d05394771a80a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa85a485ec682e1b23da1a941d9d209"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBlock_1_1BlockArea.html">BlockArea</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a2aa85a485ec682e1b23da1a941d9d209">getBlockAreaWithinLayout</a> () const =0</td></tr>
+<tr class="memdesc:a2aa85a485ec682e1b23da1a941d9d209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the area that this block covers within the layout of the group as a whole.  <a href="#a2aa85a485ec682e1b23da1a941d9d209">More...</a><br /></td></tr>
+<tr class="separator:a2aa85a485ec682e1b23da1a941d9d209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74cf53cd8a93ea98115ff6f02a0dd011"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a74cf53cd8a93ea98115ff6f02a0dd011">getRotation</a> () const =0</td></tr>
 <tr class="memdesc:a74cf53cd8a93ea98115ff6f02a0dd011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation of this block relative to the master block in 90 degree steps clockwise.  <a href="#a74cf53cd8a93ea98115ff6f02a0dd011">More...</a><br /></td></tr>
 <tr class="separator:a74cf53cd8a93ea98115ff6f02a0dd011"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -585,7 +588,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Two blocks are considered equal if they have the same UID. </p>
 
-<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#aacdb47edd84a2dc54d05394771a80a07">getBlockAreaWithinLayout()</a>, <a class="el" href="classBlock.html#acc23b0d9ec2fb2c250a3b120da0dc337">getButtons()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#a9bf4c5524d032bed6f4f9fe7ac42aac1">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#a6b5061298a0a23598edc5c204ff0458c">getLEDGrid()</a>, <a class="el" href="classBlock.html#a77a2313ef84612f63b4e44c5b7e3e5e0">getLEDRow()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#a74cf53cd8a93ea98115ff6f02a0dd011">getRotation()</a>, <a class="el" href="classBlock.html#a89ba287c87d75f061eac4219df144e48">getStatusLights()</a>, <a class="el" href="classBlock.html#aa70fa4170ec51dc2e78c0ff03fb12592">getTouchSurface()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>, and <a class="el" href="classBlock.html#a0699fefdfbeb5311c7fd8b9fc1950e81">supportsGraphics()</a>.</p>
+<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#a9bf4c5524d032bed6f4f9fe7ac42aac1">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, and <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>.</p>
 
 </div>
 </div>
@@ -960,8 +963,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aacdb47edd84a2dc54d05394771a80a07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacdb47edd84a2dc54d05394771a80a07">&#9670;&nbsp;</a></span>getBlockAreaWithinLayout()</h2>
+<a id="a2aa85a485ec682e1b23da1a941d9d209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa85a485ec682e1b23da1a941d9d209">&#9670;&nbsp;</a></span>getBlockAreaWithinLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -970,7 +973,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classRectangle.html">Rectangle</a>&lt;<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&gt; Block::getBlockAreaWithinLayout </td>
+          <td class="memname">virtual <a class="el" href="structBlock_1_1BlockArea.html">BlockArea</a> Block::getBlockAreaWithinLayout </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -985,8 +988,6 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the area that this block covers within the layout of the group as a whole. </p>
 <p>The coordinates are in logical block units, and are relative to the origin, which is the master block's top-left corner. </p>
-
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -1014,8 +1015,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the rotation of this block relative to the master block in 90 degree steps clockwise. </p>
-
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -1045,8 +1044,6 @@ Protected Attributes</h2></td></tr>
 <p>If this block has a grid of LEDs, this will return an object to control it. </p>
 <p>Note that the pointer that is returned belongs to this object, and the caller must neither delete it or use it after the lifetime of this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object has finished. If there are no LEDs, then this method will return nullptr. </p>
 
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
-
 </div>
 </div>
 <a id="a77a2313ef84612f63b4e44c5b7e3e5e0"></a>
@@ -1074,8 +1071,6 @@ Protected Attributes</h2></td></tr>
 
 <p>If this block has a row of LEDs, this will return an object to control it. </p>
 <p>Note that the pointer that is returned belongs to this object, and the caller must neither delete it or use it after the lifetime of this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object has finished. If there are no LEDs, then this method will return nullptr. </p>
-
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -1105,8 +1100,6 @@ Protected Attributes</h2></td></tr>
 <p>If this block has any status LEDs, this will return an array of objects to control them. </p>
 <p>Note that the objects in the array belong to this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object, and the caller must neither delete them or use them after the lifetime of this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object has finished. </p>
 
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
-
 </div>
 </div>
 <a id="aa70fa4170ec51dc2e78c0ff03fb12592"></a>
@@ -1134,8 +1127,6 @@ Protected Attributes</h2></td></tr>
 
 <p>If this block has a pressure-sensitive surface, this will return an object to access its data. </p>
 <p>Note that the pointer returned does is owned by this object, and the caller must neither delete it or use it after the lifetime of this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object has finished. If the device is not touch-sensitive, then this method will return nullptr. </p>
-
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -1165,8 +1156,6 @@ Protected Attributes</h2></td></tr>
 <p>If this block has any control buttons, this will return an array of objects to control them. </p>
 <p>Note that the objects in the array belong to this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object, and the caller must neither delete them or use them after the lifetime of this <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> object has finished. </p>
 
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
-
 </div>
 </div>
 <a id="a0699fefdfbeb5311c7fd8b9fc1950e81"></a>
@@ -1194,8 +1183,6 @@ Protected Attributes</h2></td></tr>
 
 <p>This returns true if the block supports generating graphics by drawing into a JUCE <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a> context. </p>
 <p>This should only be true for virtual on-screen blocks; hardware blocks will instead use the LED <a class="el" href="classGrid.html" title="Container that handles geometry for grid layouts (fixed columns and rows) using a set of declarative ...">Grid</a> for visuals. </p>
-
-<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
 </div>
 </div>
@@ -2359,7 +2346,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 18 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

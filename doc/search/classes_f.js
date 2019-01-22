@@ -5,7 +5,7 @@ var searchData=
   ['packed7bitarrayreader',['Packed7BitArrayReader',['../structBlocksProtocol_1_1Packed7BitArrayReader.html',1,'BlocksProtocol']]],
   ['parallelogram',['Parallelogram',['../classParallelogram.html',1,'']]],
   ['parallelogram_3c_20float_20_3e',['Parallelogram&lt; float &gt;',['../classParallelogram.html',1,'']]],
-  ['parameter',['Parameter',['../classAudioProcessorValueTreeState_1_1Parameter.html',1,'AudioProcessorValueTreeState::Parameter'],['../structAudioPluginInstance_1_1Parameter.html',1,'AudioPluginInstance::Parameter']]],
+  ['parameter',['Parameter',['../structAudioPluginInstance_1_1Parameter.html',1,'AudioPluginInstance::Parameter'],['../classAudioProcessorValueTreeState_1_1Parameter.html',1,'AudioProcessorValueTreeState::Parameter']]],
   ['parametercontrolhighlightinfo',['ParameterControlHighlightInfo',['../structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html',1,'AudioProcessorEditor']]],
   ['parameterlayout',['ParameterLayout',['../classAudioProcessorValueTreeState_1_1ParameterLayout.html',1,'AudioProcessorValueTreeState']]],
   ['parameters',['Parameters',['../structdsp_1_1StateVariableFilter_1_1Parameters.html',1,'dsp::StateVariableFilter::Parameters&lt; NumericType &gt;'],['../structADSR_1_1Parameters.html',1,'ADSR::Parameters'],['../structReverb_1_1Parameters.html',1,'Reverb::Parameters']]],

@@ -8,6 +8,7 @@ var searchData=
   ['bitmapdatareleaser',['BitmapDataReleaser',['../classImage_1_1BitmapData_1_1BitmapDataReleaser.html',1,'Image::BitmapData']]],
   ['bitmapledprogram',['BitmapLEDProgram',['../structBitmapLEDProgram.html',1,'']]],
   ['block',['Block',['../classBlock.html',1,'']]],
+  ['blockarea',['BlockArea',['../structBlock_1_1BlockArea.html',1,'Block']]],
   ['blockconfigmanager',['BlockConfigManager',['../structBlockConfigManager.html',1,'']]],
   ['blockdeviceconnection',['BlockDeviceConnection',['../structBlockDeviceConnection.html',1,'']]],
   ['blockserialnumber',['BlockSerialNumber',['../structBlocksProtocol_1_1BlockSerialNumber.html',1,'BlocksProtocol']]],

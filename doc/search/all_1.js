@@ -64,6 +64,7 @@ var searchData=
   ['blendrect',['blendRect',['../group__LittleFootFunctions.html#ga31ccd4d5e7a75f964f8b3a2d72ca2753',1,'juce_LittleFootFunctions.dox']]],
   ['blob',['blob',['../classOSCTypes.html#ac43c6abfe6d67b3a52b0550c49a391ab',1,'OSCTypes']]],
   ['block',['Block',['../classBlock.html',1,'Block'],['../structBlock_1_1Program.html#a2b39067fad835a24a04776556cc5a972',1,'Block::Program::block()'],['../classControlButton.html#a59d4781c4364a7e78d20b31c58be0fb0',1,'ControlButton::block()'],['../classLEDGrid.html#a4c4acb32d76e95e6791ef629e8000bd8',1,'LEDGrid::block()'],['../classLEDRow.html#a7045a32380f8f6b030273c9af5150f8d',1,'LEDRow::block()'],['../classStatusLight.html#abcadf91771de7451dea784d2433e5df5',1,'StatusLight::block()'],['../classTouchSurface.html#a162504809b62b001219b38571a75f5d8',1,'TouchSurface::block()'],['../classBlock.html#a596d7845cc8ff7d29fdc0300bac04203',1,'Block::Block(const juce::String &amp;serialNumberToUse)'],['../classBlock.html#aadfaaed6e3ee5fa3a23469b3d2810d6a',1,'Block::Block(const juce::String &amp;serial, const juce::String &amp;version, const juce::String &amp;name)']]],
+  ['blockarea',['BlockArea',['../structBlock_1_1BlockArea.html',1,'Block']]],
   ['blockconfigmanager',['BlockConfigManager',['../structBlockConfigManager.html',1,'']]],
   ['blockdeviceconnection',['BlockDeviceConnection',['../structBlockDeviceConnection.html',1,'']]],
   ['blockname',['BlockName',['../namespaceBlocksProtocol.html#a9daa2a7ab09343ac6f1f82b21ca678c1',1,'BlocksProtocol']]],

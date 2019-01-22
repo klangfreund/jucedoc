@@ -3,7 +3,7 @@ var searchData=
   ['macaddress',['MACAddress',['../classMACAddress.html',1,'']]],
   ['machineidutilities',['MachineIDUtilities',['../structOnlineUnlockStatus_1_1MachineIDUtilities.html',1,'OnlineUnlockStatus']]],
   ['mapping',['Mapping',['../structSpeakerMappings_1_1Mapping.html',1,'SpeakerMappings']]],
-  ['margin',['Margin',['../structGridItem_1_1Margin.html',1,'GridItem::Margin'],['../structFlexItem_1_1Margin.html',1,'FlexItem::Margin']]],
+  ['margin',['Margin',['../structFlexItem_1_1Margin.html',1,'FlexItem::Margin'],['../structGridItem_1_1Margin.html',1,'GridItem::Margin']]],
   ['marker',['Marker',['../classMarkerList_1_1Marker.html',1,'MarkerList']]],
   ['markerlist',['MarkerList',['../classMarkerList.html',1,'']]],
   ['markerlistholder',['MarkerListHolder',['../structMarkerList_1_1MarkerListHolder.html',1,'MarkerList']]],

@@ -109,7 +109,7 @@ var searchData=
   ['getblacknotewidth',['getBlackNoteWidth',['../classMidiKeyboardComponent.html#ab87c5c3d1f745f6284da86eb7888829c',1,'MidiKeyboardComponent']]],
   ['getblacknotewidthproportion',['getBlackNoteWidthProportion',['../classMidiKeyboardComponent.html#acc46616d13121e1fc47514a77da60698',1,'MidiKeyboardComponent']]],
   ['getblob',['getBlob',['../classOSCArgument.html#a75b0188e5ea6314ab0d49503095d9e5c',1,'OSCArgument']]],
-  ['getblockareawithinlayout',['getBlockAreaWithinLayout',['../classBlock.html#aacdb47edd84a2dc54d05394771a80a07',1,'Block']]],
+  ['getblockareawithinlayout',['getBlockAreaWithinLayout',['../classBlock.html#a2aa85a485ec682e1b23da1a941d9d209',1,'Block']]],
   ['getblockidforblockincluster',['getBlockIdForBlockInCluster',['../group__LittleFootFunctions.html#ga9fe0d0edf7526345f85fff5e4f329d72',1,'juce_LittleFootFunctions.dox']]],
   ['getblockidforindex',['getBlockIDForIndex',['../group__LittleFootFunctions.html#ga62ddc93ea4be19d990bf08c6719e0a5a',1,'juce_LittleFootFunctions.dox']]],
   ['getblockidonport',['getBlockIDOnPort',['../group__LittleFootFunctions.html#gad5410fae6978e26b98d8c3f090974235',1,'juce_LittleFootFunctions.dox']]],
