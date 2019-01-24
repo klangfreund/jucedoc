@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2e410697d4aba3a559700957ac93fa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL_1_1DownloadTask.html#ad2e410697d4aba3a559700957ac93fa2">hadError</a> () const</td></tr>
 <tr class="memdesc:ad2e410697d4aba3a559700957ac93fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there was an error.  <a href="#ad2e410697d4aba3a559700957ac93fa2">More...</a><br /></td></tr>
 <tr class="separator:ad2e410697d4aba3a559700957ac93fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdec597d8a7520de98335de80cebe5f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL_1_1DownloadTask.html#acdec597d8a7520de98335de80cebe5f0">getTargetLocation</a> () const</td></tr>
+<tr class="memdesc:acdec597d8a7520de98335de80cebe5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target file location that was provided in <a class="el" href="classURL.html#a591172ae1dbe6598848d83e5eff5f6d0" title="Download the URL to a file. ">URL::downloadToFile</a>.  <a href="#acdec597d8a7520de98335de80cebe5f0">More...</a><br /></td></tr>
+<tr class="separator:acdec597d8a7520de98335de80cebe5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -127,6 +130,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ae3fb403562e17b8084164d8e0304d007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac006f0a866f0cdcef8592ba1536dab3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL_1_1DownloadTask.html#ac006f0a866f0cdcef8592ba1536dab3e">httpCode</a> = -1</td></tr>
 <tr class="separator:ac006f0a866f0cdcef8592ba1536dab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399553df34ac90a0a4306011b0d80c8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL_1_1DownloadTask.html#a399553df34ac90a0a4306011b0d80c8a">targetLocation</a></td></tr>
+<tr class="separator:a399553df34ac90a0a4306011b0d80c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a download task. </p>
@@ -282,6 +287,25 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="acdec597d8a7520de98335de80cebe5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdec597d8a7520de98335de80cebe5f0">&#9670;&nbsp;</a></span>getTargetLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFile.html">File</a> URL::DownloadTask::getTargetLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the target file location that was provided in <a class="el" href="classURL.html#a591172ae1dbe6598848d83e5eff5f6d0" title="Download the URL to a file. ">URL::downloadToFile</a>. </p>
+
+</div>
+</div>
 <a id="ab39eab9c0eacb9bdf99bd8c905781a9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab39eab9c0eacb9bdf99bd8c905781a9b">&#9670;&nbsp;</a></span>juce_iosURLSessionNotify()</h2>
 
@@ -421,13 +445,35 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a399553df34ac90a0a4306011b0d80c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399553df34ac90a0a4306011b0d80c8a">&#9670;&nbsp;</a></span>targetLocation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFile.html">File</a> URL::DownloadTask::targetLocation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__URL_8h.html">juce_URL.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 23 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 24 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

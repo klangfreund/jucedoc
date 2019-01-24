@@ -77,12 +77,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66972ba585a83090d77fb94f7f60f4fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structURL_1_1DownloadTask_1_1Listener.html#a66972ba585a83090d77fb94f7f60f4fa">~Listener</a> ()</td></tr>
 <tr class="separator:a66972ba585a83090d77fb94f7f60f4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a21324a4829b8d09e570dff1f0e3ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structURL_1_1DownloadTask_1_1Listener.html#af1a21324a4829b8d09e570dff1f0e3ea">finished</a> (<a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *task, bool success)=0</td></tr>
-<tr class="memdesc:af1a21324a4829b8d09e570dff1f0e3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the download has finished.  <a href="#af1a21324a4829b8d09e570dff1f0e3ea">More...</a><br /></td></tr>
-<tr class="separator:af1a21324a4829b8d09e570dff1f0e3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb38de449cfe02eb796bde8df4f6618c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structURL_1_1DownloadTask_1_1Listener.html#abb38de449cfe02eb796bde8df4f6618c">progress</a> (<a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *task, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> bytesDownloaded, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> totalLength)</td></tr>
-<tr class="memdesc:abb38de449cfe02eb796bde8df4f6618c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called periodically by the OS to indicate download progress.  <a href="#abb38de449cfe02eb796bde8df4f6618c">More...</a><br /></td></tr>
-<tr class="separator:abb38de449cfe02eb796bde8df4f6618c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d92f4f0248f8053e8c312d30241127d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structURL_1_1DownloadTask_1_1Listener.html#a5d92f4f0248f8053e8c312d30241127d">finished</a> (<a class="el" href="classURL_1_1DownloadTask.html">URL::DownloadTask</a> *task, bool success)=0</td></tr>
+<tr class="memdesc:a5d92f4f0248f8053e8c312d30241127d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the download has finished.  <a href="#a5d92f4f0248f8053e8c312d30241127d">More...</a><br /></td></tr>
+<tr class="separator:a5d92f4f0248f8053e8c312d30241127d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67d9b73554fd1786097be9323905c40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structURL_1_1DownloadTask_1_1Listener.html#ad67d9b73554fd1786097be9323905c40">progress</a> (<a class="el" href="classURL_1_1DownloadTask.html">URL::DownloadTask</a> *task, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> bytesDownloaded, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> totalLength)</td></tr>
+<tr class="memdesc:ad67d9b73554fd1786097be9323905c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called periodically by the OS to indicate download progress.  <a href="#ad67d9b73554fd1786097be9323905c40">More...</a><br /></td></tr>
+<tr class="separator:ad67d9b73554fd1786097be9323905c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used to receive callbacks for download progress. </p>
@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af1a21324a4829b8d09e570dff1f0e3ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1a21324a4829b8d09e570dff1f0e3ea">&#9670;&nbsp;</a></span>finished()</h2>
+<a id="a5d92f4f0248f8053e8c312d30241127d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d92f4f0248f8053e8c312d30241127d">&#9670;&nbsp;</a></span>finished()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void URL::DownloadTask::Listener::finished </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classURL_1_1DownloadTask.html">URL::DownloadTask</a> *&#160;</td>
           <td class="paramname"><em>task</em>, </td>
         </tr>
         <tr>
@@ -152,8 +152,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abb38de449cfe02eb796bde8df4f6618c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb38de449cfe02eb796bde8df4f6618c">&#9670;&nbsp;</a></span>progress()</h2>
+<a id="ad67d9b73554fd1786097be9323905c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67d9b73554fd1786097be9323905c40">&#9670;&nbsp;</a></span>progress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void URL::DownloadTask::Listener::progress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classURL_1_1DownloadTask.html">URL::DownloadTask</a> *&#160;</td>
           <td class="paramname"><em>task</em>, </td>
         </tr>
         <tr>
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 23 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 24 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

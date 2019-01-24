@@ -1279,6 +1279,7 @@ var searchData=
   ['gettargetcomponent',['getTargetComponent',['../classPopupMenu_1_1Options.html#af4a86b338f9791c4f5a53b5a46c9c3e0',1,'PopupMenu::Options::getTargetComponent()'],['../classOpenGLContext.html#a0079c44b081f30fb0ace2396a95df343',1,'OpenGLContext::getTargetComponent()']]],
   ['gettargetfile',['getTargetFile',['../classTemporaryFile.html#a61bb02caa51de80e32f05b90340c2c81',1,'TemporaryFile']]],
   ['gettargetforcommand',['getTargetForCommand',['../classApplicationCommandManager.html#ab9fcbf2c2a3b58cf1a54babf906d9e84',1,'ApplicationCommandManager::getTargetForCommand()'],['../classApplicationCommandTarget.html#aee836277019ca8182636e32701d814d7',1,'ApplicationCommandTarget::getTargetForCommand()']]],
+  ['gettargetlocation',['getTargetLocation',['../classURL_1_1DownloadTask.html#acdec597d8a7520de98335de80cebe5f0',1,'URL::DownloadTask']]],
   ['gettargetscreenarea',['getTargetScreenArea',['../classPopupMenu_1_1Options.html#acaa22be1fa930b97fcb8f8b99a40e358',1,'PopupMenu::Options']]],
   ['gettargetvalue',['getTargetValue',['../classLinearSmoothedValue.html#a3ba8bb37cd75cd07953577e3bd549aa3',1,'LinearSmoothedValue']]],
   ['gettempoat',['getTempoAt',['../classVSTPluginFormat_1_1ExtraFunctions.html#a9fe43eb48637fd972832c109499dd219',1,'VSTPluginFormat::ExtraFunctions']]],

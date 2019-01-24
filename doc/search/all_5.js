@@ -179,7 +179,7 @@ var searchData=
   ['findvoicetosteal',['findVoiceToSteal',['../classMPESynthesiser.html#aaa05024e912f26a9e34e3ef8a65c4985',1,'MPESynthesiser::findVoiceToSteal()'],['../classSynthesiser.html#a472a534d47f7e02f1224e77a95eadb3b',1,'Synthesiser::findVoiceToSteal()']]],
   ['findwordbreakafter',['findWordBreakAfter',['../classCodeDocument.html#a26c7afab579aea79440f02ba126ed2eb',1,'CodeDocument']]],
   ['findwordbreakbefore',['findWordBreakBefore',['../classCodeDocument.html#aa86e626eb2e919c675afa2317d4aada2',1,'CodeDocument']]],
-  ['finished',['finished',['../classURL_1_1DownloadTask.html#a99b0e4e086ff23726eb1bf0dcfab1529',1,'URL::DownloadTask::finished()'],['../structURL_1_1DownloadTask_1_1Listener.html#af1a21324a4829b8d09e570dff1f0e3ea',1,'URL::DownloadTask::Listener::finished()'],['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7daa5d7ceb2c59b8cee46c2953fec9abc19',1,'InAppPurchases::Download::finished()']]],
+  ['finished',['finished',['../classURL_1_1DownloadTask.html#a99b0e4e086ff23726eb1bf0dcfab1529',1,'URL::DownloadTask::finished()'],['../structURL_1_1DownloadTask_1_1Listener.html#a5d92f4f0248f8053e8c312d30241127d',1,'URL::DownloadTask::Listener::finished()'],['../structInAppPurchases_1_1Download.html#a5291a850795414d13ff21f08de0f5a7daa5d7ceb2c59b8cee46c2953fec9abc19',1,'InAppPurchases::Download::finished()']]],
   ['finishedread',['finishedRead',['../classAbstractFifo.html#a651019308fd148a1d1a84947d57e1679',1,'AbstractFifo']]],
   ['finishedwrite',['finishedWrite',['../classAbstractFifo.html#a0daf6067beb737a4136e7e9d8f26bab0',1,'AbstractFifo']]],
   ['fircoefficientsptr',['FIRCoefficientsPtr',['../structdsp_1_1FilterDesign.html#ac2ec41da614cadb901480dc30690aa79',1,'dsp::FilterDesign']]],
