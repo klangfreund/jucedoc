@@ -81,10 +81,10 @@ Inheritance diagram for AudioFormatWriter::ThreadedWriter::IncomingDataReceiver:
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a27d5ea6fc6910944fc7351e058af4450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a27d5ea6fc6910944fc7351e058af4450">IncomingDataReceiver</a> ()</td></tr>
-<tr class="separator:a27d5ea6fc6910944fc7351e058af4450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0728c19886518197e280cc5318197295"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a0728c19886518197e280cc5318197295">~IncomingDataReceiver</a> ()</td></tr>
-<tr class="separator:a0728c19886518197e280cc5318197295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc9623d8ebafb393737dd395839ecc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#addc9623d8ebafb393737dd395839ecc3">IncomingDataReceiver</a> ()=default</td></tr>
+<tr class="separator:addc9623d8ebafb393737dd395839ecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da0ba443ac037300f5617e4e9889bb2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a2da0ba443ac037300f5617e4e9889bb2">~IncomingDataReceiver</a> ()=default</td></tr>
+<tr class="separator:a2da0ba443ac037300f5617e4e9889bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e39e836142669e489b04389123536a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a48e39e836142669e489b04389123536a">reset</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> <a class="el" href="classAudioFormatWriter.html#af33e6836e6dbbcd774ac166453c5446c">numChannels</a>, double <a class="el" href="classAudioFormatWriter.html#aafefbda90e2a58cb057e89e995decfd2">sampleRate</a>, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> totalSamplesInSource)=0</td></tr>
 <tr class="separator:a48e39e836142669e489b04389123536a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99266c872fd4ba2106800b5422a18bda"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatWriter_1_1ThreadedWriter_1_1IncomingDataReceiver.html#a99266c872fd4ba2106800b5422a18bda">addBlock</a> (<a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> sampleNumberInSource, const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; float &gt; &amp;newData, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startOffsetInBuffer, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamples)=0</td></tr>
@@ -93,11 +93,14 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Receiver for incoming data. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a27d5ea6fc6910944fc7351e058af4450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d5ea6fc6910944fc7351e058af4450">&#9670;&nbsp;</a></span>IncomingDataReceiver()</h2>
+<a id="addc9623d8ebafb393737dd395839ecc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc9623d8ebafb393737dd395839ecc3">&#9670;&nbsp;</a></span>IncomingDataReceiver()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AudioFormatWriter::ThreadedWriter::IncomingDataReceiver::IncomingDataReceiver </td>
@@ -106,12 +109,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0728c19886518197e280cc5318197295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0728c19886518197e280cc5318197295">&#9670;&nbsp;</a></span>~IncomingDataReceiver()</h2>
+<a id="a2da0ba443ac037300f5617e4e9889bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da0ba443ac037300f5617e4e9889bb2">&#9670;&nbsp;</a></span>~IncomingDataReceiver()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +136,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -236,7 +244,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -75,11 +75,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca24598e184879750980c40e96fa835e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager_1_1Callback.html#aca24598e184879750980c40e96fa835e">Callback</a> ()</td></tr>
-<tr class="separator:aca24598e184879750980c40e96fa835e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58db204caa63cdda1621ff605bb98b0c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager_1_1Callback.html#a58db204caa63cdda1621ff605bb98b0c">~Callback</a> ()</td></tr>
-<tr class="memdesc:a58db204caa63cdda1621ff605bb98b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a58db204caa63cdda1621ff605bb98b0c">More...</a><br /></td></tr>
-<tr class="separator:a58db204caa63cdda1621ff605bb98b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa7f9bbc55fc52559e73b4df0b62b61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager_1_1Callback.html#a1fa7f9bbc55fc52559e73b4df0b62b61">Callback</a> ()=default</td></tr>
+<tr class="separator:a1fa7f9bbc55fc52559e73b4df0b62b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2178b8874f2df7f3666a841615369af2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager_1_1Callback.html#a2178b8874f2df7f3666a841615369af2">~Callback</a> ()=default</td></tr>
+<tr class="memdesc:a2178b8874f2df7f3666a841615369af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a2178b8874f2df7f3666a841615369af2">More...</a><br /></td></tr>
+<tr class="separator:a2178b8874f2df7f3666a841615369af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad44cd3225753579084bdb3ba7bd8e625"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalComponentManager_1_1Callback.html#ad44cd3225753579084bdb3ba7bd8e625">modalStateFinished</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> returnValue)=0</td></tr>
 <tr class="memdesc:ad44cd3225753579084bdb3ba7bd8e625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to indicate that a modal component has been dismissed.  <a href="#ad44cd3225753579084bdb3ba7bd8e625">More...</a><br /></td></tr>
 <tr class="separator:ad44cd3225753579084bdb3ba7bd8e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,11 +89,14 @@ Public Member Functions</h2></td></tr>
 <p>You can register a callback using <a class="el" href="classComponent.html#a0e7be8c456a663615eb389ecd10b2c04" title="Puts the component into a modal state. ">Component::enterModalState()</a> or <a class="el" href="classModalComponentManager.html#a2ce962253cf2c8e42d5575ad2a41d888" title="Adds a new callback that will be called when the specified modal component is dismissed. ">ModalComponentManager::attachCallback()</a>.</p>
 <p>For some quick ways of creating callback objects, see the <a class="el" href="classModalCallbackFunction.html" title="This class provides some handy utility methods for creating ModalComponentManager::Callback objects t...">ModalCallbackFunction</a> class. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classModalCallbackFunction.html" title="This class provides some handy utility methods for creating ModalComponentManager::Callback objects t...">ModalCallbackFunction</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aca24598e184879750980c40e96fa835e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca24598e184879750980c40e96fa835e">&#9670;&nbsp;</a></span>Callback()</h2>
+<a id="a1fa7f9bbc55fc52559e73b4df0b62b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa7f9bbc55fc52559e73b4df0b62b61">&#9670;&nbsp;</a></span>Callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ModalComponentManager::Callback::Callback </td>
@@ -102,12 +105,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a58db204caa63cdda1621ff605bb98b0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58db204caa63cdda1621ff605bb98b0c">&#9670;&nbsp;</a></span>~Callback()</h2>
+<a id="a2178b8874f2df7f3666a841615369af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2178b8874f2df7f3666a841615369af2">&#9670;&nbsp;</a></span>~Callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,14 +132,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
-
-<p class="reference">References <a class="el" href="group__juce__core-memory.html#gaf86c4799059ea3f12feb2c9a90abc5d1">JUCE_DECLARE_SINGLETON_SINGLETHREADED_MINIMAL</a>.</p>
 
 </div>
 </div>
@@ -173,7 +179,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

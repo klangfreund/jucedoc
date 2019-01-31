@@ -71,9 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a852e8a3012d3590f1eaaa4d01683fc99"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLassoSource.html#a852e8a3012d3590f1eaaa4d01683fc99">~LassoSource</a> ()</td></tr>
-<tr class="memdesc:a852e8a3012d3590f1eaaa4d01683fc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a852e8a3012d3590f1eaaa4d01683fc99">More...</a><br /></td></tr>
-<tr class="separator:a852e8a3012d3590f1eaaa4d01683fc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d82ca1d813aab04c6d93aec58c909e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLassoSource.html#ae8d82ca1d813aab04c6d93aec58c909e">~LassoSource</a> ()=default</td></tr>
+<tr class="memdesc:ae8d82ca1d813aab04c6d93aec58c909e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae8d82ca1d813aab04c6d93aec58c909e">More...</a><br /></td></tr>
+<tr class="separator:ae8d82ca1d813aab04c6d93aec58c909e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15851c6dc40e3931659c665b87bdf34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLassoSource.html#af15851c6dc40e3931659c665b87bdf34">findLassoItemsInArea</a> (<a class="el" href="classArray.html">Array</a>&lt; SelectableItemType &gt; &amp;itemsFound, const <a class="el" href="classRectangle.html">Rectangle</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &gt; &amp;area)=0</td></tr>
 <tr class="memdesc:af15851c6dc40e3931659c665b87bdf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of items that lie within a given lassoable region.  <a href="#af15851c6dc40e3931659c665b87bdf34">More...</a><br /></td></tr>
 <tr class="separator:af15851c6dc40e3931659c665b87bdf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,8 +89,8 @@ class LassoSource&lt; SelectableItemType &gt;</h3>
 <p>This allows the <a class="el" href="classLassoComponent.html" title="A component that acts as a rectangular selection region, which you drag with the mouse to select grou...">LassoComponent</a> to find out which items are within the lasso, and to change the list of selected items.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classLassoComponent.html" title="A component that acts as a rectangular selection region, which you drag with the mouse to select grou...">LassoComponent</a>, <a class="el" href="classSelectedItemSet.html" title="Manages a list of selectable items. ">SelectedItemSet</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a852e8a3012d3590f1eaaa4d01683fc99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a852e8a3012d3590f1eaaa4d01683fc99">&#9670;&nbsp;</a></span>~LassoSource()</h2>
+<a id="ae8d82ca1d813aab04c6d93aec58c909e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d82ca1d813aab04c6d93aec58c909e">&#9670;&nbsp;</a></span>~LassoSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,14 +109,12 @@ template&lt;class SelectableItemType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
-
-<p class="reference">References <a class="el" href="classLassoSource.html#af15851c6dc40e3931659c665b87bdf34">LassoSource&lt; SelectableItemType &gt;::findLassoItemsInArea()</a>, and <a class="el" href="classLassoSource.html#a24cf96f354570daf9478658f79c0c1b1">LassoSource&lt; SelectableItemType &gt;::getLassoSelection()</a>.</p>
 
 </div>
 </div>
@@ -161,8 +159,6 @@ template&lt;class SelectableItemType&gt; </div>
 <p>Your implementation of this method must find all the relevant items that lie within the given rectangle. and add them to the itemsFound array.</p>
 <p>The coordinates are relative to the top-left of the lasso component's parent component. (i.e. they are the same as the size and position of the lasso component itself). </p>
 
-<p class="reference">Referenced by <a class="el" href="classLassoSource.html#a852e8a3012d3590f1eaaa4d01683fc99">LassoSource&lt; SelectableItemType &gt;::~LassoSource()</a>.</p>
-
 </div>
 </div>
 <a id="a24cf96f354570daf9478658f79c0c1b1"></a>
@@ -193,7 +189,7 @@ template&lt;class SelectableItemType&gt; </div>
 <p>Returns the <a class="el" href="classSelectedItemSet.html" title="Manages a list of selectable items. ">SelectedItemSet</a> that the lasso should update. </p>
 <p>This set will be continuously updated by the <a class="el" href="classLassoComponent.html" title="A component that acts as a rectangular selection region, which you drag with the mouse to select grou...">LassoComponent</a> as it gets dragged around, so make sure that you've got a <a class="el" href="classChangeListener.html" title="Receives change event callbacks that are sent out by a ChangeBroadcaster. ">ChangeListener</a> attached to the set so that your UI objects will know when the selection changes and be able to update themselves appropriately. </p>
 
-<p class="reference">Referenced by <a class="el" href="classLassoComponent.html#af9d043865ee8f7db2989e7200d13dfd2">LassoComponent&lt; SelectableItemType &gt;::beginLasso()</a>, and <a class="el" href="classLassoSource.html#a852e8a3012d3590f1eaaa4d01683fc99">LassoSource&lt; SelectableItemType &gt;::~LassoSource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classLassoComponent.html#af9d043865ee8f7db2989e7200d13dfd2">LassoComponent&lt; SelectableItemType &gt;::beginLasso()</a>.</p>
 
 </div>
 </div>
@@ -203,7 +199,7 @@ template&lt;class SelectableItemType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

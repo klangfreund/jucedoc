@@ -78,9 +78,9 @@ Inheritance diagram for InputStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c49246dd62e559578732f518f159432"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a8c49246dd62e559578732f518f159432">~InputStream</a> ()</td></tr>
-<tr class="memdesc:a8c49246dd62e559578732f518f159432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a8c49246dd62e559578732f518f159432">More...</a><br /></td></tr>
-<tr class="separator:a8c49246dd62e559578732f518f159432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd14cdb0aedce17e4aedd5fa5d0ee83"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#abbd14cdb0aedce17e4aedd5fa5d0ee83">~InputStream</a> ()=default</td></tr>
+<tr class="memdesc:abbd14cdb0aedce17e4aedd5fa5d0ee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#abbd14cdb0aedce17e4aedd5fa5d0ee83">More...</a><br /></td></tr>
+<tr class="separator:abbd14cdb0aedce17e4aedd5fa5d0ee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebacb933570264e9697f6c984e348d01"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#aebacb933570264e9697f6c984e348d01">getTotalLength</a> ()=0</td></tr>
 <tr class="memdesc:aebacb933570264e9697f6c984e348d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of bytes available for reading in this stream.  <a href="#aebacb933570264e9697f6c984e348d01">More...</a><br /></td></tr>
 <tr class="separator:aebacb933570264e9697f6c984e348d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,16 +156,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7652c5cf6f92901c99ddb19a8adf2268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7652c5cf6f92901c99ddb19a8adf2268">InputStream</a> () noexcept</td></tr>
-<tr class="separator:a7652c5cf6f92901c99ddb19a8adf2268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bb66bced237daaacd2686991053d48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a44bb66bced237daaacd2686991053d48">InputStream</a> ()=default</td></tr>
+<tr class="separator:a44bb66bced237daaacd2686991053d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for streams that read data. </p>
 <p>Input and output streams are used throughout the library - subclasses can override some or all of the virtual functions to implement their behaviour.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classOutputStream.html" title="The base class for streams that write data to some kind of destination. ">OutputStream</a>, <a class="el" href="classMemoryInputStream.html" title="Allows a block of data to be accessed as a stream. ">MemoryInputStream</a>, <a class="el" href="classBufferedInputStream.html" title="Wraps another input stream, and reads from it using an intermediate buffer. ">BufferedInputStream</a>, <a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c49246dd62e559578732f518f159432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c49246dd62e559578732f518f159432">&#9670;&nbsp;</a></span>~InputStream()</h2>
+<a id="abbd14cdb0aedce17e4aedd5fa5d0ee83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd14cdb0aedce17e4aedd5fa5d0ee83">&#9670;&nbsp;</a></span>~InputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +182,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -191,8 +191,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7652c5cf6f92901c99ddb19a8adf2268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7652c5cf6f92901c99ddb19a8adf2268">&#9670;&nbsp;</a></span>InputStream()</h2>
+<a id="a44bb66bced237daaacd2686991053d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bb66bced237daaacd2686991053d48">&#9670;&nbsp;</a></span>InputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,12 +209,10 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
 
 </div>
 </div>
@@ -968,7 +966,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

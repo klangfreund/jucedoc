@@ -81,8 +81,8 @@ Inheritance diagram for AudioData::Converter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61cd524dfc4096c45f9594a188583ac7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioData_1_1Converter.html#a61cd524dfc4096c45f9594a188583ac7">~Converter</a> ()</td></tr>
-<tr class="separator:a61cd524dfc4096c45f9594a188583ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af589660ba0fdba1bcc57bdce71628de8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioData_1_1Converter.html#af589660ba0fdba1bcc57bdce71628de8">~Converter</a> ()=default</td></tr>
+<tr class="separator:af589660ba0fdba1bcc57bdce71628de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16d441acd5bf3cf8e26405fd5e54874"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioData_1_1Converter.html#af16d441acd5bf3cf8e26405fd5e54874">convertSamples</a> (void *destSamples, const void *sourceSamples, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamples) const =0</td></tr>
 <tr class="memdesc:af16d441acd5bf3cf8e26405fd5e54874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a sequence of samples from the converter's source format into the dest format.  <a href="#af16d441acd5bf3cf8e26405fd5e54874">More...</a><br /></td></tr>
 <tr class="separator:af16d441acd5bf3cf8e26405fd5e54874"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <p>The <a class="el" href="classAudioData_1_1ConverterInstance.html" title="A class that converts between two templated AudioData::Pointer types, and which implements the AudioD...">AudioData::ConverterInstance</a> implements this base class and can be templated, so you can create an instance that converts between two particular formats, and then store this in the abstract base class.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioData_1_1ConverterInstance.html" title="A class that converts between two templated AudioData::Pointer types, and which implements the AudioD...">AudioData::ConverterInstance</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a61cd524dfc4096c45f9594a188583ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61cd524dfc4096c45f9594a188583ac7">&#9670;&nbsp;</a></span>~Converter()</h2>
+<a id="af589660ba0fdba1bcc57bdce71628de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af589660ba0fdba1bcc57bdce71628de8">&#9670;&nbsp;</a></span>~Converter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

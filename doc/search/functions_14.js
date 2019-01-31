@@ -6,7 +6,7 @@ var searchData=
   ['uncompressto',['uncompressTo',['../classZipFile.html#a4d8bc0a4215a9464886909e527946155',1,'ZipFile']]],
   ['undefined',['undefined',['../classvar.html#aa8ad714f97623c9c8f0e0e7e139b09d4',1,'var']]],
   ['undo',['undo',['../classUndoableAction.html#a535a5ca2bdc00edebe2b868ec7c13482',1,'UndoableAction::undo()'],['../classUndoManager.html#a39f45c284e8d0df1a0d378e676246931',1,'UndoManager::undo()'],['../classTextEditor.html#a66fea7cc1a783ab14dd5a6386afc53e8',1,'TextEditor::undo()'],['../classCodeDocument.html#a47208d3029a44c1e9970f41ab5d87c5e',1,'CodeDocument::undo()'],['../classCodeEditorComponent.html#af9a84573dbbe88fe4c1cf0691e4246ba',1,'CodeEditorComponent::undo()']]],
-  ['undoableaction',['UndoableAction',['../classUndoableAction.html#abf39d7ee8e52523f0583dd3857ad86d6',1,'UndoableAction']]],
+  ['undoableaction',['UndoableAction',['../classUndoableAction.html#a6a6c5364778d5e863faf4a3def321d55',1,'UndoableAction']]],
   ['undocurrenttransactiononly',['undoCurrentTransactionOnly',['../classUndoManager.html#ad81c6649e3acc3ab36726c280058d6bb',1,'UndoManager']]],
   ['undomanager',['UndoManager',['../classUndoManager.html#a80479ce847ec1ac8cccb8bdf5bb5729e',1,'UndoManager']]],
   ['unfocusallcomponents',['unfocusAllComponents',['../classComponent.html#a34c592c531e8c996dee1bffb2884ca4e',1,'Component']]],

@@ -93,11 +93,11 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49747e7bca27c213004a89460543b139"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextInputTarget.html#a49747e7bca27c213004a89460543b139">TextInputTarget</a> ()</td></tr>
-<tr class="separator:a49747e7bca27c213004a89460543b139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77845e997bbe85a68ad77407a8f5bdfc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextInputTarget.html#a77845e997bbe85a68ad77407a8f5bdfc">~TextInputTarget</a> ()</td></tr>
-<tr class="memdesc:a77845e997bbe85a68ad77407a8f5bdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a77845e997bbe85a68ad77407a8f5bdfc">More...</a><br /></td></tr>
-<tr class="separator:a77845e997bbe85a68ad77407a8f5bdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acceb6caf8c699eb4d7639b5454e2ac0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextInputTarget.html#acceb6caf8c699eb4d7639b5454e2ac0a">TextInputTarget</a> ()=default</td></tr>
+<tr class="separator:acceb6caf8c699eb4d7639b5454e2ac0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3c275fba7276c1c9f8c01a6cb133b2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextInputTarget.html#aff3c275fba7276c1c9f8c01a6cb133b2">~TextInputTarget</a> ()=default</td></tr>
+<tr class="memdesc:aff3c275fba7276c1c9f8c01a6cb133b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aff3c275fba7276c1c9f8c01a6cb133b2">More...</a><br /></td></tr>
+<tr class="separator:aff3c275fba7276c1c9f8c01a6cb133b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dbdf96f7d6980207dde86edbd24455f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextInputTarget.html#a8dbdf96f7d6980207dde86edbd24455f">isTextInputActive</a> () const =0</td></tr>
 <tr class="memdesc:a8dbdf96f7d6980207dde86edbd24455f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this input target is currently accepting input.  <a href="#a8dbdf96f7d6980207dde86edbd24455f">More...</a><br /></td></tr>
 <tr class="separator:a8dbdf96f7d6980207dde86edbd24455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,11 +152,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a49747e7bca27c213004a89460543b139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49747e7bca27c213004a89460543b139">&#9670;&nbsp;</a></span>TextInputTarget()</h2>
+<a id="acceb6caf8c699eb4d7639b5454e2ac0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acceb6caf8c699eb4d7639b5454e2ac0a">&#9670;&nbsp;</a></span>TextInputTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">TextInputTarget::TextInputTarget </td>
@@ -165,12 +168,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a77845e997bbe85a68ad77407a8f5bdfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77845e997bbe85a68ad77407a8f5bdfc">&#9670;&nbsp;</a></span>~TextInputTarget()</h2>
+<a id="aff3c275fba7276c1c9f8c01a6cb133b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3c275fba7276c1c9f8c01a6cb133b2">&#9670;&nbsp;</a></span>~TextInputTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +195,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -452,7 +460,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -81,9 +81,9 @@ Inheritance diagram for MPEInstrument::Listener:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac877fa9127b1c3718ebad025fcb0ff85"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#ac877fa9127b1c3718ebad025fcb0ff85">~Listener</a> ()</td></tr>
-<tr class="memdesc:ac877fa9127b1c3718ebad025fcb0ff85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ac877fa9127b1c3718ebad025fcb0ff85">More...</a><br /></td></tr>
-<tr class="separator:ac877fa9127b1c3718ebad025fcb0ff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b96764da523054c5525c29c00c418e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a24b96764da523054c5525c29c00c418e">~Listener</a> ()=default</td></tr>
+<tr class="memdesc:a24b96764da523054c5525c29c00c418e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a24b96764da523054c5525c29c00c418e">More...</a><br /></td></tr>
+<tr class="separator:a24b96764da523054c5525c29c00c418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a3ed24fc611a2d655a0a7c06eb0883b6a">noteAdded</a> (<a class="el" href="structMPENote.html">MPENote</a> newNote)=0</td></tr>
 <tr class="memdesc:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a new expressive MIDI note is triggered.  <a href="#a3ed24fc611a2d655a0a7c06eb0883b6a">More...</a><br /></td></tr>
 <tr class="separator:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Derive from this class to be informed about any changes in the expressive MIDI notes played by this instrument. </p>
 <p>Note: This listener type receives its callbacks immediately, and not via the message thread (so you might be for example in the MIDI thread). Therefore you should never do heavy work such as graphics rendering etc. inside those callbacks. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac877fa9127b1c3718ebad025fcb0ff85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac877fa9127b1c3718ebad025fcb0ff85">&#9670;&nbsp;</a></span>~Listener()</h2>
+<a id="a24b96764da523054c5525c29c00c418e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b96764da523054c5525c29c00c418e">&#9670;&nbsp;</a></span>~Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -335,7 +335,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

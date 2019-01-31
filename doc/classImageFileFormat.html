@@ -79,9 +79,9 @@ Inheritance diagram for ImageFileFormat:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb530fe6617767ac78c26baf179e78d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageFileFormat.html#adb530fe6617767ac78c26baf179e78d2">~ImageFileFormat</a> ()</td></tr>
-<tr class="memdesc:adb530fe6617767ac78c26baf179e78d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#adb530fe6617767ac78c26baf179e78d2">More...</a><br /></td></tr>
-<tr class="separator:adb530fe6617767ac78c26baf179e78d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfd2ed107189e63513ea1bb699c562a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageFileFormat.html#a1cfd2ed107189e63513ea1bb699c562a">~ImageFileFormat</a> ()=default</td></tr>
+<tr class="memdesc:a1cfd2ed107189e63513ea1bb699c562a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a1cfd2ed107189e63513ea1bb699c562a">More...</a><br /></td></tr>
+<tr class="separator:a1cfd2ed107189e63513ea1bb699c562a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141e61162c688d5497e1b6391970fa7a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageFileFormat.html#a141e61162c688d5497e1b6391970fa7a">getFormatName</a> ()=0</td></tr>
 <tr class="memdesc:a141e61162c688d5497e1b6391970fa7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of this file format.  <a href="#a141e61162c688d5497e1b6391970fa7a">More...</a><br /></td></tr>
 <tr class="separator:a141e61162c688d5497e1b6391970fa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,17 +118,17 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac2e60288a31b4d2a963b0350f72c4483"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageFileFormat.html#ac2e60288a31b4d2a963b0350f72c4483">ImageFileFormat</a> ()</td></tr>
-<tr class="memdesc:ac2e60288a31b4d2a963b0350f72c4483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an ImageFormat.  <a href="#ac2e60288a31b4d2a963b0350f72c4483">More...</a><br /></td></tr>
-<tr class="separator:ac2e60288a31b4d2a963b0350f72c4483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b7bd0a3d4cd0d4b1de2851ca299834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImageFileFormat.html#a22b7bd0a3d4cd0d4b1de2851ca299834">ImageFileFormat</a> ()=default</td></tr>
+<tr class="memdesc:a22b7bd0a3d4cd0d4b1de2851ca299834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an ImageFormat.  <a href="#a22b7bd0a3d4cd0d4b1de2851ca299834">More...</a><br /></td></tr>
+<tr class="separator:a22b7bd0a3d4cd0d4b1de2851ca299834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base-class for codecs that can read and write image file formats such as PNG, JPEG, etc. </p>
 <p>This class also contains static methods to make it easy to load images from files, streams or from memory.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classImage.html" title="Holds a fixed-size bitmap. ">Image</a>, <a class="el" href="classImageCache.html" title="A global cache of images that have been loaded from files or memory. ">ImageCache</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac2e60288a31b4d2a963b0350f72c4483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2e60288a31b4d2a963b0350f72c4483">&#9670;&nbsp;</a></span>ImageFileFormat()</h2>
+<a id="a22b7bd0a3d4cd0d4b1de2851ca299834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b7bd0a3d4cd0d4b1de2851ca299834">&#9670;&nbsp;</a></span>ImageFileFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -154,8 +154,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adb530fe6617767ac78c26baf179e78d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb530fe6617767ac78c26baf179e78d2">&#9670;&nbsp;</a></span>~ImageFileFormat()</h2>
+<a id="a1cfd2ed107189e63513ea1bb699c562a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfd2ed107189e63513ea1bb699c562a">&#9670;&nbsp;</a></span>~ImageFileFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +172,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -520,7 +520,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

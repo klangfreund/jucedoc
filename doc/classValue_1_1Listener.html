@@ -81,10 +81,10 @@ Inheritance diagram for Value::Listener:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca4d97f9b7f5d75109df491021e8a308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue_1_1Listener.html#aca4d97f9b7f5d75109df491021e8a308">Listener</a> ()</td></tr>
-<tr class="separator:aca4d97f9b7f5d75109df491021e8a308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10db56a1241f10e1d2497de6248f519d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue_1_1Listener.html#a10db56a1241f10e1d2497de6248f519d">~Listener</a> ()</td></tr>
-<tr class="separator:a10db56a1241f10e1d2497de6248f519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfb07dc5d010bc007a8135412905f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue_1_1Listener.html#a7bfb07dc5d010bc007a8135412905f0c">Listener</a> ()=default</td></tr>
+<tr class="separator:a7bfb07dc5d010bc007a8135412905f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3226fdfa99c56c72adf9c008922599"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue_1_1Listener.html#aeb3226fdfa99c56c72adf9c008922599">~Listener</a> ()=default</td></tr>
+<tr class="separator:aeb3226fdfa99c56c72adf9c008922599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f072eabd128b8e9a99b4926f2231a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValue_1_1Listener.html#ab1f072eabd128b8e9a99b4926f2231a8">valueChanged</a> (<a class="el" href="classValue.html">Value</a> &amp;value)=0</td></tr>
 <tr class="memdesc:ab1f072eabd128b8e9a99b4926f2231a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object is changed.  <a href="#ab1f072eabd128b8e9a99b4926f2231a8">More...</a><br /></td></tr>
 <tr class="separator:ab1f072eabd128b8e9a99b4926f2231a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,11 +93,14 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Receives callbacks when a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object changes. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classValue.html#a3c2c52becedfd8c85029f98412300aa5" title="Adds a listener to receive callbacks when the value changes. ">Value::addListener</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aca4d97f9b7f5d75109df491021e8a308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca4d97f9b7f5d75109df491021e8a308">&#9670;&nbsp;</a></span>Listener()</h2>
+<a id="a7bfb07dc5d010bc007a8135412905f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfb07dc5d010bc007a8135412905f0c">&#9670;&nbsp;</a></span>Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Value::Listener::Listener </td>
@@ -106,12 +109,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a10db56a1241f10e1d2497de6248f519d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10db56a1241f10e1d2497de6248f519d">&#9670;&nbsp;</a></span>~Listener()</h2>
+<a id="aeb3226fdfa99c56c72adf9c008922599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3226fdfa99c56c72adf9c008922599">&#9670;&nbsp;</a></span>~Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +136,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -173,7 +181,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

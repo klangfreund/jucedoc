@@ -75,8 +75,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fa333da0ce4d127f262a55db247cc8f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1JobSelector.html#a6fa333da0ce4d127f262a55db247cc8f">~JobSelector</a> ()</td></tr>
-<tr class="separator:a6fa333da0ce4d127f262a55db247cc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee051e142b466d3c78f0366ceafc69b5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1JobSelector.html#aee051e142b466d3c78f0366ceafc69b5">~JobSelector</a> ()=default</td></tr>
+<tr class="separator:aee051e142b466d3c78f0366ceafc69b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad128c100151aad34bc5f28ace01ad839"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool_1_1JobSelector.html#ad128c100151aad34bc5f28ace01ad839">isJobSuitable</a> (<a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *job)=0</td></tr>
 <tr class="memdesc:ad128c100151aad34bc5f28ace01ad839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if the specified thread matches your criteria for whatever operation that this object is being used for.  <a href="#ad128c100151aad34bc5f28ace01ad839">More...</a><br /></td></tr>
 <tr class="separator:ad128c100151aad34bc5f28ace01ad839"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,8 +85,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A callback class used when you need to select which <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> objects are suitable for some kind of operation. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classThreadPool.html#a621253ea8de07a09a6c18238f8d33ced" title="Tries to remove all jobs from the pool. ">ThreadPool::removeAllJobs</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6fa333da0ce4d127f262a55db247cc8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa333da0ce4d127f262a55db247cc8f">&#9670;&nbsp;</a></span>~JobSelector()</h2>
+<a id="aee051e142b466d3c78f0366ceafc69b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee051e142b466d3c78f0366ceafc69b5">&#9670;&nbsp;</a></span>~JobSelector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,7 +103,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

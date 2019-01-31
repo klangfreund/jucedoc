@@ -81,10 +81,10 @@ Inheritance diagram for TextEditor::InputFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab082d3c8daf4c5f0066e13293e343bf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor_1_1InputFilter.html#ab082d3c8daf4c5f0066e13293e343bf0">InputFilter</a> ()</td></tr>
-<tr class="separator:ab082d3c8daf4c5f0066e13293e343bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3b60623d6e180770655266931001b7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor_1_1InputFilter.html#a9e3b60623d6e180770655266931001b7">~InputFilter</a> ()</td></tr>
-<tr class="separator:a9e3b60623d6e180770655266931001b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08ed42cc06c02de303b134ee2766b3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor_1_1InputFilter.html#af08ed42cc06c02de303b134ee2766b3e">InputFilter</a> ()=default</td></tr>
+<tr class="separator:af08ed42cc06c02de303b134ee2766b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4677c48bb8b41e55a3970f687aaf99"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor_1_1InputFilter.html#afb4677c48bb8b41e55a3970f687aaf99">~InputFilter</a> ()=default</td></tr>
+<tr class="separator:afb4677c48bb8b41e55a3970f687aaf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756742d178e4898f532bc5afa8453e56"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextEditor_1_1InputFilter.html#a756742d178e4898f532bc5afa8453e56">filterNewText</a> (<a class="el" href="classTextEditor.html">TextEditor</a> &amp;, const <a class="el" href="classString.html">String</a> &amp;newInput)=0</td></tr>
 <tr class="memdesc:a756742d178e4898f532bc5afa8453e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called whenever text is entered into the editor.  <a href="#a756742d178e4898f532bc5afa8453e56">More...</a><br /></td></tr>
 <tr class="separator:a756742d178e4898f532bc5afa8453e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,11 +92,14 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for input filters that can be applied to a <a class="el" href="classTextEditor.html" title="An editable text box. ">TextEditor</a> to restrict the text that can be entered. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab082d3c8daf4c5f0066e13293e343bf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab082d3c8daf4c5f0066e13293e343bf0">&#9670;&nbsp;</a></span>InputFilter()</h2>
+<a id="af08ed42cc06c02de303b134ee2766b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08ed42cc06c02de303b134ee2766b3e">&#9670;&nbsp;</a></span>InputFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">TextEditor::InputFilter::InputFilter </td>
@@ -105,12 +108,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9e3b60623d6e180770655266931001b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e3b60623d6e180770655266931001b7">&#9670;&nbsp;</a></span>~InputFilter()</h2>
+<a id="afb4677c48bb8b41e55a3970f687aaf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4677c48bb8b41e55a3970f687aaf99">&#9670;&nbsp;</a></span>~InputFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +135,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -182,7 +190,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

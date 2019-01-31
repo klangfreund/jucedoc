@@ -71,8 +71,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cfe38fdd495adcfdad8dc3dc736f371"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadLocalValue.html#a6cfe38fdd495adcfdad8dc3dc736f371">ThreadLocalValue</a> () noexcept</td></tr>
-<tr class="separator:a6cfe38fdd495adcfdad8dc3dc736f371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eddfbf44c904df38a528fb5b1d00e20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadLocalValue.html#a8eddfbf44c904df38a528fb5b1d00e20">ThreadLocalValue</a> ()=default</td></tr>
+<tr class="separator:a8eddfbf44c904df38a528fb5b1d00e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f84ce8c97c0c3d76be387b0d9cd5feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadLocalValue.html#a5f84ce8c97c0c3d76be387b0d9cd5feb">~ThreadLocalValue</a> ()</td></tr>
 <tr class="memdesc:a5f84ce8c97c0c3d76be387b0d9cd5feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5f84ce8c97c0c3d76be387b0d9cd5feb">More...</a><br /></td></tr>
 <tr class="separator:a5f84ce8c97c0c3d76be387b0d9cd5feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,8 +105,8 @@ class ThreadLocalValue&lt; Type &gt;</h3>
 <p>The templated class for your value must be a primitive type, or a simple POD struct.</p>
 <p>When a thread no longer needs to use its value, it can call <a class="el" href="classThreadLocalValue.html#a78af45671b2b057f0f584a75f79ff5b5" title="Called by a thread before it terminates, to allow this class to release any storage associated with t...">releaseCurrentThreadStorage()</a> to allow the storage to be re-used by another thread. If a thread exits without calling this method, the object storage will be left allocated until the <a class="el" href="classThreadLocalValue.html" title="Provides cross-platform support for thread-local objects. ">ThreadLocalValue</a> object is deleted. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6cfe38fdd495adcfdad8dc3dc736f371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cfe38fdd495adcfdad8dc3dc736f371">&#9670;&nbsp;</a></span>ThreadLocalValue()</h2>
+<a id="a8eddfbf44c904df38a528fb5b1d00e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eddfbf44c904df38a528fb5b1d00e20">&#9670;&nbsp;</a></span>ThreadLocalValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +125,7 @@ template&lt;typename Type &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -330,7 +330,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

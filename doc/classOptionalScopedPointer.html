@@ -71,9 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8b96c6f59b68c8fe8880bc986fe90458"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptionalScopedPointer.html#a8b96c6f59b68c8fe8880bc986fe90458">OptionalScopedPointer</a> ()</td></tr>
-<tr class="memdesc:a8b96c6f59b68c8fe8880bc986fe90458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty <a class="el" href="classOptionalScopedPointer.html" title="Holds a pointer to an object which can optionally be deleted when this pointer goes out of scope...">OptionalScopedPointer</a>.  <a href="#a8b96c6f59b68c8fe8880bc986fe90458">More...</a><br /></td></tr>
-<tr class="separator:a8b96c6f59b68c8fe8880bc986fe90458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4635f69a7c853d886389d6fa8e1ca01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptionalScopedPointer.html#ae4635f69a7c853d886389d6fa8e1ca01">OptionalScopedPointer</a> ()=default</td></tr>
+<tr class="memdesc:ae4635f69a7c853d886389d6fa8e1ca01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty <a class="el" href="classOptionalScopedPointer.html" title="Holds a pointer to an object which can optionally be deleted when this pointer goes out of scope...">OptionalScopedPointer</a>.  <a href="#ae4635f69a7c853d886389d6fa8e1ca01">More...</a><br /></td></tr>
+<tr class="separator:ae4635f69a7c853d886389d6fa8e1ca01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea2cd6ce97953c223ac0ab3789f9127"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptionalScopedPointer.html#a3ea2cd6ce97953c223ac0ab3789f9127">OptionalScopedPointer</a> (ObjectType *objectToHold, bool takeOwnership)</td></tr>
 <tr class="memdesc:a3ea2cd6ce97953c223ac0ab3789f9127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classOptionalScopedPointer.html" title="Holds a pointer to an object which can optionally be deleted when this pointer goes out of scope...">OptionalScopedPointer</a> to point to a given object, and specifying whether the <a class="el" href="classOptionalScopedPointer.html" title="Holds a pointer to an object which can optionally be deleted when this pointer goes out of scope...">OptionalScopedPointer</a> will delete it.  <a href="#a3ea2cd6ce97953c223ac0ab3789f9127">More...</a><br /></td></tr>
 <tr class="separator:a3ea2cd6ce97953c223ac0ab3789f9127"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,13 +131,16 @@ class OptionalScopedPointer&lt; ObjectType &gt;</h3>
 <p>This acts in many ways like a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a>, but allows you to specify whether or not the object is deleted.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8b96c6f59b68c8fe8880bc986fe90458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b96c6f59b68c8fe8880bc986fe90458">&#9670;&nbsp;</a></span>OptionalScopedPointer() <span class="overload">[1/3]</span></h2>
+<a id="ae4635f69a7c853d886389d6fa8e1ca01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4635f69a7c853d886389d6fa8e1ca01">&#9670;&nbsp;</a></span>OptionalScopedPointer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ObjectType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classOptionalScopedPointer.html">OptionalScopedPointer</a>&lt; ObjectType &gt;::<a class="el" href="classOptionalScopedPointer.html">OptionalScopedPointer</a> </td>
@@ -146,6 +149,11 @@ template&lt;class ObjectType&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Creates an empty <a class="el" href="classOptionalScopedPointer.html" title="Holds a pointer to an object which can optionally be deleted when this pointer goes out of scope...">OptionalScopedPointer</a>. </p>
@@ -592,7 +600,7 @@ template&lt;class ObjectType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

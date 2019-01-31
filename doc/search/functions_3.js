@@ -200,8 +200,8 @@ var searchData=
   ['dropshadoweffect',['DropShadowEffect',['../classDropShadowEffect.html#a385d398423cf81f8e073195ea84473b2',1,'DropShadowEffect']]],
   ['dropshadower',['DropShadower',['../classDropShadower.html#a14c45e01c95902e0a8f5a975c1519d69',1,'DropShadower']]],
   ['drumpadgridprogram',['DrumPadGridProgram',['../structDrumPadGridProgram.html#a000cdc2e5e8e5fe677be2feeb08717ca',1,'DrumPadGridProgram']]],
-  ['dummycriticalsection',['DummyCriticalSection',['../classDummyCriticalSection.html#aed067ef6b51dcca1f25f19231a99b595',1,'DummyCriticalSection']]],
+  ['dummycriticalsection',['DummyCriticalSection',['../classDummyCriticalSection.html#a1666af47d955cebe96b4cf603dd0f636',1,'DummyCriticalSection']]],
   ['duplicateifshared',['duplicateIfShared',['../classImage.html#ad995cd253234063d22b604984e83489d',1,'Image']]],
-  ['dynamiclibrary',['DynamicLibrary',['../classDynamicLibrary.html#a7c6a13e65177869af7116175c7745e2e',1,'DynamicLibrary::DynamicLibrary() noexcept'],['../classDynamicLibrary.html#af9ad02ee239000e67ff664ef4b5dfe2c',1,'DynamicLibrary::DynamicLibrary(const String &amp;name)'],['../classDynamicLibrary.html#aae057a9ca2d72db6b7bae77626e88342',1,'DynamicLibrary::DynamicLibrary(DynamicLibrary &amp;&amp;other) noexcept']]],
+  ['dynamiclibrary',['DynamicLibrary',['../classDynamicLibrary.html#a21beac9d24b6eab7157320021a5ef0d1',1,'DynamicLibrary::DynamicLibrary()=default'],['../classDynamicLibrary.html#af9ad02ee239000e67ff664ef4b5dfe2c',1,'DynamicLibrary::DynamicLibrary(const String &amp;name)'],['../classDynamicLibrary.html#aae057a9ca2d72db6b7bae77626e88342',1,'DynamicLibrary::DynamicLibrary(DynamicLibrary &amp;&amp;other) noexcept']]],
   ['dynamicobject',['DynamicObject',['../classDynamicObject.html#a50a7adf3d7d1f411ed2aa9a663bfe275',1,'DynamicObject::DynamicObject()'],['../classDynamicObject.html#afd2d04d5cb0612b22afcd6ba2a1c8f15',1,'DynamicObject::DynamicObject(const DynamicObject &amp;)']]]
 ];

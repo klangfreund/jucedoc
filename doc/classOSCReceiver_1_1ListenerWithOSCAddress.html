@@ -75,9 +75,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ad949fbd2d7d9e8a0253d1dfe93b394"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCReceiver_1_1ListenerWithOSCAddress.html#a4ad949fbd2d7d9e8a0253d1dfe93b394">~ListenerWithOSCAddress</a> ()</td></tr>
-<tr class="memdesc:a4ad949fbd2d7d9e8a0253d1dfe93b394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a4ad949fbd2d7d9e8a0253d1dfe93b394">More...</a><br /></td></tr>
-<tr class="separator:a4ad949fbd2d7d9e8a0253d1dfe93b394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8edca753aff99ecdf0d6af2bd0accd5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCReceiver_1_1ListenerWithOSCAddress.html#ab8edca753aff99ecdf0d6af2bd0accd5">~ListenerWithOSCAddress</a> ()=default</td></tr>
+<tr class="memdesc:ab8edca753aff99ecdf0d6af2bd0accd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab8edca753aff99ecdf0d6af2bd0accd5">More...</a><br /></td></tr>
+<tr class="separator:ab8edca753aff99ecdf0d6af2bd0accd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedfd17a06e68530c449d9ef85ca76740"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOSCReceiver_1_1ListenerWithOSCAddress.html#aedfd17a06e68530c449d9ef85ca76740">oscMessageReceived</a> (const <a class="el" href="classOSCMessage.html">OSCMessage</a> &amp;message)=0</td></tr>
 <tr class="memdesc:aedfd17a06e68530c449d9ef85ca76740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the <a class="el" href="classOSCReceiver.html" title="A class for receiving OSC data. ">OSCReceiver</a> receives an OSC message with an OSC address pattern that matches the OSC address with which this listener was added.  <a href="#aedfd17a06e68530c449d9ef85ca76740">More...</a><br /></td></tr>
 <tr class="separator:aedfd17a06e68530c449d9ef85ca76740"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,8 +93,8 @@ class OSCReceiver::ListenerWithOSCAddress&lt; CallbackType &gt;</h3>
 <p>Note: This type of listener will ignore OSC bundles.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classOSCReceiver.html#adcaed63b17d8749c937363d7e3732a4f" title="Adds a listener that listens to OSC messages and bundles. ">OSCReceiver::addListener</a>, <a class="el" href="classOSCReceiver_1_1Listener.html" title="A class for receiving OSC data from an OSCReceiver. ">OSCReceiver::Listener</a>, <a class="el" href="structOSCReceiver_1_1MessageLoopCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">OSCReceiver::MessageLoopCallback</a>, <a class="el" href="structOSCReceiver_1_1RealtimeCallback.html" title="Use this struct as the template parameter for Listener and ListenerWithOSCAddress to receive incoming...">OSCReceiver::RealtimeCallback</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4ad949fbd2d7d9e8a0253d1dfe93b394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ad949fbd2d7d9e8a0253d1dfe93b394">&#9670;&nbsp;</a></span>~ListenerWithOSCAddress()</h2>
+<a id="ab8edca753aff99ecdf0d6af2bd0accd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8edca753aff99ecdf0d6af2bd0accd5">&#9670;&nbsp;</a></span>~ListenerWithOSCAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +113,7 @@ template&lt;typename CallbackType = MessageLoopCallback&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -159,7 +159,7 @@ template&lt;typename CallbackType = MessageLoopCallback&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

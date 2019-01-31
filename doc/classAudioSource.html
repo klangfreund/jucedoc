@@ -78,9 +78,9 @@ Inheritance diagram for AudioSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38b04f6bf7ea63b6cf465213c164623b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSource.html#a38b04f6bf7ea63b6cf465213c164623b">~AudioSource</a> ()</td></tr>
-<tr class="memdesc:a38b04f6bf7ea63b6cf465213c164623b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a38b04f6bf7ea63b6cf465213c164623b">More...</a><br /></td></tr>
-<tr class="separator:a38b04f6bf7ea63b6cf465213c164623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cddd324bf8401416fc38eedc01c0a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSource.html#a86cddd324bf8401416fc38eedc01c0a8">~AudioSource</a> ()=default</td></tr>
+<tr class="memdesc:a86cddd324bf8401416fc38eedc01c0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a86cddd324bf8401416fc38eedc01c0a8">More...</a><br /></td></tr>
+<tr class="separator:a86cddd324bf8401416fc38eedc01c0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653279dbd167f70e318fd280681dbddf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSource.html#a653279dbd167f70e318fd280681dbddf">prepareToPlay</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> samplesPerBlockExpected, double sampleRate)=0</td></tr>
 <tr class="memdesc:a653279dbd167f70e318fd280681dbddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the source to prepare for playing.  <a href="#a653279dbd167f70e318fd280681dbddf">More...</a><br /></td></tr>
 <tr class="separator:a653279dbd167f70e318fd280681dbddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5b8ec7dc3b76d7f219d8f77d5ccfbcef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSource.html#a5b8ec7dc3b76d7f219d8f77d5ccfbcef">AudioSource</a> () noexcept</td></tr>
-<tr class="memdesc:a5b8ec7dc3b76d7f219d8f77d5ccfbcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioSource.html" title="Base class for objects that can produce a continuous stream of audio. ">AudioSource</a>.  <a href="#a5b8ec7dc3b76d7f219d8f77d5ccfbcef">More...</a><br /></td></tr>
-<tr class="separator:a5b8ec7dc3b76d7f219d8f77d5ccfbcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233efec1dab609e4cd0e53bc12ad0240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioSource.html#a233efec1dab609e4cd0e53bc12ad0240">AudioSource</a> ()=default</td></tr>
+<tr class="memdesc:a233efec1dab609e4cd0e53bc12ad0240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioSource.html" title="Base class for objects that can produce a continuous stream of audio. ">AudioSource</a>.  <a href="#a233efec1dab609e4cd0e53bc12ad0240">More...</a><br /></td></tr>
+<tr class="separator:a233efec1dab609e4cd0e53bc12ad0240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for objects that can produce a continuous stream of audio. </p>
@@ -104,8 +104,8 @@ Protected Member Functions</h2></td></tr>
 <p>Once playback has finished, the <a class="el" href="classAudioSource.html#a7823bf0f1c43333eed41664c7994f290" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources()</a> method is called to put the stream back into an 'unprepared' state.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioFormatReaderSource.html" title="A type of AudioSource that will read from an AudioFormatReader. ">AudioFormatReaderSource</a>, <a class="el" href="classResamplingAudioSource.html" title="A type of AudioSource that takes an input source and changes its sample rate. ">ResamplingAudioSource</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b8ec7dc3b76d7f219d8f77d5ccfbcef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b8ec7dc3b76d7f219d8f77d5ccfbcef">&#9670;&nbsp;</a></span>AudioSource()</h2>
+<a id="a233efec1dab609e4cd0e53bc12ad0240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233efec1dab609e4cd0e53bc12ad0240">&#9670;&nbsp;</a></span>AudioSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +122,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -131,8 +131,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a38b04f6bf7ea63b6cf465213c164623b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b04f6bf7ea63b6cf465213c164623b">&#9670;&nbsp;</a></span>~AudioSource()</h2>
+<a id="a86cddd324bf8401416fc38eedc01c0a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cddd324bf8401416fc38eedc01c0a8">&#9670;&nbsp;</a></span>~AudioSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -207,7 +207,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioSource.html#a7823bf0f1c43333eed41664c7994f290" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources</a>, <a class="el" href="classAudioSource.html#a36fc2484ead8fb8dc03be57d09dd5735" title="Called repeatedly to fetch subsequent blocks of audio data. ">getNextAudioBlock</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classAudioTransportSource.html#a8d6683c6ff1d33298928a764d12ffba1">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#abe7b07c27ff2987fd6968f1db40caafa">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#a86839d4efdb71c84f63da8051c0c13ad">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#af774982c4a8726436f3e505e459cdf18">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a5c69623e095398def8caa8dcaaf868af">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#aa7fccfe307c0c3f8c4c1af52b97cb6c1">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#a9fff0f513472ac19bade8f5c12cf4cfb">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#af8077a5e348be506347807afb25afee6">ReverbAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a136fa8f34b9f2f82dd8de3547a00f6a2">IIRFilterAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#a35738ccc76573c3d00f6c9cfe2494a4b">ToneGeneratorAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#aa5e1c5af2c57d52dc5b913e80c1a7a99">MemoryAudioSource</a>.</p>
+<p>Implemented in <a class="el" href="classAudioTransportSource.html#a8d6683c6ff1d33298928a764d12ffba1">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#abe7b07c27ff2987fd6968f1db40caafa">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#aa98326bd4ae4bd9bdc95e6d45d57e60c">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#af774982c4a8726436f3e505e459cdf18">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a5c69623e095398def8caa8dcaaf868af">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#aa7fccfe307c0c3f8c4c1af52b97cb6c1">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#a9fff0f513472ac19bade8f5c12cf4cfb">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#af8077a5e348be506347807afb25afee6">ReverbAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a136fa8f34b9f2f82dd8de3547a00f6a2">IIRFilterAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#a35738ccc76573c3d00f6c9cfe2494a4b">ToneGeneratorAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#aa5e1c5af2c57d52dc5b913e80c1a7a99">MemoryAudioSource</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioFormatReaderSource.html#a8cf967923624f7b75acafa3c397873da">AudioFormatReaderSource::getAudioFormatReader()</a>, <a class="el" href="classAudioTransportSource.html#a723be769b44f4334b947e3568e2b2d4a">AudioTransportSource::getGain()</a>, <a class="el" href="classResamplingAudioSource.html#af868951e30847cecd5f0729cecab722c">ResamplingAudioSource::getResamplingRatio()</a>, and <a class="el" href="classReverbAudioSource.html#a930435b2b93f74d00203b6794c41ac8e">ReverbAudioSource::isBypassed()</a>.</p>
 
@@ -241,7 +241,7 @@ Protected Member Functions</h2></td></tr>
 <p>Note that there's no guarantee that <a class="el" href="classAudioSource.html#a653279dbd167f70e318fd280681dbddf" title="Tells the source to prepare for playing. ">prepareToPlay()</a> will actually have been called before <a class="el" href="classAudioSource.html#a7823bf0f1c43333eed41664c7994f290" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources()</a>, and it may be called more than once in succession, so make sure your code is robust and doesn't make any assumptions about when it will be called.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioSource.html#a653279dbd167f70e318fd280681dbddf" title="Tells the source to prepare for playing. ">prepareToPlay</a>, <a class="el" href="classAudioSource.html#a36fc2484ead8fb8dc03be57d09dd5735" title="Called repeatedly to fetch subsequent blocks of audio data. ">getNextAudioBlock</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classAudioTransportSource.html#a1efbef0a54aee220f2910c6dec9f7199">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#adec9a1e901cc8b88626f02aaa5582a85">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#a70ea8262dddd0dbcd216a97c36796d66">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#aa4b64f534cadbd33e7aefcc6cee0f540">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a0f11379e2449d8108de40694bd6a268d">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#a62ec9a6127f4728ecb84464f807b648b">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#ab070c5a74deddbd0702a8b21cea2c678">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#a5150be0ceba566e4f8c4cf0f2bfebe74">ReverbAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a1a4939d75cdf79c7a1bdb5cd601e88aa">IIRFilterAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#aa9ffad22e4fa81eade2b237618d3ada2">ToneGeneratorAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#aec822e29a01e22d9a5fed0e1672ff26f">MemoryAudioSource</a>.</p>
+<p>Implemented in <a class="el" href="classAudioTransportSource.html#a1efbef0a54aee220f2910c6dec9f7199">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#adec9a1e901cc8b88626f02aaa5582a85">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#a76666e730166d2db46ada4074d5858e5">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#aa4b64f534cadbd33e7aefcc6cee0f540">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a0f11379e2449d8108de40694bd6a268d">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#a62ec9a6127f4728ecb84464f807b648b">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#ab070c5a74deddbd0702a8b21cea2c678">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#a5150be0ceba566e4f8c4cf0f2bfebe74">ReverbAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a1a4939d75cdf79c7a1bdb5cd601e88aa">IIRFilterAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#aa9ffad22e4fa81eade2b237618d3ada2">ToneGeneratorAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#aec822e29a01e22d9a5fed0e1672ff26f">MemoryAudioSource</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioFormatReaderSource.html#a8cf967923624f7b75acafa3c397873da">AudioFormatReaderSource::getAudioFormatReader()</a>, <a class="el" href="classAudioTransportSource.html#a723be769b44f4334b947e3568e2b2d4a">AudioTransportSource::getGain()</a>, <a class="el" href="classResamplingAudioSource.html#af868951e30847cecd5f0729cecab722c">ResamplingAudioSource::getResamplingRatio()</a>, and <a class="el" href="classReverbAudioSource.html#a930435b2b93f74d00203b6794c41ac8e">ReverbAudioSource::isBypassed()</a>.</p>
 
@@ -276,7 +276,7 @@ Protected Member Functions</h2></td></tr>
 <p>It will generally be called on a high-priority system thread, or possibly even an interrupt, so be careful not to do too much work here, as that will cause audio glitches!</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structAudioSourceChannelInfo.html" title="Used by AudioSource::getNextAudioBlock(). ">AudioSourceChannelInfo</a>, <a class="el" href="classAudioSource.html#a653279dbd167f70e318fd280681dbddf" title="Tells the source to prepare for playing. ">prepareToPlay</a>, <a class="el" href="classAudioSource.html#a7823bf0f1c43333eed41664c7994f290" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classAudioTransportSource.html#a7506340feb1e3cd0dac988f12a607fad">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#a7cc4e508799f79e4a7c750ea7a3c23f3">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#a95597e162d39500971678a44ff3568ec">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#a256583fd3a65353ec64910868c116e79">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a9136e13b99da2e6a683d6cc8244ff565">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#a53ed823e042d3b78ff7f11985d88042c">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#ab5535c45e5b301c5fe8066a36cea4e5a">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#a05fd8b39aa2dbf21095376ffd346dda0">ReverbAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#a13a58f7e1b3a296ce2070bbe3df57263">ToneGeneratorAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a30dd0315f98655cca03e578e115742de">IIRFilterAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#a0e86d90a7b518fa1ff0fb9c354f55add">MemoryAudioSource</a>.</p>
+<p>Implemented in <a class="el" href="classAudioTransportSource.html#a7506340feb1e3cd0dac988f12a607fad">AudioTransportSource</a>, <a class="el" href="classChannelRemappingAudioSource.html#a7cc4e508799f79e4a7c750ea7a3c23f3">ChannelRemappingAudioSource</a>, <a class="el" href="classAudioAppComponent.html#a912d68c09e3ac5bd7a3dbc35065c0844">AudioAppComponent</a>, <a class="el" href="classMixerAudioSource.html#a256583fd3a65353ec64910868c116e79">MixerAudioSource</a>, <a class="el" href="classAudioFormatReaderSource.html#a9136e13b99da2e6a683d6cc8244ff565">AudioFormatReaderSource</a>, <a class="el" href="classBufferingAudioSource.html#a53ed823e042d3b78ff7f11985d88042c">BufferingAudioSource</a>, <a class="el" href="classResamplingAudioSource.html#ab5535c45e5b301c5fe8066a36cea4e5a">ResamplingAudioSource</a>, <a class="el" href="classReverbAudioSource.html#a05fd8b39aa2dbf21095376ffd346dda0">ReverbAudioSource</a>, <a class="el" href="classToneGeneratorAudioSource.html#a13a58f7e1b3a296ce2070bbe3df57263">ToneGeneratorAudioSource</a>, <a class="el" href="classIIRFilterAudioSource.html#a30dd0315f98655cca03e578e115742de">IIRFilterAudioSource</a>, and <a class="el" href="classMemoryAudioSource.html#a0e86d90a7b518fa1ff0fb9c354f55add">MemoryAudioSource</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioFormatReaderSource.html#a8cf967923624f7b75acafa3c397873da">AudioFormatReaderSource::getAudioFormatReader()</a>, <a class="el" href="classAudioTransportSource.html#a723be769b44f4334b947e3568e2b2d4a">AudioTransportSource::getGain()</a>, <a class="el" href="classResamplingAudioSource.html#af868951e30847cecd5f0729cecab722c">ResamplingAudioSource::getResamplingRatio()</a>, and <a class="el" href="classReverbAudioSource.html#a930435b2b93f74d00203b6794c41ac8e">ReverbAudioSource::isBypassed()</a>.</p>
 
@@ -288,7 +288,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

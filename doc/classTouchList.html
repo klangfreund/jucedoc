@@ -78,12 +78,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a009b6d4cc4efd5bf4d1ccce1ce73c39a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchList.html#a009b6d4cc4efd5bf4d1ccce1ce73c39a">TouchList</a> ()</td></tr>
-<tr class="memdesc:a009b6d4cc4efd5bf4d1ccce1ce73c39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty touch list.  <a href="#a009b6d4cc4efd5bf4d1ccce1ce73c39a">More...</a><br /></td></tr>
-<tr class="separator:a009b6d4cc4efd5bf4d1ccce1ce73c39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d9d68b0d1496c5e7ed0212fb3fa712"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchList.html#a53d9d68b0d1496c5e7ed0212fb3fa712">~TouchList</a> ()</td></tr>
-<tr class="memdesc:a53d9d68b0d1496c5e7ed0212fb3fa712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a53d9d68b0d1496c5e7ed0212fb3fa712">More...</a><br /></td></tr>
-<tr class="separator:a53d9d68b0d1496c5e7ed0212fb3fa712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff2b9c01159b10c014f90d9664666f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchList.html#a2ff2b9c01159b10c014f90d9664666f7">TouchList</a> ()=default</td></tr>
+<tr class="memdesc:a2ff2b9c01159b10c014f90d9664666f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty touch list.  <a href="#a2ff2b9c01159b10c014f90d9664666f7">More...</a><br /></td></tr>
+<tr class="separator:a2ff2b9c01159b10c014f90d9664666f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357be312f23751110ca9a1016256f611"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchList.html#a357be312f23751110ca9a1016256f611">~TouchList</a> ()=default</td></tr>
+<tr class="memdesc:a357be312f23751110ca9a1016256f611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a357be312f23751110ca9a1016256f611">More...</a><br /></td></tr>
+<tr class="separator:a357be312f23751110ca9a1016256f611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a467675635e9a1986caddf87fba4ec29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTouchList.html#a467675635e9a1986caddf87fba4ec29a">size</a> () const noexcept</td></tr>
 <tr class="memdesc:a467675635e9a1986caddf87fba4ec29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entries in the touch list.  <a href="#a467675635e9a1986caddf87fba4ec29a">More...</a><br /></td></tr>
 <tr class="separator:a467675635e9a1986caddf87fba4ec29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,13 +125,16 @@ class TouchList&lt; Type &gt;</h3>
 <p>Utility class to hold a list of <a class="el" href="structTouchSurface_1_1Touch.html" title="Structure used to describe touch properties. ">TouchSurface::Touch</a> objects with different indices and blockUIDs, where each touch has a mapping to some kind of user-supplied data value. </p>
 <p>The Type template is a user-defined type of object that will be stored for each touch element. The type must be default-constructable and copyable. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a009b6d4cc4efd5bf4d1ccce1ce73c39a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a009b6d4cc4efd5bf4d1ccce1ce73c39a">&#9670;&nbsp;</a></span>TouchList()</h2>
+<a id="a2ff2b9c01159b10c014f90d9664666f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff2b9c01159b10c014f90d9664666f7">&#9670;&nbsp;</a></span>TouchList()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classTouchList.html">TouchList</a>&lt; Type &gt;::<a class="el" href="classTouchList.html">TouchList</a> </td>
@@ -140,19 +143,27 @@ template&lt;typename Type &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Creates an empty touch list. </p>
 
 </div>
 </div>
-<a id="a53d9d68b0d1496c5e7ed0212fb3fa712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d9d68b0d1496c5e7ed0212fb3fa712">&#9670;&nbsp;</a></span>~TouchList()</h2>
+<a id="a357be312f23751110ca9a1016256f611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357be312f23751110ca9a1016256f611">&#9670;&nbsp;</a></span>~TouchList()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classTouchList.html">TouchList</a>&lt; Type &gt;::~<a class="el" href="classTouchList.html">TouchList</a> </td>
@@ -161,6 +172,11 @@ template&lt;typename Type &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -517,7 +533,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

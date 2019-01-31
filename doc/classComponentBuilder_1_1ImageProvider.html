@@ -75,10 +75,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acdb88d7ecc51ec8e9dc1a57e0268a115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentBuilder_1_1ImageProvider.html#acdb88d7ecc51ec8e9dc1a57e0268a115">ImageProvider</a> ()</td></tr>
-<tr class="separator:acdb88d7ecc51ec8e9dc1a57e0268a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9589cd277ddb9c7d544550a135b025ce"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentBuilder_1_1ImageProvider.html#a9589cd277ddb9c7d544550a135b025ce">~ImageProvider</a> ()</td></tr>
-<tr class="separator:a9589cd277ddb9c7d544550a135b025ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6340c8306d91dbcfeb0aac95e35847"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentBuilder_1_1ImageProvider.html#adc6340c8306d91dbcfeb0aac95e35847">ImageProvider</a> ()=default</td></tr>
+<tr class="separator:adc6340c8306d91dbcfeb0aac95e35847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a11a26017852977b0a7399f6529bc3c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentBuilder_1_1ImageProvider.html#a5a11a26017852977b0a7399f6529bc3c">~ImageProvider</a> ()=default</td></tr>
+<tr class="separator:a5a11a26017852977b0a7399f6529bc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd32b5882422f627f179b8b560dff043"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classImage.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentBuilder_1_1ImageProvider.html#acd32b5882422f627f179b8b560dff043">getImageForIdentifier</a> (const <a class="el" href="classvar.html">var</a> &amp;imageIdentifier)=0</td></tr>
 <tr class="memdesc:acd32b5882422f627f179b8b560dff043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the image associated with this identifier, which could be any kind of string, number, filename, etc.  <a href="#acd32b5882422f627f179b8b560dff043">More...</a><br /></td></tr>
 <tr class="separator:acd32b5882422f627f179b8b560dff043"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,11 +92,14 @@ Public Member Functions</h2></td></tr>
 <p>When you're loading components from a <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> that may need a way of loading images, you should call <a class="el" href="classComponentBuilder.html#a4eac18667dc404ad636bb72d8e836667" title="Gives the builder an ImageProvider object that the type handlers can use when loading images from sto...">ComponentBuilder::setImageProvider()</a> to supply a suitable provider before trying to load the component.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponentBuilder.html#a4eac18667dc404ad636bb72d8e836667" title="Gives the builder an ImageProvider object that the type handlers can use when loading images from sto...">ComponentBuilder::setImageProvider()</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acdb88d7ecc51ec8e9dc1a57e0268a115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb88d7ecc51ec8e9dc1a57e0268a115">&#9670;&nbsp;</a></span>ImageProvider()</h2>
+<a id="adc6340c8306d91dbcfeb0aac95e35847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6340c8306d91dbcfeb0aac95e35847">&#9670;&nbsp;</a></span>ImageProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ComponentBuilder::ImageProvider::ImageProvider </td>
@@ -105,12 +108,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9589cd277ddb9c7d544550a135b025ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9589cd277ddb9c7d544550a135b025ce">&#9670;&nbsp;</a></span>~ImageProvider()</h2>
+<a id="a5a11a26017852977b0a7399f6529bc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a11a26017852977b0a7399f6529bc3c">&#9670;&nbsp;</a></span>~ImageProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +135,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -199,7 +207,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

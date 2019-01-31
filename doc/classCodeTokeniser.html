@@ -77,10 +77,10 @@ Inheritance diagram for CodeTokeniser:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03586fac70e7e14fdd091e87497112bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeTokeniser.html#a03586fac70e7e14fdd091e87497112bc">CodeTokeniser</a> ()</td></tr>
-<tr class="separator:a03586fac70e7e14fdd091e87497112bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0509831c5e621abc5d1e8cc792f563d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeTokeniser.html#ac0509831c5e621abc5d1e8cc792f563d">~CodeTokeniser</a> ()</td></tr>
-<tr class="separator:ac0509831c5e621abc5d1e8cc792f563d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d42a54bf55fbfbb45a2709a40fab3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeTokeniser.html#a05d42a54bf55fbfbb45a2709a40fab3a">CodeTokeniser</a> ()=default</td></tr>
+<tr class="separator:a05d42a54bf55fbfbb45a2709a40fab3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c8448b89b708771ff25b4cbf056cf0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeTokeniser.html#af1c8448b89b708771ff25b4cbf056cf0">~CodeTokeniser</a> ()=default</td></tr>
+<tr class="separator:af1c8448b89b708771ff25b4cbf056cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb723b767eed0ce44ae995c99ebc1c2f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeTokeniser.html#aeb723b767eed0ce44ae995c99ebc1c2f">readNextToken</a> (<a class="el" href="classCodeDocument_1_1Iterator.html">CodeDocument::Iterator</a> &amp;source)=0</td></tr>
 <tr class="memdesc:aeb723b767eed0ce44ae995c99ebc1c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the next token from the source and returns its token type.  <a href="#aeb723b767eed0ce44ae995c99ebc1c2f">More...</a><br /></td></tr>
 <tr class="separator:aeb723b767eed0ce44ae995c99ebc1c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,11 +92,14 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A base class for tokenising code so that the syntax can be displayed in a code editor. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html" title="A class for storing and manipulating a source code file. ">CodeDocument</a>, <a class="el" href="classCodeEditorComponent.html" title="A text editor component designed specifically for source code. ">CodeEditorComponent</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a03586fac70e7e14fdd091e87497112bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03586fac70e7e14fdd091e87497112bc">&#9670;&nbsp;</a></span>CodeTokeniser()</h2>
+<a id="a05d42a54bf55fbfbb45a2709a40fab3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d42a54bf55fbfbb45a2709a40fab3a">&#9670;&nbsp;</a></span>CodeTokeniser()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CodeTokeniser::CodeTokeniser </td>
@@ -105,12 +108,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac0509831c5e621abc5d1e8cc792f563d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0509831c5e621abc5d1e8cc792f563d">&#9670;&nbsp;</a></span>~CodeTokeniser()</h2>
+<a id="af1c8448b89b708771ff25b4cbf056cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c8448b89b708771ff25b4cbf056cf0">&#9670;&nbsp;</a></span>~CodeTokeniser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,12 +135,10 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>.</p>
 
 </div>
 </div>
@@ -203,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

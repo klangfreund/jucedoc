@@ -5,7 +5,7 @@ var searchData=
   ['chartype',['CharType',['../classCharPointer__ASCII.html#ab993f1d1958d6b3f6db81604c63b0e79',1,'CharPointer_ASCII::CharType()'],['../classCharPointer__UTF16.html#af197f9309d96a0052dc8d27c1d21c565',1,'CharPointer_UTF16::CharType()'],['../classCharPointer__UTF32.html#a44d4d5f362168acc699b1f575a9adda9',1,'CharPointer_UTF32::CharType()'],['../classCharPointer__UTF8.html#ab70feb5b5a84782d38cfd22f6b4198de',1,'CharPointer_UTF8::CharType()']]],
   ['cmplxops',['CmplxOps',['../structdsp_1_1SIMDRegister.html#ad133608bfbf19211f6d2b7fa26729239',1,'dsp::SIMDRegister']]],
   ['coefficientsptr',['CoefficientsPtr',['../classdsp_1_1FIR_1_1Filter.html#afe61c42041c7eb5e07e74d5d73cd8e71',1,'dsp::FIR::Filter::CoefficientsPtr()'],['../classdsp_1_1IIR_1_1Filter.html#a64321e61c28e95f81006f840ca510e09',1,'dsp::IIR::Filter::CoefficientsPtr()']]],
-  ['commandid',['CommandID',['../group__juce__gui__basics-commands.html#gafd69b5d28aad07b587b693925e09308b',1,'juce_ApplicationCommandID.h']]],
+  ['commandid',['CommandID',['../group__juce__gui__basics-commands.html#ga886f4569c2fa2b51e87775cbac89d4b8',1,'juce_ApplicationCommandID.h']]],
   ['configcommand',['ConfigCommand',['../namespaceBlocksProtocol.html#a960238dc1911ee8eeb5fd5586d0f15cc',1,'BlocksProtocol']]],
   ['configitemindex',['ConfigItemIndex',['../namespaceBlocksProtocol.html#a9303a63307f8e18f322a32c2dda1d99f',1,'BlocksProtocol']]],
   ['configitemvalue',['ConfigItemValue',['../namespaceBlocksProtocol.html#a9763698ccbb1bb1ace312829516783b6',1,'BlocksProtocol']]],

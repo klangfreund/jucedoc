@@ -96,9 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af43cdfdf05d2de26b8fdaa6ab86dc246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#af43cdfdf05d2de26b8fdaa6ab86dc246">operator=</a> (const <a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;other)</td></tr>
 <tr class="memdesc:af43cdfdf05d2de26b8fdaa6ab86dc246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies another buffer onto this one.  <a href="#af43cdfdf05d2de26b8fdaa6ab86dc246">More...</a><br /></td></tr>
 <tr class="separator:af43cdfdf05d2de26b8fdaa6ab86dc246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2458169421626445472a0e22f79360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#afa2458169421626445472a0e22f79360">~AudioBuffer</a> () noexcept</td></tr>
-<tr class="memdesc:afa2458169421626445472a0e22f79360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#afa2458169421626445472a0e22f79360">More...</a><br /></td></tr>
-<tr class="separator:afa2458169421626445472a0e22f79360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1c10e8cd0cc4ca8dcfa33f9d5ebced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#adf1c10e8cd0cc4ca8dcfa33f9d5ebced">~AudioBuffer</a> ()=default</td></tr>
+<tr class="memdesc:adf1c10e8cd0cc4ca8dcfa33f9d5ebced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#adf1c10e8cd0cc4ca8dcfa33f9d5ebced">More...</a><br /></td></tr>
+<tr class="separator:adf1c10e8cd0cc4ca8dcfa33f9d5ebced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4124843b0d14b6d5b3ae282366e6824d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioBuffer.html#a4124843b0d14b6d5b3ae282366e6824d">AudioBuffer</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:a4124843b0d14b6d5b3ae282366e6824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a4124843b0d14b6d5b3ae282366e6824d">More...</a><br /></td></tr>
 <tr class="separator:a4124843b0d14b6d5b3ae282366e6824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,8 +430,8 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
-<a id="afa2458169421626445472a0e22f79360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa2458169421626445472a0e22f79360">&#9670;&nbsp;</a></span>~AudioBuffer()</h2>
+<a id="adf1c10e8cd0cc4ca8dcfa33f9d5ebced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1c10e8cd0cc4ca8dcfa33f9d5ebced">&#9670;&nbsp;</a></span>~AudioBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,13 +450,15 @@ template&lt;typename Type&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
 <p>This will free any memory allocated by the buffer. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#af43cdfdf05d2de26b8fdaa6ab86dc246">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
 
 </div>
 </div>
@@ -2348,7 +2350,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

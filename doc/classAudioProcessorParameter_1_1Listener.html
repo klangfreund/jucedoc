@@ -75,9 +75,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32bff25802b7f7e0ee6a69723779d69e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter_1_1Listener.html#a32bff25802b7f7e0ee6a69723779d69e">~Listener</a> ()</td></tr>
-<tr class="memdesc:a32bff25802b7f7e0ee6a69723779d69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a32bff25802b7f7e0ee6a69723779d69e">More...</a><br /></td></tr>
-<tr class="separator:a32bff25802b7f7e0ee6a69723779d69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd12cd5ab546057f16e440420ded90cb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter_1_1Listener.html#acd12cd5ab546057f16e440420ded90cb">~Listener</a> ()=default</td></tr>
+<tr class="memdesc:acd12cd5ab546057f16e440420ded90cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#acd12cd5ab546057f16e440420ded90cb">More...</a><br /></td></tr>
+<tr class="separator:acd12cd5ab546057f16e440420ded90cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2211a053ce9c130d55d160e13a9a66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameter_1_1Listener.html#a5f2211a053ce9c130d55d160e13a9a66">parameterValueChanged</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> parameterIndex, float newValue)=0</td></tr>
 <tr class="memdesc:a5f2211a053ce9c130d55d160e13a9a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a callback when a parameter has been changed.  <a href="#a5f2211a053ce9c130d55d160e13a9a66">More...</a><br /></td></tr>
 <tr class="separator:a5f2211a053ce9c130d55d160e13a9a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <p>Use <a class="el" href="classAudioProcessorParameter.html#a1e54fead318e3f817cde15bceae589ed" title="Registers a listener to receive events when the parameter&#39;s state changes. ">AudioProcessorParameter::addListener()</a> to register your listener with an <a class="el" href="classAudioProcessorParameter.html" title="An abstract base class for parameter objects that can be added to an AudioProcessor. ">AudioProcessorParameter</a>.</p>
 <p>This <a class="el" href="classAudioProcessorParameter_1_1Listener.html" title="A base class for listeners that want to know about changes to an AudioProcessorParameter. ">Listener</a> replaces most of the functionality in the <a class="el" href="classAudioProcessorListener.html" title="Base class for listeners that want to know about changes to an AudioProcessor. ">AudioProcessorListener</a> class, which will be deprecated and removed. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a32bff25802b7f7e0ee6a69723779d69e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32bff25802b7f7e0ee6a69723779d69e">&#9670;&nbsp;</a></span>~Listener()</h2>
+<a id="acd12cd5ab546057f16e440420ded90cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd12cd5ab546057f16e440420ded90cb">&#9670;&nbsp;</a></span>~Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

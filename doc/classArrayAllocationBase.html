@@ -74,12 +74,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11d8bab507f8c7bf1e6c9e536a9d8093"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#a11d8bab507f8c7bf1e6c9e536a9d8093">ArrayAllocationBase</a> () noexcept</td></tr>
-<tr class="memdesc:a11d8bab507f8c7bf1e6c9e536a9d8093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty array.  <a href="#a11d8bab507f8c7bf1e6c9e536a9d8093">More...</a><br /></td></tr>
-<tr class="separator:a11d8bab507f8c7bf1e6c9e536a9d8093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7a4fea116804113f59a6eebd3120cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#a5f7a4fea116804113f59a6eebd3120cf">~ArrayAllocationBase</a> () noexcept</td></tr>
-<tr class="memdesc:a5f7a4fea116804113f59a6eebd3120cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5f7a4fea116804113f59a6eebd3120cf">More...</a><br /></td></tr>
-<tr class="separator:a5f7a4fea116804113f59a6eebd3120cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da3f2850d99992edf05b87a9efa770f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#a5da3f2850d99992edf05b87a9efa770f">ArrayAllocationBase</a> ()=default</td></tr>
+<tr class="memdesc:a5da3f2850d99992edf05b87a9efa770f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty array.  <a href="#a5da3f2850d99992edf05b87a9efa770f">More...</a><br /></td></tr>
+<tr class="separator:a5da3f2850d99992edf05b87a9efa770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28bed70497a730ffba19fd81ce03b09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#ab28bed70497a730ffba19fd81ce03b09">~ArrayAllocationBase</a> ()=default</td></tr>
+<tr class="memdesc:ab28bed70497a730ffba19fd81ce03b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab28bed70497a730ffba19fd81ce03b09">More...</a><br /></td></tr>
+<tr class="separator:ab28bed70497a730ffba19fd81ce03b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e26895c1b674105259ae0a3f579636"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#a36e26895c1b674105259ae0a3f579636">ArrayAllocationBase</a> (<a class="el" href="classArrayAllocationBase.html">ArrayAllocationBase</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a36e26895c1b674105259ae0a3f579636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae507b7cc0c255036765caa5856a2a158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArrayAllocationBase.html">ArrayAllocationBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArrayAllocationBase.html#ae507b7cc0c255036765caa5856a2a158">operator=</a> (<a class="el" href="classArrayAllocationBase.html">ArrayAllocationBase</a> &amp;&amp;other) noexcept</td></tr>
@@ -111,8 +111,8 @@ class ArrayAllocationBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</h3>
 <p>Implements some basic array storage allocation functions. </p>
 <p>This class isn't really for public use - it used to be part of the container classes but has since been superseded by <a class="el" href="classArrayBase.html" title="A basic object container. ">ArrayBase</a>. Eventually it will be removed from the API. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a11d8bab507f8c7bf1e6c9e536a9d8093"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d8bab507f8c7bf1e6c9e536a9d8093">&#9670;&nbsp;</a></span>ArrayAllocationBase() <span class="overload">[1/2]</span></h2>
+<a id="a5da3f2850d99992edf05b87a9efa770f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da3f2850d99992edf05b87a9efa770f">&#9670;&nbsp;</a></span>ArrayAllocationBase() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ template&lt;class ElementType , class TypeOfCriticalSectionToUse &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -140,8 +140,8 @@ template&lt;class ElementType , class TypeOfCriticalSectionToUse &gt; </div>
 
 </div>
 </div>
-<a id="a5f7a4fea116804113f59a6eebd3120cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7a4fea116804113f59a6eebd3120cf">&#9670;&nbsp;</a></span>~ArrayAllocationBase()</h2>
+<a id="ab28bed70497a730ffba19fd81ce03b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28bed70497a730ffba19fd81ce03b09">&#9670;&nbsp;</a></span>~ArrayAllocationBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +160,7 @@ template&lt;class ElementType , class TypeOfCriticalSectionToUse &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -391,7 +391,7 @@ template&lt;class ElementType , class TypeOfCriticalSectionToUse &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

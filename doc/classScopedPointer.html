@@ -71,9 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac187958296e33aa057dd37478ea70400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#ac187958296e33aa057dd37478ea70400">ScopedPointer</a> () noexcept</td></tr>
-<tr class="memdesc:ac187958296e33aa057dd37478ea70400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> containing a null pointer.  <a href="#ac187958296e33aa057dd37478ea70400">More...</a><br /></td></tr>
-<tr class="separator:ac187958296e33aa057dd37478ea70400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab509c110ce4f13c245515fa4b73edba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#ab509c110ce4f13c245515fa4b73edba3">ScopedPointer</a> ()=default</td></tr>
+<tr class="memdesc:ab509c110ce4f13c245515fa4b73edba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> containing a null pointer.  <a href="#ab509c110ce4f13c245515fa4b73edba3">More...</a><br /></td></tr>
+<tr class="separator:ab509c110ce4f13c245515fa4b73edba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e3396a5a530aba0c6109d709c549b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html#a32e3396a5a530aba0c6109d709c549b0">ScopedPointer</a> (decltype(nullptr)) noexcept</td></tr>
 <tr class="memdesc:a32e3396a5a530aba0c6109d709c549b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> containing a null pointer.  <a href="#a32e3396a5a530aba0c6109d709c549b0">More...</a><br /></td></tr>
 <tr class="separator:a32e3396a5a530aba0c6109d709c549b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +142,8 @@ class ScopedPointer&lt; ObjectType &gt;</h3>
 <p>A const <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> is guaranteed not to lose ownership of its object or change the object to which it points during its lifetime. This means that making a copy of a const <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> is impossible, as that would involve the new copy taking ownership from the old one.</p>
 <p>If you need to get a pointer out of a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> without it being deleted, you can use the <a class="el" href="classScopedPointer.html#a10c8f696fec0cca763b067ec3e469199" title="Detaches and returns the current object from this ScopedPointer without deleting it. ">release()</a> method. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac187958296e33aa057dd37478ea70400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac187958296e33aa057dd37478ea70400">&#9670;&nbsp;</a></span>ScopedPointer() <span class="overload">[1/5]</span></h2>
+<a id="ab509c110ce4f13c245515fa4b73edba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab509c110ce4f13c245515fa4b73edba3">&#9670;&nbsp;</a></span>ScopedPointer() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ template&lt;class ObjectType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -672,7 +672,7 @@ template&lt;class ObjectType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -75,10 +75,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13e5b679bd0f71d05debd7d450228460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument_1_1Listener.html#a13e5b679bd0f71d05debd7d450228460">Listener</a> ()</td></tr>
-<tr class="separator:a13e5b679bd0f71d05debd7d450228460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff508f04d66863de7bfabcfff8dd4ab7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument_1_1Listener.html#aff508f04d66863de7bfabcfff8dd4ab7">~Listener</a> ()</td></tr>
-<tr class="separator:aff508f04d66863de7bfabcfff8dd4ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037cd388e5c161fbe21c0c78a6a92e09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument_1_1Listener.html#a037cd388e5c161fbe21c0c78a6a92e09">Listener</a> ()=default</td></tr>
+<tr class="separator:a037cd388e5c161fbe21c0c78a6a92e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903feb45a60a18f139b987d113970ffe"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument_1_1Listener.html#a903feb45a60a18f139b987d113970ffe">~Listener</a> ()=default</td></tr>
+<tr class="separator:a903feb45a60a18f139b987d113970ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145cb6afbd34c2d85c179dad9b35cf92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeDocument_1_1Listener.html#a145cb6afbd34c2d85c179dad9b35cf92">codeDocumentTextInserted</a> (const <a class="el" href="classString.html">String</a> &amp;newText, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> insertIndex)=0</td></tr>
 <tr class="memdesc:a145cb6afbd34c2d85c179dad9b35cf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a <a class="el" href="classCodeDocument.html" title="A class for storing and manipulating a source code file. ">CodeDocument</a> when text is added.  <a href="#a145cb6afbd34c2d85c179dad9b35cf92">More...</a><br /></td></tr>
 <tr class="separator:a145cb6afbd34c2d85c179dad9b35cf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,11 +90,14 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>An object that receives callbacks from the <a class="el" href="classCodeDocument.html" title="A class for storing and manipulating a source code file. ">CodeDocument</a> when its text changes. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#ad23b21fdf64caf455dc9ffcec44b6d26" title="Registers a listener object to receive callbacks when the document changes. ">CodeDocument::addListener</a>, <a class="el" href="classCodeDocument.html#a83a95db08470090582a2b4a63b61fcb3" title="Deregisters a listener. ">CodeDocument::removeListener</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a13e5b679bd0f71d05debd7d450228460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e5b679bd0f71d05debd7d450228460">&#9670;&nbsp;</a></span>Listener()</h2>
+<a id="a037cd388e5c161fbe21c0c78a6a92e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037cd388e5c161fbe21c0c78a6a92e09">&#9670;&nbsp;</a></span>Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CodeDocument::Listener::Listener </td>
@@ -103,12 +106,17 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aff508f04d66863de7bfabcfff8dd4ab7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff508f04d66863de7bfabcfff8dd4ab7">&#9670;&nbsp;</a></span>~Listener()</h2>
+<a id="a903feb45a60a18f139b987d113970ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903feb45a60a18f139b987d113970ffe">&#9670;&nbsp;</a></span>~Listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +133,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -215,7 +223,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

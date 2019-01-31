@@ -76,9 +76,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1922a50514723a9bc5a9607a2e4f04b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTableTransform.html#a1922a50514723a9bc5a9607a2e4f04b0">LookupTableTransform</a> ()</td></tr>
-<tr class="memdesc:a1922a50514723a9bc5a9607a2e4f04b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an uninitialised <a class="el" href="classdsp_1_1LookupTableTransform.html" title="Class for approximating expensive arithmetic operations. ">LookupTableTransform</a> object.  <a href="#a1922a50514723a9bc5a9607a2e4f04b0">More...</a><br /></td></tr>
-<tr class="separator:a1922a50514723a9bc5a9607a2e4f04b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89495c2780627bed5dbeda842982b778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTableTransform.html#a89495c2780627bed5dbeda842982b778">LookupTableTransform</a> ()=default</td></tr>
+<tr class="memdesc:a89495c2780627bed5dbeda842982b778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an uninitialised <a class="el" href="classdsp_1_1LookupTableTransform.html" title="Class for approximating expensive arithmetic operations. ">LookupTableTransform</a> object.  <a href="#a89495c2780627bed5dbeda842982b778">More...</a><br /></td></tr>
+<tr class="separator:a89495c2780627bed5dbeda842982b778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3f42b0f56f57126ab68ece4b91e7b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTableTransform.html#a8b3f42b0f56f57126ab68ece4b91e7b4">LookupTableTransform</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; FloatType(FloatType)&gt; &amp;functionToApproximate, FloatType minInputValueToUse, FloatType maxInputValueToUse, size_t numPoints)</td></tr>
 <tr class="memdesc:a8b3f42b0f56f57126ab68ece4b91e7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and initialises a <a class="el" href="classdsp_1_1LookupTableTransform.html" title="Class for approximating expensive arithmetic operations. ">LookupTableTransform</a> object.  <a href="#a8b3f42b0f56f57126ab68ece4b91e7b4">More...</a><br /></td></tr>
 <tr class="separator:a8b3f42b0f56f57126ab68ece4b91e7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,13 +119,16 @@ auto outValue = tanhApprox (4.2f);
 </pre><p>Note: If you try to call the function with an input outside the provided range, it will return either the first or the last recorded <a class="el" href="classdsp_1_1LookupTable.html" title="Class for efficiently approximating expensive arithmetic operations. ">LookupTable</a> value.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdsp_1_1LookupTable.html" title="Class for efficiently approximating expensive arithmetic operations. ">LookupTable</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1922a50514723a9bc5a9607a2e4f04b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1922a50514723a9bc5a9607a2e4f04b0">&#9670;&nbsp;</a></span>LookupTableTransform() <span class="overload">[1/2]</span></h2>
+<a id="a89495c2780627bed5dbeda842982b778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89495c2780627bed5dbeda842982b778">&#9670;&nbsp;</a></span>LookupTableTransform() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1LookupTableTransform.html">dsp::LookupTableTransform</a>&lt; FloatType &gt;::<a class="el" href="classdsp_1_1LookupTableTransform.html">LookupTableTransform</a> </td>
@@ -134,6 +137,11 @@ template&lt;typename FloatType&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Creates an uninitialised <a class="el" href="classdsp_1_1LookupTableTransform.html" title="Class for approximating expensive arithmetic operations. ">LookupTableTransform</a> object. </p>
@@ -556,7 +564,7 @@ template&lt;typename FloatType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -81,8 +81,8 @@ Inheritance diagram for Slider::LookAndFeelMethods:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9dfa63c789d18a298f13a04a018fa095"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1LookAndFeelMethods.html#a9dfa63c789d18a298f13a04a018fa095">~LookAndFeelMethods</a> ()</td></tr>
-<tr class="separator:a9dfa63c789d18a298f13a04a018fa095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f665bb72b9feaccae15fbbb62b50cb1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1LookAndFeelMethods.html#a8f665bb72b9feaccae15fbbb62b50cb1">~LookAndFeelMethods</a> ()=default</td></tr>
+<tr class="separator:a8f665bb72b9feaccae15fbbb62b50cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92784d178fa74a9bce8223f248362f60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1LookAndFeelMethods.html#a92784d178fa74a9bce8223f248362f60">drawLinearSlider</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> x, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> y, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> width, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> height, float sliderPos, float minSliderPos, float maxSliderPos, const <a class="el" href="classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888">Slider::SliderStyle</a>, <a class="el" href="classSlider.html">Slider</a> &amp;)=0</td></tr>
 <tr class="separator:a92784d178fa74a9bce8223f248362f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aafae027e7ee643180231f86d0fe71d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlider_1_1LookAndFeelMethods.html#a7aafae027e7ee643180231f86d0fe71d">drawLinearSliderBackground</a> (<a class="el" href="classGraphics.html">Graphics</a> &amp;, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> x, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> y, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> width, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> height, float sliderPos, float minSliderPos, float maxSliderPos, const <a class="el" href="classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888">Slider::SliderStyle</a> style, <a class="el" href="classSlider.html">Slider</a> &amp;)=0</td></tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract base class is implemented by <a class="el" href="classLookAndFeel.html" title="LookAndFeel objects define the appearance of all the JUCE widgets, and subclasses can be used to appl...">LookAndFeel</a> classes to provide slider drawing functionality. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9dfa63c789d18a298f13a04a018fa095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dfa63c789d18a298f13a04a018fa095">&#9670;&nbsp;</a></span>~LookAndFeelMethods()</h2>
+<a id="a8f665bb72b9feaccae15fbbb62b50cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f665bb72b9feaccae15fbbb62b50cb1">&#9670;&nbsp;</a></span>~LookAndFeelMethods()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,12 +127,10 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, <a class="el" href="group__juce__core-system.html#gaf25d2cb3e6d1124146f7f1fcd8648016">JUCE_DEPRECATED</a>, and <a class="el" href="group__juce__core-system.html#ga8d339dd1e85e6fbefaf7638692d085c2">JUCE_PUBLIC_IN_DLL_BUILD</a>.</p>
 
 </div>
 </div>
@@ -687,7 +685,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 30 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
