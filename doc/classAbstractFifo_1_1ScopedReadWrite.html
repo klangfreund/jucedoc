@@ -79,9 +79,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fecc82114996310f91ab3d89590e58f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html#a6fecc82114996310f91ab3d89590e58f">ScopedReadWrite</a> ()=default</td></tr>
 <tr class="memdesc:a6fecc82114996310f91ab3d89590e58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an unassigned reader/writer.  <a href="#a6fecc82114996310f91ab3d89590e58f">More...</a><br /></td></tr>
 <tr class="separator:a6fecc82114996310f91ab3d89590e58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af785a8ee08880a562c3160dbe0c9ad74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html#af785a8ee08880a562c3160dbe0c9ad74">ScopedReadWrite</a> (<a class="el" href="classAbstractFifo.html">AbstractFifo</a> &amp;, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> num) noexcept</td></tr>
-<tr class="memdesc:af785a8ee08880a562c3160dbe0c9ad74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a reader/writer and immediately call prepareRead/prepareWrite on the abstractFifo which was passed in.  <a href="#af785a8ee08880a562c3160dbe0c9ad74">More...</a><br /></td></tr>
-<tr class="separator:af785a8ee08880a562c3160dbe0c9ad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d8943369dd83eac62db5c5057d92ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html#a90d8943369dd83eac62db5c5057d92ff">ScopedReadWrite</a> (<a class="el" href="classAbstractFifo.html">AbstractFifo</a> &amp;f, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> num) noexcept</td></tr>
+<tr class="memdesc:a90d8943369dd83eac62db5c5057d92ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a reader/writer and immediately call prepareRead/prepareWrite on the abstractFifo which was passed in.  <a href="#a90d8943369dd83eac62db5c5057d92ff">More...</a><br /></td></tr>
+<tr class="separator:a90d8943369dd83eac62db5c5057d92ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0e875af91af545d73e8d4848254a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html#a8e0e875af91af545d73e8d4848254a1c">ScopedReadWrite</a> (const <a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html">ScopedReadWrite</a> &amp;)=delete</td></tr>
 <tr class="separator:a8e0e875af91af545d73e8d4848254a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377ce6f60927c44e29763c84509b18d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html#a377ce6f60927c44e29763c84509b18d5">ScopedReadWrite</a> (<a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html">ScopedReadWrite</a> &amp;&amp;) noexcept</td></tr>
@@ -145,8 +145,8 @@ template&lt;ReadOrWrite mode&gt; </div>
 
 </div>
 </div>
-<a id="af785a8ee08880a562c3160dbe0c9ad74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af785a8ee08880a562c3160dbe0c9ad74">&#9670;&nbsp;</a></span>ScopedReadWrite() <span class="overload">[2/4]</span></h2>
+<a id="a90d8943369dd83eac62db5c5057d92ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d8943369dd83eac62db5c5057d92ff">&#9670;&nbsp;</a></span>ScopedReadWrite() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +160,7 @@ template&lt;ReadOrWrite mode&gt; </div>
           <td class="memname"><a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html">AbstractFifo::ScopedReadWrite</a>&lt; mode &gt;::<a class="el" href="classAbstractFifo_1_1ScopedReadWrite.html">ScopedReadWrite</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classAbstractFifo.html">AbstractFifo</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -423,7 +423,7 @@ template&lt;ReadOrWrite mode&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 31 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2019 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
