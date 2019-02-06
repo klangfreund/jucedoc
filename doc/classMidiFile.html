@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ca7845c507215ecfb190cef1266c867"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiFile.html#a7ca7845c507215ecfb190cef1266c867">readFrom</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;sourceStream, bool createMatchingNoteOffs=true)</td></tr>
 <tr class="memdesc:a7ca7845c507215ecfb190cef1266c867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a midi file format stream.  <a href="#a7ca7845c507215ecfb190cef1266c867">More...</a><br /></td></tr>
 <tr class="separator:a7ca7845c507215ecfb190cef1266c867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2673604f2af21a69361fa6b4c8c35949"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiFile.html#a2673604f2af21a69361fa6b4c8c35949">writeTo</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;destStream, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiFileType=1)</td></tr>
-<tr class="memdesc:a2673604f2af21a69361fa6b4c8c35949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the midi tracks as a standard midi file.  <a href="#a2673604f2af21a69361fa6b4c8c35949">More...</a><br /></td></tr>
-<tr class="separator:a2673604f2af21a69361fa6b4c8c35949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7309d707566e3f943bcd29581c89c921"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiFile.html#a7309d707566e3f943bcd29581c89c921">writeTo</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;destStream, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiFileType=1) const</td></tr>
+<tr class="memdesc:a7309d707566e3f943bcd29581c89c921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the midi tracks as a standard midi file.  <a href="#a7309d707566e3f943bcd29581c89c921">More...</a><br /></td></tr>
+<tr class="separator:a7309d707566e3f943bcd29581c89c921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af66c3497ec6109a9c7c1cf1f474c8b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiFile.html#af66c3497ec6109a9c7c1cf1f474c8b95">convertTimestampTicksToSeconds</a> ()</td></tr>
 <tr class="memdesc:af66c3497ec6109a9c7c1cf1f474c8b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the timestamp of all the midi events from midi ticks to seconds.  <a href="#af66c3497ec6109a9c7c1cf1f474c8b95">More...</a><br /></td></tr>
 <tr class="separator:af66c3497ec6109a9c7c1cf1f474c8b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Reads/writes standard midi format files. </p>
 <p>To read a midi file, create a <a class="el" href="classMidiFile.html" title="Reads/writes standard midi format files. ">MidiFile</a> object and call its <a class="el" href="classMidiFile.html#a7ca7845c507215ecfb190cef1266c867" title="Reads a midi file format stream. ">readFrom()</a> method. You can then get the individual midi tracks from it using the <a class="el" href="classMidiFile.html#a334aa932bc738914eb3e1578a7ee1d7c" title="Returns a pointer to one of the tracks in the file. ">getTrack()</a> method.</p>
-<p>To write a file, create a <a class="el" href="classMidiFile.html" title="Reads/writes standard midi format files. ">MidiFile</a> object, add some <a class="el" href="classMidiMessageSequence.html" title="A sequence of timestamped midi messages. ">MidiMessageSequence</a> objects to it using the <a class="el" href="classMidiFile.html#a9ff930286a6fa4531df163480b22a313" title="Adds a midi track to the file. ">addTrack()</a> method, and then call its <a class="el" href="classMidiFile.html#a2673604f2af21a69361fa6b4c8c35949" title="Writes the midi tracks as a standard midi file. ">writeTo()</a> method to stream it out.</p>
+<p>To write a file, create a <a class="el" href="classMidiFile.html" title="Reads/writes standard midi format files. ">MidiFile</a> object, add some <a class="el" href="classMidiMessageSequence.html" title="A sequence of timestamped midi messages. ">MidiMessageSequence</a> objects to it using the <a class="el" href="classMidiFile.html#a9ff930286a6fa4531df163480b22a313" title="Adds a midi track to the file. ">addTrack()</a> method, and then call its <a class="el" href="classMidiFile.html#a7309d707566e3f943bcd29581c89c921" title="Writes the midi tracks as a standard midi file. ">writeTo()</a> method to stream it out.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiMessageSequence.html" title="A sequence of timestamped midi messages. ">MidiMessageSequence</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a989fec6d479c0ebf68ef72224e58e894"></a>
@@ -607,8 +607,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2673604f2af21a69361fa6b4c8c35949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2673604f2af21a69361fa6b4c8c35949">&#9670;&nbsp;</a></span>writeTo()</h2>
+<a id="a7309d707566e3f943bcd29581c89c921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7309d707566e3f943bcd29581c89c921">&#9670;&nbsp;</a></span>writeTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +628,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -672,7 +672,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 1 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 6 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
