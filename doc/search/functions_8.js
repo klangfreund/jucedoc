@@ -245,6 +245,7 @@ var searchData=
   ['isidentifierstart',['isIdentifierStart',['../structCppTokeniserFunctions.html#a13364f0e29c090497fa4b9971c55ed09',1,'CppTokeniserFunctions']]],
   ['isidentity',['isIdentity',['../classAffineTransform.html#a0763b5aa59da4d6ec25875baea87cc18',1,'AffineTransform']]],
   ['isimmediately',['isImmediately',['../classOSCTimeTag.html#a7a6b061fc6a642433b3f577607fecce5',1,'OSCTimeTag']]],
+  ['isinaaxaudiosuite',['isInAAXAudioSuite',['../classPluginHostType.html#a26e85e84aa44fe7b0386cca3c0105014',1,'PluginHostType']]],
   ['isinapppurchasessupported',['isInAppPurchasesSupported',['../classInAppPurchases.html#a6d91533cc60a92ce7d08dd7a8170b4fe',1,'InAppPurchases']]],
   ['isinitialised',['isInitialised',['../classdsp_1_1LookupTable.html#a821652a5fb06c6b495c929757d6a05a3',1,'dsp::LookupTable::isInitialised()'],['../classdsp_1_1Oscillator.html#a6ec62157f39059b7d281b2a4690a9bd8',1,'dsp::Oscillator::isInitialised()']]],
   ['isinitialising',['isInitialising',['../classJUCEApplicationBase.html#a50aeb95b30fa9f4859777ca5474dce09',1,'JUCEApplicationBase']]],

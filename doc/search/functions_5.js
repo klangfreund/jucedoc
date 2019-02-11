@@ -89,7 +89,6 @@ var searchData=
   ['findindexesintrack',['findIndexesInTrack',['../classAudioCDReader.html#a7136e80e819d1132d755a56167f2b6b4',1,'AudioCDReader']]],
   ['finditemfromidentifierstring',['findItemFromIdentifierString',['../classTreeView.html#a8bb0fbf94579270cc13cd9fa413022df',1,'TreeView']]],
   ['findlassoitemsinarea',['findLassoItemsInArea',['../classLassoSource.html#af15851c6dc40e3931659c665b87bdf34',1,'LassoSource']]],
-  ['findlengthwithouttrailingzeros',['findLengthWithoutTrailingZeros',['../classCharacterFunctions.html#afbd1c80902d5a98dc11519394c6202ca',1,'CharacterFunctions']]],
   ['findlinecontaining',['findLineContaining',['../classCodeDocument.html#a33c6c59951845799410ce84fd41abf06',1,'CodeDocument']]],
   ['findmaximum',['findMaximum',['../classFloatVectorOperations.html#a5ce3d7b606c5bc6f87bdd808f3a432c6',1,'FloatVectorOperations::findMaximum(const float *src, int numValues) noexcept'],['../classFloatVectorOperations.html#ad181db95392492da6b95e188ff953767',1,'FloatVectorOperations::findMaximum(const double *src, int numValues) noexcept'],['../group__juce__core-maths.html#ga5ec2266fcea47d3f307384f3d0a6ae18',1,'findMaximum():&#160;juce_MathsFunctions.h']]],
   ['findmidichannelfornewnote',['findMidiChannelForNewNote',['../classMPEChannelAssigner.html#ac27c3b488becccb99f03a162741af9ff',1,'MPEChannelAssigner']]],
