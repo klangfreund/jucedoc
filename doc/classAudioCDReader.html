@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7119f9f8fb88977c79ed5479b4f694ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables scanning for indexes within tracks.  <a href="#a7119f9f8fb88977c79ed5479b4f694ed">More...</a><br /></td></tr>
 <tr class="separator:a7119f9f8fb88977c79ed5479b4f694ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b52a039c25da4dbe6a25b4e63f3f529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioCDReader.html#a0b52a039c25da4dbe6a25b4e63f3f529">getLastIndex</a> () const</td></tr>
-<tr class="memdesc:a0b52a039c25da4dbe6a25b4e63f3f529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index number found during the last <a class="el" href="classAudioFormatReader.html#afe581e23098c90f1fb187fdff68d3481" title="Reads samples from the stream. ">read()</a> call.  <a href="#a0b52a039c25da4dbe6a25b4e63f3f529">More...</a><br /></td></tr>
+<tr class="memdesc:a0b52a039c25da4dbe6a25b4e63f3f529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index number found during the last <a class="el" href="classAudioFormatReader.html#a2e7bc096ba322b39b316a1772f4ea6a7" title="Reads samples from the stream. ">read()</a> call.  <a href="#a0b52a039c25da4dbe6a25b4e63f3f529">More...</a><br /></td></tr>
 <tr class="separator:a0b52a039c25da4dbe6a25b4e63f3f529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7136e80e819d1132d755a56167f2b6b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioCDReader.html#a7136e80e819d1132d755a56167f2b6b4">findIndexesInTrack</a> (const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> trackNumber)</td></tr>
 <tr class="memdesc:a7136e80e819d1132d755a56167f2b6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans a track to find the position of any indexes within it.  <a href="#a7136e80e819d1132d755a56167f2b6b4">More...</a><br /></td></tr>
@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae90256289d171f649fd83d2070b4ae32 inherit pub_methods_classAudioFormatReader"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#ae90256289d171f649fd83d2070b4ae32">getFormatName</a> () const noexcept</td></tr>
 <tr class="memdesc:ae90256289d171f649fd83d2070b4ae32 inherit pub_methods_classAudioFormatReader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of what type of format this is.  <a href="classAudioFormatReader.html#ae90256289d171f649fd83d2070b4ae32">More...</a><br /></td></tr>
 <tr class="separator:ae90256289d171f649fd83d2070b4ae32 inherit pub_methods_classAudioFormatReader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7bc096ba322b39b316a1772f4ea6a7 inherit pub_methods_classAudioFormatReader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#a2e7bc096ba322b39b316a1772f4ea6a7">read</a> (float *const *destChannels, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numDestChannels, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> startSampleInSource, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamplesToRead)</td></tr>
+<tr class="memdesc:a2e7bc096ba322b39b316a1772f4ea6a7 inherit pub_methods_classAudioFormatReader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads samples from the stream.  <a href="classAudioFormatReader.html#a2e7bc096ba322b39b316a1772f4ea6a7">More...</a><br /></td></tr>
+<tr class="separator:a2e7bc096ba322b39b316a1772f4ea6a7 inherit pub_methods_classAudioFormatReader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe581e23098c90f1fb187fdff68d3481 inherit pub_methods_classAudioFormatReader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatReader.html#afe581e23098c90f1fb187fdff68d3481">read</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> *const *destSamples, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numDestChannels, <a class="el" href="group__juce__core-maths.html#gab0e5976e1a4967e9b13e68b5f271bb44">int64</a> startSampleInSource, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamplesToRead, bool fillLeftoverChannelsWithCopies)</td></tr>
 <tr class="memdesc:afe581e23098c90f1fb187fdff68d3481 inherit pub_methods_classAudioFormatReader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads samples from the stream.  <a href="classAudioFormatReader.html#afe581e23098c90f1fb187fdff68d3481">More...</a><br /></td></tr>
 <tr class="separator:afe581e23098c90f1fb187fdff68d3481 inherit pub_methods_classAudioFormatReader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,9 +527,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the index number found during the last <a class="el" href="classAudioFormatReader.html#afe581e23098c90f1fb187fdff68d3481" title="Reads samples from the stream. ">read()</a> call. </p>
+<p>Returns the index number found during the last <a class="el" href="classAudioFormatReader.html#a2e7bc096ba322b39b316a1772f4ea6a7" title="Reads samples from the stream. ">read()</a> call. </p>
 <p>Index scanning is turned off by default - turn it on with <a class="el" href="classAudioCDReader.html#a7119f9f8fb88977c79ed5479b4f694ed" title="Enables scanning for indexes within tracks. ">enableIndexScanning()</a>.</p>
-<p>Then when the <a class="el" href="classAudioFormatReader.html#afe581e23098c90f1fb187fdff68d3481" title="Reads samples from the stream. ">read()</a> method is called, if it comes across an index within that block, the index number is stored and returned by this method.</p>
+<p>Then when the <a class="el" href="classAudioFormatReader.html#a2e7bc096ba322b39b316a1772f4ea6a7" title="Reads samples from the stream. ">read()</a> method is called, if it comes across an index within that block, the index number is stored and returned by this method.</p>
 <p>Some devices might not support indexes, of course.</p>
 <p>(If you don't know what CD indexes are, it's unlikely you'll ever need them).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioCDReader.html#a7119f9f8fb88977c79ed5479b4f694ed" title="Enables scanning for indexes within tracks. ">enableIndexScanning</a> </dd></dl>
@@ -606,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 11 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 12 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
