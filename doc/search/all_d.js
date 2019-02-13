@@ -132,5 +132,5 @@ var searchData=
   ['numruns',['numRuns',['../structPerformanceCounter_1_1Statistics.html#a0bf8bbdfaa5b9d4c392bbe0fd7fb3b94',1,'PerformanceCounter::Statistics']]],
   ['numsamples',['numSamples',['../structAudioSourceChannelInfo.html#a6669c809cf3b47afa94af63d4fa48101',1,'AudioSourceChannelInfo']]],
   ['numstandardcursortypes',['NumStandardCursorTypes',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a48398e8dcad5bee53f6319d3f9b7f012',1,'MouseCursor']]],
-  ['numwindowingmethods',['numWindowingMethods',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca624b3f98ca24e12388cf7b7777d6b81e',1,'dsp::WindowingFunction']]]
+  ['numwindowingmethods',['numWindowingMethods',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca624b3f98ca24e12388cf7b7777d6b81e',1,'dsp::WindowingFunction']]]
 ];

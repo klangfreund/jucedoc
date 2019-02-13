@@ -22,7 +22,7 @@ var searchData=
   ['wildcardfilefilter',['WildcardFileFilter',['../classWildcardFileFilter.html#af1f0c501f518c2dd803e77661fb42b9d',1,'WildcardFileFilter']]],
   ['willdeleteobject',['willDeleteObject',['../classOptionalScopedPointer.html#a0eb696aae75b039bc1309dc7125bda7a',1,'OptionalScopedPointer']]],
   ['windowcloserequest',['windowCloseRequest',['../classWebBrowserComponent.html#a94f735f686b6c55ba5e5996763517b8d',1,'WebBrowserComponent']]],
-  ['windowingfunction',['WindowingFunction',['../structdsp_1_1WindowingFunction.html#a28c97857851df46bbdd76e3bbb57050d',1,'dsp::WindowingFunction']]],
+  ['windowingfunction',['WindowingFunction',['../classdsp_1_1WindowingFunction.html#aafa3e309e911c2b81f6e68ff37c47cf8',1,'dsp::WindowingFunction']]],
   ['windowsmediaaudioformat',['WindowsMediaAudioFormat',['../classWindowsMediaAudioFormat.html#a5ee8404f972e60f9396233690df54aa6',1,'WindowsMediaAudioFormat']]],
   ['withabsolutetranslation',['withAbsoluteTranslation',['../classAffineTransform.html#a2d9c7f713d4130aa5a08c4f04c30b483',1,'AffineTransform']]],
   ['withalignself',['withAlignSelf',['../classFlexItem.html#a2560af46435f2fe6c263a81f39eaa614',1,'FlexItem::withAlignSelf()'],['../classGridItem.html#a2797449ffd40803346193336e964e184',1,'GridItem::withAlignSelf()']]],

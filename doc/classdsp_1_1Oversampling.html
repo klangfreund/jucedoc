@@ -90,7 +90,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae59914cbbefe675a46a9dcc84854c7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the oversampling class.  <a href="#ae59914cbbefe675a46a9dcc84854c7cf">More...</a><br /></td></tr>
 <tr class="separator:ae59914cbbefe675a46a9dcc84854c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d688db26f17dfd1a1d72cd6de28f178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a3d688db26f17dfd1a1d72cd6de28f178">Oversampling</a> (size_t <a class="el" href="classdsp_1_1Oversampling.html#a403476a4f3c540cbd5ad709435175ec6">numChannels</a>=1)</td></tr>
-<tr class="memdesc:a3d688db26f17dfd1a1d72cd6de28f178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages.  <a href="#a3d688db26f17dfd1a1d72cd6de28f178">More...</a><br /></td></tr>
+<tr class="memdesc:a3d688db26f17dfd1a1d72cd6de28f178"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages.  <a href="#a3d688db26f17dfd1a1d72cd6de28f178">More...</a><br /></td></tr>
 <tr class="separator:a3d688db26f17dfd1a1d72cd6de28f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aa0fb3908b5d80d27f0ee33ab774bd8c6">~Oversampling</a> ()</td></tr>
 <tr class="memdesc:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa0fb3908b5d80d27f0ee33ab774bd8c6">More...</a><br /></td></tr>
@@ -113,11 +113,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0505d62bb580226ad0512aa6118b7d54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a0505d62bb580226ad0512aa6118b7d54">processSamplesDown</a> (<a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;outputBlock) noexcept</td></tr>
 <tr class="memdesc:a0505d62bb580226ad0512aa6118b7d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the downsampling, after the upsampling and the non-linear processing.  <a href="#a0505d62bb580226ad0512aa6118b7d54">More...</a><br /></td></tr>
 <tr class="separator:a0505d62bb580226ad0512aa6118b7d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebc1e7486ddb2f6ebc1b2b0a7300e19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aebc1e7486ddb2f6ebc1b2b0a7300e19f">addOversamplingStage</a> (<a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a>, float normalizedTransitionWidthUp, float stopbandAttenuationdBUp, float normalizedTransitionWidthDown, float stopbandAttenuationdBDown)</td></tr>
-<tr class="separator:aebc1e7486ddb2f6ebc1b2b0a7300e19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7421fbb00879c77c6972d71f75c867"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867">addOversamplingStage</a> (<a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a>, float normalisedTransitionWidthUp, float stopbandAmplitudedBUp, float normalisedTransitionWidthDown, float stopbandAmplitudedBDown)</td></tr>
+<tr class="memdesc:aac7421fbb00879c77c6972d71f75c867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new oversampling stage to the <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> class, multiplying the current oversampling factor by two.  <a href="#aac7421fbb00879c77c6972d71f75c867">More...</a><br /></td></tr>
+<tr class="separator:aac7421fbb00879c77c6972d71f75c867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83befdb31af0832cf1e36cdb3817934e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a83befdb31af0832cf1e36cdb3817934e">addDummyOversamplingStage</a> ()</td></tr>
+<tr class="memdesc:a83befdb31af0832cf1e36cdb3817934e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new "dummy" oversampling stage, which does nothing to the signal.  <a href="#a83befdb31af0832cf1e36cdb3817934e">More...</a><br /></td></tr>
 <tr class="separator:a83befdb31af0832cf1e36cdb3817934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f16ea386937ffa73f3fa1c16cd5aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a86f16ea386937ffa73f3fa1c16cd5aed">clearOversamplingStages</a> ()</td></tr>
+<tr class="memdesc:a86f16ea386937ffa73f3fa1c16cd5aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the previously registered oversampling stages, so you can add your own from scratch.  <a href="#a86f16ea386937ffa73f3fa1c16cd5aed">More...</a><br /></td></tr>
 <tr class="separator:a86f16ea386937ffa73f3fa1c16cd5aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -133,8 +136,8 @@ class dsp::Oversampling&lt; SampleType &gt;</h3>
 
 <p>A processing class performing multi-channel oversampling. </p>
 <p>It can be configured to do 2 times, 4 times, 8 times or 16 times oversampling using a multi-stage approach, either polyphase allpass <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filters or <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filters for the filtering, and reports successfully the latency added by the filter stages.</p>
-<p>The principle of oversampling is to increase the sample rate of a given non-linear process, to prevent it from creating aliasing. <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> works by upsampling N times the input signal, processing the upsampling signal with the increased internal sample rate, and downsample the result to get back the original processing sample rate.</p>
-<p>Choose between <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> or <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering depending on your needs in term of latency and phase distortion. With <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filters, the phase is linear but the latency is maximum. With <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering, the phase is compromised around the Nyquist frequency but the latency is minimum.</p>
+<p>The principle of oversampling is to increase the sample rate of a given non-linear process, to prevent it from creating aliasing. <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> works by upsampling N times the input signal, processing the upsampled signal with the increased internal sample rate, and downsampling the result to get back the original processing sample rate.</p>
+<p>Choose between <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> or <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering depending on your needs in term of latency and phase distortion. With <a class="el" href="namespacedsp_1_1FIR.html" title="Classes for FIR filter processing. ">FIR</a> filters, the phase is linear but the latency is maximised. With <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filtering, the phase is compromised around the Nyquist frequency but the latency is minimised.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structdsp_1_1FilterDesign.html" title="This class provides a set of functions which generates FIR::Coefficients and IIR::Coefficients, of high-order low-pass filters. ">FilterDesign</a>. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac3d048707b7807badec0df770c9778f8"></a>
@@ -203,7 +206,6 @@ template&lt;typename SampleType &gt; </div>
 
 <p>Constructor of the oversampling class. </p>
 <p>All the processing parameters must be provided at the creation of the oversampling object.</p>
-<p>Note: You might want to create a class inheriting from <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> with a different constructor if you need more control on what happens in the process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numChannels</td><td>the number of channels to process with this object </td></tr>
@@ -242,7 +244,9 @@ template&lt;typename SampleType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages. </p>
+<p>The default constructor of the oversampling class, which can be used to create an empty object and then add the appropriate stages. </p>
+<p>Note: This creates a "dummy" oversampling stage, which needs to be removed first before adding proper oversampling stages.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdsp_1_1Oversampling.html#a86f16ea386937ffa73f3fa1c16cd5aed" title="Removes all the previously registered oversampling stages, so you can add your own from scratch...">clearOversamplingStages</a>, <a class="el" href="classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867" title="Adds a new oversampling stage to the Oversampling class, multiplying the current oversampling factor ...">addOversamplingStage</a> </dd></dl>
 
 </div>
 </div>
@@ -441,8 +445,8 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
-<a id="aebc1e7486ddb2f6ebc1b2b0a7300e19f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebc1e7486ddb2f6ebc1b2b0a7300e19f">&#9670;&nbsp;</a></span>addOversamplingStage()</h2>
+<a id="aac7421fbb00879c77c6972d71f75c867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac7421fbb00879c77c6972d71f75c867">&#9670;&nbsp;</a></span>addOversamplingStage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,25 +463,25 @@ template&lt;typename SampleType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>normalizedTransitionWidthUp</em>, </td>
+          <td class="paramname"><em>normalisedTransitionWidthUp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>stopbandAttenuationdBUp</em>, </td>
+          <td class="paramname"><em>stopbandAmplitudedBUp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>normalizedTransitionWidthDown</em>, </td>
+          <td class="paramname"><em>normalisedTransitionWidthDown</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>stopbandAttenuationdBDown</em>&#160;</td>
+          <td class="paramname"><em>stopbandAmplitudedBDown</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -486,6 +490,21 @@ template&lt;typename SampleType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a new oversampling stage to the <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> class, multiplying the current oversampling factor by two. </p>
+<p>This is used with the default constructor to create custom oversampling chains, requiring a call to the clearOversamplingStages before any addition.</p>
+<p>Note: Upsampling and downsampling filtering have different purposes, the former removes upsampling artefacts while the latter removes useless frequency content created by the oversampled process, so usually the attenuation is increased when upsampling compared to downsampling.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the type of filter design employed for filtering during oversampling </td></tr>
+    <tr><td class="paramname">normalisedTransitionWidthUp</td><td>a value between 0 and 0.5 which specifies how much the transition between passband and stopband is steep, for upsampling filtering (the lower the better) </td></tr>
+    <tr><td class="paramname">stopbandAmplitudedBUp</td><td>the amplitude in dB in the stopband for upsampling filtering, must be negative </td></tr>
+    <tr><td class="paramname">normalisedTransitionWidthDown</td><td>a value between 0 and 0.5 which specifies how much the transition between passband and stopband is steep, for downsampling filtering (the lower the better) </td></tr>
+    <tr><td class="paramname">stopbandAmplitudedBDown</td><td>the amplitude in dB in the stopband for downsampling filtering, must be negative</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdsp_1_1Oversampling.html#a86f16ea386937ffa73f3fa1c16cd5aed" title="Removes all the previously registered oversampling stages, so you can add your own from scratch...">clearOversamplingStages</a> </dd></dl>
 
 </div>
 </div>
@@ -506,6 +525,10 @@ template&lt;typename SampleType &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Adds a new "dummy" oversampling stage, which does nothing to the signal. </p>
+<p>Using one can be useful if your application features a customisable oversampling factor and if you want to select the current one from an <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> without changing anything in the processing code.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a>, <a class="el" href="classdsp_1_1Oversampling.html#a86f16ea386937ffa73f3fa1c16cd5aed" title="Removes all the previously registered oversampling stages, so you can add your own from scratch...">clearOversamplingStages</a>, <a class="el" href="classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867" title="Adds a new oversampling stage to the Oversampling class, multiplying the current oversampling factor ...">addOversamplingStage</a> </dd></dl>
+
 </div>
 </div>
 <a id="a86f16ea386937ffa73f3fa1c16cd5aed"></a>
@@ -524,6 +547,9 @@ template&lt;typename SampleType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Removes all the previously registered oversampling stages, so you can add your own from scratch. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867" title="Adds a new oversampling stage to the Oversampling class, multiplying the current oversampling factor ...">addOversamplingStage</a>, <a class="el" href="classdsp_1_1Oversampling.html#a83befdb31af0832cf1e36cdb3817934e" title="Adds a new &quot;dummy&quot; oversampling stage, which does nothing to the signal. ">addDummyOversamplingStage</a> </dd></dl>
 
 </div>
 </div>
@@ -566,7 +592,7 @@ template&lt;typename SampleType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 12 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 13 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

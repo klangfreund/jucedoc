@@ -307,7 +307,7 @@ var searchData=
   ['multiplylevels',['multiplyLevels',['../classEdgeTable.html#ae6babbc5825dd5031618bf60a1d3ac72',1,'EdgeTable']]],
   ['multiplyopacity',['multiplyOpacity',['../classColourGradient.html#a7c5cef5beaeca40e429f5a3b661983cb',1,'ColourGradient']]],
   ['multiplyvelocity',['multiplyVelocity',['../classMidiMessage.html#a12058e7e2cb2d287241824caf6c729c7',1,'MidiMessage']]],
-  ['multiplywithwindowingtable',['multiplyWithWindowingTable',['../structdsp_1_1WindowingFunction.html#ab54dce018a451c3376e91e911d361f1b',1,'dsp::WindowingFunction']]],
+  ['multiplywithwindowingtable',['multiplyWithWindowingTable',['../classdsp_1_1WindowingFunction.html#ab54dce018a451c3376e91e911d361f1b',1,'dsp::WindowingFunction']]],
   ['multisamplinglevel',['multisamplingLevel',['../classOpenGLPixelFormat.html#afa2032cde8affb7698f038ba5784365a',1,'OpenGLPixelFormat']]],
   ['multitimer',['MultiTimer',['../classMultiTimer.html',1,'MultiTimer'],['../classMultiTimer.html#a608fc823bb95f046f439424521615dc9',1,'MultiTimer::MultiTimer() noexcept'],['../classMultiTimer.html#a5020d0be93325aed21de9f06e2b28935',1,'MultiTimer::MultiTimer(const MultiTimer &amp;) noexcept']]],
   ['musereceptorgeneric',['MuseReceptorGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac44eee1f6720c9ef9296f0c655526230',1,'PluginHostType']]]

@@ -81,7 +81,7 @@ var searchData=
   ['transport',['transport',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886a6bc95cbd8873f1b318485bf9a46acfab',1,'PushNotifications::Notification']]],
   ['transpose',['transpose',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a16980add29e84f5ec80d7777e7c52335',1,'BlocksProtocol']]],
   ['trayopen',['trayOpen',['../classAudioCDBurner.html#a75c01de0b51d56d6f78a1b56ff4da846ab8a44178fa9c27bf9b55a9c56de9b448',1,'AudioCDBurner']]],
-  ['triangular',['triangular',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca16c4ac2f97c0d07dc4ce78bf59b4f2ef',1,'dsp::WindowingFunction']]],
+  ['triangular',['triangular',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca16c4ac2f97c0d07dc4ce78bf59b4f2ef',1,'dsp::WindowingFunction']]],
   ['trigger',['trigger',['../group__LittleFootFunctions.html#ggaee3ea37f4f505980157cf93a84687bcba217a286794d1ad7bda0db44b4e1d81c0',1,'juce_LittleFootFunctions.dox']]],
   ['tristate',['triState',['../group__LittleFootFunctions.html#ggaee3ea37f4f505980157cf93a84687bcba3d1c0936ea825f6508659a2d9b1d452e',1,'juce_LittleFootFunctions.dox']]],
   ['twovaluehorizontal',['TwoValueHorizontal',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a2ce77695813bb317c2d1863d2e71213b',1,'Slider']]],

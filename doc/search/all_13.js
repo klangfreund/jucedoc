@@ -274,7 +274,7 @@ var searchData=
   ['treehaschanged',['treeHasChanged',['../classTreeViewItem.html#aab2752eec271a51384fd10121a911ee1',1,'TreeViewItem']]],
   ['treeview',['TreeView',['../classTreeView.html',1,'TreeView'],['../classTreeView.html#a5e042100dbfdb9868e0c36e4c786d331',1,'TreeView::TreeView()']]],
   ['treeviewitem',['TreeViewItem',['../classTreeViewItem.html',1,'TreeViewItem'],['../classTreeViewItem.html#a442058a1c6d9eef0aa6f8b918fcbf8d6',1,'TreeViewItem::TreeViewItem()']]],
-  ['triangular',['triangular',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca16c4ac2f97c0d07dc4ce78bf59b4f2ef',1,'dsp::WindowingFunction']]],
+  ['triangular',['triangular',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca16c4ac2f97c0d07dc4ce78bf59b4f2ef',1,'dsp::WindowingFunction']]],
   ['trigger',['trigger',['../group__LittleFootFunctions.html#ggaee3ea37f4f505980157cf93a84687bcba217a286794d1ad7bda0db44b4e1d81c0',1,'juce_LittleFootFunctions.dox']]],
   ['triggerasyncupdate',['triggerAsyncUpdate',['../classAsyncUpdater.html#a4eece806c6ba9f591382fed54c5983b2',1,'AsyncUpdater']]],
   ['triggerbuttonclick',['triggerButtonClick',['../classAlertWindow.html#abc59507f5e2ad04933736a8643ba7ef7',1,'AlertWindow']]],

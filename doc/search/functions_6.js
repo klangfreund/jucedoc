@@ -1443,7 +1443,7 @@ var searchData=
   ['getwidthsfortextbuttons',['getWidthsForTextButtons',['../classLookAndFeel__V2.html#a0f2382d0f294936bc99edcc5a666eb50',1,'LookAndFeel_V2::getWidthsForTextButtons()'],['../structAlertWindow_1_1LookAndFeelMethods.html#a4e2e653d4db9a733a4017a048d546ba6',1,'AlertWindow::LookAndFeelMethods::getWidthsForTextButtons()']]],
   ['getwildcardforallformats',['getWildcardForAllFormats',['../classAudioFormatManager.html#a2cbd8623b8012b33f6f6cc55201d5b7d',1,'AudioFormatManager']]],
   ['getwindowhandle',['getWindowHandle',['../classComponent.html#a1cc235734615109756110ca8423e3ac3',1,'Component']]],
-  ['getwindowingmethodname',['getWindowingMethodName',['../structdsp_1_1WindowingFunction.html#ad3d6d8d99441490ff23be03ec97d0ed0',1,'dsp::WindowingFunction']]],
+  ['getwindowingmethodname',['getWindowingMethodName',['../classdsp_1_1WindowingFunction.html#ad3d6d8d99441490ff23be03ec97d0ed0',1,'dsp::WindowingFunction']]],
   ['getwindowstateasstring',['getWindowStateAsString',['../classResizableWindow.html#af5120046ac8f889a3252f1afd9d0043e',1,'ResizableWindow']]],
   ['getwithdefault',['getWithDefault',['../classNamedValueSet.html#a0e9a275a1d54594938e5acc46d1cc569',1,'NamedValueSet']]],
   ['getwithoutchecking',['getWithoutChecking',['../structSingletonHolder.html#a48380e3056049bc4d00f00216235b596',1,'SingletonHolder']]],

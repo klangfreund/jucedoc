@@ -1,7 +1,7 @@
 var searchData=
 [
   ['keyboard',['keyboard',['../group__juce__gui__basics-keyboard.html',1,'']]],
-  ['kaiser',['kaiser',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca0acae1b7293c0da1f9cedf80d9b336d8',1,'dsp::WindowingFunction']]],
+  ['kaiser',['kaiser',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca0acae1b7293c0da1f9cedf80d9b336d8',1,'dsp::WindowingFunction']]],
   ['kaudiounitproperty_5fsupportsmpe',['kAudioUnitProperty_SupportsMPE',['../group__juce__audio__processors-format__types.html#gga61dadd085c1777f559549e05962b2c9ea3d9d3125ae195114257428b622aebb52',1,'juce_AudioUnitPluginFormat.h']]],
   ['keyboardfocustraverser',['KeyboardFocusTraverser',['../classKeyboardFocusTraverser.html',1,'KeyboardFocusTraverser'],['../classKeyboardFocusTraverser.html#a275c834346e37c782d74f08365f1a06f',1,'KeyboardFocusTraverser::KeyboardFocusTraverser()']]],
   ['keydown',['keyDown',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a895ffc865cb90899c347efefb881e2ce',1,'MPENote']]],

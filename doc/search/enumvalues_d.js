@@ -25,5 +25,5 @@ var searchData=
   ['numerickeyboard',['numericKeyboard',['../classTextInputTarget.html#a097550317e3bf2aee470a20540b9edc7ad6a4c6dad692fe4625b23d7ff5a7a5af',1,'TextInputTarget']]],
   ['numfiltertypes',['numFilterTypes',['../classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8a7bdfabf1e6a6cc497ba2352c930b1776',1,'dsp::Oversampling']]],
   ['numstandardcursortypes',['NumStandardCursorTypes',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a48398e8dcad5bee53f6319d3f9b7f012',1,'MouseCursor']]],
-  ['numwindowingmethods',['numWindowingMethods',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca624b3f98ca24e12388cf7b7777d6b81e',1,'dsp::WindowingFunction']]]
+  ['numwindowingmethods',['numWindowingMethods',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca624b3f98ca24e12388cf7b7777d6b81e',1,'dsp::WindowingFunction']]]
 ];

@@ -133,7 +133,7 @@ var searchData=
   ['addnode',['addNode',['../classAudioProcessorGraph.html#ac50c30b557187d34c17fe4c2e7505b0d',1,'AudioProcessorGraph']]],
   ['addnullterminatedarray',['addNullTerminatedArray',['../classArray.html#a9dbaaaeea2b8e6ab7eede5c3f080adf8',1,'Array']]],
   ['addorreplacesorted',['addOrReplaceSorted',['../classReferenceCountedArray.html#ae4d087d8723db7a39fb876d419d9f960',1,'ReferenceCountedArray']]],
-  ['addoversamplingstage',['addOversamplingStage',['../classdsp_1_1Oversampling.html#aebc1e7486ddb2f6ebc1b2b0a7300e19f',1,'dsp::Oversampling']]],
+  ['addoversamplingstage',['addOversamplingStage',['../classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867',1,'dsp::Oversampling']]],
   ['addpanel',['addPanel',['../classConcertinaPanel.html#ac619903630bdc5ee60e1ed5f616955b6',1,'ConcertinaPanel']]],
   ['addparameter',['addParameter',['../classAudioProcessor.html#ae686ddf13e3e8f6008cb7b4c41704aba',1,'AudioProcessor']]],
   ['addparametergroup',['addParameterGroup',['../classAudioProcessor.html#a9b1c68379b59943112a5efb9e96ea79b',1,'AudioProcessor']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hamming',['hamming',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca3de98685d0e0215bbe9c5bfd2d7dcdd5',1,'dsp::WindowingFunction']]],
-  ['hann',['hann',['../structdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca0601ab384b75f103d84d1c5e5dd22c20',1,'dsp::WindowingFunction']]],
+  ['hamming',['hamming',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca3de98685d0e0215bbe9c5bfd2d7dcdd5',1,'dsp::WindowingFunction']]],
+  ['hann',['hann',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca0601ab384b75f103d84d1c5e5dd22c20',1,'dsp::WindowingFunction']]],
   ['headertextcolourid',['headerTextColourId',['../classPopupMenu.html#a0888091ddab0f599bb9d2fab28153f6ba964cf665c7c5a26b63866e537e9bfed0',1,'PopupMenu']]],
   ['height',['height',['../structRelativeCoordinate_1_1StandardStrings.html#a996870bf66337348b8da0f06c647a65baeb31efdb32a2c853ec60f5ad453afbdd',1,'RelativeCoordinate::StandardStrings']]],
   ['hiddenfromkeyeditor',['hiddenFromKeyEditor',['../structApplicationCommandInfo.html#ab9633f0a25ad57236fde726c98b29d72a626b4f9f1aa2bd0761b89b376063d254',1,'ApplicationCommandInfo']]],

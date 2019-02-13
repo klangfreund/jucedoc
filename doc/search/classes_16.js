@@ -12,7 +12,7 @@ var searchData=
   ['webinputstream',['WebInputStream',['../classWebInputStream.html',1,'']]],
   ['whirlpool',['Whirlpool',['../classWhirlpool.html',1,'']]],
   ['wildcardfilefilter',['WildcardFileFilter',['../classWildcardFileFilter.html',1,'']]],
-  ['windowingfunction',['WindowingFunction',['../structdsp_1_1WindowingFunction.html',1,'dsp']]],
+  ['windowingfunction',['WindowingFunction',['../classdsp_1_1WindowingFunction.html',1,'dsp']]],
   ['windowsmediaaudioformat',['WindowsMediaAudioFormat',['../classWindowsMediaAudioFormat.html',1,'']]],
   ['windowsregistry',['WindowsRegistry',['../classWindowsRegistry.html',1,'']]],
   ['writehelper',['WriteHelper',['../structAudioFormatWriter_1_1WriteHelper.html',1,'AudioFormatWriter']]]
