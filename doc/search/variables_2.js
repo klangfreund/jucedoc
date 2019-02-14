@@ -45,6 +45,7 @@ var searchData=
   ['coral',['coral',['../classColours.html#a194cea1670d8b5588dc0acb40c7e93d1',1,'Colours']]],
   ['cornflowerblue',['cornflowerblue',['../classColours.html#a4186f54cc951c1482c317b8729eb47a0',1,'Colours']]],
   ['cornsilk',['cornsilk',['../classColours.html#a21bbe016b258787d6754d6227efa3c53',1,'Colours']]],
+  ['countdown',['countdown',['../classLinearSmoothedValue.html#a3aea2bb6fb1b18b0df6f4e1e609ad51b',1,'LinearSmoothedValue']]],
   ['create',['create',['../structUnityAudioEffectDefinition.html#a5b5ff20a65d01612e0e10d0dc5b73b1c',1,'UnityAudioEffectDefinition']]],
   ['creationtime',['creationTime',['../structDirectoryContentsList_1_1FileInfo.html#a903e1211fd14c33fe7af486e4e91b9b0',1,'DirectoryContentsList::FileInfo']]],
   ['crimson',['crimson',['../classColours.html#abd804b3fa30e3aea3908bfaef84ff7ae',1,'Colours']]],

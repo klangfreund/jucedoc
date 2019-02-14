@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classLinearSmoothedValue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LinearSmoothedValue&lt; FloatType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__juce__audio__basics.html">juce_audio_basics</a> &raquo; <a class="el" href="group__juce__audio__basics-utilities.html">utilities</a></div></div>  </div>
@@ -78,17 +79,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6cc025f0d2de6ac18dc15368a31e893c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6cc025f0d2de6ac18dc15368a31e893c">More...</a><br /></td></tr>
 <tr class="separator:a6cc025f0d2de6ac18dc15368a31e893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437e2033bee8c4c610b4fd0086b47042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a437e2033bee8c4c610b4fd0086b47042">reset</a> (double sampleRate, double rampLengthInSeconds) noexcept</td></tr>
-<tr class="memdesc:a437e2033bee8c4c610b4fd0086b47042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to a new sample rate and ramp length.  <a href="#a437e2033bee8c4c610b4fd0086b47042">More...</a><br /></td></tr>
+<tr class="memdesc:a437e2033bee8c4c610b4fd0086b47042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new sample rate and ramp length in seconds.  <a href="#a437e2033bee8c4c610b4fd0086b47042">More...</a><br /></td></tr>
 <tr class="separator:a437e2033bee8c4c610b4fd0086b47042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab29c5526e10d6944e0f65e323c679d1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#ab29c5526e10d6944e0f65e323c679d1a">setValue</a> (FloatType newValue, bool force=false) noexcept</td></tr>
-<tr class="memdesc:ab29c5526e10d6944e0f65e323c679d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new target value.  <a href="#ab29c5526e10d6944e0f65e323c679d1a">More...</a><br /></td></tr>
-<tr class="separator:ab29c5526e10d6944e0f65e323c679d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a580588a9b4ad3643317aef79c271a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a1a580588a9b4ad3643317aef79c271a7">reset</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSteps) noexcept</td></tr>
+<tr class="memdesc:a1a580588a9b4ad3643317aef79c271a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new ramp length directly in samples.  <a href="#a1a580588a9b4ad3643317aef79c271a7">More...</a><br /></td></tr>
+<tr class="separator:a1a580588a9b4ad3643317aef79c271a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f62aba07ab5b33c0220f32edb0b9fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">setTargetValue</a> (FloatType newValue) noexcept</td></tr>
+<tr class="memdesc:a8f62aba07ab5b33c0220f32edb0b9fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next value to ramp towards.  <a href="#a8f62aba07ab5b33c0220f32edb0b9fa4">More...</a><br /></td></tr>
+<tr class="separator:a8f62aba07ab5b33c0220f32edb0b9fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0387a274275afbc7dfb6066d9812d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">setCurrentValueToTargetValue</a> () noexcept</td></tr>
+<tr class="memdesc:ae0387a274275afbc7dfb6066d9812d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current value to the target value.  <a href="#ae0387a274275afbc7dfb6066d9812d36">More...</a><br /></td></tr>
+<tr class="separator:ae0387a274275afbc7dfb6066d9812d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4fb08705169e714862724ae75745f0"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">getNextValue</a> () noexcept</td></tr>
 <tr class="memdesc:a1e4fb08705169e714862724ae75745f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the next value.  <a href="#a1e4fb08705169e714862724ae75745f0">More...</a><br /></td></tr>
 <tr class="separator:a1e4fb08705169e714862724ae75745f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79754c985489391bc1a88fb871854f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#af79754c985489391bc1a88fb871854f8">isSmoothing</a> () const noexcept</td></tr>
 <tr class="memdesc:af79754c985489391bc1a88fb871854f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current value is currently being interpolated.  <a href="#af79754c985489391bc1a88fb871854f8">More...</a><br /></td></tr>
 <tr class="separator:af79754c985489391bc1a88fb871854f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb58e89e3b99858708269b2ea343e31"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#aebb58e89e3b99858708269b2ea343e31">getCurrentValue</a> () const noexcept</td></tr>
+<tr class="memdesc:aebb58e89e3b99858708269b2ea343e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value of the ramp.  <a href="#aebb58e89e3b99858708269b2ea343e31">More...</a><br /></td></tr>
+<tr class="separator:aebb58e89e3b99858708269b2ea343e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a3ba8bb37cd75cd07953577e3bd549aa3">getTargetValue</a> () const noexcept</td></tr>
 <tr class="memdesc:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target value towards which the smoothed value is currently moving.  <a href="#a3ba8bb37cd75cd07953577e3bd549aa3">More...</a><br /></td></tr>
 <tr class="separator:a3ba8bb37cd75cd07953577e3bd549aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,13 +114,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab771ff3b8ba8b39c023c8473ec75ede4"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">skip</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numSamples) noexcept</td></tr>
 <tr class="memdesc:ab771ff3b8ba8b39c023c8473ec75ede4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip the next numSamples samples.  <a href="#ab771ff3b8ba8b39c023c8473ec75ede4">More...</a><br /></td></tr>
 <tr class="separator:ab771ff3b8ba8b39c023c8473ec75ede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3aea2bb6fb1b18b0df6f4e1e609ad51b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a>(void setValue(FloatType newValue, bool force=false) noexcept, { <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">setTargetValue</a>(newValue);if(force) <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">setCurrentValueToTargetValue</a>();}) private <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a3aea2bb6fb1b18b0df6f4e1e609ad51b">countdown</a> = 0</td></tr>
+<tr class="memdesc:a3aea2bb6fb1b18b0df6f4e1e609ad51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">THIS FUNCTION IS DEPRECATED.  <a href="#a3aea2bb6fb1b18b0df6f4e1e609ad51b">More...</a><br /></td></tr>
+<tr class="separator:a3aea2bb6fb1b18b0df6f4e1e609ad51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733d451d03a478df04da6da5afdcbe75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a>(void setValue(FloatType newValue, bool force=false) noexcept, { <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">setTargetValue</a>(newValue);if(force) <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">setCurrentValueToTargetValue</a>();}) private <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinearSmoothedValue.html#a733d451d03a478df04da6da5afdcbe75">stepsToTarget</a> = 0</td></tr>
+<tr class="separator:a733d451d03a478df04da6da5afdcbe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename FloatType&gt;<br />
 class LinearSmoothedValue&lt; FloatType &gt;</h3>
 
 <p>Utility class for linearly smoothed values like volume etc. </p>
-<p>that should not change abruptly but as a linear ramp, to avoid audio glitches. </p>
+<p>that should not change abruptly but as a linear ramp to avoid audio glitches. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2f1959996d8b6d374c0be5172b82aea6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f1959996d8b6d374c0be5172b82aea6">&#9670;&nbsp;</a></span>LinearSmoothedValue() <span class="overload">[1/2]</span></h2>
@@ -173,7 +191,7 @@ template&lt;typename FloatType&gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a437e2033bee8c4c610b4fd0086b47042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437e2033bee8c4c610b4fd0086b47042">&#9670;&nbsp;</a></span>reset()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a437e2033bee8c4c610b4fd0086b47042">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +226,7 @@ template&lt;typename FloatType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reset to a new sample rate and ramp length. </p>
+<p>Set a new sample rate and ramp length in seconds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sampleRate</td><td>The sampling rate </td></tr>
@@ -217,12 +235,12 @@ template&lt;typename FloatType&gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1Bias.html#a94411cb3c700a207cb19e0368f2909c5">dsp::Bias&lt; FloatType &gt;::process()</a>, and <a class="el" href="classdsp_1_1Oscillator.html#ac4f0e60d1e0bdc56b78c31aa0bdb05d8">dsp::Oscillator&lt; SampleType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classdsp_1_1Bias.html#a94411cb3c700a207cb19e0368f2909c5">dsp::Bias&lt; FloatType &gt;::process()</a>, <a class="el" href="classLinearSmoothedValue.html#a437e2033bee8c4c610b4fd0086b47042">LinearSmoothedValue&lt; Type &gt;::reset()</a>, and <a class="el" href="classdsp_1_1Oscillator.html#ac4f0e60d1e0bdc56b78c31aa0bdb05d8">dsp::Oscillator&lt; SampleType &gt;::reset()</a>.</p>
 
 </div>
 </div>
-<a id="ab29c5526e10d6944e0f65e323c679d1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab29c5526e10d6944e0f65e323c679d1a">&#9670;&nbsp;</a></span>setValue()</h2>
+<a id="a1a580588a9b4ad3643317aef79c271a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a580588a9b4ad3643317aef79c271a7">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,21 +251,11 @@ template&lt;typename FloatType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::setValue </td>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::reset </td>
           <td>(</td>
-          <td class="paramtype">FloatType&#160;</td>
-          <td class="paramname"><em>newValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>numSteps</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>force</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -257,16 +265,82 @@ template&lt;typename FloatType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set a new target value. </p>
+<p>Set a new ramp length directly in samples. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newValue</td><td>The new target value </td></tr>
-    <tr><td class="paramname">force</td><td>If true, the value will be set immediately, bypassing the ramp </td></tr>
+    <tr><td class="paramname">numSteps</td><td>The number of samples over which the ramp should be active </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1LadderFilter.html#a85a992ea57f531acd77473ce88c6f889">dsp::LadderFilter&lt; Type &gt;::process()</a>, and <a class="el" href="classdsp_1_1Oscillator.html#a3aa65891cbcfcc32cb8ebebeb9a3c689">dsp::Oscillator&lt; SampleType &gt;::setFrequency()</a>.</p>
+</div>
+</div>
+<a id="a8f62aba07ab5b33c0220f32edb0b9fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f62aba07ab5b33c0220f32edb0b9fa4">&#9670;&nbsp;</a></span>setTargetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::setTargetValue </td>
+          <td>(</td>
+          <td class="paramtype">FloatType&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the next value to ramp towards. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new target value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="classdsp_1_1LadderFilter.html#a85a992ea57f531acd77473ce88c6f889">dsp::LadderFilter&lt; Type &gt;::process()</a>, <a class="el" href="classdsp_1_1Oscillator.html#a3aa65891cbcfcc32cb8ebebeb9a3c689">dsp::Oscillator&lt; SampleType &gt;::setFrequency()</a>, and <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; Type &gt;::skip()</a>.</p>
+
+</div>
+</div>
+<a id="ae0387a274275afbc7dfb6066d9812d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0387a274275afbc7dfb6066d9812d36">&#9670;&nbsp;</a></span>setCurrentValueToTargetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::setCurrentValueToTargetValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the current value to the target value. </p>
+
+<p class="reference">Referenced by <a class="el" href="classLinearSmoothedValue.html#a1a580588a9b4ad3643317aef79c271a7">LinearSmoothedValue&lt; Type &gt;::reset()</a>, <a class="el" href="classdsp_1_1Oscillator.html#a3aa65891cbcfcc32cb8ebebeb9a3c689">dsp::Oscillator&lt; SampleType &gt;::setFrequency()</a>, <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; Type &gt;::setTargetValue()</a>, and <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; Type &gt;::skip()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +403,36 @@ template&lt;typename FloatType&gt; </div>
 
 <p>Returns true if the current value is currently being interpolated. </p>
 
-<p class="reference">Referenced by <a class="el" href="classLinearSmoothedValue.html#abd1abd9fd441941920563c1edbdeeca2">LinearSmoothedValue&lt; Type &gt;::applyGain()</a>, and <a class="el" href="classdsp_1_1Oscillator.html#a9910808dcf8b7909df5ee15f8df6501e">dsp::Oscillator&lt; SampleType &gt;::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classLinearSmoothedValue.html#abd1abd9fd441941920563c1edbdeeca2">LinearSmoothedValue&lt; Type &gt;::applyGain()</a>, <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; Type &gt;::getNextValue()</a>, and <a class="el" href="classdsp_1_1Oscillator.html#a9910808dcf8b7909df5ee15f8df6501e">dsp::Oscillator&lt; SampleType &gt;::process()</a>.</p>
+
+</div>
+</div>
+<a id="aebb58e89e3b99858708269b2ea343e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb58e89e3b99858708269b2ea343e31">&#9670;&nbsp;</a></span>getCurrentValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatType <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::getCurrentValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current value of the ramp. </p>
 
 </div>
 </div>
@@ -538,13 +641,61 @@ template&lt;typename FloatType&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3aea2bb6fb1b18b0df6f4e1e609ad51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aea2bb6fb1b18b0df6f4e1e609ad51b">&#9670;&nbsp;</a></span>countdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a> (void setValue (FloatType newValue, bool force = false) noexcept, { <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">setTargetValue</a> (newValue); if (force) <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">setCurrentValueToTargetValue</a>(); }) private <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::countdown = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>THIS FUNCTION IS DEPRECATED. </p>
+<p>Use <code>setTargetValue (float)</code> and <code><a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36" title="Sets the current value to the target value. ">setCurrentValueToTargetValue()</a></code> instead:</p>
+<p>lsv.setValue (x, false); -&gt; lsv.setTargetValue (x); lsv.setValue (x, true); -&gt; lsv.setTargetValue (x); lsv.setCurrentValueToTargetValue();</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new target value </td></tr>
+    <tr><td class="paramname">force</td><td>If true, the value will be set immediately, bypassing the ramp </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; Type &gt;::getNextValue()</a>, <a class="el" href="classLinearSmoothedValue.html#af79754c985489391bc1a88fb871854f8">LinearSmoothedValue&lt; Type &gt;::isSmoothing()</a>, <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">LinearSmoothedValue&lt; Type &gt;::setCurrentValueToTargetValue()</a>, <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; Type &gt;::setTargetValue()</a>, and <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; Type &gt;::skip()</a>.</p>
+
+</div>
+</div>
+<a id="a733d451d03a478df04da6da5afdcbe75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733d451d03a478df04da6da5afdcbe75">&#9670;&nbsp;</a></span>stepsToTarget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a> (void setValue (FloatType newValue, bool force = false) noexcept, { <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">setTargetValue</a> (newValue); if (force) <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">setCurrentValueToTargetValue</a>(); }) private <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; FloatType &gt;::stepsToTarget = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classLinearSmoothedValue.html#a1a580588a9b4ad3643317aef79c271a7">LinearSmoothedValue&lt; Type &gt;::reset()</a>, and <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; Type &gt;::setTargetValue()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__LinearSmoothedValue_8h.html">juce_LinearSmoothedValue.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 13 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 14 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

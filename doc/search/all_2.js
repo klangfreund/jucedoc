@@ -421,6 +421,7 @@ var searchData=
   ['cornsilk',['cornsilk',['../classColours.html#a21bbe016b258787d6754d6227efa3c53',1,'Colours']]],
   ['cos',['cos',['../structdsp_1_1FastMathApproximations.html#ad53aa42b45c5dd66632686c2242f005e',1,'dsp::FastMathApproximations::cos(FloatType x) noexcept'],['../structdsp_1_1FastMathApproximations.html#add7467368591bf42375de56f44c0e6aa',1,'dsp::FastMathApproximations::cos(FloatType *values, size_t numValues) noexcept']]],
   ['cosh',['cosh',['../structdsp_1_1FastMathApproximations.html#a7bb544ee7b1522cefc3b528cee858679',1,'dsp::FastMathApproximations::cosh(FloatType x) noexcept'],['../structdsp_1_1FastMathApproximations.html#a45dca4cb25772c6247d349aa12f8cf5c',1,'dsp::FastMathApproximations::cosh(FloatType *values, size_t numValues) noexcept']]],
+  ['countdown',['countdown',['../classLinearSmoothedValue.html#a3aea2bb6fb1b18b0df6f4e1e609ad51b',1,'LinearSmoothedValue']]],
   ['countdownchronometer',['countDownChronometer',['../structPushNotifications_1_1Notification.html#ae15fe6967de9288cf08cf3f394f852c6a7f74a5fbaaff50766da087627c7c1d93',1,'PushNotifications::Notification']]],
   ['countnumberofbits',['countNumberOfBits',['../group__juce__core-maths.html#gafd3358fc8d07a10a7c621f9875cfb7b9',1,'countNumberOfBits(uint32 n) noexcept:&#160;juce_MathsFunctions.h'],['../group__juce__core-maths.html#gaa9b7a29be913ebfbc11e7e9839e19fb6',1,'countNumberOfBits(uint64 n) noexcept:&#160;juce_MathsFunctions.h']]],
   ['countnumberofsetbits',['countNumberOfSetBits',['../classBigInteger.html#a0db5dd578089614b40127b093a7cac7f',1,'BigInteger']]],
