@@ -869,6 +869,9 @@ $(function() {
 <li>setCreationTime()
 : <a class="el" href="classFile.html#abc59a49c24bae77f7666a34de8341484">File</a>
 </li>
+<li>setCurrentAndTargetValue()
+: <a class="el" href="classSmoothedValueBase.html#a30ef651c9812ae22041af706031effb2">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;</a>
+</li>
 <li>setCurrentAudioDeviceType()
 : <a class="el" href="classAudioDeviceManager.html#a49e34c1ed60dafcebefc55d12f9175ad">AudioDeviceManager</a>
 </li>
@@ -943,9 +946,6 @@ $(function() {
 </li>
 <li>setCurrentTransactionName()
 : <a class="el" href="classUndoManager.html#a920cca3e24c598a175d90b04765fe5bc">UndoManager</a>
-</li>
-<li>setCurrentValueToTargetValue()
-: <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">LinearSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>setCustomPanelHeader()
 : <a class="el" href="classConcertinaPanel.html#ae1adae8020333d759495538d231e8279">ConcertinaPanel</a>
@@ -1485,6 +1485,9 @@ $(function() {
 </li>
 <li>setLogger()
 : <a class="el" href="classBlock.html#ab14c53fe0485b084f129626d7d3829b0">Block</a>
+</li>
+<li>setLogParameters()
+: <a class="el" href="classLogSmoothedValue.html#a6c0ca69b7612988b7ecbed3502cc4c54">LogSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>setLookAndFeel()
 : <a class="el" href="classComponent.html#a6f2c10cd9840844a5be16e5deeef6f50">Component</a>
@@ -2271,6 +2274,7 @@ $(function() {
 </li>
 <li>setTargetValue()
 : <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; FloatType &gt;</a>
+, <a class="el" href="classLogSmoothedValue.html#a21bfd8c840b1afc18a9d9fe2b427979e">LogSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>setTemporaryUnderlining()
 : <a class="el" href="classCodeEditorComponent.html#ac14af478175b2ce2b79ea1b9b57a5026">CodeEditorComponent</a>
@@ -2372,7 +2376,7 @@ $(function() {
 , <a class="el" href="classRectangle.html#aca3a55b96b0f7a4479bbd99fdfa5f06c">Rectangle&lt; ValueType &gt;</a>
 </li>
 <li>setTopLeftPosition()
-: <a class="el" href="classComponent.html#a5c86db4e969d69acc78ea3ee899cedff">Component</a>
+: <a class="el" href="classComponent.html#a46f3b243e2ff2d000285c8642be7ea0a">Component</a>
 </li>
 <li>setTopRightPosition()
 : <a class="el" href="classComponent.html#a28d61a4aea9791ab0b4d3cc4bed17650">Component</a>
@@ -2411,7 +2415,7 @@ $(function() {
 : <a class="el" href="classFont.html#af107c023ff440651ae9291cdf058b7c1">Font</a>
 </li>
 <li>setUniform()
-: <a class="el" href="classOpenGLShaderProgram.html#acd572e81714727ef5d32b274845195b4">OpenGLShaderProgram</a>
+: <a class="el" href="classOpenGLShaderProgram.html#ae126f2e1d6b92b6b2459f3a4307889f1">OpenGLShaderProgram</a>
 </li>
 <li>setUniformMat2()
 : <a class="el" href="classOpenGLShaderProgram.html#ad481c6c6d05495b011e16e12e02e6a53">OpenGLShaderProgram</a>
@@ -2568,7 +2572,7 @@ $(function() {
 : <a class="el" href="classWeakReference.html#ad4d39a0c388b7d0811e1f755cadd3fdf">WeakReference&lt; ObjectType, ReferenceCountingType &gt;</a>
 </li>
 <li>SharedResourcePointer()
-: <a class="el" href="classSharedResourcePointer.html#ae0e471d40bbf73438dec6480935341bf">SharedResourcePointer&lt; SharedObjectType &gt;</a>
+: <a class="el" href="classSharedResourcePointer.html#a37f5da91a94a3f34a8d467a11b1db2ae">SharedResourcePointer&lt; SharedObjectType &gt;</a>
 </li>
 <li>shareFiles()
 : <a class="el" href="classContentSharer.html#ad84934f80c996f54e5ed119f360b067a">ContentSharer</a>
@@ -2641,9 +2645,9 @@ $(function() {
 : <a class="el" href="classColourSelector.html#a42bcef80614375bb812096797d7439f4a532b65a28bec85b05e7a1af509d537b3">ColourSelector</a>
 </li>
 <li>showAt()
-: <a class="el" href="classBubbleMessageComponent.html#accf152caac1319d8a05d145a94fc7022">BubbleMessageComponent</a>
+: <a class="el" href="classBubbleMessageComponent.html#a578aec6fc92df2b9a70f29250b4ea243">BubbleMessageComponent</a>
 , <a class="el" href="classFileChooserDialogBox.html#a038683131a8efafe2b22484211043fb1">FileChooserDialogBox</a>
-, <a class="el" href="classPopupMenu.html#ac94916cb06208a99f0955084c561c92d">PopupMenu</a>
+, <a class="el" href="classPopupMenu.html#a09cbf58f5f3e8132ad1eb6afa7819d32">PopupMenu</a>
 </li>
 <li>showAudioSettingsDialog()
 : <a class="el" href="classStandalonePluginHolder.html#a5e24139925518f20b67a3d6f74bfb00c">StandalonePluginHolder</a>
@@ -2780,7 +2784,7 @@ $(function() {
 : <a class="el" href="structdsp_1_1SIMDRegister.html#a3a9f728b56ef1b9fd3fceddb51259918">dsp::SIMDRegister&lt; Type &gt;</a>
 </li>
 <li>SIMDRegister()
-: <a class="el" href="structdsp_1_1SIMDRegister.html#a1eec54e4438864e509dfe5512a983f05">dsp::SIMDRegister&lt; Type &gt;</a>
+: <a class="el" href="structdsp_1_1SIMDRegister.html#ac69b44d4510b1ffbb96f7cd6605bf29a">dsp::SIMDRegister&lt; Type &gt;</a>
 </li>
 <li>SIMDRegisterSize
 : <a class="el" href="structdsp_1_1SIMDRegister.html#a295428a84f540c2442e2c476abc49800">dsp::SIMDRegister&lt; Type &gt;</a>
@@ -2795,7 +2799,7 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#a212c3670b59976559237cbf629af275fabe443816497d7aa69a1cb30a0095dd22">AudioProcessor</a>
 </li>
 <li>SingleThreadedReferenceCountedObject()
-: <a class="el" href="classSingleThreadedReferenceCountedObject.html#a7e56924b4be50a2644be07da588c7333">SingleThreadedReferenceCountedObject</a>
+: <a class="el" href="classSingleThreadedReferenceCountedObject.html#abecb74085d7c1125bc6c477449c733bc">SingleThreadedReferenceCountedObject</a>
 </li>
 <li>SingletonHolder()
 : <a class="el" href="structSingletonHolder.html#a782298a0332211a7639450b15a36e7a6">SingletonHolder&lt; Type, MutexType, onlyCreateOncePerRun &gt;</a>
@@ -2839,6 +2843,7 @@ $(function() {
 : <a class="el" href="classCodeDocument_1_1Iterator.html#a794f99491b06e4648b800f826769da06">CodeDocument::Iterator</a>
 , <a class="el" href="structCppTokeniserFunctions_1_1StringIterator.html#a6f0be3a6790cd989e58773263851b68c">CppTokeniserFunctions::StringIterator</a>
 , <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; FloatType &gt;</a>
+, <a class="el" href="classLogSmoothedValue.html#ab43a2179728982c029c75067752723d9">LogSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>skipBytes()
 : <a class="el" href="structBlocksProtocol_1_1HostPacketBuilder.html#a09e8b158d7935c145d641c4ce295841d">BlocksProtocol::HostPacketBuilder&lt; maxPacketBytes &gt;</a>
@@ -2847,7 +2852,7 @@ $(function() {
 : <a class="el" href="structCppTokeniserFunctions.html#acc20b010695f2ea7cba36da65c606219">CppTokeniserFunctions</a>
 </li>
 <li>skipIfNextCharMatches()
-: <a class="el" href="structCppTokeniserFunctions.html#a537b688c16a211d4826bcccf338aad79">CppTokeniserFunctions</a>
+: <a class="el" href="structCppTokeniserFunctions.html#a6a7fb9d8843cda49644b5c9c0e7ea352">CppTokeniserFunctions</a>
 </li>
 <li>skipNextBytes()
 : <a class="el" href="classInputStream.html#a7e3005cc6a58cd2ded6094dd6dd06542">InputStream</a>
@@ -2889,7 +2894,7 @@ $(function() {
 : <a class="el" href="structDrumPadGridProgram.html#ae0883fdca11734f26ab431b89c52255f">DrumPadGridProgram</a>
 </li>
 <li>Slider()
-: <a class="el" href="classSlider.html#a535033fada8e25ef7291d2a52e6e437b">Slider</a>
+: <a class="el" href="classSlider.html#ae2c907adc5de6f127138f3f869f683ae">Slider</a>
 </li>
 <li>slider
 : <a class="el" href="classSliderPropertyComponent.html#ae379d1c2bbcdab0d687697c9dfc36f9b">SliderPropertyComponent</a>
@@ -2920,6 +2925,9 @@ $(function() {
 </li>
 <li>small
 : <a class="el" href="structPushNotifications_1_1Notification.html#afd2a1061a669e3573ff9e0f7e5ea07fea0c5fadc8803dda79477fe24ec8515a31">PushNotifications::Notification</a>
+</li>
+<li>SmoothedValueBase()
+: <a class="el" href="classSmoothedValueBase.html#ab4fe0fdd6a16b0c25e245b8babcddd7a">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;</a>
 </li>
 <li>SmpteTimecodeType
 : <a class="el" href="classMidiMessage.html#a0e86db4d1186af858ad9f80d6abe96ab">MidiMessage</a>
@@ -2959,7 +2967,7 @@ $(function() {
 : <a class="el" href="classMidiMessage.html#a0bbced4f538c6c9d1aedc03acd2fc4ab">MidiMessage</a>
 </li>
 <li>sort()
-: <a class="el" href="classArray.html#a526081df81183ddd47f9f514de483a8f">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
+: <a class="el" href="classArray.html#abd6210cb3337f1cc11b89bc7b63f9c72">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
 , <a class="el" href="classKnownPluginList.html#a7e5269bf0c0340917dfb30801c25f717">KnownPluginList</a>
 , <a class="el" href="classMidiMessageSequence.html#a0b8079f18ac0e01d4bb1bc3c20114965">MidiMessageSequence</a>
 , <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
@@ -3103,7 +3111,7 @@ $(function() {
 : <a class="el" href="classAppleRemoteDevice.html#a826fd7464bf27550c7f62cf17bc06189">AppleRemoteDevice</a>
 , <a class="el" href="classAudioIODevice.html#aa3a17cf757a6297aab23a1327579347f">AudioIODevice</a>
 , <a class="el" href="classAudioTransportSource.html#a1cfd309ab61fb226bc03e5774c6ce65f">AudioTransportSource</a>
-, <a class="el" href="classChildProcess.html#aa5e6f939a0f0c3e87bd7c58dcec9f13c">ChildProcess</a>
+, <a class="el" href="classChildProcess.html#ae1b54ec34a8fa09e679aed90c167cb64">ChildProcess</a>
 , <a class="el" href="structGridItem_1_1StartAndEndProperty.html#a1f4e27e7a91ec09563b7655a3b4f5ccf">GridItem::StartAndEndProperty</a>
 , <a class="el" href="classMidiInput.html#ae6095bfc60700f95534db37828c72f2b">MidiInput</a>
 , <a class="el" href="classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3">NormalisableRange&lt; ValueType &gt;</a>
@@ -3206,7 +3214,7 @@ $(function() {
 : <a class="el" href="classAudioProcessorValueTreeState.html#ad7de02052d045956f56018e009dc50c6">AudioProcessorValueTreeState</a>
 </li>
 <li>State()
-: <a class="el" href="structCodeEditorComponent_1_1State.html#a23abe2809ec64addd39a3047031adbc5">CodeEditorComponent::State</a>
+: <a class="el" href="structCodeEditorComponent_1_1State.html#a4a38fd3e47a1b6b2b4097e774e0aa6ca">CodeEditorComponent::State</a>
 </li>
 <li>state
 : <a class="el" href="classComponentBuilder.html#af09fdfb8bb0edf0a6c2f19d5d54563f4">ComponentBuilder</a>
@@ -3306,7 +3314,7 @@ $(function() {
 : <a class="el" href="classOpenGLPixelFormat.html#aa94f3f667e41465ea29b6f259d9abf8b">OpenGLPixelFormat</a>
 </li>
 <li>stepsToTarget
-: <a class="el" href="classLinearSmoothedValue.html#a733d451d03a478df04da6da5afdcbe75">LinearSmoothedValue&lt; FloatType &gt;</a>
+: <a class="el" href="classLinearSmoothedValue.html#a9ce396bfc4940a33a8f57da3b45fe80c">LinearSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>stereo()
 : <a class="el" href="classAudioChannelSet.html#a2f5463f3941cf8ca3ecf1eadf1537c19">AudioChannelSet</a>
@@ -3412,16 +3420,16 @@ $(function() {
 : <a class="el" href="classOSCTypes.html#ad427b15ae32b26b2e0c28f0932eed263">OSCTypes</a>
 </li>
 <li>String()
-: <a class="el" href="classString.html#afdc82306127770901ea6ab850d0bfff6">String</a>
+: <a class="el" href="classString.html#a04fe07c9165473320da41ff54c68f7ab">String</a>
 </li>
 <li>StringArray()
-: <a class="el" href="classStringArray.html#a3011698c8855aaec201bde3be78ea4e3">StringArray</a>
+: <a class="el" href="classStringArray.html#a287d5b140311ffa6275b679215bb5e2c">StringArray</a>
 </li>
 <li>StringIterator()
 : <a class="el" href="structCppTokeniserFunctions_1_1StringIterator.html#ac7bb997127826fdc3d28e5f814dc105c">CppTokeniserFunctions::StringIterator</a>
 </li>
 <li>StringPairArray()
-: <a class="el" href="classStringPairArray.html#a606a520b01b1c8505ae5bba847ac0d85">StringPairArray</a>
+: <a class="el" href="classStringPairArray.html#ae9d7222fa917d07fa51815681bd61f50">StringPairArray</a>
 </li>
 <li>StringPool()
 : <a class="el" href="classStringPool.html#aab1fd1101bfe15304bd618b3eeedfc0e">StringPool</a>
@@ -3431,7 +3439,7 @@ $(function() {
 , <a class="el" href="classTextLayout_1_1Run.html#a5e78255b382519784f9950efeae14f57">TextLayout::Run</a>
 </li>
 <li>StringRef()
-: <a class="el" href="classStringRef.html#a47ea3e1c936ecf660bf9f98b7f75d28e">StringRef</a>
+: <a class="el" href="classStringRef.html#a7ed3eed766b7dac3eaad6e7fe0f6a920">StringRef</a>
 </li>
 <li>strings
 : <a class="el" href="classStringArray.html#ac10f010a31e1dcd6220d278a1603e37a">StringArray</a>
@@ -3485,15 +3493,15 @@ $(function() {
 : <a class="el" href="classPushNotifications.html#af6cb45cb738eeb7fc3664646a88a9e8a">PushNotifications</a>
 </li>
 <li>substring()
-: <a class="el" href="classString.html#a790b963e9b372e2dc6ce7e2deaceb01f">String</a>
+: <a class="el" href="classString.html#a4e1f8aae399c56836b9a3ca4f31636da">String</a>
 </li>
 <li>subtitle
 : <a class="el" href="structPushNotifications_1_1Notification.html#a187733b87ad3bba14b690f021ac4ee0a">PushNotifications::Notification</a>
 </li>
 <li>subtract()
-: <a class="el" href="classdsp_1_1AudioBlock.html#a1efd93622c497d23030c8845f0687ab0">dsp::AudioBlock&lt; SampleType &gt;</a>
-, <a class="el" href="classFloatVectorOperations.html#a80c147b6e4be53203014629063883337">FloatVectorOperations</a>
-, <a class="el" href="classRectangleList.html#a7aa4739b7a963367f615462097e5e744">RectangleList&lt; ValueType &gt;</a>
+: <a class="el" href="classdsp_1_1AudioBlock.html#a25bdd578180715bdf6f21b7c1440f55c">dsp::AudioBlock&lt; SampleType &gt;</a>
+, <a class="el" href="classFloatVectorOperations.html#a84fc0e2af67681183064f05699b538de">FloatVectorOperations</a>
+, <a class="el" href="classRectangleList.html#a6a93f136213fd5773e08ab69267cb749">RectangleList&lt; ValueType &gt;</a>
 </li>
 <li>subtractedFrom()
 : <a class="el" href="classBorderSize.html#addb07fd003bbf5cfd57433b26a8890fa">BorderSize&lt; ValueType &gt;</a>
@@ -3502,7 +3510,7 @@ $(function() {
 : <a class="el" href="classBorderSize.html#a05a0b857fc434cc89718d2404373df85">BorderSize&lt; ValueType &gt;</a>
 </li>
 <li>subtractWithMultiply()
-: <a class="el" href="classFloatVectorOperations.html#a76396626b6abe2f686c09b4f2d7482e2">FloatVectorOperations</a>
+: <a class="el" href="classFloatVectorOperations.html#aabb6fde1b74f69708a87664394d9b569">FloatVectorOperations</a>
 </li>
 <li>succeeded
 : <a class="el" href="structOnlineUnlockStatus_1_1UnlockResult.html#a05958e80831364da7c4a2bead72fad6a">OnlineUnlockStatus::UnlockResult</a>
@@ -3557,7 +3565,7 @@ $(function() {
 : <a class="el" href="classArray.html#a27a6d4d6fe65364ec9913070a1d2aa0f">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;</a>
 , <a class="el" href="classArrayBase.html#ad5c6e12391c6c0a7e8b296dbf769f973">ArrayBase&lt; ElementType, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classAudioProcessorValueTreeState_1_1ParameterLayout.html#a787cf51071ed675f2bdb528b22c1bf8b">AudioProcessorValueTreeState::ParameterLayout</a>
-, <a class="el" href="group__juce__core-memory.html#gaf4c3a3d79adb200b85182e80f5c765c0">ByteOrder</a>
+, <a class="el" href="group__juce__core-memory.html#gae69410a6751913d2b6708b8e0b09bf38">ByteOrder</a>
 , <a class="el" href="classOwnedArray.html#aeae36e1f45837b3e3950fa51b0d67764">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 , <a class="el" href="classReferenceCountedArray.html#a390d2be27b40d47c24c881ca40ffdc44">ReferenceCountedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;</a>
 </li>
@@ -3647,7 +3655,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

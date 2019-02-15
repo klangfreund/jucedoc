@@ -55,7 +55,7 @@ var searchData=
   ['statestack',['stateStack',['../classLowLevelGraphicsPostScriptRenderer.html#a95a55fd1cd7588048a37ac86fa384849',1,'LowLevelGraphicsPostScriptRenderer']]],
   ['steelblue',['steelblue',['../classColours.html#a5b38585d24f85fd84b1aea940d0970db',1,'Colours']]],
   ['stencilbufferbits',['stencilBufferBits',['../classOpenGLPixelFormat.html#aa94f3f667e41465ea29b6f259d9abf8b',1,'OpenGLPixelFormat']]],
-  ['stepstotarget',['stepsToTarget',['../classLinearSmoothedValue.html#a733d451d03a478df04da6da5afdcbe75',1,'LinearSmoothedValue']]],
+  ['stepstotarget',['stepsToTarget',['../classLinearSmoothedValue.html#a9ce396bfc4940a33a8f57da3b45fe80c',1,'LinearSmoothedValue']]],
   ['stereopan',['stereoPan',['../structUnityAudioSpatializerData.html#adf60d460c5f45c6265187f0df19cb3bf',1,'UnityAudioSpatializerData::stereoPan()'],['../structUnityAudioAmbisonicData.html#a75d9207cada1a4d2e6f4915787f7f5ce',1,'UnityAudioAmbisonicData::stereoPan()']]],
   ['stopatend',['stopAtEnd',['../structSlider_1_1RotaryParameters.html#a2e705ed5eb148f3f3eb1e89a72ff634f',1,'Slider::RotaryParameters']]],
   ['stopkey',['stopKey',['../classKeyPress.html#a4ebc694e95335f25418c99eb2235d815',1,'KeyPress']]],

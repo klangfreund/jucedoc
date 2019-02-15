@@ -288,9 +288,6 @@ $(function() {
 : <a class="el" href="classColour.html#a11798d929e8c7e8f57efc5ad588f1464">Colour</a>
 , <a class="el" href="structLEDColour.html#a139038d65e1c7d45d7840b3277141cab">LEDColour</a>
 </li>
-<li>getArgumentAfterOption()
-: <a class="el" href="structArgumentList.html#a0ccd7c66eb3ba29aadbc25b5b8f229f7">ArgumentList</a>
-</li>
 <li>getArray()
 : <a class="el" href="classvar.html#a8db82307ae15776cc3bc206b5d46fc8c">var</a>
 </li>
@@ -1123,7 +1120,7 @@ $(function() {
 : <a class="el" href="classUndoManager.html#a13369f5eaed59e8dc4603c9c61fb3411">UndoManager</a>
 </li>
 <li>getCurrentValue()
-: <a class="el" href="classLinearSmoothedValue.html#aebb58e89e3b99858708269b2ea343e31">LinearSmoothedValue&lt; FloatType &gt;</a>
+: <a class="el" href="classSmoothedValueBase.html#a35df74615b7bb7246477b71027444568">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;</a>
 </li>
 <li>getCurrentValueAsText()
 : <a class="el" href="classAudioProcessorParameter.html#a1f4bd23afcafc6d3b0276513747777f1">AudioProcessorParameter</a>
@@ -1493,11 +1490,11 @@ $(function() {
 <li>getEventTime()
 : <a class="el" href="classMidiMessageSequence.html#a5a873cd5ba67c7b1d9d1a2d39b983d01">MidiMessageSequence</a>
 </li>
-<li>getExistingFileAfterOption()
-: <a class="el" href="structArgumentList.html#a1e06b98b4f6f9ec58c8333e3f42a3bf6">ArgumentList</a>
+<li>getExistingFileForOption()
+: <a class="el" href="structArgumentList.html#a01cb5a3bcdde1b21fa67af3a70dec047">ArgumentList</a>
 </li>
-<li>getExistingFolderAfterOption()
-: <a class="el" href="structArgumentList.html#a17a41d6e2c1eac7027bdf30cbe51debf">ArgumentList</a>
+<li>getExistingFolderForOption()
+: <a class="el" href="structArgumentList.html#a7c2237325e88d65dafde0eb6e7c1e98f">ArgumentList</a>
 </li>
 <li>getExitCode()
 : <a class="el" href="classChildProcess.html#acbafc3e15c0abdb2bd6a5f9e45a2f620">ChildProcess</a>
@@ -1549,15 +1546,15 @@ $(function() {
 , <a class="el" href="classRecentlyOpenedFilesList.html#a1627d11f717741e7b255b6dae85cdbca">RecentlyOpenedFilesList</a>
 , <a class="el" href="classTemporaryFile.html#aa411d8ae27e69ef64819ef9bc670dda1">TemporaryFile</a>
 </li>
-<li>getFileAfterOption()
-: <a class="el" href="structArgumentList.html#ae499d242fe3dba09687b6e85e3561a9d">ArgumentList</a>
-</li>
 <li>getFileExtension()
 : <a class="el" href="classCameraDevice.html#ac720c6cdc6a67685a0472c5fc8566f37">CameraDevice</a>
 , <a class="el" href="classFile.html#a76aacb7c620b56aac67b9402ae10a36d">File</a>
 </li>
 <li>getFileExtensions()
 : <a class="el" href="classAudioFormat.html#ab66535a8d1dc460cecd9deb73b907af3">AudioFormat</a>
+</li>
+<li>getFileForOption()
+: <a class="el" href="structArgumentList.html#a215d99edce88a17b328a447508754a64">ArgumentList</a>
 </li>
 <li>getFileIdentifier()
 : <a class="el" href="classFile.html#aecfdd1e7651673770b793d53a5482bca">File</a>
@@ -2399,6 +2396,9 @@ $(function() {
 <li>getLogonName()
 : <a class="el" href="classSystemStats.html#a49ba1a8f55ab9331a036658c363fd28e">SystemStats</a>
 </li>
+<li>getLongOptionValue()
+: <a class="el" href="structArgumentList_1_1Argument.html#a1029848b6e95946a36666b46e4140c12">ArgumentList::Argument</a>
+</li>
 <li>getLookAndFeel()
 : <a class="el" href="classComponent.html#adf9083590923e021b195985a562d458e">Component</a>
 </li>
@@ -2892,6 +2892,7 @@ $(function() {
 </li>
 <li>getNextValue()
 : <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; FloatType &gt;</a>
+, <a class="el" href="classLogSmoothedValue.html#a06078d39adaea2d13de98505a845dbf6">LogSmoothedValue&lt; FloatType &gt;</a>
 </li>
 <li>getNode()
 : <a class="el" href="classAudioProcessorGraph.html#a0ce30fc71494c7d6e2ad3bcc3a33b0ae">AudioProcessorGraph</a>
@@ -2924,7 +2925,7 @@ $(function() {
 , <a class="el" href="classRangedAudioParameter.html#af61d25612a1b93ecfb6277e14abd5eb2">RangedAudioParameter</a>
 </li>
 <li>getNote()
-: <a class="el" href="classMPEInstrument.html#a845b316045e1cfe5862156814cc80018">MPEInstrument</a>
+: <a class="el" href="classMPEInstrument.html#a44489a491822ba654f7507f5461324a3">MPEInstrument</a>
 </li>
 <li>getNoteAtPosition()
 : <a class="el" href="classMidiKeyboardComponent.html#a6f9fc65090853203ca756c6b672b47cd">MidiKeyboardComponent</a>
@@ -3497,7 +3498,7 @@ $(function() {
 : <a class="el" href="classPluginHostType.html#a20b56a4d84ae4c788d859815b60bb93d">PluginHostType</a>
 </li>
 <li>getPointAlongLine()
-: <a class="el" href="classLine.html#ae09b929efc5c12defda7715092ff0c05">Line&lt; ValueType &gt;</a>
+: <a class="el" href="classLine.html#a77bc36673f43fd4e4e966fe3294a9db5">Line&lt; ValueType &gt;</a>
 </li>
 <li>getPointAlongLineProportionally()
 : <a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03">Line&lt; ValueType &gt;</a>
@@ -3512,7 +3513,7 @@ $(function() {
 : <a class="el" href="classPoint.html#ae33c849512104b032c4013daffaaa0d2">Point&lt; ValueType &gt;</a>
 </li>
 <li>getPooledString()
-: <a class="el" href="classStringPool.html#a00c62de7b80b6a9b397b1838a77ed48b">StringPool</a>
+: <a class="el" href="classStringPool.html#a53e9e1b9c1ad68776fe41f439b0d9d96">StringPool</a>
 </li>
 <li>getPopupMenuBorderSize()
 : <a class="el" href="classLookAndFeel__V2.html#affecddaf20f24c359f1c60a4055838a5">LookAndFeel_V2</a>
@@ -3673,7 +3674,7 @@ $(function() {
 </li>
 <li>getProperty()
 : <a class="el" href="classDynamicObject.html#a4da4f155a67775a15f92149e39d3af5c">DynamicObject</a>
-, <a class="el" href="classValueTree.html#adc7c731c09608f59e9372b9221e35a17">ValueTree</a>
+, <a class="el" href="classValueTree.html#a16875a1c5f41f03f609a9d7870171fd6">ValueTree</a>
 , <a class="el" href="classvar.html#a1a9626c08adccb727c598f80ebfd6570">var</a>
 </li>
 <li>getPropertyAsValue()
@@ -3758,7 +3759,7 @@ $(function() {
 : <a class="el" href="classMD5.html#a01e86f28e9ea193ead73d8117b2af031">MD5</a>
 </li>
 <li>getRawCoefficients()
-: <a class="el" href="structdsp_1_1FIR_1_1Coefficients.html#a2adc3ac8f6794135289054e44eb73462">dsp::FIR::Coefficients&lt; NumericType &gt;</a>
+: <a class="el" href="structdsp_1_1FIR_1_1Coefficients.html#adc035d83cacfbc12cd3aeb110857a892">dsp::FIR::Coefficients&lt; NumericType &gt;</a>
 , <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html#ac1ba0c6e5b1e2cafda9bacc61f855fb6">dsp::IIR::Coefficients&lt; NumericType &gt;</a>
 </li>
 <li>getRawContext()
@@ -3800,7 +3801,7 @@ $(function() {
 : <a class="el" href="classAttributedString.html#afb961e08dfe858d3a104fedf84922bb9">AttributedString</a>
 </li>
 <li>getReadPointer()
-: <a class="el" href="classAudioBuffer.html#afa0c5c0ce9fc26315a0c53d3e8d46cfa">AudioBuffer&lt; Type &gt;</a>
+: <a class="el" href="classAudioBuffer.html#ac886069987c46e419ab978cd97b8339a">AudioBuffer&lt; Type &gt;</a>
 </li>
 <li>getRecentlyUsedFilenames()
 : <a class="el" href="classFilenameComponent.html#acc2d50cf20022c9ed3055a035525100f">FilenameComponent</a>
@@ -3819,8 +3820,8 @@ $(function() {
 : <a class="el" href="classColour.html#a05872730d5a284f07c4bfb8dd81db79a">Colour</a>
 , <a class="el" href="structLEDColour.html#abfb1ea7976d55e859920c3d652c1f0fd">LEDColour</a>
 , <a class="el" href="classPixelAlpha.html#abe09f7dca64ace709f4549d4d7f52a6b">PixelAlpha</a>
-, <a class="el" href="classPixelARGB.html#a6d47db1b0f0c41954c1be8a249956967">PixelARGB</a>
-, <a class="el" href="classPixelRGB.html#af0bbabe8374a710ff177077a7b32c763">PixelRGB</a>
+, <a class="el" href="classPixelARGB.html#afbe911418e1dd168d01d287376ea89fc">PixelARGB</a>
+, <a class="el" href="classPixelRGB.html#a19df8a6d101bb795b7ed25057c964711">PixelRGB</a>
 </li>
 <li>getRedoDescription()
 : <a class="el" href="classUndoManager.html#aadc8eb18f4cc2a7e77e16aee8cba6292">UndoManager</a>
@@ -4264,7 +4265,7 @@ $(function() {
 , <a class="el" href="classFont.html#a62ed83b1c35f63287c8e792c4a3a46cf">Font</a>
 </li>
 <li>getSubBlock()
-: <a class="el" href="classdsp_1_1AudioBlock.html#a299c2ac84fd87eef264aa0f0d39cc426">dsp::AudioBlock&lt; SampleType &gt;</a>
+: <a class="el" href="classdsp_1_1AudioBlock.html#aaff9347f4685a3cc1f3ebb459723be3b">dsp::AudioBlock&lt; SampleType &gt;</a>
 </li>
 <li>getSubgroups()
 : <a class="el" href="classAudioProcessorParameterGroup.html#ab9452551adfdcbc84b25c899ad8480cd">AudioProcessorParameterGroup</a>
@@ -4394,7 +4395,7 @@ $(function() {
 : <a class="el" href="classPopupMenu_1_1Options.html#acaa22be1fa930b97fcb8f8b99a40e358">PopupMenu::Options</a>
 </li>
 <li>getTargetValue()
-: <a class="el" href="classLinearSmoothedValue.html#a3ba8bb37cd75cd07953577e3bd549aa3">LinearSmoothedValue&lt; FloatType &gt;</a>
+: <a class="el" href="classSmoothedValueBase.html#a49038e1fba3e687dfe6038e878221794">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;</a>
 </li>
 <li>getTempoAt()
 : <a class="el" href="classVSTPluginFormat_1_1ExtraFunctions.html#a9fe43eb48637fd972832c109499dd219">VSTPluginFormat::ExtraFunctions</a>
@@ -4839,6 +4840,9 @@ $(function() {
 <li>getValueAt()
 : <a class="el" href="classNamedValueSet.html#a10efc3280ef1c960c43ec4c1ec542f8b">NamedValueSet</a>
 </li>
+<li>getValueForOption()
+: <a class="el" href="structArgumentList.html#acf86cd769eb8affd62a601d4c08bc8e4">ArgumentList</a>
+</li>
 <li>getValueForText()
 : <a class="el" href="structAudioPluginInstance_1_1Parameter.html#a40bb6bc463172c8ad70b46e63c146b31">AudioPluginInstance::Parameter</a>
 , <a class="el" href="classAudioProcessorParameter.html#a64b02b1c4e81c44520c0ddd60ea67618">AudioProcessorParameter</a>
@@ -4972,7 +4976,7 @@ $(function() {
 , <a class="el" href="classTracktionMarketplaceStatus.html#a49d23a8228030bf92db354eb90832023">TracktionMarketplaceStatus</a>
 </li>
 <li>getWeekdayName()
-: <a class="el" href="classTime.html#a7d46001a7e4967a58aa00c78559cb2da">Time</a>
+: <a class="el" href="classTime.html#af55383bb7849e84e1db8dfe176462d42">Time</a>
 </li>
 <li>getWhiteNoteText()
 : <a class="el" href="classMidiKeyboardComponent.html#a7a28d0d9ca937b50da13b2d19d654df5">MidiKeyboardComponent</a>
@@ -5016,7 +5020,7 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#ae0f9f74e39f559a8e81159a9d130d21d">AudioProcessor</a>
 </li>
 <li>getWritePointer()
-: <a class="el" href="classAudioBuffer.html#a909904fa6e89008f43c83d5375c160dc">AudioBuffer&lt; Type &gt;</a>
+: <a class="el" href="classAudioBuffer.html#a1689185e6baae835a486b4c45f85892d">AudioBuffer&lt; Type &gt;</a>
 </li>
 <li>getX()
 : <a class="el" href="classComponent.html#a882733448ca364ba8f493c6301800572">Component</a>
@@ -5057,16 +5061,16 @@ $(function() {
 , <a class="el" href="classKeyPressMappingSet.html#a9a87b7a4ae2b7365723e47e29cf48500">KeyPressMappingSet</a>
 </li>
 <li>globalToLocal()
-: <a class="el" href="classComponentPeer.html#a398e907e5df527943768c3e7d8343e8a">ComponentPeer</a>
+: <a class="el" href="classComponentPeer.html#a1236ece6db4e0363761aa0a1e2e282d9">ComponentPeer</a>
 </li>
 <li>GlowEffect()
 : <a class="el" href="classGlowEffect.html#a8ffa8313feae185387d68af2983cdeea">GlowEffect</a>
 </li>
 <li>Glyph()
-: <a class="el" href="classTextLayout_1_1Glyph.html#a2456071c340aa555e0a3c3a520413f9a">TextLayout::Glyph</a>
+: <a class="el" href="classTextLayout_1_1Glyph.html#a8a65971ba1d7ad45521d08981d6e8fc3">TextLayout::Glyph</a>
 </li>
 <li>GlyphArrangement()
-: <a class="el" href="classGlyphArrangement.html#a75cd47a6b45dc1aa69681349ae39a4c3">GlyphArrangement</a>
+: <a class="el" href="classGlyphArrangement.html#a615e0e4bcbc62c643555ad5432f4fe3e">GlyphArrangement</a>
 </li>
 <li>goBack()
 : <a class="el" href="classWebBrowserComponent.html#aa9d180ebeaadd482e1532aefc2298954">WebBrowserComponent</a>
@@ -5102,22 +5106,22 @@ $(function() {
 : <a class="el" href="classGrid.html#ad26ab503ccd26eb0b0e44c368c74ebd7">Grid</a>
 </li>
 <li>GridItem()
-: <a class="el" href="classGridItem.html#ab3733726f9a792b62af44d239450ea93">GridItem</a>
+: <a class="el" href="classGridItem.html#ad9a18f8a13d2ae9cec2fec1dad20f2ff">GridItem</a>
 </li>
 <li>GroupComponent()
 : <a class="el" href="classGroupComponent.html#a64f022d0df29802bce309aa431fedcf6">GroupComponent</a>
 </li>
 <li>GZIPCompressorOutputStream()
-: <a class="el" href="classGZIPCompressorOutputStream.html#a2f1c6a296dc75495e5541751585ea2ff">GZIPCompressorOutputStream</a>
+: <a class="el" href="classGZIPCompressorOutputStream.html#aa445af101582747f35c1a4bcc2d824d3">GZIPCompressorOutputStream</a>
 </li>
 <li>GZIPDecompressorInputStream()
-: <a class="el" href="classGZIPDecompressorInputStream.html#a212aeebd5a55b921b0ce5475d756d79a">GZIPDecompressorInputStream</a>
+: <a class="el" href="classGZIPDecompressorInputStream.html#a3beb8232d0d81935fa78d75e30ba8e01">GZIPDecompressorInputStream</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

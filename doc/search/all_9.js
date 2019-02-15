@@ -363,7 +363,6 @@ var searchData=
   ['juce_5fledgrid_2eh',['juce_LEDGrid.h',['../juce__LEDGrid_8h.html',1,'']]],
   ['juce_5fledrow_2eh',['juce_LEDRow.h',['../juce__LEDRow_8h.html',1,'']]],
   ['juce_5fline_2eh',['juce_Line.h',['../juce__Line_8h.html',1,'']]],
-  ['juce_5flinearsmoothedvalue_2eh',['juce_LinearSmoothedValue.h',['../juce__LinearSmoothedValue_8h.html',1,'']]],
   ['juce_5flinkedlistpointer_2eh',['juce_LinkedListPointer.h',['../juce__LinkedListPointer_8h.html',1,'']]],
   ['juce_5flistbox_2eh',['juce_ListBox.h',['../juce__ListBox_8h.html',1,'']]],
   ['juce_5flistenerlist_2eh',['juce_ListenerList.h',['../juce__ListenerList_8h.html',1,'']]],
@@ -563,6 +562,7 @@ var searchData=
   ['juce_5fsingleton_2eh',['juce_Singleton.h',['../juce__Singleton_8h.html',1,'']]],
   ['juce_5fslider_2eh',['juce_Slider.h',['../juce__Slider_8h.html',1,'']]],
   ['juce_5fsliderpropertycomponent_2eh',['juce_SliderPropertyComponent.h',['../juce__SliderPropertyComponent_8h.html',1,'']]],
+  ['juce_5fsmoothedvalues_2eh',['juce_SmoothedValues.h',['../juce__SmoothedValues_8h.html',1,'']]],
   ['juce_5fsnap_5fto_5fzero',['JUCE_SNAP_TO_ZERO',['../group__juce__audio__basics-buffers.html#gafbd395bd2dfea834983c007b7edf1d41',1,'juce_FloatVectorOperations.h']]],
   ['juce_5fsocket_2eh',['juce_Socket.h',['../juce__Socket_8h.html',1,'']]],
   ['juce_5fsortedset_2eh',['juce_SortedSet.h',['../juce__SortedSet_8h.html',1,'']]],
@@ -687,5 +687,5 @@ var searchData=
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
-  ['justifyself',['JustifySelf',['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()'],['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()']]]
+  ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
 ];

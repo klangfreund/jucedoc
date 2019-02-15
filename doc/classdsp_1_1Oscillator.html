@@ -308,7 +308,7 @@ template&lt;typename SampleType &gt; </div>
 
 <p>Sets the frequency of the oscillator. </p>
 
-<p class="reference">References <a class="el" href="classLinearSmoothedValue.html#ae0387a274275afbc7dfb6066d9812d36">LinearSmoothedValue&lt; FloatType &gt;::setCurrentValueToTargetValue()</a>, and <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; FloatType &gt;::setTargetValue()</a>.</p>
+<p class="reference">References <a class="el" href="classSmoothedValueBase.html#a30ef651c9812ae22041af706031effb2">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;::setCurrentAndTargetValue()</a>, and <a class="el" href="classLinearSmoothedValue.html#a8f62aba07ab5b33c0220f32edb0b9fa4">LinearSmoothedValue&lt; FloatType &gt;::setTargetValue()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ template&lt;typename SampleType &gt; </div>
 
 <p>Returns the current frequency of the oscillator. </p>
 
-<p class="reference">References <a class="el" href="classLinearSmoothedValue.html#a3ba8bb37cd75cd07953577e3bd549aa3">LinearSmoothedValue&lt; FloatType &gt;::getTargetValue()</a>.</p>
+<p class="reference">References <a class="el" href="classSmoothedValueBase.html#a49038e1fba3e687dfe6038e878221794">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;::getTargetValue()</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ template&lt;typename ProcessContext &gt; </div>
 
 <p>Processes the input and output buffers supplied in the processing context. </p>
 
-<p class="reference">References <a class="el" href="structdsp_1_1Phase.html#a39a4d5b6b73022891432851d99040880">dsp::Phase&lt; Type &gt;::advance()</a>, <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; FloatType &gt;::getNextValue()</a>, <a class="el" href="classArray.html#a4c5c3e5ab20d17d6d5757e53773ba2ff">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getRawDataPointer()</a>, <a class="el" href="classdsp_1_1Oscillator.html#a6ec62157f39059b7d281b2a4690a9bd8">dsp::Oscillator&lt; SampleType &gt;::isInitialised()</a>, <a class="el" href="classLinearSmoothedValue.html#af79754c985489391bc1a88fb871854f8">LinearSmoothedValue&lt; FloatType &gt;::isSmoothing()</a>, <a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a>, <a class="el" href="group__juce__core-maths.html#ga5f370a17b53016056464e8cb860ad297">jmin()</a>, <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>, and <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; FloatType &gt;::skip()</a>.</p>
+<p class="reference">References <a class="el" href="structdsp_1_1Phase.html#a39a4d5b6b73022891432851d99040880">dsp::Phase&lt; Type &gt;::advance()</a>, <a class="el" href="classLinearSmoothedValue.html#a1e4fb08705169e714862724ae75745f0">LinearSmoothedValue&lt; FloatType &gt;::getNextValue()</a>, <a class="el" href="classArray.html#a4c5c3e5ab20d17d6d5757e53773ba2ff">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::getRawDataPointer()</a>, <a class="el" href="classdsp_1_1Oscillator.html#a6ec62157f39059b7d281b2a4690a9bd8">dsp::Oscillator&lt; SampleType &gt;::isInitialised()</a>, <a class="el" href="classSmoothedValueBase.html#a884f4f9f29c8f88c569eae20200d7f80">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;::isSmoothing()</a>, <a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a>, <a class="el" href="group__juce__core-maths.html#ga5f370a17b53016056464e8cb860ad297">jmin()</a>, <a class="el" href="classArray.html#ae79ec3b32d0c9a80dfff8ffbc41f8523">Array&lt; ElementType, TypeOfCriticalSectionToUse, minimumAllocatedSize &gt;::size()</a>, and <a class="el" href="classLinearSmoothedValue.html#ab771ff3b8ba8b39c023c8473ec75ede4">LinearSmoothedValue&lt; FloatType &gt;::skip()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ template&lt;typename ProcessContext &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
