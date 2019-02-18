@@ -27,7 +27,7 @@ var searchData=
   ['dataformat',['DataFormat',['../classAudioDataConverters.html#ab61072a75ca010290e4c03efc8078a50',1,'AudioDataConverters']]],
   ['datagramsocket',['DatagramSocket',['../classDatagramSocket.html',1,'DatagramSocket'],['../classDatagramSocket.html#af2fea92879c30d16256752076c5473e4',1,'DatagramSocket::DatagramSocket()']]],
   ['datainputportlistener',['DataInputPortListener',['../structBlock_1_1DataInputPortListener.html',1,'Block']]],
-  ['datainputportlisteners',['dataInputPortListeners',['../classBlock.html#a86de54de4f53ae04cc3fdd5ce9b841bf',1,'Block']]],
+  ['datainputportlisteners',['dataInputPortListeners',['../classBlock.html#a86c2943e9c64e2d89ae1d598aa3fdc30',1,'Block']]],
   ['datalength',['dataLength',['../classMemoryMappedAudioFormatReader.html#ac19c1cd6d4aff52e7820ec40e1e4d271',1,'MemoryMappedAudioFormatReader']]],
   ['datareleaser',['dataReleaser',['../classImage_1_1BitmapData.html#a486bc70dddebcb42d5e5dbabfda371e4',1,'Image::BitmapData']]],
   ['davinciresolve',['DaVinciResolve',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a99618d4951e81deda9ea245ec82c9fc5',1,'PluginHostType']]],

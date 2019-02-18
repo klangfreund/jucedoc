@@ -504,7 +504,7 @@ var searchData=
   ['isvalidsize',['isValidSize',['../classOpenGLTexture.html#ac24eef177f28a924d45f66c5b4121da6',1,'OpenGLTexture']]],
   ['isvalidstring',['isValidString',['../classCharPointer__ASCII.html#a2f6778c511b05729cc81e8f3b7bca132',1,'CharPointer_ASCII::isValidString()'],['../classCharPointer__UTF16.html#a9cb146266c89a9abecb848011bd0382c',1,'CharPointer_UTF16::isValidString()'],['../classCharPointer__UTF32.html#aff3cbc01e31f577c294d82d26dca0340',1,'CharPointer_UTF32::isValidString()'],['../classCharPointer__UTF8.html#a5ff9c244b3c7615345e0c3dc59dc7289',1,'CharPointer_UTF8::isValidString()']]],
   ['isvaliduserconfigindex',['isValidUserConfigIndex',['../classBlock.html#a6669da03a71b1ad2c38d6c7803588ea1',1,'Block']]],
-  ['isvalidversion',['isValidVersion',['../structBlocksVersion.html#a59765878b2fdf48ed618bfa99fb811ee',1,'BlocksVersion']]],
+  ['isvalidversion',['isValidVersion',['../structBlocksVersion.html#adf95300c7a98eb03fc8146932faa62d8',1,'BlocksVersion']]],
   ['isvalidxmlname',['isValidXmlName',['../classXmlElement.html#a3801695cf0ab99652fecc47edcaeb80a',1,'XmlElement']]],
   ['isvbvstscanner',['isVBVSTScanner',['../classPluginHostType.html#a3b6d1af2a3501d6d6125b09f52e7d019',1,'PluginHostType']]],
   ['isvector',['isVector',['../classdsp_1_1Matrix.html#afb1f062ad78f801ad8e65617ff01ce05',1,'dsp::Matrix']]],

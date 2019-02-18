@@ -28,7 +28,7 @@ var searchData=
   ['ontextchange',['onTextChange',['../classLabel.html#a5ba80ea5ea965a001e2eacf75fc0314b',1,'Label::onTextChange()'],['../classTextEditor.html#a26a5f4afddb5fee9801bf6951b7e7ae9',1,'TextEditor::onTextChange()']]],
   ['onvaluechange',['onValueChange',['../classSlider.html#a680d007f6a824a28a60aa05b4045e794',1,'Slider']]],
   ['openglcontext',['openGLContext',['../classOpenGLAppComponent.html#a1237b3326c1c7c571107548d4fc20cf8',1,'OpenGLAppComponent']]],
-  ['optionnames',['optionNames',['../structBlock_1_1ConfigMetaData.html#a817279cab678fd75cc69ff7dfd1dfcee',1,'Block::ConfigMetaData::optionNames()'],['../structBlockConfigManager_1_1ConfigDescription.html#a85c7efdd2b251618a1a482662a4454f2',1,'BlockConfigManager::ConfigDescription::optionNames()']]],
+  ['optionnames',['optionNames',['../structBlock_1_1ConfigMetaData.html#a974ac20147ed4f7a291fa2f0fb204bdc',1,'Block::ConfigMetaData::optionNames()'],['../structBlockConfigManager_1_1ConfigDescription.html#a85c7efdd2b251618a1a482662a4454f2',1,'BlockConfigManager::ConfigDescription::optionNames()']]],
   ['options',['options',['../classStandalonePluginHolder.html#adbe5c58af4d4d9b47d32b5bdc6009bb1',1,'StandalonePluginHolder']]],
   ['orange',['orange',['../classColours.html#a8c31c34f70dbdc0cad0f7cddf6cdb59a',1,'Colours']]],
   ['orangered',['orangered',['../classColours.html#a9a18c3a1066dd40816a1847450b7df1d',1,'Colours']]],

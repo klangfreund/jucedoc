@@ -352,7 +352,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:a3ab101fceeb18db84767246616d6f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abee50d102d121b2b0bfe5e6704f94d0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0e">BitSizes</a> { <br />
 &#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eadb6b9eee17741d1fcc2ac2f5d17b8a5b">topologyMessageHeader</a> = MessageType::bits + ProtocolVersion::bits + DeviceCount::bits + ConnectionCount::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eac6bb5ac6b32b9c05c018e896a260fb4b">topologyDeviceInfo</a> = sizeof (BlockSerialNumber) * 7 + BatteryLevel::bits + BatteryCharging::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eac6bb5ac6b32b9c05c018e896a260fb4b">topologyDeviceInfo</a> = BlockSerialNumber::maxLength * 7 + BatteryLevel::bits + BatteryCharging::bits, 
 <a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaa057c86d7b94897cdb9d74f3e0092455">topologyConnectionInfo</a> = topologyIndexBits + ConnectorPort::bits + topologyIndexBits + ConnectorPort::bits, 
 <a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea47f8ae4b5b3bef7dbc67260af182f887">typeDeviceAndTime</a> = MessageType::bits + PacketTimestampOffset::bits, 
 <br />
@@ -1103,7 +1103,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 15 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

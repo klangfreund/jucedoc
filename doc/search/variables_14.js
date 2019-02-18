@@ -8,7 +8,7 @@ var searchData=
   ['valueswithlisteners',['valuesWithListeners',['../classValue_1_1ValueSource.html#ac6c18c9323cbda13d3e967c1b3c7b3cf',1,'Value::ValueSource']]],
   ['vector',['vector',['../classQuaternion.html#aea2b69403fdef5dfde9c62c9aeac3925',1,'Quaternion']]],
   ['version',['version',['../classPluginDescription.html#ad5d55de3c1ad1646e5cc49d04e5c41e8',1,'PluginDescription::version()'],['../structBlocksProtocol_1_1DeviceVersion.html#a7a4c8c493b0bf2d43dfcd53568dbd896',1,'BlocksProtocol::DeviceVersion::version()']]],
-  ['versionnumber',['versionNumber',['../classBlock.html#ab0a9f022d5a0f691f753e4b8203c4d4c',1,'Block']]],
+  ['versionnumber',['versionNumber',['../classBlock.html#afe06cb7525f8cfe40919f19a77ccb7a9',1,'Block']]],
   ['vibrationpattern',['vibrationPattern',['../structPushNotifications_1_1Notification.html#a11d67737e656b05529698fe54c7bc5f1',1,'PushNotifications::Notification::vibrationPattern()'],['../structPushNotifications_1_1Channel.html#a7b0ab8e6ce7d3fecb538cb74730ea818',1,'PushNotifications::Channel::vibrationPattern()']]],
   ['violet',['violet',['../classColours.html#a47d1f14979982a28936c5ec4f90e82aa',1,'Colours']]],
   ['voices',['voices',['../classMPESynthesiser.html#ae8ff04bfb33a5de6d649ed78bab37274',1,'MPESynthesiser::voices()'],['../classSynthesiser.html#a260d964d6764a51b2315233e0bf76980',1,'Synthesiser::voices()']]],

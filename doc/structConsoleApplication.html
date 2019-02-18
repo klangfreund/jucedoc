@@ -82,18 +82,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54a033c139a15c5677d4d8eef55dcb57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a54a033c139a15c5677d4d8eef55dcb57">addCommand</a> (<a class="el" href="structConsoleApplication_1_1Command.html">Command</a>)</td></tr>
 <tr class="memdesc:a54a033c139a15c5677d4d8eef55dcb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a command to the list.  <a href="#a54a033c139a15c5677d4d8eef55dcb57">More...</a><br /></td></tr>
 <tr class="separator:a54a033c139a15c5677d4d8eef55dcb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaefd80ec42c3eb1e9af89e6ac499bb27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#aaefd80ec42c3eb1e9af89e6ac499bb27">addHelpCommand</a> (<a class="el" href="classString.html">String</a> helpArgument, <a class="el" href="classString.html">String</a> helpMessage, bool invokeIfNoOtherCommandRecognised)</td></tr>
-<tr class="memdesc:aaefd80ec42c3eb1e9af89e6ac499bb27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a help command to the list.  <a href="#aaefd80ec42c3eb1e9af89e6ac499bb27">More...</a><br /></td></tr>
-<tr class="separator:aaefd80ec42c3eb1e9af89e6ac499bb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab096e883dbe32c585a2f0a3f84ef1626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#ab096e883dbe32c585a2f0a3f84ef1626">addDefaultCommand</a> (<a class="el" href="structConsoleApplication_1_1Command.html">Command</a>)</td></tr>
+<tr class="memdesc:ab096e883dbe32c585a2f0a3f84ef1626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a command to the list, and marks it as one which is invoked if no other command matches.  <a href="#ab096e883dbe32c585a2f0a3f84ef1626">More...</a><br /></td></tr>
+<tr class="separator:ab096e883dbe32c585a2f0a3f84ef1626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d0b197030c5b7f8fcf024f2335033f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a84d0b197030c5b7f8fcf024f2335033f">addVersionCommand</a> (<a class="el" href="classString.html">String</a> versionArgument, <a class="el" href="classString.html">String</a> versionText)</td></tr>
 <tr class="memdesc:a84d0b197030c5b7f8fcf024f2335033f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a command that will print the given text in response to the "--version" option.  <a href="#a84d0b197030c5b7f8fcf024f2335033f">More...</a><br /></td></tr>
 <tr class="separator:a84d0b197030c5b7f8fcf024f2335033f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ce20591599de36a87e516bc79886ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#ac4ce20591599de36a87e516bc79886ea">findAndRunCommand</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;, bool commandFlagMustBeFirst=false) const</td></tr>
-<tr class="memdesc:ac4ce20591599de36a87e516bc79886ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for the first command in the list which matches the given arguments, and tries to invoke it.  <a href="#ac4ce20591599de36a87e516bc79886ea">More...</a><br /></td></tr>
-<tr class="separator:ac4ce20591599de36a87e516bc79886ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b10dfe0039b1ac299a144e1f61081c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a87b10dfe0039b1ac299a144e1f61081c">addHelpCommand</a> (<a class="el" href="classString.html">String</a> helpArgument, <a class="el" href="classString.html">String</a> helpMessage, bool makeDefaultCommand)</td></tr>
+<tr class="memdesc:a87b10dfe0039b1ac299a144e1f61081c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a help command to the list.  <a href="#a87b10dfe0039b1ac299a144e1f61081c">More...</a><br /></td></tr>
+<tr class="separator:a87b10dfe0039b1ac299a144e1f61081c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa906e692db79598fd1eea179376f591f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#aa906e692db79598fd1eea179376f591f">printCommandList</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;) const</td></tr>
+<tr class="memdesc:aa906e692db79598fd1eea179376f591f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the list of commands and their short descriptions in a format that's suitable for use as help.  <a href="#aa906e692db79598fd1eea179376f591f">More...</a><br /></td></tr>
+<tr class="separator:aa906e692db79598fd1eea179376f591f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a3a2e4bef5476982abf5c4df3ac2d084e">findAndRunCommand</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;, bool optionMustBeFirstArg=false) const</td></tr>
+<tr class="memdesc:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for the first command in the list which matches the given arguments, and tries to invoke it.  <a href="#a3a2e4bef5476982abf5c4df3ac2d084e">More...</a><br /></td></tr>
+<tr class="separator:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fd1b4af1e2ab71f0ef989b2590802a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#ab6fd1b4af1e2ab71f0ef989b2590802a">findAndRunCommand</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> argc, char *argv[]) const</td></tr>
-<tr class="memdesc:ab6fd1b4af1e2ab71f0ef989b2590802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> object from the argc and argv variablrs, and invokes <a class="el" href="structConsoleApplication.html#ac4ce20591599de36a87e516bc79886ea" title="Looks for the first command in the list which matches the given arguments, and tries to invoke it...">findAndRunCommand()</a> using it.  <a href="#ab6fd1b4af1e2ab71f0ef989b2590802a">More...</a><br /></td></tr>
+<tr class="memdesc:ab6fd1b4af1e2ab71f0ef989b2590802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> object from the argc and argv variablrs, and invokes <a class="el" href="structConsoleApplication.html#a3a2e4bef5476982abf5c4df3ac2d084e" title="Looks for the first command in the list which matches the given arguments, and tries to invoke it...">findAndRunCommand()</a> using it.  <a href="#ab6fd1b4af1e2ab71f0ef989b2590802a">More...</a><br /></td></tr>
 <tr class="separator:ab6fd1b4af1e2ab71f0ef989b2590802a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c071a0aa750288f4960fad1e40f07a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structConsoleApplication_1_1Command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a41c071a0aa750288f4960fad1e40f07a">findCommand</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;, bool optionMustBeFirstArg) const</td></tr>
+<tr class="memdesc:a41c071a0aa750288f4960fad1e40f07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for the first command in the list which matches the given arguments.  <a href="#a41c071a0aa750288f4960fad1e40f07a">More...</a><br /></td></tr>
+<tr class="separator:a41c071a0aa750288f4960fad1e40f07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9a3247e68f15a79fe9f6953a2aa889"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structConsoleApplication_1_1Command.html">Command</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a0f9a3247e68f15a79fe9f6953a2aa889">getCommands</a> () const</td></tr>
+<tr class="memdesc:a0f9a3247e68f15a79fe9f6953a2aa889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives read-only access to the list of registered commands.  <a href="#a0f9a3247e68f15a79fe9f6953a2aa889">More...</a><br /></td></tr>
+<tr class="separator:a0f9a3247e68f15a79fe9f6953a2aa889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -107,7 +119,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a the set of commands that a console app can perform, and provides helper functions for performing them. </p>
 <p>When using these helper classes to implement a console app, you probably want to do something along these lines:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> main (<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div><div class="line">{</div><div class="line">    <a class="code" href="structConsoleApplication.html">ConsoleApplication</a> app;</div><div class="line"></div><div class="line">    app.<a class="code" href="structConsoleApplication.html#aaefd80ec42c3eb1e9af89e6ac499bb27">addHelpCommand</a> (<span class="stringliteral">&quot;--help|-h&quot;</span>, <span class="stringliteral">&quot;Usage:&quot;</span>, <span class="keyword">true</span>);</div><div class="line">    app.<a class="code" href="structConsoleApplication.html#a84d0b197030c5b7f8fcf024f2335033f">addVersionCommand</a> (<span class="stringliteral">&quot;--version|-v&quot;</span>, <span class="stringliteral">&quot;MyApp version 1.2.3&quot;</span>);</div><div class="line"></div><div class="line">    app.<a class="code" href="structConsoleApplication.html#a54a033c139a15c5677d4d8eef55dcb57">addCommand</a> ({ <span class="stringliteral">&quot;--foo&quot;</span>,</div><div class="line">                      <span class="stringliteral">&quot;--foo filename&quot;</span>,</div><div class="line">                      <span class="stringliteral">&quot;Performs a foo operation on the given file&quot;</span>,</div><div class="line">                      [] (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; args) { doFoo (args); }});</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> app.<a class="code" href="structConsoleApplication.html#ac4ce20591599de36a87e516bc79886ea">findAndRunCommand</a> (argc, argv);</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> main (<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div><div class="line">{</div><div class="line">    <a class="code" href="structConsoleApplication.html">ConsoleApplication</a> app;</div><div class="line"></div><div class="line">    app.<a class="code" href="structConsoleApplication.html#a87b10dfe0039b1ac299a144e1f61081c">addHelpCommand</a> (<span class="stringliteral">&quot;--help|-h&quot;</span>, <span class="stringliteral">&quot;Usage:&quot;</span>, <span class="keyword">true</span>);</div><div class="line">    app.<a class="code" href="structConsoleApplication.html#a84d0b197030c5b7f8fcf024f2335033f">addVersionCommand</a> (<span class="stringliteral">&quot;--version|-v&quot;</span>, <span class="stringliteral">&quot;MyApp version 1.2.3&quot;</span>);</div><div class="line"></div><div class="line">    app.<a class="code" href="structConsoleApplication.html#a54a033c139a15c5677d4d8eef55dcb57">addCommand</a> ({ <span class="stringliteral">&quot;--foo&quot;</span>,</div><div class="line">                      <span class="stringliteral">&quot;--foo filename&quot;</span>,</div><div class="line">                      <span class="stringliteral">&quot;Performs a foo operation on the given file&quot;</span>,</div><div class="line">                      [] (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; args) { doFoo (args); }});</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> app.<a class="code" href="structConsoleApplication.html#a3a2e4bef5476982abf5c4df3ac2d084e">findAndRunCommand</a> (argc, argv);</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a54a033c139a15c5677d4d8eef55dcb57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54a033c139a15c5677d4d8eef55dcb57">&#9670;&nbsp;</a></span>addCommand()</h2>
@@ -129,40 +141,23 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaefd80ec42c3eb1e9af89e6ac499bb27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaefd80ec42c3eb1e9af89e6ac499bb27">&#9670;&nbsp;</a></span>addHelpCommand()</h2>
+<a id="ab096e883dbe32c585a2f0a3f84ef1626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab096e883dbe32c585a2f0a3f84ef1626">&#9670;&nbsp;</a></span>addDefaultCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ConsoleApplication::addHelpCommand </td>
+          <td class="memname">void ConsoleApplication::addDefaultCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
-          <td class="paramname"><em>helpArgument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structConsoleApplication_1_1Command.html">Command</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
-          <td class="paramname"><em>helpMessage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>invokeIfNoOtherCommandRecognised</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a help command to the list. </p>
-<p>This command will print the user-supplied message that's passed in here as an argument, followed by a list of all the registered commands. </p>
+<p>Adds a command to the list, and marks it as one which is invoked if no other command matches. </p>
 
 </div>
 </div>
@@ -193,6 +188,63 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a command that will print the given text in response to the "--version" option. </p>
+
+</div>
+</div>
+<a id="a87b10dfe0039b1ac299a144e1f61081c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b10dfe0039b1ac299a144e1f61081c">&#9670;&nbsp;</a></span>addHelpCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConsoleApplication::addHelpCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>helpArgument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>helpMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>makeDefaultCommand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a help command to the list. </p>
+<p>This command will print the user-supplied message that's passed in here as an argument, followed by a list of all the registered commands. </p>
+
+</div>
+</div>
+<a id="aa906e692db79598fd1eea179376f591f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa906e692db79598fd1eea179376f591f">&#9670;&nbsp;</a></span>printCommandList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConsoleApplication::printCommandList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints out the list of commands and their short descriptions in a format that's suitable for use as help. </p>
 
 </div>
 </div>
@@ -264,8 +316,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4ce20591599de36a87e516bc79886ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4ce20591599de36a87e516bc79886ea">&#9670;&nbsp;</a></span>findAndRunCommand() <span class="overload">[1/2]</span></h2>
+<a id="a3a2e4bef5476982abf5c4df3ac2d084e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2e4bef5476982abf5c4df3ac2d084e">&#9670;&nbsp;</a></span>findAndRunCommand() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>commandFlagMustBeFirst</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>optionMustBeFirstArg</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -291,8 +343,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Looks for the first command in the list which matches the given arguments, and tries to invoke it. </p>
-<p>If no command is found, it prints a help message listing the available commands. If the command calls the <a class="el" href="structConsoleApplication.html#a1ff6204c6b1ba147d230e0a36e3b7e2e" title="Throws a failure exception to cause a command-line app to terminate. ">fail()</a> function, this will throw an exception that gets automatically caught and handled, and this method will return the error code that was passed into the <a class="el" href="structConsoleApplication.html#a1ff6204c6b1ba147d230e0a36e3b7e2e" title="Throws a failure exception to cause a command-line app to terminate. ">fail()</a> call.</p>
-<p>If commandFlagMustBeFirst is true, then only the first argument will be looked at when searching the available commands - this lets you do 'git' style commands where the executable name is followed by a verb. </p>
+<p>If no command is found, and if there is no default command to run, it fails with a suitable error message. If the command calls the <a class="el" href="structConsoleApplication.html#a1ff6204c6b1ba147d230e0a36e3b7e2e" title="Throws a failure exception to cause a command-line app to terminate. ">fail()</a> function, this will throw an exception that gets automatically caught and handled, and this method will return the error code that was passed into the <a class="el" href="structConsoleApplication.html#a1ff6204c6b1ba147d230e0a36e3b7e2e" title="Throws a failure exception to cause a command-line app to terminate. ">fail()</a> call.</p>
+<p>If optionMustBeFirstArg is true, then only the first argument will be looked at when searching the available commands - this lets you do 'git' style commands where the executable name is followed by a verb. </p>
 
 </div>
 </div>
@@ -322,7 +374,57 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates an <a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> object from the argc and argv variablrs, and invokes <a class="el" href="structConsoleApplication.html#ac4ce20591599de36a87e516bc79886ea" title="Looks for the first command in the list which matches the given arguments, and tries to invoke it...">findAndRunCommand()</a> using it. </p>
+<p>Creates an <a class="el" href="structArgumentList.html" title="Holds a list of command-line arguments, and provides useful methods for searching and operating on th...">ArgumentList</a> object from the argc and argv variablrs, and invokes <a class="el" href="structConsoleApplication.html#a3a2e4bef5476982abf5c4df3ac2d084e" title="Looks for the first command in the list which matches the given arguments, and tries to invoke it...">findAndRunCommand()</a> using it. </p>
+
+</div>
+</div>
+<a id="a41c071a0aa750288f4960fad1e40f07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c071a0aa750288f4960fad1e40f07a">&#9670;&nbsp;</a></span>findCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structConsoleApplication_1_1Command.html">Command</a>* ConsoleApplication::findCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>optionMustBeFirstArg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Looks for the first command in the list which matches the given arguments. </p>
+<p>If none is found, this returns either the default command (if one is set) or nullptr. If optionMustBeFirstArg is true, then only the first argument will be looked at when searching the available commands - this lets you do 'git' style commands where the executable name is followed by a verb. </p>
+
+</div>
+</div>
+<a id="a0f9a3247e68f15a79fe9f6953a2aa889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9a3247e68f15a79fe9f6953a2aa889">&#9670;&nbsp;</a></span>getCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="structConsoleApplication_1_1Command.html">Command</a>&gt;&amp; ConsoleApplication::getCommands </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gives read-only access to the list of registered commands. </p>
 
 </div>
 </div>
@@ -332,7 +434,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 15 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

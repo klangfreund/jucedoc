@@ -16,7 +16,7 @@ var searchData=
   ['greenbits',['greenBits',['../classOpenGLPixelFormat.html#a75cc537f0d7ad936b3353426735515dd',1,'OpenGLPixelFormat']]],
   ['greenyellow',['greenyellow',['../classColours.html#a9d690d0eb0194caa2c91dfba4afbff4c',1,'Colours']]],
   ['grey',['grey',['../classColours.html#a631686f2c072d2bf0988f418dea3c27f',1,'Colours']]],
-  ['group',['group',['../structBlock_1_1ConfigMetaData.html#ac8d71b576e9c9b94fb15da85f2a8acb8',1,'Block::ConfigMetaData::group()'],['../structBlockConfigManager_1_1ConfigDescription.html#a6b7651824fd2c511d9702e6034a843d5',1,'BlockConfigManager::ConfigDescription::group()']]],
+  ['group',['group',['../structBlock_1_1ConfigMetaData.html#ac8eb41a1f76377017580447d5289c222',1,'Block::ConfigMetaData::group()'],['../structBlockConfigManager_1_1ConfigDescription.html#a6b7651824fd2c511d9702e6034a843d5',1,'BlockConfigManager::ConfigDescription::group()']]],
   ['groupalertbehaviour',['groupAlertBehaviour',['../structPushNotifications_1_1Notification.html#ab645a5f62a7812837168a99104f6cdd4',1,'PushNotifications::Notification']]],
   ['groupid',['groupId',['../structPushNotifications_1_1Notification.html#a9f6264076a05863633d0f63b2beea98d',1,'PushNotifications::Notification::groupId()'],['../structPushNotifications_1_1Channel.html#a48834ff9d65c1fd6cbcc843997892f33',1,'PushNotifications::Channel::groupId()']]],
   ['groupsortkey',['groupSortKey',['../structPushNotifications_1_1Notification.html#a7fac0cd1fd3bb19250b595001247a4a1',1,'PushNotifications::Notification']]],
