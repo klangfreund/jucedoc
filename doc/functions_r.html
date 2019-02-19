@@ -1010,6 +1010,7 @@ $(function() {
 , <a class="el" href="classdsp_1_1Gain.html#ae6b4e13fc4130fa84aac69ef0267baa1">dsp::Gain&lt; FloatType &gt;</a>
 , <a class="el" href="classdsp_1_1IIR_1_1Filter.html#ab54eb5792eaba1b529f0e6f95342f517">dsp::IIR::Filter&lt; SampleType &gt;</a>
 , <a class="el" href="classdsp_1_1LadderFilter.html#a356118085674c8242dbb3cc5b80dc54f">dsp::LadderFilter&lt; Type &gt;</a>
+, <a class="el" href="classdsp_1_1LogRampedValue.html#a2a2a2fa806e92829c0d6d1938cc83e04">dsp::LogRampedValue&lt; FloatType &gt;</a>
 , <a class="el" href="classdsp_1_1Oscillator.html#ac4f0e60d1e0bdc56b78c31aa0bdb05d8">dsp::Oscillator&lt; SampleType &gt;</a>
 , <a class="el" href="classdsp_1_1Oversampling.html#a2a9cedc303110b61c32f929018f7c8fd">dsp::Oversampling&lt; SampleType &gt;</a>
 , <a class="el" href="structdsp_1_1Phase.html#a071650702fa5d6b1a517f50fee2d7c36">dsp::Phase&lt; Type &gt;</a>
@@ -1022,10 +1023,8 @@ $(function() {
 , <a class="el" href="structHashMap_1_1Iterator.html#a341bf8a8ebd064bccb0739fc73b48fa7">HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;::Iterator</a>
 , <a class="el" href="classIIRFilter.html#ad393cad59b722523a6a10a4db579fbf7">IIRFilter</a>
 , <a class="el" href="classLagrangeInterpolator.html#a49ec82f24dd5f286ab518ee694c92104">LagrangeInterpolator</a>
-, <a class="el" href="classLinearSmoothedValue.html#a437e2033bee8c4c610b4fd0086b47042">LinearSmoothedValue&lt; FloatType &gt;</a>
 , <a class="el" href="structlittlefoot_1_1Runner_1_1FunctionExecutionContext.html#abc4724bd4cf497d48b49f68887a8917f">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;::FunctionExecutionContext</a>
 , <a class="el" href="structlittlefoot_1_1Runner.html#a3773259a07ac5a06bc2f4afa972a8b80">littlefoot::Runner&lt; programAndHeapSpace, stackAndGlobalsSpace &gt;</a>
-, <a class="el" href="classLogSmoothedValue.html#accdc35afa3f320be4235f1d74c3607a9">LogSmoothedValue&lt; FloatType &gt;</a>
 , <a class="el" href="classMemoryBlock.html#a6c08083ae75b47186d20c7b591c56073">MemoryBlock</a>
 , <a class="el" href="classMemoryOutputStream.html#a48022a2ed05716333bcd8da5c26b4d59">MemoryOutputStream</a>
 , <a class="el" href="classMidiKeyboardState.html#a32ba944d0ca8e29347abb96f24e56bf1">MidiKeyboardState</a>
@@ -1035,8 +1034,8 @@ $(function() {
 , <a class="el" href="classOptionalScopedPointer.html#afed41a6c80a9254397bbefefa69a21b9">OptionalScopedPointer&lt; ObjectType &gt;</a>
 , <a class="el" href="classReferenceCountedObjectPtr.html#adfc5fb60bf0c5e0d820dc51c9edfa823">ReferenceCountedObjectPtr&lt; ObjectType &gt;</a>
 , <a class="el" href="classReverb.html#a5d132bb7b4edbeeedbd2d1ef7e4c87ef">Reverb</a>
-, <a class="el" href="classScopedPointer.html#a2d96a7e7ae6f857c4d5b8c9d3f749e8f">ScopedPointer&lt; ObjectType &gt;</a>
-, <a class="el" href="classSmoothedValueBase.html#a23a0b34014860964f935ce2b34f572c6">SmoothedValueBase&lt; SmoothedValueClass, FloatType &gt;</a>
+, <a class="el" href="classScopedPointer.html#a6792ecbc86107b81bdfc76f61a589e60">ScopedPointer&lt; ObjectType &gt;</a>
+, <a class="el" href="classSmoothedValue.html#abf70063c8a4fcedda62a37137ef8e7e6">SmoothedValue&lt; FloatType, SmoothingType &gt;</a>
 , <a class="el" href="classStatisticsAccumulator.html#aae1f7582ed244087615aab9bea80b58d">StatisticsAccumulator&lt; FloatType &gt;</a>
 , <a class="el" href="structUnityAudioEffectDefinition.html#ac61fba3aba34d06885506c907f0a400c">UnityAudioEffectDefinition</a>
 , <a class="el" href="classWaitableEvent.html#aa9b3db111ba17e13d5e74360367bcc9b">WaitableEvent</a>
@@ -1629,7 +1628,7 @@ $(function() {
 : <a class="el" href="classDesktop.html#a5e06947d2d1295bdb6f5c4fab7beb98aae1e0629de1668ef16f700b7278fd0f04">Desktop</a>
 </li>
 <li>rotation()
-: <a class="el" href="classAffineTransform.html#aa8cbff1ba0c430acf5294cab160585a2">AffineTransform</a>
+: <a class="el" href="classAffineTransform.html#a4428d9a178f059264fdd7e8034f8d1c3">AffineTransform</a>
 , <a class="el" href="classMatrix3D.html#afb17be8508c30f19cab07cabf0239cd8">Matrix3D&lt; Type &gt;</a>
 , <a class="el" href="classMouseEvent.html#a3a3b74f77f12503d059d8f0495a8237d">MouseEvent</a>
 , <a class="el" href="structPenDetails.html#a7856c25b7bfa1da8e9b9e86eb202b098">PenDetails</a>
@@ -1707,7 +1706,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 19 2019 20:00:33 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

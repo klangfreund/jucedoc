@@ -212,7 +212,7 @@ var searchData=
   ['floating',['floating',['../structBlock_1_1ConfigMetaData.html#a468481c4cccaa02e4550c9bb2febe80da374515b23d6f106696387776a6077d17',1,'Block::ConfigMetaData']]],
   ['floatingwindows',['FloatingWindows',['../classMultiDocumentPanel.html#a493599178acb0ddea50f7059faa4f8f3aa9d0aa1885d047c950adf06e10b47014',1,'MultiDocumentPanel']]],
   ['floattoint',['floatToInt',['../structlittlefoot_1_1Program.html#a696cd51fa37bde0f34e9c218f46035d5',1,'littlefoot::Program']]],
-  ['floattype',['FloatType',['../classPoint.html#a615b0a2ff1a541e0ba8640d3ee6abaa7',1,'Point']]],
+  ['floattype',['FloatType',['../classSmoothedValueBase.html#a331eba8c0333698d8bb470b1311d49e4',1,'SmoothedValueBase::FloatType()'],['../classPoint.html#a615b0a2ff1a541e0ba8640d3ee6abaa7',1,'Point::FloatType()']]],
   ['floatvalue',['floatValue',['../classOSCArgument.html#a06d50d41bc6431efb38f4221eccc5809',1,'OSCArgument']]],
   ['floatvaluetomidibyte',['floatValueToMidiByte',['../classMidiMessage.html#af87c7c685ef37e1dc4163fdcf3bcd0ef',1,'MidiMessage']]],
   ['floatvectoroperations',['FloatVectorOperations',['../classFloatVectorOperations.html',1,'']]],

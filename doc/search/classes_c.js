@@ -67,5 +67,6 @@ var searchData=
   ['multichoicepropertycomponent',['MultiChoicePropertyComponent',['../classMultiChoicePropertyComponent.html',1,'']]],
   ['multidocumentpanel',['MultiDocumentPanel',['../classMultiDocumentPanel.html',1,'']]],
   ['multidocumentpanelwindow',['MultiDocumentPanelWindow',['../classMultiDocumentPanelWindow.html',1,'']]],
+  ['multiplicative',['Multiplicative',['../structValueSmoothingTypes_1_1Multiplicative.html',1,'ValueSmoothingTypes']]],
   ['multitimer',['MultiTimer',['../classMultiTimer.html',1,'']]]
 ];

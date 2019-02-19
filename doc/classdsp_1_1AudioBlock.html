@@ -189,12 +189,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a764672d472d2213a19862bb1124e19a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a764672d472d2213a19862bb1124e19a1">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
 <tr class="memdesc:a764672d472d2213a19862bb1124e19a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each source1 value to the corresponding source2 value and stores it in the destination array of the receiver.  <a href="#a764672d472d2213a19862bb1124e19a1">More...</a><br /></td></tr>
 <tr class="separator:a764672d472d2213a19862bb1124e19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1d416b2cfa8108105c3ba161ad64af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#adf1d416b2cfa8108105c3ba161ad64af">multiply</a> (<a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;value) noexcept</td></tr>
-<tr class="memdesc:adf1d416b2cfa8108105c3ba161ad64af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> by a smoothly changing value and stores them .  <a href="#adf1d416b2cfa8108105c3ba161ad64af">More...</a><br /></td></tr>
-<tr class="separator:adf1d416b2cfa8108105c3ba161ad64af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305fe146fb00eaf144ec0531562222e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a305fe146fb00eaf144ec0531562222e9">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, <a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;value) noexcept</td></tr>
-<tr class="memdesc:a305fe146fb00eaf144ec0531562222e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the source by a smoothly changing value and stores them in the receiver.  <a href="#a305fe146fb00eaf144ec0531562222e9">More...</a><br /></td></tr>
-<tr class="separator:a305fe146fb00eaf144ec0531562222e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memTemplParams" colspan="2">template&lt;typename SmoothingType &gt; </td></tr>
+<tr class="memitem:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a8de3ce61b49f0ff08008a8cbd94b6f64">multiply</a> (<a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
+<tr class="memdesc:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> by a smoothly changing value and stores them .  <a href="#a8de3ce61b49f0ff08008a8cbd94b6f64">More...</a><br /></td></tr>
+<tr class="separator:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62f420089699140b06ec0e7ab1447a8"><td class="memTemplParams" colspan="2">template&lt;typename SmoothingType &gt; </td></tr>
+<tr class="memitem:ad62f420089699140b06ec0e7ab1447a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ad62f420089699140b06ec0e7ab1447a8">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, <a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
+<tr class="memdesc:ad62f420089699140b06ec0e7ab1447a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the source by a smoothly changing value and stores them in the receiver.  <a href="#ad62f420089699140b06ec0e7ab1447a8">More...</a><br /></td></tr>
+<tr class="separator:ad62f420089699140b06ec0e7ab1447a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a6b4bb456bade6d61a8e48a630b1abe7b">addWithMultiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, SampleType factor) noexcept</td></tr>
 <tr class="memdesc:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each value in src with factor and adds the result to the receiver.  <a href="#a6b4bb456bade6d61a8e48a630b1abe7b">More...</a><br /></td></tr>
 <tr class="separator:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,8 +233,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87c821e4cd52b71fdf25b5d7bfff83a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6110da8e0498cd078e7ee19f39e2a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a8e6110da8e0498cd078e7ee19f39e2a8">operator*=</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
 <tr class="separator:a8e6110da8e0498cd078e7ee19f39e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795e9b80f7314fca303d27cd75c06071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a795e9b80f7314fca303d27cd75c06071">operator*=</a> (<a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;value) noexcept</td></tr>
-<tr class="separator:a795e9b80f7314fca303d27cd75c06071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b4c784716d310be9a67f31f1216adc"><td class="memTemplParams" colspan="2">template&lt;typename SmoothingType &gt; </td></tr>
+<tr class="memitem:a94b4c784716d310be9a67f31f1216adc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a94b4c784716d310be9a67f31f1216adc">operator*=</a> (<a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
+<tr class="separator:a94b4c784716d310be9a67f31f1216adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -1639,13 +1642,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="adf1d416b2cfa8108105c3ba161ad64af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1d416b2cfa8108105c3ba161ad64af">&#9670;&nbsp;</a></span>multiply() <span class="overload">[5/6]</span></h2>
+<a id="a8de3ce61b49f0ff08008a8cbd94b6f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de3ce61b49f0ff08008a8cbd94b6f64">&#9670;&nbsp;</a></span>multiply() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename SmoothingType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1653,7 +1658,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1669,13 +1674,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a305fe146fb00eaf144ec0531562222e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305fe146fb00eaf144ec0531562222e9">&#9670;&nbsp;</a></span>multiply() <span class="overload">[6/6]</span></h2>
+<a id="ad62f420089699140b06ec0e7ab1447a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62f420089699140b06ec0e7ab1447a8">&#9670;&nbsp;</a></span>multiply() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename SmoothingType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1689,7 +1696,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -2155,13 +2162,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a795e9b80f7314fca303d27cd75c06071"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a795e9b80f7314fca303d27cd75c06071">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[3/3]</span></h2>
+<a id="a94b4c784716d310be9a67f31f1216adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b4c784716d310be9a67f31f1216adc">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename SmoothingType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2169,7 +2178,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator*= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLinearSmoothedValue.html">LinearSmoothedValue</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2240,7 +2249,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 19 2019 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

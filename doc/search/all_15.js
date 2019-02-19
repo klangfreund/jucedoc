@@ -12,6 +12,7 @@ var searchData=
   ['valueexists',['valueExists',['../classWindowsRegistry.html#a35e53113b989cdb4b18c15690f2f16bc',1,'WindowsRegistry']]],
   ['valuefromtextfunction',['valueFromTextFunction',['../classSlider.html#a43c8424888dca4599d52304cb7496118',1,'Slider']]],
   ['values',['values',['../structBlock_1_1ProgramEventMessage.html#aec4510472128b7de03b5ff86968787ec',1,'Block::ProgramEventMessage']]],
+  ['valuesmoothingtypes',['ValueSmoothingTypes',['../namespaceValueSmoothingTypes.html',1,'']]],
   ['valuesource',['ValueSource',['../classValue_1_1ValueSource.html',1,'Value::ValueSource'],['../classValue_1_1ValueSource.html#a38f5ca1d8aed95c1d5caaa9c1c461626',1,'Value::ValueSource::ValueSource()']]],
   ['valueswithlisteners',['valuesWithListeners',['../classValue_1_1ValueSource.html#ac6c18c9323cbda13d3e967c1b3c7b3cf',1,'Value::ValueSource']]],
   ['valuetoproportionoflength',['valueToProportionOfLength',['../classSlider.html#a0549ec352b8dca4ca4ba1afa43263370',1,'Slider']]],

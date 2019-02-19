@@ -429,7 +429,7 @@ var searchData=
   ['issimdaligned',['isSIMDAligned',['../structdsp_1_1SIMDRegister.html#a2615629aee806ef6b0990301544d2170',1,'dsp::SIMDRegister']]],
   ['issinglechannel',['isSingleChannel',['../classImage.html#a1176ae108a31a0f4b7b4be6b86bc6181',1,'Image']]],
   ['issingularity',['isSingularity',['../classAffineTransform.html#a6a5398b6aef3c585ae13c84434d6d498',1,'AffineTransform']]],
-  ['issmoothing',['isSmoothing',['../classSmoothedValueBase.html#a884f4f9f29c8f88c569eae20200d7f80',1,'SmoothedValueBase::isSmoothing()'],['../classdsp_1_1Gain.html#a0a97200da210aa72c0bc7675ab7e6258',1,'dsp::Gain::isSmoothing()']]],
+  ['issmoothing',['isSmoothing',['../classSmoothedValueBase.html#afadc1bbe590e1fe7e3d06ae17cb95d53',1,'SmoothedValueBase::isSmoothing()'],['../classdsp_1_1Gain.html#a0a97200da210aa72c0bc7675ab7e6258',1,'dsp::Gain::isSmoothing()']]],
   ['issoftpedaloff',['isSoftPedalOff',['../classMidiMessage.html#a3fa95632707d7540c705151421de13fe',1,'MidiMessage']]],
   ['issoftpedalon',['isSoftPedalOn',['../classMidiMessage.html#a37edc67c1113f68a3e9cb063ab7e2781',1,'MidiMessage']]],
   ['issonar',['isSonar',['../classPluginHostType.html#a36909a79f575dcce2a2febcf95469ceb',1,'PluginHostType']]],
