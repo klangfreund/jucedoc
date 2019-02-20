@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Utility class for logarithmically smoothed values.  
+<p>Utility class for logarithmically smoothed linear values.  
  <a href="classdsp_1_1LogRampedValue.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for dsp::LogRampedValue&lt; FloatType &gt;:</div>
@@ -150,9 +150,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename FloatType&gt;<br />
 class dsp::LogRampedValue&lt; FloatType &gt;</h3>
 
-<p>Utility class for logarithmically smoothed values. </p>
+<p>Utility class for logarithmically smoothed linear values. </p>
 <p>Logarithmically smoothed values can be more relevant than linear ones for specific cases such as algorithm change smoothing, using two of them in opposite directions.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSmoothedValue.html" title="A utility class for values that need smoothing, like volume, that should not change abruptly to avoid...">SmoothedValue</a> </dd></dl>
+<p>The gradient of the logarithmic/exponential slope can be configured by calling <a class="el" href="classdsp_1_1LogRampedValue.html#a952fc8a88b07a6e46dbb24d676a697bd" title="Sets the behaviour of the log ramp. ">LogRampedValue::setLogParameters</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSmoothedValue.html" title="A utility class for values that need smoothing to avoid audio glitches. ">SmoothedValue</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4a5f0b7d4e14ae27c1e8920705afee43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a5f0b7d4e14ae27c1e8920705afee43">&#9670;&nbsp;</a></span>LogRampedValue() <span class="overload">[1/2]</span></h2>
@@ -463,7 +464,7 @@ template&lt;typename FloatType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 19 2019 20:00:32 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
