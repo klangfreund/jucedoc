@@ -165,7 +165,7 @@ var searchData=
   ['clearrecentfilesnatively',['clearRecentFilesNatively',['../classRecentlyOpenedFilesList.html#a1aacf691c91474a497e9baaa93e4632a',1,'RecentlyOpenedFilesList']]],
   ['clearrules',['clearRules',['../classRuleBasedTopologySource.html#ac2e356922f970bc90a49e61149718b73',1,'RuleBasedTopologySource']]],
   ['clearsamples',['clearSamples',['../classAudioData_1_1Pointer.html#a8b123e357446ef1faa6731790d421969',1,'AudioData::Pointer']]],
-  ['clearsamplesbeyondavailablelength',['clearSamplesBeyondAvailableLength',['../classAudioFormatReader.html#a263fd3b6a51850da53fe57688f9ccb46',1,'AudioFormatReader']]],
+  ['clearsamplesbeyondavailablelength',['clearSamplesBeyondAvailableLength',['../classAudioFormatReader.html#a437efb69883807f8b25d75f9eaa4da93',1,'AudioFormatReader']]],
   ['clearselecteditems',['clearSelectedItems',['../classTreeView.html#ae64500dc9c423669798ab1bd81952f57',1,'TreeView']]],
   ['clearshortcuts',['clearShortcuts',['../classButton.html#aa8d27148fe4dc88ffa06eecabca9bed6',1,'Button']]],
   ['clearsounds',['clearSounds',['../classSynthesiser.html#af6dc83c7e8c7ce8e06a5fe08ae2e3018',1,'Synthesiser']]],

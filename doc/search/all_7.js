@@ -107,7 +107,6 @@ var searchData=
   ['hashcode',['hashCode',['../classFile.html#ae5548575e6854b9837e5b42fc8df0e98',1,'File::hashCode()'],['../classFileInputSource.html#a95b676eefdd0f1b2978d9c31a6af5d10',1,'FileInputSource::hashCode()'],['../classInputSource.html#a1fe754d44724da8eaef055c496ca4140',1,'InputSource::hashCode()'],['../classURLInputSource.html#a289bcfa8603911b61cd057ea0dd63646',1,'URLInputSource::hashCode()'],['../classString.html#ad8ca5cb11984df03ff9697442da5ae4b',1,'String::hashCode()']]],
   ['hashcode64',['hashCode64',['../classFile.html#ad0075226638584f6fb30c0d515e182e9',1,'File::hashCode64()'],['../classString.html#ad71be66a9c181abae185b84f7cec5f17',1,'String::hashCode64()']]],
   ['hashmap',['HashMap',['../classHashMap.html',1,'HashMap&lt; KeyType, ValueType, HashFunctionType, TypeOfCriticalSectionToUse &gt;'],['../classHashMap.html#a4d6d41cfc524ccc0a73f0251d7fc1fab',1,'HashMap::HashMap()']]],
-  ['hashmap_3c_20heavyweightleakedobjectdetector_3c_20ownerclass_20_3e_20_2a_2c_20string_20_3e',['HashMap&lt; HeavyweightLeakedObjectDetector&lt; OwnerClass &gt; *, String &gt;',['../classHashMap.html',1,'']]],
   ['hasidenticalcontentto',['hasIdenticalContentTo',['../classFile.html#ad3170a56847a243b475a72ccc9968089',1,'File']]],
   ['haskeyboardfocus',['hasKeyboardFocus',['../classComponent.html#abf76cf5c3550c5c83bc585f86429b397',1,'Component']]],
   ['haslight',['hasLight',['../classControlButton.html#a3baaa73d0463c515e121f7117ac18b7b',1,'ControlButton']]],

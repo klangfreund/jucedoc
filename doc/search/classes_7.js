@@ -1,7 +1,6 @@
 var searchData=
 [
   ['hashmap',['HashMap',['../classHashMap.html',1,'']]],
-  ['hashmap_3c_20heavyweightleakedobjectdetector_3c_20ownerclass_20_3e_20_2a_2c_20string_20_3e',['HashMap&lt; HeavyweightLeakedObjectDetector&lt; OwnerClass &gt; *, String &gt;',['../classHashMap.html',1,'']]],
   ['heapblock',['HeapBlock',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20actionlistener_20_2a_3e',['HeapBlock&lt; ActionListener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20actionset_20_2a_3e',['HeapBlock&lt; ActionSet *&gt;',['../classHeapBlock.html',1,'']]],
