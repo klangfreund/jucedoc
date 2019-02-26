@@ -12,6 +12,7 @@ var searchData=
   ['releasetype',['releaseType',['../structBlocksVersion.html#a407c1d6568f1b08f9c991959a9efa55f',1,'BlocksVersion']]],
   ['repeat',['repeat',['../structPushNotifications_1_1Notification.html#a81062603230e4597d678e19ddb3a3ef0',1,'PushNotifications::Notification']]],
   ['reset',['reset',['../structUnityAudioEffectDefinition.html#ac61fba3aba34d06885506c907f0a400c',1,'UnityAudioEffectDefinition']]],
+  ['resetmaster',['resetMaster',['../namespaceBlocksProtocol_1_1SpecialMessageFromHost.html#a6c0dc4cb057a1fab3782be303a90e3a6',1,'BlocksProtocol::SpecialMessageFromHost']]],
   ['resizable',['resizable',['../structDialogWindow_1_1LaunchOptions.html#a07bc81d41581d3d5bc1d05be03a5b4b6',1,'DialogWindow::LaunchOptions']]],
   ['resizableborder',['resizableBorder',['../classResizableWindow.html#a0335c618114e0f4a6c90f25daf6a297a',1,'ResizableWindow']]],
   ['resizablecorner',['resizableCorner',['../classAudioProcessorEditor.html#a3ff8b674bcc02e49c1f5cc102bf4e746',1,'AudioProcessorEditor::resizableCorner()'],['../classResizableWindow.html#af9e547a87f7f39ca3721e19029a46f89',1,'ResizableWindow::resizableCorner()']]],

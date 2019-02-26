@@ -318,6 +318,7 @@ var searchData=
   ['resetdatarangetounknown',['resetDataRangeToUnknown',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a2266981d92e240e310812e667f625460',1,'littlefoot::LittleFootRemoteHeap']]],
   ['resetdevicestatetounknown',['resetDeviceStateToUnknown',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be',1,'littlefoot::LittleFootRemoteHeap']]],
   ['reseterrorstate',['resetErrorState',['../classOpenGLHelpers.html#acad5e92d97154f3df22079b7d457b946',1,'OpenGLHelpers']]],
+  ['resetmaster',['resetMaster',['../namespaceBlocksProtocol_1_1SpecialMessageFromHost.html#a6c0dc4cb057a1fab3782be303a90e3a6',1,'BlocksProtocol::SpecialMessageFromHost']]],
   ['resetoverlaycolour',['resetOverlayColour',['../classLEDRow.html#a9c1abf9789f227b9f43a4545a2e7a84a',1,'LEDRow']]],
   ['resetrecentpaths',['resetRecentPaths',['../classFileBrowserComponent.html#aa7de2c3418a52ac04d7d357cf6881b9f',1,'FileBrowserComponent']]],
   ['resetreferencecount',['resetReferenceCount',['../classReferenceCountedObject.html#a9bbeeab431755e2be8ff09dfe9ea4c4d',1,'ReferenceCountedObject']]],
