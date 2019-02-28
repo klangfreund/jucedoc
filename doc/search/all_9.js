@@ -408,14 +408,13 @@ var searchData=
   ['juce_5fmessagelistener_2eh',['juce_MessageListener.h',['../juce__MessageListener_8h.html',1,'']]],
   ['juce_5fmessagemanager_2eh',['juce_MessageManager.h',['../juce__MessageManager_8h.html',1,'']]],
   ['juce_5fmidibuffer_2eh',['juce_MidiBuffer.h',['../juce__MidiBuffer_8h.html',1,'']]],
+  ['juce_5fmididevices_2eh',['juce_MidiDevices.h',['../juce__MidiDevices_8h.html',1,'']]],
   ['juce_5fmidifile_2eh',['juce_MidiFile.h',['../juce__MidiFile_8h.html',1,'']]],
-  ['juce_5fmidiinput_2eh',['juce_MidiInput.h',['../juce__MidiInput_8h.html',1,'']]],
   ['juce_5fmidikeyboardcomponent_2eh',['juce_MidiKeyboardComponent.h',['../juce__MidiKeyboardComponent_8h.html',1,'']]],
   ['juce_5fmidikeyboardstate_2eh',['juce_MidiKeyboardState.h',['../juce__MidiKeyboardState_8h.html',1,'']]],
   ['juce_5fmidimessage_2eh',['juce_MidiMessage.h',['../juce__MidiMessage_8h.html',1,'']]],
   ['juce_5fmidimessagecollector_2eh',['juce_MidiMessageCollector.h',['../juce__MidiMessageCollector_8h.html',1,'']]],
   ['juce_5fmidimessagesequence_2eh',['juce_MidiMessageSequence.h',['../juce__MidiMessageSequence_8h.html',1,'']]],
-  ['juce_5fmidioutput_2eh',['juce_MidiOutput.h',['../juce__MidiOutput_8h.html',1,'']]],
   ['juce_5fmidirpn_2eh',['juce_MidiRPN.h',['../juce__MidiRPN_8h.html',1,'']]],
   ['juce_5fminor_5fversion',['JUCE_MINOR_VERSION',['../group__juce__core-system.html#ga2a583ff83063cc1e7f9abeb35a21dff1',1,'juce_StandardHeader.h']]],
   ['juce_5fmixeraudiosource_2eh',['juce_MixerAudioSource.h',['../juce__MixerAudioSource_8h.html',1,'']]],
@@ -688,6 +687,6 @@ var searchData=
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#ac4b5b9f0403512d91215fec879fa9e77',1,'Justification::Justification(const Justification &amp;)=default']]],
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
-  ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
+  ['justifyitems',['JustifyItems',['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()'],['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()']]],
   ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
 ];

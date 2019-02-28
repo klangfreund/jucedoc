@@ -709,7 +709,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables or disables a midi input device. </p>
-<p>The list of devices can be obtained with the <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Returns a list of the available midi input devices. ">MidiInput::getDevices()</a> method.</p>
+<p>The list of devices can be obtained with the <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Deprecated. ">MidiInput::getDevices()</a> method.</p>
 <p>Any incoming messages from enabled input devices will be forwarded on to all the listeners that have been registered with the <a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputCallback()</a> method. They can either register for messages from a particular device, or from just the "default" midi input.</p>
 <p>Routing the midi input via an <a class="el" href="classAudioDeviceManager.html" title="Manages the state of some audio and midi i/o devices. ">AudioDeviceManager</a> means that when a listener registers for the default midi input, this default device can be changed by the manager without the listeners having to know about it or re-register.</p>
 <p>It also means that a listener can stay registered for a midi input that is disabled or not present, so that when the input is re-enabled, the listener will start receiving messages again.</p>
@@ -765,7 +765,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Registers a listener for callbacks when midi events arrive from a midi input. </p>
-<p>The device name can be empty to indicate that it wants to receive all incoming events from all the enabled MIDI inputs. Or it can be the name of one of the MIDI input devices if it just wants the events from that device. (see <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Returns a list of the available midi input devices. ">MidiInput::getDevices()</a> for the list of device names).</p>
+<p>The device name can be empty to indicate that it wants to receive all incoming events from all the enabled MIDI inputs. Or it can be the name of one of the MIDI input devices if it just wants the events from that device. (see <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Deprecated. ">MidiInput::getDevices()</a> for the list of device names).</p>
 <p>Only devices which are enabled (see the <a class="el" href="classAudioDeviceManager.html#a5c16cde5d7c4c49dd9b6d00cc17ba481" title="Enables or disables a midi input device. ">setMidiInputEnabled()</a> method) will have their events forwarded on to listeners. </p>
 
 </div>
@@ -817,9 +817,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets a midi output device to use as the default. </p>
-<p>The list of devices can be obtained with the <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Returns a list of the available midi output devices. ">MidiOutput::getDevices()</a> method.</p>
+<p>The list of devices can be obtained with the <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Deprecated. ">MidiOutput::getDevices()</a> method.</p>
 <p>The specified device will be opened automatically and can be retrieved with the <a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput()</a> method.</p>
-<p>Pass in an empty string to deselect all devices. For the default device, you can use <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Returns a list of the available midi output devices. ">MidiOutput::getDevices()</a> [<a class="el" href="classMidiOutput.html#a5459a18d9b1b9a5fe27e95e6e9e06a87" title="Returns the index of the default midi output device to use. ">MidiOutput::getDefaultDeviceIndex()</a>].</p>
+<p>Pass in an empty string to deselect all devices. For the default device, you can use <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Deprecated. ">MidiOutput::getDevices()</a> [<a class="el" href="classMidiOutput.html#a5459a18d9b1b9a5fe27e95e6e9e06a87" title="Deprecated. ">MidiOutput::getDefaultDeviceIndex()</a>].</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput</a>, <a class="el" href="classAudioDeviceManager.html#ad3796e84d5b112f78f8ffc02d7b9f8be" title="Returns the name of the default midi output. ">getDefaultMidiOutputName</a> </dd></dl>
 
 </div>
@@ -1120,7 +1120,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 28 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

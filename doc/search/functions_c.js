@@ -73,6 +73,7 @@ var searchData=
   ['midichannelmetaevent',['midiChannelMetaEvent',['../classMidiMessage.html#afd3fc870ce448791ea794d858062435a',1,'MidiMessage']]],
   ['midiclock',['midiClock',['../classMidiMessage.html#ab5cd973a73b82153aea0329933a37306',1,'MidiMessage']]],
   ['midicontinue',['midiContinue',['../classMidiMessage.html#a2596bded93cb7d3d196ece8a7dee2d9b',1,'MidiMessage']]],
+  ['midideviceinfo',['MidiDeviceInfo',['../structMidiDeviceInfo.html#a36eae7c187ea21843edbb87ada212f02',1,'MidiDeviceInfo::MidiDeviceInfo()=default'],['../structMidiDeviceInfo.html#a388dbf48db2aa597858efb937056bea9',1,'MidiDeviceInfo::MidiDeviceInfo(const String &amp;deviceName, const String &amp;deviceIdentifier)']]],
   ['midifile',['MidiFile',['../classMidiFile.html#a989fec6d479c0ebf68ef72224e58e894',1,'MidiFile::MidiFile()'],['../classMidiFile.html#a2eca3053ca18d53f7f5d6f5cf727b863',1,'MidiFile::MidiFile(const MidiFile &amp;)'],['../classMidiFile.html#aa01da6b57e84b74802abd5d2a1695936',1,'MidiFile::MidiFile(MidiFile &amp;&amp;)']]],
   ['midikeyboardcomponent',['MidiKeyboardComponent',['../classMidiKeyboardComponent.html#a8272936e0d5efbd6b756cfb7028597ea',1,'MidiKeyboardComponent']]],
   ['midikeyboardstate',['MidiKeyboardState',['../classMidiKeyboardState.html#a73da349edfd89275f5b26d20c9176238',1,'MidiKeyboardState']]],

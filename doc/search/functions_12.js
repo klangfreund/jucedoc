@@ -473,7 +473,7 @@ var searchData=
   ['setmultisamplingenabled',['setMultisamplingEnabled',['../classOpenGLContext.html#ab3e6fd6e0d9104a249f029833f6b4172',1,'OpenGLContext']]],
   ['setmultiselectenabled',['setMultiSelectEnabled',['../classTreeView.html#acf2e695dbd3a01343d1c69b022650e97',1,'TreeView']]],
   ['setmuted',['setMuted',['../classSystemAudioVolume.html#a42f052a1413325b302216ddf148e69cc',1,'SystemAudioVolume']]],
-  ['setname',['setName',['../classMidiInput.html#ad85cc3c81a13f0fae9924d6ca3881b21',1,'MidiInput::setName()'],['../classBlock.html#a31c6b326c4a1d5dcb8f757db0b0b771f',1,'Block::setName()'],['../classComponent.html#a64d1ad9a0f8f0d1757e62ac738b36b35',1,'Component::setName()'],['../classDocumentWindow.html#aac6b784f048c3a84e444009dfbf87441',1,'DocumentWindow::setName()']]],
+  ['setname',['setName',['../classMidiInput.html#ad85cc3c81a13f0fae9924d6ca3881b21',1,'MidiInput::setName()'],['../classMidiOutput.html#ac84a9d82b661b17c41a57ebbae4e12d6',1,'MidiOutput::setName()'],['../classBlock.html#a31c6b326c4a1d5dcb8f757db0b0b771f',1,'Block::setName()'],['../classComponent.html#a64d1ad9a0f8f0d1757e62ac738b36b35',1,'Component::setName()'],['../classDocumentWindow.html#aac6b784f048c3a84e444009dfbf87441',1,'DocumentWindow::setName()']]],
   ['setnativefunctions',['setNativeFunctions',['../structlittlefoot_1_1Runner.html#a4cad1258b15837d2ba702640a140488a',1,'littlefoot::Runner']]],
   ['setnativesharedcontext',['setNativeSharedContext',['../classOpenGLContext.html#a0129ecf603a0cc3034e4809a23812e4a',1,'OpenGLContext']]],
   ['setneedstobesaved',['setNeedsToBeSaved',['../classPropertiesFile.html#a205cb3e66cef5d064578dc22b8b205cb',1,'PropertiesFile']]],

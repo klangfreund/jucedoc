@@ -8,7 +8,7 @@ digraph "Thread"
   Node0 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 [label="InterprocessConnectionServer",height=0.2,width=0.4,color="black",URL="$classInterprocessConnectionServer.html",tooltip="An object that waits for client sockets to connect to a port on this host, and creates InterprocessCo..."];
   Node0 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="MidiOutput",height=0.2,width=0.4,color="black",URL="$classMidiOutput.html",tooltip="Controls a physical MIDI output device. "];
+  Node2 [label="MidiOutput",height=0.2,width=0.4,color="black",URL="$classMidiOutput.html",tooltip="Represents a midi output device. "];
   Node0 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="NetworkServiceDiscovery\l::Advertiser",height=0.2,width=0.4,color="black",URL="$structNetworkServiceDiscovery_1_1Advertiser.html",tooltip="An object which runs a thread to repeatedly broadcast the existence of a discoverable service..."];
   Node0 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
