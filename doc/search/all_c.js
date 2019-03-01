@@ -19,6 +19,8 @@ var searchData=
   ['macosx_5f10_5f10',['MacOSX_10_10',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaacd0e709dec55d23e96ac9fc93438c61b',1,'SystemStats']]],
   ['macosx_5f10_5f11',['MacOSX_10_11',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaaf9b5d85d9b872a45f52ca472995ff7d1',1,'SystemStats']]],
   ['macosx_5f10_5f12',['MacOSX_10_12',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa2fd486dffb902bd1cb10746faa444be6',1,'SystemStats']]],
+  ['macosx_5f10_5f13',['MacOSX_10_13',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa0eeb8d1748c262a68b3eccf395e4916b',1,'SystemStats']]],
+  ['macosx_5f10_5f14',['MacOSX_10_14',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa53219b31947fce51dc2cabbac0399a74',1,'SystemStats']]],
   ['macosx_5f10_5f4',['MacOSX_10_4',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa1ce7cc1fe386e7fa87013cbddf52543f',1,'SystemStats']]],
   ['macosx_5f10_5f5',['MacOSX_10_5',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa12c47314def418879ea14c9d7b3c7245',1,'SystemStats']]],
   ['macosx_5f10_5f6',['MacOSX_10_6',['../classSystemStats.html#a7697c468b5f6c391096ab483690b68eaa23c2a4b9a33a4b5dccb9d89491aff8ca',1,'SystemStats']]],

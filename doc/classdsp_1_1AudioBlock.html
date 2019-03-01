@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb86512c11e1c3b1841afd42777ef136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376c387ce41cf60b408a98db563fa59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a376c387ce41cf60b408a98db563fa59d">operator=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) noexcept=default</td></tr>
 <tr class="separator:a376c387ce41cf60b408a98db563fa59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa4111a4172494db0aca7a95843470a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aaaa4111a4172494db0aca7a95843470a">operator==</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:aaaa4111a4172494db0aca7a95843470a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ea3d9aa670c6df8b2ed954441f9170"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#af0ea3d9aa670c6df8b2ed954441f9170">operator!=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:af0ea3d9aa670c6df8b2ed954441f9170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acca4222a334f48a9b17133f6bba04d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#acca4222a334f48a9b17133f6bba04d30">getNumSamples</a> () const noexcept</td></tr>
 <tr class="separator:acca4222a334f48a9b17133f6bba04d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeccd978b8ddcf2e497d021b3c5dd434b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aeccd978b8ddcf2e497d021b3c5dd434b">getNumChannels</a> () const noexcept</td></tr>
@@ -573,6 +577,62 @@ template&lt;typename SampleType&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaa4111a4172494db0aca7a95843470a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa4111a4172494db0aca7a95843470a">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0ea3d9aa670c6df8b2ed954441f9170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ea3d9aa670c6df8b2ed954441f9170">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2249,7 +2309,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 28 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
