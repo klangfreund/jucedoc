@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c6bf4ae3d6e4986f8d84d92b1914e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eaab0b0edc83226ee8a9828a203aa90"><td class="memTemplParams" colspan="2">template&lt;typename ProcessContext &gt; </td></tr>
 <tr class="memitem:a0eaab0b0edc83226ee8a9828a203aa90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1IIR_1_1Filter.html#a0eaab0b0edc83226ee8a9828a203aa90">process</a> (const ProcessContext &amp;context) noexcept</td></tr>
-<tr class="memdesc:a0eaab0b0edc83226ee8a9828a203aa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes as a block of samples.  <a href="#a0eaab0b0edc83226ee8a9828a203aa90">More...</a><br /></td></tr>
+<tr class="memdesc:a0eaab0b0edc83226ee8a9828a203aa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a block of samples.  <a href="#a0eaab0b0edc83226ee8a9828a203aa90">More...</a><br /></td></tr>
 <tr class="separator:a0eaab0b0edc83226ee8a9828a203aa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751edfeb3193b7739c5b2f47168c7027"><td class="memItemLeft" align="right" valign="top">SampleType JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1IIR_1_1Filter.html#a751edfeb3193b7739c5b2f47168c7027">processSample</a> (SampleType sample) noexcept</td></tr>
 <tr class="memdesc:a751edfeb3193b7739c5b2f47168c7027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a single sample, without any locking.  <a href="#a751edfeb3193b7739c5b2f47168c7027">More...</a><br /></td></tr>
@@ -189,7 +189,7 @@ template&lt;typename SampleType &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a filter. </p>
-<p>Initially the filter is inactive, so will have no effect on samples that you process with it. Use the setCoefficients() method to turn it into the type of filter needed. </p>
+<p>Initially the filter is inactive, so will have no effect on samples that you process with it. You can modify the coefficients member to turn it into the type of filter needed. </p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ template&lt;typename ProcessContext &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Processes as a block of samples. </p>
+<p>Processes a block of samples. </p>
 
 <p class="reference">References <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>, <a class="el" href="classdsp_1_1IIR_1_1Filter.html#ac4ce71517416ffad26e19278e19f5914">dsp::IIR::Filter&lt; SampleType &gt;::operator=()</a>, <a class="el" href="classdsp_1_1IIR_1_1Filter.html#a751edfeb3193b7739c5b2f47168c7027">dsp::IIR::Filter&lt; SampleType &gt;::processSample()</a>, and <a class="el" href="classdsp_1_1IIR_1_1Filter.html#ac7718a76aabf8ed655cc921fdcc66e9e">dsp::IIR::Filter&lt; SampleType &gt;::snapToZero()</a>.</p>
 
@@ -540,7 +540,7 @@ template&lt;typename SampleType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
