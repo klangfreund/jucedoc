@@ -127,10 +127,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">deleteInstance</a> ()</td></tr>
 <tr class="memdesc:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the global <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> instance.  <a href="#a4bdcb8bd5ef27480b49d6b1ff6ecdaa9">More...</a><br /></td></tr>
 <tr class="separator:a4bdcb8bd5ef27480b49d6b1ff6ecdaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ed7c9a9885eba962cca454552b2902"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType &gt; </td></tr>
-<tr class="memitem:ac3ed7c9a9885eba962cca454552b2902"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMessageManager.html#ac3ed7c9a9885eba962cca454552b2902">callAsync</a> (FunctionType functionToCall)</td></tr>
-<tr class="memdesc:ac3ed7c9a9885eba962cca454552b2902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously invokes a function or C++11 lambda on the message thread.  <a href="#ac3ed7c9a9885eba962cca454552b2902">More...</a><br /></td></tr>
-<tr class="separator:ac3ed7c9a9885eba962cca454552b2902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072416d88bc1d7f7273922b04aa8e56b"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType &gt; </td></tr>
+<tr class="memitem:a072416d88bc1d7f7273922b04aa8e56b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMessageManager.html#a072416d88bc1d7f7273922b04aa8e56b">callAsync</a> (FunctionType &amp;&amp;functionToCall)</td></tr>
+<tr class="memdesc:a072416d88bc1d7f7273922b04aa8e56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously invokes a function or C++11 lambda on the message thread.  <a href="#a072416d88bc1d7f7273922b04aa8e56b">More...</a><br /></td></tr>
+<tr class="separator:a072416d88bc1d7f7273922b04aa8e56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1711d0739f9de9e9a66cbde5b43632"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager.html#afe1711d0739f9de9e9a66cbde5b43632">existsAndIsLockedByCurrentThread</a> () noexcept</td></tr>
 <tr class="memdesc:afe1711d0739f9de9e9a66cbde5b43632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there's an instance of the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, and if the current thread has the lock on it.  <a href="#afe1711d0739f9de9e9a66cbde5b43632">More...</a><br /></td></tr>
 <tr class="separator:afe1711d0739f9de9e9a66cbde5b43632"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,8 +317,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3ed7c9a9885eba962cca454552b2902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3ed7c9a9885eba962cca454552b2902">&#9670;&nbsp;</a></span>callAsync()</h2>
+<a id="a072416d88bc1d7f7273922b04aa8e56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072416d88bc1d7f7273922b04aa8e56b">&#9670;&nbsp;</a></span>callAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +331,7 @@ template&lt;typename FunctionType &gt; </div>
         <tr>
           <td class="memname">static void MessageManager::callAsync </td>
           <td>(</td>
-          <td class="paramtype">FunctionType&#160;</td>
+          <td class="paramtype">FunctionType &amp;&amp;&#160;</td>
           <td class="paramname"><em>functionToCall</em></td><td>)</td>
           <td></td>
         </tr>
@@ -629,7 +629,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 5 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 6 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
