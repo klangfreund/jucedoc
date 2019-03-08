@@ -1,8 +1,10 @@
 var searchData=
 [
+  ['abletonlive10',['AbletonLive10',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a1a1ff256d8e8202873e9da2b2548e2fe',1,'PluginHostType']]],
   ['abletonlive6',['AbletonLive6',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5e62acd132677eeadafbe3e3c2d75bad',1,'PluginHostType']]],
   ['abletonlive7',['AbletonLive7',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a4b14200efbb17b2dd8b0b623a361829e',1,'PluginHostType']]],
   ['abletonlive8',['AbletonLive8',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aed7585b06435b87dfc13fa5745482994',1,'PluginHostType']]],
+  ['abletonlive9',['AbletonLive9',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aefbf35e3955011997d88212873619f19',1,'PluginHostType']]],
   ['abletonlivegeneric',['AbletonLiveGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a665226cd0a77007d5e3a8673f6e91dd4',1,'PluginHostType']]],
   ['abort',['abort',['../classMessageManager_1_1Lock.html#a74490f0867d8d4f1898fa21602e42f19',1,'MessageManager::Lock']]],
   ['abortburn',['abortBurn',['../classAudioCDBurner.html#a085b0ceaf4cd982d6bb1e95dd18752f7',1,'AudioCDBurner']]],
