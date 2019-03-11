@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bd1c1d0e03dfd9ecc19a826b78975aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a7bd1c1d0e03dfd9ecc19a826b78975aa">addCurtailedLineOfText</a> (const <a class="el" href="classFont.html">Font</a> &amp;font, const <a class="el" href="classString.html">String</a> &amp;text, float x, float y, float maxWidthPixels, bool useEllipsis)</td></tr>
 <tr class="memdesc:a7bd1c1d0e03dfd9ecc19a826b78975aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a line of text, truncating it if it's wider than a specified size.  <a href="#a7bd1c1d0e03dfd9ecc19a826b78975aa">More...</a><br /></td></tr>
 <tr class="separator:a7bd1c1d0e03dfd9ecc19a826b78975aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada407e56eab976b046f880729411771f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#ada407e56eab976b046f880729411771f">addJustifiedText</a> (const <a class="el" href="classFont.html">Font</a> &amp;font, const <a class="el" href="classString.html">String</a> &amp;text, float x, float y, float maxLineWidth, <a class="el" href="classJustification.html">Justification</a> horizontalLayout)</td></tr>
-<tr class="memdesc:ada407e56eab976b046f880729411771f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds some multi-line text, breaking lines at word-boundaries if they are too wide.  <a href="#ada407e56eab976b046f880729411771f">More...</a><br /></td></tr>
-<tr class="separator:ada407e56eab976b046f880729411771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843c5c340b0a253e0550d5083ad46f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a843c5c340b0a253e0550d5083ad46f62">addJustifiedText</a> (const <a class="el" href="classFont.html">Font</a> &amp;font, const <a class="el" href="classString.html">String</a> &amp;text, float x, float y, float maxLineWidth, <a class="el" href="classJustification.html">Justification</a> horizontalLayout, float leading=0.0f)</td></tr>
+<tr class="memdesc:a843c5c340b0a253e0550d5083ad46f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds some multi-line text, breaking lines at word-boundaries if they are too wide.  <a href="#a843c5c340b0a253e0550d5083ad46f62">More...</a><br /></td></tr>
+<tr class="separator:a843c5c340b0a253e0550d5083ad46f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlyphArrangement.html#a96a7fd525bab5cc2330c1c4e9f13d6d5">addFittedText</a> (const <a class="el" href="classFont.html">Font</a> &amp;font, const <a class="el" href="classString.html">String</a> &amp;text, float x, float y, float width, float height, <a class="el" href="classJustification.html">Justification</a> layout, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumLinesToUse, float minimumHorizontalScale=0.0f)</td></tr>
 <tr class="memdesc:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to fit some text within a given space.  <a href="#a96a7fd525bab5cc2330c1c4e9f13d6d5">More...</a><br /></td></tr>
 <tr class="separator:a96a7fd525bab5cc2330c1c4e9f13d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,7 +432,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Appends a line of text to the arrangement. </p>
 <p>This will add the text as a single line, where x is the left-hand edge of the first character, and y is the position for the text's baseline.</p>
-<p>If the text contains new-lines or carriage-returns, this will ignore them - use <a class="el" href="classGlyphArrangement.html#ada407e56eab976b046f880729411771f" title="Adds some multi-line text, breaking lines at word-boundaries if they are too wide. ">addJustifiedText()</a> to add multi-line arrangements. </p>
+<p>If the text contains new-lines or carriage-returns, this will ignore them - use <a class="el" href="classGlyphArrangement.html#a843c5c340b0a253e0550d5083ad46f62" title="Adds some multi-line text, breaking lines at word-boundaries if they are too wide. ">addJustifiedText()</a> to add multi-line arrangements. </p>
 
 </div>
 </div>
@@ -491,8 +491,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada407e56eab976b046f880729411771f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada407e56eab976b046f880729411771f">&#9670;&nbsp;</a></span>addJustifiedText()</h2>
+<a id="a843c5c340b0a253e0550d5083ad46f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843c5c340b0a253e0550d5083ad46f62">&#9670;&nbsp;</a></span>addJustifiedText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +531,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classJustification.html">Justification</a>&#160;</td>
-          <td class="paramname"><em>horizontalLayout</em>&#160;</td>
+          <td class="paramname"><em>horizontalLayout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>leading</em> = <code>0.0f</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -544,7 +550,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds some multi-line text, breaking lines at word-boundaries if they are too wide. </p>
 <p>This will add text to the arrangement, breaking it into new lines either where there is a new-line or carriage-return character in the text, or where a line's width exceeds the value set in maxLineWidth.</p>
 <p>Each line that is added will be laid out using the flags set in horizontalLayout, so the lines can be left- or right-justified, or centred horizontally in the space between x and (x + maxLineWidth).</p>
-<p>The y coordinate is the position of the baseline of the first line of text - subsequent lines will be placed below it, separated by a distance of font.getHeight(). </p>
+<p>The y coordinate is the position of the baseline of the first line of text - subsequent lines will be placed below it, separated by a distance of font.getHeight() + leading. </p>
 
 </div>
 </div>
@@ -1018,7 +1024,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 8 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 11 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

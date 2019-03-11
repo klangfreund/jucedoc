@@ -102,12 +102,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a60a37c57cd5206090b4d2d866b959746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a60a37c57cd5206090b4d2d866b959746">setZoneLayout</a> (<a class="el" href="classMPEZoneLayout.html">MPEZoneLayout</a> newLayout)</td></tr>
 <tr class="memdesc:a60a37c57cd5206090b4d2d866b959746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-sets the zone layout of the instrument to the one passed in.  <a href="#a60a37c57cd5206090b4d2d866b959746">More...</a><br /></td></tr>
 <tr class="separator:a60a37c57cd5206090b4d2d866b959746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09fa0823eb425fb8f96d6bf50297c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#aa09fa0823eb425fb8f96d6bf50297c88">isMemberChannel</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel) noexcept</td></tr>
-<tr class="memdesc:aa09fa0823eb425fb8f96d6bf50297c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given MIDI channel (1-16) is a note channel in any of the <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a>'s MPE zones; false otherwise.  <a href="#aa09fa0823eb425fb8f96d6bf50297c88">More...</a><br /></td></tr>
-<tr class="separator:aa09fa0823eb425fb8f96d6bf50297c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afe0cb9418926459a3a0f98178a3834"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a3afe0cb9418926459a3a0f98178a3834">isMemberChannel</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel) const noexcept</td></tr>
+<tr class="memdesc:a3afe0cb9418926459a3a0f98178a3834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given MIDI channel (1-16) is a note channel in any of the <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a>'s MPE zones; false otherwise.  <a href="#a3afe0cb9418926459a3a0f98178a3834">More...</a><br /></td></tr>
+<tr class="separator:a3afe0cb9418926459a3a0f98178a3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad832a76615272bf724839709c0a0aaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#aad832a76615272bf724839709c0a0aaf">isMasterChannel</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel) const noexcept</td></tr>
 <tr class="memdesc:aad832a76615272bf724839709c0a0aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given MIDI channel (1-16) is a master channel (channel 1 or 16).  <a href="#aad832a76615272bf724839709c0a0aaf">More...</a><br /></td></tr>
 <tr class="separator:aad832a76615272bf724839709c0a0aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ed806390761e70fff1ae10c1ebb1b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#ae9ed806390761e70fff1ae10c1ebb1b1">isUsingChannel</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel) const noexcept</td></tr>
+<tr class="memdesc:ae9ed806390761e70fff1ae10c1ebb1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given MIDI channel (1-16) is used by any of the <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a>'s MPE zones; false otherwise.  <a href="#ae9ed806390761e70fff1ae10c1ebb1b1">More...</a><br /></td></tr>
+<tr class="separator:ae9ed806390761e70fff1ae10c1ebb1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ffdce53374855ed114ca92004bcce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#aa8ffdce53374855ed114ca92004bcce6">setPressureTrackingMode</a> (<a class="el" href="classMPEInstrument.html#a6253ed9c5e70322645b02865c70dc0b6">TrackingMode</a> modeToUse)</td></tr>
 <tr class="memdesc:aa8ffdce53374855ed114ca92004bcce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the MPE tracking mode for the pressure dimension.  <a href="#aa8ffdce53374855ed114ca92004bcce6">More...</a><br /></td></tr>
 <tr class="separator:aa8ffdce53374855ed114ca92004bcce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a336e4c22a7aa25a76d44597455bff133"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a336e4c22a7aa25a76d44597455bff133">timbre</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel, <a class="el" href="classMPEValue.html">MPEValue</a> value)</td></tr>
 <tr class="memdesc:a336e4c22a7aa25a76d44597455bff133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a third dimension (timbre) change on the given channel with the given value.  <a href="#a336e4c22a7aa25a76d44597455bff133">More...</a><br /></td></tr>
 <tr class="separator:a336e4c22a7aa25a76d44597455bff133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9fdeebf327cf60394a343ea99583f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#acd9fdeebf327cf60394a343ea99583f2">polyAftertouch</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber, <a class="el" href="classMPEValue.html">MPEValue</a> value)</td></tr>
+<tr class="memdesc:acd9fdeebf327cf60394a343ea99583f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a poly-aftertouch change for a given note number.  <a href="#acd9fdeebf327cf60394a343ea99583f2">More...</a><br /></td></tr>
+<tr class="separator:acd9fdeebf327cf60394a343ea99583f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df080785049fc54bb48538e46d6214e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument.html#a5df080785049fc54bb48538e46d6214e">sustainPedal</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiChannel, bool isDown)</td></tr>
 <tr class="memdesc:a5df080785049fc54bb48538e46d6214e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a sustain pedal press or release.  <a href="#a5df080785049fc54bb48538e46d6214e">More...</a><br /></td></tr>
 <tr class="separator:a5df080785049fc54bb48538e46d6214e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,8 +344,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa09fa0823eb425fb8f96d6bf50297c88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa09fa0823eb425fb8f96d6bf50297c88">&#9670;&nbsp;</a></span>isMemberChannel()</h2>
+<a id="a3afe0cb9418926459a3a0f98178a3834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afe0cb9418926459a3a0f98178a3834">&#9670;&nbsp;</a></span>isMemberChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +358,7 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
           <td class="paramname"><em>midiChannel</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -393,6 +399,35 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns true if the given MIDI channel (1-16) is a master channel (channel 1 or 16). </p>
 <p>In legacy mode, this will always return false. </p>
+
+</div>
+</div>
+<a id="ae9ed806390761e70fff1ae10c1ebb1b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ed806390761e70fff1ae10c1ebb1b1">&#9670;&nbsp;</a></span>isUsingChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MPEInstrument::isUsingChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>midiChannel</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the given MIDI channel (1-16) is used by any of the <a class="el" href="classMPEInstrument.html" title="This class represents an instrument handling MPE. ">MPEInstrument</a>'s MPE zones; false otherwise. </p>
+<p>When in legacy mode, this will return true if the given channel is contained in the current legacy mode channel range; false otherwise. </p>
 
 </div>
 </div>
@@ -689,6 +724,51 @@ Protected Attributes</h2></td></tr>
 
 <p>Request a third dimension (timbre) change on the given channel with the given value. </p>
 <p>This will modify the timbre dimension of the note currently held down on this channel (if any). If the channel is a zone master channel, the timbre change will be broadcast to all notes in this zone. </p>
+
+</div>
+</div>
+<a id="acd9fdeebf327cf60394a343ea99583f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9fdeebf327cf60394a343ea99583f2">&#9670;&nbsp;</a></span>polyAftertouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MPEInstrument::polyAftertouch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>midiChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>midiNoteNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMPEValue.html">MPEValue</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request a poly-aftertouch change for a given note number. </p>
+<p>The change will be broadcast to all notes sharing the channel and note number of the change message. </p>
 
 </div>
 </div>
@@ -1186,7 +1266,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 8 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 11 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
