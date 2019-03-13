@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa906e692db79598fd1eea179376f591f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#aa906e692db79598fd1eea179376f591f">printCommandList</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;) const</td></tr>
 <tr class="memdesc:aa906e692db79598fd1eea179376f591f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the list of commands and their short descriptions in a format that's suitable for use as help.  <a href="#aa906e692db79598fd1eea179376f591f">More...</a><br /></td></tr>
 <tr class="separator:aa906e692db79598fd1eea179376f591f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6e9edbafa56894f999c2a9bef42236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a4e6e9edbafa56894f999c2a9bef42236">printCommandDetails</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;, const <a class="el" href="structConsoleApplication_1_1Command.html">Command</a> &amp;) const</td></tr>
+<tr class="memdesc:a4e6e9edbafa56894f999c2a9bef42236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out a longer description of a particular command, based on its longDescription member.  <a href="#a4e6e9edbafa56894f999c2a9bef42236">More...</a><br /></td></tr>
+<tr class="separator:a4e6e9edbafa56894f999c2a9bef42236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConsoleApplication.html#a3a2e4bef5476982abf5c4df3ac2d084e">findAndRunCommand</a> (const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;, bool optionMustBeFirstArg=false) const</td></tr>
 <tr class="memdesc:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks for the first command in the list which matches the given arguments, and tries to invoke it.  <a href="#a3a2e4bef5476982abf5c4df3ac2d084e">More...</a><br /></td></tr>
 <tr class="separator:a3a2e4bef5476982abf5c4df3ac2d084e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +248,36 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prints out the list of commands and their short descriptions in a format that's suitable for use as help. </p>
+
+</div>
+</div>
+<a id="a4e6e9edbafa56894f999c2a9bef42236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6e9edbafa56894f999c2a9bef42236">&#9670;&nbsp;</a></span>printCommandDetails()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConsoleApplication::printCommandDetails </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structArgumentList.html">ArgumentList</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structConsoleApplication_1_1Command.html">Command</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints out a longer description of a particular command, based on its longDescription member. </p>
 
 </div>
 </div>
@@ -434,7 +467,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2019 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 13 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
