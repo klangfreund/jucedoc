@@ -412,7 +412,7 @@ var searchData=
   ['setlocalconfigitemrange',['setLocalConfigItemRange',['../group__LittleFootFunctions.html#ga2e975a7ab570848e2a69ea1b1bc7acd6',1,'juce_LittleFootFunctions.dox']]],
   ['setlocalconfigrange',['setLocalConfigRange',['../classBlock.html#aae3f6dfd3df6633d9da154aea8739c6c',1,'Block']]],
   ['setlocalconfigvalue',['setLocalConfigValue',['../classBlock.html#a071f5994d0d76caf3edbe3002668d738',1,'Block']]],
-  ['setlogger',['setLogger',['../classBlock.html#ab14c53fe0485b084f129626d7d3829b0',1,'Block']]],
+  ['setlogger',['setLogger',['../classBlock.html#afb178f1029b2567e867e2a57ce9f78a7',1,'Block']]],
   ['setlogparameters',['setLogParameters',['../classdsp_1_1LogRampedValue.html#a952fc8a88b07a6e46dbb24d676a697bd',1,'dsp::LogRampedValue']]],
   ['setlookandfeel',['setLookAndFeel',['../classComponent.html#a6f2c10cd9840844a5be16e5deeef6f50',1,'Component::setLookAndFeel()'],['../classPopupMenu.html#a449653121fdc2a2b7f3e77d663266d00',1,'PopupMenu::setLookAndFeel()']]],
   ['setlooping',['setLooping',['../classPositionableAudioSource.html#a8fba6ce7ef75cfc66c3176a37cda3ba9',1,'PositionableAudioSource::setLooping()'],['../classAudioFormatReaderSource.html#a15d8af211ce8cfcbc0c4aaac143b303e',1,'AudioFormatReaderSource::setLooping()']]],

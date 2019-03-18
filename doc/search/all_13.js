@@ -69,7 +69,7 @@ var searchData=
   ['texteditorreturnkeypressed',['textEditorReturnKeyPressed',['../classLabel.html#a6dbf00eb577fc65595068d23985af112',1,'Label::textEditorReturnKeyPressed()'],['../classTextEditor_1_1Listener.html#a77e21f1f397b50355221f8fff152958f',1,'TextEditor::Listener::textEditorReturnKeyPressed()']]],
   ['texteditortextchanged',['textEditorTextChanged',['../classLabel.html#af019563a1e06485cee9b947867de7d73',1,'Label::textEditorTextChanged()'],['../classTextEditor_1_1Listener.html#a17ec33c8bc4e83799f0edbfc559c761c',1,'TextEditor::Listener::textEditorTextChanged()']]],
   ['textentryboxposition',['TextEntryBoxPosition',['../classSlider.html#ab6d7dff67151c029b9cb53fc40b4412f',1,'Slider']]],
-  ['textfromvaluefunction',['textFromValueFunction',['../classSlider.html#adb57f6910241e21118926bfe87a1fa31',1,'Slider']]],
+  ['textfromvaluefunction',['textFromValueFunction',['../classSlider.html#ae60f7bf210c9323ee1271250c279ef27',1,'Slider']]],
   ['textinputbuttontext',['textInputButtonText',['../structPushNotifications_1_1Notification_1_1Action.html#ae8be86ce493f4465fe7ff2013e55586e',1,'PushNotifications::Notification::Action']]],
   ['textinputplaceholder',['textInputPlaceholder',['../structPushNotifications_1_1Notification_1_1Action.html#ac85dd12f5977d5294bd0f95ff737c740',1,'PushNotifications::Notification::Action']]],
   ['textinputrequired',['textInputRequired',['../classComponentPeer.html#a090d949af873ace3f79ab5ed4183b7d1',1,'ComponentPeer']]],

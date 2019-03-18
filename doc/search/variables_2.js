@@ -54,7 +54,7 @@ var searchData=
   ['currentmodifiers',['currentModifiers',['../classModifierKeys.html#ae15cb452a97164e1b857086a1405942f',1,'ModifierKeys']]],
   ['currentsamplerate',['currentSampleRate',['../classMPESynthesiserVoice.html#a9310a73a44408ab65dfb9b875917c354',1,'MPESynthesiserVoice']]],
   ['currentvalue',['currentValue',['../classSmoothedValueBase.html#a89801c30d19e4a627976d49f43c0a97e',1,'SmoothedValueBase']]],
-  ['curve',['curve',['../structAudioProcessor_1_1CurveData.html#a8edaae39cd3055757bf7698a8049c3db',1,'AudioProcessor::CurveData']]],
+  ['curve',['curve',['../structAudioProcessor_1_1CurveData.html#a561e43079b306c3f94a243f72f47ef35',1,'AudioProcessor::CurveData']]],
   ['customcallback',['customCallback',['../structPopupMenu_1_1Item.html#aa38826c9b08d9c8c4e8ad2f8da46fec8',1,'PopupMenu::Item']]],
   ['customcomponent',['customComponent',['../structPopupMenu_1_1Item.html#a60e8c61225a127bf37c46144c03689f6',1,'PopupMenu::Item']]],
   ['cyan',['cyan',['../classColours.html#a0f35bbd00d593e18a4e980100e77373c',1,'Colours']]]

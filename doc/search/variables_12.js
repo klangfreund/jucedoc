@@ -13,7 +13,7 @@ var searchData=
   ['tempo',['tempo',['../classCoreAudioFormat.html#a0b50e5a99a47c7c0af11092fd9e5fe7e',1,'CoreAudioFormat']]],
   ['text',['text',['../structArgumentList_1_1Argument.html#ae3bd787d43dc52e17d3777959dee69cc',1,'ArgumentList::Argument::text()'],['../classStringRef.html#a6a1889712d28a2d8725890b04e8bc020',1,'StringRef::text()'],['../structPopupMenu_1_1Item.html#a7d572d3e01e0302b9508337d69d87980',1,'PopupMenu::Item::text()'],['../structComponentPeer_1_1DragInfo.html#a9ef783609b4ae2ca44735a734759ccab',1,'ComponentPeer::DragInfo::text()']]],
   ['textboxbounds',['textBoxBounds',['../structSlider_1_1SliderLayout.html#ac5d776afbb9146ffd43a15f48aedaf24',1,'Slider::SliderLayout']]],
-  ['textfromvaluefunction',['textFromValueFunction',['../classSlider.html#adb57f6910241e21118926bfe87a1fa31',1,'Slider']]],
+  ['textfromvaluefunction',['textFromValueFunction',['../classSlider.html#ae60f7bf210c9323ee1271250c279ef27',1,'Slider']]],
   ['textinputbuttontext',['textInputButtonText',['../structPushNotifications_1_1Notification_1_1Action.html#ae8be86ce493f4465fe7ff2013e55586e',1,'PushNotifications::Notification::Action']]],
   ['textinputplaceholder',['textInputPlaceholder',['../structPushNotifications_1_1Notification_1_1Action.html#ac85dd12f5977d5294bd0f95ff737c740',1,'PushNotifications::Notification::Action']]],
   ['thisobject',['thisObject',['../structvar_1_1NativeFunctionArgs.html#a6f091ea39e2ba3b25268cad75f8d7f3e',1,'var::NativeFunctionArgs']]],

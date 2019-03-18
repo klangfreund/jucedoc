@@ -38,7 +38,7 @@ var searchData=
   ['handlemenubaractivate',['handleMenuBarActivate',['../classMenuBarModel.html#a982d30b7dc660bfd7f092a33bb54c063',1,'MenuBarModel']]],
   ['handlemenuresult',['handleMenuResult',['../classStandaloneFilterWindow.html#a0f873019785295f0726bbd4ee64efc86',1,'StandaloneFilterWindow']]],
   ['handlemessage',['handleMessage',['../classMessageListener.html#a5174ef8bd8b5faedf4d7b96d1fd8eaf1',1,'MessageListener::handleMessage()'],['../group__LittleFootFunctions.html#ga8a03e45861c3a925e626fdcbd8f4ec8f',1,'handleMessage():&#160;juce_LittleFootFunctions.dox']]],
-  ['handlemessagefromdevice',['handleMessageFromDevice',['../structPhysicalTopologySource_1_1DeviceConnection.html#a2ce59400d3693dba6704feb9b9588822',1,'PhysicalTopologySource::DeviceConnection']]],
+  ['handlemessagefromdevice',['handleMessageFromDevice',['../structPhysicalTopologySource_1_1DeviceConnection.html#ae57a79bca8ad492d4a9a268bbd797923',1,'PhysicalTopologySource::DeviceConnection']]],
   ['handlemessagefrommaster',['handleMessageFromMaster',['../classChildProcessSlave.html#ad75b9b600fa0877fc60c3013810b4713',1,'ChildProcessSlave']]],
   ['handlemessagefromslave',['handleMessageFromSlave',['../classChildProcessMaster.html#a5edab8b373fc85da57a6367c797cc3a7',1,'ChildProcessMaster']]],
   ['handlemidi',['handleMIDI',['../group__LittleFootFunctions.html#gacc643c94cef427e7463bfa78d4740531',1,'juce_LittleFootFunctions.dox']]],
