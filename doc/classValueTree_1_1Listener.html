@@ -66,7 +66,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classValueTree_1_1Listener-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ValueTree::Listener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__juce__data__structures.html">juce_data_structures</a> &raquo; <a class="el" href="group__juce__data__structures-values.html">values</a></div></div>  </div>
+<div class="title">ValueTree::Listener Class Reference<div class="ingroups"><a class="el" href="group__juce__data__structures.html">juce_data_structures</a> &raquo; <a class="el" href="group__juce__data__structures-values.html">values</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -84,21 +84,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1901cc26d21c73d78c7f0c60ad27a2f6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#a1901cc26d21c73d78c7f0c60ad27a2f6">~Listener</a> ()=default</td></tr>
 <tr class="memdesc:a1901cc26d21c73d78c7f0c60ad27a2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a1901cc26d21c73d78c7f0c60ad27a2f6">More...</a><br /></td></tr>
 <tr class="separator:a1901cc26d21c73d78c7f0c60ad27a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea6d5afc919eab727e0bdb6668f4a245"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#aea6d5afc919eab727e0bdb6668f4a245">valueTreePropertyChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;treeWhosePropertyHasChanged, const <a class="el" href="classIdentifier.html">Identifier</a> &amp;property)=0</td></tr>
-<tr class="memdesc:aea6d5afc919eab727e0bdb6668f4a245"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a property of this tree (or of one of its sub-trees) is changed.  <a href="#aea6d5afc919eab727e0bdb6668f4a245">More...</a><br /></td></tr>
-<tr class="separator:aea6d5afc919eab727e0bdb6668f4a245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd937fd4a9a57124ff6c68bd49ce9b67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#abd937fd4a9a57124ff6c68bd49ce9b67">valueTreeChildAdded</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTree, <a class="el" href="classValueTree.html">ValueTree</a> &amp;childWhichHasBeenAdded)=0</td></tr>
-<tr class="memdesc:abd937fd4a9a57124ff6c68bd49ce9b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a child sub-tree is added.  <a href="#abd937fd4a9a57124ff6c68bd49ce9b67">More...</a><br /></td></tr>
-<tr class="separator:abd937fd4a9a57124ff6c68bd49ce9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af398254dea149b4cce8b4dd77f0f9f50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#af398254dea149b4cce8b4dd77f0f9f50">valueTreeChildRemoved</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTree, <a class="el" href="classValueTree.html">ValueTree</a> &amp;childWhichHasBeenRemoved, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexFromWhichChildWasRemoved)=0</td></tr>
-<tr class="memdesc:af398254dea149b4cce8b4dd77f0f9f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a child sub-tree is removed.  <a href="#af398254dea149b4cce8b4dd77f0f9f50">More...</a><br /></td></tr>
-<tr class="separator:af398254dea149b4cce8b4dd77f0f9f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0926793951c23e37218ff7a88f97680"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#aa0926793951c23e37218ff7a88f97680">valueTreeChildOrderChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTreeWhoseChildrenHaveMoved, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> oldIndex, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> newIndex)=0</td></tr>
-<tr class="memdesc:aa0926793951c23e37218ff7a88f97680"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a tree's children have been re-shuffled.  <a href="#aa0926793951c23e37218ff7a88f97680">More...</a><br /></td></tr>
-<tr class="separator:aa0926793951c23e37218ff7a88f97680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597ebac03d1095a618843fdcc3573b21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#a597ebac03d1095a618843fdcc3573b21">valueTreeParentChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;treeWhoseParentHasChanged)=0</td></tr>
-<tr class="memdesc:a597ebac03d1095a618843fdcc3573b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a tree has been added or removed from a parent.  <a href="#a597ebac03d1095a618843fdcc3573b21">More...</a><br /></td></tr>
-<tr class="separator:a597ebac03d1095a618843fdcc3573b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fcd0745eeccf83b42094e37cdb0863"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#a79fcd0745eeccf83b42094e37cdb0863">valueTreePropertyChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;treeWhosePropertyHasChanged, const <a class="el" href="classIdentifier.html">Identifier</a> &amp;property)</td></tr>
+<tr class="memdesc:a79fcd0745eeccf83b42094e37cdb0863"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a property of this tree (or of one of its sub-trees) is changed.  <a href="#a79fcd0745eeccf83b42094e37cdb0863">More...</a><br /></td></tr>
+<tr class="separator:a79fcd0745eeccf83b42094e37cdb0863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ef73962143a77d702907bac59dff20"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#ac0ef73962143a77d702907bac59dff20">valueTreeChildAdded</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTree, <a class="el" href="classValueTree.html">ValueTree</a> &amp;childWhichHasBeenAdded)</td></tr>
+<tr class="memdesc:ac0ef73962143a77d702907bac59dff20"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a child sub-tree is added.  <a href="#ac0ef73962143a77d702907bac59dff20">More...</a><br /></td></tr>
+<tr class="separator:ac0ef73962143a77d702907bac59dff20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63a00b457f6cd9ed01110d2fc509769"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#ab63a00b457f6cd9ed01110d2fc509769">valueTreeChildRemoved</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTree, <a class="el" href="classValueTree.html">ValueTree</a> &amp;childWhichHasBeenRemoved, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexFromWhichChildWasRemoved)</td></tr>
+<tr class="memdesc:ab63a00b457f6cd9ed01110d2fc509769"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a child sub-tree is removed.  <a href="#ab63a00b457f6cd9ed01110d2fc509769">More...</a><br /></td></tr>
+<tr class="separator:ab63a00b457f6cd9ed01110d2fc509769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab064fffff45f6351065bc4a65ccd09d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#ab064fffff45f6351065bc4a65ccd09d4">valueTreeChildOrderChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;parentTreeWhoseChildrenHaveMoved, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> oldIndex, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> newIndex)</td></tr>
+<tr class="memdesc:ab064fffff45f6351065bc4a65ccd09d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a tree's children have been re-shuffled.  <a href="#ab064fffff45f6351065bc4a65ccd09d4">More...</a><br /></td></tr>
+<tr class="separator:ab064fffff45f6351065bc4a65ccd09d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1609838aa5cf4563f71897b1ba25d0c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#a1609838aa5cf4563f71897b1ba25d0c2">valueTreeParentChanged</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;treeWhoseParentHasChanged)</td></tr>
+<tr class="memdesc:a1609838aa5cf4563f71897b1ba25d0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a tree has been added or removed from a parent.  <a href="#a1609838aa5cf4563f71897b1ba25d0c2">More...</a><br /></td></tr>
+<tr class="separator:a1609838aa5cf4563f71897b1ba25d0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe714c55225f9f814801f875e5d41ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree_1_1Listener.html#a0fe714c55225f9f814801f875e5d41ca">valueTreeRedirected</a> (<a class="el" href="classValueTree.html">ValueTree</a> &amp;treeWhichHasBeenChanged)</td></tr>
 <tr class="memdesc:a0fe714c55225f9f814801f875e5d41ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when a tree is made to point to a different internal shared object.  <a href="#a0fe714c55225f9f814801f875e5d41ca">More...</a><br /></td></tr>
 <tr class="separator:a0fe714c55225f9f814801f875e5d41ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,8 +135,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aea6d5afc919eab727e0bdb6668f4a245"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea6d5afc919eab727e0bdb6668f4a245">&#9670;&nbsp;</a></span>valueTreePropertyChanged()</h2>
+<a id="a79fcd0745eeccf83b42094e37cdb0863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fcd0745eeccf83b42094e37cdb0863">&#9670;&nbsp;</a></span>valueTreePropertyChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -176,8 +176,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abd937fd4a9a57124ff6c68bd49ce9b67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd937fd4a9a57124ff6c68bd49ce9b67">&#9670;&nbsp;</a></span>valueTreeChildAdded()</h2>
+<a id="ac0ef73962143a77d702907bac59dff20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ef73962143a77d702907bac59dff20">&#9670;&nbsp;</a></span>valueTreeChildAdded()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -217,8 +217,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af398254dea149b4cce8b4dd77f0f9f50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af398254dea149b4cce8b4dd77f0f9f50">&#9670;&nbsp;</a></span>valueTreeChildRemoved()</h2>
+<a id="ab63a00b457f6cd9ed01110d2fc509769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63a00b457f6cd9ed01110d2fc509769">&#9670;&nbsp;</a></span>valueTreeChildRemoved()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -264,8 +264,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0926793951c23e37218ff7a88f97680"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0926793951c23e37218ff7a88f97680">&#9670;&nbsp;</a></span>valueTreeChildOrderChanged()</h2>
+<a id="ab064fffff45f6351065bc4a65ccd09d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab064fffff45f6351065bc4a65ccd09d4">&#9670;&nbsp;</a></span>valueTreeChildOrderChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +299,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -311,8 +311,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a597ebac03d1095a618843fdcc3573b21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597ebac03d1095a618843fdcc3573b21">&#9670;&nbsp;</a></span>valueTreeParentChanged()</h2>
+<a id="a1609838aa5cf4563f71897b1ba25d0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1609838aa5cf4563f71897b1ba25d0c2">&#9670;&nbsp;</a></span>valueTreeParentChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,15 +330,13 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>This method is called when a tree has been added or removed from a parent. </p>
 <p>This callback happens when the tree to which the listener was registered is added or removed from a parent. Unlike the other callbacks, it applies only to the tree to which the listener is registered, and not to any of its children. </p>
-
-<p class="reference">Referenced by <a class="el" href="classValueTreeSynchroniser.html#ac1ec42c492653823573c25f6892764e9">ValueTreeSynchroniser::getRoot()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +375,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 20 2019 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 22 2019 20:00:47 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
