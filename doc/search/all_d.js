@@ -117,7 +117,7 @@ var searchData=
   ['numchars',['numChars',['../structCppTokeniserFunctions_1_1StringIterator.html#a87c5f347ec1afcfa2594b15892002c99',1,'CppTokeniserFunctions::StringIterator']]],
   ['numcolours',['numColours',['../classLookAndFeel__V4_1_1ColourScheme.html#a3a0b01b5a192545b3692ed288597b2f4a6c765ee004cf9073d5414a7b7244cdcb',1,'LookAndFeel_V4::ColourScheme']]],
   ['numconfigitems',['numConfigItems',['../structBlockConfigManager.html#a42ceb197a7a1466f1b9e1105699665d5',1,'BlockConfigManager']]],
-  ['numelementsinarray',['numElementsInArray',['../group__juce__core-maths.html#ga53205e331c49a67a9a7af0710d44d65e',1,'juce_MathsFunctions.h']]],
+  ['numelementsinarray',['numElementsInArray',['../group__juce__core-maths.html#ga895144648115e7a081979e24742f049f',1,'juce_MathsFunctions.h']]],
   ['numeric',['numeric',['../group__juce__audio__plugin__client-Unity.html#gga485dc2a0e5ed7da3d9f826367b36ee55a1b5484703e716389553255e6f11f12ec',1,'juce_UnityPluginInterface.h']]],
   ['numerickeyboard',['numericKeyboard',['../classTextInputTarget.html#a097550317e3bf2aee470a20540b9edc7ad6a4c6dad692fe4625b23d7ff5a7a5af',1,'TextInputTarget']]],
   ['numerictype',['NumericType',['../classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5',1,'dsp::AudioBlock::NumericType()'],['../classdsp_1_1FIR_1_1Filter.html#a8c3bd0d2b3fccb19734072b42d929a76',1,'dsp::FIR::Filter::NumericType()'],['../classdsp_1_1IIR_1_1Filter.html#af592517ba8afbb6534dd645e37756101',1,'dsp::IIR::Filter::NumericType()'],['../classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858',1,'dsp::Oscillator::NumericType()'],['../classdsp_1_1StateVariableFilter_1_1Filter.html#aaeb54a3b0b57c6edd7ea6d7abe354b59',1,'dsp::StateVariableFilter::Filter::NumericType()']]],
