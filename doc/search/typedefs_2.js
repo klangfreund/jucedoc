@@ -12,6 +12,7 @@ var searchData=
   ['configtype',['ConfigType',['../group__juce__blocks__basics-blocks.html#ga21d61b9c240b6905340a587481687b0c',1,'juce_BlockConfigManager.h']]],
   ['connectioncount',['ConnectionCount',['../namespaceBlocksProtocol.html#a25b483d5847443ad588bef58db3390f7',1,'BlocksProtocol']]],
   ['connectorport',['ConnectorPort',['../namespaceBlocksProtocol.html#a1db5e098ab83aadeae6a82a25ed9efc8',1,'BlocksProtocol']]],
+  ['constaudioblocktype',['ConstAudioBlockType',['../structdsp_1_1ProcessContextReplacing.html#a6ceaf683f54a0f6525eb54c25fcb1229',1,'dsp::ProcessContextReplacing::ConstAudioBlockType()'],['../structdsp_1_1ProcessContextNonReplacing.html#ab5199855482499bfebaa717db5fdde79',1,'dsp::ProcessContextNonReplacing::ConstAudioBlockType()']]],
   ['controlbuttonid',['ControlButtonID',['../namespaceBlocksProtocol.html#ae36e05b552d9e30a5c1fb64be8a772c7',1,'BlocksProtocol']]],
   ['crashhandlerfunction',['CrashHandlerFunction',['../classSystemStats.html#a28e1ceacc13ea4e10e5a076f581b8c95',1,'SystemStats']]]
 ];

@@ -142,7 +142,7 @@ var searchData=
   ['trimend',['trimEnd',['../classString.html#aa74ae5b119d258519dd8bd63a782f57c',1,'String']]],
   ['trimfilesize',['trimFileSize',['../classFileLogger.html#a0224c141681c9fd2ec850aed189b65f8',1,'FileLogger']]],
   ['trimstart',['trimStart',['../classString.html#adacac4546de25130e1ed32f8bb99c608',1,'String']]],
-  ['truncate',['truncate',['../classFileOutputStream.html#a663c7e264306c74ed58f2639acec5797',1,'FileOutputStream']]],
+  ['truncate',['truncate',['../classFileOutputStream.html#a663c7e264306c74ed58f2639acec5797',1,'FileOutputStream::truncate()'],['../structdsp_1_1SIMDRegister.html#a039ac83d0de101f79ba0096decf84d63',1,'dsp::SIMDRegister::truncate()']]],
   ['truncatepositivetounsignedint',['truncatePositiveToUnsignedInt',['../group__juce__core-maths.html#ga39f99e3d469c913c7e6d7f42ba5af746',1,'juce_MathsFunctions.h']]],
   ['tryenter',['tryEnter',['../classCriticalSection.html#a2c12101da7ebf8455de49652f377d313',1,'CriticalSection::tryEnter()'],['../classDummyCriticalSection.html#a55f19ff3a0b0f91a1d025939d1c03a3c',1,'DummyCriticalSection::tryEnter()'],['../classSpinLock.html#a4581a24b50dad1a9803b19f65af70aaf',1,'SpinLock::tryEnter()'],['../classMessageManager_1_1Lock.html#a6f6f36cab30fcd814ee47000ed8496f2',1,'MessageManager::Lock::tryEnter()']]],
   ['tryenterread',['tryEnterRead',['../classReadWriteLock.html#adfc94e3cea69acf123d343eca82bdc51',1,'ReadWriteLock']]],

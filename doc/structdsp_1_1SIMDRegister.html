@@ -277,6 +277,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0beedbbde3858bd03eae1a3297aae1df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1SIMDRegister.html#a0beedbbde3858bd03eae1a3297aae1df">multiplyAdd</a> (<a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> a, const <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> b, <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> c) noexcept</td></tr>
 <tr class="memdesc:a0beedbbde3858bd03eae1a3297aae1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies b and c and adds the result to a.  <a href="#a0beedbbde3858bd03eae1a3297aae1df">More...</a><br /></td></tr>
 <tr class="separator:a0beedbbde3858bd03eae1a3297aae1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039ac83d0de101f79ba0096decf84d63"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1SIMDRegister.html#a039ac83d0de101f79ba0096decf84d63">truncate</a> (<a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> a) noexcept</td></tr>
+<tr class="memdesc:a039ac83d0de101f79ba0096decf84d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncates each element to its integer part.  <a href="#a039ac83d0de101f79ba0096decf84d63">More...</a><br /></td></tr>
+<tr class="separator:a039ac83d0de101f79ba0096decf84d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d6738292d3b7bc4d2ce81bdcb88136a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1SIMDRegister.html#a8d6738292d3b7bc4d2ce81bdcb88136a">abs</a> (<a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> a) noexcept</td></tr>
 <tr class="memdesc:a8d6738292d3b7bc4d2ce81bdcb88136a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute value of each element.  <a href="#a8d6738292d3b7bc4d2ce81bdcb88136a">More...</a><br /></td></tr>
 <tr class="separator:a8d6738292d3b7bc4d2ce81bdcb88136a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2213,6 +2216,37 @@ template&lt;typename Type&gt; </div>
 
 </div>
 </div>
+<a id="a039ac83d0de101f79ba0096decf84d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039ac83d0de101f79ba0096decf84d63">&#9670;&nbsp;</a></span>truncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a> JUCE_VECTOR_CALLTYPE <a class="el" href="structdsp_1_1SIMDRegister.html">dsp::SIMDRegister</a>&lt; Type &gt;::truncate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdsp_1_1SIMDRegister.html">SIMDRegister</a>&lt; Type &gt;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Truncates each element to its integer part. </p>
+<p>Effectively discards the fractional part of each element. A.k.a. round to zero. </p>
+
+</div>
+</div>
 <a id="a8d6738292d3b7bc4d2ce81bdcb88136a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d6738292d3b7bc4d2ce81bdcb88136a">&#9670;&nbsp;</a></span>abs()</h2>
 
@@ -2387,7 +2421,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 25 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

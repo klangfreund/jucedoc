@@ -301,6 +301,7 @@ var searchData=
   ['attributedstring',['AttributedString',['../classAttributedString.html',1,'']]],
   ['audioappcomponent',['AudioAppComponent',['../classAudioAppComponent.html',1,'']]],
   ['audioblock',['AudioBlock',['../classdsp_1_1AudioBlock.html',1,'dsp']]],
+  ['audioblock_3c_20const_20sampletype_20_3e',['AudioBlock&lt; const SampleType &gt;',['../classdsp_1_1AudioBlock.html',1,'dsp']]],
   ['audioblock_3c_20float_20_3e',['AudioBlock&lt; float &gt;',['../classdsp_1_1AudioBlock.html',1,'dsp']]],
   ['audiobuffer',['AudioBuffer',['../classAudioBuffer.html',1,'']]],
   ['audiobuffer_3c_20double_20_3e',['AudioBuffer&lt; double &gt;',['../classAudioBuffer.html',1,'']]],

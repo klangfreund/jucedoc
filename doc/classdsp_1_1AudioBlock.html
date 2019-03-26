@@ -94,20 +94,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84ba49c0e8ba6c5e0081aa40848999f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a84ba49c0e8ba6c5e0081aa40848999f2">AudioBlock</a> (<a class="el" href="classHeapBlock.html">HeapBlock</a>&lt; char &gt; &amp;heapBlockToUseForAllocation, size_t numberOfChannels, size_t numberOfSamples, size_t alignmentInBytes=defaultAlignment) noexcept</td></tr>
 <tr class="memdesc:a84ba49c0e8ba6c5e0081aa40848999f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a suitable amount of space in a <a class="el" href="classHeapBlock.html" title="Very simple container class to hold a pointer to some data on the heap. ">HeapBlock</a>, and initialises this object to point into it.  <a href="#a84ba49c0e8ba6c5e0081aa40848999f2">More...</a><br /></td></tr>
 <tr class="separator:a84ba49c0e8ba6c5e0081aa40848999f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b2382b00e97e30474430fad6acadbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a50b2382b00e97e30474430fad6acadbf">AudioBlock</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; SampleType &gt; &amp;buffer) noexcept</td></tr>
-<tr class="memdesc:a50b2382b00e97e30474430fad6acadbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> that points to the data in an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a>.  <a href="#a50b2382b00e97e30474430fad6acadbf">More...</a><br /></td></tr>
-<tr class="separator:a50b2382b00e97e30474430fad6acadbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaabcc4835be49c973bca33e8ddce444"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#adaabcc4835be49c973bca33e8ddce444">AudioBlock</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; SampleType &gt; &amp;buffer, size_t startSampleIndex) noexcept</td></tr>
-<tr class="memdesc:adaabcc4835be49c973bca33e8ddce444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> that points to the data in an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a>.  <a href="#adaabcc4835be49c973bca33e8ddce444">More...</a><br /></td></tr>
-<tr class="separator:adaabcc4835be49c973bca33e8ddce444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25537d3b9c9a60df526a4db40a284181"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a25537d3b9c9a60df526a4db40a284181"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a25537d3b9c9a60df526a4db40a284181">AudioBlock</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherSampleType &gt; &amp;buffer) noexcept</td></tr>
+<tr class="memdesc:a25537d3b9c9a60df526a4db40a284181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> that points to the data in an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a>.  <a href="#a25537d3b9c9a60df526a4db40a284181">More...</a><br /></td></tr>
+<tr class="separator:a25537d3b9c9a60df526a4db40a284181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc45f5ffaaeb5feb38a390fc5c51abd"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a2fc45f5ffaaeb5feb38a390fc5c51abd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a2fc45f5ffaaeb5feb38a390fc5c51abd">AudioBlock</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherSampleType &gt; &amp;buffer, size_t startSampleIndex) noexcept</td></tr>
+<tr class="memdesc:a2fc45f5ffaaeb5feb38a390fc5c51abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> that points to the data in an <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a>.  <a href="#a2fc45f5ffaaeb5feb38a390fc5c51abd">More...</a><br /></td></tr>
+<tr class="separator:a2fc45f5ffaaeb5feb38a390fc5c51abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb86512c11e1c3b1841afd42777ef136"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#adb86512c11e1c3b1841afd42777ef136">AudioBlock</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) noexcept=default</td></tr>
 <tr class="separator:adb86512c11e1c3b1841afd42777ef136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376c387ce41cf60b408a98db563fa59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a376c387ce41cf60b408a98db563fa59d">operator=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) noexcept=default</td></tr>
 <tr class="separator:a376c387ce41cf60b408a98db563fa59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa4111a4172494db0aca7a95843470a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aaaa4111a4172494db0aca7a95843470a">operator==</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) const noexcept</td></tr>
-<tr class="separator:aaaa4111a4172494db0aca7a95843470a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ea3d9aa670c6df8b2ed954441f9170"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#af0ea3d9aa670c6df8b2ed954441f9170">operator!=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) const noexcept</td></tr>
-<tr class="separator:af0ea3d9aa670c6df8b2ed954441f9170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cb8278be7a9a0b8ff3e8109c9b9c65"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType , MayUseConvertingConstructor&lt; OtherSampleType &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a76cb8278be7a9a0b8ff3e8109c9b9c65"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a76cb8278be7a9a0b8ff3e8109c9b9c65">AudioBlock</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;other) noexcept</td></tr>
+<tr class="separator:a76cb8278be7a9a0b8ff3e8109c9b9c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff920e0b4702f4622dd152547160ebd9"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType , MayUseConvertingConstructor&lt; OtherSampleType &gt;  = 0&gt; </td></tr>
+<tr class="memitem:aff920e0b4702f4622dd152547160ebd9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aff920e0b4702f4622dd152547160ebd9">operator=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;other) noexcept</td></tr>
+<tr class="separator:aff920e0b4702f4622dd152547160ebd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76afcc4dd2d272acdfb60a4590846404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a76afcc4dd2d272acdfb60a4590846404">swap</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a76afcc4dd2d272acdfb60a4590846404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d32ec57830068371a8c4304c786a99c"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a2d32ec57830068371a8c4304c786a99c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a2d32ec57830068371a8c4304c786a99c">operator==</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;other) const noexcept</td></tr>
+<tr class="separator:a2d32ec57830068371a8c4304c786a99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade28fcd2210908da75abc0b0fd23d166"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:ade28fcd2210908da75abc0b0fd23d166"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ade28fcd2210908da75abc0b0fd23d166">operator!=</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;other) const noexcept</td></tr>
+<tr class="separator:ade28fcd2210908da75abc0b0fd23d166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acca4222a334f48a9b17133f6bba04d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#acca4222a334f48a9b17133f6bba04d30">getNumSamples</a> () const noexcept</td></tr>
 <tr class="separator:acca4222a334f48a9b17133f6bba04d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeccd978b8ddcf2e497d021b3c5dd434b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aeccd978b8ddcf2e497d021b3c5dd434b">getNumChannels</a> () const noexcept</td></tr>
@@ -139,16 +151,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac59dbefa76e89c9978eaed9d164a2f53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ac59dbefa76e89c9978eaed9d164a2f53">fill</a> (SampleType value) noexcept</td></tr>
 <tr class="memdesc:ac59dbefa76e89c9978eaed9d164a2f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill memory with value.  <a href="#ac59dbefa76e89c9978eaed9d164a2f53">More...</a><br /></td></tr>
 <tr class="separator:ac59dbefa76e89c9978eaed9d164a2f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa0b8cb8085a138632db5c8424dd8cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a4fa0b8cb8085a138632db5c8424dd8cc">copy</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a4fa0b8cb8085a138632db5c8424dd8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the values in src to the receiver.  <a href="#a4fa0b8cb8085a138632db5c8424dd8cc">More...</a><br /></td></tr>
-<tr class="separator:a4fa0b8cb8085a138632db5c8424dd8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc1f88ff269dcdd2de5ebbd6d522b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a9fc1f88ff269dcdd2de5ebbd6d522b0d">copyFrom</a> (const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; <a class="el" href="classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5">NumericType</a> &gt; &amp;src, size_t srcPos=0, size_t dstPos=0, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>())</td></tr>
+<tr class="memitem:a531ced9b5ffbcca8ea912d05d7b0c3aa"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a531ced9b5ffbcca8ea912d05d7b0c3aa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a531ced9b5ffbcca8ea912d05d7b0c3aa">copy</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;src) noexcept</td></tr>
+<tr class="memdesc:a531ced9b5ffbcca8ea912d05d7b0c3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the values in src to the receiver.  <a href="#a531ced9b5ffbcca8ea912d05d7b0c3aa">More...</a><br /></td></tr>
+<tr class="separator:a531ced9b5ffbcca8ea912d05d7b0c3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc1f88ff269dcdd2de5ebbd6d522b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a9fc1f88ff269dcdd2de5ebbd6d522b0d">copyFrom</a> (const <a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; <a class="el" href="classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5">NumericType</a> &gt; &amp;src, size_t srcPos=0, size_t dstPos=0, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>())</td></tr>
 <tr class="memdesc:a9fc1f88ff269dcdd2de5ebbd6d522b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the values from a JUCE's <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a> to the receiver.  <a href="#a9fc1f88ff269dcdd2de5ebbd6d522b0d">More...</a><br /></td></tr>
 <tr class="separator:a9fc1f88ff269dcdd2de5ebbd6d522b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a6e673978965a11b45547ae5631163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a03a6e673978965a11b45547ae5631163">copyTo</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; <a class="el" href="classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5">NumericType</a> &gt; &amp;dst, size_t srcPos=0, size_t dstPos=0, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>()) const</td></tr>
+<tr class="memitem:a03a6e673978965a11b45547ae5631163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a03a6e673978965a11b45547ae5631163">copyTo</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; <a class="el" href="classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5">NumericType</a> &gt; &amp;dst, size_t srcPos=0, size_t dstPos=0, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>()) const</td></tr>
 <tr class="memdesc:a03a6e673978965a11b45547ae5631163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the values from the receiver to a JUCE's <a class="el" href="classAudioBuffer.html" title="A multi-channel buffer containing floating point audio samples. ">AudioBuffer</a>.  <a href="#a03a6e673978965a11b45547ae5631163">More...</a><br /></td></tr>
 <tr class="separator:a03a6e673978965a11b45547ae5631163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d117a38054cbf377255b665168998e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a4d117a38054cbf377255b665168998e8">move</a> (size_t srcPos, size_t dstPos, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>()) noexcept</td></tr>
+<tr class="memitem:a4d117a38054cbf377255b665168998e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a4d117a38054cbf377255b665168998e8">move</a> (size_t srcPos, size_t dstPos, size_t numElements=std::numeric_limits&lt; size_t &gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>()) noexcept</td></tr>
 <tr class="memdesc:a4d117a38054cbf377255b665168998e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move memory within the receiver from the position srcPos to the position dstPos.  <a href="#a4d117a38054cbf377255b665168998e8">More...</a><br /></td></tr>
 <tr class="separator:a4d117a38054cbf377255b665168998e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299c2ac84fd87eef264aa0f0d39cc426"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a299c2ac84fd87eef264aa0f0d39cc426">getSubBlock</a> (size_t newOffset, size_t newLength) const noexcept</td></tr>
@@ -160,68 +173,83 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08c73d18436b15eb645deac0f37477f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a08c73d18436b15eb645deac0f37477f9">add</a> (SampleType value) noexcept</td></tr>
 <tr class="memdesc:a08c73d18436b15eb645deac0f37477f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a fixed value to the receiver.  <a href="#a08c73d18436b15eb645deac0f37477f9">More...</a><br /></td></tr>
 <tr class="separator:a08c73d18436b15eb645deac0f37477f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866e39f0220be1e6dcc2fdba498efdae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a866e39f0220be1e6dcc2fdba498efdae">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a866e39f0220be1e6dcc2fdba498efdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the source values to the receiver.  <a href="#a866e39f0220be1e6dcc2fdba498efdae">More...</a><br /></td></tr>
-<tr class="separator:a866e39f0220be1e6dcc2fdba498efdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1313b6b5086d40c92f89e0ecd1f8870b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a1313b6b5086d40c92f89e0ecd1f8870b">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, SampleType value) noexcept</td></tr>
-<tr class="memdesc:a1313b6b5086d40c92f89e0ecd1f8870b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a fixed value to each source value and stores it in the destination array of the receiver.  <a href="#a1313b6b5086d40c92f89e0ecd1f8870b">More...</a><br /></td></tr>
-<tr class="separator:a1313b6b5086d40c92f89e0ecd1f8870b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44a9fb60aafec760e213cc566cc7c3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ad44a9fb60aafec760e213cc566cc7c3a">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:ad44a9fb60aafec760e213cc566cc7c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds each source1 value to the corresponding source2 value and stores it in the destination array of the receiver.  <a href="#ad44a9fb60aafec760e213cc566cc7c3a">More...</a><br /></td></tr>
-<tr class="separator:ad44a9fb60aafec760e213cc566cc7c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83325706bc97edf0833f7a11b54b0283"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a83325706bc97edf0833f7a11b54b0283"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a83325706bc97edf0833f7a11b54b0283">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src) noexcept</td></tr>
+<tr class="memdesc:a83325706bc97edf0833f7a11b54b0283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the source values to the receiver.  <a href="#a83325706bc97edf0833f7a11b54b0283">More...</a><br /></td></tr>
+<tr class="separator:a83325706bc97edf0833f7a11b54b0283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7135fef05068d3414e07574f9fb7c2"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a8f7135fef05068d3414e07574f9fb7c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a8f7135fef05068d3414e07574f9fb7c2">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src, SampleType value) noexcept</td></tr>
+<tr class="memdesc:a8f7135fef05068d3414e07574f9fb7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a fixed value to each source value and stores it in the destination array of the receiver.  <a href="#a8f7135fef05068d3414e07574f9fb7c2">More...</a><br /></td></tr>
+<tr class="separator:a8f7135fef05068d3414e07574f9fb7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc762709013113b608fc8266f69a6f2b"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:acc762709013113b608fc8266f69a6f2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#acc762709013113b608fc8266f69a6f2b">add</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:acc762709013113b608fc8266f69a6f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds each source1 value to the corresponding source2 value and stores it in the destination array of the receiver.  <a href="#acc762709013113b608fc8266f69a6f2b">More...</a><br /></td></tr>
+<tr class="separator:acc762709013113b608fc8266f69a6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada54f20bdb8c2fe203f579a89775e19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ada54f20bdb8c2fe203f579a89775e19d">subtract</a> (SampleType value) noexcept</td></tr>
 <tr class="memdesc:ada54f20bdb8c2fe203f579a89775e19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a fixed value from the receiver.  <a href="#ada54f20bdb8c2fe203f579a89775e19d">More...</a><br /></td></tr>
 <tr class="separator:ada54f20bdb8c2fe203f579a89775e19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a660236b857f19b525bde519419c66884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a660236b857f19b525bde519419c66884">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a660236b857f19b525bde519419c66884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the source values from the receiver.  <a href="#a660236b857f19b525bde519419c66884">More...</a><br /></td></tr>
-<tr class="separator:a660236b857f19b525bde519419c66884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25bdd578180715bdf6f21b7c1440f55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a25bdd578180715bdf6f21b7c1440f55c">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, SampleType value) noexcept</td></tr>
-<tr class="memdesc:a25bdd578180715bdf6f21b7c1440f55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a fixed value from each source value and stores it in the destination array of the receiver.  <a href="#a25bdd578180715bdf6f21b7c1440f55c">More...</a><br /></td></tr>
-<tr class="separator:a25bdd578180715bdf6f21b7c1440f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1efd93622c497d23030c8845f0687ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a1efd93622c497d23030c8845f0687ab0">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:a1efd93622c497d23030c8845f0687ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts each source2 value from the corresponding source1 value and stores it in the destination array of the receiver.  <a href="#a1efd93622c497d23030c8845f0687ab0">More...</a><br /></td></tr>
-<tr class="separator:a1efd93622c497d23030c8845f0687ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d352eba47c10edc227419276d98290"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:ab0d352eba47c10edc227419276d98290"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ab0d352eba47c10edc227419276d98290">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src) noexcept</td></tr>
+<tr class="memdesc:ab0d352eba47c10edc227419276d98290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the source values from the receiver.  <a href="#ab0d352eba47c10edc227419276d98290">More...</a><br /></td></tr>
+<tr class="separator:ab0d352eba47c10edc227419276d98290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51d756e7e6f7937b2cc686627f82026"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:ac51d756e7e6f7937b2cc686627f82026"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ac51d756e7e6f7937b2cc686627f82026">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src, SampleType value) noexcept</td></tr>
+<tr class="memdesc:ac51d756e7e6f7937b2cc686627f82026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a fixed value from each source value and stores it in the destination array of the receiver.  <a href="#ac51d756e7e6f7937b2cc686627f82026">More...</a><br /></td></tr>
+<tr class="separator:ac51d756e7e6f7937b2cc686627f82026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3899b911c61eb7d315ae0699dbff26d3"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:a3899b911c61eb7d315ae0699dbff26d3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a3899b911c61eb7d315ae0699dbff26d3">subtract</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:a3899b911c61eb7d315ae0699dbff26d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts each source2 value from the corresponding source1 value and stores it in the destination array of the receiver.  <a href="#a3899b911c61eb7d315ae0699dbff26d3">More...</a><br /></td></tr>
+<tr class="separator:a3899b911c61eb7d315ae0699dbff26d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab873cc675167cdb115eeecaab8d9357a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ab873cc675167cdb115eeecaab8d9357a">multiply</a> (SampleType value) noexcept</td></tr>
 <tr class="memdesc:ab873cc675167cdb115eeecaab8d9357a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a fixed value to the receiver.  <a href="#ab873cc675167cdb115eeecaab8d9357a">More...</a><br /></td></tr>
 <tr class="separator:ab873cc675167cdb115eeecaab8d9357a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31e787a0c773523351ae20655e1b87cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a31e787a0c773523351ae20655e1b87cd">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a31e787a0c773523351ae20655e1b87cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the source values to the receiver.  <a href="#a31e787a0c773523351ae20655e1b87cd">More...</a><br /></td></tr>
-<tr class="separator:a31e787a0c773523351ae20655e1b87cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2df80f3154e2598696518c54bf2220f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ae2df80f3154e2598696518c54bf2220f">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, SampleType value) noexcept</td></tr>
-<tr class="memdesc:ae2df80f3154e2598696518c54bf2220f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a fixed value to each source value and stores it in the destination array of the receiver.  <a href="#ae2df80f3154e2598696518c54bf2220f">More...</a><br /></td></tr>
-<tr class="separator:ae2df80f3154e2598696518c54bf2220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a764672d472d2213a19862bb1124e19a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a764672d472d2213a19862bb1124e19a1">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:a764672d472d2213a19862bb1124e19a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each source1 value to the corresponding source2 value and stores it in the destination array of the receiver.  <a href="#a764672d472d2213a19862bb1124e19a1">More...</a><br /></td></tr>
-<tr class="separator:a764672d472d2213a19862bb1124e19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b525f92d98d2eea2978aa1305023b7"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a12b525f92d98d2eea2978aa1305023b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a12b525f92d98d2eea2978aa1305023b7">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src) noexcept</td></tr>
+<tr class="memdesc:a12b525f92d98d2eea2978aa1305023b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the source values to the receiver.  <a href="#a12b525f92d98d2eea2978aa1305023b7">More...</a><br /></td></tr>
+<tr class="separator:a12b525f92d98d2eea2978aa1305023b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ab7064e661cd68ab2ef3a9280c653e"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a07ab7064e661cd68ab2ef3a9280c653e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a07ab7064e661cd68ab2ef3a9280c653e">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src, SampleType value) noexcept</td></tr>
+<tr class="memdesc:a07ab7064e661cd68ab2ef3a9280c653e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a fixed value to each source value and stores it in the destination array of the receiver.  <a href="#a07ab7064e661cd68ab2ef3a9280c653e">More...</a><br /></td></tr>
+<tr class="separator:a07ab7064e661cd68ab2ef3a9280c653e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa839675e2c016d81db680a68dfa389e5"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:aa839675e2c016d81db680a68dfa389e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aa839675e2c016d81db680a68dfa389e5">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:aa839675e2c016d81db680a68dfa389e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each source1 value to the corresponding source2 value and stores it in the destination array of the receiver.  <a href="#aa839675e2c016d81db680a68dfa389e5">More...</a><br /></td></tr>
+<tr class="separator:aa839675e2c016d81db680a68dfa389e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memTemplParams" colspan="2">template&lt;typename SmoothingType &gt; </td></tr>
 <tr class="memitem:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a8de3ce61b49f0ff08008a8cbd94b6f64">multiply</a> (<a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
 <tr class="memdesc:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the <a class="el" href="classdsp_1_1AudioBlock.html" title="Minimal and lightweight data-structure which contains a list of pointers to channels containing some ...">AudioBlock</a> by a smoothly changing value and stores them .  <a href="#a8de3ce61b49f0ff08008a8cbd94b6f64">More...</a><br /></td></tr>
 <tr class="separator:a8de3ce61b49f0ff08008a8cbd94b6f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62f420089699140b06ec0e7ab1447a8"><td class="memTemplParams" colspan="2">template&lt;typename SmoothingType &gt; </td></tr>
-<tr class="memitem:ad62f420089699140b06ec0e7ab1447a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ad62f420089699140b06ec0e7ab1447a8">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, <a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
-<tr class="memdesc:ad62f420089699140b06ec0e7ab1447a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the source by a smoothly changing value and stores them in the receiver.  <a href="#ad62f420089699140b06ec0e7ab1447a8">More...</a><br /></td></tr>
-<tr class="separator:ad62f420089699140b06ec0e7ab1447a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a6b4bb456bade6d61a8e48a630b1abe7b">addWithMultiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src, SampleType factor) noexcept</td></tr>
-<tr class="memdesc:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each value in src with factor and adds the result to the receiver.  <a href="#a6b4bb456bade6d61a8e48a630b1abe7b">More...</a><br /></td></tr>
-<tr class="separator:a6b4bb456bade6d61a8e48a630b1abe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ec2b3d47514d9874ed28650568dfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a28ec2b3d47514d9874ed28650568dfac">addWithMultiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:a28ec2b3d47514d9874ed28650568dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each value in srcA with the corresponding value in srcB and adds the result to the receiver.  <a href="#a28ec2b3d47514d9874ed28650568dfac">More...</a><br /></td></tr>
-<tr class="separator:a28ec2b3d47514d9874ed28650568dfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a79fde7f7eb6c0025033538ef77975"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType , typename SmoothingType &gt; </td></tr>
+<tr class="memitem:ab5a79fde7f7eb6c0025033538ef77975"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ab5a79fde7f7eb6c0025033538ef77975">multiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src, <a class="el" href="classSmoothedValue.html">SmoothedValue</a>&lt; SampleType, SmoothingType &gt; &amp;value) noexcept</td></tr>
+<tr class="memdesc:ab5a79fde7f7eb6c0025033538ef77975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all channels of the source by a smoothly changing value and stores them in the receiver.  <a href="#ab5a79fde7f7eb6c0025033538ef77975">More...</a><br /></td></tr>
+<tr class="separator:ab5a79fde7f7eb6c0025033538ef77975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d720177a66a1e959882f7b3e04c6ee"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:af5d720177a66a1e959882f7b3e04c6ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;JUCE_VECTOR_CALLTYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#af5d720177a66a1e959882f7b3e04c6ee">addWithMultiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src, SampleType factor) noexcept</td></tr>
+<tr class="memdesc:af5d720177a66a1e959882f7b3e04c6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each value in src with factor and adds the result to the receiver.  <a href="#af5d720177a66a1e959882f7b3e04c6ee">More...</a><br /></td></tr>
+<tr class="separator:af5d720177a66a1e959882f7b3e04c6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72d97dbd39ecffedddf53a38833c698"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:aa72d97dbd39ecffedddf53a38833c698"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aa72d97dbd39ecffedddf53a38833c698">addWithMultiply</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:aa72d97dbd39ecffedddf53a38833c698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies each value in srcA with the corresponding value in srcB and adds the result to the receiver.  <a href="#aa72d97dbd39ecffedddf53a38833c698">More...</a><br /></td></tr>
+<tr class="separator:aa72d97dbd39ecffedddf53a38833c698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b55d7fa5e86f540dbbcd9f6d59a7ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aa8b55d7fa5e86f540dbbcd9f6d59a7ee">negate</a> () noexcept</td></tr>
 <tr class="memdesc:aa8b55d7fa5e86f540dbbcd9f6d59a7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negates each value of the receiver.  <a href="#aa8b55d7fa5e86f540dbbcd9f6d59a7ee">More...</a><br /></td></tr>
 <tr class="separator:aa8b55d7fa5e86f540dbbcd9f6d59a7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d7ab55058c19b5c2ff04ee277a9c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a08d7ab55058c19b5c2ff04ee277a9c05">replaceWithNegativeOf</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a08d7ab55058c19b5c2ff04ee277a9c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negates each value of source and stores it in the receiver.  <a href="#a08d7ab55058c19b5c2ff04ee277a9c05">More...</a><br /></td></tr>
-<tr class="separator:a08d7ab55058c19b5c2ff04ee277a9c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fef116489ab8aea058115360d81fcec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a1fef116489ab8aea058115360d81fcec">replaceWithAbsoluteValueOf</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src) noexcept</td></tr>
-<tr class="memdesc:a1fef116489ab8aea058115360d81fcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the absolute value of each element of src and stores it inside the receiver.  <a href="#a1fef116489ab8aea058115360d81fcec">More...</a><br /></td></tr>
-<tr class="separator:a1fef116489ab8aea058115360d81fcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e670565a5aaf5a06dc9d20fc86eda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aa6e670565a5aaf5a06dc9d20fc86eda0">min</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:aa6e670565a5aaf5a06dc9d20fc86eda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each element of receiver will be the minimum of the corresponding element of the source arrays.  <a href="#aa6e670565a5aaf5a06dc9d20fc86eda0">More...</a><br /></td></tr>
-<tr class="separator:aa6e670565a5aaf5a06dc9d20fc86eda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a12697983def0ac266b30ca89508d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> src2) noexcept</td></tr>
-<tr class="memdesc:ab3a12697983def0ac266b30ca89508d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each element of the receiver will be the maximum of the corresponding element of the source arrays.  <a href="#ab3a12697983def0ac266b30ca89508d2">More...</a><br /></td></tr>
-<tr class="separator:ab3a12697983def0ac266b30ca89508d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379974bd85505c105cfebe508482d57b"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:a379974bd85505c105cfebe508482d57b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a379974bd85505c105cfebe508482d57b">replaceWithNegativeOf</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src) noexcept</td></tr>
+<tr class="memdesc:a379974bd85505c105cfebe508482d57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negates each value of source and stores it in the receiver.  <a href="#a379974bd85505c105cfebe508482d57b">More...</a><br /></td></tr>
+<tr class="separator:a379974bd85505c105cfebe508482d57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94e822135b27fae342631c815c22f42"><td class="memTemplParams" colspan="2">template&lt;typename OtherSampleType &gt; </td></tr>
+<tr class="memitem:ab94e822135b27fae342631c815c22f42"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#ab94e822135b27fae342631c815c22f42">replaceWithAbsoluteValueOf</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; src) noexcept</td></tr>
+<tr class="memdesc:ab94e822135b27fae342631c815c22f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the absolute value of each element of src and stores it inside the receiver.  <a href="#ab94e822135b27fae342631c815c22f42">More...</a><br /></td></tr>
+<tr class="separator:ab94e822135b27fae342631c815c22f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17200d93308c7e6ddf9c56d0dcf81379"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:a17200d93308c7e6ddf9c56d0dcf81379"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a17200d93308c7e6ddf9c56d0dcf81379">min</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:a17200d93308c7e6ddf9c56d0dcf81379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each element of receiver will be the minimum of the corresponding element of the source arrays.  <a href="#a17200d93308c7e6ddf9c56d0dcf81379">More...</a><br /></td></tr>
+<tr class="separator:a17200d93308c7e6ddf9c56d0dcf81379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63eb9641810934bb4e9aa9e2fb317e34"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType &gt; </td></tr>
+<tr class="memitem:a63eb9641810934bb4e9aa9e2fb317e34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; src1, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; src2) noexcept</td></tr>
+<tr class="memdesc:a63eb9641810934bb4e9aa9e2fb317e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each element of the receiver will be the maximum of the corresponding element of the source arrays.  <a href="#a63eb9641810934bb4e9aa9e2fb317e34">More...</a><br /></td></tr>
+<tr class="separator:a63eb9641810934bb4e9aa9e2fb317e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1b7a860e73e24b520a4877eb58adfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classRange.html">Range</a>&lt; <a class="el" href="classdsp_1_1AudioBlock.html#a685ac5e06593b78db6db78edd76ccce5">NumericType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a5d1b7a860e73e24b520a4877eb58adfd">findMinAndMax</a> () const noexcept</td></tr>
 <tr class="memdesc:a5d1b7a860e73e24b520a4877eb58adfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the minimum and maximum value of the buffer.  <a href="#a5d1b7a860e73e24b520a4877eb58adfd">More...</a><br /></td></tr>
 <tr class="separator:a5d1b7a860e73e24b520a4877eb58adfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,10 +271,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8230db372e9569290571d69a07a0f42c"><td class="memTemplParams" colspan="2">template&lt;typename FunctionType &gt; </td></tr>
-<tr class="memitem:a8230db372e9569290571d69a07a0f42c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#a8230db372e9569290571d69a07a0f42c">process</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> inBlock, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> outBlock, FunctionType &amp;&amp;function)</td></tr>
-<tr class="memdesc:a8230db372e9569290571d69a07a0f42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each value in an input block, putting the result into an output block.  <a href="#a8230db372e9569290571d69a07a0f42c">More...</a><br /></td></tr>
-<tr class="separator:a8230db372e9569290571d69a07a0f42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd34362db9b3f185c4703d127673441"><td class="memTemplParams" colspan="2">template&lt;typename Src1SampleType , typename Src2SampleType , typename FunctionType &gt; </td></tr>
+<tr class="memitem:aedd34362db9b3f185c4703d127673441"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdsp_1_1AudioBlock.html#aedd34362db9b3f185c4703d127673441">process</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt; inBlock, <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt; outBlock, FunctionType &amp;&amp;function)</td></tr>
+<tr class="memdesc:aedd34362db9b3f185c4703d127673441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each value in an input block, putting the result into an output block.  <a href="#aedd34362db9b3f185c4703d127673441">More...</a><br /></td></tr>
+<tr class="separator:aedd34362db9b3f185c4703d127673441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SampleType&gt;<br />
@@ -273,7 +301,7 @@ template&lt;typename SampleType&gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a06a30e0c116d317dfcf2637a9829e7a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06a30e0c116d317dfcf2637a9829e7a4">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a30e0c116d317dfcf2637a9829e7a4">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +330,7 @@ template&lt;typename SampleType&gt; </div>
 </div>
 </div>
 <a id="a9a42221bc40b338298f2027335453aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a42221bc40b338298f2027335453aa8">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a42221bc40b338298f2027335453aa8">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +377,7 @@ template&lt;typename SampleType&gt; </div>
 </div>
 </div>
 <a id="a7cdf829373825e63f2dcb6637749a989"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cdf829373825e63f2dcb6637749a989">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cdf829373825e63f2dcb6637749a989">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,7 +430,7 @@ template&lt;typename SampleType&gt; </div>
 </div>
 </div>
 <a id="a84ba49c0e8ba6c5e0081aa40848999f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ba49c0e8ba6c5e0081aa40848999f2">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ba49c0e8ba6c5e0081aa40848999f2">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,13 +482,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a50b2382b00e97e30474430fad6acadbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50b2382b00e97e30474430fad6acadbf">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[5/7]</span></h2>
+<a id="a25537d3b9c9a60df526a4db40a284181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25537d3b9c9a60df526a4db40a284181">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -468,7 +498,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -485,13 +515,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="adaabcc4835be49c973bca33e8ddce444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaabcc4835be49c973bca33e8ddce444">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[6/7]</span></h2>
+<a id="a2fc45f5ffaaeb5feb38a390fc5c51abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc45f5ffaaeb5feb38a390fc5c51abd">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -499,7 +531,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
@@ -527,7 +559,7 @@ template&lt;typename SampleType&gt; </div>
 </div>
 </div>
 <a id="adb86512c11e1c3b1841afd42777ef136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb86512c11e1c3b1841afd42777ef136">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adb86512c11e1c3b1841afd42777ef136">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -554,9 +586,39 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
+<a id="a76cb8278be7a9a0b8ff3e8109c9b9c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cb8278be7a9a0b8ff3e8109c9b9c65">&#9670;&nbsp;</a></span>AudioBlock() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType , MayUseConvertingConstructor&lt; OtherSampleType &gt;  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a376c387ce41cf60b408a98db563fa59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a376c387ce41cf60b408a98db563fa59d">&#9670;&nbsp;</a></span>operator=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a376c387ce41cf60b408a98db563fa59d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,8 +645,38 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="aaaa4111a4172494db0aca7a95843470a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaa4111a4172494db0aca7a95843470a">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="aff920e0b4702f4622dd152547160ebd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff920e0b4702f4622dd152547160ebd9">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType , MayUseConvertingConstructor&lt; OtherSampleType &gt;  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76afcc4dd2d272acdfb60a4590846404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76afcc4dd2d272acdfb60a4590846404">&#9670;&nbsp;</a></span>swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,9 +687,39 @@ template&lt;typename SampleType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">void <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d32ec57830068371a8c4304c786a99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d32ec57830068371a8c4304c786a99c">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
           <td class="memname">bool <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -611,13 +733,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="af0ea3d9aa670c6df8b2ed954441f9170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0ea3d9aa670c6df8b2ed954441f9170">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="ade28fcd2210908da75abc0b0fd23d166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade28fcd2210908da75abc0b0fd23d166">&#9670;&nbsp;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -625,7 +749,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -664,7 +788,7 @@ template&lt;typename SampleType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#a8230db372e9569290571d69a07a0f42c">dsp::AudioBlock&lt; float &gt;::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#aedd34362db9b3f185c4703d127673441">dsp::AudioBlock&lt; const SampleType &gt;::process()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +817,7 @@ template&lt;typename SampleType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#a8230db372e9569290571d69a07a0f42c">dsp::AudioBlock&lt; float &gt;::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#aedd34362db9b3f185c4703d127673441">dsp::AudioBlock&lt; const SampleType &gt;::process()</a>.</p>
 
 </div>
 </div>
@@ -725,7 +849,7 @@ template&lt;typename SampleType&gt; </div>
 
 <p>Returns a raw pointer into one of the channels in this block. </p>
 
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#a8230db372e9569290571d69a07a0f42c">dsp::AudioBlock&lt; float &gt;::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classdsp_1_1AudioBlock.html#aedd34362db9b3f185c4703d127673441">dsp::AudioBlock&lt; const SampleType &gt;::process()</a>.</p>
 
 </div>
 </div>
@@ -1030,13 +1154,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a4fa0b8cb8085a138632db5c8424dd8cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa0b8cb8085a138632db5c8424dd8cc">&#9670;&nbsp;</a></span>copy()</h2>
+<a id="a531ced9b5ffbcca8ea912d05d7b0c3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531ced9b5ffbcca8ea912d05d7b0c3aa">&#9670;&nbsp;</a></span>copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1044,7 +1170,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::copy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1090,7 +1216,7 @@ template&lt;typename SampleType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>()</code>&#160;</td>
+          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1135,7 +1261,7 @@ template&lt;typename SampleType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>()</code>&#160;</td>
+          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1177,7 +1303,7 @@ template&lt;typename SampleType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#ab3a12697983def0ac266b30ca89508d2">max</a>()</code>&#160;</td>
+          <td class="paramname"><em>numElements</em> = <code>std::numeric_limits&lt;size_t&gt;::<a class="el" href="classdsp_1_1AudioBlock.html#a63eb9641810934bb4e9aa9e2fb317e34">max</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1312,13 +1438,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a866e39f0220be1e6dcc2fdba498efdae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a866e39f0220be1e6dcc2fdba498efdae">&#9670;&nbsp;</a></span>add() <span class="overload">[2/4]</span></h2>
+<a id="a83325706bc97edf0833f7a11b54b0283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83325706bc97edf0833f7a11b54b0283">&#9670;&nbsp;</a></span>add() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1326,7 +1454,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1342,13 +1470,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a1313b6b5086d40c92f89e0ecd1f8870b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1313b6b5086d40c92f89e0ecd1f8870b">&#9670;&nbsp;</a></span>add() <span class="overload">[3/4]</span></h2>
+<a id="a8f7135fef05068d3414e07574f9fb7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7135fef05068d3414e07574f9fb7c2">&#9670;&nbsp;</a></span>add() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1356,7 +1486,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; JUCE_VECTOR_CALLTYPE <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1382,13 +1512,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="ad44a9fb60aafec760e213cc566cc7c3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad44a9fb60aafec760e213cc566cc7c3a">&#9670;&nbsp;</a></span>add() <span class="overload">[4/4]</span></h2>
+<a id="acc762709013113b608fc8266f69a6f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc762709013113b608fc8266f69a6f2b">&#9670;&nbsp;</a></span>add() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1396,13 +1528,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -1452,13 +1584,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a660236b857f19b525bde519419c66884"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a660236b857f19b525bde519419c66884">&#9670;&nbsp;</a></span>subtract() <span class="overload">[2/4]</span></h2>
+<a id="ab0d352eba47c10edc227419276d98290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d352eba47c10edc227419276d98290">&#9670;&nbsp;</a></span>subtract() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1466,7 +1600,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::subtract </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1482,13 +1616,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a25bdd578180715bdf6f21b7c1440f55c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25bdd578180715bdf6f21b7c1440f55c">&#9670;&nbsp;</a></span>subtract() <span class="overload">[3/4]</span></h2>
+<a id="ac51d756e7e6f7937b2cc686627f82026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51d756e7e6f7937b2cc686627f82026">&#9670;&nbsp;</a></span>subtract() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1496,7 +1632,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; JUCE_VECTOR_CALLTYPE <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::subtract </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1522,13 +1658,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a1efd93622c497d23030c8845f0687ab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1efd93622c497d23030c8845f0687ab0">&#9670;&nbsp;</a></span>subtract() <span class="overload">[4/4]</span></h2>
+<a id="a3899b911c61eb7d315ae0699dbff26d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3899b911c61eb7d315ae0699dbff26d3">&#9670;&nbsp;</a></span>subtract() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1536,13 +1674,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::subtract </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -1592,13 +1730,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a31e787a0c773523351ae20655e1b87cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31e787a0c773523351ae20655e1b87cd">&#9670;&nbsp;</a></span>multiply() <span class="overload">[2/6]</span></h2>
+<a id="a12b525f92d98d2eea2978aa1305023b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b525f92d98d2eea2978aa1305023b7">&#9670;&nbsp;</a></span>multiply() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1606,7 +1746,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1622,13 +1762,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="ae2df80f3154e2598696518c54bf2220f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2df80f3154e2598696518c54bf2220f">&#9670;&nbsp;</a></span>multiply() <span class="overload">[3/6]</span></h2>
+<a id="a07ab7064e661cd68ab2ef3a9280c653e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ab7064e661cd68ab2ef3a9280c653e">&#9670;&nbsp;</a></span>multiply() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1636,7 +1778,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; JUCE_VECTOR_CALLTYPE <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1662,13 +1804,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a764672d472d2213a19862bb1124e19a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a764672d472d2213a19862bb1124e19a1">&#9670;&nbsp;</a></span>multiply() <span class="overload">[4/6]</span></h2>
+<a id="aa839675e2c016d81db680a68dfa389e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa839675e2c016d81db680a68dfa389e5">&#9670;&nbsp;</a></span>multiply() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1676,13 +1820,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -1734,15 +1878,15 @@ template&lt;typename SmoothingType &gt; </div>
 
 </div>
 </div>
-<a id="ad62f420089699140b06ec0e7ab1447a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad62f420089699140b06ec0e7ab1447a8">&#9670;&nbsp;</a></span>multiply() <span class="overload">[6/6]</span></h2>
+<a id="ab5a79fde7f7eb6c0025033538ef77975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a79fde7f7eb6c0025033538ef77975">&#9670;&nbsp;</a></span>multiply() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
 <div class="memtemplate">
-template&lt;typename SmoothingType &gt; </div>
+template&lt;typename OtherSampleType , typename SmoothingType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1750,7 +1894,7 @@ template&lt;typename SmoothingType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1776,13 +1920,15 @@ template&lt;typename SmoothingType &gt; </div>
 
 </div>
 </div>
-<a id="a6b4bb456bade6d61a8e48a630b1abe7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4bb456bade6d61a8e48a630b1abe7b">&#9670;&nbsp;</a></span>addWithMultiply() <span class="overload">[1/2]</span></h2>
+<a id="af5d720177a66a1e959882f7b3e04c6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d720177a66a1e959882f7b3e04c6ee">&#9670;&nbsp;</a></span>addWithMultiply() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1790,7 +1936,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; JUCE_VECTOR_CALLTYPE <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::addWithMultiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1816,13 +1962,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a28ec2b3d47514d9874ed28650568dfac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ec2b3d47514d9874ed28650568dfac">&#9670;&nbsp;</a></span>addWithMultiply() <span class="overload">[2/2]</span></h2>
+<a id="aa72d97dbd39ecffedddf53a38833c698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72d97dbd39ecffedddf53a38833c698">&#9670;&nbsp;</a></span>addWithMultiply() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1830,13 +1978,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::addWithMultiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -1885,13 +2033,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a08d7ab55058c19b5c2ff04ee277a9c05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08d7ab55058c19b5c2ff04ee277a9c05">&#9670;&nbsp;</a></span>replaceWithNegativeOf()</h2>
+<a id="a379974bd85505c105cfebe508482d57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379974bd85505c105cfebe508482d57b">&#9670;&nbsp;</a></span>replaceWithNegativeOf()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1899,7 +2049,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::replaceWithNegativeOf </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1915,13 +2065,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="a1fef116489ab8aea058115360d81fcec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fef116489ab8aea058115360d81fcec">&#9670;&nbsp;</a></span>replaceWithAbsoluteValueOf()</h2>
+<a id="ab94e822135b27fae342631c815c22f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94e822135b27fae342631c815c22f42">&#9670;&nbsp;</a></span>replaceWithAbsoluteValueOf()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherSampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1929,7 +2081,7 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::replaceWithAbsoluteValueOf </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; OtherSampleType &gt;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1945,13 +2097,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="aa6e670565a5aaf5a06dc9d20fc86eda0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6e670565a5aaf5a06dc9d20fc86eda0">&#9670;&nbsp;</a></span>min()</h2>
+<a id="a17200d93308c7e6ddf9c56d0dcf81379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17200d93308c7e6ddf9c56d0dcf81379">&#9670;&nbsp;</a></span>min()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1959,13 +2113,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::min </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -1985,13 +2139,15 @@ template&lt;typename SampleType&gt; </div>
 
 </div>
 </div>
-<a id="ab3a12697983def0ac266b30ca89508d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a12697983def0ac266b30ca89508d2">&#9670;&nbsp;</a></span>max()</h2>
+<a id="a63eb9641810934bb4e9aa9e2fb317e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63eb9641810934bb4e9aa9e2fb317e34">&#9670;&nbsp;</a></span>max()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Src1SampleType , typename Src2SampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1999,13 +2155,13 @@ template&lt;typename SampleType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__juce__core-system.html#gac2535cb549b141b3a96b8a08014e46cb">forcedinline</a> <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&amp; <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::max </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -2252,15 +2408,15 @@ template&lt;typename SmoothingType &gt; </div>
 
 </div>
 </div>
-<a id="a8230db372e9569290571d69a07a0f42c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8230db372e9569290571d69a07a0f42c">&#9670;&nbsp;</a></span>process()</h2>
+<a id="aedd34362db9b3f185c4703d127673441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd34362db9b3f185c4703d127673441">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SampleType&gt; </div>
 <div class="memtemplate">
-template&lt;typename FunctionType &gt; </div>
+template&lt;typename Src1SampleType , typename Src2SampleType , typename FunctionType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2268,13 +2424,13 @@ template&lt;typename FunctionType &gt; </div>
         <tr>
           <td class="memname">static void <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;::process </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src1SampleType &gt;&#160;</td>
           <td class="paramname"><em>inBlock</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; Src2SampleType &gt;&#160;</td>
           <td class="paramname"><em>outBlock</em>, </td>
         </tr>
         <tr>
@@ -2309,7 +2465,7 @@ template&lt;typename FunctionType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 25 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
