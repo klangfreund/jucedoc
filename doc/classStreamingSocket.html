@@ -217,7 +217,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds the socket to the specified local port and local address. </p>
-<p>If localAddress is not an empty string then the socket will be bound to localAddress as well. This is useful if you would like to bind your socket to a specific network adapter. Note that localAddress must be an IP address assigned to one of your network address otherwise this function will fail. </p><dl class="section return"><dt>Returns</dt><dd>true on success; false may indicate that another socket is already bound on the same port </dd></dl>
+<p>If localAddress is not an empty string then the socket will be bound to localAddress as well. This is useful if you would like to bind your socket to a specific network adapter. Note that localAddress must be an IP address assigned to one of your network address otherwise this function will fail.</p>
+<dl class="section return"><dt>Returns</dt><dd>true on success; false may indicate that another socket is already bound on the same port </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classStreamingSocket.html#aa0788414f9c3f08d1c5adddf5481e17a" title="Binds the socket to the specified local port. ">bindToPort(int localPortNumber)</a>, <a class="el" href="classIPAddress.html#a85a1d19bb9909710e8e0027edd26de51" title="Populates a list of all the IP addresses that this machine is using. ">IPAddress::getAllAddresses</a> </dd></dl>
 
 </div>
@@ -246,7 +247,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the local port number to which this socket is currently bound. </p>
-<p>This is useful if you need to know to which port the OS has actually bound your socket when calling the constructor or bindToPort with zero as the localPortNumber argument. Returns -1 if the function fails. </p>
+<p>This is useful if you need to know to which port the OS has actually bound your socket when calling the constructor or bindToPort with zero as the localPortNumber argument.</p>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the function fails </dd></dl>
 
 </div>
 </div>
@@ -284,7 +286,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Tries to connect the socket to hostname:port. </p>
 <p>If timeOutMillisecs is 0, then this method will block until the operating system rejects the connection (which could take a long time).</p>
-<dl class="section return"><dt>Returns</dt><dd>true if it succeeds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it succeeds, false if otherwise </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classStreamingSocket.html#a22d32e5442ccae9033278729aaa3e075" title="True if the socket is currently connected. ">isConnected</a> </dd></dl>
 
 </div>
@@ -474,7 +476,7 @@ Public Member Functions</h2></td></tr>
 <p>Waits until the socket is ready for reading or writing. </p>
 <p>If readyForReading is true, it will wait until the socket is ready for reading; if false, it will wait until it's ready for writing.</p>
 <p>If the timeout is &lt; 0, it will wait forever, or else will give up after the specified time.</p>
-<p>If the socket is ready on return, this returns 1. If it times-out before the socket becomes ready, it returns 0. If an error occurs, it returns -1. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if the socket is ready on return, 0 if it times-out before the socket becomes ready, or -1 if an error occurs </dd></dl>
 
 </div>
 </div>
@@ -512,7 +514,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reads bytes from the socket. </p>
 <p>If blockUntilSpecifiedAmountHasArrived is true, the method will block until maxBytesToRead bytes have been read, (or until an error occurs). If this flag is false, the method will return as much data as is currently available without blocking.</p>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classStreamingSocket.html#a8dfb6c66c4f0e78608c492969ae8372a" title="Waits until the socket is ready for reading or writing. ">waitUntilReady</a> </dd></dl>
 
 </div>
@@ -545,7 +547,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Writes bytes to the socket from a buffer. </p>
 <p>Note that this method will block unless you have checked the socket is ready for writing before calling it (see the <a class="el" href="classStreamingSocket.html#a8dfb6c66c4f0e78608c492969ae8372a" title="Waits until the socket is ready for reading or writing. ">waitUntilReady()</a> method).</p>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes written, or -1 if there was an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes written, or -1 if there was an error </dd></dl>
 
 </div>
 </div>
@@ -580,11 +582,11 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portNumber</td><td>the port number to listen on </td></tr>
-    <tr><td class="paramname">localHostName</td><td>the interface address to listen on - pass an empty string to listen on all addresses </td></tr>
+    <tr><td class="paramname">localHostName</td><td>the interface address to listen on - pass an empty string to listen on all addresses</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if it manages to open the socket successfully.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it manages to open the socket successfully </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classStreamingSocket.html#a3114fb89d7a07bfeacd04e3c207620f9" title="When in &quot;listener&quot; mode, this waits for a connection and spawns it as a new socket. ">waitForNextConnection</a> </dd></dl>
 
 </div>
@@ -617,7 +619,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 27 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

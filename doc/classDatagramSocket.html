@@ -213,7 +213,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds the socket to the specified local port and local address. </p>
-<p>If localAddress is not an empty string then the socket will be bound to localAddress as well. This is useful if you would like to bind your socket to a specific network adapter. Note that localAddress must be an IP address assigned to one of your network address otherwise this function will fail. </p><dl class="section return"><dt>Returns</dt><dd>true on success; false may indicate that another socket is already bound on the same port </dd></dl>
+<p>If localAddress is not an empty string then the socket will be bound to localAddress as well. This is useful if you would like to bind your socket to a specific network adapter. Note that localAddress must be an IP address assigned to one of your network address otherwise this function will fail.</p>
+<dl class="section return"><dt>Returns</dt><dd>true on success; false may indicate that another socket is already bound on the same port </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDatagramSocket.html#a94c29fad4912e3dfc17cb8824de3d548" title="Binds the socket to the specified local port. ">bindToPort(int localPortNumber)</a>, <a class="el" href="classIPAddress.html#a85a1d19bb9909710e8e0027edd26de51" title="Populates a list of all the IP addresses that this machine is using. ">IPAddress::getAllAddresses</a> </dd></dl>
 
 </div>
@@ -243,7 +244,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the local port number to which this socket is currently bound. </p>
 <p>This is useful if you need to know to which port the OS has actually bound your socket when bindToPort was called with zero.</p>
-<p>Returns -1 if the socket didn't bind to any port yet or an error occurred. </p>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the socket didn't bind to any port yet or an error occurred </dd></dl>
 
 </div>
 </div>
@@ -305,7 +306,7 @@ Public Member Functions</h2></td></tr>
 <p>Waits until the socket is ready for reading or writing. </p>
 <p>If readyForReading is true, it will wait until the socket is ready for reading; if false, it will wait until it's ready for writing.</p>
 <p>If the timeout is &lt; 0, it will wait forever, or else will give up after the specified time.</p>
-<p>If the socket is ready on return, this returns 1. If it times-out before the socket becomes ready, it returns 0. If an error occurs, it returns -1. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if the socket is ready on return, 0 if it times-out before the socket becomes ready, or -1 if an error occurs </dd></dl>
 
 </div>
 </div>
@@ -343,7 +344,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reads bytes from the socket. </p>
 <p>If blockUntilSpecifiedAmountHasArrived is true, the method will block until maxBytesToRead bytes have been read, (or until an error occurs). If this flag is false, the method will return as much data as is currently available without blocking.</p>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDatagramSocket.html#ae77519329f01be11296e649fb31bc2d1" title="Waits until the socket is ready for reading or writing. ">waitUntilReady</a> </dd></dl>
 
 </div>
@@ -394,7 +395,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reads bytes from the socket and return the IP address of the sender. </p>
 <p>If blockUntilSpecifiedAmountHasArrived is true, the method will block until maxBytesToRead bytes have been read, (or until an error occurs). If this flag is false, the method will return as much data as is currently available without blocking.</p>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error. On a successful result, the senderIPAddress value will be set to the IP of the sender. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, or -1 if there was an error. On a successful result, the senderIPAddress value will be set to the IP of the sender </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDatagramSocket.html#ae77519329f01be11296e649fb31bc2d1" title="Waits until the socket is ready for reading or writing. ">waitUntilReady</a> </dd></dl>
 
 </div>
@@ -439,7 +440,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Writes bytes to the socket from a buffer. </p>
 <p>Note that this method will block unless you have checked the socket is ready for writing before calling it (see the <a class="el" href="classDatagramSocket.html#ae77519329f01be11296e649fb31bc2d1" title="Waits until the socket is ready for reading or writing. ">waitUntilReady()</a> method).</p>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes written, or -1 if there was an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes written, or -1 if there was an error </dd></dl>
 
 </div>
 </div>
@@ -459,7 +460,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Closes the underlying socket object. </p>
-<p>Closes the underlying socket object and aborts any read or write operations. Note that all other methods will return an error after this call. This method is useful if another thread is blocking in a read/write call and you would like to abort the read/write thread. Simply deleting the socket object without calling shutdown may cause a race-condition where the read/write returns just before the socket is deleted and the subsequent read/write would try to read from an invalid pointer. By calling shutdown first, the socket object remains valid but all current and subsequent calls to read/write will return immediately. </p>
+<p>Closes the underlying socket object and aborts any read or write operations. Note that all other methods will return an error after this call and the object cannot be re-used.</p>
+<p>This method is useful if another thread is blocking in a read/write call and you would like to abort the read/write thread. Simply deleting the socket object without calling shutdown may cause a race-condition where the read/write returns just before the socket is deleted and the subsequent read/write would try to read from an invalid pointer. By calling shutdown first, the socket object remains valid but all current and subsequent calls to read/write will return immediately. </p>
 
 </div>
 </div>
@@ -480,7 +482,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Join a multicast group. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if it succeeds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it succeeds </dd></dl>
 
 </div>
 </div>
@@ -501,7 +503,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Leave a multicast group. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if it succeeds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it succeeds </dd></dl>
 
 </div>
 </div>
@@ -522,7 +524,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables or disables multicast loopback. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if it succeeds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it succeeds </dd></dl>
 
 </div>
 </div>
@@ -544,7 +546,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Allow other applications to re-use the port. </p>
 <p>Allow any other application currently running to bind to the same port. Do not use this if your socket handles sensitive data as it could be read by any, possibly malicious, third-party apps.</p>
-<p>Returns true on success. </p>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
 
 </div>
 </div>
@@ -554,7 +556,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 27 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
