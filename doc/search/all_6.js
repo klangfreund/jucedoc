@@ -1259,7 +1259,7 @@ var searchData=
   ['getsubgroups',['getSubgroups',['../classAudioProcessorParameterGroup.html#ab9452551adfdcbc84b25c899ad8480cd',1,'AudioProcessorParameterGroup']]],
   ['getsubitem',['getSubItem',['../classTreeViewItem.html#ad12c774c2434074f795ba37a5c2d1755',1,'TreeViewItem']]],
   ['getsubpath',['getSubPath',['../classURL.html#a8dfc96dd5527805dcacb2382045825e9',1,'URL']]],
-  ['getsubsetchannelblock',['getSubsetChannelBlock',['../classdsp_1_1AudioBlock.html#a96bdc3a29dd27f9917149d0bb64f23bd',1,'dsp::AudioBlock']]],
+  ['getsubsetchannelblock',['getSubsetChannelBlock',['../classdsp_1_1AudioBlock.html#aeb34b6aa2e21974163584f943523a2d6',1,'dsp::AudioBlock']]],
   ['getsuggestedsaveasfile',['getSuggestedSaveAsFile',['../classFileBasedDocument.html#a8eea22697f626904d28cee0082d3d076',1,'FileBasedDocument']]],
   ['getsumwith',['getSumWith',['../classdsp_1_1Polynomial.html#a565c7f1502941453afed21a1c514c99a',1,'dsp::Polynomial']]],
   ['getswapinterval',['getSwapInterval',['../classOpenGLContext.html#a91717bbaa5243bda49b93e7048eff88f',1,'OpenGLContext']]],
