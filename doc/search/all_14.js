@@ -32,6 +32,7 @@ var searchData=
   ['unindentselection',['unindentSelection',['../classCodeEditorComponent.html#ad96b0eadd14eee69dbbc4a691918d803',1,'CodeEditorComponent']]],
   ['unit',['unit',['../structUnityAudioParameterDefinition.html#a86df51f1c0f515784998a8b0cd3b3a1a',1,'UnityAudioParameterDefinition']]],
   ['unittest',['UnitTest',['../classUnitTest.html',1,'UnitTest'],['../classUnitTest.html#addae2765d33a079b2b6b116994f825da',1,'UnitTest::UnitTest()']]],
+  ['unittestcategories',['UnitTestCategories',['../namespaceUnitTestCategories.html',1,'']]],
   ['unittestname',['unitTestName',['../structUnitTestRunner_1_1TestResult.html#a5bbfc3f70ca29c0b836dfc9325a328df',1,'UnitTestRunner::TestResult']]],
   ['unittestrunner',['UnitTestRunner',['../classUnitTestRunner.html',1,'UnitTestRunner'],['../classUnitTestRunner.html#ae0e3c870085be83f4821127b99269d78',1,'UnitTestRunner::UnitTestRunner()']]],
   ['unity_5faudio_5fplugin_5fapi_5fversion',['UNITY_AUDIO_PLUGIN_API_VERSION',['../group__juce__audio__plugin__client-Unity.html#ga3afdb8285b85b2471a2564d574fec0f4',1,'juce_UnityPluginInterface.h']]],
