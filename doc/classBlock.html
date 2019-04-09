@@ -165,6 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abadbeba2272ddbc81caf0d5559d3a962"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTime.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#abadbeba2272ddbc81caf0d5559d3a962">getConnectionTime</a> () const =0</td></tr>
 <tr class="memdesc:abadbeba2272ddbc81caf0d5559d3a962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time this block object was connected to the topology.  <a href="#abadbeba2272ddbc81caf0d5559d3a962">More...</a><br /></td></tr>
 <tr class="separator:abadbeba2272ddbc81caf0d5559d3a962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b545d9c0011d40f83444cf70eedacf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aa5b545d9c0011d40f83444cf70eedacf">isConnectedViaBluetooth</a> () const =0</td></tr>
+<tr class="memdesc:aa5b545d9c0011d40f83444cf70eedacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this block or the master block this block is connected to, is connected via bluetooth.  <a href="#aa5b545d9c0011d40f83444cf70eedacf">More...</a><br /></td></tr>
+<tr class="separator:aa5b545d9c0011d40f83444cf70eedacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b1a264a065614451203dc15657b93e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock</a> () const =0</td></tr>
 <tr class="memdesc:ad7b1a264a065614451203dc15657b93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this block is directly connected to the application, as opposed to only being connected to a different block via a connection port.  <a href="#ad7b1a264a065614451203dc15657b93e">More...</a><br /></td></tr>
 <tr class="separator:ad7b1a264a065614451203dc15657b93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -633,7 +636,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Two blocks are considered equal if they have the same UID. </p>
 
-<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#abadbeba2272ddbc81caf0d5559d3a962">getConnectionTime()</a>, <a class="el" href="classBlock.html#ab2af09fac8365981d382760f5bc36775">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, and <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>.</p>
+<p class="reference">References <a class="el" href="classBlock.html#a0921046ac4cabfb90e614d430be3c4d2">getBatteryLevel()</a>, <a class="el" href="classBlock.html#af136d6a8d6d5472b002579fc64960e94">getConnectedMasterUID()</a>, <a class="el" href="classBlock.html#abadbeba2272ddbc81caf0d5559d3a962">getConnectionTime()</a>, <a class="el" href="classBlock.html#ab2af09fac8365981d382760f5bc36775">getDeviceDescription()</a>, <a class="el" href="classBlock.html#ae611643a101a7af7382d0c7537998e92">getHeight()</a>, <a class="el" href="classBlock.html#aeaf40b6fba680e0722d2c0bb2835b695">getMillimetersPerUnit()</a>, <a class="el" href="classBlock.html#aa09e9ff13441f8c6689acb398870c715">getType()</a>, <a class="el" href="classBlock.html#a7c2dfea896a938c866ae09d676784431">getWidth()</a>, <a class="el" href="classBlock.html#ae1e9122a7d34c5a7588280d948ac8733">isBatteryCharging()</a>, <a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562">isConnected()</a>, <a class="el" href="classBlock.html#aa5b545d9c0011d40f83444cf70eedacf">isConnectedViaBluetooth()</a>, <a class="el" href="classBlock.html#a3b6d6d45ac385e51e46d7fe8d0732a43">isControlBlock()</a>, <a class="el" href="classBlock.html#a5df64cb106babe70e7010dd527ce662b">isHardwareBlock()</a>, and <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e">isMasterBlock()</a>.</p>
 
 </div>
 </div>
@@ -857,7 +860,38 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the time this block object was connected to the topology. </p>
 <p>Only valid when isConnected == true.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562" title="Returns true if this block is connected and active. ">isConnected</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562" title="Returns true if this block is connected and active. ">Block::isConnected</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
+
+</div>
+</div>
+<a id="aa5b545d9c0011d40f83444cf70eedacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b545d9c0011d40f83444cf70eedacf">&#9670;&nbsp;</a></span>isConnectedViaBluetooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Block::isConnectedViaBluetooth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if this block or the master block this block is connected to, is connected via bluetooth. </p>
+<p>Only valid when isConnected == true.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html#a2ddbc553e7d6c01b5359adb8ee256562" title="Returns true if this block is connected and active. ">Block::isConnected</a>, <a class="el" href="classBlock.html#ad7b1a264a065614451203dc15657b93e" title="Returns true if this block is directly connected to the application, as opposed to only being connect...">Block::isMasterBlock</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
@@ -887,7 +921,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if this block is directly connected to the application, as opposed to only being connected to a different block via a connection port. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structBlock_1_1ConnectionPort.html" title="These are the edge-connectors that a device may have. ">ConnectionPort</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structBlock_1_1ConnectionPort.html" title="These are the edge-connectors that a device may have. ">Block::ConnectionPort</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classBlock.html#aa8804202dbaf2d863eef686216214bbd">operator!=()</a>.</p>
 
@@ -2425,7 +2459,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 8 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 9 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
