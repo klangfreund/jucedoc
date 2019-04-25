@@ -78,13 +78,14 @@ Inheritance diagram for SystemTrayIconComponent:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e46f4b374a917b7d899128d1d35bcaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemTrayIconComponent.html#a7e46f4b374a917b7d899128d1d35bcaa">SystemTrayIconComponent</a> ()</td></tr>
+<tr class="memdesc:a7e46f4b374a917b7d899128d1d35bcaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7e46f4b374a917b7d899128d1d35bcaa">More...</a><br /></td></tr>
 <tr class="separator:a7e46f4b374a917b7d899128d1d35bcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43793cc120dfc2a4e276a9284665525a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemTrayIconComponent.html#a43793cc120dfc2a4e276a9284665525a">~SystemTrayIconComponent</a> () override</td></tr>
 <tr class="memdesc:a43793cc120dfc2a4e276a9284665525a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a43793cc120dfc2a4e276a9284665525a">More...</a><br /></td></tr>
 <tr class="separator:a43793cc120dfc2a4e276a9284665525a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac27871e1c71277804b16c6fc91941d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemTrayIconComponent.html#ac27871e1c71277804b16c6fc91941d8e">setIconImage</a> (const <a class="el" href="classImage.html">Image</a> &amp;newImage)</td></tr>
-<tr class="memdesc:ac27871e1c71277804b16c6fc91941d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the image shown in the taskbar.  <a href="#ac27871e1c71277804b16c6fc91941d8e">More...</a><br /></td></tr>
-<tr class="separator:ac27871e1c71277804b16c6fc91941d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fc899ec39df95361dbc3aa95dbf374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemTrayIconComponent.html#af4fc899ec39df95361dbc3aa95dbf374">setIconImage</a> (const <a class="el" href="classImage.html">Image</a> &amp;colourImage, const <a class="el" href="classImage.html">Image</a> &amp;templateImage)</td></tr>
+<tr class="memdesc:af4fc899ec39df95361dbc3aa95dbf374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the image shown in the taskbar.  <a href="#af4fc899ec39df95361dbc3aa95dbf374">More...</a><br /></td></tr>
+<tr class="separator:af4fc899ec39df95361dbc3aa95dbf374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df2a1a73814eb73b577090bce9425b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemTrayIconComponent.html#a9df2a1a73814eb73b577090bce9425b9">setIconTooltip</a> (const <a class="el" href="classString.html">String</a> &amp;tooltip)</td></tr>
 <tr class="memdesc:a9df2a1a73814eb73b577090bce9425b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the icon's tooltip (if the current OS supports this).  <a href="#a9df2a1a73814eb73b577090bce9425b9">More...</a><br /></td></tr>
 <tr class="separator:a9df2a1a73814eb73b577090bce9425b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -706,7 +707,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>This component sits in the taskbar tray as a small icon. </p>
 <p>(NB: The exact behaviour of this class will differ between OSes, and it isn't fully implemented for all OSes)</p>
 <p>To use it, just create one of these components, but don't attempt to make it visible, add it to a parent, or put it on the desktop.</p>
-<p>You can then call <a class="el" href="classSystemTrayIconComponent.html#ac27871e1c71277804b16c6fc91941d8e" title="Changes the image shown in the taskbar. ">setIconImage()</a> to create an icon for it in the taskbar.</p>
+<p>You can then call <a class="el" href="classSystemTrayIconComponent.html#af4fc899ec39df95361dbc3aa95dbf374" title="Changes the image shown in the taskbar. ">setIconImage()</a> to create an icon for it in the taskbar.</p>
 <p>To change the icon's tooltip, you can use <a class="el" href="classSystemTrayIconComponent.html#a9df2a1a73814eb73b577090bce9425b9" title="Changes the icon&#39;s tooltip (if the current OS supports this). ">setIconTooltip()</a>.</p>
 <p>To respond to mouse-events, you can override the normal <a class="el" href="classComponent.html#a2a908e064b0bfed1ea0a75b0a0fee6dd" title="Called when a mouse button is pressed. ">mouseDown()</a>, <a class="el" href="classComponent.html#af32dfbd920a1da48ad0d87bdbcda6f70" title="Called when a mouse button is released. ">mouseUp()</a>, <a class="el" href="classComponent.html#a6f85fd58365bc184b4cfc0fe09e61696" title="Called when a mouse button has been double-clicked on a component. ">mouseDoubleClick()</a> and <a class="el" href="classComponent.html#aa4da050178c1ea9b22add407ba8238df" title="Called when the mouse moves inside a component. ">mouseMove()</a> methods, and although the x, y position will not be valid, you can use this to respond to clicks. Traditionally you'd use a left-click to show your application's window, and a right-click to show a pop-up menu. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -724,6 +725,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
 
 </div>
 </div>
@@ -755,8 +758,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac27871e1c71277804b16c6fc91941d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac27871e1c71277804b16c6fc91941d8e">&#9670;&nbsp;</a></span>setIconImage()</h2>
+<a id="af4fc899ec39df95361dbc3aa95dbf374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fc899ec39df95361dbc3aa95dbf374">&#9670;&nbsp;</a></span>setIconImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -765,13 +768,31 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void SystemTrayIconComponent::setIconImage </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classImage.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>newImage</em></td><td>)</td>
+          <td class="paramname"><em>colourImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classImage.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>templateImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Changes the image shown in the taskbar. </p>
+<p>On Windows and Linux a full colour <a class="el" href="classImage.html" title="Holds a fixed-size bitmap. ">Image</a> is used as an icon. On macOS a template image is used, where all non-transparent regions will be rendered in a monochrome colour selected dynamically by the operating system.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colourImage</td><td>An colour image to use as an icon on Windows and Linux </td></tr>
+    <tr><td class="paramname">templateImage</td><td>A template image to use as an icon on macOS </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -938,7 +959,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 25 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

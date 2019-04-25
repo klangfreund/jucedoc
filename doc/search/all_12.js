@@ -401,7 +401,7 @@ var searchData=
   ['sethorizontalrange',['setHorizontalRange',['../classRectangle.html#a711e64d9842cc1fecad266646c27a1e5',1,'Rectangle']]],
   ['sethorizontalscale',['setHorizontalScale',['../classFont.html#a305977210a0e621b8c36bbce58d665aa',1,'Font']]],
   ['seticon',['setIcon',['../classComponentPeer.html#aea319e975bcb86e3727d3b5026ad376c',1,'ComponentPeer::setIcon()'],['../classDocumentWindow.html#ae2270940d36586af89359045bdd9c844',1,'DocumentWindow::setIcon()']]],
-  ['seticonimage',['setIconImage',['../classSystemTrayIconComponent.html#ac27871e1c71277804b16c6fc91941d8e',1,'SystemTrayIconComponent']]],
+  ['seticonimage',['setIconImage',['../classSystemTrayIconComponent.html#af4fc899ec39df95361dbc3aa95dbf374',1,'SystemTrayIconComponent']]],
   ['seticontooltip',['setIconTooltip',['../classSystemTrayIconComponent.html#a9df2a1a73814eb73b577090bce9425b9',1,'SystemTrayIconComponent']]],
   ['setignorescase',['setIgnoresCase',['../classStringPairArray.html#a6d884d5d61f3617e2290bba08fa4effa',1,'StringPairArray']]],
   ['setignoreshiddenfiles',['setIgnoresHiddenFiles',['../classDirectoryContentsList.html#ab143c4681db9f409c204d9a21ae3bced',1,'DirectoryContentsList']]],
