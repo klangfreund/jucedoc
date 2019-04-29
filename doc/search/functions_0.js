@@ -228,6 +228,7 @@ var searchData=
   ['apply',['apply',['../classRelativeCoordinatePositionerBase.html#ade8880abbddebcb48ee7e113902ee40a',1,'RelativeCoordinatePositionerBase']]],
   ['applyblacklistingsfromdeadmanspedal',['applyBlacklistingsFromDeadMansPedal',['../classPluginDirectoryScanner.html#a728d0462d34e67643a0d2a79e2c19f94',1,'PluginDirectoryScanner']]],
   ['applyboundstocomponent',['applyBoundsToComponent',['../classComponentBoundsConstrainer.html#a7591fbbe7013d71122afcd42976a0cec',1,'ComponentBoundsConstrainer']]],
+  ['applybuslayouts',['applyBusLayouts',['../classAudioProcessor.html#ab4a3548133a7826610797dbb47c4067d',1,'AudioProcessor']]],
   ['applychange',['applyChange',['../classValueTreeSynchroniser.html#a987b026099f040bd1fb85a5ee1431fe3',1,'ValueTreeSynchroniser']]],
   ['applychanges',['applyChanges',['../classCodeDocument.html#a6ce285d0b51126f464791407ea9b3e60',1,'CodeDocument']]],
   ['applycolourtoalltext',['applyColourToAllText',['../classTextEditor.html#a9c4c1cceaadc0ce0531789c39a2715c2',1,'TextEditor']]],

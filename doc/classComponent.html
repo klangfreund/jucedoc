@@ -671,6 +671,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab00131d57482fca20ca2828e1879af32"><td class="memItemLeft" align="right" valign="top">static float <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#ab00131d57482fca20ca2828e1879af32">getApproximateScaleFactorForComponent</a> (<a class="el" href="classComponent.html">Component</a> *targetComponent)</td></tr>
+<tr class="memdesc:ab00131d57482fca20ca2828e1879af32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the approximate scale factor for a given component by traversing its parent hierarchy and applying each transform and finally scaling this by the global scale factor.  <a href="#ab00131d57482fca20ca2828e1879af32">More...</a><br /></td></tr>
+<tr class="separator:ab00131d57482fca20ca2828e1879af32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7030de7a58ec40e43ec902d6bb8aaf7a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComponent.html">Component</a> *<a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a7030de7a58ec40e43ec902d6bb8aaf7a">getCurrentlyFocusedComponent</a> () noexcept</td></tr>
 <tr class="memdesc:a7030de7a58ec40e43ec902d6bb8aaf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component that currently has the keyboard focus.  <a href="#a7030de7a58ec40e43ec902d6bb8aaf7a">More...</a><br /></td></tr>
 <tr class="separator:a7030de7a58ec40e43ec902d6bb8aaf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1599,6 +1602,8 @@ Static Public Member Functions</h2></td></tr>
 <p>The rectangle returned is relative to the top-left of the component's parent.</p>
 <p>Note that if you've used <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a> to apply a transform, then the component's bounds will no longer be a direct reflection of the position at which it appears within its parent, as the transform will be applied to its bounding box. </p>
 
+<p class="reference">References <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>.</p>
+
 </div>
 </div>
 <a id="aecc40b8a244527fcb142213151b6d00d"></a>
@@ -2401,6 +2406,34 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns true if a non-identity transform is being applied to this component. </p>
 <p>For more details about transforms, see <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab00131d57482fca20ca2828e1879af32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00131d57482fca20ca2828e1879af32">&#9670;&nbsp;</a></span>getApproximateScaleFactorForComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> Component::getApproximateScaleFactorForComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponent.html">Component</a> *&#160;</td>
+          <td class="paramname"><em>targetComponent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the approximate scale factor for a given component by traversing its parent hierarchy and applying each transform and finally scaling this by the global scale factor. </p>
 
 </div>
 </div>
@@ -6453,7 +6486,7 @@ template&lt;class TargetClass &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 25 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 29 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
