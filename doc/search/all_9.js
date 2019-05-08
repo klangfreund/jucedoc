@@ -278,11 +278,6 @@ var searchData=
   ['juce_5ffiletreecomponent_2eh',['juce_FileTreeComponent.h',['../juce__FileTreeComponent_8h.html',1,'']]],
   ['juce_5ffilltype_2eh',['juce_FillType.h',['../juce__FillType_8h.html',1,'']]],
   ['juce_5ffilterdesign_2eh',['juce_FilterDesign.h',['../juce__FilterDesign_8h.html',1,'']]],
-  ['juce_5ffirebasedevicenotificationstokenrefreshed',['juce_firebaseDeviceNotificationsTokenRefreshed',['../classPushNotifications.html#ab65f32a9e3976da59fb85a1448f436c7',1,'PushNotifications']]],
-  ['juce_5ffirebaseremotemessagesdeleted',['juce_firebaseRemoteMessagesDeleted',['../classPushNotifications.html#a74e270493bf82ffd747a9605ee751b36',1,'PushNotifications']]],
-  ['juce_5ffirebaseremotemessagesenderror',['juce_firebaseRemoteMessageSendError',['../classPushNotifications.html#accc3f82e8d837740046a00b7a3826dcb',1,'PushNotifications']]],
-  ['juce_5ffirebaseremotemessagesent',['juce_firebaseRemoteMessageSent',['../classPushNotifications.html#a44c2ea8aba1c6a70ce3b8b8a4db44c6d',1,'PushNotifications']]],
-  ['juce_5ffirebaseremotenotificationreceived',['juce_firebaseRemoteNotificationReceived',['../classPushNotifications.html#a06fb1c7bb2d74db5d0e926cd433f9b20',1,'PushNotifications']]],
   ['juce_5ffirfilter_2eh',['juce_FIRFilter.h',['../juce__FIRFilter_8h.html',1,'']]],
   ['juce_5fflacaudioformat_2eh',['juce_FlacAudioFormat.h',['../juce__FlacAudioFormat_8h.html',1,'']]],
   ['juce_5fflexbox_2eh',['juce_FlexBox.h',['../juce__FlexBox_8h.html',1,'']]],
@@ -688,6 +683,6 @@ var searchData=
   ['justification',['Justification',['../classJustification.html',1,'Justification'],['../classJustification.html#a98e01ea7f8af9ea1cbf27bf8c8139b76',1,'Justification::Justification(int justificationFlags) noexcept'],['../classJustification.html#ac4b5b9f0403512d91215fec879fa9e77',1,'Justification::Justification(const Justification &amp;)=default']]],
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
-  ['justifyitems',['JustifyItems',['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()'],['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()']]],
-  ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
+  ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
+  ['justifyself',['JustifySelf',['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()'],['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()']]]
 ];
