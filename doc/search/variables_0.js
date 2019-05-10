@@ -17,6 +17,7 @@ var searchData=
   ['acidtempo',['acidTempo',['../classWavAudioFormat.html#ac534d5f34f226b43dd6c03387f9aa9a5',1,'WavAudioFormat']]],
   ['actions',['actions',['../structPushNotifications_1_1Notification.html#a0a9804791528133bf6a31f293300e29e',1,'PushNotifications::Notification::actions()'],['../structPushNotifications_1_1Settings_1_1Category.html#a9d683623a02780751a4ade7f0db55220',1,'PushNotifications::Settings::Category::actions()']]],
   ['active',['active',['../classIIRFilter.html#ace0c7930049d2cca00bebc4b7f9c3a82',1,'IIRFilter']]],
+  ['adddefaultheader',['addDefaultHeader',['../structXmlElement_1_1TextFormat.html#a6c3d0ac316e68e5afab517c54b75386f',1,'XmlElement::TextFormat']]],
   ['address',['address',['../classIPAddress.html#a2be5eab7b1b7d2e39d8d5367642f3004',1,'IPAddress::address()'],['../structNetworkServiceDiscovery_1_1Service.html#ade832707345fb61ef8ed0332ef995ee9',1,'NetworkServiceDiscovery::Service::address()']]],
   ['alertonlyonce',['alertOnlyOnce',['../structPushNotifications_1_1Notification.html#ab134a2585ba8b5064397ed3c56202af0',1,'PushNotifications::Notification']]],
   ['aliceblue',['aliceblue',['../classColours.html#aa90d486409e9c3634ec3f9abbaeb14d7',1,'Colours']]],

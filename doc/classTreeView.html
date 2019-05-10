@@ -101,7 +101,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a7fd775ea6b1190d5d694fdffa539dfac inherit pub_types_classComponent"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">FocusChangeType</a> { <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca350527c976c183a1543958e0698572df">focusChangedByMouseClick</a>, 
 <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca1a14be78d7c4bdf7cdd9a08100bb6a43">focusChangedByTabKey</a>, 
 <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfacad71927268411a4afe7f75bf6034add04">focusChangedDirectly</a>
- }<tr class="memdesc:a7fd775ea6b1190d5d694fdffa539dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used by the focusChanged() and <a class="el" href="classComponent.html#a36456ea9d5a14172d6e96527ec1f59c8" title="Called to indicate that this component has just lost the keyboard focus. ">focusLost()</a> methods.  <a href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">More...</a><br /></td></tr>
+ }<tr class="memdesc:a7fd775ea6b1190d5d694fdffa539dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used by the <a class="el" href="classComponent.html#a408d41f1499a2ebdd4bbc8d4004c7727" title="Called to indicate that this component has just acquired the keyboard focus. ">focusGained()</a> and <a class="el" href="classComponent.html#a36456ea9d5a14172d6e96527ec1f59c8" title="Called to indicate that this component has just lost the keyboard focus. ">focusLost()</a> methods.  <a href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a7fd775ea6b1190d5d694fdffa539dfac inherit pub_types_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -182,9 +182,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bb0fbf94579270cc13cd9fa413022df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTreeViewItem.html">TreeViewItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeView.html#a8bb0fbf94579270cc13cd9fa413022df">findItemFromIdentifierString</a> (const <a class="el" href="classString.html">String</a> &amp;identifierString) const</td></tr>
 <tr class="memdesc:a8bb0fbf94579270cc13cd9fa413022df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the tree for an item with the specified identifier.  <a href="#a8bb0fbf94579270cc13cd9fa413022df">More...</a><br /></td></tr>
 <tr class="separator:a8bb0fbf94579270cc13cd9fa413022df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9394821185f1feaaa1a7002b0b4d1ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeView.html#a9394821185f1feaaa1a7002b0b4d1ad4">getOpennessState</a> (bool alsoIncludeScrollPosition) const</td></tr>
-<tr class="memdesc:a9394821185f1feaaa1a7002b0b4d1ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state of open/closed nodes so it can be restored later.  <a href="#a9394821185f1feaaa1a7002b0b4d1ad4">More...</a><br /></td></tr>
-<tr class="separator:a9394821185f1feaaa1a7002b0b4d1ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8048327fa41a0b67ad1b34c0327db47f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeView.html#a8048327fa41a0b67ad1b34c0327db47f">getOpennessState</a> (bool alsoIncludeScrollPosition) const</td></tr>
+<tr class="memdesc:a8048327fa41a0b67ad1b34c0327db47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state of open/closed nodes so it can be restored later.  <a href="#a8048327fa41a0b67ad1b34c0327db47f">More...</a><br /></td></tr>
+<tr class="separator:a8048327fa41a0b67ad1b34c0327db47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e88906665c57b672def512e355af4f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTreeView.html#a0e88906665c57b672def512e355af4f8">restoreOpennessState</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;newState, bool restoreStoredSelection)</td></tr>
 <tr class="memdesc:a0e88906665c57b672def512e355af4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores a previously saved arrangement of open/closed nodes.  <a href="#a0e88906665c57b672def512e355af4f8">More...</a><br /></td></tr>
 <tr class="separator:a0e88906665c57b672def512e355af4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1474,14 +1474,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9394821185f1feaaa1a7002b0b4d1ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9394821185f1feaaa1a7002b0b4d1ad4">&#9670;&nbsp;</a></span>getOpennessState()</h2>
+<a id="a8048327fa41a0b67ad1b34c0327db47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8048327fa41a0b67ad1b34c0327db47f">&#9670;&nbsp;</a></span>getOpennessState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* TreeView::getOpennessState </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; TreeView::getOpennessState </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>alsoIncludeScrollPosition</em></td><td>)</td>
@@ -1530,9 +1530,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Restores a previously saved arrangement of open/closed nodes. </p>
-<p>This will try to restore a snapshot of the tree's state that was created by the <a class="el" href="classTreeView.html#a9394821185f1feaaa1a7002b0b4d1ad4" title="Saves the current state of open/closed nodes so it can be restored later. ">getOpennessState()</a> method. If any of the nodes named in the original XML aren't present in this tree, they will be ignored.</p>
+<p>This will try to restore a snapshot of the tree's state that was created by the <a class="el" href="classTreeView.html#a8048327fa41a0b67ad1b34c0327db47f" title="Saves the current state of open/closed nodes so it can be restored later. ">getOpennessState()</a> method. If any of the nodes named in the original XML aren't present in this tree, they will be ignored.</p>
 <p>If restoreStoredSelection is true, it will also try to re-select any items that were selected in the stored state.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classTreeView.html#a9394821185f1feaaa1a7002b0b4d1ad4" title="Saves the current state of open/closed nodes so it can be restored later. ">getOpennessState</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classTreeView.html#a8048327fa41a0b67ad1b34c0327db47f" title="Saves the current state of open/closed nodes so it can be restored later. ">getOpennessState</a> </dd></dl>
 
 </div>
 </div>
@@ -2007,7 +2007,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:29 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

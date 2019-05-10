@@ -81,9 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab18742228f580a5e4ec87e4b39c8a68c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#ab18742228f580a5e4ec87e4b39c8a68c">~XmlDocument</a> ()</td></tr>
 <tr class="memdesc:ab18742228f580a5e4ec87e4b39c8a68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab18742228f580a5e4ec87e4b39c8a68c">More...</a><br /></td></tr>
 <tr class="separator:ab18742228f580a5e4ec87e4b39c8a68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95252ae0d6c2f228065d5503507b0131"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131">getDocumentElement</a> (bool onlyReadOuterDocumentElement=false)</td></tr>
-<tr class="memdesc:a95252ae0d6c2f228065d5503507b0131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> object to represent the main document node.  <a href="#a95252ae0d6c2f228065d5503507b0131">More...</a><br /></td></tr>
-<tr class="separator:a95252ae0d6c2f228065d5503507b0131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e49f3f0e3ad8e2247b937b25d241d10"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10">getDocumentElement</a> (bool onlyReadOuterDocumentElement=false)</td></tr>
+<tr class="memdesc:a4e49f3f0e3ad8e2247b937b25d241d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> object to represent the main document node.  <a href="#a4e49f3f0e3ad8e2247b937b25d241d10">More...</a><br /></td></tr>
+<tr class="separator:a4e49f3f0e3ad8e2247b937b25d241d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a186bd3e51c86b7c9a7edbcfe97bc7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#a54a186bd3e51c86b7c9a7edbcfe97bc7">getLastParseError</a> () const noexcept</td></tr>
 <tr class="memdesc:a54a186bd3e51c86b7c9a7edbcfe97bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parsing error that occurred the last time getDocumentElement was called.  <a href="#a54a186bd3e51c86b7c9a7edbcfe97bc7">More...</a><br /></td></tr>
 <tr class="separator:a54a186bd3e51c86b7c9a7edbcfe97bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,12 +96,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae14f9fc62e978ce7246922a84a568f20"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#ae14f9fc62e978ce7246922a84a568f20">parse</a> (const <a class="el" href="classFile.html">File</a> &amp;file)</td></tr>
-<tr class="memdesc:ae14f9fc62e978ce7246922a84a568f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy static method that parses a file.  <a href="#ae14f9fc62e978ce7246922a84a568f20">More...</a><br /></td></tr>
-<tr class="separator:ae14f9fc62e978ce7246922a84a568f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a359a74301cbb56b9cbbaa635a4bf66bf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#a359a74301cbb56b9cbbaa635a4bf66bf">parse</a> (const <a class="el" href="classString.html">String</a> &amp;xmlData)</td></tr>
-<tr class="memdesc:a359a74301cbb56b9cbbaa635a4bf66bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy static method that parses some XML data.  <a href="#a359a74301cbb56b9cbbaa635a4bf66bf">More...</a><br /></td></tr>
-<tr class="separator:a359a74301cbb56b9cbbaa635a4bf66bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a62012aa4a4e15eed680ffb64b362e"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#ae6a62012aa4a4e15eed680ffb64b362e">parse</a> (const <a class="el" href="classFile.html">File</a> &amp;file)</td></tr>
+<tr class="memdesc:ae6a62012aa4a4e15eed680ffb64b362e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy static method that parses a file.  <a href="#ae6a62012aa4a4e15eed680ffb64b362e">More...</a><br /></td></tr>
+<tr class="separator:ae6a62012aa4a4e15eed680ffb64b362e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5be72958ab0d9759d1361c9291f17e"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlDocument.html#aab5be72958ab0d9759d1361c9291f17e">parse</a> (const <a class="el" href="classString.html">String</a> &amp;xmlData)</td></tr>
+<tr class="memdesc:aab5be72958ab0d9759d1361c9291f17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy static method that parses some XML data.  <a href="#aab5be72958ab0d9759d1361c9291f17e">More...</a><br /></td></tr>
+<tr class="separator:aab5be72958ab0d9759d1361c9291f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parses a text-based XML document and creates an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> object from it. </p>
@@ -126,7 +126,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> from the xml text. </p>
-<p>The text doesn't actually get parsed until the <a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method is called. </p>
+<p>The text doesn't actually get parsed until the <a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method is called. </p>
 
 </div>
 </div>
@@ -147,7 +147,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> from a file. </p>
-<p>The text doesn't actually get parsed until the <a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method is called. </p>
+<p>The text doesn't actually get parsed until the <a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method is called. </p>
 
 </div>
 </div>
@@ -171,14 +171,14 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a95252ae0d6c2f228065d5503507b0131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95252ae0d6c2f228065d5503507b0131">&#9670;&nbsp;</a></span>getDocumentElement()</h2>
+<a id="a4e49f3f0e3ad8e2247b937b25d241d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e49f3f0e3ad8e2247b937b25d241d10">&#9670;&nbsp;</a></span>getDocumentElement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* XmlDocument::getDocumentElement </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; XmlDocument::getDocumentElement </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>onlyReadOuterDocumentElement</em> = <code>false</code></td><td>)</td>
@@ -189,7 +189,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> object to represent the main document node. </p>
 <p>This method will do the actual parsing of the text, and if there's a parse error, it may returns nullptr (and you can find out the error using the <a class="el" href="classXmlDocument.html#a54a186bd3e51c86b7c9a7edbcfe97bc7" title="Returns the parsing error that occurred the last time getDocumentElement was called. ">getLastParseError()</a> method).</p>
-<p>See also the <a class="el" href="classXmlDocument.html#ae14f9fc62e978ce7246922a84a568f20" title="A handy static method that parses a file. ">parse()</a> methods, which provide a shorthand way to quickly parse a file or string.</p>
+<p>See also the <a class="el" href="classXmlDocument.html#ae6a62012aa4a4e15eed680ffb64b362e" title="A handy static method that parses a file. ">parse()</a> methods, which provide a shorthand way to quickly parse a file or string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">onlyReadOuterDocumentElement</td><td>if true, the parser will only read the first section of the file, and will only return the outer document element - this allows quick checking of large files to see if they contain the correct type of tag, without having to parse the entire file </td></tr>
@@ -285,12 +285,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets a flag to change the treatment of empty text elements. </p>
-<p>If this is true (the default state), then any text elements that contain only whitespace characters will be ingored during parsing. If you need to catch whitespace-only text, then you should set this to false before calling the <a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method. </p>
+<p>If this is true (the default state), then any text elements that contain only whitespace characters will be ingored during parsing. If you need to catch whitespace-only text, then you should set this to false before calling the <a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> method. </p>
 
 </div>
 </div>
-<a id="ae14f9fc62e978ce7246922a84a568f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae14f9fc62e978ce7246922a84a568f20">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/2]</span></h2>
+<a id="ae6a62012aa4a4e15eed680ffb64b362e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a62012aa4a4e15eed680ffb64b362e">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +299,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classXmlElement.html">XmlElement</a>* XmlDocument::parse </td>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; XmlDocument::parse </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
@@ -314,12 +314,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A handy static method that parses a file. </p>
-<p>This is a shortcut for creating an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> object and calling <a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> on it. An even better shortcut is the juce::parseXML() function, which returns a std::unique_ptr&lt;XmlElement&gt;! </p><dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> which the caller will need to delete, or null if there was an error. </dd></dl>
+<p>This is a shortcut for creating an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> object and calling <a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> on it. An even better shortcut is the juce::parseXML() function, which returns a std::unique_ptr&lt;XmlElement&gt;! </p><dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> which the caller will need to delete, or null if there was an error. </dd></dl>
 
 </div>
 </div>
-<a id="a359a74301cbb56b9cbbaa635a4bf66bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a359a74301cbb56b9cbbaa635a4bf66bf">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
+<a id="aab5be72958ab0d9759d1361c9291f17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5be72958ab0d9759d1361c9291f17e">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classXmlElement.html">XmlElement</a>* XmlDocument::parse </td>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; XmlDocument::parse </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>xmlData</em></td><td>)</td>
@@ -343,7 +343,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A handy static method that parses some XML data. </p>
-<p>This is a shortcut for creating an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> object and calling <a class="el" href="classXmlDocument.html#a95252ae0d6c2f228065d5503507b0131" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> on it. An even better shortcut is the juce::parseXML() function, which returns a std::unique_ptr&lt;XmlElement&gt;! </p><dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> which the caller will need to delete, or null if there was an error. </dd></dl>
+<p>This is a shortcut for creating an <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> object and calling <a class="el" href="classXmlDocument.html#a4e49f3f0e3ad8e2247b937b25d241d10" title="Creates an XmlElement object to represent the main document node. ">getDocumentElement()</a> on it. An even better shortcut is the juce::parseXML() function, which returns a std::unique_ptr&lt;XmlElement&gt;! </p><dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> which the caller will need to delete, or null if there was an error. </dd></dl>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

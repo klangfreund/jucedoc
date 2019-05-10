@@ -102,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5df72070f494ea3415361c43538bdac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#aa5df72070f494ea3415361c43538bdac">getBoolValue</a> (<a class="el" href="classStringRef.html">StringRef</a> keyName, bool defaultReturnValue=false) const noexcept</td></tr>
 <tr class="memdesc:aa5df72070f494ea3415361c43538bdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the properties as an boolean.  <a href="#aa5df72070f494ea3415361c43538bdac">More...</a><br /></td></tr>
 <tr class="separator:aa5df72070f494ea3415361c43538bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd64a37af3c650082da6e5ece173653"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a4dd64a37af3c650082da6e5ece173653">getXmlValue</a> (<a class="el" href="classStringRef.html">StringRef</a> keyName) const</td></tr>
-<tr class="memdesc:a4dd64a37af3c650082da6e5ece173653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the properties as an XML element.  <a href="#a4dd64a37af3c650082da6e5ece173653">More...</a><br /></td></tr>
-<tr class="separator:a4dd64a37af3c650082da6e5ece173653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3265f2ef5223f5adf807da87da674fb7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a3265f2ef5223f5adf807da87da674fb7">getXmlValue</a> (<a class="el" href="classStringRef.html">StringRef</a> keyName) const</td></tr>
+<tr class="memdesc:a3265f2ef5223f5adf807da87da674fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the properties as an XML element.  <a href="#a3265f2ef5223f5adf807da87da674fb7">More...</a><br /></td></tr>
+<tr class="separator:a3265f2ef5223f5adf807da87da674fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696515de52c7310117e7914a02b58e57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a696515de52c7310117e7914a02b58e57">setValue</a> (const <a class="el" href="classString.html">String</a> &amp;keyName, const <a class="el" href="classvar.html">var</a> &amp;value)</td></tr>
 <tr class="memdesc:a696515de52c7310117e7914a02b58e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a named property.  <a href="#a696515de52c7310117e7914a02b58e57">More...</a><br /></td></tr>
 <tr class="separator:a696515de52c7310117e7914a02b58e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b371714834842b485583c305f2d5602"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCriticalSection.html">CriticalSection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a3b371714834842b485583c305f2d5602">getLock</a> () const noexcept</td></tr>
 <tr class="memdesc:a3b371714834842b485583c305f2d5602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lock used when reading or writing to this set.  <a href="#a3b371714834842b485583c305f2d5602">More...</a><br /></td></tr>
 <tr class="separator:a3b371714834842b485583c305f2d5602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911a7396412e5bb5e93dfcf56286e758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a911a7396412e5bb5e93dfcf56286e758">createXml</a> (const <a class="el" href="classString.html">String</a> &amp;nodeName) const</td></tr>
-<tr class="memdesc:a911a7396412e5bb5e93dfcf56286e758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an XML element which encapsulates all the items in this property set.  <a href="#a911a7396412e5bb5e93dfcf56286e758">More...</a><br /></td></tr>
-<tr class="separator:a911a7396412e5bb5e93dfcf56286e758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccdda620233b438fc8f2d092a7f08a0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#a4ccdda620233b438fc8f2d092a7f08a0">createXml</a> (const <a class="el" href="classString.html">String</a> &amp;nodeName) const</td></tr>
+<tr class="memdesc:a4ccdda620233b438fc8f2d092a7f08a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an XML element which encapsulates all the items in this property set.  <a href="#a4ccdda620233b438fc8f2d092a7f08a0">More...</a><br /></td></tr>
+<tr class="separator:a4ccdda620233b438fc8f2d092a7f08a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb4db0338ee4d9d121427990306d8101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertySet.html#aeb4db0338ee4d9d121427990306d8101">restoreFromXml</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;xml)</td></tr>
 <tr class="memdesc:aeb4db0338ee4d9d121427990306d8101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads a set of properties that were previously stored as XML.  <a href="#aeb4db0338ee4d9d121427990306d8101">More...</a><br /></td></tr>
 <tr class="separator:aeb4db0338ee4d9d121427990306d8101"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,14 +436,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4dd64a37af3c650082da6e5ece173653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dd64a37af3c650082da6e5ece173653">&#9670;&nbsp;</a></span>getXmlValue()</h2>
+<a id="a3265f2ef5223f5adf807da87da674fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3265f2ef5223f5adf807da87da674fb7">&#9670;&nbsp;</a></span>getXmlValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* PropertySet::getXmlValue </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; PropertySet::getXmlValue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
           <td class="paramname"><em>keyName</em></td><td>)</td>
@@ -539,7 +539,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertySet.html#a4dd64a37af3c650082da6e5ece173653" title="Returns one of the properties as an XML element. ">getXmlValue</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertySet.html#a3265f2ef5223f5adf807da87da674fb7" title="Returns one of the properties as an XML element. ">getXmlValue</a> </dd></dl>
 
 </div>
 </div>
@@ -691,14 +691,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a911a7396412e5bb5e93dfcf56286e758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911a7396412e5bb5e93dfcf56286e758">&#9670;&nbsp;</a></span>createXml()</h2>
+<a id="a4ccdda620233b438fc8f2d092a7f08a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccdda620233b438fc8f2d092a7f08a0">&#9670;&nbsp;</a></span>createXml()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* PropertySet::createXml </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; PropertySet::createXml </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>nodeName</em></td><td>)</td>
@@ -729,7 +729,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reloads a set of properties that were previously stored as XML. </p>
-<p>The node passed in must have been created by the <a class="el" href="classPropertySet.html#a911a7396412e5bb5e93dfcf56286e758" title="Returns an XML element which encapsulates all the items in this property set. ">createXml()</a> method. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertySet.html#a911a7396412e5bb5e93dfcf56286e758" title="Returns an XML element which encapsulates all the items in this property set. ">createXml</a> </dd></dl>
+<p>The node passed in must have been created by the <a class="el" href="classPropertySet.html#a4ccdda620233b438fc8f2d092a7f08a0" title="Returns an XML element which encapsulates all the items in this property set. ">createXml()</a> method. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertySet.html#a4ccdda620233b438fc8f2d092a7f08a0" title="Returns an XML element which encapsulates all the items in this property set. ">createXml</a> </dd></dl>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -57,5 +57,7 @@ var searchData=
   ['curve',['curve',['../structAudioProcessor_1_1CurveData.html#a561e43079b306c3f94a243f72f47ef35',1,'AudioProcessor::CurveData']]],
   ['customcallback',['customCallback',['../structPopupMenu_1_1Item.html#aa38826c9b08d9c8c4e8ad2f8da46fec8',1,'PopupMenu::Item']]],
   ['customcomponent',['customComponent',['../structPopupMenu_1_1Item.html#a60e8c61225a127bf37c46144c03689f6',1,'PopupMenu::Item']]],
+  ['customencoding',['customEncoding',['../structXmlElement_1_1TextFormat.html#ae7037150be1321862bb3cedb6642586a',1,'XmlElement::TextFormat']]],
+  ['customheader',['customHeader',['../structXmlElement_1_1TextFormat.html#a9b77aa7cdec984b10decc585ca19ba6f',1,'XmlElement::TextFormat']]],
   ['cyan',['cyan',['../classColours.html#a0f35bbd00d593e18a4e980100e77373c',1,'Colours']]]
 ];

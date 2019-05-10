@@ -26,6 +26,7 @@ var searchData=
   ['negativeawaremodulo',['negativeAwareModulo',['../group__juce__core-maths.html#ga3cfa905495cba62bd9ad2b73d2dc3f1c',1,'juce_MathsFunctions.h']]],
   ['networkservicediscovery',['NetworkServiceDiscovery',['../structNetworkServiceDiscovery.html',1,'']]],
   ['newline',['NewLine',['../classNewLine.html',1,'NewLine'],['../group__juce__core-text.html#gabd231b88341c3e2c328178d34f3ce8fb',1,'newLine():&#160;juce_NewLine.h']]],
+  ['newlinechars',['newLineChars',['../structXmlElement_1_1TextFormat.html#ac67cc12b80fa10ee32861bc2c3312d67',1,'XmlElement::TextFormat']]],
   ['newopenglcontextcreated',['newOpenGLContextCreated',['../classOpenGLRenderer.html#a59d6279104b47109cf2042b13ae5b61d',1,'OpenGLRenderer']]],
   ['newtransaction',['newTransaction',['../classTextEditor.html#ac1cdc461e88ca484f3528d74a7e1d27c',1,'TextEditor::newTransaction()'],['../classCodeDocument.html#a507bca2d6747323276b938670584f354',1,'CodeDocument::newTransaction()']]],
   ['newwindowattemptingtoload',['newWindowAttemptingToLoad',['../classWebBrowserComponent.html#a3d441e5a7f31ea77ac0a013482de4442',1,'WebBrowserComponent']]],

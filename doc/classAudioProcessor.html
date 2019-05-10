@@ -458,9 +458,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d0c1c945bebbc967d187c0f08b42c4b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a6d0c1c945bebbc967d187c0f08b42c4b">copyXmlToBinary</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;xml, juce::MemoryBlock &amp;destData)</td></tr>
 <tr class="memdesc:a6d0c1c945bebbc967d187c0f08b42c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that just converts an xml element into a binary blob.  <a href="#a6d0c1c945bebbc967d187c0f08b42c4b">More...</a><br /></td></tr>
 <tr class="separator:a6d0c1c945bebbc967d187c0f08b42c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af314980ac708cb8802b48317037e5b5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#af314980ac708cb8802b48317037e5b5b">getXmlFromBinary</a> (const void *data, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> sizeInBytes)</td></tr>
-<tr class="memdesc:af314980ac708cb8802b48317037e5b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an XML element that was stored as binary with the <a class="el" href="classAudioProcessor.html#a6d0c1c945bebbc967d187c0f08b42c4b" title="Helper function that just converts an xml element into a binary blob. ">copyXmlToBinary()</a> method.  <a href="#af314980ac708cb8802b48317037e5b5b">More...</a><br /></td></tr>
-<tr class="separator:af314980ac708cb8802b48317037e5b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dd895a97ede01e43485052e077221e"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a12dd895a97ede01e43485052e077221e">getXmlFromBinary</a> (const void *data, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> sizeInBytes)</td></tr>
+<tr class="memdesc:a12dd895a97ede01e43485052e077221e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an XML element that was stored as binary with the <a class="el" href="classAudioProcessor.html#a6d0c1c945bebbc967d187c0f08b42c4b" title="Helper function that just converts an xml element into a binary blob. ">copyXmlToBinary()</a> method.  <a href="#a12dd895a97ede01e43485052e077221e">More...</a><br /></td></tr>
+<tr class="separator:a12dd895a97ede01e43485052e077221e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a406ae17bd699349d5da8510aa8af1b"><td class="memItemLeft" align="right" valign="top">static void <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a2a406ae17bd699349d5da8510aa8af1b">setTypeOfNextNewPlugin</a> (<a class="el" href="classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcf">WrapperType</a>)</td></tr>
 <tr class="separator:a2a406ae17bd699349d5da8510aa8af1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -3373,7 +3373,7 @@ template&lt;int numLayouts&gt; </div>
 
 <p>This must restore the processor's state from a block of data previously created using <a class="el" href="classAudioProcessor.html#a5d79591b367a7c0516e4ef4d1d6c32b2" title="The host will call this method when it wants to save the processor&#39;s internal state. ">getStateInformation()</a>. </p>
 <p>Note that there's also a <a class="el" href="classAudioProcessor.html#ade2c2df3606218b0f9fa1a3a376440a5" title="The host will call this method if it wants to restore the state of just the processor&#39;s current progr...">setCurrentProgramStateInformation()</a> method, which tries to restore just the current program, not the state of the entire processor.</p>
-<p>See also the helper function <a class="el" href="classAudioProcessor.html#af314980ac708cb8802b48317037e5b5b" title="Retrieves an XML element that was stored as binary with the copyXmlToBinary() method. ">getXmlFromBinary()</a> for loading settings as XML.</p>
+<p>See also the helper function <a class="el" href="classAudioProcessor.html#a12dd895a97ede01e43485052e077221e" title="Retrieves an XML element that was stored as binary with the copyXmlToBinary() method. ">getXmlFromBinary()</a> for loading settings as XML.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioProcessor.html#ade2c2df3606218b0f9fa1a3a376440a5" title="The host will call this method if it wants to restore the state of just the processor&#39;s current progr...">setCurrentProgramStateInformation</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="classAudioProcessorGraph.html#a84e6d9e7d6ae555020cd21f887cca889">AudioProcessorGraph</a>, and <a class="el" href="classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a0a3367144ac4af6e34923d2bdd53a5ab">AudioProcessorGraph::AudioGraphIOProcessor</a>.</p>
@@ -3864,12 +3864,12 @@ template&lt;int numLayouts&gt; </div>
 
 <p>Helper function that just converts an xml element into a binary blob. </p>
 <p>Use this in your processor's <a class="el" href="classAudioProcessor.html#a5d79591b367a7c0516e4ef4d1d6c32b2" title="The host will call this method when it wants to save the processor&#39;s internal state. ">getStateInformation()</a> method if you want to store its state as xml.</p>
-<p>Then use <a class="el" href="classAudioProcessor.html#af314980ac708cb8802b48317037e5b5b" title="Retrieves an XML element that was stored as binary with the copyXmlToBinary() method. ">getXmlFromBinary()</a> to reverse this operation and retrieve the XML from a binary blob. </p>
+<p>Then use <a class="el" href="classAudioProcessor.html#a12dd895a97ede01e43485052e077221e" title="Retrieves an XML element that was stored as binary with the copyXmlToBinary() method. ">getXmlFromBinary()</a> to reverse this operation and retrieve the XML from a binary blob. </p>
 
 </div>
 </div>
-<a id="af314980ac708cb8802b48317037e5b5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af314980ac708cb8802b48317037e5b5b">&#9670;&nbsp;</a></span>getXmlFromBinary()</h2>
+<a id="a12dd895a97ede01e43485052e077221e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12dd895a97ede01e43485052e077221e">&#9670;&nbsp;</a></span>getXmlFromBinary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3878,7 +3878,7 @@ template&lt;int numLayouts&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classXmlElement.html">XmlElement</a>* AudioProcessor::getXmlFromBinary </td>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; AudioProcessor::getXmlFromBinary </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -3903,7 +3903,7 @@ template&lt;int numLayouts&gt; </div>
 </div><div class="memdoc">
 
 <p>Retrieves an XML element that was stored as binary with the <a class="el" href="classAudioProcessor.html#a6d0c1c945bebbc967d187c0f08b42c4b" title="Helper function that just converts an xml element into a binary blob. ">copyXmlToBinary()</a> method. </p>
-<p>This might return nullptr if the data's unsuitable or corrupted. Otherwise it will return an <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> object that the caller must delete when no longer needed. </p>
+<p>This might return nullptr if the data's unsuitable or corrupted. </p>
 
 </div>
 </div>
@@ -4157,7 +4157,7 @@ template&lt;int numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

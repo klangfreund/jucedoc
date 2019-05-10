@@ -13,6 +13,7 @@ var searchData=
   ['textdraganddroptarget',['TextDragAndDropTarget',['../classTextDragAndDropTarget.html',1,'']]],
   ['texteditor',['TextEditor',['../classTextEditor.html',1,'']]],
   ['texteditorkeymapper',['TextEditorKeyMapper',['../structTextEditorKeyMapper.html',1,'']]],
+  ['textformat',['TextFormat',['../structXmlElement_1_1TextFormat.html',1,'XmlElement']]],
   ['textinputtarget',['TextInputTarget',['../classTextInputTarget.html',1,'']]],
   ['textlayout',['TextLayout',['../classTextLayout.html',1,'']]],
   ['textpropertycomponent',['TextPropertyComponent',['../classTextPropertyComponent.html',1,'']]],

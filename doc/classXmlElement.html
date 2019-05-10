@@ -59,6 +59,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classXmlElement-members.html">List of all members</a>  </div>
@@ -70,6 +71,11 @@ $(function() {
 <p>Used to build a tree of elements representing an XML document.  
  <a href="classXmlElement.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a8f5f328633c9ec5f0348651b0d2c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a3a8f5f328633c9ec5f0348651b0d2c23">XmlElement</a> (const <a class="el" href="classString.html">String</a> &amp;tagName)</td></tr>
@@ -105,15 +111,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac970d556bc59579feb6e1b0035240c8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ac970d556bc59579feb6e1b0035240c8d">isEquivalentTo</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> *other, bool ignoreOrderOfAttributes) const noexcept</td></tr>
 <tr class="memdesc:ac970d556bc59579feb6e1b0035240c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two XmlElements to see if they contain the same text and attributes.  <a href="#ac970d556bc59579feb6e1b0035240c8d">More...</a><br /></td></tr>
 <tr class="separator:ac970d556bc59579feb6e1b0035240c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a55313aba630bc87deb927375f06cff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a4a55313aba630bc87deb927375f06cff">createDocument</a> (<a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const</td></tr>
-<tr class="memdesc:a4a55313aba630bc87deb927375f06cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an XML text document that represents this element.  <a href="#a4a55313aba630bc87deb927375f06cff">More...</a><br /></td></tr>
-<tr class="separator:a4a55313aba630bc87deb927375f06cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0dbdeb429480f5f073b46558f5f55f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#aeb0dbdeb429480f5f073b46558f5f55f">writeToStream</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;output, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const</td></tr>
-<tr class="memdesc:aeb0dbdeb429480f5f073b46558f5f55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the document to a stream as UTF-8.  <a href="#aeb0dbdeb429480f5f073b46558f5f55f">More...</a><br /></td></tr>
-<tr class="separator:aeb0dbdeb429480f5f073b46558f5f55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fafc3733f64e74d3c11068e4d3a541"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#aa9fafc3733f64e74d3c11068e4d3a541">writeToFile</a> (const <a class="el" href="classFile.html">File</a> &amp;destinationFile, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const</td></tr>
-<tr class="memdesc:aa9fafc3733f64e74d3c11068e4d3a541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the element to a file as an XML document.  <a href="#aa9fafc3733f64e74d3c11068e4d3a541">More...</a><br /></td></tr>
-<tr class="separator:aa9fafc3733f64e74d3c11068e4d3a541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae493f2c19170a6c89298c0fbd3a258b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ae493f2c19170a6c89298c0fbd3a258b3">toString</a> (const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;format={}) const</td></tr>
+<tr class="memdesc:ae493f2c19170a6c89298c0fbd3a258b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a text version of this XML element.  <a href="#ae493f2c19170a6c89298c0fbd3a258b3">More...</a><br /></td></tr>
+<tr class="separator:ae493f2c19170a6c89298c0fbd3a258b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9db3bf14ff1f24098f10fc3b3092d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e">writeTo</a> (<a class="el" href="classOutputStream.html">OutputStream</a> &amp;output, const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;format={}) const</td></tr>
+<tr class="memdesc:ad9db3bf14ff1f24098f10fc3b3092d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the document to a stream as UTF-8.  <a href="#ad9db3bf14ff1f24098f10fc3b3092d6e">More...</a><br /></td></tr>
+<tr class="separator:ad9db3bf14ff1f24098f10fc3b3092d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6065b31b935b297e5084773d31ca833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#af6065b31b935b297e5084773d31ca833">writeTo</a> (const <a class="el" href="classFile.html">File</a> &amp;destinationFile, const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;format={}) const</td></tr>
+<tr class="memdesc:af6065b31b935b297e5084773d31ca833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the document to a file as UTF-8.  <a href="#af6065b31b935b297e5084773d31ca833">More...</a><br /></td></tr>
+<tr class="separator:af6065b31b935b297e5084773d31ca833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42763c064fcc57c24f0a4ec3c7de7b5c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a42763c064fcc57c24f0a4ec3c7de7b5c">getTagName</a> () const noexcept</td></tr>
 <tr class="memdesc:a42763c064fcc57c24f0a4ec3c7de7b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this element's tag type name.  <a href="#a42763c064fcc57c24f0a4ec3c7de7b5c">More...</a><br /></td></tr>
 <tr class="separator:a42763c064fcc57c24f0a4ec3c7de7b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +259,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad321a686465bf21ae7eb785b76d5e352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ad321a686465bf21ae7eb785b76d5e352">deleteAllTextElements</a> () noexcept</td></tr>
 <tr class="memdesc:ad321a686465bf21ae7eb785b76d5e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the text elements from this element.  <a href="#ad321a686465bf21ae7eb785b76d5e352">More...</a><br /></td></tr>
 <tr class="separator:ad321a686465bf21ae7eb785b76d5e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2100dc1765ab395793302bbc95dab790"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a2100dc1765ab395793302bbc95dab790">JUCE_DEPRECATED</a> (<a class="el" href="classString.html">String</a> createDocument(<a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const)</td></tr>
+<tr class="memdesc:a2100dc1765ab395793302bbc95dab790"><td class="mdescLeft">&#160;</td><td class="mdescRight">This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ae493f2c19170a6c89298c0fbd3a258b3" title="Returns a text version of this XML element. ">toString()</a> method.  <a href="#a2100dc1765ab395793302bbc95dab790">More...</a><br /></td></tr>
+<tr class="separator:a2100dc1765ab395793302bbc95dab790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86549f6ab62e7fdac4c54c15c2c9baea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#a86549f6ab62e7fdac4c54c15c2c9baea">JUCE_DEPRECATED</a> (void writeToStream(<a class="el" href="classOutputStream.html">OutputStream</a> &amp;output, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const)</td></tr>
+<tr class="memdesc:a86549f6ab62e7fdac4c54c15c2c9baea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo()</a> method.  <a href="#a86549f6ab62e7fdac4c54c15c2c9baea">More...</a><br /></td></tr>
+<tr class="separator:a86549f6ab62e7fdac4c54c15c2c9baea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac741f60742def74f46f36bec03fc87ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmlElement.html#ac741f60742def74f46f36bec03fc87ad">JUCE_DEPRECATED</a> (bool writeToFile(const <a class="el" href="classFile.html">File</a> &amp;destinationFile, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60) const)</td></tr>
+<tr class="memdesc:ac741f60742def74f46f36bec03fc87ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo()</a> method.  <a href="#ac741f60742def74f46f36bec03fc87ad">More...</a><br /></td></tr>
+<tr class="separator:ac741f60742def74f46f36bec03fc87ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -267,7 +282,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Used to build a tree of elements representing an XML document. </p>
 <p>An XML document can be parsed into a tree of XmlElements, each of which represents an XML tag structure, and which may itself contain other nested elements.</p>
 <p>An <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> can also be converted back into a text document, and has lots of useful methods for manipulating its attributes and sub-elements, so XmlElements can actually be used as a handy general-purpose data structure.</p>
-<p>Here's an example of parsing some elements:</p><div class="fragment"><div class="line"><span class="comment">// check we&#39;re looking at the right kind of document..</span></div><div class="line"><span class="keywordflow">if</span> (myElement-&gt;hasTagName (<span class="stringliteral">&quot;ANIMALS&quot;</span>))</div><div class="line">{</div><div class="line">    <span class="comment">// now we&#39;ll iterate its sub-elements looking for &#39;giraffe&#39; elements..</span></div><div class="line">    <a class="code" href="group__juce__core-xml.html#gace692e5be62f7ab58363d91b52eb839e">forEachXmlChildElement</a> (*myElement, e)</div><div class="line">    {</div><div class="line">        <span class="keywordflow">if</span> (e-&gt;hasTagName (<span class="stringliteral">&quot;GIRAFFE&quot;</span>))</div><div class="line">        {</div><div class="line">            <span class="comment">// found a giraffe, so use some of its attributes..</span></div><div class="line"></div><div class="line">            <a class="code" href="classString.html">String</a> giraffeName  = e-&gt;getStringAttribute (<span class="stringliteral">&quot;name&quot;</span>);</div><div class="line">            <span class="keywordtype">int</span> giraffeAge      = e-&gt;getIntAttribute (<span class="stringliteral">&quot;age&quot;</span>);</div><div class="line">            <span class="keywordtype">bool</span> isFriendly     = e-&gt;getBoolAttribute (<span class="stringliteral">&quot;friendly&quot;</span>);</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p>And here's an example of how to create an XML document from scratch:</p><div class="fragment"><div class="line"><span class="comment">// create an outer node called &quot;ANIMALS&quot;</span></div><div class="line"><a class="code" href="classXmlElement.html">XmlElement</a> animalsList (<span class="stringliteral">&quot;ANIMALS&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numAnimals; ++i)</div><div class="line">{</div><div class="line">    <span class="comment">// create an inner element..</span></div><div class="line">    <a class="code" href="classXmlElement.html">XmlElement</a>* giraffe = <span class="keyword">new</span> <a class="code" href="classXmlElement.html#a3a8f5f328633c9ec5f0348651b0d2c23">XmlElement</a> (<span class="stringliteral">&quot;GIRAFFE&quot;</span>);</div><div class="line"></div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;nigel&quot;</span>);</div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;age&quot;</span>, 10);</div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;friendly&quot;</span>, <span class="keyword">true</span>);</div><div class="line"></div><div class="line">    <span class="comment">// ..and add our new element to the parent node</span></div><div class="line">    animalsList.addChildElement (giraffe);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// now we can turn the whole thing into a text document..</span></div><div class="line"><a class="code" href="classString.html">String</a> myXmlDoc = animalsList.createDocument (<a class="code" href="classString.html">String</a>());</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
+<p>Here's an example of parsing some elements:</p><div class="fragment"><div class="line"><span class="comment">// check we&#39;re looking at the right kind of document..</span></div><div class="line"><span class="keywordflow">if</span> (myElement-&gt;hasTagName (<span class="stringliteral">&quot;ANIMALS&quot;</span>))</div><div class="line">{</div><div class="line">    <span class="comment">// now we&#39;ll iterate its sub-elements looking for &#39;giraffe&#39; elements..</span></div><div class="line">    <a class="code" href="group__juce__core-xml.html#gace692e5be62f7ab58363d91b52eb839e">forEachXmlChildElement</a> (*myElement, e)</div><div class="line">    {</div><div class="line">        <span class="keywordflow">if</span> (e-&gt;hasTagName (<span class="stringliteral">&quot;GIRAFFE&quot;</span>))</div><div class="line">        {</div><div class="line">            <span class="comment">// found a giraffe, so use some of its attributes..</span></div><div class="line"></div><div class="line">            <a class="code" href="classString.html">String</a> giraffeName  = e-&gt;getStringAttribute (<span class="stringliteral">&quot;name&quot;</span>);</div><div class="line">            <span class="keywordtype">int</span> giraffeAge      = e-&gt;getIntAttribute (<span class="stringliteral">&quot;age&quot;</span>);</div><div class="line">            <span class="keywordtype">bool</span> isFriendly     = e-&gt;getBoolAttribute (<span class="stringliteral">&quot;friendly&quot;</span>);</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p>And here's an example of how to create an XML document from scratch:</p><div class="fragment"><div class="line"><span class="comment">// create an outer node called &quot;ANIMALS&quot;</span></div><div class="line"><a class="code" href="classXmlElement.html">XmlElement</a> animalsList (<span class="stringliteral">&quot;ANIMALS&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numAnimals; ++i)</div><div class="line">{</div><div class="line">    <span class="comment">// create an inner element..</span></div><div class="line">    <a class="code" href="classXmlElement.html">XmlElement</a>* giraffe = <span class="keyword">new</span> <a class="code" href="classXmlElement.html#a3a8f5f328633c9ec5f0348651b0d2c23">XmlElement</a> (<span class="stringliteral">&quot;GIRAFFE&quot;</span>);</div><div class="line"></div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;nigel&quot;</span>);</div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;age&quot;</span>, 10);</div><div class="line">    giraffe-&gt;<a class="code" href="classXmlElement.html#a25c2ba53866bb25809fd189578de1105">setAttribute</a> (<span class="stringliteral">&quot;friendly&quot;</span>, <span class="keyword">true</span>);</div><div class="line"></div><div class="line">    <span class="comment">// ..and add our new element to the parent node</span></div><div class="line">    animalsList.addChildElement (giraffe);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// now we can turn the whole thing into textual XML</span></div><div class="line"><span class="keyword">auto</span> xmlString = animalsList.toString();</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3a8f5f328633c9ec5f0348651b0d2c23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a8f5f328633c9ec5f0348651b0d2c23">&#9670;&nbsp;</a></span>XmlElement() <span class="overload">[1/7]</span></h2>
@@ -581,74 +596,35 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a55313aba630bc87deb927375f06cff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a55313aba630bc87deb927375f06cff">&#9670;&nbsp;</a></span>createDocument()</h2>
+<a id="ae493f2c19170a6c89298c0fbd3a258b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae493f2c19170a6c89298c0fbd3a258b3">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classString.html">String</a> XmlElement::createDocument </td>
+          <td class="memname"><a class="el" href="classString.html">String</a> XmlElement::toString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>dtdToUse</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>allOnOneLine</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeXmlHeader</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>encodingType</em> = <code>&quot;UTF-8&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"><em>lineWrapLength</em> = <code>60</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>{}</code></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns an XML text document that represents this element. </p>
-<p>The string returned can be parsed to recreate the same <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> that was used to create it.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dtdToUse</td><td>the DTD to add to the document </td></tr>
-    <tr><td class="paramname">allOnOneLine</td><td>if true, this means that the document will not contain any linefeeds, so it'll be smaller but not very easy to read. </td></tr>
-    <tr><td class="paramname">includeXmlHeader</td><td>whether to add the "&lt;?xml version..etc" line at the start of the document </td></tr>
-    <tr><td class="paramname">encodingType</td><td>the character encoding format string to put into the xml header </td></tr>
-    <tr><td class="paramname">lineWrapLength</td><td>the line length that will be used before items get placed on a new line. This isn't an absolute maximum length, it just determines how lists of attributes get broken up </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#aeb0dbdeb429480f5f073b46558f5f55f" title="Writes the document to a stream as UTF-8. ">writeToStream</a>, <a class="el" href="classXmlElement.html#aa9fafc3733f64e74d3c11068e4d3a541" title="Writes the element to a file as an XML document. ">writeToFile</a> </dd></dl>
+<p>Returns a text version of this XML element. </p>
+<p>If your intention is to write the XML to a file or stream, it's probably more efficient to use <a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo()</a> instead of creating an intermediate string. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo</a> </dd></dl>
 
 </div>
 </div>
-<a id="aeb0dbdeb429480f5f073b46558f5f55f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0dbdeb429480f5f073b46558f5f55f">&#9670;&nbsp;</a></span>writeToStream()</h2>
+<a id="ad9db3bf14ff1f24098f10fc3b3092d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9db3bf14ff1f24098f10fc3b3092d6e">&#9670;&nbsp;</a></span>writeTo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void XmlElement::writeToStream </td>
+          <td class="memname">void XmlElement::writeTo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classOutputStream.html">OutputStream</a> &amp;&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -656,32 +632,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>dtdToUse</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>allOnOneLine</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeXmlHeader</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>encodingType</em> = <code>&quot;UTF-8&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"><em>lineWrapLength</em> = <code>60</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -692,29 +644,18 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes the document to a stream as UTF-8. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">output</td><td>the stream to write to </td></tr>
-    <tr><td class="paramname">dtdToUse</td><td>the DTD to add to the document </td></tr>
-    <tr><td class="paramname">allOnOneLine</td><td>if true, this means that the document will not contain any linefeeds, so it'll be smaller but not very easy to read. </td></tr>
-    <tr><td class="paramname">includeXmlHeader</td><td>whether to add the "&lt;?xml version..etc" line at the start of the document </td></tr>
-    <tr><td class="paramname">encodingType</td><td>the character encoding format string to put into the xml header </td></tr>
-    <tr><td class="paramname">lineWrapLength</td><td>the line length that will be used before items get placed on a new line. This isn't an absolute maximum length, it just determines how lists of attributes get broken up </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#aa9fafc3733f64e74d3c11068e4d3a541" title="Writes the element to a file as an XML document. ">writeToFile</a>, <a class="el" href="classXmlElement.html#a4a55313aba630bc87deb927375f06cff" title="Returns an XML text document that represents this element. ">createDocument</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo</a>, <a class="el" href="classXmlElement.html#ae493f2c19170a6c89298c0fbd3a258b3" title="Returns a text version of this XML element. ">toString</a> </dd></dl>
 
 </div>
 </div>
-<a id="aa9fafc3733f64e74d3c11068e4d3a541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9fafc3733f64e74d3c11068e4d3a541">&#9670;&nbsp;</a></span>writeToFile()</h2>
+<a id="af6065b31b935b297e5084773d31ca833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6065b31b935b297e5084773d31ca833">&#9670;&nbsp;</a></span>writeTo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool XmlElement::writeToFile </td>
+          <td class="memname">bool XmlElement::writeTo </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
           <td class="paramname"><em>destinationFile</em>, </td>
@@ -722,20 +663,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>dtdToUse</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>encodingType</em> = <code>&quot;UTF-8&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"><em>lineWrapLength</em> = <code>60</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structXmlElement_1_1TextFormat.html">TextFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -745,19 +674,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes the element to a file as an XML document. </p>
-<p>To improve safety in case something goes wrong while writing the file, this will actually write the document to a new temporary file in the same directory as the destination file, and if this succeeds, it will rename this new file as the destination file (overwriting any existing file that was there).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">destinationFile</td><td>the file to write to. If this already exists, it will be overwritten. </td></tr>
-    <tr><td class="paramname">dtdToUse</td><td>the DTD to add to the document </td></tr>
-    <tr><td class="paramname">encodingType</td><td>the character encoding format string to put into the xml header </td></tr>
-    <tr><td class="paramname">lineWrapLength</td><td>the line length that will be used before items get placed on a new line. This isn't an absolute maximum length, it just determines how lists of attributes get broken up </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the file is written successfully; false if something goes wrong in the process </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#a4a55313aba630bc87deb927375f06cff" title="Returns an XML text document that represents this element. ">createDocument</a> </dd></dl>
+<p>Writes the document to a file as UTF-8. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo</a>, <a class="el" href="classXmlElement.html#ae493f2c19170a6c89298c0fbd3a258b3" title="Returns a text version of this XML element. ">toString</a> </dd></dl>
 
 </div>
 </div>
@@ -2277,13 +2195,73 @@ template&lt;class ElementComparator &gt; </div>
 
 </div>
 </div>
+<a id="a2100dc1765ab395793302bbc95dab790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2100dc1765ab395793302bbc95dab790">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XmlElement::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a> createDocument(<a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ae493f2c19170a6c89298c0fbd3a258b3" title="Returns a text version of this XML element. ">toString()</a> method. </p>
+
+</div>
+</div>
+<a id="a86549f6ab62e7fdac4c54c15c2c9baea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86549f6ab62e7fdac4c54c15c2c9baea">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XmlElement::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">void writeToStream(<a class="el" href="classOutputStream.html">OutputStream</a> &amp;output, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, bool allOnOneLine=false, bool includeXmlHeader=true, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo()</a> method. </p>
+
+</div>
+</div>
+<a id="ac741f60742def74f46f36bec03fc87ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac741f60742def74f46f36bec03fc87ad">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XmlElement::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">bool writeToFile(const <a class="el" href="classFile.html">File</a> &amp;destinationFile, <a class="el" href="classStringRef.html">StringRef</a> dtdToUse, <a class="el" href="classStringRef.html">StringRef</a> encodingType=&quot;UTF-8&quot;, int lineWrapLength=60)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This has been deprecated in favour of the <a class="el" href="classXmlElement.html#ad9db3bf14ff1f24098f10fc3b3092d6e" title="Writes the document to a stream as UTF-8. ">writeTo()</a> method. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__XmlElement_8h.html">juce_XmlElement.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:30 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

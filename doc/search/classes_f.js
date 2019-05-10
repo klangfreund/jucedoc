@@ -8,7 +8,7 @@ var searchData=
   ['parameter',['Parameter',['../structAudioPluginInstance_1_1Parameter.html',1,'AudioPluginInstance::Parameter'],['../classAudioProcessorValueTreeState_1_1Parameter.html',1,'AudioProcessorValueTreeState::Parameter']]],
   ['parametercontrolhighlightinfo',['ParameterControlHighlightInfo',['../structAudioProcessorEditor_1_1ParameterControlHighlightInfo.html',1,'AudioProcessorEditor']]],
   ['parameterlayout',['ParameterLayout',['../classAudioProcessorValueTreeState_1_1ParameterLayout.html',1,'AudioProcessorValueTreeState']]],
-  ['parameters',['Parameters',['../structReverb_1_1Parameters.html',1,'Reverb::Parameters'],['../structdsp_1_1StateVariableFilter_1_1Parameters.html',1,'dsp::StateVariableFilter::Parameters&lt; NumericType &gt;'],['../structADSR_1_1Parameters.html',1,'ADSR::Parameters']]],
+  ['parameters',['Parameters',['../structADSR_1_1Parameters.html',1,'ADSR::Parameters'],['../structdsp_1_1StateVariableFilter_1_1Parameters.html',1,'dsp::StateVariableFilter::Parameters&lt; NumericType &gt;'],['../structReverb_1_1Parameters.html',1,'Reverb::Parameters']]],
   ['parametertype',['ParameterType',['../structTypeHelpers_1_1ParameterType.html',1,'TypeHelpers']]],
   ['path',['Path',['../classPath.html',1,'']]],
   ['pathflatteningiterator',['PathFlatteningIterator',['../classPathFlatteningIterator.html',1,'']]],

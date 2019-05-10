@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a294b75e52e40abe16e01020ea78774b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertyPanel.html#a294b75e52e40abe16e01020ea78774b0">removeSection</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> sectionIndex)</td></tr>
 <tr class="memdesc:a294b75e52e40abe16e01020ea78774b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one of the sections using the section index.  <a href="#a294b75e52e40abe16e01020ea78774b0">More...</a><br /></td></tr>
 <tr class="separator:a294b75e52e40abe16e01020ea78774b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77153f1f1149b90515b60de12c27255d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertyPanel.html#a77153f1f1149b90515b60de12c27255d">getOpennessState</a> () const</td></tr>
-<tr class="memdesc:a77153f1f1149b90515b60de12c27255d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state of open/closed sections so it can be restored later.  <a href="#a77153f1f1149b90515b60de12c27255d">More...</a><br /></td></tr>
-<tr class="separator:a77153f1f1149b90515b60de12c27255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0d1317d7913e765a4eebf33db7f084"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertyPanel.html#a9c0d1317d7913e765a4eebf33db7f084">getOpennessState</a> () const</td></tr>
+<tr class="memdesc:a9c0d1317d7913e765a4eebf33db7f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state of open/closed sections so it can be restored later.  <a href="#a9c0d1317d7913e765a4eebf33db7f084">More...</a><br /></td></tr>
+<tr class="separator:a9c0d1317d7913e765a4eebf33db7f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed72746ba6c25b392fa70dd3af4a60bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertyPanel.html#aed72746ba6c25b392fa70dd3af4a60bd">restoreOpennessState</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;newState)</td></tr>
 <tr class="memdesc:aed72746ba6c25b392fa70dd3af4a60bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores a previously saved arrangement of open/closed sections.  <a href="#aed72746ba6c25b392fa70dd3af4a60bd">More...</a><br /></td></tr>
 <tr class="separator:aed72746ba6c25b392fa70dd3af4a60bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -709,7 +709,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7fd775ea6b1190d5d694fdffa539dfac inherit pub_types_classComponent"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">FocusChangeType</a> { <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca350527c976c183a1543958e0698572df">focusChangedByMouseClick</a>, 
 <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfaca1a14be78d7c4bdf7cdd9a08100bb6a43">focusChangedByTabKey</a>, 
 <a class="el" href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfacad71927268411a4afe7f75bf6034add04">focusChangedDirectly</a>
- }<tr class="memdesc:a7fd775ea6b1190d5d694fdffa539dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used by the focusChanged() and <a class="el" href="classComponent.html#a36456ea9d5a14172d6e96527ec1f59c8" title="Called to indicate that this component has just lost the keyboard focus. ">focusLost()</a> methods.  <a href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">More...</a><br /></td></tr>
+ }<tr class="memdesc:a7fd775ea6b1190d5d694fdffa539dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used by the <a class="el" href="classComponent.html#a408d41f1499a2ebdd4bbc8d4004c7727" title="Called to indicate that this component has just acquired the keyboard focus. ">focusGained()</a> and <a class="el" href="classComponent.html#a36456ea9d5a14172d6e96527ec1f59c8" title="Called to indicate that this component has just lost the keyboard focus. ">focusLost()</a> methods.  <a href="classComponent.html#a7fd775ea6b1190d5d694fdffa539dfac">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a7fd775ea6b1190d5d694fdffa539dfac inherit pub_types_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classComponent')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classComponent.html">Component</a></td></tr>
@@ -1075,14 +1075,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a77153f1f1149b90515b60de12c27255d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77153f1f1149b90515b60de12c27255d">&#9670;&nbsp;</a></span>getOpennessState()</h2>
+<a id="a9c0d1317d7913e765a4eebf33db7f084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0d1317d7913e765a4eebf33db7f084">&#9670;&nbsp;</a></span>getOpennessState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* PropertyPanel::getOpennessState </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; PropertyPanel::getOpennessState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1091,8 +1091,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Saves the current state of open/closed sections so it can be restored later. </p>
-<p>The caller is responsible for deleting the object that is returned. To restore this state, use <a class="el" href="classPropertyPanel.html#aed72746ba6c25b392fa70dd3af4a60bd" title="Restores a previously saved arrangement of open/closed sections. ">restoreOpennessState()</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyPanel.html#aed72746ba6c25b392fa70dd3af4a60bd" title="Restores a previously saved arrangement of open/closed sections. ">restoreOpennessState</a> </dd></dl>
+<p>To restore this state, use <a class="el" href="classPropertyPanel.html#aed72746ba6c25b392fa70dd3af4a60bd" title="Restores a previously saved arrangement of open/closed sections. ">restoreOpennessState()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyPanel.html#aed72746ba6c25b392fa70dd3af4a60bd" title="Restores a previously saved arrangement of open/closed sections. ">restoreOpennessState</a> </dd></dl>
 
 </div>
 </div>
@@ -1113,8 +1112,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Restores a previously saved arrangement of open/closed sections. </p>
-<p>This will try to restore a snapshot of the panel's state that was created by the <a class="el" href="classPropertyPanel.html#a77153f1f1149b90515b60de12c27255d" title="Saves the current state of open/closed sections so it can be restored later. ">getOpennessState()</a> method. If any of the sections named in the original XML aren't present, they will be ignored.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyPanel.html#a77153f1f1149b90515b60de12c27255d" title="Saves the current state of open/closed sections so it can be restored later. ">getOpennessState</a> </dd></dl>
+<p>This will try to restore a snapshot of the panel's state that was created by the <a class="el" href="classPropertyPanel.html#a9c0d1317d7913e765a4eebf33db7f084" title="Saves the current state of open/closed sections so it can be restored later. ">getOpennessState()</a> method. If any of the sections named in the original XML aren't present, they will be ignored.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classPropertyPanel.html#a9c0d1317d7913e765a4eebf33db7f084" title="Saves the current state of open/closed sections so it can be restored later. ">getOpennessState</a> </dd></dl>
 
 </div>
 </div>
@@ -1257,7 +1256,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -82,6 +82,7 @@ var searchData=
   ['adddatainputportlistener',['addDataInputPortListener',['../classBlock.html#a018545f50301b7d56574574e00b68e0f',1,'Block']]],
   ['adddefaultcommand',['addDefaultCommand',['../structConsoleApplication.html#ab096e883dbe32c585a2f0a3f84ef1626',1,'ConsoleApplication']]],
   ['adddefaultformats',['addDefaultFormats',['../classAudioPluginFormatManager.html#a43c3c16e48f1c50069573c8aede0b776',1,'AudioPluginFormatManager']]],
+  ['adddefaultheader',['addDefaultHeader',['../structXmlElement_1_1TextFormat.html#a6c3d0ac316e68e5afab517c54b75386f',1,'XmlElement::TextFormat']]],
   ['adddefaultitems',['addDefaultItems',['../classToolbar.html#ae9fdaea1b76bc158f8a9b22866911b6f',1,'Toolbar']]],
   ['adddefaultkeypress',['addDefaultKeypress',['../structApplicationCommandInfo.html#a46d8d91bd1e2ca8aa37b1d51f7aac914',1,'ApplicationCommandInfo']]],
   ['adddestination',['addDestination',['../classAnalytics.html#a2afffff98a15499fef14df9ce2795794',1,'Analytics']]],
