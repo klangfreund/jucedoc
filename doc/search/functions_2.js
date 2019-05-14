@@ -53,6 +53,7 @@ var searchData=
   ['canusesemitransparentwindows',['canUseSemiTransparentWindows',['../classDesktop.html#af15bdf2abd33c022d88f9335a5b5d098',1,'Desktop']]],
   ['capacity',['capacity',['../classArrayBase.html#af2370b3bfff4d633bd8d110d9105451f',1,'ArrayBase']]],
   ['caretcomponent',['CaretComponent',['../classCaretComponent.html#a4d0d34bc6f55b6aa99c5c7f05f39b711',1,'CaretComponent']]],
+  ['caretpositionmoved',['caretPositionMoved',['../classCodeEditorComponent.html#a89b1e8c3adab7ca636ed1b0675741144',1,'CodeEditorComponent']]],
   ['catmullrominterpolator',['CatmullRomInterpolator',['../classCatmullRomInterpolator.html#a443256138d61654b5b10d6d2e19a13cf',1,'CatmullRomInterpolator']]],
   ['cde',['cde',['../structdsp_1_1SpecialFunctions.html#a39cd7b7203227f239f2eb3b09a080daa',1,'dsp::SpecialFunctions']]],
   ['cellclicked',['cellClicked',['../classTableListBoxModel.html#a6626a7ad733dafebb14f6f11562ea8aa',1,'TableListBoxModel']]],

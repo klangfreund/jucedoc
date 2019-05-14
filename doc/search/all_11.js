@@ -368,6 +368,7 @@ var searchData=
   ['resumed',['resumed',['../classJUCEApplicationBase.html#a3d6b5a8c46caa068a61fa775df38d014',1,'JUCEApplicationBase::resumed()'],['../classJUCEApplication.html#a292fcde28c3270c5d3afa84dba14feab',1,'JUCEApplication::resumed()']]],
   ['resumedownloads',['resumeDownloads',['../classInAppPurchases.html#a15467a046ddb979fc650d3dc33b0e23b',1,'InAppPurchases']]],
   ['retaincharacters',['retainCharacters',['../classString.html#af2256b24683cec6eb2d608cdc8caab65',1,'String']]],
+  ['retokenise',['retokenise',['../classCodeEditorComponent.html#a3c8ee160388e7bdc9c396039e42680ef',1,'CodeEditorComponent']]],
   ['retrylock',['retryLock',['../classGenericScopedTryLock.html#ae53a276403f3ab95fe1381f97b36da08',1,'GenericScopedTryLock']]],
   ['returnkey',['returnKey',['../classKeyPress.html#a1cfe46412c3af08250ddc14bfaef1205',1,'KeyPress']]],
   ['returnkeypressed',['returnKeyPressed',['../classFileSearchPathListComponent.html#a0668eaacb767fc7cbb07b9ccb253c49e',1,'FileSearchPathListComponent::returnKeyPressed()'],['../classListBoxModel.html#a713c3007875a4473feafdd81fc8d58fc',1,'ListBoxModel::returnKeyPressed()'],['../classTableListBoxModel.html#a1c622b283ff2dec56f5373ca223544ae',1,'TableListBoxModel::returnKeyPressed()'],['../classTableListBox.html#a9abe1206de0c97feeaf3361e8531cf54',1,'TableListBox::returnKeyPressed()']]],

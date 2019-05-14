@@ -355,6 +355,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the number of lines in the document. </p>
 
+<p class="reference">References <a class="el" href="classCodeDocument.html#a8618046d22c26326da18c0f372c330d8">deleteSection()</a>, <a class="el" href="classCodeDocument.html#acdf7d662f21054059b8180f124e7ef85">getMaximumLineLength()</a>, and <a class="el" href="classCodeDocument.html#a52039d2d208e30688478dbe2f31640e4">insertText()</a>.</p>
+
 </div>
 </div>
 <a id="acdf7d662f21054059b8180f124e7ef85"></a>
@@ -381,6 +383,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of characters in the longest line of the document. </p>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#ac1f426f1238d6960b725cb79399e27d5">getNumLines()</a>.</p>
 
 </div>
 </div>
@@ -412,6 +416,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Deletes a section of the text. </p>
 <p>This operation is undoable. </p>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#ac1f426f1238d6960b725cb79399e27d5">getNumLines()</a>.</p>
 
 </div>
 </div>
@@ -474,6 +480,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Inserts some text into the document at a given position. </p>
 <p>This operation is undoable. </p>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#ac1f426f1238d6960b725cb79399e27d5">getNumLines()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +661,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns the preferred new-line characters for the document. </p>
 <p>This will be either "\\n", "\\r\\n", or (rarely) "\\r". </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#ac354ec456f3d7aed2899cd39fb7eff45" title="Sets the new-line characters that the document should use. ">setNewLineCharacters</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0aa2a9602bedb21d34ea2b7cb620d5be1f">StandardApplicationCommandIDs::redo</a>, and <a class="el" href="namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0a5b866e822eb795f30f0c77ebecc84f7f">StandardApplicationCommandIDs::undo</a>.</p>
+<p class="reference">References <a class="el" href="classCodeDocument.html#a14e3cfa2635a240eb8f5f378caab00f9">clearUndoHistory()</a>, <a class="el" href="classCodeDocument.html#a507bca2d6747323276b938670584f354">newTransaction()</a>, <a class="el" href="namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0aa2a9602bedb21d34ea2b7cb620d5be1f">StandardApplicationCommandIDs::redo</a>, <a class="el" href="classCodeDocument.html#ac354ec456f3d7aed2899cd39fb7eff45">setNewLineCharacters()</a>, and <a class="el" href="namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0a5b866e822eb795f30f0c77ebecc84f7f">StandardApplicationCommandIDs::undo</a>.</p>
 
 </div>
 </div>
@@ -684,6 +692,8 @@ Public Member Functions</h2></td></tr>
 <p>Sets the new-line characters that the document should use. </p>
 <p>The string must be either "\\n", "\\r\\n", or (rarely) "\\r". </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#a8f2c371735dd2630329f114d040634de" title="Returns the preferred new-line characters for the document. ">getNewLineCharacters</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a8f2c371735dd2630329f114d040634de">getNewLineCharacters()</a>.</p>
+
 </div>
 </div>
 <a id="a507bca2d6747323276b938670584f354"></a>
@@ -703,6 +713,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Begins a new undo transaction. </p>
 <p>The document itself will not call this internally, so relies on whatever is using the document to periodically call this to break up the undo sequence into sensible chunks. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoManager.html#a2b60b5f1763023351eddf813d4e7cc78" title="Starts a new group of actions that together will be treated as a single transaction. ">UndoManager::beginNewTransaction</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a8f2c371735dd2630329f114d040634de">getNewLineCharacters()</a>.</p>
 
 </div>
 </div>
@@ -764,6 +776,8 @@ Public Member Functions</h2></td></tr>
 <p>Clears the undo history. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classUndoManager.html#a14ecaa1dcab72d09ccb826bc7a0d2743" title="Deletes all stored actions in the list. ">UndoManager::clearUndoHistory</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a8f2c371735dd2630329f114d040634de">getNewLineCharacters()</a>.</p>
+
 </div>
 </div>
 <a id="a5420dec1f4f8ca9034e7d93ff538f1cf"></a>
@@ -790,6 +804,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the document's <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a>. </p>
+
+<p class="reference">References <a class="el" href="classCodeDocument.html#a33c6c59951845799410ce84fd41abf06">findLineContaining()</a>, <a class="el" href="classCodeDocument.html#a8506a8a409cc12de12ce7734b1e66ff4">findTokenContaining()</a>, <a class="el" href="classCodeDocument.html#a26c7afab579aea79440f02ba126ed2eb">findWordBreakAfter()</a>, <a class="el" href="classCodeDocument.html#aa86e626eb2e919c675afa2317d4aada2">findWordBreakBefore()</a>, <a class="el" href="classCodeDocument.html#a4c3047eee0dad38555cf546c3ea3c15f">hasChangedSinceSavePoint()</a>, and <a class="el" href="classCodeDocument.html#ad76824d16b674adf90193e8286ad0a89">setSavePoint()</a>.</p>
 
 </div>
 </div>
@@ -820,6 +836,8 @@ Public Member Functions</h2></td></tr>
 <p>After this has been called, <a class="el" href="classCodeDocument.html#a4c3047eee0dad38555cf546c3ea3c15f" title="Returns true if the state of the document differs from the state it was in when setSavePoint() was la...">hasChangedSinceSavePoint()</a> will return false until the document has been altered, and then it'll start returning true. If the document is altered, but then undone until it gets back to this state, <a class="el" href="classCodeDocument.html#a4c3047eee0dad38555cf546c3ea3c15f" title="Returns true if the state of the document differs from the state it was in when setSavePoint() was la...">hasChangedSinceSavePoint()</a> will again return false.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#a4c3047eee0dad38555cf546c3ea3c15f" title="Returns true if the state of the document differs from the state it was in when setSavePoint() was la...">hasChangedSinceSavePoint</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
+
 </div>
 </div>
 <a id="a4c3047eee0dad38555cf546c3ea3c15f"></a>
@@ -847,6 +865,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns true if the state of the document differs from the state it was in when <a class="el" href="classCodeDocument.html#ad76824d16b674adf90193e8286ad0a89" title="Makes a note that the document&#39;s current state matches the one that is saved. ">setSavePoint()</a> was last called. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeDocument.html#ad76824d16b674adf90193e8286ad0a89" title="Makes a note that the document&#39;s current state matches the one that is saved. ">setSavePoint</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
 
 </div>
 </div>
@@ -876,6 +896,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Searches for a word-break. </p>
 
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
+
 </div>
 </div>
 <a id="aa86e626eb2e919c675afa2317d4aada2"></a>
@@ -903,6 +925,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Searches for a word-break. </p>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
 
 </div>
 </div>
@@ -948,6 +972,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Finds the token that contains the given position. </p>
 
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
+
 </div>
 </div>
 <a id="a33c6c59951845799410ce84fd41abf06"></a>
@@ -991,6 +1017,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finds the line that contains the given position. </p>
+
+<p class="reference">Referenced by <a class="el" href="classCodeDocument.html#a5420dec1f4f8ca9034e7d93ff538f1cf">getUndoManager()</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1070,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

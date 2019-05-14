@@ -282,6 +282,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e7df3d73f7044583967f6e811d74208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#a3e7df3d73f7044583967f6e811d74208">getColourForTokenType</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> tokenType) const</td></tr>
 <tr class="memdesc:a3e7df3d73f7044583967f6e811d74208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one the syntax highlighting colour for the given token.  <a href="#a3e7df3d73f7044583967f6e811d74208">More...</a><br /></td></tr>
 <tr class="separator:a3e7df3d73f7044583967f6e811d74208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8ee160388e7bdc9c396039e42680ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#a3c8ee160388e7bdc9c396039e42680ef">retokenise</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startIndex, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> endIndex)</td></tr>
+<tr class="memdesc:a3c8ee160388e7bdc9c396039e42680ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the syntax highlighting for a section of text.  <a href="#a3c8ee160388e7bdc9c396039e42680ef">More...</a><br /></td></tr>
+<tr class="separator:a3c8ee160388e7bdc9c396039e42680ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ac5d9c886a72d925d62417d1171c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#a75ac5d9c886a72d925d62417d1171c65">setScrollbarThickness</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> thickness)</td></tr>
 <tr class="memdesc:a75ac5d9c886a72d925d62417d1171c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the scrollbars.  <a href="#a75ac5d9c886a72d925d62417d1171c65">More...</a><br /></td></tr>
 <tr class="separator:a75ac5d9c886a72d925d62417d1171c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,6 +303,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a979f3f00f16b6e3eed9bd15b674daa2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#a979f3f00f16b6e3eed9bd15b674daa2d">editorViewportPositionChanged</a> ()</td></tr>
 <tr class="memdesc:a979f3f00f16b6e3eed9bd15b674daa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the view position is scrolled horizontally or vertically.  <a href="#a979f3f00f16b6e3eed9bd15b674daa2d">More...</a><br /></td></tr>
 <tr class="separator:a979f3f00f16b6e3eed9bd15b674daa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b1e8c3adab7ca636ed1b0675741144"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#a89b1e8c3adab7ca636ed1b0675741144">caretPositionMoved</a> ()</td></tr>
+<tr class="memdesc:a89b1e8c3adab7ca636ed1b0675741144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the caret position moves.  <a href="#a89b1e8c3adab7ca636ed1b0675741144">More...</a><br /></td></tr>
+<tr class="separator:a89b1e8c3adab7ca636ed1b0675741144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53b2fb7fb3f1af076fc280d30df0785"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeEditorComponent.html#ad53b2fb7fb3f1af076fc280d30df0785">addPopupMenuItems</a> (<a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;menuToAddTo, const <a class="el" href="classMouseEvent.html">MouseEvent</a> *mouseClickEvent)</td></tr>
 <tr class="memdesc:ad53b2fb7fb3f1af076fc280d30df0785"><td class="mdescLeft">&#160;</td><td class="mdescRight">This adds the items to the popup menu.  <a href="#ad53b2fb7fb3f1af076fc280d30df0785">More...</a><br /></td></tr>
 <tr class="separator:ad53b2fb7fb3f1af076fc280d30df0785"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2423,6 +2429,38 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c8ee160388e7bdc9c396039e42680ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8ee160388e7bdc9c396039e42680ef">&#9670;&nbsp;</a></span>retokenise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CodeEditorComponent::retokenise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>startIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>endIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rebuilds the syntax highlighting for a section of text. </p>
+<p>This happens automatically any time the <a class="el" href="classCodeDocument.html" title="A class for storing and manipulating a source code file. ">CodeDocument</a> is edited, but this method lets you change text colours even when the <a class="el" href="classCodeDocument.html" title="A class for storing and manipulating a source code file. ">CodeDocument</a> hasn't changed.</p>
+<p>For example, you could use this to highlight tokens as the cursor moves. To do so you'll need to tell your custom <a class="el" href="classCodeTokeniser.html" title="A base class for tokenising code so that the syntax can be displayed in a code editor. ">CodeTokeniser</a> where the token you want to highlight is, and make it return a special type of token. Then you should call this method supplying the range of the highlighted text. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classCodeTokeniser.html" title="A base class for tokenising code so that the syntax can be displayed in a code editor. ">CodeTokeniser</a> </dd></dl>
+
+</div>
+</div>
 <a id="a75ac5d9c886a72d925d62417d1171c65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75ac5d9c886a72d925d62417d1171c65">&#9670;&nbsp;</a></span>setScrollbarThickness()</h2>
 
@@ -2577,6 +2615,33 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the view position is scrolled horizontally or vertically. </p>
+
+</div>
+</div>
+<a id="a89b1e8c3adab7ca636ed1b0675741144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b1e8c3adab7ca636ed1b0675741144">&#9670;&nbsp;</a></span>caretPositionMoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CodeEditorComponent::caretPositionMoved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the caret position moves. </p>
 
 </div>
 </div>
@@ -3154,7 +3219,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

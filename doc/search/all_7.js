@@ -171,7 +171,7 @@ var searchData=
   ['heapblock_3c_20channelinfo_20_2a_3e',['HeapBlock&lt; ChannelInfo *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20char_20_3e',['HeapBlock&lt; char &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20char_2c_20true_20_3e',['HeapBlock&lt; char, true &gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20codedocument_3a_3aiterator_20_2a_3e',['HeapBlock&lt; CodeDocument::Iterator *&gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20codedocument_3a_3aiterator_20_3e',['HeapBlock&lt; CodeDocument::Iterator &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20codedocument_3a_3alistener_20_2a_3e',['HeapBlock&lt; CodeDocument::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20codedocument_3a_3aposition_20_2a_3e',['HeapBlock&lt; CodeDocument::Position *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20codedocumentline_20_2a_3e',['HeapBlock&lt; CodeDocumentLine *&gt;',['../classHeapBlock.html',1,'']]],

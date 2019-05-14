@@ -55,7 +55,6 @@ var searchData=
   ['ownedarray_3c_20bufferedblock_20_3e',['OwnedArray&lt; BufferedBlock &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20changemessage_20_3e',['OwnedArray&lt; ChangeMessage &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20channelinfo_20_3e',['OwnedArray&lt; ChannelInfo &gt;',['../classOwnedArray.html',1,'']]],
-  ['ownedarray_3c_20codedocument_3a_3aiterator_20_3e',['OwnedArray&lt; CodeDocument::Iterator &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20codedocumentline_20_3e',['OwnedArray&lt; CodeDocumentLine &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20codeeditorline_20_3e',['OwnedArray&lt; CodeEditorLine &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20columninfo_20_3e',['OwnedArray&lt; ColumnInfo &gt;',['../classOwnedArray.html',1,'']]],
