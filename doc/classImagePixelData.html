@@ -95,15 +95,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2146dc3531e1beea8138e36b883edb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00901b2460311b67df96fa1a42903c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#aa00901b2460311b67df96fa1a42903c8">~ImagePixelData</a> () override</td></tr>
 <tr class="separator:aa00901b2460311b67df96fa1a42903c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c445af05c23a94c1ea844ff1350bebc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLowLevelGraphicsContext.html">LowLevelGraphicsContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#a7c445af05c23a94c1ea844ff1350bebc">createLowLevelContext</a> ()=0</td></tr>
-<tr class="memdesc:a7c445af05c23a94c1ea844ff1350bebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a context that will draw into this image.  <a href="#a7c445af05c23a94c1ea844ff1350bebc">More...</a><br /></td></tr>
-<tr class="separator:a7c445af05c23a94c1ea844ff1350bebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2e593f6f573446a4d117492c9071d6"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classLowLevelGraphicsContext.html">LowLevelGraphicsContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#acb2e593f6f573446a4d117492c9071d6">createLowLevelContext</a> ()=0</td></tr>
+<tr class="memdesc:acb2e593f6f573446a4d117492c9071d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a context that will draw into this image.  <a href="#acb2e593f6f573446a4d117492c9071d6">More...</a><br /></td></tr>
+<tr class="separator:acb2e593f6f573446a4d117492c9071d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f10581017cfd34a36e83216d263d4c7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classImagePixelData.html#a2b876f1f643f4c53627fdb633ce97ae5">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#a5f10581017cfd34a36e83216d263d4c7">clone</a> ()=0</td></tr>
 <tr class="memdesc:a5f10581017cfd34a36e83216d263d4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of this image.  <a href="#a5f10581017cfd34a36e83216d263d4c7">More...</a><br /></td></tr>
 <tr class="separator:a5f10581017cfd34a36e83216d263d4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9b23625405aad26d3b6a4682d39c50"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classImageType.html">ImageType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#a4c9b23625405aad26d3b6a4682d39c50">createType</a> () const =0</td></tr>
-<tr class="memdesc:a4c9b23625405aad26d3b6a4682d39c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the type of this image.  <a href="#a4c9b23625405aad26d3b6a4682d39c50">More...</a><br /></td></tr>
-<tr class="separator:a4c9b23625405aad26d3b6a4682d39c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b568bb628e0e52dc585850335a4a92"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classImageType.html">ImageType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#ae9b568bb628e0e52dc585850335a4a92">createType</a> () const =0</td></tr>
+<tr class="memdesc:ae9b568bb628e0e52dc585850335a4a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the type of this image.  <a href="#ae9b568bb628e0e52dc585850335a4a92">More...</a><br /></td></tr>
+<tr class="separator:ae9b568bb628e0e52dc585850335a4a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775f806a9a4b8cef306304ff81a1a47b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImagePixelData.html#a775f806a9a4b8cef306304ff81a1a47b">initialiseBitmapData</a> (<a class="el" href="classImage_1_1BitmapData.html">Image::BitmapData</a> &amp;, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> x, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> y, <a class="el" href="classImage_1_1BitmapData.html#aef68f9fb2440dd6a56a3c0b8c8b6fc13">Image::BitmapData::ReadWriteMode</a>)=0</td></tr>
 <tr class="memdesc:a775f806a9a4b8cef306304ff81a1a47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises a BitmapData object.  <a href="#a775f806a9a4b8cef306304ff81a1a47b">More...</a><br /></td></tr>
 <tr class="separator:a775f806a9a4b8cef306304ff81a1a47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,8 +246,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7c445af05c23a94c1ea844ff1350bebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c445af05c23a94c1ea844ff1350bebc">&#9670;&nbsp;</a></span>createLowLevelContext()</h2>
+<a id="acb2e593f6f573446a4d117492c9071d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2e593f6f573446a4d117492c9071d6">&#9670;&nbsp;</a></span>createLowLevelContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classLowLevelGraphicsContext.html">LowLevelGraphicsContext</a>* ImagePixelData::createLowLevelContext </td>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classLowLevelGraphicsContext.html">LowLevelGraphicsContext</a>&gt; ImagePixelData::createLowLevelContext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -300,8 +300,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c9b23625405aad26d3b6a4682d39c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c9b23625405aad26d3b6a4682d39c50">&#9670;&nbsp;</a></span>createType()</h2>
+<a id="ae9b568bb628e0e52dc585850335a4a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b568bb628e0e52dc585850335a4a92">&#9670;&nbsp;</a></span>createType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +310,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classImageType.html">ImageType</a>* ImagePixelData::createType </td>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="classImageType.html">ImageType</a>&gt; ImagePixelData::createType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -504,7 +504,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

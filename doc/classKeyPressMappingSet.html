@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd0da647bbd350e6daebcd8705a8b11e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPressMappingSet.html#acd0da647bbd350e6daebcd8705a8b11e">restoreFromXml</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;xmlVersion)</td></tr>
 <tr class="memdesc:acd0da647bbd350e6daebcd8705a8b11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate the mappings from a previously stored state.  <a href="#acd0da647bbd350e6daebcd8705a8b11e">More...</a><br /></td></tr>
 <tr class="separator:acd0da647bbd350e6daebcd8705a8b11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af138b81ebe656729ee4b900354d28505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPressMappingSet.html#af138b81ebe656729ee4b900354d28505">createXml</a> (bool saveDifferencesFromDefaultSet) const</td></tr>
-<tr class="memdesc:af138b81ebe656729ee4b900354d28505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XML representation of the current mappings.  <a href="#af138b81ebe656729ee4b900354d28505">More...</a><br /></td></tr>
-<tr class="separator:af138b81ebe656729ee4b900354d28505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71c89de0398c9a79a42c502bbf23f7a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPressMappingSet.html#ab71c89de0398c9a79a42c502bbf23f7a">createXml</a> (bool saveDifferencesFromDefaultSet) const</td></tr>
+<tr class="memdesc:ab71c89de0398c9a79a42c502bbf23f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XML representation of the current mappings.  <a href="#ab71c89de0398c9a79a42c502bbf23f7a">More...</a><br /></td></tr>
+<tr class="separator:ab71c89de0398c9a79a42c502bbf23f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab92a471a8cfc20ad036750cd3c19d5c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPressMappingSet.html#ab92a471a8cfc20ad036750cd3c19d5c5">keyPressed</a> (const <a class="el" href="classKeyPress.html">KeyPress</a> &amp;, <a class="el" href="classComponent.html">Component</a> *) override</td></tr>
 <tr class="separator:ab92a471a8cfc20ad036750cd3c19d5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0329856dd3e6ec50d64114f197045491"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPressMappingSet.html#a0329856dd3e6ec50d64114f197045491">keyStateChanged</a> (bool isKeyDown, <a class="el" href="classComponent.html">Component</a> *) override</td></tr>
@@ -560,22 +560,22 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Tries to recreate the mappings from a previously stored state. </p>
-<p>The XML passed in must have been created by the <a class="el" href="classKeyPressMappingSet.html#af138b81ebe656729ee4b900354d28505" title="Creates an XML representation of the current mappings. ">createXml()</a> method.</p>
+<p>The XML passed in must have been created by the <a class="el" href="classKeyPressMappingSet.html#ab71c89de0398c9a79a42c502bbf23f7a" title="Creates an XML representation of the current mappings. ">createXml()</a> method.</p>
 <p>If the stored state makes any reference to commands that aren't currently available, these will be ignored.</p>
 <p>If the set of mappings being loaded was a set of differences (using createXml (true)), then this will call <a class="el" href="classKeyPressMappingSet.html#a11ec4b86290489da987e2fcc3455b140" title="Reset all mappings to the defaults, as dictated by the ApplicationCommandManager. ...">resetToDefaultMappings()</a> and then merge the saved mappings on top. If the saved set was created with createXml (false), then this method will first clear all existing mappings and load the saved ones as a complete set.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if it manages to load the XML correctly </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKeyPressMappingSet.html#af138b81ebe656729ee4b900354d28505" title="Creates an XML representation of the current mappings. ">createXml</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classKeyPressMappingSet.html#ab71c89de0398c9a79a42c502bbf23f7a" title="Creates an XML representation of the current mappings. ">createXml</a> </dd></dl>
 
 </div>
 </div>
-<a id="af138b81ebe656729ee4b900354d28505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af138b81ebe656729ee4b900354d28505">&#9670;&nbsp;</a></span>createXml()</h2>
+<a id="ab71c89de0398c9a79a42c502bbf23f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71c89de0398c9a79a42c502bbf23f7a">&#9670;&nbsp;</a></span>createXml()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* KeyPressMappingSet::createXml </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; KeyPressMappingSet::createXml </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>saveDifferencesFromDefaultSet</em></td><td>)</td>
@@ -707,7 +707,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -113,12 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63b263300bdd70a79035a57470bfae8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a63b263300bdd70a79035a57470bfae8f">isEmpty</a> () const noexcept</td></tr>
 <tr class="memdesc:a63b263300bdd70a79035a57470bfae8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the array is empty, false otherwise.  <a href="#a63b263300bdd70a79035a57470bfae8f">More...</a><br /></td></tr>
 <tr class="separator:a63b263300bdd70a79035a57470bfae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad358d1fb116053ba1e3c46d6177ecef6"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ad358d1fb116053ba1e3c46d6177ecef6">operator[]</a> (const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
-<tr class="memdesc:ad358d1fb116053ba1e3c46d6177ecef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the object at this index in the array.  <a href="#ad358d1fb116053ba1e3c46d6177ecef6">More...</a><br /></td></tr>
-<tr class="separator:ad358d1fb116053ba1e3c46d6177ecef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae633303198df0e9aaa594b9d1d0b8137"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ae633303198df0e9aaa594b9d1d0b8137">getUnchecked</a> (const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
-<tr class="memdesc:ae633303198df0e9aaa594b9d1d0b8137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the object at this index in the array, without checking whether the index is in-range.  <a href="#ae633303198df0e9aaa594b9d1d0b8137">More...</a><br /></td></tr>
-<tr class="separator:ae633303198df0e9aaa594b9d1d0b8137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2768739fcaa133dda9ae140808137a"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a3e2768739fcaa133dda9ae140808137a">operator[]</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
+<tr class="memdesc:a3e2768739fcaa133dda9ae140808137a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the object at this index in the array.  <a href="#a3e2768739fcaa133dda9ae140808137a">More...</a><br /></td></tr>
+<tr class="separator:a3e2768739fcaa133dda9ae140808137a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9db4b3a2eec5685ec389d684390cfe3"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#af9db4b3a2eec5685ec389d684390cfe3">getUnchecked</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
+<tr class="memdesc:af9db4b3a2eec5685ec389d684390cfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the object at this index in the array, without checking whether the index is in-range.  <a href="#af9db4b3a2eec5685ec389d684390cfe3">More...</a><br /></td></tr>
+<tr class="separator:af9db4b3a2eec5685ec389d684390cfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3099192ad968d749e95f8e05335f83c"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ac3099192ad968d749e95f8e05335f83c">getFirst</a> () const noexcept</td></tr>
 <tr class="memdesc:ac3099192ad968d749e95f8e05335f83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first object in the array.  <a href="#ac3099192ad968d749e95f8e05335f83c">More...</a><br /></td></tr>
 <tr class="separator:ac3099192ad968d749e95f8e05335f83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,21 +143,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ae4a483c09550d8432b98db14f2d132"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a4ae4a483c09550d8432b98db14f2d132">contains</a> (const ObjectClass *objectToLookFor) const noexcept</td></tr>
 <tr class="memdesc:a4ae4a483c09550d8432b98db14f2d132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the array contains a specified object.  <a href="#a4ae4a483c09550d8432b98db14f2d132">More...</a><br /></td></tr>
 <tr class="separator:a4ae4a483c09550d8432b98db14f2d132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71587e33a86ec14556128e162470319f"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f">add</a> (ObjectClass *newObject) noexcept</td></tr>
-<tr class="memdesc:a71587e33a86ec14556128e162470319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new object to the end of the array.  <a href="#a71587e33a86ec14556128e162470319f">More...</a><br /></td></tr>
-<tr class="separator:a71587e33a86ec14556128e162470319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65726b11200f86ac1aa699eefafa507"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#af65726b11200f86ac1aa699eefafa507">insert</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToInsertAt, ObjectClass *newObject) noexcept</td></tr>
-<tr class="memdesc:af65726b11200f86ac1aa699eefafa507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new object into the array at the given index.  <a href="#af65726b11200f86ac1aa699eefafa507">More...</a><br /></td></tr>
-<tr class="separator:af65726b11200f86ac1aa699eefafa507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca24c439f939ade64eab3d63e01278e"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e">add</a> (ObjectClass *newObject)</td></tr>
+<tr class="memdesc:a1ca24c439f939ade64eab3d63e01278e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new object to the end of the array.  <a href="#a1ca24c439f939ade64eab3d63e01278e">More...</a><br /></td></tr>
+<tr class="separator:a1ca24c439f939ade64eab3d63e01278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5513b7c6d92501fb003c542816e9a912"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a5513b7c6d92501fb003c542816e9a912">add</a> (std::unique_ptr&lt; ObjectClass &gt; newObject)</td></tr>
+<tr class="memdesc:a5513b7c6d92501fb003c542816e9a912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new object to the end of the array.  <a href="#a5513b7c6d92501fb003c542816e9a912">More...</a><br /></td></tr>
+<tr class="separator:a5513b7c6d92501fb003c542816e9a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e71f9b26deccf0e3dfc0930a156f944"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944">insert</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToInsertAt, ObjectClass *newObject)</td></tr>
+<tr class="memdesc:a9e71f9b26deccf0e3dfc0930a156f944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new object into the array at the given index.  <a href="#a9e71f9b26deccf0e3dfc0930a156f944">More...</a><br /></td></tr>
+<tr class="separator:a9e71f9b26deccf0e3dfc0930a156f944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c028b02f53bd1911d5cfe444ff3388"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a44c028b02f53bd1911d5cfe444ff3388">insert</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToInsertAt, std::unique_ptr&lt; ObjectClass &gt; newObject)</td></tr>
+<tr class="memdesc:a44c028b02f53bd1911d5cfe444ff3388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new object into the array at the given index.  <a href="#a44c028b02f53bd1911d5cfe444ff3388">More...</a><br /></td></tr>
+<tr class="separator:a44c028b02f53bd1911d5cfe444ff3388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56956aeefcbbaeea2f4d143eb78f633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ac56956aeefcbbaeea2f4d143eb78f633">insertArray</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToInsertAt, ObjectClass *const *newObjects, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numberOfElements)</td></tr>
 <tr class="memdesc:ac56956aeefcbbaeea2f4d143eb78f633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an array of values into this array at a given position.  <a href="#ac56956aeefcbbaeea2f4d143eb78f633">More...</a><br /></td></tr>
 <tr class="separator:ac56956aeefcbbaeea2f4d143eb78f633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c6a89641ec9282a01e04322f14fe34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34">addIfNotAlreadyThere</a> (ObjectClass *newObject) noexcept</td></tr>
-<tr class="memdesc:a53c6a89641ec9282a01e04322f14fe34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new object at the end of the array as long as the array doesn't already contain it.  <a href="#a53c6a89641ec9282a01e04322f14fe34">More...</a><br /></td></tr>
-<tr class="separator:a53c6a89641ec9282a01e04322f14fe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383de41801934f65b720a7019ed6ac8a"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a">set</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToChange, ObjectClass *newObject, bool deleteOldElement=true)</td></tr>
 <tr class="memdesc:a383de41801934f65b720a7019ed6ac8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an object in the array with a different one.  <a href="#a383de41801934f65b720a7019ed6ac8a">More...</a><br /></td></tr>
 <tr class="separator:a383de41801934f65b720a7019ed6ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6122ecd1eb94af4a0202c144a7eea519"><td class="memItemLeft" align="right" valign="top">ObjectClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a6122ecd1eb94af4a0202c144a7eea519">set</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToChange, std::unique_ptr&lt; ObjectClass &gt; newObject, bool deleteOldElement=true)</td></tr>
+<tr class="memdesc:a6122ecd1eb94af4a0202c144a7eea519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an object in the array with a different one.  <a href="#a6122ecd1eb94af4a0202c144a7eea519">More...</a><br /></td></tr>
+<tr class="separator:a6122ecd1eb94af4a0202c144a7eea519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2bd0b49686d083cd67d63da1a690dc7"><td class="memTemplParams" colspan="2">template&lt;class OtherArrayType &gt; </td></tr>
 <tr class="memitem:aa2bd0b49686d083cd67d63da1a690dc7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#aa2bd0b49686d083cd67d63da1a690dc7">addArray</a> (const OtherArrayType &amp;arrayToAddFrom, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startIndex=0, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numElementsToAdd=-1)</td></tr>
 <tr class="memdesc:aa2bd0b49686d083cd67d63da1a690dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds elements from another array to the end of this array.  <a href="#aa2bd0b49686d083cd67d63da1a690dc7">More...</a><br /></td></tr>
@@ -170,14 +176,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5168676f4e3de540247025ceaec8ad32"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a5168676f4e3de540247025ceaec8ad32">addCopiesOf</a> (const OtherArrayType &amp;arrayToAddFrom, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startIndex=0, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numElementsToAdd=-1)</td></tr>
 <tr class="memdesc:a5168676f4e3de540247025ceaec8ad32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds copies of the elements in another array to the end of this array.  <a href="#a5168676f4e3de540247025ceaec8ad32">More...</a><br /></td></tr>
 <tr class="separator:a5168676f4e3de540247025ceaec8ad32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac87e81838149b9d541f6afe605a81b43"><td class="memTemplParams" colspan="2">template&lt;class ElementComparator &gt; </td></tr>
-<tr class="memitem:ac87e81838149b9d541f6afe605a81b43"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43">addSorted</a> (ElementComparator &amp;comparator, ObjectClass *const newObject) noexcept</td></tr>
-<tr class="memdesc:ac87e81838149b9d541f6afe605a81b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new object into the array assuming that the array is sorted.  <a href="#ac87e81838149b9d541f6afe605a81b43">More...</a><br /></td></tr>
-<tr class="separator:ac87e81838149b9d541f6afe605a81b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e007f781979fd82e1fa7dcd9c3fe87"><td class="memTemplParams" colspan="2">template&lt;typename ElementComparator &gt; </td></tr>
-<tr class="memitem:a70e007f781979fd82e1fa7dcd9c3fe87"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a70e007f781979fd82e1fa7dcd9c3fe87">indexOfSorted</a> (ElementComparator &amp;comparator, const ObjectClass *const objectToLookFor) const noexcept</td></tr>
-<tr class="memdesc:a70e007f781979fd82e1fa7dcd9c3fe87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the index of an object in the array, assuming that the array is sorted.  <a href="#a70e007f781979fd82e1fa7dcd9c3fe87">More...</a><br /></td></tr>
-<tr class="separator:a70e007f781979fd82e1fa7dcd9c3fe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3362aa46fe920b22b20ccc313bfe3366"><td class="memTemplParams" colspan="2">template&lt;class ElementComparator &gt; </td></tr>
+<tr class="memitem:a3362aa46fe920b22b20ccc313bfe3366"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366">addSorted</a> (ElementComparator &amp;comparator, ObjectClass *newObject) noexcept</td></tr>
+<tr class="memdesc:a3362aa46fe920b22b20ccc313bfe3366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a new object into the array assuming that the array is sorted.  <a href="#a3362aa46fe920b22b20ccc313bfe3366">More...</a><br /></td></tr>
+<tr class="separator:a3362aa46fe920b22b20ccc313bfe3366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebb5f9e4bed3ffd0d5a4e980c77260b"><td class="memTemplParams" colspan="2">template&lt;typename ElementComparator &gt; </td></tr>
+<tr class="memitem:a7ebb5f9e4bed3ffd0d5a4e980c77260b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a7ebb5f9e4bed3ffd0d5a4e980c77260b">indexOfSorted</a> (ElementComparator &amp;comparator, const ObjectClass *objectToLookFor) const noexcept</td></tr>
+<tr class="memdesc:a7ebb5f9e4bed3ffd0d5a4e980c77260b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the index of an object in the array, assuming that the array is sorted.  <a href="#a7ebb5f9e4bed3ffd0d5a4e980c77260b">More...</a><br /></td></tr>
+<tr class="separator:a7ebb5f9e4bed3ffd0d5a4e980c77260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96b18f21808cd5a62fc35bff85e2df6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6">remove</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToRemove, bool deleteObject=true)</td></tr>
 <tr class="memdesc:ae96b18f21808cd5a62fc35bff85e2df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an object from the array.  <a href="#ae96b18f21808cd5a62fc35bff85e2df6">More...</a><br /></td></tr>
 <tr class="separator:ae96b18f21808cd5a62fc35bff85e2df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +212,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77037209056e7c62634819bd274b88ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a77037209056e7c62634819bd274b88ab">minimiseStorageOverheads</a> () noexcept</td></tr>
 <tr class="memdesc:a77037209056e7c62634819bd274b88ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduces the amount of storage being used by the array.  <a href="#a77037209056e7c62634819bd274b88ab">More...</a><br /></td></tr>
 <tr class="separator:a77037209056e7c62634819bd274b88ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3618db021fb44a7e146bd969c43d61ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a3618db021fb44a7e146bd969c43d61ed">ensureStorageAllocated</a> (const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> minNumElements) noexcept</td></tr>
-<tr class="memdesc:a3618db021fb44a7e146bd969c43d61ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the array's internal storage to hold a minimum number of elements.  <a href="#a3618db021fb44a7e146bd969c43d61ed">More...</a><br /></td></tr>
-<tr class="separator:a3618db021fb44a7e146bd969c43d61ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472b730297ecc033e4625e834932594e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a472b730297ecc033e4625e834932594e">ensureStorageAllocated</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> minNumElements) noexcept</td></tr>
+<tr class="memdesc:a472b730297ecc033e4625e834932594e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the array's internal storage to hold a minimum number of elements.  <a href="#a472b730297ecc033e4625e834932594e">More...</a><br /></td></tr>
+<tr class="separator:a472b730297ecc033e4625e834932594e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04a21a831320e2ce76bee8ad881e1d90"><td class="memTemplParams" colspan="2">template&lt;class ElementComparator &gt; </td></tr>
 <tr class="memitem:a04a21a831320e2ce76bee8ad881e1d90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">sort</a> (ElementComparator &amp;comparator, bool retainOrderOfEquivalentItems=false) const noexcept</td></tr>
 <tr class="memdesc:a04a21a831320e2ce76bee8ad881e1d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the array.  <a href="#a04a21a831320e2ce76bee8ad881e1d90">More...</a><br /></td></tr>
@@ -557,8 +563,8 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 
 </div>
 </div>
-<a id="ad358d1fb116053ba1e3c46d6177ecef6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad358d1fb116053ba1e3c46d6177ecef6">&#9670;&nbsp;</a></span>operator[]()</h2>
+<a id="a3e2768739fcaa133dda9ae140808137a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2768739fcaa133dda9ae140808137a">&#9670;&nbsp;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +577,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
         <tr>
           <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::operator[] </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -585,12 +591,12 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 
 <p>Returns a pointer to the object at this index in the array. </p>
 <p>If the index is out-of-range, this will return a null pointer, (and it could be null anyway, because it's ok for the array to hold null pointers as well as objects).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#ae633303198df0e9aaa594b9d1d0b8137" title="Returns a pointer to the object at this index in the array, without checking whether the index is in-...">getUnchecked</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#af9db4b3a2eec5685ec389d684390cfe3" title="Returns a pointer to the object at this index in the array, without checking whether the index is in-...">getUnchecked</a> </dd></dl>
 
 </div>
 </div>
-<a id="ae633303198df0e9aaa594b9d1d0b8137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae633303198df0e9aaa594b9d1d0b8137">&#9670;&nbsp;</a></span>getUnchecked()</h2>
+<a id="af9db4b3a2eec5685ec389d684390cfe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9db4b3a2eec5685ec389d684390cfe3">&#9670;&nbsp;</a></span>getUnchecked()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +609,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
         <tr>
           <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::getUnchecked </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -878,20 +884,15 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the object is in the array </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34">OwnedArray&lt; MarkerList::Marker &gt;::addIfNotAlreadyThere()</a>.</p>
-
 </div>
 </div>
-<a id="a71587e33a86ec14556128e162470319f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71587e33a86ec14556128e162470319f">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a1ca24c439f939ade64eab3d63e01278e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca24c439f939ade64eab3d63e01278e">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::add </td>
@@ -901,11 +902,6 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Appends a new object to the end of the array. </p>
@@ -918,22 +914,51 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#af65726b11200f86ac1aa699eefafa507" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34" title="Appends a new object at the end of the array as long as the array doesn&#39;t already contain it...">addIfNotAlreadyThere</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34">OwnedArray&lt; MarkerList::Marker &gt;::addIfNotAlreadyThere()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a5513b7c6d92501fb003c542816e9a912">OwnedArray&lt; MarkerList::Marker &gt;::add()</a>.</p>
 
 </div>
 </div>
-<a id="af65726b11200f86ac1aa699eefafa507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af65726b11200f86ac1aa699eefafa507">&#9670;&nbsp;</a></span>insert()</h2>
+<a id="a5513b7c6d92501fb003c542816e9a912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5513b7c6d92501fb003c542816e9a912">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; ObjectClass &gt;&#160;</td>
+          <td class="paramname"><em>newObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends a new object to the end of the array. </p>
+<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>Also be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newObject</td><td>the new object to add to the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9e71f9b26deccf0e3dfc0930a156f944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e71f9b26deccf0e3dfc0930a156f944">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::insert </td>
@@ -953,11 +978,6 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Inserts a new object into the array at the given index. </p>
@@ -972,7 +992,53 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34" title="Appends a new object at the end of the array as long as the array doesn&#39;t already contain it...">addIfNotAlreadyThere</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a44c028b02f53bd1911d5cfe444ff3388">OwnedArray&lt; MarkerList::Marker &gt;::insert()</a>.</p>
+
+</div>
+</div>
+<a id="a44c028b02f53bd1911d5cfe444ff3388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c028b02f53bd1911d5cfe444ff3388">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>indexToInsertAt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; ObjectClass &gt;&#160;</td>
+          <td class="paramname"><em>newObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts a new object into the array at the given index. </p>
+<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>If the index is less than 0 or greater than the size of the array, the element will be added to the end of the array. Otherwise, it will be inserted into the array, moving all the later elements along to make room.</p>
+<p>Be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexToInsertAt</td><td>the index at which the new element should be inserted </td></tr>
+    <tr><td class="paramname">newObject</td><td>the new object to add to the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
 
 </div>
 </div>
@@ -1020,50 +1086,12 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#af65726b11200f86ac1aa699eefafa507" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
-
-</div>
-</div>
-<a id="a53c6a89641ec9282a01e04322f14fe34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53c6a89641ec9282a01e04322f14fe34">&#9670;&nbsp;</a></span>addIfNotAlreadyThere()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::addIfNotAlreadyThere </td>
-          <td>(</td>
-          <td class="paramtype">ObjectClass *&#160;</td>
-          <td class="paramname"><em>newObject</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Appends a new object at the end of the array as long as the array doesn't already contain it. </p>
-<p>If the array already contains a matching object, nothing will be done.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newObject</td><td>the new object to add to the array </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the new object was added, false otherwise </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
 
 </div>
 </div>
 <a id="a383de41801934f65b720a7019ed6ac8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a383de41801934f65b720a7019ed6ac8a">&#9670;&nbsp;</a></span>set()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a383de41801934f65b720a7019ed6ac8a">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1107,7 +1135,56 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#af65726b11200f86ac1aa699eefafa507" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6" title="Removes an object from the array. ">remove</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6" title="Removes an object from the array. ">remove</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6122ecd1eb94af4a0202c144a7eea519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6122ecd1eb94af4a0202c144a7eea519">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectClass* <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>indexToChange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; ObjectClass &gt;&#160;</td>
+          <td class="paramname"><em>newObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deleteOldElement</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces an object in the array with a different one. </p>
+<p>If the index is less than zero, this method does nothing. If the index is beyond the end of the array, the new object is added to the end of the array.</p>
+<p>Be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexToChange</td><td>the index whose value you want to change </td></tr>
+    <tr><td class="paramname">newObject</td><td>the new value to set for this index. </td></tr>
+    <tr><td class="paramname">deleteOldElement</td><td>whether to delete the object that's being replaced with the new one </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6" title="Removes an object from the array. ">remove</a> </dd></dl>
 
 </div>
 </div>
@@ -1156,7 +1233,7 @@ template&lt;class OtherArrayType &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a5f697c87344fb4b7e29b846aa9e48600">OwnedArray&lt; MarkerList::Marker &gt;::OwnedArray()</a>.</p>
 
@@ -1232,12 +1309,12 @@ template&lt;class OtherArrayType &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a> </dd></dl>
 
 </div>
 </div>
-<a id="ac87e81838149b9d541f6afe605a81b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac87e81838149b9d541f6afe605a81b43">&#9670;&nbsp;</a></span>addSorted()</h2>
+<a id="a3362aa46fe920b22b20ccc313bfe3366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3362aa46fe920b22b20ccc313bfe3366">&#9670;&nbsp;</a></span>addSorted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1258,7 +1335,7 @@ template&lt;class ElementComparator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ObjectClass *const&#160;</td>
+          <td class="paramtype">ObjectClass *&#160;</td>
           <td class="paramname"><em>newObject</em>&#160;</td>
         </tr>
         <tr>
@@ -1284,12 +1361,12 @@ template&lt;class ElementComparator &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index at which the new object was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90" title="Sorts the elements in the array. ">sort</a>, <a class="el" href="classOwnedArray.html#a70e007f781979fd82e1fa7dcd9c3fe87" title="Finds the index of an object in the array, assuming that the array is sorted. ">indexOfSorted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90" title="Sorts the elements in the array. ">sort</a>, <a class="el" href="classOwnedArray.html#a7ebb5f9e4bed3ffd0d5a4e980c77260b" title="Finds the index of an object in the array, assuming that the array is sorted. ">indexOfSorted</a> </dd></dl>
 
 </div>
 </div>
-<a id="a70e007f781979fd82e1fa7dcd9c3fe87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e007f781979fd82e1fa7dcd9c3fe87">&#9670;&nbsp;</a></span>indexOfSorted()</h2>
+<a id="a7ebb5f9e4bed3ffd0d5a4e980c77260b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebb5f9e4bed3ffd0d5a4e980c77260b">&#9670;&nbsp;</a></span>indexOfSorted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1310,7 +1387,7 @@ template&lt;typename ElementComparator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ObjectClass *const&#160;</td>
+          <td class="paramtype">const ObjectClass *&#160;</td>
           <td class="paramname"><em>objectToLookFor</em>&#160;</td>
         </tr>
         <tr>
@@ -1336,7 +1413,7 @@ template&lt;typename ElementComparator &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the element, or -1 if it's not found </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90" title="Sorts the elements in the array. ">sort</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90" title="Sorts the elements in the array. ">sort</a> </dd></dl>
 
 </div>
 </div>
@@ -1698,8 +1775,8 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 
 </div>
 </div>
-<a id="a3618db021fb44a7e146bd969c43d61ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3618db021fb44a7e146bd969c43d61ed">&#9670;&nbsp;</a></span>ensureStorageAllocated()</h2>
+<a id="a472b730297ecc033e4625e834932594e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472b730297ecc033e4625e834932594e">&#9670;&nbsp;</a></span>ensureStorageAllocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1712,7 +1789,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
         <tr>
           <td class="memname">void <a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::ensureStorageAllocated </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
           <td class="paramname"><em>minNumElements</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1781,7 +1858,7 @@ template&lt;class ElementComparator &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>sortArray, <a class="el" href="classOwnedArray.html#a70e007f781979fd82e1fa7dcd9c3fe87" title="Finds the index of an object in the array, assuming that the array is sorted. ">indexOfSorted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>sortArray, <a class="el" href="classOwnedArray.html#a7ebb5f9e4bed3ffd0d5a4e980c77260b" title="Finds the index of an object in the array, assuming that the array is sorted. ">indexOfSorted</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classValueTree.html#acdace65667e5bb2036310b4a91dd3a87">ValueTree::sort()</a>.</p>
 
@@ -1815,7 +1892,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 <p>Returns the <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> that locks this array. </p>
 <p>To lock, you can call <a class="el" href="classOwnedArray.html#aff26d401a3ec729ba369a13276dd32e2" title="Returns the CriticalSection that locks this array. ">getLock()</a>.enter() and <a class="el" href="classOwnedArray.html#aff26d401a3ec729ba369a13276dd32e2" title="Returns the CriticalSection that locks this array. ">getLock()</a>.exit(), or preferably use an object of ScopedLockType as an RAII lock for it. </p>
 
-<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a71587e33a86ec14556128e162470319f">OwnedArray&lt; MarkerList::Marker &gt;::add()</a>, <a class="el" href="classOwnedArray.html#aa2bd0b49686d083cd67d63da1a690dc7">OwnedArray&lt; MarkerList::Marker &gt;::addArray()</a>, <a class="el" href="classOwnedArray.html#a5168676f4e3de540247025ceaec8ad32">OwnedArray&lt; MarkerList::Marker &gt;::addCopiesOf()</a>, <a class="el" href="classOwnedArray.html#a53c6a89641ec9282a01e04322f14fe34">OwnedArray&lt; MarkerList::Marker &gt;::addIfNotAlreadyThere()</a>, <a class="el" href="classOwnedArray.html#ac87e81838149b9d541f6afe605a81b43">OwnedArray&lt; MarkerList::Marker &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#a65730f03dbe905fa251491cb6c8c14ee">OwnedArray&lt; MarkerList::Marker &gt;::clear()</a>, <a class="el" href="classOwnedArray.html#a96fee75673d70e8cf7548bcc0588dddf">OwnedArray&lt; MarkerList::Marker &gt;::clearQuick()</a>, <a class="el" href="classOwnedArray.html#a4ae4a483c09550d8432b98db14f2d132">OwnedArray&lt; MarkerList::Marker &gt;::contains()</a>, <a class="el" href="classOwnedArray.html#a3618db021fb44a7e146bd969c43d61ed">OwnedArray&lt; MarkerList::Marker &gt;::ensureStorageAllocated()</a>, <a class="el" href="classOwnedArray.html#ac3099192ad968d749e95f8e05335f83c">OwnedArray&lt; MarkerList::Marker &gt;::getFirst()</a>, <a class="el" href="classOwnedArray.html#aef141763468bd638b8a266a215e3d7d8">OwnedArray&lt; MarkerList::Marker &gt;::getLast()</a>, <a class="el" href="classOwnedArray.html#ae633303198df0e9aaa594b9d1d0b8137">OwnedArray&lt; MarkerList::Marker &gt;::getUnchecked()</a>, <a class="el" href="classOwnedArray.html#a6660424693e4edbc687fc8352a71ca92">OwnedArray&lt; MarkerList::Marker &gt;::indexOf()</a>, <a class="el" href="classOwnedArray.html#a70e007f781979fd82e1fa7dcd9c3fe87">OwnedArray&lt; MarkerList::Marker &gt;::indexOfSorted()</a>, <a class="el" href="classOwnedArray.html#af65726b11200f86ac1aa699eefafa507">OwnedArray&lt; MarkerList::Marker &gt;::insert()</a>, <a class="el" href="classOwnedArray.html#ac56956aeefcbbaeea2f4d143eb78f633">OwnedArray&lt; MarkerList::Marker &gt;::insertArray()</a>, <a class="el" href="classOwnedArray.html#a77037209056e7c62634819bd274b88ab">OwnedArray&lt; MarkerList::Marker &gt;::minimiseStorageOverheads()</a>, <a class="el" href="classOwnedArray.html#aa8b9f3cc1294a814d7d85a6e9c8266b1">OwnedArray&lt; MarkerList::Marker &gt;::move()</a>, <a class="el" href="classOwnedArray.html#ada2db7ab890af904788d8a9e9db14f5b">OwnedArray&lt; MarkerList::Marker &gt;::operator=()</a>, <a class="el" href="classOwnedArray.html#ad358d1fb116053ba1e3c46d6177ecef6">OwnedArray&lt; MarkerList::Marker &gt;::operator[]()</a>, <a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6">OwnedArray&lt; MarkerList::Marker &gt;::remove()</a>, <a class="el" href="classOwnedArray.html#a835f729e76ae314063c4a7b2e8d208ec">OwnedArray&lt; MarkerList::Marker &gt;::removeAndReturn()</a>, <a class="el" href="classOwnedArray.html#a5df58ce179d37074faf0b85ff83840d8">OwnedArray&lt; MarkerList::Marker &gt;::removeLast()</a>, <a class="el" href="classOwnedArray.html#a2b783fa66f082b890fc20d8d9c948494">OwnedArray&lt; MarkerList::Marker &gt;::removeObject()</a>, <a class="el" href="classOwnedArray.html#a6ca377ada4d52033b6bc9efd3614b5c2">OwnedArray&lt; MarkerList::Marker &gt;::removeRange()</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a">OwnedArray&lt; MarkerList::Marker &gt;::set()</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">OwnedArray&lt; MarkerList::Marker &gt;::sort()</a>, <a class="el" href="classOwnedArray.html#aeae36e1f45837b3e3950fa51b0d67764">OwnedArray&lt; MarkerList::Marker &gt;::swap()</a>, and <a class="el" href="classOwnedArray.html#aa33640231fe11ff0e21f760e395b63a1">OwnedArray&lt; MarkerList::Marker &gt;::swapWith()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e">OwnedArray&lt; MarkerList::Marker &gt;::add()</a>, <a class="el" href="classOwnedArray.html#aa2bd0b49686d083cd67d63da1a690dc7">OwnedArray&lt; MarkerList::Marker &gt;::addArray()</a>, <a class="el" href="classOwnedArray.html#a5168676f4e3de540247025ceaec8ad32">OwnedArray&lt; MarkerList::Marker &gt;::addCopiesOf()</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366">OwnedArray&lt; MarkerList::Marker &gt;::addSorted()</a>, <a class="el" href="classOwnedArray.html#a65730f03dbe905fa251491cb6c8c14ee">OwnedArray&lt; MarkerList::Marker &gt;::clear()</a>, <a class="el" href="classOwnedArray.html#a96fee75673d70e8cf7548bcc0588dddf">OwnedArray&lt; MarkerList::Marker &gt;::clearQuick()</a>, <a class="el" href="classOwnedArray.html#a4ae4a483c09550d8432b98db14f2d132">OwnedArray&lt; MarkerList::Marker &gt;::contains()</a>, <a class="el" href="classOwnedArray.html#a472b730297ecc033e4625e834932594e">OwnedArray&lt; MarkerList::Marker &gt;::ensureStorageAllocated()</a>, <a class="el" href="classOwnedArray.html#ac3099192ad968d749e95f8e05335f83c">OwnedArray&lt; MarkerList::Marker &gt;::getFirst()</a>, <a class="el" href="classOwnedArray.html#aef141763468bd638b8a266a215e3d7d8">OwnedArray&lt; MarkerList::Marker &gt;::getLast()</a>, <a class="el" href="classOwnedArray.html#af9db4b3a2eec5685ec389d684390cfe3">OwnedArray&lt; MarkerList::Marker &gt;::getUnchecked()</a>, <a class="el" href="classOwnedArray.html#a6660424693e4edbc687fc8352a71ca92">OwnedArray&lt; MarkerList::Marker &gt;::indexOf()</a>, <a class="el" href="classOwnedArray.html#a7ebb5f9e4bed3ffd0d5a4e980c77260b">OwnedArray&lt; MarkerList::Marker &gt;::indexOfSorted()</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944">OwnedArray&lt; MarkerList::Marker &gt;::insert()</a>, <a class="el" href="classOwnedArray.html#ac56956aeefcbbaeea2f4d143eb78f633">OwnedArray&lt; MarkerList::Marker &gt;::insertArray()</a>, <a class="el" href="classOwnedArray.html#a77037209056e7c62634819bd274b88ab">OwnedArray&lt; MarkerList::Marker &gt;::minimiseStorageOverheads()</a>, <a class="el" href="classOwnedArray.html#aa8b9f3cc1294a814d7d85a6e9c8266b1">OwnedArray&lt; MarkerList::Marker &gt;::move()</a>, <a class="el" href="classOwnedArray.html#ada2db7ab890af904788d8a9e9db14f5b">OwnedArray&lt; MarkerList::Marker &gt;::operator=()</a>, <a class="el" href="classOwnedArray.html#a3e2768739fcaa133dda9ae140808137a">OwnedArray&lt; MarkerList::Marker &gt;::operator[]()</a>, <a class="el" href="classOwnedArray.html#ae96b18f21808cd5a62fc35bff85e2df6">OwnedArray&lt; MarkerList::Marker &gt;::remove()</a>, <a class="el" href="classOwnedArray.html#a835f729e76ae314063c4a7b2e8d208ec">OwnedArray&lt; MarkerList::Marker &gt;::removeAndReturn()</a>, <a class="el" href="classOwnedArray.html#a5df58ce179d37074faf0b85ff83840d8">OwnedArray&lt; MarkerList::Marker &gt;::removeLast()</a>, <a class="el" href="classOwnedArray.html#a2b783fa66f082b890fc20d8d9c948494">OwnedArray&lt; MarkerList::Marker &gt;::removeObject()</a>, <a class="el" href="classOwnedArray.html#a6ca377ada4d52033b6bc9efd3614b5c2">OwnedArray&lt; MarkerList::Marker &gt;::removeRange()</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a">OwnedArray&lt; MarkerList::Marker &gt;::set()</a>, <a class="el" href="classOwnedArray.html#a04a21a831320e2ce76bee8ad881e1d90">OwnedArray&lt; MarkerList::Marker &gt;::sort()</a>, <a class="el" href="classOwnedArray.html#aeae36e1f45837b3e3950fa51b0d67764">OwnedArray&lt; MarkerList::Marker &gt;::swap()</a>, and <a class="el" href="classOwnedArray.html#aa33640231fe11ff0e21f760e395b63a1">OwnedArray&lt; MarkerList::Marker &gt;::swapWith()</a>.</p>
 
 </div>
 </div>
@@ -1825,7 +1902,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -99,9 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed646db44c76466d8d0e288d56e50691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#aed646db44c76466d8d0e288d56e50691">initialiseWithDefaultDevices</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numInputChannelsNeeded, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numOutputChannelsNeeded)</td></tr>
 <tr class="memdesc:aed646db44c76466d8d0e288d56e50691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets everything to a default device setup, clearing any stored settings.  <a href="#aed646db44c76466d8d0e288d56e50691">More...</a><br /></td></tr>
 <tr class="separator:aed646db44c76466d8d0e288d56e50691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9898f5fc97622b0887bd60d838683293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXmlElement.html">XmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a9898f5fc97622b0887bd60d838683293">createStateXml</a> () const</td></tr>
-<tr class="memdesc:a9898f5fc97622b0887bd60d838683293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some XML representing the current state of the manager.  <a href="#a9898f5fc97622b0887bd60d838683293">More...</a><br /></td></tr>
-<tr class="separator:a9898f5fc97622b0887bd60d838683293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfe71436c5661af76ff903a5e2de166"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a1bfe71436c5661af76ff903a5e2de166">createStateXml</a> () const</td></tr>
+<tr class="memdesc:a1bfe71436c5661af76ff903a5e2de166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some XML representing the current state of the manager.  <a href="#a1bfe71436c5661af76ff903a5e2de166">More...</a><br /></td></tr>
+<tr class="separator:a1bfe71436c5661af76ff903a5e2de166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84855d2826ebd28f1bb61fb77005fb7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioDeviceManager_1_1AudioDeviceSetup.html">AudioDeviceSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a84855d2826ebd28f1bb61fb77005fb7a">getAudioDeviceSetup</a> () const</td></tr>
 <tr class="memdesc:a84855d2826ebd28f1bb61fb77005fb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device properties that are in use.  <a href="#a84855d2826ebd28f1bb61fb77005fb7a">More...</a><br /></td></tr>
 <tr class="separator:a84855d2826ebd28f1bb61fb77005fb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,7 +328,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">numInputChannelsNeeded</td><td>the maximum number of input channels your app would like to use (the actual number of channels opened may be less than the number requested) </td></tr>
     <tr><td class="paramname">numOutputChannelsNeeded</td><td>the maximum number of output channels your app would like to use (the actual number of channels opened may be less than the number requested) </td></tr>
-    <tr><td class="paramname">savedState</td><td>either a previously-saved state that was produced by <a class="el" href="classAudioDeviceManager.html#a9898f5fc97622b0887bd60d838683293" title="Returns some XML representing the current state of the manager. ">createStateXml()</a>, or nullptr if you want the manager to choose the best device to open. </td></tr>
+    <tr><td class="paramname">savedState</td><td>either a previously-saved state that was produced by <a class="el" href="classAudioDeviceManager.html#a1bfe71436c5661af76ff903a5e2de166" title="Returns some XML representing the current state of the manager. ">createStateXml()</a>, or nullptr if you want the manager to choose the best device to open. </td></tr>
     <tr><td class="paramname">selectDefaultDeviceOnFailure</td><td>if true, then if the device specified in the XML fails to open, then a default device will be used instead. If false, then on failure, no device is opened. </td></tr>
     <tr><td class="paramname">preferredDefaultDeviceName</td><td>if this is not empty, and there's a device with this name, then that will be used as the default device (assuming that there wasn't one specified in the XML). The string can actually be a simple wildcard, containing "*" and "?" characters </td></tr>
     <tr><td class="paramname">preferredSetupOptions</td><td>if this is non-null, the structure will be used as the set of preferred settings when opening the device. If you use this parameter, the preferredDefaultDeviceName field will be ignored</td></tr>
@@ -371,14 +371,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9898f5fc97622b0887bd60d838683293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9898f5fc97622b0887bd60d838683293">&#9670;&nbsp;</a></span>createStateXml()</h2>
+<a id="a1bfe71436c5661af76ff903a5e2de166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bfe71436c5661af76ff903a5e2de166">&#9670;&nbsp;</a></span>createStateXml()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classXmlElement.html">XmlElement</a>* AudioDeviceManager::createStateXml </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; AudioDeviceManager::createStateXml </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -464,7 +464,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newSetup</td><td>the settings that you'd like to use </td></tr>
-    <tr><td class="paramname">treatAsChosenDevice</td><td>if this is true and if the device opens correctly, these new settings will be taken as having been explicitly chosen by the user, and the next time <a class="el" href="classAudioDeviceManager.html#a9898f5fc97622b0887bd60d838683293" title="Returns some XML representing the current state of the manager. ">createStateXml()</a> is called, these settings will be returned. If it's false, then the device is treated as a temporary or default device, and a call to <a class="el" href="classAudioDeviceManager.html#a9898f5fc97622b0887bd60d838683293" title="Returns some XML representing the current state of the manager. ">createStateXml()</a> will return either the last settings that were made with treatAsChosenDevice as true, or the last XML settings that were passed into <a class="el" href="classAudioDeviceManager.html#a4c6d8a76a270a6e4ca0537093f447b44" title="Opens a set of audio devices ready for use. ">initialise()</a>. </td></tr>
+    <tr><td class="paramname">treatAsChosenDevice</td><td>if this is true and if the device opens correctly, these new settings will be taken as having been explicitly chosen by the user, and the next time <a class="el" href="classAudioDeviceManager.html#a1bfe71436c5661af76ff903a5e2de166" title="Returns some XML representing the current state of the manager. ">createStateXml()</a> is called, these settings will be returned. If it's false, then the device is treated as a temporary or default device, and a call to <a class="el" href="classAudioDeviceManager.html#a1bfe71436c5661af76ff903a5e2de166" title="Returns some XML representing the current state of the manager. ">createStateXml()</a> will return either the last settings that were made with treatAsChosenDevice as true, or the last XML settings that were passed into <a class="el" href="classAudioDeviceManager.html#a4c6d8a76a270a6e4ca0537093f447b44" title="Opens a set of audio devices ready for use. ">initialise()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1118,7 +1118,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

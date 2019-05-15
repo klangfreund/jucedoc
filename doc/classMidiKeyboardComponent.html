@@ -845,9 +845,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae89f77de00ce176aa9196009bd58755c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#ae89f77de00ce176aa9196009bd58755c">mouseDownOnKey</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber, const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
 <tr class="memdesc:ae89f77de00ce176aa9196009bd58755c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when the mouse is clicked on a key.  <a href="#ae89f77de00ce176aa9196009bd58755c">More...</a><br /></td></tr>
 <tr class="separator:ae89f77de00ce176aa9196009bd58755c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9ca06baaf1f9def867598e0f9ab0fff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#ad9ca06baaf1f9def867598e0f9ab0fff">mouseDraggedToKey</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber, const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
-<tr class="memdesc:ad9ca06baaf1f9def867598e0f9ab0fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when the mouse is dragged from one key onto another.  <a href="#ad9ca06baaf1f9def867598e0f9ab0fff">More...</a><br /></td></tr>
-<tr class="separator:ad9ca06baaf1f9def867598e0f9ab0fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1299ce11821e709d935ed593af12a58c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a1299ce11821e709d935ed593af12a58c">mouseDraggedToKey</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber, const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
+<tr class="memdesc:a1299ce11821e709d935ed593af12a58c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when the mouse is dragged from one key onto another.  <a href="#a1299ce11821e709d935ed593af12a58c">More...</a><br /></td></tr>
+<tr class="separator:a1299ce11821e709d935ed593af12a58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051aef9e1dbf55aa91dee30f7d7549c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardComponent.html#a051aef9e1dbf55aa91dee30f7d7549c9">mouseUpOnKey</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> midiNoteNumber, const <a class="el" href="classMouseEvent.html">MouseEvent</a> &amp;e)</td></tr>
 <tr class="memdesc:a051aef9e1dbf55aa91dee30f7d7549c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when the mouse is released from a key.  <a href="#a051aef9e1dbf55aa91dee30f7d7549c9">More...</a><br /></td></tr>
 <tr class="separator:a051aef9e1dbf55aa91dee30f7d7549c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2590,12 +2590,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Callback when the mouse is clicked on a key. </p>
 <p>You could use this to do things like handle right-clicks on keys, etc.</p>
 <p>Return true if you want the click to trigger the note, or false if you want to handle it yourself and not have the note played.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiKeyboardComponent.html#ad9ca06baaf1f9def867598e0f9ab0fff" title="Callback when the mouse is dragged from one key onto another. ">mouseDraggedToKey</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiKeyboardComponent.html#a1299ce11821e709d935ed593af12a58c" title="Callback when the mouse is dragged from one key onto another. ">mouseDraggedToKey</a> </dd></dl>
 
 </div>
 </div>
-<a id="ad9ca06baaf1f9def867598e0f9ab0fff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9ca06baaf1f9def867598e0f9ab0fff">&#9670;&nbsp;</a></span>mouseDraggedToKey()</h2>
+<a id="a1299ce11821e709d935ed593af12a58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1299ce11821e709d935ed593af12a58c">&#9670;&nbsp;</a></span>mouseDraggedToKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2604,7 +2604,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MidiKeyboardComponent::mouseDraggedToKey </td>
+          <td class="memname">virtual bool MidiKeyboardComponent::mouseDraggedToKey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
           <td class="paramname"><em>midiNoteNumber</em>, </td>
@@ -2629,6 +2629,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback when the mouse is dragged from one key onto another. </p>
+<p>Return true if you want the drag to trigger the new note, or false if you want to handle it yourself and not have the note played.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiKeyboardComponent.html#ae89f77de00ce176aa9196009bd58755c" title="Callback when the mouse is clicked on a key. ">mouseDownOnKey</a> </dd></dl>
 
 </div>
@@ -2753,7 +2754,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

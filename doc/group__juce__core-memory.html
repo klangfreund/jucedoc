@@ -105,9 +105,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReferenceCountedObjectPtr.html">ReferenceCountedObjectPtr&lt; ObjectType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart-pointer class which points to a reference-counted object.  <a href="classReferenceCountedObjectPtr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopedPointer.html">ScopedPointer&lt; ObjectType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is deprecated.  <a href="classScopedPointer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSharedResourcePointer.html">SharedResourcePointer&lt; SharedObjectType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart-pointer that automatically creates and manages the lifetime of a shared static instance of a class.  <a href="classSharedResourcePointer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,46 +196,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga54007e29ecb25774829b4367a4cb9734"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga54007e29ecb25774829b4367a4cb9734">operator!=</a> (const Type *object1, const <a class="el" href="classReferenceCountedObjectPtr.html">ReferenceCountedObjectPtr</a>&lt; Type &gt; &amp;object2) noexcept</td></tr>
 <tr class="memdesc:ga54007e29ecb25774829b4367a4cb9734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two ReferenceCountedObjectPtrs.  <a href="#ga54007e29ecb25774829b4367a4cb9734">More...</a><br /></td></tr>
 <tr class="separator:ga54007e29ecb25774829b4367a4cb9734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga927b147e743a0617a05c12c5da0ebb88"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:ga927b147e743a0617a05c12c5da0ebb88"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga927b147e743a0617a05c12c5da0ebb88">operator==</a> (ObjectType1 *pointer1, const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;pointer2) noexcept</td></tr>
-<tr class="memdesc:ga927b147e743a0617a05c12c5da0ebb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#ga927b147e743a0617a05c12c5da0ebb88">More...</a><br /></td></tr>
-<tr class="separator:ga927b147e743a0617a05c12c5da0ebb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe4444670af9bc5f70c91a4d6428dee6"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:gafe4444670af9bc5f70c91a4d6428dee6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#gafe4444670af9bc5f70c91a4d6428dee6">operator!=</a> (ObjectType1 *pointer1, const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;pointer2) noexcept</td></tr>
-<tr class="memdesc:gafe4444670af9bc5f70c91a4d6428dee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#gafe4444670af9bc5f70c91a4d6428dee6">More...</a><br /></td></tr>
-<tr class="separator:gafe4444670af9bc5f70c91a4d6428dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae74660ca131a3925bcfd2ec382931d67"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:gae74660ca131a3925bcfd2ec382931d67"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#gae74660ca131a3925bcfd2ec382931d67">operator==</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;pointer1, ObjectType2 *pointer2) noexcept</td></tr>
-<tr class="memdesc:gae74660ca131a3925bcfd2ec382931d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#gae74660ca131a3925bcfd2ec382931d67">More...</a><br /></td></tr>
-<tr class="separator:gae74660ca131a3925bcfd2ec382931d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56c5b0838d001258318d06b2f61a5486"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:ga56c5b0838d001258318d06b2f61a5486"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga56c5b0838d001258318d06b2f61a5486">operator!=</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;pointer1, ObjectType2 *pointer2) noexcept</td></tr>
-<tr class="memdesc:ga56c5b0838d001258318d06b2f61a5486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#ga56c5b0838d001258318d06b2f61a5486">More...</a><br /></td></tr>
-<tr class="separator:ga56c5b0838d001258318d06b2f61a5486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f86c713ec98ac239e65507cbf78663c"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:ga2f86c713ec98ac239e65507cbf78663c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga2f86c713ec98ac239e65507cbf78663c">operator==</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;pointer1, const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;pointer2) noexcept</td></tr>
-<tr class="memdesc:ga2f86c713ec98ac239e65507cbf78663c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#ga2f86c713ec98ac239e65507cbf78663c">More...</a><br /></td></tr>
-<tr class="separator:ga2f86c713ec98ac239e65507cbf78663c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bc5aebc3c912449d8ee1a2d6ef8e3c8"><td class="memTemplParams" colspan="2">template&lt;typename ObjectType1 , typename ObjectType2 &gt; </td></tr>
-<tr class="memitem:ga2bc5aebc3c912449d8ee1a2d6ef8e3c8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga2bc5aebc3c912449d8ee1a2d6ef8e3c8">operator!=</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;pointer1, const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;pointer2) noexcept</td></tr>
-<tr class="memdesc:ga2bc5aebc3c912449d8ee1a2d6ef8e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer.  <a href="#ga2bc5aebc3c912449d8ee1a2d6ef8e3c8">More...</a><br /></td></tr>
-<tr class="separator:ga2bc5aebc3c912449d8ee1a2d6ef8e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93e95fb2e4240f3eab39ad32945e4ce5"><td class="memTemplParams" colspan="2">template&lt;class ObjectType &gt; </td></tr>
-<tr class="memitem:ga93e95fb2e4240f3eab39ad32945e4ce5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga93e95fb2e4240f3eab39ad32945e4ce5">operator==</a> (decltype(nullptr), const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;pointer) noexcept</td></tr>
-<tr class="memdesc:ga93e95fb2e4240f3eab39ad32945e4ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr.  <a href="#ga93e95fb2e4240f3eab39ad32945e4ce5">More...</a><br /></td></tr>
-<tr class="separator:ga93e95fb2e4240f3eab39ad32945e4ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9cf7ca5a2d8c547f0d422d55a8e802ba"><td class="memTemplParams" colspan="2">template&lt;class ObjectType &gt; </td></tr>
-<tr class="memitem:ga9cf7ca5a2d8c547f0d422d55a8e802ba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga9cf7ca5a2d8c547f0d422d55a8e802ba">operator!=</a> (decltype(nullptr), const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;pointer) noexcept</td></tr>
-<tr class="memdesc:ga9cf7ca5a2d8c547f0d422d55a8e802ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr.  <a href="#ga9cf7ca5a2d8c547f0d422d55a8e802ba">More...</a><br /></td></tr>
-<tr class="separator:ga9cf7ca5a2d8c547f0d422d55a8e802ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3cdb728c7715f5050637fe8fd0593254"><td class="memTemplParams" colspan="2">template&lt;class ObjectType &gt; </td></tr>
-<tr class="memitem:ga3cdb728c7715f5050637fe8fd0593254"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga3cdb728c7715f5050637fe8fd0593254">operator==</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;pointer, decltype(nullptr)) noexcept</td></tr>
-<tr class="memdesc:ga3cdb728c7715f5050637fe8fd0593254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr.  <a href="#ga3cdb728c7715f5050637fe8fd0593254">More...</a><br /></td></tr>
-<tr class="separator:ga3cdb728c7715f5050637fe8fd0593254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga527cc02f3401c7e99831ab0cb77bb3e2"><td class="memTemplParams" colspan="2">template&lt;class ObjectType &gt; </td></tr>
-<tr class="memitem:ga527cc02f3401c7e99831ab0cb77bb3e2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#ga527cc02f3401c7e99831ab0cb77bb3e2">operator!=</a> (const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;pointer, decltype(nullptr)) noexcept</td></tr>
-<tr class="memdesc:ga527cc02f3401c7e99831ab0cb77bb3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr.  <a href="#ga527cc02f3401c7e99831ab0cb77bb3e2">More...</a><br /></td></tr>
-<tr class="separator:ga527cc02f3401c7e99831ab0cb77bb3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4c3a3d79adb200b85182e80f5c765c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__juce__core-system.html#gaf41251c36d1579b74e6c54bf4fa5383a">JUCE_CONSTEXPR</a> <a class="el" href="group__juce__core-maths.html#gaf6e23a20bd7abf3ca3c82295c2b323e5">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-memory.html#gaf4c3a3d79adb200b85182e80f5c765c0">ByteOrder::swap</a> (<a class="el" href="group__juce__core-maths.html#gaf6e23a20bd7abf3ca3c82295c2b323e5">uint16</a> value) noexcept</td></tr>
 <tr class="memdesc:gaf4c3a3d79adb200b85182e80f5c765c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the upper and lower bytes of a 16-bit integer.  <a href="#gaf4c3a3d79adb200b85182e80f5c765c0">More...</a><br /></td></tr>
 <tr class="separator:gaf4c3a3d79adb200b85182e80f5c765c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -621,8 +578,6 @@ template&lt;typename Type &gt; </div>
 <p>Delete an object pointer, and sets the pointer to null. </p>
 <p>Remember that it's not good c++ practice to use delete directly - always try to use a std::unique_ptr or other automatic lifetime-management system rather than resorting to deleting raw pointers! </p>
 
-<p class="reference">Referenced by <a class="el" href="group__juce__core-memory.html#ga527cc02f3401c7e99831ab0cb77bb3e2">operator!=()</a>.</p>
-
 </div>
 </div>
 <a id="gaec283d962b8cbfef5e73f51129305913"></a>
@@ -774,7 +729,7 @@ template&lt;class Type &gt; </div>
 
 <p>If a pointer is non-null, this returns a new copy of the object that it points to, or safely returns nullptr if the pointer is null. </p>
 
-<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a5168676f4e3de540247025ceaec8ad32">OwnedArray&lt; MarkerList::Marker &gt;::addCopiesOf()</a>, and <a class="el" href="classScopedPointer.html#a5c72746c9ac7fd311d3c7aaa1f226f85">ScopedPointer&lt; OutputStream &gt;::createCopy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a5168676f4e3de540247025ceaec8ad32">OwnedArray&lt; MarkerList::Marker &gt;::addCopiesOf()</a>.</p>
 
 </div>
 </div>
@@ -849,7 +804,7 @@ template&lt;typename Type &gt; </div>
 </div>
 </div>
 <a id="ga646e9b7160c2b702ac791a00ab6e0245"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga646e9b7160c2b702ac791a00ab6e0245">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga646e9b7160c2b702ac791a00ab6e0245">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -889,7 +844,7 @@ template&lt;typename Type &gt; </div>
 </div>
 </div>
 <a id="ga54007e29ecb25774829b4367a4cb9734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga54007e29ecb25774829b4367a4cb9734">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54007e29ecb25774829b4367a4cb9734">&#9670;&nbsp;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,410 +880,6 @@ template&lt;typename Type &gt; </div>
 </div><div class="memdoc">
 
 <p>Compares two ReferenceCountedObjectPtrs. </p>
-
-</div>
-</div>
-<a id="ga927b147e743a0617a05c12c5da0ebb88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga927b147e743a0617a05c12c5da0ebb88">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">ObjectType1 *&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="gafe4444670af9bc5f70c91a4d6428dee6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafe4444670af9bc5f70c91a4d6428dee6">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">ObjectType1 *&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="gae74660ca131a3925bcfd2ec382931d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae74660ca131a3925bcfd2ec382931d67">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ObjectType2 *&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="ga56c5b0838d001258318d06b2f61a5486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56c5b0838d001258318d06b2f61a5486">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ObjectType2 *&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="ga2f86c713ec98ac239e65507cbf78663c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f86c713ec98ac239e65507cbf78663c">&#9670;&nbsp;</a></span>operator==() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="ga2bc5aebc3c912449d8ee1a2d6ef8e3c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2bc5aebc3c912449d8ee1a2d6ef8e3c8">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType1 , typename ObjectType2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with another pointer. </p>
-
-</div>
-</div>
-<a id="ga93e95fb2e4240f3eab39ad32945e4ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga93e95fb2e4240f3eab39ad32945e4ce5">&#9670;&nbsp;</a></span>operator==() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">decltype(nullptr)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr. </p>
-
-</div>
-</div>
-<a id="ga9cf7ca5a2d8c547f0d422d55a8e802ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9cf7ca5a2d8c547f0d422d55a8e802ba">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">decltype(nullptr)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr. </p>
-
-</div>
-</div>
-<a id="ga3cdb728c7715f5050637fe8fd0593254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3cdb728c7715f5050637fe8fd0593254">&#9670;&nbsp;</a></span>operator==() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">decltype(nullptr)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr. </p>
-
-<p class="reference">References <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740">ScopedPointer&lt; ObjectType &gt;::get()</a>.</p>
-
-</div>
-</div>
-<a id="ga527cc02f3401c7e99831ab0cb77bb3e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga527cc02f3401c7e99831ab0cb77bb3e2">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classScopedPointer.html">ScopedPointer</a>&lt; ObjectType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pointer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">decltype(nullptr)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares a <a class="el" href="classScopedPointer.html" title="This class is deprecated. ">ScopedPointer</a> with a nullptr. </p>
-
-<p class="reference">References <a class="el" href="group__juce__core-memory.html#ga4163b928fab6bebea5691e97c72fc4fa">deleteAndZero()</a>, and <a class="el" href="classScopedPointer.html#ac65fb45b9eb2d53773489fcfbc6fd740">ScopedPointer&lt; ObjectType &gt;::get()</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +1572,7 @@ template&lt;class ObjectType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
