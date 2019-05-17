@@ -77,9 +77,9 @@ Inheritance diagram for ToolbarButton:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a65aeb251dea7845837d2c99ecd723904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolbarButton.html#a65aeb251dea7845837d2c99ecd723904">ToolbarButton</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> itemId, const <a class="el" href="classString.html">String</a> &amp;labelText, <a class="el" href="classDrawable.html">Drawable</a> *normalImage, <a class="el" href="classDrawable.html">Drawable</a> *toggledOnImage)</td></tr>
-<tr class="memdesc:a65aeb251dea7845837d2c99ecd723904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classToolbarButton.html" title="A type of button designed to go on a toolbar. ">ToolbarButton</a>.  <a href="#a65aeb251dea7845837d2c99ecd723904">More...</a><br /></td></tr>
-<tr class="separator:a65aeb251dea7845837d2c99ecd723904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addda25fab9e392253486443b891ab221"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolbarButton.html#addda25fab9e392253486443b891ab221">ToolbarButton</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> itemId, const <a class="el" href="classString.html">String</a> &amp;labelText, std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt; normalImage, std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt; toggledOnImage)</td></tr>
+<tr class="memdesc:addda25fab9e392253486443b891ab221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classToolbarButton.html" title="A type of button designed to go on a toolbar. ">ToolbarButton</a>.  <a href="#addda25fab9e392253486443b891ab221">More...</a><br /></td></tr>
+<tr class="separator:addda25fab9e392253486443b891ab221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8c63ac2677b7d8e610db28170ef5c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolbarButton.html#a1f8c63ac2677b7d8e610db28170ef5c2">~ToolbarButton</a> () override</td></tr>
 <tr class="memdesc:a1f8c63ac2677b7d8e610db28170ef5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a1f8c63ac2677b7d8e610db28170ef5c2">More...</a><br /></td></tr>
 <tr class="separator:a1f8c63ac2677b7d8e610db28170ef5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -891,8 +891,8 @@ Additional Inherited Members</h2></td></tr>
 <p>This simple button can have two <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> objects specified - one for normal use and another one (optionally) for the button's "on" state if it's a toggle button.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classToolbar.html" title="A toolbar component. ">Toolbar</a>, <a class="el" href="classToolbarItemFactory.html" title="A factory object which can create ToolbarItemComponent objects. ">ToolbarItemFactory</a>, <a class="el" href="classToolbarItemComponent.html" title="A component that can be used as one of the items in a Toolbar. ">ToolbarItemComponent</a>, <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a>, <a class="el" href="classButton.html" title="A base class for buttons. ">Button</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a65aeb251dea7845837d2c99ecd723904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65aeb251dea7845837d2c99ecd723904">&#9670;&nbsp;</a></span>ToolbarButton()</h2>
+<a id="addda25fab9e392253486443b891ab221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addda25fab9e392253486443b891ab221">&#9670;&nbsp;</a></span>ToolbarButton()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -912,13 +912,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDrawable.html">Drawable</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td>
           <td class="paramname"><em>normalImage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDrawable.html">Drawable</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td>
           <td class="paramname"><em>toggledOnImage</em>&#160;</td>
         </tr>
         <tr>
@@ -1197,7 +1197,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 17 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

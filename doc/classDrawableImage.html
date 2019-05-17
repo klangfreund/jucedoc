@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c1dd682ea6f4bde7cc404c24ce9d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6bd602f7d8dd85366b11b7419209ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableImage.html#a0a6bd602f7d8dd85366b11b7419209ed">hitTest</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> x, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> y) override</td></tr>
 <tr class="separator:a0a6bd602f7d8dd85366b11b7419209ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39862bac6df6d0e11745106d6d5f3814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableImage.html#a39862bac6df6d0e11745106d6d5f3814">createCopy</a> () const override</td></tr>
-<tr class="separator:a39862bac6df6d0e11745106d6d5f3814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cb916fd12b5a7d59137059be73c13d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableImage.html#a71cb916fd12b5a7d59137059be73c13d">createCopy</a> () const override</td></tr>
+<tr class="separator:a71cb916fd12b5a7d59137059be73c13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab89c15bf7596007b772a400a8d79c4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRectangle.html">Rectangle</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableImage.html#ab89c15bf7596007b772a400a8d79c4e7">getDrawableBounds</a> () const override</td></tr>
 <tr class="separator:ab89c15bf7596007b772a400a8d79c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065b74db46b8719fb3e8d0485da7cd0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPath.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableImage.html#a065b74db46b8719fb3e8d0485da7cd0d">getOutlineAsPath</a> () const override</td></tr>
@@ -143,9 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48b051c902bcf6d2aafbfd2116238a62 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDrawableComposite.html">DrawableComposite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a48b051c902bcf6d2aafbfd2116238a62">getParent</a> () const</td></tr>
 <tr class="memdesc:a48b051c902bcf6d2aafbfd2116238a62 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classDrawableComposite.html" title="A drawable object which acts as a container for a set of other Drawables. ">DrawableComposite</a> that contains this object, if there is one.  <a href="classDrawable.html#a48b051c902bcf6d2aafbfd2116238a62">More...</a><br /></td></tr>
 <tr class="separator:a48b051c902bcf6d2aafbfd2116238a62 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad8b6fdc4046cb169bcae67daffa62f inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a4ad8b6fdc4046cb169bcae67daffa62f">setClipPath</a> (<a class="el" href="classDrawable.html">Drawable</a> *<a class="el" href="classDrawable.html#a075bd445aa34244d2239f21a54faf487">drawableClipPath</a>)</td></tr>
-<tr class="memdesc:a4ad8b6fdc4046cb169bcae67daffa62f inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a the clipping region of this drawable using another drawable.  <a href="classDrawable.html#a4ad8b6fdc4046cb169bcae67daffa62f">More...</a><br /></td></tr>
-<tr class="separator:a4ad8b6fdc4046cb169bcae67daffa62f inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#af161255ebaddc5f8c92326db7a444e13">setClipPath</a> (std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt; <a class="el" href="classDrawable.html#a075bd445aa34244d2239f21a54faf487">drawableClipPath</a>)</td></tr>
+<tr class="memdesc:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a the clipping region of this drawable using another drawable.  <a href="classDrawable.html#af161255ebaddc5f8c92326db7a444e13">More...</a><br /></td></tr>
+<tr class="separator:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">replaceColour</a> (<a class="el" href="classColour.html">Colour</a> originalColour, <a class="el" href="classColour.html">Colour</a> replacementColour)</td></tr>
 <tr class="memdesc:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively replaces a colour that might be used for filling or stroking.  <a href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">More...</a><br /></td></tr>
 <tr class="separator:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -721,21 +721,21 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr class="separator:a7fd775ea6b1190d5d694fdffa539dfac inherit pub_types_classComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classDrawable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classDrawable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classDrawable.html">Drawable</a></td></tr>
-<tr class="memitem:a490039369111891979147bdfecf8d389 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a490039369111891979147bdfecf8d389">createFromImageData</a> (const void *data, size_t numBytes)</td></tr>
-<tr class="memdesc:a490039369111891979147bdfecf8d389 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn some kind of image file into a drawable.  <a href="classDrawable.html#a490039369111891979147bdfecf8d389">More...</a><br /></td></tr>
-<tr class="separator:a490039369111891979147bdfecf8d389 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763ef7e95af00fb88b4c45a1c38bd942 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a763ef7e95af00fb88b4c45a1c38bd942">createFromImageDataStream</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;dataSource)</td></tr>
-<tr class="memdesc:a763ef7e95af00fb88b4c45a1c38bd942 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn a stream containing some kind of image data into a drawable.  <a href="classDrawable.html#a763ef7e95af00fb88b4c45a1c38bd942">More...</a><br /></td></tr>
-<tr class="separator:a763ef7e95af00fb88b4c45a1c38bd942 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c90179ca2a582ef0814c983be41dc9 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a71c90179ca2a582ef0814c983be41dc9">createFromImageFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file)</td></tr>
-<tr class="memdesc:a71c90179ca2a582ef0814c983be41dc9 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn a file containing some kind of image data into a drawable.  <a href="classDrawable.html#a71c90179ca2a582ef0814c983be41dc9">More...</a><br /></td></tr>
-<tr class="separator:a71c90179ca2a582ef0814c983be41dc9 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1fa4fa00c6e37bcaa7a9322a81bd2ec inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#af1fa4fa00c6e37bcaa7a9322a81bd2ec">createFromSVG</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;svgDocument)</td></tr>
-<tr class="memdesc:af1fa4fa00c6e37bcaa7a9322a81bd2ec inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="classDrawable.html#af1fa4fa00c6e37bcaa7a9322a81bd2ec">More...</a><br /></td></tr>
-<tr class="separator:af1fa4fa00c6e37bcaa7a9322a81bd2ec inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b89bd78998ffd1f4888a143b15e2258 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDrawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a7b89bd78998ffd1f4888a143b15e2258">createFromSVGFile</a> (const <a class="el" href="classFile.html">File</a> &amp;svgFile)</td></tr>
-<tr class="memdesc:a7b89bd78998ffd1f4888a143b15e2258 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document from a file, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="classDrawable.html#a7b89bd78998ffd1f4888a143b15e2258">More...</a><br /></td></tr>
-<tr class="separator:a7b89bd78998ffd1f4888a143b15e2258 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3e8f4f84100faff7accb2398453e70 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#aca3e8f4f84100faff7accb2398453e70">createFromImageData</a> (const void *data, size_t numBytes)</td></tr>
+<tr class="memdesc:aca3e8f4f84100faff7accb2398453e70 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn some kind of image file into a drawable.  <a href="classDrawable.html#aca3e8f4f84100faff7accb2398453e70">More...</a><br /></td></tr>
+<tr class="separator:aca3e8f4f84100faff7accb2398453e70 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ce130f1d929a1d98bcdd6df546d660 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a21ce130f1d929a1d98bcdd6df546d660">createFromImageDataStream</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;dataSource)</td></tr>
+<tr class="memdesc:a21ce130f1d929a1d98bcdd6df546d660 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn a stream containing some kind of image data into a drawable.  <a href="classDrawable.html#a21ce130f1d929a1d98bcdd6df546d660">More...</a><br /></td></tr>
+<tr class="separator:a21ce130f1d929a1d98bcdd6df546d660 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2638fe8a5dbe8625c9aacef366ebf995 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a2638fe8a5dbe8625c9aacef366ebf995">createFromImageFile</a> (const <a class="el" href="classFile.html">File</a> &amp;file)</td></tr>
+<tr class="memdesc:a2638fe8a5dbe8625c9aacef366ebf995 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to turn a file containing some kind of image data into a drawable.  <a href="classDrawable.html#a2638fe8a5dbe8625c9aacef366ebf995">More...</a><br /></td></tr>
+<tr class="separator:a2638fe8a5dbe8625c9aacef366ebf995 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec24df02ca7cb90967c5ce5f899a49a2 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#aec24df02ca7cb90967c5ce5f899a49a2">createFromSVG</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;svgDocument)</td></tr>
+<tr class="memdesc:aec24df02ca7cb90967c5ce5f899a49a2 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="classDrawable.html#aec24df02ca7cb90967c5ce5f899a49a2">More...</a><br /></td></tr>
+<tr class="separator:aec24df02ca7cb90967c5ce5f899a49a2 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af106f051ff5d732006a96f604bfd6b53 inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#af106f051ff5d732006a96f604bfd6b53">createFromSVGFile</a> (const <a class="el" href="classFile.html">File</a> &amp;svgFile)</td></tr>
+<tr class="memdesc:af106f051ff5d732006a96f604bfd6b53 inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse an SVG (Scalable Vector <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a>) document from a file, and to turn this into a <a class="el" href="classDrawable.html" title="The base class for objects which can draw themselves, e.g. ">Drawable</a> tree.  <a href="classDrawable.html#af106f051ff5d732006a96f604bfd6b53">More...</a><br /></td></tr>
+<tr class="separator:af106f051ff5d732006a96f604bfd6b53 inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebfffe1d689c9ab863c5c80526703d3f inherit pub_static_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classPath.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#aebfffe1d689c9ab863c5c80526703d3f">parseSVGPath</a> (const <a class="el" href="classString.html">String</a> &amp;svgPath)</td></tr>
 <tr class="memdesc:aebfffe1d689c9ab863c5c80526703d3f inherit pub_static_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an SVG path string and returns it.  <a href="classDrawable.html#aebfffe1d689c9ab863c5c80526703d3f">More...</a><br /></td></tr>
 <tr class="separator:aebfffe1d689c9ab863c5c80526703d3f inherit pub_static_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1061,7 +1061,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the position to which the image's top-left corner should be remapped in the target coordinate space when rendering this object. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="classDrawable.html#a4632f7ae2228fe64f4595291dcc813d6">Drawable::createCopy()</a>, <a class="el" href="classDrawable.html#a96e6f740a809b93b9ecf5f6e0dd3e421">Drawable::getDrawableBounds()</a>, <a class="el" href="classDrawable.html#ace2082bc995b8e035079b71b32c1460f">Drawable::getOutlineAsPath()</a>, <a class="el" href="classComponent.html#a2da9631236e1cbf1b340454209a6c9e0">Component::hitTest()</a>, <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>, <a class="el" href="classDrawable.html#a8bb96507ea4a52cacd25540649b5b6d8">Drawable::operator=()</a>, and <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182">Component::paint()</a>.</p>
+<p class="reference">References <a class="el" href="classDrawable.html#a9c963e2a7bc33d9aa14bd59dcb132951">Drawable::createCopy()</a>, <a class="el" href="classDrawable.html#a96e6f740a809b93b9ecf5f6e0dd3e421">Drawable::getDrawableBounds()</a>, <a class="el" href="classDrawable.html#ace2082bc995b8e035079b71b32c1460f">Drawable::getOutlineAsPath()</a>, <a class="el" href="classComponent.html#a2da9631236e1cbf1b340454209a6c9e0">Component::hitTest()</a>, <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>, <a class="el" href="classDrawable.html#a8bb96507ea4a52cacd25540649b5b6d8">Drawable::operator=()</a>, and <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182">Component::paint()</a>.</p>
 
 </div>
 </div>
@@ -1131,8 +1131,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a39862bac6df6d0e11745106d6d5f3814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39862bac6df6d0e11745106d6d5f3814">&#9670;&nbsp;</a></span>createCopy()</h2>
+<a id="a71cb916fd12b5a7d59137059be73c13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cb916fd12b5a7d59137059be73c13d">&#9670;&nbsp;</a></span>createCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1141,7 +1141,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDrawable.html">Drawable</a>* DrawableImage::createCopy </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classDrawable.html">Drawable</a>&gt; DrawableImage::createCopy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1154,7 +1154,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classDrawable.html#a4632f7ae2228fe64f4595291dcc813d6">Drawable</a>.</p>
+<p>Implements <a class="el" href="classDrawable.html#a9c963e2a7bc33d9aa14bd59dcb132951">Drawable</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1218,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 17 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
