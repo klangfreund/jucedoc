@@ -95,6 +95,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac1705fb40b71d5fa167da5e508b7388a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#gac1705fb40b71d5fa167da5e508b7388a">parseXML</a> (const <a class="el" href="classFile.html">File</a> &amp;fileToParse)</td></tr>
 <tr class="memdesc:gac1705fb40b71d5fa167da5e508b7388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid.  <a href="#gac1705fb40b71d5fa167da5e508b7388a">More...</a><br /></td></tr>
 <tr class="separator:gac1705fb40b71d5fa167da5e508b7388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bcc67623211529d88592f43589e7738"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#ga1bcc67623211529d88592f43589e7738">parseXMLIfTagMatches</a> (const <a class="el" href="classString.html">String</a> &amp;textToParse, <a class="el" href="classStringRef.html">StringRef</a> requiredTag)</td></tr>
+<tr class="memdesc:ga1bcc67623211529d88592f43589e7738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does an inexpensive check to see whether the top-level element has the given tag name, and if that's true, does a full parse and returns the result.  <a href="#ga1bcc67623211529d88592f43589e7738">More...</a><br /></td></tr>
+<tr class="separator:ga1bcc67623211529d88592f43589e7738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga365725c672fe0ee5ec2574c3d797704d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classXmlElement.html">XmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-xml.html#ga365725c672fe0ee5ec2574c3d797704d">parseXMLIfTagMatches</a> (const <a class="el" href="classFile.html">File</a> &amp;fileToParse, <a class="el" href="classStringRef.html">StringRef</a> requiredTag)</td></tr>
+<tr class="memdesc:ga365725c672fe0ee5ec2574c3d797704d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does an inexpensive check to see whether the top-level element has the given tag name, and if that's true, does a full parse and returns the result.  <a href="#ga365725c672fe0ee5ec2574c3d797704d">More...</a><br /></td></tr>
+<tr class="separator:ga365725c672fe0ee5ec2574c3d797704d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -187,7 +193,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid. </p>
-<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
+<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> class instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a>, <a class="el" href="group__juce__core-xml.html#ga1bcc67623211529d88592f43589e7738" title="Does an inexpensive check to see whether the top-level element has the given tag name, and if that&#39;s true, does a full parse and returns the result. ">parseXMLIfTagMatches</a> </dd></dl>
 
 </div>
 </div>
@@ -208,14 +214,76 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attempts to parse some XML text, returning a new <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> if it was valid. </p>
-<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> </dd></dl>
+<p>If the parse fails, this will return a nullptr - if you need more information about errors or more parsing options, see the <a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a> class instead. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classXmlDocument.html" title="Parses a text-based XML document and creates an XmlElement object from it. ">XmlDocument</a>, <a class="el" href="group__juce__core-xml.html#ga1bcc67623211529d88592f43589e7738" title="Does an inexpensive check to see whether the top-level element has the given tag name, and if that&#39;s true, does a full parse and returns the result. ">parseXMLIfTagMatches</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga1bcc67623211529d88592f43589e7738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bcc67623211529d88592f43589e7738">&#9670;&nbsp;</a></span>parseXMLIfTagMatches() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; parseXMLIfTagMatches </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>textToParse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
+          <td class="paramname"><em>requiredTag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Does an inexpensive check to see whether the top-level element has the given tag name, and if that's true, does a full parse and returns the result. </p>
+<p>If the outer tag doesn't match, or the XML has errors, this will return nullptr; </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__juce__core-xml.html#ga69654d584331823d827e40d59f7aa24b" title="Attempts to parse some XML text, returning a new XmlElement if it was valid. ">parseXML</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga365725c672fe0ee5ec2574c3d797704d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga365725c672fe0ee5ec2574c3d797704d">&#9670;&nbsp;</a></span>parseXMLIfTagMatches() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classXmlElement.html">XmlElement</a>&gt; parseXMLIfTagMatches </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileToParse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
+          <td class="paramname"><em>requiredTag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Does an inexpensive check to see whether the top-level element has the given tag name, and if that's true, does a full parse and returns the result. </p>
+<p>If the outer tag doesn't match, or the XML has errors, this will return nullptr; </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__juce__core-xml.html#ga69654d584331823d827e40d59f7aa24b" title="Attempts to parse some XML text, returning a new XmlElement if it was valid. ">parseXML</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 17 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 20 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

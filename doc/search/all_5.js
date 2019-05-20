@@ -297,7 +297,7 @@ var searchData=
   ['fromutf8',['fromUTF8',['../classString.html#aa0116dc51d7bdd363d14c72bba60060a',1,'String']]],
   ['fromvar',['fromVar',['../structVariantConverter.html#a3c8c84e522e2e0158eb5ad9f6f0547aa',1,'VariantConverter']]],
   ['fromwavechannelmask',['fromWaveChannelMask',['../classAudioChannelSet.html#af97cdd3f0d62b669f3f0da1c32401d89',1,'AudioChannelSet']]],
-  ['fromxml',['fromXml',['../classValueTree.html#a0d2f1bdd6313e53f256ed015986f837a',1,'ValueTree']]],
+  ['fromxml',['fromXml',['../classValueTree.html#a0d2f1bdd6313e53f256ed015986f837a',1,'ValueTree::fromXml(const XmlElement &amp;xml)'],['../classValueTree.html#aee2ead4129fe7622ab69614da6294969',1,'ValueTree::fromXml(const String &amp;xmlText)']]],
   ['frontoutlinecolourid',['frontOutlineColourId',['../classTabbedButtonBar.html#a1193bcbd9622a87f4dbdee8db8f9806dab1821bb1f7b2d4055a1e8e035649cc3f',1,'TabbedButtonBar']]],
   ['fronttextcolourid',['frontTextColourId',['../classTabbedButtonBar.html#a1193bcbd9622a87f4dbdee8db8f9806da53c37ddad54ae89b891b438e9e94ec0f',1,'TabbedButtonBar']]],
   ['fruityloops',['FruityLoops',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aafe10f6ddbe74f8f788f29312fa5b2b9',1,'PluginHostType']]],

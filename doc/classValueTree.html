@@ -251,6 +251,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d2f1bdd6313e53f256ed015986f837a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#a0d2f1bdd6313e53f256ed015986f837a">fromXml</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;xml)</td></tr>
 <tr class="memdesc:a0d2f1bdd6313e53f256ed015986f837a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate a tree from its XML representation.  <a href="#a0d2f1bdd6313e53f256ed015986f837a">More...</a><br /></td></tr>
 <tr class="separator:a0d2f1bdd6313e53f256ed015986f837a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2ead4129fe7622ab69614da6294969"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#aee2ead4129fe7622ab69614da6294969">fromXml</a> (const <a class="el" href="classString.html">String</a> &amp;xmlText)</td></tr>
+<tr class="memdesc:aee2ead4129fe7622ab69614da6294969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to recreate a tree from its XML representation.  <a href="#aee2ead4129fe7622ab69614da6294969">More...</a><br /></td></tr>
+<tr class="separator:aee2ead4129fe7622ab69614da6294969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41a9e45b2d15699b4e27bed3b31109c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classValueTree.html">ValueTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueTree.html#ad41a9e45b2d15699b4e27bed3b31109c">readFromStream</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;input)</td></tr>
 <tr class="memdesc:ad41a9e45b2d15699b4e27bed3b31109c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads a tree from a stream that was written with <a class="el" href="classValueTree.html#a6305ca13b5d95cd526e1ea7a953df365" title="Stores this tree (and all its children) in a binary format. ">writeToStream()</a>.  <a href="#ad41a9e45b2d15699b4e27bed3b31109c">More...</a><br /></td></tr>
 <tr class="separator:ad41a9e45b2d15699b4e27bed3b31109c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1605,7 +1608,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0d2f1bdd6313e53f256ed015986f837a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d2f1bdd6313e53f256ed015986f837a">&#9670;&nbsp;</a></span>fromXml()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d2f1bdd6313e53f256ed015986f837a">&#9670;&nbsp;</a></span>fromXml() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1618,6 +1621,35 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;&#160;</td>
           <td class="paramname"><em>xml</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to recreate a tree from its XML representation. </p>
+<p>This isn't designed to cope with random XML data - it should only be fed XML that was created by the <a class="el" href="classValueTree.html#a186f9c1cd3fccf3623639726390642fa" title="Creates an XmlElement that holds a complete image of this tree and all its children. ">createXml()</a> method. </p>
+
+</div>
+</div>
+<a id="aee2ead4129fe7622ab69614da6294969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2ead4129fe7622ab69614da6294969">&#9670;&nbsp;</a></span>fromXml() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classValueTree.html">ValueTree</a> ValueTree::fromXml </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>xmlText</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1977,7 +2009,7 @@ template&lt;typename ElementComparator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 17 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 20 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
