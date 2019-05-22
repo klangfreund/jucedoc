@@ -74,7 +74,6 @@ var searchData=
   ['ownedarray_3c_20knownpluginlist_3a_3aplugintree_20_3e',['OwnedArray&lt; KnownPluginList::PluginTree &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20lowlevelgraphicspostscriptrenderer_3a_3asavedstate_20_3e',['OwnedArray&lt; LowLevelGraphicsPostScriptRenderer::SavedState &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20markerlist_3a_3amarker_20_3e',['OwnedArray&lt; MarkerList::Marker &gt;',['../classOwnedArray.html',1,'']]],
-  ['ownedarray_3c_20midiinput_20_3e',['OwnedArray&lt; MidiInput &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20midimessagesequence_20_3e',['OwnedArray&lt; MidiMessageSequence &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20midimessagesequence_3a_3amidieventholder_20_3e',['OwnedArray&lt; MidiMessageSequence::MidiEventHolder &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20modalitem_20_3e',['OwnedArray&lt; ModalItem &gt;',['../classOwnedArray.html',1,'']]],

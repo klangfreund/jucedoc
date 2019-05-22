@@ -138,24 +138,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a79563c9d2cc87d059d8b101515e8dee1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a79563c9d2cc87d059d8b101515e8dee1">getCpuUsage</a> () const</td></tr>
 <tr class="memdesc:a79563c9d2cc87d059d8b101515e8dee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average proportion of available CPU being spent inside the audio callbacks.  <a href="#a79563c9d2cc87d059d8b101515e8dee1">More...</a><br /></td></tr>
 <tr class="separator:a79563c9d2cc87d059d8b101515e8dee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c16cde5d7c4c49dd9b6d00cc17ba481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a5c16cde5d7c4c49dd9b6d00cc17ba481">setMidiInputEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;midiInputDeviceName, bool enabled)</td></tr>
-<tr class="memdesc:a5c16cde5d7c4c49dd9b6d00cc17ba481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables a midi input device.  <a href="#a5c16cde5d7c4c49dd9b6d00cc17ba481">More...</a><br /></td></tr>
-<tr class="separator:a5c16cde5d7c4c49dd9b6d00cc17ba481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036af6a982f687ace34b3241069cd233"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a036af6a982f687ace34b3241069cd233">isMidiInputEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;midiInputDeviceName) const</td></tr>
-<tr class="memdesc:a036af6a982f687ace34b3241069cd233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a given midi input device is being used.  <a href="#a036af6a982f687ace34b3241069cd233">More...</a><br /></td></tr>
-<tr class="separator:a036af6a982f687ace34b3241069cd233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31e11b7a8596530a87cfcf8e48b978d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2">addMidiInputCallback</a> (const <a class="el" href="classString.html">String</a> &amp;midiInputDeviceName, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *callback)</td></tr>
-<tr class="memdesc:a31e11b7a8596530a87cfcf8e48b978d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a listener for callbacks when midi events arrive from a midi input.  <a href="#a31e11b7a8596530a87cfcf8e48b978d2">More...</a><br /></td></tr>
-<tr class="separator:a31e11b7a8596530a87cfcf8e48b978d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1338a65adb3849560847f99252adcbd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a1338a65adb3849560847f99252adcbd2">removeMidiInputCallback</a> (const <a class="el" href="classString.html">String</a> &amp;midiInputDeviceName, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *callback)</td></tr>
-<tr class="memdesc:a1338a65adb3849560847f99252adcbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener that was previously registered with <a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputCallback()</a>.  <a href="#a1338a65adb3849560847f99252adcbd2">More...</a><br /></td></tr>
-<tr class="separator:a1338a65adb3849560847f99252adcbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d957a7dfc854c2de56278db62a171f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a02d957a7dfc854c2de56278db62a171f">setDefaultMidiOutput</a> (const <a class="el" href="classString.html">String</a> &amp;deviceName)</td></tr>
-<tr class="memdesc:a02d957a7dfc854c2de56278db62a171f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a midi output device to use as the default.  <a href="#a02d957a7dfc854c2de56278db62a171f">More...</a><br /></td></tr>
-<tr class="separator:a02d957a7dfc854c2de56278db62a171f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#ad3796e84d5b112f78f8ffc02d7b9f8be">getDefaultMidiOutputName</a> () const noexcept</td></tr>
-<tr class="memdesc:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the default midi output.  <a href="#ad3796e84d5b112f78f8ffc02d7b9f8be">More...</a><br /></td></tr>
-<tr class="separator:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48784fb8fea871e4496fa69241bcd833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a48784fb8fea871e4496fa69241bcd833">setMidiInputDeviceEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;deviceIdentifier, bool enabled)</td></tr>
+<tr class="memdesc:a48784fb8fea871e4496fa69241bcd833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables a midi input device.  <a href="#a48784fb8fea871e4496fa69241bcd833">More...</a><br /></td></tr>
+<tr class="separator:a48784fb8fea871e4496fa69241bcd833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56d935d666f2ec76b693df5f7fdef42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#ab56d935d666f2ec76b693df5f7fdef42">isMidiInputDeviceEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;deviceIdentifier) const</td></tr>
+<tr class="memdesc:ab56d935d666f2ec76b693df5f7fdef42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a given midi input device is being used.  <a href="#ab56d935d666f2ec76b693df5f7fdef42">More...</a><br /></td></tr>
+<tr class="separator:ab56d935d666f2ec76b693df5f7fdef42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3cabde443512bedcb868091a23a8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a3d3cabde443512bedcb868091a23a8ee">addMidiInputDeviceCallback</a> (const <a class="el" href="classString.html">String</a> &amp;deviceIdentifier, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *callback)</td></tr>
+<tr class="memdesc:a3d3cabde443512bedcb868091a23a8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a listener for callbacks when midi events arrive from a midi input.  <a href="#a3d3cabde443512bedcb868091a23a8ee">More...</a><br /></td></tr>
+<tr class="separator:a3d3cabde443512bedcb868091a23a8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4885aec0ecf1a49fbad82907be55e2ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a4885aec0ecf1a49fbad82907be55e2ae">removeMidiInputDeviceCallback</a> (const <a class="el" href="classString.html">String</a> &amp;deviceIdentifier, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *callback)</td></tr>
+<tr class="memdesc:a4885aec0ecf1a49fbad82907be55e2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener that was previously registered with <a class="el" href="classAudioDeviceManager.html#a3d3cabde443512bedcb868091a23a8ee" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputDeviceCallback()</a>.  <a href="#a4885aec0ecf1a49fbad82907be55e2ae">More...</a><br /></td></tr>
+<tr class="separator:a4885aec0ecf1a49fbad82907be55e2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb95a3b78dee680a0798787b616441d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a4bb95a3b78dee680a0798787b616441d">setDefaultMidiOutputDevice</a> (const <a class="el" href="classString.html">String</a> &amp;deviceIdentifier)</td></tr>
+<tr class="memdesc:a4bb95a3b78dee680a0798787b616441d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a midi output device to use as the default.  <a href="#a4bb95a3b78dee680a0798787b616441d">More...</a><br /></td></tr>
+<tr class="separator:a4bb95a3b78dee680a0798787b616441d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288f593603d47c82e440ceba52a2a6d5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a288f593603d47c82e440ceba52a2a6d5">getDefaultMidiOutputIdentifier</a> () const noexcept</td></tr>
+<tr class="memdesc:a288f593603d47c82e440ceba52a2a6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the default midi output.  <a href="#a288f593603d47c82e440ceba52a2a6d5">More...</a><br /></td></tr>
+<tr class="separator:a288f593603d47c82e440ceba52a2a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c3518c6e06fc752d065ff8dd4c9e4f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMidiOutput.html">MidiOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1">getDefaultMidiOutput</a> () const noexcept</td></tr>
 <tr class="memdesc:a4c3518c6e06fc752d065ff8dd4c9e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current default midi output device.  <a href="#a4c3518c6e06fc752d065ff8dd4c9e4f1">More...</a><br /></td></tr>
 <tr class="separator:a4c3518c6e06fc752d065ff8dd4c9e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +186,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12bf766acfb9bf1825418a9058a74318"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a12bf766acfb9bf1825418a9058a74318">getXRunCount</a> () const noexcept</td></tr>
 <tr class="memdesc:a12bf766acfb9bf1825418a9058a74318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of under- or over runs reported.  <a href="#a12bf766acfb9bf1825418a9058a74318">More...</a><br /></td></tr>
 <tr class="separator:a12bf766acfb9bf1825418a9058a74318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25feb28ada13c5293b69f58e0187999c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a25feb28ada13c5293b69f58e0187999c">setMidiInputEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;, bool)</td></tr>
+<tr class="memdesc:a25feb28ada13c5293b69f58e0187999c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#a25feb28ada13c5293b69f58e0187999c">More...</a><br /></td></tr>
+<tr class="separator:a25feb28ada13c5293b69f58e0187999c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9c3ee72427a5bdb52fdbfde091843e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#afd9c3ee72427a5bdb52fdbfde091843e">isMidiInputEnabled</a> (const <a class="el" href="classString.html">String</a> &amp;) const</td></tr>
+<tr class="memdesc:afd9c3ee72427a5bdb52fdbfde091843e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#afd9c3ee72427a5bdb52fdbfde091843e">More...</a><br /></td></tr>
+<tr class="separator:afd9c3ee72427a5bdb52fdbfde091843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee3576b768f34be9dc59be5a11ff92b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#acee3576b768f34be9dc59be5a11ff92b">addMidiInputCallback</a> (const <a class="el" href="classString.html">String</a> &amp;, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *)</td></tr>
+<tr class="memdesc:acee3576b768f34be9dc59be5a11ff92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#acee3576b768f34be9dc59be5a11ff92b">More...</a><br /></td></tr>
+<tr class="separator:acee3576b768f34be9dc59be5a11ff92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e1f2607fef7e6591bd3819c975bb06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#a90e1f2607fef7e6591bd3819c975bb06">removeMidiInputCallback</a> (const <a class="el" href="classString.html">String</a> &amp;, <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *)</td></tr>
+<tr class="memdesc:a90e1f2607fef7e6591bd3819c975bb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#a90e1f2607fef7e6591bd3819c975bb06">More...</a><br /></td></tr>
+<tr class="separator:a90e1f2607fef7e6591bd3819c975bb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1b12582c565a5c4b98d8aa99fd57b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#aaf1b12582c565a5c4b98d8aa99fd57b6">setDefaultMidiOutput</a> (const <a class="el" href="classString.html">String</a> &amp;)</td></tr>
+<tr class="memdesc:aaf1b12582c565a5c4b98d8aa99fd57b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#aaf1b12582c565a5c4b98d8aa99fd57b6">More...</a><br /></td></tr>
+<tr class="separator:aaf1b12582c565a5c4b98d8aa99fd57b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classString.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioDeviceManager.html#ad3796e84d5b112f78f8ffc02d7b9f8be">getDefaultMidiOutputName</a> () const noexcept</td></tr>
+<tr class="memdesc:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#ad3796e84d5b112f78f8ffc02d7b9f8be">More...</a><br /></td></tr>
+<tr class="separator:ad3796e84d5b112f78f8ffc02d7b9f8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classChangeBroadcaster"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classChangeBroadcaster')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classChangeBroadcaster.html">ChangeBroadcaster</a></td></tr>
 <tr class="memitem:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">ChangeBroadcaster</a> () noexcept</td></tr>
 <tr class="memdesc:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>.  <a href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">More...</a><br /></td></tr>
@@ -680,17 +698,17 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c16cde5d7c4c49dd9b6d00cc17ba481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c16cde5d7c4c49dd9b6d00cc17ba481">&#9670;&nbsp;</a></span>setMidiInputEnabled()</h2>
+<a id="a48784fb8fea871e4496fa69241bcd833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48784fb8fea871e4496fa69241bcd833">&#9670;&nbsp;</a></span>setMidiInputDeviceEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AudioDeviceManager::setMidiInputEnabled </td>
+          <td class="memname">void AudioDeviceManager::setMidiInputDeviceEnabled </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>midiInputDeviceName</em>, </td>
+          <td class="paramname"><em>deviceIdentifier</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -707,46 +725,46 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables or disables a midi input device. </p>
-<p>The list of devices can be obtained with the <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Deprecated. ">MidiInput::getDevices()</a> method.</p>
-<p>Any incoming messages from enabled input devices will be forwarded on to all the listeners that have been registered with the <a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputCallback()</a> method. They can either register for messages from a particular device, or from just the "default" midi input.</p>
+<p>The list of devices can be obtained with the <a class="el" href="classMidiInput.html#a99defa9b9f1296977289681c3ab2ea5c" title="Returns a list of the available midi input devices. ">MidiInput::getAvailableDevices()</a> method.</p>
+<p>Any incoming messages from enabled input devices will be forwarded on to all the listeners that have been registered with the <a class="el" href="classAudioDeviceManager.html#a3d3cabde443512bedcb868091a23a8ee" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputDeviceCallback()</a> method. They can either register for messages from a particular device, or from just the "default" midi input.</p>
 <p>Routing the midi input via an <a class="el" href="classAudioDeviceManager.html" title="Manages the state of some audio and midi i/o devices. ">AudioDeviceManager</a> means that when a listener registers for the default midi input, this default device can be changed by the manager without the listeners having to know about it or re-register.</p>
 <p>It also means that a listener can stay registered for a midi input that is disabled or not present, so that when the input is re-enabled, the listener will start receiving messages again.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputCallback</a>, <a class="el" href="classAudioDeviceManager.html#a036af6a982f687ace34b3241069cd233" title="Returns true if a given midi input device is being used. ">isMidiInputEnabled</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a3d3cabde443512bedcb868091a23a8ee" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputDeviceCallback</a>, <a class="el" href="classAudioDeviceManager.html#ab56d935d666f2ec76b693df5f7fdef42" title="Returns true if a given midi input device is being used. ">isMidiInputDeviceEnabled</a> </dd></dl>
 
 </div>
 </div>
-<a id="a036af6a982f687ace34b3241069cd233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a036af6a982f687ace34b3241069cd233">&#9670;&nbsp;</a></span>isMidiInputEnabled()</h2>
+<a id="ab56d935d666f2ec76b693df5f7fdef42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56d935d666f2ec76b693df5f7fdef42">&#9670;&nbsp;</a></span>isMidiInputDeviceEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool AudioDeviceManager::isMidiInputEnabled </td>
+          <td class="memname">bool AudioDeviceManager::isMidiInputDeviceEnabled </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>midiInputDeviceName</em></td><td>)</td>
+          <td class="paramname"><em>deviceIdentifier</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns true if a given midi input device is being used. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a5c16cde5d7c4c49dd9b6d00cc17ba481" title="Enables or disables a midi input device. ">setMidiInputEnabled</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a48784fb8fea871e4496fa69241bcd833" title="Enables or disables a midi input device. ">setMidiInputDeviceEnabled</a> </dd></dl>
 
 </div>
 </div>
-<a id="a31e11b7a8596530a87cfcf8e48b978d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31e11b7a8596530a87cfcf8e48b978d2">&#9670;&nbsp;</a></span>addMidiInputCallback()</h2>
+<a id="a3d3cabde443512bedcb868091a23a8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3cabde443512bedcb868091a23a8ee">&#9670;&nbsp;</a></span>addMidiInputDeviceCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AudioDeviceManager::addMidiInputCallback </td>
+          <td class="memname">void AudioDeviceManager::addMidiInputDeviceCallback </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>midiInputDeviceName</em>, </td>
+          <td class="paramname"><em>deviceIdentifier</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -763,22 +781,22 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Registers a listener for callbacks when midi events arrive from a midi input. </p>
-<p>The device name can be empty to indicate that it wants to receive all incoming events from all the enabled MIDI inputs. Or it can be the name of one of the MIDI input devices if it just wants the events from that device. (see <a class="el" href="classMidiInput.html#ab2e0e7bb96700f9e2ecd77bc3b96d42f" title="Deprecated. ">MidiInput::getDevices()</a> for the list of device names).</p>
-<p>Only devices which are enabled (see the <a class="el" href="classAudioDeviceManager.html#a5c16cde5d7c4c49dd9b6d00cc17ba481" title="Enables or disables a midi input device. ">setMidiInputEnabled()</a> method) will have their events forwarded on to listeners. </p>
+<p>The device identifier can be empty to indicate that it wants to receive all incoming events from all the enabled MIDI inputs. Or it can be the identifier of one of the MIDI input devices if it just wants the events from that device. (see <a class="el" href="classMidiInput.html#a99defa9b9f1296977289681c3ab2ea5c" title="Returns a list of the available midi input devices. ">MidiInput::getAvailableDevices()</a> for the list of devices).</p>
+<p>Only devices which are enabled (see the <a class="el" href="classAudioDeviceManager.html#a48784fb8fea871e4496fa69241bcd833" title="Enables or disables a midi input device. ">setMidiInputDeviceEnabled()</a> method) will have their events forwarded on to listeners. </p>
 
 </div>
 </div>
-<a id="a1338a65adb3849560847f99252adcbd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1338a65adb3849560847f99252adcbd2">&#9670;&nbsp;</a></span>removeMidiInputCallback()</h2>
+<a id="a4885aec0ecf1a49fbad82907be55e2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4885aec0ecf1a49fbad82907be55e2ae">&#9670;&nbsp;</a></span>removeMidiInputDeviceCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AudioDeviceManager::removeMidiInputCallback </td>
+          <td class="memname">void AudioDeviceManager::removeMidiInputDeviceCallback </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>midiInputDeviceName</em>, </td>
+          <td class="paramname"><em>deviceIdentifier</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -794,36 +812,36 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes a listener that was previously registered with <a class="el" href="classAudioDeviceManager.html#a31e11b7a8596530a87cfcf8e48b978d2" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputCallback()</a>. </p>
+<p>Removes a listener that was previously registered with <a class="el" href="classAudioDeviceManager.html#a3d3cabde443512bedcb868091a23a8ee" title="Registers a listener for callbacks when midi events arrive from a midi input. ">addMidiInputDeviceCallback()</a>. </p>
 
 </div>
 </div>
-<a id="a02d957a7dfc854c2de56278db62a171f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02d957a7dfc854c2de56278db62a171f">&#9670;&nbsp;</a></span>setDefaultMidiOutput()</h2>
+<a id="a4bb95a3b78dee680a0798787b616441d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb95a3b78dee680a0798787b616441d">&#9670;&nbsp;</a></span>setDefaultMidiOutputDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AudioDeviceManager::setDefaultMidiOutput </td>
+          <td class="memname">void AudioDeviceManager::setDefaultMidiOutputDevice </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>deviceName</em></td><td>)</td>
+          <td class="paramname"><em>deviceIdentifier</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Sets a midi output device to use as the default. </p>
-<p>The list of devices can be obtained with the <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Deprecated. ">MidiOutput::getDevices()</a> method.</p>
+<p>The list of devices can be obtained with the <a class="el" href="classMidiOutput.html#a9675086a62b8ab8c477e290132ba1960" title="Returns a list of the available midi output devices. ">MidiOutput::getAvailableDevices()</a> method.</p>
 <p>The specified device will be opened automatically and can be retrieved with the <a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput()</a> method.</p>
-<p>Pass in an empty string to deselect all devices. For the default device, you can use <a class="el" href="classMidiOutput.html#a59a303f5b44aa772903984818b6b7275" title="Deprecated. ">MidiOutput::getDevices()</a> [<a class="el" href="classMidiOutput.html#a5459a18d9b1b9a5fe27e95e6e9e06a87" title="Deprecated. ">MidiOutput::getDefaultDeviceIndex()</a>].</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput</a>, <a class="el" href="classAudioDeviceManager.html#ad3796e84d5b112f78f8ffc02d7b9f8be" title="Returns the name of the default midi output. ">getDefaultMidiOutputName</a> </dd></dl>
+<p>Pass in an empty string to deselect all devices. For the default device, you can use <a class="el" href="classMidiOutput.html#a019076ab98f90166149eee0626bedbfc" title="Returns the MidiDeviceInfo of the default midi output device to use. ">MidiOutput::getDefaultDevice()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput</a>, <a class="el" href="classAudioDeviceManager.html#a288f593603d47c82e440ceba52a2a6d5" title="Returns the name of the default midi output. ">getDefaultMidiOutputIdentifier</a> </dd></dl>
 
 </div>
 </div>
-<a id="ad3796e84d5b112f78f8ffc02d7b9f8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3796e84d5b112f78f8ffc02d7b9f8be">&#9670;&nbsp;</a></span>getDefaultMidiOutputName()</h2>
+<a id="a288f593603d47c82e440ceba52a2a6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288f593603d47c82e440ceba52a2a6d5">&#9670;&nbsp;</a></span>getDefaultMidiOutputIdentifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +850,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classString.html">String</a>&amp; AudioDeviceManager::getDefaultMidiOutputName </td>
+          <td class="memname">const <a class="el" href="classString.html">String</a>&amp; AudioDeviceManager::getDefaultMidiOutputIdentifier </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -846,7 +864,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the name of the default midi output. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a02d957a7dfc854c2de56278db62a171f" title="Sets a midi output device to use as the default. ">setDefaultMidiOutput</a>, <a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a4bb95a3b78dee680a0798787b616441d" title="Sets a midi output device to use as the default. ">setDefaultMidiOutputDevice</a>, <a class="el" href="classAudioDeviceManager.html#a4c3518c6e06fc752d065ff8dd4c9e4f1" title="Returns the current default midi output device. ">getDefaultMidiOutput</a> </dd></dl>
 
 </div>
 </div>
@@ -874,7 +892,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current default midi output device. </p>
-<p>If no device has been selected, or the device can't be opened, this will return nullptr. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#ad3796e84d5b112f78f8ffc02d7b9f8be" title="Returns the name of the default midi output. ">getDefaultMidiOutputName</a> </dd></dl>
+<p>If no device has been selected, or the device can't be opened, this will return nullptr.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioDeviceManager.html#a288f593603d47c82e440ceba52a2a6d5" title="Returns the name of the default midi output. ">getDefaultMidiOutputIdentifier</a> </dd></dl>
 
 </div>
 </div>
@@ -1078,7 +1097,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns the a lock that can be used to synchronise access to the midi callback. </p>
 <p>Obviously while this is locked, you're blocking the midi system from running, so it must only be used for very brief periods when absolutely necessary. </p>
 
-<p class="reference">References <a class="el" href="classAudioDeviceManager.html#a12bf766acfb9bf1825418a9058a74318">getXRunCount()</a>, and <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
+<p class="reference">References <a class="el" href="classAudioDeviceManager.html#acee3576b768f34be9dc59be5a11ff92b">addMidiInputCallback()</a>, <a class="el" href="classAudioDeviceManager.html#a12bf766acfb9bf1825418a9058a74318">getXRunCount()</a>, <a class="el" href="classAudioDeviceManager.html#afd9c3ee72427a5bdb52fdbfde091843e">isMidiInputEnabled()</a>, <a class="el" href="classAudioDeviceManager.html#a90e1f2607fef7e6591bd3819c975bb06">removeMidiInputCallback()</a>, <a class="el" href="classAudioDeviceManager.html#aaf1b12582c565a5c4b98d8aa99fd57b6">setDefaultMidiOutput()</a>, and <a class="el" href="classAudioDeviceManager.html#a25feb28ada13c5293b69f58e0187999c">setMidiInputEnabled()</a>.</p>
 
 </div>
 </div>
@@ -1112,13 +1131,182 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a25feb28ada13c5293b69f58e0187999c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25feb28ada13c5293b69f58e0187999c">&#9670;&nbsp;</a></span>setMidiInputEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioDeviceManager::setMidiInputEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioDeviceManager.html#a2bdc27c676c875645d4d77b1146dad24">getMidiCallbackLock()</a>.</p>
+
+</div>
+</div>
+<a id="afd9c3ee72427a5bdb52fdbfde091843e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9c3ee72427a5bdb52fdbfde091843e">&#9670;&nbsp;</a></span>isMidiInputEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioDeviceManager::isMidiInputEnabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioDeviceManager.html#a2bdc27c676c875645d4d77b1146dad24">getMidiCallbackLock()</a>.</p>
+
+</div>
+</div>
+<a id="acee3576b768f34be9dc59be5a11ff92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee3576b768f34be9dc59be5a11ff92b">&#9670;&nbsp;</a></span>addMidiInputCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioDeviceManager::addMidiInputCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioDeviceManager.html#a2bdc27c676c875645d4d77b1146dad24">getMidiCallbackLock()</a>.</p>
+
+</div>
+</div>
+<a id="a90e1f2607fef7e6591bd3819c975bb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e1f2607fef7e6591bd3819c975bb06">&#9670;&nbsp;</a></span>removeMidiInputCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioDeviceManager::removeMidiInputCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMidiInputCallback.html">MidiInputCallback</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioDeviceManager.html#a2bdc27c676c875645d4d77b1146dad24">getMidiCallbackLock()</a>.</p>
+
+</div>
+</div>
+<a id="aaf1b12582c565a5c4b98d8aa99fd57b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1b12582c565a5c4b98d8aa99fd57b6">&#9670;&nbsp;</a></span>setDefaultMidiOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioDeviceManager::setDefaultMidiOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioDeviceManager.html#a2bdc27c676c875645d4d77b1146dad24">getMidiCallbackLock()</a>.</p>
+
+</div>
+</div>
+<a id="ad3796e84d5b112f78f8ffc02d7b9f8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3796e84d5b112f78f8ffc02d7b9f8be">&#9670;&nbsp;</a></span>getDefaultMidiOutputName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classString.html">String</a>&amp; AudioDeviceManager::getDefaultMidiOutputName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deprecated. </p>
+
+<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__AudioDeviceManager_8h.html">juce_AudioDeviceManager.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 20 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 22 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

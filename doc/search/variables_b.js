@@ -5,7 +5,7 @@ var searchData=
   ['lastcolour',['lastColour',['../classLowLevelGraphicsPostScriptRenderer.html#af380fa0611c3ca97a4cb2925a228bbd6',1,'LowLevelGraphicsPostScriptRenderer']]],
   ['lastfilemodtime',['lastFileModTime',['../classPluginDescription.html#aa7143b1df0c657008ab9f3f196e63471',1,'PluginDescription']]],
   ['lastinfoupdatetime',['lastInfoUpdateTime',['../classPluginDescription.html#a62b03da7c6d39e8b509561d11d98acbc',1,'PluginDescription']]],
-  ['lastmididevices',['lastMidiDevices',['../classStandalonePluginHolder.html#a6495b714b1b911b9352da94e282efa2d',1,'StandalonePluginHolder']]],
+  ['lastmididevices',['lastMidiDevices',['../classStandalonePluginHolder.html#ac1c0235548d70c62d14aa12b00b40020',1,'StandalonePluginHolder']]],
   ['lastnonfullscreenbounds',['lastNonFullscreenBounds',['../classComponentPeer.html#a2aee1a16331876b88555838cd75caeda',1,'ComponentPeer']]],
   ['lastpitchwheelvalues',['lastPitchWheelValues',['../classSynthesiser.html#acceafe04420ce625e025e4a73c370ce4',1,'Synthesiser']]],
   ['lastseen',['lastSeen',['../structNetworkServiceDiscovery_1_1Service.html#ad2e70cfd5386092dc69d6be8cf38a333',1,'NetworkServiceDiscovery::Service']]],
