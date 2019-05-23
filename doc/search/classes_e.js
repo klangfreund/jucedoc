@@ -80,7 +80,6 @@ var searchData=
   ['ownedarray_3c_20mpesynthesiservoice_20_3e',['OwnedArray&lt; MPESynthesiserVoice &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20oversamplingstage_20_3e',['OwnedArray&lt; OversamplingStage &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20panelholder_20_3e',['OwnedArray&lt; PanelHolder &gt;',['../classOwnedArray.html',1,'']]],
-  ['ownedarray_3c_20plugindescription_20_3e',['OwnedArray&lt; PluginDescription &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20popupmenu_3a_3aitem_20_3e',['OwnedArray&lt; PopupMenu::Item &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20progressbar_20_3e',['OwnedArray&lt; ProgressBar &gt;',['../classOwnedArray.html',1,'']]],
   ['ownedarray_3c_20relativepointpath_3a_3aelementbase_20_3e',['OwnedArray&lt; RelativePointPath::ElementBase &gt;',['../classOwnedArray.html',1,'']]],

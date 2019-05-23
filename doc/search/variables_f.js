@@ -36,7 +36,7 @@ var searchData=
   ['playkey',['playKey',['../classKeyPress.html#a08e1a3281e1a772f1e6227f70d117622',1,'KeyPress']]],
   ['pluginformatname',['pluginFormatName',['../classPluginDescription.html#a619a03af08e3904725e0255a28388a19',1,'PluginDescription']]],
   ['pluginholder',['pluginHolder',['../classStandaloneFilterWindow.html#abf3538ee5a7bd69830df1e538bc84df7',1,'StandaloneFilterWindow']]],
-  ['plugins',['plugins',['../structKnownPluginList_1_1PluginTree.html#a6e1ef3fe0e6dbfd59363889dceed0ef7',1,'KnownPluginList::PluginTree']]],
+  ['plugins',['plugins',['../structKnownPluginList_1_1PluginTree.html#a38e4386aee24bad7bc0aab73eecb7b08',1,'KnownPluginList::PluginTree']]],
   ['pluginversion',['pluginVersion',['../structUnityAudioEffectDefinition.html#a5f00103362964c0a16e7f59ff6f0a3ac',1,'UnityAudioEffectDefinition']]],
   ['plum',['plum',['../classColours.html#ac02c6bea8fac05b5c050a3ec6b4fd924',1,'Colours']]],
   ['point1',['point1',['../classColourGradient.html#ac016d8472f6ce47c16d1df1e49c39dfc',1,'ColourGradient']]],

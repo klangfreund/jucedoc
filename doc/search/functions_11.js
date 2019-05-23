@@ -194,7 +194,7 @@ var searchData=
   ['removethumb',['removeThumb',['../classAudioThumbnailCache.html#afd26c87085118697efd805fd57b26b99',1,'AudioThumbnailCache']]],
   ['removetimesliceclient',['removeTimeSliceClient',['../classTimeSliceThread.html#a63268fd875e85e7bf705fd608e2988cf',1,'TimeSliceThread']]],
   ['removetoolbaritem',['removeToolbarItem',['../classToolbar.html#a458f8ab507f5c63b4cb0ab82f8e59ae0',1,'Toolbar']]],
-  ['removetype',['removeType',['../classKnownPluginList.html#a4ec98afce586dfbef03a3098b8c73038',1,'KnownPluginList']]],
+  ['removetype',['removeType',['../classKnownPluginList.html#a73397ec4fd3e415d8312573be5270913',1,'KnownPluginList']]],
   ['removevalue',['removeValue',['../classHashMap.html#a7c7e68766babe36a8ae07033d3652f2f',1,'HashMap::removeValue()'],['../classPropertySet.html#a7240c496cbcba40f561d73aa32f40ce6',1,'PropertySet::removeValue()'],['../classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c',1,'SortedSet::removeValue()']]],
   ['removevalueforoption',['removeValueForOption',['../structArgumentList.html#a2eb4ac71d9cb4bdb389dcce8b019928d',1,'ArgumentList']]],
   ['removevaluesin',['removeValuesIn',['../classArray.html#a1474eae027a73758ca12734001ec9da0',1,'Array::removeValuesIn()'],['../classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e',1,'SortedSet::removeValuesIn()']]],

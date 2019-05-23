@@ -339,7 +339,6 @@ var searchData=
   ['_7epixelalpha',['~PixelAlpha',['../classPixelAlpha.html#ae7e41d9a81f6acb6b4a04e04325de41f',1,'PixelAlpha']]],
   ['_7epixelargb',['~PixelARGB',['../classPixelARGB.html#a7d5b93ad2003691f6b62a90c67b96310',1,'PixelARGB']]],
   ['_7epixelrgb',['~PixelRGB',['../classPixelRGB.html#a08ff4b84c81aedd4d26bf4c7e96c82d9',1,'PixelRGB']]],
-  ['_7eplugindescription',['~PluginDescription',['../classPluginDescription.html#a730e10660aab4aa5ec0ca483180db481',1,'PluginDescription']]],
   ['_7eplugindirectoryscanner',['~PluginDirectoryScanner',['../classPluginDirectoryScanner.html#af3132c1ed58ed03d255dde0e649f8be7',1,'PluginDirectoryScanner']]],
   ['_7epluginlistcomponent',['~PluginListComponent',['../classPluginListComponent.html#aaa23cf5a1ee1539c5794e751d66b46ca',1,'PluginListComponent']]],
   ['_7epngimageformat',['~PNGImageFormat',['../classPNGImageFormat.html#af8b79fb669a270f456ebd25dddf6ab4b',1,'PNGImageFormat']]],

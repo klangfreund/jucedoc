@@ -7,6 +7,8 @@ var searchData=
   ['scalar',['scalar',['../classQuaternion.html#adfe519277223a4cb9321dc7f0d3b5cca',1,'Quaternion']]],
   ['scale',['scale',['../structDisplays_1_1Display.html#a611a3fe584fa04e86538866af0e5d788',1,'Displays::Display']]],
   ['scalefactorlisteners',['scaleFactorListeners',['../classComponentPeer.html#a3c815b759167f87c6c9aead83b737b3f',1,'ComponentPeer']]],
+  ['scanlock',['scanLock',['../classKnownPluginList.html#a3b123f52239b83347612a9947a6db313',1,'KnownPluginList']]],
+  ['scanner',['scanner',['../classKnownPluginList.html#a5f536aa4ac9603ab47892e8186a55c61',1,'KnownPluginList']]],
   ['scopeuid',['scopeUID',['../structExpression_1_1Symbol.html#aaddddb4fd2bad7fcce78adce69ba91d8',1,'Expression::Symbol']]],
   ['seagreen',['seagreen',['../classColours.html#adc17fb0b93d2db209de3e4f54857f2b4',1,'Colours']]],
   ['seashell',['seashell',['../classColours.html#a59caf9dbbe04dd428b7253273ec14ca3',1,'Colours']]],
