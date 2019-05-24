@@ -181,6 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aa80dbecfce5e57f6742d598e3b28d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReferenceCountedArray.html#a4aa80dbecfce5e57f6742d598e3b28d2">set</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToChange, ObjectClass *newObject)</td></tr>
 <tr class="memdesc:a4aa80dbecfce5e57f6742d598e3b28d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an object in the array with a different one.  <a href="#a4aa80dbecfce5e57f6742d598e3b28d2">More...</a><br /></td></tr>
 <tr class="separator:a4aa80dbecfce5e57f6742d598e3b28d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad608460d7d8eec57d72fa86692dcef34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReferenceCountedArray.html#ad608460d7d8eec57d72fa86692dcef34">set</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToChange, const <a class="el" href="classReferenceCountedArray.html#afea3a2f6208f8bb4f57e27ed53db0819">ObjectClassPtr</a> &amp;newObject)</td></tr>
+<tr class="memdesc:ad608460d7d8eec57d72fa86692dcef34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an object in the array with a different one.  <a href="#ad608460d7d8eec57d72fa86692dcef34">More...</a><br /></td></tr>
+<tr class="separator:ad608460d7d8eec57d72fa86692dcef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce7c1f6c010c4861e6dd5b95338055e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReferenceCountedArray.html#a3ce7c1f6c010c4861e6dd5b95338055e">addArray</a> (const <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a> &amp;arrayToAddFrom, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> startIndex=0, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numElementsToAdd=-1) noexcept</td></tr>
 <tr class="memdesc:a3ce7c1f6c010c4861e6dd5b95338055e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds elements from another array to the end of this array.  <a href="#a3ce7c1f6c010c4861e6dd5b95338055e">More...</a><br /></td></tr>
 <tr class="separator:a3ce7c1f6c010c4861e6dd5b95338055e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1316,7 +1319,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div>
 </div>
 <a id="a4aa80dbecfce5e57f6742d598e3b28d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aa80dbecfce5e57f6742d598e3b28d2">&#9670;&nbsp;</a></span>set()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa80dbecfce5e57f6742d598e3b28d2">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1333,6 +1336,48 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ObjectClass *&#160;</td>
+          <td class="paramname"><em>newObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces an object in the array with a different one. </p>
+<p>If the index is less than zero, this method does nothing. If the index is beyond the end of the array, the new object is added to the end of the array.</p>
+<p>The object being added has its reference count increased, and if it's replacing another object, then that one has its reference count decreased, and may be deleted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexToChange</td><td>the index whose value you want to change </td></tr>
+    <tr><td class="paramname">newObject</td><td>the new value to set for this index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classReferenceCountedArray.html#a5fc0a15ae2cc3637c5ec7ccf3bf1b8e1" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classReferenceCountedArray.html#a08e49fbbb6bc83c1b4e667b7b4877ed6" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classReferenceCountedArray.html#a5c6d7d370b8acf56c1462db579f95803" title="Removes an object from the array. ">remove</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad608460d7d8eec57d72fa86692dcef34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad608460d7d8eec57d72fa86692dcef34">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalSection&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classReferenceCountedArray.html">ReferenceCountedArray</a>&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
+          <td class="paramname"><em>indexToChange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classReferenceCountedArray.html#afea3a2f6208f8bb4f57e27ed53db0819">ObjectClassPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>newObject</em>&#160;</td>
         </tr>
         <tr>
@@ -2094,7 +2139,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 23 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 24 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
