@@ -50,6 +50,8 @@ var searchData=
   ['_7eaudioprocessorgraph',['~AudioProcessorGraph',['../classAudioProcessorGraph.html#af8c41bcad94a0a88476e94d34015b72f',1,'AudioProcessorGraph']]],
   ['_7eaudioprocessorlistener',['~AudioProcessorListener',['../classAudioProcessorListener.html#ac558eb684d629dfd5d1565c5c1668181',1,'AudioProcessorListener']]],
   ['_7eaudioprocessorparameter',['~AudioProcessorParameter',['../classAudioProcessorParameter.html#a30e812a7e141bb25f509980d7d11d27b',1,'AudioProcessorParameter']]],
+  ['_7eaudioprocessorparametergroup',['~AudioProcessorParameterGroup',['../classAudioProcessorParameterGroup.html#ae8733109b68ba7656c57173fea683a06',1,'AudioProcessorParameterGroup']]],
+  ['_7eaudioprocessorparameternode',['~AudioProcessorParameterNode',['../classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#aec0516af3254da91068c426230f00867',1,'AudioProcessorParameterGroup::AudioProcessorParameterNode']]],
   ['_7eaudioprocessorparameterwithid',['~AudioProcessorParameterWithID',['../classAudioProcessorParameterWithID.html#afc35c8f373b514dc175d5d03807641f8',1,'AudioProcessorParameterWithID']]],
   ['_7eaudioprocessorplayer',['~AudioProcessorPlayer',['../classAudioProcessorPlayer.html#ad4988b7f380db5a92f97e59c49a567e5',1,'AudioProcessorPlayer']]],
   ['_7eaudioprocessorvaluetreestate',['~AudioProcessorValueTreeState',['../classAudioProcessorValueTreeState.html#afcfe465d88f862036a06d4811dd51d6c',1,'AudioProcessorValueTreeState']]],

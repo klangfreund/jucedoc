@@ -75,6 +75,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a376311b576257a234924b3e42158a2ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#a376311b576257a234924b3e42158a2ba">AudioProcessorParameterNode</a> (<a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html">AudioProcessorParameterNode</a> &amp;&amp;)</td></tr>
+<tr class="separator:a376311b576257a234924b3e42158a2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0516af3254da91068c426230f00867"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#aec0516af3254da91068c426230f00867">~AudioProcessorParameterNode</a> ()</td></tr>
+<tr class="separator:aec0516af3254da91068c426230f00867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57587cece9ee5167a95678854a37fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#ae57587cece9ee5167a95678854a37fd7">getParent</a> () const</td></tr>
 <tr class="memdesc:ae57587cece9ee5167a95678854a37fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent group or nullptr if this is a top-level group.  <a href="#ae57587cece9ee5167a95678854a37fd7">More...</a><br /></td></tr>
 <tr class="separator:ae57587cece9ee5167a95678854a37fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,7 +92,43 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A child of an <a class="el" href="classAudioProcessorParameterGroup.html" title="A class encapsulating a group of AudioProcessorParameters and nested AudioProcessorParameterGroups. ">AudioProcessorParameterGroup</a>. </p>
 <p>This can contain either an <a class="el" href="classAudioProcessorParameter.html" title="An abstract base class for parameter objects that can be added to an AudioProcessor. ">AudioProcessorParameter</a> or an <a class="el" href="classAudioProcessorParameterGroup.html" title="A class encapsulating a group of AudioProcessorParameters and nested AudioProcessorParameterGroups. ">AudioProcessorParameterGroup</a>. You can query which using the getParameter and getGroup methods.</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span>* child : group)</div><div class="line">    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* parameter = node.getParameter())</div><div class="line">        parameter-&gt;setValueNotifyingHost (0.5f);</div><div class="line">    <span class="keywordflow">else</span></div><div class="line">        node.getGroup()-&gt;AddChild (<span class="keyword">new</span> Parameter());</div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span>* child : group)</div><div class="line">    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* parameter = node.getParameter())</div><div class="line">        parameter-&gt;setValueNotifyingHost (0.5f);</div><div class="line">    <span class="keywordflow">else</span></div><div class="line">        node.getGroup()-&gt;AddChild (<span class="keyword">new</span> Parameter());</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a376311b576257a234924b3e42158a2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376311b576257a234924b3e42158a2ba">&#9670;&nbsp;</a></span>AudioProcessorParameterNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioProcessorParameterGroup::AudioProcessorParameterNode::AudioProcessorParameterNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html">AudioProcessorParameterNode</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec0516af3254da91068c426230f00867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0516af3254da91068c426230f00867">&#9670;&nbsp;</a></span>~AudioProcessorParameterNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioProcessorParameterGroup::AudioProcessorParameterNode::~AudioProcessorParameterNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae57587cece9ee5167a95678854a37fd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae57587cece9ee5167a95678854a37fd7">&#9670;&nbsp;</a></span>getParent()</h2>
 
@@ -105,6 +145,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the parent group or nullptr if this is a top-level group. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioProcessorParameterGroup.html#aef29b4a0355d75a4e7f4337140ee60ff">AudioProcessorParameterGroup::AudioProcessorParameterGroup()</a>.</p>
 
 </div>
 </div>
@@ -152,7 +194,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 24 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 28 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

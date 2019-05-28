@@ -73,7 +73,7 @@ var searchData=
   ['refreshall',['refreshAll',['../classPropertyPanel.html#abab981672231e847d332fc689408002f',1,'PropertyPanel']]],
   ['refreshcomponentforcell',['refreshComponentForCell',['../classTableListBoxModel.html#a07767e4e5a3812e486c187705b0921bd',1,'TableListBoxModel']]],
   ['refreshcomponentforrow',['refreshComponentForRow',['../classListBoxModel.html#af049aa731e43557c107b1285ca7e3d88',1,'ListBoxModel::refreshComponentForRow()'],['../classTableListBox.html#afea1a88c9ce306400ec99c3df655ee89',1,'TableListBox::refreshComponentForRow()']]],
-  ['refreshparameterlist',['refreshParameterList',['../classAudioPluginInstance.html#ac2acb0606147c2568276ab32e7552d38',1,'AudioPluginInstance']]],
+  ['refreshparameterlist',['refreshParameterList',['../classAudioProcessor.html#a0fc10ab010a0030715e601a59c42e6fc',1,'AudioProcessor']]],
   ['refreshtracklengths',['refreshTrackLengths',['../classAudioCDReader.html#af27f008d4c543eb171323ff8ab5b1ab4',1,'AudioCDReader']]],
   ['registerallcommandsfortarget',['registerAllCommandsForTarget',['../classApplicationCommandManager.html#ac3f8c831583499556579848779e030cf',1,'ApplicationCommandManager']]],
   ['registerbasicformats',['registerBasicFormats',['../classAudioFormatManager.html#a1a8510b3078662358013ad78239d688e',1,'AudioFormatManager']]],
