@@ -73,11 +73,13 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classStringArray.html#ab44beddf09ddd94a1e79a7afaac4de8d">addTokens</a>(StringRef stringToTokenise, bool preserveQuotedStrings)</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#aa79b07342051f604e87a3018aa3a9e69">addTokens</a>(StringRef stringToTokenise, StringRef breakCharacters, StringRef quoteCharacters)</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classStringArray.html#a9a2b916e858c3f5d941c751220216387">appendNumbersToDuplicates</a>(bool ignoreCaseWhenComparing, bool appendNumberToFirstInstance, CharPointer_UTF8 preNumberString=CharPointer_UTF8(nullptr), CharPointer_UTF8 postNumberString=CharPointer_UTF8(nullptr))</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#a8b297798829a0196e0c45abf75b7cc4c">begin</a>() const noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classStringArray.html#a8fd0efd89f558e84cda917aa3ecc3525">clear</a>()</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#af9d9a976e22e13835726d090d84dff29">clearQuick</a>()</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classStringArray.html#a93ab461d3a12a0ebfa3d2c237e4b7ca3">contains</a>(StringRef stringToLookFor, bool ignoreCase=false) const</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#aed7e07d0f7c696caa7f62be5416d66e3">end</a>() const noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#add9e674344fc50328d343a9997caafdc">begin</a>() noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classStringArray.html#a651d3459f2c0df69c257a0fdfa645ce1">begin</a>() const noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#a8fd0efd89f558e84cda917aa3ecc3525">clear</a>()</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classStringArray.html#af9d9a976e22e13835726d090d84dff29">clearQuick</a>()</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#a93ab461d3a12a0ebfa3d2c237e4b7ca3">contains</a>(StringRef stringToLookFor, bool ignoreCase=false) const</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classStringArray.html#a9230edd76a1714fd0bf88297d5f2a245">end</a>() noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#a133f595a9429627437c6f56f883c2d65">end</a>() const noexcept</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classStringArray.html#aebd425623aa9e8a4dd8d09b8e6eac0db">ensureStorageAllocated</a>(int minNumElements)</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classStringArray.html#aa65070cc0eda93b9ebb7da2b1325781b">fromLines</a>(StringRef stringToBreakUp)</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classStringArray.html#a2996bff706bcf449fbdab264c266307a">fromTokens</a>(StringRef stringToTokenise, bool preserveQuotedStrings)</td><td class="entry"><a class="el" href="classStringArray.html">StringArray</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -125,7 +127,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 28 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 29 2019 20:00:27 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

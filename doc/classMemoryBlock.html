@@ -104,19 +104,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fca2456a2660c460077d73bbc7fb226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a5fca2456a2660c460077d73bbc7fb226">matches</a> (const void *data, size_t dataSize) const noexcept</td></tr>
 <tr class="memdesc:a5fca2456a2660c460077d73bbc7fb226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in this <a class="el" href="classMemoryBlock.html" title="A class to hold a resizable block of raw data. ">MemoryBlock</a> matches the raw bytes passed-in.  <a href="#a5fca2456a2660c460077d73bbc7fb226">More...</a><br /></td></tr>
 <tr class="separator:a5fca2456a2660c460077d73bbc7fb226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3473f5770e3a31357c6eeb04f9cc7e8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ae3473f5770e3a31357c6eeb04f9cc7e8">getData</a> () const noexcept</td></tr>
-<tr class="memdesc:ae3473f5770e3a31357c6eeb04f9cc7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a void pointer to the data.  <a href="#ae3473f5770e3a31357c6eeb04f9cc7e8">More...</a><br /></td></tr>
-<tr class="separator:ae3473f5770e3a31357c6eeb04f9cc7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
-<tr class="memitem:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="memTemplItemLeft" align="right" valign="top">char &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ae75cf1dc7703f2e00589d2bee9ba9de4">operator[]</a> (const Type offset) const noexcept</td></tr>
-<tr class="memdesc:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a byte from the memory block.  <a href="#ae75cf1dc7703f2e00589d2bee9ba9de4">More...</a><br /></td></tr>
-<tr class="separator:ae75cf1dc7703f2e00589d2bee9ba9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123890120ed86978830b6374739fd166"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a123890120ed86978830b6374739fd166">begin</a> () const noexcept</td></tr>
-<tr class="memdesc:a123890120ed86978830b6374739fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator for the data.  <a href="#a123890120ed86978830b6374739fd166">More...</a><br /></td></tr>
-<tr class="separator:a123890120ed86978830b6374739fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564a48ee18de96ff8571e1ddfff9e898"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a564a48ee18de96ff8571e1ddfff9e898">end</a> () const noexcept</td></tr>
-<tr class="memdesc:a564a48ee18de96ff8571e1ddfff9e898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an end-iterator for the data.  <a href="#a564a48ee18de96ff8571e1ddfff9e898">More...</a><br /></td></tr>
-<tr class="separator:a564a48ee18de96ff8571e1ddfff9e898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edd554403e7b6b3da4822f1bb9e7cb2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a0edd554403e7b6b3da4822f1bb9e7cb2">getData</a> () noexcept</td></tr>
+<tr class="memdesc:a0edd554403e7b6b3da4822f1bb9e7cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a void pointer to the data.  <a href="#a0edd554403e7b6b3da4822f1bb9e7cb2">More...</a><br /></td></tr>
+<tr class="separator:a0edd554403e7b6b3da4822f1bb9e7cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca2c11c8b2ed0d1c2d17594493acfd1"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a8ca2c11c8b2ed0d1c2d17594493acfd1">getData</a> () const noexcept</td></tr>
+<tr class="memdesc:a8ca2c11c8b2ed0d1c2d17594493acfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a void pointer to the data.  <a href="#a8ca2c11c8b2ed0d1c2d17594493acfd1">More...</a><br /></td></tr>
+<tr class="separator:a8ca2c11c8b2ed0d1c2d17594493acfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2357377603de0bb0538be4fbbffce337"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:a2357377603de0bb0538be4fbbffce337"><td class="memTemplItemLeft" align="right" valign="top">char &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a2357377603de0bb0538be4fbbffce337">operator[]</a> (const Type offset) noexcept</td></tr>
+<tr class="memdesc:a2357377603de0bb0538be4fbbffce337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a byte from the memory block.  <a href="#a2357377603de0bb0538be4fbbffce337">More...</a><br /></td></tr>
+<tr class="separator:a2357377603de0bb0538be4fbbffce337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3371a0f8bf9a8a072fac7f1817ddee76"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:a3371a0f8bf9a8a072fac7f1817ddee76"><td class="memTemplItemLeft" align="right" valign="top">const char &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a3371a0f8bf9a8a072fac7f1817ddee76">operator[]</a> (const Type offset) const noexcept</td></tr>
+<tr class="memdesc:a3371a0f8bf9a8a072fac7f1817ddee76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a byte from the memory block.  <a href="#a3371a0f8bf9a8a072fac7f1817ddee76">More...</a><br /></td></tr>
+<tr class="separator:a3371a0f8bf9a8a072fac7f1817ddee76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255d5bc4c607be7144956d7185998d0b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a255d5bc4c607be7144956d7185998d0b">begin</a> () noexcept</td></tr>
+<tr class="memdesc:a255d5bc4c607be7144956d7185998d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator for the data.  <a href="#a255d5bc4c607be7144956d7185998d0b">More...</a><br /></td></tr>
+<tr class="separator:a255d5bc4c607be7144956d7185998d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa11b983f16d8331b99b4b3ea4edadb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a3aa11b983f16d8331b99b4b3ea4edadb">begin</a> () const noexcept</td></tr>
+<tr class="memdesc:a3aa11b983f16d8331b99b4b3ea4edadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator for the data.  <a href="#a3aa11b983f16d8331b99b4b3ea4edadb">More...</a><br /></td></tr>
+<tr class="separator:a3aa11b983f16d8331b99b4b3ea4edadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae907809848ea792ad94b921ee701990c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ae907809848ea792ad94b921ee701990c">end</a> () noexcept</td></tr>
+<tr class="memdesc:ae907809848ea792ad94b921ee701990c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an end-iterator for the data.  <a href="#ae907809848ea792ad94b921ee701990c">More...</a><br /></td></tr>
+<tr class="separator:ae907809848ea792ad94b921ee701990c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08047299ed140bedb9ad3d78b7b1e5e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#ad08047299ed140bedb9ad3d78b7b1e5e">end</a> () const noexcept</td></tr>
+<tr class="memdesc:ad08047299ed140bedb9ad3d78b7b1e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an end-iterator for the data.  <a href="#ad08047299ed140bedb9ad3d78b7b1e5e">More...</a><br /></td></tr>
+<tr class="separator:ad08047299ed140bedb9ad3d78b7b1e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryBlock.html#a7192f6e8a3f06c4476ddca1fe2ed7bfb">getSize</a> () const noexcept</td></tr>
 <tr class="memdesc:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the block's current allocated size, in bytes.  <a href="#a7192f6e8a3f06c4476ddca1fe2ed7bfb">More...</a><br /></td></tr>
 <tr class="separator:a7192f6e8a3f06c4476ddca1fe2ed7bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -497,8 +510,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3473f5770e3a31357c6eeb04f9cc7e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3473f5770e3a31357c6eeb04f9cc7e8">&#9670;&nbsp;</a></span>getData()</h2>
+<a id="a0edd554403e7b6b3da4822f1bb9e7cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edd554403e7b6b3da4822f1bb9e7cb2">&#9670;&nbsp;</a></span>getData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +523,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void* MemoryBlock::getData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -527,8 +540,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae75cf1dc7703f2e00589d2bee9ba9de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae75cf1dc7703f2e00589d2bee9ba9de4">&#9670;&nbsp;</a></span>operator[]()</h2>
+<a id="a8ca2c11c8b2ed0d1c2d17594493acfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca2c11c8b2ed0d1c2d17594493acfd1">&#9670;&nbsp;</a></span>getData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* MemoryBlock::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a void pointer to the data. </p>
+<p>Note that the pointer returned will probably become invalid when the block is resized. </p>
+
+</div>
+</div>
+<a id="a2357377603de0bb0538be4fbbffce337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2357377603de0bb0538be4fbbffce337">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -543,7 +584,7 @@ template&lt;typename Type &gt; </div>
           <td>(</td>
           <td class="paramtype">const Type&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -558,8 +599,38 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a123890120ed86978830b6374739fd166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a123890120ed86978830b6374739fd166">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a3371a0f8bf9a8a072fac7f1817ddee76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3371a0f8bf9a8a072fac7f1817ddee76">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char&amp; MemoryBlock::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const Type&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a byte from the memory block. </p>
+
+</div>
+</div>
+<a id="a255d5bc4c607be7144956d7185998d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255d5bc4c607be7144956d7185998d0b">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,6 +640,33 @@ template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">char* MemoryBlock::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator for the data. </p>
+
+</div>
+</div>
+<a id="a3aa11b983f16d8331b99b4b3ea4edadb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa11b983f16d8331b99b4b3ea4edadb">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* MemoryBlock::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -585,8 +683,8 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a564a48ee18de96ff8571e1ddfff9e898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564a48ee18de96ff8571e1ddfff9e898">&#9670;&nbsp;</a></span>end()</h2>
+<a id="ae907809848ea792ad94b921ee701990c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae907809848ea792ad94b921ee701990c">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,6 +694,33 @@ template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">char* MemoryBlock::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an end-iterator for the data. </p>
+
+</div>
+</div>
+<a id="ad08047299ed140bedb9ad3d78b7b1e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08047299ed140bedb9ad3d78b7b1e5e">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* MemoryBlock::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1211,7 +1336,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 28 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 29 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

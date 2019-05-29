@@ -1,7 +1,7 @@
 var searchData=
 [
   ['darker',['darker',['../classColour.html#a9910d9b8385825a87ea0d62d96115872',1,'Colour']]],
-  ['data',['data',['../classArray.html#a8386bae02caf7d888736b1bf6192cea7',1,'Array::data()'],['../classArrayBase.html#a767ae34ab2d1f9c7d7b9ce9f2d03967f',1,'ArrayBase::data()'],['../classOwnedArray.html#a49c9458505f8f5eb904c3425db24502f',1,'OwnedArray::data()'],['../classReferenceCountedArray.html#a00a80845b627d1940becbed81716bc4e',1,'ReferenceCountedArray::data()']]],
+  ['data',['data',['../classArray.html#a96afde4b7785534bb76f1fe5b0eadc8d',1,'Array::data() noexcept'],['../classArray.html#a71ed6aa8b8bf745d6255054fbecd6ba3',1,'Array::data() const noexcept'],['../classArrayBase.html#a2ec383516c2c76a4469881c63efb5c21',1,'ArrayBase::data() noexcept'],['../classArrayBase.html#af1ac21ba0704028305b9b9dad0ab8ead',1,'ArrayBase::data() const noexcept'],['../classOwnedArray.html#a49c9458505f8f5eb904c3425db24502f',1,'OwnedArray::data()'],['../classReferenceCountedArray.html#ad325b7202d3de1b0f52f3496a549f892',1,'ReferenceCountedArray::data() noexcept'],['../classReferenceCountedArray.html#a3b56c3bb2b808e8459379eced9f84f55',1,'ReferenceCountedArray::data() const noexcept']]],
   ['datagramsocket',['DatagramSocket',['../classDatagramSocket.html#af2fea92879c30d16256752076c5473e4',1,'DatagramSocket']]],
   ['days',['days',['../classRelativeTime.html#a97b1773403606835c173f26a0a03f5e6',1,'RelativeTime']]],
   ['deactivatecurrentcontext',['deactivateCurrentContext',['../classOpenGLContext.html#a5a3ece9be728d97e0343ae17a71f6562',1,'OpenGLContext']]],

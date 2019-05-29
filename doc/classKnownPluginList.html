@@ -62,7 +62,6 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classKnownPluginList-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">KnownPluginList Class Reference<div class="ingroups"><a class="el" href="group__juce__audio__processors.html">juce_audio_processors</a> &raquo; <a class="el" href="group__juce__audio__processors-scanning.html">scanning</a></div></div>  </div>
@@ -177,6 +176,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0182647415c5da712c87077b0f1ded05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a0182647415c5da712c87077b0f1ded05">setCustomScanner</a> (std::unique_ptr&lt; <a class="el" href="classKnownPluginList_1_1CustomScanner.html">CustomScanner</a> &gt; newScanner)</td></tr>
 <tr class="memdesc:a0182647415c5da712c87077b0f1ded05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supplies a custom scanner to be used in future scans.  <a href="#a0182647415c5da712c87077b0f1ded05">More...</a><br /></td></tr>
 <tr class="separator:a0182647415c5da712c87077b0f1ded05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05772eae7c6f8e70ffd8c0c1d552fa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#ab05772eae7c6f8e70ffd8c0c1d552fa7">JUCE_DEPRECATED_WITH_BODY</a> (<a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) noexcept, { return &amp;types.getReference(index);}) JUCE_DEPRECATED_WITH_BODY(const <a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
+<tr class="separator:ab05772eae7c6f8e70ffd8c0c1d552fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classChangeBroadcaster"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classChangeBroadcaster')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classChangeBroadcaster.html">ChangeBroadcaster</a></td></tr>
 <tr class="memitem:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">ChangeBroadcaster</a> () noexcept</td></tr>
 <tr class="memdesc:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>.  <a href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">More...</a><br /></td></tr>
@@ -202,17 +203,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChangeBroadcaster.html#a78f62ecd57a016f8ba7a6ce55454947d">dispatchPendingMessages</a> ()</td></tr>
 <tr class="memdesc:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a change message has been sent but not yet dispatched, this will call <a class="el" href="classChangeBroadcaster.html#a5d16cd01b9af4bacb1716530af17f77b" title="Sends a synchronous change message to all the registered listeners. ">sendSynchronousChangeMessage()</a> to make the callback immediately.  <a href="classChangeBroadcaster.html#a78f62ecd57a016f8ba7a6ce55454947d">More...</a><br /></td></tr>
 <tr class="separator:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a955956627e734dfd658dbf628d98858b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a>(<a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept, { return &amp;types.getReference(index);}) private StringArra&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a955956627e734dfd658dbf628d98858b">blacklist</a> )</td></tr>
-<tr class="separator:a955956627e734dfd658dbf628d98858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f536aa4ac9603ab47892e8186a55c61"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classKnownPluginList_1_1CustomScanner.html">CustomScanner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a5f536aa4ac9603ab47892e8186a55c61">scanner</a></td></tr>
-<tr class="separator:a5f536aa4ac9603ab47892e8186a55c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b123f52239b83347612a9947a6db313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCriticalSection.html">CriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a3b123f52239b83347612a9947a6db313">scanLock</a></td></tr>
-<tr class="separator:a3b123f52239b83347612a9947a6db313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c527a22bd30fefcc5b4b7abae410325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCriticalSection.html">CriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a9c527a22bd30fefcc5b4b7abae410325">typesArrayLock</a></td></tr>
-<tr class="separator:a9c527a22bd30fefcc5b4b7abae410325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages a list of plugin types. </p>
@@ -815,59 +805,38 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a955956627e734dfd658dbf628d98858b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a955956627e734dfd658dbf628d98858b">&#9670;&nbsp;</a></span>blacklist</h2>
+<a id="ab05772eae7c6f8e70ffd8c0c1d552fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05772eae7c6f8e70ffd8c0c1d552fa7">&#9670;&nbsp;</a></span>JUCE_DEPRECATED_WITH_BODY()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a> (<a class="el" href="classPluginDescription.html">PluginDescription</a>* getType (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept, { return &amp;types.getReference (index); }) private StringArra KnownPluginList::blacklist) </td>
+          <td class="memname">KnownPluginList::JUCE_DEPRECATED_WITH_BODY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index)&#160;</td>
+          <td class="paramname"><em>noexcept</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f536aa4ac9603ab47892e8186a55c61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f536aa4ac9603ab47892e8186a55c61">&#9670;&nbsp;</a></span>scanner</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classKnownPluginList_1_1CustomScanner.html">CustomScanner</a>&gt; KnownPluginList::scanner</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">{ return &amp;types.getReference(index);}&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b123f52239b83347612a9947a6db313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b123f52239b83347612a9947a6db313">&#9670;&nbsp;</a></span>scanLock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCriticalSection.html">CriticalSection</a> KnownPluginList::scanLock</td>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9c527a22bd30fefcc5b4b7abae410325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c527a22bd30fefcc5b4b7abae410325">&#9670;&nbsp;</a></span>typesArrayLock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCriticalSection.html">CriticalSection</a> KnownPluginList::typesArrayLock</td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -878,7 +847,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 28 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 29 2019 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

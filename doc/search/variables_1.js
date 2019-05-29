@@ -11,7 +11,6 @@ var searchData=
   ['bitsincurrentbyte',['bitsInCurrentByte',['../structBlocksProtocol_1_1Packed7BitArrayBuilder_1_1State.html#ab80793ce4020e7eee527b92793668658',1,'BlocksProtocol::Packed7BitArrayBuilder::State']]],
   ['bitspersample',['bitsPerSample',['../classAudioFormatReader.html#aa450170dd89d247be8eb1f657b8b47d5',1,'AudioFormatReader::bitsPerSample()'],['../classAudioFormatWriter.html#aa1c1c0accbc262067e2f9ad75d70d155',1,'AudioFormatWriter::bitsPerSample()']]],
   ['black',['black',['../classColours.html#aad3910013bf00a80305c082284cd5ee2',1,'Colours']]],
-  ['blacklist',['blacklist',['../classKnownPluginList.html#a955956627e734dfd658dbf628d98858b',1,'KnownPluginList']]],
   ['blanchedalmond',['blanchedalmond',['../classColours.html#ade76144d43cca657dac89e21b9a4ff43',1,'Colours']]],
   ['blob',['blob',['../classOSCTypes.html#ac43c6abfe6d67b3a52b0550c49a391ab',1,'OSCTypes']]],
   ['block',['block',['../structBlock_1_1Program.html#a2b39067fad835a24a04776556cc5a972',1,'Block::Program::block()'],['../classControlButton.html#a59d4781c4364a7e78d20b31c58be0fb0',1,'ControlButton::block()'],['../classLEDGrid.html#a4c4acb32d76e95e6791ef629e8000bd8',1,'LEDGrid::block()'],['../classLEDRow.html#a7045a32380f8f6b030273c9af5150f8d',1,'LEDRow::block()'],['../classStatusLight.html#abcadf91771de7451dea784d2433e5df5',1,'StatusLight::block()'],['../classTouchSurface.html#a162504809b62b001219b38571a75f5d8',1,'TouchSurface::block()']]],
