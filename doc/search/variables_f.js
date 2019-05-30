@@ -26,6 +26,7 @@ var searchData=
   ['peru',['peru',['../classColours.html#a8417b7053caaf567a98eb61eccf57838',1,'Colours']]],
   ['phase',['phase',['../structdsp_1_1Phase.html#a07412209f3d89714ed6b47e7f3578320',1,'dsp::Phase']]],
   ['pi',['pi',['../group__juce__core-maths.html#gaaec4bd5a00718fbf776203289b9b8645',1,'MathConstants']]],
+  ['pimpl',['pimpl',['../classGenericAudioProcessorEditor.html#af33f35cfb355efe6f61ff7808535e701',1,'GenericAudioProcessorEditor']]],
   ['pink',['pink',['../classColours.html#aa959194b957e4113dcdc9ec488464229',1,'Colours']]],
   ['pitchbend',['pitchbend',['../structMPENote.html#aebfdbfc173bc19cc97b97659c412078f',1,'MPENote']]],
   ['pixelformat',['pixelFormat',['../classImage_1_1BitmapData.html#aae26ad39defa124117e3a7d8da499e6b',1,'Image::BitmapData::pixelFormat()'],['../classImagePixelData.html#a7af8920b587eebc3d94a0883375ca08f',1,'ImagePixelData::pixelFormat()']]],
