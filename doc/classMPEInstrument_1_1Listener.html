@@ -66,7 +66,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMPEInstrument_1_1Listener-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MPEInstrument::Listener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__juce__audio__basics.html">juce_audio_basics</a> &raquo; <a class="el" href="group__juce__audio__basics-mpe.html">mpe</a></div></div>  </div>
+<div class="title">MPEInstrument::Listener Class Reference<div class="ingroups"><a class="el" href="group__juce__audio__basics.html">juce_audio_basics</a> &raquo; <a class="el" href="group__juce__audio__basics-mpe.html">mpe</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -84,24 +84,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24b96764da523054c5525c29c00c418e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a24b96764da523054c5525c29c00c418e">~Listener</a> ()=default</td></tr>
 <tr class="memdesc:a24b96764da523054c5525c29c00c418e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a24b96764da523054c5525c29c00c418e">More...</a><br /></td></tr>
 <tr class="separator:a24b96764da523054c5525c29c00c418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a3ed24fc611a2d655a0a7c06eb0883b6a">noteAdded</a> (<a class="el" href="structMPENote.html">MPENote</a> newNote)=0</td></tr>
-<tr class="memdesc:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a new expressive MIDI note is triggered.  <a href="#a3ed24fc611a2d655a0a7c06eb0883b6a">More...</a><br /></td></tr>
-<tr class="separator:a3ed24fc611a2d655a0a7c06eb0883b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc06f3989c5cd699ae97c391d2117b42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#adc06f3989c5cd699ae97c391d2117b42">notePressureChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)=0</td></tr>
-<tr class="memdesc:adc06f3989c5cd699ae97c391d2117b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's pressure value changes.  <a href="#adc06f3989c5cd699ae97c391d2117b42">More...</a><br /></td></tr>
-<tr class="separator:adc06f3989c5cd699ae97c391d2117b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47609333f6dc48544da697e9d42188ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a47609333f6dc48544da697e9d42188ae">notePitchbendChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)=0</td></tr>
-<tr class="memdesc:a47609333f6dc48544da697e9d42188ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's pitchbend value changes.  <a href="#a47609333f6dc48544da697e9d42188ae">More...</a><br /></td></tr>
-<tr class="separator:a47609333f6dc48544da697e9d42188ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2479e31f024803b3a3379341c5a6fda1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a2479e31f024803b3a3379341c5a6fda1">noteTimbreChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)=0</td></tr>
-<tr class="memdesc:a2479e31f024803b3a3379341c5a6fda1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's timbre value changes.  <a href="#a2479e31f024803b3a3379341c5a6fda1">More...</a><br /></td></tr>
-<tr class="separator:a2479e31f024803b3a3379341c5a6fda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c9dda48fed8107b7b5e355b1273d73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a88c9dda48fed8107b7b5e355b1273d73">noteKeyStateChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)=0</td></tr>
-<tr class="memdesc:a88c9dda48fed8107b7b5e355b1273d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whether a currently playing MPE note's key state (whether the key is down and/or the note is sustained) has changed.  <a href="#a88c9dda48fed8107b7b5e355b1273d73">More...</a><br /></td></tr>
-<tr class="separator:a88c9dda48fed8107b7b5e355b1273d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ebbf72827b08d96c1e9c45de27c317"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#ac5ebbf72827b08d96c1e9c45de27c317">noteReleased</a> (<a class="el" href="structMPENote.html">MPENote</a> finishedNote)=0</td></tr>
-<tr class="memdesc:ac5ebbf72827b08d96c1e9c45de27c317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever an MPE note is released (either by a note-off message, or by a sustain/sostenuto pedal release for a note that already received a note-off), and should therefore stop playing.  <a href="#ac5ebbf72827b08d96c1e9c45de27c317">More...</a><br /></td></tr>
-<tr class="separator:ac5ebbf72827b08d96c1e9c45de27c317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f2141bc1178783d5f89536f6dc3481"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a53f2141bc1178783d5f89536f6dc3481">noteAdded</a> (<a class="el" href="structMPENote.html">MPENote</a> newNote)</td></tr>
+<tr class="memdesc:a53f2141bc1178783d5f89536f6dc3481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a new expressive MIDI note is triggered.  <a href="#a53f2141bc1178783d5f89536f6dc3481">More...</a><br /></td></tr>
+<tr class="separator:a53f2141bc1178783d5f89536f6dc3481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d687e2e40b593a93a4e210afd691ac7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a9d687e2e40b593a93a4e210afd691ac7">notePressureChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)</td></tr>
+<tr class="memdesc:a9d687e2e40b593a93a4e210afd691ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's pressure value changes.  <a href="#a9d687e2e40b593a93a4e210afd691ac7">More...</a><br /></td></tr>
+<tr class="separator:a9d687e2e40b593a93a4e210afd691ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e7d4e3793bb4d82164369c1c1227ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a17e7d4e3793bb4d82164369c1c1227ce">notePitchbendChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)</td></tr>
+<tr class="memdesc:a17e7d4e3793bb4d82164369c1c1227ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's pitchbend value changes.  <a href="#a17e7d4e3793bb4d82164369c1c1227ce">More...</a><br /></td></tr>
+<tr class="separator:a17e7d4e3793bb4d82164369c1c1227ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace32bde57684274f5a78d33f9636a444"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#ace32bde57684274f5a78d33f9636a444">noteTimbreChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)</td></tr>
+<tr class="memdesc:ace32bde57684274f5a78d33f9636a444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever a currently playing MPE note's timbre value changes.  <a href="#ace32bde57684274f5a78d33f9636a444">More...</a><br /></td></tr>
+<tr class="separator:ace32bde57684274f5a78d33f9636a444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0f11b66f86070af16e68c7e14eaa1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#adc0f11b66f86070af16e68c7e14eaa1c">noteKeyStateChanged</a> (<a class="el" href="structMPENote.html">MPENote</a> changedNote)</td></tr>
+<tr class="memdesc:adc0f11b66f86070af16e68c7e14eaa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whether a currently playing MPE note's key state (whether the key is down and/or the note is sustained) has changed.  <a href="#adc0f11b66f86070af16e68c7e14eaa1c">More...</a><br /></td></tr>
+<tr class="separator:adc0f11b66f86070af16e68c7e14eaa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1493b1fefb70c80d98fbdfa7aae6c2fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMPEInstrument_1_1Listener.html#a1493b1fefb70c80d98fbdfa7aae6c2fa">noteReleased</a> (<a class="el" href="structMPENote.html">MPENote</a> finishedNote)</td></tr>
+<tr class="memdesc:a1493b1fefb70c80d98fbdfa7aae6c2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this callback to be informed whenever an MPE note is released (either by a note-off message, or by a sustain/sostenuto pedal release for a note that already received a note-off), and should therefore stop playing.  <a href="#a1493b1fefb70c80d98fbdfa7aae6c2fa">More...</a><br /></td></tr>
+<tr class="separator:a1493b1fefb70c80d98fbdfa7aae6c2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Derive from this class to be informed about any changes in the expressive MIDI notes played by this instrument. </p>
@@ -135,8 +135,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3ed24fc611a2d655a0a7c06eb0883b6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed24fc611a2d655a0a7c06eb0883b6a">&#9670;&nbsp;</a></span>noteAdded()</h2>
+<a id="a53f2141bc1178783d5f89536f6dc3481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f2141bc1178783d5f89536f6dc3481">&#9670;&nbsp;</a></span>noteAdded()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,21 +154,23 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implement this callback to be informed whenever a new expressive MIDI note is triggered. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#ae2bd89b0b7b7a320531fb04351f95143">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#ae2bd89b0b7b7a320531fb04351f95143">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
 </div>
 </div>
-<a id="adc06f3989c5cd699ae97c391d2117b42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc06f3989c5cd699ae97c391d2117b42">&#9670;&nbsp;</a></span>notePressureChanged()</h2>
+<a id="a9d687e2e40b593a93a4e210afd691ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d687e2e40b593a93a4e210afd691ac7">&#9670;&nbsp;</a></span>notePressureChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,21 +188,23 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implement this callback to be informed whenever a currently playing MPE note's pressure value changes. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#adc0b737867837dbde62e498888780e57">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#adc0b737867837dbde62e498888780e57">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
 </div>
 </div>
-<a id="a47609333f6dc48544da697e9d42188ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47609333f6dc48544da697e9d42188ae">&#9670;&nbsp;</a></span>notePitchbendChanged()</h2>
+<a id="a17e7d4e3793bb4d82164369c1c1227ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e7d4e3793bb4d82164369c1c1227ce">&#9670;&nbsp;</a></span>notePitchbendChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +222,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -226,14 +230,16 @@ Public Member Functions</h2></td></tr>
 <p>Implement this callback to be informed whenever a currently playing MPE note's pitchbend value changes. </p>
 <p>Note: This can happen if the note itself is bent, if there is a master channel pitchbend event, or if both occur simultaneously. Call <a class="el" href="structMPENote.html#ab2c9c6399f9e500314762ce488cc227d" title="Returns the current frequency of the note in Hertz. ">MPENote::getFrequencyInHertz</a> to get the effective note frequency. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#a530df353e1dcb0fb708b75555c7fbf50">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#a530df353e1dcb0fb708b75555c7fbf50">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
 </div>
 </div>
-<a id="a2479e31f024803b3a3379341c5a6fda1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2479e31f024803b3a3379341c5a6fda1">&#9670;&nbsp;</a></span>noteTimbreChanged()</h2>
+<a id="ace32bde57684274f5a78d33f9636a444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace32bde57684274f5a78d33f9636a444">&#9670;&nbsp;</a></span>noteTimbreChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,21 +257,23 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implement this callback to be informed whenever a currently playing MPE note's timbre value changes. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#a77d6f0beb8c6828526765b4c5138f208">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#a77d6f0beb8c6828526765b4c5138f208">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
 </div>
 </div>
-<a id="a88c9dda48fed8107b7b5e355b1273d73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88c9dda48fed8107b7b5e355b1273d73">&#9670;&nbsp;</a></span>noteKeyStateChanged()</h2>
+<a id="adc0f11b66f86070af16e68c7e14eaa1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0f11b66f86070af16e68c7e14eaa1c">&#9670;&nbsp;</a></span>noteKeyStateChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +291,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -291,14 +299,16 @@ Public Member Functions</h2></td></tr>
 <p>Implement this callback to be informed whether a currently playing MPE note's key state (whether the key is down and/or the note is sustained) has changed. </p>
 <p>Note: If the key state changes to <a class="el" href="structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922adeb8e0c25e24978beb9013836745cb4b" title="The key is up (off). ">MPENote::off</a>, noteReleased is called instead. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#ad9b8ecb93c1a3c5a87439f5cda524f73">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#ad9b8ecb93c1a3c5a87439f5cda524f73">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
 </div>
 </div>
-<a id="ac5ebbf72827b08d96c1e9c45de27c317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ebbf72827b08d96c1e9c45de27c317">&#9670;&nbsp;</a></span>noteReleased()</h2>
+<a id="a1493b1fefb70c80d98fbdfa7aae6c2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1493b1fefb70c80d98fbdfa7aae6c2fa">&#9670;&nbsp;</a></span>noteReleased()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,14 +326,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Implement this callback to be informed whenever an MPE note is released (either by a note-off message, or by a sustain/sostenuto pedal release for a note that already received a note-off), and should therefore stop playing. </p>
 
-<p>Implemented in <a class="el" href="classMPESynthesiser.html#a2a06b6a930e3d8894794537ae995ff05">MPESynthesiser</a>.</p>
+<p>Reimplemented in <a class="el" href="classMPESynthesiser.html#a2a06b6a930e3d8894794537ae995ff05">MPESynthesiser</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMPESynthesiser.html#a8902a959475b2c1a22f04c6235edf214">MPESynthesiser::handleProgramChange()</a>.</p>
 
@@ -335,7 +347,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 31 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 3 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

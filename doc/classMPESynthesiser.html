@@ -682,7 +682,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The default implementation provided here does nothing; override this method if you need to handle those messages.</p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. </p>
 
-<p class="reference">References <a class="el" href="classMPEInstrument_1_1Listener.html#a3ed24fc611a2d655a0a7c06eb0883b6a">MPEInstrument::Listener::noteAdded()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a88c9dda48fed8107b7b5e355b1273d73">MPEInstrument::Listener::noteKeyStateChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a47609333f6dc48544da697e9d42188ae">MPEInstrument::Listener::notePitchbendChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#adc06f3989c5cd699ae97c391d2117b42">MPEInstrument::Listener::notePressureChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#ac5ebbf72827b08d96c1e9c45de27c317">MPEInstrument::Listener::noteReleased()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a2479e31f024803b3a3379341c5a6fda1">MPEInstrument::Listener::noteTimbreChanged()</a>, and <a class="el" href="structMPESynthesiserBase.html#a35cb8fe7b87b603884ee3f4837be07aa">MPESynthesiserBase::renderNextSubBlock()</a>.</p>
+<p class="reference">References <a class="el" href="classMPEInstrument_1_1Listener.html#a53f2141bc1178783d5f89536f6dc3481">MPEInstrument::Listener::noteAdded()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#adc0f11b66f86070af16e68c7e14eaa1c">MPEInstrument::Listener::noteKeyStateChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a17e7d4e3793bb4d82164369c1c1227ce">MPEInstrument::Listener::notePitchbendChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a9d687e2e40b593a93a4e210afd691ac7">MPEInstrument::Listener::notePressureChanged()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#a1493b1fefb70c80d98fbdfa7aae6c2fa">MPEInstrument::Listener::noteReleased()</a>, <a class="el" href="classMPEInstrument_1_1Listener.html#ace32bde57684274f5a78d33f9636a444">MPEInstrument::Listener::noteTimbreChanged()</a>, and <a class="el" href="structMPESynthesiserBase.html#a35cb8fe7b87b603884ee3f4837be07aa">MPESynthesiserBase::renderNextSubBlock()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The default method here will find a free voice that is appropriate for playing the given <a class="el" href="structMPENote.html" title="This struct represents a playing MPE note. ">MPENote</a>, and use that voice to start playing the sound. If isNoteStealingEnabled returns true (set this by calling setNoteStealingEnabled), the synthesiser will use the voice stealing algorithm to find a free voice for the note (if no voices are free otherwise).</p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself, otherwise the internal MPE note state will become inconsistent. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#a3ed24fc611a2d655a0a7c06eb0883b6a">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#a53f2141bc1178783d5f89536f6dc3481">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -747,7 +747,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This will find any voice that is currently playing finishedNote, turn its currently playing note off, and call its noteStopped callback.</p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself, otherwise the internal MPE note state will become inconsistent. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#ac5ebbf72827b08d96c1e9c45de27c317">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#a1493b1fefb70c80d98fbdfa7aae6c2fa">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -778,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Will find any voice that is currently playing changedNote, update its currently playing note, and call its notePressureChanged method. </p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#adc06f3989c5cd699ae97c391d2117b42">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#a9d687e2e40b593a93a4e210afd691ac7">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Will find any voice that is currently playing changedNote, update its currently playing note, and call its notePitchbendChanged method. </p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#a47609333f6dc48544da697e9d42188ae">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#a17e7d4e3793bb4d82164369c1c1227ce">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -840,7 +840,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Will find any voice that is currently playing changedNote, update its currently playing note, and call its noteTimbreChanged method. </p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#a2479e31f024803b3a3379341c5a6fda1">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#ace32bde57684274f5a78d33f9636a444">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -871,7 +871,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Will find any voice that is currently playing changedNote, update its currently playing note, and call its noteKeyStateChanged method. </p>
 <p>This method will be called automatically according to the midi data passed into <a class="el" href="structMPESynthesiserBase.html#a6b0bfbf04857771b9df5c49ea7ba14df" title="Creates the next block of audio output. ">renderNextBlock()</a>. Do not call it yourself. </p>
 
-<p>Implements <a class="el" href="classMPEInstrument_1_1Listener.html#a88c9dda48fed8107b7b5e355b1273d73">MPEInstrument::Listener</a>.</p>
+<p>Reimplemented from <a class="el" href="classMPEInstrument_1_1Listener.html#adc0f11b66f86070af16e68c7e14eaa1c">MPEInstrument::Listener</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1174,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 31 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 3 2019 20:00:26 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
