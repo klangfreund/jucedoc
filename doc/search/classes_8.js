@@ -21,7 +21,6 @@ var searchData=
   ['inputfilter',['InputFilter',['../classTextEditor_1_1InputFilter.html',1,'TextEditor']]],
   ['inputsource',['InputSource',['../classInputSource.html',1,'']]],
   ['inputstream',['InputStream',['../classInputStream.html',1,'']]],
-  ['instantiationcompletioncallback',['InstantiationCompletionCallback',['../structAudioPluginFormat_1_1InstantiationCompletionCallback.html',1,'AudioPluginFormat']]],
   ['integerwithbitsize',['IntegerWithBitSize',['../structBlocksProtocol_1_1IntegerWithBitSize.html',1,'BlocksProtocol']]],
   ['integerwithbitsize_3c_201_20_3e',['IntegerWithBitSize&lt; 1 &gt;',['../structBlocksProtocol_1_1IntegerWithBitSize.html',1,'BlocksProtocol']]],
   ['integerwithbitsize_3c_2012_20_3e',['IntegerWithBitSize&lt; 12 &gt;',['../structBlocksProtocol_1_1IntegerWithBitSize.html',1,'BlocksProtocol']]],

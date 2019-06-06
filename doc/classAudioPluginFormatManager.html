@@ -77,7 +77,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af665e2e901d438a93a75282df73dd1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af665e2e901d438a93a75282df73dd1b2">More...</a><br /></td></tr>
 <tr class="separator:af665e2e901d438a93a75282df73dd1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c3c16e48f1c50069573c8aede0b776"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a43c3c16e48f1c50069573c8aede0b776">addDefaultFormats</a> ()</td></tr>
-<tr class="memdesc:a43c3c16e48f1c50069573c8aede0b776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds any formats that it knows about, e.g.  <a href="#a43c3c16e48f1c50069573c8aede0b776">More...</a><br /></td></tr>
+<tr class="memdesc:a43c3c16e48f1c50069573c8aede0b776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the set of available standard formats, e.g.  <a href="#a43c3c16e48f1c50069573c8aede0b776">More...</a><br /></td></tr>
 <tr class="separator:a43c3c16e48f1c50069573c8aede0b776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c93f8d5747cf2c9f1aa6967e19b5dbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a3c93f8d5747cf2c9f1aa6967e19b5dbd">getNumFormats</a> ()</td></tr>
 <tr class="memdesc:a3c93f8d5747cf2c9f1aa6967e19b5dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of types of format that are available.  <a href="#a3c93f8d5747cf2c9f1aa6967e19b5dbd">More...</a><br /></td></tr>
@@ -85,20 +85,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b402a4797089f016b68a1e6afdf51ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a2b402a4797089f016b68a1e6afdf51ae">getFormat</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index)</td></tr>
 <tr class="memdesc:a2b402a4797089f016b68a1e6afdf51ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the available formats.  <a href="#a2b402a4797089f016b68a1e6afdf51ae">More...</a><br /></td></tr>
 <tr class="separator:a2b402a4797089f016b68a1e6afdf51ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac243852bbebb30d33264457579005875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ac243852bbebb30d33264457579005875">addFormat</a> (<a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *format)</td></tr>
-<tr class="memdesc:ac243852bbebb30d33264457579005875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a format to the list.  <a href="#ac243852bbebb30d33264457579005875">More...</a><br /></td></tr>
-<tr class="separator:ac243852bbebb30d33264457579005875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c51767dcf6d61748d02756843e0aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a55c51767dcf6d61748d02756843e0aea">createPluginInstance</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> initialBufferSize, <a class="el" href="classString.html">String</a> &amp;errorMessage) const</td></tr>
-<tr class="memdesc:a55c51767dcf6d61748d02756843e0aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load the type for this description, by trying all the formats that this manager knows about.  <a href="#a55c51767dcf6d61748d02756843e0aea">More...</a><br /></td></tr>
-<tr class="separator:a55c51767dcf6d61748d02756843e0aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae347b83fed14e1db1744242fdba6e7dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ae347b83fed14e1db1744242fdba6e7dd">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> initialBufferSize, <a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">AudioPluginFormat::InstantiationCompletionCallback</a> *callback)</td></tr>
-<tr class="memdesc:ae347b83fed14e1db1744242fdba6e7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about.  <a href="#ae347b83fed14e1db1744242fdba6e7dd">More...</a><br /></td></tr>
-<tr class="separator:ae347b83fed14e1db1744242fdba6e7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c00eeb1a876da59d86478ef114b68b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a6c00eeb1a876da59d86478ef114b68b1">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> initialBufferSize, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt; completionCallback)</td></tr>
-<tr class="separator:a6c00eeb1a876da59d86478ef114b68b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3aeac1559458df9a894601522852acf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#ac3aeac1559458df9a894601522852acf">doesPluginStillExist</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description) const</td></tr>
-<tr class="memdesc:ac3aeac1559458df9a894601522852acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the file or component for this plugin actually still exists.  <a href="#ac3aeac1559458df9a894601522852acf">More...</a><br /></td></tr>
-<tr class="separator:ac3aeac1559458df9a894601522852acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff2a2444d84fee2ee7851473ecfb1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a5ff2a2444d84fee2ee7851473ecfb1bd">addFormat</a> (<a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *)</td></tr>
+<tr class="memdesc:a5ff2a2444d84fee2ee7851473ecfb1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a format to the list.  <a href="#a5ff2a2444d84fee2ee7851473ecfb1bd">More...</a><br /></td></tr>
+<tr class="separator:a5ff2a2444d84fee2ee7851473ecfb1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29483f8e5803f828d828e21ec55585b0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a29483f8e5803f828d828e21ec55585b0">createPluginInstance</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> initialBufferSize, <a class="el" href="classString.html">String</a> &amp;errorMessage) const</td></tr>
+<tr class="memdesc:a29483f8e5803f828d828e21ec55585b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load the type for this description, by trying all the formats that this manager knows about.  <a href="#a29483f8e5803f828d828e21ec55585b0">More...</a><br /></td></tr>
+<tr class="separator:a29483f8e5803f828d828e21ec55585b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50174233557851ec77f249c7e064bff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a50174233557851ec77f249c7e064bff1">createPluginInstanceAsync</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;description, double initialSampleRate, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> initialBufferSize, <a class="el" href="classAudioPluginFormat.html#ab6363bab295f2a83b11859f6563befe8">AudioPluginFormat::PluginCreationCallback</a> callback)</td></tr>
+<tr class="memdesc:a50174233557851ec77f249c7e064bff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about.  <a href="#a50174233557851ec77f249c7e064bff1">More...</a><br /></td></tr>
+<tr class="separator:a50174233557851ec77f249c7e064bff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9b16482f155037067797a217223fbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormatManager.html#a4b9b16482f155037067797a217223fbd">doesPluginStillExist</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;) const</td></tr>
+<tr class="memdesc:a4b9b16482f155037067797a217223fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the file or component for this plugin actually still exists.  <a href="#a4b9b16482f155037067797a217223fbd">More...</a><br /></td></tr>
+<tr class="separator:a4b9b16482f155037067797a217223fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This maintains a list of known AudioPluginFormats. </p>
@@ -156,7 +154,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds any formats that it knows about, e.g. </p>
+<p>Adds the set of available standard formats, e.g. </p>
 <p>VST. </p>
 
 </div>
@@ -202,8 +200,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac243852bbebb30d33264457579005875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac243852bbebb30d33264457579005875">&#9670;&nbsp;</a></span>addFormat()</h2>
+<a id="a5ff2a2444d84fee2ee7851473ecfb1bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff2a2444d84fee2ee7851473ecfb1bd">&#9670;&nbsp;</a></span>addFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +210,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void AudioPluginFormatManager::addFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a> *&#160;</td>
-          <td class="paramname"><em>format</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -223,14 +221,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55c51767dcf6d61748d02756843e0aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c51767dcf6d61748d02756843e0aea">&#9670;&nbsp;</a></span>createPluginInstance()</h2>
+<a id="a29483f8e5803f828d828e21ec55585b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29483f8e5803f828d828e21ec55585b0">&#9670;&nbsp;</a></span>createPluginInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a>* AudioPluginFormatManager::createPluginInstance </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a>&gt; AudioPluginFormatManager::createPluginInstance </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
           <td class="paramname"><em>description</em>, </td>
@@ -268,8 +266,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae347b83fed14e1db1744242fdba6e7dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae347b83fed14e1db1744242fdba6e7dd">&#9670;&nbsp;</a></span>createPluginInstanceAsync() <span class="overload">[1/2]</span></h2>
+<a id="a50174233557851ec77f249c7e064bff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50174233557851ec77f249c7e064bff1">&#9670;&nbsp;</a></span>createPluginInstanceAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +293,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structAudioPluginFormat_1_1InstantiationCompletionCallback.html">AudioPluginFormat::InstantiationCompletionCallback</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classAudioPluginFormat.html#ab6363bab295f2a83b11859f6563befe8">AudioPluginFormat::PluginCreationCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -316,48 +314,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c00eeb1a876da59d86478ef114b68b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c00eeb1a876da59d86478ef114b68b1">&#9670;&nbsp;</a></span>createPluginInstanceAsync() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AudioPluginFormatManager::createPluginInstanceAsync </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>description</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>initialSampleRate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"><em>initialBufferSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classAudioPluginInstance.html">AudioPluginInstance</a> *, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>completionCallback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3aeac1559458df9a894601522852acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3aeac1559458df9a894601522852acf">&#9670;&nbsp;</a></span>doesPluginStillExist()</h2>
+<a id="a4b9b16482f155037067797a217223fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9b16482f155037067797a217223fbd">&#9670;&nbsp;</a></span>doesPluginStillExist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +324,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool AudioPluginFormatManager::doesPluginStillExist </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>description</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -383,7 +341,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 5 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 6 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

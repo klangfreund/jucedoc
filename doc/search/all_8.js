@@ -122,7 +122,6 @@ var searchData=
   ['inserttextatcaret',['insertTextAtCaret',['../classTextInputTarget.html#a009241c97fa452d53671a00a6a5caea7',1,'TextInputTarget::insertTextAtCaret()'],['../classTextEditor.html#a366156a95212e4aa7001e4bb2ebe1282',1,'TextEditor::insertTextAtCaret()'],['../classCodeEditorComponent.html#a74c65cd4773090f1654f3cd8622cdc50',1,'CodeEditorComponent::insertTextAtCaret()']]],
   ['instance',['instance',['../structSingletonHolder.html#ae8ff7f824ffd2694be7a2b5b3f8fc03c',1,'SingletonHolder']]],
   ['instanceid',['instanceID',['../structNetworkServiceDiscovery_1_1Service.html#a4ae0343d6a62d619d92de9c6760f0219',1,'NetworkServiceDiscovery::Service']]],
-  ['instantiationcompletioncallback',['InstantiationCompletionCallback',['../structAudioPluginFormat_1_1InstantiationCompletionCallback.html',1,'AudioPluginFormat']]],
   ['instrument',['instrument',['../structMPESynthesiserBase.html#abef53209d5522c0af50547301e6b52b5',1,'MPESynthesiserBase']]],
   ['int',['int',['../group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0',1,'juce_UnityPluginInterface.h']]],
   ['int16',['int16',['../namespacelittlefoot.html#ada240f433c50e81ac698bbf32d6a2c10',1,'littlefoot::int16()'],['../group__juce__core-maths.html#ga1ac1aa7e8a32750928cf4962e61e80ce',1,'int16():&#160;juce_MathsFunctions.h']]],

@@ -7,7 +7,7 @@ var searchData=
   ['parameters',['Parameters',['../classdsp_1_1Reverb.html#a67582b7d70a6a0f444be8e3649b184b3',1,'dsp::Reverb']]],
   ['parametersptr',['ParametersPtr',['../classdsp_1_1StateVariableFilter_1_1Filter.html#a8df3f28abd45dd5d01c24c38ebfa0ae7',1,'dsp::StateVariableFilter::Filter']]],
   ['parametertype',['ParameterType',['../classSelectedItemSet.html#aaef16f09fe4a27976cc212869b6fd32f',1,'SelectedItemSet']]],
-  ['plugincreationcallback',['PluginCreationCallback',['../classAudioPluginFormat.html#a513ce1f3cde9ecfd82f43ee71baf4769',1,'AudioPluginFormat']]],
+  ['plugincreationcallback',['PluginCreationCallback',['../classAudioPluginFormat.html#ab6363bab295f2a83b11859f6563befe8',1,'AudioPluginFormat']]],
   ['plugininouts',['PluginInOuts',['../classStandaloneFilterWindow.html#a6c10ebbc7b2013247891e3c37a641f87',1,'StandaloneFilterWindow']]],
   ['pointer',['pointer',['../structValueTree_1_1Iterator.html#a70207657ea8bd1ae3c05602250c0714f',1,'ValueTree::Iterator']]],
   ['pointer_5fsized_5fint',['pointer_sized_int',['../group__juce__core-maths.html#ga004ecd75303f3a1653f937d35a67e41d',1,'juce_MathsFunctions.h']]],

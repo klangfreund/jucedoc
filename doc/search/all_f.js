@@ -150,7 +150,7 @@ var searchData=
   ['playkey',['playKey',['../classKeyPress.html#a08e1a3281e1a772f1e6227f70d117622',1,'KeyPress']]],
   ['playorpause',['playOrPause',['../classControlButton.html#a891776295057786f99f14631b1aa2794a74a84bc553f54bd44bf330d76c093056',1,'ControlButton']]],
   ['playtestsound',['playTestSound',['../classAudioDeviceManager.html#ab32b74d9dda550d70d47c0cca76fdd25',1,'AudioDeviceManager::playTestSound()'],['../classSoundPlayer.html#af3a242e140dc73bcfae74e22d421a2c1',1,'SoundPlayer::playTestSound()']]],
-  ['plugincreationcallback',['PluginCreationCallback',['../classAudioPluginFormat.html#a513ce1f3cde9ecfd82f43ee71baf4769',1,'AudioPluginFormat']]],
+  ['plugincreationcallback',['PluginCreationCallback',['../classAudioPluginFormat.html#ab6363bab295f2a83b11859f6563befe8',1,'AudioPluginFormat']]],
   ['plugindescription',['PluginDescription',['../classPluginDescription.html',1,'PluginDescription'],['../classPluginDescription.html#aef940d9f699a0cd6a6111ff85ec3a02e',1,'PluginDescription::PluginDescription()=default'],['../classPluginDescription.html#afd1dfa90cd721b87f265cda8b73b8282',1,'PluginDescription::PluginDescription(const PluginDescription &amp;other)=default']]],
   ['plugindirectoryscanner',['PluginDirectoryScanner',['../classPluginDirectoryScanner.html',1,'PluginDirectoryScanner'],['../classPluginDirectoryScanner.html#a0eaf052eb4a3a94545d1180b8b0f166e',1,'PluginDirectoryScanner::PluginDirectoryScanner()']]],
   ['pluginformatname',['pluginFormatName',['../classPluginDescription.html#a619a03af08e3904725e0255a28388a19',1,'PluginDescription']]],

@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae79d2c8f539037d2804f33c214620a36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorGraph_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorGraph.html#ae79d2c8f539037d2804f33c214620a36">getNodeForId</a> (<a class="el" href="structAudioProcessorGraph_1_1NodeID.html">NodeID</a>) const</td></tr>
 <tr class="memdesc:ae79d2c8f539037d2804f33c214620a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the graph for a node with the given ID number and returns it.  <a href="#ae79d2c8f539037d2804f33c214620a36">More...</a><br /></td></tr>
 <tr class="separator:ae79d2c8f539037d2804f33c214620a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50c30b557187d34c17fe4c2e7505b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorGraph_1_1Node.html#a0c93712b5ad6afb18469f1c230a100cd">Node::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorGraph.html#ac50c30b557187d34c17fe4c2e7505b0d">addNode</a> (<a class="el" href="classAudioProcessor.html">AudioProcessor</a> *newProcessor, <a class="el" href="structAudioProcessorGraph_1_1NodeID.html">NodeID</a> nodeId={})</td></tr>
-<tr class="memdesc:ac50c30b557187d34c17fe4c2e7505b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a node to the graph.  <a href="#ac50c30b557187d34c17fe4c2e7505b0d">More...</a><br /></td></tr>
-<tr class="separator:ac50c30b557187d34c17fe4c2e7505b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ec59179dcc641da9351eb8ae1aa49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorGraph_1_1Node.html#a0c93712b5ad6afb18469f1c230a100cd">Node::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorGraph.html#a4e0ec59179dcc641da9351eb8ae1aa49">addNode</a> (std::unique_ptr&lt; <a class="el" href="classAudioProcessor.html">AudioProcessor</a> &gt; newProcessor, <a class="el" href="structAudioProcessorGraph_1_1NodeID.html">NodeID</a> nodeId={})</td></tr>
+<tr class="memdesc:a4e0ec59179dcc641da9351eb8ae1aa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a node to the graph.  <a href="#a4e0ec59179dcc641da9351eb8ae1aa49">More...</a><br /></td></tr>
+<tr class="separator:a4e0ec59179dcc641da9351eb8ae1aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5f8fd4ff2feffea4503a6171af2e5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorGraph.html#acc5f8fd4ff2feffea4503a6171af2e5e">removeNode</a> (<a class="el" href="structAudioProcessorGraph_1_1NodeID.html">NodeID</a>)</td></tr>
 <tr class="memdesc:acc5f8fd4ff2feffea4503a6171af2e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a node within the graph which has the specified ID.  <a href="#acc5f8fd4ff2feffea4503a6171af2e5e">More...</a><br /></td></tr>
 <tr class="separator:acc5f8fd4ff2feffea4503a6171af2e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -532,7 +532,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A type of <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> which plays back a graph of other AudioProcessors. </p>
 <p>Use one of these objects if you want to wire-up a set of AudioProcessors and play back the result.</p>
-<p>Processors can be added to the graph as "nodes" using <a class="el" href="classAudioProcessorGraph.html#ac50c30b557187d34c17fe4c2e7505b0d" title="Adds a node to the graph. ">addNode()</a>, and once added, you can connect any of their input or output channels to other nodes using <a class="el" href="classAudioProcessorGraph.html#a2ae8de1a066fcf1850bd026763e978d1" title="Attempts to connect two specified channels of two nodes. ">addConnection()</a>.</p>
+<p>Processors can be added to the graph as "nodes" using <a class="el" href="classAudioProcessorGraph.html#a4e0ec59179dcc641da9351eb8ae1aa49" title="Adds a node to the graph. ">addNode()</a>, and once added, you can connect any of their input or output channels to other nodes using <a class="el" href="classAudioProcessorGraph.html#a2ae8de1a066fcf1850bd026763e978d1" title="Attempts to connect two specified channels of two nodes. ">addConnection()</a>.</p>
 <p>To play back a graph through an audio device, you might want to use an <a class="el" href="classAudioProcessorPlayer.html" title="An AudioIODeviceCallback object which streams audio through an AudioProcessor. ">AudioProcessorPlayer</a> object. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a90d6609d5eaf0c722974067e8aeb1a2d"></a>
@@ -728,8 +728,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac50c30b557187d34c17fe4c2e7505b0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50c30b557187d34c17fe4c2e7505b0d">&#9670;&nbsp;</a></span>addNode()</h2>
+<a id="a4e0ec59179dcc641da9351eb8ae1aa49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0ec59179dcc641da9351eb8ae1aa49">&#9670;&nbsp;</a></span>addNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,7 +737,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classAudioProcessorGraph_1_1Node.html#a0c93712b5ad6afb18469f1c230a100cd">Node::Ptr</a> AudioProcessorGraph::addNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classAudioProcessor.html">AudioProcessor</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classAudioProcessor.html">AudioProcessor</a> &gt;&#160;</td>
           <td class="paramname"><em>newProcessor</em>, </td>
         </tr>
         <tr>
@@ -1749,7 +1749,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 5 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 6 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
