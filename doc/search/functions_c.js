@@ -160,7 +160,7 @@ var searchData=
   ['mpechannelremapper',['MPEChannelRemapper',['../classMPEChannelRemapper.html#a2d2521ba25d69b76dd9a725435ea3d27',1,'MPEChannelRemapper']]],
   ['mpeinstrument',['MPEInstrument',['../classMPEInstrument.html#aed3c547de933e6e5c2a254bf4dea79f7',1,'MPEInstrument']]],
   ['mpenote',['MPENote',['../structMPENote.html#af1c2cff864c387bedf8ec5c06e5a8660',1,'MPENote::MPENote(int midiChannel, int initialNote, MPEValue velocity, MPEValue pitchbend, MPEValue pressure, MPEValue timbre, KeyState keyState=MPENote::keyDown) noexcept'],['../structMPENote.html#ae7a1417b7ed74b278e1ba3787e24aa59',1,'MPENote::MPENote() noexcept']]],
-  ['mpesynthesiser',['MPESynthesiser',['../classMPESynthesiser.html#a64e54c0339818c5df93c2cb531b249c8',1,'MPESynthesiser::MPESynthesiser()'],['../classMPESynthesiser.html#a23c16b0fed549ee37e887695976cebad',1,'MPESynthesiser::MPESynthesiser(MPEInstrument *instrument)']]],
+  ['mpesynthesiser',['MPESynthesiser',['../classMPESynthesiser.html#a64e54c0339818c5df93c2cb531b249c8',1,'MPESynthesiser::MPESynthesiser()'],['../classMPESynthesiser.html#a866411616d0eb2b825ffb83fd5014c87',1,'MPESynthesiser::MPESynthesiser(MPEInstrument *instrumentToUse)']]],
   ['mpesynthesiserbase',['MPESynthesiserBase',['../structMPESynthesiserBase.html#a74424e05c011bc07e8c626e6911b5fd6',1,'MPESynthesiserBase::MPESynthesiserBase()'],['../structMPESynthesiserBase.html#a15daf0b062b97aed7d4b1eb9fa0112ce',1,'MPESynthesiserBase::MPESynthesiserBase(MPEInstrument *instrument)']]],
   ['mpesynthesiservoice',['MPESynthesiserVoice',['../classMPESynthesiserVoice.html#ac249363fa7744946af9dbcc335479ffa',1,'MPESynthesiserVoice']]],
   ['mpevalue',['MPEValue',['../classMPEValue.html#a9e626e4f1ccf370a5fa0ff6d7c79bf01',1,'MPEValue']]],
