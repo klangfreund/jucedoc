@@ -6,4 +6,6 @@ digraph "VSTPluginFormat"
   Node0 [label="VSTPluginFormat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 [label="AudioPluginFormat",height=0.2,width=0.4,color="black",URL="$classAudioPluginFormat.html",tooltip="The base class for a type of plugin format, such as VST, AudioUnit, LADSPA, etc. "];
+  Node2 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MessageListener",height=0.2,width=0.4,color="black",URL="$classMessageListener.html",tooltip="MessageListener subclasses can post and receive Message objects. "];
 }
