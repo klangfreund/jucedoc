@@ -93,6 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5350c414bad6b97ae3b463a3401c0d6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#aa5350c414bad6b97ae3b463a3401c0d6">read</a> (void *destBuffer, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maxBytesToRead)=0</td></tr>
 <tr class="memdesc:aa5350c414bad6b97ae3b463a3401c0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads some data from the stream into a memory buffer.  <a href="#aa5350c414bad6b97ae3b463a3401c0d6">More...</a><br /></td></tr>
 <tr class="separator:aa5350c414bad6b97ae3b463a3401c0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31eaffddbccc5d1080a64bf6d9c56cd7"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a31eaffddbccc5d1080a64bf6d9c56cd7">read</a> (void *destBuffer, size_t maxBytesToRead)</td></tr>
+<tr class="separator:a31eaffddbccc5d1080a64bf6d9c56cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5944641712d84b6da2eee5d394326a"><td class="memItemLeft" align="right" valign="top">virtual char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a2e5944641712d84b6da2eee5d394326a">readByte</a> ()</td></tr>
 <tr class="memdesc:a2e5944641712d84b6da2eee5d394326a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a byte from the stream.  <a href="#a2e5944641712d84b6da2eee5d394326a">More...</a><br /></td></tr>
 <tr class="separator:a2e5944641712d84b6da2eee5d394326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +305,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa5350c414bad6b97ae3b463a3401c0d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5350c414bad6b97ae3b463a3401c0d6">&#9670;&nbsp;</a></span>read()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5350c414bad6b97ae3b463a3401c0d6">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,6 +352,34 @@ Protected Member Functions</h2></td></tr>
 <p>Implemented in <a class="el" href="classWebInputStream.html#a2735a5061e4ad8de89179b29aa8336c2">WebInputStream</a>, <a class="el" href="classGZIPDecompressorInputStream.html#a1b8deaae7ddf6028c7ddf5619c5489e6">GZIPDecompressorInputStream</a>, <a class="el" href="classMemoryInputStream.html#a86d8876c0c32633f42e232435e21ebaa">MemoryInputStream</a>, <a class="el" href="classBufferedInputStream.html#a5f210b5232af59aff2d01279174d9d9c">BufferedInputStream</a>, <a class="el" href="classFileInputStream.html#a1b78ed4e0bd123ef3996154ec6d89252">FileInputStream</a>, and <a class="el" href="classSubregionStream.html#ab1ccc36bcfae767109fa12fb03b4de31">SubregionStream</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classMemoryInputStream.html#aca7db79c18dbd0d425249aef22b22ba3">MemoryInputStream::getDataSize()</a>, and <a class="el" href="classFileInputStream.html#a45dc57c8101f565e505fed847723eb5d">FileInputStream::openedOk()</a>.</p>
+
+</div>
+</div>
+<a id="a31eaffddbccc5d1080a64bf6d9c56cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31eaffddbccc5d1080a64bf6d9c56cd7">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t InputStream::read </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>destBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxBytesToRead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -966,7 +996,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 12 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 13 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
