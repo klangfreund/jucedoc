@@ -154,7 +154,7 @@ var searchData=
   ['orchid',['orchid',['../classColours.html#a713c49555dcbf132b3f147f4a66e2cb4',1,'Colours']]],
   ['order',['order',['../classFlexItem.html#a65a0d2e16a904472eaa9ada3cdfcbf13',1,'FlexItem::order()'],['../classGridItem.html#a4c5e79aea3733b6ad55efbe986b3e32c',1,'GridItem::order()']]],
   ['orderid',['orderId',['../structInAppPurchases_1_1Purchase.html#abdca6faf95a9fcf61c473d1a3534e3dc',1,'InAppPurchases::Purchase']]],
-  ['orientation',['Orientation',['../classMidiKeyboardComponent.html#a6f6844672df93f8f631fa7e22cf0cdaf',1,'MidiKeyboardComponent::Orientation()'],['../classTabbedButtonBar.html#a63e34dd62f1b80ec99412c6115b39afb',1,'TabbedButtonBar::Orientation()'],['../classMouseEvent.html#aaa5e044371383eb9c9e0990d55e05807',1,'MouseEvent::orientation()']]],
+  ['orientation',['orientation',['../classMouseEvent.html#aaa5e044371383eb9c9e0990d55e05807',1,'MouseEvent::orientation()'],['../classMidiKeyboardComponent.html#a6f6844672df93f8f631fa7e22cf0cdaf',1,'MidiKeyboardComponent::Orientation()'],['../classTabbedButtonBar.html#a63e34dd62f1b80ec99412c6115b39afb',1,'TabbedButtonBar::Orientation()']]],
   ['originalcomponent',['originalComponent',['../classMouseEvent.html#abe6b50fe43981f161200d99e6d235953',1,'MouseEvent']]],
   ['originatingcomponent',['originatingComponent',['../structApplicationCommandTarget_1_1InvocationInfo.html#a829cd8dbab1753320b750727df99ba41',1,'ApplicationCommandTarget::InvocationInfo']]],
   ['originrelativetocomponent',['originRelativeToComponent',['../classDrawable.html#a6f6686d94ab6c007bc89e97667fb1ef4',1,'Drawable']]],

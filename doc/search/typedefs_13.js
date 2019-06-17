@@ -1,6 +1,7 @@
 var searchData=
 [
   ['value_5ftype',['value_type',['../structValueTree_1_1Iterator.html#ac54f6a5cdd9dcc2345eee2f8f9be086c',1,'ValueTree::Iterator::value_type()'],['../structdsp_1_1SIMDRegister.html#ac38979ca94af0b812cdf1f9206a8b19c',1,'dsp::SIMDRegister::value_type()']]],
+  ['valueremapfunction',['ValueRemapFunction',['../classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13',1,'NormalisableRange']]],
   ['vectortype',['VectorType',['../classDraggable3DOrientation.html#aa93e8f8ea935cf7d06c99c27e745c5e3',1,'Draggable3DOrientation']]],
   ['versionnumber',['VersionNumber',['../namespaceBlocksProtocol.html#ac29fc2bccf0e3f21100a3ec714fcff1e',1,'BlocksProtocol']]],
   ['vmasksimdtype',['vMaskSIMDType',['../structdsp_1_1SIMDRegister.html#a5caf8a1bffd0c9462d1fcc3ccb5ffe45',1,'dsp::SIMDRegister']]],

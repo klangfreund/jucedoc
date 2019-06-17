@@ -59,6 +59,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classNormalisableRange-members.html">List of all members</a>  </div>
@@ -70,6 +71,12 @@ $(function() {
 <p>Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range.  
  <a href="classNormalisableRange.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a413315ca8a7cb8b6d44e01f0d28bde13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a> = <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType rangeStart, ValueType rangeEnd, ValueType valueToRemap)&gt;</td></tr>
+<tr class="memdesc:a413315ca8a7cb8b6d44e01f0d28bde13"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function object which can remap a value in some way based on the start and end of a range.  <a href="#a413315ca8a7cb8b6d44e01f0d28bde13">More...</a><br /></td></tr>
+<tr class="separator:a413315ca8a7cb8b6d44e01f0d28bde13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ed009e5bc921c45de191dbf7125d3db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a8ed009e5bc921c45de191dbf7125d3db">NormalisableRange</a> ()=default</td></tr>
@@ -98,9 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb8f86d8f788a774d45d57adc3083d32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#aeb8f86d8f788a774d45d57adc3083d32">NormalisableRange</a> (<a class="el" href="classRange.html">Range</a>&lt; ValueType &gt; range, ValueType intervalValue) noexcept</td></tr>
 <tr class="memdesc:aeb8f86d8f788a774d45d57adc3083d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range and interval, but a dummy skew-factor.  <a href="#aeb8f86d8f788a774d45d57adc3083d32">More...</a><br /></td></tr>
 <tr class="separator:aeb8f86d8f788a774d45d57adc3083d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74564ebe17e4af5f5ec1032810f6d126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a74564ebe17e4af5f5ec1032810f6d126">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt; convertFrom0To1Func, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt; convertTo0To1Func, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt; snapToLegalValueFunc=nullptr) noexcept</td></tr>
-<tr class="memdesc:a74564ebe17e4af5f5ec1032810f6d126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range and an injective mapping function.  <a href="#a74564ebe17e4af5f5ec1032810f6d126">More...</a><br /></td></tr>
-<tr class="separator:a74564ebe17e4af5f5ec1032810f6d126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8156ee5d7f2650156263a6f743f6886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#ad8156ee5d7f2650156263a6f743f6886">NormalisableRange</a> (ValueType rangeStart, ValueType rangeEnd, <a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a> convertFrom0To1Func, <a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a> convertTo0To1Func, <a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a> snapToLegalValueFunc={}) noexcept</td></tr>
+<tr class="memdesc:ad8156ee5d7f2650156263a6f743f6886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classNormalisableRange.html" title="Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. ">NormalisableRange</a> with a given range and an injective mapping function.  <a href="#ad8156ee5d7f2650156263a6f743f6886">More...</a><br /></td></tr>
+<tr class="separator:ad8156ee5d7f2650156263a6f743f6886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec8267d9cdc54f0cf29e1af03df1c3a"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">convertTo0to1</a> (ValueType v) const noexcept</td></tr>
 <tr class="memdesc:a9ec8267d9cdc54f0cf29e1af03df1c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the properties of this mapping to convert a non-normalised value to its 0-&gt;1 representation.  <a href="#a9ec8267d9cdc54f0cf29e1af03df1c3a">More...</a><br /></td></tr>
 <tr class="separator:a9ec8267d9cdc54f0cf29e1af03df1c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +149,26 @@ class NormalisableRange&lt; ValueType &gt;</h3>
 <p>Represents a mapping between an arbitrary range of values and a normalised 0-&gt;1 range. </p>
 <p>The properties of the mapping also include an optional snapping interval and skew-factor.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classRange.html" title="A general-purpose range object, that simply represents any linear range with a start and end point...">Range</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a413315ca8a7cb8b6d44e01f0d28bde13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413315ca8a7cb8b6d44e01f0d28bde13">&#9670;&nbsp;</a></span>ValueRemapFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; ValueType &gt;::<a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a> =  <a class="el" href="classstd_1_1function.html">std::function</a>&lt;ValueType(ValueType rangeStart, ValueType rangeEnd, ValueType valueToRemap)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function object which can remap a value in some way based on the start and end of a range. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8ed009e5bc921c45de191dbf7125d3db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ed009e5bc921c45de191dbf7125d3db">&#9670;&nbsp;</a></span>NormalisableRange() <span class="overload">[1/9]</span></h2>
 
@@ -434,8 +460,8 @@ template&lt;typename ValueType&gt; </div>
 
 </div>
 </div>
-<a id="a74564ebe17e4af5f5ec1032810f6d126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74564ebe17e4af5f5ec1032810f6d126">&#9670;&nbsp;</a></span>NormalisableRange() <span class="overload">[9/9]</span></h2>
+<a id="ad8156ee5d7f2650156263a6f743f6886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8156ee5d7f2650156263a6f743f6886">&#9670;&nbsp;</a></span>NormalisableRange() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,20 +486,20 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType normalisedValue)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a>&#160;</td>
           <td class="paramname"><em>convertFrom0To1Func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType mappedValue)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a>&#160;</td>
           <td class="paramname"><em>convertTo0To1Func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; ValueType(ValueType currentRangeStart, ValueType currentRangeEnd, ValueType valueToSnap)&gt;&#160;</td>
-          <td class="paramname"><em>snapToLegalValueFunc</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classNormalisableRange.html#a413315ca8a7cb8b6d44e01f0d28bde13">ValueRemapFunction</a>&#160;</td>
+          <td class="paramname"><em>snapToLegalValueFunc</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -724,7 +750,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>The minimum value of the non-normalised range. </p>
 
-<p class="reference">Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a3e145ac655ab917fd5a991ab26d3bdd5">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#ad8156ee5d7f2650156263a6f743f6886">NormalisableRange&lt; float &gt;::NormalisableRange()</a>, <a class="el" href="classNormalisableRange.html#a3e145ac655ab917fd5a991ab26d3bdd5">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
 
 </div>
 </div>
@@ -744,7 +770,7 @@ template&lt;typename ValueType&gt; </div>
 
 <p>The maximum value of the non-normalised range. </p>
 
-<p class="reference">Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#a3e145ac655ab917fd5a991ab26d3bdd5">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classNormalisableRange.html#a1739b099b2ff086b3bd58e17f51fb3cd">NormalisableRange&lt; float &gt;::convertFrom0to1()</a>, <a class="el" href="classNormalisableRange.html#a9ec8267d9cdc54f0cf29e1af03df1c3a">NormalisableRange&lt; float &gt;::convertTo0to1()</a>, <a class="el" href="classAudioParameterInt.html#afb6595ddf398e97e31f85d570d4ef87f">AudioParameterInt::getRange()</a>, <a class="el" href="classNormalisableRange.html#aa043558ff4992e5b455effbf5d614eef">NormalisableRange&lt; float &gt;::getRange()</a>, <a class="el" href="classNormalisableRange.html#ad8156ee5d7f2650156263a6f743f6886">NormalisableRange&lt; float &gt;::NormalisableRange()</a>, <a class="el" href="classNormalisableRange.html#a3e145ac655ab917fd5a991ab26d3bdd5">NormalisableRange&lt; float &gt;::operator=()</a>, <a class="el" href="classNormalisableRange.html#a3a583db475e34e251edef004a4e3e3d6">NormalisableRange&lt; float &gt;::setSkewForCentre()</a>, and <a class="el" href="classNormalisableRange.html#ad4f9fa890e5439f951e97a53abb71add">NormalisableRange&lt; float &gt;::snapToLegalValue()</a>.</p>
 
 </div>
 </div>
@@ -819,7 +845,7 @@ template&lt;typename ValueType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 13 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 17 2019 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
