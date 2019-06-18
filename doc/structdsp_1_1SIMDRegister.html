@@ -284,7 +284,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d6738292d3b7bc4d2ce81bdcb88136a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute value of each element.  <a href="#a8d6738292d3b7bc4d2ce81bdcb88136a">More...</a><br /></td></tr>
 <tr class="separator:a8d6738292d3b7bc4d2ce81bdcb88136a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2615629aee806ef6b0990301544d2170"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1SIMDRegister.html#a2615629aee806ef6b0990301544d2170">isSIMDAligned</a> (const <a class="el" href="structdsp_1_1SIMDRegister.html#a53273a10f22b327f48f0226e72d72c35">ElementType</a> *ptr) noexcept</td></tr>
-<tr class="memdesc:a2615629aee806ef6b0990301544d2170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given pointer is suffeciently aligned for using SIMD operations.  <a href="#a2615629aee806ef6b0990301544d2170">More...</a><br /></td></tr>
+<tr class="memdesc:a2615629aee806ef6b0990301544d2170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given pointer is sufficiently aligned for using SIMD operations.  <a href="#a2615629aee806ef6b0990301544d2170">More...</a><br /></td></tr>
 <tr class="separator:a2615629aee806ef6b0990301544d2170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbb0895521661e5d56af999c08cc727"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdsp_1_1SIMDRegister.html#a53273a10f22b327f48f0226e72d72c35">ElementType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1SIMDRegister.html#aadbb0895521661e5d56af999c08cc727">getNextSIMDAlignedPtr</a> (<a class="el" href="structdsp_1_1SIMDRegister.html#a53273a10f22b327f48f0226e72d72c35">ElementType</a> *ptr) noexcept</td></tr>
 <tr class="memdesc:aadbb0895521661e5d56af999c08cc727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next position in memory where isSIMDAligned returns true.  <a href="#aadbb0895521661e5d56af999c08cc727">More...</a><br /></td></tr>
@@ -311,7 +311,7 @@ struct dsp::SIMDRegister&lt; Type &gt;</h3>
 <p>A wrapper around the platform's native SIMD register type. </p>
 <p>This class is only available on SIMD machines. Use JUCE_USE_SIMD to query if SIMD is avaialble for your system.</p>
 <p>SIMDRegister&lt;Type&gt; is a templated class representing the native vectorized version of FloatingType. <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> supports all numerical primitive types and std:complex&lt;float&gt; and std::complex&lt;double&gt; supports and most operations of the corresponding primitive type. Additionally, <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> can be accessed like an array to extract the individual elements.</p>
-<p>If you are using <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> as a pointer, then you must ensure that the memory is suffeciently aligned for SIMD vector operations. Failing to do so will result in crashes or very slow code. Use <a class="el" href="structdsp_1_1SIMDRegister.html#a2615629aee806ef6b0990301544d2170" title="Checks if the given pointer is suffeciently aligned for using SIMD operations. ">SIMDRegister::isSIMDAligned</a> to query if a pointer is suffeciently aligned for SIMD vector operations.</p>
+<p>If you are using <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> as a pointer, then you must ensure that the memory is sufficiently aligned for SIMD vector operations. Failing to do so will result in crashes or very slow code. Use <a class="el" href="structdsp_1_1SIMDRegister.html#a2615629aee806ef6b0990301544d2170" title="Checks if the given pointer is sufficiently aligned for using SIMD operations. ">SIMDRegister::isSIMDAligned</a> to query if a pointer is sufficiently aligned for SIMD vector operations.</p>
 <p>Note that using <a class="el" href="structdsp_1_1SIMDRegister.html" title="A wrapper around the platform&#39;s native SIMD register type. ">SIMDRegister</a> without enabling optimizations will result in code with very poor performance. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a53273a10f22b327f48f0226e72d72c35"></a>
@@ -2305,7 +2305,7 @@ template&lt;typename Type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the given pointer is suffeciently aligned for using SIMD operations. </p>
+<p>Checks if the given pointer is sufficiently aligned for using SIMD operations. </p>
 
 <p class="reference">Referenced by <a class="el" href="structdsp_1_1SIMDRegister.html#a421e73d350c016f412f1eb0bd35205ba">dsp::SIMDRegister&lt; Type &gt;::copyToRawArray()</a>, and <a class="el" href="structdsp_1_1SIMDRegister.html#a3ba0b5cab0724a8a2ef5ef9a5cd58907">dsp::SIMDRegister&lt; Type &gt;::fromRawArray()</a>.</p>
 
@@ -2421,7 +2421,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 17 2019 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 18 2019 20:00:28 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
