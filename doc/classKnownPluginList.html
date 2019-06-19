@@ -62,6 +62,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classKnownPluginList-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">KnownPluginList Class Reference<div class="ingroups"><a class="el" href="group__juce__audio__processors.html">juce_audio_processors</a> &raquo; <a class="el" href="group__juce__audio__processors-scanning.html">scanning</a></div></div>  </div>
@@ -155,12 +156,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55f576f2392346c191ec6735f68a1996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a55f576f2392346c191ec6735f68a1996">clearBlacklistedFiles</a> ()</td></tr>
 <tr class="memdesc:a55f576f2392346c191ec6735f68a1996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the blacklisted files.  <a href="#a55f576f2392346c191ec6735f68a1996">More...</a><br /></td></tr>
 <tr class="separator:a55f576f2392346c191ec6735f68a1996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22cac6f91d06af71edd794e4453daee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#ac22cac6f91d06af71edd794e4453daee">addToMenu</a> (<a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;menu, <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod, const <a class="el" href="classString.html">String</a> &amp;currentlyTickedPluginID={}) const</td></tr>
-<tr class="memdesc:ac22cac6f91d06af71edd794e4453daee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all the plugin types to a popup menu so that the user can select one.  <a href="#ac22cac6f91d06af71edd794e4453daee">More...</a><br /></td></tr>
-<tr class="separator:ac22cac6f91d06af71edd794e4453daee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8dd7d00b12f8556d2d5fd1615d414fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#aa8dd7d00b12f8556d2d5fd1615d414fb">getIndexChosenByMenu</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> menuResultCode) const</td></tr>
-<tr class="memdesc:aa8dd7d00b12f8556d2d5fd1615d414fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a menu item index that has been chosen into its index in this list.  <a href="#aa8dd7d00b12f8556d2d5fd1615d414fb">More...</a><br /></td></tr>
-<tr class="separator:aa8dd7d00b12f8556d2d5fd1615d414fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e5269bf0c0340917dfb30801c25f717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a7e5269bf0c0340917dfb30801c25f717">sort</a> (<a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> method, bool forwards)</td></tr>
 <tr class="memdesc:a7e5269bf0c0340917dfb30801c25f717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the list.  <a href="#a7e5269bf0c0340917dfb30801c25f717">More...</a><br /></td></tr>
 <tr class="separator:a7e5269bf0c0340917dfb30801c25f717"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,14 +165,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3914fddc79074744a1a7b7d7a0e8201f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a3914fddc79074744a1a7b7d7a0e8201f">recreateFromXml</a> (const <a class="el" href="classXmlElement.html">XmlElement</a> &amp;xml)</td></tr>
 <tr class="memdesc:a3914fddc79074744a1a7b7d7a0e8201f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates the state of this list from its stored XML format.  <a href="#a3914fddc79074744a1a7b7d7a0e8201f">More...</a><br /></td></tr>
 <tr class="separator:a3914fddc79074744a1a7b7d7a0e8201f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac335cc9c5f0ad7e2b952382ee6453cd0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#ac335cc9c5f0ad7e2b952382ee6453cd0">createTree</a> (const <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod) const</td></tr>
-<tr class="memdesc:ac335cc9c5f0ad7e2b952382ee6453cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="structKnownPluginList_1_1PluginTree.html" title="A structure that recursively holds a tree of plugins. ">PluginTree</a> object containing all the known plugins.  <a href="#ac335cc9c5f0ad7e2b952382ee6453cd0">More...</a><br /></td></tr>
-<tr class="separator:ac335cc9c5f0ad7e2b952382ee6453cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0182647415c5da712c87077b0f1ded05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a0182647415c5da712c87077b0f1ded05">setCustomScanner</a> (std::unique_ptr&lt; <a class="el" href="classKnownPluginList_1_1CustomScanner.html">CustomScanner</a> &gt; newScanner)</td></tr>
 <tr class="memdesc:a0182647415c5da712c87077b0f1ded05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supplies a custom scanner to be used in future scans.  <a href="#a0182647415c5da712c87077b0f1ded05">More...</a><br /></td></tr>
 <tr class="separator:a0182647415c5da712c87077b0f1ded05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05772eae7c6f8e70ffd8c0c1d552fa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#ab05772eae7c6f8e70ffd8c0c1d552fa7">JUCE_DEPRECATED_WITH_BODY</a> (<a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) noexcept, { return &amp;types.getReference(index);}) JUCE_DEPRECATED_WITH_BODY(const <a class="el" href="classPluginDescription.html">PluginDescription</a> *getType(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
 <tr class="separator:ab05772eae7c6f8e70ffd8c0c1d552fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d25c955855898e8366ad8625bea076c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#a1d25c955855898e8366ad8625bea076c">JUCE_DEPRECATED</a> (void <a class="el" href="classKnownPluginList.html#aa75500d7d522e4c91536ef1d1d937c4e">addToMenu</a>(<a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;menu, <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod, const <a class="el" href="classString.html">String</a> &amp;currentlyTickedPluginID={}) const)</td></tr>
+<tr class="separator:a1d25c955855898e8366ad8625bea076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcd8e545470e42e820ad30e610372e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#afbcd8e545470e42e820ad30e610372e4">JUCE_DEPRECATED</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> <a class="el" href="classKnownPluginList.html#abca30bbd3c093a74c26a78ab9c3d2406">getIndexChosenByMenu</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> menuResultCode) const)</td></tr>
+<tr class="separator:afbcd8e545470e42e820ad30e610372e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe40c429dda2dcd95678dce31c6bbd29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#afe40c429dda2dcd95678dce31c6bbd29">JUCE_DEPRECATED</a> (std::unique_ptr&lt; <a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a> &gt; <a class="el" href="classKnownPluginList.html#afd85a635590bcbd8d10a5c75d2b30981">createTree</a>(const <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod) const)</td></tr>
+<tr class="separator:afe40c429dda2dcd95678dce31c6bbd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classChangeBroadcaster"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classChangeBroadcaster')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classChangeBroadcaster.html">ChangeBroadcaster</a></td></tr>
 <tr class="memitem:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">ChangeBroadcaster</a> () noexcept</td></tr>
 <tr class="memdesc:a1c8ccfa186a47d58a05e7f1f1576c038 inherit pub_methods_classChangeBroadcaster"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classChangeBroadcaster.html" title="Holds a list of ChangeListeners, and sends messages to them when instructed. ">ChangeBroadcaster</a>.  <a href="classChangeBroadcaster.html#a1c8ccfa186a47d58a05e7f1f1576c038">More...</a><br /></td></tr>
@@ -203,6 +201,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChangeBroadcaster.html#a78f62ecd57a016f8ba7a6ce55454947d">dispatchPendingMessages</a> ()</td></tr>
 <tr class="memdesc:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a change message has been sent but not yet dispatched, this will call <a class="el" href="classChangeBroadcaster.html#a5d16cd01b9af4bacb1716530af17f77b" title="Sends a synchronous change message to all the registered listeners. ">sendSynchronousChangeMessage()</a> to make the callback immediately.  <a href="classChangeBroadcaster.html#a78f62ecd57a016f8ba7a6ce55454947d">More...</a><br /></td></tr>
 <tr class="separator:a78f62ecd57a016f8ba7a6ce55454947d inherit pub_methods_classChangeBroadcaster"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa75500d7d522e4c91536ef1d1d937c4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#aa75500d7d522e4c91536ef1d1d937c4e">addToMenu</a> (<a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;menu, const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;types, <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod, const <a class="el" href="classString.html">String</a> &amp;currentlyTickedPluginID={})</td></tr>
+<tr class="memdesc:aa75500d7d522e4c91536ef1d1d937c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the plug-in types to a popup menu so that the user can select one.  <a href="#aa75500d7d522e4c91536ef1d1d937c4e">More...</a><br /></td></tr>
+<tr class="separator:aa75500d7d522e4c91536ef1d1d937c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca30bbd3c093a74c26a78ab9c3d2406"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#abca30bbd3c093a74c26a78ab9c3d2406">getIndexChosenByMenu</a> (const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;types, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> menuResultCode)</td></tr>
+<tr class="memdesc:abca30bbd3c093a74c26a78ab9c3d2406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a menu item index that has been chosen into its index in the list.  <a href="#abca30bbd3c093a74c26a78ab9c3d2406">More...</a><br /></td></tr>
+<tr class="separator:abca30bbd3c093a74c26a78ab9c3d2406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd85a635590bcbd8d10a5c75d2b30981"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownPluginList.html#afd85a635590bcbd8d10a5c75d2b30981">createTree</a> (const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;types, <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod)</td></tr>
+<tr class="memdesc:afd85a635590bcbd8d10a5c75d2b30981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="structKnownPluginList_1_1PluginTree.html" title="A structure that recursively holds a tree of plugins. ">PluginTree</a> object representing the list of plug-ins.  <a href="#afd85a635590bcbd8d10a5c75d2b30981">More...</a><br /></td></tr>
+<tr class="separator:afd85a635590bcbd8d10a5c75d2b30981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages a list of plugin types. </p>
@@ -636,17 +646,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac22cac6f91d06af71edd794e4453daee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac22cac6f91d06af71edd794e4453daee">&#9670;&nbsp;</a></span>addToMenu()</h2>
+<a id="aa75500d7d522e4c91536ef1d1d937c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75500d7d522e4c91536ef1d1d937c4e">&#9670;&nbsp;</a></span>addToMenu()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void KnownPluginList::addToMenu </td>
+          <td class="memname">static void KnownPluginList::addToMenu </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;&#160;</td>
           <td class="paramname"><em>menu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>types</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -663,35 +682,58 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Adds all the plugin types to a popup menu so that the user can select one. </p>
+<p>Adds the plug-in types to a popup menu so that the user can select one. </p>
 <p>Depending on the sort method, it may add sub-menus for categories, manufacturers, etc.</p>
-<p>Use <a class="el" href="classKnownPluginList.html#aa8dd7d00b12f8556d2d5fd1615d414fb" title="Converts a menu item index that has been chosen into its index in this list. ">getIndexChosenByMenu()</a> to find out the type that was chosen. </p>
+<p>Use <a class="el" href="classKnownPluginList.html#abca30bbd3c093a74c26a78ab9c3d2406" title="Converts a menu item index that has been chosen into its index in the list. ">getIndexChosenByMenu()</a> to find out the type that was chosen. </p>
 
 </div>
 </div>
-<a id="aa8dd7d00b12f8556d2d5fd1615d414fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8dd7d00b12f8556d2d5fd1615d414fb">&#9670;&nbsp;</a></span>getIndexChosenByMenu()</h2>
+<a id="abca30bbd3c093a74c26a78ab9c3d2406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca30bbd3c093a74c26a78ab9c3d2406">&#9670;&nbsp;</a></span>getIndexChosenByMenu()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> KnownPluginList::getIndexChosenByMenu </td>
+          <td class="memname">static <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> KnownPluginList::getIndexChosenByMenu </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>types</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td>
-          <td class="paramname"><em>menuResultCode</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>menuResultCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Converts a menu item index that has been chosen into its index in this list. </p>
-<p>Returns -1 if it's not an ID that was used. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKnownPluginList.html#ac22cac6f91d06af71edd794e4453daee" title="Adds all the plugin types to a popup menu so that the user can select one. ">addToMenu</a> </dd></dl>
+<p>Converts a menu item index that has been chosen into its index in the list. </p>
+<p>Returns -1 if it's not an ID that was used. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classKnownPluginList.html#aa75500d7d522e4c91536ef1d1d937c4e" title="Adds the plug-in types to a popup menu so that the user can select one. ">addToMenu</a> </dd></dl>
 
 </div>
 </div>
@@ -764,23 +806,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac335cc9c5f0ad7e2b952382ee6453cd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac335cc9c5f0ad7e2b952382ee6453cd0">&#9670;&nbsp;</a></span>createTree()</h2>
+<a id="afd85a635590bcbd8d10a5c75d2b30981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd85a635590bcbd8d10a5c75d2b30981">&#9670;&nbsp;</a></span>createTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a>&gt; KnownPluginList::createTree </td>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a>&gt; KnownPluginList::createTree </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a>&#160;</td>
-          <td class="paramname"><em>sortMethod</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>types</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a>&#160;</td>
+          <td class="paramname"><em>sortMethod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="structKnownPluginList_1_1PluginTree.html" title="A structure that recursively holds a tree of plugins. ">PluginTree</a> object containing all the known plugins. </p>
+<p>Creates a <a class="el" href="structKnownPluginList_1_1PluginTree.html" title="A structure that recursively holds a tree of plugins. ">PluginTree</a> object representing the list of plug-ins. </p>
 
 </div>
 </div>
@@ -841,13 +901,67 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1d25c955855898e8366ad8625bea076c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d25c955855898e8366ad8625bea076c">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KnownPluginList::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">void <a class="el" href="classKnownPluginList.html#aa75500d7d522e4c91536ef1d1d937c4e">addToMenu</a>(<a class="el" href="classPopupMenu.html">PopupMenu</a> &amp;menu, <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod, const <a class="el" href="classString.html">String</a> &amp;currentlyTickedPluginID={})&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbcd8e545470e42e820ad30e610372e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcd8e545470e42e820ad30e610372e4">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KnownPluginList::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> <a class="el" href="classKnownPluginList.html#abca30bbd3c093a74c26a78ab9c3d2406">getIndexChosenByMenu</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> menuResultCode)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe40c429dda2dcd95678dce31c6bbd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe40c429dda2dcd95678dce31c6bbd29">&#9670;&nbsp;</a></span>JUCE_DEPRECATED() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KnownPluginList::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structKnownPluginList_1_1PluginTree.html">PluginTree</a> &gt; <a class="el" href="classKnownPluginList.html#afd85a635590bcbd8d10a5c75d2b30981">createTree</a>(const <a class="el" href="classKnownPluginList.html#a6beabfccc86796527f663f30f3514098">SortMethod</a> sortMethod)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__KnownPluginList_8h.html">juce_KnownPluginList.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 18 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 19 2019 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
