@@ -95,7 +95,7 @@ var searchData=
   ['withstart',['withStart',['../classRange.html#a3945fc25bcc062c57b36af8fa8f44771',1,'Range']]],
   ['withstartandlength',['withStartAndLength',['../classRange.html#adf34bee3fb884edeea097dc4ca1f5362',1,'Range']]],
   ['withstyle',['withStyle',['../classFont.html#a50a29ec2e3799247cf84806e969b49b5',1,'Font']]],
-  ['withtargetcomponent',['withTargetComponent',['../classPopupMenu_1_1Options.html#a8ff3f9ff03ba6a13c48f409f5ea9248a',1,'PopupMenu::Options']]],
+  ['withtargetcomponent',['withTargetComponent',['../classPopupMenu_1_1Options.html#a8ff3f9ff03ba6a13c48f409f5ea9248a',1,'PopupMenu::Options::withTargetComponent(Component *targetComponent) const noexcept'],['../classPopupMenu_1_1Options.html#afd546d18f05ec72fe9cabef0d1577297',1,'PopupMenu::Options::withTargetComponent(Component &amp;targetComponent) const noexcept']]],
   ['withtargetscreenarea',['withTargetScreenArea',['../classPopupMenu_1_1Options.html#aa68e37b3f02e0f1fc26d886f0a5bb38b',1,'PopupMenu::Options']]],
   ['withtimestamp',['withTimeStamp',['../classMidiMessage.html#a941cf093e7f8989c2f7c3ec7ed8434bb',1,'MidiMessage']]],
   ['withtop',['withTop',['../classRectangle.html#a83adb415b76c84c38d40d4c0c59199b4',1,'Rectangle']]],

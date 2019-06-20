@@ -530,7 +530,7 @@ var searchData=
   ['iswithin',['isWithin',['../group__juce__core-maths.html#ga4b5f32cb048248ad43eab875e2bc7cdb',1,'juce_MathsFunctions.h']]],
   ['iszero',['isZero',['../classBigInteger.html#ade36d99bf6219959eb9266c30c72c2e5',1,'BigInteger']]],
   ['italicised',['italicised',['../classFont.html#a9b4f903e95112cdc7bbed0d3bbad170d',1,'Font']]],
-  ['item',['Item',['../structPopupMenu_1_1Item.html#a1f43057bf43d42e299974fe566e46563',1,'PopupMenu::Item::Item()'],['../structPopupMenu_1_1Item.html#a3dc1d9cc006d7bd14f5b3ec068652198',1,'PopupMenu::Item::Item(const Item &amp;)'],['../structPopupMenu_1_1Item.html#a0944cecb73d58f1ec341402632a59672',1,'PopupMenu::Item::Item(Item &amp;&amp;)']]],
+  ['item',['Item',['../structPopupMenu_1_1Item.html#a1f43057bf43d42e299974fe566e46563',1,'PopupMenu::Item::Item()'],['../structPopupMenu_1_1Item.html#ac8f823a6150c34597f650116fde5fe92',1,'PopupMenu::Item::Item(String text)'],['../structPopupMenu_1_1Item.html#a3dc1d9cc006d7bd14f5b3ec068652198',1,'PopupMenu::Item::Item(const Item &amp;)'],['../structPopupMenu_1_1Item.html#a0944cecb73d58f1ec341402632a59672',1,'PopupMenu::Item::Item(Item &amp;&amp;)']]],
   ['itemclicked',['itemClicked',['../classTreeViewItem.html#a10b0ad85c76825c94356da8b24f856fd',1,'TreeViewItem']]],
   ['itemdeselected',['itemDeselected',['../classSelectedItemSet.html#aba708cd0efbae505c9be92c5179c2007',1,'SelectedItemSet']]],
   ['itemdoubleclicked',['itemDoubleClicked',['../classTreeViewItem.html#aa17f8145bdbe1dec8aeeed09ffc6bf20',1,'TreeViewItem']]],
