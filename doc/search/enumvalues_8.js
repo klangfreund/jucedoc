@@ -8,6 +8,7 @@ var searchData=
   ['imageabovetextlabel',['ImageAboveTextLabel',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612ea062ae670bdd4925a0a708dbaca8ebc2b',1,'DrawableButton']]],
   ['imagefitted',['ImageFitted',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612ea79a05e8e03a639da1e34dd2bc76a4a26',1,'DrawableButton']]],
   ['imageonbuttonbackground',['ImageOnButtonBackground',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612eaff968e270892fae0fee459da811d6a03',1,'DrawableButton']]],
+  ['imageonbuttonbackgroundoriginalsize',['ImageOnButtonBackgroundOriginalSize',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612ea847b74ce1c5aec3fcb3fb572413ce525',1,'DrawableButton']]],
   ['imageraw',['ImageRaw',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612eadeca41061a457668e1b73bcea58f437f',1,'DrawableButton']]],
   ['imagestretched',['ImageStretched',['../classDrawableButton.html#a7da653337d7329405ef9865cc35f612eab4f49e1f7275ae00388b7b18e0648976',1,'DrawableButton']]],
   ['incdec',['incDec',['../group__LittleFootFunctions.html#ggaee3ea37f4f505980157cf93a84687bcba5781841e760ece6b6df8082e5d52d59a',1,'juce_LittleFootFunctions.dox']]],

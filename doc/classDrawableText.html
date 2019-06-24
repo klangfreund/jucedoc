@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adaaf0906b78f3e723ae799b2296bfe58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc661942508f36a39d64d9bd595c53e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPath.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableText.html#acc661942508f36a39d64d9bd595c53e8">getOutlineAsPath</a> () const override</td></tr>
 <tr class="separator:acc661942508f36a39d64d9bd595c53e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7a0ff2937477c0ca73e70d14355737"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawableText.html#a4c7a0ff2937477c0ca73e70d14355737">replaceColour</a> (<a class="el" href="classColour.html">Colour</a> originalColour, <a class="el" href="classColour.html">Colour</a> replacementColour) override</td></tr>
+<tr class="separator:a4c7a0ff2937477c0ca73e70d14355737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDrawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDrawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDrawable.html">Drawable</a></td></tr>
 <tr class="memitem:a3bda0bd41d0b7fb313db9e6e37585942 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a3bda0bd41d0b7fb313db9e6e37585942">~Drawable</a> () override</td></tr>
 <tr class="memdesc:a3bda0bd41d0b7fb313db9e6e37585942 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classDrawable.html#a3bda0bd41d0b7fb313db9e6e37585942">More...</a><br /></td></tr>
@@ -156,9 +158,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#af161255ebaddc5f8c92326db7a444e13">setClipPath</a> (std::unique_ptr&lt; <a class="el" href="classDrawable.html">Drawable</a> &gt; <a class="el" href="classDrawable.html#a075bd445aa34244d2239f21a54faf487">drawableClipPath</a>)</td></tr>
 <tr class="memdesc:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a the clipping region of this drawable using another drawable.  <a href="classDrawable.html#af161255ebaddc5f8c92326db7a444e13">More...</a><br /></td></tr>
 <tr class="separator:af161255ebaddc5f8c92326db7a444e13 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">replaceColour</a> (<a class="el" href="classColour.html">Colour</a> originalColour, <a class="el" href="classColour.html">Colour</a> replacementColour)</td></tr>
-<tr class="memdesc:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively replaces a colour that might be used for filling or stroking.  <a href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">More...</a><br /></td></tr>
-<tr class="separator:ac07d49a56bad30d130c7c1cd8f7a7fe2 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classComponent.html">Component</a></td></tr>
 <tr class="memitem:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a5ee1827aaa22388d22da5200b70eeeee">Component</a> () noexcept</td></tr>
 <tr class="memdesc:a5ee1827aaa22388d22da5200b70eeeee inherit pub_methods_classComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a component.  <a href="classComponent.html#a5ee1827aaa22388d22da5200b70eeeee">More...</a><br /></td></tr>
@@ -1179,7 +1178,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDrawable.html#a9c963e2a7bc33d9aa14bd59dcb132951">Drawable::createCopy()</a>, <a class="el" href="classDrawable.html#a96e6f740a809b93b9ecf5f6e0dd3e421">Drawable::getDrawableBounds()</a>, <a class="el" href="classDrawable.html#ace2082bc995b8e035079b71b32c1460f">Drawable::getOutlineAsPath()</a>, and <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182">Component::paint()</a>.</p>
+<p class="reference">References <a class="el" href="classDrawable.html#a9c963e2a7bc33d9aa14bd59dcb132951">Drawable::createCopy()</a>, <a class="el" href="classDrawable.html#a96e6f740a809b93b9ecf5f6e0dd3e421">Drawable::getDrawableBounds()</a>, <a class="el" href="classDrawable.html#ace2082bc995b8e035079b71b32c1460f">Drawable::getOutlineAsPath()</a>, <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182">Component::paint()</a>, and <a class="el" href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">Drawable::replaceColour()</a>.</p>
 
 </div>
 </div>
@@ -1310,13 +1309,51 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4c7a0ff2937477c0ca73e70d14355737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7a0ff2937477c0ca73e70d14355737">&#9670;&nbsp;</a></span>replaceColour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DrawableText::replaceColour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>originalColour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classColour.html">Colour</a>&#160;</td>
+          <td class="paramname"><em>replacementColour</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classDrawable.html#ac07d49a56bad30d130c7c1cd8f7a7fe2">Drawable</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__DrawableText_8h.html">juce_DrawableText.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 21 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 24 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
