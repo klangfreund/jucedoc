@@ -519,7 +519,6 @@ var searchData=
   ['juce_5frectangle_2eh',['juce_Rectangle.h',['../juce__Rectangle_8h.html',1,'']]],
   ['juce_5frectanglelist_2eh',['juce_RectangleList.h',['../juce__RectangleList_8h.html',1,'']]],
   ['juce_5frectangleplacement_2eh',['juce_RectanglePlacement.h',['../juce__RectanglePlacement_8h.html',1,'']]],
-  ['juce_5fref_5fqualifier',['JUCE_REF_QUALIFIER',['../group__juce__core-system.html#gab0b532f6af617f276a85934c9b63ad1a',1,'juce_CompilerSupport.h']]],
   ['juce_5freferencecountedarray_2eh',['juce_ReferenceCountedArray.h',['../juce__ReferenceCountedArray_8h.html',1,'']]],
   ['juce_5freferencecountedobject_2eh',['juce_ReferenceCountedObject.h',['../juce__ReferenceCountedObject_8h.html',1,'']]],
   ['juce_5frelativecoordinate_2eh',['juce_RelativeCoordinate.h',['../juce__RelativeCoordinate_8h.html',1,'']]],
