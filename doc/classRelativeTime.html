@@ -105,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2724e1432c4ce48dfcdafde08f7b49c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelativeTime.html#a2724e1432c4ce48dfcdafde08f7b49c8">getDescription</a> (const <a class="el" href="classString.html">String</a> &amp;returnValueForZeroTime=&quot;0&quot;) const</td></tr>
 <tr class="memdesc:a2724e1432c4ce48dfcdafde08f7b49c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a readable textual description of the time.  <a href="#a2724e1432c4ce48dfcdafde08f7b49c8">More...</a><br /></td></tr>
 <tr class="separator:a2724e1432c4ce48dfcdafde08f7b49c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfee7fd5c596f0bcb7c769e2e5e8d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelativeTime.html#a8bfee7fd5c596f0bcb7c769e2e5e8d31">getApproximateDescription</a> () const</td></tr>
+<tr class="memdesc:a8bfee7fd5c596f0bcb7c769e2e5e8d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns a string that roughly describes how long ago this time was, which can be handy for showing ages of files, etc.  <a href="#a8bfee7fd5c596f0bcb7c769e2e5e8d31">More...</a><br /></td></tr>
+<tr class="separator:a8bfee7fd5c596f0bcb7c769e2e5e8d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a734361a0f029c60cf11401ade135847f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRelativeTime.html">RelativeTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelativeTime.html#a734361a0f029c60cf11401ade135847f">operator+=</a> (<a class="el" href="classRelativeTime.html">RelativeTime</a> timeToAdd) noexcept</td></tr>
 <tr class="memdesc:a734361a0f029c60cf11401ade135847f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds another <a class="el" href="classRelativeTime.html" title="A relative measure of time. ">RelativeTime</a> to this one.  <a href="#a734361a0f029c60cf11401ade135847f">More...</a><br /></td></tr>
 <tr class="separator:a734361a0f029c60cf11401ade135847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -666,6 +669,26 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8bfee7fd5c596f0bcb7c769e2e5e8d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfee7fd5c596f0bcb7c769e2e5e8d31">&#9670;&nbsp;</a></span>getApproximateDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classString.html">String</a> RelativeTime::getApproximateDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This returns a string that roughly describes how long ago this time was, which can be handy for showing ages of files, etc. </p>
+<p>This will only attempt to be accurate to within the nearest order of magnitude so returns strings such as "5 years", "2 weeks", "&lt; 1 minute", "&lt; 1 sec" etc. </p>
+
+</div>
+</div>
 <a id="a734361a0f029c60cf11401ade135847f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a734361a0f029c60cf11401ade135847f">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
 
@@ -784,7 +807,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 15 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 16 2019 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
