@@ -92,6 +92,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9680cc54347b995fc441c719ed728c9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#a9680cc54347b995fc441c719ed728c9f">getName</a> () const override</td></tr>
 <tr class="memdesc:a9680cc54347b995fc441c719ed728c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format name.  <a href="#a9680cc54347b995fc441c719ed728c9f">More...</a><br /></td></tr>
 <tr class="separator:a9680cc54347b995fc441c719ed728c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342f0d02f21458198ef3e60f8f7356a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#a342f0d02f21458198ef3e60f8f7356a1">canScanForPlugins</a> () const override</td></tr>
+<tr class="memdesc:a342f0d02f21458198ef3e60f8f7356a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this format needs to run a scan to find its list of plugins.  <a href="#a342f0d02f21458198ef3e60f8f7356a1">More...</a><br /></td></tr>
+<tr class="separator:a342f0d02f21458198ef3e60f8f7356a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc0b22928d42a10101b305e9d0ae38e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#a7dc0b22928d42a10101b305e9d0ae38e">isTrivialToScan</a> () const override</td></tr>
+<tr class="memdesc:a7dc0b22928d42a10101b305e9d0ae38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if this format is both safe and quick to scan - i.e.  <a href="#a7dc0b22928d42a10101b305e9d0ae38e">More...</a><br /></td></tr>
+<tr class="separator:a7dc0b22928d42a10101b305e9d0ae38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c88835c362d055ec0f0694ebb2a955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#af6c88835c362d055ec0f0694ebb2a955">findAllTypesForFile</a> (<a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;, const <a class="el" href="classString.html">String</a> &amp;fileOrIdentifier) override</td></tr>
 <tr class="memdesc:af6c88835c362d055ec0f0694ebb2a955"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tries to create descriptions for all the plugin types available in a binary module file.  <a href="#af6c88835c362d055ec0f0694ebb2a955">More...</a><br /></td></tr>
 <tr class="separator:af6c88835c362d055ec0f0694ebb2a955"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,9 +119,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4ee56ecef034f8faff1f01f8b6925e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFileSearchPath.html">FileSearchPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#ae4ee56ecef034f8faff1f01f8b6925e2">getDefaultLocationsToSearch</a> () override</td></tr>
 <tr class="memdesc:ae4ee56ecef034f8faff1f01f8b6925e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the typical places to look for this kind of plugin.  <a href="#ae4ee56ecef034f8faff1f01f8b6925e2">More...</a><br /></td></tr>
 <tr class="separator:ae4ee56ecef034f8faff1f01f8b6925e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a342f0d02f21458198ef3e60f8f7356a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#a342f0d02f21458198ef3e60f8f7356a1">canScanForPlugins</a> () const override</td></tr>
-<tr class="memdesc:a342f0d02f21458198ef3e60f8f7356a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this format needs to run a scan to find its list of plugins.  <a href="#a342f0d02f21458198ef3e60f8f7356a1">More...</a><br /></td></tr>
-<tr class="separator:a342f0d02f21458198ef3e60f8f7356a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6277efa1639b851939014d07ffcc84d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVSTPluginFormat.html#a6277efa1639b851939014d07ffcc84d4">aboutToScanVSTShellPlugin</a> (const <a class="el" href="classPluginDescription.html">PluginDescription</a> &amp;)</td></tr>
 <tr class="memdesc:a6277efa1639b851939014d07ffcc84d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be overridden to receive a callback when each member of a shell plugin is about to be tested during a call to <a class="el" href="classVSTPluginFormat.html#af6c88835c362d055ec0f0694ebb2a955" title="This tries to create descriptions for all the plugin types available in a binary module file...">findAllTypesForFile()</a>.  <a href="#a6277efa1639b851939014d07ffcc84d4">More...</a><br /></td></tr>
 <tr class="separator:a6277efa1639b851939014d07ffcc84d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -633,6 +636,67 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a342f0d02f21458198ef3e60f8f7356a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342f0d02f21458198ef3e60f8f7356a1">&#9670;&nbsp;</a></span>canScanForPlugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VSTPluginFormat::canScanForPlugins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if this format needs to run a scan to find its list of plugins. </p>
+
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a9bded73bfc877952f9f092ae13ae8816">AudioPluginFormat</a>.</p>
+
+</div>
+</div>
+<a id="a7dc0b22928d42a10101b305e9d0ae38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc0b22928d42a10101b305e9d0ae38e">&#9670;&nbsp;</a></span>isTrivialToScan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VSTPluginFormat::isTrivialToScan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Should return true if this format is both safe and quick to scan - i.e. </p>
+<p>if a file can be scanned within a few milliseconds on a background thread, without actually needing to load an executable. </p>
+
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a83f5f3180b66510c6e2bebd425cb82ec">AudioPluginFormat</a>.</p>
+
+<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
+
+</div>
+</div>
 <a id="af6c88835c362d055ec0f0694ebb2a955"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6c88835c362d055ec0f0694ebb2a955">&#9670;&nbsp;</a></span>findAllTypesForFile()</h2>
 
@@ -882,37 +946,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a342f0d02f21458198ef3e60f8f7356a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a342f0d02f21458198ef3e60f8f7356a1">&#9670;&nbsp;</a></span>canScanForPlugins()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VSTPluginFormat::canScanForPlugins </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if this format needs to run a scan to find its list of plugins. </p>
-
-<p>Implements <a class="el" href="classAudioPluginFormat.html#a9bded73bfc877952f9f092ae13ae8816">AudioPluginFormat</a>.</p>
-
-<p class="reference">References <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>.</p>
-
-</div>
-</div>
 <a id="a6277efa1639b851939014d07ffcc84d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6277efa1639b851939014d07ffcc84d4">&#9670;&nbsp;</a></span>aboutToScanVSTShellPlugin()</h2>
 
@@ -948,7 +981,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

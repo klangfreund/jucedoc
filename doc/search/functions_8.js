@@ -486,6 +486,7 @@ var searchData=
   ['istransformed',['isTransformed',['../classComponent.html#a50a4de1bca6c487a8fa899f1b721e1d5',1,'Component']]],
   ['istransparent',['isTransparent',['../classColour.html#a30c68aad96d0a126d68b410089ae9993',1,'Colour']]],
   ['istriggeredautomatically',['isTriggeredAutomatically',['../classPopupMenu_1_1CustomComponent.html#a302fa7c66c7e5c1d83842815030171d9',1,'PopupMenu::CustomComponent']]],
+  ['istrivialtoscan',['isTrivialToScan',['../classAudioPluginFormat.html#a83f5f3180b66510c6e2bebd425cb82ec',1,'AudioPluginFormat::isTrivialToScan()'],['../classAudioUnitPluginFormat.html#ae10425a4392bd5116b145d29aa11916b',1,'AudioUnitPluginFormat::isTrivialToScan()'],['../classLADSPAPluginFormat.html#a2168a5f294a34c33e85f91dff3da736e',1,'LADSPAPluginFormat::isTrivialToScan()'],['../classVST3PluginFormat.html#ae21e46f023fcbecadee02364b8449954',1,'VST3PluginFormat::isTrivialToScan()'],['../classVSTPluginFormat.html#a7dc0b22928d42a10101b305e9d0ae38e',1,'VSTPluginFormat::isTrivialToScan()']]],
   ['istwovalue',['isTwoValue',['../classSlider.html#ac51969ba36eb392cd70e59cfa7fec2b4',1,'Slider']]],
   ['isunboundedmousemovementenabled',['isUnboundedMouseMovementEnabled',['../classMouseInputSource.html#ad6ca0f4d4cab9f058a6341b4b6a57869',1,'MouseInputSource']]],
   ['isundefined',['isUndefined',['../classvar.html#a58414b1c59b412ccb4be79f41595d8be',1,'var']]],

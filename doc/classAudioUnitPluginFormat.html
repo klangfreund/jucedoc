@@ -84,6 +84,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbe165200210d269d2c0cbc54fd3ae5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#abbe165200210d269d2c0cbc54fd3ae5c">getName</a> () const override</td></tr>
 <tr class="memdesc:abbe165200210d269d2c0cbc54fd3ae5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format name.  <a href="#abbe165200210d269d2c0cbc54fd3ae5c">More...</a><br /></td></tr>
 <tr class="separator:abbe165200210d269d2c0cbc54fd3ae5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#a7c8cef8c0cfb9743d5cb0a92a93fc35a">canScanForPlugins</a> () const override</td></tr>
+<tr class="memdesc:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this format needs to run a scan to find its list of plugins.  <a href="#a7c8cef8c0cfb9743d5cb0a92a93fc35a">More...</a><br /></td></tr>
+<tr class="separator:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10425a4392bd5116b145d29aa11916b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#ae10425a4392bd5116b145d29aa11916b">isTrivialToScan</a> () const override</td></tr>
+<tr class="memdesc:ae10425a4392bd5116b145d29aa11916b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if this format is both safe and quick to scan - i.e.  <a href="#ae10425a4392bd5116b145d29aa11916b">More...</a><br /></td></tr>
+<tr class="separator:ae10425a4392bd5116b145d29aa11916b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1e00a1c24ebf0f8ff5326f810f5e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#a3d1e00a1c24ebf0f8ff5326f810f5e4a">findAllTypesForFile</a> (<a class="el" href="classOwnedArray.html">OwnedArray</a>&lt; <a class="el" href="classPluginDescription.html">PluginDescription</a> &gt; &amp;, const <a class="el" href="classString.html">String</a> &amp;fileOrIdentifier) override</td></tr>
 <tr class="memdesc:a3d1e00a1c24ebf0f8ff5326f810f5e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tries to create descriptions for all the plugin types available in a binary module file.  <a href="#a3d1e00a1c24ebf0f8ff5326f810f5e4a">More...</a><br /></td></tr>
 <tr class="separator:a3d1e00a1c24ebf0f8ff5326f810f5e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,9 +111,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8d7bea4da5696d28afbf63a6b4afd13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFileSearchPath.html">FileSearchPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#ad8d7bea4da5696d28afbf63a6b4afd13">getDefaultLocationsToSearch</a> () override</td></tr>
 <tr class="memdesc:ad8d7bea4da5696d28afbf63a6b4afd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the typical places to look for this kind of plugin.  <a href="#ad8d7bea4da5696d28afbf63a6b4afd13">More...</a><br /></td></tr>
 <tr class="separator:ad8d7bea4da5696d28afbf63a6b4afd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioUnitPluginFormat.html#a7c8cef8c0cfb9743d5cb0a92a93fc35a">canScanForPlugins</a> () const override</td></tr>
-<tr class="memdesc:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this format needs to run a scan to find its list of plugins.  <a href="#a7c8cef8c0cfb9743d5cb0a92a93fc35a">More...</a><br /></td></tr>
-<tr class="separator:a7c8cef8c0cfb9743d5cb0a92a93fc35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAudioPluginFormat"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAudioPluginFormat')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAudioPluginFormat.html">AudioPluginFormat</a></td></tr>
 <tr class="memitem:ac7be387a776294c2a112dff722f42e5f inherit pub_methods_classAudioPluginFormat"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioPluginFormat.html#ac7be387a776294c2a112dff722f42e5f">~AudioPluginFormat</a> () override</td></tr>
 <tr class="memdesc:ac7be387a776294c2a112dff722f42e5f inherit pub_methods_classAudioPluginFormat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classAudioPluginFormat.html#ac7be387a776294c2a112dff722f42e5f">More...</a><br /></td></tr>
@@ -206,7 +209,66 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAudioPluginFormat.html#aad966eb47be8b72b34f8f317ea89b4a2">AudioPluginFormat</a>.</p>
 
-<p class="reference">References <a class="el" href="classAudioPluginFormat.html#a895b91a86d223f3caeba207dba298d2f">AudioPluginFormat::doesPluginStillExist()</a>, <a class="el" href="classAudioPluginFormat.html#a89c2413dae86f4b9ea8fb29ed205edc5">AudioPluginFormat::fileMightContainThisPluginType()</a>, <a class="el" href="classAudioPluginFormat.html#a9d23e71b2c2429cad9775a14e021abd6">AudioPluginFormat::findAllTypesForFile()</a>, <a class="el" href="classAudioPluginFormat.html#aa7d194ad3abdad8da5e37d2557579430">AudioPluginFormat::getDefaultLocationsToSearch()</a>, <a class="el" href="classAudioPluginFormat.html#a8e8251e287c4829606dda2f1730a1c32">AudioPluginFormat::getNameOfPluginFromIdentifier()</a>, <a class="el" href="classAudioPluginFormat.html#aeaf55cd79107b25ca1c0dbc685890aa3">AudioPluginFormat::pluginNeedsRescanning()</a>, and <a class="el" href="classAudioPluginFormat.html#a74b24832af4eb78213ffaa35937d8ac6">AudioPluginFormat::searchPathsForPlugins()</a>.</p>
+</div>
+</div>
+<a id="a7c8cef8c0cfb9743d5cb0a92a93fc35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8cef8c0cfb9743d5cb0a92a93fc35a">&#9670;&nbsp;</a></span>canScanForPlugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioUnitPluginFormat::canScanForPlugins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if this format needs to run a scan to find its list of plugins. </p>
+
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a9bded73bfc877952f9f092ae13ae8816">AudioPluginFormat</a>.</p>
+
+</div>
+</div>
+<a id="ae10425a4392bd5116b145d29aa11916b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10425a4392bd5116b145d29aa11916b">&#9670;&nbsp;</a></span>isTrivialToScan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioUnitPluginFormat::isTrivialToScan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Should return true if this format is both safe and quick to scan - i.e. </p>
+<p>if a file can be scanned within a few milliseconds on a background thread, without actually needing to load an executable. </p>
+
+<p>Implements <a class="el" href="classAudioPluginFormat.html#a83f5f3180b66510c6e2bebd425cb82ec">AudioPluginFormat</a>.</p>
+
+<p class="reference">References <a class="el" href="classAudioPluginFormat.html#a22f656e9c7c1897afe8045045379b850">AudioPluginFormat::createPluginInstance()</a>, <a class="el" href="classAudioPluginFormat.html#a895b91a86d223f3caeba207dba298d2f">AudioPluginFormat::doesPluginStillExist()</a>, <a class="el" href="classAudioPluginFormat.html#a89c2413dae86f4b9ea8fb29ed205edc5">AudioPluginFormat::fileMightContainThisPluginType()</a>, <a class="el" href="classAudioPluginFormat.html#a9d23e71b2c2429cad9775a14e021abd6">AudioPluginFormat::findAllTypesForFile()</a>, <a class="el" href="classAudioPluginFormat.html#aa7d194ad3abdad8da5e37d2557579430">AudioPluginFormat::getDefaultLocationsToSearch()</a>, <a class="el" href="classAudioPluginFormat.html#a8e8251e287c4829606dda2f1730a1c32">AudioPluginFormat::getNameOfPluginFromIdentifier()</a>, <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, <a class="el" href="classAudioPluginFormat.html#aeaf55cd79107b25ca1c0dbc685890aa3">AudioPluginFormat::pluginNeedsRescanning()</a>, <a class="el" href="classAudioPluginFormat.html#a5281d42508cb115463972270890ff735">AudioPluginFormat::requiresUnblockedMessageThreadDuringCreation()</a>, and <a class="el" href="classAudioPluginFormat.html#a74b24832af4eb78213ffaa35937d8ac6">AudioPluginFormat::searchPathsForPlugins()</a>.</p>
 
 </div>
 </div>
@@ -459,44 +521,13 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c8cef8c0cfb9743d5cb0a92a93fc35a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8cef8c0cfb9743d5cb0a92a93fc35a">&#9670;&nbsp;</a></span>canScanForPlugins()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AudioUnitPluginFormat::canScanForPlugins </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if this format needs to run a scan to find its list of plugins. </p>
-
-<p>Implements <a class="el" href="classAudioPluginFormat.html#a9bded73bfc877952f9f092ae13ae8816">AudioPluginFormat</a>.</p>
-
-<p class="reference">References <a class="el" href="classAudioPluginFormat.html#a22f656e9c7c1897afe8045045379b850">AudioPluginFormat::createPluginInstance()</a>, <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, and <a class="el" href="classAudioPluginFormat.html#abbfbfda97cb2fd11ad368c5c45d508ed">AudioPluginFormat::requiresUnblockedMessageThreadDuringCreation()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__AudioUnitPluginFormat_8h.html">juce_AudioUnitPluginFormat.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
