@@ -158,6 +158,7 @@ var searchData=
   ['getcachedcomponentimage',['getCachedComponentImage',['../classComponent.html#a9338014ab407f6b41c14495ab2a7fc4d',1,'Component']]],
   ['getcallbacklock',['getCallbackLock',['../classAudioProcessor.html#a71ae245e3ea15035f0648ddd34a492c1',1,'AudioProcessor']]],
   ['getcalloutboxbordersize',['getCallOutBoxBorderSize',['../classLookAndFeel__V2.html#a0c4017eced71a17959e66194220471c5',1,'LookAndFeel_V2::getCallOutBoxBorderSize()'],['../structCallOutBox_1_1LookAndFeelMethods.html#a56a913fced5859e09743b290884ddfd3',1,'CallOutBox::LookAndFeelMethods::getCallOutBoxBorderSize()']]],
+  ['getcalloutboxcornersize',['getCallOutBoxCornerSize',['../classLookAndFeel__V2.html#a2cff08e98f6d8fede288c8b2b5e07bee',1,'LookAndFeel_V2::getCallOutBoxCornerSize()'],['../structCallOutBox_1_1LookAndFeelMethods.html#a2784908f7f9a9e0f92989271c37c91ed',1,'CallOutBox::LookAndFeelMethods::getCallOutBoxCornerSize()']]],
   ['getcaretpos',['getCaretPos',['../classCodeEditorComponent.html#affee19d45c94100052a2e54c6d93f0cf',1,'CodeEditorComponent']]],
   ['getcaretposition',['getCaretPosition',['../classTextEditor.html#a835dd55475f3f174b4694ac0e1fbfe08',1,'TextEditor']]],
   ['getcaretrectangle',['getCaretRectangle',['../classTextInputTarget.html#afeb7bb2e326dbefacc31d181004a6c9e',1,'TextInputTarget::getCaretRectangle()'],['../classTextEditor.html#a27a162ec36d9b4b196b2b9f01f916d24',1,'TextEditor::getCaretRectangle()'],['../classCodeEditorComponent.html#a540848e9b8ecf8f69176c12404f0be0e',1,'CodeEditorComponent::getCaretRectangle()']]],
