@@ -371,6 +371,7 @@ var searchData=
   ['isplaying',['isPlaying',['../classAudioIODevice.html#af8b5c71cb2512bcdf477267e3fc4faf7',1,'AudioIODevice::isPlaying()'],['../classAudioTransportSource.html#aa730c63d2cff661d8bfcb5c002ec0bce',1,'AudioTransportSource::isPlaying()'],['../classVideoComponent.html#a3a53630939d990e5c95d4a4eb0418a2f',1,'VideoComponent::isPlaying()']]],
   ['isplayingbutreleased',['isPlayingButReleased',['../classMPESynthesiserVoice.html#af5ba4a685cf06eb2be693c237135ad0b',1,'MPESynthesiserVoice::isPlayingButReleased()'],['../classSynthesiserVoice.html#aa928c0b5d570b8b82f8d86b60e2a6597',1,'SynthesiserVoice::isPlayingButReleased()']]],
   ['isplayingchannel',['isPlayingChannel',['../classSynthesiserVoice.html#a020299094e0263dffb028450e9424272',1,'SynthesiserVoice']]],
+  ['ispluginval',['isPluginval',['../classPluginHostType.html#a394bdfb1e45a33e09f1722fc5ee8a62b',1,'PluginHostType']]],
   ['ispointabove',['isPointAbove',['../classLine.html#a946bf1dddfffa5d4429b7f0d7323eb63',1,'Line']]],
   ['ispopupactive',['isPopupActive',['../classComboBox.html#a033d1799a5327fcdae0ecf9a364f0914',1,'ComboBox']]],
   ['ispopupmenu',['isPopupMenu',['../classModifierKeys.html#aedd7b0f26fdc0a2355947aadb7ecc650',1,'ModifierKeys']]],

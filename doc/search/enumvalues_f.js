@@ -16,6 +16,7 @@ var searchData=
   ['playbutton',['playButton',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0ada64dfa4c77be0c1e9450efd26db7f2d',1,'AppleRemoteDevice']]],
   ['playbuttonsleepmode',['playButtonSleepMode',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a57f28e98dc961f444c7db15bbd2ee8eb',1,'AppleRemoteDevice']]],
   ['playorpause',['playOrPause',['../classControlButton.html#a891776295057786f99f14631b1aa2794a74a84bc553f54bd44bf330d76c093056',1,'ControlButton']]],
+  ['pluginval',['pluginval',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a53c8e8f18024c67450e2f7fd404ee96f',1,'PluginHostType']]],
   ['plusbutton',['plusButton',['../classAppleRemoteDevice.html#a63ccce128a48e63972e2d71a8de5f8d0a0a1a0de82c6d765607247bf97fb9f106',1,'AppleRemoteDevice']]],
   ['pointinghandcursor',['PointingHandCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a8d9a75ed7f8d15943c53fe50d584c250',1,'MouseCursor']]],
   ['popupmenuclickmodifier',['popupMenuClickModifier',['../classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba95a2100e9a4b1a5786b253c065936627',1,'ModifierKeys']]],
