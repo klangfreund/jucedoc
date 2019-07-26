@@ -358,27 +358,27 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a3ab101fceeb18db84767246616d6f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abee50d102d121b2b0bfe5e6704f94d0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0e">BitSizes</a> { <br />
-&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eadb6b9eee17741d1fcc2ac2f5d17b8a5b">topologyMessageHeader</a> = MessageType::bits + ProtocolVersion::bits + DeviceCount::bits + ConnectionCount::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eac6bb5ac6b32b9c05c018e896a260fb4b">topologyDeviceInfo</a> = BlockSerialNumber::maxLength * 7 + BatteryLevel::bits + BatteryCharging::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaa057c86d7b94897cdb9d74f3e0092455">topologyConnectionInfo</a> = topologyIndexBits + ConnectorPort::bits + topologyIndexBits + ConnectorPort::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea47f8ae4b5b3bef7dbc67260af182f887">typeDeviceAndTime</a> = MessageType::bits + PacketTimestampOffset::bits, 
+&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eadb6b9eee17741d1fcc2ac2f5d17b8a5b">topologyMessageHeader</a> = (int) MessageType::bits + (int) ProtocolVersion::bits + (int) DeviceCount::bits + (int) ConnectionCount::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eac6bb5ac6b32b9c05c018e896a260fb4b">topologyDeviceInfo</a> = (int) BlockSerialNumber::maxLength * 7 + (int) BatteryLevel::bits + (int) BatteryCharging::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaa057c86d7b94897cdb9d74f3e0092455">topologyConnectionInfo</a> = topologyIndexBits + (int) ConnectorPort::bits + topologyIndexBits + (int) ConnectorPort::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea47f8ae4b5b3bef7dbc67260af182f887">typeDeviceAndTime</a> = (int) MessageType::bits + (int) PacketTimestampOffset::bits, 
 <br />
-&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaf2cb8faf85598a5a18b4e88701726635">touchMessage</a> = typeDeviceAndTime + TouchIndex::bits + TouchPosition::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea2ccad123144991b936d0ba038b7554a4">touchMessageWithVelocity</a> = touchMessage + TouchVelocity::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea9283291fdb038f5f77a68b5dfbfcfd46">programEventMessage</a> = MessageType::bits + 32 * numProgramMessageInts, 
+&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaf2cb8faf85598a5a18b4e88701726635">touchMessage</a> = (int) typeDeviceAndTime + (int) TouchIndex::bits + (int) TouchPosition::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea2ccad123144991b936d0ba038b7554a4">touchMessageWithVelocity</a> = (int) touchMessage + (int) TouchVelocity::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea9283291fdb038f5f77a68b5dfbfcfd46">programEventMessage</a> = (int) MessageType::bits + 32 * numProgramMessageInts, 
 <a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x28, 
 <br />
 &#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea5c2c992fda89945d916a0bcef7e24d4c">programEventMessage</a> = 0x03, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eae1bb8d8f1bee5b23475a2daf65baa87f">packetACK</a> = MessageType::bits + PacketCounter::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eae1bb8d8f1bee5b23475a2daf65baa87f">packetACK</a> = (int) MessageType::bits + (int) PacketCounter::bits, 
 <a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eac3b437dd7850dd77e5723bf042832c3d">packetACK</a> = 0x02, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea0016a65bff0b6329a1d211996a27008d">firmwareUpdateACK</a> = MessageType::bits + FirmwareUpdateACKCode::bits + FirmwareUpdateACKDetail::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea0016a65bff0b6329a1d211996a27008d">firmwareUpdateACK</a> = (int) MessageType::bits + (int) FirmwareUpdateACKCode::bits + (int) FirmwareUpdateACKDetail::bits, 
 <br />
 &#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea231d7e23f446ba2943afb176b8bc360b">firmwareUpdateACK</a> = 0x03, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea8cab329faf1c729fb02c3536b86a47c1">controlButtonMessage</a> = typeDeviceAndTime + ControlButtonID::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea1f3c4fbecd4d4f95a49b46b0bdc5e19d">configSetMessage</a> = MessageType::bits + ConfigCommand::bits + ConfigItemIndex::bits + ConfigItemValue::bits, 
-<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea6f26dd7ab8265671dcbf97c1238a22e3">configRespMessage</a> = MessageType::bits + ConfigCommand::bits + ConfigItemIndex::bits + (ConfigItemValue::bits * 3), 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea8cab329faf1c729fb02c3536b86a47c1">controlButtonMessage</a> = (int) typeDeviceAndTime + (int) ControlButtonID::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea1f3c4fbecd4d4f95a49b46b0bdc5e19d">configSetMessage</a> = (int) MessageType::bits + (int) ConfigCommand::bits + (int) ConfigItemIndex::bits + (int) ConfigItemValue::bits, 
+<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea6f26dd7ab8265671dcbf97c1238a22e3">configRespMessage</a> = (int) MessageType::bits + (int) ConfigCommand::bits + (int) ConfigItemIndex::bits + ((int) ConfigItemValue::bits * 3), 
 <br />
-&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eadaf592a40b3766fa4496dba52b857390">configSyncEndMessage</a> = MessageType::bits + ConfigCommand::bits
+&#160;&#160;<a class="el" href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eadaf592a40b3766fa4496dba52b857390">configSyncEndMessage</a> = (int) MessageType::bits + (int) ConfigCommand::bits
 <br />
  }<tr class="memdesc:abee50d102d121b2b0bfe5e6704f94d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the number of bits required to encode various items in the packets.  <a href="namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0e">More...</a><br /></td></tr>
 </td></tr>
@@ -1110,7 +1110,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 24 2019 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 26 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
