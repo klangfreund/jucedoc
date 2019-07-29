@@ -114,12 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91892403a30e5fa2d85b5dfae9a8d93e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a91892403a30e5fa2d85b5dfae9a8d93e">operator ObjectType *</a> () const noexcept</td></tr>
 <tr class="memdesc:a91892403a30e5fa2d85b5dfae9a8d93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object that this pointer refers to, or null if the object no longer exists.  <a href="#a91892403a30e5fa2d85b5dfae9a8d93e">More...</a><br /></td></tr>
 <tr class="separator:a91892403a30e5fa2d85b5dfae9a8d93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a047a1aebb9ada210bd5d0144df14df5c"><td class="memItemLeft" align="right" valign="top">ObjectType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a047a1aebb9ada210bd5d0144df14df5c">operator-&gt;</a> () noexcept</td></tr>
-<tr class="memdesc:a047a1aebb9ada210bd5d0144df14df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object that this pointer refers to, or null if the object no longer exists.  <a href="#a047a1aebb9ada210bd5d0144df14df5c">More...</a><br /></td></tr>
-<tr class="separator:a047a1aebb9ada210bd5d0144df14df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b50a2cf7ff9d5f91ffb4d5b027c7b0e"><td class="memItemLeft" align="right" valign="top">const ObjectType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a5b50a2cf7ff9d5f91ffb4d5b027c7b0e">operator-&gt;</a> () const noexcept</td></tr>
-<tr class="memdesc:a5b50a2cf7ff9d5f91ffb4d5b027c7b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object that this pointer refers to, or null if the object no longer exists.  <a href="#a5b50a2cf7ff9d5f91ffb4d5b027c7b0e">More...</a><br /></td></tr>
-<tr class="separator:a5b50a2cf7ff9d5f91ffb4d5b027c7b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43b4e9b8947512e626eb933e3d340de"><td class="memItemLeft" align="right" valign="top">ObjectType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#ab43b4e9b8947512e626eb933e3d340de">operator-&gt;</a> () const noexcept</td></tr>
+<tr class="memdesc:ab43b4e9b8947512e626eb933e3d340de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object that this pointer refers to, or null if the object no longer exists.  <a href="#ab43b4e9b8947512e626eb933e3d340de">More...</a><br /></td></tr>
+<tr class="separator:ab43b4e9b8947512e626eb933e3d340de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523f66357f106bdf39cd5b49973b3177"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeakReference.html#a523f66357f106bdf39cd5b49973b3177">wasObjectDeleted</a> () const noexcept</td></tr>
 <tr class="memdesc:a523f66357f106bdf39cd5b49973b3177"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns true if this reference has been pointing at an object, but that object has since been deleted.  <a href="#a523f66357f106bdf39cd5b49973b3177">More...</a><br /></td></tr>
 <tr class="separator:a523f66357f106bdf39cd5b49973b3177"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,8 +397,8 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
 
 </div>
 </div>
-<a id="a047a1aebb9ada210bd5d0144df14df5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a047a1aebb9ada210bd5d0144df14df5c">&#9670;&nbsp;</a></span>operator->() <span class="overload">[1/2]</span></h2>
+<a id="ab43b4e9b8947512e626eb933e3d340de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43b4e9b8947512e626eb933e3d340de">&#9670;&nbsp;</a></span>operator->()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,35 +410,6 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
       <table class="memname">
         <tr>
           <td class="memname">ObjectType* <a class="el" href="classWeakReference.html">WeakReference</a>&lt; ObjectType, ReferenceCountingType &gt;::operator-&gt; </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the object that this pointer refers to, or null if the object no longer exists. </p>
-
-</div>
-</div>
-<a id="a5b50a2cf7ff9d5f91ffb4d5b027c7b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b50a2cf7ff9d5f91ffb4d5b027c7b0e">&#9670;&nbsp;</a></span>operator->() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ObjectType* <a class="el" href="classWeakReference.html">WeakReference</a>&lt; ObjectType, ReferenceCountingType &gt;::operator-&gt; </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -550,7 +518,7 @@ template&lt;class ObjectType, class ReferenceCountingType = ReferenceCountedObje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 26 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 29 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
