@@ -49,6 +49,7 @@ var searchData=
   ['readwritelock',['ReadWriteLock',['../classReadWriteLock.html#ac4d03ea1fd3a24c1813492b8487134af',1,'ReadWriteLock']]],
   ['realloc',['realloc',['../classHeapBlock.html#a74f9707f0bf150324c9b490bd8979b3e',1,'HeapBlock']]],
   ['reallycontains',['reallyContains',['../classComponent.html#aa8d8eb035156e46e6264f600097b1cc1',1,'Component']]],
+  ['recalculatesize',['recalculateSize',['../classTextLayout.html#a00d91c008dcbb3c24ecfb51595c7cdd3',1,'TextLayout']]],
   ['recentlyopenedfileslist',['RecentlyOpenedFilesList',['../classRecentlyOpenedFilesList.html#a1be25db49e1770f3f294121d7a407537',1,'RecentlyOpenedFilesList']]],
   ['recreatedesktopwindow',['recreateDesktopWindow',['../classTopLevelWindow.html#a17ae4404a23e24e2859a396bc391ffc1',1,'TopLevelWindow']]],
   ['recreatefromxml',['recreateFromXml',['../classKnownPluginList.html#a3914fddc79074744a1a7b7d7a0e8201f',1,'KnownPluginList']]],

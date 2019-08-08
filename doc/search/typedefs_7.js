@@ -8,5 +8,6 @@ var searchData=
   ['int8',['int8',['../namespacelittlefoot.html#a0e7499324fa7198411b83aec5a9581e4',1,'littlefoot::int8()'],['../group__juce__core-maths.html#ga07fb256c1077eea7a7726e948cc8ff0e',1,'int8():&#160;juce_MathsFunctions.h']]],
   ['itemarray',['ItemArray',['../classSelectedItemSet.html#a67f40ad01b47d146529311d005f36b18',1,'SelectedItemSet']]],
   ['itemtype',['ItemType',['../classSelectedItemSet.html#a1dad4b2a3e66ffff6fcf3c69af454e7f',1,'SelectedItemSet']]],
+  ['iterator',['iterator',['../classTextLayout.html#a58539f01af12859a0414099405b4e873',1,'TextLayout']]],
   ['iterator_5fcategory',['iterator_category',['../structValueTree_1_1Iterator.html#aced8994f06c0dba5bb872e88fe89586c',1,'ValueTree::Iterator']]]
 ];

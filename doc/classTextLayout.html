@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classTextLayout-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,6 +82,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout_1_1Run.html">Run</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sequence of glyphs with a common font and colour.  <a href="classTextLayout_1_1Run.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a58539f01af12859a0414099405b4e873"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">iterator</a> = DereferencingIterator&lt; <a class="el" href="classTextLayout_1_1Line.html">Line</a> *const  * &gt;</td></tr>
+<tr class="separator:a58539f01af12859a0414099405b4e873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64acba39ceb55cc6e292e7209cd4faa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a> = DereferencingIterator&lt; const <a class="el" href="classTextLayout_1_1Line.html">Line</a> *const  * &gt;</td></tr>
+<tr class="separator:ab64acba39ceb55cc6e292e7209cd4faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -125,18 +133,64 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d3fe56d38b061ce1b8ccbf3f6d693e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout_1_1Line.html">Line</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a9d3fe56d38b061ce1b8ccbf3f6d693e7">getLine</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index) const noexcept</td></tr>
 <tr class="memdesc:a9d3fe56d38b061ce1b8ccbf3f6d693e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the lines.  <a href="#a9d3fe56d38b061ce1b8ccbf3f6d693e7">More...</a><br /></td></tr>
 <tr class="separator:a9d3fe56d38b061ce1b8ccbf3f6d693e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662a71df817d68a7cf748ce6a056f8d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a662a71df817d68a7cf748ce6a056f8d5">addLine</a> (<a class="el" href="classTextLayout_1_1Line.html">Line</a> *)</td></tr>
-<tr class="memdesc:a662a71df817d68a7cf748ce6a056f8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a line to the layout.  <a href="#a662a71df817d68a7cf748ce6a056f8d5">More...</a><br /></td></tr>
-<tr class="separator:a662a71df817d68a7cf748ce6a056f8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b09051a7cbe6c37e300a3bc96cf8abe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a5b09051a7cbe6c37e300a3bc96cf8abe">addLine</a> (std::unique_ptr&lt; <a class="el" href="classTextLayout_1_1Line.html">Line</a> &gt;)</td></tr>
+<tr class="memdesc:a5b09051a7cbe6c37e300a3bc96cf8abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a line to the layout.  <a href="#a5b09051a7cbe6c37e300a3bc96cf8abe">More...</a><br /></td></tr>
+<tr class="separator:a5b09051a7cbe6c37e300a3bc96cf8abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569592a231fae556bca49c195294a25b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a569592a231fae556bca49c195294a25b">ensureStorageAllocated</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numLinesNeeded)</td></tr>
 <tr class="memdesc:a569592a231fae556bca49c195294a25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-allocates space for the specified number of lines.  <a href="#a569592a231fae556bca49c195294a25b">More...</a><br /></td></tr>
 <tr class="separator:a569592a231fae556bca49c195294a25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9c0c66ed0f0dce21020dedb3eff636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#aed9c0c66ed0f0dce21020dedb3eff636">begin</a> ()</td></tr>
+<tr class="memdesc:aed9c0c66ed0f0dce21020dedb3eff636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator over the lines of content.  <a href="#aed9c0c66ed0f0dce21020dedb3eff636">More...</a><br /></td></tr>
+<tr class="separator:aed9c0c66ed0f0dce21020dedb3eff636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245c99cfd274221e6723d1e5e149ca51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a245c99cfd274221e6723d1e5e149ca51">begin</a> () const</td></tr>
+<tr class="separator:a245c99cfd274221e6723d1e5e149ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48374b5cfd026b827072dd20fdb0e3d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a48374b5cfd026b827072dd20fdb0e3d6">cbegin</a> () const</td></tr>
+<tr class="separator:a48374b5cfd026b827072dd20fdb0e3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275b5e5c5f694f643d87d76d91534440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a275b5e5c5f694f643d87d76d91534440">end</a> ()</td></tr>
+<tr class="memdesc:a275b5e5c5f694f643d87d76d91534440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator over the lines of content.  <a href="#a275b5e5c5f694f643d87d76d91534440">More...</a><br /></td></tr>
+<tr class="separator:a275b5e5c5f694f643d87d76d91534440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f66157dcc12c2df6b44f0d942518157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a5f66157dcc12c2df6b44f0d942518157">end</a> () const</td></tr>
+<tr class="separator:a5f66157dcc12c2df6b44f0d942518157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2477c113ea57abbfe03bdf6a94854c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a2477c113ea57abbfe03bdf6a94854c1c">cend</a> () const</td></tr>
+<tr class="separator:a2477c113ea57abbfe03bdf6a94854c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d91c008dcbb3c24ecfb51595c7cdd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTextLayout.html#a00d91c008dcbb3c24ecfb51595c7cdd3">recalculateSize</a> ()</td></tr>
+<tr class="memdesc:a00d91c008dcbb3c24ecfb51595c7cdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you modify the <a class="el" href="classTextLayout.html" title="A Pre-formatted piece of text, which may contain multiple fonts and colours. ">TextLayout</a> after creating it, call this to compute the new dimensions of the content.  <a href="#a00d91c008dcbb3c24ecfb51595c7cdd3">More...</a><br /></td></tr>
+<tr class="separator:a00d91c008dcbb3c24ecfb51595c7cdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Pre-formatted piece of text, which may contain multiple fonts and colours. </p>
 <p>A <a class="el" href="classTextLayout.html" title="A Pre-formatted piece of text, which may contain multiple fonts and colours. ">TextLayout</a> is created from an <a class="el" href="classAttributedString.html" title="A text string with a set of colour/font settings that are associated with sub-ranges of the text...">AttributedString</a>, and once created can be quickly drawn into a <a class="el" href="classGraphics.html" title="A graphics context, used for drawing a component or image. ">Graphics</a> context.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAttributedString.html" title="A text string with a set of colour/font settings that are associated with sub-ranges of the text...">AttributedString</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a58539f01af12859a0414099405b4e873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58539f01af12859a0414099405b4e873">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">TextLayout::iterator</a> =  DereferencingIterator&lt; <a class="el" href="classTextLayout_1_1Line.html">Line</a>* const*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab64acba39ceb55cc6e292e7209cd4faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64acba39ceb55cc6e292e7209cd4faa">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">TextLayout::const_iterator</a> =  DereferencingIterator&lt;const <a class="el" href="classTextLayout_1_1Line.html">Line</a>* const*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3d06a6b81095f80ab31f0beecf706fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3d06a6b81095f80ab31f0beecf706fe">&#9670;&nbsp;</a></span>TextLayout() <span class="overload">[1/3]</span></h2>
 
@@ -511,8 +565,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the number of lines in the layout. </p>
 
-<p class="reference">References <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>.</p>
-
 </div>
 </div>
 <a id="a9d3fe56d38b061ce1b8ccbf3f6d693e7"></a>
@@ -543,8 +595,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a662a71df817d68a7cf748ce6a056f8d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a662a71df817d68a7cf748ce6a056f8d5">&#9670;&nbsp;</a></span>addLine()</h2>
+<a id="a5b09051a7cbe6c37e300a3bc96cf8abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b09051a7cbe6c37e300a3bc96cf8abe">&#9670;&nbsp;</a></span>addLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +604,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void TextLayout::addLine </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTextLayout_1_1Line.html">Line</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classTextLayout_1_1Line.html">Line</a> &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -584,13 +636,140 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aed9c0c66ed0f0dce21020dedb3eff636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9c0c66ed0f0dce21020dedb3eff636">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">iterator</a> TextLayout::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an iterator over the lines of content. </p>
+
+</div>
+</div>
+<a id="a245c99cfd274221e6723d1e5e149ca51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245c99cfd274221e6723d1e5e149ca51">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a> TextLayout::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48374b5cfd026b827072dd20fdb0e3d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48374b5cfd026b827072dd20fdb0e3d6">&#9670;&nbsp;</a></span>cbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a> TextLayout::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a275b5e5c5f694f643d87d76d91534440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275b5e5c5f694f643d87d76d91534440">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#a58539f01af12859a0414099405b4e873">iterator</a> TextLayout::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an iterator over the lines of content. </p>
+
+</div>
+</div>
+<a id="a5f66157dcc12c2df6b44f0d942518157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f66157dcc12c2df6b44f0d942518157">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a> TextLayout::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2477c113ea57abbfe03bdf6a94854c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2477c113ea57abbfe03bdf6a94854c1c">&#9670;&nbsp;</a></span>cend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextLayout.html#ab64acba39ceb55cc6e292e7209cd4faa">const_iterator</a> TextLayout::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="group__juce__core-memory.html#gab3639a79598b35f2116f4572af0d93f1">JUCE_LEAK_DETECTOR</a>.</p>
+
+</div>
+</div>
+<a id="a00d91c008dcbb3c24ecfb51595c7cdd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d91c008dcbb3c24ecfb51595c7cdd3">&#9670;&nbsp;</a></span>recalculateSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TextLayout::recalculateSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If you modify the <a class="el" href="classTextLayout.html" title="A Pre-formatted piece of text, which may contain multiple fonts and colours. ">TextLayout</a> after creating it, call this to compute the new dimensions of the content. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__TextLayout_8h.html">juce_TextLayout.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 5 2019 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 8 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
