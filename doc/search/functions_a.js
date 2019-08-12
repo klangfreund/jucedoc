@@ -1,7 +1,7 @@
 var searchData=
 [
   ['keyboardfocustraverser',['KeyboardFocusTraverser',['../classKeyboardFocusTraverser.html#a275c834346e37c782d74f08365f1a06f',1,'KeyboardFocusTraverser']]],
-  ['keyexists',['keyExists',['../classWindowsRegistry.html#a0d58ee97b4dfd8fab8e1d8949d308fe0',1,'WindowsRegistry']]],
+  ['keyexists',['keyExists',['../classWindowsRegistry.html#af05597f66975e0c7f21abe7da362fa68',1,'WindowsRegistry']]],
   ['keygenerationappmain',['keyGenerationAppMain',['../classKeyGeneration.html#a608c4ffe01796eba24a5ab563b5d488e',1,'KeyGeneration']]],
   ['keymappingeditorcomponent',['KeyMappingEditorComponent',['../classKeyMappingEditorComponent.html#ad82af2e52efb94bd1f48aba770e068fb',1,'KeyMappingEditorComponent']]],
   ['keypress',['KeyPress',['../classKeyPress.html#ae7143f58a06c1828cbad0aa84e0b1af2',1,'KeyPress::KeyPress()=default'],['../classKeyPress.html#a6a8910ee5ba637b23af8550eac1c301a',1,'KeyPress::KeyPress(int keyCode, ModifierKeys modifiers, juce_wchar textCharacter) noexcept'],['../classKeyPress.html#aee4f777a405880b975b96dc7738c151d',1,'KeyPress::KeyPress(int keyCode) noexcept'],['../classKeyPress.html#a00ac84a6688f7f96b86210e5fd402a64',1,'KeyPress::KeyPress(const KeyPress &amp;)=default']]],

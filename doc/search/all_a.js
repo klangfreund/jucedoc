@@ -7,7 +7,7 @@ var searchData=
   ['keydown',['keyDown',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a895ffc865cb90899c347efefb881e2ce',1,'MPENote']]],
   ['keydownandsustained',['keyDownAndSustained',['../structMPENote.html#a20106ff137c1a5f0b8e6e099ff3fc922a31c427116ac75e042f9f5315a7aad129',1,'MPENote']]],
   ['keydownoverlaycolourid',['keyDownOverlayColourId',['../classMidiKeyboardComponent.html#a75cb05395efc61c447dc93e8873ab05eaca2ce853f7e9341311ff237d17f5485f',1,'MidiKeyboardComponent']]],
-  ['keyexists',['keyExists',['../classWindowsRegistry.html#a0d58ee97b4dfd8fab8e1d8949d308fe0',1,'WindowsRegistry']]],
+  ['keyexists',['keyExists',['../classWindowsRegistry.html#af05597f66975e0c7f21abe7da362fa68',1,'WindowsRegistry']]],
   ['keygeneration',['KeyGeneration',['../classKeyGeneration.html',1,'']]],
   ['keygenerationappmain',['keyGenerationAppMain',['../classKeyGeneration.html#a608c4ffe01796eba24a5ab563b5d488e',1,'KeyGeneration']]],
   ['keylistener',['KeyListener',['../classKeyListener.html',1,'']]],
