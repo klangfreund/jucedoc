@@ -76,6 +76,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a6b6679c2d62d353ee019eb1edf56dbc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a6b6679c2d62d353ee019eb1edf56dbc6">Connection</a> ()=default</td></tr>
+<tr class="separator:a6b6679c2d62d353ee019eb1edf56dbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7cb72fbe82c57889449c8032782de22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#ae7cb72fbe82c57889449c8032782de22">Connection</a> (<a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> <a class="el" href="structAudioProcessorGraph_1_1Connection.html#a05813b379dcc6ac0431f4492e6bb3b31">source</a>, <a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> <a class="el" href="structAudioProcessorGraph_1_1Connection.html#a056525d39e5c9aa8b07ddd64183de544">destination</a>) noexcept</td></tr>
 <tr class="separator:ae7cb72fbe82c57889449c8032782de22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21211d400613553336aac212f0338418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a21211d400613553336aac212f0338418">Connection</a> (const <a class="el" href="structAudioProcessorGraph_1_1Connection.html">Connection</a> &amp;)=default</td></tr>
@@ -91,10 +93,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a05813b379dcc6ac0431f4492e6bb3b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a05813b379dcc6ac0431f4492e6bb3b31">source</a></td></tr>
+<tr class="memitem:a05813b379dcc6ac0431f4492e6bb3b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a05813b379dcc6ac0431f4492e6bb3b31">source</a> { {}, 0 }</td></tr>
 <tr class="memdesc:a05813b379dcc6ac0431f4492e6bb3b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel and node which is the input source for this connection.  <a href="#a05813b379dcc6ac0431f4492e6bb3b31">More...</a><br /></td></tr>
 <tr class="separator:a05813b379dcc6ac0431f4492e6bb3b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a056525d39e5c9aa8b07ddd64183de544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a056525d39e5c9aa8b07ddd64183de544">destination</a></td></tr>
+<tr class="memitem:a056525d39e5c9aa8b07ddd64183de544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAudioProcessorGraph_1_1Connection.html#a056525d39e5c9aa8b07ddd64183de544">destination</a> { {}, 0 }</td></tr>
 <tr class="memdesc:a056525d39e5c9aa8b07ddd64183de544"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel and node which is the input source for this connection.  <a href="#a056525d39e5c9aa8b07ddd64183de544">More...</a><br /></td></tr>
 <tr class="separator:a056525d39e5c9aa8b07ddd64183de544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -102,8 +104,33 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents a connection between two channels of two nodes in an <a class="el" href="classAudioProcessorGraph.html" title="A type of AudioProcessor which plays back a graph of other AudioProcessors. ">AudioProcessorGraph</a>. </p>
 <p>To create a connection, use <a class="el" href="classAudioProcessorGraph.html#a2ae8de1a066fcf1850bd026763e978d1" title="Attempts to connect two specified channels of two nodes. ">AudioProcessorGraph::addConnection()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6b6679c2d62d353ee019eb1edf56dbc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6679c2d62d353ee019eb1edf56dbc6">&#9670;&nbsp;</a></span>Connection() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioProcessorGraph::Connection::Connection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae7cb72fbe82c57889449c8032782de22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7cb72fbe82c57889449c8032782de22">&#9670;&nbsp;</a></span>Connection() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7cb72fbe82c57889449c8032782de22">&#9670;&nbsp;</a></span>Connection() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +166,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a21211d400613553336aac212f0338418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21211d400613553336aac212f0338418">&#9670;&nbsp;</a></span>Connection() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21211d400613553336aac212f0338418">&#9670;&nbsp;</a></span>Connection() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +304,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> AudioProcessorGraph::Connection::source</td>
+          <td class="memname"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> AudioProcessorGraph::Connection::source { {}, 0 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,7 +320,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> AudioProcessorGraph::Connection::destination</td>
+          <td class="memname"><a class="el" href="structAudioProcessorGraph_1_1NodeAndChannel.html">NodeAndChannel</a> AudioProcessorGraph::Connection::destination { {}, 0 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -308,7 +335,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 28 2019 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
