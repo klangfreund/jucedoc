@@ -139,8 +139,8 @@ Additional Inherited Members</h2></td></tr>
 <p>You can use this class to fire off actions that you want to be performed later on the message thread.</p>
 <p>To use it, create a subclass of <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a> which implements the <a class="el" href="classCallbackMessage.html#a446c7ab7a4363b2134015cbd6fe19ae7" title="Called when the message is delivered. ">messageCallback()</a> method, then call <a class="el" href="classMessageManager_1_1MessageBase.html#a2bcdf57123967a59650bd46543906796">post()</a> to dispatch it. The event thread will then invoke your <a class="el" href="classCallbackMessage.html#a446c7ab7a4363b2134015cbd6fe19ae7" title="Called when the message is delivered. ">messageCallback()</a> method later on, and will automatically delete the message object afterwards.</p>
 <p>Always create a new instance of a <a class="el" href="classCallbackMessage.html" title="A message that invokes a callback method when it gets delivered. ">CallbackMessage</a> on the heap, as it will be deleted automatically after the message has been delivered.</p>
-<p>Note that this class was essential back in the days before C++11, but in modern times you may prefer to use <a class="el" href="classMessageManager.html#ad688ae617a7db8b4c67e2cf78fc71a1a" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync()</a> with a lambda.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager.html#ad688ae617a7db8b4c67e2cf78fc71a1a" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync</a>, <a class="el" href="classMessageListener.html" title="MessageListener subclasses can post and receive Message objects. ">MessageListener</a>, <a class="el" href="classActionListener.html" title="Interface class for delivery of events that are sent by an ActionBroadcaster. ">ActionListener</a>, <a class="el" href="classChangeListener.html" title="Receives change event callbacks that are sent out by a ChangeBroadcaster. ">ChangeListener</a> </dd></dl>
+<p>Note that this class was essential back in the days before C++11, but in modern times you may prefer to use <a class="el" href="classMessageManager.html#acfe6da5271c2ab76fdb0414b235ed095" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync()</a> with a lambda.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager.html#acfe6da5271c2ab76fdb0414b235ed095" title="Asynchronously invokes a function or C++11 lambda on the message thread. ">MessageManager::callAsync</a>, <a class="el" href="classMessageListener.html" title="MessageListener subclasses can post and receive Message objects. ">MessageListener</a>, <a class="el" href="classActionListener.html" title="Interface class for delivery of events that are sent by an ActionBroadcaster. ">ActionListener</a>, <a class="el" href="classChangeListener.html" title="Receives change event callbacks that are sent out by a ChangeBroadcaster. ">ChangeListener</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeec501b4654cc747076be4717bfea980"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeec501b4654cc747076be4717bfea980">&#9670;&nbsp;</a></span>CallbackMessage()</h2>
@@ -232,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 28 2019 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 30 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
