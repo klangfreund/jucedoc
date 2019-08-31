@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7584d1550d85bcce7203fc29cdf57d66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#a7584d1550d85bcce7203fc29cdf57d66">memoryWarningReceived</a> ()</td></tr>
 <tr class="memdesc:a7584d1550d85bcce7203fc29cdf57d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the operating system to indicate that you should reduce your memory footprint.  <a href="#a7584d1550d85bcce7203fc29cdf57d66">More...</a><br /></td></tr>
 <tr class="separator:a7584d1550d85bcce7203fc29cdf57d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfda4c28041c0166758cedd67139307a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#adfda4c28041c0166758cedd67139307a">backButtonPressed</a> ()</td></tr>
-<tr class="memdesc:adfda4c28041c0166758cedd67139307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to be informed when the back button is pressed on a device.  <a href="#adfda4c28041c0166758cedd67139307a">More...</a><br /></td></tr>
-<tr class="separator:adfda4c28041c0166758cedd67139307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63de619a9e6d4fde1aa4826fc6b83d69"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#a63de619a9e6d4fde1aa4826fc6b83d69">backButtonPressed</a> ()</td></tr>
+<tr class="memdesc:a63de619a9e6d4fde1aa4826fc6b83d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will be called when the back button on a device is pressed.  <a href="#a63de619a9e6d4fde1aa4826fc6b83d69">More...</a><br /></td></tr>
+<tr class="separator:a63de619a9e6d4fde1aa4826fc6b83d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8eff5c3954a4a4f09153cc10165a588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUCEApplicationBase.html#aa8eff5c3954a4a4f09153cc10165a588">setApplicationReturnValue</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> newReturnValue) noexcept</td></tr>
 <tr class="memdesc:aa8eff5c3954a4a4f09153cc10165a588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value that should be returned as the application's exit code when the app quits.  <a href="#aa8eff5c3954a4a4f09153cc10165a588">More...</a><br /></td></tr>
 <tr class="separator:aa8eff5c3954a4a4f09153cc10165a588"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -591,8 +591,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adfda4c28041c0166758cedd67139307a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfda4c28041c0166758cedd67139307a">&#9670;&nbsp;</a></span>backButtonPressed()</h2>
+<a id="a63de619a9e6d4fde1aa4826fc6b83d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63de619a9e6d4fde1aa4826fc6b83d69">&#9670;&nbsp;</a></span>backButtonPressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +601,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void JUCEApplicationBase::backButtonPressed </td>
+          <td class="memname">virtual bool JUCEApplicationBase::backButtonPressed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -614,8 +614,10 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Override this method to be informed when the back button is pressed on a device. </p>
-<p>This is currently only implemented on Android devices. </p>
+<p>This will be called when the back button on a device is pressed. </p>
+<p>The return value should be used to indicate whether the back button event has been handled by the application, for example if you want to implement custom navigation instead of the standard behaviour on Android.</p>
+<p>This is currently only implemented on Android devices.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the event has been handled, or false if the default OS behaviour should happen </dd></dl>
 
 <p class="reference">References <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>, and <a class="el" href="namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0a0e06bba45d6039ddc74f0b437d982fba">StandardApplicationCommandIDs::quit</a>.</p>
 
@@ -830,7 +832,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 30 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 31 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
