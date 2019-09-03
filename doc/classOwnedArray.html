@@ -1004,7 +1004,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><div class="memdoc">
 
 <p>Appends a new object to the end of the array. </p>
-<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>Note that this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
 <p>Also be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1013,7 +1013,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a5513b7c6d92501fb003c542816e9a912">OwnedArray&lt; MarkerList::Marker &gt;::add()</a>.</p>
 
@@ -1038,7 +1038,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><div class="memdoc">
 
 <p>Appends a new object to the end of the array. </p>
-<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>Note that this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
 <p>Also be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1047,7 +1047,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a>, <a class="el" href="classOwnedArray.html#a9e71f9b26deccf0e3dfc0930a156f944" title="Inserts a new object into the array at the given index. ">insert</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a> </dd></dl>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><div class="memdoc">
 
 <p>Inserts a new object into the array at the given index. </p>
-<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>Note that this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
 <p>If the index is less than 0 or greater than the size of the array, the element will be added to the end of the array. Otherwise, it will be inserted into the array, moving all the later elements along to make room.</p>
 <p>Be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1091,7 +1091,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classOwnedArray.html#a44c028b02f53bd1911d5cfe444ff3388">OwnedArray&lt; MarkerList::Marker &gt;::insert()</a>.</p>
 
@@ -1126,7 +1126,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><div class="memdoc">
 
 <p>Inserts a new object into the array at the given index. </p>
-<p>Note that the this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
+<p>Note that this object will be deleted by the <a class="el" href="classOwnedArray.html" title="An array designed for holding objects. ">OwnedArray</a> when it is removed, so be careful not to delete it somewhere else.</p>
 <p>If the index is less than 0 or greater than the size of the array, the element will be added to the end of the array. Otherwise, it will be inserted into the array, moving all the later elements along to make room.</p>
 <p>Be careful not to add the same object to the array more than once, as this will obviously cause deletion of dangling pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1137,7 +1137,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new object that was added </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, addIfNotAlreadyThere, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classOwnedArray.html#a1ca24c439f939ade64eab3d63e01278e" title="Appends a new object to the end of the array. ">add</a>, <a class="el" href="classOwnedArray.html#a3362aa46fe920b22b20ccc313bfe3366" title="Inserts a new object into the array assuming that the array is sorted. ">addSorted</a>, <a class="el" href="classOwnedArray.html#a383de41801934f65b720a7019ed6ac8a" title="Replaces an object in the array with a different one. ">set</a> </dd></dl>
 
 </div>
 </div>
@@ -2001,7 +2001,7 @@ template&lt;class ObjectClass, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 2 2019 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
