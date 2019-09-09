@@ -80,8 +80,10 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aca4cb4bfd7d97d85e5534fd075c21a62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#aca4cb4bfd7d97d85e5534fd075c21a62">LittleFootRemoteHeap</a> (<a class="el" href="namespacelittlefoot.html#a417dab5137c6d4ff4e23303f84099aa9">uint32</a> blockSizeToUse) noexcept</td></tr>
 <tr class="separator:aca4cb4bfd7d97d85e5534fd075c21a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56ce74720ce0af67db2e4dfa4cfbdfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">clear</a> () noexcept</td></tr>
-<tr class="separator:a56ce74720ce0af67db2e4dfa4cfbdfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e49714d88026c849500c1e7435b7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a31e49714d88026c849500c1e7435b7bd">reset</a> ()</td></tr>
+<tr class="separator:a31e49714d88026c849500c1e7435b7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78da9945ac57db1296d82e9d9a617654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a78da9945ac57db1296d82e9d9a617654">clearTargetData</a> () noexcept</td></tr>
+<tr class="separator:a78da9945ac57db1296d82e9d9a617654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc61b4f0494e30366d7c2a445c212be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">resetDeviceStateToUnknown</a> ()</td></tr>
 <tr class="separator:a8dc61b4f0494e30366d7c2a445c212be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2266981d92e240e310812e667f625460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a2266981d92e240e310812e667f625460">resetDataRangeToUnknown</a> (size_t offset, size_t size) noexcept</td></tr>
@@ -94,8 +96,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5afe3e48de059081a84d304775e1654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9c7cc53bc25df462759a868eca1d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelittlefoot.html#a911a40d805ef6667f7b9ea6842af3fe7">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#acc9c7cc53bc25df462759a868eca1d0b">getByte</a> (size_t offset) noexcept</td></tr>
 <tr class="separator:acc9c7cc53bc25df462759a868eca1d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0903d12be37d95e5afe20d6d37ea4784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784">invalidateData</a> () noexcept</td></tr>
-<tr class="separator:a0903d12be37d95e5afe20d6d37ea4784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3afc089afddbc6f46cfa43b07fa6a954"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a3afc089afddbc6f46cfa43b07fa6a954">isFullySynced</a> () const noexcept</td></tr>
 <tr class="separator:a3afc089afddbc6f46cfa43b07fa6a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880caba7689d2ef3f47ba47d378434ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a880caba7689d2ef3f47ba47d378434ce">sendChanges</a> (ImplementationClass &amp;bi, bool forceSend)</td></tr>
@@ -158,8 +158,29 @@ template&lt;typename ImplementationClass &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a56ce74720ce0af67db2e4dfa4cfbdfd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56ce74720ce0af67db2e4dfa4cfbdfd7">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="a31e49714d88026c849500c1e7435b7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e49714d88026c849500c1e7435b7bd">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ImplementationClass &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a78da9945ac57db1296d82e9d9a617654">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::clearTargetData()</a>, <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDeviceStateToUnknown()</a>.</p>
+
+</div>
+</div>
+<a id="a78da9945ac57db1296d82e9d9a617654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78da9945ac57db1296d82e9d9a617654">&#9670;&nbsp;</a></span>clearTargetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +191,7 @@ template&lt;typename ImplementationClass &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::clear </td>
+          <td class="memname">void <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::clearTargetData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,7 +204,9 @@ template&lt;typename ImplementationClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::invalidateData()</a>, and <a class="el" href="group__juce__core-memory.html#ga48fb9b158a3767e6573d27a8160956ea">zeromem()</a>.</p>
+<p class="reference">References <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, and <a class="el" href="group__juce__core-memory.html#ga48fb9b158a3767e6573d27a8160956ea">zeromem()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a31e49714d88026c849500c1e7435b7bd">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -204,9 +227,9 @@ template&lt;typename ImplementationClass &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classOwnedArray.html#a65730f03dbe905fa251491cb6c8c14ee">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::clear()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::invalidateData()</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a2266981d92e240e310812e667f625460">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDataRangeToUnknown()</a>.</p>
+<p class="reference">References <a class="el" href="classOwnedArray.html#a65730f03dbe905fa251491cb6c8c14ee">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::clear()</a>, <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a2266981d92e240e310812e667f625460">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDataRangeToUnknown()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::handleACKFromDevice()</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#aca4cb4bfd7d97d85e5534fd075c21a62">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::LittleFootRemoteHeap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::handleACKFromDevice()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#aca4cb4bfd7d97d85e5534fd075c21a62">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::LittleFootRemoteHeap()</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a31e49714d88026c849500c1e7435b7bd">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +405,7 @@ template&lt;typename ImplementationClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::invalidateData()</a>, <a class="el" href="group__juce__core-system.html#gadc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="group__juce__core-maths.html#ga0e647a41bfc48194af4cbc77213557b9">readLittleEndianBitsInBuffer()</a>, and <a class="el" href="group__juce__core-maths.html#gad9a739a07f27b1d47343ceacdee1a0ca">writeLittleEndianBitsInBuffer()</a>.</p>
+<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="group__juce__core-system.html#gadc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>, <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, <a class="el" href="group__juce__core-maths.html#ga0e647a41bfc48194af4cbc77213557b9">readLittleEndianBitsInBuffer()</a>, and <a class="el" href="group__juce__core-maths.html#gad9a739a07f27b1d47343ceacdee1a0ca">writeLittleEndianBitsInBuffer()</a>.</p>
 
 </div>
 </div>
@@ -413,35 +436,6 @@ template&lt;typename ImplementationClass &gt; </div>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, and <a class="el" href="group__juce__core-system.html#gadc044ce5efecbecf2f5a44cd00db67b3">jassertfalse</a>.</p>
-
-</div>
-</div>
-<a id="a0903d12be37d95e5afe20d6d37ea4784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0903d12be37d95e5afe20d6d37ea4784">&#9670;&nbsp;</a></span>invalidateData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ImplementationClass &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html">littlefoot::LittleFootRemoteHeap</a>&lt; ImplementationClass &gt;::invalidateData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a56ce74720ce0af67db2e4dfa4cfbdfd7">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::clear()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDeviceStateToUnknown()</a>, and <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#ac5afe3e48de059081a84d304775e1654">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::setBits()</a>.</p>
 
 </div>
 </div>
@@ -540,7 +534,7 @@ template&lt;typename ImplementationClass &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="classTime.html#abc76e37eb137734df20c107ae94bbfee">Time::getCurrentTime()</a>, <a class="el" href="classOwnedArray.html#aef141763468bd638b8a266a215e3d7d8">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::getLast()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#ad5287a38e8faf5dfc5c6db9fa20b1702">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::isAllZero()</a>, <a class="el" href="classOwnedArray.html#a63b263300bdd70a79035a57470bfae8f">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::isEmpty()</a>, and <a class="el" href="classRelativeTime.html#acffa8af50cf3853419d22627b7d8fd68">RelativeTime::milliseconds()</a>.</p>
+<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="classTime.html#abc76e37eb137734df20c107ae94bbfee">Time::getCurrentTime()</a>, <a class="el" href="classOwnedArray.html#aef141763468bd638b8a266a215e3d7d8">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::getLast()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#ad5287a38e8faf5dfc5c6db9fa20b1702">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::isAllZero()</a>, <a class="el" href="classOwnedArray.html#a63b263300bdd70a79035a57470bfae8f">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::isEmpty()</a>, <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, and <a class="el" href="classRelativeTime.html#acffa8af50cf3853419d22627b7d8fd68">RelativeTime::milliseconds()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::handleACKFromDevice()</a>.</p>
 
@@ -582,7 +576,7 @@ template&lt;typename ImplementationClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="classOwnedArray.html#af9db4b3a2eec5685ec389d684390cfe3">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::getUnchecked()</a>, <a class="el" href="classOwnedArray.html#a63b263300bdd70a79035a57470bfae8f">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::isEmpty()</a>, <a class="el" href="classOwnedArray.html#a6ca377ada4d52033b6bc9efd3614b5c2">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::removeRange()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDeviceStateToUnknown()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a880caba7689d2ef3f47ba47d378434ce">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::sendChanges()</a>, and <a class="el" href="classOwnedArray.html#a5db444e91e2abcdcf222f5ec2a90e1ac">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a83daba2fa01ad08647fd4dccfff31f44">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::blockSize</a>, <a class="el" href="classOwnedArray.html#af9db4b3a2eec5685ec389d684390cfe3">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::getUnchecked()</a>, <a class="el" href="classOwnedArray.html#a63b263300bdd70a79035a57470bfae8f">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::isEmpty()</a>, <a class="el" href="group__juce__blocks__basics-littlefoot.html#ga3b135d07c6c48d9f8b90ec81fe2d410e">JUCE_LOG_LITTLEFOOT_HEAP</a>, <a class="el" href="classOwnedArray.html#a6ca377ada4d52033b6bc9efd3614b5c2">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::removeRange()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a8dc61b4f0494e30366d7c2a445c212be">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::resetDeviceStateToUnknown()</a>, <a class="el" href="structlittlefoot_1_1LittleFootRemoteHeap.html#a880caba7689d2ef3f47ba47d378434ce">littlefoot::LittleFootRemoteHeap&lt; ImplementationClass &gt;::sendChanges()</a>, and <a class="el" href="classOwnedArray.html#a5db444e91e2abcdcf222f5ec2a90e1ac">OwnedArray&lt; ObjectClass, TypeOfCriticalSectionToUse &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -666,7 +660,7 @@ template&lt;typename ImplementationClass &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 6 2019 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 9 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -161,7 +161,6 @@ var searchData=
   ['intvalue',['intValue',['../classOSCArgument.html#a81c635349763982a84322406534f1375',1,'OSCArgument']]],
   ['invalidate',['invalidate',['../classCachedComponentImage.html#ae056a7e4c692db8196e58657342e52e0',1,'CachedComponentImage']]],
   ['invalidateall',['invalidateAll',['../classCachedComponentImage.html#a65cc82fa3020cb440e55f33313bc6897',1,'CachedComponentImage']]],
-  ['invalidatedata',['invalidateData',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784',1,'littlefoot::LittleFootRemoteHeap']]],
   ['invalidorientation',['invalidOrientation',['../classMouseInputSource.html#affd13d39e55e3a066a3b20dd477936f1',1,'MouseInputSource']]],
   ['invalidpressure',['invalidPressure',['../classMouseInputSource.html#ab6d90cac2cd10bbe7f6f1263f971ef54',1,'MouseInputSource']]],
   ['invalidrotation',['invalidRotation',['../classMouseInputSource.html#af3ef950db7f687e40b105838b1d72d02',1,'MouseInputSource']]],

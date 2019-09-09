@@ -80,7 +80,6 @@ var searchData=
   ['inttofloat',['intToFloat',['../structlittlefoot_1_1Program.html#ac4bfcfb24cb236ea5b6f0ebfffac5b22',1,'littlefoot::Program']]],
   ['invalidate',['invalidate',['../classCachedComponentImage.html#ae056a7e4c692db8196e58657342e52e0',1,'CachedComponentImage']]],
   ['invalidateall',['invalidateAll',['../classCachedComponentImage.html#a65cc82fa3020cb440e55f33313bc6897',1,'CachedComponentImage']]],
-  ['invalidatedata',['invalidateData',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a0903d12be37d95e5afe20d6d37ea4784',1,'littlefoot::LittleFootRemoteHeap']]],
   ['inversemodulo',['inverseModulo',['../classBigInteger.html#ae071b9b24f05d8e50d8f3d640a225304',1,'BigInteger']]],
   ['inverted',['inverted',['../classAffineTransform.html#ab6a5ffe9dc093892f906f99f3c931ec3',1,'AffineTransform']]],
   ['invertrange',['invertRange',['../classSparseSet.html#abd66ea8085ca0bb2ab90fb16fbf8d51d',1,'SparseSet']]],
