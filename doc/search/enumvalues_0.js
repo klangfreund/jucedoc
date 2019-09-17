@@ -82,6 +82,7 @@ var searchData=
   ['audioinputnode',['audioInputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aa002564f5df42036b1b8a791d8c3a760d',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],
   ['audiooutputnode',['audioOutputNode',['../classAudioProcessorGraph_1_1AudioGraphIOProcessor.html#a612fff538a6a57529626b4121934761aac004122d6a09fdb5bce7fdb2221340f4',1,'AudioProcessorGraph::AudioGraphIOProcessor']]],
   ['autoalign',['autoAlign',['../classFlexItem.html#a8bba729fda8779a2d3dfc576b2fc77faae8ecba5781c140da302cca2e4996b4fd',1,'FlexItem']]],
+  ['autotransposetokey',['autoTransposeToKey',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a91cdf334754d978e830629ffd2a8e013',1,'BlocksProtocol']]],
   ['autovalue',['autoValue',['../classGridItem.html#a642bb074bd7fbbf3448a50067e082f29aab046147bff8be63c8cd98e1bc4cc08a',1,'GridItem::autoValue()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6aab046147bff8be63c8cd98e1bc4cc08a',1,'GridItem::autoValue()'],['../classGridItem.html#a329b27636a1396f65ea1cf4118fc7002aab046147bff8be63c8cd98e1bc4cc08a',1,'GridItem::autoValue()']]],
   ['avidprotools',['AvidProTools',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a574e3f1905780f354a70fe2c1ca1900d',1,'PluginHostType']]]
 ];
