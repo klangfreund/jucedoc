@@ -376,9 +376,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f81c03f0a7d413f28a6f1a2ba65560d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectangle.html#a7f81c03f0a7d413f28a6f1a2ba65560d">intersectRectangle</a> (ValueType &amp;otherX, ValueType &amp;otherY, ValueType &amp;otherW, ValueType &amp;otherH) const noexcept</td></tr>
 <tr class="memdesc:a7f81c03f0a7d413f28a6f1a2ba65560d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clips a set of rectangle coordinates so that they lie only within this one.  <a href="#a7f81c03f0a7d413f28a6f1a2ba65560d">More...</a><br /></td></tr>
 <tr class="separator:a7f81c03f0a7d413f28a6f1a2ba65560d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac665990b2c1e22945f890467d8105827"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectangle.html#ac665990b2c1e22945f890467d8105827">intersectRectangle</a> (<a class="el" href="classRectangle.html">Rectangle</a>&lt; ValueType &gt; rectangleToClip) const noexcept</td></tr>
-<tr class="memdesc:ac665990b2c1e22945f890467d8105827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clips a rectangle so that it lies only within this one.  <a href="#ac665990b2c1e22945f890467d8105827">More...</a><br /></td></tr>
-<tr class="separator:ac665990b2c1e22945f890467d8105827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab268529ec12065ec29dd4099a171c03f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectangle.html#ab268529ec12065ec29dd4099a171c03f">intersectRectangle</a> (<a class="el" href="classRectangle.html">Rectangle</a>&lt; ValueType &gt; &amp;rectangleToClip) const noexcept</td></tr>
+<tr class="memdesc:ab268529ec12065ec29dd4099a171c03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clips a rectangle so that it lies only within this one.  <a href="#ab268529ec12065ec29dd4099a171c03f">More...</a><br /></td></tr>
+<tr class="separator:ab268529ec12065ec29dd4099a171c03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d128bf3cf8dd1a50afcf946cbc5521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectangle.html#a26d128bf3cf8dd1a50afcf946cbc5521">getUnion</a> (<a class="el" href="classRectangle.html">Rectangle</a> other) const noexcept</td></tr>
 <tr class="memdesc:a26d128bf3cf8dd1a50afcf946cbc5521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smallest rectangle that contains both this one and the one passed-in.  <a href="#a26d128bf3cf8dd1a50afcf946cbc5521">More...</a><br /></td></tr>
 <tr class="separator:a26d128bf3cf8dd1a50afcf946cbc5521"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3752,12 +3752,12 @@ template&lt;typename ValueType&gt; </div>
 <p>Clips a set of rectangle coordinates so that they lie only within this one. </p>
 <p>This is a non-static version of <a class="el" href="classRectangle.html#a8800d48d36cdd694dc50db3e66c2cabc" title="Static utility to intersect two sets of rectangular coordinates. ">intersectRectangles()</a>. Returns false if the two rectangles didn't overlap. </p>
 
-<p class="reference">Referenced by <a class="el" href="classRectangleList.html#a4fd3214b9f00a680fe7629aeedf494c5">RectangleList&lt; int &gt;::clipTo()</a>, <a class="el" href="classRectangleList.html#a2a13e2a253032770945816dd6db75cbc">RectangleList&lt; int &gt;::getIntersectionWith()</a>, and <a class="el" href="classRectangle.html#ac665990b2c1e22945f890467d8105827">Rectangle&lt; int &gt;::intersectRectangle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classRectangleList.html#a4fd3214b9f00a680fe7629aeedf494c5">RectangleList&lt; int &gt;::clipTo()</a>, <a class="el" href="classRectangleList.html#a2a13e2a253032770945816dd6db75cbc">RectangleList&lt; int &gt;::getIntersectionWith()</a>, and <a class="el" href="classRectangle.html#ab268529ec12065ec29dd4099a171c03f">Rectangle&lt; int &gt;::intersectRectangle()</a>.</p>
 
 </div>
 </div>
-<a id="ac665990b2c1e22945f890467d8105827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac665990b2c1e22945f890467d8105827">&#9670;&nbsp;</a></span>intersectRectangle() <span class="overload">[2/2]</span></h2>
+<a id="ab268529ec12065ec29dd4099a171c03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab268529ec12065ec29dd4099a171c03f">&#9670;&nbsp;</a></span>intersectRectangle() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3770,7 +3770,7 @@ template&lt;typename ValueType&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classRectangle.html">Rectangle</a>&lt; ValueType &gt;::intersectRectangle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classRectangle.html">Rectangle</a>&lt; ValueType &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classRectangle.html">Rectangle</a>&lt; ValueType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rectangleToClip</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -4314,7 +4314,7 @@ template&lt;typename ValueType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 24 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 25 2019 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
