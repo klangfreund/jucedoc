@@ -4,7 +4,7 @@ var searchData=
   ['labeltextchanged',['labelTextChanged',['../classLabel_1_1Listener.html#ad2a3e79ba106bfa64cab523e197b1514',1,'Label::Listener']]],
   ['ladderfilter',['LadderFilter',['../classdsp_1_1LadderFilter.html#af90b68dc9cbce6ddc691caf826d3a48c',1,'dsp::LadderFilter']]],
   ['ladspapluginformat',['LADSPAPluginFormat',['../classLADSPAPluginFormat.html#ae3cc50623da55617adb06af890421929',1,'LADSPAPluginFormat']]],
-  ['lagrangeinterpolator',['LagrangeInterpolator',['../classLagrangeInterpolator.html#a5ab3665c8906de897990d2db77cc88ca',1,'LagrangeInterpolator']]],
+  ['lagrangeinterpolator',['LagrangeInterpolator',['../classLagrangeInterpolator.html#a5ab3665c8906de897990d2db77cc88ca',1,'LagrangeInterpolator::LagrangeInterpolator() noexcept'],['../classLagrangeInterpolator.html#ac621256b96e7ddfb5ca871701c9d1699',1,'LagrangeInterpolator::LagrangeInterpolator(LagrangeInterpolator &amp;&amp;) noexcept=default']]],
   ['lameencoderaudioformat',['LAMEEncoderAudioFormat',['../classLAMEEncoderAudioFormat.html#a92122ede38e85507553663faa3f85e57',1,'LAMEEncoderAudioFormat']]],
   ['lassocomponent',['LassoComponent',['../classLassoComponent.html#a2b9c763a67378b6bb7a3de55919972da',1,'LassoComponent']]],
   ['lastindexof',['lastIndexOf',['../classString.html#ac484b0755a80d8949c68a414b97e93af',1,'String']]],

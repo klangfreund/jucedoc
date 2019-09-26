@@ -75,6 +75,8 @@ var searchData=
   ['heapblock_3c_20floattype_20_3e',['HeapBlock&lt; FloatType &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20focuschangelistener_20_2a_3e',['HeapBlock&lt; FocusChangeListener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20glyphinfo_20_2a_3e',['HeapBlock&lt; GlyphInfo *&gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20grid_3a_3atrackinfo_20_3e',['HeapBlock&lt; Grid::TrackInfo &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20griditem_20_3e',['HeapBlock&lt; GridItem &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20hashentry_20_2a_3e',['HeapBlock&lt; HashEntry *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20iircoefficients_20_2a_3e',['HeapBlock&lt; IIRCoefficients *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20iirfilter_20_2a_3e',['HeapBlock&lt; IIRFilter *&gt;',['../classHeapBlock.html',1,'']]],
