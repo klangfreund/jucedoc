@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba23af1d4e4160283949be9e5c196e27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomComponent.html#aba23af1d4e4160283949be9e5c196e27">isItemHighlighted</a> () const noexcept</td></tr>
 <tr class="memdesc:aba23af1d4e4160283949be9e5c196e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this item should be highlighted because the mouse is over it.  <a href="#aba23af1d4e4160283949be9e5c196e27">More...</a><br /></td></tr>
 <tr class="separator:aba23af1d4e4160283949be9e5c196e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4862b5bc6dda20f78ca3f79578bffc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structPopupMenu_1_1Item.html">PopupMenu::Item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomComponent.html#a6b4862b5bc6dda20f78ca3f79578bffc">getItem</a> () const noexcept</td></tr>
+<tr class="memdesc:a6b4862b5bc6dda20f78ca3f79578bffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a> that holds this custom component, if this component is currently held by an <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a>.  <a href="#a6b4862b5bc6dda20f78ca3f79578bffc">More...</a><br /></td></tr>
+<tr class="separator:a6b4862b5bc6dda20f78ca3f79578bffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302fa7c66c7e5c1d83842815030171d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomComponent.html#a302fa7c66c7e5c1d83842815030171d9">isTriggeredAutomatically</a> () const noexcept</td></tr>
 <tr class="separator:a302fa7c66c7e5c1d83842815030171d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02baf9ef459fb52b53450d519dbaf40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopupMenu_1_1CustomComponent.html#a02baf9ef459fb52b53450d519dbaf40f">setHighlighted</a> (bool shouldBeHighlighted)</td></tr>
@@ -875,6 +878,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b4862b5bc6dda20f78ca3f79578bffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4862b5bc6dda20f78ca3f79578bffc">&#9670;&nbsp;</a></span>getItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structPopupMenu_1_1Item.html">PopupMenu::Item</a>* PopupMenu::CustomComponent::getItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a> that holds this custom component, if this component is currently held by an <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a>. </p>
+<p>You can query the <a class="el" href="structPopupMenu_1_1Item.html" title="Describes a popup menu item. ">Item</a> for information that you might want to use in your <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182" title="Components can override this method to draw their content. ">paint()</a> method, such as the item's enabled and ticked states. </p>
+
+</div>
+</div>
 <a id="a302fa7c66c7e5c1d83842815030171d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a302fa7c66c7e5c1d83842815030171d9">&#9670;&nbsp;</a></span>isTriggeredAutomatically()</h2>
 
@@ -926,7 +957,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 26 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 27 2019 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
