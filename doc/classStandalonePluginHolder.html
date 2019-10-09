@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46b152c11c535bd3216285cb66d5e4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b99461932676a27cb38db21f9cc910c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a0b99461932676a27cb38db21f9cc910c">getProcessorHasPotentialFeedbackLoop</a> () const</td></tr>
 <tr class="separator:a0b99461932676a27cb38db21f9cc910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d15205c3a01cfb60eaf81c1dc8d4c68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a6d15205c3a01cfb60eaf81c1dc8d4c68">valueChanged</a> (<a class="el" href="classValue.html">Value</a> &amp;value) override</td></tr>
+<tr class="memdesc:a6d15205c3a01cfb60eaf81c1dc8d4c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object is changed.  <a href="#a6d15205c3a01cfb60eaf81c1dc8d4c68">More...</a><br /></td></tr>
+<tr class="separator:a6d15205c3a01cfb60eaf81c1dc8d4c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d47097f06e62623b1bdca3027da7e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a47d47097f06e62623b1bdca3027da7e9">getLastFile</a> () const</td></tr>
 <tr class="separator:a47d47097f06e62623b1bdca3027da7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b7121cdd9169e12d633fd09930ad86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a51b7121cdd9169e12d633fd09930ad86">setLastFile</a> (const <a class="el" href="classFileChooser.html">FileChooser</a> &amp;fc)</td></tr>
@@ -152,6 +155,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aad5c101e55ab3e2f6f381f66f3889ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4519d0e13026290888f3ec59e73fdf41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a4519d0e13026290888f3ec59e73fdf41">processorHasPotentialFeedbackLoop</a> = true</td></tr>
 <tr class="separator:a4519d0e13026290888f3ec59e73fdf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9571eb00ca999ec34fcb1be9c42f96"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#aab9571eb00ca999ec34fcb1be9c42f96">muteInput</a> { false }</td></tr>
+<tr class="separator:aab9571eb00ca999ec34fcb1be9c42f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa908cd3ed76d0af8c7cc47bb644377d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classValue.html">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#aa908cd3ed76d0af8c7cc47bb644377d4">shouldMuteInput</a></td></tr>
 <tr class="separator:aa908cd3ed76d0af8c7cc47bb644377d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6421f28f93071f8a5da01ca82187c9e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStandalonePluginHolder.html#a6421f28f93071f8a5da01ca82187c9e9">emptyBuffer</a></td></tr>
@@ -223,7 +228,7 @@ Public Attributes</h2></td></tr>
 <p>Preferably a complete setup options object can be used, which takes precedence over the preferredDefaultDeviceName and allows you to select the input &amp; output device names, sample rate, buffer size etc.</p>
 <p>In all instances, the settingsToUse will take precedence over the "preferred" options if not null. </p>
 
-<p class="reference">References <a class="el" href="classStandalonePluginHolder.html#aad5c101e55ab3e2f6f381f66f3889ad9">channelConfiguration</a>, <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">createPlugin()</a>, <a class="el" href="classStandalonePluginHolder.html#a012f86edb9487366c49a4378716bf775">init()</a>, <a class="el" href="classRuntimePermissions.html#a88697ee964654de2fea2eac5ed048979">RuntimePermissions::isGranted()</a>, <a class="el" href="classRuntimePermissions.html#a895f15741378bada300fbe409775d0d8">RuntimePermissions::isRequired()</a>, <a class="el" href="classStandalonePluginHolder.html#adbe5c58af4d4d9b47d32b5bdc6009bb1">options</a>, <a class="el" href="classStandalonePluginHolder.html#a5be5762c262958baef798d6b733771da">processor</a>, <a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535">RuntimePermissions::recordAudio</a>, and <a class="el" href="classRuntimePermissions.html#a9b45f4bb7ea1cc3bf5693fa2ec33b7c3">RuntimePermissions::request()</a>.</p>
+<p class="reference">References <a class="el" href="classValue.html#a3c2c52becedfd8c85029f98412300aa5">Value::addListener()</a>, <a class="el" href="classStandalonePluginHolder.html#aad5c101e55ab3e2f6f381f66f3889ad9">channelConfiguration</a>, <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">createPlugin()</a>, <a class="el" href="classStandalonePluginHolder.html#a012f86edb9487366c49a4378716bf775">init()</a>, <a class="el" href="classRuntimePermissions.html#a88697ee964654de2fea2eac5ed048979">RuntimePermissions::isGranted()</a>, <a class="el" href="classStandalonePluginHolder.html#aa5a16e61a7162f523e3a5ac0dc49b409">isInterAppAudioConnected()</a>, <a class="el" href="classRuntimePermissions.html#a895f15741378bada300fbe409775d0d8">RuntimePermissions::isRequired()</a>, <a class="el" href="classStandalonePluginHolder.html#adbe5c58af4d4d9b47d32b5bdc6009bb1">options</a>, <a class="el" href="classStandalonePluginHolder.html#a5be5762c262958baef798d6b733771da">processor</a>, <a class="el" href="classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535">RuntimePermissions::recordAudio</a>, <a class="el" href="classRuntimePermissions.html#a9b45f4bb7ea1cc3bf5693fa2ec33b7c3">RuntimePermissions::request()</a>, and <a class="el" href="classStandalonePluginHolder.html#aa908cd3ed76d0af8c7cc47bb644377d4">shouldMuteInput</a>.</p>
 
 </div>
 </div>
@@ -410,6 +415,39 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="classStandalonePluginHolder.html#a4519d0e13026290888f3ec59e73fdf41">processorHasPotentialFeedbackLoop</a>.</p>
+
+</div>
+</div>
+<a id="a6d15205c3a01cfb60eaf81c1dc8d4c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d15205c3a01cfb60eaf81c1dc8d4c68">&#9670;&nbsp;</a></span>valueChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StandalonePluginHolder::valueChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classValue.html">Value</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when a <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object is changed. </p>
+<p>Note that the <a class="el" href="classValue.html" title="Represents a shared variant value. ">Value</a> object passed as a parameter may not be exactly the same object that you registered the listener with - it might be a copy that refers to the same underlying ValueSource. To find out, you can call <a class="el" href="classValue.html#a901b00776b61ddc8b968d65def96d744" title="Returns true if this value and the other one are references to the same value. ">Value::refersToSameSourceAs()</a>. </p>
+
+<p>Implements <a class="el" href="classValue_1_1Listener.html#ab1f072eabd128b8e9a99b4926f2231a8">Value::Listener</a>.</p>
+
+<p class="reference">References <a class="el" href="classValue.html#aab38518b9ba7a9fae71878ee40a34c0f">Value::getValue()</a>, and <a class="el" href="classStandalonePluginHolder.html#aab9571eb00ca999ec34fcb1be9c42f96">muteInput</a>.</p>
 
 </div>
 </div>
@@ -694,6 +732,8 @@ Public Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classStandalonePluginHolder.html#a6fb1eb9dcabd5f5d6e2c52a44296e017">deviceManager</a>, <a class="el" href="classAudioDeviceManager.html#ad7ab4d5ba626a08098bb77a6164321a1">AudioDeviceManager::getCurrentAudioDevice()</a>, <a class="el" href="group__juce__audio__plugin__client-Standalone.html#ga1f66dc41704daecba196592ebd5b578d">getInstance()</a>, and <a class="el" href="group__juce__core-maths.html#ga5158e6e8faa5553204f90af596fafaf5">ignoreUnused()</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#aa31b5a490ea06c2b0b7fe4e1e7fd5e43">StandalonePluginHolder()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -793,6 +833,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aab9571eb00ca999ec34fcb1be9c42f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9571eb00ca999ec34fcb1be9c42f96">&#9670;&nbsp;</a></span>muteInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; StandalonePluginHolder::muteInput { false }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#a6d15205c3a01cfb60eaf81c1dc8d4c68">valueChanged()</a>.</p>
+
+</div>
+</div>
 <a id="aa908cd3ed76d0af8c7cc47bb644377d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa908cd3ed76d0af8c7cc47bb644377d4">&#9670;&nbsp;</a></span>shouldMuteInput</h2>
 
@@ -805,7 +861,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#a46b152c11c535bd3216285cb66d5e4e1">getMuteInputValue()</a>, and <a class="el" href="classStandalonePluginHolder.html#a0e01aecaf781b507c74ed9d1c341b2d9">reloadAudioDeviceState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#a46b152c11c535bd3216285cb66d5e4e1">getMuteInputValue()</a>, <a class="el" href="classStandalonePluginHolder.html#a0e01aecaf781b507c74ed9d1c341b2d9">reloadAudioDeviceState()</a>, and <a class="el" href="classStandalonePluginHolder.html#aa31b5a490ea06c2b0b7fe4e1e7fd5e43">StandalonePluginHolder()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +931,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 7 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 9 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

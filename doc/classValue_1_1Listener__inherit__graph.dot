@@ -8,4 +8,6 @@ digraph "Value::Listener"
   Node1 [label="ComboBox",height=0.2,width=0.4,color="black",URL="$classComboBox.html",tooltip="A component that lets the user choose from a drop-down list of choices. "];
   Node0 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="Label",height=0.2,width=0.4,color="black",URL="$classLabel.html",tooltip="A component that displays a text string, and can optionally become a text editor when clicked..."];
+  Node0 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="StandalonePluginHolder",height=0.2,width=0.4,color="black",URL="$classStandalonePluginHolder.html",tooltip="An object that creates and plays a standalone instance of an AudioProcessor. "];
 }

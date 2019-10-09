@@ -8,4 +8,6 @@ digraph "StandalonePluginHolder"
   Node1 [label="AudioIODeviceCallback",height=0.2,width=0.4,color="black",URL="$classAudioIODeviceCallback.html",tooltip="One of these is passed to an AudioIODevice object to stream the audio data in and out..."];
   Node2 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="Timer",height=0.2,width=0.4,color="black",URL="$classTimer.html",tooltip="Makes repeated callbacks to a virtual method at a specified time interval. "];
+  Node3 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Value::Listener",height=0.2,width=0.4,color="black",URL="$classValue_1_1Listener.html",tooltip="Receives callbacks when a Value object changes. "];
 }

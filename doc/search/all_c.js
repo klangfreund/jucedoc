@@ -316,5 +316,6 @@ var searchData=
   ['multiplywithwindowingtable',['multiplyWithWindowingTable',['../classdsp_1_1WindowingFunction.html#ab54dce018a451c3376e91e911d361f1b',1,'dsp::WindowingFunction']]],
   ['multisamplinglevel',['multisamplingLevel',['../classOpenGLPixelFormat.html#afa2032cde8affb7698f038ba5784365a',1,'OpenGLPixelFormat']]],
   ['multitimer',['MultiTimer',['../classMultiTimer.html',1,'MultiTimer'],['../classMultiTimer.html#a608fc823bb95f046f439424521615dc9',1,'MultiTimer::MultiTimer() noexcept'],['../classMultiTimer.html#a5020d0be93325aed21de9f06e2b28935',1,'MultiTimer::MultiTimer(const MultiTimer &amp;) noexcept']]],
-  ['musereceptorgeneric',['MuseReceptorGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac44eee1f6720c9ef9296f0c655526230',1,'PluginHostType']]]
+  ['musereceptorgeneric',['MuseReceptorGeneric',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac44eee1f6720c9ef9296f0c655526230',1,'PluginHostType']]],
+  ['muteinput',['muteInput',['../classStandalonePluginHolder.html#aab9571eb00ca999ec34fcb1be9c42f96',1,'StandalonePluginHolder']]]
 ];
