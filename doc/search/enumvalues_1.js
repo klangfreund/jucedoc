@@ -35,6 +35,7 @@ var searchData=
   ['bottomrightcornerresizecursor',['BottomRightCornerResizeCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97aa1bc9fcfb9b9e0f39e513ca1fcb8392b',1,'MouseCursor']]],
   ['bottomsideleft',['bottomSideLeft',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea33a4c771619ca9fc83e6422b57bb299d',1,'AudioChannelSet']]],
   ['bottomsideright',['bottomSideRight',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea2988d56ecd7e0220ee279717493b4862',1,'AudioChannelSet']]],
+  ['brightness',['brightness',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79ab369273cb42d145247d644359615dca8',1,'BlocksProtocol']]],
   ['butt',['butt',['../classPathStrokeType.html#a9050e37133047ab699b44b704e4f96cfa05f422ecf6a99eb2eed32a6d67795b38',1,'PathStrokeType']]],
   ['button',['button',['../structPushNotifications_1_1Notification_1_1Action.html#a8694375bdc3dd690cb12a97cab9570c0a141c9f12dafa9ed97067ed3c70dd141a',1,'PushNotifications::Notification::Action']]],
   ['button0',['button0',['../classControlButton.html#a891776295057786f99f14631b1aa2794a28b50acc49d2f2d93ca099ece4664f35',1,'ControlButton']]],

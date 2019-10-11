@@ -484,6 +484,7 @@ var searchData=
   ['rightsurroundside',['rightSurroundSide',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea7f1ce89b09734bb05c4b4b303845cee9',1,'AudioChannelSet']]],
   ['righttoleft',['rightToLeft',['../classAttributedString.html#a254fea6774b4e74f786cc5ad3abac400a455f62330ea6e3aca5353d09216fff72',1,'AttributedString']]],
   ['roomsize',['roomSize',['../structReverb_1_1Parameters.html#a31a5e2e56f91cb29e902e045960218a8',1,'Reverb::Parameters']]],
+  ['rootkeycolour',['rootKeyColour',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79afd9c967deeaa55af2aa9c14c50ee91eb',1,'BlocksProtocol']]],
   ['rosybrown',['rosybrown',['../classColours.html#ac80422785f2552e8738a6b450f335dfa',1,'Colours']]],
   ['rotary',['Rotary',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a2043125f6f74c8ceae38baf3fb514f18',1,'Slider']]],
   ['rotarydialangle',['RotaryDialAngle',['../namespaceBlocksProtocol.html#a08904852328e78063e00c8d01b7d686a',1,'BlocksProtocol']]],

@@ -9,6 +9,7 @@ var searchData=
   ['glidesensitivity',['glideSensitivity',['../classControlButton.html#a891776295057786f99f14631b1aa2794ac349b62c3f098211573dd55e5fa604aa',1,'ControlButton::glideSensitivity()'],['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79aad61e15c0917d977f3cf0ee4ff03b6dd',1,'BlocksProtocol::glideSensitivity()']]],
   ['globalapplicationsdirectory',['globalApplicationsDirectory',['../classFile.html#a3e19cafabb03c5838160263a6e76313dad4f66736251eab2cdaa21dd5a709ed21',1,'File']]],
   ['globalapplicationsdirectoryx86',['globalApplicationsDirectoryX86',['../classFile.html#a3e19cafabb03c5838160263a6e76313daf546c8ff08e2ace7856e72422586cbd4',1,'File']]],
+  ['globalkeycolour',['globalKeyColour',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a573338a207272d89235f1b0bcf8868cf',1,'BlocksProtocol']]],
   ['gradient',['gradient',['../structDrumPadGridProgram_1_1GridFill.html#ae8c97bf48e8f16e99118f2d12dab6948a0ba4f78b5be6309f64cc2bee8a063fa5',1,'DrumPadGridProgram::GridFill']]],
   ['gzipformat',['gzipFormat',['../classGZIPDecompressorInputStream.html#a293d005b03d528a89ec13cfb07e31f94a1a578314b467b8f06a116da9d8cc52eb',1,'GZIPDecompressorInputStream']]]
 ];

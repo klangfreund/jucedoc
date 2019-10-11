@@ -119,6 +119,7 @@ var searchData=
   ['box2drenderer',['Box2DRenderer',['../classBox2DRenderer.html',1,'Box2DRenderer'],['../classBox2DRenderer.html#a82f5d69efdedbcf1868f173779f42789',1,'Box2DRenderer::Box2DRenderer()']]],
   ['bpm',['bpm',['../structAudioPlayHead_1_1CurrentPositionInfo.html#a70442777df0b88595ac6865acd936722',1,'AudioPlayHead::CurrentPositionInfo']]],
   ['brighter',['brighter',['../classColour.html#a614c7699a1b47dcf324106d548238bac',1,'Colour']]],
+  ['brightness',['brightness',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79ab369273cb42d145247d644359615dca8',1,'BlocksProtocol']]],
   ['bringmodalcomponentstofront',['bringModalComponentsToFront',['../classModalComponentManager.html#a3e398829cf3016f4f370b21330686d1b',1,'ModalComponentManager']]],
   ['broadcast',['broadcast',['../classIPAddress.html#aac219a18652ad5a4b39d76c401bcd0bc',1,'IPAddress']]],
   ['broadcastmessage',['broadcastMessage',['../classMessageManager.html#a252262c8bfe857ea77fe4e7b4b42ae80',1,'MessageManager']]],

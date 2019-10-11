@@ -32,6 +32,7 @@ var searchData=
   ['rightsurroundrear',['rightSurroundRear',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea42979a8c438351bc314f8df0194303a8',1,'AudioChannelSet']]],
   ['rightsurroundside',['rightSurroundSide',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea7f1ce89b09734bb05c4b4b303845cee9',1,'AudioChannelSet']]],
   ['righttoleft',['rightToLeft',['../classAttributedString.html#a254fea6774b4e74f786cc5ad3abac400a455f62330ea6e3aca5353d09216fff72',1,'AttributedString']]],
+  ['rootkeycolour',['rootKeyColour',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79afd9c967deeaa55af2aa9c14c50ee91eb',1,'BlocksProtocol']]],
   ['rotary',['Rotary',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a2043125f6f74c8ceae38baf3fb514f18',1,'Slider']]],
   ['rotaryhorizontaldrag',['RotaryHorizontalDrag',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a8c359e2cb456e39665bec067273df5fe',1,'Slider']]],
   ['rotaryhorizontalverticaldrag',['RotaryHorizontalVerticalDrag',['../classSlider.html#af1caee82552143dd9ff0fc9f0cdc0888a6d72c2ed67c43d22785fe271d3684075',1,'Slider']]],
