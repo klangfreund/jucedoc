@@ -39,6 +39,7 @@ var searchData=
   ['metadatavalues',['metadataValues',['../classAudioFormatReader.html#a8dfe48ed0e171928185c716811f5ecdb',1,'AudioFormatReader']]],
   ['midichannel',['midiChannel',['../structMPENote.html#a642fb34a5721d3eb5d3cf84e92706164',1,'MPENote']]],
   ['mididatabase64',['midiDataBase64',['../classCoreAudioFormat.html#a6a78852cc234c7fc83ab18c92662feb6',1,'CoreAudioFormat']]],
+  ['midisettingsgroup',['midiSettingsGroup',['../structBlockConfigManager.html#af82a3fe47df57fbe0680acde30466398',1,'BlockConfigManager']]],
   ['midnightblue',['midnightblue',['../classColours.html#ae2b84b4de769da6c75cc947dcf8a066a',1,'Colours']]],
   ['millisecondsbeforesaving',['millisecondsBeforeSaving',['../structPropertiesFile_1_1Options.html#a35be64ba2da1b72b6b8b599e8ddb0924',1,'PropertiesFile::Options']]],
   ['millisecssincekeypressed',['millisecsSinceKeyPressed',['../structApplicationCommandTarget_1_1InvocationInfo.html#a0c1817f71536452a5d69a8e28ecc8534',1,'ApplicationCommandTarget::InvocationInfo']]],

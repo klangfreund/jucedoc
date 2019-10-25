@@ -35,6 +35,7 @@ var searchData=
   ['blendrect',['blendRect',['../group__LittleFootFunctions.html#ga31ccd4d5e7a75f964f8b3a2d72ca2753',1,'juce_LittleFootFunctions.dox']]],
   ['block',['Block',['../classBlock.html#a3e4160694c1e39806a38c45c50366854',1,'Block::Block(const String &amp;serialNumberToUse)'],['../classBlock.html#a1d3d96ff0185847741c4678310215f9e',1,'Block::Block(const String &amp;serial, const String &amp;version, const String &amp;name)']]],
   ['blockadded',['blockAdded',['../structTopologySource_1_1Listener.html#a182ac8e1efcd0ebd57903731c502e1e9',1,'TopologySource::Listener']]],
+  ['blockconfigmanager',['BlockConfigManager',['../structBlockConfigManager.html#af997625d06a9edf71635689b05c940ed',1,'BlockConfigManager']]],
   ['blockgraph',['BlockGraph',['../classBlockGraph.html#a7b22ab3a0f70cca75e634a315735ff3c',1,'BlockGraph::BlockGraph(const BlockTopology topology, std::function&lt; bool(Block::Ptr block)&gt; filter=nullptr)'],['../classBlockGraph.html#a2dae01ee0da021011b72b6aed8a6e225',1,'BlockGraph::BlockGraph(BlockGraph &amp;&amp;)']]],
   ['blockremoved',['blockRemoved',['../structTopologySource_1_1Listener.html#aa6581bfb0a00a7427e4ed2524955b1ec',1,'TopologySource::Listener']]],
   ['blockreset',['blockReset',['../classBlock.html#abdb64678b86e39075ac3623983cc95bc',1,'Block']]],

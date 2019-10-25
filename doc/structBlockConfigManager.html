@@ -80,6 +80,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af997625d06a9edf71635689b05c940ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#af997625d06a9edf71635689b05c940ed">BlockConfigManager</a> (<a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structBlockConfigManager_1_1ConfigDescription.html">ConfigDescription</a> &gt; defaultConfig)</td></tr>
+<tr class="separator:af997625d06a9edf71635689b05c940ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6afae389370f26ccced6e3ec723ce03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#a6afae389370f26ccced6e3ec723ce03b">setDeviceIndex</a> (<a class="el" href="namespaceBlocksProtocol.html#a1bf2d2c7537400206e98488ac4fa437e">TopologyIndex</a> newDeviceIndex)</td></tr>
 <tr class="separator:a6afae389370f26ccced6e3ec723ce03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1afa66ee07d833bce4153ffa61c29a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#a8a1afa66ee07d833bce4153ffa61c29a">setDeviceComms</a> (<a class="el" href="structPhysicalTopologySource_1_1DeviceConnection.html">PhysicalTopologySource::DeviceConnection</a> *newConn)</td></tr>
@@ -128,10 +130,41 @@ Public Attributes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a42ceb197a7a1466f1b9e1105699665d5"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#a42ceb197a7a1466f1b9e1105699665d5">numConfigItems</a> = 69</td></tr>
 <tr class="separator:a42ceb197a7a1466f1b9e1105699665d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82a3fe47df57fbe0680acde30466398"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#af82a3fe47df57fbe0680acde30466398">midiSettingsGroup</a> = &quot;MIDI Settings&quot;</td></tr>
+<tr class="separator:af82a3fe47df57fbe0680acde30466398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d9cb6eeea809ccdf42a2409abfcb1e"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#ab4d9cb6eeea809ccdf42a2409abfcb1e">pitchGroup</a> = &quot;Pitch&quot;</td></tr>
+<tr class="separator:ab4d9cb6eeea809ccdf42a2409abfcb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e868d7d2482bfc52e51a8608ced20e"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#af9e868d7d2482bfc52e51a8608ced20e">playGroup</a> = &quot;Play mode&quot;</td></tr>
+<tr class="separator:af9e868d7d2482bfc52e51a8608ced20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3bd53f49e8a0b1187ce32300c67236"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#a6a3bd53f49e8a0b1187ce32300c67236">touchGroup</a> = &quot;5D Touch&quot;</td></tr>
+<tr class="separator:a6a3bd53f49e8a0b1187ce32300c67236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32a15f3aba9ec84cee617eb22400be6"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#ad32a15f3aba9ec84cee617eb22400be6">rhythmGroup</a> = &quot;Rhythm&quot;</td></tr>
+<tr class="separator:ad32a15f3aba9ec84cee617eb22400be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cc6f76290795c6195f529451100e97"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlockConfigManager.html#a00cc6f76290795c6195f529451100e97">coloursGroup</a> = &quot;Colors&quot;</td></tr>
+<tr class="separator:a00cc6f76290795c6195f529451100e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages the configuration of blocks. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af997625d06a9edf71635689b05c940ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af997625d06a9edf71635689b05c940ed">&#9670;&nbsp;</a></span>BlockConfigManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BlockConfigManager::BlockConfigManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="structBlockConfigManager_1_1ConfigDescription.html">ConfigDescription</a> &gt;&#160;</td>
+          <td class="paramname"><em>defaultConfig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6afae389370f26ccced6e3ec723ce03b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6afae389370f26ccced6e3ec723ce03b">&#9670;&nbsp;</a></span>setDeviceIndex()</h2>
 
@@ -618,6 +651,138 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af82a3fe47df57fbe0680acde30466398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82a3fe47df57fbe0680acde30466398">&#9670;&nbsp;</a></span>midiSettingsGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::midiSettingsGroup = &quot;MIDI Settings&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4d9cb6eeea809ccdf42a2409abfcb1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d9cb6eeea809ccdf42a2409abfcb1e">&#9670;&nbsp;</a></span>pitchGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::pitchGroup = &quot;Pitch&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9e868d7d2482bfc52e51a8608ced20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e868d7d2482bfc52e51a8608ced20e">&#9670;&nbsp;</a></span>playGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::playGroup = &quot;Play mode&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a3bd53f49e8a0b1187ce32300c67236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3bd53f49e8a0b1187ce32300c67236">&#9670;&nbsp;</a></span>touchGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::touchGroup = &quot;5D Touch&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad32a15f3aba9ec84cee617eb22400be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32a15f3aba9ec84cee617eb22400be6">&#9670;&nbsp;</a></span>rhythmGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::rhythmGroup = &quot;Rhythm&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00cc6f76290795c6195f529451100e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00cc6f76290795c6195f529451100e97">&#9670;&nbsp;</a></span>coloursGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* BlockConfigManager::coloursGroup = &quot;Colors&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7fafd4c77ddf1b07f50fe2d6d24438d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fafd4c77ddf1b07f50fe2d6d24438d1">&#9670;&nbsp;</a></span>configList</h2>
 
@@ -638,7 +803,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 24 2019 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 25 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

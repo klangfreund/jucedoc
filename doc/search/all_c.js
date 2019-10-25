@@ -180,6 +180,7 @@ var searchData=
   ['midirpndetector',['MidiRPNDetector',['../classMidiRPNDetector.html',1,'MidiRPNDetector'],['../classMidiRPNDetector.html#aac89378f671f106a6b359ea1fb24487c',1,'MidiRPNDetector::MidiRPNDetector()']]],
   ['midirpngenerator',['MidiRPNGenerator',['../classMidiRPNGenerator.html',1,'']]],
   ['midirpnmessage',['MidiRPNMessage',['../structMidiRPNMessage.html',1,'']]],
+  ['midisettingsgroup',['midiSettingsGroup',['../structBlockConfigManager.html#af82a3fe47df57fbe0680acde30466398',1,'BlockConfigManager']]],
   ['midistart',['midiStart',['../classMidiMessage.html#a32256e3ed500d65199e931575b3c7f7f',1,'MidiMessage']]],
   ['midistartchannel',['midiStartChannel',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79ae248eb6d65ad24bd2e138aa201f8ae55',1,'BlocksProtocol']]],
   ['midistop',['midiStop',['../classMidiMessage.html#a079571d3e3e25780fa2764c33c222249',1,'MidiMessage']]],
