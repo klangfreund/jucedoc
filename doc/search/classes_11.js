@@ -58,7 +58,7 @@ var searchData=
   ['resizableedgecomponent',['ResizableEdgeComponent',['../classResizableEdgeComponent.html',1,'']]],
   ['resizablewindow',['ResizableWindow',['../classResizableWindow.html',1,'']]],
   ['result',['Result',['../classResult.html',1,'']]],
-  ['reverb',['Reverb',['../classReverb.html',1,'Reverb'],['../classdsp_1_1Reverb.html',1,'dsp::Reverb']]],
+  ['reverb',['Reverb',['../classdsp_1_1Reverb.html',1,'dsp::Reverb'],['../classReverb.html',1,'Reverb']]],
   ['reverbaudiosource',['ReverbAudioSource',['../classReverbAudioSource.html',1,'']]],
   ['rotaryparameters',['RotaryParameters',['../structSlider_1_1RotaryParameters.html',1,'Slider']]],
   ['rsakey',['RSAKey',['../classRSAKey.html',1,'']]],

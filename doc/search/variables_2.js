@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cadetblue',['cadetblue',['../classColours.html#af5bca16acd0235fa3c63859465d53f7f',1,'Colours']]],
+  ['cadetblue',['cadetblue',['../namespaceColours.html#a421e492047a35fd0fab10269c09e9ede',1,'Colours']]],
   ['cancelbutton',['cancelButton',['../classOnlineUnlockForm.html#ae1dc0ebc96b660f2a95b44ad23ed7ebb',1,'OnlineUnlockForm']]],
   ['canshowbadge',['canShowBadge',['../structPushNotifications_1_1Channel.html#aedaecd89fac8cabde95d26cc83b1fb92',1,'PushNotifications::Channel']]],
   ['categories',['categories',['../structPushNotifications_1_1Settings.html#a576f03626be05ad8122739d563a647fa',1,'PushNotifications::Settings']]],
@@ -13,8 +13,8 @@ var searchData=
   ['channelindex',['channelIndex',['../structAudioProcessorGraph_1_1NodeAndChannel.html#ab0ad32f6d0aa7608798726fc42eaa11f',1,'AudioProcessorGraph::NodeAndChannel']]],
   ['channellayout',['channelLayout',['../classAudioFormatWriter.html#abfd821aaba068593364888cb97c47a0b',1,'AudioFormatWriter']]],
   ['channels',['channels',['../structUnityAudioEffectDefinition.html#a6b37a304a89f6bee46c2441ed81f71b5',1,'UnityAudioEffectDefinition::channels()'],['../structSpeakerMappings_1_1Mapping.html#a4bd54e10adf49ce9a185dae6b90d2218',1,'SpeakerMappings::Mapping::channels()']]],
-  ['chartreuse',['chartreuse',['../classColours.html#aadcaa70cc7028fee7c6dba0a04926b6d',1,'Colours']]],
-  ['chocolate',['chocolate',['../classColours.html#a0c018189a4e1c0810a8838abb1763135',1,'Colours']]],
+  ['chartreuse',['chartreuse',['../namespaceColours.html#ae1907f697e1d1b4830d21d0acec39272',1,'Colours']]],
+  ['chocolate',['chocolate',['../namespaceColours.html#a4ee3348e68486b4ee43e2f5361c939da',1,'Colours']]],
   ['choices',['choices',['../classAudioParameterChoice.html#afbeec68d8f56cf4cde23c1b615699b9f',1,'AudioParameterChoice::choices()'],['../classChoicePropertyComponent.html#a9e1e134a3393008eaed61c31667b78fd',1,'ChoicePropertyComponent::choices()']]],
   ['clip',['clip',['../structLowLevelGraphicsPostScriptRenderer_1_1SavedState.html#aa5fb5398ec25f56561c71a4792aa51fa',1,'LowLevelGraphicsPostScriptRenderer::SavedState']]],
   ['closessubpath',['closesSubPath',['../classPathFlatteningIterator.html#ac102af0a5ac3dfd026488c1efea1b8ab',1,'PathFlatteningIterator']]],
@@ -42,13 +42,13 @@ var searchData=
   ['content',['content',['../structDialogWindow_1_1LaunchOptions.html#afb8d6fb02aec1a20e787de456556067a',1,'DialogWindow::LaunchOptions']]],
   ['contentlength',['contentLength',['../classURL_1_1DownloadTask.html#ab59855d4df9ae73ee720285f691b2971',1,'URL::DownloadTask']]],
   ['controlpoints',['controlPoints',['../classRelativePointPath_1_1QuadraticTo.html#af52f78c292c1e148972929b2493c33fe',1,'RelativePointPath::QuadraticTo::controlPoints()'],['../classRelativePointPath_1_1CubicTo.html#a6651df5d1d55b5b8cf5bfff380fe40ec',1,'RelativePointPath::CubicTo::controlPoints()']]],
-  ['coral',['coral',['../classColours.html#a194cea1670d8b5588dc0acb40c7e93d1',1,'Colours']]],
-  ['cornflowerblue',['cornflowerblue',['../classColours.html#a4186f54cc951c1482c317b8729eb47a0',1,'Colours']]],
-  ['cornsilk',['cornsilk',['../classColours.html#a21bbe016b258787d6754d6227efa3c53',1,'Colours']]],
+  ['coral',['coral',['../namespaceColours.html#abf762b51e26b244b84390aa993b0f5cd',1,'Colours']]],
+  ['cornflowerblue',['cornflowerblue',['../namespaceColours.html#aacd9e0445427ebb8d956583b0798c643',1,'Colours']]],
+  ['cornsilk',['cornsilk',['../namespaceColours.html#abac76b22ce234e733b099fee363e1df3',1,'Colours']]],
   ['countdown',['countdown',['../classSmoothedValueBase.html#a5428962e91e7745e9e4089bffe97852b',1,'SmoothedValueBase']]],
   ['create',['create',['../structUnityAudioEffectDefinition.html#a5b5ff20a65d01612e0e10d0dc5b73b1c',1,'UnityAudioEffectDefinition']]],
   ['creationtime',['creationTime',['../structDirectoryContentsList_1_1FileInfo.html#a903e1211fd14c33fe7af486e4e91b9b0',1,'DirectoryContentsList::FileInfo']]],
-  ['crimson',['crimson',['../classColours.html#abd804b3fa30e3aea3908bfaef84ff7ae',1,'Colours']]],
+  ['crimson',['crimson',['../namespaceColours.html#ad65a08b3f78f624abfc970c844b8d859',1,'Colours']]],
   ['current',['current',['../structPushNotifications_1_1Notification_1_1Progress.html#a7a31c24734466a55144ac3b7de28d3a8',1,'PushNotifications::Notification::Progress']]],
   ['currentbounds',['currentBounds',['../classFlexItem.html#aa8c1424c9e12c6b08a29c4767ec06704',1,'FlexItem::currentBounds()'],['../classGridItem.html#a88d9b486b706c6c7b069aefa48adecd9',1,'GridItem::currentBounds()']]],
   ['currentlyplayingnote',['currentlyPlayingNote',['../classMPESynthesiserVoice.html#aea34fcbdb3fa0961f73d5f9a1f34e255',1,'MPESynthesiserVoice']]],
@@ -60,5 +60,5 @@ var searchData=
   ['customcomponent',['customComponent',['../structPopupMenu_1_1Item.html#a60e8c61225a127bf37c46144c03689f6',1,'PopupMenu::Item']]],
   ['customencoding',['customEncoding',['../structXmlElement_1_1TextFormat.html#ae7037150be1321862bb3cedb6642586a',1,'XmlElement::TextFormat']]],
   ['customheader',['customHeader',['../structXmlElement_1_1TextFormat.html#a9b77aa7cdec984b10decc585ca19ba6f',1,'XmlElement::TextFormat']]],
-  ['cyan',['cyan',['../classColours.html#a0f35bbd00d593e18a4e980100e77373c',1,'Colours']]]
+  ['cyan',['cyan',['../namespaceColours.html#a3e14715b6e4b1864493f7a325c3b6ce2',1,'Colours']]]
 ];

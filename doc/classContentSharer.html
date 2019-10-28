@@ -185,7 +185,7 @@ Public Member Functions</h2></td></tr>
 
 <p>A convenience function to share an image. </p>
 <p>This is useful when you have images loaded in memory. The images will be written to temporary files first, so if you have the images in question stored on disk already call <a class="el" href="classContentSharer.html#ad84934f80c996f54e5ed119f360b067a" title="Shares the given files. ">shareFiles()</a> instead. By default, images will be saved to PNG files, but you can supply a custom <a class="el" href="classImageFileFormat.html" title="Base-class for codecs that can read and write image file formats such as PNG, JPEG, etc. ">ImageFileFormat</a> to override this. The custom file format will be owned and deleted by the sharer. e.g.</p>
-<div class="fragment"><div class="line"><a class="code" href="classGraphics.html">Graphics</a> g (myImage);</div><div class="line">g.<a class="code" href="classGraphics.html#a9a944a0006b7277fda473f0b1b4f028f">setColour</a> (<a class="code" href="classColours.html#a9a561532a8aa26019e40aa0460a40646">Colours::green</a>);</div><div class="line">g.<a class="code" href="classGraphics.html#ae965bf1c5fadee50c665b6508eb3e8f4">fillEllipse</a> (20, 20, 300, 200);</div><div class="line"><a class="code" href="classArray.html">Array&lt;Image&gt;</a> images;</div><div class="line">images.<a class="code" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">add</a> (myImage);</div><div class="line">ContentSharer::getInstance()-&gt;shareImages (images, myCallback);</div></div><!-- fragment --><p>Upon completion you will receive a callback with a sharing result. Note: Sadly on Android the returned success flag may be wrong as there is no standard way the sharing targets report if the sharing operation succeeded. Also, the optional error message is always empty on Android. </p>
+<div class="fragment"><div class="line"><a class="code" href="classGraphics.html">Graphics</a> g (myImage);</div><div class="line">g.<a class="code" href="classGraphics.html#a9a944a0006b7277fda473f0b1b4f028f">setColour</a> (<a class="code" href="namespaceColours.html#a3195dd8726f3950a627a6cb7fc5258f9">Colours::green</a>);</div><div class="line">g.<a class="code" href="classGraphics.html#ae965bf1c5fadee50c665b6508eb3e8f4">fillEllipse</a> (20, 20, 300, 200);</div><div class="line"><a class="code" href="classArray.html">Array&lt;Image&gt;</a> images;</div><div class="line">images.<a class="code" href="classArray.html#a52da22e285e44171b6d6fa785a7d536a">add</a> (myImage);</div><div class="line">ContentSharer::getInstance()-&gt;shareImages (images, myCallback);</div></div><!-- fragment --><p>Upon completion you will receive a callback with a sharing result. Note: Sadly on Android the returned success flag may be wrong as there is no standard way the sharing targets report if the sharing operation succeeded. Also, the optional error message is always empty on Android. </p>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 25 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 28 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

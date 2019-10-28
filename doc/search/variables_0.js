@@ -21,7 +21,7 @@ var searchData=
   ['adddefaultheader',['addDefaultHeader',['../structXmlElement_1_1TextFormat.html#a6c3d0ac316e68e5afab517c54b75386f',1,'XmlElement::TextFormat']]],
   ['address',['address',['../classIPAddress.html#a2be5eab7b1b7d2e39d8d5367642f3004',1,'IPAddress::address()'],['../structNetworkServiceDiscovery_1_1Service.html#ade832707345fb61ef8ed0332ef995ee9',1,'NetworkServiceDiscovery::Service::address()']]],
   ['alertonlyonce',['alertOnlyOnce',['../structPushNotifications_1_1Notification.html#ab134a2585ba8b5064397ed3c56202af0',1,'PushNotifications::Notification']]],
-  ['aliceblue',['aliceblue',['../classColours.html#aa90d486409e9c3634ec3f9abbaeb14d7',1,'Colours']]],
+  ['aliceblue',['aliceblue',['../namespaceColours.html#a54fefe6d70a212baebc2eda2c854abba',1,'Colours']]],
   ['aligncontent',['alignContent',['../classFlexBox.html#a8e1ae8a873d7ff198f439d3088192bcf',1,'FlexBox::alignContent()'],['../classGrid.html#a315d33b518dd1dc90068a51822b030ac',1,'Grid::alignContent()']]],
   ['alignitems',['alignItems',['../classFlexBox.html#a9e928c10773d54e50e4bfcfc2814f541',1,'FlexBox::alignItems()'],['../classGrid.html#a1ea337d65d875793edcfd4b195040f39',1,'Grid::alignItems()']]],
   ['alignself',['alignSelf',['../classFlexItem.html#a7b9190e838f5ee0d70d1cac494621fd7',1,'FlexItem::alignSelf()'],['../classGridItem.html#a8c48a9ecf979e0b9493e12ecc629a916',1,'GridItem::alignSelf()']]],
@@ -35,7 +35,7 @@ var searchData=
   ['ambisonicdata',['ambisonicData',['../structUnityAudioEffectState.html#a1431c2143cafbe7bfb2a6e8e507f83e3',1,'UnityAudioEffectState']]],
   ['ambisonicoutchannels',['ambisonicOutChannels',['../structUnityAudioAmbisonicData.html#adf12ba522f9baeb717f79bfdcd49efe2',1,'UnityAudioAmbisonicData']]],
   ['anchor',['anchor',['../classTextLayout_1_1Glyph.html#a5ed7fd244c70a76748ced04c222cfb87',1,'TextLayout::Glyph']]],
-  ['antiquewhite',['antiquewhite',['../classColours.html#a2b7b4df4c8de5448bbb9b0e675d5ba71',1,'Colours']]],
+  ['antiquewhite',['antiquewhite',['../namespaceColours.html#a90f69553443fe6747b11bc1f648b976c',1,'Colours']]],
   ['apiversion',['apiVersion',['../structUnityAudioEffectDefinition.html#a50fcd4bdaecc23e121fd97b9b67af0b8',1,'UnityAudioEffectDefinition']]],
   ['applebeats',['appleBeats',['../classAiffAudioFormat.html#a6bb37fe682296874d508bead17cca803',1,'AiffAudioFormat']]],
   ['appledenominator',['appleDenominator',['../classAiffAudioFormat.html#afd67205870de9ed8615b6dbaf688ab7a',1,'AiffAudioFormat']]],
@@ -47,8 +47,8 @@ var searchData=
   ['appletag',['appleTag',['../classAiffAudioFormat.html#ae70d490b15000091780a97d9b1913f32',1,'AiffAudioFormat']]],
   ['applicationbundlename',['applicationBundleName',['../structInAppPurchases_1_1Purchase.html#a5950a9e263d0834b3f42851bcfa23c48',1,'InAppPurchases::Purchase']]],
   ['applicationname',['applicationName',['../structPropertiesFile_1_1Options.html#a6222c4cfec8124ae0af33398a61f2517',1,'PropertiesFile::Options']]],
-  ['aqua',['aqua',['../classColours.html#a8e8c52db61e74dde6972c2f9c727796f',1,'Colours']]],
-  ['aquamarine',['aquamarine',['../classColours.html#aa16a1a5bd7d1e56f3d36ce7bf7706cd6',1,'Colours']]],
+  ['aqua',['aqua',['../namespaceColours.html#a8fa64c7acebb2a4c5a28b927f673b3d8',1,'Colours']]],
+  ['aquamarine',['aquamarine',['../namespaceColours.html#ae57648e6a23a907a18d6620ea05d941c',1,'Colours']]],
   ['area',['area',['../classGridItem.html#aa1d3cb3665477cdb7b58a607b779f8f3',1,'GridItem']]],
   ['argb',['argb',['../structLEDColour.html#a7570ba255dade5c96450c9d7b0e3dba4',1,'LEDColour']]],
   ['argumentdescription',['argumentDescription',['../structConsoleApplication_1_1Command.html#a58d4d1dcda368f079ea7f648e89349a2',1,'ConsoleApplication::Command']]],
@@ -65,5 +65,5 @@ var searchData=
   ['autorows',['autoRows',['../classGrid.html#a79c7bfbb5bab511a2b950f8f4d33ba5c',1,'Grid']]],
   ['autovalue',['autoValue',['../classFlexItem.html#af32603bdf7f814f6d73a999b54a34df6',1,'FlexItem']]],
   ['averageseconds',['averageSeconds',['../structPerformanceCounter_1_1Statistics.html#a1ddbe61fd1a766973cc19d9c3432a4c6',1,'PerformanceCounter::Statistics']]],
-  ['azure',['azure',['../classColours.html#a5171f883b75e70b30df3b3b1746a8521',1,'Colours']]]
+  ['azure',['azure',['../namespaceColours.html#a4b18a514ccb0035c2e6af6ee7c2079f7',1,'Colours']]]
 ];

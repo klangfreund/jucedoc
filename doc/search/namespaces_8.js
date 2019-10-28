@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valuesmoothingtypes',['ValueSmoothingTypes',['../namespaceValueSmoothingTypes.html',1,'']]]
+  ['unittestcategories',['UnitTestCategories',['../namespaceUnitTestCategories.html',1,'']]]
 ];

@@ -17,8 +17,8 @@ var searchData=
   ['incifnotnull',['incIfNotNull',['../classReferenceCountedObjectPtr.html#a226b6f1a57c738f6cda90acfa962270b',1,'ReferenceCountedObjectPtr']]],
   ['indeterminate',['indeterminate',['../structPushNotifications_1_1Notification_1_1Progress.html#a157c9028d9bbeee92332a298740ae272',1,'PushNotifications::Notification::Progress']]],
   ['index',['index',['../structBlock_1_1ConnectionPort.html#a01544db019387950e10d511a23817614',1,'Block::ConnectionPort::index()'],['../structTouchSurface_1_1Touch.html#a465f1d2a737768682eb5a2b69b3c8f26',1,'TouchSurface::Touch::index()'],['../structBlocksProtocol_1_1DeviceStatus.html#aaca78b3c47e2355bbd3d61f0a7b91e03',1,'BlocksProtocol::DeviceStatus::index()'],['../structBlocksProtocol_1_1DeviceVersion.html#aa22c4b72ae8a47e7b89d78bb64263222',1,'BlocksProtocol::DeviceVersion::index()'],['../structBlocksProtocol_1_1DeviceName.html#a7a9f931b4de17c4ba8d34a1bab191b20',1,'BlocksProtocol::DeviceName::index()']]],
-  ['indianred',['indianred',['../classColours.html#a5a356968d2d4f49b369afa56c0ec3f43',1,'Colours']]],
-  ['indigo',['indigo',['../classColours.html#a087ca459fcd267cdda383c5bf5ab0f0e',1,'Colours']]],
+  ['indianred',['indianred',['../namespaceColours.html#abcb0c31bffb0197eac36cea06c14388c',1,'Colours']]],
+  ['indigo',['indigo',['../namespaceColours.html#a54621969e7b7902c3957f4b863aa2271',1,'Colours']]],
   ['informativemessage',['informativeMessage',['../structOnlineUnlockStatus_1_1UnlockResult.html#a8accead62bf1964370bffd579ecc4f40',1,'OnlineUnlockStatus::UnlockResult']]],
   ['initialnote',['initialNote',['../structMPENote.html#a76415e99eca6956fd16ed014e226a5ce',1,'MPENote']]],
   ['initialtimbre',['initialTimbre',['../structMPENote.html#abe36f62d18c4acbec22396c19fd307ff',1,'MPENote']]],
@@ -72,5 +72,5 @@ var searchData=
   ['item',['item',['../structBlock_1_1ConfigMetaData.html#a4266eeea52a9b67c8e995451692dfe41',1,'Block::ConfigMetaData::item()'],['../structBlockConfigManager_1_1ConfigDescription.html#a62e5491b900224c37e71f98854a68097',1,'BlockConfigManager::ConfigDescription::item()']]],
   ['itemid',['itemID',['../structPopupMenu_1_1Item.html#ac2f737fa43d4a2c2e1115af850ea3d01',1,'PopupMenu::Item']]],
   ['items',['items',['../classFlexBox.html#aebe0aeb88e2a044a737df0f5ac26bc3b',1,'FlexBox::items()'],['../classGrid.html#a6d48af5319886013f42e0b75d0f1d6db',1,'Grid::items()']]],
-  ['ivory',['ivory',['../classColours.html#a97ea5f64838c6c2d1301c32108e830d3',1,'Colours']]]
+  ['ivory',['ivory',['../namespaceColours.html#af0c56f0813cd939eceb01bef83a35a3f',1,'Colours']]]
 ];

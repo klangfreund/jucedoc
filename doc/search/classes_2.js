@@ -31,7 +31,6 @@ var searchData=
   ['coefficients',['Coefficients',['../structdsp_1_1FIR_1_1Coefficients.html',1,'dsp::FIR::Coefficients&lt; NumericType &gt;'],['../structdsp_1_1IIR_1_1Coefficients.html',1,'dsp::IIR::Coefficients&lt; NumericType &gt;']]],
   ['colour',['Colour',['../classColour.html',1,'']]],
   ['colourgradient',['ColourGradient',['../classColourGradient.html',1,'']]],
-  ['colours',['Colours',['../classColours.html',1,'']]],
   ['colourscheme',['ColourScheme',['../classLookAndFeel__V4_1_1ColourScheme.html',1,'LookAndFeel_V4::ColourScheme'],['../structCodeEditorComponent_1_1ColourScheme.html',1,'CodeEditorComponent::ColourScheme']]],
   ['colourselector',['ColourSelector',['../classColourSelector.html',1,'']]],
   ['combobox',['ComboBox',['../classComboBox.html',1,'']]],

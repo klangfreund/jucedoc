@@ -3,8 +3,8 @@ var searchData=
   ['r2',['R2',['../structdsp_1_1StateVariableFilter_1_1Parameters.html#a57dd35d631ff6bbca4b35de08e9180bf',1,'dsp::StateVariableFilter::Parameters']]],
   ['radius',['radius',['../structDropShadow.html#a96cbbc37579f9a2627f342a7dc6be568',1,'DropShadow']]],
   ['range',['range',['../classAudioParameterFloat.html#a7e860466dbc1319bc064cd6e7db382e3',1,'AudioParameterFloat::range()'],['../structBlock_1_1ConfigMetaData.html#aedbfb4e59984fc713b36d625fae857d0',1,'Block::ConfigMetaData::range()'],['../classAttributedString_1_1Attribute.html#ab35a1ef10e233d3d0125b01baf4e086e',1,'AttributedString::Attribute::range()']]],
-  ['rebeccapurple',['rebeccapurple',['../classColours.html#a35bf91e32f4916e966a47f3ad4ee3098',1,'Colours']]],
-  ['red',['red',['../classColours.html#a5056e7857f2bc211569dfc89512244dd',1,'Colours::red()'],['../structOSCColour.html#ae4a8be4c32c1ab0d720b239fe7a400f2',1,'OSCColour::red()']]],
+  ['rebeccapurple',['rebeccapurple',['../namespaceColours.html#a604ef3b2f828aef610c3ce26f07b11a1',1,'Colours']]],
+  ['red',['red',['../structOSCColour.html#ae4a8be4c32c1ab0d720b239fe7a400f2',1,'OSCColour::red()'],['../namespaceColours.html#adeee57dc4a6f202204ad3a3d7e0ec243',1,'Colours::red()']]],
   ['redbits',['redBits',['../classOpenGLPixelFormat.html#ae35395197ac66ebfed1a94d1748a20b8',1,'OpenGLPixelFormat']]],
   ['registerbutton',['registerButton',['../classOnlineUnlockForm.html#a2a7d3a1f454b97beebf84bc5ffd23939',1,'OnlineUnlockForm']]],
   ['release',['release',['../structADSR_1_1Parameters.html#ac483aa7d25b7f9b08245486eaa7d9ae6',1,'ADSR::Parameters::release()'],['../structUnityAudioEffectDefinition.html#a4d5d4ab625948bd04778dcb9ca6cc7bb',1,'UnityAudioEffectDefinition::release()']]],
@@ -105,10 +105,10 @@ var searchData=
   ['right',['right',['../structFlexItem_1_1Margin.html#a162fe662f55f930a611297e2b85c56ad',1,'FlexItem::Margin::right()'],['../structGridItem_1_1Margin.html#a1927cd4daf44c5e5dde06b73c0ab5427',1,'GridItem::Margin::right()'],['../structRelativeCoordinate_1_1Strings.html#a39fa56a500b153b8bf66a8eaa56d72cf',1,'RelativeCoordinate::Strings::right()'],['../classRelativeRectangle.html#aa5d7a81e56ebaa8101aa23d43e652dd2',1,'RelativeRectangle::right()']]],
   ['rightkey',['rightKey',['../classKeyPress.html#aff89b4c5876819968ff83a6c6ee15416',1,'KeyPress']]],
   ['roomsize',['roomSize',['../structReverb_1_1Parameters.html#a31a5e2e56f91cb29e902e045960218a8',1,'Reverb::Parameters']]],
-  ['rosybrown',['rosybrown',['../classColours.html#ac80422785f2552e8738a6b450f335dfa',1,'Colours']]],
+  ['rosybrown',['rosybrown',['../namespaceColours.html#a41174b4480280a1526c5fb96dc101153',1,'Colours']]],
   ['rotation',['rotation',['../classMouseEvent.html#a3a3b74f77f12503d059d8f0495a8237d',1,'MouseEvent::rotation()'],['../structPenDetails.html#a7856c25b7bfa1da8e9b9e86eb202b098',1,'PenDetails::rotation()']]],
   ['row',['row',['../classGridItem.html#a7cb916f4a5cdc7da46727f54e5af89f8',1,'GridItem']]],
   ['rowgap',['rowGap',['../classGrid.html#aa23bb39ce1bf833161597a8ee5076771',1,'Grid']]],
-  ['royalblue',['royalblue',['../classColours.html#a2f85b97be33e07c1ca9a0187c4883df3',1,'Colours']]],
+  ['royalblue',['royalblue',['../namespaceColours.html#a3e96f91992ea0418524aabb1e3962400',1,'Colours']]],
   ['runs',['runs',['../classTextLayout_1_1Line.html#a77c79b53611e1897fbc3d0ed40d7e0e3',1,'TextLayout::Line']]]
 ];
