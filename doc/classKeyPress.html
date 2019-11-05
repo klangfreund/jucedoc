@@ -457,7 +457,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a <a class="el" href="classKeyPress.html" title="Represents a key press, including any modifier keys that are needed. ">KeyPress</a> for a key and some modifiers. </p>
-<p>e.g. CTRL+C would be: <a class="el" href="classKeyPress.html" title="Represents a key press, including any modifier keys that are needed. ">KeyPress</a> ('c', <a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba1328b9c57c54ec51dbbfacb537cc737b" title="CTRL key flag. ">ModifierKeys::ctrlModifier</a>) SHIFT+Escape would be: <a class="el" href="classKeyPress.html" title="Represents a key press, including any modifier keys that are needed. ">KeyPress</a> (<a class="el" href="classKeyPress.html#a565ec13ad662d05392b609fad31b8f01" title="key-code for the escape key ">KeyPress::escapeKey</a>, <a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678baafc1c1b745213b6915f1932ecf0ea042" title="Shift key flag. ">ModifierKeys::shiftModifier</a>)</p>
+<p>e.g. CTRL+C would be: <a class="el" href="classKeyPress.html" title="Represents a key press, including any modifier keys that are needed. ">KeyPress</a> ('c', <a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678ba1328b9c57c54ec51dbbfacb537cc737b" title="CTRL key flag. ">ModifierKeys::ctrlModifier</a>, 0) SHIFT+Escape would be: <a class="el" href="classKeyPress.html" title="Represents a key press, including any modifier keys that are needed. ">KeyPress</a> (<a class="el" href="classKeyPress.html#a565ec13ad662d05392b609fad31b8f01" title="key-code for the escape key ">KeyPress::escapeKey</a>, <a class="el" href="classModifierKeys.html#acdd2a85defa6a705d74e1a63d193678baafc1c1b745213b6915f1932ecf0ea042" title="Shift key flag. ">ModifierKeys::shiftModifier</a>, 0)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keyCode</td><td>a code that represents the key - this value must be one of special constants listed in this class, or an 8-bit character code such as a letter (case is ignored), digit or a simple key like "," or ".". Note that this isn't the same as the textCharacter parameter, so for example a keyCode of 'a' and a shift-key modifier should have a textCharacter value of 'A'. </td></tr>
@@ -2692,7 +2692,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 1 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 5 2019 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
