@@ -107,12 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a9cedc303110b61c32f929018f7c8fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a2a9cedc303110b61c32f929018f7c8fd">reset</a> () noexcept</td></tr>
 <tr class="memdesc:a2a9cedc303110b61c32f929018f7c8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the processing pipeline, ready to oversample a new stream of data.  <a href="#a2a9cedc303110b61c32f929018f7c8fd">More...</a><br /></td></tr>
 <tr class="separator:a2a9cedc303110b61c32f929018f7c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c3df14659f08519ed7603a6b9991ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a85c3df14659f08519ed7603a6b9991ff">processSamplesUp</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;inputBlock) noexcept</td></tr>
-<tr class="memdesc:a85c3df14659f08519ed7603a6b9991ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the upsampling, prior to any oversampled processing.  <a href="#a85c3df14659f08519ed7603a6b9991ff">More...</a><br /></td></tr>
-<tr class="separator:a85c3df14659f08519ed7603a6b9991ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0505d62bb580226ad0512aa6118b7d54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a0505d62bb580226ad0512aa6118b7d54">processSamplesDown</a> (<a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;outputBlock) noexcept</td></tr>
-<tr class="memdesc:a0505d62bb580226ad0512aa6118b7d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the downsampling, after the upsampling and the non-linear processing.  <a href="#a0505d62bb580226ad0512aa6118b7d54">More...</a><br /></td></tr>
-<tr class="separator:a0505d62bb580226ad0512aa6118b7d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e5791735120bc3cc8c69f285fc10f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a96e5791735120bc3cc8c69f285fc10f3">processSamplesUp</a> (const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; const SampleType &gt; &amp;inputBlock) noexcept</td></tr>
+<tr class="memdesc:a96e5791735120bc3cc8c69f285fc10f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the upsampling, prior to any oversampled processing.  <a href="#a96e5791735120bc3cc8c69f285fc10f3">More...</a><br /></td></tr>
+<tr class="separator:a96e5791735120bc3cc8c69f285fc10f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848d3c7871fee7e0a1d4849b38d7f35d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a848d3c7871fee7e0a1d4849b38d7f35d">processSamplesDown</a> (<a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;outputBlock) noexcept</td></tr>
+<tr class="memdesc:a848d3c7871fee7e0a1d4849b38d7f35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called to perform the downsampling, after the upsampling and the non-linear processing.  <a href="#a848d3c7871fee7e0a1d4849b38d7f35d">More...</a><br /></td></tr>
+<tr class="separator:a848d3c7871fee7e0a1d4849b38d7f35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7421fbb00879c77c6972d71f75c867"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aac7421fbb00879c77c6972d71f75c867">addOversamplingStage</a> (<a class="el" href="classdsp_1_1Oversampling.html#ac3d048707b7807badec0df770c9778f8">FilterType</a>, float normalisedTransitionWidthUp, float stopbandAmplitudedBUp, float normalisedTransitionWidthDown, float stopbandAmplitudedBDown)</td></tr>
 <tr class="memdesc:aac7421fbb00879c77c6972d71f75c867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new oversampling stage to the <a class="el" href="classdsp_1_1Oversampling.html" title="A processing class performing multi-channel oversampling. ">Oversampling</a> class, multiplying the current oversampling factor by two.  <a href="#aac7421fbb00879c77c6972d71f75c867">More...</a><br /></td></tr>
 <tr class="separator:aac7421fbb00879c77c6972d71f75c867"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,8 +383,8 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
-<a id="a85c3df14659f08519ed7603a6b9991ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85c3df14659f08519ed7603a6b9991ff">&#9670;&nbsp;</a></span>processSamplesUp()</h2>
+<a id="a96e5791735120bc3cc8c69f285fc10f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e5791735120bc3cc8c69f285fc10f3">&#9670;&nbsp;</a></span>processSamplesUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,9 +395,9 @@ template&lt;typename SampleType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt;SampleType&gt; <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::processSamplesUp </td>
+          <td class="memname"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt;SampleType&gt; <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::processSamplesUp </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; const SampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputBlock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -414,8 +414,8 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
-<a id="a0505d62bb580226ad0512aa6118b7d54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0505d62bb580226ad0512aa6118b7d54">&#9670;&nbsp;</a></span>processSamplesDown()</h2>
+<a id="a848d3c7871fee7e0a1d4849b38d7f35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848d3c7871fee7e0a1d4849b38d7f35d">&#9670;&nbsp;</a></span>processSamplesDown()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +428,7 @@ template&lt;typename SampleType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::processSamplesDown </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">dsp::AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdsp_1_1AudioBlock.html">AudioBlock</a>&lt; SampleType &gt; &amp;&#160;</td>
           <td class="paramname"><em>outputBlock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -591,7 +591,7 @@ template&lt;typename SampleType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 11 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2019 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
