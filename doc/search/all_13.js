@@ -222,7 +222,6 @@ var searchData=
   ['touchend',['touchEnd',['../group__LittleFootFunctions.html#ga738d38d0bf981993ad11e904b01c6edb',1,'touchEnd():&#160;juce_LittleFootFunctions.dox'],['../namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75a89d8d02bbf9974414643a62a91ed93f4',1,'BlocksProtocol::touchEnd()']]],
   ['touchendwithvelocity',['touchEndWithVelocity',['../namespaceBlocksProtocol.html#a054bdb3555d4f72b8c927d8a51ee4d75ada9920d1552829a6edd57187d44a12fe',1,'BlocksProtocol']]],
   ['touchentry',['TouchEntry',['../structTouchList_1_1TouchEntry.html',1,'TouchList']]],
-  ['touchgroup',['touchGroup',['../structBlockConfigManager.html#a6a3bd53f49e8a0b1187ce32300c67236',1,'BlockConfigManager']]],
   ['touchindex',['TouchIndex',['../namespaceBlocksProtocol.html#aeec6985f2994cb5c42906336c94c885f',1,'BlocksProtocol']]],
   ['touchlist',['TouchList',['../classTouchList.html',1,'TouchList&lt; Type &gt;'],['../classTouchList.html#a2ff2b9c01159b10c014f90d9664666f7',1,'TouchList::TouchList()']]],
   ['touchmessage',['touchMessage',['../namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0eaf2cb8faf85598a5a18b4e88701726635',1,'BlocksProtocol']]],

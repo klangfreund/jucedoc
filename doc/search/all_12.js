@@ -150,6 +150,7 @@ var searchData=
   ['sendtouch',['sendTouch',['../structDrumPadGridProgram.html#a2c0f1dd7b3a912720598088c2ba5b882',1,'DrumPadGridProgram']]],
   ['sendupstreammessage',['sendUpstreamMessage',['../classPushNotifications.html#a1f10cfe551f2d059cad352a374d9b212',1,'PushNotifications']]],
   ['sendvaluechangedmessagetolisteners',['sendValueChangedMessageToListeners',['../classAudioProcessorParameter.html#aaa3ed19aa3840819a58fc5a68d6f854d',1,'AudioProcessorParameter']]],
+  ['sensitivitygroup',['sensitivityGroup',['../structBlockConfigManager.html#a9e582f75434ac7bda293a8dddb630a0a',1,'BlockConfigManager']]],
   ['separatorbarid',['separatorBarId',['../classToolbarItemFactory.html#a415ffaa38b6306574ad6777ccf6d2ac4a38897536f81bb5f607c2b71757e1e33c',1,'ToolbarItemFactory']]],
   ['separatorcolourid',['separatorColourId',['../classToolbar.html#ae89655c1fc755d7648eedcefcb620bc9a5af4bc29284ef81090fa15f11a0f30e8',1,'Toolbar']]],
   ['serialnumber',['serialNumber',['../classBlock.html#a726d839fbf1d4542e9a4d7e4919a57bd',1,'Block::serialNumber()'],['../structBlocksProtocol_1_1DeviceStatus.html#af7734e0644b5d6884134323a2cb98d11',1,'BlocksProtocol::DeviceStatus::serialNumber()']]],

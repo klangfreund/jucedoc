@@ -11,6 +11,7 @@ var searchData=
   ['seagreen',['seagreen',['../namespaceColours.html#a7e606ecd6ff3a930c83d9ef00e1b8935',1,'Colours']]],
   ['seashell',['seashell',['../namespaceColours.html#ac4b8902af30427b5318372cfb896a656',1,'Colours']]],
   ['senddismissaction',['sendDismissAction',['../structPushNotifications_1_1Settings_1_1Category.html#aa90e5793a6bd2176dc4cf3a316eb941b',1,'PushNotifications::Settings::Category']]],
+  ['sensitivitygroup',['sensitivityGroup',['../structBlockConfigManager.html#a9e582f75434ac7bda293a8dddb630a0a',1,'BlockConfigManager']]],
   ['serialnumber',['serialNumber',['../classBlock.html#a726d839fbf1d4542e9a4d7e4919a57bd',1,'Block::serialNumber()'],['../structBlocksProtocol_1_1DeviceStatus.html#af7734e0644b5d6884134323a2cb98d11',1,'BlocksProtocol::DeviceStatus::serialNumber()']]],
   ['setfloatparameter',['setFloatParameter',['../structUnityAudioEffectDefinition.html#a43402887f471d0ada35297a2326064fa',1,'UnityAudioEffectDefinition']]],
   ['setposition',['setPosition',['../structUnityAudioEffectDefinition.html#a00378790e16bb518a0dbc423d64624cb',1,'UnityAudioEffectDefinition']]],
