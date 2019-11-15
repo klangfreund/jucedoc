@@ -87,6 +87,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab0184455fc1f924e5e3128db395e47dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZipFile_1_1ZipEntry.html#ab0184455fc1f924e5e3128db395e47dd">isSymbolicLink</a></td></tr>
 <tr class="memdesc:ab0184455fc1f924e5e3128db395e47dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the zip entry is a symbolic link.  <a href="#ab0184455fc1f924e5e3128db395e47dd">More...</a><br /></td></tr>
 <tr class="separator:ab0184455fc1f924e5e3128db395e47dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cf0ee15cff7fd2352ffc6adbec4629"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZipFile_1_1ZipEntry.html#a27cf0ee15cff7fd2352ffc6adbec4629">externalFileAttributes</a></td></tr>
+<tr class="memdesc:a27cf0ee15cff7fd2352ffc6adbec4629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform specific data.  <a href="#a27cf0ee15cff7fd2352ffc6adbec4629">More...</a><br /></td></tr>
+<tr class="separator:a27cf0ee15cff7fd2352ffc6adbec4629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains information about one of the entries in a <a class="el" href="classZipFile.html" title="Decodes a ZIP file from a stream. ">ZipFile</a>. </p>
@@ -156,13 +159,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a27cf0ee15cff7fd2352ffc6adbec4629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cf0ee15cff7fd2352ffc6adbec4629">&#9670;&nbsp;</a></span>externalFileAttributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> ZipFile::ZipEntry::externalFileAttributes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Platform specific data. </p>
+<p>Depending on how the zip file was created this may contain macOS and Linux file types, permissions and setuid/setgid/sticky bits. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="juce__ZipFile_8h.html">juce_ZipFile.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 14 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 15 2019 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
