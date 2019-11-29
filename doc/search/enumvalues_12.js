@@ -70,6 +70,7 @@ var searchData=
   ['statissidechaintarget',['statIsSideChainTarget',['../group__juce__audio__plugin__client-Unity.html#ggaa0839934cc74ac792b938e78959e5c09a4b54354cc6027e5fdc1dc65d7f593992',1,'juce_UnityPluginInterface.h']]],
   ['status',['status',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886af01e45779ae0f7b4128d63dd98bae5e7',1,'PushNotifications::Notification']]],
   ['steinbergcubase10',['SteinbergCubase10',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a7df16c9b73c858a8cc00f47f7c6d5d8a',1,'PluginHostType']]],
+  ['steinbergcubase10_5f5',['SteinbergCubase10_5',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ab258214aea3e7296d428b81efce27c7f',1,'PluginHostType']]],
   ['steinbergcubase4',['SteinbergCubase4',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8ac364901a67009772e9870bfcae9d7090',1,'PluginHostType']]],
   ['steinbergcubase5',['SteinbergCubase5',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8afddd08fe15ce7ccf7781dd0dd4cd0cbd',1,'PluginHostType']]],
   ['steinbergcubase5bridged',['SteinbergCubase5Bridged',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a5f89e0578cf0b6bbfc5d90460890c2eb',1,'PluginHostType']]],
