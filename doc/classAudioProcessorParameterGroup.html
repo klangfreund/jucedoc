@@ -93,10 +93,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aef29b4a0355d75a4e7f4337140ee60ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classAudioProcessorParameterGroup.html" title="A class encapsulating a group of AudioProcessorParameters and nested AudioProcessorParameterGroups. ">AudioProcessorParameterGroup</a> with multiple children.  <a href="#aef29b4a0355d75a4e7f4337140ee60ff">More...</a><br /></td></tr>
 <tr class="separator:aef29b4a0355d75a4e7f4337140ee60ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb3a5b8da276856f400b8f7b68547f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a1bb3a5b8da276856f400b8f7b68547f3">AudioProcessorParameterGroup</a> (<a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:a1bb3a5b8da276856f400b8f7b68547f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Once a group has been added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> don't try to mutate it by moving or swapping it - this will crash most hosts.  <a href="#a1bb3a5b8da276856f400b8f7b68547f3">More...</a><br /></td></tr>
 <tr class="separator:a1bb3a5b8da276856f400b8f7b68547f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e62cda658be3e92a0dde1a2ebdf4384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a7e62cda658be3e92a0dde1a2ebdf4384">operator=</a> (<a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:a7e62cda658be3e92a0dde1a2ebdf4384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Once a group has been added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> don't try to mutate it by moving or swapping it - this will crash most hosts.  <a href="#a7e62cda658be3e92a0dde1a2ebdf4384">More...</a><br /></td></tr>
 <tr class="separator:a7e62cda658be3e92a0dde1a2ebdf4384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8733109b68ba7656c57173fea683a06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#ae8733109b68ba7656c57173fea683a06">~AudioProcessorParameterGroup</a> ()</td></tr>
+<tr class="memdesc:ae8733109b68ba7656c57173fea683a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae8733109b68ba7656c57173fea683a06">More...</a><br /></td></tr>
 <tr class="separator:ae8733109b68ba7656c57173fea683a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77974189fde61cc73f9cb11e79928d2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a77974189fde61cc73f9cb11e79928d2a">getID</a> () const</td></tr>
 <tr class="memdesc:a77974189fde61cc73f9cb11e79928d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the group's ID.  <a href="#a77974189fde61cc73f9cb11e79928d2a">More...</a><br /></td></tr>
@@ -110,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cc14014cd2dc2b738d314370c8f6e74"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classAudioProcessorParameterGroup.html">AudioProcessorParameterGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a8cc14014cd2dc2b738d314370c8f6e74">getParent</a> () const noexcept</td></tr>
 <tr class="memdesc:a8cc14014cd2dc2b738d314370c8f6e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent of the group, or nullptr if this is a top-levle group.  <a href="#a8cc14014cd2dc2b738d314370c8f6e74">More...</a><br /></td></tr>
 <tr class="separator:a8cc14014cd2dc2b738d314370c8f6e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f29ab2832f715945bef904196f9717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#ad5f29ab2832f715945bef904196f9717">setName</a> (<a class="el" href="classString.html">String</a> newName)</td></tr>
+<tr class="memdesc:ad5f29ab2832f715945bef904196f9717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the name of the group.  <a href="#ad5f29ab2832f715945bef904196f9717">More...</a><br /></td></tr>
+<tr class="separator:ad5f29ab2832f715945bef904196f9717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca498b6f034b916d64efd2066e3fc6e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html">AudioProcessorParameterNode</a> *const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a2ca498b6f034b916d64efd2066e3fc6e">begin</a> () const noexcept</td></tr>
 <tr class="separator:a2ca498b6f034b916d64efd2066e3fc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d101c84c53b93ca8ad0476d0d9575f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html">AudioProcessorParameterNode</a> *const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorParameterGroup.html#a81d101c84c53b93ca8ad0476d0d9575f">end</a> () const noexcept</td></tr>
@@ -313,7 +319,7 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classAudioProcessorParameterGroup.html#ae96a0042ff9e2803aca1e347be4a92ef">addChild()</a>, <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#a01235df43f21083349586535999aacbd">AudioProcessorParameterGroup::AudioProcessorParameterNode::AudioProcessorParameterGroup</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a2ca498b6f034b916d64efd2066e3fc6e">begin()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a81d101c84c53b93ca8ad0476d0d9575f">end()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a5cd2129d72c0567a9e3c0b0f31220ba8">getGroupsForParameter()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a77974189fde61cc73f9cb11e79928d2a">getID()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a0aba8c9be294fe1a2b4b09114d5aa87e">getName()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a5b9b3ba97195df337f90b06110c470ec">getParameters()</a>, <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#ae57587cece9ee5167a95678854a37fd7">AudioProcessorParameterGroup::AudioProcessorParameterNode::getParent()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#afdcddb7c37a00742bbfc81ac5563c080">getSeparator()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#ab9452551adfdcbc84b25c899ad8480cd">getSubgroups()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a7e62cda658be3e92a0dde1a2ebdf4384">operator=()</a>, and <a class="el" href="classAudioProcessorParameterGroup.html#ae8733109b68ba7656c57173fea683a06">~AudioProcessorParameterGroup()</a>.</p>
+<p class="reference">References <a class="el" href="classAudioProcessorParameterGroup.html#ae96a0042ff9e2803aca1e347be4a92ef">addChild()</a>, <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#a01235df43f21083349586535999aacbd">AudioProcessorParameterGroup::AudioProcessorParameterNode::AudioProcessorParameterGroup</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a2ca498b6f034b916d64efd2066e3fc6e">begin()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a81d101c84c53b93ca8ad0476d0d9575f">end()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a5cd2129d72c0567a9e3c0b0f31220ba8">getGroupsForParameter()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a77974189fde61cc73f9cb11e79928d2a">getID()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a0aba8c9be294fe1a2b4b09114d5aa87e">getName()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a5b9b3ba97195df337f90b06110c470ec">getParameters()</a>, <a class="el" href="classAudioProcessorParameterGroup_1_1AudioProcessorParameterNode.html#ae57587cece9ee5167a95678854a37fd7">AudioProcessorParameterGroup::AudioProcessorParameterNode::getParent()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#afdcddb7c37a00742bbfc81ac5563c080">getSeparator()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#ab9452551adfdcbc84b25c899ad8480cd">getSubgroups()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a7e62cda658be3e92a0dde1a2ebdf4384">operator=()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#ad5f29ab2832f715945bef904196f9717">setName()</a>, and <a class="el" href="classAudioProcessorParameterGroup.html#ae8733109b68ba7656c57173fea683a06">~AudioProcessorParameterGroup()</a>.</p>
 
 </div>
 </div>
@@ -333,6 +339,8 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Once a group has been added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> don't try to mutate it by moving or swapping it - this will crash most hosts. </p>
+
 </div>
 </div>
 <a id="ae8733109b68ba7656c57173fea683a06"></a>
@@ -349,6 +357,8 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioProcessorParameterGroup.html#aef29b4a0355d75a4e7f4337140ee60ff">AudioProcessorParameterGroup()</a>.</p>
 
@@ -370,6 +380,8 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Once a group has been added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> don't try to mutate it by moving or swapping it - this will crash most hosts. </p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioProcessorParameterGroup.html#aef29b4a0355d75a4e7f4337140ee60ff">AudioProcessorParameterGroup()</a>.</p>
 
@@ -462,6 +474,29 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the parent of the group, or nullptr if this is a top-levle group. </p>
+
+</div>
+</div>
+<a id="ad5f29ab2832f715945bef904196f9717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f29ab2832f715945bef904196f9717">&#9670;&nbsp;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioProcessorParameterGroup::setName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>newName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the name of the group. </p>
+<p>If you do this after the group has been added to an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>, call updateHostDisplay() to inform the host of the change. Not all hosts support dynamic group name changes. </p>
+
+<p class="reference">Referenced by <a class="el" href="classAudioProcessorParameterGroup.html#aef29b4a0355d75a4e7f4337140ee60ff">AudioProcessorParameterGroup()</a>.</p>
 
 </div>
 </div>
@@ -616,6 +651,7 @@ template&lt;typename ParameterOrGroup &gt; </div>
 </div><div class="memdoc">
 
 <p>Adds a child to the group. </p>
+<p>Do not add children to a group which has itself already been added to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> - the new elements will be ignored. </p>
 
 <p class="reference">Referenced by <a class="el" href="classAudioProcessorParameterGroup.html#a2dec1883e513011bd75c7f4e7dd520c9">addChild()</a>, and <a class="el" href="classAudioProcessorParameterGroup.html#a3f97e3ea0d55a18ed2f6cd81ca89fa61">AudioProcessorParameterGroup()</a>.</p>
 
@@ -650,6 +686,7 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Adds multiple parameters or sub-groups to this group. </p>
+<p>Do not add children to a group which has itself already been added to the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> - the new elements will be ignored. </p>
 
 <p class="reference">References <a class="el" href="classAudioProcessorParameterGroup.html#ae96a0042ff9e2803aca1e347be4a92ef">addChild()</a>, <a class="el" href="classAudioProcessorParameterGroup.html#a5b9b3ba97195df337f90b06110c470ec">getParameters()</a>, <a class="el" href="group__juce__core-system.html#ga851b02724a8158a7f746c66b5758b3dd">JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</a>, and <a class="el" href="group__juce__core-system.html#gae6b75a90b7c83090e15a53b54555a078">JUCE_DEPRECATED_WITH_BODY</a>.</p>
 
@@ -661,7 +698,7 @@ template&lt;typename ParameterOrGroup , typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2019 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 2 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
