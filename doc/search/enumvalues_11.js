@@ -8,6 +8,7 @@ var searchData=
   ['realtimeaudiopriority',['realtimeAudioPriority',['../classThread.html#adca056d2e805e7b6fac3c4b52d56c7a5a0ee7fcab9f979f4e867c718460ce5503',1,'Thread']]],
   ['realtimepriority',['RealtimePriority',['../classProcess.html#ad7b18ceb7a8c0a2b6b71856894feb6efa1ab071c1d49e25fc1df3c9663177927e',1,'Process']]],
   ['reaper',['Reaper',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aec2843d65058124f4d29e70027f06e83',1,'PluginHostType']]],
+  ['reason',['Reason',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a9d8e0a83447927ea64697a25f17f12d4',1,'PluginHostType']]],
   ['recommendation',['recommendation',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886aaa961eeaaf6b2e3008ff53db24dea6a7',1,'PushNotifications::Notification']]],
   ['record',['record',['../classControlButton.html#a891776295057786f99f14631b1aa2794a3534bd78b4a9437ce34c79388cdb7705',1,'ControlButton']]],
   ['recordaudio',['recordAudio',['../classRuntimePermissions.html#ae35d63b8c00dab34a1546fd1eef90878a56b38b114bf52a5b212b87b4a5c9b535',1,'RuntimePermissions']]],

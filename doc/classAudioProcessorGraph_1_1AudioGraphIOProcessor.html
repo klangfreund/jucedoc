@@ -498,8 +498,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2e0e6efdce297e7ae7a9a23152c55165 inherit pro_methods_classAudioProcessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a2e0e6efdce297e7ae7a9a23152c55165">sendParamChangeMessageToListeners</a> (<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> parameterIndex, float newValue)</td></tr>
 <tr class="separator:a2e0e6efdce297e7ae7a9a23152c55165 inherit pro_methods_classAudioProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classAudioProcessor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAudioProcessor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classAudioProcessor.html">AudioProcessor</a></td></tr>
-<tr class="memitem:a78d1c3e1cabecff818b93de44891d973 inherit pro_attribs_classAudioProcessor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioPlayHead.html">AudioPlayHead</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a78d1c3e1cabecff818b93de44891d973">playHead</a> = nullptr</td></tr>
-<tr class="separator:a78d1c3e1cabecff818b93de44891d973 inherit pro_attribs_classAudioProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396d6379427a4f51eefa33de43ac97bc inherit pro_attribs_classAudioProcessor"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="classAudioPlayHead.html">AudioPlayHead</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a396d6379427a4f51eefa33de43ac97bc">playHead</a> { nullptr }</td></tr>
+<tr class="separator:a396d6379427a4f51eefa33de43ac97bc inherit pro_attribs_classAudioProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A special type of <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> that can live inside an <a class="el" href="classAudioProcessorGraph.html" title="A type of AudioProcessor which plays back a graph of other AudioProcessors. ">AudioProcessorGraph</a> in order to use the audio that comes into and out of the graph itself. </p>
@@ -1377,7 +1377,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 9 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

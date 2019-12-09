@@ -118,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f0c5b406e32f94a7f2abb665044b395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRangedAudioParameter.html">RangedAudioParameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a9f0c5b406e32f94a7f2abb665044b395">getParameter</a> (<a class="el" href="classStringRef.html">StringRef</a> parameterID) const noexcept</td></tr>
 <tr class="memdesc:a9f0c5b406e32f94a7f2abb665044b395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a parameter by its ID string.  <a href="#a9f0c5b406e32f94a7f2abb665044b395">More...</a><br /></td></tr>
 <tr class="separator:a9f0c5b406e32f94a7f2abb665044b395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0973506996a2446e31db292e1e6c8e9"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#ae0973506996a2446e31db292e1e6c8e9">getRawParameterValue</a> (<a class="el" href="classStringRef.html">StringRef</a> parameterID) const noexcept</td></tr>
-<tr class="memdesc:ae0973506996a2446e31db292e1e6c8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a floating point representation of a particular parameter which a realtime process can read to find out its current value.  <a href="#ae0973506996a2446e31db292e1e6c8e9">More...</a><br /></td></tr>
-<tr class="separator:ae0973506996a2446e31db292e1e6c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c12a8274038be9f6aa00d90f90ab11"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; float &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#aa2c12a8274038be9f6aa00d90f90ab11">getRawParameterValue</a> (<a class="el" href="classStringRef.html">StringRef</a> parameterID) const noexcept</td></tr>
+<tr class="memdesc:aa2c12a8274038be9f6aa00d90f90ab11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a floating point representation of a particular parameter which a realtime process can read to find out its current value.  <a href="#aa2c12a8274038be9f6aa00d90f90ab11">More...</a><br /></td></tr>
+<tr class="separator:aa2c12a8274038be9f6aa00d90f90ab11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350478cad727aa6ceac20e1c933446fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessorValueTreeState.html#a350478cad727aa6ceac20e1c933446fc">addParameterListener</a> (<a class="el" href="classStringRef.html">StringRef</a> parameterID, <a class="el" href="structAudioProcessorValueTreeState_1_1Listener.html">Listener</a> *listener)</td></tr>
 <tr class="memdesc:a350478cad727aa6ceac20e1c933446fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a callback to one of the parameters, which will be called when the parameter changes.  <a href="#a350478cad727aa6ceac20e1c933446fc">More...</a><br /></td></tr>
 <tr class="separator:a350478cad727aa6ceac20e1c933446fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,8 +351,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0973506996a2446e31db292e1e6c8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0973506996a2446e31db292e1e6c8e9">&#9670;&nbsp;</a></span>getRawParameterValue()</h2>
+<a id="aa2c12a8274038be9f6aa00d90f90ab11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c12a8274038be9f6aa00d90f90ab11">&#9670;&nbsp;</a></span>getRawParameterValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +361,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float* AudioProcessorValueTreeState::getRawParameterValue </td>
+          <td class="memname">std::atomic&lt;float&gt;* AudioProcessorValueTreeState::getRawParameterValue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classStringRef.html">StringRef</a>&#160;</td>
           <td class="paramname"><em>parameterID</em></td><td>)</td>
@@ -587,7 +587,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 9 2019 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

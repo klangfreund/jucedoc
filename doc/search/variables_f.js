@@ -35,7 +35,7 @@ var searchData=
   ['pixelstride',['pixelStride',['../classImage_1_1BitmapData.html#a7fc1d9da2a609dd67e8e9ad70e5f38f0',1,'Image::BitmapData']]],
   ['player',['player',['../classStandalonePluginHolder.html#a7dd25ebd12047b7c040f4128f4690c52',1,'StandalonePluginHolder']]],
   ['playgroup',['playGroup',['../structBlockConfigManager.html#af9e868d7d2482bfc52e51a8608ced20e',1,'BlockConfigManager']]],
-  ['playhead',['playHead',['../classAudioProcessor.html#a78d1c3e1cabecff818b93de44891d973',1,'AudioProcessor']]],
+  ['playhead',['playHead',['../classAudioProcessor.html#a396d6379427a4f51eefa33de43ac97bc',1,'AudioProcessor']]],
   ['playkey',['playKey',['../classKeyPress.html#a08e1a3281e1a772f1e6227f70d117622',1,'KeyPress']]],
   ['pluginformatname',['pluginFormatName',['../classPluginDescription.html#a619a03af08e3904725e0255a28388a19',1,'PluginDescription']]],
   ['pluginholder',['pluginHolder',['../classStandaloneFilterWindow.html#abf3538ee5a7bd69830df1e538bc84df7',1,'StandaloneFilterWindow']]],

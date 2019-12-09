@@ -70,6 +70,7 @@ var searchData=
   ['realtimecallback',['RealtimeCallback',['../structOSCReceiver_1_1RealtimeCallback.html',1,'OSCReceiver']]],
   ['realtimepriority',['RealtimePriority',['../classProcess.html#ad7b18ceb7a8c0a2b6b71856894feb6efa1ab071c1d49e25fc1df3c9663177927e',1,'Process']]],
   ['reaper',['Reaper',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8aec2843d65058124f4d29e70027f06e83',1,'PluginHostType']]],
+  ['reason',['Reason',['../classPluginHostType.html#a69d9330e82ef7520f9aa8b2ad78ce5a8a9d8e0a83447927ea64697a25f17f12d4',1,'PluginHostType']]],
   ['rebeccapurple',['rebeccapurple',['../namespaceColours.html#a604ef3b2f828aef610c3ce26f07b11a1',1,'Colours']]],
   ['recalculatesize',['recalculateSize',['../classTextLayout.html#a00d91c008dcbb3c24ecfb51595c7cdd3',1,'TextLayout']]],
   ['recentlyopenedfileslist',['RecentlyOpenedFilesList',['../classRecentlyOpenedFilesList.html',1,'RecentlyOpenedFilesList'],['../classRecentlyOpenedFilesList.html#a1be25db49e1770f3f294121d7a407537',1,'RecentlyOpenedFilesList::RecentlyOpenedFilesList()']]],
