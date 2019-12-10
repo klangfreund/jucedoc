@@ -478,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">streamToWriteTo</td><td>the stream that the data will go to - this will be deleted by the <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> object when it's no longer needed. If no <a class="el" href="classAudioFormatWriter.html" title="Writes samples to an audio file stream. ">AudioFormatWriter</a> can be created by this method, the stream will NOT be deleted, so that the caller can re-use it to try to open a different format, etc </td></tr>
     <tr><td class="paramname">sampleRateToUse</td><td>the sample rate for the file, which must be one of the ones returned by <a class="el" href="classFlacAudioFormat.html#a212827e4fd98fc9cd925fa8a0a5c1cc1" title="Returns a set of sample rates that the format can read and write. ">getPossibleSampleRates()</a> </td></tr>
-    <tr><td class="paramname">numberOfChannels</td><td>the number of channels - this must be either 1 or 2, and the choice will depend on the results of <a class="el" href="classFlacAudioFormat.html#a48e6a22a2438cfbb7e5b3632a636ab60" title="Returns true if the format can do 1-channel audio. ">canDoMono()</a> and <a class="el" href="classFlacAudioFormat.html#a4c753931010deb63b5219b3b3bc460d0" title="Returns true if the format can do 2-channel audio. ">canDoStereo()</a> </td></tr>
+    <tr><td class="paramname">numberOfChannels</td><td>the number of channels </td></tr>
     <tr><td class="paramname">bitsPerSample</td><td>the bits per sample to use - this must be one of the values returned by <a class="el" href="classFlacAudioFormat.html#a6990076714a2301d8a2e36d5b4801f8a" title="Returns a set of bit depths that the format can read and write. ">getPossibleBitDepths()</a> </td></tr>
     <tr><td class="paramname">metadataValues</td><td>a set of metadata values that the writer should try to write to the stream. Exactly what these are depends on the format, and the subclass doesn't actually have to do anything with them if it doesn't want to. Have a look at the specific format implementation classes to see possible values that can be used </td></tr>
     <tr><td class="paramname">qualityOptionIndex</td><td>the index of one of compression qualities returned by the <a class="el" href="classFlacAudioFormat.html#a50d353da797032fc84510e6420906e63" title="Returns a list of different qualities that can be used when writing. ">getQualityOptions()</a> method. If there aren't any quality options for this format, just pass 0 in this parameter, as it'll be ignored </td></tr>
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 9 2019 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 10 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
