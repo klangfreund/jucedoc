@@ -491,7 +491,6 @@ var searchData=
   ['_7evst3pluginformat',['~VST3PluginFormat',['../classVST3PluginFormat.html#a9feca7b3ad718dad42ad25042cd491eb',1,'VST3PluginFormat']]],
   ['_7evstcallbackhandler',['~VSTCallbackHandler',['../structVSTCallbackHandler.html#a2a980a5d16d217403eff28a20f1ae240',1,'VSTCallbackHandler']]],
   ['_7evstpluginformat',['~VSTPluginFormat',['../classVSTPluginFormat.html#aea923e8913eb1700451bb6f7fc0517b5',1,'VSTPluginFormat']]],
-  ['_7ewaitableevent',['~WaitableEvent',['../classWaitableEvent.html#af071eb054ec0ce9b69eb98bd9508c2cf',1,'WaitableEvent']]],
   ['_7ewavaudioformat',['~WavAudioFormat',['../classWavAudioFormat.html#a5c1868cedaef6417619817356717827d',1,'WavAudioFormat']]],
   ['_7ewebbrowsercomponent',['~WebBrowserComponent',['../classWebBrowserComponent.html#a3f8c897c6912511724e58cdcbe40ac71',1,'WebBrowserComponent']]],
   ['_7ewebinputstream',['~WebInputStream',['../classWebInputStream.html#a7aee101bf5425b85eb04770da7bf382b',1,'WebInputStream']]],

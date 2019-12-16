@@ -2,7 +2,7 @@ var searchData=
 [
   ['widgets',['widgets',['../group__juce__gui__basics-widgets.html',1,'']]],
   ['windows',['windows',['../group__juce__gui__basics-windows.html',1,'']]],
-  ['wait',['wait',['../classThread.html#a99ac29606fd57fd418dfd169939f7b25',1,'Thread::wait()'],['../classWaitableEvent.html#aade120bc7686f4fabfc740aff8f56dfa',1,'WaitableEvent::wait()']]],
+  ['wait',['wait',['../classThread.html#a99ac29606fd57fd418dfd169939f7b25',1,'Thread::wait()'],['../classWaitableEvent.html#a1e5eb0e88e9e88aa34b58395d2bff1e0',1,'WaitableEvent::wait()']]],
   ['waitableevent',['WaitableEvent',['../classWaitableEvent.html',1,'WaitableEvent'],['../classWaitableEvent.html#aa3622062e48a177ec721120443ea17d2',1,'WaitableEvent::WaitableEvent()']]],
   ['waitcursor',['WaitCursor',['../classMouseCursor.html#a5de22a8c3eb06827ac11352e76eb9a97a42461326b47b05238177df410c2245f9',1,'MouseCursor']]],
   ['waitforjobtofinish',['waitForJobToFinish',['../classThreadPool.html#afb20e0b644a6871a4de2de7f73aa3ee5',1,'ThreadPool']]],
@@ -167,7 +167,7 @@ var searchData=
   ['wow64_5fdefault',['WoW64_Default',['../classWindowsRegistry.html#a7d8812634430aef14423cd2d70cf38d8ac64c622861f18a7c0ac143c846587549',1,'WindowsRegistry']]],
   ['wow64mode',['WoW64Mode',['../classWindowsRegistry.html#a7d8812634430aef14423cd2d70cf38d8',1,'WindowsRegistry']]],
   ['wrap',['wrap',['../classFlexBox.html#a252f351ef4317467a58ad25922f64e63accfc59a528a109fa4204e8ea06e8b68b',1,'FlexBox::wrap()'],['../classFlexBox.html#a252f351ef4317467a58ad25922f64e63',1,'FlexBox::Wrap()']]],
-  ['wrappertype',['wrapperType',['../classAudioProcessor.html#a7bf4a5cf41e84de51aab7ccb75d1f897',1,'AudioProcessor::wrapperType()'],['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcf',1,'AudioProcessor::WrapperType()']]],
+  ['wrappertype',['WrapperType',['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcf',1,'AudioProcessor::WrapperType()'],['../classAudioProcessor.html#a7bf4a5cf41e84de51aab7ccb75d1f897',1,'AudioProcessor::wrapperType()']]],
   ['wrappertype_5faax',['wrapperType_AAX',['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcfa9a43d586134e1bf0ceacdd2de2defbb3',1,'AudioProcessor']]],
   ['wrappertype_5faudiounit',['wrapperType_AudioUnit',['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcfa3942e92d75c1edf6096405a400a12100',1,'AudioProcessor']]],
   ['wrappertype_5faudiounitv3',['wrapperType_AudioUnitv3',['../classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcfa24c1746c07b93d66ef9a906285c3d782',1,'AudioProcessor']]],
