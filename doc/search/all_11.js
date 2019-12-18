@@ -190,6 +190,7 @@ var searchData=
   ['removeandreturnitem',['removeAndReturnItem',['../classToolbar.html#a4ee06cb31e5f6444f28b652847cdc3fe',1,'Toolbar']]],
   ['removeattribute',['removeAttribute',['../classXmlElement.html#a5ae4479d33c784716542766ce39ff805',1,'XmlElement']]],
   ['removeaudiocallback',['removeAudioCallback',['../classAudioDeviceManager.html#af6d672043bfc5ca423ea0ca41b5ad2d1',1,'AudioDeviceManager']]],
+  ['removeaudiodevicetype',['removeAudioDeviceType',['../classAudioDeviceManager.html#afad82d8864eb332a8c6eb7dc626b156d',1,'AudioDeviceManager']]],
   ['removebus',['removeBus',['../classAudioProcessor.html#ad50d39de8a1ed655829ccf21e63c13b4',1,'AudioProcessor']]],
   ['removechangelistener',['removeChangeListener',['../classChangeBroadcaster.html#ae558a26c795278549a63e342bd5f1650',1,'ChangeBroadcaster']]],
   ['removechannel',['removeChannel',['../classAudioChannelSet.html#a7cfafbfde1725ab589abc7b12ca4886d',1,'AudioChannelSet']]],

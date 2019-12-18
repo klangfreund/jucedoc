@@ -175,6 +175,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1879ae7e393b289d3f5a62f673bfc031"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a1879ae7e393b289d3f5a62f673bfc031">has3DNow</a> () noexcept</td></tr>
 <tr class="memdesc:a1879ae7e393b289d3f5a62f673bfc031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if AMD 3DNOW instructions are available.  <a href="#a1879ae7e393b289d3f5a62f673bfc031">More...</a><br /></td></tr>
 <tr class="separator:a1879ae7e393b289d3f5a62f673bfc031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29437caec1936a765542ec3ec5e21cd1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#a29437caec1936a765542ec3ec5e21cd1">hasFMA3</a> () noexcept</td></tr>
+<tr class="memdesc:a29437caec1936a765542ec3ec5e21cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if AMD FMA3 instructions are available.  <a href="#a29437caec1936a765542ec3ec5e21cd1">More...</a><br /></td></tr>
+<tr class="separator:a29437caec1936a765542ec3ec5e21cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0867e25b93cb36f08552f84bc29b59f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#af0867e25b93cb36f08552f84bc29b59f">hasFMA4</a> () noexcept</td></tr>
+<tr class="memdesc:af0867e25b93cb36f08552f84bc29b59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if AMD FMA4 instructions are available.  <a href="#af0867e25b93cb36f08552f84bc29b59f">More...</a><br /></td></tr>
+<tr class="separator:af0867e25b93cb36f08552f84bc29b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f3b624e4b0d32db1c5702ee039a765"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemStats.html#ad5f3b624e4b0d32db1c5702ee039a765">hasSSE</a> () noexcept</td></tr>
 <tr class="memdesc:ad5f3b624e4b0d32db1c5702ee039a765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if Intel SSE instructions are available.  <a href="#ad5f3b624e4b0d32db1c5702ee039a765">More...</a><br /></td></tr>
 <tr class="separator:ad5f3b624e4b0d32db1c5702ee039a765"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -908,6 +914,60 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a29437caec1936a765542ec3ec5e21cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29437caec1936a765542ec3ec5e21cd1">&#9670;&nbsp;</a></span>hasFMA3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SystemStats::hasFMA3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if AMD FMA3 instructions are available. </p>
+
+</div>
+</div>
+<a id="af0867e25b93cb36f08552f84bc29b59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0867e25b93cb36f08552f84bc29b59f">&#9670;&nbsp;</a></span>hasFMA4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SystemStats::hasFMA4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if AMD FMA4 instructions are available. </p>
+
+</div>
+</div>
 <a id="ad5f3b624e4b0d32db1c5702ee039a765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5f3b624e4b0d32db1c5702ee039a765">&#9670;&nbsp;</a></span>hasSSE()</h2>
 
@@ -1570,7 +1630,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 16 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 18 2019 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

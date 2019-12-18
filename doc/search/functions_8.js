@@ -524,6 +524,7 @@ var searchData=
   ['isverticalscrollbarontheright',['isVerticalScrollbarOnTheRight',['../classViewport.html#a900d3f4d375a71d1be9732df459aa4ea',1,'Viewport']]],
   ['isverticalscrollbarshown',['isVerticalScrollBarShown',['../classViewport.html#a395dad79d93fef08652fda138d70e345',1,'Viewport']]],
   ['isvideoopen',['isVideoOpen',['../classVideoComponent.html#affcf58e61e1bf8dea6c0d7c0ed4828e9',1,'VideoComponent']]],
+  ['isviennaensemblepro',['isViennaEnsemblePro',['../classPluginHostType.html#adb827152c7f75ac7285a8452361432bb',1,'PluginHostType']]],
   ['isvisible',['isVisible',['../classComponent.html#a7ffb3de137ac4028e430a445c62a2d01',1,'Component']]],
   ['isvoiceactive',['isVoiceActive',['../classSynthesiserVoice.html#aaa40b621fd776f6568325a0597ba1931',1,'SynthesiserVoice']]],
   ['isvoicestealingenabled',['isVoiceStealingEnabled',['../classMPESynthesiser.html#a66626bd58b9d126ed61d847a572441ee',1,'MPESynthesiser']]],
