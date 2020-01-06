@@ -163,7 +163,7 @@ var searchData=
   ['proportionofheight',['proportionOfHeight',['../classRectangle.html#a675e653f495b727f98ff17d736541a38',1,'Rectangle::proportionOfHeight()'],['../classComponent.html#a5d5356b8ad166fa48273dd90980ab3aa',1,'Component::proportionOfHeight()']]],
   ['proportionoflengthtovalue',['proportionOfLengthToValue',['../classSlider.html#a6762e2206ad7e41cb8d6189b244d91f5',1,'Slider']]],
   ['proportionofwidth',['proportionOfWidth',['../classRectangle.html#a2ed936ba6b11cb4bcdcdb1b18782abd3',1,'Rectangle::proportionOfWidth()'],['../classComponent.html#ab2def9de34b650c5384f6bc040daa6a5',1,'Component::proportionOfWidth()']]],
-  ['purchaseproduct',['purchaseProduct',['../classInAppPurchases.html#a4dfc1d93576b36ad84e23bac1c484c22',1,'InAppPurchases']]],
+  ['purchaseproduct',['purchaseProduct',['../classInAppPurchases.html#a0438154d89d7875eb967b1be4c62bb50',1,'InAppPurchases']]],
   ['purchaseslistrestored',['purchasesListRestored',['../structInAppPurchases_1_1Listener.html#a24f12f63d41d67bf0c84061915c38e06',1,'InAppPurchases::Listener']]],
   ['pushbuffer',['pushBuffer',['../classAudioVisualiserComponent.html#a0667af6eb65c167a95a6a7b51b8339e0',1,'AudioVisualiserComponent::pushBuffer(const AudioBuffer&lt; float &gt; &amp;bufferToPush)'],['../classAudioVisualiserComponent.html#a9fa4943ecb7a4822a205417c5a6b5eb7',1,'AudioVisualiserComponent::pushBuffer(const AudioSourceChannelInfo &amp;bufferToPush)'],['../classAudioVisualiserComponent.html#a7b6bc6e5b31c9e471425a19cbef8d0ff',1,'AudioVisualiserComponent::pushBuffer(const float **channelData, int numChannels, int numSamples)']]],
   ['pushsample',['pushSample',['../classAudioVisualiserComponent.html#aa0e53a6298d7cd56112fa004a933e598',1,'AudioVisualiserComponent']]],

@@ -75,7 +75,7 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:a534c077f3c60168d88555ade062420b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">JobStatus</a> { <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3a390a063ef5f8b769a682f1daefc64e72">jobHasFinished</a> = 0, 
 <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3a42789d58048631dd96008ce23911a545">jobNeedsRunningAgain</a>
- }<tr class="memdesc:a534c077f3c60168d88555ade062420b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the values that can be returned by the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method.  <a href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">More...</a><br /></td></tr>
+ }<tr class="memdesc:a534c077f3c60168d88555ade062420b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the values that can be returned by the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method.  <a href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a534c077f3c60168d88555ade062420b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -94,10 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0005910260394539b8117a858f5b4cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the job's name.  <a href="#a0005910260394539b8117a858f5b4cfb">More...</a><br /></td></tr>
 <tr class="separator:a0005910260394539b8117a858f5b4cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec49c01680e563257c79088dc87bc0d9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">JobStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9">runJob</a> ()=0</td></tr>
-<tr class="memdesc:aec49c01680e563257c79088dc87bc0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peforms the actual work that this job needs to do.  <a href="#aec49c01680e563257c79088dc87bc0d9">More...</a><br /></td></tr>
+<tr class="memdesc:aec49c01680e563257c79088dc87bc0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the actual work that this job needs to do.  <a href="#aec49c01680e563257c79088dc87bc0d9">More...</a><br /></td></tr>
 <tr class="separator:aec49c01680e563257c79088dc87bc0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807c21e00f00548037cd10d4bab64347"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPoolJob.html#a807c21e00f00548037cd10d4bab64347">isRunning</a> () const noexcept</td></tr>
-<tr class="memdesc:a807c21e00f00548037cd10d4bab64347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this job is currently running its <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method.  <a href="#a807c21e00f00548037cd10d4bab64347">More...</a><br /></td></tr>
+<tr class="memdesc:a807c21e00f00548037cd10d4bab64347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this job is currently running its <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method.  <a href="#a807c21e00f00548037cd10d4bab64347">More...</a><br /></td></tr>
 <tr class="separator:a807c21e00f00548037cd10d4bab64347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441a94cba7ec96242fd7268371d9c5ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea">shouldExit</a> () const noexcept</td></tr>
 <tr class="memdesc:a441a94cba7ec96242fd7268371d9c5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if something is trying to interrupt this job and make it stop.  <a href="#a441a94cba7ec96242fd7268371d9c5ea">More...</a><br /></td></tr>
@@ -115,13 +115,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9524c73da9de5444dd13d5936e238ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPoolJob.html#ac9524c73da9de5444dd13d5936e238ee">getCurrentThreadPoolJob</a> ()</td></tr>
-<tr class="memdesc:ac9524c73da9de5444dd13d5936e238ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the calling thread is being invoked inside a <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method, this will return the <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> that it belongs to.  <a href="#ac9524c73da9de5444dd13d5936e238ee">More...</a><br /></td></tr>
+<tr class="memdesc:ac9524c73da9de5444dd13d5936e238ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the calling thread is being invoked inside a <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method, this will return the <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> that it belongs to.  <a href="#ac9524c73da9de5444dd13d5936e238ee">More...</a><br /></td></tr>
 <tr class="separator:ac9524c73da9de5444dd13d5936e238ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A task that is executed by a <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a> object. </p>
 <p>A <a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a> keeps a list of <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> objects which are executed by its threads.</p>
-<p>The <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method needs to be implemented to do the task, and if the code that does the work takes a significant time to run, it must keep checking the <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> method to see if something is trying to interrupt the job. If <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
+<p>The <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method needs to be implemented to do the task, and if the code that does the work takes a significant time to run, it must keep checking the <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> method to see if something is trying to interrupt the job. If <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classThreadPool.html" title="A set of threads that will run a list of jobs. ">ThreadPool</a>, <a class="el" href="classThread.html" title="Encapsulates a thread. ">Thread</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a534c077f3c60168d88555ade062420b3"></a>
@@ -136,7 +136,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>These are the values that can be returned by the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method. </p>
+<p>These are the values that can be returned by the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a534c077f3c60168d88555ade062420b3a390a063ef5f8b769a682f1daefc64e72"></a>jobHasFinished&#160;</td><td class="fielddoc"><p>indicates that the job has finished and can be removed from the pool. </p>
 </td></tr>
@@ -268,9 +268,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Peforms the actual work that this job needs to do. </p>
+<p>Performs the actual work that this job needs to do. </p>
 <p>Your subclass must implement this method, in which is does its work.</p>
-<p>If the code in this method takes a significant time to run, it must repeatedly check the <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> method to see if something is trying to interrupt the job. If <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> ever returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
+<p>If the code in this method takes a significant time to run, it must repeatedly check the <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> method to see if something is trying to interrupt the job. If <a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> ever returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
 <p>If this method returns jobHasFinished, then the job will be removed from the pool immediately. If it returns jobNeedsRunningAgain, then the job will be left in the pool and will get a chance to run again as soon as a thread is free.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classThreadPoolJob.html#a441a94cba7ec96242fd7268371d9c5ea" title="Returns true if something is trying to interrupt this job and make it stop. ">shouldExit()</a> </dd></dl>
 
@@ -299,7 +299,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if this job is currently running its <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method. </p>
+<p>Returns true if this job is currently running its <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method. </p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if something is trying to interrupt this job and make it stop. </p>
-<p>Your <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method must call this whenever it gets a chance, and if it ever returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
+<p>Your <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method must call this whenever it gets a chance, and if it ever returns true, the <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method must return immediately.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classThreadPoolJob.html#acf58a7de172ae74d6ebb4a9fb59ed4d3" title="Calling this will cause the shouldExit() method to return true, and the job should (if it&#39;s been impl...">signalJobShouldExit()</a> </dd></dl>
 
 </div>
@@ -416,7 +416,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>If the calling thread is being invoked inside a <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">runJob()</a> method, this will return the <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> that it belongs to. </p>
+<p>If the calling thread is being invoked inside a <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">runJob()</a> method, this will return the <a class="el" href="classThreadPoolJob.html" title="A task that is executed by a ThreadPool object. ">ThreadPoolJob</a> that it belongs to. </p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 19 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 6 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -82,7 +82,6 @@ var searchData=
   ['heapblock_3c_20iirfilter_20_2a_3e',['HeapBlock&lt; IIRFilter *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20imagepixeldata_3a_3alistener_20_2a_3e',['HeapBlock&lt; ImagePixelData::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20inapppurchases_3a_3adownload_20_2a_3e',['HeapBlock&lt; InAppPurchases::Download *&gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20inapppurchases_3a_3alistener_20_2a_3e',['HeapBlock&lt; InAppPurchases::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20int_20_3e',['HeapBlock&lt; int &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20item_20_2a_3e',['HeapBlock&lt; Item *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20item_20_3e',['HeapBlock&lt; Item &gt;',['../classHeapBlock.html',1,'']]],

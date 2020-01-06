@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <p>Called back by a <a class="el" href="classTimeSliceThread.html" title="A thread that keeps a list of clients, and calls each one in turn, giving them all a chance to run so...">TimeSliceThread</a>. </p>
 <p>When you register this class with it, a <a class="el" href="classTimeSliceThread.html" title="A thread that keeps a list of clients, and calls each one in turn, giving them all a chance to run so...">TimeSliceThread</a> will repeatedly call this method.</p>
 <p>The implementation of this method should use its time-slice to do something that's quick - never block for longer than absolutely necessary.</p>
-<dl class="section return"><dt>Returns</dt><dd>Your method should return the number of milliseconds which it would like to wait before being called again. Returning 0 will make the thread call again as soon as possible (after possibly servicing other busy clients). If you return a value below zero, your client will be removed from the list of clients, and won't be called again. The value you specify isn't a guaranteee, and is only used as a hint by the thread - the actual time before the next callback may be more or less than specified. You can force the <a class="el" href="classTimeSliceThread.html" title="A thread that keeps a list of clients, and calls each one in turn, giving them all a chance to run so...">TimeSliceThread</a> to wake up and poll again immediately by calling its notify() method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Your method should return the number of milliseconds which it would like to wait before being called again. Returning 0 will make the thread call again as soon as possible (after possibly servicing other busy clients). If you return a value below zero, your client will be removed from the list of clients, and won't be called again. The value you specify isn't a guarantee, and is only used as a hint by the thread - the actual time before the next callback may be more or less than specified. You can force the <a class="el" href="classTimeSliceThread.html" title="A thread that keeps a list of clients, and calls each one in turn, giving them all a chance to run so...">TimeSliceThread</a> to wake up and poll again immediately by calling its notify() method. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="classBufferingAudioSource.html#ad5db3f567c5b68306f23fb3fed5367c0">BufferingAudioSource::isLooping()</a>.</p>
 
@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 19 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 6 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

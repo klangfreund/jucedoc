@@ -272,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
 <p>All the methods that change data take an optional <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a>, which will be used to track any changes to the object. For this to work, you have to be careful to consistently always use the same <a class="el" href="classUndoManager.html" title="Manages a list of undo/redo commands. ">UndoManager</a> for all operations to any sub-tree inside the tree.</p>
 <p>A <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> can only be a child of one parent at a time, so if you're moving one from one tree to another, be careful to always remove it first, before adding it. This could also mess up your undo/redo chain, so be wary! In a debug build you should hit assertions if you try to do anything dangerous, but there are still plenty of ways it could go wrong.</p>
 <p>Note that although the children in a tree have a fixed order, the properties are not guaranteed to be stored in any particular order, so don't expect that a property's index will correspond to the order in which the property was added, or that it will remain constant when other properties are added or removed.</p>
-<p>Listeners can be added to a <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> to be told when properies change and when sub-trees are added or removed.</p>
+<p>Listeners can be added to a <a class="el" href="classValueTree.html" title="A powerful tree structure that can be used to hold free-form data, and which can handle its own undo ...">ValueTree</a> to be told when properties change and when sub-trees are added or removed.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvar.html" title="A variant class, that can be used to hold a range of primitive values. ">var</a>, <a class="el" href="classXmlElement.html" title="Used to build a tree of elements representing an XML document. ">XmlElement</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad5671081941b3db9db42bf7fcbd2629c"></a>
@@ -2009,7 +2009,7 @@ template&lt;typename ElementComparator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 19 2019 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 6 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

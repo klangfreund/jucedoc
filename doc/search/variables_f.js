@@ -26,7 +26,7 @@ var searchData=
   ['peru',['peru',['../namespaceColours.html#af2b14ce3009391d8a3b5f3db6c95fa0e',1,'Colours']]],
   ['phase',['phase',['../structdsp_1_1Phase.html#a07412209f3d89714ed6b47e7f3578320',1,'dsp::Phase']]],
   ['pi',['pi',['../group__juce__core-maths.html#gaaec4bd5a00718fbf776203289b9b8645',1,'MathConstants']]],
-  ['pimpl',['pimpl',['../classGenericAudioProcessorEditor.html#af33f35cfb355efe6f61ff7808535e701',1,'GenericAudioProcessorEditor']]],
+  ['pimpl',['pimpl',['../classGenericAudioProcessorEditor.html#af33f35cfb355efe6f61ff7808535e701',1,'GenericAudioProcessorEditor::pimpl()'],['../classInAppPurchases.html#a474d7ea538c17ff38825e92a0f8f2f05',1,'InAppPurchases::pimpl()']]],
   ['pink',['pink',['../namespaceColours.html#ae4c5c0c00ad824561d53376d2ae2e629',1,'Colours']]],
   ['pitchbend',['pitchbend',['../structMPENote.html#aebfdbfc173bc19cc97b97659c412078f',1,'MPENote']]],
   ['pitchgroup',['pitchGroup',['../structBlockConfigManager.html#ab4d9cb6eeea809ccdf42a2409abfcb1e',1,'BlockConfigManager']]],

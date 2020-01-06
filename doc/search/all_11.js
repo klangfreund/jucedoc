@@ -385,7 +385,7 @@ var searchData=
   ['returntype',['returnType',['../structlittlefoot_1_1NativeFunction.html#a6245162b5c6aa41dcd6c24c64374b644',1,'littlefoot::NativeFunction']]],
   ['revealcursor',['revealCursor',['../classMouseInputSource.html#ade2da3233cdfaab0e8b6baf5671682bb',1,'MouseInputSource']]],
   ['revealtouser',['revealToUser',['../classFile.html#a87e48c5c1a4c8528cdbded969f3fcca5',1,'File']]],
-  ['reverb',['Reverb',['../classdsp_1_1Reverb.html',1,'dsp::Reverb'],['../classReverb.html',1,'Reverb'],['../classReverb.html#a765b925557df7e43bf5ed275fc6950d1',1,'Reverb::Reverb()'],['../classdsp_1_1Reverb.html#a155e423677e7eb4b7c05f7fb90895b72',1,'dsp::Reverb::Reverb()']]],
+  ['reverb',['Reverb',['../classReverb.html',1,'Reverb'],['../classdsp_1_1Reverb.html',1,'dsp::Reverb'],['../classReverb.html#a765b925557df7e43bf5ed275fc6950d1',1,'Reverb::Reverb()'],['../classdsp_1_1Reverb.html#a155e423677e7eb4b7c05f7fb90895b72',1,'dsp::Reverb::Reverb()']]],
   ['reverbaudiosource',['ReverbAudioSource',['../classReverbAudioSource.html',1,'ReverbAudioSource'],['../classReverbAudioSource.html#a9bb3f69c71cf6dd49eab94c4f46de919',1,'ReverbAudioSource::ReverbAudioSource()']]],
   ['reverbzonemix',['reverbZoneMix',['../structUnityAudioSpatializerData.html#ac95d69ee8d4e455d02377e580292361f',1,'UnityAudioSpatializerData::reverbZoneMix()'],['../structUnityAudioAmbisonicData.html#afd527a04b3de45f7ca9804fe8e5c52eb',1,'UnityAudioAmbisonicData::reverbZoneMix()']]],
   ['reverse',['reverse',['../classAudioBuffer.html#a41cbf05e4d7054e02d5844b09a8eceb5',1,'AudioBuffer::reverse(int channel, int startSample, int numSamples) const noexcept'],['../classAudioBuffer.html#a842674c6e6bd70f27fcbdef7cc76e283',1,'AudioBuffer::reverse(int startSample, int numSamples) const noexcept']]],

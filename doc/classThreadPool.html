@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a job to the queue. </p>
-<p>Once a job has been added, then the next time a thread is free, it will run the job's <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Peforms the actual work that this job needs to do. ">ThreadPoolJob::runJob()</a> method. Depending on the return value of the runJob() method, the pool will either remove the job from the pool or add it to the back of the queue to be run again.</p>
+<p>Once a job has been added, then the next time a thread is free, it will run the job's <a class="el" href="classThreadPoolJob.html#aec49c01680e563257c79088dc87bc0d9" title="Performs the actual work that this job needs to do. ">ThreadPoolJob::runJob()</a> method. Depending on the return value of the runJob() method, the pool will either remove the job from the pool or add it to the back of the queue to be run again.</p>
 <p>If deleteJobWhenFinished is true, then the job object will be owned and deleted by the pool when not needed - if you do this, make sure that your object's destructor is thread-safe.</p>
 <p>If deleteJobWhenFinished is false, the pointer will be used but not deleted, and the caller is responsible for making sure the object is not deleted before it has been removed from the pool. </p>
 
@@ -628,7 +628,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 19 2019 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 6 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
