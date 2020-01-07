@@ -206,7 +206,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af9de177654fe95cc9de951df15537c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of a bus's channels within the processBlock buffer.  <a href="#af9de177654fe95cc9de951df15537c24">More...</a><br /></td></tr>
 <tr class="separator:af9de177654fe95cc9de951df15537c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e26a8e96f480b6c41041dc85197e3ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a5e26a8e96f480b6c41041dc85197e3ed">getOffsetInBusBufferForAbsoluteChannelIndex</a> (bool isInput, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> absoluteChannelIndex, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> &amp;busIndex) const noexcept</td></tr>
-<tr class="memdesc:a5e26a8e96f480b6c41041dc85197e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset in a bus's buffer from an absolute channel indes.  <a href="#a5e26a8e96f480b6c41041dc85197e3ed">More...</a><br /></td></tr>
+<tr class="memdesc:a5e26a8e96f480b6c41041dc85197e3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset in a bus's buffer from an absolute channel index.  <a href="#a5e26a8e96f480b6c41041dc85197e3ed">More...</a><br /></td></tr>
 <tr class="separator:a5e26a8e96f480b6c41041dc85197e3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a504d92e94c561ba9137ae12a544ed784"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
 <tr class="memitem:a504d92e94c561ba9137ae12a544ed784"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classAudioProcessor.html#a504d92e94c561ba9137ae12a544ed784">getBusBuffer</a> (<a class="el" href="classAudioBuffer.html">AudioBuffer</a>&lt; FloatType &gt; &amp;processBlockBuffer, bool isInput, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> busIndex) const</td></tr>
@@ -526,7 +526,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
-<p>This constructor will create a main input and output bus which are diabled by default. If you need more fine-grained control then use the other constructors. </p>
+<p>This constructor will create a main input and output bus which are disabled by default. If you need more fine-grained control then use the other constructors. </p>
 
 </div>
 </div>
@@ -1483,7 +1483,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the offset in a bus's buffer from an absolute channel indes. </p>
+<p>Returns the offset in a bus's buffer from an absolute channel index. </p>
 <p>This method returns the offset in a bus's buffer given an absolute channel index. It also provides the bus index. For example, this method would return one for a processor with two stereo buses when given the absolute channel index. </p>
 
 </div>
@@ -1914,7 +1914,7 @@ template&lt;size_t numLayouts&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the next best layout which is contained in a channel layout map. </p>
-<p>You can use this mehtod to help you implement getNextBestLayout. For example:</p>
+<p>You can use this method to help you implement getNextBestLayout. For example:</p>
 <div class="fragment"><div class="line">BusesLayout getNextBestLayout (<span class="keyword">const</span> BusesLayout&amp; layouts)<span class="keyword"> override</span></div><div class="line"><span class="keyword"></span>{</div><div class="line">    <span class="keywordflow">return</span> <a class="code" href="classAudioProcessor.html#a2e521ddcd81bad3b92b0b292a8947074">getNextBestLayoutInLayoutList</a> (layouts, {{1,1},{2,2}});</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
@@ -2300,7 +2300,7 @@ template&lt;size_t numLayouts&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the parameter that controls the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>'s bypass state. </p>
-<p>If this method returns a nullptr then you can still control the bypass by calling processBlockBypassed instead of processBlock. On the other hand, if this method returns a non-null value, you should never call processBlockBypassed but use the returned parameter to conrol the bypass state instead.</p>
+<p>If this method returns a nullptr then you can still control the bypass by calling processBlockBypassed instead of processBlock. On the other hand, if this method returns a non-null value, you should never call processBlockBypassed but use the returned parameter to control the bypass state instead.</p>
 <p>A plug-in can override this function to return a parameter which control's your plug-in's bypass. You should always check the value of this parameter in your processBlock callback and bypass any effects if it is non-zero. </p>
 
 </div>
@@ -3374,7 +3374,7 @@ template&lt;size_t numLayouts&gt; </div>
 
 <p>Informs the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> that track properties such as the track's name or colour has been changed. </p>
 <p>If you are hosting this <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> then use this method to inform the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> about which track the <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> is loaded on. This method may only be called on the message thread.</p>
-<p>If you are implemeting an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> then you can override this callback to do something useful with the track properties such as changing the colour of your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>'s editor. It's entirely up to the host when and how often this callback will be called.</p>
+<p>If you are implementing an <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a> then you can override this callback to do something useful with the track properties such as changing the colour of your <a class="el" href="classAudioProcessor.html" title="Base class for audio processing classes or plugins. ">AudioProcessor</a>'s editor. It's entirely up to the host when and how often this callback will be called.</p>
 <p>The default implementation of this callback will do nothing. </p>
 
 </div>
@@ -3708,7 +3708,7 @@ template&lt;size_t numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

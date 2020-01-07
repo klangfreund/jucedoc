@@ -72,7 +72,7 @@ digraph "MouseListener"
   Node1 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node54 [label="NSViewComponent",height=0.2,width=0.4,color="black",URL="$classNSViewComponent.html",tooltip="A Mac-specific class that can create and embed an NSView inside itself. "];
   Node1 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node55 [label="OnlineUnlockForm",height=0.2,width=0.4,color="black",URL="$classOnlineUnlockForm.html",tooltip="Acts as a GUI which asks the user for their details, and calls the approriate methods on your OnlineU..."];
+  Node55 [label="OnlineUnlockForm",height=0.2,width=0.4,color="black",URL="$classOnlineUnlockForm.html",tooltip="Acts as a GUI which asks the user for their details, and calls the appropriate methods on your Online..."];
   Node1 -> Node56 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node56 [label="OpenGLAppComponent",height=0.2,width=0.4,color="black",URL="$classOpenGLAppComponent.html",tooltip="A base class for writing simple one-page graphical apps. "];
   Node1 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

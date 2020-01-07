@@ -220,7 +220,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch environment. </p>
-<p>Each <a class="el" href="classMouseEvent.html" title="Contains position and status information about a mouse event. ">MouseEvent</a> object contains a reference to the <a class="el" href="classMouseInputSource.html" title="Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch ...">MouseInputSource</a> that generated it. In an environment with a single mouse for input, all events will come from the same source, but in a multi-touch system, there may be multiple <a class="el" href="classMouseInputSource.html" title="Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch ...">MouseInputSource</a> obects active, each representing a stream of events coming from a particular finger.</p>
+<p>Each <a class="el" href="classMouseEvent.html" title="Contains position and status information about a mouse event. ">MouseEvent</a> object contains a reference to the <a class="el" href="classMouseInputSource.html" title="Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch ...">MouseInputSource</a> that generated it. In an environment with a single mouse for input, all events will come from the same source, but in a multi-touch system, there may be multiple <a class="el" href="classMouseInputSource.html" title="Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch ...">MouseInputSource</a> objects active, each representing a stream of events coming from a particular finger.</p>
 <p>Events coming from a single <a class="el" href="classMouseInputSource.html" title="Represents a linear source of mouse events from a mouse device or individual finger in a multi-touch ...">MouseInputSource</a> are always sent in a fixed and predictable order: a mouseMove will never be called without a mouseEnter having been sent beforehand, the only events that can happen between a mouseDown and its corresponding mouseUp are mouseDrags, etc. When there are multiple touches arriving from multiple MouseInputSources, their event streams may arrive in an interleaved order, so you should use the <a class="el" href="classMouseInputSource.html#a5df63eab78bd470bd22d39393b337330" title="Returns this source&#39;s index in the global list of possible sources. ">getIndex()</a> method to find out which finger each event came from.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMouseEvent.html" title="Contains position and status information about a mouse event. ">MouseEvent</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -1432,7 +1432,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -319,7 +319,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Tells the source to prepare for playing. </p>
 <p>An <a class="el" href="classAudioSource.html" title="Base class for objects that can produce a continuous stream of audio. ">AudioSource</a> has two states: prepared and unprepared.</p>
-<p>The <a class="el" href="classReverbAudioSource.html#af8077a5e348be506347807afb25afee6" title="Tells the source to prepare for playing. ">prepareToPlay()</a> method is guaranteed to be called at least once on an 'unpreprared' source to put it into a 'prepared' state before any calls will be made to <a class="el" href="classReverbAudioSource.html#a05fd8b39aa2dbf21095376ffd346dda0" title="Called repeatedly to fetch subsequent blocks of audio data. ">getNextAudioBlock()</a>. This callback allows the source to initialise any resources it might need when playing.</p>
+<p>The <a class="el" href="classReverbAudioSource.html#af8077a5e348be506347807afb25afee6" title="Tells the source to prepare for playing. ">prepareToPlay()</a> method is guaranteed to be called at least once on an 'unprepared' source to put it into a 'prepared' state before any calls will be made to <a class="el" href="classReverbAudioSource.html#a05fd8b39aa2dbf21095376ffd346dda0" title="Called repeatedly to fetch subsequent blocks of audio data. ">getNextAudioBlock()</a>. This callback allows the source to initialise any resources it might need when playing.</p>
 <p>Once playback has finished, the <a class="el" href="classReverbAudioSource.html#a5150be0ceba566e4f8c4cf0f2bfebe74" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources()</a> method is called to put the stream back into an 'unprepared' state.</p>
 <p>Note that this method could be called more than once in succession without a matching call to <a class="el" href="classReverbAudioSource.html#a5150be0ceba566e4f8c4cf0f2bfebe74" title="Allows the source to release anything it no longer needs after playback has stopped. ">releaseResources()</a>, so make sure your code is robust and can handle that kind of situation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -406,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

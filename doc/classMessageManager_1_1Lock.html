@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a922a156059b20be5002a9fcd20593a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires the message manager lock.  <a href="#a922a156059b20be5002a9fcd20593a1a">More...</a><br /></td></tr>
 <tr class="separator:a922a156059b20be5002a9fcd20593a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6f36cab30fcd814ee47000ed8496f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager_1_1Lock.html#a6f6f36cab30fcd814ee47000ed8496f2">tryEnter</a> () const noexcept</td></tr>
-<tr class="memdesc:a6f6f36cab30fcd814ee47000ed8496f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock the meesage manager and exits if abort is called.  <a href="#a6f6f36cab30fcd814ee47000ed8496f2">More...</a><br /></td></tr>
+<tr class="memdesc:a6f6f36cab30fcd814ee47000ed8496f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock the message manager and exits if abort is called.  <a href="#a6f6f36cab30fcd814ee47000ed8496f2">More...</a><br /></td></tr>
 <tr class="separator:a6f6f36cab30fcd814ee47000ed8496f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab5d488a35276d014bbc9f99518173b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageManager_1_1Lock.html#acab5d488a35276d014bbc9f99518173b">exit</a> () const noexcept</td></tr>
 <tr class="memdesc:acab5d488a35276d014bbc9f99518173b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the message manager lock.  <a href="#acab5d488a35276d014bbc9f99518173b">More...</a><br /></td></tr>
@@ -225,7 +225,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Acquires the message manager lock. </p>
 <p>If the caller thread already has exclusive access to the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, this method will return immediately. If another thread is currently using the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>, this will wait until that thread releases the lock to the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a>.</p>
-<p>This call will only exit if the lock was accquired by this thread. Calling abort while a thread is waiting for enter to finish, will have no effect.</p>
+<p>This call will only exit if the lock was acquired by this thread. Calling abort while a thread is waiting for enter to finish, will have no effect.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager_1_1Lock.html#acab5d488a35276d014bbc9f99518173b" title="Releases the message manager lock. ">exit</a>, <a class="el" href="classMessageManager_1_1Lock.html#a74490f0867d8d4f1898fa21602e42f19" title="Unblocks a thread which is waiting in tryEnter Call this method if you want to unblock a thread which...">abort</a> </dd></dl>
 
 </div>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attempts to lock the meesage manager and exits if abort is called. </p>
+<p>Attempts to lock the message manager and exits if abort is called. </p>
 <p>This method behaves identically to enter, except that it will abort waiting for the lock if the abort method is called.</p>
 <p>Unlike other JUCE critical sections, this method <b>will</b> block waiting for the lock.</p>
 <p>To ensure predictable behaviour, you should re-check your abort condition if tryEnter returns false.</p>
@@ -263,7 +263,7 @@ Public Member Functions</h2></td></tr>
 <p>this will block until we either have the lock or there is work mmLock.retryLock(); }</p>
 <p>we have the mmlock do some message manager stuff like resizing and painting components }</p>
 <p>called from another thread void addWorkToDo (Work work) { queue.push (work); messageManagerLock.abort(); }</p>
-<dl class="section return"><dt>Returns</dt><dd>false if waiting for a lock was aborted, true if the lock was accquired. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false if waiting for a lock was aborted, true if the lock was acquired. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager_1_1Lock.html#a922a156059b20be5002a9fcd20593a1a" title="Acquires the message manager lock. ">enter</a>, <a class="el" href="classMessageManager_1_1Lock.html#a74490f0867d8d4f1898fa21602e42f19" title="Unblocks a thread which is waiting in tryEnter Call this method if you want to unblock a thread which...">abort</a>, <a class="el" href="group__juce__core-threads.html#ga5cd183417b285db9aacbb12c30e51d4f" title="Automatically tries to lock and unlock a CriticalSection object. ">ScopedTryLock</a> </dd></dl>
 
 </div>
@@ -320,7 +320,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unblocks a thread which is waiting in tryEnter Call this method if you want to unblock a thread which is waiting for the <a class="el" href="classMessageManager.html" title="This class is in charge of the application&#39;s event-dispatch loop. ">MessageManager</a> lock in tryEnter. </p>
-<p>This method does not have any effetc on a thread waiting for a lock in enter. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager_1_1Lock.html#a6f6f36cab30fcd814ee47000ed8496f2" title="Attempts to lock the meesage manager and exits if abort is called. ">tryEnter</a> </dd></dl>
+<p>This method does not have any effect on a thread waiting for a lock in enter. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessageManager_1_1Lock.html#a6f6f36cab30fcd814ee47000ed8496f2" title="Attempts to lock the message manager and exits if abort is called. ">tryEnter</a> </dd></dl>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

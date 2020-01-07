@@ -284,7 +284,7 @@ Public Member Functions</h2></td></tr>
 <p>Tries to load the type for this description, by trying all the formats that this manager knows about. </p>
 <p>The caller is responsible for deleting the object that is returned.</p>
 <p>If it can't load the plugin, it returns nullptr and leaves a message in the errorMessage string.</p>
-<p>If you intend to instantiate a AudioUnit v3 plug-in then you must either use the non-blocking asynchrous version below - or call this method from a thread other than the message thread and without blocking the message thread. </p>
+<p>If you intend to instantiate a AudioUnit v3 plug-in then you must either use the non-blocking asynchronous version below - or call this method from a thread other than the message thread and without blocking the message thread. </p>
 
 </div>
 </div>
@@ -327,12 +327,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Tries to asynchronously load the type for this description, by trying all the formats that this manager knows about. </p>
-<p>The caller must supply a callback object which will be called when the instantantiation has completed.</p>
+<p>The caller must supply a callback object which will be called when the instantiation has completed.</p>
 <p>If it can't load the plugin then the callback function will be called passing a nullptr as the instance argument along with an error message.</p>
 <p>The callback function will be called on the message thread so the caller must not block the message thread.</p>
 <p>The callback object will be deleted automatically after it has been invoked.</p>
 <p>The caller is responsible for deleting the instance that is passed to the callback function.</p>
-<p>If you intend to instantiate a AudioUnit v3 plug-in then you must use this non-blocking asynchrous version - or call the synchrous method from an auxiliary thread. </p>
+<p>If you intend to instantiate a AudioUnit v3 plug-in then you must use this non-blocking asynchronous version - or call the synchronous method from an auxiliary thread. </p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:11 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

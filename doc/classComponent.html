@@ -476,7 +476,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8e5e39d3d7e2b8be4e78454ec4a5f584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to indicate that this component has been enabled or disabled.  <a href="#a8e5e39d3d7e2b8be4e78454ec4a5f584">More...</a><br /></td></tr>
 <tr class="separator:a8e5e39d3d7e2b8be4e78454ec4a5f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa7fae9983fed145b733d809dc7b2e5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a1fa7fae9983fed145b733d809dc7b2e5">getAlpha</a> () const noexcept</td></tr>
-<tr class="memdesc:a1fa7fae9983fed145b733d809dc7b2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component's current transparancy level.  <a href="#a1fa7fae9983fed145b733d809dc7b2e5">More...</a><br /></td></tr>
+<tr class="memdesc:a1fa7fae9983fed145b733d809dc7b2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component's current transparency level.  <a href="#a1fa7fae9983fed145b733d809dc7b2e5">More...</a><br /></td></tr>
 <tr class="separator:a1fa7fae9983fed145b733d809dc7b2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b9329a87c71ed01319071e0fedac128"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a1b9329a87c71ed01319071e0fedac128">setAlpha</a> (float newAlpha)</td></tr>
 <tr class="memdesc:a1b9329a87c71ed01319071e0fedac128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the transparency of this component.  <a href="#a1b9329a87c71ed01319071e0fedac128">More...</a><br /></td></tr>
@@ -778,7 +778,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
-<p>Note that when a component is deleted, any child components it contains are NOT automatically deleted. It's your responsibilty to manage their lifespan - you may want to use helper methods like <a class="el" href="classComponent.html#abc8f8338a400c20d5e941ea3a1f67f7b" title="Removes and deletes all of this component&#39;s children. ">deleteAllChildren()</a>, or less haphazard approaches like using std::unique_ptrs or normal object aggregation to manage them.</p>
+<p>Note that when a component is deleted, any child components it contains are NOT automatically deleted. It's your responsibility to manage their lifespan - you may want to use helper methods like <a class="el" href="classComponent.html#abc8f8338a400c20d5e941ea3a1f67f7b" title="Removes and deletes all of this component&#39;s children. ">deleteAllChildren()</a>, or less haphazard approaches like using std::unique_ptrs or normal object aggregation to manage them.</p>
 <p>If the component being deleted is currently the child of another one, then during deletion, it will be removed from its parent, and the parent will receive a <a class="el" href="classComponent.html#a2bbc6da3479a1c3f6e711f4caf9edafb" title="Subclasses can use this callback to be told when children are added or removed, or when their z-order...">childrenChanged()</a> callback. Any <a class="el" href="classComponentListener.html" title="Gets informed about changes to a component&#39;s hierarchy or position. ">ComponentListener</a> objects that have registered with it will also have their <a class="el" href="classComponentListener.html#a948f7c07d7dabde3b6cc7a7ceac29cec" title="Called when the component is in the process of being deleted. ">ComponentListener::componentBeingDeleted()</a> methods called. </p>
 
 </div>
@@ -1832,7 +1832,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Converts a rectangle to be relative to this component's coordinate space. </p>
 <p>This takes a rectangle that is relative to a different component, and returns its position relative to this component. If the sourceComponent parameter is null, the source rectangle is assumed to be a screen coordinate.</p>
-<p>If you've used <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a> to apply one or more transforms to components, then the source rectangle may not actually be rectanglular when converted to the target space, so in that situation this will return the smallest rectangle that fully contains the transformed area. </p>
+<p>If you've used <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a> to apply one or more transforms to components, then the source rectangle may not actually be rectangular when converted to the target space, so in that situation this will return the smallest rectangle that fully contains the transformed area. </p>
 
 </div>
 </div>
@@ -1895,7 +1895,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts a rectangle from this component's coordinate space to a screen coordinate. </p>
-<p>If you've used <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a> to apply one or more transforms to components, then the source rectangle may not actually be rectanglular when converted to the target space, so in that situation this will return the smallest rectangle that fully contains the transformed area. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a9eecd9625db887fd98684bae3543db24" title="Converts a point to be relative to this component&#39;s coordinate space. ">getLocalPoint</a>, <a class="el" href="classComponent.html#aeae960c6a8784804fff96ab71d38afdc" title="Converts a point relative to this component&#39;s top-left into a screen coordinate. ">localPointToGlobal</a> </dd></dl>
+<p>If you've used <a class="el" href="classComponent.html#a42d13229962acb1cdf4328c4a490ffef" title="Sets a transform matrix to be applied to this component. ">setTransform()</a> to apply one or more transforms to components, then the source rectangle may not actually be rectangular when converted to the target space, so in that situation this will return the smallest rectangle that fully contains the transformed area. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a9eecd9625db887fd98684bae3543db24" title="Converts a point to be relative to this component&#39;s coordinate space. ">getLocalPoint</a>, <a class="el" href="classComponent.html#aeae960c6a8784804fff96ab71d38afdc" title="Converts a point relative to this component&#39;s top-left into a screen coordinate. ">localPointToGlobal</a> </dd></dl>
 
 </div>
 </div>
@@ -3632,7 +3632,7 @@ template&lt;class TargetClass &gt; </div>
 <p>You should very rarely have to use this method, it's simply there in case you need to draw a component with a custom graphics context for some reason, e.g. for creating a snapshot of the component.</p>
 <p>It calls <a class="el" href="classComponent.html#a7cf1862f4af5909ea72827898114a182" title="Components can override this method to draw their content. ">paint()</a>, <a class="el" href="classComponent.html#aa15dc77c06b5a0a4192090b4a323f79c" title="Components can override this method to draw over the top of their children. ">paintOverChildren()</a> and recursively calls <a class="el" href="classComponent.html#a2c960bd5ec5ac76d18e82b6883096714" title="Draws this component and all its subcomponents onto the specified graphics context. ">paintEntireComponent()</a> on its children in order to render the entire tree.</p>
 <p>The graphics context may be left in an undefined state after this method returns, so you may need to reset it if you're going to use it again.</p>
-<p>If ignoreAlphaLevel is false, then the component will be drawn with the opacity level specified by <a class="el" href="classComponent.html#a1fa7fae9983fed145b733d809dc7b2e5" title="Returns the component&#39;s current transparancy level. ">getAlpha()</a>; if ignoreAlphaLevel is true, then this will be ignored and an alpha of 1.0 will be used. </p>
+<p>If ignoreAlphaLevel is false, then the component will be drawn with the opacity level specified by <a class="el" href="classComponent.html#a1fa7fae9983fed145b733d809dc7b2e5" title="Returns the component&#39;s current transparency level. ">getAlpha()</a>; if ignoreAlphaLevel is true, then this will be ignored and an alpha of 1.0 will be used. </p>
 
 </div>
 </div>
@@ -4463,7 +4463,7 @@ template&lt;class TargetClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the component's current transparancy level. </p>
+<p>Returns the component's current transparency level. </p>
 <p>See <a class="el" href="classComponent.html#a1b9329a87c71ed01319071e0fedac128" title="Changes the transparency of this component. ">setAlpha()</a> for more details. </p>
 
 </div>
@@ -4486,7 +4486,7 @@ template&lt;class TargetClass &gt; </div>
 
 <p>Changes the transparency of this component. </p>
 <p>When painted, the entire component and all its children will be rendered with this as the overall opacity level, where 0 is completely invisible, and 1.0 is fully opaque (i.e. normal).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a1fa7fae9983fed145b733d809dc7b2e5" title="Returns the component&#39;s current transparancy level. ">getAlpha</a>, <a class="el" href="classComponent.html#af83c72f9c98476811522ba8cad855003" title="Called when setAlpha() is used to change the alpha value of this component. ">alphaChanged</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classComponent.html#a1fa7fae9983fed145b733d809dc7b2e5" title="Returns the component&#39;s current transparency level. ">getAlpha</a>, <a class="el" href="classComponent.html#af83c72f9c98476811522ba8cad855003" title="Called when setAlpha() is used to change the alpha value of this component. ">alphaChanged</a> </dd></dl>
 
 </div>
 </div>
@@ -6486,7 +6486,7 @@ template&lt;class TargetClass &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

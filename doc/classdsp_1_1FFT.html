@@ -223,7 +223,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs an in-place forward transform on a block of real data. </p>
-<p>As the coefficients of the negative frequences (frequencies higher than N/2 or pi) are the complex conjugate of their positive counterparts, it may not be necessary to calculate them for your particular application. You can use dontCalculateNegativeFrequencies to let the <a class="el" href="classdsp_1_1FFT.html" title="Performs a fast fourier transform. ">FFT</a> engine know that you do not plan on using them. Note that this is only a hint: some <a class="el" href="classdsp_1_1FFT.html" title="Performs a fast fourier transform. ">FFT</a> engines (currently only the Fallback engine), will still calculate the negative frequencies even if dontCalculateNegativeFrequencies is true.</p>
+<p>As the coefficients of the negative frequencies (frequencies higher than N/2 or pi) are the complex conjugate of their positive counterparts, it may not be necessary to calculate them for your particular application. You can use dontCalculateNegativeFrequencies to let the <a class="el" href="classdsp_1_1FFT.html" title="Performs a fast fourier transform. ">FFT</a> engine know that you do not plan on using them. Note that this is only a hint: some <a class="el" href="classdsp_1_1FFT.html" title="Performs a fast fourier transform. ">FFT</a> engines (currently only the Fallback engine), will still calculate the negative frequencies even if dontCalculateNegativeFrequencies is true.</p>
 <p>The size of the array passed in must be 2 * <a class="el" href="classdsp_1_1FFT.html#a17ea52510feb588420d2bf5a049c4ee4" title="Returns the number of data points that this FFT was created to work with. ">getSize()</a>, and the first half should contain your raw input sample data. On return, if dontCalculateNegativeFrequencies is false, the array will contain size complex real + imaginary parts data interleaved. If dontCalculateNegativeFrequencies is true, the array will contain at least (size / 2) + 1 complex numbers. Both outputs can be passed to <a class="el" href="classdsp_1_1FFT.html#aac11526dee412dd3cc0143d0065ea0b1" title="Performs a reverse operation to data created in performRealOnlyForwardTransform(). ">performRealOnlyInverseTransform()</a> in order to convert it back to reals. </p>
 
 </div>
@@ -321,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 6 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 7 2020 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
