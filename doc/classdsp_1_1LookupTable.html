@@ -78,10 +78,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b0e863a58d593b4e9404617b91f973d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#a7b0e863a58d593b4e9404617b91f973d">LookupTable</a> ()</td></tr>
 <tr class="memdesc:a7b0e863a58d593b4e9404617b91f973d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an uninitialised <a class="el" href="classdsp_1_1LookupTable.html" title="Class for efficiently approximating expensive arithmetic operations. ">LookupTable</a> object.  <a href="#a7b0e863a58d593b4e9404617b91f973d">More...</a><br /></td></tr>
 <tr class="separator:a7b0e863a58d593b4e9404617b91f973d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3a198a33e20fc68384ee8803766377"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#a4d3a198a33e20fc68384ee8803766377">LookupTable</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; FloatType(size_t)&gt; &amp;functionToApproximate, size_t numPointsToUse)</td></tr>
+<tr class="memitem:a4d3a198a33e20fc68384ee8803766377"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#a4d3a198a33e20fc68384ee8803766377">LookupTable</a> (const std::function&lt; FloatType(size_t)&gt; &amp;functionToApproximate, size_t numPointsToUse)</td></tr>
 <tr class="memdesc:a4d3a198a33e20fc68384ee8803766377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and initialises a <a class="el" href="classdsp_1_1LookupTable.html" title="Class for efficiently approximating expensive arithmetic operations. ">LookupTable</a> object.  <a href="#a4d3a198a33e20fc68384ee8803766377">More...</a><br /></td></tr>
 <tr class="separator:a4d3a198a33e20fc68384ee8803766377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66dca1acb5b41603bce87aeafa2f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#ae66dca1acb5b41603bce87aeafa2f6dc">initialise</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; FloatType(size_t)&gt; &amp;functionToApproximate, size_t numPointsToUse)</td></tr>
+<tr class="memitem:ae66dca1acb5b41603bce87aeafa2f6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#ae66dca1acb5b41603bce87aeafa2f6dc">initialise</a> (const std::function&lt; FloatType(size_t)&gt; &amp;functionToApproximate, size_t numPointsToUse)</td></tr>
 <tr class="memdesc:ae66dca1acb5b41603bce87aeafa2f6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises or changes the parameters of a <a class="el" href="classdsp_1_1LookupTable.html" title="Class for efficiently approximating expensive arithmetic operations. ">LookupTable</a> object.  <a href="#ae66dca1acb5b41603bce87aeafa2f6dc">More...</a><br /></td></tr>
 <tr class="separator:ae66dca1acb5b41603bce87aeafa2f6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac336c76b5b2df75df654cc2070bcfbb5"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1LookupTable.html#ac336c76b5b2df75df654cc2070bcfbb5">getUnchecked</a> (FloatType index) const noexcept</td></tr>
@@ -144,7 +144,7 @@ template&lt;typename FloatType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1LookupTable.html">dsp::LookupTable</a>&lt; FloatType &gt;::<a class="el" href="classdsp_1_1LookupTable.html">LookupTable</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; FloatType(size_t)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; FloatType(size_t)&gt; &amp;&#160;</td>
           <td class="paramname"><em>functionToApproximate</em>, </td>
         </tr>
         <tr>
@@ -184,7 +184,7 @@ template&lt;typename FloatType&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdsp_1_1LookupTable.html">dsp::LookupTable</a>&lt; FloatType &gt;::initialise </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; FloatType(size_t)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; FloatType(size_t)&gt; &amp;&#160;</td>
           <td class="paramname"><em>functionToApproximate</em>, </td>
         </tr>
         <tr>
@@ -210,8 +210,6 @@ template&lt;typename FloatType&gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1LookupTableTransform.html#a8b3f42b0f56f57126ab68ece4b91e7b4">dsp::LookupTableTransform&lt; Type &gt;::LookupTableTransform()</a>.</p>
 
 </div>
 </div>
@@ -393,7 +391,7 @@ template&lt;typename FloatType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

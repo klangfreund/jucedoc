@@ -79,7 +79,7 @@ Inheritance diagram for AudioParameterFloat:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a147c60270cc347fd26b28b4ea05ccf8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterFloat.html#a147c60270cc347fd26b28b4ea05ccf8b">AudioParameterFloat</a> (const <a class="el" href="classString.html">String</a> &amp;parameterID, const <a class="el" href="classString.html">String</a> &amp;parameterName, <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; float &gt; normalisableRange, float defaultValue, const <a class="el" href="classString.html">String</a> &amp;parameterLabel=<a class="el" href="classString.html">String</a>(), <a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">Category</a> parameterCategory=<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2ac86017a29081bfb3405d7d5a4ed2c370">AudioProcessorParameter::genericParameter</a>, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classString.html">String</a>(float value, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt; stringFromValue=nullptr, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; float(const <a class="el" href="classString.html">String</a> &amp;text)&gt; valueFromString=nullptr)</td></tr>
+<tr class="memitem:a147c60270cc347fd26b28b4ea05ccf8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterFloat.html#a147c60270cc347fd26b28b4ea05ccf8b">AudioParameterFloat</a> (const <a class="el" href="classString.html">String</a> &amp;parameterID, const <a class="el" href="classString.html">String</a> &amp;parameterName, <a class="el" href="classNormalisableRange.html">NormalisableRange</a>&lt; float &gt; normalisableRange, float defaultValue, const <a class="el" href="classString.html">String</a> &amp;parameterLabel=<a class="el" href="classString.html">String</a>(), <a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2">Category</a> parameterCategory=<a class="el" href="classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2ac86017a29081bfb3405d7d5a4ed2c370">AudioProcessorParameter::genericParameter</a>, std::function&lt; <a class="el" href="classString.html">String</a>(float value, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt; stringFromValue=nullptr, std::function&lt; float(const <a class="el" href="classString.html">String</a> &amp;text)&gt; valueFromString=nullptr)</td></tr>
 <tr class="memdesc:a147c60270cc347fd26b28b4ea05ccf8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classAudioParameterFloat.html" title="A subclass of AudioProcessorParameter that provides an easy way to create a parameter which maps onto...">AudioParameterFloat</a> with the specified parameters.  <a href="#a147c60270cc347fd26b28b4ea05ccf8b">More...</a><br /></td></tr>
 <tr class="separator:a147c60270cc347fd26b28b4ea05ccf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af9f23ca70092525d4f8765a6961e59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterFloat.html#a6af9f23ca70092525d4f8765a6961e59">AudioParameterFloat</a> (<a class="el" href="classString.html">String</a> parameterID, <a class="el" href="classString.html">String</a> parameterName, float minValue, float maxValue, float defaultValue)</td></tr>
@@ -270,13 +270,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classString.html">String</a>(float value, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classString.html">String</a>(float value, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt;&#160;</td>
           <td class="paramname"><em>stringFromValue</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; float(const <a class="el" href="classString.html">String</a> &amp;text)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; float(const <a class="el" href="classString.html">String</a> &amp;text)&gt;&#160;</td>
           <td class="paramname"><em>valueFromString</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -535,7 +535,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

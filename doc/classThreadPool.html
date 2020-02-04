@@ -90,10 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad46e866e912868092fff107dc555443b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#ad46e866e912868092fff107dc555443b">addJob</a> (<a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *job, bool deleteJobWhenFinished)</td></tr>
 <tr class="memdesc:ad46e866e912868092fff107dc555443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a job to the queue.  <a href="#ad46e866e912868092fff107dc555443b">More...</a><br /></td></tr>
 <tr class="separator:ad46e866e912868092fff107dc555443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67017032e17cc020cfb22ca1fdee73ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a67017032e17cc020cfb22ca1fdee73ba">addJob</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">ThreadPoolJob::JobStatus</a>()&gt; job)</td></tr>
+<tr class="memitem:a67017032e17cc020cfb22ca1fdee73ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a67017032e17cc020cfb22ca1fdee73ba">addJob</a> (std::function&lt; <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">ThreadPoolJob::JobStatus</a>()&gt; job)</td></tr>
 <tr class="memdesc:a67017032e17cc020cfb22ca1fdee73ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a lambda function to be called as a job.  <a href="#a67017032e17cc020cfb22ca1fdee73ba">More...</a><br /></td></tr>
 <tr class="separator:a67017032e17cc020cfb22ca1fdee73ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a451c2a4d40a477e234ff314b350650d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a451c2a4d40a477e234ff314b350650d8">addJob</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt; job)</td></tr>
+<tr class="memitem:a451c2a4d40a477e234ff314b350650d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a451c2a4d40a477e234ff314b350650d8">addJob</a> (std::function&lt; void()&gt; job)</td></tr>
 <tr class="memdesc:a451c2a4d40a477e234ff314b350650d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a lambda function to be called as a job.  <a href="#a451c2a4d40a477e234ff314b350650d8">More...</a><br /></td></tr>
 <tr class="separator:a451c2a4d40a477e234ff314b350650d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10da7494ab922d7157a5929d0689bf54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadPool.html#a10da7494ab922d7157a5929d0689bf54">removeJob</a> (<a class="el" href="classThreadPoolJob.html">ThreadPoolJob</a> *job, bool interruptIfRunning, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> timeOutMilliseconds)</td></tr>
@@ -256,7 +256,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ThreadPool::addJob </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">ThreadPoolJob::JobStatus</a>()&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classThreadPoolJob.html#a534c077f3c60168d88555ade062420b3">ThreadPoolJob::JobStatus</a>()&gt;&#160;</td>
           <td class="paramname"><em>job</em></td><td>)</td>
           <td></td>
         </tr>
@@ -277,7 +277,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ThreadPool::addJob </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>job</em></td><td>)</td>
           <td></td>
         </tr>
@@ -628,7 +628,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

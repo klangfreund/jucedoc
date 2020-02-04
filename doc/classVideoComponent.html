@@ -90,7 +90,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d4a5850898a15a5234370c111ddb342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a2d4a5850898a15a5234370c111ddb342">load</a> (const <a class="el" href="classURL.html">URL</a> &amp;url)</td></tr>
 <tr class="memdesc:a2d4a5850898a15a5234370c111ddb342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load a video from a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a2d4a5850898a15a5234370c111ddb342">More...</a><br /></td></tr>
 <tr class="separator:a2d4a5850898a15a5234370c111ddb342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff83659b8f397175bb02676108fc889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#adff83659b8f397175bb02676108fc889">loadAsync</a> (const <a class="el" href="classURL.html">URL</a> &amp;url, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classURL.html">URL</a> &amp;, <a class="el" href="classResult.html">Result</a>)&gt; loadFinishedCallback)</td></tr>
+<tr class="memitem:adff83659b8f397175bb02676108fc889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#adff83659b8f397175bb02676108fc889">loadAsync</a> (const <a class="el" href="classURL.html">URL</a> &amp;url, std::function&lt; void(const <a class="el" href="classURL.html">URL</a> &amp;, <a class="el" href="classResult.html">Result</a>)&gt; loadFinishedCallback)</td></tr>
 <tr class="memdesc:adff83659b8f397175bb02676108fc889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to load a video from a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> asynchronously.  <a href="#adff83659b8f397175bb02676108fc889">More...</a><br /></td></tr>
 <tr class="separator:adff83659b8f397175bb02676108fc889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e0174e14d9786958137b94d07a7554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#ab9e0174e14d9786958137b94d07a7554">closeVideo</a> ()</td></tr>
@@ -708,13 +708,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a50b3c539d0356679af9aa797c767fe12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a50b3c539d0356679af9aa797c767fe12">onPlaybackStarted</a></td></tr>
+<tr class="memitem:a50b3c539d0356679af9aa797c767fe12"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a50b3c539d0356679af9aa797c767fe12">onPlaybackStarted</a></td></tr>
 <tr class="memdesc:a50b3c539d0356679af9aa797c767fe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this callback to be notified whenever the playback starts.  <a href="#a50b3c539d0356679af9aa797c767fe12">More...</a><br /></td></tr>
 <tr class="separator:a50b3c539d0356679af9aa797c767fe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79612bf6c51b83026eafcf1587307b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a79612bf6c51b83026eafcf1587307b3f">onPlaybackStopped</a></td></tr>
+<tr class="memitem:a79612bf6c51b83026eafcf1587307b3f"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a79612bf6c51b83026eafcf1587307b3f">onPlaybackStopped</a></td></tr>
 <tr class="memdesc:a79612bf6c51b83026eafcf1587307b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this callback to be notified whenever the playback stops.  <a href="#a79612bf6c51b83026eafcf1587307b3f">More...</a><br /></td></tr>
 <tr class="separator:a79612bf6c51b83026eafcf1587307b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9395cd02a90f1f970f6f276d8c5473e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a9395cd02a90f1f970f6f276d8c5473e0">onErrorOccurred</a></td></tr>
+<tr class="memitem:a9395cd02a90f1f970f6f276d8c5473e0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoComponent.html#a9395cd02a90f1f970f6f276d8c5473e0">onErrorOccurred</a></td></tr>
 <tr class="memdesc:a9395cd02a90f1f970f6f276d8c5473e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this callback to be notified whenever an error occurs.  <a href="#a9395cd02a90f1f970f6f276d8c5473e0">More...</a><br /></td></tr>
 <tr class="separator:a9395cd02a90f1f970f6f276d8c5473e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -865,7 +865,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classURL.html">URL</a> &amp;, <a class="el" href="classResult.html">Result</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classURL.html">URL</a> &amp;, <a class="el" href="classResult.html">Result</a>)&gt;&#160;</td>
           <td class="paramname"><em>loadFinishedCallback</em>&#160;</td>
         </tr>
         <tr>
@@ -1190,7 +1190,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstd_1_1function.html">std::function</a>&lt;void()&gt; VideoComponent::onPlaybackStarted</td>
+          <td class="memname">std::function&lt;void()&gt; VideoComponent::onPlaybackStarted</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1206,7 +1206,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstd_1_1function.html">std::function</a>&lt;void()&gt; VideoComponent::onPlaybackStopped</td>
+          <td class="memname">std::function&lt;void()&gt; VideoComponent::onPlaybackStopped</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1222,7 +1222,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstd_1_1function.html">std::function</a>&lt;void(const <a class="el" href="classString.html">String</a>&amp; )&gt; VideoComponent::onErrorOccurred</td>
+          <td class="memname">std::function&lt;void(const <a class="el" href="classString.html">String</a>&amp; )&gt; VideoComponent::onErrorOccurred</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1238,7 +1238,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

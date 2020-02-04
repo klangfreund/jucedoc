@@ -79,7 +79,7 @@ Inheritance diagram for AudioParameterChoice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad310ba5b5749d8022acbe91cf90ed672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterChoice.html#ad310ba5b5749d8022acbe91cf90ed672">AudioParameterChoice</a> (const <a class="el" href="classString.html">String</a> &amp;parameterID, const <a class="el" href="classString.html">String</a> &amp;parameterName, const <a class="el" href="classStringArray.html">StringArray</a> &amp;<a class="el" href="classAudioParameterChoice.html#afbeec68d8f56cf4cde23c1b615699b9f">choices</a>, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> defaultItemIndex, const <a class="el" href="classString.html">String</a> &amp;parameterLabel=<a class="el" href="classString.html">String</a>(), <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classString.html">String</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt; stringFromIndex=nullptr, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>(const <a class="el" href="classString.html">String</a> &amp;text)&gt; indexFromString=nullptr)</td></tr>
+<tr class="memitem:ad310ba5b5749d8022acbe91cf90ed672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterChoice.html#ad310ba5b5749d8022acbe91cf90ed672">AudioParameterChoice</a> (const <a class="el" href="classString.html">String</a> &amp;parameterID, const <a class="el" href="classString.html">String</a> &amp;parameterName, const <a class="el" href="classStringArray.html">StringArray</a> &amp;<a class="el" href="classAudioParameterChoice.html#afbeec68d8f56cf4cde23c1b615699b9f">choices</a>, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> defaultItemIndex, const <a class="el" href="classString.html">String</a> &amp;parameterLabel=<a class="el" href="classString.html">String</a>(), std::function&lt; <a class="el" href="classString.html">String</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt; stringFromIndex=nullptr, std::function&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>(const <a class="el" href="classString.html">String</a> &amp;text)&gt; indexFromString=nullptr)</td></tr>
 <tr class="memdesc:ad310ba5b5749d8022acbe91cf90ed672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classAudioParameterChoice.html" title="Provides a class of AudioProcessorParameter that can be used to select an indexed, named choice from a list. ">AudioParameterChoice</a> with the specified parameters.  <a href="#ad310ba5b5749d8022acbe91cf90ed672">More...</a><br /></td></tr>
 <tr class="separator:ad310ba5b5749d8022acbe91cf90ed672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d643abfdd9fcf96490a7ebfb170664"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioParameterChoice.html#a83d643abfdd9fcf96490a7ebfb170664">~AudioParameterChoice</a> () override</td></tr>
@@ -264,13 +264,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classString.html">String</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classString.html">String</a>(<a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> index, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> maximumStringLength)&gt;&#160;</td>
           <td class="paramname"><em>stringFromIndex</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>(const <a class="el" href="classString.html">String</a> &amp;text)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a>(const <a class="el" href="classString.html">String</a> &amp;text)&gt;&#160;</td>
           <td class="paramname"><em>indexFromString</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -535,7 +535,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

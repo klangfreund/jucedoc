@@ -292,16 +292,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a31c6b326c4a1d5dcb8f757db0b0b771f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a31c6b326c4a1d5dcb8f757db0b0b771f">setName</a> (const <a class="el" href="classString.html">String</a> &amp;<a class="el" href="classBlock.html#a8269c995146ba8530c96a8bf0bb33afa">name</a>)=0</td></tr>
 <tr class="memdesc:a31c6b326c4a1d5dcb8f757db0b0b771f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> name.  <a href="#a31c6b326c4a1d5dcb8f757db0b0b771f">More...</a><br /></td></tr>
 <tr class="separator:a31c6b326c4a1d5dcb8f757db0b0b771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb178f1029b2567e867e2a57ce9f78a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#afb178f1029b2567e867e2a57ce9f78a7">setLogger</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classBlock.html">Block</a> &amp;block, const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
+<tr class="memitem:afb178f1029b2567e867e2a57ce9f78a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#afb178f1029b2567e867e2a57ce9f78a7">setLogger</a> (std::function&lt; void(const <a class="el" href="classBlock.html">Block</a> &amp;block, const <a class="el" href="classString.html">String</a> &amp;)&gt; loggingCallback)=0</td></tr>
 <tr class="memdesc:afb178f1029b2567e867e2a57ce9f78a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the user to provide a function that will receive log messages from the block.  <a href="#afb178f1029b2567e867e2a57ce9f78a7">More...</a><br /></td></tr>
 <tr class="separator:afb178f1029b2567e867e2a57ce9f78a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ad1631dcb70f40a4d870ee6f7afbc7942">sendFirmwareUpdatePacket</a> (const <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> *data, <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> size, <a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt; packetAckCallback)=0</td></tr>
+<tr class="memitem:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ad1631dcb70f40a4d870ee6f7afbc7942">sendFirmwareUpdatePacket</a> (const <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> *data, <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> size, std::function&lt; void(<a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt; packetAckCallback)=0</td></tr>
 <tr class="memdesc:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#ad1631dcb70f40a4d870ee6f7afbc7942">More...</a><br /></td></tr>
 <tr class="separator:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936ae972ef533d2aa30229c2de961c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a936ae972ef533d2aa30229c2de961c63">setConfigChangedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;)=0</td></tr>
+<tr class="memitem:a936ae972ef533d2aa30229c2de961c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a936ae972ef533d2aa30229c2de961c63">setConfigChangedCallback</a> (std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;)=0</td></tr>
 <tr class="memdesc:a936ae972ef533d2aa30229c2de961c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a config changes.  <a href="#a936ae972ef533d2aa30229c2de961c63">More...</a><br /></td></tr>
 <tr class="separator:a936ae972ef533d2aa30229c2de961c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4d3ca73479399d978101003f356ea6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a4d3ca73479399d978101003f356ea6">setProgramLoadedCallback</a> (<a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt; programLoaded)=0</td></tr>
+<tr class="memitem:a8a4d3ca73479399d978101003f356ea6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a4d3ca73479399d978101003f356ea6">setProgramLoadedCallback</a> (std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt; programLoaded)=0</td></tr>
 <tr class="memdesc:a8a4d3ca73479399d978101003f356ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a program has been loaded.  <a href="#a8a4d3ca73479399d978101003f356ea6">More...</a><br /></td></tr>
 <tr class="separator:a8a4d3ca73479399d978101003f356ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018545f50301b7d56574574e00b68e0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a018545f50301b7d56574574e00b68e0f">addDataInputPortListener</a> (<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
@@ -2135,7 +2135,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void Block::setLogger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(const <a class="el" href="classBlock.html">Block</a> &amp;block, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classBlock.html">Block</a> &amp;block, const <a class="el" href="classString.html">String</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>loggingCallback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2175,7 +2175,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;&#160;</td>
           <td class="paramname"><em>packetAckCallback</em>&#160;</td>
         </tr>
         <tr>
@@ -2208,7 +2208,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void Block::setConfigChangedCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -2236,7 +2236,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void Block::setProgramLoadedCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classstd_1_1function.html">std::function</a>&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>programLoaded</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2462,7 +2462,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

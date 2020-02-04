@@ -85,13 +85,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa430c965b5051d6e8a3a455b7f154147"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#aa430c965b5051d6e8a3a455b7f154147">Oscillator</a> ()=default</td></tr>
 <tr class="memdesc:aa430c965b5051d6e8a3a455b7f154147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an uninitialised oscillator.  <a href="#aa430c965b5051d6e8a3a455b7f154147">More...</a><br /></td></tr>
 <tr class="separator:aa430c965b5051d6e8a3a455b7f154147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a136ff07f5246995ee68cf7d033ac10e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a136ff07f5246995ee68cf7d033ac10e0">Oscillator</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;function, size_t lookupTableNumPoints=0)</td></tr>
+<tr class="memitem:a136ff07f5246995ee68cf7d033ac10e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a136ff07f5246995ee68cf7d033ac10e0">Oscillator</a> (const std::function&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;function, size_t lookupTableNumPoints=0)</td></tr>
 <tr class="memdesc:a136ff07f5246995ee68cf7d033ac10e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an oscillator with a periodic input function (-pi..pi).  <a href="#a136ff07f5246995ee68cf7d033ac10e0">More...</a><br /></td></tr>
 <tr class="separator:a136ff07f5246995ee68cf7d033ac10e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec62157f39059b7d281b2a4690a9bd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a6ec62157f39059b7d281b2a4690a9bd8">isInitialised</a> () const noexcept</td></tr>
 <tr class="memdesc:a6ec62157f39059b7d281b2a4690a9bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classdsp_1_1Oscillator.html" title="Generates a signal based on a user-supplied function. ">Oscillator</a> has been initialised.  <a href="#a6ec62157f39059b7d281b2a4690a9bd8">More...</a><br /></td></tr>
 <tr class="separator:a6ec62157f39059b7d281b2a4690a9bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6724ce014b15f20d091f8603c85e46b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a6724ce014b15f20d091f8603c85e46b0">initialise</a> (const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;function, size_t lookupTableNumPoints=0)</td></tr>
+<tr class="memitem:a6724ce014b15f20d091f8603c85e46b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a6724ce014b15f20d091f8603c85e46b0">initialise</a> (const std::function&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;function, size_t lookupTableNumPoints=0)</td></tr>
 <tr class="memdesc:a6724ce014b15f20d091f8603c85e46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the oscillator with a waveform.  <a href="#a6724ce014b15f20d091f8603c85e46b0">More...</a><br /></td></tr>
 <tr class="separator:a6724ce014b15f20d091f8603c85e46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aa65891cbcfcc32cb8ebebeb9a3c689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oscillator.html#a3aa65891cbcfcc32cb8ebebeb9a3c689">setFrequency</a> (<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a> newFrequency, bool force=false) noexcept</td></tr>
@@ -180,7 +180,7 @@ template&lt;typename SampleType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdsp_1_1Oscillator.html">dsp::Oscillator</a>&lt; SampleType &gt;::<a class="el" href="classdsp_1_1Oscillator.html">Oscillator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;&#160;</td>
           <td class="paramname"><em>function</em>, </td>
         </tr>
         <tr>
@@ -199,8 +199,6 @@ template&lt;typename SampleType &gt; </div>
 
 <p>Creates an oscillator with a periodic input function (-pi..pi). </p>
 <p>If lookup table is not zero, then the function will be approximated with a lookup table. </p>
-
-<p class="reference">References <a class="el" href="classdsp_1_1Oscillator.html#a6724ce014b15f20d091f8603c85e46b0">dsp::Oscillator&lt; SampleType &gt;::initialise()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +245,7 @@ template&lt;typename SampleType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdsp_1_1Oscillator.html">dsp::Oscillator</a>&lt; SampleType &gt;::initialise </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classstd_1_1function.html">std::function</a>&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; <a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>(<a class="el" href="classdsp_1_1Oscillator.html#a61b87e14200ee8df42b1dd408d7f8858">NumericType</a>)&gt; &amp;&#160;</td>
           <td class="paramname"><em>function</em>, </td>
         </tr>
         <tr>
@@ -265,8 +263,6 @@ template&lt;typename SampleType &gt; </div>
 </div><div class="memdoc">
 
 <p>Initialises the oscillator with a waveform. </p>
-
-<p class="reference">Referenced by <a class="el" href="classdsp_1_1Oscillator.html#a136ff07f5246995ee68cf7d033ac10e0">dsp::Oscillator&lt; SampleType &gt;::Oscillator()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +476,7 @@ template&lt;typename ProcessContext &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 30 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2020 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
