@@ -97,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fe00c2393e3a382e9774f36a576e777"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a5fe00c2393e3a382e9774f36a576e777">isActive</a> () const =0</td></tr>
 <tr class="memdesc:a5fe00c2393e3a382e9774f36a576e777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#a5fe00c2393e3a382e9774f36a576e777">More...</a><br /></td></tr>
 <tr class="separator:a5fe00c2393e3a382e9774f36a576e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a237b5af1f1145a80e44d6f19fd8f92de"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a237b5af1f1145a80e44d6f19fd8f92de">isLockedFromOutside</a> () const =0</td></tr>
+<tr class="memdesc:a237b5af1f1145a80e44d6f19fd8f92de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the topology is locked externally.  <a href="#a237b5af1f1145a80e44d6f19fd8f92de">More...</a><br /></td></tr>
+<tr class="separator:a237b5af1f1145a80e44d6f19fd8f92de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69466671a2d86f6eb2cc7581a3d33673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a69466671a2d86f6eb2cc7581a3d33673">addListener</a> (<a class="el" href="structTopologySource_1_1Listener.html">Listener</a> *l)</td></tr>
 <tr class="separator:a69466671a2d86f6eb2cc7581a3d33673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c80cc4169578b03a30b94f17744955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a22c80cc4169578b03a30b94f17744955">removeListener</a> (<a class="el" href="structTopologySource_1_1Listener.html">Listener</a> *l)</td></tr>
@@ -104,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17364736db6eb6d0dd40a2caccd8f2e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a17364736db6eb6d0dd40a2caccd8f2e0">cancelAllActiveTouches</a> () noexcept</td></tr>
 <tr class="memdesc:a17364736db6eb6d0dd40a2caccd8f2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke this to force touches-off on all physical devices.  <a href="#a17364736db6eb6d0dd40a2caccd8f2e0">More...</a><br /></td></tr>
 <tr class="separator:a17364736db6eb6d0dd40a2caccd8f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ceeb607967ac7dbfaf4a963e426aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a28fc15c5aebd3caa10fab3e8bf48d2a6">Block::Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">getBlocks</a> () const</td></tr>
+<tr class="memdesc:a20ceeb607967ac7dbfaf4a963e426aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets blocks from the current topology.  <a href="#a20ceeb607967ac7dbfaf4a963e426aba">More...</a><br /></td></tr>
+<tr class="separator:a20ceeb607967ac7dbfaf4a963e426aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85358a85fe9c5ea671e41f135ed1ff76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833">Block::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">getBlockWithUID</a> (<a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">Block::UID</a> uid) const</td></tr>
+<tr class="memdesc:a85358a85fe9c5ea671e41f135ed1ff76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a block with given uid from the current topology.  <a href="#a85358a85fe9c5ea671e41f135ed1ff76">More...</a><br /></td></tr>
+<tr class="separator:a85358a85fe9c5ea671e41f135ed1ff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -168,6 +177,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#aa3752bb3164cb449cef7233eb82fb81f">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a5b05bfe7c015f971273087312d21ea89">PhysicalTopologySource</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">getBlocks()</a>, and <a class="el" href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">getBlockWithUID()</a>.</p>
+
 </div>
 </div>
 <a id="aeeedb6e4d263a17d9dd8190fbc0785fb"></a>
@@ -226,6 +237,35 @@ Protected Attributes</h2></td></tr>
 <p>Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices. </p>
 
 <p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#aaff6b030f309928f267e7a20aa0c2655">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a9257c42a1b91a72dd2d14af4a815dc6b">PhysicalTopologySource</a>.</p>
+
+</div>
+</div>
+<a id="a237b5af1f1145a80e44d6f19fd8f92de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a237b5af1f1145a80e44d6f19fd8f92de">&#9670;&nbsp;</a></span>isLockedFromOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool TopologySource::isLockedFromOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the topology is locked externally. </p>
+
+<p>Implemented in <a class="el" href="classRuleBasedTopologySource.html#ac485916e067bcc216660c48dba6f03fb">RuleBasedTopologySource</a>, and <a class="el" href="classPhysicalTopologySource.html#a4d44fb6b0444ff96c1f4a0bf4a3575da">PhysicalTopologySource</a>.</p>
 
 </div>
 </div>
@@ -298,6 +338,49 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a20ceeb607967ac7dbfaf4a963e426aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ceeb607967ac7dbfaf4a963e426aba">&#9670;&nbsp;</a></span>getBlocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlock.html#a28fc15c5aebd3caa10fab3e8bf48d2a6">Block::Array</a> TopologySource::getBlocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets blocks from the current topology. </p>
+
+<p class="reference">References <a class="el" href="structBlockTopology.html#a526d6f3eb1da5b434176445fe68657de">BlockTopology::blocks</a>, and <a class="el" href="classTopologySource.html#a11df0f2057673fea795dec66428d465b">getCurrentTopology()</a>.</p>
+
+</div>
+</div>
+<a id="a85358a85fe9c5ea671e41f135ed1ff76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85358a85fe9c5ea671e41f135ed1ff76">&#9670;&nbsp;</a></span>getBlockWithUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833">Block::Ptr</a> TopologySource::getBlockWithUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">Block::UID</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a block with given uid from the current topology. </p>
+
+<p class="reference">References <a class="el" href="structBlockTopology.html#a29142358918c504e0dcf105e2123f33f">BlockTopology::getBlockWithUID()</a>, and <a class="el" href="classTopologySource.html#a11df0f2057673fea795dec66428d465b">getCurrentTopology()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a07704254ec8d70b2b85c713d6870381c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07704254ec8d70b2b85c713d6870381c">&#9670;&nbsp;</a></span>listeners</h2>
@@ -329,7 +412,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 20:00:24 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

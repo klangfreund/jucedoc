@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a9257c42a1b91a72dd2d14af4a815dc6b">isActive</a> () const override</td></tr>
 <tr class="memdesc:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#a9257c42a1b91a72dd2d14af4a815dc6b">More...</a><br /></td></tr>
 <tr class="separator:a9257c42a1b91a72dd2d14af4a815dc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b22cb0c898f850d209a6bd6c42225ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a6b22cb0c898f850d209a6bd6c42225ae">isLockedFromOutside</a> () const</td></tr>
-<tr class="memdesc:a6b22cb0c898f850d209a6bd6c42225ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will tell, if an other <a class="el" href="classPhysicalTopologySource.html" title="This topology source manages the topology of the physical Blocks devices that are currently connected...">PhysicalTopologySource</a> has locked the Midi connection.  <a href="#a6b22cb0c898f850d209a6bd6c42225ae">More...</a><br /></td></tr>
-<tr class="separator:a6b22cb0c898f850d209a6bd6c42225ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d44fb6b0444ff96c1f4a0bf4a3575da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#a4d44fb6b0444ff96c1f4a0bf4a3575da">isLockedFromOutside</a> () const override</td></tr>
+<tr class="memdesc:a4d44fb6b0444ff96c1f4a0bf4a3575da"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will tell, if an other <a class="el" href="classPhysicalTopologySource.html" title="This topology source manages the topology of the physical Blocks devices that are currently connected...">PhysicalTopologySource</a> has locked the Midi connection.  <a href="#a4d44fb6b0444ff96c1f4a0bf4a3575da">More...</a><br /></td></tr>
+<tr class="separator:a4d44fb6b0444ff96c1f4a0bf4a3575da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ca81f7d5f231033e55978daaba600a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhysicalTopologySource.html#ae7ca81f7d5f231033e55978daaba600a">PhysicalTopologySource</a> (<a class="el" href="structPhysicalTopologySource_1_1DeviceDetector.html">DeviceDetector</a> &amp;detectorToUse, bool startDetached=false)</td></tr>
 <tr class="memdesc:ae7ca81f7d5f231033e55978daaba600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for custom transport systems.  <a href="#ae7ca81f7d5f231033e55978daaba600a">More...</a><br /></td></tr>
 <tr class="separator:ae7ca81f7d5f231033e55978daaba600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a69466671a2d86f6eb2cc7581a3d33673 inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c80cc4169578b03a30b94f17744955 inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a22c80cc4169578b03a30b94f17744955">removeListener</a> (<a class="el" href="structTopologySource_1_1Listener.html">Listener</a> *l)</td></tr>
 <tr class="separator:a22c80cc4169578b03a30b94f17744955 inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a28fc15c5aebd3caa10fab3e8bf48d2a6">Block::Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">getBlocks</a> () const</td></tr>
+<tr class="memdesc:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets blocks from the current topology.  <a href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">More...</a><br /></td></tr>
+<tr class="separator:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833">Block::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">getBlockWithUID</a> (<a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">Block::UID</a> uid) const</td></tr>
+<tr class="memdesc:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a block with given uid from the current topology.  <a href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">More...</a><br /></td></tr>
+<tr class="separator:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -341,11 +347,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b22cb0c898f850d209a6bd6c42225ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b22cb0c898f850d209a6bd6c42225ae">&#9670;&nbsp;</a></span>isLockedFromOutside()</h2>
+<a id="a4d44fb6b0444ff96c1f4a0bf4a3575da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d44fb6b0444ff96c1f4a0bf4a3575da">&#9670;&nbsp;</a></span>isLockedFromOutside()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PhysicalTopologySource::isLockedFromOutside </td>
@@ -354,9 +363,16 @@ Additional Inherited Members</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method will tell, if an other <a class="el" href="classPhysicalTopologySource.html" title="This topology source manages the topology of the physical Blocks devices that are currently connected...">PhysicalTopologySource</a> has locked the Midi connection. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#a237b5af1f1145a80e44d6f19fd8f92de">TopologySource</a>.</p>
 
 </div>
 </div>
@@ -447,7 +463,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

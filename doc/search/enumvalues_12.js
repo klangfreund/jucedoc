@@ -15,6 +15,8 @@ var searchData=
   ['separatorbarid',['separatorBarId',['../classToolbarItemFactory.html#a415ffaa38b6306574ad6777ccf6d2ac4a38897536f81bb5f607c2b71757e1e33c',1,'ToolbarItemFactory']]],
   ['separatorcolourid',['separatorColourId',['../classToolbar.html#ae89655c1fc755d7648eedcefcb620bc9a5af4bc29284ef81090fa15f11a0f30e8',1,'Toolbar']]],
   ['service',['service',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886a2b8ddfc5d49aea3e52b16fda77552898',1,'PushNotifications::Notification']]],
+  ['setasdefault',['setAsDefault',['../classBlock.html#ad586db7c08105b0974f9913a3aae7cb4a72dbea9c5d08b6453503c1918311c385',1,'Block']]],
+  ['setastemp',['setAsTemp',['../classBlock.html#ad586db7c08105b0974f9913a3aae7cb4aadfb6611e0229729431ca0cc99103294',1,'Block']]],
   ['setconfig',['setConfig',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524a9531f8dec238e91a95dd4486e301566a',1,'BlocksProtocol']]],
   ['setconfigstate',['setConfigState',['../namespaceBlocksProtocol.html#ad54d15b68ca1356e84793a7c60c5b524a087d503f8b4909dee907f632de0d3334',1,'BlocksProtocol']]],
   ['setfewbyteswithlastvalue',['setFewBytesWithLastValue',['../namespaceBlocksProtocol.html#a3ab101fceeb18db84767246616d6f770a9044476b25e129d6eba9c40b734d226a',1,'BlocksProtocol']]],

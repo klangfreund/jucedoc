@@ -48,6 +48,7 @@ var searchData=
   ['componentscope',['ComponentScope',['../classRelativeCoordinatePositionerBase_1_1ComponentScope.html',1,'RelativeCoordinatePositionerBase']]],
   ['concertinapanel',['ConcertinaPanel',['../classConcertinaPanel.html',1,'']]],
   ['configdescription',['ConfigDescription',['../structBlockConfigManager_1_1ConfigDescription.html',1,'BlockConfigManager']]],
+  ['configitemlistener',['ConfigItemListener',['../structBlock_1_1ConfigItemListener.html',1,'Block']]],
   ['configmetadata',['ConfigMetaData',['../structBlock_1_1ConfigMetaData.html',1,'Block']]],
   ['connection',['Connection',['../structAudioProcessorGraph_1_1Connection.html',1,'AudioProcessorGraph']]],
   ['connectionport',['ConnectionPort',['../structBlock_1_1ConnectionPort.html',1,'Block']]],

@@ -105,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaff6b030f309928f267e7a20aa0c2655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#aaff6b030f309928f267e7a20aa0c2655">isActive</a> () const override</td></tr>
 <tr class="memdesc:aaff6b030f309928f267e7a20aa0c2655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the <a class="el" href="classTopologySource.html" title="Base class for an entity that provides access to a blocks topology. ">TopologySource</a> is currently trying to connect the block devices.  <a href="#aaff6b030f309928f267e7a20aa0c2655">More...</a><br /></td></tr>
 <tr class="separator:aaff6b030f309928f267e7a20aa0c2655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac485916e067bcc216660c48dba6f03fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRuleBasedTopologySource.html#ac485916e067bcc216660c48dba6f03fb">isLockedFromOutside</a> () const override</td></tr>
+<tr class="memdesc:ac485916e067bcc216660c48dba6f03fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the topology is locked externally.  <a href="#ac485916e067bcc216660c48dba6f03fb">More...</a><br /></td></tr>
+<tr class="separator:ac485916e067bcc216660c48dba6f03fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classTopologySource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTopologySource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classTopologySource.html">TopologySource</a></td></tr>
 <tr class="memitem:a5fd3702e224ea8259fd4fdcae63cb3a0 inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a5fd3702e224ea8259fd4fdcae63cb3a0">~TopologySource</a> ()=default</td></tr>
 <tr class="memdesc:a5fd3702e224ea8259fd4fdcae63cb3a0 inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classTopologySource.html#a5fd3702e224ea8259fd4fdcae63cb3a0">More...</a><br /></td></tr>
@@ -116,6 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17364736db6eb6d0dd40a2caccd8f2e0 inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a17364736db6eb6d0dd40a2caccd8f2e0">cancelAllActiveTouches</a> () noexcept</td></tr>
 <tr class="memdesc:a17364736db6eb6d0dd40a2caccd8f2e0 inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke this to force touches-off on all physical devices.  <a href="classTopologySource.html#a17364736db6eb6d0dd40a2caccd8f2e0">More...</a><br /></td></tr>
 <tr class="separator:a17364736db6eb6d0dd40a2caccd8f2e0 inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a28fc15c5aebd3caa10fab3e8bf48d2a6">Block::Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">getBlocks</a> () const</td></tr>
+<tr class="memdesc:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets blocks from the current topology.  <a href="classTopologySource.html#a20ceeb607967ac7dbfaf4a963e426aba">More...</a><br /></td></tr>
+<tr class="separator:a20ceeb607967ac7dbfaf4a963e426aba inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833">Block::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">getBlockWithUID</a> (<a class="el" href="classBlock.html#a23857e2a9f15761beabb4b7a3339e156">Block::UID</a> uid) const</td></tr>
+<tr class="memdesc:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a block with given uid from the current topology.  <a href="classTopologySource.html#a85358a85fe9c5ea671e41f135ed1ff76">More...</a><br /></td></tr>
+<tr class="separator:a85358a85fe9c5ea671e41f135ed1ff76 inherit pub_methods_classTopologySource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -304,13 +313,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac485916e067bcc216660c48dba6f03fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac485916e067bcc216660c48dba6f03fb">&#9670;&nbsp;</a></span>isLockedFromOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RuleBasedTopologySource::isLockedFromOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the topology is locked externally. </p>
+
+<p>Implements <a class="el" href="classTopologySource.html#a237b5af1f1145a80e44d6f19fd8f92de">TopologySource</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__RuleBasedTopologySource_8h.html">juce_RuleBasedTopologySource.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2020 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

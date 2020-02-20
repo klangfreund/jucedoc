@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structlittlefoot_1_1Compiler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -91,6 +92,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bad97ab5cb0737a3bf75d42dd157849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlittlefoot_1_1Program.html">Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a1bad97ab5cb0737a3bf75d42dd157849">getCompiledProgram</a> () const noexcept</td></tr>
 <tr class="memdesc:a1bad97ab5cb0737a3bf75d42dd157849"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a successful compilation, this returns the finished <a class="el" href="structlittlefoot_1_1Program.html" title="A reference to a block of memory which contains a complete program. ">Program</a>.  <a href="#a1bad97ab5cb0737a3bf75d42dd157849">More...</a><br /></td></tr>
 <tr class="separator:a1bad97ab5cb0737a3bf75d42dd157849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a94e8c9b33f9495856c08bf35ba177fff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFile.html">File</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlittlefoot_1_1Compiler.html#a94e8c9b33f9495856c08bf35ba177fff">resolveIncludePath</a> (<a class="el" href="classString.html">String</a> include, <a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classFile.html">File</a> &gt; searchPaths)</td></tr>
+<tr class="separator:a94e8c9b33f9495856c08bf35ba177fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -237,6 +243,44 @@ template&lt;typename RunnerType &gt; </div>
 
 </div>
 </div>
+<a id="a94e8c9b33f9495856c08bf35ba177fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e8c9b33f9495856c08bf35ba177fff">&#9670;&nbsp;</a></span>resolveIncludePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classFile.html">File</a> littlefoot::Compiler::resolveIncludePath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a>&#160;</td>
+          <td class="paramname"><em>include</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classArray.html">Array</a>&lt; <a class="el" href="classFile.html">File</a> &gt;&#160;</td>
+          <td class="paramname"><em>searchPaths</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classString.html#a9cd6dcd4536d1ecbc8fe6a954c946ad5">String::fromLastOccurrenceOf()</a>, and <a class="el" href="classFile.html#a166f7fcdc5375012db300c746b55fe85">File::isAbsolutePath()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a4f30f7019befb6569f49d5be2210fd32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f30f7019befb6569f49d5be2210fd32">&#9670;&nbsp;</a></span>compiledObjectCode</h2>
@@ -263,7 +307,7 @@ template&lt;typename RunnerType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2020 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 20:00:25 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

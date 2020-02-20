@@ -115,6 +115,7 @@ var searchData=
   ['heapblock_3c_20oversamplingstage_20_2a_3e',['HeapBlock&lt; OversamplingStage *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20panelholder_20_2a_3e',['HeapBlock&lt; PanelHolder *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20plugindescription_20_3e',['HeapBlock&lt; PluginDescription &gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20popupmenu_3a_3aitem_20_3e',['HeapBlock&lt; PopupMenu::Item &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20positionedglyph_20_3e',['HeapBlock&lt; PositionedGlyph &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20progressbar_20_2a_3e',['HeapBlock&lt; ProgressBar *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20pushnotifications_3a_3alistener_20_2a_3e',['HeapBlock&lt; PushNotifications::Listener *&gt;',['../classHeapBlock.html',1,'']]],

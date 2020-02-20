@@ -86,6 +86,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1BlockArea.html">BlockArea</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple struct representing the area of a block.  <a href="structBlock_1_1BlockArea.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listener interface to be informed of block config changes.  <a href="structBlock_1_1ConfigItemListener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata for a given config item.  <a href="structBlock_1_1ConfigMetaData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +107,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ProgramEventMessage.html">ProgramEventMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message that can be sent to the currently loaded program.  <a href="structBlock_1_1ProgramEventMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listener interface to be informed of program loaded events.  <a href="structBlock_1_1ProgramLoadedListener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -121,6 +127,11 @@ Public Types</h2></td></tr>
  }<tr class="memdesc:a2c6b3c425b9b8cb708b23e553fa81324"><td class="mdescLeft">&#160;</td><td class="mdescRight">The different block types.  <a href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a2c6b3c425b9b8cb708b23e553fa81324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad586db7c08105b0974f9913a3aae7cb4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4">ProgramPersistency</a> { <a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4aadfb6611e0229729431ca0cc99103294">ProgramPersistency::setAsTemp</a>, 
+<a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4a72dbea9c5d08b6453503c1918311c385">ProgramPersistency::setAsDefault</a>
+ }<tr class="memdesc:ad586db7c08105b0974f9913a3aae7cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block.  <a href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ad586db7c08105b0974f9913a3aae7cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761059a28bd2f357dc7925caf0be0833"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833">Ptr</a> = <a class="el" href="classReferenceCountedObjectPtr.html">ReferenceCountedObjectPtr</a>&lt; <a class="el" href="classBlock.html">Block</a> &gt;</td></tr>
 <tr class="memdesc:a761059a28bd2f357dc7925caf0be0833"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classBlock.html" title="Represents an individual BLOCKS device. ">Block</a> class is reference-counted, so always use a <a class="el" href="classBlock.html#a761059a28bd2f357dc7925caf0be0833" title="The Block class is reference-counted, so always use a Block::Ptr when you are keeping references to t...">Block::Ptr</a> when you are keeping references to them.  <a href="#a761059a28bd2f357dc7925caf0be0833">More...</a><br /></td></tr>
 <tr class="separator:a761059a28bd2f357dc7925caf0be0833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,21 +225,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d7cdf778c1a7b1f52962f3397624565"><td class="memItemLeft" align="right" valign="top">virtual juce::Array&lt; <a class="el" href="structBlock_1_1ConnectionPort.html">ConnectionPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a4d7cdf778c1a7b1f52962f3397624565">getPorts</a> () const =0</td></tr>
 <tr class="memdesc:a4d7cdf778c1a7b1f52962f3397624565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the connectors that this device has.  <a href="#a4d7cdf778c1a7b1f52962f3397624565">More...</a><br /></td></tr>
 <tr class="separator:a4d7cdf778c1a7b1f52962f3397624565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9826c6ffd87cd857a02a04484a338e9b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a9826c6ffd87cd857a02a04484a338e9b">setProgram</a> (<a class="el" href="structBlock_1_1Program.html">Program</a> *)=0</td></tr>
-<tr class="memdesc:a9826c6ffd87cd857a02a04484a338e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block.  <a href="#a9826c6ffd87cd857a02a04484a338e9b">More...</a><br /></td></tr>
-<tr class="separator:a9826c6ffd87cd857a02a04484a338e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd23712cb92f111242f8b8bfae92dcaf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classResult.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#acd23712cb92f111242f8b8bfae92dcaf">setProgram</a> (std::unique_ptr&lt; <a class="el" href="structBlock_1_1Program.html">Program</a> &gt;, <a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4">ProgramPersistency</a> persistency=<a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4aadfb6611e0229729431ca0cc99103294">ProgramPersistency::setAsTemp</a>)=0</td></tr>
+<tr class="separator:acd23712cb92f111242f8b8bfae92dcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a403be8126dd2b96d440c942b6ab20e66"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBlock_1_1Program.html">Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a403be8126dd2b96d440c942b6ab20e66">getProgram</a> () const =0</td></tr>
 <tr class="memdesc:a403be8126dd2b96d440c942b6ab20e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the currently loaded program.  <a href="#a403be8126dd2b96d440c942b6ab20e66">More...</a><br /></td></tr>
 <tr class="separator:a403be8126dd2b96d440c942b6ab20e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaaef26a741234d9dd280380b0f9cd03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#abaaef26a741234d9dd280380b0f9cd03">addProgramLoadedListener</a> (<a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a> *)</td></tr>
+<tr class="memdesc:abaaef26a741234d9dd280380b0f9cd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for program load completions.  <a href="#abaaef26a741234d9dd280380b0f9cd03">More...</a><br /></td></tr>
+<tr class="separator:abaaef26a741234d9dd280380b0f9cd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4f5394ebe9594eb0a30b76ea3fde27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a6a4f5394ebe9594eb0a30b76ea3fde27">removeProgramLoadedListener</a> (<a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a> *)</td></tr>
+<tr class="memdesc:a6a4f5394ebe9594eb0a30b76ea3fde27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for program load completions.  <a href="#a6a4f5394ebe9594eb0a30b76ea3fde27">More...</a><br /></td></tr>
+<tr class="separator:a6a4f5394ebe9594eb0a30b76ea3fde27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558774394aea4e459ad9db4e069b711c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a558774394aea4e459ad9db4e069b711c">sendProgramEvent</a> (const <a class="el" href="structBlock_1_1ProgramEventMessage.html">ProgramEventMessage</a> &amp;)=0</td></tr>
 <tr class="memdesc:a558774394aea4e459ad9db4e069b711c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the currently loaded program.  <a href="#a558774394aea4e459ad9db4e069b711c">More...</a><br /></td></tr>
 <tr class="separator:a558774394aea4e459ad9db4e069b711c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b28f24106caca131de4be097ac7eb33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a2b28f24106caca131de4be097ac7eb33">addProgramEventListener</a> (<a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
-<tr class="memdesc:a2b28f24106caca131de4be097ac7eb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for custom program events from the block.  <a href="#a2b28f24106caca131de4be097ac7eb33">More...</a><br /></td></tr>
-<tr class="separator:a2b28f24106caca131de4be097ac7eb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa35f86e4320184df425ef26bf78d0bb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#aa35f86e4320184df425ef26bf78d0bb2">removeProgramEventListener</a> (<a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
-<tr class="memdesc:aa35f86e4320184df425ef26bf78d0bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for custom program events from the block.  <a href="#aa35f86e4320184df425ef26bf78d0bb2">More...</a><br /></td></tr>
-<tr class="separator:aa35f86e4320184df425ef26bf78d0bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f0f3b09373cd501cf077d3f21f7dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a71f0f3b09373cd501cf077d3f21f7dd9">addProgramEventListener</a> (<a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
+<tr class="memdesc:a71f0f3b09373cd501cf077d3f21f7dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for custom program events from the block.  <a href="#a71f0f3b09373cd501cf077d3f21f7dd9">More...</a><br /></td></tr>
+<tr class="separator:a71f0f3b09373cd501cf077d3f21f7dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b4a8dc1fafe1b475d364a26cc3c6c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a51b4a8dc1fafe1b475d364a26cc3c6c9">removeProgramEventListener</a> (<a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *)</td></tr>
+<tr class="memdesc:a51b4a8dc1fafe1b475d364a26cc3c6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for custom program events from the block.  <a href="#a51b4a8dc1fafe1b475d364a26cc3c6c9">More...</a><br /></td></tr>
+<tr class="separator:a51b4a8dc1fafe1b475d364a26cc3c6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d08344c1b453e6958a2aafcb0d2bd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ae3d08344c1b453e6958a2aafcb0d2bd2">getMemorySize</a> ()=0</td></tr>
 <tr class="memdesc:ae3d08344c1b453e6958a2aafcb0d2bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the overall memory of the block.  <a href="#ae3d08344c1b453e6958a2aafcb0d2bd2">More...</a><br /></td></tr>
 <tr class="separator:ae3d08344c1b453e6958a2aafcb0d2bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +260,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb33b9abd94155ef4c04d994f07ce99a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#adb33b9abd94155ef4c04d994f07ce99a">setDataBits</a> (<a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> startBit, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> numBits, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> value)=0</td></tr>
 <tr class="memdesc:adb33b9abd94155ef4c04d994f07ce99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets multiple bits on the littlefoot heap.  <a href="#adb33b9abd94155ef4c04d994f07ce99a">More...</a><br /></td></tr>
 <tr class="separator:adb33b9abd94155ef4c04d994f07ce99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77ae59440b0253728e619c7dcf17fba"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:ab77ae59440b0253728e619c7dcf17fba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBlock.html#ab77ae59440b0253728e619c7dcf17fba">setData</a> (<a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a> offset, <a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Type</a> value)</td></tr>
+<tr class="memdesc:ab77ae59440b0253728e619c7dcf17fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a single, 32 bit or less, value on the littlefoot heap.  <a href="#ab77ae59440b0253728e619c7dcf17fba">More...</a><br /></td></tr>
+<tr class="separator:ab77ae59440b0253728e619c7dcf17fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a433b5291a424966377b71c580b747a58"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a433b5291a424966377b71c580b747a58">getDataByte</a> (size_t offset)=0</td></tr>
 <tr class="memdesc:a433b5291a424966377b71c580b747a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a byte from the littlefoot heap.  <a href="#a433b5291a424966377b71c580b747a58">More...</a><br /></td></tr>
 <tr class="separator:a433b5291a424966377b71c580b747a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +273,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fad5f9d25a8d5c9193f17c70ffca0a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a5fad5f9d25a8d5c9193f17c70ffca0a9">resetProgramToDefault</a> ()=0</td></tr>
 <tr class="memdesc:a5fad5f9d25a8d5c9193f17c70ffca0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the loaded program to the block's default state.  <a href="#a5fad5f9d25a8d5c9193f17c70ffca0a9">More...</a><br /></td></tr>
 <tr class="separator:a5fad5f9d25a8d5c9193f17c70ffca0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73942dfa240ea1c0b504e3f8b8ea348a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a73942dfa240ea1c0b504e3f8b8ea348a">addConfigItemListener</a> (<a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a> *)</td></tr>
+<tr class="memdesc:a73942dfa240ea1c0b504e3f8b8ea348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for config item changes.  <a href="#a73942dfa240ea1c0b504e3f8b8ea348a">More...</a><br /></td></tr>
+<tr class="separator:a73942dfa240ea1c0b504e3f8b8ea348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73eae2d9f9eb84eeecfd3923a62a3c6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a73eae2d9f9eb84eeecfd3923a62a3c6e">removeConfigItemListener</a> (<a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a> *)</td></tr>
+<tr class="memdesc:a73eae2d9f9eb84eeecfd3923a62a3c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener for config item changes.  <a href="#a73eae2d9f9eb84eeecfd3923a62a3c6e">More...</a><br /></td></tr>
+<tr class="separator:a73eae2d9f9eb84eeecfd3923a62a3c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ace6be0165c85b5269db6dc22971c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#af8ace6be0165c85b5269db6dc22971c1">getMaxConfigIndex</a> ()=0</td></tr>
 <tr class="memdesc:af8ace6be0165c85b5269db6dc22971c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of config items available.  <a href="#af8ace6be0165c85b5269db6dc22971c1">More...</a><br /></td></tr>
 <tr class="separator:af8ace6be0165c85b5269db6dc22971c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,12 +324,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ad1631dcb70f40a4d870ee6f7afbc7942">sendFirmwareUpdatePacket</a> (const <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> *data, <a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a> size, std::function&lt; void(<a class="el" href="group__juce__core-maths.html#ga34ecedcf03a70dc91e4616212d79267d">uint8</a>, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt; packetAckCallback)=0</td></tr>
 <tr class="memdesc:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a firmware update packet to a block, and waits for a reply.  <a href="#ad1631dcb70f40a4d870ee6f7afbc7942">More...</a><br /></td></tr>
 <tr class="separator:ad1631dcb70f40a4d870ee6f7afbc7942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936ae972ef533d2aa30229c2de961c63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a936ae972ef533d2aa30229c2de961c63">setConfigChangedCallback</a> (std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;)=0</td></tr>
-<tr class="memdesc:a936ae972ef533d2aa30229c2de961c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a config changes.  <a href="#a936ae972ef533d2aa30229c2de961c63">More...</a><br /></td></tr>
-<tr class="separator:a936ae972ef533d2aa30229c2de961c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4d3ca73479399d978101003f356ea6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a8a4d3ca73479399d978101003f356ea6">setProgramLoadedCallback</a> (std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt; programLoaded)=0</td></tr>
-<tr class="memdesc:a8a4d3ca73479399d978101003f356ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a callback that will be called when a program has been loaded.  <a href="#a8a4d3ca73479399d978101003f356ea6">More...</a><br /></td></tr>
-<tr class="separator:a8a4d3ca73479399d978101003f356ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018545f50301b7d56574574e00b68e0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a018545f50301b7d56574574e00b68e0f">addDataInputPortListener</a> (<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> *)</td></tr>
 <tr class="memdesc:a018545f50301b7d56574574e00b68e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new listener for the data input port.  <a href="#a018545f50301b7d56574574e00b68e0f">More...</a><br /></td></tr>
 <tr class="separator:a018545f50301b7d56574574e00b68e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,10 +399,14 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a86c2943e9c64e2d89ae1d598aa3fdc30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a86c2943e9c64e2d89ae1d598aa3fdc30">dataInputPortListeners</a></td></tr>
-<tr class="separator:a86c2943e9c64e2d89ae1d598aa3fdc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a3500dad72898fb808fe19a638e89f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab5a3500dad72898fb808fe19a638e89f">programLoadedListeners</a></td></tr>
+<tr class="separator:ab5a3500dad72898fb808fe19a638e89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2360c3b80a2df5cf3ea689abfbe30928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a2360c3b80a2df5cf3ea689abfbe30928">programEventListeners</a></td></tr>
 <tr class="separator:a2360c3b80a2df5cf3ea689abfbe30928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bc724ac33d23acfca7defdb728d3dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#ab2bc724ac33d23acfca7defdb728d3dd">configItemListeners</a></td></tr>
+<tr class="separator:ab2bc724ac33d23acfca7defdb728d3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c2943e9c64e2d89ae1d598aa3fdc30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classListenerList.html">ListenerList</a>&lt; <a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a86c2943e9c64e2d89ae1d598aa3fdc30">dataInputPortListeners</a></td></tr>
+<tr class="separator:a86c2943e9c64e2d89ae1d598aa3fdc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an individual BLOCKS device. </p>
@@ -484,6 +508,36 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2c6b3c425b9b8cb708b23e553fa81324a967f963b3ea8d90ed33ef3efc1c949c3"></a>lumiKeysBlock&#160;</td><td class="fielddoc"><p>LUMI Keys block type. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad586db7c08105b0974f9913a3aae7cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad586db7c08105b0974f9913a3aae7cb4">&#9670;&nbsp;</a></span>ProgramPersistency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4">Block::ProgramPersistency</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block. </p>
+<p>The supplied <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a>'s lifetime will be managed by this class, so do not use the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> in other places in your code.</p>
+<p>Optional parameter to determine if program is set temporarily or saved to flash as the default prgram./ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad586db7c08105b0974f9913a3aae7cb4aadfb6611e0229729431ca0cc99103294"></a>setAsTemp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad586db7c08105b0974f9913a3aae7cb4a72dbea9c5d08b6453503c1918311c385"></a>setAsDefault&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1326,8 +1380,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9826c6ffd87cd857a02a04484a338e9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9826c6ffd87cd857a02a04484a338e9b">&#9670;&nbsp;</a></span>setProgram()</h2>
+<a id="acd23712cb92f111242f8b8bfae92dcaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd23712cb92f111242f8b8bfae92dcaf">&#9670;&nbsp;</a></span>setProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1338,9 +1392,19 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classResult.html">Result</a> Block::setProgram </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structBlock_1_1Program.html">Program</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structBlock_1_1Program.html">Program</a> &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4">ProgramPersistency</a>&#160;</td>
+          <td class="paramname"><em>persistency</em> = <code><a class="el" href="classBlock.html#ad586db7c08105b0974f9913a3aae7cb4aadfb6611e0229729431ca0cc99103294">ProgramPersistency::setAsTemp</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1349,9 +1413,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> to run on this block. </p>
-<p>The supplied <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a>'s lifetime will be managed by this class, so do not use the <a class="el" href="structBlock_1_1Program.html" title="A program that can be loaded onto a block. ">Program</a> in other places in your code. </p>
 
 </div>
 </div>
@@ -1379,6 +1440,46 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a pointer to the currently loaded program. </p>
+
+</div>
+</div>
+<a id="abaaef26a741234d9dd280380b0f9cd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaaef26a741234d9dd280380b0f9cd03">&#9670;&nbsp;</a></span>addProgramLoadedListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Block::addProgramLoadedListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new listener for program load completions. </p>
+
+</div>
+</div>
+<a id="a6a4f5394ebe9594eb0a30b76ea3fde27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4f5394ebe9594eb0a30b76ea3fde27">&#9670;&nbsp;</a></span>removeProgramLoadedListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Block::removeProgramLoadedListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a listener for program load completions. </p>
 
 </div>
 </div>
@@ -1410,56 +1511,40 @@ Protected Attributes</h2></td></tr>
 <p>To receive the message the program must provide a littlefoot function called handleMessage with the following form: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="group__LittleFootFunctions.html#ga8a03e45861c3a925e626fdcbd8f4ec8f">handleMessage</a> (<span class="keywordtype">int</span> param1, <span class="keywordtype">int</span> param2, <span class="keywordtype">int</span> param3)</div><div class="line">{</div><div class="line">    <span class="comment">// Do something with the two integer parameters that the app has sent...</span></div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="a2b28f24106caca131de4be097ac7eb33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b28f24106caca131de4be097ac7eb33">&#9670;&nbsp;</a></span>addProgramEventListener()</h2>
+<a id="a71f0f3b09373cd501cf077d3f21f7dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f0f3b09373cd501cf077d3f21f7dd9">&#9670;&nbsp;</a></span>addProgramEventListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Block::addProgramEventListener </td>
+          <td class="memname">void Block::addProgramEventListener </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds a new listener for custom program events from the block. </p>
 
 </div>
 </div>
-<a id="aa35f86e4320184df425ef26bf78d0bb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa35f86e4320184df425ef26bf78d0bb2">&#9670;&nbsp;</a></span>removeProgramEventListener()</h2>
+<a id="a51b4a8dc1fafe1b475d364a26cc3c6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b4a8dc1fafe1b475d364a26cc3c6c9">&#9670;&nbsp;</a></span>removeProgramEventListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Block::removeProgramEventListener </td>
+          <td class="memname">void Block::removeProgramEventListener </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structBlock_1_1ProgramEventListener.html">ProgramEventListener</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Removes a listener for custom program events from the block. </p>
@@ -1556,6 +1641,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Sets a single byte on the littlefoot heap. </p>
 
+<p class="reference">Referenced by <a class="el" href="classBlock.html#ab77ae59440b0253728e619c7dcf17fba">setData()</a>.</p>
+
 </div>
 </div>
 <a id="a6729813625ef9b25a685a5fe9c9fa0c3"></a>
@@ -1646,6 +1733,40 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab77ae59440b0253728e619c7dcf17fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77ae59440b0253728e619c7dcf17fba">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Block::setData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBlock.html#a2c6b3c425b9b8cb708b23e553fa81324">Type</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a single, 32 bit or less, value on the littlefoot heap. </p>
+
+<p class="reference">References <a class="el" href="classBlock.html#a433b5291a424966377b71c580b747a58">getDataByte()</a>, <a class="el" href="classBlock.html#a5fad5f9d25a8d5c9193f17c70ffca0a9">resetProgramToDefault()</a>, <a class="el" href="classBlock.html#a267e131fc12d47c5afabfe17afbd5ec4">saveProgramAsDefault()</a>, and <a class="el" href="classBlock.html#a88d94c2477d0cbb2d50aa4ddd5d0701f">setDataByte()</a>.</p>
+
+</div>
+</div>
 <a id="a433b5291a424966377b71c580b747a58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a433b5291a424966377b71c580b747a58">&#9670;&nbsp;</a></span>getDataByte()</h2>
 
@@ -1671,6 +1792,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets a byte from the littlefoot heap. </p>
+
+<p class="reference">Referenced by <a class="el" href="classBlock.html#ab77ae59440b0253728e619c7dcf17fba">setData()</a>.</p>
 
 </div>
 </div>
@@ -1699,6 +1822,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Sets the current program as the block's default state. </p>
 
+<p class="reference">Referenced by <a class="el" href="classBlock.html#ab77ae59440b0253728e619c7dcf17fba">setData()</a>.</p>
+
 </div>
 </div>
 <a id="a5fad5f9d25a8d5c9193f17c70ffca0a9"></a>
@@ -1725,6 +1850,48 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the loaded program to the block's default state. </p>
+
+<p class="reference">Referenced by <a class="el" href="classBlock.html#ab77ae59440b0253728e619c7dcf17fba">setData()</a>.</p>
+
+</div>
+</div>
+<a id="a73942dfa240ea1c0b504e3f8b8ea348a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73942dfa240ea1c0b504e3f8b8ea348a">&#9670;&nbsp;</a></span>addConfigItemListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Block::addConfigItemListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new listener for config item changes. </p>
+
+</div>
+</div>
+<a id="a73eae2d9f9eb84eeecfd3923a62a3c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73eae2d9f9eb84eeecfd3923a62a3c6e">&#9670;&nbsp;</a></span>removeConfigItemListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Block::removeConfigItemListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a listener for config item changes. </p>
 
 </div>
 </div>
@@ -2196,62 +2363,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a936ae972ef533d2aa30229c2de961c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a936ae972ef533d2aa30229c2de961c63">&#9670;&nbsp;</a></span>setConfigChangedCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Block::setConfigChangedCallback </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;, const <a class="el" href="structBlock_1_1ConfigMetaData.html">ConfigMetaData</a> &amp;, <a class="el" href="group__juce__core-maths.html#gabd01e8e67e3d94cab04ecaaf4f85ac1b">uint32</a>)&gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides a callback that will be called when a config changes. </p>
-
-</div>
-</div>
-<a id="a8a4d3ca73479399d978101003f356ea6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a4d3ca73479399d978101003f356ea6">&#9670;&nbsp;</a></span>setProgramLoadedCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Block::setProgramLoadedCallback </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classBlock.html">Block</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>programLoaded</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides a callback that will be called when a program has been loaded. </p>
-
-</div>
-</div>
 <a id="a018545f50301b7d56574574e00b68e0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a018545f50301b7d56574574e00b68e0f">&#9670;&nbsp;</a></span>addDataInputPortListener()</h2>
 
@@ -2412,8 +2523,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a86c2943e9c64e2d89ae1d598aa3fdc30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c2943e9c64e2d89ae1d598aa3fdc30">&#9670;&nbsp;</a></span>dataInputPortListeners</h2>
+<a id="ab5a3500dad72898fb808fe19a638e89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a3500dad72898fb808fe19a638e89f">&#9670;&nbsp;</a></span>programLoadedListeners</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2422,7 +2533,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt;<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a>&gt; Block::dataInputPortListeners</td>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt;<a class="el" href="structBlock_1_1ProgramLoadedListener.html">ProgramLoadedListener</a>&gt; Block::programLoadedListeners</td>
         </tr>
       </table>
   </td>
@@ -2456,13 +2567,57 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab2bc724ac33d23acfca7defdb728d3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2bc724ac33d23acfca7defdb728d3dd">&#9670;&nbsp;</a></span>configItemListeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt;<a class="el" href="structBlock_1_1ConfigItemListener.html">ConfigItemListener</a>&gt; Block::configItemListeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86c2943e9c64e2d89ae1d598aa3fdc30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c2943e9c64e2d89ae1d598aa3fdc30">&#9670;&nbsp;</a></span>dataInputPortListeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classListenerList.html">ListenerList</a>&lt;<a class="el" href="structBlock_1_1DataInputPortListener.html">DataInputPortListener</a>&gt; Block::dataInputPortListeners</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="juce__Block_8h.html">juce_Block.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 20 2020 20:00:17 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
