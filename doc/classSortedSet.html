@@ -157,9 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86602918644c684fd72d239980a83d84"><td class="memItemLeft" align="right" valign="top">ElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a86602918644c684fd72d239980a83d84">remove</a> (const <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> indexToRemove) noexcept</td></tr>
 <tr class="memdesc:a86602918644c684fd72d239980a83d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an element from the set.  <a href="#a86602918644c684fd72d239980a83d84">More...</a><br /></td></tr>
 <tr class="separator:a86602918644c684fd72d239980a83d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b0da9c6e547485feecc3b91d28164c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c">removeValue</a> (const ElementType valueToRemove) noexcept</td></tr>
-<tr class="memdesc:a21b0da9c6e547485feecc3b91d28164c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an item from the set.  <a href="#a21b0da9c6e547485feecc3b91d28164c">More...</a><br /></td></tr>
-<tr class="separator:a21b0da9c6e547485feecc3b91d28164c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050f7f95691a47c4d3e4bec45bd5c835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835">removeValue</a> (const ElementType &amp;valueToRemove) noexcept</td></tr>
+<tr class="memdesc:a050f7f95691a47c4d3e4bec45bd5c835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an item from the set.  <a href="#a050f7f95691a47c4d3e4bec45bd5c835">More...</a><br /></td></tr>
+<tr class="separator:a050f7f95691a47c4d3e4bec45bd5c835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ad10e1f49afe6fbcbf4170e84bf95e"><td class="memTemplParams" colspan="2">template&lt;class OtherSetType &gt; </td></tr>
 <tr class="memitem:a87ad10e1f49afe6fbcbf4170e84bf95e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e">removeValuesIn</a> (const OtherSetType &amp;otherSet) noexcept</td></tr>
 <tr class="memdesc:a87ad10e1f49afe6fbcbf4170e84bf95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes any elements which are also in another set.  <a href="#a87ad10e1f49afe6fbcbf4170e84bf95e">More...</a><br /></td></tr>
@@ -894,7 +894,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the object, or -1 if it's not found </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="classSortedSet.html#ae1e68e73d12e73d1cd4d63b4ee7fa791">SortedSet&lt; ColourSetting &gt;::contains()</a>, and <a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c">SortedSet&lt; ColourSetting &gt;::removeValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classSortedSet.html#ae1e68e73d12e73d1cd4d63b4ee7fa791">SortedSet&lt; ColourSetting &gt;::contains()</a>, and <a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835">SortedSet&lt; ColourSetting &gt;::removeValue()</a>.</p>
 
 </div>
 </div>
@@ -1118,12 +1118,12 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the element that has been removed </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
 
 </div>
 </div>
-<a id="a21b0da9c6e547485feecc3b91d28164c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21b0da9c6e547485feecc3b91d28164c">&#9670;&nbsp;</a></span>removeValue()</h2>
+<a id="a050f7f95691a47c4d3e4bec45bd5c835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050f7f95691a47c4d3e4bec45bd5c835">&#9670;&nbsp;</a></span>removeValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1136,7 +1136,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
         <tr>
           <td class="memname">void <a class="el" href="classSortedSet.html">SortedSet</a>&lt; ElementType, TypeOfCriticalSectionToUse &gt;::removeValue </td>
           <td>(</td>
-          <td class="paramtype">const ElementType&#160;</td>
+          <td class="paramtype">const ElementType &amp;&#160;</td>
           <td class="paramname"><em>valueToRemove</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1195,7 +1195,7 @@ template&lt;class OtherSetType &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a44266b927f68b51086f56a8732fd3190" title="Removes any elements which are not found in another set. ">removeValuesNotIn</a>, <a class="el" href="classSortedSet.html#a86602918644c684fd72d239980a83d84" title="Removes an element from the set. ">remove</a>, <a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a44266b927f68b51086f56a8732fd3190" title="Removes any elements which are not found in another set. ">removeValuesNotIn</a>, <a class="el" href="classSortedSet.html#a86602918644c684fd72d239980a83d84" title="Removes an element from the set. ">remove</a>, <a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ template&lt;class OtherSetType &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e" title="Removes any elements which are also in another set. ">removeValuesIn</a>, <a class="el" href="classSortedSet.html#a86602918644c684fd72d239980a83d84" title="Removes an element from the set. ">remove</a>, <a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e" title="Removes any elements which are also in another set. ">removeValuesIn</a>, <a class="el" href="classSortedSet.html#a86602918644c684fd72d239980a83d84" title="Removes an element from the set. ">remove</a>, <a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835" title="Removes an item from the set. ">removeValue</a>, removeRange </dd></dl>
 
 </div>
 </div>
@@ -1353,7 +1353,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 <p>Returns the <a class="el" href="classCriticalSection.html" title="A re-entrant mutex. ">CriticalSection</a> that locks this array. </p>
 <p>To lock, you can call <a class="el" href="classSortedSet.html#a5a0b04e366f0a1faa768d05e400208ca" title="Returns the CriticalSection that locks this array. ">getLock()</a>.enter() and <a class="el" href="classSortedSet.html#a5a0b04e366f0a1faa768d05e400208ca" title="Returns the CriticalSection that locks this array. ">getLock()</a>.exit(), or preferably use an object of ScopedLockType as an RAII lock for it. </p>
 
-<p class="reference">Referenced by <a class="el" href="classSortedSet.html#a861274cee3723b88dc742aef24ba65d5">SortedSet&lt; ColourSetting &gt;::add()</a>, <a class="el" href="classSortedSet.html#a8b84c2248ee6e7bc18a3cb6bd235e4ea">SortedSet&lt; ColourSetting &gt;::addArray()</a>, <a class="el" href="classSortedSet.html#ad0879c462c30f89f5c09458f46b8d35f">SortedSet&lt; ColourSetting &gt;::addSet()</a>, <a class="el" href="classSortedSet.html#a21b0da9c6e547485feecc3b91d28164c">SortedSet&lt; ColourSetting &gt;::removeValue()</a>, <a class="el" href="classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e">SortedSet&lt; ColourSetting &gt;::removeValuesIn()</a>, and <a class="el" href="classSortedSet.html#a44266b927f68b51086f56a8732fd3190">SortedSet&lt; ColourSetting &gt;::removeValuesNotIn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classSortedSet.html#a861274cee3723b88dc742aef24ba65d5">SortedSet&lt; ColourSetting &gt;::add()</a>, <a class="el" href="classSortedSet.html#a8b84c2248ee6e7bc18a3cb6bd235e4ea">SortedSet&lt; ColourSetting &gt;::addArray()</a>, <a class="el" href="classSortedSet.html#ad0879c462c30f89f5c09458f46b8d35f">SortedSet&lt; ColourSetting &gt;::addSet()</a>, <a class="el" href="classSortedSet.html#a050f7f95691a47c4d3e4bec45bd5c835">SortedSet&lt; ColourSetting &gt;::removeValue()</a>, <a class="el" href="classSortedSet.html#a87ad10e1f49afe6fbcbf4170e84bf95e">SortedSet&lt; ColourSetting &gt;::removeValuesIn()</a>, and <a class="el" href="classSortedSet.html#a44266b927f68b51086f56a8732fd3190">SortedSet&lt; ColourSetting &gt;::removeValuesNotIn()</a>.</p>
 
 </div>
 </div>
@@ -1363,7 +1363,7 @@ template&lt;class ElementType, class TypeOfCriticalSectionToUse = DummyCriticalS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 20 2020 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 25 2020 20:00:23 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

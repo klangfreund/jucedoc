@@ -325,7 +325,7 @@ var searchData=
   ['_7eopenglshaderprogram',['~OpenGLShaderProgram',['../classOpenGLShaderProgram.html#ab26f88e24d7a98c01ad9f5e437032934',1,'OpenGLShaderProgram']]],
   ['_7eopengltexture',['~OpenGLTexture',['../classOpenGLTexture.html#a82ab7632d24a0e3944081da73b6ebe48',1,'OpenGLTexture']]],
   ['_7eopennessrestorer',['~OpennessRestorer',['../classTreeViewItem_1_1OpennessRestorer.html#aabc1cf94c8ec00c1d3f19136e71cdee5',1,'TreeViewItem::OpennessRestorer']]],
-  ['_7eoptionalscopedpointer',['~OptionalScopedPointer',['../classOptionalScopedPointer.html#a0e0508d3dc7dd9603e001cb72191ad56',1,'OptionalScopedPointer']]],
+  ['_7eoptionalscopedpointer',['~OptionalScopedPointer',['../classOptionalScopedPointer.html#aa95ebb1fed28561b05adea5ce2f45107',1,'OptionalScopedPointer']]],
   ['_7eoscreceiver',['~OSCReceiver',['../classOSCReceiver.html#a55b8f099e686711f5aae6e7b616daa1c',1,'OSCReceiver']]],
   ['_7eoscsender',['~OSCSender',['../classOSCSender.html#a1eb9c1bab3ee54e3108b8df428fc0ff6',1,'OSCSender']]],
   ['_7eoutputstream',['~OutputStream',['../classOutputStream.html#a3c3286bd6c6c8fb6b16ce7f88745075b',1,'OutputStream']]],
