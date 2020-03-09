@@ -111,6 +111,7 @@ var searchData=
   ['channelremappingaudiosource',['ChannelRemappingAudioSource',['../classChannelRemappingAudioSource.html',1,'ChannelRemappingAudioSource'],['../classChannelRemappingAudioSource.html#ad6cfa532e77dc3993a0516cae1623b2b',1,'ChannelRemappingAudioSource::ChannelRemappingAudioSource()']]],
   ['channels',['channels',['../structUnityAudioEffectDefinition.html#a6b37a304a89f6bee46c2441ed81f71b5',1,'UnityAudioEffectDefinition::channels()'],['../structSpeakerMappings_1_1Mapping.html#a4bd54e10adf49ce9a185dae6b90d2218',1,'SpeakerMappings::Mapping::channels()']]],
   ['channelsetswithnumberofchannels',['channelSetsWithNumberOfChannels',['../classAudioChannelSet.html#a0abacdf460e6e57f1f3478ea897b2fd9',1,'AudioChannelSet']]],
+  ['channelsettovstarrangement',['channelSetToVstArrangement',['../structSpeakerMappings.html#a303b0c4aa7e0a4421f299ac1671d43bc',1,'SpeakerMappings']]],
   ['channelsettovstarrangementtype',['channelSetToVstArrangementType',['../structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613',1,'SpeakerMappings']]],
   ['channelsetwithchannels',['channelSetWithChannels',['../classAudioChannelSet.html#af48a760d60d390c58f387f24ca14a788',1,'AudioChannelSet']]],
   ['channeltype',['ChannelType',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e',1,'AudioChannelSet']]],

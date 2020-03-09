@@ -93,6 +93,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae2dc3b5124ad655316fffbf76406ef24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9049a026ab41806fb5dc6aad8a426613"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">channelSetToVstArrangementType</a> (<a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> channels)</td></tr>
 <tr class="separator:a9049a026ab41806fb5dc6aad8a426613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303b0c4aa7e0a4421f299ac1671d43bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSpeakerMappings.html#a303b0c4aa7e0a4421f299ac1671d43bc">channelSetToVstArrangement</a> (const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;channels, Vst2::VstSpeakerArrangement &amp;result)</td></tr>
+<tr class="separator:a303b0c4aa7e0a4421f299ac1671d43bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad058f02837b1104e6d309af1ebe558b6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structSpeakerMappings_1_1Mapping.html">Mapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSpeakerMappings.html#ad058f02837b1104e6d309af1ebe558b6">getMappings</a> () noexcept</td></tr>
 <tr class="separator:ad058f02837b1104e6d309af1ebe558b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fde18fe328e52ba2289dbede8d82e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__juce__core-maths.html#ga9a46025711a83f0e8339c6cb2eda8426">int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSpeakerMappings.html#ae6fde18fe328e52ba2289dbede8d82e3">getSpeakerType</a> (<a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652e">AudioChannelSet::ChannelType</a> type) noexcept</td></tr>
@@ -197,7 +199,45 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classAudioChannelSet.html#a481da36757abd6ade6d674f6539605fd">AudioChannelSet::create5point0()</a>, <a class="el" href="classAudioChannelSet.html#a8c0c22c3be59ca79cbf65dac2c729573">AudioChannelSet::create5point1()</a>, <a class="el" href="classAudioChannelSet.html#ae29c53c0837115ba3ec96ccf6ad5a8e0">AudioChannelSet::create6point0()</a>, <a class="el" href="classAudioChannelSet.html#a145082302f6d8019576dee2a71ada59f">AudioChannelSet::create6point0Music()</a>, <a class="el" href="classAudioChannelSet.html#a464368199f8b765ce46c6e7341ef44a3">AudioChannelSet::create6point1()</a>, <a class="el" href="classAudioChannelSet.html#aa7ed045141d4e0b821392595bb5af686">AudioChannelSet::create6point1Music()</a>, <a class="el" href="classAudioChannelSet.html#a2c2266136930be772725548e066bdbf8">AudioChannelSet::create7point0()</a>, <a class="el" href="classAudioChannelSet.html#ad14e2f15df79b9b844be3b5d0ed1951b">AudioChannelSet::create7point0SDDS()</a>, <a class="el" href="classAudioChannelSet.html#a5a984db8c4b9036f22109c9e4dd74f6c">AudioChannelSet::create7point1()</a>, <a class="el" href="classAudioChannelSet.html#a1ba00eb4a12b3c0d1340eebcf5503b7c">AudioChannelSet::create7point1SDDS()</a>, <a class="el" href="classAudioChannelSet.html#ad5c77216a991efb167699b97f9f7aabe">AudioChannelSet::createLCR()</a>, <a class="el" href="classAudioChannelSet.html#a1c8dd6193af98174ede1f65f9ca2dd23">AudioChannelSet::createLCRS()</a>, <a class="el" href="classAudioChannelSet.html#a1e47157da153eefa5e732916a4972ca3">AudioChannelSet::createLRS()</a>, <a class="el" href="classAudioChannelSet.html#a18675dc100238ac22868c41717ef2ffe">AudioChannelSet::disabled()</a>, <a class="el" href="classAudioChannelSet.html#a0cbc8f6ce28372795c343e735ff0b5b7">AudioChannelSet::getChannelTypes()</a>, <a class="el" href="structSpeakerMappings.html#ad058f02837b1104e6d309af1ebe558b6">getMappings()</a>, <a class="el" href="classAudioChannelSet.html#a17a0a8ab8f24eebf463baf8d99a39617">AudioChannelSet::mono()</a>, <a class="el" href="classAudioChannelSet.html#ab216c3d458cbd3965e321a29d12d591d">AudioChannelSet::quadraphonic()</a>, <a class="el" href="classAudioChannelSet.html#a2f5463f3941cf8ca3ecf1eadf1537c19">AudioChannelSet::stereo()</a>, and <a class="el" href="structSpeakerMappings_1_1Mapping.html#a2645ca9d0b780b227d8f74b61e3061f8">SpeakerMappings::Mapping::vst2</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structSpeakerMappings.html#a303b0c4aa7e0a4421f299ac1671d43bc">channelSetToVstArrangement()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+
+</div>
+</div>
+<a id="a303b0c4aa7e0a4421f299ac1671d43bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303b0c4aa7e0a4421f299ac1671d43bc">&#9670;&nbsp;</a></span>channelSetToVstArrangement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SpeakerMappings::channelSetToVstArrangement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classAudioChannelSet.html">AudioChannelSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vst2::VstSpeakerArrangement &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="structSpeakerMappings.html#a9049a026ab41806fb5dc6aad8a426613">channelSetToVstArrangementType()</a>, <a class="el" href="structSpeakerMappings.html#ae6fde18fe328e52ba2289dbede8d82e3">getSpeakerType()</a>, <a class="el" href="classAudioChannelSet.html#a263a5f0fc1ce545e2a83831353c0edf0">AudioChannelSet::getTypeOfChannel()</a>, <a class="el" href="classAudioChannelSet.html#ad7be564dafc89bddf37dea65d7f014ba">AudioChannelSet::size()</a>, and <a class="el" href="group__juce__core-memory.html#ga48fb9b158a3767e6573d27a8160956ea">zeromem()</a>.</p>
 
 </div>
 </div>
@@ -256,7 +296,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eae69498dc5874ee9f9d67d0479225d701">AudioChannelSet::centre</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea4dfc2355bdcf8afda92cfa388c543937">AudioChannelSet::left</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea7a14bf0c194fc474f245b6852055e017">AudioChannelSet::leftCentre</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea49bd221ff66a6ff182d6f502f70fc80a">AudioChannelSet::leftSurround</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea7f97493c50eca058c713ebe9870732b6">AudioChannelSet::leftSurroundRear</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eae9c3c0d319ffaa4a452fefd1f04b0cc6">AudioChannelSet::LFE</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea0fdd29070c1802006e6e0601614a5774">AudioChannelSet::LFE2</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea5cd28c0881d53656730afec3cb77a7a1">AudioChannelSet::right</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead09531f815283fd9dd1e00e75b37f289">AudioChannelSet::rightCentre</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead79363bee2db6b4552f5f6e5b5ae770f">AudioChannelSet::rightSurround</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea42979a8c438351bc314f8df0194303a8">AudioChannelSet::rightSurroundRear</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ead7addeac6edf5a12148fabfd13a09100">AudioChannelSet::surround</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea26e6fed7ec52bca8896de254b6a1d53c">AudioChannelSet::topFrontCentre</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea9b18eed069cc65f40000bbe9f03a722e">AudioChannelSet::topFrontLeft</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eafe55ef181b8d826439b9c89257b72e0e">AudioChannelSet::topFrontRight</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea06c75bddcac132ac47abe9d97c9db60a">AudioChannelSet::topMiddle</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eabb299d68b9795bc88efe6543c51d08ff">AudioChannelSet::topRearCentre</a>, <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea233a99aad9108e924c35ed144e09ec73">AudioChannelSet::topRearLeft</a>, and <a class="el" href="classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea17c1d21499155e5bff232bc2c279f24d">AudioChannelSet::topRearRight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structSpeakerMappings.html#a303b0c4aa7e0a4421f299ac1671d43bc">channelSetToVstArrangement()</a>, and <a class="el" href="classSpeakerMappings_1_1VstSpeakerConfigurationHolder.html#acb8c4e917f6d2d0bb62c5a95dbba85d5">SpeakerMappings::VstSpeakerConfigurationHolder::VstSpeakerConfigurationHolder()</a>.</p>
 
 </div>
 </div>
@@ -294,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 9 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

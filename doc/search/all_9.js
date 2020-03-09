@@ -256,6 +256,7 @@ var searchData=
   ['juce_5fevents',['juce_events',['../group__juce__events.html',1,'']]],
   ['juce_5fexpression_2eh',['juce_Expression.h',['../juce__Expression_8h.html',1,'']]],
   ['juce_5ffakemousemovegenerator_2eh',['juce_FakeMouseMoveGenerator.h',['../juce__FakeMouseMoveGenerator_8h.html',1,'']]],
+  ['juce_5ffallthrough',['JUCE_FALLTHROUGH',['../group__juce__core-system.html#gae5a4983340a829e456bad83f0dc8e92b',1,'juce_PlatformDefs.h']]],
   ['juce_5ffastmathapproximations_2eh',['juce_FastMathApproximations.h',['../juce__FastMathApproximations_8h.html',1,'']]],
   ['juce_5ffft_2eh',['juce_FFT.h',['../juce__FFT_8h.html',1,'']]],
   ['juce_5ffile_2eh',['juce_File.h',['../juce__File_8h.html',1,'']]],
@@ -684,5 +685,5 @@ var searchData=
   ['justifycontent',['justifyContent',['../classFlexBox.html#a20627d266f82422c5e72152ba07e5bc1',1,'FlexBox::justifyContent()'],['../classGrid.html#a1ffb17b0278671325d144c18ad3d90d8',1,'Grid::justifyContent()'],['../classFlexBox.html#afa615fca8a66bca45dc4b7ecdb75c3fd',1,'FlexBox::JustifyContent()'],['../classGrid.html#a409e1ab0e5437a211a6c0234f6dff4f6',1,'Grid::JustifyContent()']]],
   ['justifyglyphs',['justifyGlyphs',['../classGlyphArrangement.html#a713bcc714c1e8c7fb8ec64dc91adfce3',1,'GlyphArrangement']]],
   ['justifyitems',['justifyItems',['../classGrid.html#afb7f619f54e013d739bf4eba008c6f8b',1,'Grid::justifyItems()'],['../classGrid.html#afbf79b83305b5be690b37136e2b08ed0',1,'Grid::JustifyItems()']]],
-  ['justifyself',['justifySelf',['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()'],['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()']]]
+  ['justifyself',['JustifySelf',['../classGridItem.html#acdffd5a5ee38b411ae6766f7daf733c6',1,'GridItem::JustifySelf()'],['../classGridItem.html#ad99b06aa55356196c54bf40321301147',1,'GridItem::justifySelf()']]]
 ];
