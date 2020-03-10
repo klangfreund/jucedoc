@@ -24,7 +24,7 @@ var searchData=
   ['pressuresensitivity',['pressureSensitivity',['../namespaceBlocksProtocol.html#a01895711c2ff4b9a8ed600aab5c6dd79a9c90900cb1d7eb5321331d9f1ebb8452',1,'BlocksProtocol']]],
   ['programeventmessage',['programEventMessage',['../namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea9283291fdb038f5f77a68b5dfbfcfd46',1,'BlocksProtocol::programEventMessage()'],['../namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea5c2c992fda89945d916a0bcef7e24d4c',1,'BlocksProtocol::programEventMessage()'],['../namespaceBlocksProtocol.html#abee50d102d121b2b0bfe5e6704f94d0ea5c2c992fda89945d916a0bcef7e24d4c',1,'BlocksProtocol::programEventMessage()']]],
   ['promo',['promo',['../structPushNotifications_1_1Notification.html#a6c4abae95fb5385ac4bf08237dc3a886a894ec0e07eefb970b53352a591f005d7',1,'PushNotifications::Notification']]],
+  ['proximityleft',['proximityLeft',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652ea240c7ad03e8ead6ebc22be71fb58b92c',1,'AudioChannelSet']]],
   ['proximityright',['proximityRight',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eae120c70d3986869e6493065dcec6ffa6',1,'AudioChannelSet']]],
-  ['proxymityleft',['proxymityLeft',['../classAudioChannelSet.html#ab917e490df2e0edfb1087e4c4f8d652eaef28c1656308b01d46b3cd9c310e6ca8',1,'AudioChannelSet']]],
   ['putnumbersinbrackets',['putNumbersInBrackets',['../classTemporaryFile.html#af04f4ef2ea1bee0b20cdb4c072442e8da756fae13005d397744383ecd04539914',1,'TemporaryFile']]]
 ];
