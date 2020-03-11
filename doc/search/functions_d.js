@@ -49,5 +49,5 @@ var searchData=
   ['null',['null',['../classUuid.html#a5cf509fff17fc3042469877b4116850c',1,'Uuid']]],
   ['numbuseschanged',['numBusesChanged',['../classAudioProcessor.html#acdca26c33ae737c3a824b455f136a23d',1,'AudioProcessor']]],
   ['numchannelschanged',['numChannelsChanged',['../classAudioProcessor.html#adb83690e0bdce0710f54b28c020e8e04',1,'AudioProcessor']]],
-  ['numelementsinarray',['numElementsInArray',['../group__juce__core-maths.html#ga895144648115e7a081979e24742f049f',1,'juce_MathsFunctions.h']]]
+  ['numelementsinarray',['numElementsInArray',['../group__juce__core-maths.html#gadee9aaa20b588097567bc71e651f2f98',1,'juce_MathsFunctions.h']]]
 ];

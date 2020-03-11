@@ -3,7 +3,7 @@ var searchData=
   ['h',['h',['../structdsp_1_1StateVariableFilter_1_1Parameters.html#a9dc1fa748dc91155adfdb031a00d4733',1,'dsp::StateVariableFilter::Parameters']]],
   ['hadarmard',['hadarmard',['../classdsp_1_1Matrix.html#adcd8ce00e660415366c520eb50e5447e',1,'dsp::Matrix::hadarmard(const Matrix &amp;other) noexcept'],['../classdsp_1_1Matrix.html#acc9b3f2466eadff9729f52cb2fa64cae',1,'dsp::Matrix::hadarmard(const Matrix &amp;a, const Matrix &amp;b)']]],
   ['haderror',['hadError',['../classURL_1_1DownloadTask.html#ad2e410697d4aba3a559700957ac93fa2',1,'URL::DownloadTask']]],
-  ['halfpi',['halfPi',['../group__juce__core-maths.html#gafbf7941391c2618bb61f1e4e774c55f0',1,'MathConstants']]],
+  ['halfpi',['halfPi',['../structMathConstants.html#a56d81ce94fdc56ec4da30b1d2eef84b0',1,'MathConstants']]],
   ['hamming',['hamming',['../classdsp_1_1WindowingFunction.html#a3e8b398d754d06f6b6863639d0de52cca3de98685d0e0215bbe9c5bfd2d7dcdd5',1,'dsp::WindowingFunction']]],
   ['handleackfromdevice',['handleACKFromDevice',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a49cfb4a3b900cd183167d21855c34f01',1,'littlefoot::LittleFootRemoteHeap']]],
   ['handleaftertouch',['handleAftertouch',['../classSynthesiser.html#ae92ed64d170257574b9009b3384bde01',1,'Synthesiser']]],

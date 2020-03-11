@@ -43,7 +43,7 @@ var searchData=
   ['spatializerdata',['spatializerData',['../structUnityAudioEffectState.html#ab7ac34305c28b9cbdb36e705484d18fc',1,'UnityAudioEffectState']]],
   ['spread',['spread',['../structUnityAudioSpatializerData.html#a6d0f3cfe2d59d40cc4d0aee4b74bd08c',1,'UnityAudioSpatializerData::spread()'],['../structUnityAudioAmbisonicData.html#a9270a23544dabf7cf0a5f3291b6a98a2',1,'UnityAudioAmbisonicData::spread()']]],
   ['springgreen',['springgreen',['../namespaceColours.html#ac183fa0ff07f05bb73d852b4cdf8911b',1,'Colours']]],
-  ['sqrt2',['sqrt2',['../group__juce__core-maths.html#gaf2b57d57dc45704d52b1eaa2457678fe',1,'MathConstants']]],
+  ['sqrt2',['sqrt2',['../structMathConstants.html#ad5a94be39095bba9fd165df2c7435f41',1,'MathConstants']]],
   ['start',['start',['../classNormalisableRange.html#adc186176e94c6f80eb2c626384054fe3',1,'NormalisableRange::start()'],['../structTextDiff_1_1Change.html#ac72e9e25d35530fac7837a2d22c31958',1,'TextDiff::Change::start()'],['../structGridItem_1_1StartAndEndProperty.html#a1f4e27e7a91ec09563b7655a3b4f5ccf',1,'GridItem::StartAndEndProperty::start()']]],
   ['startangleradians',['startAngleRadians',['../structSlider_1_1RotaryParameters.html#a1b4090a3f77b0183b1c847525f4edb8a',1,'Slider::RotaryParameters']]],
   ['startindex1',['startIndex1',['../classAbstractFifo_1_1ScopedReadWrite.html#a102cfbf1cfd342be976af1e97b9ade27',1,'AbstractFifo::ScopedReadWrite']]],

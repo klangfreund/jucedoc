@@ -62,7 +62,7 @@ var searchData=
   ['defaulttolerancefortesting',['defaultToleranceForTesting',['../classPath.html#aa23f987b8292143c3c9a6d9b0a131c3b',1,'Path']]],
   ['defaultval',['defaultVal',['../structUnityAudioParameterDefinition.html#a7a8ce397776222dce0753fc33cf9faad',1,'UnityAudioParameterDefinition']]],
   ['deflateformat',['deflateFormat',['../classGZIPDecompressorInputStream.html#a293d005b03d528a89ec13cfb07e31f94adbc6da051e28e255c2574026684fc2b0',1,'GZIPDecompressorInputStream']]],
-  ['degreestoradians',['degreesToRadians',['../group__juce__core-maths.html#ga6f2513e3ffbc3e36668efd85953ea216',1,'juce_MathsFunctions.h']]],
+  ['degreestoradians',['degreesToRadians',['../group__juce__core-maths.html#ga94da761a445ab247e6e34be6d9203180',1,'juce_MathsFunctions.h']]],
   ['deinterleavesamples',['deinterleaveSamples',['../classAudioDataConverters.html#aac3f177b8617346f5cb1dd93cf09d152',1,'AudioDataConverters']]],
   ['del',['del',['../namespaceStandardApplicationCommandIDs.html#ab3690a6bc89f72a1872de8994c81cea0a3519307963b37e47b3c0935a553c8a13',1,'StandardApplicationCommandIDs']]],
   ['delayedpath',['delayedPath',['../structdsp_1_1FilterDesign_1_1IIRPolyphaseAllpassStructure.html#a5d1ee8cddc6a38760b4d2a36cc371e34',1,'dsp::FilterDesign::IIRPolyphaseAllpassStructure']]],

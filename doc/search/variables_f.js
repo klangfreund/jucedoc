@@ -25,7 +25,7 @@ var searchData=
   ['person',['person',['../structPushNotifications_1_1Notification.html#a00f2b66e133af0e9329e87b5145e5b72',1,'PushNotifications::Notification']]],
   ['peru',['peru',['../namespaceColours.html#af2b14ce3009391d8a3b5f3db6c95fa0e',1,'Colours']]],
   ['phase',['phase',['../structdsp_1_1Phase.html#a07412209f3d89714ed6b47e7f3578320',1,'dsp::Phase']]],
-  ['pi',['pi',['../group__juce__core-maths.html#gaaec4bd5a00718fbf776203289b9b8645',1,'MathConstants']]],
+  ['pi',['pi',['../structMathConstants.html#aacb402350ef90fa1f4ab91a37032ba2c',1,'MathConstants']]],
   ['pimpl',['pimpl',['../classGenericAudioProcessorEditor.html#af33f35cfb355efe6f61ff7808535e701',1,'GenericAudioProcessorEditor::pimpl()'],['../classInAppPurchases.html#a474d7ea538c17ff38825e92a0f8f2f05',1,'InAppPurchases::pimpl()']]],
   ['pink',['pink',['../namespaceColours.html#ae4c5c0c00ad824561d53376d2ae2e629',1,'Colours']]],
   ['pitchbend',['pitchbend',['../structMPENote.html#aebfdbfc173bc19cc97b97659c412078f',1,'MPENote']]],
