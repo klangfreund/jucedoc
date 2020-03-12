@@ -95,12 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#aa0fb3908b5d80d27f0ee33ab774bd8c6">~Oversampling</a> ()</td></tr>
 <tr class="memdesc:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa0fb3908b5d80d27f0ee33ab774bd8c6">More...</a><br /></td></tr>
 <tr class="separator:aa0fb3908b5d80d27f0ee33ab774bd8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84343fd0923808c2a18966a14985ca8c"><td class="memItemLeft" align="right" valign="top">SampleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a84343fd0923808c2a18966a14985ca8c">getLatencyInSamples</a> () noexcept</td></tr>
-<tr class="memdesc:a84343fd0923808c2a18966a14985ca8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the latency in samples of the whole processing.  <a href="#a84343fd0923808c2a18966a14985ca8c">More...</a><br /></td></tr>
-<tr class="separator:a84343fd0923808c2a18966a14985ca8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e6673a38c3aa9111c9d4813e6d3669"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a47e6673a38c3aa9111c9d4813e6d3669">getOversamplingFactor</a> () noexcept</td></tr>
-<tr class="memdesc:a47e6673a38c3aa9111c9d4813e6d3669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current oversampling factor.  <a href="#a47e6673a38c3aa9111c9d4813e6d3669">More...</a><br /></td></tr>
-<tr class="separator:a47e6673a38c3aa9111c9d4813e6d3669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc35566de88a0375c5ea8118555bb4e"><td class="memItemLeft" align="right" valign="top">SampleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a4dc35566de88a0375c5ea8118555bb4e">getLatencyInSamples</a> () const noexcept</td></tr>
+<tr class="memdesc:a4dc35566de88a0375c5ea8118555bb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the latency in samples of the whole processing.  <a href="#a4dc35566de88a0375c5ea8118555bb4e">More...</a><br /></td></tr>
+<tr class="separator:a4dc35566de88a0375c5ea8118555bb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9623a7343576d833e89296e0689570f4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a9623a7343576d833e89296e0689570f4">getOversamplingFactor</a> () const noexcept</td></tr>
+<tr class="memdesc:a9623a7343576d833e89296e0689570f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current oversampling factor.  <a href="#a9623a7343576d833e89296e0689570f4">More...</a><br /></td></tr>
+<tr class="separator:a9623a7343576d833e89296e0689570f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3829111fb892241c02b0234e81fb445e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Oversampling.html#a3829111fb892241c02b0234e81fb445e">initProcessing</a> (size_t maximumNumberOfSamplesBeforeOversampling)</td></tr>
 <tr class="memdesc:a3829111fb892241c02b0234e81fb445e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called before any processing, to set the buffer sizes of the internal buffers of the oversampling processing.  <a href="#a3829111fb892241c02b0234e81fb445e">More...</a><br /></td></tr>
 <tr class="separator:a3829111fb892241c02b0234e81fb445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,8 +272,8 @@ template&lt;typename SampleType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a84343fd0923808c2a18966a14985ca8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84343fd0923808c2a18966a14985ca8c">&#9670;&nbsp;</a></span>getLatencyInSamples()</h2>
+<a id="a4dc35566de88a0375c5ea8118555bb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc35566de88a0375c5ea8118555bb4e">&#9670;&nbsp;</a></span>getLatencyInSamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +287,7 @@ template&lt;typename SampleType &gt; </div>
           <td class="memname">SampleType <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::getLatencyInSamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -303,8 +303,8 @@ template&lt;typename SampleType &gt; </div>
 
 </div>
 </div>
-<a id="a47e6673a38c3aa9111c9d4813e6d3669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e6673a38c3aa9111c9d4813e6d3669">&#9670;&nbsp;</a></span>getOversamplingFactor()</h2>
+<a id="a9623a7343576d833e89296e0689570f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9623a7343576d833e89296e0689570f4">&#9670;&nbsp;</a></span>getOversamplingFactor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,7 @@ template&lt;typename SampleType &gt; </div>
           <td class="memname">size_t <a class="el" href="classdsp_1_1Oversampling.html">dsp::Oversampling</a>&lt; SampleType &gt;::getOversamplingFactor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -591,7 +591,7 @@ template&lt;typename SampleType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

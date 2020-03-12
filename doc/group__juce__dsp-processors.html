@@ -121,6 +121,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1ProcessContextNonReplacing.html">dsp::ProcessContextNonReplacing&lt; ContextSampleType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains context information that is passed into an algorithm's process method.  <a href="structdsp_1_1ProcessContextNonReplacing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1ProcessorChain.html">dsp::ProcessorChain&lt; Processors &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variadically-templated class lets you join together any number of processor classes into a single processor which will call <a class="el" href="classdsp_1_1ProcessorChain.html#a0258207be60eeeab43ba3015edfccde7" title="Process context through all inner processors in sequence. ">process()</a> on them all in sequence.  <a href="classdsp_1_1ProcessorChain.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdsp_1_1ProcessorDuplicator.html">dsp::ProcessorDuplicator&lt; MonoProcessorType, StateType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a mono processor class into a multi-channel version by duplicating it and applying multichannel buffers across an array of instances.  <a href="structdsp_1_1ProcessorDuplicator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +134,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps an instance of a given processor class, and exposes it through the <a class="el" href="structdsp_1_1ProcessorBase.html" title="Acts as a polymorphic base class for processors. ">ProcessorBase</a> interface.  <a href="structdsp_1_1ProcessorWrapper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1Reverb.html">dsp::Reverb</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor wrapper around juce::Reverb for easy integration into ProcessorChain.  <a href="classdsp_1_1Reverb.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor wrapper around juce::Reverb for easy integration into <a class="el" href="classdsp_1_1ProcessorChain.html" title="This variadically-templated class lets you join together any number of processor classes into a singl...">ProcessorChain</a>.  <a href="classdsp_1_1Reverb.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1StateVariableFilter_1_1Filter.html">dsp::StateVariableFilter::Filter&lt; SampleType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="namespacedsp_1_1IIR.html" title="Classes for IIR filter processing. ">IIR</a> filter that can perform low, band and high-pass filtering on an audio signal, with 12 dB of attenuation / octave, using a TPT structure, designed for fast modulation (see Vadim Zavalishin's documentation about TPT structures for more information).  <a href="classdsp_1_1StateVariableFilter_1_1Filter.html#details">More...</a><br /></td></tr>
@@ -147,7 +150,7 @@ Classes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

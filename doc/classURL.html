@@ -82,7 +82,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a7ff292f839beb83a27baae57042bd737"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a7ff292f839beb83a27baae57042bd737">OpenStreamProgressCallback</a> = bool(void *context, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> bytesSent, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> totalBytes)</td></tr>
-<tr class="memdesc:a7ff292f839beb83a27baae57042bd737"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback function can be used by the <a class="el" href="classURL.html#a2928f36d7a1eef81e44060d9604265d8" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a> method.  <a href="#a7ff292f839beb83a27baae57042bd737">More...</a><br /></td></tr>
+<tr class="memdesc:a7ff292f839beb83a27baae57042bd737"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback function can be used by the <a class="el" href="classURL.html#a641aa0282e20f7811bd7ef04d8647a11" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a> method.  <a href="#a7ff292f839beb83a27baae57042bd737">More...</a><br /></td></tr>
 <tr class="separator:a7ff292f839beb83a27baae57042bd737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -190,12 +190,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e0faa22cab2447d64c8ac0d01bdccda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a2e0faa22cab2447d64c8ac0d01bdccda">launchInDefaultBrowser</a> () const</td></tr>
 <tr class="memdesc:a2e0faa22cab2447d64c8ac0d01bdccda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to launch the system's default browser to open the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a2e0faa22cab2447d64c8ac0d01bdccda">More...</a><br /></td></tr>
 <tr class="separator:a2e0faa22cab2447d64c8ac0d01bdccda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2928f36d7a1eef81e44060d9604265d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInputStream.html">InputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a2928f36d7a1eef81e44060d9604265d8">createInputStream</a> (bool doPostLikeRequest, <a class="el" href="classURL.html#a7ff292f839beb83a27baae57042bd737">OpenStreamProgressCallback</a> *progressCallback=nullptr, void *progressCallbackContext=nullptr, <a class="el" href="classString.html">String</a> extraHeaders={}, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> connectionTimeOutMs=0, <a class="el" href="classStringPairArray.html">StringPairArray</a> *responseHeaders=nullptr, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> *statusCode=nullptr, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numRedirectsToFollow=5, <a class="el" href="classString.html">String</a> httpRequestCmd={}) const</td></tr>
-<tr class="memdesc:a2928f36d7a1eef81e44060d9604265d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to open a stream that can read from this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a2928f36d7a1eef81e44060d9604265d8">More...</a><br /></td></tr>
-<tr class="separator:a2928f36d7a1eef81e44060d9604265d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c552462f8df4526ca3bc2e0ffcf792e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a2c552462f8df4526ca3bc2e0ffcf792e">createOutputStream</a> () const</td></tr>
-<tr class="memdesc:a2c552462f8df4526ca3bc2e0ffcf792e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to open an output stream to a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> for writing.  <a href="#a2c552462f8df4526ca3bc2e0ffcf792e">More...</a><br /></td></tr>
-<tr class="separator:a2c552462f8df4526ca3bc2e0ffcf792e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641aa0282e20f7811bd7ef04d8647a11"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classInputStream.html">InputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a641aa0282e20f7811bd7ef04d8647a11">createInputStream</a> (bool doPostLikeRequest, <a class="el" href="classURL.html#a7ff292f839beb83a27baae57042bd737">OpenStreamProgressCallback</a> *progressCallback=nullptr, void *progressCallbackContext=nullptr, <a class="el" href="classString.html">String</a> extraHeaders={}, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> connectionTimeOutMs=0, <a class="el" href="classStringPairArray.html">StringPairArray</a> *responseHeaders=nullptr, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> *statusCode=nullptr, <a class="el" href="group__juce__audio__plugin__client-Unity.html#ga966b05a42d98c7296097e073c627dcd0">int</a> numRedirectsToFollow=5, <a class="el" href="classString.html">String</a> httpRequestCmd={}) const</td></tr>
+<tr class="memdesc:a641aa0282e20f7811bd7ef04d8647a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to open a stream that can read from this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>.  <a href="#a641aa0282e20f7811bd7ef04d8647a11">More...</a><br /></td></tr>
+<tr class="separator:a641aa0282e20f7811bd7ef04d8647a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d3aa771a6577c5149b09f12617b746"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classOutputStream.html">OutputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#af0d3aa771a6577c5149b09f12617b746">createOutputStream</a> () const</td></tr>
+<tr class="memdesc:af0d3aa771a6577c5149b09f12617b746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to open an output stream to a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> for writing.  <a href="#af0d3aa771a6577c5149b09f12617b746">More...</a><br /></td></tr>
+<tr class="separator:af0d3aa771a6577c5149b09f12617b746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591172ae1dbe6598848d83e5eff5f6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a591172ae1dbe6598848d83e5eff5f6d0">downloadToFile</a> (const <a class="el" href="classFile.html">File</a> &amp;targetLocation, <a class="el" href="classString.html">String</a> extraHeaders=<a class="el" href="classString.html">String</a>(), <a class="el" href="structURL_1_1DownloadTask_1_1Listener.html">DownloadTask::Listener</a> *listener=nullptr, bool usePostCommand=false)</td></tr>
 <tr class="memdesc:a591172ae1dbe6598848d83e5eff5f6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> to a file.  <a href="#a591172ae1dbe6598848d83e5eff5f6d0">More...</a><br /></td></tr>
 <tr class="separator:a591172ae1dbe6598848d83e5eff5f6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +250,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This callback function can be used by the <a class="el" href="classURL.html#a2928f36d7a1eef81e44060d9604265d8" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a> method. </p>
+<p>This callback function can be used by the <a class="el" href="classURL.html#a641aa0282e20f7811bd7ef04d8647a11" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a> method. </p>
 <p>It allows your app to receive progress updates during a lengthy POST operation. If you want to continue the operation, this should return true, or false to abort. </p>
 
 </div>
@@ -1025,7 +1025,7 @@ Friends</h2></td></tr>
 <p>Returns a copy of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>, with a block of data to send as the POST data. </p>
 <p>If you're setting the POST data, be careful not to have any parameters set as well, otherwise it'll all get thrown in together, and might not have the desired effect.</p>
 <p>If the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> already contains some POST data, this will replace it, rather than being appended to it.</p>
-<p>This data will only be used if you specify a post operation when you call <a class="el" href="classURL.html#a2928f36d7a1eef81e44060d9604265d8" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a>. </p>
+<p>This data will only be used if you specify a post operation when you call <a class="el" href="classURL.html#a641aa0282e20f7811bd7ef04d8647a11" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a>. </p>
 
 </div>
 </div>
@@ -1048,7 +1048,7 @@ Friends</h2></td></tr>
 <p>Returns a copy of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a>, with a block of data to send as the POST data. </p>
 <p>If you're setting the POST data, be careful not to have any parameters set as well, otherwise it'll all get thrown in together, and might not have the desired effect.</p>
 <p>If the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> already contains some POST data, this will replace it, rather than being appended to it.</p>
-<p>This data will only be used if you specify a post operation when you call <a class="el" href="classURL.html#a2928f36d7a1eef81e44060d9604265d8" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a>. </p>
+<p>This data will only be used if you specify a post operation when you call <a class="el" href="classURL.html#a641aa0282e20f7811bd7ef04d8647a11" title="Attempts to open a stream that can read from this URL. ">createInputStream()</a>. </p>
 
 </div>
 </div>
@@ -1178,14 +1178,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a2928f36d7a1eef81e44060d9604265d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2928f36d7a1eef81e44060d9604265d8">&#9670;&nbsp;</a></span>createInputStream()</h2>
+<a id="a641aa0282e20f7811bd7ef04d8647a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641aa0282e20f7811bd7ef04d8647a11">&#9670;&nbsp;</a></span>createInputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classInputStream.html">InputStream</a>* URL::createInputStream </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classInputStream.html">InputStream</a>&gt; URL::createInputStream </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>doPostLikeRequest</em>, </td>
@@ -1269,14 +1269,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c552462f8df4526ca3bc2e0ffcf792e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c552462f8df4526ca3bc2e0ffcf792e">&#9670;&nbsp;</a></span>createOutputStream()</h2>
+<a id="af0d3aa771a6577c5149b09f12617b746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d3aa771a6577c5149b09f12617b746">&#9670;&nbsp;</a></span>createOutputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classOutputStream.html">OutputStream</a>* URL::createOutputStream </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classOutputStream.html">OutputStream</a>&gt; URL::createOutputStream </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1616,7 +1616,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

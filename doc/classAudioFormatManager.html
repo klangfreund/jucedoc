@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab78bd5aa0ff2b9b667b5156b3bac5e83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatManager.html#ab78bd5aa0ff2b9b667b5156b3bac5e83">createReaderFor</a> (const <a class="el" href="classFile.html">File</a> &amp;audioFile)</td></tr>
 <tr class="memdesc:ab78bd5aa0ff2b9b667b5156b3bac5e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through the known formats to try to create a suitable reader for this file.  <a href="#ab78bd5aa0ff2b9b667b5156b3bac5e83">More...</a><br /></td></tr>
 <tr class="separator:ab78bd5aa0ff2b9b667b5156b3bac5e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b691e67fef322c482262635fcfd3fee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatManager.html#a8b691e67fef322c482262635fcfd3fee">createReaderFor</a> (<a class="el" href="classInputStream.html">InputStream</a> *audioFileStream)</td></tr>
-<tr class="memdesc:a8b691e67fef322c482262635fcfd3fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through the known formats to try to create a suitable reader for this stream.  <a href="#a8b691e67fef322c482262635fcfd3fee">More...</a><br /></td></tr>
-<tr class="separator:a8b691e67fef322c482262635fcfd3fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8cff25a589a6478ccb52dcf5356b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioFormatReader.html">AudioFormatReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioFormatManager.html#a4e8cff25a589a6478ccb52dcf5356b31">createReaderFor</a> (std::unique_ptr&lt; <a class="el" href="classInputStream.html">InputStream</a> &gt; audioFileStream)</td></tr>
+<tr class="memdesc:a4e8cff25a589a6478ccb52dcf5356b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through the known formats to try to create a suitable reader for this stream.  <a href="#a4e8cff25a589a6478ccb52dcf5356b31">More...</a><br /></td></tr>
+<tr class="separator:a4e8cff25a589a6478ccb52dcf5356b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for keeping a list of available audio formats, and for deciding which one to use to open a given file. </p>
@@ -468,8 +468,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b691e67fef322c482262635fcfd3fee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b691e67fef322c482262635fcfd3fee">&#9670;&nbsp;</a></span>createReaderFor() <span class="overload">[2/2]</span></h2>
+<a id="a4e8cff25a589a6478ccb52dcf5356b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8cff25a589a6478ccb52dcf5356b31">&#9670;&nbsp;</a></span>createReaderFor() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,7 +477,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classAudioFormatReader.html">AudioFormatReader</a>* AudioFormatManager::createReaderFor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classInputStream.html">InputStream</a> &gt;&#160;</td>
           <td class="paramname"><em>audioFileStream</em></td><td>)</td>
           <td></td>
         </tr>
@@ -497,7 +497,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

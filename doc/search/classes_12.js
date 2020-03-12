@@ -11,7 +11,7 @@ var searchData=
   ['scopedautoreleasepool',['ScopedAutoReleasePool',['../classScopedAutoReleasePool.html',1,'']]],
   ['scopeddpiawarenessdisabler',['ScopedDPIAwarenessDisabler',['../classScopedDPIAwarenessDisabler.html',1,'']]],
   ['scopedjuceinitialiser_5fgui',['ScopedJuceInitialiser_GUI',['../classScopedJuceInitialiser__GUI.html',1,'']]],
-  ['scopedlocktype',['ScopedLockType',['../structDummyCriticalSection_1_1ScopedLockType.html',1,'DummyCriticalSection::ScopedLockType'],['../classInterProcessLock_1_1ScopedLockType.html',1,'InterProcessLock::ScopedLockType']]],
+  ['scopedlocktype',['ScopedLockType',['../classInterProcessLock_1_1ScopedLockType.html',1,'InterProcessLock::ScopedLockType'],['../structDummyCriticalSection_1_1ScopedLockType.html',1,'DummyCriticalSection::ScopedLockType']]],
   ['scopednodenormals',['ScopedNoDenormals',['../classScopedNoDenormals.html',1,'']]],
   ['scopedreadlock',['ScopedReadLock',['../classScopedReadLock.html',1,'']]],
   ['scopedreadwrite',['ScopedReadWrite',['../classAbstractFifo_1_1ScopedReadWrite.html',1,'AbstractFifo']]],

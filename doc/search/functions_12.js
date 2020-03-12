@@ -177,7 +177,7 @@ var searchData=
   ['setbuttonsize',['setButtonSize',['../classPreferencesPanel.html#aac32a515e5c4d317ad31aa5d215706f3',1,'PreferencesPanel']]],
   ['setbuttonstyle',['setButtonStyle',['../classDrawableButton.html#a5858b272f7062972f23eecfa4bb39362',1,'DrawableButton']]],
   ['setbuttontext',['setButtonText',['../classButton.html#a96f4185a0a716d10309f1081f0af2f91',1,'Button']]],
-  ['setbypassed',['setBypassed',['../classReverbAudioSource.html#a8b6f060d4f6ab72e7c9a4ddcdbf6ccd1',1,'ReverbAudioSource::setBypassed()'],['../classAudioProcessorGraph_1_1Node.html#ac7403fc05ce56d9217c5e379ae231fd5',1,'AudioProcessorGraph::Node::setBypassed()']]],
+  ['setbypassed',['setBypassed',['../classReverbAudioSource.html#a8b6f060d4f6ab72e7c9a4ddcdbf6ccd1',1,'ReverbAudioSource::setBypassed()'],['../classAudioProcessorGraph_1_1Node.html#ac7403fc05ce56d9217c5e379ae231fd5',1,'AudioProcessorGraph::Node::setBypassed()'],['../classdsp_1_1ProcessorChain.html#a5ae4a9d6e1e02e2e4fd2b1b5a9bcdbba',1,'dsp::ProcessorChain::setBypassed()'],['../namespacedsp.html#ac33601e867d61deb64412e30e035c6ee',1,'dsp::setBypassed()']]],
   ['setbyte',['setByte',['../structlittlefoot_1_1LittleFootRemoteHeap.html#aa5ee115e4d8b164ebb7c54f15736648f',1,'littlefoot::LittleFootRemoteHeap']]],
   ['setbytes',['setBytes',['../structlittlefoot_1_1LittleFootRemoteHeap.html#a92601c321cc89df4c966045377ff00f9',1,'littlefoot::LittleFootRemoteHeap']]],
   ['setcachedcomponentimage',['setCachedComponentImage',['../classComponent.html#a9a19c5cf59573243d77a94bb3abea722',1,'Component']]],

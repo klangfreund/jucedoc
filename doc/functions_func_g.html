@@ -102,6 +102,7 @@ $(function() {
 , <a class="el" href="structBlocksProtocol_1_1IntegerWithBitSize.html#afdf634b8ca6aa29edb386fb956dfc9d6">BlocksProtocol::IntegerWithBitSize&lt; numBits &gt;</a>
 , <a class="el" href="classCachedValue.html#a3b985781bf4e9225dc37be8529390df0">CachedValue&lt; Type &gt;</a>
 , <a class="el" href="classdsp_1_1LookupTable.html#ab7441a10af878a6104e963dbea887813">dsp::LookupTable&lt; FloatType &gt;</a>
+, <a class="el" href="classdsp_1_1ProcessorChain.html#a2c24b8fd3ac6d9d5161c68a0c529659d">dsp::ProcessorChain&lt; Processors &gt;</a>
 , <a class="el" href="structdsp_1_1SIMDRegister.html#ada7fc07340bda9b78fdbaf63b9fcb927">dsp::SIMDRegister&lt; Type &gt;</a>
 , <a class="el" href="classHeapBlock.html#acaaec68ce1b9b5aa46d259f61de67314">HeapBlock&lt; ElementType, throwOnFailure &gt;</a>
 , <a class="el" href="classLinkedListPointer.html#a7567b9c57a22c2977a65845cf5cdce98">LinkedListPointer&lt; ObjectType &gt;</a>
@@ -2320,7 +2321,7 @@ $(function() {
 : <a class="el" href="classMidiFile.html#a268504f50fcb8cc49f716259cfae0033">MidiFile</a>
 </li>
 <li>getLatencyInSamples()
-: <a class="el" href="classdsp_1_1Oversampling.html#a84343fd0923808c2a18966a14985ca8c">dsp::Oversampling&lt; SampleType &gt;</a>
+: <a class="el" href="classdsp_1_1Oversampling.html#a4dc35566de88a0375c5ea8118555bb4e">dsp::Oversampling&lt; SampleType &gt;</a>
 </li>
 <li>getLatencySamples()
 : <a class="el" href="classAudioProcessor.html#abae54a8c1bcfd88bcba9d42b752e006d">AudioProcessor</a>
@@ -3418,7 +3419,7 @@ $(function() {
 : <a class="el" href="classDrawableImage.html#aa806de491524504600a5e7964c0b3427">DrawableImage</a>
 </li>
 <li>getOversamplingFactor()
-: <a class="el" href="classdsp_1_1Oversampling.html#a47e6673a38c3aa9111c9d4813e6d3669">dsp::Oversampling&lt; SampleType &gt;</a>
+: <a class="el" href="classdsp_1_1Oversampling.html#a9623a7343576d833e89296e0689570f4">dsp::Oversampling&lt; SampleType &gt;</a>
 </li>
 <li>getOwnerView()
 : <a class="el" href="classTreeViewItem.html#af5f9ce78c2bc579d308a7048c59a0a3c">TreeViewItem</a>
@@ -3579,7 +3580,7 @@ $(function() {
 : <a class="el" href="classPluginHostType.html#a20b56a4d84ae4c788d859815b60bb93d">PluginHostType</a>
 </li>
 <li>getPointAlongLine()
-: <a class="el" href="classLine.html#a77bc36673f43fd4e4e966fe3294a9db5">Line&lt; ValueType &gt;</a>
+: <a class="el" href="classLine.html#ae09b929efc5c12defda7715092ff0c05">Line&lt; ValueType &gt;</a>
 </li>
 <li>getPointAlongLineProportionally()
 : <a class="el" href="classLine.html#ab557ce9e66f5cfbf826c0d3955e23d03">Line&lt; ValueType &gt;</a>
@@ -3591,7 +3592,7 @@ $(function() {
 : <a class="el" href="classRelativeParallelogram.html#abb80c5986efe7db119ca4966c62e9da3">RelativeParallelogram</a>
 </li>
 <li>getPointOnCircumference()
-: <a class="el" href="classPoint.html#ae33c849512104b032c4013daffaaa0d2">Point&lt; ValueType &gt;</a>
+: <a class="el" href="classPoint.html#a9603bf13bd581212b0d3d13c23d4fa23">Point&lt; ValueType &gt;</a>
 </li>
 <li>getPooledString()
 : <a class="el" href="classStringPool.html#aae5ff870a5147dddfc6e983f058c3a17">StringPool</a>
@@ -3755,7 +3756,7 @@ $(function() {
 </li>
 <li>getProperty()
 : <a class="el" href="classDynamicObject.html#a4da4f155a67775a15f92149e39d3af5c">DynamicObject</a>
-, <a class="el" href="classValueTree.html#a16875a1c5f41f03f609a9d7870171fd6">ValueTree</a>
+, <a class="el" href="classValueTree.html#adc7c731c09608f59e9372b9221e35a17">ValueTree</a>
 , <a class="el" href="classvar.html#a1a9626c08adccb727c598f80ebfd6570">var</a>
 </li>
 <li>getPropertyAsValue()
@@ -3844,7 +3845,7 @@ $(function() {
 </li>
 <li>getRawCoefficients()
 : <a class="el" href="structdsp_1_1FIR_1_1Coefficients.html#a2adc3ac8f6794135289054e44eb73462">dsp::FIR::Coefficients&lt; NumericType &gt;</a>
-, <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html#ac1ba0c6e5b1e2cafda9bacc61f855fb6">dsp::IIR::Coefficients&lt; NumericType &gt;</a>
+, <a class="el" href="structdsp_1_1IIR_1_1Coefficients.html#a6c0cf530ed395b6c70e54bd23fc017b7">dsp::IIR::Coefficients&lt; NumericType &gt;</a>
 </li>
 <li>getRawContext()
 : <a class="el" href="classOpenGLContext.html#a9b9d12cc339f3f12124f4a3e54d5502c">OpenGLContext</a>
@@ -4969,10 +4970,10 @@ $(function() {
 : <a class="el" href="classStatisticsAccumulator.html#a8b52e03f0ea6ef38c94f91ee56854237">StatisticsAccumulator&lt; FloatType &gt;</a>
 </li>
 <li>getVarPointer()
-: <a class="el" href="classNamedValueSet.html#acf010bb59b1d8c5728e3500acde76e5b">NamedValueSet</a>
+: <a class="el" href="classNamedValueSet.html#aaa82b69c7f2cf326fb16208ae88f15a4">NamedValueSet</a>
 </li>
 <li>getVarPointerAt()
-: <a class="el" href="classNamedValueSet.html#aed6501a5e9fd7024fe39037bab7e382b">NamedValueSet</a>
+: <a class="el" href="classNamedValueSet.html#a6b42a101f8d28ba1f28836b82795f8c9">NamedValueSet</a>
 </li>
 <li>getVelocity()
 : <a class="el" href="classMidiMessage.html#ad5483775a661b2176687303bc9c8aac6">MidiMessage</a>
@@ -5078,7 +5079,7 @@ $(function() {
 , <a class="el" href="classTracktionMarketplaceStatus.html#a49d23a8228030bf92db354eb90832023">TracktionMarketplaceStatus</a>
 </li>
 <li>getWeekdayName()
-: <a class="el" href="classTime.html#a7d46001a7e4967a58aa00c78559cb2da">Time</a>
+: <a class="el" href="classTime.html#af55383bb7849e84e1db8dfe176462d42">Time</a>
 </li>
 <li>getWhiteNoteText()
 : <a class="el" href="classMidiKeyboardComponent.html#a7a28d0d9ca937b50da13b2d19d654df5">MidiKeyboardComponent</a>
@@ -5122,7 +5123,7 @@ $(function() {
 : <a class="el" href="classAudioProcessor.html#ae0f9f74e39f559a8e81159a9d130d21d">AudioProcessor</a>
 </li>
 <li>getWritePointer()
-: <a class="el" href="classAudioBuffer.html#a909904fa6e89008f43c83d5375c160dc">AudioBuffer&lt; Type &gt;</a>
+: <a class="el" href="classAudioBuffer.html#a1689185e6baae835a486b4c45f85892d">AudioBuffer&lt; Type &gt;</a>
 </li>
 <li>getX()
 : <a class="el" href="classComponent.html#a882733448ca364ba8f493c6301800572">Component</a>
@@ -5163,13 +5164,13 @@ $(function() {
 , <a class="el" href="classKeyPressMappingSet.html#a9a87b7a4ae2b7365723e47e29cf48500">KeyPressMappingSet</a>
 </li>
 <li>globalToLocal()
-: <a class="el" href="classComponentPeer.html#a02b5a507ccebbc345d0cbc44a70c003f">ComponentPeer</a>
+: <a class="el" href="classComponentPeer.html#a1236ece6db4e0363761aa0a1e2e282d9">ComponentPeer</a>
 </li>
 <li>GlowEffect()
 : <a class="el" href="classGlowEffect.html#a8ffa8313feae185387d68af2983cdeea">GlowEffect</a>
 </li>
 <li>Glyph()
-: <a class="el" href="classTextLayout_1_1Glyph.html#a2456071c340aa555e0a3c3a520413f9a">TextLayout::Glyph</a>
+: <a class="el" href="classTextLayout_1_1Glyph.html#a8a65971ba1d7ad45521d08981d6e8fc3">TextLayout::Glyph</a>
 </li>
 <li>GlyphArrangement()
 : <a class="el" href="classGlyphArrangement.html#a94df6b798ca1a180fad3709740e97f58">GlyphArrangement</a>
@@ -5193,7 +5194,7 @@ $(function() {
 : <a class="el" href="classComponent.html#a91886a0e276d27719fa8866a95306571">Component</a>
 </li>
 <li>Graphics()
-: <a class="el" href="classGraphics.html#a83d19d1d12f7cff6ed9eada236516a63">Graphics</a>
+: <a class="el" href="classGraphics.html#ada6375a2e6bf68758a2191acb4d62c65">Graphics</a>
 </li>
 <li>greaterThan()
 : <a class="el" href="structdsp_1_1SIMDRegister.html#a2811268c4f3a22144a1e3fb5bbf8bb83">dsp::SIMDRegister&lt; Type &gt;</a>
@@ -5217,13 +5218,13 @@ $(function() {
 : <a class="el" href="classGZIPCompressorOutputStream.html#a2f1c6a296dc75495e5541751585ea2ff">GZIPCompressorOutputStream</a>
 </li>
 <li>GZIPDecompressorInputStream()
-: <a class="el" href="classGZIPDecompressorInputStream.html#a212aeebd5a55b921b0ce5475d756d79a">GZIPDecompressorInputStream</a>
+: <a class="el" href="classGZIPDecompressorInputStream.html#a3beb8232d0d81935fa78d75e30ba8e01">GZIPDecompressorInputStream</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -287,12 +287,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc95bed3659a4d728ae5d58e081fb28d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#acc95bed3659a4d728ae5d58e081fb28d">containsSubDirectories</a> () const</td></tr>
 <tr class="memdesc:acc95bed3659a4d728ae5d58e081fb28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this file is a directory that contains one or more subdirectories.  <a href="#acc95bed3659a4d728ae5d58e081fb28d">More...</a><br /></td></tr>
 <tr class="separator:acc95bed3659a4d728ae5d58e081fb28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5512424b64d50f10302788c294ab729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFileInputStream.html">FileInputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#ad5512424b64d50f10302788c294ab729">createInputStream</a> () const</td></tr>
-<tr class="memdesc:ad5512424b64d50f10302788c294ab729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream to read from this file.  <a href="#ad5512424b64d50f10302788c294ab729">More...</a><br /></td></tr>
-<tr class="separator:ad5512424b64d50f10302788c294ab729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8db7b5cd2ccde94b1299da3bfd11d46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFileOutputStream.html">FileOutputStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#ac8db7b5cd2ccde94b1299da3bfd11d46">createOutputStream</a> (size_t bufferSize=0x8000) const</td></tr>
-<tr class="memdesc:ac8db7b5cd2ccde94b1299da3bfd11d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream to write to this file.  <a href="#ac8db7b5cd2ccde94b1299da3bfd11d46">More...</a><br /></td></tr>
-<tr class="separator:ac8db7b5cd2ccde94b1299da3bfd11d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005e70f81272e0bf30563b96665065da"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classFileInputStream.html">FileInputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#a005e70f81272e0bf30563b96665065da">createInputStream</a> () const</td></tr>
+<tr class="memdesc:a005e70f81272e0bf30563b96665065da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream to read from this file.  <a href="#a005e70f81272e0bf30563b96665065da">More...</a><br /></td></tr>
+<tr class="separator:a005e70f81272e0bf30563b96665065da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecec01a67fe87f62dc83118c0b0ce28"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classFileOutputStream.html">FileOutputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#aaecec01a67fe87f62dc83118c0b0ce28">createOutputStream</a> (size_t bufferSize=0x8000) const</td></tr>
+<tr class="memdesc:aaecec01a67fe87f62dc83118c0b0ce28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream to write to this file.  <a href="#aaecec01a67fe87f62dc83118c0b0ce28">More...</a><br /></td></tr>
+<tr class="separator:aaecec01a67fe87f62dc83118c0b0ce28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889b8b0784b4f97c5bf93ffc24c3650d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html#a889b8b0784b4f97c5bf93ffc24c3650d">loadFileAsData</a> (<a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;result) const</td></tr>
 <tr class="memdesc:a889b8b0784b4f97c5bf93ffc24c3650d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a file's contents into memory as a block of binary data.  <a href="#a889b8b0784b4f97c5bf93ffc24c3650d">More...</a><br /></td></tr>
 <tr class="separator:a889b8b0784b4f97c5bf93ffc24c3650d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1982,14 +1982,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5512424b64d50f10302788c294ab729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5512424b64d50f10302788c294ab729">&#9670;&nbsp;</a></span>createInputStream()</h2>
+<a id="a005e70f81272e0bf30563b96665065da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005e70f81272e0bf30563b96665065da">&#9670;&nbsp;</a></span>createInputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classFileInputStream.html">FileInputStream</a>* File::createInputStream </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classFileInputStream.html">FileInputStream</a>&gt; File::createInputStream </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1999,18 +1999,18 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a stream to read from this file. </p>
 <p>Note that this is an old method, and actually it's usually best to avoid it and instead use an RAII pattern with an <a class="el" href="classFileInputStream.html" title="An input stream that reads from a local file. ">FileInputStream</a> directly, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classFileInputStream.html">FileInputStream</a> input (fileToOpen);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (input.openedOk())</div><div class="line">{</div><div class="line">    input.read (etc...</div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a stream that will read from this file (initially positioned at the start of the file), or nullptr if the file can't be opened for some reason </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#ac8db7b5cd2ccde94b1299da3bfd11d46" title="Creates a stream to write to this file. ">createOutputStream</a>, <a class="el" href="classFile.html#a889b8b0784b4f97c5bf93ffc24c3650d" title="Loads a file&#39;s contents into memory as a block of binary data. ">loadFileAsData</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#aaecec01a67fe87f62dc83118c0b0ce28" title="Creates a stream to write to this file. ">createOutputStream</a>, <a class="el" href="classFile.html#a889b8b0784b4f97c5bf93ffc24c3650d" title="Loads a file&#39;s contents into memory as a block of binary data. ">loadFileAsData</a> </dd></dl>
 
 </div>
 </div>
-<a id="ac8db7b5cd2ccde94b1299da3bfd11d46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8db7b5cd2ccde94b1299da3bfd11d46">&#9670;&nbsp;</a></span>createOutputStream()</h2>
+<a id="aaecec01a67fe87f62dc83118c0b0ce28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecec01a67fe87f62dc83118c0b0ce28">&#9670;&nbsp;</a></span>createOutputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classFileOutputStream.html">FileOutputStream</a>* File::createOutputStream </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classFileOutputStream.html">FileOutputStream</a>&gt; File::createOutputStream </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>bufferSize</em> = <code>0x8000</code></td><td>)</td>
@@ -2021,7 +2021,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a stream to write to this file. </p>
 <p>Note that this is an old method, and actually it's usually best to avoid it and instead use an RAII pattern with an <a class="el" href="classFileOutputStream.html" title="An output stream that writes into a local file. ">FileOutputStream</a> directly, e.g. </p><div class="fragment"><div class="line"><a class="code" href="classFileOutputStream.html">FileOutputStream</a> output (fileToOpen);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (output.openedOk())</div><div class="line">{</div><div class="line">    output.read etc...</div><div class="line">}</div></div><!-- fragment --><p>If the file exists, the stream that is returned will be positioned ready for writing at the end of the file. If you want to write to the start of the file, replacing the existing content, then you can do the following: </p><div class="fragment"><div class="line"><a class="code" href="classFileOutputStream.html">FileOutputStream</a> output (fileToOverwrite);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (output.openedOk())</div><div class="line">{</div><div class="line">    output.setPosition (0);</div><div class="line">    output.truncate();</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a stream that will write to this file (initially positioned at the end of the file), or nullptr if the file can't be opened for some reason </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#ad5512424b64d50f10302788c294ab729" title="Creates a stream to read from this file. ">createInputStream</a>, <a class="el" href="classFile.html#a4d36e103c077497e393bb3b7de0c8d07" title="Appends a block of binary data to the end of the file. ">appendData</a>, <a class="el" href="classFile.html#a394e70abaa58e940a26b44fb38b89a67" title="Appends a string to the end of the file. ">appendText</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classFile.html#a005e70f81272e0bf30563b96665065da" title="Creates a stream to read from this file. ">createInputStream</a>, <a class="el" href="classFile.html#a4d36e103c077497e393bb3b7de0c8d07" title="Appends a block of binary data to the end of the file. ">appendData</a>, <a class="el" href="classFile.html#a394e70abaa58e940a26b44fb38b89a67" title="Appends a string to the end of the file. ">appendText</a> </dd></dl>
 
 </div>
 </div>
@@ -3068,7 +3068,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:15 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:16 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

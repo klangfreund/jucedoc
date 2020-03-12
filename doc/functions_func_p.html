@@ -509,6 +509,7 @@ $(function() {
 , <a class="el" href="classdsp_1_1LadderFilter.html#a8064f7fdfeadbae3eb6a4d2f328fcb05">dsp::LadderFilter&lt; Type &gt;</a>
 , <a class="el" href="classdsp_1_1Oscillator.html#a3498a99cd6728409c23060812833f628">dsp::Oscillator&lt; SampleType &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorBase.html#ac7c1eac1c7cb1e6cafa746ec8f1bf7c9">dsp::ProcessorBase</a>
+, <a class="el" href="classdsp_1_1ProcessorChain.html#af06a5f203a727aea3fc2e0515c6fc37f">dsp::ProcessorChain&lt; Processors &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorDuplicator.html#a156e3838fadff518487fbed258959ccd">dsp::ProcessorDuplicator&lt; MonoProcessorType, StateType &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorWrapper.html#ad91c7dbc203b67262c0e3150e3c24ecd">dsp::ProcessorWrapper&lt; ProcessorType &gt;</a>
 , <a class="el" href="classdsp_1_1Reverb.html#abbd2ccaf81d373fefa5a933121825fa1">dsp::Reverb</a>
@@ -573,12 +574,13 @@ $(function() {
 , <a class="el" href="classdsp_1_1LookupTableTransform.html#ac41423c0ed040b1e00453a840077225f">dsp::LookupTableTransform&lt; FloatType &gt;</a>
 , <a class="el" href="classdsp_1_1Oscillator.html#a9910808dcf8b7909df5ee15f8df6501e">dsp::Oscillator&lt; SampleType &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorBase.html#abf8edab1a15d1e7d38fc473f645ba681">dsp::ProcessorBase</a>
+, <a class="el" href="classdsp_1_1ProcessorChain.html#a0258207be60eeeab43ba3015edfccde7">dsp::ProcessorChain&lt; Processors &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorDuplicator.html#a2dbc05482b6db273eac54fd097d021f4">dsp::ProcessorDuplicator&lt; MonoProcessorType, StateType &gt;</a>
 , <a class="el" href="structdsp_1_1ProcessorWrapper.html#a70086afdda109c843e74e6fed09e29bf">dsp::ProcessorWrapper&lt; ProcessorType &gt;</a>
 , <a class="el" href="classdsp_1_1Reverb.html#aeb2fba08e1f0f8402be17f3199b25652">dsp::Reverb</a>
 , <a class="el" href="classdsp_1_1StateVariableFilter_1_1Filter.html#a0aadffe10e8c312b7cc06b688cc35ec4">dsp::StateVariableFilter::Filter&lt; SampleType &gt;</a>
 , <a class="el" href="structdsp_1_1WaveShaper.html#a8e7eab7117f965d081530c6c51f5b5ae">dsp::WaveShaper&lt; FloatType, Function &gt;</a>
-, <a class="el" href="classLagrangeInterpolator.html#a4b02399513f2187109f51c1cbcb437e0">LagrangeInterpolator</a>
+, <a class="el" href="classLagrangeInterpolator.html#a5ff714ff9e0431addd2270956dd17cef">LagrangeInterpolator</a>
 </li>
 <li>processAdding()
 : <a class="el" href="classCatmullRomInterpolator.html#a8ee27f940e8ee293768a3283a6c63276">CatmullRomInterpolator</a>
@@ -590,10 +592,10 @@ $(function() {
 , <a class="el" href="classAudioProcessorGraph.html#a398355e90612416b87e02fa026a1f014">AudioProcessorGraph</a>
 </li>
 <li>processBlockBypassed()
-: <a class="el" href="classAudioProcessor.html#a745093678f8ea07e47f19b777031abd2">AudioProcessor</a>
+: <a class="el" href="classAudioProcessor.html#a8728dd8bc715ee6d840ce5a9c86a4048">AudioProcessor</a>
 </li>
 <li>ProcessContextNonReplacing()
-: <a class="el" href="structdsp_1_1ProcessContextNonReplacing.html#acbd1201b93e8a7fc5bb770b9b4c4d4ee">dsp::ProcessContextNonReplacing&lt; ContextSampleType &gt;</a>
+: <a class="el" href="structdsp_1_1ProcessContextNonReplacing.html#afc864ff9e6e447c82a84a7490bb9fe9f">dsp::ProcessContextNonReplacing&lt; ContextSampleType &gt;</a>
 </li>
 <li>ProcessContextReplacing()
 : <a class="el" href="structdsp_1_1ProcessContextReplacing.html#a80a65f136c29ab6d0d136d35e11f7ead">dsp::ProcessContextReplacing&lt; ContextSampleType &gt;</a>
@@ -620,7 +622,7 @@ $(function() {
 : <a class="el" href="structdsp_1_1ProcessorBase.html#aa1a04bedc3c6389e2118d940e0d7eaaa">dsp::ProcessorBase</a>
 </li>
 <li>ProcessorDuplicator()
-: <a class="el" href="structdsp_1_1ProcessorDuplicator.html#a8fc2637a093a4c5e4800b958bb0e0921">dsp::ProcessorDuplicator&lt; MonoProcessorType, StateType &gt;</a>
+: <a class="el" href="structdsp_1_1ProcessorDuplicator.html#a09f25795b7d07e5ab2f75a1e78fe7eeb">dsp::ProcessorDuplicator&lt; MonoProcessorType, StateType &gt;</a>
 </li>
 <li>processorLayoutsChanged()
 : <a class="el" href="classAudioProcessor.html#a5a4ff4840a159939742b2a0f294ad28d">AudioProcessor</a>
@@ -697,7 +699,7 @@ $(function() {
 : <a class="el" href="classPropertiesFile.html#a8e47a02c7600f3758f600ed2376589a4">PropertiesFile</a>
 </li>
 <li>Property()
-: <a class="el" href="structGridItem_1_1Property.html#a74822be632a3f4daa42bb778514ff102">GridItem::Property</a>
+: <a class="el" href="structGridItem_1_1Property.html#a9706c70e74c3933dc106bd2c7f53cdc5">GridItem::Property</a>
 </li>
 <li>propertyChanged()
 : <a class="el" href="classPropertiesFile.html#a02e12b829e5b30f6c41df04242541b9c">PropertiesFile</a>
@@ -710,7 +712,7 @@ $(function() {
 : <a class="el" href="classPropertyPanel.html#a765b12e87a55fc10508a6ce1933a7951">PropertyPanel</a>
 </li>
 <li>PropertySet()
-: <a class="el" href="classPropertySet.html#a85f11257e712b1fc4074a9e2dbc24e71">PropertySet</a>
+: <a class="el" href="classPropertySet.html#a8e91a4cff9a69a96f7957c038b919870">PropertySet</a>
 </li>
 <li>proportionOfHeight()
 : <a class="el" href="classComponent.html#a5d5356b8ad166fa48273dd90980ab3aa">Component</a>
@@ -742,7 +744,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:21 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

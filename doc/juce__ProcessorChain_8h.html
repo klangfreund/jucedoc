@@ -63,29 +63,48 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">juce_ProcessorChain.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdsp_1_1ProcessorChain.html">dsp::ProcessorChain&lt; Processors &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variadically-templated class lets you join together any number of processor classes into a single processor which will call <a class="el" href="classdsp_1_1ProcessorChain.html#a0258207be60eeeab43ba3015edfccde7" title="Process context through all inner processors in sequence. ">process()</a> on them all in sequence.  <a href="classdsp_1_1ProcessorChain.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedsp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp.html">dsp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:aeef60debcc9a28c7ea3944a6bfa25d39"><td class="memTemplParams" colspan="2">template&lt;typename... Processors&gt; </td></tr>
-<tr class="memitem:aeef60debcc9a28c7ea3944a6bfa25d39"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedsp.html#aeef60debcc9a28c7ea3944a6bfa25d39">dsp::ProcessorChain</a> = ProcessorHelpers::ChainBase&lt; true, Processors... &gt;</td></tr>
-<tr class="memdesc:aeef60debcc9a28c7ea3944a6bfa25d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">This variadically-templated class lets you join together any number of processor classes into a single processor which will call process() on them all in sequence.  <a href="namespacedsp.html#aeef60debcc9a28c7ea3944a6bfa25d39">More...</a><br /></td></tr>
-<tr class="separator:aeef60debcc9a28c7ea3944a6bfa25d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9240fb29b1b2eead921b368aaa283894"><td class="memTemplParams" colspan="2">template&lt;int Index, typename... Processors&gt; </td></tr>
+<tr class="memitem:a9240fb29b1b2eead921b368aaa283894"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedsp.html#a9240fb29b1b2eead921b368aaa283894">dsp::get</a> (ProcessorChain&lt; Processors... &gt; &amp;chain) noexcept</td></tr>
+<tr class="memdesc:a9240fb29b1b2eead921b368aaa283894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member equivalent of <a class="el" href="classdsp_1_1ProcessorChain.html#a2c24b8fd3ac6d9d5161c68a0c529659d" title="Get a reference to the processor at index Index. ">ProcessorChain::get</a> which avoids awkward member template syntax.  <a href="namespacedsp.html#a9240fb29b1b2eead921b368aaa283894">More...</a><br /></td></tr>
+<tr class="separator:a9240fb29b1b2eead921b368aaa283894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4009407f70d0fb2a10fc17e5d63dacb6"><td class="memTemplParams" colspan="2">template&lt;int Index, typename... Processors&gt; </td></tr>
+<tr class="memitem:a4009407f70d0fb2a10fc17e5d63dacb6"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedsp.html#a4009407f70d0fb2a10fc17e5d63dacb6">dsp::get</a> (const ProcessorChain&lt; Processors... &gt; &amp;chain) noexcept</td></tr>
+<tr class="memdesc:a4009407f70d0fb2a10fc17e5d63dacb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member equivalent of <a class="el" href="classdsp_1_1ProcessorChain.html#a2c24b8fd3ac6d9d5161c68a0c529659d" title="Get a reference to the processor at index Index. ">ProcessorChain::get</a> which avoids awkward member template syntax.  <a href="namespacedsp.html#a4009407f70d0fb2a10fc17e5d63dacb6">More...</a><br /></td></tr>
+<tr class="separator:a4009407f70d0fb2a10fc17e5d63dacb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33601e867d61deb64412e30e035c6ee"><td class="memTemplParams" colspan="2">template&lt;int Index, typename... Processors&gt; </td></tr>
+<tr class="memitem:ac33601e867d61deb64412e30e035c6ee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedsp.html#ac33601e867d61deb64412e30e035c6ee">dsp::setBypassed</a> (ProcessorChain&lt; Processors... &gt; &amp;chain, bool bypassed) noexcept</td></tr>
+<tr class="memdesc:ac33601e867d61deb64412e30e035c6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member equivalent of <a class="el" href="classdsp_1_1ProcessorChain.html#a5ae4a9d6e1e02e2e4fd2b1b5a9bcdbba" title="Set the processor at index Index to be bypassed or enabled. ">ProcessorChain::setBypassed</a> which avoids awkward member template syntax.  <a href="namespacedsp.html#ac33601e867d61deb64412e30e035c6ee">More...</a><br /></td></tr>
+<tr class="separator:ac33601e867d61deb64412e30e035c6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bbc5840c500566f2cb30129497beda"><td class="memTemplParams" colspan="2">template&lt;int Index, typename... Processors&gt; </td></tr>
+<tr class="memitem:a18bbc5840c500566f2cb30129497beda"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedsp.html#a18bbc5840c500566f2cb30129497beda">dsp::isBypassed</a> (const ProcessorChain&lt; Processors... &gt; &amp;chain) noexcept</td></tr>
+<tr class="memdesc:a18bbc5840c500566f2cb30129497beda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member equivalent of <a class="el" href="classdsp_1_1ProcessorChain.html#a1634870263ae213d708d9cbe06a9a2b5" title="Query whether the processor at index Index is bypassed. ">ProcessorChain::isBypassed</a> which avoids awkward member template syntax.  <a href="namespacedsp.html#a18bbc5840c500566f2cb30129497beda">More...</a><br /></td></tr>
+<tr class="separator:a18bbc5840c500566f2cb30129497beda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2020 20:00:12 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
