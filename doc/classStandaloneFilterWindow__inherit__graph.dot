@@ -14,6 +14,6 @@ digraph "StandaloneFilterWindow"
   Node4 [label="Component",height=0.2,width=0.4,color="black",URL="$classComponent.html",tooltip="The base class for all JUCE user-interface objects. "];
   Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="MouseListener",height=0.2,width=0.4,color="black",URL="$classMouseListener.html",tooltip="A MouseListener can be registered with a component to receive callbacks about mouse events that happe..."];
-  Node6 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="Button::Listener",height=0.2,width=0.4,color="black",URL="$classButton_1_1Listener.html",tooltip="Used to receive callbacks when a button is clicked. "];
 }

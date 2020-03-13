@@ -196,9 +196,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0d3aa771a6577c5149b09f12617b746"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classOutputStream.html">OutputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#af0d3aa771a6577c5149b09f12617b746">createOutputStream</a> () const</td></tr>
 <tr class="memdesc:af0d3aa771a6577c5149b09f12617b746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to open an output stream to a <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> for writing.  <a href="#af0d3aa771a6577c5149b09f12617b746">More...</a><br /></td></tr>
 <tr class="separator:af0d3aa771a6577c5149b09f12617b746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591172ae1dbe6598848d83e5eff5f6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#a591172ae1dbe6598848d83e5eff5f6d0">downloadToFile</a> (const <a class="el" href="classFile.html">File</a> &amp;targetLocation, <a class="el" href="classString.html">String</a> extraHeaders=<a class="el" href="classString.html">String</a>(), <a class="el" href="structURL_1_1DownloadTask_1_1Listener.html">DownloadTask::Listener</a> *listener=nullptr, bool usePostCommand=false)</td></tr>
-<tr class="memdesc:a591172ae1dbe6598848d83e5eff5f6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> to a file.  <a href="#a591172ae1dbe6598848d83e5eff5f6d0">More...</a><br /></td></tr>
-<tr class="separator:a591172ae1dbe6598848d83e5eff5f6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fe89248a741aa14151d89172dacff3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#ac4fe89248a741aa14151d89172dacff3">downloadToFile</a> (const <a class="el" href="classFile.html">File</a> &amp;targetLocation, <a class="el" href="classString.html">String</a> extraHeaders=<a class="el" href="classString.html">String</a>(), <a class="el" href="structURL_1_1DownloadTask_1_1Listener.html">DownloadTask::Listener</a> *listener=nullptr, bool usePostCommand=false)</td></tr>
+<tr class="memdesc:ac4fe89248a741aa14151d89172dacff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download the <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> to a file.  <a href="#ac4fe89248a741aa14151d89172dacff3">More...</a><br /></td></tr>
+<tr class="separator:ac4fe89248a741aa14151d89172dacff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80831fe2f20790ca491d27eef884b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classURL.html#ae80831fe2f20790ca491d27eef884b46">readEntireBinaryStream</a> (<a class="el" href="classMemoryBlock.html">MemoryBlock</a> &amp;destData, bool usePostCommand=false) const</td></tr>
 <tr class="memdesc:ae80831fe2f20790ca491d27eef884b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to download the entire contents of this <a class="el" href="classURL.html" title="Represents a URL and has a bunch of useful functions to manipulate it. ">URL</a> into a binary data block.  <a href="#ae80831fe2f20790ca491d27eef884b46">More...</a><br /></td></tr>
 <tr class="separator:ae80831fe2f20790ca491d27eef884b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1289,14 +1289,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a591172ae1dbe6598848d83e5eff5f6d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591172ae1dbe6598848d83e5eff5f6d0">&#9670;&nbsp;</a></span>downloadToFile()</h2>
+<a id="ac4fe89248a741aa14151d89172dacff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fe89248a741aa14151d89172dacff3">&#9670;&nbsp;</a></span>downloadToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a>* URL::downloadToFile </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classURL_1_1DownloadTask.html">DownloadTask</a>&gt; URL::downloadToFile </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classFile.html">File</a> &amp;&#160;</td>
           <td class="paramname"><em>targetLocation</em>, </td>
@@ -1616,7 +1616,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 13 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

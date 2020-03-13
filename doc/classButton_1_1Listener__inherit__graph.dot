@@ -8,6 +8,6 @@ digraph "Button::Listener"
   Node1 [label="ButtonTracker",height=0.2,width=0.4,color="black",URL="$classButtonTracker.html",tooltip="A class that automatically sends analytics events to the Analytics singleton when a button is clicked..."];
   Node0 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="OnlineUnlockForm",height=0.2,width=0.4,color="black",URL="$classOnlineUnlockForm.html",tooltip="Acts as a GUI which asks the user for their details, and calls the appropriate methods on your Online..."];
-  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="StandaloneFilterWindow",height=0.2,width=0.4,color="black",URL="$classStandaloneFilterWindow.html",tooltip="A class that can be used to run a simple standalone application containing your filter. "];
 }

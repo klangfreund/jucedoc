@@ -202,7 +202,7 @@ var searchData=
   ['downloaded',['downloaded',['../classURL_1_1DownloadTask.html#a4754c8c08c94390dac2ffdcf76badd86',1,'URL::DownloadTask']]],
   ['downloads',['downloads',['../structInAppPurchases_1_1Listener_1_1PurchaseInfo.html#a5e1dbeb294d1117710aa1a2182e15dda',1,'InAppPurchases::Listener::PurchaseInfo']]],
   ['downloadtask',['DownloadTask',['../classURL_1_1DownloadTask.html',1,'URL::DownloadTask'],['../classURL_1_1DownloadTask.html#aaded7dc7bce440de9940e58cc0b2411d',1,'URL::DownloadTask::DownloadTask()']]],
-  ['downloadtofile',['downloadToFile',['../classURL.html#a591172ae1dbe6598848d83e5eff5f6d0',1,'URL']]],
+  ['downloadtofile',['downloadToFile',['../classURL.html#ac4fe89248a741aa14151d89172dacff3',1,'URL']]],
   ['downwards',['downwards',['../classPopupMenu_1_1Options.html#a1bcdbc585618aba656891d7bd7e65b79aa61ef46a530622e0e4397e30c0e99174',1,'PopupMenu::Options']]],
   ['dpi',['dpi',['../structDisplays_1_1Display.html#af9762583627b9e317179e9289bd1d4b8',1,'Displays::Display']]],
   ['drag',['drag',['../classAnimatedPosition.html#aecd11c12c444387d46ef54931c5cbd86',1,'AnimatedPosition']]],

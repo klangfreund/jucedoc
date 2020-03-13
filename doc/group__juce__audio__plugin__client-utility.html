@@ -90,12 +90,15 @@ Functions</h2></td></tr>
 <tr class="separator:ga8d16109df1a628b3502ce09f8d4e4119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4042d75f5f08bd0d034c543433c0c20b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#ga4042d75f5f08bd0d034c543433c0c20b">removeWindowHidingHooks</a> (void *)</td></tr>
 <tr class="separator:ga4042d75f5f08bd0d034c543433c0c20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8f2c863bffc2e87f6f3dc7a500b94f9"><td class="memItemLeft" align="right" valign="top">juce::AudioProcessor *<a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#gad8f2c863bffc2e87f6f3dc7a500b94f9">createPluginFilter</a> ()</td></tr>
+<tr class="memdesc:gad8f2c863bffc2e87f6f3dc7a500b94f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Somewhere in the codebase of your plugin, you need to implement this function and make it return a new instance of the filter subclass that you're building.  <a href="#gad8f2c863bffc2e87f6f3dc7a500b94f9">More...</a><br /></td></tr>
+<tr class="separator:gad8f2c863bffc2e87f6f3dc7a500b94f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13faf00221dddb774828f4e9c474458c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAudioProcessor.html">AudioProcessor</a> *<a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#ga13faf00221dddb774828f4e9c474458c">createPluginFilterOfType</a> (<a class="el" href="classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcf">AudioProcessor::WrapperType</a> type)</td></tr>
+<tr class="separator:ga13faf00221dddb774828f4e9c474458c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55636bdf65aaf595977bce02bb397078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#ga55636bdf65aaf595977bce02bb397078">repostCurrentNSEvent</a> ()</td></tr>
 <tr class="separator:ga55636bdf65aaf595977bce02bb397078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51a294a91fee76b7912be96887e4b052"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classPluginHostType.html">PluginHostType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#ga51a294a91fee76b7912be96887e4b052">getHostType</a> ()</td></tr>
 <tr class="separator:ga51a294a91fee76b7912be96887e4b052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7896bfd3d736cdc9d8d15f41b896c7eb"><td class="memItemLeft" align="right" valign="top">juce::AudioProcessor *<a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__audio__plugin__client-utility.html#ga7896bfd3d736cdc9d8d15f41b896c7eb">createPluginFilterOfType</a> (juce::AudioProcessor::WrapperType)</td></tr>
-<tr class="separator:ga7896bfd3d736cdc9d8d15f41b896c7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -208,6 +211,49 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad8f2c863bffc2e87f6f3dc7a500b94f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8f2c863bffc2e87f6f3dc7a500b94f9">&#9670;&nbsp;</a></span>createPluginFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">juce::AudioProcessor* <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> createPluginFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Somewhere in the codebase of your plugin, you need to implement this function and make it return a new instance of the filter subclass that you're building. </p>
+
+<p class="reference">Referenced by <a class="el" href="group__juce__audio__plugin__client-utility.html#ga13faf00221dddb774828f4e9c474458c">createPluginFilterOfType()</a>.</p>
+
+</div>
+</div>
+<a id="ga13faf00221dddb774828f4e9c474458c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13faf00221dddb774828f4e9c474458c">&#9670;&nbsp;</a></span>createPluginFilterOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAudioProcessor.html">AudioProcessor</a>* <a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> createPluginFilterOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcf">AudioProcessor::WrapperType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="group__juce__audio__plugin__client-utility.html#gad8f2c863bffc2e87f6f3dc7a500b94f9">createPluginFilter()</a>, <a class="el" href="group__juce__core-system.html#ga1f96ab6751237979b907a54f52a7296a">jassert</a>, <a class="el" href="classAudioProcessor.html#a2a406ae17bd699349d5da8510aa8af1b">AudioProcessor::setTypeOfNextNewPlugin()</a>, <a class="el" href="classAudioProcessor.html#a7bf4a5cf41e84de51aab7ccb75d1f897">AudioProcessor::wrapperType</a>, and <a class="el" href="classAudioProcessor.html#a2e1b21b8831ac529965abffc96223dcfaeb155b5982c79f733c4bee215678fc97">AudioProcessor::wrapperType_Undefined</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>.</p>
+
+</div>
+</div>
 <a id="ga55636bdf65aaf595977bce02bb397078"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga55636bdf65aaf595977bce02bb397078">&#9670;&nbsp;</a></span>repostCurrentNSEvent()</h2>
 
@@ -240,34 +286,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="group__juce__audio__plugin__client-utility.html#ga7896bfd3d736cdc9d8d15f41b896c7eb">createPluginFilterOfType()</a>, <a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a>, and <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>.</p>
-
-</div>
-</div>
-<a id="ga7896bfd3d736cdc9d8d15f41b896c7eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7896bfd3d736cdc9d8d15f41b896c7eb">&#9670;&nbsp;</a></span>createPluginFilterOfType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">juce::AudioProcessor* <a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a> createPluginFilterOfType </td>
-          <td>(</td>
-          <td class="paramtype">juce::AudioProcessor::WrapperType&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>, and <a class="el" href="group__juce__audio__plugin__client-utility.html#ga51a294a91fee76b7912be96887e4b052">getHostType()</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 13 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

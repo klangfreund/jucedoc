@@ -207,6 +207,7 @@ var searchData=
   ['juce_5fcoreaudioformat_2eh',['juce_CoreAudioFormat.h',['../juce__CoreAudioFormat_8h.html',1,'']]],
   ['juce_5fcpluspluscodetokeniser_2eh',['juce_CPlusPlusCodeTokeniser.h',['../juce__CPlusPlusCodeTokeniser_8h.html',1,'']]],
   ['juce_5fcpluspluscodetokeniserfunctions_2eh',['juce_CPlusPlusCodeTokeniserFunctions.h',['../juce__CPlusPlusCodeTokeniserFunctions_8h.html',1,'']]],
+  ['juce_5fcreatepluginfilter_2eh',['juce_CreatePluginFilter.h',['../juce__CreatePluginFilter_8h.html',1,'']]],
   ['juce_5fcriticalsection_2eh',['juce_CriticalSection.h',['../juce__CriticalSection_8h.html',1,'']]],
   ['juce_5fcryptography',['juce_cryptography',['../group__juce__cryptography.html',1,'']]],
   ['juce_5fcustomtypeface_2eh',['juce_CustomTypeface.h',['../juce__CustomTypeface_8h.html',1,'']]],

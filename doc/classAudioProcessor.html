@@ -454,7 +454,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class for audio processing classes or plugins. </p>
 <p>This is intended to act as a base class of audio processor that is general enough to be wrapped as a VST, AU, RTAS, etc, or used internally.</p>
 <p>It is also used by the plugin hosting code as the wrapper around an instance of a loaded plugin.</p>
-<p>You should derive your own class from this base class, and if you're building a plugin, you should implement a global function called createPluginFilter() which creates and returns a new instance of your subclass. </p>
+<p>You should derive your own class from this base class, and if you're building a plugin, you should implement a global function called <a class="el" href="group__juce__audio__plugin__client-utility.html#gad8f2c863bffc2e87f6f3dc7a500b94f9" title="Somewhere in the codebase of your plugin, you need to implement this function and make it return a ne...">createPluginFilter()</a> which creates and returns a new instance of your subclass. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a212c3670b59976559237cbf629af275f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a212c3670b59976559237cbf629af275f">&#9670;&nbsp;</a></span>ProcessingPrecision</h2>
@@ -3482,7 +3482,7 @@ template&lt;size_t numLayouts&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classStandalonePluginHolder.html#acb689ebcf4c02da40c76b0cd1b3e556f">StandalonePluginHolder::createPlugin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="group__juce__audio__plugin__client-utility.html#ga13faf00221dddb774828f4e9c474458c">createPluginFilterOfType()</a>.</p>
 
 </div>
 </div>
@@ -3678,6 +3678,8 @@ template&lt;size_t numLayouts&gt; </div>
 
 <p>When loaded by a plugin wrapper, this flag will be set to indicate the type of plugin within which the processor is running. </p>
 
+<p class="reference">Referenced by <a class="el" href="group__juce__audio__plugin__client-utility.html#ga13faf00221dddb774828f4e9c474458c">createPluginFilterOfType()</a>.</p>
+
 </div>
 </div>
 <a id="a396d6379427a4f51eefa33de43ac97bc"></a>
@@ -3708,7 +3710,7 @@ template&lt;size_t numLayouts&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 13 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
