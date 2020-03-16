@@ -458,8 +458,6 @@ template&lt;typename Type&gt; </div>
 <p>Destructor. </p>
 <p>This will free any memory allocated by the buffer. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#af43cdfdf05d2de26b8fdaa6ab86dc246">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
-
 </div>
 </div>
 <a id="a4124843b0d14b6d5b3ae282366e6824d"></a>
@@ -874,8 +872,6 @@ template&lt;typename Type&gt; </div>
 <p>Note that if keepExistingContent and avoidReallocating are both true, then it will only avoid reallocating if neither the channel count or length in samples increase.</p>
 <p>If the required memory can't be allocated, this will throw a std::bad_alloc exception. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, and <a class="el" href="classAudioBuffer.html#af43cdfdf05d2de26b8fdaa6ab86dc246">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
-
 </div>
 </div>
 <a id="a241b1340efd9e55a752a002579021950"></a>
@@ -930,8 +926,6 @@ template&lt;typename Type&gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#a53b0fa1f2d51e3d1fb48b99d6988fe8b">AudioBuffer&lt; float &gt;::setDataToReferTo()</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1039,7 @@ template&lt;typename Type&gt; </div>
 
 <p>Clears all the samples in all channels. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#ad773e1b58a9ec886349456b5f1a926d5">AudioBuffer&lt; float &gt;::AudioBuffer()</a>, <a class="el" href="structAudioSourceChannelInfo.html#a6246ca9f1f6ef86dab31fc0eeaacb7a3">AudioSourceChannelInfo::clearActiveBufferRegion()</a>, <a class="el" href="classAudioBuffer.html#a88f19397f068366e13aa53a0b6f92913">AudioBuffer&lt; float &gt;::makeCopyOf()</a>, and <a class="el" href="classAudioBuffer.html#af43cdfdf05d2de26b8fdaa6ab86dc246">AudioBuffer&lt; float &gt;::operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="structAudioSourceChannelInfo.html#a6246ca9f1f6ef86dab31fc0eeaacb7a3">AudioSourceChannelInfo::clearActiveBufferRegion()</a>.</p>
 
 </div>
 </div>
@@ -1355,8 +1349,6 @@ template&lt;typename Type&gt; </div>
 <p>Applies a gain multiple to a region of one channel. </p>
 <p>For speed, this doesn't check whether the channel and sample number are in-range, so be careful! </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#a25c9a05ff546379ba7bed697e616bfb3">AudioBuffer&lt; float &gt;::applyGain()</a>, and <a class="el" href="classAudioBuffer.html#ab0542e5b626b36087f0054e795695682">AudioBuffer&lt; float &gt;::applyGainRamp()</a>.</p>
-
 </div>
 </div>
 <a id="a25c9a05ff546379ba7bed697e616bfb3"></a>
@@ -1494,8 +1486,6 @@ template&lt;typename Type&gt; </div>
 <p>The gain that is applied to each sample will vary from startGain on the first sample to endGain on the last Sample, so it can be used to do basic fades.</p>
 <p>For speed, this doesn't check whether the sample numbers are in-range, so be careful! </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#af5cde88e72248367626419733fc58fc2">AudioBuffer&lt; float &gt;::applyGainRamp()</a>.</p>
-
 </div>
 </div>
 <a id="af5cde88e72248367626419733fc58fc2"></a>
@@ -1632,8 +1622,6 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioBuffer.html#a9ec751bfa23564c011bf3940ca17b743" title="Copies samples from another buffer to this one. ">copyFrom</a> </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#a1853da41f2a3d87fa6291a2bf2adca05">AudioBuffer&lt; float &gt;::addFromWithRamp()</a>.</p>
 
 </div>
 </div>
@@ -1854,8 +1842,6 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAudioBuffer.html#abb2b03021cca3f0382d602d0b9755a08" title="Adds samples from another buffer to this one. ">addFrom</a> </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#ae1cff4483f4022ed49dc91eda31098c9">AudioBuffer&lt; float &gt;::copyFromWithRamp()</a>.</p>
 
 </div>
 </div>
@@ -2118,8 +2104,6 @@ template&lt;typename Type&gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#af0f0099350d92091c24e8b14b149328e">AudioBuffer&lt; float &gt;::getMagnitude()</a>.</p>
-
 </div>
 </div>
 <a id="af0f0099350d92091c24e8b14b149328e"></a>
@@ -2165,8 +2149,6 @@ template&lt;typename Type&gt; </div>
 </div><div class="memdoc">
 
 <p>Finds the highest absolute sample value within a region of a channel. </p>
-
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#afdd67f1761872b093a2065dc8f9b3c9e">AudioBuffer&lt; float &gt;::getMagnitude()</a>.</p>
 
 </div>
 </div>
@@ -2300,8 +2282,6 @@ template&lt;typename Type&gt; </div>
 
 <p>Reverses a part of a channel. </p>
 
-<p class="reference">Referenced by <a class="el" href="classAudioBuffer.html#a842674c6e6bd70f27fcbdef7cc76e283">AudioBuffer&lt; float &gt;::reverse()</a>.</p>
-
 </div>
 </div>
 <a id="a842674c6e6bd70f27fcbdef7cc76e283"></a>
@@ -2350,7 +2330,7 @@ template&lt;typename Type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 14 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 16 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
