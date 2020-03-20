@@ -23,7 +23,7 @@ var searchData=
   ['_7eaudioappcomponent',['~AudioAppComponent',['../classAudioAppComponent.html#a21d7dd32f46cba3c093094bc7ed3a0d8',1,'AudioAppComponent']]],
   ['_7eaudiobuffer',['~AudioBuffer',['../classAudioBuffer.html#adf1c10e8cd0cc4ca8dcfa33f9d5ebced',1,'AudioBuffer']]],
   ['_7eaudiocdburner',['~AudioCDBurner',['../classAudioCDBurner.html#a8d38668744c2e8a6e24ee98caff61ce2',1,'AudioCDBurner']]],
-  ['_7eaudiocdreader',['~AudioCDReader',['../classAudioCDReader.html#aa22eb22de4ee9cd9c7463acd20cc8a2a',1,'AudioCDReader']]],
+  ['_7eaudiocdreader',['~AudioCDReader',['../classAudioCDReader.html#afc8327328f633c592e1b7d725aabf449',1,'AudioCDReader']]],
   ['_7eaudiodevicemanager',['~AudioDeviceManager',['../classAudioDeviceManager.html#aead8866dfe453e42d94db582851fec4f',1,'AudioDeviceManager']]],
   ['_7eaudiodeviceselectorcomponent',['~AudioDeviceSelectorComponent',['../classAudioDeviceSelectorComponent.html#a1b4563b78ec3014fdd296747640c5776',1,'AudioDeviceSelectorComponent']]],
   ['_7eaudiodeviceselectorcomponentmethods',['~AudioDeviceSelectorComponentMethods',['../structExtraLookAndFeelBaseClasses_1_1AudioDeviceSelectorComponentMethods.html#a5422e6da50661f5fbb5ba30e55105341',1,'ExtraLookAndFeelBaseClasses::AudioDeviceSelectorComponentMethods']]],
