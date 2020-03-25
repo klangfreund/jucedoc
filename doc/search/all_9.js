@@ -165,6 +165,7 @@ var searchData=
   ['juce_5fcatch_5fexception',['JUCE_CATCH_EXCEPTION',['../group__juce__events-messages.html#ga76b33d944e52097017e10dbc10de503b',1,'juce_ApplicationBase.h']]],
   ['juce_5fcatmullrominterpolator_2eh',['juce_CatmullRomInterpolator.h',['../juce__CatmullRomInterpolator_8h.html',1,'']]],
   ['juce_5fcdecl',['JUCE_CDECL',['../group__juce__core-system.html#gaf6815e7d8ca906bd8a6087d4d72d694c',1,'juce_PlatformDefs.h']]],
+  ['juce_5fcf_5fbridged_5ftype',['JUCE_CF_BRIDGED_TYPE',['../group__juce__core-text.html#gad620025e2bf8506440ed536c77c80e8e',1,'JUCE_CF_BRIDGED_TYPE():&#160;juce_String.h'],['../group__juce__core-text.html#ga02ae55699e0f8bf028bbcc66e54a5e07',1,'JUCE_CF_BRIDGED_TYPE(NSString) __CFString *CFStringRef:&#160;juce_String.h']]],
   ['juce_5fchangebroadcaster_2eh',['juce_ChangeBroadcaster.h',['../juce__ChangeBroadcaster_8h.html',1,'']]],
   ['juce_5fchangelistener_2eh',['juce_ChangeListener.h',['../juce__ChangeListener_8h.html',1,'']]],
   ['juce_5fchannelremappingaudiosource_2eh',['juce_ChannelRemappingAudioSource.h',['../juce__ChannelRemappingAudioSource_8h.html',1,'']]],

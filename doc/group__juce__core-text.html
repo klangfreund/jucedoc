@@ -140,6 +140,8 @@ Macros</h2></td></tr>
 <tr class="memitem:gafeb9a504a09d3e5d1148fb0c40413ae2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-text.html#gafeb9a504a09d3e5d1148fb0c40413ae2">NEEDS_TRANS</a>(stringLiteral)&#160;&#160;&#160;(stringLiteral)</td></tr>
 <tr class="memdesc:gafeb9a504a09d3e5d1148fb0c40413ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy version of the TRANS macro, used to indicate a string literal that should be added to the translation file by source-code scanner tools.  <a href="#gafeb9a504a09d3e5d1148fb0c40413ae2">More...</a><br /></td></tr>
 <tr class="separator:gafeb9a504a09d3e5d1148fb0c40413ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad620025e2bf8506440ed536c77c80e8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-text.html#gad620025e2bf8506440ed536c77c80e8e">JUCE_CF_BRIDGED_TYPE</a>(T)</td></tr>
+<tr class="separator:gad620025e2bf8506440ed536c77c80e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -172,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga13dfbabe9954d194dcc6aaab79a3e969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4d161ac3aff31259c415876c2bbbac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-text.html#gab4d161ac3aff31259c415876c2bbbac7">operator+</a> (const <a class="el" href="classNewLine.html">NewLine</a> &amp;, const char *s2)</td></tr>
 <tr class="separator:gab4d161ac3aff31259c415876c2bbbac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02ae55699e0f8bf028bbcc66e54a5e07"><td class="memItemLeft" align="right" valign="top">const struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-text.html#ga02ae55699e0f8bf028bbcc66e54a5e07">JUCE_CF_BRIDGED_TYPE</a> (NSString) __CFString *CFStringRef</td></tr>
+<tr class="separator:ga02ae55699e0f8bf028bbcc66e54a5e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0f6b7a1acb4a2d3060666bf04b31f4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__juce__core-system.html#ga65961b3bfbda0ffb83750d914cee38fb">JUCE_API</a> <a class="el" href="classString.html">String</a> <a class="el" href="group__juce__core-system.html#gaf0b3f78ca801d88a7912f4c6bbf50e58">JUCE_CALLTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__juce__core-text.html#gae0f6b7a1acb4a2d3060666bf04b31f4e">operator+</a> (const char *string1, const <a class="el" href="classString.html">String</a> &amp;string2)</td></tr>
 <tr class="memdesc:gae0f6b7a1acb4a2d3060666bf04b31f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenates two strings.  <a href="#gae0f6b7a1acb4a2d3060666bf04b31f4e">More...</a><br /></td></tr>
 <tr class="separator:gae0f6b7a1acb4a2d3060666bf04b31f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,6 +428,24 @@ Variables</h2></td></tr>
 
 <p>A dummy version of the TRANS macro, used to indicate a string literal that should be added to the translation file by source-code scanner tools. </p>
 <p>Wrapping a string literal in this macro has no effect, but by using it around strings that your app needs to translate at a later stage, it lets automatic code-scanning tools find this string and add it to the list of strings that need translation. </p>
+
+</div>
+</div>
+<a id="gad620025e2bf8506440ed536c77c80e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad620025e2bf8506440ed536c77c80e8e">&#9670;&nbsp;</a></span>JUCE_CF_BRIDGED_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUCE_CF_BRIDGED_TYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">T</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -692,6 +714,24 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="classNewLine.html#ab07d21b3c535b0bf3897893cc87b765e">NewLine::getDefault()</a>.</p>
+
+</div>
+</div>
+<a id="ga02ae55699e0f8bf028bbcc66e54a5e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02ae55699e0f8bf028bbcc66e54a5e07">&#9670;&nbsp;</a></span>JUCE_CF_BRIDGED_TYPE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct JUCE_CF_BRIDGED_TYPE </td>
+          <td>(</td>
+          <td class="paramtype">NSString&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2431,7 +2471,7 @@ template&lt;class traits &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 23 2020 20:00:14 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 25 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
