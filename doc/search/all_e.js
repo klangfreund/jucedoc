@@ -176,7 +176,7 @@ var searchData=
   ['osctype',['OSCType',['../group__juce__osc-osc.html#ga87df12d3665534ca67d92b1fd9436837',1,'juce_OSCTypes.h']]],
   ['osctypelist',['OSCTypeList',['../group__juce__osc-osc.html#ga168595184e150bd87d4fea2d58a5834d',1,'juce_OSCTypes.h']]],
   ['osctypes',['OSCTypes',['../classOSCTypes.html',1,'']]],
-  ['ostype',['OSType',['../group__juce__core-files.html#gab4f8767ed6257e1e6806046cfe02db5a',1,'juce_File.h']]],
+  ['ostype',['OSType',['../group__juce__core-files.html#ga2bd5e8ea87ba8a7d0994e61417bd14d8',1,'juce_File.h']]],
   ['osxlibrarysubfolder',['osxLibrarySubFolder',['../structPropertiesFile_1_1Options.html#aacd8c9dc10f8cce35824410940d04ee1',1,'PropertiesFile::Options']]],
   ['othermeter',['otherMeter',['../classAudioProcessorParameter.html#aef73dff71cb1abfdadd5b6f3649d7db2aaba169374c989f88c1006291e2576005',1,'AudioProcessorParameter']]],
   ['out',['out',['../classLowLevelGraphicsPostScriptRenderer.html#abda44d72a9730c4b62ce3a7a2fbc8bcb',1,'LowLevelGraphicsPostScriptRenderer']]],
