@@ -152,9 +152,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af249bc3a5c385cdc193723cc709bc23d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#af249bc3a5c385cdc193723cc709bc23d">getTranslationY</a> () const noexcept</td></tr>
 <tr class="memdesc:af249bc3a5c385cdc193723cc709bc23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this transform is only a translation, this returns the X offset.  <a href="#af249bc3a5c385cdc193723cc709bc23d">More...</a><br /></td></tr>
 <tr class="separator:af249bc3a5c385cdc193723cc709bc23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7092c4d86f1fdbcf41dfad2660381072"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#a7092c4d86f1fdbcf41dfad2660381072">getScaleFactor</a> () const noexcept</td></tr>
-<tr class="memdesc:a7092c4d86f1fdbcf41dfad2660381072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the approximate scale factor by which lengths will be transformed.  <a href="#a7092c4d86f1fdbcf41dfad2660381072">More...</a><br /></td></tr>
-<tr class="separator:a7092c4d86f1fdbcf41dfad2660381072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f8830e676cff76c0c11b7907b5c18d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#a38f8830e676cff76c0c11b7907b5c18d">getDeterminant</a> () const noexcept</td></tr>
+<tr class="memdesc:a38f8830e676cff76c0c11b7907b5c18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the determinant of the transform.  <a href="#a38f8830e676cff76c0c11b7907b5c18d">More...</a><br /></td></tr>
+<tr class="separator:a38f8830e676cff76c0c11b7907b5c18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693b55114e51b27b751ac8b4b388b30e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffineTransform.html#a693b55114e51b27b751ac8b4b388b30e">JUCE_DEPRECATED</a> (float getScaleFactor() const noexcept)</td></tr>
+<tr class="memdesc:a693b55114e51b27b751ac8b4b388b30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method has been deprecated.  <a href="#a693b55114e51b27b751ac8b4b388b30e">More...</a><br /></td></tr>
+<tr class="separator:a693b55114e51b27b751ac8b4b388b30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -1660,12 +1663,12 @@ template&lt;typename PointType &gt; </div>
 <p>If this transform is only a translation, this returns the X offset. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classAffineTransform.html#a20078c305f476e1387fa81dae43782db" title="Returns true if the transform only translates, and doesn&#39;t scale or rotate the points. ">isOnlyTranslation</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="group__juce__core-system.html#ga85cf949ce0439306e4606bb784def674">JUCE_DEPRECATED_STATIC</a>.</p>
+<p class="reference">References <a class="el" href="group__juce__core-system.html#gaf25d2cb3e6d1124146f7f1fcd8648016">JUCE_DEPRECATED</a>, and <a class="el" href="group__juce__core-system.html#ga85cf949ce0439306e4606bb784def674">JUCE_DEPRECATED_STATIC</a>.</p>
 
 </div>
 </div>
-<a id="a7092c4d86f1fdbcf41dfad2660381072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7092c4d86f1fdbcf41dfad2660381072">&#9670;&nbsp;</a></span>getScaleFactor()</h2>
+<a id="a38f8830e676cff76c0c11b7907b5c18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f8830e676cff76c0c11b7907b5c18d">&#9670;&nbsp;</a></span>getDeterminant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1674,7 +1677,7 @@ template&lt;typename PointType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float AffineTransform::getScaleFactor </td>
+          <td class="memname">float AffineTransform::getDeterminant </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1687,8 +1690,29 @@ template&lt;typename PointType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the approximate scale factor by which lengths will be transformed. </p>
-<p>Obviously a length may be scaled by entirely different amounts depending on its direction, so this is only appropriate as a rough guide. </p>
+<p>Returns the determinant of the transform. </p>
+
+</div>
+</div>
+<a id="a693b55114e51b27b751ac8b4b388b30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693b55114e51b27b751ac8b4b388b30e">&#9670;&nbsp;</a></span>JUCE_DEPRECATED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AffineTransform::JUCE_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">float getScaleFactor() const&#160;</td>
+          <td class="paramname"><em>noexcept</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method has been deprecated. </p>
+<p>You can calculate the scale factor using: </p><div class="fragment"><div class="line">std::sqrt (<a class="code" href="group__LittleFootFunctions.html#ga83b97b49b2135e525b55a3a7ff42036e">std::abs</a> (<a class="code" href="classAffineTransform.html#a38f8830e676cff76c0c11b7907b5c18d">AffineTransform::getDeterminant</a>()))</div></div><!-- fragment --><p>This method produces incorrect values for transforms containing rotations.</p>
+<p>Returns the approximate scale factor by which lengths will be transformed. Obviously a length may be scaled by entirely different amounts depending on its direction, so this is only appropriate as a rough guide. </p>
 
 </div>
 </div>
@@ -1783,7 +1807,7 @@ template&lt;typename PointType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 27 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 30 2020 20:00:13 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
