@@ -23,7 +23,7 @@ var searchData=
   ['optionalscopedpointer_3c_20positionableaudiosource_20_3e',['OptionalScopedPointer&lt; PositionableAudioSource &gt;',['../classOptionalScopedPointer.html',1,'']]],
   ['optionalscopedpointer_3c_20propertyset_20_3e',['OptionalScopedPointer&lt; PropertySet &gt;',['../classOptionalScopedPointer.html',1,'']]],
   ['optionalscopedpointer_3c_20texteditor_3a_3ainputfilter_20_3e',['OptionalScopedPointer&lt; TextEditor::InputFilter &gt;',['../classOptionalScopedPointer.html',1,'']]],
-  ['options',['Options',['../classPopupMenu_1_1Options.html',1,'PopupMenu::Options'],['../structPropertiesFile_1_1Options.html',1,'PropertiesFile::Options']]],
+  ['options',['Options',['../structPropertiesFile_1_1Options.html',1,'PropertiesFile::Options'],['../classPopupMenu_1_1Options.html',1,'PopupMenu::Options']]],
   ['oscaddress',['OSCAddress',['../classOSCAddress.html',1,'']]],
   ['oscaddresspattern',['OSCAddressPattern',['../classOSCAddressPattern.html',1,'']]],
   ['oscargument',['OSCArgument',['../classOSCArgument.html',1,'']]],
