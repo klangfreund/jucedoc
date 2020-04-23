@@ -997,8 +997,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Initialises the JUCE subsystem for projects not created by the Projucer. </p>
 <p>On Android, JUCE needs to be initialised once before it is used. The Projucer will automatically generate the necessary java code to do this. However, if you are using JUCE without the Projucer or are creating a library made with JUCE intended for use in non-JUCE apks, then you must call this method manually once on apk startup.</p>
 <p>You can call this method from C++ or directly from java by calling the following java method:</p>
-<div class="fragment"><div class="line">com.roli.juce.Java.initialiseJUCE (myContext);</div></div><!-- fragment --><p>Note that the above java method is only available in Android Studio projects created by the Projucer. If you need to call this from another type of project then you need to add the following java file to your project:</p>
-<div class="fragment"><div class="line"><span class="keyword">package </span>com.roli.juce;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Java</div><div class="line">{</div><div class="line">    <span class="keyword">static</span> { System.loadLibrary (<span class="stringliteral">&quot;juce_jni&quot;</span>); }</div><div class="line">    <span class="keyword">public</span> native <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classThread.html#a414755620d63dbeada96b1de5309c778">initialiseJUCE</a> (Context context);</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line">com.rmsl.juce.Java.initialiseJUCE (myContext);</div></div><!-- fragment --><p>Note that the above java method is only available in Android Studio projects created by the Projucer. If you need to call this from another type of project then you need to add the following java file to your project:</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.rmsl.juce;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Java</div><div class="line">{</div><div class="line">    <span class="keyword">static</span> { System.loadLibrary (<span class="stringliteral">&quot;juce_jni&quot;</span>); }</div><div class="line">    <span class="keyword">public</span> native <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classThread.html#a414755620d63dbeada96b1de5309c778">initialiseJUCE</a> (Context context);</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jniEnv</td><td>this is a pointer to JNI's JNIEnv variable. Any callback from Java into C++ will have this passed in as it's first parameter. </td></tr>
     <tr><td class="paramname">jContext</td><td>this is a jobject referring to your app/service/receiver/ provider's Context. JUCE needs this for many of it's internal functions. </td></tr>
@@ -1014,7 +1014,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 4 2020 20:00:18 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2020 20:00:22 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
