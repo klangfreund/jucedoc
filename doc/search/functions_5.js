@@ -147,6 +147,7 @@ var searchData=
   ['fromfirstoccurrenceof',['fromFirstOccurrenceOf',['../classString.html#a43b422af055f84e9989efb204e2ef49d',1,'String']]],
   ['fromfloatrgba',['fromFloatRGBA',['../classColour.html#a3992d5ea9bdaf0471bd6caa0595b0185',1,'Colour']]],
   ['fromfrustum',['fromFrustum',['../classMatrix3D.html#af40888ae716dfc6db996412e4322773c',1,'Matrix3D']]],
+  ['fromhsl',['fromHSL',['../classColour.html#a215ecbaa0047975fa6e3c7d5efb9ec07',1,'Colour']]],
   ['fromhsv',['fromHSV',['../classColour.html#a34cee4195baff72c95a9c99148acf6c2',1,'Colour']]],
   ['fromint32',['fromInt32',['../structOSCColour.html#aefe497b8d6811d7855b6a28922261741',1,'OSCColour']]],
   ['fromiso8601',['fromISO8601',['../classTime.html#af98978e0bd58d39a7f6aab2c40088d2c',1,'Time']]],
