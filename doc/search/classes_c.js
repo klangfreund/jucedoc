@@ -35,7 +35,6 @@ var searchData=
   ['midiinputcallback',['MidiInputCallback',['../classMidiInputCallback.html',1,'']]],
   ['midikeyboardcomponent',['MidiKeyboardComponent',['../classMidiKeyboardComponent.html',1,'']]],
   ['midikeyboardstate',['MidiKeyboardState',['../classMidiKeyboardState.html',1,'']]],
-  ['midikeyboardstatelistener',['MidiKeyboardStateListener',['../classMidiKeyboardStateListener.html',1,'']]],
   ['midimessage',['MidiMessage',['../classMidiMessage.html',1,'']]],
   ['midimessagecollector',['MidiMessageCollector',['../classMidiMessageCollector.html',1,'']]],
   ['midimessagesequence',['MidiMessageSequence',['../classMidiMessageSequence.html',1,'']]],

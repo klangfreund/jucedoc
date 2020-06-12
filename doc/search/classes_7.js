@@ -97,7 +97,7 @@ var searchData=
   ['heapblock_3c_20menubarmodel_3a_3alistener_20_2a_3e',['HeapBlock&lt; MenuBarModel::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20midicallbackinfo_20_3e',['HeapBlock&lt; MidiCallbackInfo &gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20midideviceinfo_20_3e',['HeapBlock&lt; MidiDeviceInfo &gt;',['../classHeapBlock.html',1,'']]],
-  ['heapblock_3c_20midikeyboardstatelistener_20_2a_3e',['HeapBlock&lt; MidiKeyboardStateListener *&gt;',['../classHeapBlock.html',1,'']]],
+  ['heapblock_3c_20midikeyboardstate_3a_3alistener_20_2a_3e',['HeapBlock&lt; MidiKeyboardState::Listener *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20midimessagesequence_20_2a_3e',['HeapBlock&lt; MidiMessageSequence *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20midimessagesequence_3a_3amidieventholder_20_2a_3e',['HeapBlock&lt; MidiMessageSequence::MidiEventHolder *&gt;',['../classHeapBlock.html',1,'']]],
   ['heapblock_3c_20modalitem_20_2a_3e',['HeapBlock&lt; ModalItem *&gt;',['../classHeapBlock.html',1,'']]],

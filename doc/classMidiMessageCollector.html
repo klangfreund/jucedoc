@@ -98,11 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a07e1a9bbeb9131dbe8d55431bb166ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76869b33248a78b2a580e63ec855773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiMessageCollector.html#af76869b33248a78b2a580e63ec855773">handleIncomingMidiMessage</a> (<a class="el" href="classMidiInput.html">MidiInput</a> *, const <a class="el" href="classMidiMessage.html">MidiMessage</a> &amp;) override</td></tr>
 <tr class="separator:af76869b33248a78b2a580e63ec855773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classMidiKeyboardStateListener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMidiKeyboardStateListener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMidiKeyboardStateListener.html">MidiKeyboardStateListener</a></td></tr>
-<tr class="memitem:a2371e0772be14b09d6c3b2308092af86 inherit pub_methods_classMidiKeyboardStateListener"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardStateListener.html#a2371e0772be14b09d6c3b2308092af86">MidiKeyboardStateListener</a> ()=default</td></tr>
-<tr class="separator:a2371e0772be14b09d6c3b2308092af86 inherit pub_methods_classMidiKeyboardStateListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cb46e2a59869ead01dd902f6d29990 inherit pub_methods_classMidiKeyboardStateListener"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardStateListener.html#a14cb46e2a59869ead01dd902f6d29990">~MidiKeyboardStateListener</a> ()=default</td></tr>
-<tr class="separator:a14cb46e2a59869ead01dd902f6d29990 inherit pub_methods_classMidiKeyboardStateListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classMidiKeyboardState_1_1Listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMidiKeyboardState_1_1Listener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMidiKeyboardState_1_1Listener.html">MidiKeyboardState::Listener</a></td></tr>
+<tr class="memitem:a87db938272e0badd5343f44c5f7dd4c9 inherit pub_methods_classMidiKeyboardState_1_1Listener"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiKeyboardState_1_1Listener.html#a87db938272e0badd5343f44c5f7dd4c9">~Listener</a> ()=default</td></tr>
+<tr class="separator:a87db938272e0badd5343f44c5f7dd4c9 inherit pub_methods_classMidiKeyboardState_1_1Listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classMidiInputCallback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMidiInputCallback')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMidiInputCallback.html">MidiInputCallback</a></td></tr>
 <tr class="memitem:a3a4ce6156cd3b82722d84d3dc43ef2de inherit pub_methods_classMidiInputCallback"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMidiInputCallback.html#a3a4ce6156cd3b82722d84d3dc43ef2de">~MidiInputCallback</a> ()=default</td></tr>
 <tr class="memdesc:a3a4ce6156cd3b82722d84d3dc43ef2de inherit pub_methods_classMidiInputCallback"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classMidiInputCallback.html#a3a4ce6156cd3b82722d84d3dc43ef2de">More...</a><br /></td></tr>
@@ -113,7 +111,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collects incoming realtime MIDI messages and turns them into blocks suitable for processing by a block-based audio callback. </p>
-<p>The class can also be used as either a <a class="el" href="classMidiKeyboardStateListener.html" title="Receives events from a MidiKeyboardState object. ">MidiKeyboardStateListener</a> or a <a class="el" href="classMidiInputCallback.html" title="Receives incoming messages from a physical MIDI input device. ">MidiInputCallback</a> so it can easily use a midi input or keyboard component as its source.</p>
+<p>The class can also be used as either a <a class="el" href="classMidiKeyboardState_1_1Listener.html" title="Receives events from a MidiKeyboardState object. ">MidiKeyboardState::Listener</a> or a <a class="el" href="classMidiInputCallback.html" title="Receives incoming messages from a physical MIDI input device. ">MidiInputCallback</a> so it can easily use a midi input or keyboard component as its source.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classMidiMessage.html" title="Encapsulates a MIDI message. ">MidiMessage</a>, <a class="el" href="classMidiInput.html" title="Represents a midi input device. ">MidiInput</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81989229e6c29b6f3835a961195278d7"></a>
@@ -286,7 +284,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classMidiKeyboardStateListener.html#a0f4b54bd89239c0e184f155060a4397a">MidiKeyboardStateListener</a>.</p>
+<p>Implements <a class="el" href="classMidiKeyboardState_1_1Listener.html#a854381a64354389e0cb2c15ec1fb4b01">MidiKeyboardState::Listener</a>.</p>
 
 </div>
 </div>
@@ -336,7 +334,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classMidiKeyboardStateListener.html#a11e569656febf461f2a3562d208ead61">MidiKeyboardStateListener</a>.</p>
+<p>Implements <a class="el" href="classMidiKeyboardState_1_1Listener.html#aedc74bd79578cb19edba66d38e9a93cf">MidiKeyboardState::Listener</a>.</p>
 
 </div>
 </div>
@@ -384,7 +382,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 5 2020 20:00:19 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2020 20:00:20 for JUCE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

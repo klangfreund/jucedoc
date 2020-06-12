@@ -5,7 +5,7 @@ digraph "MidiMessageCollector"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="MidiMessageCollector",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="MidiKeyboardStateListener",height=0.2,width=0.4,color="black",URL="$classMidiKeyboardStateListener.html",tooltip="Receives events from a MidiKeyboardState object. "];
+  Node1 [label="MidiKeyboardState::\lListener",height=0.2,width=0.4,color="black",URL="$classMidiKeyboardState_1_1Listener.html",tooltip="Receives events from a MidiKeyboardState object. "];
   Node2 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="MidiInputCallback",height=0.2,width=0.4,color="black",URL="$classMidiInputCallback.html",tooltip="Receives incoming messages from a physical MIDI input device. "];
 }
