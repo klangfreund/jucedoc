@@ -55,6 +55,7 @@ var searchData=
   ['endswith',['endsWith',['../classString.html#aaafe38711826e7b777994d2f0fadc21d',1,'String']]],
   ['endswithchar',['endsWithChar',['../classString.html#aa3a1b7342852de158b1229a3582f1b22',1,'String']]],
   ['endswithignorecase',['endsWithIgnoreCase',['../classString.html#a116b729ef558f57266978bc8542d51aa',1,'String']]],
+  ['endtime',['endTime',['../structUnitTestRunner_1_1TestResult.html#ad755398b0350bc2d834b502c37bb4b30',1,'UnitTestRunner::TestResult']]],
   ['endtouch',['endTouch',['../structDrumPadGridProgram.html#a3ea6a2eae6eb61d2fbbfc84469003755',1,'DrumPadGridProgram']]],
   ['endtransparencylayer',['endTransparencyLayer',['../classGraphics.html#ae6b36ef8295dd83d33287a328e88ef9c',1,'Graphics::endTransparencyLayer()'],['../classLowLevelGraphicsContext.html#a8ea588902423657839d8b7af248029da',1,'LowLevelGraphicsContext::endTransparencyLayer()'],['../classLowLevelGraphicsPostScriptRenderer.html#aa1aeb8d03394c51f4bd9d3868dccba1f',1,'LowLevelGraphicsPostScriptRenderer::endTransparencyLayer()']]],
   ['enlargeifadjacent',['enlargeIfAdjacent',['../classRectangle.html#af3f86ce678a35c2947aac7278c239963',1,'Rectangle']]],
